@@ -1,0 +1,45 @@
+name: Bug report
+description: Report a reproducible playtest problem
+body:
+  - type: input
+    id: build
+    attributes:
+      label: Build ID
+      description: Copy the ID from BUILD.txt in your download.
+    validations:
+      required: true
+  - type: dropdown
+    id: mode
+    attributes:
+      label: Play mode
+      options:
+        - Windows desktop
+        - Windows PCVR
+        - Quest standalone
+    validations:
+      required: true
+  - type: textarea
+    id: setup
+    attributes:
+      label: Hardware and setup
+      description: OS, CPU/GPU, resolution; headset/runtime/connection for VR.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Include city/month/weather/speed and how often it happens.
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: Expected and observed behavior
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Screenshots, video, logs or affected save
+      description: Optional attachments. ZIP city JSON files. Review logs for personal paths before posting.

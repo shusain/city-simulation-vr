@@ -1,0 +1,21 @@
+name: Playtest feedback
+description: Share usability feedback or suggest an improvement
+body:
+  - type: input
+    id: build
+    attributes:
+      label: Build ID and play mode
+    validations:
+      required: true
+  - type: textarea
+    id: experience
+    attributes:
+      label: What worked or felt confusing?
+      description: Describe what you were trying to do and what would help.
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Setup and supporting examples
+      description: Optional hardware/headset details, city state and screenshots.

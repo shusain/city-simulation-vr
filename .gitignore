@@ -1,0 +1,15 @@
+# Track only distribution documentation and helpers. Binaries belong in Releases.
+*
+!/.gitignore
+!/.citysim-distribution
+!/README.md
+!/TESTING.md
+!/KNOWN_ISSUES.md
+!/MAINTAINERS.md
+!/.github/
+!/.github/ISSUE_TEMPLATE/
+!/.github/ISSUE_TEMPLATE/*.yml
+!/tools/
+!/tools/*.ps1
+!/releases/
+!/releases/*.md
