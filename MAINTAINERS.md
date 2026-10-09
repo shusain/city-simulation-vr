@@ -1,41 +1,39 @@
 # Publishing playtests
 
-This folder is an independent Git repository. Its allowlist ignores packages, extracted games, logs, saves and symbols. Keep the game source repository and its Gitea remote separate.
+This is an independent distribution repository. Source stays in the separate game project/Gitea repository. Only instructions, issue forms, release notes and the three reviewed helper scripts enter Git; runtime ZIPs belong in GitHub Releases.
 
-The source project's `Tools/Prepare-TesterDistribution.ps1` prepares `packages/<build-id>` and `releases/<build-id>.md`. It exports only staged runtime files plus tester documents/launchers. Do not copy a project checkout here. Existing repository documents are preserved when preparing another package; update them deliberately when needed.
+## Quick release from the game source folder
 
-## One-time GitHub setup
-
-Create an empty GitHub repository under the chosen owner, with Issues enabled and the desired public/private visibility. Do not initialize it with a separate README. From **this folder**, after reviewing the files:
+Close the Unreal Editor, write reviewed release notes in a local file, and choose a fresh build ID. Run in PowerShell as the Windows user signed into Git Credential Manager:
 
 ```powershell
-git add .gitignore .citysim-distribution README.md TESTING.md KNOWN_ISSUES.md MAINTAINERS.md .github tools releases
-git commit -m "Prepare playtest distribution"
-git remote add origin https://github.com/OWNER/REPOSITORY.git
-git push -u origin main
+& .\Tools\Release-TesterBuild.ps1 -BuildId playtest-YYYY.MM.DD.N -ReleaseNotesPath .\Artifacts\playtest-notes.md -Publish
 ```
 
-Use GitHub CLI (`gh`) authenticated to that owner/repository for the optional upload helper, or create the release and upload assets through GitHub's website. GitHub CLI is not required for packaging or testing.
+The command builds/cooks/packages Windows, exports a source-free runtime ZIP, validates inventory and checksums, extracts it into an isolated profile and runs the desktop menu/render/save smoke (18 captures). It updates the README download link, commits/pushes **only this distribution repository** and its build tag, uploads a draft prerelease, checks GitHub's asset sizes/SHA256 digests, publishes it, then anonymously downloads and validates all three attachments. The same Windows ZIP supports Desktop and SteamVR PCVR. No Quest install, source commit/push or GitHub CLI is required.
 
-## Each build
-
-1. Run `tools/Test-Package.ps1 -PackageDirectory packages/BUILD-ID` and inspect the release notes. The Windows ZIP and its contents are hashed and checked against the runtime-file policy; unexpected files fail validation.
-2. Commit the new release notes, create a tag matching the build ID, and push **this repository**:
+Omit `-Publish` to prepare and validate a local candidate without a commit/push/upload. To publish that unchanged candidate, or retry an interrupted upload:
 
 ```powershell
-git add releases/BUILD-ID.md
-git commit -m "Prepare BUILD-ID"
-git tag BUILD-ID
-git push origin main BUILD-ID
+& .\Tools\Release-TesterBuild.ps1 -BuildId playtest-YYYY.MM.DD.N -ReleaseNotesPath .\Artifacts\playtest-notes.md -Resume -Publish
 ```
 
-3. Preview the upload command, then explicitly create a **draft prerelease**:
+`-Resume` skips building/exporting, requires identical notes, and reruns extracted validation. Build IDs and published assets are immutable. Matching partial drafts are resumed; conflicting assets/notes/tags stop the command instead of being overwritten. After publication, an unchanged retry verifies the existing release. Use a new build ID for code, package or document changes. Results are in `packages/<id>/release-result.json`, anonymous downloads in `packages/<id>/verification`, and private extracted QA evidence under the source project's `Artifacts/QA-D73`.
+
+Keep public TESTING/KNOWN_ISSUES/MAINTAINERS accurate before running. The release command preserves prose edits and synchronizes only the three managed `tools` helpers from source templates. Changes to template prose must also be applied deliberately to this repository. Release notes should distinguish automated checks, user-confirmed behavior and pending physical/headset/laptop checks. The release command does not replace required shared-code Android integration or device acceptance.
+
+## One-time setup / authentication
+
+The configured repository is public `shusain/city-simulation-vr`, with Issues enabled. A fresh distribution checkout needs an HTTPS GitHub origin and main branch; the helper verifies both against `-Repository` (the source release command defaults to this repository). Use installed Git Credential Manager to sign in before publishing. Credentials are read only into memory, never logged or bundled. No global Git safety setting is changed.
+
+## Lower-level steps
+
+`Tools/Build-PCVRSandbox.ps1`, `Tools/Prepare-TesterDistribution.ps1` and `Tools/Test-TesterDistribution.ps1` remain available separately from the source project. The distribution helper previews by default:
 
 ```powershell
-./tools/Publish-Prerelease.ps1 -Repository OWNER/REPOSITORY -BuildId BUILD-ID
-./tools/Publish-Prerelease.ps1 -Repository OWNER/REPOSITORY -BuildId BUILD-ID -UploadDraft
+./tools/Publish-Prerelease.ps1 -Repository shusain/city-simulation-vr -BuildId BUILD-ID
+./tools/Publish-Prerelease.ps1 -Repository shusain/city-simulation-vr -BuildId BUILD-ID -UploadDraft
+./tools/Publish-Prerelease.ps1 -Repository shusain/city-simulation-vr -BuildId BUILD-ID -Publish
 ```
 
-4. Review the draft's notes/assets on GitHub and publish when ready. The helper never publishes a draft, pushes commits/tags, changes visibility or overwrites an existing release. If a partial upload fails, finish that draft through GitHub rather than rerunning a creation that would replace it.
-
-Use named ZIP/APK downloads, `SHA256SUMS.txt` and `release-manifest.json` as release attachments. Do not commit those binaries to Git or Git LFS. Each asset must be under2GiB; the helper checks that limit. Private releases require testers to have repository read access. Issue forms do not need extra labels configured.
+Both mutation flags commit/push reviewed distribution docs and the tag. `-UploadDraft` stops after server-hash validation; `-Publish` also publishes and verifies anonymous downloads. Never force-push shared history or replace release assets. Attach the named Windows ZIP, release-manifest.json and SHA256SUMS.txt; GitHub's automatic source-code downloads are not playable. Each asset must be under2GiB. Optional Quest export remains a separate, explicitly validated sideload deliverable. See [GitHub Releases](https://docs.github.com/en/repositories/releasing-projects-on-github/about-releases).

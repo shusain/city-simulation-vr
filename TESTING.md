@@ -9,7 +9,7 @@ Windows 64-bit is the target; Windows 11 has been tested. Laptop performance and
 
 ## Controls
 
-Desktop: WASD/arrows or middle mouse drag to pan, right mouse drag to orbit, wheel to zoom, Home to reset. Left click places/selects; R rotates; Esc cancels or closes a menu. Space pauses; 1/2/3 select 1x/3x/5x. F5 saves, F9 opens load review. Brackets change road height. Side panels have independent SHOW/HIDE toggles and HIDE buttons. Clicking the map while a menu is open closes it and consumes that click.
+Desktop: WASD/arrows or middle mouse drag to pan, right mouse drag to orbit, wheel to zoom, Home to reset. Left click places/selects; R rotates; Esc cancels or closes a menu. Space pauses; 1/2/3 select 1x/3x/5x. The active time button is highlighted and marked with >. Z selects residential zoning; repeated presses cycle commercial, industrial, then residential. F5 saves, F9 opens load review. Brackets change road height. Side panels have independent SHOW/HIDE toggles and HIDE buttons. MAIN MENU opens Continue/Load/New City/Settings. Most completed tool choices close their dialog. Zoning stays open so you can switch types while painting; map/camera input remains available outside that panel. Esc, CLOSE or the ZONE toggle dismisses it. Other open dialogs close on an outside map click and consume that click.
 
 Use **ZONE** for homes and shops to grow normally. Direct BUILD HOME/BUILD SHOP is reserved for Settings > Debug Mode > Debug Tools. VR retains its controller tools and shared menus.
 
