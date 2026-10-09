@@ -10,7 +10,7 @@ Close the Unreal Editor, write reviewed release notes in a local file, and choos
 & .\Tools\Release-TesterBuild.ps1 -BuildId playtest-YYYY.MM.DD.N -ReleaseNotesPath .\Artifacts\playtest-notes.md -Publish
 ```
 
-The command builds/cooks/packages Windows, exports a source-free runtime ZIP, validates inventory and checksums, extracts it into an isolated profile and runs the desktop menu/render/save smoke (18 captures). It updates the README download link, commits/pushes **only this distribution repository** and its build tag, uploads a draft prerelease, checks GitHub's asset sizes/SHA256 digests, publishes it, then anonymously downloads and validates all three attachments. The same Windows ZIP supports Desktop and SteamVR PCVR. No Quest install, source commit/push or GitHub CLI is required.
+The command builds/cooks/packages Windows, exports a source-free runtime ZIP, validates inventory and checksums, extracts it into an isolated profile and runs the cold-start entry-menu check followed by desktop menu/render/save smoke (20 captures). It updates the README download link, commits/pushes **only this distribution repository** and its build tag, uploads a draft prerelease, checks GitHub's asset sizes/SHA256 digests, publishes it, then anonymously downloads and validates all three attachments. The same Windows ZIP supports Desktop and SteamVR PCVR. No Quest install, source commit/push or GitHub CLI is required.
 
 Omit `-Publish` to prepare and validate a local candidate without a commit/push/upload. To publish that unchanged candidate, or retry an interrupted upload:
 

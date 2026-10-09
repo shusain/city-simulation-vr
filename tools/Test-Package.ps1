@@ -42,6 +42,10 @@ try {
         if ($taskEntry.Length -ne $taskFile.bytes -or $taskHash -ne $taskFile.sha256) { throw "Bundle hash mismatch: $($taskFile.path)" }
     }
     if ($taskExpected.Count + 1 -ne $taskEntryMap.Count) { throw 'ZIP contains unmanifested files.' }
+    if ($taskBundle.PSObject.Properties.Name -contains 'launchProfileVersion' -and $taskBundle.launchProfileVersion -ge 2) {
+        if ($taskEntryMap.ContainsKey('Windows/CitySimVR.exe')) { throw 'Generic Unreal bootstrapper is not a supported tester launch path.' }
+        if (-not $taskEntryMap.ContainsKey('Play-Desktop-Windowed.cmd')) { throw 'Missing windowed recovery launcher.' }
+    }
     foreach ($taskRequired in @('Play-Desktop.cmd','Play-PCVR.cmd','BUILD.txt','TESTING.md','KNOWN_ISSUES.md','Windows/CitySimVR/Binaries/Win64/CitySimVR.exe','Windows/CitySimVR/Content/Paks/CitySimVR-Windows.pak','Windows/CitySimVR/Content/Paks/CitySimVR-Windows.utoc','Windows/CitySimVR/Content/Paks/CitySimVR-Windows.ucas','Windows/Engine/Binaries/ThirdParty/OpenXR/win64/openxr_loader.dll','Windows/Engine/Extras/Redist/en-us/vc_redist.x64.exe')) {
         if (-not $taskExpected.ContainsKey($taskRequired)) { throw "Required runtime file missing: $taskRequired" }
     }

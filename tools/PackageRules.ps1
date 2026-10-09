@@ -11,7 +11,7 @@ function Test-CityRuntimePath([string]$RelativePath) {
 }
 
 function Test-CityBundlePath([string]$RelativePath) {
-    if ($RelativePath -in @('Play-Desktop.cmd','Play-PCVR.cmd','BUILD.txt','TESTING.md','KNOWN_ISSUES.md')) { return $true }
+    if ($RelativePath -in @('Play-Desktop.cmd','Play-Desktop-Windowed.cmd','Play-PCVR.cmd','BUILD.txt','TESTING.md','KNOWN_ISSUES.md')) { return $true }
     return $RelativePath.StartsWith('Windows/') -and (Test-CityRuntimePath $RelativePath.Substring(8))
 }
 
