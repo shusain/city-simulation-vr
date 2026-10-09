@@ -15,9 +15,13 @@ Use **ZONE** for homes and shops to grow normally. Direct BUILD HOME/BUILD SHOP 
 
 ## Display settings
 
-Desktop first launch fills the display in borderless fullscreen at its native resolution. Confirmed settings are remembered for later launches. Settings > GRAPHICS offers Fullscreen, Borderless and Windowed, previous/next resolution and VSync. Borderless uses the desktop resolution; select Fullscreen or Windowed to change resolution. Choose APPLY, then KEEP within15 seconds. REVERT, Back, closing the dialog or letting the timer expire restores the prior mode. Unapplied edits are discarded on close. Only Keep saves a trial mode, so an interrupted trial does not replace the last confirmed settings.
+Desktop launches are DPI aware so a4K display reports3840x2160 instead of a size reduced by Windows scaling. Borderless fullscreen fills the display at desktop resolution; use MODE to choose Fullscreen or Windowed for display-resolution arrows. Resolution arrows are hidden in Borderless. Confirmed settings are remembered for later launches.
 
-If a display mode leaves the screen unusable, close the game and use **Play-Desktop-Windowed.cmd** to open1280x800 for that session. It keeps saved display preferences until you explicitly Apply/Keep another choice. Save/city profiles are unchanged. Multi-monitor/Alt-Tab/DPI/fullscreen comfort remain physical acceptance checks. These display controls apply only to Desktop; PCVR keeps its headset rendering profile.
+Settings > GRAPHICS also provides VSYNC, SCENE SCALE and ANTI-ALIASING. Scene scale adjusts only the map:50/75% lowers GPU cost,100% renders native detail (the default),125% supersamples. UI remains at display resolution. MSAA offers2x/4x/8x edge smoothing;4x is the default,8x costs more GPU time. These controls are independent of the display mode, so scene scale remains available in Borderless.
+
+Choose APPLY, then KEEP within15 seconds. REVERT, Back, closing the dialog or letting the timer expire restores the prior display/quality choices. Unapplied edits are discarded on close. Only Keep saves a trial, so an interrupted trial does not replace confirmed settings.
+
+If a display mode leaves the screen unusable, close the game and use **Play-Desktop-Windowed.cmd** to open1280x800 for that session. It keeps saved display preferences until you explicitly Apply/Keep another choice. Save/city profiles are unchanged. Alt-Tab from the prior borderless-fullscreen build is user-accepted;4K sizing, the new scene-quality controls, exclusive fullscreen, multi-monitor/DPI and full-flow focus remain physical acceptance checks. These display controls apply only to Desktop; PCVR keeps its headset rendering profile.
 
 ## First playtest
 
