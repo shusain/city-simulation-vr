@@ -47,6 +47,16 @@ Open **Issues > New issue** and choose Bug report or Playtest feedback. Include 
 
 Attach logs/saves only when relevant and review them before posting: logs can contain your Windows username and local paths. Share feedback manually; the game does not submit a GitHub issue for you.
 
-## Optional Quest download
+## Quest standalone download
 
 If a release includes a Quest APK, use an authorized sideload setup with headset developer mode. The current test application ID is `com.shaun.citysimvr.smoketest`; installing an update replaces that test app. Do not uninstall an existing copy to update it, since uninstalling removes its app data. Quest saves remain in that app's data, separate from Windows profiles. Check the release notes for device-validation status; a successful Android package is not a new headset test.
+
+Download the named `CitySimVR-<build-id>-Quest.apk` from the same release as the Windows ZIP. With Android Platform Tools installed, connect the headset by USB, enable developer mode and approve USB debugging inside the headset. In a terminal:
+
+```powershell
+adb devices
+# The headset should show device, not unauthorized. With one headset connected:
+adb install -r "CitySimVR-<build-id>-Quest.apk"
+```
+
+After a successful install, open **City Sim VR Smoke Test** (the current app label) from **Unknown Sources** in the headset's app library. The APK contains its game data; no Windows ZIP or separate OBB download is needed. It uses the existing VR HUD/controller controls: point/select tools, left-grip build menu, and two-hand board scaling/rotation. Use Objectives and Inspect for progression. Test both hands, menus, save/relaunch, pause/resume and headset removal/replacement; report the release ID from the APK filename, Quest model and runtime version with feedback. Do not use `adb uninstall` for ordinary updates. Cities/settings remain in the existing app data when the signed update installs successfully.

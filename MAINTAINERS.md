@@ -1,21 +1,21 @@
 # Publishing playtests
 
-This is an independent distribution repository. Source stays in the separate game project/Gitea repository. Only instructions, issue forms, release notes and the three reviewed helper scripts enter Git; runtime ZIPs belong in GitHub Releases.
+This is an independent distribution repository. Source stays in the separate game project/Gitea repository. Only instructions, issue forms, release notes and the three reviewed helper scripts enter Git; runtime ZIPs/APKs belong in GitHub Releases.
 
 ## Quick release from the game source folder
 
 Close the Unreal Editor, write reviewed release notes in a local file, and choose a fresh build ID. Run in PowerShell as the Windows user signed into Git Credential Manager:
 
 ```powershell
-& .\Tools\Release-TesterBuild.ps1 -BuildId playtest-YYYY.MM.DD.N -ReleaseNotesPath .\Artifacts\playtest-notes.md -Publish
+& .\Tools\Release-TesterBuild.ps1 -BuildId playtest-YYYY.MM.DD.N -ReleaseNotesPath .\Artifacts\playtest-notes.md -IncludeQuest -Publish
 ```
 
-The command builds/cooks/packages Windows, exports a source-free runtime ZIP, validates inventory and checksums, extracts it into an isolated profile and runs the cold-start entry-menu check followed by desktop menu/render/save smoke (20 captures). It updates the README download link, commits/pushes **only this distribution repository** and its build tag, uploads a draft prerelease, checks GitHub's asset sizes/SHA256 digests, publishes it, then anonymously downloads and validates all three attachments. The same Windows ZIP supports Desktop and SteamVR PCVR. No Quest install, source commit/push or GitHub CLI is required.
+The command builds/cooks/packages Windows and Quest, exports a source-free runtime ZIP and standalone APK, validates inventory and checksums, extracts it into an isolated profile and runs the cold-start entry-menu check followed by desktop menu/render/save smoke (20 captures). It updates the README download link, commits/pushes **only this distribution repository** and its build tag, uploads a draft prerelease, checks GitHub's asset sizes/SHA256 digests, publishes it, then anonymously downloads and validates all listed attachments. The same Windows ZIP supports Desktop and SteamVR PCVR. Quest validation checks the signed ARM64 package, API levels and embedded cooked content; it does not install on a headset. Omit `-IncludeQuest` for a Windows-only candidate. No source commit/push or GitHub CLI is required.
 
 Omit `-Publish` to prepare and validate a local candidate without a commit/push/upload. To publish that unchanged candidate, or retry an interrupted upload:
 
 ```powershell
-& .\Tools\Release-TesterBuild.ps1 -BuildId playtest-YYYY.MM.DD.N -ReleaseNotesPath .\Artifacts\playtest-notes.md -Resume -Publish
+& .\Tools\Release-TesterBuild.ps1 -BuildId playtest-YYYY.MM.DD.N -ReleaseNotesPath .\Artifacts\playtest-notes.md -IncludeQuest -Resume -Publish
 ```
 
 `-Resume` skips building/exporting, requires identical notes, and reruns extracted validation. Build IDs and published assets are immutable. Matching partial drafts are resumed; conflicting assets/notes/tags stop the command instead of being overwritten. After publication, an unchanged retry verifies the existing release. Use a new build ID for code, package or document changes. Results are in `packages/<id>/release-result.json`, anonymous downloads in `packages/<id>/verification`, and private extracted QA evidence under the source project's `Artifacts/QA-D73`.
@@ -36,4 +36,4 @@ The configured repository is public `shusain/city-simulation-vr`, with Issues en
 ./tools/Publish-Prerelease.ps1 -Repository shusain/city-simulation-vr -BuildId BUILD-ID -Publish
 ```
 
-Both mutation flags commit/push reviewed distribution docs and the tag. `-UploadDraft` stops after server-hash validation; `-Publish` also publishes and verifies anonymous downloads. Never force-push shared history or replace release assets. Attach the named Windows ZIP, release-manifest.json and SHA256SUMS.txt; GitHub's automatic source-code downloads are not playable. Each asset must be under2GiB. Optional Quest export remains a separate, explicitly validated sideload deliverable. See [GitHub Releases](https://docs.github.com/en/repositories/releasing-projects-on-github/about-releases).
+Both mutation flags commit/push reviewed distribution docs and the tag. `-UploadDraft` stops after server-hash validation; `-Publish` also publishes and verifies anonymous downloads. Never force-push shared history or replace release assets. Attach the named Windows ZIP, release-manifest.json and SHA256SUMS.txt; GitHub's automatic source-code downloads are not playable. Each asset must be under2GiB. With `-IncludeQuest`, also attach the named Quest APK; the manifest/checksum list covers both platforms. Physical headset validation is recorded separately in release notes. See [GitHub Releases](https://docs.github.com/en/repositories/releasing-projects-on-github/about-releases).

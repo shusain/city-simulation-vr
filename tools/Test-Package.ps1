@@ -13,6 +13,7 @@ foreach ($taskAsset in $taskManifest.assets) {
     $taskAssetNames[$taskAsset.name] = $true
     $taskFile = Get-Item -LiteralPath (Join-Path $taskPackage $taskAsset.name)
     if ($taskFile.Length -ge 2GB -or $taskFile.Length -ne $taskAsset.bytes -or (Get-FileHash -LiteralPath $taskFile.FullName).Hash -ne $taskAsset.sha256) { throw "Asset size/hash mismatch: $($taskAsset.name)" }
+    if ($taskAsset.name.EndsWith('-Quest.apk')) { Test-CityQuestPayload $taskFile.FullName }
 }
 $taskZipName = "CitySimVR-$($taskManifest.buildId)-Windows.zip"
 if (-not $taskAssetNames.ContainsKey($taskZipName)) { throw 'Missing Windows ZIP.' }

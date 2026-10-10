@@ -4,6 +4,7 @@
 - D3D11 is the tested Windows profile; D3D12 is not offered by the playtest launchers.
 - Large cities can have CPU spikes during simulation. Desktop measurements do not establish PCVR or standalone headset performance.
 - Animated shadows can still jitter. This refinement is deferred.
+- Zoned development currently checks monthly and charges building/automatic-upgrade costs to the city treasury. Faster growth, private development funding and demand for a mix of densities are planned gameplay refinements, not changed in this release.
 - Custom city naming and some desktop-specific chart/slider affordances are unfinished.
 - A rare utility connection issue beside ground-level avenues has been reported. If you see "not connected to road" despite an adjacent correctly facing driveway, include the affected city save and a screenshot.
 
