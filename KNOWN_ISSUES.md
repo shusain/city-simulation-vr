@@ -1,6 +1,7 @@
 # Current playtest limitations
 
 - This is a Development build for feedback, not a production installer. Desktop layout/input/window/DPI and laptop coverage are still in progress.
+- The refreshed Desktop toolbar/context/panel organization has native layout checks; hands-on review of long warnings, hover and resize behavior remains pending.
 - D3D11 is the tested Windows profile; D3D12 is not offered by the playtest launchers.
 - Large cities can have CPU spikes during simulation. Desktop measurements do not establish PCVR or standalone headset performance.
 - Animated shadows can still jitter. This refinement is deferred.

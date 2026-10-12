@@ -13,6 +13,8 @@ Desktop: WASD/arrows or middle mouse drag to pan, right mouse drag to orbit, whe
 
 Use **ZONE** for homes and shops to grow normally. Direct BUILD HOME/BUILD SHOP is reserved for Settings > Debug Mode > Debug Tools. VR retains its controller tools and shared menus.
 
+The Desktop bottom row keeps Inspect, Build, Zone and Demolish together, followed by Overlays, City and Settings. Tool details, prices/warnings and rotate/road-height/cancel controls appear separately above it. Time controls are grouped on their own header row; city-panel toggles and menu/save/load actions occupy the next row. City Info gives selected-lot Inspect/upgrade details their own section.
+
 ## Display settings
 
 Desktop launches are DPI aware so a4K display reports3840x2160 instead of a size reduced by Windows scaling. Borderless fullscreen fills the display at desktop resolution; use MODE to choose Fullscreen or Windowed for display-resolution arrows. Resolution arrows are hidden in Borderless. Confirmed settings are remembered for later launches.
