@@ -60,3 +60,9 @@ adb install -r "CitySimVR-<build-id>-Quest.apk"
 ```
 
 After a successful install, open **City Sim VR Smoke Test** (the current app label) from **Unknown Sources** in the headset's app library. The APK contains its game data; no Windows ZIP or separate OBB download is needed. It uses the existing VR HUD/controller controls: point/select tools, left-grip build menu, and two-hand board scaling/rotation. Use Objectives and Inspect for progression. Test both hands, menus, save/relaunch, pause/resume and headset removal/replacement; report the release ID from the APK filename, Quest model and runtime version with feedback. Do not use `adb uninstall` for ordinary updates. Cities/settings remain in the existing app data when the signed update installs successfully.
+
+## Soundscape checks for the current playtest
+
+Effects and ambience have separate saved volume/mute controls in Settings. Near operational factories, listen for idle/working machinery and occasional clanks. Every park type, including simple/corner parks, shares foliage/fountain ambience; daytime birds and nighttime crickets depend on light and suitable weather. Wildlife quiets in rain and cold. These are shared park ambience layers; sport-action sounds are outside this set.
+
+Compare nearby versus overview/panned-away traffic and response sirens. Regular cars/freight/garbage use steady driving or idle while queued, with audio following actual motion. Fires have visible alerts/crackle/response sirens without the generic incident chime. Earthquake alarm windows are shorter, while disaster impacts keep their timing. Check pause/menu/load/city switch and independent mute controls; report build/platform, city, time/weather and simulation speed. Physical PCVR/Quest mix, localization, comfort and dense-device cost remain under evaluation.

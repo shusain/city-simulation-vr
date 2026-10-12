@@ -8,4 +8,6 @@
 - Custom city naming and some desktop-specific chart/slider affordances are unfinished.
 - A rare utility connection issue beside ground-level avenues has been reported. If you see "not connected to road" despite an adjacent correctly facing driveway, include the affected city save and a screenshot.
 
+- The expanded soundscape has local native/package checks; new traffic/park mix, physical PCVR/Quest localization/comfort and representative dense-device audio cost still need playtesting.
+
 Individual release notes describe what was verified for that build. Untested physical controls, stereo/lifecycle cases and Quest changes remain unverified until observed.
