@@ -1,0 +1,12 @@
+# City Sim VR playtest — playtest-2026.10.12.2
+
+Windows Desktop/SteamVR PCVR and standalone Quest packages include the current building/park/citizen refinements and soundscape. This release refreshes tester documentation and validation status; its game executable/cooked content and signed Quest APK are unchanged from playtest-2026.10.12.1.
+
+- The developer verifies the22 listed checks in both Desktop and PCVR: park/industry/day-night ambience, fire alerts and shortened earthquake warning, audio controls/recovery; utility buildings, park trees/ramps and citizen animations/recovery; rooftop/street citizen presentation; update/save behavior, emergency traffic, density/growth, budget/placement costs, health, education, custody, utilities/water/waste, environment transitions, Desktop settings and headset controls/comfort.
+- Regular cars/trucks use steady driving/idle loops following real motion with Unreal spatialization/Doppler. This specific listening check was omitted from the confirmed list and remains open. Shared park ambience does not include bespoke ball/skate trick sounds. Improved rain and PCVR siren isolation were accepted earlier.
+- Corrected older instructions: zoned growth checks every three game days, new private construction takes three days after delivery, and zoning/automatic upgrades use private funding. Roads/utilities/civic purchases, repairs and expansions retain city costs. Low/medium/high demand is already integrated.
+- This remains an early Development playtest with a small tester group. Old city-file/asset compatibility is not guaranteed; future builds may require a new city. This refresh introduces no new save-format break. Playable maps remain64×64.
+
+The existing game baseline passed six audio/257 rendered regressions, native playback/lifecycle checks and Windows/Quest packaging. This refresh validates package inventories/checksums, signed embedded ARM64 Quest payload (min32/target35), unchanged native runtime files and extracted Windows launcher/cold-start/relaunch/menu/save flows. Desktop/PCVR user verification is separate from automated evidence. Quest standalone physical checks, clean-machine/laptop validation and measured PCVR/Quest frame/compositor/thermal budgets remain pending. No automatic headset installation occurs.
+
+Download the named Windows ZIP (Desktop and PCVR share it) or the named Quest APK under Assets. Automatic source-code archives contain only distribution documentation/helpers.
