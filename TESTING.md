@@ -27,6 +27,14 @@ Choose APPLY, then KEEP within15 seconds. REVERT, Back, closing the dialog or le
 
 If a display mode leaves the screen unusable, close the game and use **Play-Desktop-Windowed.cmd** to open1280x800 for that session. It keeps saved display preferences until you explicitly Apply/Keep another choice. Save/city profiles are unchanged. Alt-Tab from the prior borderless-fullscreen build is user-accepted;4K sizing, the new scene-quality controls, exclusive fullscreen, multi-monitor/DPI and full-flow focus remain physical acceptance checks. These display controls apply only to Desktop; PCVR keeps its headset rendering profile.
 
+## Current city features
+
+Use Build > TECHNOLOGY to review the digital exchange, computing center and research campus. Operating prerequisites, qualified paid staff, road access, power, cooling water and upkeep determine availability; outages suspend dependent capabilities. AI adoption and robotics are future work.
+
+Review loans, funded policies, monthly reports and the quarterly newspaper for finances and events. Inspect provides quantitative building information and resident trends. Compact building-condition icons show prioritized current issues; selection and Next issue help find affected buildings and observed local causes/recovery. Current supply does not prove a past purchase failure's cause.
+
+Settings includes the nine-track music player and independent music/soundscape controls. New building variants/materials, windows/citizens and sports-park animations are included. Latest Desktop appearance and indicators are accepted; physical headset observations remain separate.
+
 ## First playtest
 
 - Create a city, connect roads from the outside connection, place power/water and zone residential/commercial areas. Follow Objectives and Inspect service warnings.
@@ -47,7 +55,7 @@ Desktop and PCVR have separate profiles. Keep copies of important saves when try
 
 ## Early-development saves
 
-We are iterating quickly with a small tester group. Old city-file and asset compatibility is not guaranteed; future releases may require a fresh city. Release notes identify intentional breaks. This documentation refresh uses the same game binaries as playtest-2026.10.12.1 and introduces no new save-format change. Keep a copy of any city you want to retain; the game does not automatically upload it.
+The current playtest uses city format 67 and revision dev-04e5bb13c2e8d5274a86. Older formats, including cities from the previous public playtest, are unsupported: start a new city. Existing original/backup files are preserved; unsupported cities retain Archive/Restore and recorded revisions. Keep copies and the matching older build/profile to revisit them. Fresh cities record their creating revision, which remains on resave. No backwards migration is included. The game does not automatically upload your cities.
 
 ## Feedback
 
@@ -73,4 +81,4 @@ After a successful install, open **City Sim VR Smoke Test** (the current app lab
 
 Effects and ambience have separate saved volume/mute controls in Settings. Near operational factories, listen for idle/working machinery and occasional clanks. Every park type, including simple/corner parks, shares foliage/fountain ambience; daytime birds and nighttime crickets depend on light and suitable weather. Wildlife quiets in rain and cold. These are shared park ambience layers; sport-action sounds are outside this set.
 
-Compare nearby versus overview/panned-away traffic and response sirens. Regular cars/freight/garbage use steady driving or idle while queued, with audio following actual motion. Fires have visible alerts/crackle/response sirens without the generic incident chime. Earthquake alarm windows are shorter, while disaster impacts keep their timing. Check pause/menu/load/city switch and independent mute controls; report build/platform, city, time/weather and simulation speed. The developer confirms the listed ambience/alerts/recovery checks on Desktop and PCVR. Regular-traffic listening, Quest standalone acceptance and measured dense-device costs remain pending.
+Compare nearby versus overview/panned-away traffic and response sirens. Regular cars/freight/garbage use steady driving or idle while queued, with audio following actual motion. Fires have visible alerts/crackle/response sirens without the generic incident chime. Earthquake alarm windows are shorter, while disaster impacts keep their timing. Check pause/menu/load/city switch and independent mute controls; report build/platform, city, time/weather and simulation speed. The developer confirms the listed ambience/alerts/recovery checks on Desktop and PCVR. Current regular-traffic audio/distance is user-accepted. Latest Quest standalone listening and the specifically unconfirmed headset content observations remain pending; formal dense-device measurements are deferred.
