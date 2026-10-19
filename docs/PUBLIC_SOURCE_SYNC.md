@@ -22,7 +22,9 @@ Gitea #287. The two histories intentionally have different roots.
 - Worktrees share Git/LFS objects and remote-tracking refs, but have separate
   checkouts and indexes. Private objects existing locally is expected. Only
   ancestry reachable from the explicitly pushed public ref may reach GitHub.
-- Public worktree `push.default=nothing` requires an explicit refspec. Its local
+- Public worktree `push.default=nothing` disables Git's implicit branch-selection
+  fallback. The explicit `remote.github.push` mapping above takes precedence and
+  selects only `github-main`; still name the refspec when publishing. Its local
   pre-push hook verifies ancestry and then runs Git LFS pre-push. Other worktrees
   retain their existing hooks and push settings. Hooks/settings are local setup;
   they are not automatically installed by cloning the source.
