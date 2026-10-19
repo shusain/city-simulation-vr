@@ -13,7 +13,7 @@ Desktop: WASD/arrows or middle mouse drag to pan, right mouse drag to orbit, whe
 
 Use **ZONE** for homes and shops to grow normally. Direct BUILD HOME/BUILD SHOP is reserved for Settings > Debug Mode > Debug Tools. VR retains its controller tools and shared menus.
 
-The Desktop interface uses floating dark panels: a compact header, a stable bottom icon dock (Inspect, Build, Zone, Demolish, Overlays, City, Settings), and a separate scrollable tool/price/warning strip. Zoning choices stay open above the dock. Selected buildings have a separate inspector with a live view of their current mesh/materials and optional Details; City info has its own panel. The preview currently shows the static building body, without separate animated visitors or attachments.
+The Desktop interface uses floating dark panels: a compact header, a bottom icon dock, and a separate scrollable tool/price/warning strip. Zoning choices stay open above the dock. Selected buildings have a separate inspector with a live view of their current mesh/materials and optional Details; City info has its own panel. The preview currently shows the static building body, without separate animated visitors or attachments.
 
 Esc or Cancel first aborts an unfinished placement gesture, then closes an open tool palette, then returns to Inspect. With idle zoning, the first press hides the selector and the next returns to Inspect. Inspect has no Cancel button unless a workspace is open; other dock highlights clear when you return to Inspect. Esc remains available to clear an inspection. Nested building categories retain their parent Back control; dock-level Desktop pages use CLOSE/Esc/tool toggles. VR keeps its existing navigation.
 
@@ -29,7 +29,7 @@ If a display mode leaves the screen unusable, close the game and use **Play-Desk
 
 ## Current city features
 
-Use Build > TECHNOLOGY to review the digital exchange, computing center and research campus. Operating prerequisites, qualified paid staff, road access, power, cooling water and upkeep determine availability; outages suspend dependent capabilities. AI adoption and robotics are future work.
+Use the technology workspace to review technology facilities and operating prerequisites. Operating prerequisites, qualified paid staff, road access, power, cooling water and upkeep determine availability; outages suspend dependent capabilities. Further economic branches remain in development.
 
 Review loans, funded policies, monthly reports and the quarterly newspaper for finances and events. Inspect provides quantitative building information and resident trends. Compact building-condition icons show prioritized current issues; selection and Next issue help find affected buildings and observed local causes/recovery. Current supply does not prove a past purchase failure's cause.
 
@@ -55,7 +55,7 @@ Desktop and PCVR have separate profiles. Keep copies of important saves when try
 
 ## Early-development saves
 
-The current playtest uses city format 67 and revision dev-04e5bb13c2e8d5274a86. Older formats, including cities from the previous public playtest, are unsupported: start a new city. Existing original/backup files are preserved; unsupported cities retain Archive/Restore and recorded revisions. Keep copies and the matching older build/profile to revisit them. Fresh cities record their creating revision, which remains on resave. No backwards migration is included. The game does not automatically upload your cities.
+The current playtest uses city format 72 and revision dev-9553954bf7e67bf990a5. Older formats, including cities from the previous public playtest, are unsupported: start a new city. Existing original/backup files are preserved; unsupported cities retain Archive/Restore and recorded revisions. Keep copies and the matching older build/profile to revisit them. Fresh cities record their creating revision, which remains on resave. Specialized civic/education/waste plot dimensions have also changed, so older cities may fail validation even with a matching format. No backwards migration is included. The game does not automatically upload your cities.
 
 ## Feedback
 

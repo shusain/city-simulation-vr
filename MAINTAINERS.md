@@ -2,7 +2,13 @@
 
 This is an independent distribution repository. Source stays in the separate game project/Gitea repository. Only instructions, issue forms, release notes and the three reviewed helper scripts enter Git; runtime ZIPs/APKs belong in GitHub Releases.
 
-## Quick release from the game source folder
+## Release an accepted CI candidate
+
+For normal releases, reuse the exact accepted Windows CI candidate. Export it with `Tools/Prepare-TesterDistribution.ps1 -BuildId BUILD-ID -WindowsPackage ACCEPTED-STAGE -ReleaseNotesPath NOTES`. Check the source receipt, embedded revision and runtime byte identity, then perform distribution-specific named-launcher startup/relaunch checks in an isolated profile. Use the lower-level publisher below after those checks. This avoids recompiling already accepted gameplay.
+
+The legacy full distribution smoke assumes monthly history after80 steps and currently indexes an empty report in automation code. Its failed result is retained separately; use the current focused menu/startup cases and record the actual scope until that fixture is corrected. Never describe focused checks as the full report/save smoke.
+
+## Legacy combined build/export command
 
 Close the Unreal Editor, write reviewed release notes in a local file, and choose a fresh build ID. Run in PowerShell as the Windows user signed into Git Credential Manager:
 
@@ -20,7 +26,7 @@ Omit `-Publish` to prepare and validate a local candidate without a commit/push/
 
 `-Resume` skips building/exporting, requires identical notes, and reruns extracted validation. Build IDs and published assets are immutable. Matching partial drafts are resumed; conflicting assets/notes/tags stop the command instead of being overwritten. After publication, an unchanged retry verifies the existing release. Use a new build ID for code, package or document changes. Results are in `packages/<id>/release-result.json`, anonymous downloads in `packages/<id>/verification`, and private extracted QA evidence under the source project's `Artifacts/QA-D73`.
 
-Keep public TESTING/KNOWN_ISSUES/MAINTAINERS accurate before running. The release command preserves prose edits and synchronizes only the three managed `tools` helpers from source templates. Changes to template prose must also be applied deliberately to this repository. Release notes should distinguish automated checks, user-confirmed behavior and pending physical/headset/laptop checks. The release command does not replace required shared-code Android integration or device acceptance.
+Keep public TESTING/KNOWN_ISSUES/MAINTAINERS accurate before running. The release command preserves prose edits and synchronizes only the three managed `tools` helpers from source templates. Changes to template prose must also be applied deliberately to this repository. Release notes should distinguish automated checks, user-confirmed behavior and pending physical/headset/laptop checks. Select Android packaging only for a recorded platform need or explicit release requirement. Windows-only releases do not establish headset acceptance.
 
 ## One-time setup / authentication
 
