@@ -13,7 +13,7 @@ Gitea #287. The two histories intentionally have different roots.
   `github-main`, using Git worktree in the same local repository.
 - `origin` is Gitea. `github` is
   `https://github.com/shusain/city-simulation-vr.git`. Its source branch is
-  `github-main`; existing GitHub `main`, the default branch, release tags and
+  `github-main`, now the default for forks and source PRs; existing GitHub `main`, release tags and
   release assets remain the playtest record. Never overwrite or merge that
   unrelated release history into the source branch.
 - The `github` remote's default push refspec maps only local `github-main` to
@@ -121,13 +121,14 @@ ref, for example `git lfs push github github-main`, after the same preflight.
 
 The existing GitHub `main` has unrelated release-documentation history. The
 source was deliberately published as an additional `github-main` branch. Do not
-replace `main`, move release tags, change the default branch or replace release
-assets as part of source sync. A future unexpected destination/ref conflict is a
+replace `main`, move release tags or replace release assets as part of source
+sync. The user separately authorized changing the default to `github-main` after
+publication. A future unexpected destination/ref conflict is a
 reason to stop and review, never to force-push.
 
-Contributors should clone or select `github-main` for source work. When forking,
-include this branch; a fork containing only default `main` has playtest docs,
-not the game source. For example:
+Contributors land on default `github-main` for source work and forks. Keep source
+PRs targeted there; the separate `main` branch holds playtest docs. An explicit
+source-only clone is also available:
 
 ```powershell
 git clone --branch github-main --single-branch https://github.com/shusain/city-simulation-vr.git
