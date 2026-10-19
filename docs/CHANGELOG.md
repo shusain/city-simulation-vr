@@ -1,5 +1,19 @@
 # Development changelog
 
+## 2026-10-19 — #287 local public-source branch and synchronization
+
+Created `github-main` from clean snapshot root `ed1726a` in a separate local
+worktree. Documented reviewed cherry-pick/squash transfers from Gitea and
+cherry-picks back into isolated Gitea integration branches, with commit mapping,
+explicit public refspecs and LFS handling. Added the public-root preflight and
+installed a worktree-only pre-push guard that preserves Git LFS upload and rejects
+private ancestry/wrong remotes. Eleven guard checks and 47 offline tooling checks
+pass; public-ref/current-file secret scans and LFS integrity pass. Original Gitea
+history, source/evidence trees, primary checkout and unrelated changes are
+preserved. This is local setup only: no GitHub source destination or publication,
+native rebuild, game release or device change. Exact setup/check receipts are on
+Gitea #287; publication still requires an approved destination.
+
 ## 2026-10-19 — #283 source sharing preparation
 
 [PR284](https://git.shaun-husain.com/CitySimVR/citysim/pulls/284) removes the tracked Android File Server token and disables AFS/network defaults. Local opt-in configuration uses ignored project UserEngine.ini; tracked Android renderer settings remain intact. README, CONTRIBUTING and SECURITY describe Windows-first/Drone development, independent Python/Pillow setup and old-token/history/installed-APK limitations. The personal-use source-available LICENSE permits private modification/build/play, noncommercial source forks and fork-based patches/PRs, while restricting game-build/standalone-asset distribution and commercial derivatives; third-party terms remain independent.

@@ -3,8 +3,12 @@
 Prepared from City Sim VR Gitea main commit `c54e01c7fccba711271f3b68c025c7ba4f00a804`
 (PR #284), on 2026-10-19, under source preparation issue #286.
 
-This repository begins with one new root commit. Earlier Gitea commits, tags,
-reflogs, configuration and credentials were not imported. Historical documentation,
+This public branch begins with one new root commit. The original standalone
+export did not import earlier Gitea commits, tags, reflogs or configuration.
+When this branch is used in a shared local repository/worktree, private objects
+may exist locally but must never become ancestors of a public tip. See
+[public/private synchronization](docs/PUBLIC_SOURCE_SYNC.md) for the guarded
+workflow. Historical documentation,
 evidence, approval manifests and source assets remain as tracked at that revision;
 their original identifiers and hashes are deliberate provenance. SECURITY.md is
 clarified for this snapshot; this file is added. No game code or assets changed.
