@@ -1,0 +1,223 @@
+{
+  "materials": {
+    "CivicBrick": {
+      "base_color_constant": [
+        0.7799999713897705,
+        0.6000000238418579,
+        0.38999998569488525,
+        1.0
+      ],
+      "base_color_linked": true,
+      "tint_multiply": [
+        0.7799999713897705,
+        0.6000000238418579,
+        0.38999998569488525,
+        1.0
+      ],
+      "roughness_constant": 0.7200000286102295,
+      "metallic_constant": 0.0,
+      "transmission": 0.0,
+      "images": [
+        "CityBrick_BaseColor.png",
+        "CityBrick_ORM.png",
+        "CityBrick_Normal.png"
+      ],
+      "normal_strengths": [
+        0.25
+      ]
+    },
+    "LightStone": {
+      "base_color_constant": [
+        0.7900000214576721,
+        0.75,
+        0.6200000047683716,
+        1.0
+      ],
+      "base_color_linked": false,
+      "tint_multiply": null,
+      "roughness_constant": 0.7200000286102295,
+      "metallic_constant": 0.0,
+      "transmission": 0.0,
+      "images": [],
+      "normal_strengths": []
+    },
+    "RoofMembrane": {
+      "base_color_constant": [
+        0.1599999964237213,
+        0.20000000298023224,
+        0.25,
+        1.0
+      ],
+      "base_color_linked": true,
+      "tint_multiply": [
+        0.1599999964237213,
+        0.20000000298023224,
+        0.25,
+        1.0
+      ],
+      "roughness_constant": 0.7200000286102295,
+      "metallic_constant": 0.0,
+      "transmission": 0.0,
+      "images": [
+        "RoofMembrane_BaseColor.png",
+        "RoofMembrane_ORM.png",
+        "RoofMembrane_Normal.png"
+      ],
+      "normal_strengths": [
+        0.25
+      ]
+    },
+    "WindowGlass": {
+      "base_color_constant": [
+        0.11999999731779099,
+        0.23000000417232513,
+        0.28999999165534973,
+        1.0
+      ],
+      "base_color_linked": false,
+      "tint_multiply": null,
+      "roughness_constant": 0.7200000286102295,
+      "metallic_constant": 0.0,
+      "transmission": 0.0,
+      "images": [],
+      "normal_strengths": []
+    },
+    "EquipmentMetal": {
+      "base_color_constant": [
+        0.47999998927116394,
+        0.5199999809265137,
+        0.5400000214576721,
+        1.0
+      ],
+      "base_color_linked": true,
+      "tint_multiply": [
+        0.47999998927116394,
+        0.5199999809265137,
+        0.5400000214576721,
+        1.0
+      ],
+      "roughness_constant": 0.7200000286102295,
+      "metallic_constant": 0.30000001192092896,
+      "transmission": 0.0,
+      "images": [
+        "CityMechanical_BaseColor.png",
+        "CityMechanical_ORM.png",
+        "CityMechanical_Normal.png"
+      ],
+      "normal_strengths": [
+        0.25
+      ]
+    },
+    "ServiceAccent": {
+      "base_color_constant": [
+        0.03500000014901161,
+        0.23999999463558197,
+        0.07500000298023224,
+        1.0
+      ],
+      "base_color_linked": false,
+      "tint_multiply": null,
+      "roughness_constant": 0.699999988079071,
+      "metallic_constant": 0.10000000149011612,
+      "transmission": 0.0,
+      "images": [],
+      "normal_strengths": []
+    },
+    "ContainerLidRubber": {
+      "base_color_constant": [
+        0.012000000104308128,
+        0.014999999664723873,
+        0.017999999225139618,
+        1.0
+      ],
+      "base_color_linked": false,
+      "tint_multiply": null,
+      "roughness_constant": 0.8500000238418579,
+      "metallic_constant": 0.0,
+      "transmission": 0.0,
+      "images": [],
+      "normal_strengths": []
+    }
+  },
+  "textures": {
+    "CityBrick_BaseColor.png": {
+      "sha256": "e4c1ad7446563e3209191ca862fc4c3e065c491debd989765bc843405a5fbbfe",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "colorspace": "sRGB"
+    },
+    "CityBrick_Normal.png": {
+      "sha256": "cf71dc7902b7c3a99d9fd1e966760af9a7b428de42b22ade5fb810965866d2cc",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "colorspace": "Non-Color"
+    },
+    "CityBrick_ORM.png": {
+      "sha256": "39f2f1df859b4052afe98dcb632054398957455d58b205b13702210467a0c6e8",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "colorspace": "Non-Color"
+    },
+    "CityMechanical_BaseColor.png": {
+      "sha256": "ea75f9ab4911ad7ecf6a5e0ff5688fdc2c07ed52c3cad007ac58e8d06fe4e5ae",
+      "dimensions": [
+        512,
+        512
+      ],
+      "colorspace": "sRGB"
+    },
+    "CityMechanical_Normal.png": {
+      "sha256": "7a456d3f708d3ee42a7dfb830ac87f95ce27aeeea0e56ac444daca5da510231e",
+      "dimensions": [
+        512,
+        512
+      ],
+      "colorspace": "Non-Color"
+    },
+    "CityMechanical_ORM.png": {
+      "sha256": "0e08a253e6c30a15e3675921cab4958c0cdcf088f23f05b5fcc1eb3f87dbec98",
+      "dimensions": [
+        512,
+        512
+      ],
+      "colorspace": "Non-Color"
+    },
+    "RoofMembrane_BaseColor.png": {
+      "sha256": "e70b663d843cb50ab4479ac5e582173464e05f510f60ce2b986837259981a587",
+      "dimensions": [
+        512,
+        512
+      ],
+      "colorspace": "sRGB"
+    },
+    "RoofMembrane_Normal.png": {
+      "sha256": "0b29f7ad8fe50e859386b08d541ea37294c825d2c3a73210d3c3b15764bc19ce",
+      "dimensions": [
+        512,
+        512
+      ],
+      "colorspace": "Non-Color"
+    },
+    "RoofMembrane_ORM.png": {
+      "sha256": "a7ade624eb4477684f7101dd6b5c0fbe80b595c1b357ebf35715dfa91e54ec63",
+      "dimensions": [
+        512,
+        512
+      ],
+      "colorspace": "Non-Color"
+    }
+  },
+  "ORM": {
+    "R": "AO multiplied before tint",
+    "G": "roughness",
+    "B": "metallic"
+  },
+  "UV0": "Finite dominant-face world planar coordinates metres / 2; retained UVs unchanged",
+  "opaque_glass": true
+}

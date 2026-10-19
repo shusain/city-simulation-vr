@@ -1,0 +1,45 @@
+{
+  "issue": 273,
+  "build": 349,
+  "submitted": "73912c5997e9fad0c20b2929083b7422c1cd22cd",
+  "tested": "73912c5997e9fad0c20b2929083b7422c1cd22cd",
+  "source_manifest_sha256": "c0b9831fe2b1a2f3c49a9ee386e423e69a88ba7e388e4b7d6300253d7420297c",
+  "native_receipt_sha256": "1dd7a49a0671ec23f7861754bbd72abcfb01a4ad07c47814d004fcd9bb8fe129",
+  "previous_batch_manifest_sha256": "ea53cf9ae51225480cb1dcdc9d1495e730f881933c15a4df5c323eb1a6c3c507",
+  "url": "https://drone.shaun-husain.com/CitySimVR/citysim/349",
+  "files": [
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Meshes/SM_wind_turbine_v1",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Meshes/SM_wind_turbine_v1.uasset",
+      "sha256": "89e5b5e42618a3d51fa18a1d0b44f36484d228120930d85bce21c7356d30c448",
+      "bytes": 219211,
+      "supersedes_sha256": "4e942586ba69233fe08f1c4d222c9ee46a3996ac5e5ff75e55ac531be057e261"
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Meshes/SM_wind_turbine_v1_Damaged",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Meshes/SM_wind_turbine_v1_Damaged.uasset",
+      "sha256": "b3b47280728ef9b9039bacf0d56ba51ab73a4f26446393454ff517976679dc21",
+      "bytes": 219339,
+      "supersedes_sha256": "63abbc48efe119cccc4c47fe52b41bde0d7281379dafdadcf3f1c84a362071f7"
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Wind/SM_Wind_YawNacelle_v1",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Wind/SM_Wind_YawNacelle_v1.uasset",
+      "sha256": "52c20598f8464d0f99535dc19feeee3417d00bb2504d9bad6a1a4771ae273f64",
+      "bytes": 66332,
+      "supersedes_sha256": "e0b6d11dd4f60c50fee2876b47b5f02b904baeb2e6b84d423874cb7ca76a2855"
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Wind/SM_Wind_SpinRotor_v1",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Wind/SM_Wind_SpinRotor_v1.uasset",
+      "sha256": "fd726cd1528bdbffbf25df5971af8e7c84eead78e59433641dc1868a82bb6a72",
+      "bytes": 47726,
+      "supersedes_sha256": "f788aa2e042b44056694c2d626a4ff64945fd768687df1e9078d210818387958"
+    }
+  ],
+  "lod_checks": 12,
+  "closed_outward_solid_checks": 138,
+  "surface_probes": 528,
+  "other_native_packages_unchanged": true,
+  "status": "Targeted native preparation and four Editor checks passed; aggregate349 failed only its12 hidden-scenery visual fixture assertions. Corrected retained-input visual validation and Windows review next."
+}

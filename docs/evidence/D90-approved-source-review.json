@@ -1,0 +1,83 @@
+{
+  "task": "D90 approved-source readiness review",
+  "date": "2026-10-15",
+  "sources": [
+    {
+      "issue": 30,
+      "version": 3,
+      "approved_by": "shaun",
+      "approval_comment": "https://git.shaun-husain.com/CitySimVR/citysim/issues/30#issuecomment-428",
+      "review_url": "https://git.shaun-husain.com/CitySimVR/citysim/issues/30#issuecomment-427",
+      "approval_manifest_sha256": "89c969aff9562bb1c8a88291adc3f8b729149db708ff2b8a984eabf5456ad05f",
+      "archive_sha256": "6375efdd6876ffd6fa5c358705698b9b315e406fdfadcda9d1f087f2f1311736",
+      "dimensions_m": [
+        12.239999771118164,
+        11.489999771118164,
+        8.550000190734863
+      ],
+      "triangles": 896,
+      "material_slots": [
+        "Workshop_WarmBrick",
+        "Workshop_TealDoorsGlazing",
+        "Workshop_PaleConcrete",
+        "Workshop_DarkRoofHardware",
+        "Workshop_OrangeRobotics"
+      ],
+      "roundtrip_pass": true,
+      "source_sha": "e77e3e74d4a58be65d0a82b5b3fb1f49b4064167",
+      "job_id": "bac30cad64e2d842d1bd09f475fe777d",
+      "export_handoff_present": false,
+      "imported": false
+    },
+    {
+      "issue": 31,
+      "version": 4,
+      "approved_by": "shaun",
+      "approval_comment": "https://git.shaun-husain.com/CitySimVR/citysim/issues/31#issuecomment-424",
+      "review_url": "https://git.shaun-husain.com/CitySimVR/citysim/issues/31#issuecomment-423",
+      "approval_manifest_sha256": "f5555db3e4d700eb8bbf1d1589245119450a0b8e99ad28a1ccace000c7254bff",
+      "archive_sha256": "5f3bcc2e6f223143a3cd368627f2b917d49c6145d0c405154a2b36e4edce3b5c",
+      "dimensions_m": [
+        2.799999952316284,
+        2.799999952316284,
+        2.184999942779541
+      ],
+      "triangles": 1356,
+      "material_slots": [
+        "D90_Graphite",
+        "D90_SafetyOrange",
+        "D90_Steel",
+        "D90_ControlTeal"
+      ],
+      "roundtrip_pass": true,
+      "source_sha": "e77e3e74d4a58be65d0a82b5b3fb1f49b4064167",
+      "job_id": "155f8bc6d3bdb181681a19592b8310c6",
+      "export_handoff_present": false,
+      "imported": false
+    }
+  ],
+  "previews_visually_inspected": true,
+  "findings": [
+    "Workshop v3 has readable sawtooth clerestory, articulated-arm emblem, brick walls and teal loading doors; all geometry fits the16m footprint/9m height brief.",
+    "Robot cell v4 has a connected arm, separated base connector, readable gripper/worktable/control cabinet and fits the3m bounds. Static source, no animation promised.",
+    "Workshop brick/metal are procedural Blender shaders with no baked image maps in the bundle. Preserve approved appearance through baking or established Unreal material mappings; FBX readback does not prove shader portability.",
+    "Source approval is verified; formal approved-source export PR/unreal-handoff.json/export-created integration issue are absent. Prepare those against these exact versions before import.",
+    "D107 released the native window during this review; maintained user game remains active and must be preserved. This review makes no production edits, build, issue mutation, generation job or export/merge. D90.2 gameplay still follows the AI slice; recheck ownership before integration."
+  ],
+  "comfyui": {
+    "workflow": "generate_image_zimage",
+    "required_models_available": true,
+    "canvas": [
+      768,
+      768
+    ],
+    "new_jobs_submitted": 0,
+    "resident_weights": "unknown",
+    "suggested_first_batch": [
+      "City Chronicle woodcut illustration: housing growth",
+      "City Chronicle woodcut illustration: shopping and industry",
+      "City Chronicle woodcut illustration: automation"
+    ]
+  },
+  "next": "Select a small independent ComfyUI source preview batch; separately export pinned Blender sources and schedule D90.2 integration after native handoff and dependencies."
+}

@@ -1,0 +1,179 @@
+{
+  "issue": 150,
+  "pr": 162,
+  "status": "ready_for_human_playtest",
+  "implementation_commit": "44495c55b78c470a377f441e0742f4c810e7a5ef",
+  "editor_check": {
+    "build": 237,
+    "status": "passed",
+    "exact_cases": 15
+  },
+  "candidate": {
+    "commit": "44495c55b78c470a377f441e0742f4c810e7a5ef",
+    "submittedCommit": "44495c55b78c470a377f441e0742f4c810e7a5ef",
+    "build": "238",
+    "mode": "WindowsCandidate",
+    "tests": [
+      "CitySim.Placement.Transactions",
+      "CitySim.Art.ImportedKit",
+      "CitySim.Art.StorefrontAssets",
+      "CitySim.Art.StorefrontRoomReferences",
+      "CitySim.Art.NewspaperRendering",
+      "CitySim.Audio.NativeBankAndExplicitLoops",
+      "CitySim.Audio.BoundedPoolAndCookReferences",
+      "CitySim.Parks.NativeRigLODAndDeckContact",
+      "CitySim.Parks.RefinedSportsContactsAndGrounding",
+      "CitySim.Citizens.NativeWalk",
+      "CitySim.Citizens.StreetPool",
+      "CitySim.Assets.RuntimeOrganization",
+      "CitySim.Audio.Music.AssetsPoolAndSuspend",
+      "CitySim.Terrain.CompactHomeWalk",
+      "CitySim.Presentation.CitizenAssetsAndPlatform"
+    ],
+    "startedUtc": "2026-10-18T09:33:18.6867509Z",
+    "status": "passed",
+    "gameplayFixtures": [
+      {
+        "name": "shopping",
+        "path": "Artifacts/B003/D107Followup/ReportedCity.json",
+        "sha256": "72c2d4a0909a23135251a25953c8f1203eb297adadc39ac2126e46753481b64f"
+      },
+      {
+        "name": "health",
+        "path": "Artifacts/D127/ReportedCity.json",
+        "sha256": "276727c3a77e63654c7fc0e1fa67bed1e8214980e38ee37724049a45d1e77e27"
+      }
+    ],
+    "clientTests": [
+      "CitySim.Desktop.StorefrontRooms",
+      "CitySim.Desktop.CitizenWalkVisual",
+      "CitySim.Art.StorefrontRoomReferences",
+      "CitySim.Art.NewspaperRendering",
+      "CitySim.Assets.RuntimeOrganization",
+      "CitySim.Audio.Music.AssetsPoolAndSuspend"
+    ],
+    "smokeRuntime": {
+      "executable": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\CI\\WindowsSmoke\\Runtime\\CitySimVR\\Binaries\\Win64\\CitySimVR.exe",
+      "inventory": "SmokeRuntime.json",
+      "fileCount": 53,
+      "inbound": "Block"
+    },
+    "packageSha256": "f2696f469273174302cc15e1848106eec396a6e32bdf7f80b7ed341765cdd2bb",
+    "finishedUtc": "2026-10-18T09:45:58.1128630Z"
+  },
+  "identity": {
+    "status": "passed",
+    "build": "238",
+    "submitted": "44495c55b78c470a377f441e0742f4c810e7a5ef",
+    "built": "44495c55b78c470a377f441e0742f4c810e7a5ef",
+    "package_sha256": "f2696f469273174302cc15e1848106eec396a6e32bdf7f80b7ed341765cdd2bb",
+    "files": 53,
+    "candidate_and_extracted_match_executed_runtime_receipt": true,
+    "editor_cases": [
+      "CitySim.Placement.Transactions",
+      "CitySim.Art.ImportedKit",
+      "CitySim.Art.StorefrontAssets",
+      "CitySim.Art.StorefrontRoomReferences",
+      "CitySim.Art.NewspaperRendering",
+      "CitySim.Audio.NativeBankAndExplicitLoops",
+      "CitySim.Audio.BoundedPoolAndCookReferences",
+      "CitySim.Parks.NativeRigLODAndDeckContact",
+      "CitySim.Parks.RefinedSportsContactsAndGrounding",
+      "CitySim.Citizens.NativeWalk",
+      "CitySim.Citizens.StreetPool",
+      "CitySim.Assets.RuntimeOrganization",
+      "CitySim.Audio.Music.AssetsPoolAndSuspend",
+      "CitySim.Terrain.CompactHomeWalk",
+      "CitySim.Presentation.CitizenAssetsAndPlatform"
+    ],
+    "client_cases": [
+      "CitySim.Desktop.StorefrontRooms",
+      "CitySim.Desktop.CitizenWalkVisual",
+      "CitySim.Art.StorefrontRoomReferences",
+      "CitySim.Art.NewspaperRendering",
+      "CitySim.Assets.RuntimeOrganization",
+      "CitySim.Audio.Music.AssetsPoolAndSuspend"
+    ],
+    "client_widths": [
+      1280,
+      1024
+    ],
+    "extraction": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\OrganizationReview\\Remaining\\Candidate238\\Extracted",
+    "new_process_launched": false
+  },
+  "cook": {
+    "status": "passed",
+    "entries": 1531,
+    "required_live_assets": 141,
+    "required_music": 9,
+    "old_task_packages": 0
+  },
+  "offline": {
+    "checks": 36,
+    "python_cases": 51,
+    "python_sources": 357,
+    "powershell_sources": 85,
+    "preview_wrapper_cases": 16,
+    "typed_forwarding_cases": 8
+  },
+  "native": {
+    "renames": 247,
+    "current_packages": 321,
+    "source_relocations": 164,
+    "source_metadata_verified": 87,
+    "redirectors_removed": 124,
+    "wave_literal_repairs": 21,
+    "idle_sample_repairs": 1
+  },
+  "captures": {
+    "1280": 70,
+    "1024": 70
+  },
+  "visually_inspected": [
+    {
+      "path": "Client-1280-Report/D122/Newspaper-700.png",
+      "sha256": "86389d44301e9fa4986deb88867f52281d25b689c5b6f90267ae9f57d63c9498"
+    },
+    {
+      "path": "Client-1280-Report/D122/Bakery-Low-A-Day.png",
+      "sha256": "88ea8f417a6fb0861eb2047765abcf1b3213df5de4663d7d6fde895dd31c82e4"
+    },
+    {
+      "path": "Client-1280-Report/D122/Repairs-Medium-A-Day.png",
+      "sha256": "5fdbc5859f8dc9eceb0c0d1ea1163dde62dc0cde3fce173fec7257ec612e223f"
+    },
+    {
+      "path": "Client-1280-Report/D122/Repairs-Low-A-Night.png",
+      "sha256": "cd466f600ef071f33bb7c2ce54457fa308646fae6fd9a971e50f6ce7241d6c76"
+    },
+    {
+      "path": "D124-D125-Client-1280-User/Saved/Automation/CitizenWalk/HomeToShop-3.png",
+      "sha256": "f3ae016430e53cef48924d350961ff657ec738f90ebaa7ce7bf6e9f132a35b7c"
+    },
+    {
+      "path": "Client-1024-Report/D122/Repairs-Low-A-Night.png",
+      "sha256": "cd466f600ef071f33bb7c2ce54457fa308646fae6fd9a971e50f6ce7241d6c76"
+    },
+    {
+      "path": "Client-1024-Report/D122/Newspaper-700.png",
+      "sha256": "86389d44301e9fa4986deb88867f52281d25b689c5b6f90267ae9f57d63c9498"
+    },
+    {
+      "path": "D124-D125-Client-1024-User/Saved/Automation/CitizenWalk/HomeToShop-3.png",
+      "sha256": "f3ae016430e53cef48924d350961ff657ec738f90ebaa7ce7bf6e9f132a35b7c"
+    }
+  ],
+  "launcher": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\OrganizationReview\\Remaining\\Candidate238\\Play-Candidate.cmd",
+  "human_acceptance": "pending",
+  "quest": "deferred under PC-first policy",
+  "maintained_package_and_player_files_changed": false,
+  "provenance_exceptions": [
+    "generated issue/version exports and approvals",
+    "historical evidence and pinned recipes",
+    "source-internal authoring names, including 18 retained study Interchange snapshots",
+    "legacy CLI and D126 CI parser tokens"
+  ],
+  "next": "Human playtest of Drone238/44495c5; after acceptance, normal checked merge of PR162 and close issue150.",
+  "game_revision": "dev-db04a2bad5cbb8d5f3bd",
+  "schema": 72
+}

@@ -1,0 +1,100 @@
+{
+  "task": 157,
+  "source_issue": 168,
+  "version": 1,
+  "role": "SpinRotor",
+  "key": "wind_SpinRotor",
+  "source": "ArtSource/Blender/UtilityIntegration/CityUtility_wind_three_roles_v1.blend",
+  "source_sha256": "b010370c17c292e29f7de76e6757af51dc2e55817cb4394358aed60e41bc2830",
+  "original_plan_sha256": "8765c24b51df26308d838c12da1a7af867b0903e4ecc14b5a6e0aecbbb764b78",
+  "declared_source_slots": [
+    "OffWhite_PaintedSteel",
+    "BlueGrey_Machinery",
+    "Mechanical_Mapped"
+  ],
+  "used_source_material_union": [
+    "BlueGrey_Machinery",
+    "OffWhite_PaintedSteel"
+  ],
+  "effective_native_slots": [
+    "OffWhite_PaintedSteel",
+    "BlueGrey_Machinery"
+  ],
+  "removed_empty_slot": "Mechanical_Mapped",
+  "lods": [
+    {
+      "lod": 0,
+      "export": "ArtSource/Exports/UtilityIntegration/wind_turbine/ThreeRoles/SM_Utility_wind_turbine_v1_SpinRotor_LOD0.fbx",
+      "export_sha256": "1a32b0a6b239c44d508b7d1291f78c552d0f8f63b523e68fbcbd73c9509fe516",
+      "declared_source_slots": [
+        "OffWhite_PaintedSteel",
+        "BlueGrey_Machinery",
+        "Mechanical_Mapped"
+      ],
+      "source_triangles_by_material": {
+        "BlueGrey_Machinery": 92,
+        "OffWhite_PaintedSteel": 824
+      },
+      "actual_blender_fbx_triangles_by_material": {
+        "BlueGrey_Machinery": 92,
+        "OffWhite_PaintedSteel": 824
+      },
+      "triangles": 916,
+      "empty_slot": "Mechanical_Mapped",
+      "empty_slot_used_triangle_count": 0,
+      "empty_slot_probe_count": 0,
+      "all_original_geometry_bounds_uvs_normals_and_probes_retained": true
+    },
+    {
+      "lod": 1,
+      "export": "ArtSource/Exports/UtilityIntegration/wind_turbine/ThreeRoles/SM_Utility_wind_turbine_v1_SpinRotor_LOD1.fbx",
+      "export_sha256": "7578454fb63bffdfd458c449544c7feeeb17231e3480b41c2733963fc7965e28",
+      "declared_source_slots": [
+        "OffWhite_PaintedSteel",
+        "BlueGrey_Machinery",
+        "Mechanical_Mapped"
+      ],
+      "source_triangles_by_material": {
+        "BlueGrey_Machinery": 92,
+        "OffWhite_PaintedSteel": 824
+      },
+      "actual_blender_fbx_triangles_by_material": {
+        "BlueGrey_Machinery": 92,
+        "OffWhite_PaintedSteel": 824
+      },
+      "triangles": 916,
+      "empty_slot": "Mechanical_Mapped",
+      "empty_slot_used_triangle_count": 0,
+      "empty_slot_probe_count": 0,
+      "all_original_geometry_bounds_uvs_normals_and_probes_retained": true
+    },
+    {
+      "lod": 2,
+      "export": "ArtSource/Exports/UtilityIntegration/wind_turbine/ThreeRoles/SM_Utility_wind_turbine_v1_SpinRotor_LOD2.fbx",
+      "export_sha256": "7bbe85bf8ae3561da31e18a73bbd9230679a29605587bf688fc04d569934b627",
+      "declared_source_slots": [
+        "OffWhite_PaintedSteel",
+        "BlueGrey_Machinery",
+        "Mechanical_Mapped"
+      ],
+      "source_triangles_by_material": {
+        "BlueGrey_Machinery": 92,
+        "OffWhite_PaintedSteel": 824
+      },
+      "actual_blender_fbx_triangles_by_material": {
+        "BlueGrey_Machinery": 92,
+        "OffWhite_PaintedSteel": 824
+      },
+      "triangles": 916,
+      "empty_slot": "Mechanical_Mapped",
+      "empty_slot_used_triangle_count": 0,
+      "empty_slot_probe_count": 0,
+      "all_original_geometry_bounds_uvs_normals_and_probes_retained": true
+    }
+  ],
+  "other_role_or_whole_slots_unchanged": true,
+  "source_graphs_or_material_instances_removed": false,
+  "geometry_or_source_preparation_or_proof_edits": false,
+  "protected_input_hashes_unchanged": 261,
+  "native_execution": false
+}

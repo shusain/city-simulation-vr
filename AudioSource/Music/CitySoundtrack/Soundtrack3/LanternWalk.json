@@ -1,0 +1,717 @@
+{
+  "schema": 1,
+  "id": "LanternWalk",
+  "title": "Lantern Walk",
+  "bpm": 104,
+  "bars": 72,
+  "seed": 83804,
+  "synthSource": "SteelPanSynths.scd",
+  "synthDependencies": [
+    "../../../Tools/CitySoundtrackScore.py",
+    "../Soundtrack1/AlbumSynths.scd"
+  ],
+  "sample": {
+    "mode": "synthBed"
+  },
+  "targetLUFS": -24,
+  "truePeakCeilingDBTP": -6,
+  "progressions": {
+    "main": [
+      [
+        55,
+        62,
+        66,
+        69,
+        74
+      ],
+      [
+        52,
+        59,
+        62,
+        66,
+        71
+      ],
+      [
+        57,
+        64,
+        67,
+        71,
+        76
+      ],
+      [
+        50,
+        57,
+        59,
+        64,
+        69
+      ]
+    ],
+    "contrast": [
+      [
+        57,
+        64,
+        67,
+        71,
+        76
+      ],
+      [
+        55,
+        62,
+        66,
+        69,
+        74
+      ],
+      [
+        50,
+        57,
+        59,
+        64,
+        69
+      ],
+      [
+        52,
+        59,
+        62,
+        66,
+        71
+      ]
+    ]
+  },
+  "melodies": {
+    "main": [
+      [
+        [
+          0,
+          69,
+          1.5
+        ],
+        [
+          1.5,
+          66,
+          1
+        ],
+        [
+          2.5,
+          67,
+          1.5
+        ],
+        [
+          4,
+          69,
+          1
+        ],
+        [
+          5.5,
+          71,
+          1.5
+        ],
+        [
+          6.75,
+          74,
+          1
+        ]
+      ],
+      [
+        [
+          0,
+          67,
+          1.5
+        ],
+        [
+          1.5,
+          69,
+          1
+        ],
+        [
+          2.5,
+          71,
+          1.5
+        ],
+        [
+          4,
+          74,
+          1
+        ],
+        [
+          5.5,
+          74,
+          1.5
+        ],
+        [
+          6.75,
+          71,
+          1
+        ]
+      ],
+      [
+        [
+          0,
+          71,
+          1.5
+        ],
+        [
+          1.5,
+          74,
+          1
+        ],
+        [
+          2.5,
+          74,
+          1.5
+        ],
+        [
+          4,
+          71,
+          1
+        ],
+        [
+          5.5,
+          69,
+          1.5
+        ],
+        [
+          6.75,
+          66,
+          1
+        ]
+      ],
+      [
+        [
+          0,
+          74,
+          1.5
+        ],
+        [
+          1.5,
+          71,
+          1
+        ],
+        [
+          2.5,
+          69,
+          1.5
+        ],
+        [
+          4,
+          66,
+          1
+        ],
+        [
+          5.5,
+          67,
+          1.5
+        ],
+        [
+          6.75,
+          69,
+          1
+        ]
+      ]
+    ],
+    "contrast": [
+      [
+        [
+          0,
+          79,
+          0.5
+        ],
+        [
+          0.75,
+          76,
+          0.5
+        ],
+        [
+          1.5,
+          83,
+          0.75
+        ],
+        [
+          2.75,
+          69,
+          0.25
+        ],
+        [
+          3.5,
+          76,
+          0.5
+        ],
+        [
+          4.5,
+          79,
+          1
+        ],
+        [
+          6,
+          76,
+          0.5
+        ],
+        [
+          7.25,
+          69,
+          0.25
+        ]
+      ],
+      [
+        [
+          0,
+          78,
+          0.5
+        ],
+        [
+          0.75,
+          74,
+          0.5
+        ],
+        [
+          1.5,
+          81,
+          0.75
+        ],
+        [
+          2.75,
+          67,
+          0.25
+        ],
+        [
+          3.5,
+          74,
+          0.5
+        ],
+        [
+          4.5,
+          78,
+          1
+        ],
+        [
+          6,
+          74,
+          0.5
+        ],
+        [
+          7.25,
+          67,
+          0.25
+        ]
+      ],
+      [
+        [
+          0,
+          71,
+          0.5
+        ],
+        [
+          0.75,
+          69,
+          0.5
+        ],
+        [
+          1.5,
+          76,
+          0.75
+        ],
+        [
+          2.75,
+          62,
+          0.25
+        ],
+        [
+          3.5,
+          81,
+          0.5
+        ],
+        [
+          4.5,
+          71,
+          1
+        ],
+        [
+          6,
+          69,
+          0.5
+        ],
+        [
+          7.25,
+          62,
+          0.25
+        ]
+      ],
+      [
+        [
+          0,
+          74,
+          0.5
+        ],
+        [
+          0.75,
+          71,
+          0.5
+        ],
+        [
+          1.5,
+          78,
+          0.75
+        ],
+        [
+          2.75,
+          64,
+          0.25
+        ],
+        [
+          3.5,
+          83,
+          0.5
+        ],
+        [
+          4.5,
+          74,
+          1
+        ],
+        [
+          6,
+          71,
+          0.5
+        ],
+        [
+          7.25,
+          64,
+          0.25
+        ]
+      ]
+    ],
+    "response": [
+      [
+        [
+          0,
+          67,
+          1
+        ],
+        [
+          1,
+          74,
+          0.5
+        ],
+        [
+          1.5,
+          78,
+          0.5
+        ],
+        [
+          2.75,
+          74,
+          0.25
+        ],
+        [
+          4,
+          81,
+          1
+        ],
+        [
+          5.25,
+          78,
+          0.25
+        ],
+        [
+          5.5,
+          74,
+          0.5
+        ],
+        [
+          7,
+          67,
+          0.75
+        ]
+      ],
+      [
+        [
+          0,
+          64,
+          1
+        ],
+        [
+          1,
+          71,
+          0.5
+        ],
+        [
+          1.5,
+          74,
+          0.5
+        ],
+        [
+          2.75,
+          83,
+          0.25
+        ],
+        [
+          4,
+          78,
+          1
+        ],
+        [
+          5.25,
+          74,
+          0.25
+        ],
+        [
+          5.5,
+          71,
+          0.5
+        ],
+        [
+          7,
+          64,
+          0.75
+        ]
+      ],
+      [
+        [
+          0,
+          69,
+          1
+        ],
+        [
+          1,
+          76,
+          0.5
+        ],
+        [
+          1.5,
+          79,
+          0.5
+        ],
+        [
+          2.75,
+          76,
+          0.25
+        ],
+        [
+          4,
+          83,
+          1
+        ],
+        [
+          5.25,
+          79,
+          0.25
+        ],
+        [
+          5.5,
+          76,
+          0.5
+        ],
+        [
+          7,
+          69,
+          0.75
+        ]
+      ],
+      [
+        [
+          0,
+          62,
+          1
+        ],
+        [
+          1,
+          69,
+          0.5
+        ],
+        [
+          1.5,
+          71,
+          0.5
+        ],
+        [
+          2.75,
+          81,
+          0.25
+        ],
+        [
+          4,
+          76,
+          1
+        ],
+        [
+          5.25,
+          71,
+          0.25
+        ],
+        [
+          5.5,
+          69,
+          0.5
+        ],
+        [
+          7,
+          62,
+          0.75
+        ]
+      ]
+    ]
+  },
+  "sections": [
+    {
+      "name": "Wooden opening",
+      "startBar": 0,
+      "bars": 8,
+      "progression": "main",
+      "melody": "main",
+      "density": "sparse",
+      "drums": 0.8,
+      "bass": 0.85,
+      "texture": 0.9,
+      "lead": 0.85,
+      "tone": 2400
+    },
+    {
+      "name": "Steel-pan first answer",
+      "startBar": 8,
+      "bars": 8,
+      "progression": "main",
+      "melody": "response",
+      "density": "full",
+      "drums": 1,
+      "bass": 1,
+      "texture": 0.75,
+      "lead": 1,
+      "tone": 2400,
+      "leadSynth": "SteelPan",
+      "layerSynth": "AlbumMarimba",
+      "layerGain": 0.28,
+      "layerEvery": 2
+    },
+    {
+      "name": "Mallet theme",
+      "startBar": 16,
+      "bars": 16,
+      "progression": "main",
+      "melody": "main",
+      "density": "full",
+      "drums": 1,
+      "bass": 1,
+      "texture": 0.75,
+      "lead": 1,
+      "tone": 2400
+    },
+    {
+      "name": "Short turnaround",
+      "startBar": 32,
+      "bars": 4,
+      "progression": "contrast",
+      "melody": "main",
+      "density": "break",
+      "drums": 0.8,
+      "bass": 0.85,
+      "texture": 0.9,
+      "lead": 0.85,
+      "tone": 2400
+    },
+    {
+      "name": "Steel-pan and mallet replies",
+      "startBar": 36,
+      "bars": 16,
+      "progression": "contrast",
+      "melody": "contrast",
+      "density": "full",
+      "drums": 1,
+      "bass": 1,
+      "texture": 0.75,
+      "lead": 1,
+      "tone": 2400,
+      "leadSynth": "SteelPan",
+      "lift": true,
+      "layerSynth": "AlbumMarimba",
+      "layerGain": 0.28,
+      "layerEvery": 2
+    },
+    {
+      "name": "Mallet lift",
+      "startBar": 52,
+      "bars": 8,
+      "progression": "main",
+      "melody": "response",
+      "density": "full",
+      "drums": 1,
+      "bass": 1,
+      "texture": 0.75,
+      "lead": 1,
+      "tone": 2400,
+      "lift": true
+    },
+    {
+      "name": "Lanterns recede",
+      "startBar": 60,
+      "bars": 12,
+      "progression": "main",
+      "melody": "main",
+      "density": "outro",
+      "drums": 0.8,
+      "bass": 0.85,
+      "texture": 0.9,
+      "lead": 0.85,
+      "tone": 2400
+    }
+  ],
+  "albumProfile": {
+    "leadSynth": "AlbumMarimba",
+    "answerSynth": "SteelPan",
+    "leadGain": 0.12,
+    "tone": 2100,
+    "kickBeats": [
+      0,
+      2,
+      2.75
+    ],
+    "snareBeats": [
+      1,
+      3
+    ],
+    "backbeatSynth": "Stick",
+    "backbeatGain": 0.2,
+    "hatSynth": "Shaker",
+    "hatGain": 0.085,
+    "hatBeats": [
+      0.0,
+      0.535,
+      1.0,
+      1.535,
+      2.0,
+      2.535,
+      3.0,
+      3.535
+    ],
+    "bassSynth": "Bass",
+    "bassGain": 0.13,
+    "bassPattern": [
+      [
+        0,
+        0.6,
+        0
+      ],
+      [
+        1.5,
+        0.35,
+        7
+      ],
+      [
+        2.5,
+        0.4,
+        0
+      ],
+      [
+        3.25,
+        0.3,
+        12
+      ]
+    ],
+    "padGain": 0.018,
+    "padColor": 0,
+    "synthGains": {
+      "SteelPan": 0.85
+    },
+    "kickGain": 0.8
+  },
+  "intent": "Steel-pan-style replies blended with wooden mallets; the104BPM tempo, melody, harmony and arrangement are retained.",
+  "feedbackSource": "Artifacts/D82/Soundtrack2/Feedback/6d91d08379080c46db00cd38208873e3ccfed548b0f15d47d987978930a70993/e9e331b2-7224-40d7-9af4-472f3994c221.json",
+  "feedbackNotes": "the plucked sounds are more audible now but I think I'd prefer something like a steel drum sound mixed with the mallets, the pluck just feels out of place in the tune."
+}

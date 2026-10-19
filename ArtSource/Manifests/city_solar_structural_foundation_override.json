@@ -1,0 +1,3315 @@
+{
+  "parent_issue": 157,
+  "terrain_owner": 125,
+  "source_issue": 169,
+  "version": 3,
+  "source_preparation_head": "33c7f223c59a8f7af7c9419df458e160a26e42f0",
+  "material_recipe_head": "3bfb7e74d38dae2fb5b6b60a401946db9b99eba8",
+  "original_native_plan": {
+    "path": "ArtSource/Manifests/city_utility_native_import_plan.json",
+    "sha256": "8765c24b51df26308d838c12da1a7af867b0903e4ecc14b5a6e0aecbbb764b78"
+  },
+  "source_integration_manifest": {
+    "path": "ArtSource/Manifests/city_utility_integration.json",
+    "sha256": "ee3b1272d3266199480262c05e45c6d0b07173174521b407c56ba808cc0c77df"
+  },
+  "source": "ArtSource/Blender/UtilityIntegration/CityUtility_solar_structural_feet_v3.blend",
+  "source_sha256": "22ba986c9f5d4d0e141a48f3d93fdf2eca42db235bacb5b4d1cf0ec214a840d2",
+  "object": "SM_Utility_solar_farm_v3_StructuralFeet_Z0",
+  "export": "ArtSource/Exports/UtilityIntegration/Foundations/SM_Utility_solar_farm_v3_StructuralFeet_Z0.fbx",
+  "export_sha256": "b3f39918ab425420d64f4ab3561a501a367f7e86a9d1ad5fc04283e5cf7374fe",
+  "facts": {
+    "triangles_by_material": {
+      "Concrete": 192
+    },
+    "material_slots": [
+      "Concrete"
+    ],
+    "uv_channels": 1,
+    "uv_names": [
+      "UV0"
+    ],
+    "render_uv_channel": 0,
+    "bounds_m": {
+      "min": [
+        -12.059999465942383,
+        -13.524999618530273,
+        -1.0
+      ],
+      "max": [
+        12.059999465942383,
+        8.15999984741211,
+        0.0
+      ]
+    },
+    "samples": {
+      "Concrete": [
+        {
+          "position_m": [
+            -12.059999465942383,
+            -7.440000057220459,
+            0.0
+          ],
+          "normal": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "uv0": [
+            -6.029999732971191,
+            -3.7200000286102295
+          ]
+        },
+        {
+          "position_m": [
+            -3.5399999618530273,
+            -7.440000057220459,
+            0.0
+          ],
+          "normal": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "uv0": [
+            -1.7699999809265137,
+            -3.7200000286102295
+          ]
+        },
+        {
+          "position_m": [
+            4.260000228881836,
+            -8.15999984741211,
+            -1.0
+          ],
+          "normal": [
+            0.0,
+            0.0,
+            -1.0
+          ],
+          "uv0": [
+            2.130000114440918,
+            -4.079999923706055
+          ]
+        },
+        {
+          "position_m": [
+            11.34000015258789,
+            -7.440000057220459,
+            -1.0
+          ],
+          "normal": [
+            0.0,
+            0.0,
+            -1.0
+          ],
+          "uv0": [
+            5.670000076293945,
+            -3.7200000286102295
+          ]
+        },
+        {
+          "position_m": [
+            -12.059999465942383,
+            -0.36000001430511475,
+            0.0
+          ],
+          "normal": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "uv0": [
+            -6.029999732971191,
+            -0.18000000715255737
+          ]
+        },
+        {
+          "position_m": [
+            -3.5399999618530273,
+            -0.36000001430511475,
+            -1.0
+          ],
+          "normal": [
+            0.0,
+            0.0,
+            -1.0
+          ],
+          "uv0": [
+            -1.7699999809265137,
+            -0.18000000715255737
+          ]
+        },
+        {
+          "position_m": [
+            3.5399999618530273,
+            0.36000001430511475,
+            -1.0
+          ],
+          "normal": [
+            0.0,
+            0.0,
+            -1.0
+          ],
+          "uv0": [
+            1.7699999809265137,
+            0.18000000715255737
+          ]
+        },
+        {
+          "position_m": [
+            12.059999465942383,
+            -0.36000001430511475,
+            0.0
+          ],
+          "normal": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "uv0": [
+            0.36000001430511475,
+            0.0
+          ]
+        },
+        {
+          "position_m": [
+            -11.34000015258789,
+            7.440000057220459,
+            -1.0
+          ],
+          "normal": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "uv0": [
+            0.3599998950958252,
+            0.5
+          ]
+        },
+        {
+          "position_m": [
+            -4.260000228881836,
+            8.15999984741211,
+            0.0
+          ],
+          "normal": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "uv0": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "position_m": [
+            4.260000228881836,
+            8.15999984741211,
+            -1.0
+          ],
+          "normal": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "uv0": [
+            0.3600001335144043,
+            0.5
+          ]
+        },
+        {
+          "position_m": [
+            11.34000015258789,
+            7.440000057220459,
+            0.0
+          ],
+          "normal": [
+            -1.0,
+            0.0,
+            0.0
+          ],
+          "uv0": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "position_m": [
+            9.470000267028809,
+            -12.875,
+            -1.0
+          ],
+          "normal": [
+            -1.0,
+            0.0,
+            0.0
+          ],
+          "uv0": [
+            0.3249998092651367,
+            0.5
+          ]
+        },
+        {
+          "position_m": [
+            10.770000457763672,
+            -13.524999618530273,
+            -1.0
+          ],
+          "normal": [
+            -1.0,
+            0.0,
+            0.0
+          ],
+          "uv0": [
+            0.0,
+            0.5
+          ]
+        },
+        {
+          "position_m": [
+            6.670000076293945,
+            -13.524999618530273,
+            0.0
+          ],
+          "normal": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "uv0": [
+            0.07999992370605469,
+            0.0
+          ]
+        },
+        {
+          "position_m": [
+            8.130000114440918,
+            -13.524999618530273,
+            -1.0
+          ],
+          "normal": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "uv0": [
+            0.0,
+            0.5
+          ]
+        }
+      ]
+    }
+  },
+  "source_support_top_z_m": 0.0,
+  "local_planes_m": [
+    -1.0,
+    0.0
+  ],
+  "included_columns": [
+    {
+      "component": "R1T1_SteelFoot",
+      "kind": "structural_ground_contact",
+      "source_top_z_m": 0.0,
+      "vertex_start": 0,
+      "vertex_count": 8,
+      "face_start": 0,
+      "face_count": 8,
+      "top_triangle_count": 2,
+      "boundary_edge_count": 4,
+      "source_loop_count": 1,
+      "source_hole_count": 0,
+      "contact_area_m2": 0.5183993545533667
+    },
+    {
+      "component": "R1T2_SteelFoot",
+      "kind": "structural_ground_contact",
+      "source_top_z_m": 0.0,
+      "vertex_start": 8,
+      "vertex_count": 8,
+      "face_start": 8,
+      "face_count": 8,
+      "top_triangle_count": 2,
+      "boundary_edge_count": 4,
+      "source_loop_count": 1,
+      "source_hole_count": 0,
+      "contact_area_m2": 0.5184000411986744
+    },
+    {
+      "component": "R1T3_SteelFoot",
+      "kind": "structural_ground_contact",
+      "source_top_z_m": 0.0,
+      "vertex_start": 16,
+      "vertex_count": 8,
+      "face_start": 16,
+      "face_count": 8,
+      "top_triangle_count": 2,
+      "boundary_edge_count": 4,
+      "source_loop_count": 1,
+      "source_hole_count": 0,
+      "contact_area_m2": 0.5184000411986744
+    },
+    {
+      "component": "R1T4_SteelFoot",
+      "kind": "structural_ground_contact",
+      "source_top_z_m": 0.0,
+      "vertex_start": 24,
+      "vertex_count": 8,
+      "face_start": 24,
+      "face_count": 8,
+      "top_triangle_count": 2,
+      "boundary_edge_count": 4,
+      "source_loop_count": 1,
+      "source_hole_count": 0,
+      "contact_area_m2": 0.5183993545533667
+    },
+    {
+      "component": "R2T1_SteelFoot",
+      "kind": "structural_ground_contact",
+      "source_top_z_m": 0.0,
+      "vertex_start": 32,
+      "vertex_count": 8,
+      "face_start": 32,
+      "face_count": 8,
+      "top_triangle_count": 2,
+      "boundary_edge_count": 4,
+      "source_loop_count": 1,
+      "source_hole_count": 0,
+      "contact_area_m2": 0.51839952621458
+    },
+    {
+      "component": "R2T2_SteelFoot",
+      "kind": "structural_ground_contact",
+      "source_top_z_m": 0.0,
+      "vertex_start": 40,
+      "vertex_count": 8,
+      "face_start": 40,
+      "face_count": 8,
+      "top_triangle_count": 2,
+      "boundary_edge_count": 4,
+      "source_loop_count": 1,
+      "source_hole_count": 0,
+      "contact_area_m2": 0.5184002128601151
+    },
+    {
+      "component": "R2T3_SteelFoot",
+      "kind": "structural_ground_contact",
+      "source_top_z_m": 0.0,
+      "vertex_start": 48,
+      "vertex_count": 8,
+      "face_start": 48,
+      "face_count": 8,
+      "top_triangle_count": 2,
+      "boundary_edge_count": 4,
+      "source_loop_count": 1,
+      "source_hole_count": 0,
+      "contact_area_m2": 0.5184002128601151
+    },
+    {
+      "component": "R2T4_SteelFoot",
+      "kind": "structural_ground_contact",
+      "source_top_z_m": 0.0,
+      "vertex_start": 56,
+      "vertex_count": 8,
+      "face_start": 56,
+      "face_count": 8,
+      "top_triangle_count": 2,
+      "boundary_edge_count": 4,
+      "source_loop_count": 1,
+      "source_hole_count": 0,
+      "contact_area_m2": 0.51839952621458
+    },
+    {
+      "component": "R3T1_SteelFoot",
+      "kind": "structural_ground_contact",
+      "source_top_z_m": 0.0,
+      "vertex_start": 64,
+      "vertex_count": 8,
+      "face_start": 64,
+      "face_count": 8,
+      "top_triangle_count": 2,
+      "boundary_edge_count": 4,
+      "source_loop_count": 1,
+      "source_hole_count": 0,
+      "contact_area_m2": 0.5183993545533667
+    },
+    {
+      "component": "R3T2_SteelFoot",
+      "kind": "structural_ground_contact",
+      "source_top_z_m": 0.0,
+      "vertex_start": 72,
+      "vertex_count": 8,
+      "face_start": 72,
+      "face_count": 8,
+      "top_triangle_count": 2,
+      "boundary_edge_count": 4,
+      "source_loop_count": 1,
+      "source_hole_count": 0,
+      "contact_area_m2": 0.5184000411986744
+    },
+    {
+      "component": "R3T3_SteelFoot",
+      "kind": "structural_ground_contact",
+      "source_top_z_m": 0.0,
+      "vertex_start": 80,
+      "vertex_count": 8,
+      "face_start": 80,
+      "face_count": 8,
+      "top_triangle_count": 2,
+      "boundary_edge_count": 4,
+      "source_loop_count": 1,
+      "source_hole_count": 0,
+      "contact_area_m2": 0.5184000411986744
+    },
+    {
+      "component": "R3T4_SteelFoot",
+      "kind": "structural_ground_contact",
+      "source_top_z_m": 0.0,
+      "vertex_start": 88,
+      "vertex_count": 8,
+      "face_start": 88,
+      "face_count": 8,
+      "top_triangle_count": 2,
+      "boundary_edge_count": 4,
+      "source_loop_count": 1,
+      "source_hole_count": 0,
+      "contact_area_m2": 0.5183993545533667
+    },
+    {
+      "component": "Inverter0_Foot0",
+      "kind": "structural_ground_contact",
+      "source_top_z_m": 0.0,
+      "vertex_start": 96,
+      "vertex_count": 8,
+      "face_start": 96,
+      "face_count": 8,
+      "top_triangle_count": 2,
+      "boundary_edge_count": 4,
+      "source_loop_count": 1,
+      "source_hole_count": 0,
+      "contact_area_m2": 0.10399983978277305
+    },
+    {
+      "component": "Inverter0_Foot1",
+      "kind": "structural_ground_contact",
+      "source_top_z_m": 0.0,
+      "vertex_start": 104,
+      "vertex_count": 8,
+      "face_start": 104,
+      "face_count": 8,
+      "top_triangle_count": 2,
+      "boundary_edge_count": 4,
+      "source_loop_count": 1,
+      "source_hole_count": 0,
+      "contact_area_m2": 0.10399983978277305
+    },
+    {
+      "component": "Inverter1_Foot0",
+      "kind": "structural_ground_contact",
+      "source_top_z_m": 0.0,
+      "vertex_start": 112,
+      "vertex_count": 8,
+      "face_start": 112,
+      "face_count": 8,
+      "top_triangle_count": 2,
+      "boundary_edge_count": 4,
+      "source_loop_count": 1,
+      "source_hole_count": 0,
+      "contact_area_m2": 0.10399983978277305
+    },
+    {
+      "component": "Inverter1_Foot1",
+      "kind": "structural_ground_contact",
+      "source_top_z_m": 0.0,
+      "vertex_start": 120,
+      "vertex_count": 8,
+      "face_start": 120,
+      "face_count": 8,
+      "top_triangle_count": 2,
+      "boundary_edge_count": 4,
+      "source_loop_count": 1,
+      "source_hole_count": 0,
+      "contact_area_m2": 0.10399983978277305
+    }
+  ],
+  "closed_topology": [
+    {
+      "component": "R1T1_SteelFoot",
+      "closed_edges": 14,
+      "outward_signed_volume_m3": 0.5183978875478116,
+      "area_times_unit_depth_m3": 0.5183993545533667
+    },
+    {
+      "component": "R1T2_SteelFoot",
+      "closed_edges": 14,
+      "outward_signed_volume_m3": 0.5183995962142944,
+      "area_times_unit_depth_m3": 0.5184000411986744
+    },
+    {
+      "component": "R1T3_SteelFoot",
+      "closed_edges": 14,
+      "outward_signed_volume_m3": 0.5184006293614705,
+      "area_times_unit_depth_m3": 0.5184000411986744
+    },
+    {
+      "component": "R1T4_SteelFoot",
+      "closed_edges": 14,
+      "outward_signed_volume_m3": 0.518396298090617,
+      "area_times_unit_depth_m3": 0.5183993545533667
+    },
+    {
+      "component": "R2T1_SteelFoot",
+      "closed_edges": 14,
+      "outward_signed_volume_m3": 0.5183992336193723,
+      "area_times_unit_depth_m3": 0.51839952621458
+    },
+    {
+      "component": "R2T2_SteelFoot",
+      "closed_edges": 14,
+      "outward_signed_volume_m3": 0.5184001922607423,
+      "area_times_unit_depth_m3": 0.5184002128601151
+    },
+    {
+      "component": "R2T3_SteelFoot",
+      "closed_edges": 14,
+      "outward_signed_volume_m3": 0.5184001922607424,
+      "area_times_unit_depth_m3": 0.5184002128601151
+    },
+    {
+      "component": "R2T4_SteelFoot",
+      "closed_edges": 14,
+      "outward_signed_volume_m3": 0.5183993925650916,
+      "area_times_unit_depth_m3": 0.51839952621458
+    },
+    {
+      "component": "R3T1_SteelFoot",
+      "closed_edges": 14,
+      "outward_signed_volume_m3": 0.51839820543925,
+      "area_times_unit_depth_m3": 0.5183993545533667
+    },
+    {
+      "component": "R3T2_SteelFoot",
+      "closed_edges": 14,
+      "outward_signed_volume_m3": 0.5183995962142944,
+      "area_times_unit_depth_m3": 0.5184000411986744
+    },
+    {
+      "component": "R3T3_SteelFoot",
+      "closed_edges": 14,
+      "outward_signed_volume_m3": 0.5184006293614702,
+      "area_times_unit_depth_m3": 0.5184000411986744
+    },
+    {
+      "component": "R3T4_SteelFoot",
+      "closed_edges": 14,
+      "outward_signed_volume_m3": 0.5183966159820557,
+      "area_times_unit_depth_m3": 0.5183993545533667
+    },
+    {
+      "component": "Inverter0_Foot0",
+      "closed_edges": 14,
+      "outward_signed_volume_m3": 0.10399401187896723,
+      "area_times_unit_depth_m3": 0.10399983978277305
+    },
+    {
+      "component": "Inverter0_Foot1",
+      "closed_edges": 14,
+      "outward_signed_volume_m3": 0.10400370756785116,
+      "area_times_unit_depth_m3": 0.10399983978277305
+    },
+    {
+      "component": "Inverter1_Foot0",
+      "closed_edges": 14,
+      "outward_signed_volume_m3": 0.104002038637797,
+      "area_times_unit_depth_m3": 0.10399983978277305
+    },
+    {
+      "component": "Inverter1_Foot1",
+      "closed_edges": 14,
+      "outward_signed_volume_m3": 0.10400132338205981,
+      "area_times_unit_depth_m3": 0.10399983978277305
+    }
+  ],
+  "included_components": [
+    {
+      "component": "R1T1_SteelFoot",
+      "source_kind": "structural_ground_contact",
+      "source_contact_sha256": "063aeb5886cdb68785b1c2545db5d40ff6c607454d7e0b6629709a061f872768"
+    },
+    {
+      "component": "R1T2_SteelFoot",
+      "source_kind": "structural_ground_contact",
+      "source_contact_sha256": "705a83c92229c227678f9f6fca3533ce594f219e0f7fb147989d49d09e7f22b5"
+    },
+    {
+      "component": "R1T3_SteelFoot",
+      "source_kind": "structural_ground_contact",
+      "source_contact_sha256": "04c8878af9b9cc9420149b5cfd3de5c07b9a7bb1e57379ffcb1840335125a05a"
+    },
+    {
+      "component": "R1T4_SteelFoot",
+      "source_kind": "structural_ground_contact",
+      "source_contact_sha256": "58a4269c6914bec95b3d81e5958f81e3b092bbbd607b64fa5fc95622e63b9dce"
+    },
+    {
+      "component": "R2T1_SteelFoot",
+      "source_kind": "structural_ground_contact",
+      "source_contact_sha256": "cb4bc5c71e543f97464af99294a23f06d1b9d8e46aa9162ad273930134aa3bfc"
+    },
+    {
+      "component": "R2T2_SteelFoot",
+      "source_kind": "structural_ground_contact",
+      "source_contact_sha256": "4726773d7cb75f6ef0340decb1bb5f736c0e7a11167cf142f7c102eaafa71f0e"
+    },
+    {
+      "component": "R2T3_SteelFoot",
+      "source_kind": "structural_ground_contact",
+      "source_contact_sha256": "ead3bb2a61bba135dfe7dda314907c7d2d09e9b4d440d68144b219af77cf9634"
+    },
+    {
+      "component": "R2T4_SteelFoot",
+      "source_kind": "structural_ground_contact",
+      "source_contact_sha256": "c7835cdc739f60b4762460a435427be0f4380c7d7d98a6f73859a8c05e0f8ed2"
+    },
+    {
+      "component": "R3T1_SteelFoot",
+      "source_kind": "structural_ground_contact",
+      "source_contact_sha256": "c5d529d696e8944d9b71a51ceb30f78e3b53caa6abfc2e71611254d78675f81e"
+    },
+    {
+      "component": "R3T2_SteelFoot",
+      "source_kind": "structural_ground_contact",
+      "source_contact_sha256": "61dd1cbc187656fad9e1dc3f26e458e5100b5a90f9f9273e91ae548abf1c8099"
+    },
+    {
+      "component": "R3T3_SteelFoot",
+      "source_kind": "structural_ground_contact",
+      "source_contact_sha256": "f4994edb2e8da4b760be4e9923dc9e9f8f1aa5691978efec907917946427d32e"
+    },
+    {
+      "component": "R3T4_SteelFoot",
+      "source_kind": "structural_ground_contact",
+      "source_contact_sha256": "90e35fae64e692a55846d9bda2a5c8268e77bc43a4fc87c61a965ba3bcaf9216"
+    },
+    {
+      "component": "Inverter0_Foot0",
+      "source_kind": "structural_ground_contact",
+      "source_contact_sha256": "788cdf2f0a11c52245caefcdf7e862908effcd38b478fa1290379ed787c43e26"
+    },
+    {
+      "component": "Inverter0_Foot1",
+      "source_kind": "structural_ground_contact",
+      "source_contact_sha256": "9fe64b99ecf0a4feacc973fba7e35358aecfff428f678ac1d0aff6e951cc4ca9"
+    },
+    {
+      "component": "Inverter1_Foot0",
+      "source_kind": "structural_ground_contact",
+      "source_contact_sha256": "4a09098ae61581f8a60234425fcd63c313e1188a37bbf1b566505782b6bcdcc3"
+    },
+    {
+      "component": "Inverter1_Foot1",
+      "source_kind": "structural_ground_contact",
+      "source_contact_sha256": "2459d379b7079fd00b645fbacd9fc53274f60837539f2ebbc01d3687dc9f2380"
+    }
+  ],
+  "excluded_contacts": [
+    {
+      "component": "R1T1_MastCableRiser",
+      "source_kind": "cable_ground_contact",
+      "source_contact_sha256": "fe6fe0285bfc7267da506c1b9a88c802b27581172383ea71cf134c2633d769d3",
+      "source_bounds_m": {
+        "min": [
+          -11.72249984741211,
+          -8.007499694824219,
+          0.0
+        ],
+        "max": [
+          -11.677499771118164,
+          -7.962500095367432,
+          2.3499999046325684
+        ]
+      },
+      "source_contact": {
+        "method": "horizontal_mesh_faces",
+        "plane_z_m": 0.0,
+        "loops": [
+          {
+            "vertices_m": [
+              [
+                -11.72249984741211,
+                -8.007499694824219,
+                0.0
+              ],
+              [
+                -11.72249984741211,
+                -7.962500095367432,
+                0.0
+              ],
+              [
+                -11.677499771118164,
+                -7.962500095367432,
+                0.0
+              ],
+              [
+                -11.677499771118164,
+                -8.007499694824219,
+                0.0
+              ]
+            ],
+            "predicted_native_vertices_cm": [
+              [
+                -1172.249984741211,
+                800.7499694824219,
+                0.0
+              ],
+              [
+                -1172.249984741211,
+                796.2500095367432,
+                0.0
+              ],
+              [
+                -1167.7499771118164,
+                796.2500095367432,
+                0.0
+              ],
+              [
+                -1167.7499771118164,
+                800.7499694824219,
+                0.0
+              ]
+            ],
+            "nesting_depth": 0,
+            "hole": false,
+            "area_m2": 0.0020249854087524
+          }
+        ],
+        "horizontal_face_triangles_m": [
+          [
+            [
+              -11.72249984741211,
+              -7.962500095367432,
+              0.0
+            ],
+            [
+              -11.677499771118164,
+              -7.962500095367432,
+              0.0
+            ],
+            [
+              -11.677499771118164,
+              -8.007499694824219,
+              0.0
+            ]
+          ],
+          [
+            [
+              -11.72249984741211,
+              -7.962500095367432,
+              0.0
+            ],
+            [
+              -11.677499771118164,
+              -8.007499694824219,
+              0.0
+            ],
+            [
+              -11.72249984741211,
+              -8.007499694824219,
+              0.0
+            ]
+          ]
+        ],
+        "contact_area_m2": 0.0020249854087524,
+        "contact_vertices_m": [
+          [
+            -11.72249984741211,
+            -8.007499694824219,
+            0.0
+          ],
+          [
+            -11.72249984741211,
+            -7.962500095367432,
+            0.0
+          ],
+          [
+            -11.677499771118164,
+            -8.007499694824219,
+            0.0
+          ],
+          [
+            -11.677499771118164,
+            -7.962500095367432,
+            0.0
+          ]
+        ],
+        "policy": "Retain actual loops and holes; never replace curved or hollow contacts with a filled AABB."
+      },
+      "exclusion_reason": "cable_ground_contact source kind"
+    },
+    {
+      "component": "R1T2_MastCableRiser",
+      "source_kind": "cable_ground_contact",
+      "source_contact_sha256": "db40e26f8f31d85e56d351e8f0593647b803efe5277141d2982da404f480421d",
+      "source_bounds_m": {
+        "min": [
+          -3.9225001335144043,
+          -8.007499694824219,
+          0.0
+        ],
+        "max": [
+          -3.877500057220459,
+          -7.962500095367432,
+          2.3499999046325684
+        ]
+      },
+      "source_contact": {
+        "method": "horizontal_mesh_faces",
+        "plane_z_m": 0.0,
+        "loops": [
+          {
+            "vertices_m": [
+              [
+                -3.9225001335144043,
+                -8.007499694824219,
+                0.0
+              ],
+              [
+                -3.9225001335144043,
+                -7.962500095367432,
+                0.0
+              ],
+              [
+                -3.877500057220459,
+                -7.962500095367432,
+                0.0
+              ],
+              [
+                -3.877500057220459,
+                -8.007499694824219,
+                0.0
+              ]
+            ],
+            "predicted_native_vertices_cm": [
+              [
+                -392.25001335144043,
+                800.7499694824219,
+                0.0
+              ],
+              [
+                -392.25001335144043,
+                796.2500095367432,
+                0.0
+              ],
+              [
+                -387.7500057220459,
+                796.2500095367432,
+                0.0
+              ],
+              [
+                -387.7500057220459,
+                800.7499694824219,
+                0.0
+              ]
+            ],
+            "nesting_depth": 0,
+            "hole": false,
+            "area_m2": 0.0020249854087524
+          }
+        ],
+        "horizontal_face_triangles_m": [
+          [
+            [
+              -3.9225001335144043,
+              -7.962500095367432,
+              0.0
+            ],
+            [
+              -3.877500057220459,
+              -7.962500095367432,
+              0.0
+            ],
+            [
+              -3.877500057220459,
+              -8.007499694824219,
+              0.0
+            ]
+          ],
+          [
+            [
+              -3.9225001335144043,
+              -7.962500095367432,
+              0.0
+            ],
+            [
+              -3.877500057220459,
+              -8.007499694824219,
+              0.0
+            ],
+            [
+              -3.9225001335144043,
+              -8.007499694824219,
+              0.0
+            ]
+          ]
+        ],
+        "contact_area_m2": 0.0020249854087524,
+        "contact_vertices_m": [
+          [
+            -3.9225001335144043,
+            -8.007499694824219,
+            0.0
+          ],
+          [
+            -3.9225001335144043,
+            -7.962500095367432,
+            0.0
+          ],
+          [
+            -3.877500057220459,
+            -8.007499694824219,
+            0.0
+          ],
+          [
+            -3.877500057220459,
+            -7.962500095367432,
+            0.0
+          ]
+        ],
+        "policy": "Retain actual loops and holes; never replace curved or hollow contacts with a filled AABB."
+      },
+      "exclusion_reason": "cable_ground_contact source kind"
+    },
+    {
+      "component": "R1T3_MastCableRiser",
+      "source_kind": "cable_ground_contact",
+      "source_contact_sha256": "590eee67f9a97011fab81b8467c5ee2059790b74586f5f80ad49a43f82b7f368",
+      "source_bounds_m": {
+        "min": [
+          3.877500057220459,
+          -8.007499694824219,
+          0.0
+        ],
+        "max": [
+          3.9225001335144043,
+          -7.962500095367432,
+          2.3499999046325684
+        ]
+      },
+      "source_contact": {
+        "method": "horizontal_mesh_faces",
+        "plane_z_m": 0.0,
+        "loops": [
+          {
+            "vertices_m": [
+              [
+                3.877500057220459,
+                -8.007499694824219,
+                0.0
+              ],
+              [
+                3.877500057220459,
+                -7.962500095367432,
+                0.0
+              ],
+              [
+                3.9225001335144043,
+                -7.962500095367432,
+                0.0
+              ],
+              [
+                3.9225001335144043,
+                -8.007499694824219,
+                0.0
+              ]
+            ],
+            "predicted_native_vertices_cm": [
+              [
+                387.7500057220459,
+                800.7499694824219,
+                0.0
+              ],
+              [
+                387.7500057220459,
+                796.2500095367432,
+                0.0
+              ],
+              [
+                392.25001335144043,
+                796.2500095367432,
+                0.0
+              ],
+              [
+                392.25001335144043,
+                800.7499694824219,
+                0.0
+              ]
+            ],
+            "nesting_depth": 0,
+            "hole": false,
+            "area_m2": 0.0020249854087524
+          }
+        ],
+        "horizontal_face_triangles_m": [
+          [
+            [
+              3.877500057220459,
+              -7.962500095367432,
+              0.0
+            ],
+            [
+              3.9225001335144043,
+              -7.962500095367432,
+              0.0
+            ],
+            [
+              3.9225001335144043,
+              -8.007499694824219,
+              0.0
+            ]
+          ],
+          [
+            [
+              3.877500057220459,
+              -7.962500095367432,
+              0.0
+            ],
+            [
+              3.9225001335144043,
+              -8.007499694824219,
+              0.0
+            ],
+            [
+              3.877500057220459,
+              -8.007499694824219,
+              0.0
+            ]
+          ]
+        ],
+        "contact_area_m2": 0.0020249854087524,
+        "contact_vertices_m": [
+          [
+            3.877500057220459,
+            -8.007499694824219,
+            0.0
+          ],
+          [
+            3.877500057220459,
+            -7.962500095367432,
+            0.0
+          ],
+          [
+            3.9225001335144043,
+            -8.007499694824219,
+            0.0
+          ],
+          [
+            3.9225001335144043,
+            -7.962500095367432,
+            0.0
+          ]
+        ],
+        "policy": "Retain actual loops and holes; never replace curved or hollow contacts with a filled AABB."
+      },
+      "exclusion_reason": "cable_ground_contact source kind"
+    },
+    {
+      "component": "R1T4_MastCableRiser",
+      "source_kind": "cable_ground_contact",
+      "source_contact_sha256": "9dccaaf88e9c682d4a80744b6514ee8b43050431553a97e98223e4a8128a9c44",
+      "source_bounds_m": {
+        "min": [
+          11.677499771118164,
+          -8.007499694824219,
+          0.0
+        ],
+        "max": [
+          11.72249984741211,
+          -7.962500095367432,
+          2.3499999046325684
+        ]
+      },
+      "source_contact": {
+        "method": "horizontal_mesh_faces",
+        "plane_z_m": 0.0,
+        "loops": [
+          {
+            "vertices_m": [
+              [
+                11.677499771118164,
+                -8.007499694824219,
+                0.0
+              ],
+              [
+                11.677499771118164,
+                -7.962500095367432,
+                0.0
+              ],
+              [
+                11.72249984741211,
+                -7.962500095367432,
+                0.0
+              ],
+              [
+                11.72249984741211,
+                -8.007499694824219,
+                0.0
+              ]
+            ],
+            "predicted_native_vertices_cm": [
+              [
+                1167.7499771118164,
+                800.7499694824219,
+                0.0
+              ],
+              [
+                1167.7499771118164,
+                796.2500095367432,
+                0.0
+              ],
+              [
+                1172.249984741211,
+                796.2500095367432,
+                0.0
+              ],
+              [
+                1172.249984741211,
+                800.7499694824219,
+                0.0
+              ]
+            ],
+            "nesting_depth": 0,
+            "hole": false,
+            "area_m2": 0.0020249854087524
+          }
+        ],
+        "horizontal_face_triangles_m": [
+          [
+            [
+              11.677499771118164,
+              -7.962500095367432,
+              0.0
+            ],
+            [
+              11.72249984741211,
+              -7.962500095367432,
+              0.0
+            ],
+            [
+              11.72249984741211,
+              -8.007499694824219,
+              0.0
+            ]
+          ],
+          [
+            [
+              11.677499771118164,
+              -7.962500095367432,
+              0.0
+            ],
+            [
+              11.72249984741211,
+              -8.007499694824219,
+              0.0
+            ],
+            [
+              11.677499771118164,
+              -8.007499694824219,
+              0.0
+            ]
+          ]
+        ],
+        "contact_area_m2": 0.0020249854087524,
+        "contact_vertices_m": [
+          [
+            11.677499771118164,
+            -8.007499694824219,
+            0.0
+          ],
+          [
+            11.677499771118164,
+            -7.962500095367432,
+            0.0
+          ],
+          [
+            11.72249984741211,
+            -8.007499694824219,
+            0.0
+          ],
+          [
+            11.72249984741211,
+            -7.962500095367432,
+            0.0
+          ]
+        ],
+        "policy": "Retain actual loops and holes; never replace curved or hollow contacts with a filled AABB."
+      },
+      "exclusion_reason": "cable_ground_contact source kind"
+    },
+    {
+      "component": "R2T1_MastCableRiser",
+      "source_kind": "cable_ground_contact",
+      "source_contact_sha256": "52fc63297bc0d5a17b07903ee8bf4c32536948c143545697d4de68a912e80794",
+      "source_bounds_m": {
+        "min": [
+          -11.72249984741211,
+          -0.20750001072883606,
+          0.0
+        ],
+        "max": [
+          -11.677499771118164,
+          -0.16249999403953552,
+          2.3499999046325684
+        ]
+      },
+      "source_contact": {
+        "method": "horizontal_mesh_faces",
+        "plane_z_m": 0.0,
+        "loops": [
+          {
+            "vertices_m": [
+              [
+                -11.72249984741211,
+                -0.20750001072883606,
+                0.0
+              ],
+              [
+                -11.72249984741211,
+                -0.16249999403953552,
+                0.0
+              ],
+              [
+                -11.677499771118164,
+                -0.16249999403953552,
+                0.0
+              ],
+              [
+                -11.677499771118164,
+                -0.20750001072883606,
+                0.0
+              ]
+            ],
+            "predicted_native_vertices_cm": [
+              [
+                -1172.249984741211,
+                20.750001072883606,
+                0.0
+              ],
+              [
+                -1172.249984741211,
+                16.249999403953552,
+                0.0
+              ],
+              [
+                -1167.7499771118164,
+                16.249999403953552,
+                0.0
+              ],
+              [
+                -1167.7499771118164,
+                20.750001072883606,
+                0.0
+              ]
+            ],
+            "nesting_depth": 0,
+            "hole": false,
+            "area_m2": 0.0020250041842473365
+          }
+        ],
+        "horizontal_face_triangles_m": [
+          [
+            [
+              -11.72249984741211,
+              -0.16249999403953552,
+              0.0
+            ],
+            [
+              -11.677499771118164,
+              -0.16249999403953552,
+              0.0
+            ],
+            [
+              -11.677499771118164,
+              -0.20750001072883606,
+              0.0
+            ]
+          ],
+          [
+            [
+              -11.72249984741211,
+              -0.16249999403953552,
+              0.0
+            ],
+            [
+              -11.677499771118164,
+              -0.20750001072883606,
+              0.0
+            ],
+            [
+              -11.72249984741211,
+              -0.20750001072883606,
+              0.0
+            ]
+          ]
+        ],
+        "contact_area_m2": 0.0020250041842473365,
+        "contact_vertices_m": [
+          [
+            -11.72249984741211,
+            -0.20750001072883606,
+            0.0
+          ],
+          [
+            -11.72249984741211,
+            -0.16249999403953552,
+            0.0
+          ],
+          [
+            -11.677499771118164,
+            -0.20750001072883606,
+            0.0
+          ],
+          [
+            -11.677499771118164,
+            -0.16249999403953552,
+            0.0
+          ]
+        ],
+        "policy": "Retain actual loops and holes; never replace curved or hollow contacts with a filled AABB."
+      },
+      "exclusion_reason": "cable_ground_contact source kind"
+    },
+    {
+      "component": "R2T2_MastCableRiser",
+      "source_kind": "cable_ground_contact",
+      "source_contact_sha256": "2c3d83e4ac4d91ac38d4123b6c385a624b4d2d68e1a7b1915cbdcc8b4deaf659",
+      "source_bounds_m": {
+        "min": [
+          -3.9225001335144043,
+          -0.20750001072883606,
+          0.0
+        ],
+        "max": [
+          -3.877500057220459,
+          -0.16249999403953552,
+          2.3499999046325684
+        ]
+      },
+      "source_contact": {
+        "method": "horizontal_mesh_faces",
+        "plane_z_m": 0.0,
+        "loops": [
+          {
+            "vertices_m": [
+              [
+                -3.9225001335144043,
+                -0.20750001072883606,
+                0.0
+              ],
+              [
+                -3.9225001335144043,
+                -0.16249999403953552,
+                0.0
+              ],
+              [
+                -3.877500057220459,
+                -0.16249999403953552,
+                0.0
+              ],
+              [
+                -3.877500057220459,
+                -0.20750001072883606,
+                0.0
+              ]
+            ],
+            "predicted_native_vertices_cm": [
+              [
+                -392.25001335144043,
+                20.750001072883606,
+                0.0
+              ],
+              [
+                -392.25001335144043,
+                16.249999403953552,
+                0.0
+              ],
+              [
+                -387.7500057220459,
+                16.249999403953552,
+                0.0
+              ],
+              [
+                -387.7500057220459,
+                20.750001072883606,
+                0.0
+              ]
+            ],
+            "nesting_depth": 0,
+            "hole": false,
+            "area_m2": 0.0020250041842473365
+          }
+        ],
+        "horizontal_face_triangles_m": [
+          [
+            [
+              -3.9225001335144043,
+              -0.16249999403953552,
+              0.0
+            ],
+            [
+              -3.877500057220459,
+              -0.16249999403953552,
+              0.0
+            ],
+            [
+              -3.877500057220459,
+              -0.20750001072883606,
+              0.0
+            ]
+          ],
+          [
+            [
+              -3.9225001335144043,
+              -0.16249999403953552,
+              0.0
+            ],
+            [
+              -3.877500057220459,
+              -0.20750001072883606,
+              0.0
+            ],
+            [
+              -3.9225001335144043,
+              -0.20750001072883606,
+              0.0
+            ]
+          ]
+        ],
+        "contact_area_m2": 0.0020250041842473365,
+        "contact_vertices_m": [
+          [
+            -3.9225001335144043,
+            -0.20750001072883606,
+            0.0
+          ],
+          [
+            -3.9225001335144043,
+            -0.16249999403953552,
+            0.0
+          ],
+          [
+            -3.877500057220459,
+            -0.20750001072883606,
+            0.0
+          ],
+          [
+            -3.877500057220459,
+            -0.16249999403953552,
+            0.0
+          ]
+        ],
+        "policy": "Retain actual loops and holes; never replace curved or hollow contacts with a filled AABB."
+      },
+      "exclusion_reason": "cable_ground_contact source kind"
+    },
+    {
+      "component": "R2T3_MastCableRiser",
+      "source_kind": "cable_ground_contact",
+      "source_contact_sha256": "9761ff7713f7bb2dfdc6f177ac77e081b45aa35e212bbd7f60ffb4f2f8f38f32",
+      "source_bounds_m": {
+        "min": [
+          3.877500057220459,
+          -0.20750001072883606,
+          0.0
+        ],
+        "max": [
+          3.9225001335144043,
+          -0.16249999403953552,
+          2.3499999046325684
+        ]
+      },
+      "source_contact": {
+        "method": "horizontal_mesh_faces",
+        "plane_z_m": 0.0,
+        "loops": [
+          {
+            "vertices_m": [
+              [
+                3.877500057220459,
+                -0.20750001072883606,
+                0.0
+              ],
+              [
+                3.877500057220459,
+                -0.16249999403953552,
+                0.0
+              ],
+              [
+                3.9225001335144043,
+                -0.16249999403953552,
+                0.0
+              ],
+              [
+                3.9225001335144043,
+                -0.20750001072883606,
+                0.0
+              ]
+            ],
+            "predicted_native_vertices_cm": [
+              [
+                387.7500057220459,
+                20.750001072883606,
+                0.0
+              ],
+              [
+                387.7500057220459,
+                16.249999403953552,
+                0.0
+              ],
+              [
+                392.25001335144043,
+                16.249999403953552,
+                0.0
+              ],
+              [
+                392.25001335144043,
+                20.750001072883606,
+                0.0
+              ]
+            ],
+            "nesting_depth": 0,
+            "hole": false,
+            "area_m2": 0.0020250041842473365
+          }
+        ],
+        "horizontal_face_triangles_m": [
+          [
+            [
+              3.877500057220459,
+              -0.16249999403953552,
+              0.0
+            ],
+            [
+              3.9225001335144043,
+              -0.16249999403953552,
+              0.0
+            ],
+            [
+              3.9225001335144043,
+              -0.20750001072883606,
+              0.0
+            ]
+          ],
+          [
+            [
+              3.877500057220459,
+              -0.16249999403953552,
+              0.0
+            ],
+            [
+              3.9225001335144043,
+              -0.20750001072883606,
+              0.0
+            ],
+            [
+              3.877500057220459,
+              -0.20750001072883606,
+              0.0
+            ]
+          ]
+        ],
+        "contact_area_m2": 0.0020250041842473365,
+        "contact_vertices_m": [
+          [
+            3.877500057220459,
+            -0.20750001072883606,
+            0.0
+          ],
+          [
+            3.877500057220459,
+            -0.16249999403953552,
+            0.0
+          ],
+          [
+            3.9225001335144043,
+            -0.20750001072883606,
+            0.0
+          ],
+          [
+            3.9225001335144043,
+            -0.16249999403953552,
+            0.0
+          ]
+        ],
+        "policy": "Retain actual loops and holes; never replace curved or hollow contacts with a filled AABB."
+      },
+      "exclusion_reason": "cable_ground_contact source kind"
+    },
+    {
+      "component": "R2T4_MastCableRiser",
+      "source_kind": "cable_ground_contact",
+      "source_contact_sha256": "852732d874a7f49f14e2a4e83ad0fea292b970c42edfa0197b503e7bc838c12e",
+      "source_bounds_m": {
+        "min": [
+          11.677499771118164,
+          -0.20750001072883606,
+          0.0
+        ],
+        "max": [
+          11.72249984741211,
+          -0.16249999403953552,
+          2.3499999046325684
+        ]
+      },
+      "source_contact": {
+        "method": "horizontal_mesh_faces",
+        "plane_z_m": 0.0,
+        "loops": [
+          {
+            "vertices_m": [
+              [
+                11.677499771118164,
+                -0.20750001072883606,
+                0.0
+              ],
+              [
+                11.677499771118164,
+                -0.16249999403953552,
+                0.0
+              ],
+              [
+                11.72249984741211,
+                -0.16249999403953552,
+                0.0
+              ],
+              [
+                11.72249984741211,
+                -0.20750001072883606,
+                0.0
+              ]
+            ],
+            "predicted_native_vertices_cm": [
+              [
+                1167.7499771118164,
+                20.750001072883606,
+                0.0
+              ],
+              [
+                1167.7499771118164,
+                16.249999403953552,
+                0.0
+              ],
+              [
+                1172.249984741211,
+                16.249999403953552,
+                0.0
+              ],
+              [
+                1172.249984741211,
+                20.750001072883606,
+                0.0
+              ]
+            ],
+            "nesting_depth": 0,
+            "hole": false,
+            "area_m2": 0.0020250041842473365
+          }
+        ],
+        "horizontal_face_triangles_m": [
+          [
+            [
+              11.677499771118164,
+              -0.16249999403953552,
+              0.0
+            ],
+            [
+              11.72249984741211,
+              -0.16249999403953552,
+              0.0
+            ],
+            [
+              11.72249984741211,
+              -0.20750001072883606,
+              0.0
+            ]
+          ],
+          [
+            [
+              11.677499771118164,
+              -0.16249999403953552,
+              0.0
+            ],
+            [
+              11.72249984741211,
+              -0.20750001072883606,
+              0.0
+            ],
+            [
+              11.677499771118164,
+              -0.20750001072883606,
+              0.0
+            ]
+          ]
+        ],
+        "contact_area_m2": 0.0020250041842473365,
+        "contact_vertices_m": [
+          [
+            11.677499771118164,
+            -0.20750001072883606,
+            0.0
+          ],
+          [
+            11.677499771118164,
+            -0.16249999403953552,
+            0.0
+          ],
+          [
+            11.72249984741211,
+            -0.20750001072883606,
+            0.0
+          ],
+          [
+            11.72249984741211,
+            -0.16249999403953552,
+            0.0
+          ]
+        ],
+        "policy": "Retain actual loops and holes; never replace curved or hollow contacts with a filled AABB."
+      },
+      "exclusion_reason": "cable_ground_contact source kind"
+    },
+    {
+      "component": "R3T1_MastCableRiser",
+      "source_kind": "cable_ground_contact",
+      "source_contact_sha256": "d0c15815e271a96cf05b4ff7722b7a8a2139c4431f45f2cb1dbd4cdaf0b87e8d",
+      "source_bounds_m": {
+        "min": [
+          -11.72249984741211,
+          7.592499732971191,
+          0.0
+        ],
+        "max": [
+          -11.677499771118164,
+          7.637499809265137,
+          2.3499999046325684
+        ]
+      },
+      "source_contact": {
+        "method": "horizontal_mesh_faces",
+        "plane_z_m": 0.0,
+        "loops": [
+          {
+            "vertices_m": [
+              [
+                -11.72249984741211,
+                7.592499732971191,
+                0.0
+              ],
+              [
+                -11.72249984741211,
+                7.637499809265137,
+                0.0
+              ],
+              [
+                -11.677499771118164,
+                7.637499809265137,
+                0.0
+              ],
+              [
+                -11.677499771118164,
+                7.592499732971191,
+                0.0
+              ]
+            ],
+            "predicted_native_vertices_cm": [
+              [
+                -1172.249984741211,
+                -759.2499732971191,
+                0.0
+              ],
+              [
+                -1172.249984741211,
+                -763.7499809265137,
+                0.0
+              ],
+              [
+                -1167.7499771118164,
+                -763.7499809265137,
+                0.0
+              ],
+              [
+                -1167.7499771118164,
+                -759.2499732971191,
+                0.0
+              ]
+            ],
+            "nesting_depth": 0,
+            "hole": false,
+            "area_m2": 0.002025006866460899
+          }
+        ],
+        "horizontal_face_triangles_m": [
+          [
+            [
+              -11.72249984741211,
+              7.637499809265137,
+              0.0
+            ],
+            [
+              -11.677499771118164,
+              7.637499809265137,
+              0.0
+            ],
+            [
+              -11.677499771118164,
+              7.592499732971191,
+              0.0
+            ]
+          ],
+          [
+            [
+              -11.72249984741211,
+              7.637499809265137,
+              0.0
+            ],
+            [
+              -11.677499771118164,
+              7.592499732971191,
+              0.0
+            ],
+            [
+              -11.72249984741211,
+              7.592499732971191,
+              0.0
+            ]
+          ]
+        ],
+        "contact_area_m2": 0.002025006866460899,
+        "contact_vertices_m": [
+          [
+            -11.72249984741211,
+            7.592499732971191,
+            0.0
+          ],
+          [
+            -11.72249984741211,
+            7.637499809265137,
+            0.0
+          ],
+          [
+            -11.677499771118164,
+            7.592499732971191,
+            0.0
+          ],
+          [
+            -11.677499771118164,
+            7.637499809265137,
+            0.0
+          ]
+        ],
+        "policy": "Retain actual loops and holes; never replace curved or hollow contacts with a filled AABB."
+      },
+      "exclusion_reason": "cable_ground_contact source kind"
+    },
+    {
+      "component": "R3T2_MastCableRiser",
+      "source_kind": "cable_ground_contact",
+      "source_contact_sha256": "c5167a830adcc83902eb3777519b4011d1c01e9424faa64fc11471311eb3037c",
+      "source_bounds_m": {
+        "min": [
+          -3.9225001335144043,
+          7.592499732971191,
+          0.0
+        ],
+        "max": [
+          -3.877500057220459,
+          7.637499809265137,
+          2.3499999046325684
+        ]
+      },
+      "source_contact": {
+        "method": "horizontal_mesh_faces",
+        "plane_z_m": 0.0,
+        "loops": [
+          {
+            "vertices_m": [
+              [
+                -3.9225001335144043,
+                7.592499732971191,
+                0.0
+              ],
+              [
+                -3.9225001335144043,
+                7.637499809265137,
+                0.0
+              ],
+              [
+                -3.877500057220459,
+                7.637499809265137,
+                0.0
+              ],
+              [
+                -3.877500057220459,
+                7.592499732971191,
+                0.0
+              ]
+            ],
+            "predicted_native_vertices_cm": [
+              [
+                -392.25001335144043,
+                -759.2499732971191,
+                0.0
+              ],
+              [
+                -392.25001335144043,
+                -763.7499809265137,
+                0.0
+              ],
+              [
+                -387.7500057220459,
+                -763.7499809265137,
+                0.0
+              ],
+              [
+                -387.7500057220459,
+                -759.2499732971191,
+                0.0
+              ]
+            ],
+            "nesting_depth": 0,
+            "hole": false,
+            "area_m2": 0.002025006866460899
+          }
+        ],
+        "horizontal_face_triangles_m": [
+          [
+            [
+              -3.9225001335144043,
+              7.637499809265137,
+              0.0
+            ],
+            [
+              -3.877500057220459,
+              7.637499809265137,
+              0.0
+            ],
+            [
+              -3.877500057220459,
+              7.592499732971191,
+              0.0
+            ]
+          ],
+          [
+            [
+              -3.9225001335144043,
+              7.637499809265137,
+              0.0
+            ],
+            [
+              -3.877500057220459,
+              7.592499732971191,
+              0.0
+            ],
+            [
+              -3.9225001335144043,
+              7.592499732971191,
+              0.0
+            ]
+          ]
+        ],
+        "contact_area_m2": 0.002025006866460899,
+        "contact_vertices_m": [
+          [
+            -3.9225001335144043,
+            7.592499732971191,
+            0.0
+          ],
+          [
+            -3.9225001335144043,
+            7.637499809265137,
+            0.0
+          ],
+          [
+            -3.877500057220459,
+            7.592499732971191,
+            0.0
+          ],
+          [
+            -3.877500057220459,
+            7.637499809265137,
+            0.0
+          ]
+        ],
+        "policy": "Retain actual loops and holes; never replace curved or hollow contacts with a filled AABB."
+      },
+      "exclusion_reason": "cable_ground_contact source kind"
+    },
+    {
+      "component": "R3T3_MastCableRiser",
+      "source_kind": "cable_ground_contact",
+      "source_contact_sha256": "098ded191c14dce781f9375689ab86637c69116152f7d40ae0961c04a5306087",
+      "source_bounds_m": {
+        "min": [
+          3.877500057220459,
+          7.592499732971191,
+          0.0
+        ],
+        "max": [
+          3.9225001335144043,
+          7.637499809265137,
+          2.3499999046325684
+        ]
+      },
+      "source_contact": {
+        "method": "horizontal_mesh_faces",
+        "plane_z_m": 0.0,
+        "loops": [
+          {
+            "vertices_m": [
+              [
+                3.877500057220459,
+                7.592499732971191,
+                0.0
+              ],
+              [
+                3.877500057220459,
+                7.637499809265137,
+                0.0
+              ],
+              [
+                3.9225001335144043,
+                7.637499809265137,
+                0.0
+              ],
+              [
+                3.9225001335144043,
+                7.592499732971191,
+                0.0
+              ]
+            ],
+            "predicted_native_vertices_cm": [
+              [
+                387.7500057220459,
+                -759.2499732971191,
+                0.0
+              ],
+              [
+                387.7500057220459,
+                -763.7499809265137,
+                0.0
+              ],
+              [
+                392.25001335144043,
+                -763.7499809265137,
+                0.0
+              ],
+              [
+                392.25001335144043,
+                -759.2499732971191,
+                0.0
+              ]
+            ],
+            "nesting_depth": 0,
+            "hole": false,
+            "area_m2": 0.002025006866460899
+          }
+        ],
+        "horizontal_face_triangles_m": [
+          [
+            [
+              3.877500057220459,
+              7.637499809265137,
+              0.0
+            ],
+            [
+              3.9225001335144043,
+              7.637499809265137,
+              0.0
+            ],
+            [
+              3.9225001335144043,
+              7.592499732971191,
+              0.0
+            ]
+          ],
+          [
+            [
+              3.877500057220459,
+              7.637499809265137,
+              0.0
+            ],
+            [
+              3.9225001335144043,
+              7.592499732971191,
+              0.0
+            ],
+            [
+              3.877500057220459,
+              7.592499732971191,
+              0.0
+            ]
+          ]
+        ],
+        "contact_area_m2": 0.002025006866460899,
+        "contact_vertices_m": [
+          [
+            3.877500057220459,
+            7.592499732971191,
+            0.0
+          ],
+          [
+            3.877500057220459,
+            7.637499809265137,
+            0.0
+          ],
+          [
+            3.9225001335144043,
+            7.592499732971191,
+            0.0
+          ],
+          [
+            3.9225001335144043,
+            7.637499809265137,
+            0.0
+          ]
+        ],
+        "policy": "Retain actual loops and holes; never replace curved or hollow contacts with a filled AABB."
+      },
+      "exclusion_reason": "cable_ground_contact source kind"
+    },
+    {
+      "component": "R3T4_MastCableRiser",
+      "source_kind": "cable_ground_contact",
+      "source_contact_sha256": "a80fe0d89044278572ff0b6b7f9e08678e3f03c93273ffd466a7e452498b12da",
+      "source_bounds_m": {
+        "min": [
+          11.677499771118164,
+          7.592499732971191,
+          0.0
+        ],
+        "max": [
+          11.72249984741211,
+          7.637499809265137,
+          2.3499999046325684
+        ]
+      },
+      "source_contact": {
+        "method": "horizontal_mesh_faces",
+        "plane_z_m": 0.0,
+        "loops": [
+          {
+            "vertices_m": [
+              [
+                11.677499771118164,
+                7.592499732971191,
+                0.0
+              ],
+              [
+                11.677499771118164,
+                7.637499809265137,
+                0.0
+              ],
+              [
+                11.72249984741211,
+                7.637499809265137,
+                0.0
+              ],
+              [
+                11.72249984741211,
+                7.592499732971191,
+                0.0
+              ]
+            ],
+            "predicted_native_vertices_cm": [
+              [
+                1167.7499771118164,
+                -759.2499732971191,
+                0.0
+              ],
+              [
+                1167.7499771118164,
+                -763.7499809265137,
+                0.0
+              ],
+              [
+                1172.249984741211,
+                -763.7499809265137,
+                0.0
+              ],
+              [
+                1172.249984741211,
+                -759.2499732971191,
+                0.0
+              ]
+            ],
+            "nesting_depth": 0,
+            "hole": false,
+            "area_m2": 0.002025006866460899
+          }
+        ],
+        "horizontal_face_triangles_m": [
+          [
+            [
+              11.677499771118164,
+              7.637499809265137,
+              0.0
+            ],
+            [
+              11.72249984741211,
+              7.637499809265137,
+              0.0
+            ],
+            [
+              11.72249984741211,
+              7.592499732971191,
+              0.0
+            ]
+          ],
+          [
+            [
+              11.677499771118164,
+              7.637499809265137,
+              0.0
+            ],
+            [
+              11.72249984741211,
+              7.592499732971191,
+              0.0
+            ],
+            [
+              11.677499771118164,
+              7.592499732971191,
+              0.0
+            ]
+          ]
+        ],
+        "contact_area_m2": 0.002025006866460899,
+        "contact_vertices_m": [
+          [
+            11.677499771118164,
+            7.592499732971191,
+            0.0
+          ],
+          [
+            11.677499771118164,
+            7.637499809265137,
+            0.0
+          ],
+          [
+            11.72249984741211,
+            7.592499732971191,
+            0.0
+          ],
+          [
+            11.72249984741211,
+            7.637499809265137,
+            0.0
+          ]
+        ],
+        "policy": "Retain actual loops and holes; never replace curved or hollow contacts with a filled AABB."
+      },
+      "exclusion_reason": "cable_ground_contact source kind"
+    },
+    {
+      "component": "GroundRowDuct0",
+      "source_kind": "structural_ground_contact",
+      "source_contact_sha256": "3155905ae76ef23b5f87a514ea9bb8f7dbe633f7d9387abf2fe7b4ed55600076",
+      "source_bounds_m": {
+        "min": [
+          -11.800000190734863,
+          -7.850000381469727,
+          0.0
+        ],
+        "max": [
+          15.40000057220459,
+          -7.75,
+          0.10000000149011612
+        ]
+      },
+      "source_contact": {
+        "method": "horizontal_mesh_faces",
+        "plane_z_m": 0.0,
+        "loops": [
+          {
+            "vertices_m": [
+              [
+                -11.800000190734863,
+                -7.850000381469727,
+                0.0
+              ],
+              [
+                -11.800000190734863,
+                -7.75,
+                0.0
+              ],
+              [
+                15.40000057220459,
+                -7.75,
+                0.0
+              ],
+              [
+                15.40000057220459,
+                -7.850000381469727,
+                0.0
+              ]
+            ],
+            "predicted_native_vertices_cm": [
+              [
+                -1180.0000190734863,
+                785.0000381469727,
+                0.0
+              ],
+              [
+                -1180.0000190734863,
+                775.0,
+                0.0
+              ],
+              [
+                1540.000057220459,
+                775.0,
+                0.0
+              ],
+              [
+                1540.000057220459,
+                785.0000381469727,
+                0.0
+              ]
+            ],
+            "nesting_depth": 0,
+            "hole": false,
+            "area_m2": 2.720010452270799
+          }
+        ],
+        "horizontal_face_triangles_m": [
+          [
+            [
+              -11.800000190734863,
+              -7.75,
+              0.0
+            ],
+            [
+              15.40000057220459,
+              -7.75,
+              0.0
+            ],
+            [
+              15.40000057220459,
+              -7.850000381469727,
+              0.0
+            ]
+          ],
+          [
+            [
+              -11.800000190734863,
+              -7.75,
+              0.0
+            ],
+            [
+              15.40000057220459,
+              -7.850000381469727,
+              0.0
+            ],
+            [
+              -11.800000190734863,
+              -7.850000381469727,
+              0.0
+            ]
+          ]
+        ],
+        "contact_area_m2": 2.720010452270799,
+        "contact_vertices_m": [
+          [
+            -11.800000190734863,
+            -7.850000381469727,
+            0.0
+          ],
+          [
+            -11.800000190734863,
+            -7.75,
+            0.0
+          ],
+          [
+            15.40000057220459,
+            -7.850000381469727,
+            0.0
+          ],
+          [
+            15.40000057220459,
+            -7.75,
+            0.0
+          ]
+        ],
+        "policy": "Retain actual loops and holes; never replace curved or hollow contacts with a filled AABB."
+      },
+      "exclusion_reason": "explicit semantic/name-based duct exclusion; frozen kind remains structural_ground_contact"
+    },
+    {
+      "component": "GroundRowDuct1",
+      "source_kind": "structural_ground_contact",
+      "source_contact_sha256": "8ab346ea7dd737aab3e75f7eed551fc85d96d401fab8878d5e474ea242d5b659",
+      "source_bounds_m": {
+        "min": [
+          -11.800000190734863,
+          -0.05000000074505806,
+          0.0
+        ],
+        "max": [
+          15.40000057220459,
+          0.05000000074505806,
+          0.10000000149011612
+        ]
+      },
+      "source_contact": {
+        "method": "horizontal_mesh_faces",
+        "plane_z_m": 0.0,
+        "loops": [
+          {
+            "vertices_m": [
+              [
+                -11.800000190734863,
+                -0.05000000074505806,
+                0.0
+              ],
+              [
+                -11.800000190734863,
+                0.05000000074505806,
+                0.0
+              ],
+              [
+                15.40000057220459,
+                0.05000000074505806,
+                0.0
+              ],
+              [
+                15.40000057220459,
+                -0.05000000074505806,
+                0.0
+              ]
+            ],
+            "predicted_native_vertices_cm": [
+              [
+                -1180.0000190734863,
+                5.000000074505806,
+                0.0
+              ],
+              [
+                -1180.0000190734863,
+                -5.000000074505806,
+                0.0
+              ],
+              [
+                1540.000057220459,
+                -5.000000074505806,
+                0.0
+              ],
+              [
+                1540.000057220459,
+                5.000000074505806,
+                0.0
+              ]
+            ],
+            "nesting_depth": 0,
+            "hole": false,
+            "area_m2": 2.720000116825105
+          }
+        ],
+        "horizontal_face_triangles_m": [
+          [
+            [
+              -11.800000190734863,
+              0.05000000074505806,
+              0.0
+            ],
+            [
+              15.40000057220459,
+              0.05000000074505806,
+              0.0
+            ],
+            [
+              15.40000057220459,
+              -0.05000000074505806,
+              0.0
+            ]
+          ],
+          [
+            [
+              -11.800000190734863,
+              0.05000000074505806,
+              0.0
+            ],
+            [
+              15.40000057220459,
+              -0.05000000074505806,
+              0.0
+            ],
+            [
+              -11.800000190734863,
+              -0.05000000074505806,
+              0.0
+            ]
+          ]
+        ],
+        "contact_area_m2": 2.720000116825105,
+        "contact_vertices_m": [
+          [
+            -11.800000190734863,
+            -0.05000000074505806,
+            0.0
+          ],
+          [
+            -11.800000190734863,
+            0.05000000074505806,
+            0.0
+          ],
+          [
+            15.40000057220459,
+            -0.05000000074505806,
+            0.0
+          ],
+          [
+            15.40000057220459,
+            0.05000000074505806,
+            0.0
+          ]
+        ],
+        "policy": "Retain actual loops and holes; never replace curved or hollow contacts with a filled AABB."
+      },
+      "exclusion_reason": "explicit semantic/name-based duct exclusion; frozen kind remains structural_ground_contact"
+    },
+    {
+      "component": "GroundRowDuct2",
+      "source_kind": "structural_ground_contact",
+      "source_contact_sha256": "166c4f6b2f01fa75dd6f661f1e7e2f9272167f4c9fd2a223695daed0d6e36f16",
+      "source_bounds_m": {
+        "min": [
+          -11.800000190734863,
+          7.75,
+          0.0
+        ],
+        "max": [
+          15.40000057220459,
+          7.850000381469727,
+          0.10000000149011612
+        ]
+      },
+      "source_contact": {
+        "method": "horizontal_mesh_faces",
+        "plane_z_m": 0.0,
+        "loops": [
+          {
+            "vertices_m": [
+              [
+                -11.800000190734863,
+                7.75,
+                0.0
+              ],
+              [
+                -11.800000190734863,
+                7.850000381469727,
+                0.0
+              ],
+              [
+                15.40000057220459,
+                7.850000381469727,
+                0.0
+              ],
+              [
+                15.40000057220459,
+                7.75,
+                0.0
+              ]
+            ],
+            "predicted_native_vertices_cm": [
+              [
+                -1180.0000190734863,
+                -775.0,
+                0.0
+              ],
+              [
+                -1180.0000190734863,
+                -785.0000381469727,
+                0.0
+              ],
+              [
+                1540.000057220459,
+                -785.0000381469727,
+                0.0
+              ],
+              [
+                1540.000057220459,
+                -775.0,
+                0.0
+              ]
+            ],
+            "nesting_depth": 0,
+            "hole": false,
+            "area_m2": 2.720010452270799
+          }
+        ],
+        "horizontal_face_triangles_m": [
+          [
+            [
+              -11.800000190734863,
+              7.850000381469727,
+              0.0
+            ],
+            [
+              15.40000057220459,
+              7.850000381469727,
+              0.0
+            ],
+            [
+              15.40000057220459,
+              7.75,
+              0.0
+            ]
+          ],
+          [
+            [
+              -11.800000190734863,
+              7.850000381469727,
+              0.0
+            ],
+            [
+              15.40000057220459,
+              7.75,
+              0.0
+            ],
+            [
+              -11.800000190734863,
+              7.75,
+              0.0
+            ]
+          ]
+        ],
+        "contact_area_m2": 2.720010452270799,
+        "contact_vertices_m": [
+          [
+            -11.800000190734863,
+            7.75,
+            0.0
+          ],
+          [
+            -11.800000190734863,
+            7.850000381469727,
+            0.0
+          ],
+          [
+            15.40000057220459,
+            7.75,
+            0.0
+          ],
+          [
+            15.40000057220459,
+            7.850000381469727,
+            0.0
+          ]
+        ],
+        "policy": "Retain actual loops and holes; never replace curved or hollow contacts with a filled AABB."
+      },
+      "exclusion_reason": "explicit semantic/name-based duct exclusion; frozen kind remains structural_ground_contact"
+    },
+    {
+      "component": "EastGroundDuct",
+      "source_kind": "cable_ground_contact",
+      "source_contact_sha256": "782082a31aeb6e8011268dd024e6b61ec135b81ce1d677c775fe0c807d38ef7f",
+      "source_bounds_m": {
+        "min": [
+          15.339999198913574,
+          -13.199999809265137,
+          0.0
+        ],
+        "max": [
+          15.460000038146973,
+          7.800000190734863,
+          0.10000000149011612
+        ]
+      },
+      "source_contact": {
+        "method": "horizontal_mesh_faces",
+        "plane_z_m": 0.0,
+        "loops": [
+          {
+            "vertices_m": [
+              [
+                15.339999198913574,
+                -13.199999809265137,
+                0.0
+              ],
+              [
+                15.339999198913574,
+                7.800000190734863,
+                0.0
+              ],
+              [
+                15.460000038146973,
+                7.800000190734863,
+                0.0
+              ],
+              [
+                15.460000038146973,
+                -13.199999809265137,
+                0.0
+              ]
+            ],
+            "predicted_native_vertices_cm": [
+              [
+                1533.9999198913574,
+                1319.9999809265137,
+                0.0
+              ],
+              [
+                1533.9999198913574,
+                -780.0000190734863,
+                0.0
+              ],
+              [
+                1546.0000038146973,
+                -780.0000190734863,
+                0.0
+              ],
+              [
+                1546.0000038146973,
+                1319.9999809265137,
+                0.0
+              ]
+            ],
+            "nesting_depth": 0,
+            "hole": false,
+            "area_m2": 2.520017623901367
+          }
+        ],
+        "horizontal_face_triangles_m": [
+          [
+            [
+              15.339999198913574,
+              7.800000190734863,
+              0.0
+            ],
+            [
+              15.460000038146973,
+              7.800000190734863,
+              0.0
+            ],
+            [
+              15.460000038146973,
+              -13.199999809265137,
+              0.0
+            ]
+          ],
+          [
+            [
+              15.339999198913574,
+              7.800000190734863,
+              0.0
+            ],
+            [
+              15.460000038146973,
+              -13.199999809265137,
+              0.0
+            ],
+            [
+              15.339999198913574,
+              -13.199999809265137,
+              0.0
+            ]
+          ]
+        ],
+        "contact_area_m2": 2.520017623901367,
+        "contact_vertices_m": [
+          [
+            15.339999198913574,
+            -13.199999809265137,
+            0.0
+          ],
+          [
+            15.339999198913574,
+            7.800000190734863,
+            0.0
+          ],
+          [
+            15.460000038146973,
+            -13.199999809265137,
+            0.0
+          ],
+          [
+            15.460000038146973,
+            7.800000190734863,
+            0.0
+          ]
+        ],
+        "policy": "Retain actual loops and holes; never replace curved or hollow contacts with a filled AABB."
+      },
+      "exclusion_reason": "cable_ground_contact source kind"
+    },
+    {
+      "component": "CabinetGroundFeed",
+      "source_kind": "cable_ground_contact",
+      "source_contact_sha256": "0db85a9fa6cd8354aef616e8e47122062380f563f8feab391a765e97648c4f46",
+      "source_bounds_m": {
+        "min": [
+          10.149999618530273,
+          -13.260000228881836,
+          0.0
+        ],
+        "max": [
+          15.450000762939453,
+          -13.139999389648438,
+          0.10000000149011612
+        ]
+      },
+      "source_contact": {
+        "method": "horizontal_mesh_faces",
+        "plane_z_m": 0.0,
+        "loops": [
+          {
+            "vertices_m": [
+              [
+                10.149999618530273,
+                -13.260000228881836,
+                0.0
+              ],
+              [
+                10.149999618530273,
+                -13.139999389648438,
+                0.0
+              ],
+              [
+                15.450000762939453,
+                -13.139999389648438,
+                0.0
+              ],
+              [
+                15.450000762939453,
+                -13.260000228881836,
+                0.0
+              ]
+            ],
+            "predicted_native_vertices_cm": [
+              [
+                1014.9999618530273,
+                1326.0000228881836,
+                0.0
+              ],
+              [
+                1014.9999618530273,
+                1313.9999389648438,
+                0.0
+              ],
+              [
+                1545.0000762939453,
+                1313.9999389648438,
+                0.0
+              ],
+              [
+                1545.0000762939453,
+                1326.0000228881836,
+                0.0
+              ]
+            ],
+            "nesting_depth": 0,
+            "hole": false,
+            "area_m2": 0.6360045852670737
+          }
+        ],
+        "horizontal_face_triangles_m": [
+          [
+            [
+              10.149999618530273,
+              -13.139999389648438,
+              0.0
+            ],
+            [
+              15.450000762939453,
+              -13.139999389648438,
+              0.0
+            ],
+            [
+              15.450000762939453,
+              -13.260000228881836,
+              0.0
+            ]
+          ],
+          [
+            [
+              10.149999618530273,
+              -13.139999389648438,
+              0.0
+            ],
+            [
+              15.450000762939453,
+              -13.260000228881836,
+              0.0
+            ],
+            [
+              10.149999618530273,
+              -13.260000228881836,
+              0.0
+            ]
+          ]
+        ],
+        "contact_area_m2": 0.6360045852670737,
+        "contact_vertices_m": [
+          [
+            10.149999618530273,
+            -13.260000228881836,
+            0.0
+          ],
+          [
+            10.149999618530273,
+            -13.139999389648438,
+            0.0
+          ],
+          [
+            15.450000762939453,
+            -13.260000228881836,
+            0.0
+          ],
+          [
+            15.450000762939453,
+            -13.139999389648438,
+            0.0
+          ]
+        ],
+        "policy": "Retain actual loops and holes; never replace curved or hollow contacts with a filled AABB."
+      },
+      "exclusion_reason": "cable_ground_contact source kind"
+    }
+  ],
+  "included_count": 16,
+  "excluded_count": 17,
+  "source_cable_kind_exclusions": 14,
+  "source_structural_kind_semantic_duct_exclusions": 3,
+  "replacement": {
+    "original_key": "SM_Utility_solar_farm_v3_Foundation_Z0",
+    "original_target": "/Game/CitySim/Art/Utilities/ApprovedBatch/Foundations/SM_Utility_solar_farm_v3_Foundation_Z0",
+    "original_export": "ArtSource/Exports/UtilityIntegration/Foundations/SM_Utility_solar_farm_v3_Foundation_Z0.fbx",
+    "original_export_sha256": "c1f1b07bfa647bda76559788ec69ed77df5a12a0b79b7b5aebd3a85016014f15"
+  },
+  "preserved_other_foundation_groups": [
+    {
+      "key": "SM_Utility_coal_v4_Foundation_Z0",
+      "export": "ArtSource/Exports/UtilityIntegration/Foundations/SM_Utility_coal_v4_Foundation_Z0.fbx",
+      "sha256": "c0b5be414bb8e7a978a3f74773d7463627116a64620120cbb7173efdccdc9265"
+    },
+    {
+      "key": "SM_Utility_coal_v4_Foundation_Z0p25",
+      "export": "ArtSource/Exports/UtilityIntegration/Foundations/SM_Utility_coal_v4_Foundation_Z0p25.fbx",
+      "sha256": "873d44b73182280049414297aaa27a05ef590d8f7d2ee80b57cbcebee6376ed5"
+    },
+    {
+      "key": "SM_Utility_oil_v3_Foundation_Z0",
+      "export": "ArtSource/Exports/UtilityIntegration/Foundations/SM_Utility_oil_v3_Foundation_Z0.fbx",
+      "sha256": "df3359d9a0b088c0b67c80f79c9807600b4b9ba64858b5235fc678de63d7a4a3"
+    },
+    {
+      "key": "SM_Utility_power_base_v2_Foundation_Z0",
+      "export": "ArtSource/Exports/UtilityIntegration/Foundations/SM_Utility_power_base_v2_Foundation_Z0.fbx",
+      "sha256": "4d43cfd901772c07d58612ca6c88fb34dfa6fafb9d51dd7d4b7233f72540c3b3"
+    },
+    {
+      "key": "SM_Utility_water_base_v2_Foundation_Z0",
+      "export": "ArtSource/Exports/UtilityIntegration/Foundations/SM_Utility_water_base_v2_Foundation_Z0.fbx",
+      "sha256": "42822fe4fb288208fa324e744d870e422947b6bdd66b69cabf0d52964fba9148"
+    },
+    {
+      "key": "SM_Utility_power_medium_v3_Foundation_Z0",
+      "export": "ArtSource/Exports/UtilityIntegration/Foundations/SM_Utility_power_medium_v3_Foundation_Z0.fbx",
+      "sha256": "7a01a06cd7c772bf6b53508a921c3785df1792533012a922ccc0760dce4f084a"
+    },
+    {
+      "key": "SM_Utility_power_high_v3_Foundation_Z0",
+      "export": "ArtSource/Exports/UtilityIntegration/Foundations/SM_Utility_power_high_v3_Foundation_Z0.fbx",
+      "sha256": "d3fdadc56bb8a3b1eabc924a7db6e28f9c483c087198f87578bc4184b521b251"
+    },
+    {
+      "key": "SM_Utility_water_medium_v2_Foundation_Z0",
+      "export": "ArtSource/Exports/UtilityIntegration/Foundations/SM_Utility_water_medium_v2_Foundation_Z0.fbx",
+      "sha256": "d17329c6963819d0f098680afea214add1d328548c2f81ccb6fff2759c78579c"
+    },
+    {
+      "key": "SM_Utility_water_high_v2_Foundation_Z0",
+      "export": "ArtSource/Exports/UtilityIntegration/Foundations/SM_Utility_water_high_v2_Foundation_Z0.fbx",
+      "sha256": "34de3e0ae861624ee4101c021fc6db725386bb2ff2754f3fc21488152c3976a2"
+    },
+    {
+      "key": "SM_Utility_water_tower_v3_Foundation_Z0",
+      "export": "ArtSource/Exports/UtilityIntegration/Foundations/SM_Utility_water_tower_v3_Foundation_Z0.fbx",
+      "sha256": "ed4ced2e7513ee5c3d2877aaaaeebae75e9bd24af7ec22fed499f7f11ff1b49a"
+    },
+    {
+      "key": "SM_Utility_wind_turbine_v1_Foundation_Z0",
+      "export": "ArtSource/Exports/UtilityIntegration/Foundations/SM_Utility_wind_turbine_v1_Foundation_Z0.fbx",
+      "sha256": "43e77118b0e8b39f69111e56d692a538868a82c1109c286ffb4d4874955412bc"
+    }
+  ],
+  "protected_files_unchanged": {
+    "ArtSource/Blender/UtilityIntegration/CityUtility_coal_v4.blend": "fc6603696a686a41fe9589db8a2186da6345ab7d65bc00944c299baf6726bbb4",
+    "ArtSource/Blender/UtilityIntegration/CityUtility_oil_v3.blend": "3a3d19b6f33400178ce059f68dc8c31f48e620d1fb1a53158e29800f6363e1a0",
+    "ArtSource/Blender/UtilityIntegration/CityUtility_power_base_v2.blend": "40b6bc7be567b74b743978db7bd485c90389730c7a519ab82d1fea29512ad1c9",
+    "ArtSource/Blender/UtilityIntegration/CityUtility_power_high_v3.blend": "7b78054d92cc112ad8df98e52d8139ba0932d80158e57f4cbf049eb77f9096f6",
+    "ArtSource/Blender/UtilityIntegration/CityUtility_power_medium_v3.blend": "7fdc6b3ee4ce24c2b956425bd09e5bd9a356aa0ca5ce0c43604f27dbe38f1fd2",
+    "ArtSource/Blender/UtilityIntegration/CityUtility_solar_farm_v3.blend": "96870952a799407209347380661e107da0269fec25e5162e577a4b659df609a9",
+    "ArtSource/Blender/UtilityIntegration/CityUtility_water_base_v2.blend": "92684cbb91b690f27042939db1d3256c4daca590430394497b5d31d87956eb50",
+    "ArtSource/Blender/UtilityIntegration/CityUtility_water_high_v2.blend": "432f54b04b5b65b605806bc5f6575eb3bce42c07306d191a701b910efc65315e",
+    "ArtSource/Blender/UtilityIntegration/CityUtility_water_medium_v2.blend": "f8f1a3dbc3fb8581eb6b730ca5448a97b8d763bf4ecac38659823a63f1314a9c",
+    "ArtSource/Blender/UtilityIntegration/CityUtility_water_tower_v3.blend": "9c412a4b64f2743cb673a5222ddec1e8b6543990619215ccf64e6ea9a590b5e2",
+    "ArtSource/Blender/UtilityIntegration/CityUtility_wind_turbine_v1.blend": "bfdb842c7daf7937de1cb391bdf4fd32721d345a962e6a95bce13cfc1f7916e4",
+    "ArtSource/Exports/UtilityIntegration/README.md": "74ee89adffa61dcd528439e5cd6d163e616594c46370b629d5b2bcf4b5789a07",
+    "ArtSource/Exports/UtilityIntegration/coal/SM_Utility_coal_v4_LOD1.fbx": "76b0a88540a17b98916421d56169ebbf446fc2c6d5309a81e3a7cd520f512f57",
+    "ArtSource/Exports/UtilityIntegration/coal/SM_Utility_coal_v4_LOD2.fbx": "9699a1e4bce57ef319c6f1e39506663fbf9fdd1337b2f50685fd453fa52c1c9b",
+    "ArtSource/Exports/UtilityIntegration/oil/SM_Utility_oil_v3_LOD1.fbx": "caee5197228ccf6d0580b921e1901555066d42af5b7adb5c71841cdd754cb944",
+    "ArtSource/Exports/UtilityIntegration/oil/SM_Utility_oil_v3_LOD2.fbx": "ec29026720cfdbbef8be2845c8c232ec5453d481926cae218c6767b2880dc041",
+    "ArtSource/Exports/UtilityIntegration/power_base/SM_Utility_power_base_v2_LOD1.fbx": "067ad0124f9450f1619828df42ce65c81e2f6be1885d00397d0e62c35e55f931",
+    "ArtSource/Exports/UtilityIntegration/power_base/SM_Utility_power_base_v2_LOD2.fbx": "82f59586d8062f79ee8cc3fdcf06b796d0e4fc138816fd1a6ac1606922fb3567",
+    "ArtSource/Exports/UtilityIntegration/power_high/SM_Utility_power_high_v3_LOD1.fbx": "ecd7ce313b157d7cb309851b992ea669d0c6d58c8ebb63635767a40f06756484",
+    "ArtSource/Exports/UtilityIntegration/power_high/SM_Utility_power_high_v3_LOD2.fbx": "49106f265026e11cd4563d173c311bb332634cd364491b9dfcac89b79fba2ffb",
+    "ArtSource/Exports/UtilityIntegration/power_medium/SM_Utility_power_medium_v3_LOD1.fbx": "57f8a009adf73eaca09c05814ba495d197acfc91d9b395928658f73359a7d235",
+    "ArtSource/Exports/UtilityIntegration/power_medium/SM_Utility_power_medium_v3_LOD2.fbx": "5eb4a2969deaae330ef0e965e294fdc18cd16a1c025a963b25e2a786aa1845d1",
+    "ArtSource/Exports/UtilityIntegration/solar_farm/SM_Utility_solar_farm_v3_LOD1.fbx": "5773543667774c1895d5a289260535b945583dd48002d7b106ec4c6049e278e0",
+    "ArtSource/Exports/UtilityIntegration/solar_farm/SM_Utility_solar_farm_v3_LOD2.fbx": "e8ff22412ee68c8b7622ce5abbb5c87745eaae47d7568bde3e4c9da273f789a6",
+    "ArtSource/Exports/UtilityIntegration/water_base/SM_Utility_water_base_v2_LOD1.fbx": "ba05cee3e5e6c3616474dc305a473e0e107f93622a14d30969e5a6ccae704438",
+    "ArtSource/Exports/UtilityIntegration/water_base/SM_Utility_water_base_v2_LOD2.fbx": "6312828da5eb845481ab128ceefa619dbad3344362b1efdd4a7ee93b38ac4d9f",
+    "ArtSource/Exports/UtilityIntegration/water_high/SM_Utility_water_high_v2_LOD1.fbx": "f15646d4b63f44aba48301eccb7738f997664227a838e1d003d91aee65cb54c2",
+    "ArtSource/Exports/UtilityIntegration/water_high/SM_Utility_water_high_v2_LOD2.fbx": "29822094bca2e0810e5f5b982343b4d483269addf316a77ff263532d28e4f959",
+    "ArtSource/Exports/UtilityIntegration/water_medium/SM_Utility_water_medium_v2_LOD1.fbx": "d4358c88b91ec7d328d1dbcbf4b2fb373486122de0450091a7f8ffa886e85fc8",
+    "ArtSource/Exports/UtilityIntegration/water_medium/SM_Utility_water_medium_v2_LOD2.fbx": "ea07c54a2b5c96ecafc497cf4e399e850a917491a13e5e238de9d581979042ec",
+    "ArtSource/Exports/UtilityIntegration/water_tower/SM_Utility_water_tower_v3_LOD1.fbx": "3c846614060a9153c2aecddccc41b8d8dc939c90f5f01bc148eccebf8a9a92ee",
+    "ArtSource/Exports/UtilityIntegration/water_tower/SM_Utility_water_tower_v3_LOD2.fbx": "0d4299ad4b83fc4c52fd3b45a4204b9337a56cba206b6855aab95f1e9ce6e43a",
+    "ArtSource/Exports/UtilityIntegration/wind_turbine/SM_Utility_wind_turbine_v1_Body_LOD0.fbx": "244e846e785ad26b164a013941947aa1cee870f6bd8f4d299414369ac9c304a5",
+    "ArtSource/Exports/UtilityIntegration/wind_turbine/SM_Utility_wind_turbine_v1_Body_LOD1.fbx": "7c7495d5646d4a25c6d456d6981f7903144b4007c9c7571b08dafd397385d0ac",
+    "ArtSource/Exports/UtilityIntegration/wind_turbine/SM_Utility_wind_turbine_v1_Body_LOD2.fbx": "3b457cad8753db8270dec4d391edc4f3f80173e8ecd8e90a8d54a51ab2ca7cd4",
+    "ArtSource/Exports/UtilityIntegration/wind_turbine/SM_Utility_wind_turbine_v1_LOD1.fbx": "dbb71b2ccf19ba75ae2bb0e11216cb8cccaca0d232f7cb2aabe5a33076ad1aca",
+    "ArtSource/Exports/UtilityIntegration/wind_turbine/SM_Utility_wind_turbine_v1_LOD2.fbx": "4a1140cc7fa10f3136d315d7d16ad66334fb63d95a9670c14216fcf44f9449d4",
+    "ArtSource/Exports/UtilityIntegration/wind_turbine/SM_Utility_wind_turbine_v1_Rotor_LOD0.fbx": "155a05cbd0cfaacf6fff7a5d031939b22a1a2a529dc3383173b893f2df23383b",
+    "ArtSource/Exports/UtilityIntegration/wind_turbine/SM_Utility_wind_turbine_v1_Rotor_LOD1.fbx": "cf3816ba5c6a8366b52ce100078cc72bd1102b9087276e8a0d5ee123e58e1e52",
+    "ArtSource/Exports/UtilityIntegration/wind_turbine/SM_Utility_wind_turbine_v1_Rotor_LOD2.fbx": "c5b76bde74588b1a826741f898b34627ec8f883abb15d22c7f60ee039544391a",
+    "ArtSource/Generated/blender/issue-158/v4/approval.json": "2fe9572ef56fce52da98506b553b997a72fbce49036db0a10458b41f59ef0afe",
+    "ArtSource/Generated/blender/issue-158/v4/asset.blend": "823afab44558ac2c09bdd043b86be558312a6a029c95c6d953dcaceda19dd863",
+    "ArtSource/Generated/blender/issue-158/v4/asset.fbx": "70831d3d798970d8a0d0f3512b6401b5593f64e11ff606eae952ccac2a34c655",
+    "ArtSource/Generated/blender/issue-158/v4/entrance-anchors.json": "9ff2a988698dea7f63194e1f6851ca52b7855679f043391bf80b92d83fbf1e1d",
+    "ArtSource/Generated/blender/issue-158/v4/INTEGRATION.md": "97edeb3947cdbbcf7ae5172ccac6b8e5a3ce66d81b79c80129a4d27725831933",
+    "ArtSource/Generated/blender/issue-158/v4/material-manifest.json": "03d391d89cb4a4a9ba5253dd9c907cf2d6f2ccac99120345dc955db0e0cccd66",
+    "ArtSource/Generated/blender/issue-158/v4/preview.png": "3772de99d1a0e1845f0edea77c1e60978627283a2fde3a1f3d5e9e83dd6e575e",
+    "ArtSource/Generated/blender/issue-158/v4/provenance.json": "a514cf5aee4e4710307c5defb4fa5d7c78eb4ddbac34b136611be4b2a83b5f4f",
+    "ArtSource/Generated/blender/issue-158/v4/source-bundle.zip": "c83d0d7c0870a4f7a33ada397e9a8e5c4270f198893da90277a6e23c2f38201f",
+    "ArtSource/Generated/blender/issue-158/v4/unreal-handoff.json": "7332f0131a5a322b74a2c88497bffda31a9ec0d0b6c1fd4e4727f9d274c3a27a",
+    "ArtSource/Generated/blender/issue-158/v4/validation.json": "f2195503b649a31ae176100cdbc05865abb70558ee59f0346dd8cc010f86c3c8",
+    "ArtSource/Generated/blender/issue-158/v4/window-mounts.json": "599324d9eb0826a0491aac4126ec59476df96b64c6227b9d43cf54c704f1fab4",
+    "ArtSource/Generated/blender/issue-158/v4/textures/CityMechanical_BaseColor.png": "ea75f9ab4911ad7ecf6a5e0ff5688fdc2c07ed52c3cad007ac58e8d06fe4e5ae",
+    "ArtSource/Generated/blender/issue-158/v4/textures/CityMechanical_Normal.png": "7a456d3f708d3ee42a7dfb830ac87f95ce27aeeea0e56ac444daca5da510231e",
+    "ArtSource/Generated/blender/issue-158/v4/textures/CityMechanical_ORM.png": "0e08a253e6c30a15e3675921cab4958c0cdcf088f23f05b5fcc1eb3f87dbec98",
+    "ArtSource/Generated/blender/issue-158/v4/textures/CivicAsphalt_BaseColor.png": "85e2cfe619a74da7fe74ad0c6439141f4edb63e5085208c4cfd620c5e1d988fa",
+    "ArtSource/Generated/blender/issue-158/v4/textures/CivicAsphalt_Normal.png": "e6f9e8f0257ddbc33b012b72f9446a2c8a3679153488b4bbc67ca6e50be153fd",
+    "ArtSource/Generated/blender/issue-158/v4/textures/CivicAsphalt_ORM.png": "6b06b777944f76046d0f51131cdec7cca658efac60560c95ab1e854c37189ab4",
+    "ArtSource/Generated/blender/issue-159/v3/approval.json": "45abb473f7320cb30c4b44248b90bf952e94d765ccf61665f55adcc70936ce5e",
+    "ArtSource/Generated/blender/issue-159/v3/asset.blend": "87b79121be0f6262e7be62b0f6c2414447baa0bab98d4ab83118ec91f81325e0",
+    "ArtSource/Generated/blender/issue-159/v3/asset.fbx": "b1874b634da098c6e8eb8a627146c2161dcfa0f5a9334d61826e298ed56ea4b1",
+    "ArtSource/Generated/blender/issue-159/v3/entrance-anchors.json": "2d96754841a7086e41990361d51fd85e30f31249bfade94fb475984076323268",
+    "ArtSource/Generated/blender/issue-159/v3/INTEGRATION.md": "97edeb3947cdbbcf7ae5172ccac6b8e5a3ce66d81b79c80129a4d27725831933",
+    "ArtSource/Generated/blender/issue-159/v3/material-manifest.json": "cdd803a4dd904ed7b0cfd532745e17b13bbc4a0d8750cede17bde2fd188745f6",
+    "ArtSource/Generated/blender/issue-159/v3/preview.png": "3d2ee935a00bf7b61ae58c57ff97f1d67cde8a76681afef881a3acff49be8890",
+    "ArtSource/Generated/blender/issue-159/v3/provenance.json": "085002f46647a67a9f274c82d403e9808a575ec44e950017084fe8c96fd5398b",
+    "ArtSource/Generated/blender/issue-159/v3/source-bundle.zip": "945013ba3ae7bc9a984424061434bd21654d790d7f5c31e2cde1981a81f009bb",
+    "ArtSource/Generated/blender/issue-159/v3/unreal-handoff.json": "5ec7e74505aceaa2ca4f2134c1debb2a5c0f2200e4b2487db7cf6e98908f20c1",
+    "ArtSource/Generated/blender/issue-159/v3/validation.json": "1bc3f8038583d314ff767de2e1e0712668d027180abece3f9ab4440882961c33",
+    "ArtSource/Generated/blender/issue-159/v3/window-mounts.json": "1da30a614fa187924c3daee8283d774d2df911e7051b47d65ff8d3748f697d06",
+    "ArtSource/Generated/blender/issue-159/v3/textures/CityMechanical_BaseColor.png": "ea75f9ab4911ad7ecf6a5e0ff5688fdc2c07ed52c3cad007ac58e8d06fe4e5ae",
+    "ArtSource/Generated/blender/issue-159/v3/textures/CityMechanical_Normal.png": "7a456d3f708d3ee42a7dfb830ac87f95ce27aeeea0e56ac444daca5da510231e",
+    "ArtSource/Generated/blender/issue-159/v3/textures/CityMechanical_ORM.png": "0e08a253e6c30a15e3675921cab4958c0cdcf088f23f05b5fcc1eb3f87dbec98",
+    "ArtSource/Generated/blender/issue-159/v3/textures/CivicAsphalt_BaseColor.png": "85e2cfe619a74da7fe74ad0c6439141f4edb63e5085208c4cfd620c5e1d988fa",
+    "ArtSource/Generated/blender/issue-159/v3/textures/CivicAsphalt_Normal.png": "e6f9e8f0257ddbc33b012b72f9446a2c8a3679153488b4bbc67ca6e50be153fd",
+    "ArtSource/Generated/blender/issue-159/v3/textures/CivicAsphalt_ORM.png": "6b06b777944f76046d0f51131cdec7cca658efac60560c95ab1e854c37189ab4",
+    "ArtSource/Generated/blender/issue-160/v2/approval.json": "7cd6e65cb57e02ba4428ece8ef9803f5fc3fa3f8f912422bee2f8f572c634941",
+    "ArtSource/Generated/blender/issue-160/v2/asset.blend": "6ec9a3d4a7eac6817120949d5bb13d735dfabb842d44f1dcaa605bb6b46914cc",
+    "ArtSource/Generated/blender/issue-160/v2/asset.fbx": "b35d8f8836b0b16b1f469867758ef09fde1e86901bd39d72c098ae12e888cb67",
+    "ArtSource/Generated/blender/issue-160/v2/entrance-anchors.json": "606effc9adeae9dbdf8f0567f94f7d382e2e394cbcdd923415d1cf8c2f059db2",
+    "ArtSource/Generated/blender/issue-160/v2/INTEGRATION.md": "97edeb3947cdbbcf7ae5172ccac6b8e5a3ce66d81b79c80129a4d27725831933",
+    "ArtSource/Generated/blender/issue-160/v2/material-manifest.json": "3bdad1e2d95e6e7cd3370910d90c326dce745e2dad2dcb7af184f899e20cb7eb",
+    "ArtSource/Generated/blender/issue-160/v2/preview.png": "94293962dbcd0a217ab083e6b6e7222903dbf97159baa869d1c8d6fba10bdd76",
+    "ArtSource/Generated/blender/issue-160/v2/provenance.json": "83fa025316af884da8a37a2788217058a95f6c898da19a21f6a3cad733452bc0",
+    "ArtSource/Generated/blender/issue-160/v2/source-bundle.zip": "786bc0da2e5be6fe59f805a60079f97b8121d0ee8f98bad22beecf4fdf69b18b",
+    "ArtSource/Generated/blender/issue-160/v2/unreal-handoff.json": "18c2c7a2d374539580d2613ee3d26f22d4b8dc90f3570ed3bd541461004be443",
+    "ArtSource/Generated/blender/issue-160/v2/upgrade-stage.json": "b15685ae53f32dc5fb6b9903a2218be1806bc662299721b97b654793e07eba45",
+    "ArtSource/Generated/blender/issue-160/v2/validation.json": "6122c31440c49bff4c164e81b11c6b31416069991f41f9d5c3cf5b790d973d39",
+    "ArtSource/Generated/blender/issue-160/v2/window-mounts.json": "868d343cab22a6eb0f919032b37166aa2aaeac3752976833208bdc4e28476135",
+    "ArtSource/Generated/blender/issue-160/v2/textures/CityMechanical_BaseColor.png": "ea75f9ab4911ad7ecf6a5e0ff5688fdc2c07ed52c3cad007ac58e8d06fe4e5ae",
+    "ArtSource/Generated/blender/issue-160/v2/textures/CityMechanical_Normal.png": "7a456d3f708d3ee42a7dfb830ac87f95ce27aeeea0e56ac444daca5da510231e",
+    "ArtSource/Generated/blender/issue-160/v2/textures/CityMechanical_ORM.png": "0e08a253e6c30a15e3675921cab4958c0cdcf088f23f05b5fcc1eb3f87dbec98",
+    "ArtSource/Generated/blender/issue-160/v2/textures/CivicAsphalt_BaseColor.png": "85e2cfe619a74da7fe74ad0c6439141f4edb63e5085208c4cfd620c5e1d988fa",
+    "ArtSource/Generated/blender/issue-160/v2/textures/CivicAsphalt_Normal.png": "e6f9e8f0257ddbc33b012b72f9446a2c8a3679153488b4bbc67ca6e50be153fd",
+    "ArtSource/Generated/blender/issue-160/v2/textures/CivicAsphalt_ORM.png": "6b06b777944f76046d0f51131cdec7cca658efac60560c95ab1e854c37189ab4",
+    "ArtSource/Generated/blender/issue-161/v2/approval.json": "9fc8531e0e21b9429cea2255ed751809a9f67689b7d9e536173ba1bf3a243502",
+    "ArtSource/Generated/blender/issue-161/v2/asset.blend": "986fb3bbe30ca0f93ac7e7d46f9ad0e06ee8c57b80465f48fb05650b41e3b276",
+    "ArtSource/Generated/blender/issue-161/v2/asset.fbx": "d5a4eaac2ba1fa29539e0f1476a6353b7f8a0095e37e09e8b92eaa2af531026b",
+    "ArtSource/Generated/blender/issue-161/v2/entrance-anchors.json": "7df78e128c03c024e0283e3d3778b58f7ff395e539a9f2305c916adc3cde7d65",
+    "ArtSource/Generated/blender/issue-161/v2/INTEGRATION.md": "97edeb3947cdbbcf7ae5172ccac6b8e5a3ce66d81b79c80129a4d27725831933",
+    "ArtSource/Generated/blender/issue-161/v2/material-manifest.json": "cfde59825137d3b9f14a3b9bf083d5cf83e738457e1bcb82d3c2c3c825fc7ce5",
+    "ArtSource/Generated/blender/issue-161/v2/preview.png": "a8dd1c4cc28091bc5fa2b7759df30743e330559704ba74ca2db0e4670763d658",
+    "ArtSource/Generated/blender/issue-161/v2/provenance.json": "6fb96e4cc030c7ba7e381366cf5fd48b5316bcbed4ed0cced74d1845455b1eda",
+    "ArtSource/Generated/blender/issue-161/v2/recipe.json": "315c49737c8efe79c0849a06c2f75e495b2578903465d45e9c8808570fff22af",
+    "ArtSource/Generated/blender/issue-161/v2/revision-provenance.json": "92395e588a4c1d0305351931fe3dcc05805a902df32a1649281db520d284e0f5",
+    "ArtSource/Generated/blender/issue-161/v2/source-bundle.zip": "6d22452930108397d7b527e69e214293e1a6f40ffe54f278fb590525dd844701",
+    "ArtSource/Generated/blender/issue-161/v2/unreal-handoff.json": "8de552320b02b00e87971b59bba1ed82c42896cd652441f9e2a7d81fb2ac4dc6",
+    "ArtSource/Generated/blender/issue-161/v2/upgrade-stage.json": "84aba2fea10874c5ef30eb7c86833de5a6609f7734167e2824b90476bda8a12f",
+    "ArtSource/Generated/blender/issue-161/v2/validation.json": "a43725b3866753b491dfe6f335a84f7ec1548df67a1e86b7f8e8ebba02e1aecb",
+    "ArtSource/Generated/blender/issue-161/v2/window-mounts.json": "7ee2a05e679cf1e87ce0aef2a14e821d22d38fdc101fa0c8c1da1a13f096e634",
+    "ArtSource/Generated/blender/issue-161/v2/textures/CityMechanical_BaseColor.png": "ea75f9ab4911ad7ecf6a5e0ff5688fdc2c07ed52c3cad007ac58e8d06fe4e5ae",
+    "ArtSource/Generated/blender/issue-161/v2/textures/CityMechanical_Normal.png": "7a456d3f708d3ee42a7dfb830ac87f95ce27aeeea0e56ac444daca5da510231e",
+    "ArtSource/Generated/blender/issue-161/v2/textures/CityMechanical_ORM.png": "0e08a253e6c30a15e3675921cab4958c0cdcf088f23f05b5fcc1eb3f87dbec98",
+    "ArtSource/Generated/blender/issue-161/v2/textures/CivicAsphalt_BaseColor.png": "85e2cfe619a74da7fe74ad0c6439141f4edb63e5085208c4cfd620c5e1d988fa",
+    "ArtSource/Generated/blender/issue-161/v2/textures/CivicAsphalt_Normal.png": "e6f9e8f0257ddbc33b012b72f9446a2c8a3679153488b4bbc67ca6e50be153fd",
+    "ArtSource/Generated/blender/issue-161/v2/textures/CivicAsphalt_ORM.png": "6b06b777944f76046d0f51131cdec7cca658efac60560c95ab1e854c37189ab4",
+    "ArtSource/Generated/blender/issue-163/v3/approval.json": "167af48fe7ea9fb6bb9b590b643753dc069cd437854b1dffbc13a83ab3f2eb8f",
+    "ArtSource/Generated/blender/issue-163/v3/asset.blend": "13177a9747a108c7607f782e75aab99a39932d211796425a30738cb1d7f7d08e",
+    "ArtSource/Generated/blender/issue-163/v3/asset.fbx": "aa432f78ad4af7b0a81a8991a1f330ec5b8e3300fdd734779b8d67e99c7f7c9b",
+    "ArtSource/Generated/blender/issue-163/v3/entrance-anchors.json": "b4f96e0166cbc8cf35df7c0866b32e99da0e35486b744ceb534b7d2bfc6ac566",
+    "ArtSource/Generated/blender/issue-163/v3/INTEGRATION.md": "97edeb3947cdbbcf7ae5172ccac6b8e5a3ce66d81b79c80129a4d27725831933",
+    "ArtSource/Generated/blender/issue-163/v3/material-manifest.json": "295dcb14a3ea908dd4a4bb323e5f624388c14cb5d1c5d6f32f45553dbdc1b870",
+    "ArtSource/Generated/blender/issue-163/v3/preview.png": "9c58d58c625979b0c6474de87bd2e526269b5428290889597e1e6ec75adeeed4",
+    "ArtSource/Generated/blender/issue-163/v3/source-bundle.zip": "1b57754113c1fc0f4b71c8a9e17c3c05dea4d3f7dfb2d12ca07b8f840fd44c1c",
+    "ArtSource/Generated/blender/issue-163/v3/unreal-handoff.json": "ba09fc7a9764a9f9065bbebb3a4cde5bdf5eccd0f968920ad6f106e72fe8291c",
+    "ArtSource/Generated/blender/issue-163/v3/upgrade-stage.json": "ee8df1685d316851d3c34964d6de7ffec36f239f025e830306c432b23bdd0304",
+    "ArtSource/Generated/blender/issue-163/v3/validation.json": "f6f850bd64a96b07cc730eea30f0b0cca6245eb99f417553051cf8fe4113a5a0",
+    "ArtSource/Generated/blender/issue-163/v3/window-mounts.json": "32addbff318d66e613f83ee58aec385ff55daa9d88431d914fa14892fdb0fa0d",
+    "ArtSource/Generated/blender/issue-163/v3/textures/CityMechanical_BaseColor.png": "ea75f9ab4911ad7ecf6a5e0ff5688fdc2c07ed52c3cad007ac58e8d06fe4e5ae",
+    "ArtSource/Generated/blender/issue-163/v3/textures/CityMechanical_Normal.png": "7a456d3f708d3ee42a7dfb830ac87f95ce27aeeea0e56ac444daca5da510231e",
+    "ArtSource/Generated/blender/issue-163/v3/textures/CityMechanical_ORM.png": "0e08a253e6c30a15e3675921cab4958c0cdcf088f23f05b5fcc1eb3f87dbec98",
+    "ArtSource/Generated/blender/issue-163/v3/textures/CivicAsphalt_BaseColor.png": "85e2cfe619a74da7fe74ad0c6439141f4edb63e5085208c4cfd620c5e1d988fa",
+    "ArtSource/Generated/blender/issue-163/v3/textures/CivicAsphalt_Normal.png": "e6f9e8f0257ddbc33b012b72f9446a2c8a3679153488b4bbc67ca6e50be153fd",
+    "ArtSource/Generated/blender/issue-163/v3/textures/CivicAsphalt_ORM.png": "6b06b777944f76046d0f51131cdec7cca658efac60560c95ab1e854c37189ab4",
+    "ArtSource/Generated/blender/issue-164/v3/approval.json": "6858c855d47090dd8d65549485a66bb6d6a4fda2ada9f479af6904da6a66f129",
+    "ArtSource/Generated/blender/issue-164/v3/asset.blend": "3faa050350123ee1e03cbe697f3d7f537609a7001ca489f50eed406a88bc8843",
+    "ArtSource/Generated/blender/issue-164/v3/asset.fbx": "217b25d8edd5d2e6fbaf80df0e2c6875e977480643e3106acb94783e63723265",
+    "ArtSource/Generated/blender/issue-164/v3/entrance-anchors.json": "ae5d53acccf4c7b7ae66dddf2cece34308306072b0d61eb339c8470b8278343b",
+    "ArtSource/Generated/blender/issue-164/v3/INTEGRATION.md": "97edeb3947cdbbcf7ae5172ccac6b8e5a3ce66d81b79c80129a4d27725831933",
+    "ArtSource/Generated/blender/issue-164/v3/material-manifest.json": "470f6454f47d22d2409461284116f3e80865092083c8c62a7c7f0fb0e3ca2763",
+    "ArtSource/Generated/blender/issue-164/v3/preview.png": "3f7231378972ef5d36f70129e456adf35b7ac54be12563f8680cab58b2f55abf",
+    "ArtSource/Generated/blender/issue-164/v3/source-bundle.zip": "8be368a1a3cdfbead920fe62d5507fd8bcf59b8b0e4c46f433baea76e825adb9",
+    "ArtSource/Generated/blender/issue-164/v3/unreal-handoff.json": "05e921ded24e4b4e3089813f701b6eb9d984de46e4abe300093c6bff220eb7a3",
+    "ArtSource/Generated/blender/issue-164/v3/upgrade-stage.json": "6d99b2257f34d098c8260536be11df2efc759da66a6092c9f08efc4171fd128e",
+    "ArtSource/Generated/blender/issue-164/v3/validation.json": "d9b3c3a21313b66fb8092766e59b16e3a2cadc3fd655eea7d1f60e3f1ce5610a",
+    "ArtSource/Generated/blender/issue-164/v3/window-mounts.json": "12b6c8ef21ed3bede7d4b6ef07c046116d9d0e59f2f782c559b5e47db456b4dc",
+    "ArtSource/Generated/blender/issue-164/v3/textures/CityMechanical_BaseColor.png": "ea75f9ab4911ad7ecf6a5e0ff5688fdc2c07ed52c3cad007ac58e8d06fe4e5ae",
+    "ArtSource/Generated/blender/issue-164/v3/textures/CityMechanical_Normal.png": "7a456d3f708d3ee42a7dfb830ac87f95ce27aeeea0e56ac444daca5da510231e",
+    "ArtSource/Generated/blender/issue-164/v3/textures/CityMechanical_ORM.png": "0e08a253e6c30a15e3675921cab4958c0cdcf088f23f05b5fcc1eb3f87dbec98",
+    "ArtSource/Generated/blender/issue-164/v3/textures/CivicAsphalt_BaseColor.png": "85e2cfe619a74da7fe74ad0c6439141f4edb63e5085208c4cfd620c5e1d988fa",
+    "ArtSource/Generated/blender/issue-164/v3/textures/CivicAsphalt_Normal.png": "e6f9e8f0257ddbc33b012b72f9446a2c8a3679153488b4bbc67ca6e50be153fd",
+    "ArtSource/Generated/blender/issue-164/v3/textures/CivicAsphalt_ORM.png": "6b06b777944f76046d0f51131cdec7cca658efac60560c95ab1e854c37189ab4",
+    "ArtSource/Generated/blender/issue-165/v2/approval.json": "495187ed68a65aa75a630da1cd287844c3db759232b0845191a6fa425e1fc805",
+    "ArtSource/Generated/blender/issue-165/v2/asset.blend": "ae48d33c66fe4451aaec641a965ba2c1b1cc7c09a1ed8b16d612ad1837d1ebf5",
+    "ArtSource/Generated/blender/issue-165/v2/asset.fbx": "bdd261e76d9ef650b61b4d235c7e15d206c9fcf210e889ae4d8e1110aced966d",
+    "ArtSource/Generated/blender/issue-165/v2/entrance-anchors.json": "0a533be08a3b3e4d57f420bae017ef9b652657b4d395b047e545980d421a9fb6",
+    "ArtSource/Generated/blender/issue-165/v2/INTEGRATION.md": "97edeb3947cdbbcf7ae5172ccac6b8e5a3ce66d81b79c80129a4d27725831933",
+    "ArtSource/Generated/blender/issue-165/v2/material-manifest.json": "1303a9b626db0c53f3db4f20dc3f49bfab957e5a490571f741e6f50f575deaf1",
+    "ArtSource/Generated/blender/issue-165/v2/preview.png": "d7d38ead3bc719e125fb6144784736a323016d111de3e50deec2110678e6fe3e",
+    "ArtSource/Generated/blender/issue-165/v2/source-bundle.zip": "c2e4cc58c5a4666fd55afceb58392fac80fff0d7ed600eb1fc11fdffccbbebe6",
+    "ArtSource/Generated/blender/issue-165/v2/unreal-handoff.json": "6939e0429f5e6a907534458f5dfa4afeb026af49a24a55ddc58009690c081ec5",
+    "ArtSource/Generated/blender/issue-165/v2/upgrade-stage.json": "2f9e1681af26db26fea667ae0229e79e5b53f1f5d73f1c133548c50b13ba6bd1",
+    "ArtSource/Generated/blender/issue-165/v2/validation.json": "b859bc1685df32ddbd8ed223039305e80b9437372191977d3a5b405097bdc83e",
+    "ArtSource/Generated/blender/issue-165/v2/window-mounts.json": "a4a82ef431d51bb9a40d01d86e58a7b780cd5fd01b251ba79043eb1601893855",
+    "ArtSource/Generated/blender/issue-165/v2/textures/CityMechanical_BaseColor.png": "ea75f9ab4911ad7ecf6a5e0ff5688fdc2c07ed52c3cad007ac58e8d06fe4e5ae",
+    "ArtSource/Generated/blender/issue-165/v2/textures/CityMechanical_Normal.png": "7a456d3f708d3ee42a7dfb830ac87f95ce27aeeea0e56ac444daca5da510231e",
+    "ArtSource/Generated/blender/issue-165/v2/textures/CityMechanical_ORM.png": "0e08a253e6c30a15e3675921cab4958c0cdcf088f23f05b5fcc1eb3f87dbec98",
+    "ArtSource/Generated/blender/issue-165/v2/textures/CivicAsphalt_BaseColor.png": "85e2cfe619a74da7fe74ad0c6439141f4edb63e5085208c4cfd620c5e1d988fa",
+    "ArtSource/Generated/blender/issue-165/v2/textures/CivicAsphalt_Normal.png": "e6f9e8f0257ddbc33b012b72f9446a2c8a3679153488b4bbc67ca6e50be153fd",
+    "ArtSource/Generated/blender/issue-165/v2/textures/CivicAsphalt_ORM.png": "6b06b777944f76046d0f51131cdec7cca658efac60560c95ab1e854c37189ab4",
+    "ArtSource/Generated/blender/issue-166/v2/approval.json": "c2dc99f6726dddc2ec93723c63e3fa0cb6c41af5b12bf6101c866fdb4a6dfead",
+    "ArtSource/Generated/blender/issue-166/v2/asset.blend": "433c59143c352b6768882860b7e3eb8d0b2d34add2fb7091180c68fdf7b695f1",
+    "ArtSource/Generated/blender/issue-166/v2/asset.fbx": "dbabb0dbad1051befc994dfa77e58a2b34d99112677e5cd2f76ee01ad34eecc2",
+    "ArtSource/Generated/blender/issue-166/v2/entrance-anchors.json": "5f24504e0705a47c31048290d4756483782600accf28f8e943c12b5d94a25252",
+    "ArtSource/Generated/blender/issue-166/v2/INTEGRATION.md": "97edeb3947cdbbcf7ae5172ccac6b8e5a3ce66d81b79c80129a4d27725831933",
+    "ArtSource/Generated/blender/issue-166/v2/material-manifest.json": "474e4c3dbf84b9fd127186e268c04a48cc9d9bf418e9071f9a794e80c5cddcb2",
+    "ArtSource/Generated/blender/issue-166/v2/preview.png": "40778830b4f9c1ccfef46543b0d1be218680fb09d109fc709458fa29833d9d81",
+    "ArtSource/Generated/blender/issue-166/v2/source-bundle.zip": "d2e1c74a86b8201d4544c63e22f2c4f479ea85bdc8b080f136eba918786e6f49",
+    "ArtSource/Generated/blender/issue-166/v2/unreal-handoff.json": "93a401be5e032c1f75e7506c95fc444b2c6e607169a97ff21ea8c5e0a7d7f1cb",
+    "ArtSource/Generated/blender/issue-166/v2/upgrade-stage.json": "270116fb659ebaf581909f2222cd78b38dd71e134de52e7df104387936cb96fc",
+    "ArtSource/Generated/blender/issue-166/v2/validation.json": "b6f6a50ac196a85a2a0a0d95dd3601d9dac8d3f92db16fda1854e0a29ec072a8",
+    "ArtSource/Generated/blender/issue-166/v2/window-mounts.json": "79a1fad2298d557d2b15f1c1785a800066d8b4364a566c87e830aa2271bacd19",
+    "ArtSource/Generated/blender/issue-166/v2/textures/CityMechanical_BaseColor.png": "ea75f9ab4911ad7ecf6a5e0ff5688fdc2c07ed52c3cad007ac58e8d06fe4e5ae",
+    "ArtSource/Generated/blender/issue-166/v2/textures/CityMechanical_Normal.png": "7a456d3f708d3ee42a7dfb830ac87f95ce27aeeea0e56ac444daca5da510231e",
+    "ArtSource/Generated/blender/issue-166/v2/textures/CityMechanical_ORM.png": "0e08a253e6c30a15e3675921cab4958c0cdcf088f23f05b5fcc1eb3f87dbec98",
+    "ArtSource/Generated/blender/issue-166/v2/textures/CivicAsphalt_BaseColor.png": "85e2cfe619a74da7fe74ad0c6439141f4edb63e5085208c4cfd620c5e1d988fa",
+    "ArtSource/Generated/blender/issue-166/v2/textures/CivicAsphalt_Normal.png": "e6f9e8f0257ddbc33b012b72f9446a2c8a3679153488b4bbc67ca6e50be153fd",
+    "ArtSource/Generated/blender/issue-166/v2/textures/CivicAsphalt_ORM.png": "6b06b777944f76046d0f51131cdec7cca658efac60560c95ab1e854c37189ab4",
+    "ArtSource/Generated/blender/issue-167/v3/approval.json": "07e042e255661e7bf6cd048b45d5a14ff90582dcf9544030ffbfc920204196aa",
+    "ArtSource/Generated/blender/issue-167/v3/asset.blend": "93b5922f96fbc512f905b76421a761885d344de4537143fa436fba29e658511b",
+    "ArtSource/Generated/blender/issue-167/v3/asset.fbx": "441d8fdcd3876a89128f761d580561eb212e73a1a2550deb02761ca5621a7031",
+    "ArtSource/Generated/blender/issue-167/v3/entrance-anchors.json": "cdb827dd2f514916800d55d89238af792d7dec9e0c52c4960eabf0cf98c05844",
+    "ArtSource/Generated/blender/issue-167/v3/INTEGRATION.md": "97edeb3947cdbbcf7ae5172ccac6b8e5a3ce66d81b79c80129a4d27725831933",
+    "ArtSource/Generated/blender/issue-167/v3/landmark-contract.json": "1af1b60c584c5bbfe815a5fc000e024e20abde56647eabd9a336bca05a940ddd",
+    "ArtSource/Generated/blender/issue-167/v3/material-manifest.json": "3b803eba168564a7a788e295c0b2dc65e463cbc5adac47a05d6badda625d58bd",
+    "ArtSource/Generated/blender/issue-167/v3/preview.png": "530bc5111d5f62ff2dcabd211d5eaac43502996c1d5f72d12b6e71464b4fd825",
+    "ArtSource/Generated/blender/issue-167/v3/source-bundle.zip": "feab02dba816ea03de525a2469db82f978c6dbcc78ee8e0f6d9c5b5de3394a8a",
+    "ArtSource/Generated/blender/issue-167/v3/unreal-handoff.json": "5416bffac60c5be9cbaac5f4edfe9f339424918c63359e7a042216a7a18990df",
+    "ArtSource/Generated/blender/issue-167/v3/validation.json": "c7ac59f062fbac3b3b147051b688fd03811dd81ad2c8bc0db4809c155a5ea495",
+    "ArtSource/Generated/blender/issue-167/v3/textures/CityMechanical_BaseColor.png": "ea75f9ab4911ad7ecf6a5e0ff5688fdc2c07ed52c3cad007ac58e8d06fe4e5ae",
+    "ArtSource/Generated/blender/issue-167/v3/textures/CityMechanical_Normal.png": "7a456d3f708d3ee42a7dfb830ac87f95ce27aeeea0e56ac444daca5da510231e",
+    "ArtSource/Generated/blender/issue-167/v3/textures/CityMechanical_ORM.png": "0e08a253e6c30a15e3675921cab4958c0cdcf088f23f05b5fcc1eb3f87dbec98",
+    "ArtSource/Generated/blender/issue-168/v1/approval.json": "7c0ed83a2ff992e9a12d1c81c8a2fbe4f2fddc63e7cc62ea741f0bdbc8fda65b",
+    "ArtSource/Generated/blender/issue-168/v1/asset.blend": "a604b8d1c710da011dab0cb3a1773f0ef1093a1b91c7090b55e36fbee6150536",
+    "ArtSource/Generated/blender/issue-168/v1/asset.fbx": "a727affde6dd962284f7604519121b0eb1067ed423eecc95cf47e443dba11997",
+    "ArtSource/Generated/blender/issue-168/v1/entrance-anchors.json": "02438bd336aa2dd35be5bd90185c3cdd746213f718349b1a7d350b6ee88097da",
+    "ArtSource/Generated/blender/issue-168/v1/INTEGRATION.md": "97edeb3947cdbbcf7ae5172ccac6b8e5a3ce66d81b79c80129a4d27725831933",
+    "ArtSource/Generated/blender/issue-168/v1/landmark-contract.json": "fbfec85d024c5d8b0008180222ef39f9f7cc40f7a590d2331398d1065017a788",
+    "ArtSource/Generated/blender/issue-168/v1/material-manifest.json": "342b928ea19e0531625854ea4f56d0712ce5b29a09eefdf30ae29104459e86cf",
+    "ArtSource/Generated/blender/issue-168/v1/preview.png": "82c056e62cccb5d581fcd1312dd8e8dd6fe9c7334d8df70be82df24685a6e61e",
+    "ArtSource/Generated/blender/issue-168/v1/source-bundle.zip": "48c3c68958231fc2825170fcfeed25d11d8be49aba5ff299e56f5e00c46d2647",
+    "ArtSource/Generated/blender/issue-168/v1/unreal-handoff.json": "aa1ab0dd521e38696f77f5ef6c2da55cba687d72941dddc2cbbcebb720a12c52",
+    "ArtSource/Generated/blender/issue-168/v1/validation.json": "316eacd35a29da399bf8ca28c3494042ff4f22b9b98a9ee3a74f39d380965118",
+    "ArtSource/Generated/blender/issue-168/v1/textures/CityMechanical_BaseColor.png": "ea75f9ab4911ad7ecf6a5e0ff5688fdc2c07ed52c3cad007ac58e8d06fe4e5ae",
+    "ArtSource/Generated/blender/issue-168/v1/textures/CityMechanical_Normal.png": "7a456d3f708d3ee42a7dfb830ac87f95ce27aeeea0e56ac444daca5da510231e",
+    "ArtSource/Generated/blender/issue-168/v1/textures/CityMechanical_ORM.png": "0e08a253e6c30a15e3675921cab4958c0cdcf088f23f05b5fcc1eb3f87dbec98",
+    "ArtSource/Generated/blender/issue-169/v3/approval.json": "7d2d03d5103f7eea8bff210296d71325cdcd6e16f72d3698bbd01ebe37fdc230",
+    "ArtSource/Generated/blender/issue-169/v3/asset.blend": "f178f4f07d2c5121f897fc92ac26b5aa89db5f5637afc64eb5d78f51a7825aa8",
+    "ArtSource/Generated/blender/issue-169/v3/asset.fbx": "bdd62726f08cbd4ad72bb9264d17579f65a526664b28941ad4e0aa28e86711ee",
+    "ArtSource/Generated/blender/issue-169/v3/entrance-anchors.json": "bd2c24b8ffea36b61e99f1f6540c0e7cc157120d2ab1c77166e932641237a0c4",
+    "ArtSource/Generated/blender/issue-169/v3/INTEGRATION.md": "97edeb3947cdbbcf7ae5172ccac6b8e5a3ce66d81b79c80129a4d27725831933",
+    "ArtSource/Generated/blender/issue-169/v3/landmark-contract.json": "c2f7de8010fdbcd72f2bb71eaa106d89203c0bfa413d7d4799ba9c40250a12a7",
+    "ArtSource/Generated/blender/issue-169/v3/material-manifest.json": "8694d9a8118d8af9d08cc0502e99cc3e89769d5c21c2987efcef104476bd7d9e",
+    "ArtSource/Generated/blender/issue-169/v3/preview.png": "ba54abcda700ba0b05e2cbd4eb2fb0eea0d6d0ef9da6b97df0c4f5334f33737a",
+    "ArtSource/Generated/blender/issue-169/v3/source-bundle.zip": "5f183e0d793302e9ad0ac358faea24877e83c451b5234ed366555394649051e8",
+    "ArtSource/Generated/blender/issue-169/v3/tracking-contract.json": "c628f213941baef43f7297e9d2c8bffbeeaf7cc16f5a8eac1906ebc370b1575d",
+    "ArtSource/Generated/blender/issue-169/v3/unreal-handoff.json": "644fe1a5ad957dccbff074cccab9527c8f5120cfc78ee97baaf06ad67ba1ba8b",
+    "ArtSource/Generated/blender/issue-169/v3/validation.json": "e3fd9b5b7e6f735089c338a9ee26aaeddaf80898746c2fdfdbdfc40a8337355c",
+    "ArtSource/Generated/blender/issue-169/v3/textures/CityMechanical_BaseColor.png": "ea75f9ab4911ad7ecf6a5e0ff5688fdc2c07ed52c3cad007ac58e8d06fe4e5ae",
+    "ArtSource/Generated/blender/issue-169/v3/textures/CityMechanical_Normal.png": "7a456d3f708d3ee42a7dfb830ac87f95ce27aeeea0e56ac444daca5da510231e",
+    "ArtSource/Generated/blender/issue-169/v3/textures/CityMechanical_ORM.png": "0e08a253e6c30a15e3675921cab4958c0cdcf088f23f05b5fcc1eb3f87dbec98",
+    "ArtSource/Manifests/city_utility_integration.json": "ee3b1272d3266199480262c05e45c6d0b07173174521b407c56ba808cc0c77df",
+    "ArtSource/Manifests/city_utility_preparation_verification.json": "3a1cf8dd833b172334fd58ff3ec7fe54fd78662b49c293e81713525e2852f88f",
+    "ArtSource/Blender/UtilityIntegration/CityUtility_foundation_columns_v1.blend": "174dbc29cc2be2c89467ba1d0058ff468919f2b813c80345d1c517d6652dfd0b",
+    "ArtSource/Blender/UtilityIntegration/CityUtility_wind_three_roles_v1.blend": "b010370c17c292e29f7de76e6757af51dc2e55817cb4394358aed60e41bc2830",
+    "ArtSource/Exports/UtilityIntegration/Foundations/SM_Utility_coal_v4_Foundation_Z0.fbx": "c0b5be414bb8e7a978a3f74773d7463627116a64620120cbb7173efdccdc9265",
+    "ArtSource/Exports/UtilityIntegration/Foundations/SM_Utility_coal_v4_Foundation_Z0p25.fbx": "873d44b73182280049414297aaa27a05ef590d8f7d2ee80b57cbcebee6376ed5",
+    "ArtSource/Exports/UtilityIntegration/Foundations/SM_Utility_oil_v3_Foundation_Z0.fbx": "df3359d9a0b088c0b67c80f79c9807600b4b9ba64858b5235fc678de63d7a4a3",
+    "ArtSource/Exports/UtilityIntegration/Foundations/SM_Utility_power_base_v2_Foundation_Z0.fbx": "4d43cfd901772c07d58612ca6c88fb34dfa6fafb9d51dd7d4b7233f72540c3b3",
+    "ArtSource/Exports/UtilityIntegration/Foundations/SM_Utility_power_high_v3_Foundation_Z0.fbx": "d3fdadc56bb8a3b1eabc924a7db6e28f9c483c087198f87578bc4184b521b251",
+    "ArtSource/Exports/UtilityIntegration/Foundations/SM_Utility_power_medium_v3_Foundation_Z0.fbx": "7a01a06cd7c772bf6b53508a921c3785df1792533012a922ccc0760dce4f084a",
+    "ArtSource/Exports/UtilityIntegration/Foundations/SM_Utility_solar_farm_v3_Foundation_Z0.fbx": "c1f1b07bfa647bda76559788ec69ed77df5a12a0b79b7b5aebd3a85016014f15",
+    "ArtSource/Exports/UtilityIntegration/Foundations/SM_Utility_water_base_v2_Foundation_Z0.fbx": "42822fe4fb288208fa324e744d870e422947b6bdd66b69cabf0d52964fba9148",
+    "ArtSource/Exports/UtilityIntegration/Foundations/SM_Utility_water_high_v2_Foundation_Z0.fbx": "34de3e0ae861624ee4101c021fc6db725386bb2ff2754f3fc21488152c3976a2",
+    "ArtSource/Exports/UtilityIntegration/Foundations/SM_Utility_water_medium_v2_Foundation_Z0.fbx": "d17329c6963819d0f098680afea214add1d328548c2f81ccb6fff2759c78579c",
+    "ArtSource/Exports/UtilityIntegration/Foundations/SM_Utility_water_tower_v3_Foundation_Z0.fbx": "ed4ced2e7513ee5c3d2877aaaaeebae75e9bd24af7ec22fed499f7f11ff1b49a",
+    "ArtSource/Exports/UtilityIntegration/Foundations/SM_Utility_wind_turbine_v1_Foundation_Z0.fbx": "43e77118b0e8b39f69111e56d692a538868a82c1109c286ffb4d4874955412bc",
+    "ArtSource/Exports/UtilityIntegration/wind_turbine/ThreeRoles/SM_Utility_wind_turbine_v1_SpinRotor_LOD0.fbx": "1a32b0a6b239c44d508b7d1291f78c552d0f8f63b523e68fbcbd73c9509fe516",
+    "ArtSource/Exports/UtilityIntegration/wind_turbine/ThreeRoles/SM_Utility_wind_turbine_v1_SpinRotor_LOD1.fbx": "7578454fb63bffdfd458c449544c7feeeb17231e3480b41c2733963fc7965e28",
+    "ArtSource/Exports/UtilityIntegration/wind_turbine/ThreeRoles/SM_Utility_wind_turbine_v1_SpinRotor_LOD2.fbx": "7bbe85bf8ae3561da31e18a73bbd9230679a29605587bf688fc04d569934b627",
+    "ArtSource/Exports/UtilityIntegration/wind_turbine/ThreeRoles/SM_Utility_wind_turbine_v1_Stationary_LOD0.fbx": "c082842b3ca4d1cada09e5393b17988583e599cfd283d661512abd37ef55a68c",
+    "ArtSource/Exports/UtilityIntegration/wind_turbine/ThreeRoles/SM_Utility_wind_turbine_v1_Stationary_LOD1.fbx": "9ea3ccdd41e9de7da1757e20486f471487a32aa9790bde46260e208710c150ec",
+    "ArtSource/Exports/UtilityIntegration/wind_turbine/ThreeRoles/SM_Utility_wind_turbine_v1_Stationary_LOD2.fbx": "41a6608f0dbe343a6256964101b1edb5c57193254ea5dcee85d5c0dd6c6bc167",
+    "ArtSource/Exports/UtilityIntegration/wind_turbine/ThreeRoles/SM_Utility_wind_turbine_v1_YawNacelle_LOD0.fbx": "c782b9c4ae4270777328406eafceb208b2431c17720626c4698fe7e1bb232f86",
+    "ArtSource/Exports/UtilityIntegration/wind_turbine/ThreeRoles/SM_Utility_wind_turbine_v1_YawNacelle_LOD1.fbx": "6db4e508e601fc79ba153c7caa68f08f43bb735803c7bb3213eae6f40f2b30a6",
+    "ArtSource/Exports/UtilityIntegration/wind_turbine/ThreeRoles/SM_Utility_wind_turbine_v1_YawNacelle_LOD2.fbx": "31db1804cd7cf3155aebd250ea6bcbbcf1dff10529cad34ef2c8cd034c6ae0da",
+    "ArtSource/Manifests/city_utility_ground_wind_preparation.json": "3431115155901dadf4e0dedda905f56685bd603e137415088bd1e2177bab3a9e",
+    "ArtSource/Manifests/city_utility_ground_wind_verification.json": "d3d6eb4016b4a7a7590d4a764f5c6b773336d18d5d598ea436267f1059c1406e",
+    "ArtSource/Manifests/city_utility_native_import_plan.json": "8765c24b51df26308d838c12da1a7af867b0903e4ecc14b5a6e0aecbbb764b78",
+    "ArtSource/Manifests/city_utility_native_recipe_offline_verification.json": "7e6fd00d9c8d669e4afd8dabe11db4b5566ceb8109f674163b9a7518839aa390",
+    "ArtSource/Manifests/city_utility_preparation_inputs.json": "40919c2eef9bc3be98704320f95e1bf48bc473682dc268d2cfd444e23d17e9d3"
+  },
+  "no_source_kind_reclassification": true,
+  "no_body_or_cable_geometry_change": true,
+  "exclusion_proof_policy": "Generated mesh is exactly the16 original foot columns with no other faces/groups. An excluded cable contact may lie within a retained physical foot; no false requirement to remove that structural footprint.",
+  "native_import_run": false,
+  "runtime_cable_or_articulation_change": false
+}

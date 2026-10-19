@@ -1,0 +1,107 @@
+{
+  "task": "D90",
+  "date": "2026-10-15",
+  "backend": "Blender5.1.1 CPU Cycles / local gemma4-12b",
+  "paid_calls": 0,
+  "first_versions": [
+    {
+      "issue": 30,
+      "title": "Robotics workshop",
+      "job": "ff6c2874772d8509209adf1a9cb5ebab",
+      "comment": 393,
+      "preview_url": "https://git.shaun-husain.com/attachments/5e2c2a05-fc48-44f2-9dfe-afad0aa49c13",
+      "source_url": "https://git.shaun-husain.com/attachments/42e68428-585e-48a5-9cb3-1f2ad470c5f4",
+      "notes": "Reads as a plain box; requested robotics/clerestory silhouette is not clear. Height9.55m exceeds9m;9 material slots exceeds5. Needs visual/material/bounds refinement before acceptance.",
+      "version": "v1",
+      "status": "COMPLETED_PREVIEW_NEEDS_REVIEW_REFINEMENT",
+      "approved": false,
+      "exported": false,
+      "imported": false,
+      "review_url": "https://git.shaun-husain.com/CitySimVR/citysim/issues/30#issuecomment-393",
+      "preview_sha256": "81bd51588a36b5525c01af1600e5a2c1b9cd8b2016b1bbba660e45ff7beeb72f",
+      "source_zip_sha256": "d49d1334ca080f33d80bf25b706a5ca0ac956bdb89641e3579569f35079e02bf",
+      "validation": {
+        "mesh_geometry_sha256": "847aca74c35652076978e42a9435f4883013df9e9997158b39f3ab6a39cd5185",
+        "dimensions_m": [
+          12.199999809265137,
+          11.449999809265137,
+          9.550000190734863
+        ],
+        "triangles": 140,
+        "material_slots": [
+          "Workshop_MainMaterial",
+          "Workshop_Roof_BaseMaterial",
+          "Emblem_BaseMaterial",
+          "Emblem_Arm1Material",
+          "Emblem_Arm2Material",
+          "Door_Bay1_LeftMaterial",
+          "Door_Bay2_RightMaterial",
+          "Door_PersMaterial",
+          "Path_EntryMaterial"
+        ],
+        "roundtrip_pass": true,
+        "blender_version": "5.1.1",
+        "render_engine": "CYCLES",
+        "render_device": "CPU",
+        "reference_sha256": {
+          "ArtSource/Blender/CityLowDensityBuildings.blend": "05e4b0409ac3f8785546feccf9b46443c449295819ef0ec68e7790658fb13d9e",
+          "ArtSource/Manifests/city_low_density_buildings.json": "9ad2c8ff3b0be3c942e2e258a43ea1925366d9ede7621f933d4b368b48512558"
+        }
+      }
+    },
+    {
+      "issue": 31,
+      "title": "Static industrial robot cell",
+      "job": "a9ab3ae77509db243dbadee12d7a52b0",
+      "comment": 396,
+      "preview_url": "https://git.shaun-husain.com/attachments/be20462a-7d14-489d-a033-b9926663498f",
+      "source_url": "https://git.shaun-husain.com/attachments/90e96598-a1e6-4642-b629-4436c3162098",
+      "notes": "Arm links/joints appear disconnected in the preview; gripper/worktable relationship is unclear. Depth3.825m exceeds3m;16 material slots exceeds4. Needs connected believable arm/pose, bounds and material consolidation before acceptance.",
+      "version": "v1",
+      "status": "COMPLETED_PREVIEW_NEEDS_REVIEW_REFINEMENT",
+      "approved": false,
+      "exported": false,
+      "imported": false,
+      "review_url": "https://git.shaun-husain.com/CitySimVR/citysim/issues/31#issuecomment-396",
+      "preview_sha256": "492b76e030ce159d5adf42ec01e5315377763110f891e334d74da5acfddc5360",
+      "source_zip_sha256": "dc70dc0f7ea3831106bb9fbf5cd8632c1397f676a0d50fa1db296c0b8f26f979",
+      "validation": {
+        "mesh_geometry_sha256": "ea0d01d727070e9c6b76094600338fe47caa77fd6832e60f1cb5ecc6bfbaee1e",
+        "dimensions_m": [
+          2.4000000953674316,
+          3.825000047683716,
+          3.0
+        ],
+        "triangles": 352,
+        "material_slots": [
+          "Pedestal_BaseMaterial",
+          "Pedestal_StemMaterial",
+          "Shoulder_JointMaterial",
+          "Upper_ArmMaterial",
+          "Elbow_JointMaterial",
+          "ForearmMaterial",
+          "Wrist_JointMaterial",
+          "Gripper_Jaw_LMaterial",
+          "Gripper_Jaw_RMaterial",
+          "Table_TopMaterial",
+          "Table_Leg1Material",
+          "Table_Leg2Material",
+          "Table_Leg3Material",
+          "WorkpieceMaterial",
+          "Cabinet_MainMaterial",
+          "Cabinet_TopMaterial"
+        ],
+        "roundtrip_pass": true,
+        "blender_version": "5.1.1",
+        "render_engine": "CYCLES",
+        "render_device": "CPU",
+        "reference_sha256": {
+          "ArtSource/Blender/CityLowDensityBuildings.blend": "05e4b0409ac3f8785546feccf9b46443c449295819ef0ec68e7790658fb13d9e",
+          "ArtSource/Manifests/city_low_density_buildings.json": "9ad2c8ff3b0be3c942e2e258a43ea1925366d9ede7621f933d4b368b48512558"
+        }
+      }
+    }
+  ],
+  "automatic_revisions": 0,
+  "unreal_changes": false
+}

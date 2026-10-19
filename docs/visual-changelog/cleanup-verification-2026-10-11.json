@@ -1,0 +1,87 @@
+{
+  "task": "D84",
+  "date": "2026-10-11",
+  "removed_files": 286,
+  "removed_bytes": 2284372274,
+  "protected_hashes_checked": 3962,
+  "noncandidate_artifact_paths_checked": 24423,
+  "remaining_targets": [],
+  "missing_unplanned_artifacts": [],
+  "unchanged_protected_hashes": 3958,
+  "changed_protected_files": [
+    "Artifacts/D83/sports-preview.json",
+    "Artifacts/D83/Sports.log",
+    "AudioSource/D58/library-presets.json",
+    "AudioSource/D58/SampleLibrary.scd"
+  ],
+  "reviewed_concurrent_updates": [
+    {
+      "path": "Artifacts/D83/sports-preview.json",
+      "threadId": "01a12cfa-7450-7dd3-afb9-aa5dc6892267",
+      "threadTitle": "Improve Blender park assets",
+      "evidenceItemIds": [
+        "exec-bf8530e6-6ea1-4faf-a33e-0571816c245b"
+      ],
+      "reason": "The Blender chat updated preview limitations metadata during this session; its explicit command writes this JSON.",
+      "before_sha256": "ff56158f1f468ea84b1029d7f669091508dc61d2fefd53d376adb5e088062672",
+      "after_sha256": "166f0655aaec4fab99cc577bd9269fa983adf552e718b6e6b9c058f0b585f521"
+    },
+    {
+      "path": "Artifacts/D83/Sports.log",
+      "threadId": "01a12cfa-7450-7dd3-afb9-aa5dc6892267",
+      "threadTitle": "Improve Blender park assets",
+      "evidenceItemIds": [
+        "exec-5da26370-fccf-4d96-af7e-96bb1eb5cb22"
+      ],
+      "reason": "The Blender chat ran validate-only and redirected output to this log during this session; source and source-preview captures remain unchanged.",
+      "before_sha256": "b42f427b9d63d39d2f14717de0ee66ae28710b7fc7b5397b3ec123fb3220f6c1",
+      "after_sha256": "ccf2eeedbe7f688a4d8ba598cb565871a450fb46e9bf9c0ee6f20ec886dfa4c5"
+    },
+    {
+      "path": "AudioSource/D58/library-presets.json",
+      "threadId": "01a12d03-38be-7771-a8f5-36fdfa155031",
+      "threadTitle": "Compare SuperCollider and MetaSounds",
+      "evidenceItemIds": [
+        "exec-5e47dced-367b-457f-8a51-deeeae4be310",
+        "exec-91f24731-1838-4b3f-8c62-40bc18e8c237"
+      ],
+      "reason": "The active audio chat added and then updated library presets during this inventory; the maintenance task never writes audio sources.",
+      "before_sha256": "b4853c7ae64c5201bd8f9dc26900fb8c5d40f8a418890642f11451b1811aed27",
+      "after_sha256": "d2091dbe2e0869d196b9a7a19b623a0d0dff33a53091597e705cdd29f4d12882"
+    },
+    {
+      "path": "AudioSource/D58/SampleLibrary.scd",
+      "threadId": "01a12d03-38be-7771-a8f5-36fdfa155031",
+      "threadTitle": "Compare SuperCollider and MetaSounds",
+      "evidenceItemIds": [
+        "exec-5e47dced-367b-457f-8a51-deeeae4be310",
+        "exec-2ee4667e-3ba1-4f03-83f4-f550ff3d9e5b"
+      ],
+      "reason": "The active audio chat added and then updated this source during the cleanup inventory; this maintenance task never writes audio sources.",
+      "before_sha256": "8e20a9c16d2936c65f00516ba8e006c6145c5466e79e6d7f565688d2c3489450",
+      "after_sha256": "aa2c399284fde96dc05bd3821bc3b3d28cc4b61ebb2bbeed6d84ec205ac3b382"
+    }
+  ],
+  "unexplained_protected_changes": [],
+  "changed_gallery_files": [],
+  "gallery_milestones": 23,
+  "gallery_captures": 67,
+  "gallery_browser_checks": {
+    "milestones": 23,
+    "decodedImages": 67,
+    "widths": [
+      {
+        "width": 1440,
+        "horizontalOverflow": false
+      },
+      {
+        "width": 390,
+        "horizontalOverflow": false
+      }
+    ],
+    "search": "pass",
+    "showAll": "pass",
+    "pageErrors": []
+  },
+  "pass": true
+}

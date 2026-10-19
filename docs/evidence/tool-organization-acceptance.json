@@ -1,0 +1,47 @@
+{
+  "issue": 150,
+  "pr": 162,
+  "date": "2026-10-18",
+  "status": "accepted",
+  "user": "Shaun",
+  "source": "Explicit user message in this chat",
+  "quote": "Candidate #238 looks good. Go ahead and merge PR #162 and close out #150.",
+  "candidate_build": 238,
+  "implementation_commit": "44495c55b78c470a377f441e0742f4c810e7a5ef",
+  "reviewed_head": "8c1f8286de2f4bda4c3405bf99d4bdf4273aef8f",
+  "game_revision": "dev-db04a2bad5cbb8d5f3bd",
+  "schema": 72,
+  "zip_sha256": "f2696f469273174302cc15e1848106eec396a6e32bdf7f80b7ed341765cdd2bb",
+  "delivery": "tool-organization-delivery.json",
+  "final_native": "tool-organization-final-native.json",
+  "checks": [
+    {
+      "build": 237,
+      "mode": "Editor",
+      "status": "passed",
+      "exact_cases": 15
+    },
+    {
+      "build": 238,
+      "mode": "WindowsCandidate",
+      "status": "passed",
+      "editor_cases": 15,
+      "client_cases": 6,
+      "widths": [
+        1280,
+        1024
+      ],
+      "runtime_files": 53
+    },
+    {
+      "build": 239,
+      "mode": "Editor",
+      "status": "passed",
+      "exact_cases": 15
+    }
+  ],
+  "approved_closeout_scope": "Documentation/evidence only; preserve all accepted implementation inputs",
+  "remaining_issue150_work": [],
+  "quest": "Deferred under PC-first policy; no headset observation claimed",
+  "maintained_package_player_files_or_device_changes": false
+}

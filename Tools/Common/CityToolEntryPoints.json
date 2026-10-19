@@ -1,0 +1,50 @@
+[
+  {
+    "parameterContract": "[CmdletBinding()]\r\nparam([string]$Serial, [string]$ApkPath)",
+    "canonical": "Distribution/Deploy-QuestSandbox.ps1",
+    "legacy": "Deploy-QuestSandbox.ps1",
+    "bodyChange": "Only shared root discovery, Tools sibling resolution and unchanged body"
+  },
+  {
+    "parameterContract": "[CmdletBinding()]\r\nparam([ValidateRange(1024,7680)][int]$Width = 1280, [ValidateRange(720,4320)][int]$Height = 800, [switch]$Windowed, [switch]$LegacyColor, [switch]$LegacyShadows, [switch]$PrintOnly,\r\n    [string]$ExecutablePath)",
+    "canonical": "Launch/Start-DesktopSandbox.ps1",
+    "legacy": "Start-DesktopSandbox.ps1",
+    "bodyChange": "Only shared root discovery, Tools sibling resolution and unchanged body"
+  },
+  {
+    "parameterContract": "[CmdletBinding()]\r\nparam(\r\n    [ValidateSet('Smoke', 'Sandbox')]\r\n    [string]$Preset = 'Sandbox',\r\n    [string]$EngineRoot = 'C:\\Program Files\\Epic Games\\UE_5.7',\r\n    [string]$ArchiveDirectory,\r\n    [string]$AndroidSdkPath = (Join-Path $env:LOCALAPPDATA 'Android/Sdk'),\r\n    [string]$CookOutputDirectory,\r\n    [switch]$SkipEditorCompilation,\r\n    [switch]$NoTraceServer\r\n)",
+    "canonical": "Build/Build-CitySimVR.ps1",
+    "legacy": "Build-CitySimVR.ps1",
+    "bodyChange": "Only shared root discovery, Tools sibling resolution and unchanged body"
+  },
+  {
+    "parameterContract": "[CmdletBinding()]\r\nparam(\r\n    [ValidateSet('Smoke', 'Sandbox')]\r\n    [string]$Preset = 'Sandbox',\r\n    [string]$Serial,\r\n    [string]$ApkPath\r\n)",
+    "canonical": "Distribution/Deploy-CitySimVR.ps1",
+    "legacy": "Deploy-CitySimVR.ps1",
+    "bodyChange": "Only shared root discovery, Tools sibling resolution and unchanged body"
+  },
+  {
+    "parameterContract": "[CmdletBinding()]\r\nparam([string]$EngineRoot = 'C:\\Program Files\\Epic Games\\UE_5.7', [string]$ArchiveDirectory,\r\n    [string]$AndroidSdkPath = (Join-Path $env:LOCALAPPDATA 'Android/Sdk'), [string]$CookOutputDirectory, [switch]$SkipEditorCompilation, [switch]$NoTraceServer)",
+    "canonical": "Build/Build-QuestSandbox.ps1",
+    "legacy": "Build-QuestSandbox.ps1",
+    "bodyChange": "Only shared root discovery, Tools sibling resolution and unchanged body"
+  },
+  {
+    "parameterContract": "[CmdletBinding()]\r\nparam(\r\n    [ValidateSet('Desktop', 'PCVR')][string]$Mode = 'Desktop',\r\n    [string]$EngineRoot = 'C:\\Program Files\\Epic Games\\UE_5.7',\r\n    [switch]$Game,\r\n    [switch]$LegacyColor,\r\n    [switch]$LegacyShadows,\r\n    [switch]$PrintOnly\r\n)",
+    "canonical": "Launch/Start-CitySandboxEditor.ps1",
+    "legacy": "Start-CitySandboxEditor.ps1",
+    "bodyChange": "Only shared root discovery, Tools sibling resolution and unchanged body"
+  },
+  {
+    "parameterContract": "[CmdletBinding()]\r\nparam(\r\n    [string]$EngineRoot = 'C:\\Program Files\\Epic Games\\UE_5.7',\r\n    [ValidateSet(64,80,96,112,128,160,192)][int]$CapacityGridSize = 64,\r\n\t[switch]$SkipEditorCompilation,\r\n\t[string]$ArchiveDirectory,\r\n    [switch]$NoTraceServer\r\n)",
+    "canonical": "Build/Build-PCVRSandbox.ps1",
+    "legacy": "Build-PCVRSandbox.ps1",
+    "bodyChange": "Only shared root discovery, Tools sibling resolution and unchanged body"
+  },
+  {
+    "parameterContract": "[CmdletBinding()]\r\nparam(\r\n    [ValidateSet('D3D12', 'D3D11')]\r\n    [string]$GraphicsApi = 'D3D11',\r\n    [string]$RuntimeManifest,\r\n    [switch]$LegacyColor,\r\n    [switch]$LegacyShadows,\r\n    [switch]$PreviousVRShadows,\r\n    [switch]$PrintOnly\r\n)",
+    "canonical": "Launch/Start-PCVRSandbox.ps1",
+    "legacy": "Start-PCVRSandbox.ps1",
+    "bodyChange": "Only shared root discovery, Tools sibling resolution and unchanged body"
+  }
+]

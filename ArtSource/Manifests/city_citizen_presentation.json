@@ -1,0 +1,85 @@
+{
+  "task": "D71",
+  "baseline_min_z_m": 0.125,
+  "baseline_max_z_m": 1.369999885559082,
+  "assets": [
+    {
+      "name": "SM_Citizen_PC_Casual",
+      "source_export": "ArtSource/Exports/CitizenPrototypes/SM_Citizen_PC_Casual.fbx",
+      "source_sha256": "aee2a8c104c40f36634f2e4e1fa8be3ef43a3ce663fbd2af943149c19eecfaf7",
+      "export": "ArtSource/Exports/CitizenPresentation/SM_Citizen_PC_Casual.fbx",
+      "sha256": "6fceb1d90d7d41a0040e573d573d749b000f83491bd41e517436c0b4b1c830ba",
+      "triangles": 754,
+      "uniform_scale": 0.7053823771386164,
+      "bounds_min_z_m": 0.125,
+      "bounds_max_z_m": 1.369999885559082,
+      "roundtrip_pass": true
+    },
+    {
+      "name": "SM_Citizen_PC_Casual_LOD1",
+      "source_export": "ArtSource/Exports/CitizenPrototypes/SM_Citizen_PC_Casual_LOD1.fbx",
+      "source_sha256": "320baa11f46d4d79b48899a8cd9a7fd16a6e86b8d7754bed1a3ae44683b1f377",
+      "export": "ArtSource/Exports/CitizenPresentation/SM_Citizen_PC_Casual_LOD1.fbx",
+      "sha256": "fd69b1a128056971a8fc2eb87368cab046598d443e9f92f5a78290f442d1aa6a",
+      "triangles": 420,
+      "uniform_scale": 0.7053823771386164,
+      "bounds_min_z_m": 0.125,
+      "bounds_max_z_m": 1.369999885559082,
+      "roundtrip_pass": true
+    },
+    {
+      "name": "SM_Citizen_PC_Office",
+      "source_export": "ArtSource/Exports/CitizenPrototypes/SM_Citizen_PC_Office.fbx",
+      "source_sha256": "dd8372d6c75a20732532db8a68c81cc4ade29c456b228502549f645948c440b9",
+      "export": "ArtSource/Exports/CitizenPresentation/SM_Citizen_PC_Office.fbx",
+      "sha256": "b8a6ba08a205b5f783ed609cb19eaee4e5206a590612b91b4a68b74103ce3043",
+      "triangles": 754,
+      "uniform_scale": 0.7053823771386164,
+      "bounds_min_z_m": 0.125,
+      "bounds_max_z_m": 1.369999885559082,
+      "roundtrip_pass": true
+    },
+    {
+      "name": "SM_Citizen_PC_Office_LOD1",
+      "source_export": "ArtSource/Exports/CitizenPrototypes/SM_Citizen_PC_Office_LOD1.fbx",
+      "source_sha256": "cdc9eca72e9cbf283817889bf447e551d42cbabeeaf1b45fcaf1550417099aa3",
+      "export": "ArtSource/Exports/CitizenPresentation/SM_Citizen_PC_Office_LOD1.fbx",
+      "sha256": "0960aed20290c2df612b9966b77f5016a3d060909cf7ce8fce6c495a5893e861",
+      "triangles": 420,
+      "uniform_scale": 0.7053823771386164,
+      "bounds_min_z_m": 0.125,
+      "bounds_max_z_m": 1.369999885559082,
+      "roundtrip_pass": true
+    },
+    {
+      "name": "SM_Citizen_PC_Worker",
+      "source_export": "ArtSource/Exports/CitizenPrototypes/SM_Citizen_PC_Worker.fbx",
+      "source_sha256": "9e5e838fca0e6182e18a5cde2a1067bae6fabbec37fae4dcf15881c60a56010b",
+      "export": "ArtSource/Exports/CitizenPresentation/SM_Citizen_PC_Worker.fbx",
+      "sha256": "275c267b52049184e10c4b1a272faa68f99faf792c9fc7a37aa712754d260b6f",
+      "triangles": 754,
+      "uniform_scale": 0.7053823771386164,
+      "bounds_min_z_m": 0.125,
+      "bounds_max_z_m": 1.369999885559082,
+      "roundtrip_pass": true
+    },
+    {
+      "name": "SM_Citizen_PC_Worker_LOD1",
+      "source_export": "ArtSource/Exports/CitizenPrototypes/SM_Citizen_PC_Worker_LOD1.fbx",
+      "source_sha256": "cca67c18718a2483cb410fd6c0fbb77cdfadd71d302f8e770a5aeb7d738d7c33",
+      "export": "ArtSource/Exports/CitizenPresentation/SM_Citizen_PC_Worker_LOD1.fbx",
+      "sha256": "00e543b6e8edbb3283be49c2e4172364ca6d346f6390450b0b597bd9629b4e11",
+      "triangles": 420,
+      "uniform_scale": 0.7053823771386164,
+      "bounds_min_z_m": 0.125,
+      "bounds_max_z_m": 1.369999885559082,
+      "roundtrip_pass": true
+    }
+  ],
+  "runtime_policy": "Windows Desktop/PCVR refined pools; Android baseline; original traffic and park transforms unchanged",
+  "lod_screen_sizes": [
+    1.0,
+    0.025
+  ],
+  "animation": "Static poses translated by existing pooled presentation; no gait animation"
+}

@@ -1,0 +1,896 @@
+{
+  "schema_version": 1,
+  "task": "D66",
+  "material_parent": "/Game/CitySim/Art/Materials/M_CityColor",
+  "material_colors": {
+    "/Game/CitySim/Art/Materials/MI_EnvironmentBark": [
+      0.22,
+      0.12,
+      0.055
+    ],
+    "/Game/CitySim/Art/Materials/MI_SeasonalAutumn": [
+      0.9,
+      0.26,
+      0.025
+    ],
+    "/Game/CitySim/Art/Materials/MI_EnvironmentCanopy": [
+      0.12,
+      0.32,
+      0.07
+    ],
+    "/Game/CitySim/Art/Materials/MI_EnvironmentSnow": [
+      0.86,
+      0.92,
+      0.97
+    ],
+    "/Game/CitySim/Art/Materials/MI_SeasonalFoliage": [
+      0.17,
+      0.42,
+      0.09
+    ],
+    "/Game/CitySim/Art/Materials/MI_SeasonalFlowers": [
+      0.82,
+      0.1,
+      0.34
+    ],
+    "/Game/CitySim/Art/Materials/MI_SeasonalPumpkin": [
+      0.94,
+      0.3,
+      0.025
+    ],
+    "/Game/CitySim/Art/Materials/MI_SeasonalDetail": [
+      0.055,
+      0.075,
+      0.09
+    ],
+    "/Game/CitySim/Art/Materials/MI_SeasonalFestiveDetail": [
+      0.95,
+      0.64,
+      0.07
+    ],
+    "/Game/CitySim/Art/Materials/MI_SeasonalGift": [
+      0.65,
+      0.025,
+      0.035
+    ],
+    "/Game/CitySim/Art/Materials/MI_SeasonalRibbon": [
+      0.95,
+      0.64,
+      0.07
+    ],
+    "/Game/CitySim/Art/Materials/MI_CityResidential": [
+      0.24,
+      0.62,
+      0.34
+    ],
+    "/Game/CitySim/Art/Materials/MI_CityWindowDetail": [
+      0.18,
+      0.23,
+      0.28
+    ],
+    "/Game/CitySim/Art/Materials/MI_CityPark": [
+      0.18,
+      0.62,
+      0.22
+    ],
+    "/Game/CitySim/Art/Materials/MI_CityTrim": [
+      0.82,
+      0.73,
+      0.48
+    ]
+  },
+  "assets": [
+    {
+      "name": "SM_Scenery_Broadleaf_Autumn_A",
+      "asset_id": "seasonal.scenery_broadleaf_autumn_a",
+      "source": "ArtSource/Blender/CitySeasonalKit.blend",
+      "export": "ArtSource/Exports/SM_Scenery_Broadleaf_Autumn_A.fbx",
+      "mesh_destination": "/Game/CitySim/Art/Meshes/SM_Scenery_Broadleaf_Autumn_A",
+      "dimensions_m": [
+        3.17345,
+        2.29795,
+        6.25
+      ],
+      "bounds_min_m": [
+        -1.57375,
+        -1.19212,
+        0.0
+      ],
+      "bounds_max_m": [
+        1.5997,
+        1.10583,
+        6.25
+      ],
+      "triangles": 124,
+      "triangle_limit": 360,
+      "material_slots": {
+        "Bark": "/Game/CitySim/Art/Materials/MI_EnvironmentBark",
+        "Canopy": "/Game/CitySim/Art/Materials/MI_SeasonalAutumn"
+      },
+      "collision_policy": "none; decorative pooled instances only",
+      "pivot_policy": "ground center",
+      "lod_policy": "single low-poly LOD; existing bounded scenery/decoration pools",
+      "uv_policy": "smart-projected UV0; shared solid opaque colors; no alpha texture",
+      "provenance": "Original project Blender primitives; Tools/Create-CitySeasonalArt.py"
+    },
+    {
+      "name": "SM_Scenery_Broadleaf_Winter_A",
+      "asset_id": "seasonal.scenery_broadleaf_winter_a",
+      "source": "ArtSource/Blender/CitySeasonalKit.blend",
+      "export": "ArtSource/Exports/SM_Scenery_Broadleaf_Winter_A.fbx",
+      "mesh_destination": "/Game/CitySim/Art/Meshes/SM_Scenery_Broadleaf_Winter_A",
+      "dimensions_m": [
+        2.91756,
+        2.78869,
+        6.10321
+      ],
+      "bounds_min_m": [
+        -1.44056,
+        -1.27978,
+        0.0
+      ],
+      "bounds_max_m": [
+        1.47699,
+        1.50891,
+        6.10321
+      ],
+      "triangles": 244,
+      "triangle_limit": 360,
+      "material_slots": {
+        "Bark": "/Game/CitySim/Art/Materials/MI_EnvironmentBark"
+      },
+      "collision_policy": "none; decorative pooled instances only",
+      "pivot_policy": "ground center",
+      "lod_policy": "single low-poly LOD; existing bounded scenery/decoration pools",
+      "uv_policy": "smart-projected UV0; shared solid opaque colors; no alpha texture",
+      "provenance": "Original project Blender primitives; Tools/Create-CitySeasonalArt.py"
+    },
+    {
+      "name": "SM_Scenery_Conifer_Winter_A",
+      "asset_id": "seasonal.scenery_conifer_winter_a",
+      "source": "ArtSource/Blender/CitySeasonalKit.blend",
+      "export": "ArtSource/Exports/SM_Scenery_Conifer_Winter_A.fbx",
+      "mesh_destination": "/Game/CitySim/Art/Meshes/SM_Scenery_Conifer_Winter_A",
+      "dimensions_m": [
+        3.11977,
+        3.04155,
+        6.6
+      ],
+      "bounds_min_m": [
+        -1.55988,
+        -1.44155,
+        0.0
+      ],
+      "bounds_max_m": [
+        1.55988,
+        1.6,
+        6.6
+      ],
+      "triangles": 204,
+      "triangle_limit": 360,
+      "material_slots": {
+        "Bark": "/Game/CitySim/Art/Materials/MI_EnvironmentBark",
+        "Canopy": "/Game/CitySim/Art/Materials/MI_EnvironmentCanopy",
+        "Snow": "/Game/CitySim/Art/Materials/MI_EnvironmentSnow"
+      },
+      "collision_policy": "none; decorative pooled instances only",
+      "pivot_policy": "ground center",
+      "lod_policy": "single low-poly LOD; existing bounded scenery/decoration pools",
+      "uv_policy": "smart-projected UV0; shared solid opaque colors; no alpha texture",
+      "provenance": "Original project Blender primitives; Tools/Create-CitySeasonalArt.py"
+    },
+    {
+      "name": "SM_Seasonal_FlowerBed_A",
+      "asset_id": "seasonal.seasonal_flowerbed_a",
+      "source": "ArtSource/Blender/CitySeasonalKit.blend",
+      "export": "ArtSource/Exports/SM_Seasonal_FlowerBed_A.fbx",
+      "mesh_destination": "/Game/CitySim/Art/Meshes/SM_Seasonal_FlowerBed_A",
+      "dimensions_m": [
+        3.0,
+        1.6,
+        0.81
+      ],
+      "bounds_min_m": [
+        -1.5,
+        -0.8,
+        0.0
+      ],
+      "bounds_max_m": [
+        1.5,
+        0.8,
+        0.81
+      ],
+      "triangles": 212,
+      "triangle_limit": 260,
+      "material_slots": {
+        "Foliage": "/Game/CitySim/Art/Materials/MI_SeasonalFoliage",
+        "Flowers": "/Game/CitySim/Art/Materials/MI_SeasonalFlowers"
+      },
+      "collision_policy": "none; decorative pooled instances only",
+      "pivot_policy": "ground center",
+      "lod_policy": "single low-poly LOD; existing bounded scenery/decoration pools",
+      "uv_policy": "smart-projected UV0; shared solid opaque colors; no alpha texture",
+      "provenance": "Original project Blender primitives; Tools/Create-CitySeasonalArt.py"
+    },
+    {
+      "name": "SM_Seasonal_Pumpkin_A",
+      "asset_id": "seasonal.seasonal_pumpkin_a",
+      "source": "ArtSource/Blender/CitySeasonalKit.blend",
+      "export": "ArtSource/Exports/SM_Seasonal_Pumpkin_A.fbx",
+      "mesh_destination": "/Game/CitySim/Art/Meshes/SM_Seasonal_Pumpkin_A",
+      "dimensions_m": [
+        1.43108,
+        1.27596,
+        1.58
+      ],
+      "bounds_min_m": [
+        -0.71554,
+        -0.63798,
+        0.0
+      ],
+      "bounds_max_m": [
+        0.71554,
+        0.63798,
+        1.58
+      ],
+      "triangles": 40,
+      "triangle_limit": 260,
+      "material_slots": {
+        "Pumpkin": "/Game/CitySim/Art/Materials/MI_SeasonalPumpkin",
+        "Bark": "/Game/CitySim/Art/Materials/MI_EnvironmentBark"
+      },
+      "collision_policy": "none; decorative pooled instances only",
+      "pivot_policy": "ground center",
+      "lod_policy": "single low-poly LOD; existing bounded scenery/decoration pools",
+      "uv_policy": "smart-projected UV0; shared solid opaque colors; no alpha texture",
+      "provenance": "Original project Blender primitives; Tools/Create-CitySeasonalArt.py"
+    },
+    {
+      "name": "SM_Seasonal_Snowman_A",
+      "asset_id": "seasonal.seasonal_snowman_a",
+      "source": "ArtSource/Blender/CitySeasonalKit.blend",
+      "export": "ArtSource/Exports/SM_Seasonal_Snowman_A.fbx",
+      "mesh_destination": "/Game/CitySim/Art/Meshes/SM_Seasonal_Snowman_A",
+      "dimensions_m": [
+        1.35953,
+        1.24193,
+        3.44
+      ],
+      "bounds_min_m": [
+        -0.67976,
+        -0.62097,
+        0.0
+      ],
+      "bounds_max_m": [
+        0.67976,
+        0.62097,
+        3.44
+      ],
+      "triangles": 208,
+      "triangle_limit": 260,
+      "material_slots": {
+        "Snow": "/Game/CitySim/Art/Materials/MI_EnvironmentSnow",
+        "Detail": "/Game/CitySim/Art/Materials/MI_SeasonalDetail"
+      },
+      "collision_policy": "none; decorative pooled instances only",
+      "pivot_policy": "ground center",
+      "lod_policy": "single low-poly LOD; existing bounded scenery/decoration pools",
+      "uv_policy": "smart-projected UV0; shared solid opaque colors; no alpha texture",
+      "provenance": "Original project Blender primitives; Tools/Create-CitySeasonalArt.py"
+    },
+    {
+      "name": "SM_Seasonal_FestiveTree_A",
+      "asset_id": "seasonal.seasonal_festivetree_a",
+      "source": "ArtSource/Blender/CitySeasonalKit.blend",
+      "export": "ArtSource/Exports/SM_Seasonal_FestiveTree_A.fbx",
+      "mesh_destination": "/Game/CitySim/Art/Meshes/SM_Seasonal_FestiveTree_A",
+      "dimensions_m": [
+        2.53481,
+        2.47126,
+        4.46
+      ],
+      "bounds_min_m": [
+        -1.26741,
+        -1.17126,
+        0.0
+      ],
+      "bounds_max_m": [
+        1.26741,
+        1.3,
+        4.46
+      ],
+      "triangles": 260,
+      "triangle_limit": 260,
+      "material_slots": {
+        "Canopy": "/Game/CitySim/Art/Materials/MI_EnvironmentCanopy",
+        "Detail": "/Game/CitySim/Art/Materials/MI_SeasonalFestiveDetail"
+      },
+      "collision_policy": "none; decorative pooled instances only",
+      "pivot_policy": "ground center",
+      "lod_policy": "single low-poly LOD; existing bounded scenery/decoration pools",
+      "uv_policy": "smart-projected UV0; shared solid opaque colors; no alpha texture",
+      "provenance": "Original project Blender primitives; Tools/Create-CitySeasonalArt.py"
+    },
+    {
+      "name": "SM_Seasonal_Gift_A",
+      "asset_id": "seasonal.seasonal_gift_a",
+      "source": "ArtSource/Blender/CitySeasonalKit.blend",
+      "export": "ArtSource/Exports/SM_Seasonal_Gift_A.fbx",
+      "mesh_destination": "/Game/CitySim/Art/Meshes/SM_Seasonal_Gift_A",
+      "dimensions_m": [
+        1.24,
+        1.24,
+        1.29
+      ],
+      "bounds_min_m": [
+        -0.62,
+        -0.62,
+        0.0
+      ],
+      "bounds_max_m": [
+        0.62,
+        0.62,
+        1.29
+      ],
+      "triangles": 76,
+      "triangle_limit": 260,
+      "material_slots": {
+        "Gift": "/Game/CitySim/Art/Materials/MI_SeasonalGift",
+        "Ribbon": "/Game/CitySim/Art/Materials/MI_SeasonalRibbon"
+      },
+      "collision_policy": "none; decorative pooled instances only",
+      "pivot_policy": "ground center",
+      "lod_policy": "single low-poly LOD; existing bounded scenery/decoration pools",
+      "uv_policy": "smart-projected UV0; shared solid opaque colors; no alpha texture",
+      "provenance": "Original project Blender primitives; Tools/Create-CitySeasonalArt.py"
+    },
+    {
+      "name": "SM_Seasonal_WreathAutumn_A",
+      "asset_id": "seasonal.seasonal_wreathautumn_a",
+      "source": "ArtSource/Blender/CitySeasonalKit.blend",
+      "export": "ArtSource/Exports/SM_Seasonal_WreathAutumn_A.fbx",
+      "mesh_destination": "/Game/CitySim/Art/Meshes/SM_Seasonal_WreathAutumn_A",
+      "dimensions_m": [
+        1.2,
+        0.22029,
+        1.2
+      ],
+      "bounds_min_m": [
+        -0.6,
+        -0.14029,
+        0.0
+      ],
+      "bounds_max_m": [
+        0.6,
+        0.08,
+        1.2
+      ],
+      "triangles": 200,
+      "triangle_limit": 260,
+      "material_slots": {
+        "Canopy": "/Game/CitySim/Art/Materials/MI_SeasonalAutumn",
+        "Accent": "/Game/CitySim/Art/Materials/MI_SeasonalGift"
+      },
+      "collision_policy": "none; decorative pooled instances only",
+      "pivot_policy": "ground center",
+      "lod_policy": "single low-poly LOD; existing bounded scenery/decoration pools",
+      "uv_policy": "smart-projected UV0; shared solid opaque colors; no alpha texture",
+      "provenance": "Original project Blender primitives; Tools/Create-CitySeasonalArt.py",
+      "attachment_policy": "authored XZ plane, front -Y; ring center Z0.60m; base pivot",
+      "ring_center_m": [
+        0,
+        0,
+        0.6
+      ],
+      "door_attachment_authored_m": [
+        0,
+        -6.48,
+        2.15
+      ]
+    },
+    {
+      "name": "SM_Seasonal_WreathWinter_A",
+      "asset_id": "seasonal.seasonal_wreathwinter_a",
+      "source": "ArtSource/Blender/CitySeasonalKit.blend",
+      "export": "ArtSource/Exports/SM_Seasonal_WreathWinter_A.fbx",
+      "mesh_destination": "/Game/CitySim/Art/Meshes/SM_Seasonal_WreathWinter_A",
+      "dimensions_m": [
+        1.2,
+        0.22029,
+        1.2
+      ],
+      "bounds_min_m": [
+        -0.6,
+        -0.14029,
+        0.0
+      ],
+      "bounds_max_m": [
+        0.6,
+        0.08,
+        1.2
+      ],
+      "triangles": 200,
+      "triangle_limit": 260,
+      "material_slots": {
+        "Canopy": "/Game/CitySim/Art/Materials/MI_EnvironmentCanopy",
+        "Accent": "/Game/CitySim/Art/Materials/MI_SeasonalGift"
+      },
+      "collision_policy": "none; decorative pooled instances only",
+      "pivot_policy": "ground center",
+      "lod_policy": "single low-poly LOD; existing bounded scenery/decoration pools",
+      "uv_policy": "smart-projected UV0; shared solid opaque colors; no alpha texture",
+      "provenance": "Original project Blender primitives; Tools/Create-CitySeasonalArt.py",
+      "attachment_policy": "authored XZ plane, front -Y; ring center Z0.60m; base pivot",
+      "ring_center_m": [
+        0,
+        0,
+        0.6
+      ],
+      "door_attachment_authored_m": [
+        0,
+        -6.48,
+        2.15
+      ]
+    },
+    {
+      "name": "SM_Seasonal_LeafPile_A",
+      "asset_id": "seasonal.seasonal_leafpile_a",
+      "source": "ArtSource/Blender/CitySeasonalKit.blend",
+      "export": "ArtSource/Exports/SM_Seasonal_LeafPile_A.fbx",
+      "mesh_destination": "/Game/CitySim/Art/Meshes/SM_Seasonal_LeafPile_A",
+      "dimensions_m": [
+        1.90753,
+        1.28209,
+        0.24
+      ],
+      "bounds_min_m": [
+        -0.98877,
+        -0.65604,
+        0.0
+      ],
+      "bounds_max_m": [
+        0.91877,
+        0.62604,
+        0.24
+      ],
+      "triangles": 80,
+      "triangle_limit": 260,
+      "material_slots": {
+        "Canopy": "/Game/CitySim/Art/Materials/MI_SeasonalAutumn"
+      },
+      "collision_policy": "none; decorative pooled instances only",
+      "pivot_policy": "ground center",
+      "lod_policy": "single low-poly LOD; existing bounded scenery/decoration pools",
+      "uv_policy": "smart-projected UV0; shared solid opaque colors; no alpha texture",
+      "provenance": "Original project Blender primitives; Tools/Create-CitySeasonalArt.py"
+    },
+    {
+      "name": "SM_Building_Residential_SeasonalSpace_A",
+      "asset_id": "seasonal.building_residential_seasonalspace_a",
+      "source": "ArtSource/Blender/CityBuildingWindows.blend",
+      "export": "ArtSource/Exports/BuildingWindowStudy/SM_Building_Residential_SeasonalSpace_A.fbx",
+      "mesh_destination": "/Game/CitySim/Art/Meshes/SM_Building_Residential_SeasonalSpace_A",
+      "dimensions_m": [
+        10.559999465942383,
+        13.279997825622559,
+        5.799999713897705
+      ],
+      "bounds_min_m": [
+        -5.279999732971191,
+        -7.999998092651367,
+        -0.19999980926513672
+      ],
+      "bounds_max_m": [
+        5.279999732971191,
+        5.279999732971191,
+        5.599999904632568
+      ],
+      "triangles": 668,
+      "triangle_limit": 668,
+      "material_slots": {
+        "ResidentialBrick": "/Game/CitySim/Art/Materials/MI_ResidentialBrick",
+        "HomeSolidDetails": "/Game/CitySim/Art/Materials/M_HomeSolidDetails",
+        "RoofShingles": "/Game/CitySim/Art/Materials/MI_RoofShingles",
+        "HomeWindowOpaque": "/Game/CitySim/Art/Materials/M_HomeWindowOpaque"
+      },
+      "collision_policy": "none; decorative pooled instances only",
+      "pivot_policy": "body ground center; entrance walk extends20cm below pivot to sit on lawn",
+      "lod_policy": "single low-poly LOD; existing bounded scenery/decoration pools",
+      "uv_policy": "smart-projected UV0; shared solid opaque colors; no alpha texture",
+      "provenance": "User-approved D91 opaque windows/home scale/detail and civic asphalt/tinted brick; prior authoring entry retained",
+      "footprint_cells": [
+        2,
+        2
+      ],
+      "display_variant_of": "SM_Building_Residential_A",
+      "body_xy_scale": 0.66,
+      "entrance_endpoint_authored_m": [
+        0,
+        -8.0,
+        -0.04
+      ],
+      "door_front_authored_m": [
+        0,
+        -4.72,
+        0.925
+      ],
+      "wreath_attachment_authored_m": [
+        0,
+        -4.78,
+        0.85
+      ],
+      "body_base_authored_z_m": 0,
+      "driveway_bottom_authored_z_m": -0.2,
+      "driveway_top_authored_z_m": -0.04,
+      "presentation_yaw_offset_quarter_turns": 2,
+      "surface_source_entry": {
+        "name": "SM_Building_Residential_SeasonalSpace_A",
+        "asset_id": "seasonal.building_residential_seasonalspace_a",
+        "source": "ArtSource/Blender/CitySeasonalKit.blend",
+        "export": "ArtSource/Exports/SM_Building_Residential_SeasonalSpace_A.fbx",
+        "mesh_destination": "/Game/CitySim/Art/Meshes/SM_Building_Residential_SeasonalSpace_A",
+        "dimensions_m": [
+          14.08,
+          15.04,
+          9.2
+        ],
+        "bounds_min_m": [
+          -7.04,
+          -8.0,
+          -0.2
+        ],
+        "bounds_max_m": [
+          7.04,
+          7.04,
+          9.0
+        ],
+        "triangles": 90,
+        "triangle_limit": 500,
+        "material_slots": {
+          "Residential": "/Game/CitySim/Art/Materials/MI_CityResidential",
+          "Roof": "/Game/CitySim/Art/Materials/MI_CityWindowDetail"
+        },
+        "collision_policy": "none; decorative pooled instances only",
+        "pivot_policy": "body ground center; entrance walk extends20cm below pivot to sit on lawn",
+        "lod_policy": "single low-poly LOD; existing bounded scenery/decoration pools",
+        "uv_policy": "smart-projected UV0; shared solid opaque colors; no alpha texture",
+        "provenance": "Original project Blender primitives; Tools/Create-CitySeasonalArt.py",
+        "footprint_cells": [
+          2,
+          2
+        ],
+        "display_variant_of": "SM_Building_Residential_A",
+        "body_xy_scale": 0.88,
+        "entrance_endpoint_authored_m": [
+          0,
+          -8.0,
+          -0.04
+        ],
+        "door_front_authored_m": [
+          0,
+          -6.424,
+          2
+        ],
+        "wreath_attachment_authored_m": [
+          0,
+          -6.48,
+          2.15
+        ],
+        "body_base_authored_z_m": 0,
+        "driveway_bottom_authored_z_m": -0.2,
+        "driveway_top_authored_z_m": -0.04,
+        "presentation_yaw_offset_quarter_turns": 2
+      },
+      "building_surface_task": "D79",
+      "building_adoption_prior_entry": {
+        "name": "SM_Building_Residential_SeasonalSpace_A",
+        "asset_id": "seasonal.building_residential_seasonalspace_a",
+        "source": "ArtSource/Blender/CityResidentialSurface.blend",
+        "export": "ArtSource/Exports/BuildingSurfacePrototypes/SM_ResidentialSeasonal_Surface.fbx",
+        "mesh_destination": "/Game/CitySim/Art/Meshes/SM_Building_Residential_SeasonalSpace_A",
+        "dimensions_m": [
+          14.08,
+          15.04,
+          9.2
+        ],
+        "bounds_min_m": [
+          -7.04,
+          -8.0,
+          -0.2
+        ],
+        "bounds_max_m": [
+          7.04,
+          7.04,
+          9.0
+        ],
+        "triangles": 90,
+        "triangle_limit": 500,
+        "material_slots": {
+          "ResidentialBrick": "/Game/CitySim/Art/Materials/MI_ResidentialBrick",
+          "Roof": "/Game/CitySim/Art/Materials/MI_Roof",
+          "RoofShingles": "/Game/CitySim/Art/Materials/MI_RoofShingles"
+        },
+        "collision_policy": "none; decorative pooled instances only",
+        "pivot_policy": "body ground center; entrance walk extends20cm below pivot to sit on lawn",
+        "lod_policy": "single low-poly LOD; existing bounded scenery/decoration pools",
+        "uv_policy": "smart-projected UV0; shared solid opaque colors; no alpha texture",
+        "provenance": "Original project Blender primitives; Tools/Create-CitySeasonalArt.py",
+        "footprint_cells": [
+          2,
+          2
+        ],
+        "display_variant_of": "SM_Building_Residential_A",
+        "body_xy_scale": 0.88,
+        "entrance_endpoint_authored_m": [
+          0,
+          -8.0,
+          -0.04
+        ],
+        "door_front_authored_m": [
+          0,
+          -6.424,
+          2
+        ],
+        "wreath_attachment_authored_m": [
+          0,
+          -6.48,
+          2.15
+        ],
+        "body_base_authored_z_m": 0,
+        "driveway_bottom_authored_z_m": -0.2,
+        "driveway_top_authored_z_m": -0.04,
+        "presentation_yaw_offset_quarter_turns": 2,
+        "surface_source_entry": {
+          "name": "SM_Building_Residential_SeasonalSpace_A",
+          "asset_id": "seasonal.building_residential_seasonalspace_a",
+          "source": "ArtSource/Blender/CitySeasonalKit.blend",
+          "export": "ArtSource/Exports/SM_Building_Residential_SeasonalSpace_A.fbx",
+          "mesh_destination": "/Game/CitySim/Art/Meshes/SM_Building_Residential_SeasonalSpace_A",
+          "dimensions_m": [
+            14.08,
+            15.04,
+            9.2
+          ],
+          "bounds_min_m": [
+            -7.04,
+            -8.0,
+            -0.2
+          ],
+          "bounds_max_m": [
+            7.04,
+            7.04,
+            9.0
+          ],
+          "triangles": 90,
+          "triangle_limit": 500,
+          "material_slots": {
+            "Residential": "/Game/CitySim/Art/Materials/MI_CityResidential",
+            "Roof": "/Game/CitySim/Art/Materials/MI_CityWindowDetail"
+          },
+          "collision_policy": "none; decorative pooled instances only",
+          "pivot_policy": "body ground center; entrance walk extends20cm below pivot to sit on lawn",
+          "lod_policy": "single low-poly LOD; existing bounded scenery/decoration pools",
+          "uv_policy": "smart-projected UV0; shared solid opaque colors; no alpha texture",
+          "provenance": "Original project Blender primitives; Tools/Create-CitySeasonalArt.py",
+          "footprint_cells": [
+            2,
+            2
+          ],
+          "display_variant_of": "SM_Building_Residential_A",
+          "body_xy_scale": 0.88,
+          "entrance_endpoint_authored_m": [
+            0,
+            -8.0,
+            -0.04
+          ],
+          "door_front_authored_m": [
+            0,
+            -6.424,
+            2
+          ],
+          "wreath_attachment_authored_m": [
+            0,
+            -6.48,
+            2.15
+          ],
+          "body_base_authored_z_m": 0,
+          "driveway_bottom_authored_z_m": -0.2,
+          "driveway_top_authored_z_m": -0.04,
+          "presentation_yaw_offset_quarter_turns": 2
+        },
+        "building_surface_task": "D79"
+      },
+      "sections": 4,
+      "building_adoption_task": "D91",
+      "export_sha256": "3e01cfb5b634ed83bda05e05d62c9012bc14c33d98cae1dd26cbe713c865345e",
+      "wreath_scale": 0.5,
+      "capabilities": [
+        "building_surfaces",
+        "reviewed_building"
+      ]
+    },
+    {
+      "name": "SM_Building_Park_December_A",
+      "asset_id": "seasonal.building_park_december_a",
+      "source": "ArtSource/Blender/CityParkIntegration.blend",
+      "export": "ArtSource/Exports/ParkIntegration/SM_Building_Park_December_A.fbx",
+      "mesh_destination": "/Game/CitySim/Art/Meshes/SM_Building_Park_December_A",
+      "dimensions_m": [
+        22.0,
+        22.0,
+        7.35
+      ],
+      "bounds_min_m": [
+        -11.0,
+        -11.0,
+        0.0
+      ],
+      "bounds_max_m": [
+        11.0,
+        11.0,
+        7.35
+      ],
+      "triangles": 656,
+      "triangle_limit": 500,
+      "material_slots": {
+        "Park": "/Game/CitySim/Art/Materials/MI_CityPark",
+        "Trim": "/Game/CitySim/Art/Materials/MI_CityTrim",
+        "Bark": "/Game/CitySim/Art/Materials/MI_EnvironmentBark",
+        "Canopy": "/Game/CitySim/Art/Materials/MI_EnvironmentCanopy"
+      },
+      "collision_policy": "none; decorative pooled instances only",
+      "pivot_policy": "ground center",
+      "lod_policy": "authored paired LOD; Desktop .025 threshold; Android minimum LOD1",
+      "uv_policy": "smart-projected UV0; shared solid opaque colors; no alpha texture",
+      "provenance": "Accepted D83 source derivative; Prepare-CityParkIntegration.py; prior source entry retained",
+      "footprint_cells": [
+        3,
+        3
+      ],
+      "display_variant_of": "SM_Building_Park_A",
+      "center_pedestal_top_m": 0.65,
+      "center_decoration_support_m": 0.67,
+      "presentation_yaw_offset_quarter_turns": 2,
+      "park_refinement_source_entry": {
+        "name": "SM_Building_Park_December_A",
+        "asset_id": "seasonal.building_park_december_a",
+        "source": "ArtSource/Blender/CitySeasonalKit.blend",
+        "export": "ArtSource/Exports/SM_Building_Park_December_A.fbx",
+        "mesh_destination": "/Game/CitySim/Art/Meshes/SM_Building_Park_December_A",
+        "dimensions_m": [
+          22.0,
+          22.0,
+          7.35
+        ],
+        "bounds_min_m": [
+          -11.0,
+          -11.0,
+          0.0
+        ],
+        "bounds_max_m": [
+          11.0,
+          11.0,
+          7.35
+        ],
+        "triangles": 432,
+        "triangle_limit": 500,
+        "material_slots": {
+          "Park": "/Game/CitySim/Art/Materials/MI_CityPark",
+          "Trim": "/Game/CitySim/Art/Materials/MI_CityTrim"
+        },
+        "collision_policy": "none; decorative pooled instances only",
+        "pivot_policy": "ground center",
+        "lod_policy": "single low-poly LOD; existing bounded scenery/decoration pools",
+        "uv_policy": "smart-projected UV0; shared solid opaque colors; no alpha texture",
+        "provenance": "Original project Blender primitives; Tools/Create-CitySeasonalArt.py",
+        "footprint_cells": [
+          3,
+          3
+        ],
+        "display_variant_of": "SM_Building_Park_A",
+        "center_pedestal_top_m": 0.65,
+        "center_decoration_support_m": 0.67,
+        "presentation_yaw_offset_quarter_turns": 2
+      },
+      "sections": 4,
+      "park_refinement_task": "D83",
+      "building_refinement_task": "D83",
+      "native_lod_export": "ArtSource/Exports/ParkIntegration/SM_Building_Park_December_A_LOD1.fbx",
+      "native_lod_triangles": 560,
+      "capabilities": [
+        "paired_park_lods"
+      ]
+    },
+    {
+      "name": "SM_Building_NeighborhoodPark_December_A",
+      "asset_id": "seasonal.building_neighborhoodpark_december_a",
+      "source": "ArtSource/Blender/CityParkIntegration.blend",
+      "export": "ArtSource/Exports/ParkIntegration/SM_Building_NeighborhoodPark_December_A.fbx",
+      "mesh_destination": "/Game/CitySim/Art/Meshes/SM_Building_NeighborhoodPark_December_A",
+      "dimensions_m": [
+        40.0,
+        40.0,
+        8.22
+      ],
+      "bounds_min_m": [
+        -20.0,
+        -20.0,
+        0.0
+      ],
+      "bounds_max_m": [
+        20.0,
+        20.0,
+        8.22
+      ],
+      "triangles": 2160,
+      "triangle_limit": 500,
+      "material_slots": {
+        "Park": "/Game/CitySim/Art/Materials/MI_CityPark",
+        "Trim": "/Game/CitySim/Art/Materials/MI_CityTrim"
+      },
+      "collision_policy": "none; decorative pooled instances only",
+      "pivot_policy": "ground center",
+      "lod_policy": "authored paired LOD; Desktop .025 threshold; Android minimum LOD1",
+      "uv_policy": "smart-projected UV0; shared solid opaque colors; no alpha texture",
+      "provenance": "Accepted D83 source derivative; Prepare-CityParkIntegration.py; prior source entry retained",
+      "footprint_cells": [
+        5,
+        5
+      ],
+      "display_variant_of": "SM_Building_NeighborhoodPark_A",
+      "center_pedestal_top_m": 0.3,
+      "center_decoration_support_m": 0.32,
+      "presentation_yaw_offset_quarter_turns": 2,
+      "park_refinement_source_entry": {
+        "name": "SM_Building_NeighborhoodPark_December_A",
+        "asset_id": "seasonal.building_neighborhoodpark_december_a",
+        "source": "ArtSource/Blender/CitySeasonalKit.blend",
+        "export": "ArtSource/Exports/SM_Building_NeighborhoodPark_December_A.fbx",
+        "mesh_destination": "/Game/CitySim/Art/Meshes/SM_Building_NeighborhoodPark_December_A",
+        "dimensions_m": [
+          40.0,
+          40.0,
+          8.22
+        ],
+        "bounds_min_m": [
+          -20.0,
+          -20.0,
+          0.0
+        ],
+        "bounds_max_m": [
+          20.0,
+          20.0,
+          8.22
+        ],
+        "triangles": 360,
+        "triangle_limit": 500,
+        "material_slots": {
+          "Park": "/Game/CitySim/Art/Materials/MI_CityPark",
+          "Trim": "/Game/CitySim/Art/Materials/MI_CityTrim"
+        },
+        "collision_policy": "none; decorative pooled instances only",
+        "pivot_policy": "ground center",
+        "lod_policy": "single low-poly LOD; existing bounded scenery/decoration pools",
+        "uv_policy": "smart-projected UV0; shared solid opaque colors; no alpha texture",
+        "provenance": "Original project Blender primitives; Tools/Create-CitySeasonalArt.py",
+        "footprint_cells": [
+          5,
+          5
+        ],
+        "display_variant_of": "SM_Building_NeighborhoodPark_A",
+        "center_pedestal_top_m": 0.3,
+        "center_decoration_support_m": 0.32,
+        "presentation_yaw_offset_quarter_turns": 2
+      },
+      "sections": 2,
+      "park_refinement_task": "D83",
+      "building_refinement_task": "D83",
+      "native_lod_export": "ArtSource/Exports/ParkIntegration/SM_Building_NeighborhoodPark_December_A_LOD1.fbx",
+      "native_lod_triangles": 720,
+      "capabilities": [
+        "paired_park_lods"
+      ]
+    }
+  ],
+  "building_adoption_task": "D91"
+}

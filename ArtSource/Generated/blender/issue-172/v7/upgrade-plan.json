@@ -1,0 +1,185 @@
+{
+  "source_id": "building.primaryschool.a",
+  "existing_stages": [
+    "base"
+  ],
+  "existing_upgrade_count": 0,
+  "gameplay_changes": false,
+  "current_footprint_m": [
+    16,
+    16
+  ],
+  "source_proposal_m": [
+    32,
+    32
+  ],
+  "retained_entrances": [
+    {
+      "role": "pedestrian",
+      "target": "PublicDoor_Leaf0",
+      "xyz_m": [
+        -1,
+        -10.151,
+        0
+      ],
+      "outward": [
+        0,
+        -1,
+        0
+      ],
+      "width_m": 1.8,
+      "grade_m": 0,
+      "boundary_connector": {
+        "xyz_m": [
+          -1,
+          -16,
+          0
+        ],
+        "outward": [
+          0,
+          -1,
+          0
+        ],
+        "width_m": 1.8,
+        "grade_m": 0
+      },
+      "reserved_free_corridor": {
+        "min": [
+          -1.9,
+          -16,
+          0
+        ],
+        "max": [
+          -0.09999999999999998,
+          -10.151,
+          2.4
+        ]
+      }
+    },
+    {
+      "role": "service",
+      "target": "StaffDoor_Leaf0",
+      "xyz_m": [
+        9,
+        -8.151,
+        0
+      ],
+      "outward": [
+        0,
+        -1,
+        0
+      ],
+      "width_m": 2.4,
+      "grade_m": 0,
+      "boundary_connector": {
+        "xyz_m": [
+          9,
+          -16,
+          0
+        ],
+        "outward": [
+          0,
+          -1,
+          0
+        ],
+        "width_m": 2.4,
+        "grade_m": 0
+      },
+      "reserved_free_corridor": {
+        "min": [
+          7.8,
+          -16,
+          0
+        ],
+        "max": [
+          10.2,
+          -8.151,
+          2.6
+        ]
+      }
+    }
+  ],
+  "actual_occupied_bounds": {
+    "min": [
+      -13.65999984741211,
+      -12.149999618530273,
+      0.0
+    ],
+    "max": [
+      13.15999984741211,
+      13.149999618530273,
+      5.615000247955322
+    ]
+  },
+  "future_reservations": [
+    {
+      "id": "future_northeast_classroom",
+      "min": [
+        5,
+        9,
+        0
+      ],
+      "max": [
+        14,
+        14,
+        6
+      ],
+      "purpose": "hypothetical future wing"
+    }
+  ],
+  "reservation_intersections": [],
+  "book_components": [
+    {
+      "name": "Book_Pediment",
+      "min": [
+        -2.8499999046325684,
+        -11.949999809265137,
+        3.1500000953674316
+      ],
+      "max": [
+        0.8500000238418579,
+        -11.720000267028809,
+        5.0
+      ]
+    },
+    {
+      "name": "Book_Backplate",
+      "min": [
+        -2.75,
+        -11.984999656677246,
+        3.2699999809265137
+      ],
+      "max": [
+        0.75,
+        -11.90999984741211,
+        4.940000057220459
+      ]
+    },
+    {
+      "name": "Book_LeftPages",
+      "min": [
+        -2.549999952316284,
+        -12.149999618530273,
+        3.390000104904175
+      ],
+      "max": [
+        -1.0399999618530273,
+        -11.979999542236328,
+        4.800000190734863
+      ]
+    },
+    {
+      "name": "Book_RightPages",
+      "min": [
+        -0.9599999785423279,
+        -12.149999618530273,
+        3.390000104904175
+      ],
+      "max": [
+        0.550000011920929,
+        -11.979999542236328,
+        4.800000190734863
+      ]
+    }
+  ]
+}

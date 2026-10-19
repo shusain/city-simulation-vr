@@ -1,0 +1,786 @@
+{
+  "assets": [
+    {
+      "name": "SM_LowDensity_Factory_A",
+      "object": "SM_LowDensity_Factory_A",
+      "source": "ArtSource/Blender/CityLowDensityBuildings.blend",
+      "export": "ArtSource/Exports/LowDensity/SM_LowDensity_Factory_A.fbx",
+      "native": "/Game/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Factory_A",
+      "slots": [
+        "IndustrialBrick",
+        "Roof",
+        "IndustrialMechanical",
+        "RoofMetal",
+        "BuildingWindowOpaque",
+        "IndustrialDoorMetal"
+      ],
+      "bindings": {
+        "IndustrialBrick": "/Game/CitySim/Art/Materials/MI_IndustrialBrick",
+        "Roof": "/Game/CitySim/Art/Materials/MI_Roof",
+        "IndustrialMechanical": "/Game/CitySim/Art/LowDensity/Materials/M_IndustrialHardwareSteel",
+        "RoofMetal": "/Game/CitySim/Art/Materials/MI_RoofMetal",
+        "BuildingWindowOpaque": "/Game/CitySim/Art/Materials/M_BuildingWindowOpaque",
+        "IndustrialDoorMetal": "/Game/CitySim/Art/LowDensity/Materials/M_IndustrialDoorSteel"
+      },
+      "damaged": false,
+      "appearance": "A_Brick",
+      "entrance": {
+        "style": "glazed sectional garage",
+        "personnel": {
+          "center_x_m": 5.2,
+          "front_y_m": -7.15,
+          "width_m": 1.1,
+          "height_m": 2.05,
+          "floor_m": 0.16,
+          "path_bounds_m": [
+            [
+              4.4750000000000005,
+              -10.4,
+              0
+            ],
+            [
+              5.925,
+              -7.06,
+              0.16
+            ]
+          ]
+        },
+        "freight": [
+          {
+            "center_x_m": 0,
+            "width_m": 5.65,
+            "height_m": 4.55,
+            "floor_m": 0.08,
+            "front_y_m": -7.17,
+            "style": "glazed sectional"
+          }
+        ],
+        "dock": null,
+        "detail_bounds_m": [
+          [
+            -5.35,
+            -10.55,
+            0
+          ],
+          [
+            6.0,
+            -6.9,
+            5.3
+          ]
+        ]
+      },
+      "source_sha256": "05e4b0409ac3f8785546feccf9b46443c449295819ef0ec68e7790658fb13d9e",
+      "export_sha256": "5133737bc83e466e5eb719bf35b31068087671e876a87ded7a23fc0e50b2e93a",
+      "target_name": "SM_IndustrialGround_LowDensity_Factory_A"
+    },
+    {
+      "name": "SM_LowDensity_Factory_A_Damaged",
+      "object": "SM_LowDensity_Factory_A_Damaged",
+      "source": "ArtSource/Blender/CityLowDensityBuildings.blend",
+      "export": "ArtSource/Exports/LowDensity/SM_LowDensity_Factory_A_Damaged.fbx",
+      "native": "/Game/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Factory_A_Damaged",
+      "slots": [
+        "IndustrialBrick",
+        "Roof",
+        "IndustrialMechanical",
+        "RoofMetal",
+        "BuildingWindowOpaque",
+        "IndustrialDoorMetal"
+      ],
+      "bindings": {
+        "IndustrialBrick": "/Game/CitySim/Art/Materials/MI_CharredBrick",
+        "Roof": "/Game/CitySim/Art/Materials/MI_CharredTrim",
+        "IndustrialMechanical": "/Game/CitySim/Art/Materials/MI_CharredMechanical",
+        "RoofMetal": "/Game/CitySim/Art/Materials/MI_CharredRoofMetal",
+        "BuildingWindowOpaque": "/Game/CitySim/Art/Materials/MI_CharredTrim",
+        "IndustrialDoorMetal": "/Game/CitySim/Art/Materials/MI_CharredMechanical"
+      },
+      "damaged": true,
+      "appearance": "A_Brick",
+      "entrance": {
+        "style": "glazed sectional garage",
+        "personnel": {
+          "center_x_m": 5.2,
+          "front_y_m": -7.15,
+          "width_m": 1.1,
+          "height_m": 2.05,
+          "floor_m": 0.16,
+          "path_bounds_m": [
+            [
+              4.4750000000000005,
+              -10.4,
+              0
+            ],
+            [
+              5.925,
+              -7.06,
+              0.16
+            ]
+          ]
+        },
+        "freight": [
+          {
+            "center_x_m": 0,
+            "width_m": 5.65,
+            "height_m": 4.55,
+            "floor_m": 0.08,
+            "front_y_m": -7.17,
+            "style": "glazed sectional"
+          }
+        ],
+        "dock": null,
+        "detail_bounds_m": [
+          [
+            -5.35,
+            -10.55,
+            0
+          ],
+          [
+            6.0,
+            -6.9,
+            5.3
+          ]
+        ]
+      },
+      "source_sha256": "05e4b0409ac3f8785546feccf9b46443c449295819ef0ec68e7790658fb13d9e",
+      "export_sha256": "9cc43efe6626414d86a0a808d15e29a5bce7be4b6789eab9b63793df173c6469",
+      "target_name": "SM_IndustrialGround_LowDensity_Factory_A_Damaged"
+    },
+    {
+      "name": "SM_LowDensity_Factory_B",
+      "object": "SM_LowDensity_Factory_B",
+      "source": "ArtSource/Blender/CityLowDensityBuildings.blend",
+      "export": "ArtSource/Exports/LowDensity/SM_LowDensity_Factory_B.fbx",
+      "native": "/Game/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Factory_B",
+      "slots": [
+        "IndustrialBrick",
+        "Roof",
+        "IndustrialMechanical",
+        "RoofMetal",
+        "BuildingWindowOpaque",
+        "IndustrialDoorMetal"
+      ],
+      "bindings": {
+        "IndustrialBrick": "/Game/CitySim/Art/LowDensity/Materials/M_Factory_Timber",
+        "Roof": "/Game/CitySim/Art/Materials/MI_Roof",
+        "IndustrialMechanical": "/Game/CitySim/Art/LowDensity/Materials/M_IndustrialHardwareSteel",
+        "RoofMetal": "/Game/CitySim/Art/Materials/MI_RoofMetal",
+        "BuildingWindowOpaque": "/Game/CitySim/Art/Materials/M_BuildingWindowOpaque",
+        "IndustrialDoorMetal": "/Game/CitySim/Art/LowDensity/Materials/M_IndustrialDoorSteel"
+      },
+      "damaged": false,
+      "appearance": "B_Timber",
+      "entrance": {
+        "style": "warehouse roller shutter",
+        "personnel": {
+          "center_x_m": 5.2,
+          "front_y_m": -7.15,
+          "width_m": 1.1,
+          "height_m": 2.05,
+          "floor_m": 0.16,
+          "path_bounds_m": [
+            [
+              4.4750000000000005,
+              -10.4,
+              0
+            ],
+            [
+              5.925,
+              -7.06,
+              0.16
+            ]
+          ]
+        },
+        "freight": [
+          {
+            "center_x_m": 0,
+            "width_m": 5.65,
+            "height_m": 4.55,
+            "floor_m": 0.08,
+            "front_y_m": -7.17,
+            "style": "roller shutter"
+          }
+        ],
+        "dock": null,
+        "detail_bounds_m": [
+          [
+            -5.35,
+            -10.55,
+            0
+          ],
+          [
+            6.0,
+            -6.9,
+            5.3
+          ]
+        ]
+      },
+      "source_sha256": "05e4b0409ac3f8785546feccf9b46443c449295819ef0ec68e7790658fb13d9e",
+      "export_sha256": "45d800cef67ecd8d3db07fd67215ba6a78bbe74f5786501a7ddc49e0b0de3759",
+      "target_name": "SM_IndustrialGround_LowDensity_Factory_B"
+    },
+    {
+      "name": "SM_LowDensity_Factory_B_Damaged",
+      "object": "SM_LowDensity_Factory_B_Damaged",
+      "source": "ArtSource/Blender/CityLowDensityBuildings.blend",
+      "export": "ArtSource/Exports/LowDensity/SM_LowDensity_Factory_B_Damaged.fbx",
+      "native": "/Game/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Factory_B_Damaged",
+      "slots": [
+        "IndustrialBrick",
+        "Roof",
+        "IndustrialMechanical",
+        "RoofMetal",
+        "BuildingWindowOpaque",
+        "IndustrialDoorMetal"
+      ],
+      "bindings": {
+        "IndustrialBrick": "/Game/CitySim/Art/Materials/MI_CharredBrick",
+        "Roof": "/Game/CitySim/Art/Materials/MI_CharredTrim",
+        "IndustrialMechanical": "/Game/CitySim/Art/Materials/MI_CharredMechanical",
+        "RoofMetal": "/Game/CitySim/Art/Materials/MI_CharredRoofMetal",
+        "BuildingWindowOpaque": "/Game/CitySim/Art/Materials/MI_CharredTrim",
+        "IndustrialDoorMetal": "/Game/CitySim/Art/Materials/MI_CharredMechanical"
+      },
+      "damaged": true,
+      "appearance": "B_Timber",
+      "entrance": {
+        "style": "warehouse roller shutter",
+        "personnel": {
+          "center_x_m": 5.2,
+          "front_y_m": -7.15,
+          "width_m": 1.1,
+          "height_m": 2.05,
+          "floor_m": 0.16,
+          "path_bounds_m": [
+            [
+              4.4750000000000005,
+              -10.4,
+              0
+            ],
+            [
+              5.925,
+              -7.06,
+              0.16
+            ]
+          ]
+        },
+        "freight": [
+          {
+            "center_x_m": 0,
+            "width_m": 5.65,
+            "height_m": 4.55,
+            "floor_m": 0.08,
+            "front_y_m": -7.17,
+            "style": "roller shutter"
+          }
+        ],
+        "dock": null,
+        "detail_bounds_m": [
+          [
+            -5.35,
+            -10.55,
+            0
+          ],
+          [
+            6.0,
+            -6.9,
+            5.3
+          ]
+        ]
+      },
+      "source_sha256": "05e4b0409ac3f8785546feccf9b46443c449295819ef0ec68e7790658fb13d9e",
+      "export_sha256": "e9359b77070bf39d23ce872d32a3d4baa3e2fb48f0b14db324f95da5d51112c5",
+      "target_name": "SM_IndustrialGround_LowDensity_Factory_B_Damaged"
+    },
+    {
+      "name": "SM_LowDensity_Factory_C",
+      "object": "SM_LowDensity_Factory_C",
+      "source": "ArtSource/Blender/CityLowDensityBuildings.blend",
+      "export": "ArtSource/Exports/LowDensity/SM_LowDensity_Factory_C.fbx",
+      "native": "/Game/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Factory_C",
+      "slots": [
+        "IndustrialBrick",
+        "Roof",
+        "IndustrialMechanical",
+        "RoofMetal",
+        "BuildingWindowOpaque",
+        "IndustrialDoorMetal"
+      ],
+      "bindings": {
+        "IndustrialBrick": "/Game/CitySim/Art/LowDensity/Materials/M_Factory_Clapboard",
+        "Roof": "/Game/CitySim/Art/Materials/MI_Roof",
+        "IndustrialMechanical": "/Game/CitySim/Art/LowDensity/Materials/M_IndustrialHardwareSteel",
+        "RoofMetal": "/Game/CitySim/Art/Materials/MI_RoofMetal",
+        "BuildingWindowOpaque": "/Game/CitySim/Art/Materials/M_BuildingWindowOpaque",
+        "IndustrialDoorMetal": "/Game/CitySim/Art/LowDensity/Materials/M_IndustrialDoorSteel"
+      },
+      "damaged": false,
+      "appearance": "C_Clapboard",
+      "entrance": {
+        "style": "raised loading dock",
+        "personnel": {
+          "center_x_m": 5.2,
+          "front_y_m": -7.15,
+          "width_m": 1.1,
+          "height_m": 2.05,
+          "floor_m": 0.16,
+          "path_bounds_m": [
+            [
+              4.4750000000000005,
+              -10.4,
+              0
+            ],
+            [
+              5.925,
+              -7.06,
+              0.16
+            ]
+          ]
+        },
+        "freight": [
+          {
+            "center_x_m": 0,
+            "width_m": 5.65,
+            "height_m": 3.65,
+            "floor_m": 1.05,
+            "front_y_m": -7.17,
+            "style": "roller shutter"
+          }
+        ],
+        "dock": {
+          "platform_top_m": 1.05,
+          "platform_bounds_m": [
+            [
+              -3.2,
+              -9.47,
+              0
+            ],
+            [
+              3.2,
+              -7.05,
+              1.05
+            ]
+          ],
+          "step_count": 5,
+          "step_rise_m": 0.21
+        },
+        "detail_bounds_m": [
+          [
+            -5.35,
+            -10.55,
+            0
+          ],
+          [
+            6.0,
+            -6.9,
+            5.3
+          ]
+        ]
+      },
+      "source_sha256": "05e4b0409ac3f8785546feccf9b46443c449295819ef0ec68e7790658fb13d9e",
+      "export_sha256": "fef430c85f13165e207650e6cfcfe5674bc6457547d39a4ccab5fd5a7d6c0d24",
+      "target_name": "SM_IndustrialGround_LowDensity_Factory_C"
+    },
+    {
+      "name": "SM_LowDensity_Factory_C_Damaged",
+      "object": "SM_LowDensity_Factory_C_Damaged",
+      "source": "ArtSource/Blender/CityLowDensityBuildings.blend",
+      "export": "ArtSource/Exports/LowDensity/SM_LowDensity_Factory_C_Damaged.fbx",
+      "native": "/Game/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Factory_C_Damaged",
+      "slots": [
+        "IndustrialBrick",
+        "Roof",
+        "IndustrialMechanical",
+        "RoofMetal",
+        "BuildingWindowOpaque",
+        "IndustrialDoorMetal"
+      ],
+      "bindings": {
+        "IndustrialBrick": "/Game/CitySim/Art/Materials/MI_CharredBrick",
+        "Roof": "/Game/CitySim/Art/Materials/MI_CharredTrim",
+        "IndustrialMechanical": "/Game/CitySim/Art/Materials/MI_CharredMechanical",
+        "RoofMetal": "/Game/CitySim/Art/Materials/MI_CharredRoofMetal",
+        "BuildingWindowOpaque": "/Game/CitySim/Art/Materials/MI_CharredTrim",
+        "IndustrialDoorMetal": "/Game/CitySim/Art/Materials/MI_CharredMechanical"
+      },
+      "damaged": true,
+      "appearance": "C_Clapboard",
+      "entrance": {
+        "style": "raised loading dock",
+        "personnel": {
+          "center_x_m": 5.2,
+          "front_y_m": -7.15,
+          "width_m": 1.1,
+          "height_m": 2.05,
+          "floor_m": 0.16,
+          "path_bounds_m": [
+            [
+              4.4750000000000005,
+              -10.4,
+              0
+            ],
+            [
+              5.925,
+              -7.06,
+              0.16
+            ]
+          ]
+        },
+        "freight": [
+          {
+            "center_x_m": 0,
+            "width_m": 5.65,
+            "height_m": 3.65,
+            "floor_m": 1.05,
+            "front_y_m": -7.17,
+            "style": "roller shutter"
+          }
+        ],
+        "dock": {
+          "platform_top_m": 1.05,
+          "platform_bounds_m": [
+            [
+              -3.2,
+              -9.47,
+              0
+            ],
+            [
+              3.2,
+              -7.05,
+              1.05
+            ]
+          ],
+          "step_count": 5,
+          "step_rise_m": 0.21
+        },
+        "detail_bounds_m": [
+          [
+            -5.35,
+            -10.55,
+            0
+          ],
+          [
+            6.0,
+            -6.9,
+            5.3
+          ]
+        ]
+      },
+      "source_sha256": "05e4b0409ac3f8785546feccf9b46443c449295819ef0ec68e7790658fb13d9e",
+      "export_sha256": "0ecd25d7ece6086f92984fd387b3468aeaa4dd77e1c3ce6fbe212a5b6adcdf36",
+      "target_name": "SM_IndustrialGround_LowDensity_Factory_C_Damaged"
+    },
+    {
+      "name": "SM_LowDensity_Factory_D",
+      "object": "SM_LowDensity_Factory_D",
+      "source": "ArtSource/Blender/CityLowDensityBuildings.blend",
+      "export": "ArtSource/Exports/LowDensity/SM_LowDensity_Factory_D.fbx",
+      "native": "/Game/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Factory_D",
+      "slots": [
+        "IndustrialBrick",
+        "Roof",
+        "IndustrialMechanical",
+        "RoofMetal",
+        "BuildingWindowOpaque",
+        "IndustrialDoorMetal"
+      ],
+      "bindings": {
+        "IndustrialBrick": "/Game/CitySim/Art/LowDensity/Materials/M_Factory_Corrugated",
+        "Roof": "/Game/CitySim/Art/Materials/MI_Roof",
+        "IndustrialMechanical": "/Game/CitySim/Art/LowDensity/Materials/M_IndustrialHardwareSteel",
+        "RoofMetal": "/Game/CitySim/Art/Materials/MI_RoofMetal",
+        "BuildingWindowOpaque": "/Game/CitySim/Art/Materials/M_BuildingWindowOpaque",
+        "IndustrialDoorMetal": "/Game/CitySim/Art/LowDensity/Materials/M_IndustrialDoorSteel"
+      },
+      "damaged": false,
+      "appearance": "D_Corrugated",
+      "entrance": {
+        "style": "two workshop sectional bays",
+        "personnel": {
+          "center_x_m": 5.2,
+          "front_y_m": -7.15,
+          "width_m": 1.1,
+          "height_m": 2.05,
+          "floor_m": 0.16,
+          "path_bounds_m": [
+            [
+              4.4750000000000005,
+              -10.4,
+              0
+            ],
+            [
+              5.925,
+              -7.06,
+              0.16
+            ]
+          ]
+        },
+        "freight": [
+          {
+            "center_x_m": -1.47,
+            "width_m": 2.6,
+            "height_m": 4.45,
+            "floor_m": 0.08,
+            "front_y_m": -7.17,
+            "style": "glazed sectional"
+          },
+          {
+            "center_x_m": 1.47,
+            "width_m": 2.6,
+            "height_m": 4.45,
+            "floor_m": 0.08,
+            "front_y_m": -7.17,
+            "style": "glazed sectional"
+          }
+        ],
+        "dock": null,
+        "detail_bounds_m": [
+          [
+            -5.35,
+            -10.55,
+            0
+          ],
+          [
+            6.0,
+            -6.9,
+            5.3
+          ]
+        ]
+      },
+      "source_sha256": "05e4b0409ac3f8785546feccf9b46443c449295819ef0ec68e7790658fb13d9e",
+      "export_sha256": "a539e4f14a1fff5779b10e0bce2b4fafdd657d927971fa4cd72e3cc5f40b5574",
+      "target_name": "SM_IndustrialGround_LowDensity_Factory_D"
+    },
+    {
+      "name": "SM_LowDensity_Factory_D_Damaged",
+      "object": "SM_LowDensity_Factory_D_Damaged",
+      "source": "ArtSource/Blender/CityLowDensityBuildings.blend",
+      "export": "ArtSource/Exports/LowDensity/SM_LowDensity_Factory_D_Damaged.fbx",
+      "native": "/Game/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Factory_D_Damaged",
+      "slots": [
+        "IndustrialBrick",
+        "Roof",
+        "IndustrialMechanical",
+        "RoofMetal",
+        "BuildingWindowOpaque",
+        "IndustrialDoorMetal"
+      ],
+      "bindings": {
+        "IndustrialBrick": "/Game/CitySim/Art/Materials/MI_CharredBrick",
+        "Roof": "/Game/CitySim/Art/Materials/MI_CharredTrim",
+        "IndustrialMechanical": "/Game/CitySim/Art/Materials/MI_CharredMechanical",
+        "RoofMetal": "/Game/CitySim/Art/Materials/MI_CharredRoofMetal",
+        "BuildingWindowOpaque": "/Game/CitySim/Art/Materials/MI_CharredTrim",
+        "IndustrialDoorMetal": "/Game/CitySim/Art/Materials/MI_CharredMechanical"
+      },
+      "damaged": true,
+      "appearance": "D_Corrugated",
+      "entrance": {
+        "style": "two workshop sectional bays",
+        "personnel": {
+          "center_x_m": 5.2,
+          "front_y_m": -7.15,
+          "width_m": 1.1,
+          "height_m": 2.05,
+          "floor_m": 0.16,
+          "path_bounds_m": [
+            [
+              4.4750000000000005,
+              -10.4,
+              0
+            ],
+            [
+              5.925,
+              -7.06,
+              0.16
+            ]
+          ]
+        },
+        "freight": [
+          {
+            "center_x_m": -1.47,
+            "width_m": 2.6,
+            "height_m": 4.45,
+            "floor_m": 0.08,
+            "front_y_m": -7.17,
+            "style": "glazed sectional"
+          },
+          {
+            "center_x_m": 1.47,
+            "width_m": 2.6,
+            "height_m": 4.45,
+            "floor_m": 0.08,
+            "front_y_m": -7.17,
+            "style": "glazed sectional"
+          }
+        ],
+        "dock": null,
+        "detail_bounds_m": [
+          [
+            -5.35,
+            -10.55,
+            0
+          ],
+          [
+            6.0,
+            -6.9,
+            5.3
+          ]
+        ]
+      },
+      "source_sha256": "05e4b0409ac3f8785546feccf9b46443c449295819ef0ec68e7790658fb13d9e",
+      "export_sha256": "ed2acf004a9f11a6f88ca0dfbefadd3bad96ff1d157659b77ab02ec360032778",
+      "target_name": "SM_IndustrialGround_LowDensity_Factory_D_Damaged"
+    },
+    {
+      "name": "SM_Building_Factory_A",
+      "object": "SM_Building_Factory_A",
+      "source": "ArtSource/Blender/CityBuildingWindows.blend",
+      "export": "ArtSource/Exports/BuildingWindowStudy/SM_Building_Factory_A.fbx",
+      "native": "/Game/CitySim/Art/Meshes/SM_Building_Factory_A",
+      "slots": [
+        "IndustrialBrick",
+        "Roof",
+        "IndustrialMechanical",
+        "RoofMetal",
+        "BuildingWindowOpaque"
+      ],
+      "bindings": {
+        "IndustrialBrick": "/Game/CitySim/Art/Materials/MI_IndustrialBrick",
+        "Roof": "/Game/CitySim/Art/Materials/MI_Roof",
+        "IndustrialMechanical": "/Game/CitySim/Art/Materials/MI_IndustrialMechanical",
+        "RoofMetal": "/Game/CitySim/Art/Materials/MI_RoofMetal",
+        "BuildingWindowOpaque": "/Game/CitySim/Art/Materials/M_BuildingWindowOpaque"
+      },
+      "damaged": false,
+      "appearance": null,
+      "source_sha256": "0d46923a35e9e23a1c6276e94eec4f03a2752a997bcdd813c6a7980a4429c2ab",
+      "export_sha256": "51762b1fd66047c6a1bb29b5b2ae7ba287edf43d7c5db9836d6433433efa5af8",
+      "target_name": "SM_IndustrialGround_Building_Factory_A"
+    },
+    {
+      "name": "SM_Building_Factory_Medium_A",
+      "object": "SM_Building_Factory_Medium_A",
+      "source": "ArtSource/Blender/CityBuildingWindows.blend",
+      "export": "ArtSource/Exports/BuildingWindowStudy/SM_Building_Factory_Medium_A.fbx",
+      "native": "/Game/CitySim/Art/Meshes/SM_Building_Factory_Medium_A",
+      "slots": [
+        "IndustrialBrick",
+        "Roof",
+        "IndustrialMechanical",
+        "RoofMetal",
+        "BuildingWindowOpaque"
+      ],
+      "bindings": {
+        "IndustrialBrick": "/Game/CitySim/Art/Materials/MI_IndustrialBrick",
+        "Roof": "/Game/CitySim/Art/Materials/MI_Roof",
+        "IndustrialMechanical": "/Game/CitySim/Art/Materials/MI_IndustrialMechanical",
+        "RoofMetal": "/Game/CitySim/Art/Materials/MI_RoofMetal",
+        "BuildingWindowOpaque": "/Game/CitySim/Art/Materials/M_BuildingWindowOpaque"
+      },
+      "damaged": false,
+      "appearance": null,
+      "source_sha256": "0d46923a35e9e23a1c6276e94eec4f03a2752a997bcdd813c6a7980a4429c2ab",
+      "export_sha256": "98bf777f8463b9d5b50010cd974298389b8f8daabecca1c4f7024f6192483ab8",
+      "target_name": "SM_IndustrialGround_Building_Factory_Medium_A"
+    },
+    {
+      "name": "SM_Building_Factory_High_A",
+      "object": "SM_Building_Factory_High_A",
+      "source": "ArtSource/Blender/CityBuildingWindows.blend",
+      "export": "ArtSource/Exports/BuildingWindowStudy/SM_Building_Factory_High_A.fbx",
+      "native": "/Game/CitySim/Art/Meshes/SM_Building_Factory_High_A",
+      "slots": [
+        "IndustrialBrick",
+        "Roof",
+        "IndustrialMechanical",
+        "RoofMetal",
+        "BuildingWindowOpaque"
+      ],
+      "bindings": {
+        "IndustrialBrick": "/Game/CitySim/Art/Materials/MI_IndustrialBrick",
+        "Roof": "/Game/CitySim/Art/Materials/MI_Roof",
+        "IndustrialMechanical": "/Game/CitySim/Art/Materials/MI_IndustrialMechanical",
+        "RoofMetal": "/Game/CitySim/Art/Materials/MI_RoofMetal",
+        "BuildingWindowOpaque": "/Game/CitySim/Art/Materials/M_BuildingWindowOpaque"
+      },
+      "damaged": false,
+      "appearance": null,
+      "source_sha256": "0d46923a35e9e23a1c6276e94eec4f03a2752a997bcdd813c6a7980a4429c2ab",
+      "export_sha256": "c63171a9b6e64aea2501af37fbdfc1558bd7c0da4ef2378ed0694908e3e18d33",
+      "target_name": "SM_IndustrialGround_Building_Factory_High_A"
+    },
+    {
+      "name": "SM_Building_Factory_A_Damaged",
+      "object": "SM_IndustrialLow_SurfacePrototype_Damaged",
+      "source": "ArtSource/Blender/CityBuildingSurfacePrototype.blend",
+      "export": "ArtSource/Exports/BuildingSurfacePrototypes/SM_IndustrialLow_SurfacePrototype_Damaged.fbx",
+      "native": "/Game/CitySim/Art/Meshes/SM_Building_Factory_A_Damaged",
+      "slots": [
+        "CharredBrick",
+        "CharredTrim",
+        "CharredMechanical",
+        "CharredRoofMetal"
+      ],
+      "bindings": {
+        "CharredBrick": "/Game/CitySim/Art/Materials/MI_CharredBrick",
+        "CharredTrim": "/Game/CitySim/Art/Materials/MI_CharredTrim",
+        "CharredMechanical": "/Game/CitySim/Art/Materials/MI_CharredMechanical",
+        "CharredRoofMetal": "/Game/CitySim/Art/Materials/MI_CharredRoofMetal"
+      },
+      "damaged": true,
+      "appearance": null,
+      "source_sha256": "2927bbd991dc3a8acc51f56b721b6dd04ca451a12a18efe88371d9b9337ed932",
+      "export_sha256": "6da8cbb921a4f78766e64700744158e55cc9f765a53db61205bce0e1b6584114",
+      "target_name": "SM_IndustrialGround_Building_Factory_A_Damaged"
+    },
+    {
+      "name": "SM_Building_Factory_Medium_A_Damaged",
+      "object": "SM_IndustrialMedium_SurfacePrototype_Damaged",
+      "source": "ArtSource/Blender/CityBuildingSurfacePrototype.blend",
+      "export": "ArtSource/Exports/BuildingSurfacePrototypes/SM_IndustrialMedium_SurfacePrototype_Damaged.fbx",
+      "native": "/Game/CitySim/Art/Meshes/SM_Building_Factory_Medium_A_Damaged",
+      "slots": [
+        "CharredBrick",
+        "CharredTrim",
+        "CharredMechanical",
+        "CharredRoofMetal"
+      ],
+      "bindings": {
+        "CharredBrick": "/Game/CitySim/Art/Materials/MI_CharredBrick",
+        "CharredTrim": "/Game/CitySim/Art/Materials/MI_CharredTrim",
+        "CharredMechanical": "/Game/CitySim/Art/Materials/MI_CharredMechanical",
+        "CharredRoofMetal": "/Game/CitySim/Art/Materials/MI_CharredRoofMetal"
+      },
+      "damaged": true,
+      "appearance": null,
+      "source_sha256": "2927bbd991dc3a8acc51f56b721b6dd04ca451a12a18efe88371d9b9337ed932",
+      "export_sha256": "757e346fd16a6e6a622c63f7bdc08e3f887eeab7dc9a11d740e8d8ed9f7bd3c6",
+      "target_name": "SM_IndustrialGround_Building_Factory_Medium_A_Damaged"
+    },
+    {
+      "name": "SM_Building_Factory_High_A_Damaged",
+      "object": "SM_IndustrialHigh_SurfacePrototype_Damaged",
+      "source": "ArtSource/Blender/CityBuildingSurfacePrototype.blend",
+      "export": "ArtSource/Exports/BuildingSurfacePrototypes/SM_IndustrialHigh_SurfacePrototype_Damaged.fbx",
+      "native": "/Game/CitySim/Art/Meshes/SM_Building_Factory_High_A_Damaged",
+      "slots": [
+        "CharredBrick",
+        "CharredTrim",
+        "CharredMechanical",
+        "CharredRoofMetal"
+      ],
+      "bindings": {
+        "CharredBrick": "/Game/CitySim/Art/Materials/MI_CharredBrick",
+        "CharredTrim": "/Game/CitySim/Art/Materials/MI_CharredTrim",
+        "CharredMechanical": "/Game/CitySim/Art/Materials/MI_CharredMechanical",
+        "CharredRoofMetal": "/Game/CitySim/Art/Materials/MI_CharredRoofMetal"
+      },
+      "damaged": true,
+      "appearance": null,
+      "source_sha256": "2927bbd991dc3a8acc51f56b721b6dd04ca451a12a18efe88371d9b9337ed932",
+      "export_sha256": "ec191284db94f622b7ae6f1f01c3733afedd8f22220dcb2b6a10e8f8f01f32ec",
+      "target_name": "SM_IndustrialGround_Building_Factory_High_A_Damaged"
+    }
+  ]
+}

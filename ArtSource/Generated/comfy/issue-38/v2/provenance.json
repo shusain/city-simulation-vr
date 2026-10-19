@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "kind": "comfy",
+  "repository": "CitySimVR/citysim",
+  "issue": 38,
+  "version": 2,
+  "base_version": 1,
+  "source_sha": "f482eff94e62fbc62692b8270dcfcdca5269d5cc",
+  "workflow": "generate_image_zimage",
+  "workflow_sha256": "3dd3ba595b1e5d79b5d53d739334957f754ce9ec98cb6a703319c92cb159a9ea",
+  "model": "ollama/citysim-spec:qwen3-14b",
+  "seed": 38,
+  "prompt": "A clean concept comparison sheet featuring three distinct compact buildings for a stylized low-poly tabletop city-building game. Left: AI research institute with a readable courtyard and simple distinctive glass/roof. Center: municipal compute building with a civic entrance and modest server/cooling volumes made of chrome and glass. Right: enterprise compute building with a compact office/service frontage using chrome and glass materials. All buildings share warm brick, pale concrete, dark gray roofs, and restrained teal accents. Consistent three-quarter view from above on a 768x768 canvas with generous spacing. Warm light-gray background. No text, logos, or political elements. Stylized low-poly aesthetic with comparable small civic-industrial scale.",
+  "prompt_id": "cb41feb7-5d2d-466f-b1fc-e797f39bb9c3",
+  "parent_prompt_id": "a1084016-425b-4bb5-90fa-f3c4e74964e0",
+  "dimensions": {
+    "width": 768,
+    "height": 768
+  },
+  "png_sha256": "a475c564ebafbc3c8da8199a16133cc2df2f7fc6d9ede90f1782d78f4a650d78",
+  "created_at": "2026-10-15T23:22:42.968Z"
+}

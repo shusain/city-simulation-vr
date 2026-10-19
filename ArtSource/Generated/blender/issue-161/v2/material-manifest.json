@@ -1,0 +1,274 @@
+{
+  "textures": [
+    {
+      "source": "ArtSource/Textures/CivicSurfaces/CivicAsphalt_BaseColor.png",
+      "copy": "/output/textures/CivicAsphalt_BaseColor.png",
+      "sha256": "85e2cfe619a74da7fe74ad0c6439141f4edb63e5085208c4cfd620c5e1d988fa",
+      "dimensions": [
+        512,
+        512
+      ],
+      "channels": 4,
+      "colorspace": "sRGB",
+      "packed": true,
+      "semantic": "RoofService"
+    },
+    {
+      "source": "ArtSource/Textures/CivicSurfaces/CivicAsphalt_Normal.png",
+      "copy": "/output/textures/CivicAsphalt_Normal.png",
+      "sha256": "e6f9e8f0257ddbc33b012b72f9446a2c8a3679153488b4bbc67ca6e50be153fd",
+      "dimensions": [
+        512,
+        512
+      ],
+      "channels": 4,
+      "colorspace": "Non-Color",
+      "packed": true,
+      "semantic": "RoofService"
+    },
+    {
+      "source": "ArtSource/Textures/CivicSurfaces/CivicAsphalt_ORM.png",
+      "copy": "/output/textures/CivicAsphalt_ORM.png",
+      "sha256": "6b06b777944f76046d0f51131cdec7cca658efac60560c95ab1e854c37189ab4",
+      "dimensions": [
+        512,
+        512
+      ],
+      "channels": 4,
+      "colorspace": "Non-Color",
+      "packed": true,
+      "semantic": "RoofService"
+    },
+    {
+      "source": "ArtSource/Textures/BuildingSurfaces/CityMechanical_BaseColor.png",
+      "copy": "/output/textures/CityMechanical_BaseColor.png",
+      "sha256": "ea75f9ab4911ad7ecf6a5e0ff5688fdc2c07ed52c3cad007ac58e8d06fe4e5ae",
+      "dimensions": [
+        512,
+        512
+      ],
+      "channels": 4,
+      "colorspace": "sRGB",
+      "packed": true,
+      "semantic": "EquipmentMetal"
+    },
+    {
+      "source": "ArtSource/Textures/BuildingSurfaces/CityMechanical_Normal.png",
+      "copy": "/output/textures/CityMechanical_Normal.png",
+      "sha256": "7a456d3f708d3ee42a7dfb830ac87f95ce27aeeea0e56ac444daca5da510231e",
+      "dimensions": [
+        512,
+        512
+      ],
+      "channels": 4,
+      "colorspace": "Non-Color",
+      "packed": true,
+      "semantic": "EquipmentMetal"
+    },
+    {
+      "source": "ArtSource/Textures/BuildingSurfaces/CityMechanical_ORM.png",
+      "copy": "/output/textures/CityMechanical_ORM.png",
+      "sha256": "0e08a253e6c30a15e3675921cab4958c0cdcf088f23f05b5fcc1eb3f87dbec98",
+      "dimensions": [
+        512,
+        512
+      ],
+      "channels": 4,
+      "colorspace": "Non-Color",
+      "packed": true,
+      "semantic": "EquipmentMetal"
+    }
+  ],
+  "materials": {
+    "Concrete": {
+      "color": [
+        0.47999998927116394,
+        0.49000000953674316,
+        0.46000000834465027,
+        1.0
+      ],
+      "links": [
+        {
+          "from_node": "ShaderNodeBsdfPrincipled",
+          "from_socket": "BSDF",
+          "to_node": "ShaderNodeOutputMaterial",
+          "to_socket": "Surface"
+        },
+        {
+          "from_node": "ShaderNodeTexNoise",
+          "from_socket": "Factor",
+          "to_node": "ShaderNodeBump",
+          "to_socket": "Height"
+        },
+        {
+          "from_node": "ShaderNodeBump",
+          "from_socket": "Normal",
+          "to_node": "ShaderNodeBsdfPrincipled",
+          "to_socket": "Normal"
+        }
+      ]
+    },
+    "BuildingFacade": {
+      "color": [
+        0.6200000047683716,
+        0.6399999856948853,
+        0.5899999737739563,
+        1.0
+      ],
+      "links": [
+        {
+          "from_node": "ShaderNodeBsdfPrincipled",
+          "from_socket": "BSDF",
+          "to_node": "ShaderNodeOutputMaterial",
+          "to_socket": "Surface"
+        }
+      ]
+    },
+    "RoofService": {
+      "color": [
+        0.11999999731779099,
+        0.15000000596046448,
+        0.1599999964237213,
+        1.0
+      ],
+      "links": [
+        {
+          "from_node": "ShaderNodeBsdfPrincipled",
+          "from_socket": "BSDF",
+          "to_node": "ShaderNodeOutputMaterial",
+          "to_socket": "Surface"
+        },
+        {
+          "from_node": "ShaderNodeTexImage",
+          "from_socket": "Color",
+          "to_node": "ShaderNodeSeparateColor",
+          "to_socket": "Color"
+        },
+        {
+          "from_node": "ShaderNodeTexImage",
+          "from_socket": "Color",
+          "to_node": "ShaderNodeMixRGB",
+          "to_socket": "Color1"
+        },
+        {
+          "from_node": "ShaderNodeSeparateColor",
+          "from_socket": "Red",
+          "to_node": "ShaderNodeMixRGB",
+          "to_socket": "Color2"
+        },
+        {
+          "from_node": "ShaderNodeMixRGB",
+          "from_socket": "Color",
+          "to_node": "ShaderNodeBsdfPrincipled",
+          "to_socket": "Base Color"
+        },
+        {
+          "from_node": "ShaderNodeSeparateColor",
+          "from_socket": "Green",
+          "to_node": "ShaderNodeBsdfPrincipled",
+          "to_socket": "Roughness"
+        },
+        {
+          "from_node": "ShaderNodeSeparateColor",
+          "from_socket": "Blue",
+          "to_node": "ShaderNodeBsdfPrincipled",
+          "to_socket": "Metallic"
+        },
+        {
+          "from_node": "ShaderNodeTexImage",
+          "from_socket": "Color",
+          "to_node": "ShaderNodeNormalMap",
+          "to_socket": "Color"
+        },
+        {
+          "from_node": "ShaderNodeNormalMap",
+          "from_socket": "Normal",
+          "to_node": "ShaderNodeBsdfPrincipled",
+          "to_socket": "Normal"
+        }
+      ]
+    },
+    "EquipmentMetal": {
+      "color": [
+        0.2800000011920929,
+        0.3499999940395355,
+        0.3400000035762787,
+        1.0
+      ],
+      "links": [
+        {
+          "from_node": "ShaderNodeBsdfPrincipled",
+          "from_socket": "BSDF",
+          "to_node": "ShaderNodeOutputMaterial",
+          "to_socket": "Surface"
+        },
+        {
+          "from_node": "ShaderNodeTexImage",
+          "from_socket": "Color",
+          "to_node": "ShaderNodeSeparateColor",
+          "to_socket": "Color"
+        },
+        {
+          "from_node": "ShaderNodeTexImage",
+          "from_socket": "Color",
+          "to_node": "ShaderNodeMixRGB",
+          "to_socket": "Color1"
+        },
+        {
+          "from_node": "ShaderNodeSeparateColor",
+          "from_socket": "Red",
+          "to_node": "ShaderNodeMixRGB",
+          "to_socket": "Color2"
+        },
+        {
+          "from_node": "ShaderNodeMixRGB",
+          "from_socket": "Color",
+          "to_node": "ShaderNodeBsdfPrincipled",
+          "to_socket": "Base Color"
+        },
+        {
+          "from_node": "ShaderNodeSeparateColor",
+          "from_socket": "Green",
+          "to_node": "ShaderNodeBsdfPrincipled",
+          "to_socket": "Roughness"
+        },
+        {
+          "from_node": "ShaderNodeSeparateColor",
+          "from_socket": "Blue",
+          "to_node": "ShaderNodeBsdfPrincipled",
+          "to_socket": "Metallic"
+        },
+        {
+          "from_node": "ShaderNodeTexImage",
+          "from_socket": "Color",
+          "to_node": "ShaderNodeNormalMap",
+          "to_socket": "Color"
+        },
+        {
+          "from_node": "ShaderNodeNormalMap",
+          "from_socket": "Normal",
+          "to_node": "ShaderNodeBsdfPrincipled",
+          "to_socket": "Normal"
+        }
+      ]
+    },
+    "WindowAccent": {
+      "color": [
+        0.10499999672174454,
+        0.23999999463558197,
+        0.28999999165534973,
+        1.0
+      ],
+      "links": [
+        {
+          "from_node": "ShaderNodeBsdfPrincipled",
+          "from_socket": "BSDF",
+          "to_node": "ShaderNodeOutputMaterial",
+          "to_socket": "Surface"
+        }
+      ]
+    }
+  },
+  "uv": "UV0 dominant-axis metric projection, 0.5 repeats/metre",
+  "fbx_shader_transfer": false
+}

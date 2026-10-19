@@ -1,0 +1,50 @@
+{
+  "issue": "D108 fan shell #130",
+  "references": [
+    {
+      "path": "/repo/ArtSource/Generated/comfy/issue-123/v1/asset.png",
+      "sha256": "a4f1eadbcef4ce61879463b710bd54910f10864179e93a4eff69efec38d0a3b4",
+      "matches_pinned": true,
+      "size": [
+        768,
+        768
+      ],
+      "has_data": true,
+      "first_pixel": 0.9254902601242065
+    },
+    {
+      "path": "/repo/ArtSource/Generated/comfy/issue-123/v1/approval.json",
+      "sha256": "cd720b85c44386dec305e3110d7c8d1aa702dc62aa689b4375d88e8dba508fbf",
+      "matches_pinned": true
+    },
+    {
+      "path": "/repo/ArtSource/Generated/comfy/issue-123/v1/unreal-handoff.json",
+      "sha256": "5fba12a32587cb88e0a3791f19394d718ea4cbeca113d916e603916836ae3b9f",
+      "matches_pinned": true
+    },
+    {
+      "path": "/repo/ArtSource/Generated/comfy/issue-124/v1/asset.png",
+      "sha256": "1ddcd5e5043988801680dcf070607df1f7411050c21d0d463f985b64b071f1ee",
+      "matches_pinned": true,
+      "size": [
+        768,
+        768
+      ],
+      "has_data": true,
+      "first_pixel": 0.501960813999176
+    },
+    {
+      "path": "/repo/ArtSource/Generated/comfy/issue-124/v1/approval.json",
+      "sha256": "e9a5b23f9b0ce83d28d976158d7cfeeb5f262dbb283876909389dd15111f6a40",
+      "matches_pinned": true
+    },
+    {
+      "path": "/repo/ArtSource/Generated/comfy/issue-124/v1/unreal-handoff.json",
+      "sha256": "6924da5d2fb7a1cefc95c02b4dd1fd67197d12f26c10b178f161fade64b4d161",
+      "matches_pinned": true
+    }
+  ],
+  "design": "One closed pale ivory seven-rib fan shell; technical recovery only",
+  "previous_recipe": "Not staged; reconstructed requested intended geometry",
+  "no_runtime_integration": true
+}

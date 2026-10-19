@@ -1,0 +1,4350 @@
+{
+  "parent_issue": 157,
+  "extension_manifest": "ArtSource/Manifests/city_utility_ground_wind_preparation.json",
+  "extension_manifest_sha256": "3431115155901dadf4e0dedda905f56685bd603e137415088bd1e2177bab3a9e",
+  "extends_head": "d668972effba3c74ffdbb9b64b1dd5f6df216daf",
+  "foundation_assets": [
+    {
+      "issue": 158,
+      "groups": [
+        {
+          "object": "SM_Utility_coal_v4_Foundation_Z0",
+          "source_support_top_z_m": 0.0,
+          "columns": [
+            {
+              "component": "Worker_Control_Wing",
+              "closed_edges": 14,
+              "signed_volume_m3": 63.0,
+              "cap_area_m2": 63.0,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Turbine_Generator_Hall",
+              "closed_edges": 14,
+              "signed_volume_m3": 216.0,
+              "cap_area_m2": 216.0,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Tall_Boiler_Block",
+              "closed_edges": 14,
+              "signed_volume_m3": 81.0,
+              "cap_area_m2": 81.0,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Personnel_Door_Leaf",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.14399846394856786,
+              "cap_area_m2": 0.14400109797835642,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Personnel_Jamb",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.023999214172363337,
+              "cap_area_m2": 0.023999916750793316,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Personnel_Jamb.001",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.02399988969167066,
+              "cap_area_m2": 0.023999916750793316,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Service_Shutter",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.4800033569335955,
+              "cap_area_m2": 0.48000336414886785,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Service_Bay_Jamb",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.0483986337979635,
+              "cap_area_m2": 0.04839980135051299,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Service_Bay_Jamb.001",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.048396309216817146,
+              "cap_area_m2": 0.04839969792314248,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Turbine_East_Pilaster",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.05499891440073651,
+              "cap_area_m2": 0.05499982840270128,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Turbine_East_Pilaster.001",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.05500018596649184,
+              "cap_area_m2": 0.05499982840270128,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Turbine_East_Pilaster.002",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.054999868075053034,
+              "cap_area_m2": 0.05499982840270128,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Turbine_East_Pilaster.003",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.05500018596649198,
+              "cap_area_m2": 0.05499982840270128,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Turbine_East_Pilaster.004",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.05500431855519611,
+              "cap_area_m2": 0.05499982840270128,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Boiler_Front_Rib",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.03800013661384583,
+              "cap_area_m2": 0.03800011403959191,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Boiler_Front_Rib.001",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.03799954056739802,
+              "cap_area_m2": 0.03799992409889898,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Boiler_Front_Rib.002",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.038000111778577185,
+              "cap_area_m2": 0.038000020601143866,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Boiler_Front_Rib.003",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.0380000062286854,
+              "cap_area_m2": 0.037999994560879706,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Boiler_West_Rib",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.03960044185320545,
+              "cap_area_m2": 0.03960002964798644,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Boiler_West_Rib.001",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.039601862430572426,
+              "cap_area_m2": 0.03960011490147561,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Boiler_West_Rib.002",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.03960160414377856,
+              "cap_area_m2": 0.03959994439431372,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "West_Exhaust_Stack",
+              "closed_edges": 114,
+              "signed_volume_m3": 3.4241764713078746,
+              "cap_area_m2": 3.4241758654350383,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "East_Exhaust_Stack",
+              "closed_edges": 114,
+              "signed_volume_m3": 3.424174447854359,
+              "cap_area_m2": 3.424175574860519,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Filter_Leg",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.04500029484430956,
+              "cap_area_m2": 0.04500001610566884,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Filter_Leg.001",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.0450001756350199,
+              "cap_area_m2": 0.04499995660448631,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Filter_Leg.002",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.04499800999959308,
+              "cap_area_m2": 0.045000075606772695,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Filter_Leg.003",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.04500007629394537,
+              "cap_area_m2": 0.045000075606772695,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Hopper_Support",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.040000145634015376,
+              "cap_area_m2": 0.04000016247587808,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Hopper_Support.001",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.040000269810358674,
+              "cap_area_m2": 0.04000011445472406,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Hopper_Support.002",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.04000006616115564,
+              "cap_area_m2": 0.04000016247587808,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Hopper_Support.003",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.040000826120376615,
+              "cap_area_m2": 0.04000011445472406,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Conveyor_Trestle",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.025600423415501908,
+              "cap_area_m2": 0.025599951036821326,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Conveyor_Trestle.001",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.025600741306940678,
+              "cap_area_m2": 0.025599951036821326,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Conveyor_Trestle.002",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.025601426760355747,
+              "cap_area_m2": 0.025599951036821326,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Conveyor_Trestle.003",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.025599837303161677,
+              "cap_area_m2": 0.025599951036821326,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Conveyor_Trestle.004",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.025599946578343774,
+              "cap_area_m2": 0.025599951036821326,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Conveyor_Trestle.005",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.025599271059036283,
+              "cap_area_m2": 0.025599951036821326,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Switchgear_Cabinet",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.7000001470247903,
+              "cap_area_m2": 0.6999999855245861,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Switchgear_Cabinet.001",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.6999998688697813,
+              "cap_area_m2": 0.6999999855245861,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Switchgear_Cabinet.002",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.6999998688697815,
+              "cap_area_m2": 0.6999999855245861,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Coal_Bin_Back_Wall",
+              "closed_edges": 14,
+              "signed_volume_m3": 1.3199939727783203,
+              "cap_area_m2": 1.31999586473164,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Coal_Bin_Side_Wall",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.6600018739700316,
+              "cap_area_m2": 0.6600007997132282,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Coal_Bin_Side_Wall.001",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.6599999666213989,
+              "cap_area_m2": 0.6600000772331654,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            }
+          ]
+        },
+        {
+          "object": "SM_Utility_coal_v4_Foundation_Z0p25",
+          "source_support_top_z_m": 0.25,
+          "columns": [
+            {
+              "component": "Transformer_Tank",
+              "closed_edges": 14,
+              "signed_volume_m3": 2.8800008296966553,
+              "cap_area_m2": 2.880000534057568,
+              "source_top_z_m": 0.25,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Transformer_Tank.001",
+              "closed_edges": 14,
+              "signed_volume_m3": 2.8799993991851807,
+              "cap_area_m2": 2.8799997062153135,
+              "source_top_z_m": 0.25,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            }
+          ]
+        }
+      ],
+      "flagged_positive_area_overlap_pairs": 23,
+      "sum_flagged_pairwise_overlap_m2": 1.2918991344933768
+    },
+    {
+      "issue": 159,
+      "groups": [
+        {
+          "object": "SM_Utility_oil_v3_Foundation_Z0",
+          "source_support_top_z_m": 0.0,
+          "columns": [
+            {
+              "component": "Generation hall",
+              "closed_edges": 14,
+              "signed_volume_m3": 266.0,
+              "cap_area_m2": 266.0,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Hall structural pilaster",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.07679962118466704,
+              "cap_area_m2": 0.07679993041762258,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Hall structural pilaster.001",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.07680006821950276,
+              "cap_area_m2": 0.07680003955700813,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Hall structural pilaster.002",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.07679996391137442,
+              "cap_area_m2": 0.07679998801898429,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Hall structural pilaster.003",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.07679974039395657,
+              "cap_area_m2": 0.07679993041762258,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Hall structural pilaster.004",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.07679948210716242,
+              "cap_area_m2": 0.07679993041762258,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Hall structural pilaster.005",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.07679964105288212,
+              "cap_area_m2": 0.07679993041762258,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Hall structural pilaster.006",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.07679998874664296,
+              "cap_area_m2": 0.07679985462629137,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Hall structural pilaster.007",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.07679981986681628,
+              "cap_area_m2": 0.076799966797435,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Hall structural pilaster.008",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.07680001358191157,
+              "cap_area_m2": 0.07679991525936232,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Hall structural pilaster.009",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.07680058479309085,
+              "cap_area_m2": 0.07679985462629137,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Hall structural pilaster.010",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.07680165767669644,
+              "cap_area_m2": 0.07679985462629137,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Hall structural pilaster.011",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.07679156462351461,
+              "cap_area_m2": 0.07679985462629137,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Worker control building",
+              "closed_edges": 14,
+              "signed_volume_m3": 63.0,
+              "cap_area_m2": 63.0,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Personnel door leaf",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.191997528076171,
+              "cap_area_m2": 0.19199994518793337,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Personnel jamb",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.03499722480773931,
+              "cap_area_m2": 0.034999847204223965,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Personnel jamb.001",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.035001834233601925,
+              "cap_area_m2": 0.034999847204223965,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Service shutter",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.6399993896484375,
+              "cap_area_m2": 0.6399993865561525,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Service bay jamb",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.07499915361404408,
+              "cap_area_m2": 0.07500004805622945,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Service bay jamb.001",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.07500006755193067,
+              "cap_area_m2": 0.07500004805622945,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Fuel tank A",
+              "closed_edges": 134,
+              "signed_volume_m3": 38.162335572453834,
+              "cap_area_m2": 38.16233854875555,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Fuel tank B",
+              "closed_edges": 134,
+              "signed_volume_m3": 38.16234564781189,
+              "cap_area_m2": 38.162338905241384,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Pump frame foot",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.025200136005878438,
+              "cap_area_m2": 0.02520007030342966,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Pump frame foot.001",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.02520019809405015,
+              "cap_area_m2": 0.025200103795817268,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Pump frame foot.002",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.025200086335341158,
+              "cap_area_m2": 0.02519998483989405,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Pump frame foot.003",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.025200068950653076,
+              "cap_area_m2": 0.025200018332395244,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Cooling support leg",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.040000061194101905,
+              "cap_area_m2": 0.04000011445472406,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Cooling support leg.001",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.040003935496012444,
+              "cap_area_m2": 0.040000305083813845,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Cooling support leg.002",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.03999990224838265,
+              "cap_area_m2": 0.04000011445472406,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Cooling support leg.003",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.04000457127889012,
+              "cap_area_m2": 0.040000305083813845,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Switchgear cabinet",
+              "closed_edges": 14,
+              "signed_volume_m3": 2.970000445842743,
+              "cap_area_m2": 2.969999351629835,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Switchgear cabinet.001",
+              "closed_edges": 14,
+              "signed_volume_m3": 2.9700001006325096,
+              "cap_area_m2": 2.969999351629835,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Switchgear cabinet.002",
+              "closed_edges": 14,
+              "signed_volume_m3": 2.970002174377443,
+              "cap_area_m2": 2.9699995121810976,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            }
+          ]
+        }
+      ],
+      "flagged_positive_area_overlap_pairs": 16,
+      "sum_flagged_pairwise_overlap_m2": 0.9607992069242641
+    },
+    {
+      "issue": 160,
+      "groups": [
+        {
+          "object": "SM_Utility_power_base_v2_Foundation_Z0",
+          "source_support_top_z_m": 0.0,
+          "columns": [
+            {
+              "component": "Generator_engine_hall",
+              "closed_edges": 14,
+              "signed_volume_m3": 89.99999999999999,
+              "cap_area_m2": 90.0,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Staffed_control_service_wing",
+              "closed_edges": 14,
+              "signed_volume_m3": 42.0,
+              "cap_area_m2": 42.0,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Concrete_structural_column",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.048400640487670926,
+              "cap_area_m2": 0.04839990718294241,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Concrete_structural_column.001",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.048400317629178305,
+              "cap_area_m2": 0.04839988072485675,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Concrete_structural_column.002",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.04839964707692465,
+              "cap_area_m2": 0.048400118847106995,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Concrete_structural_column.003",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.048400441805521666,
+              "cap_area_m2": 0.048400118847106995,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Concrete_structural_column.004",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.04840077956517541,
+              "cap_area_m2": 0.048400118847106995,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Concrete_structural_column.005",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.04840109745661422,
+              "cap_area_m2": 0.048400118847106995,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Concrete_structural_column.006",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.04840044180552169,
+              "cap_area_m2": 0.048400118847106995,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Personnel_door_leaf",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.12000060081481978,
+              "cap_area_m2": 0.12000048791269612,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Personnel_portal_jamb",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.018000523249308314,
+              "cap_area_m2": 0.018000100059311883,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Personnel_portal_jamb.001",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.01799996693929032,
+              "cap_area_m2": 0.018000100059311883,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Vehicle_service_shutter",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.47999938329060843,
+              "cap_area_m2": 0.47999954573788606,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Vehicle_portal_side",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.028599982460339887,
+              "cap_area_m2": 0.02860005922751113,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Vehicle_portal_side.001",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.02859967947006227,
+              "cap_area_m2": 0.02860005922751113,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Transformer_equipment_leg",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.03240086634953811,
+              "cap_area_m2": 0.03240010826373666,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Transformer_equipment_leg.001",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.03240088621775297,
+              "cap_area_m2": 0.03239993759324674,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Transformer_equipment_leg.002",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.03240102529525753,
+              "cap_area_m2": 0.03240010826373666,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Transformer_equipment_leg.003",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.03240132331848136,
+              "cap_area_m2": 0.03239993759324674,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Switchgear_leg",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.09749980581303426,
+              "cap_area_m2": 0.09749975062301729,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Switchgear_leg.001",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.09749980581303452,
+              "cap_area_m2": 0.09749975062301729,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            }
+          ]
+        }
+      ],
+      "flagged_positive_area_overlap_pairs": 13,
+      "sum_flagged_pairwise_overlap_m2": 0.11270032982872724
+    },
+    {
+      "issue": 161,
+      "groups": [
+        {
+          "object": "SM_Utility_water_base_v2_Foundation_Z0",
+          "source_support_top_z_m": 0.0,
+          "columns": [
+            {
+              "component": "Clarifier_1_structural_vessel",
+              "closed_edges": 480,
+              "signed_volume_m3": 8.400458944340537,
+              "cap_area_m2": 8.400456075351883,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": [
+                [
+                  -6.800000190734863,
+                  7.199999809265137,
+                  1.0
+                ]
+              ]
+            },
+            {
+              "component": "Clarifier_2_structural_vessel",
+              "closed_edges": 480,
+              "signed_volume_m3": 8.400458761801321,
+              "cap_area_m2": 8.400456037435433,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": [
+                [
+                  6.800000190734863,
+                  7.199999809265137,
+                  1.0
+                ]
+              ]
+            },
+            {
+              "component": "Worker_control_two_storey_block",
+              "closed_edges": 14,
+              "signed_volume_m3": 63.0,
+              "cap_area_m2": 63.0,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Filter_pump_hall",
+              "closed_edges": 14,
+              "signed_volume_m3": 70.0,
+              "cap_area_m2": 70.0,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Personnel_door_leaf",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.14400355021158928,
+              "cap_area_m2": 0.14400109797835642,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Service_vehicle_shutter",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.55999755859375,
+              "cap_area_m2": 0.5599975552675834,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Bay_jamb_5.43",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.025999923547108977,
+              "cap_area_m2": 0.02600012137569239,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Bay_jamb_9.57",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.026000201702117948,
+              "cap_area_m2": 0.025999931081608297,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Pipe_0_foot_-1.2",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.04500002662340802,
+              "cap_area_m2": 0.045000075606772695,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Pipe_0_foot_1.8",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.04500002662340802,
+              "cap_area_m2": 0.045000075606772695,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Pipe_1_foot_-1.2",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.04500000302990277,
+              "cap_area_m2": 0.04500000058362881,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Pipe_1_foot_1.8",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.045000011722246804,
+              "cap_area_m2": 0.04500000058362881,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Pipe_2_foot_-1.2",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.04500018556912738,
+              "cap_area_m2": 0.045000075606772695,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Pipe_2_foot_1.8",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.04500018556912738,
+              "cap_area_m2": 0.045000075606772695,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Vessel_leg_-1.1-0.4",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.06000016132990521,
+              "cap_area_m2": 0.05999994321723576,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Vessel_leg_-1.10.4",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.06000008185704543,
+              "cap_area_m2": 0.060000001424923524,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Vessel_leg_1.1-0.4",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.06000006198883055,
+              "cap_area_m2": 0.060000001424923524,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Vessel_leg_1.10.4",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.06000016132990517,
+              "cap_area_m2": 0.05999994321723576,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            }
+          ]
+        }
+      ],
+      "flagged_positive_area_overlap_pairs": 3,
+      "sum_flagged_pairwise_overlap_m2": 0.0352000759121438
+    },
+    {
+      "issue": 163,
+      "groups": [
+        {
+          "object": "SM_Utility_power_medium_v3_Foundation_Z0",
+          "source_support_top_z_m": 0.0,
+          "columns": [
+            {
+              "component": "Generator_engine_hall",
+              "closed_edges": 14,
+              "signed_volume_m3": 89.99999999999999,
+              "cap_area_m2": 90.0,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Staffed_control_service_wing",
+              "closed_edges": 14,
+              "signed_volume_m3": 42.0,
+              "cap_area_m2": 42.0,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Concrete_structural_column",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.04840030272801715,
+              "cap_area_m2": 0.04840001060986575,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Concrete_structural_column.001",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.04840016861756638,
+              "cap_area_m2": 0.0483999336410136,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Concrete_structural_column.002",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.04840033749739331,
+              "cap_area_m2": 0.04840003706788041,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Concrete_structural_column.003",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.04840011397997537,
+              "cap_area_m2": 0.04839998415183663,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Concrete_structural_column.004",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.04840083916982019,
+              "cap_area_m2": 0.048400065931152626,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Concrete_structural_column.005",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.04840109745661422,
+              "cap_area_m2": 0.048400118847106995,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Concrete_structural_column.006",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.0483998407920202,
+              "cap_area_m2": 0.04840003706788041,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Personnel_door_leaf",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.1200006902217865,
+              "cap_area_m2": 0.12000043746625116,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Personnel_portal_jamb",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.018000523249308314,
+              "cap_area_m2": 0.018000100059311883,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Personnel_portal_jamb.001",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.01799996693929032,
+              "cap_area_m2": 0.018000100059311883,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Vehicle_service_shutter",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.47999938329060843,
+              "cap_area_m2": 0.47999954573788606,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Vehicle_portal_side",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.028599902987480164,
+              "cap_area_m2": 0.028600003258667545,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Vehicle_portal_side.001",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.028600215911865276,
+              "cap_area_m2": 0.02860002971667998,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Transformer_equipment_leg",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.03240075707435612,
+              "cap_area_m2": 0.0324000238268698,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Transformer_equipment_leg.001",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.03239864110946661,
+              "cap_area_m2": 0.03240010826373666,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Transformer_equipment_leg.002",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.032400697469711345,
+              "cap_area_m2": 0.0324000238268698,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Transformer_equipment_leg.003",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.0324026147524516,
+              "cap_area_m2": 0.03240010826373666,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Switchgear_leg",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.09749980581303426,
+              "cap_area_m2": 0.09749975062301729,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Switchgear_leg.001",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.09749980581303452,
+              "cap_area_m2": 0.09749975062301729,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Rear_generator_hall",
+              "closed_edges": 14,
+              "signed_volume_m3": 63.0,
+              "cap_area_m2": 63.0,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Rear_structural_column",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.048400719960530525,
+              "cap_area_m2": 0.04840001060986575,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Rear_structural_column.001",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.04840087890625,
+              "cap_area_m2": 0.04839980135051299,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Rear_structural_column.002",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.04840133587519327,
+              "cap_area_m2": 0.048400118847106995,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Rear_structural_column.003",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.04840199152628588,
+              "cap_area_m2": 0.04839990718294241,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Second_Transformer_equipment_leg",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.032401164372761915,
+              "cap_area_m2": 0.03240010826373666,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Second_Transformer_equipment_leg.001",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.03240052858988429,
+              "cap_area_m2": 0.03240010826373666,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Second_Transformer_equipment_leg.002",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.032401959101358846,
+              "cap_area_m2": 0.03240010826373666,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Second_Transformer_equipment_leg.003",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.03240132331848122,
+              "cap_area_m2": 0.03240010826373666,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Second_Switchgear_leg",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.09749708573023463,
+              "cap_area_m2": 0.09749969808672353,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Second_Switchgear_leg.001",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.09750153621037805,
+              "cap_area_m2": 0.09749969808672353,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Interhall_service_link",
+              "closed_edges": 14,
+              "signed_volume_m3": 1.5,
+              "cap_area_m2": 1.5,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            }
+          ]
+        }
+      ],
+      "flagged_positive_area_overlap_pairs": 16,
+      "sum_flagged_pairwise_overlap_m2": 0.1611000384330632
+    },
+    {
+      "issue": 164,
+      "groups": [
+        {
+          "object": "SM_Utility_power_high_v3_Foundation_Z0",
+          "source_support_top_z_m": 0.0,
+          "columns": [
+            {
+              "component": "Generator_engine_hall",
+              "closed_edges": 14,
+              "signed_volume_m3": 89.99999999999999,
+              "cap_area_m2": 90.0,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Staffed_control_service_wing",
+              "closed_edges": 14,
+              "signed_volume_m3": 42.0,
+              "cap_area_m2": 42.0,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Concrete_structural_column",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.04840030272801715,
+              "cap_area_m2": 0.04840001060986575,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Concrete_structural_column.001",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.04840016861756638,
+              "cap_area_m2": 0.0483999336410136,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Concrete_structural_column.002",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.04840033749739331,
+              "cap_area_m2": 0.04840003706788041,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Concrete_structural_column.003",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.04840011397997537,
+              "cap_area_m2": 0.04839998415183663,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Concrete_structural_column.004",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.04840083916982019,
+              "cap_area_m2": 0.048400065931152626,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Concrete_structural_column.005",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.04840109745661422,
+              "cap_area_m2": 0.048400118847106995,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Concrete_structural_column.006",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.0483998407920202,
+              "cap_area_m2": 0.04840003706788041,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Personnel_door_leaf",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.1200006902217865,
+              "cap_area_m2": 0.12000043746625116,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Personnel_portal_jamb",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.018000523249308314,
+              "cap_area_m2": 0.018000100059311883,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Personnel_portal_jamb.001",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.01799996693929032,
+              "cap_area_m2": 0.018000100059311883,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Vehicle_service_shutter",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.47999938329060843,
+              "cap_area_m2": 0.47999954573788606,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Vehicle_portal_side",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.028599902987480164,
+              "cap_area_m2": 0.028600003258667545,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Vehicle_portal_side.001",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.028600215911865276,
+              "cap_area_m2": 0.02860002971667998,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Rear_right_generator_hall",
+              "closed_edges": 14,
+              "signed_volume_m3": 56.00000000000001,
+              "cap_area_m2": 56.0,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Rear_left_generator_hall",
+              "closed_edges": 14,
+              "signed_volume_m3": 63.0,
+              "cap_area_m2": 63.0,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Unit2_structural_column",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.04840056101481116,
+              "cap_area_m2": 0.04840001060986575,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Unit2_structural_column.001",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.04840056101481127,
+              "cap_area_m2": 0.04839980135051299,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Unit2_structural_column.002",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.04839895168940225,
+              "cap_area_m2": 0.048400118847106995,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Unit2_structural_column.003",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.04839722315470385,
+              "cap_area_m2": 0.04839990718294241,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Unit3_structural_column",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.048398415247599275,
+              "cap_area_m2": 0.04839990718294241,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Unit3_structural_column.001",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.04839889208475756,
+              "cap_area_m2": 0.04839969792314248,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Unit3_structural_column.002",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.04839990536371866,
+              "cap_area_m2": 0.048400118847106995,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Unit3_structural_column.003",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.04839658737182617,
+              "cap_area_m2": 0.04839990718294241,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Transformer_support_foot",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.3600008195887002,
+              "cap_area_m2": 0.36000060485418156,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Transformer_support_foot.001",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.3600007798522711,
+              "cap_area_m2": 0.36000060485418156,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Transformer_support_foot.002",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.36000023285547894,
+              "cap_area_m2": 0.36000060485418156,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Transformer_support_foot.003",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.3600021402041123,
+              "cap_area_m2": 0.36000060485418156,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Transformer_support_foot.004",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.3600016633669535,
+              "cap_area_m2": 0.36000070833427894,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Transformer_support_foot.005",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.36000039180119714,
+              "cap_area_m2": 0.36000070833427894,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Transformer_support_foot.006",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.35999985535939527,
+              "cap_area_m2": 0.36000060485418156,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Transformer_support_foot.007",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.35999667644500666,
+              "cap_area_m2": 0.36000060485418156,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Switchgear_cabinet",
+              "closed_edges": 14,
+              "signed_volume_m3": 3.4649986028671234,
+              "cap_area_m2": 3.464998983627985,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Switchgear_cabinet.001",
+              "closed_edges": 14,
+              "signed_volume_m3": 3.4649987022082005,
+              "cap_area_m2": 3.464998983627985,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Switchgear_cabinet.002",
+              "closed_edges": 14,
+              "signed_volume_m3": 3.4650010267893445,
+              "cap_area_m2": 3.4649993964741057,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Switchgear_cabinet.003",
+              "closed_edges": 14,
+              "signed_volume_m3": 3.4649974505106593,
+              "cap_area_m2": 3.4649982955510072,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Switchgear_cabinet.004",
+              "closed_edges": 14,
+              "signed_volume_m3": 3.4650017420450845,
+              "cap_area_m2": 3.464999946935524,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Header_support_leg",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.01499800880750031,
+              "cap_area_m2": 0.015000019273708299,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Header_support_leg.001",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.014999459187189854,
+              "cap_area_m2": 0.015000019273708299,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Header_support_leg.002",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.01499966780344647,
+              "cap_area_m2": 0.015000019273708299,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Header_support_leg.003",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.015000482400258364,
+              "cap_area_m2": 0.015000019273708299,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            }
+          ]
+        }
+      ],
+      "flagged_positive_area_overlap_pairs": 20,
+      "sum_flagged_pairwise_overlap_m2": 0.2094999461174334
+    },
+    {
+      "issue": 165,
+      "groups": [
+        {
+          "object": "SM_Utility_water_medium_v2_Foundation_Z0",
+          "source_support_top_z_m": 0.0,
+          "columns": [
+            {
+              "component": "Clarifier_1_structural_vessel",
+              "closed_edges": 320,
+              "signed_volume_m3": 8.370460229615366,
+              "cap_area_m2": 8.370470334017533,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": [
+                [
+                  -10.800000190734863,
+                  8.0,
+                  1.0
+                ]
+              ]
+            },
+            {
+              "component": "Clarifier_2_structural_vessel",
+              "closed_edges": 320,
+              "signed_volume_m3": 8.370468171313401,
+              "cap_area_m2": 8.370469335323724,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": [
+                [
+                  0.0,
+                  8.0,
+                  1.0
+                ]
+              ]
+            },
+            {
+              "component": "Clarifier_3_structural_vessel",
+              "closed_edges": 320,
+              "signed_volume_m3": 8.37046553939581,
+              "cap_area_m2": 8.370470280234908,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": [
+                [
+                  10.800000190734863,
+                  8.0,
+                  1.0
+                ]
+              ]
+            },
+            {
+              "component": "Worker_control_two_storey_block",
+              "closed_edges": 14,
+              "signed_volume_m3": 63.0,
+              "cap_area_m2": 63.0,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Filter_pump_hall",
+              "closed_edges": 14,
+              "signed_volume_m3": 70.0,
+              "cap_area_m2": 70.0,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Personnel_door_leaf",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.14400355021158928,
+              "cap_area_m2": 0.14400109797835642,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Service_vehicle_shutter",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.55999755859375,
+              "cap_area_m2": 0.5599975552675834,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Bay_jamb_5.43",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.025999923547108977,
+              "cap_area_m2": 0.02600012137569239,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Bay_jamb_9.57",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.026000201702117948,
+              "cap_area_m2": 0.025999931081608297,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Attached_filter_service_wing",
+              "closed_edges": 14,
+              "signed_volume_m3": 42.000000000000014,
+              "cap_area_m2": 42.0,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Pipe_0_foot_-1.2",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.04500002662340802,
+              "cap_area_m2": 0.045000075606772695,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Pipe_0_foot_1.8",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.04500002662340802,
+              "cap_area_m2": 0.045000075606772695,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Pipe_1_foot_-1.2",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.04500000302990277,
+              "cap_area_m2": 0.04500000058362881,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Pipe_1_foot_1.8",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.045000011722246804,
+              "cap_area_m2": 0.04500000058362881,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Pipe_2_foot_-1.2",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.04500018556912738,
+              "cap_area_m2": 0.045000075606772695,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Pipe_2_foot_1.8",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.04500018556912738,
+              "cap_area_m2": 0.045000075606772695,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Vessel_leg_0_-0.4",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.05999978383382161,
+              "cap_area_m2": 0.05999994321723576,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Vessel_leg_0_0.4",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.05999990304311116,
+              "cap_area_m2": 0.05999994321723576,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Vessel_leg_1_-0.4",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.059999744097391866,
+              "cap_area_m2": 0.05999994321723576,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Vessel_leg_1_0.4",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.05999978383382154,
+              "cap_area_m2": 0.05999994321723576,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Vessel_leg_2_-0.4",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.059999983757734326,
+              "cap_area_m2": 0.05999999948466817,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Vessel_leg_2_0.4",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.060000081857045515,
+              "cap_area_m2": 0.060000001424923524,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Vessel_leg_3_-0.4",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.06000000610947606,
+              "cap_area_m2": 0.05999999948466817,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Vessel_leg_3_0.4",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.06000016132990518,
+              "cap_area_m2": 0.060000001424923524,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            }
+          ]
+        }
+      ],
+      "flagged_positive_area_overlap_pairs": 2,
+      "sum_flagged_pairwise_overlap_m2": 0.0052001045223732945
+    },
+    {
+      "issue": 166,
+      "groups": [
+        {
+          "object": "SM_Utility_water_high_v2_Foundation_Z0",
+          "source_support_top_z_m": 0.0,
+          "columns": [
+            {
+              "component": "Clarifier_1_structural_vessel",
+              "closed_edges": 320,
+              "signed_volume_m3": 8.370458347102009,
+              "cap_area_m2": 8.370466772655123,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": [
+                [
+                  -16.200000762939453,
+                  8.0,
+                  1.0
+                ]
+              ]
+            },
+            {
+              "component": "Clarifier_2_structural_vessel",
+              "closed_edges": 320,
+              "signed_volume_m3": 8.370468739420176,
+              "cap_area_m2": 8.370469475224146,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": [
+                [
+                  -5.400000095367432,
+                  8.0,
+                  1.0
+                ]
+              ]
+            },
+            {
+              "component": "Clarifier_3_structural_vessel",
+              "closed_edges": 320,
+              "signed_volume_m3": 8.37047062565883,
+              "cap_area_m2": 8.370469435160157,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": [
+                [
+                  5.400000095367432,
+                  8.0,
+                  1.0
+                ]
+              ]
+            },
+            {
+              "component": "Clarifier_4_structural_vessel",
+              "closed_edges": 320,
+              "signed_volume_m3": 8.37047278136015,
+              "cap_area_m2": 8.370466841788947,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": [
+                [
+                  16.200000762939453,
+                  8.0,
+                  1.0
+                ]
+              ]
+            },
+            {
+              "component": "Worker_control_two_storey_block",
+              "closed_edges": 14,
+              "signed_volume_m3": 63.0,
+              "cap_area_m2": 63.0,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Filter_pump_hall",
+              "closed_edges": 14,
+              "signed_volume_m3": 70.0,
+              "cap_area_m2": 70.0,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Personnel_door_leaf",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.14400355021158928,
+              "cap_area_m2": 0.14400109797835642,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Service_vehicle_shutter",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.55999755859375,
+              "cap_area_m2": 0.5599975552675834,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Bay_jamb_5.43",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.025999923547108977,
+              "cap_area_m2": 0.02600012137569239,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Bay_jamb_9.57",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.026000201702117948,
+              "cap_area_m2": 0.025999931081608297,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Pipe_0_foot_-1.2",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.04500002662340802,
+              "cap_area_m2": 0.045000075606772695,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Pipe_0_foot_1.8",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.04500002662340802,
+              "cap_area_m2": 0.045000075606772695,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Pipe_1_foot_-1.2",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.04500000302990277,
+              "cap_area_m2": 0.04500000058362881,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Pipe_1_foot_1.8",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.045000011722246804,
+              "cap_area_m2": 0.04500000058362881,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Pipe_2_foot_-1.2",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.04500018556912738,
+              "cap_area_m2": 0.045000075606772695,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Pipe_2_foot_1.8",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.04500018556912738,
+              "cap_area_m2": 0.045000075606772695,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Vessel_leg_-1.1_-4.1-0.4",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.06000016132990521,
+              "cap_area_m2": 0.05999994321723576,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Vessel_leg_-1.1_-4.10.4",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.06000008185704543,
+              "cap_area_m2": 0.060000001424923524,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Vessel_leg_1.1_-4.1-0.4",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.06000006198883055,
+              "cap_area_m2": 0.060000001424923524,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Vessel_leg_1.1_-4.10.4",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.06000016132990517,
+              "cap_area_m2": 0.05999994321723576,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Vessel_leg_-1.1_-7-0.4",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.05999974409739181,
+              "cap_area_m2": 0.05999994321723576,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Vessel_leg_-1.1_-70.4",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.059999754031499236,
+              "cap_area_m2": 0.060000001424923524,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Vessel_leg_1.1_-7-0.4",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.059999813636143956,
+              "cap_area_m2": 0.060000001424923524,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Vessel_leg_1.1_-70.4",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.05999974409739181,
+              "cap_area_m2": 0.05999994321723576,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Vessel_leg_-1.1_-9.9-0.4",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.05999974409739173,
+              "cap_area_m2": 0.05999994321723576,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Vessel_leg_-1.1_-9.90.4",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.06000003218650815,
+              "cap_area_m2": 0.060000001424923524,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Vessel_leg_1.1_-9.9-0.4",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.05999993284543356,
+              "cap_area_m2": 0.060000001424923524,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Vessel_leg_1.1_-9.90.4",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.05999974409739178,
+              "cap_area_m2": 0.05999994321723576,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Additional_filter_pump_hall",
+              "closed_edges": 14,
+              "signed_volume_m3": 79.99999682108562,
+              "cap_area_m2": 80.0,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Expanded_control_wing",
+              "closed_edges": 14,
+              "signed_volume_m3": 49.0,
+              "cap_area_m2": 49.0,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Header_saddle_0",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.27999846140543627,
+              "cap_area_m2": 0.2799988441571153,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Header_saddle_1",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.280000517765681,
+              "cap_area_m2": 0.28000036088460417,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Header_saddle_2",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.28000083565711964,
+              "cap_area_m2": 0.28000036088460417,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Header_saddle_3",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.27999909718831506,
+              "cap_area_m2": 0.2799988441571153,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            }
+          ]
+        }
+      ],
+      "flagged_positive_area_overlap_pairs": 5,
+      "sum_flagged_pairwise_overlap_m2": 0.08620005016291543
+    },
+    {
+      "issue": 167,
+      "groups": [
+        {
+          "object": "SM_Utility_water_tower_v3_Foundation_Z0",
+          "source_support_top_z_m": 0.0,
+          "columns": [
+            {
+              "component": "Leg_1",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.21159996589024857,
+              "cap_area_m2": 0.21160003141849607,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Steel_foot_1",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.5183994174003601,
+              "cap_area_m2": 0.5183997201059316,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Leg_2",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.2115999658902486,
+              "cap_area_m2": 0.21160003141849607,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Steel_foot_2",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.51839945713679,
+              "cap_area_m2": 0.5183997201059316,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Leg_3",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.21159996589024857,
+              "cap_area_m2": 0.21160003141849607,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Steel_foot_3",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.5183994770050051,
+              "cap_area_m2": 0.5183997201059316,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Leg_4",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.21159996589024857,
+              "cap_area_m2": 0.21160003141849607,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Steel_foot_4",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.5183994372685752,
+              "cap_area_m2": 0.5183997201059316,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Central_riser",
+              "closed_edges": 54,
+              "signed_volume_m3": 0.14520000107586384,
+              "cap_area_m2": 0.14520000102717076,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Front_ladder_rail_-0.4",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.007224958079556629,
+              "cap_area_m2": 0.007225001122569739,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Front_ladder_rail_0.4",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.007224982293943555,
+              "cap_area_m2": 0.007225001122569739,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            }
+          ]
+        }
+      ],
+      "flagged_positive_area_overlap_pairs": 4,
+      "sum_flagged_pairwise_overlap_m2": 0.8464001403808652
+    },
+    {
+      "issue": 168,
+      "groups": [
+        {
+          "object": "SM_Utility_wind_turbine_v1_Foundation_Z0",
+          "source_support_top_z_m": 0.0,
+          "columns": [
+            {
+              "component": "Mast_Tapered_Shell",
+              "closed_edges": 154,
+              "signed_volume_m3": 3.4413932356983405,
+              "cap_area_m2": 3.4413931517911447,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            }
+          ]
+        }
+      ],
+      "flagged_positive_area_overlap_pairs": 0,
+      "sum_flagged_pairwise_overlap_m2": 0
+    },
+    {
+      "issue": 169,
+      "groups": [
+        {
+          "object": "SM_Utility_solar_farm_v3_Foundation_Z0",
+          "source_support_top_z_m": 0.0,
+          "columns": [
+            {
+              "component": "R1T1_SteelFoot",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.5183978875478116,
+              "cap_area_m2": 0.5183993464267843,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "R1T1_MastCableRiser",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.002022862434387235,
+              "cap_area_m2": 0.0020249854326161113,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "R1T2_SteelFoot",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.5183995962142944,
+              "cap_area_m2": 0.5184000075512462,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "R1T2_MastCableRiser",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.002024427056312575,
+              "cap_area_m2": 0.0020249854326161113,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "R1T3_SteelFoot",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.5184006293614705,
+              "cap_area_m2": 0.5184000075512462,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "R1T3_MastCableRiser",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.002024715145428971,
+              "cap_area_m2": 0.0020249854326161113,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "R1T4_SteelFoot",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.518396298090617,
+              "cap_area_m2": 0.5183993464267843,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "R1T4_MastCableRiser",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.0020243525505066057,
+              "cap_area_m2": 0.0020249854326161113,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "R2T1_SteelFoot",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.5183992336193723,
+              "cap_area_m2": 0.5183995476386664,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "R2T1_MastCableRiser",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.002024971880018711,
+              "cap_area_m2": 0.0020250042962577657,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "R2T2_SteelFoot",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.5184001922607423,
+              "cap_area_m2": 0.5184001800183584,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "R2T2_MastCableRiser",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.0020250314846634947,
+              "cap_area_m2": 0.0020250042962577657,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "R2T3_SteelFoot",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.5184001922607424,
+              "cap_area_m2": 0.5184001800183584,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "R2T3_MastCableRiser",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.0020250314846634947,
+              "cap_area_m2": 0.0020250042962577657,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "R2T4_SteelFoot",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.5183993925650916,
+              "cap_area_m2": 0.5183995476386664,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "R2T4_MastCableRiser",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.002024932143588856,
+              "cap_area_m2": 0.0020250042962577657,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "R3T1_SteelFoot",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.51839820543925,
+              "cap_area_m2": 0.5183993464267843,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "R3T1_MastCableRiser",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.0020282765229542865,
+              "cap_area_m2": 0.0020250067664835413,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "R3T2_SteelFoot",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.5183995962142944,
+              "cap_area_m2": 0.5184000075512462,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "R3T2_MastCableRiser",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.0020243922869364397,
+              "cap_area_m2": 0.0020250067664835413,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "R3T3_SteelFoot",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.5184006293614702,
+              "cap_area_m2": 0.5184000075512462,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "R3T3_MastCableRiser",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.002024650573730462,
+              "cap_area_m2": 0.0020250067664835413,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "R3T4_SteelFoot",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.5183966159820557,
+              "cap_area_m2": 0.5183993464267843,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "R3T4_MastCableRiser",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.0020258526007334576,
+              "cap_area_m2": 0.0020250067664835413,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "GroundRowDuct0",
+              "closed_edges": 14,
+              "signed_volume_m3": 2.7200082341830054,
+              "cap_area_m2": 2.7200104871716,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "GroundRowDuct1",
+              "closed_edges": 14,
+              "signed_volume_m3": 2.7200001180171967,
+              "cap_area_m2": 2.7200000563789812,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "GroundRowDuct2",
+              "closed_edges": 14,
+              "signed_volume_m3": 2.720008234182991,
+              "cap_area_m2": 2.7200104871716,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "EastGroundDuct",
+              "closed_edges": 14,
+              "signed_volume_m3": 2.520014444986977,
+              "cap_area_m2": 2.5200175917480667,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "CabinetGroundFeed",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.6360000570615156,
+              "cap_area_m2": 0.6360045564056422,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Inverter0_Foot0",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.10399401187896723,
+              "cap_area_m2": 0.1039998362644791,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Inverter0_Foot1",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.10400370756785116,
+              "cap_area_m2": 0.1039998362644791,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Inverter1_Foot0",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.104002038637797,
+              "cap_area_m2": 0.1039998362644791,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            },
+            {
+              "component": "Inverter1_Foot1",
+              "closed_edges": 14,
+              "signed_volume_m3": 0.10400132338205981,
+              "cap_area_m2": 0.1039998362644791,
+              "source_top_z_m": 0.0,
+              "original_contact_triangles_exact": true,
+              "unit_planes_m": [
+                -1,
+                0
+              ],
+              "hole_ray_probes": []
+            }
+          ]
+        }
+      ],
+      "flagged_positive_area_overlap_pairs": 29,
+      "sum_flagged_pairwise_overlap_m2": 0.8511025880228906
+    }
+  ],
+  "foundation_groups": 12,
+  "closed_unit_columns": 295,
+  "preserved_holes": 9,
+  "actual_fbx_readbacks": [
+    {
+      "fbx": "ArtSource/Exports/UtilityIntegration/Foundations/SM_Utility_coal_v4_Foundation_Z0.fbx",
+      "triangles": 676,
+      "corners": 1604,
+      "max_position_error_m": 1.719260808386025e-06,
+      "max_normal_vector_error": 1.6049041769309353e-07,
+      "max_uv_error": 0.0
+    },
+    {
+      "fbx": "ArtSource/Exports/UtilityIntegration/Foundations/SM_Utility_coal_v4_Foundation_Z0p25.fbx",
+      "triangles": 24,
+      "corners": 56,
+      "max_position_error_m": 6.743495646333031e-07,
+      "max_normal_vector_error": 8.742277655541959e-08,
+      "max_uv_error": 0.0
+    },
+    {
+      "fbx": "ArtSource/Exports/UtilityIntegration/Foundations/SM_Utility_oil_v3_Foundation_Z0.fbx",
+      "triangles": 588,
+      "corners": 1404,
+      "max_position_error_m": 1.719260808386025e-06,
+      "max_normal_vector_error": 1.3328003749250113e-07,
+      "max_uv_error": 0.0
+    },
+    {
+      "fbx": "ArtSource/Exports/UtilityIntegration/Foundations/SM_Utility_power_base_v2_Foundation_Z0.fbx",
+      "triangles": 252,
+      "corners": 588,
+      "max_position_error_m": 9.5367431640625e-07,
+      "max_normal_vector_error": 8.742277655541959e-08,
+      "max_uv_error": 0.0
+    },
+    {
+      "fbx": "ArtSource/Exports/UtilityIntegration/Foundations/SM_Utility_water_base_v2_Foundation_Z0.fbx",
+      "triangles": 960,
+      "corners": 2368,
+      "max_position_error_m": 1.3486991292666062e-06,
+      "max_normal_vector_error": 1.4466410755327046e-07,
+      "max_uv_error": 0.0
+    },
+    {
+      "fbx": "ArtSource/Exports/UtilityIntegration/Foundations/SM_Utility_power_medium_v3_Foundation_Z0.fbx",
+      "triangles": 396,
+      "corners": 924,
+      "max_position_error_m": 1.3486991292666062e-06,
+      "max_normal_vector_error": 8.742277655541959e-08,
+      "max_uv_error": 0.0
+    },
+    {
+      "fbx": "ArtSource/Exports/UtilityIntegration/Foundations/SM_Utility_power_high_v3_Foundation_Z0.fbx",
+      "triangles": 504,
+      "corners": 1176,
+      "max_position_error_m": 1.719260808386025e-06,
+      "max_normal_vector_error": 8.742277655541959e-08,
+      "max_uv_error": 0.0
+    },
+    {
+      "fbx": "ArtSource/Exports/UtilityIntegration/Foundations/SM_Utility_water_medium_v2_Foundation_Z0.fbx",
+      "triangles": 1020,
+      "corners": 2508,
+      "max_position_error_m": 1.9073486328125e-06,
+      "max_normal_vector_error": 1.6049041769309353e-07,
+      "max_uv_error": 0.0
+    },
+    {
+      "fbx": "ArtSource/Exports/UtilityIntegration/Foundations/SM_Utility_water_high_v2_Foundation_Z0.fbx",
+      "triangles": 1384,
+      "corners": 3400,
+      "max_position_error_m": 2.6973982585332124e-06,
+      "max_normal_vector_error": 1.6049041769309353e-07,
+      "max_uv_error": 0.0
+    },
+    {
+      "fbx": "ArtSource/Exports/UtilityIntegration/Foundations/SM_Utility_water_tower_v3_Foundation_Z0.fbx",
+      "triangles": 164,
+      "corners": 388,
+      "max_position_error_m": 4.172325134277344e-07,
+      "max_normal_vector_error": 8.940696716308594e-08,
+      "max_uv_error": 0.0
+    },
+    {
+      "fbx": "ArtSource/Exports/UtilityIntegration/Foundations/SM_Utility_wind_turbine_v1_Foundation_Z0.fbx",
+      "triangles": 124,
+      "corners": 308,
+      "max_position_error_m": 1.0745380052412656e-07,
+      "max_normal_vector_error": 1.6049041769309353e-07,
+      "max_uv_error": 0.0
+    },
+    {
+      "fbx": "ArtSource/Exports/UtilityIntegration/Foundations/SM_Utility_solar_farm_v3_Foundation_Z0.fbx",
+      "triangles": 396,
+      "corners": 924,
+      "max_position_error_m": 1.719260808386025e-06,
+      "max_normal_vector_error": 8.742277655541959e-08,
+      "max_uv_error": 0.0
+    },
+    {
+      "fbx": "ArtSource/Exports/UtilityIntegration/wind_turbine/ThreeRoles/SM_Utility_wind_turbine_v1_Stationary_LOD0.fbx",
+      "triangles": 836,
+      "corners": 1392,
+      "max_position_error_m": 1.0745380052412656e-07,
+      "max_normal_vector_error": 1.6050122622041112e-07,
+      "max_uv_error": 0.0
+    },
+    {
+      "fbx": "ArtSource/Exports/UtilityIntegration/wind_turbine/ThreeRoles/SM_Utility_wind_turbine_v1_YawNacelle_LOD0.fbx",
+      "triangles": 568,
+      "corners": 992,
+      "max_position_error_m": 2.682209014892578e-07,
+      "max_normal_vector_error": 1.6323404237781945e-07,
+      "max_uv_error": 0.0
+    },
+    {
+      "fbx": "ArtSource/Exports/UtilityIntegration/wind_turbine/ThreeRoles/SM_Utility_wind_turbine_v1_SpinRotor_LOD0.fbx",
+      "triangles": 916,
+      "corners": 1704,
+      "max_position_error_m": 6.878405542920518e-07,
+      "max_normal_vector_error": 1.6323404237781945e-07,
+      "max_uv_error": 0.0
+    },
+    {
+      "fbx": "ArtSource/Exports/UtilityIntegration/wind_turbine/ThreeRoles/SM_Utility_wind_turbine_v1_Stationary_LOD1.fbx",
+      "triangles": 700,
+      "corners": 1176,
+      "max_position_error_m": 1.0745380052412656e-07,
+      "max_normal_vector_error": 1.6050122622041112e-07,
+      "max_uv_error": 0.0
+    },
+    {
+      "fbx": "ArtSource/Exports/UtilityIntegration/wind_turbine/ThreeRoles/SM_Utility_wind_turbine_v1_YawNacelle_LOD1.fbx",
+      "triangles": 532,
+      "corners": 920,
+      "max_position_error_m": 2.682209014892578e-07,
+      "max_normal_vector_error": 1.6323404237781945e-07,
+      "max_uv_error": 0.0
+    },
+    {
+      "fbx": "ArtSource/Exports/UtilityIntegration/wind_turbine/ThreeRoles/SM_Utility_wind_turbine_v1_SpinRotor_LOD1.fbx",
+      "triangles": 916,
+      "corners": 1704,
+      "max_position_error_m": 6.878405542920518e-07,
+      "max_normal_vector_error": 1.6323404237781945e-07,
+      "max_uv_error": 0.0
+    },
+    {
+      "fbx": "ArtSource/Exports/UtilityIntegration/wind_turbine/ThreeRoles/SM_Utility_wind_turbine_v1_Stationary_LOD2.fbx",
+      "triangles": 452,
+      "corners": 792,
+      "max_position_error_m": 1.0745380052412656e-07,
+      "max_normal_vector_error": 1.6050122622041112e-07,
+      "max_uv_error": 0.0
+    },
+    {
+      "fbx": "ArtSource/Exports/UtilityIntegration/wind_turbine/ThreeRoles/SM_Utility_wind_turbine_v1_YawNacelle_LOD2.fbx",
+      "triangles": 448,
+      "corners": 776,
+      "max_position_error_m": 2.682209014892578e-07,
+      "max_normal_vector_error": 1.6323404237781945e-07,
+      "max_uv_error": 0.0
+    },
+    {
+      "fbx": "ArtSource/Exports/UtilityIntegration/wind_turbine/ThreeRoles/SM_Utility_wind_turbine_v1_SpinRotor_LOD2.fbx",
+      "triangles": 916,
+      "corners": 1704,
+      "max_position_error_m": 6.878405542920518e-07,
+      "max_normal_vector_error": 1.6323404237781945e-07,
+      "max_uv_error": 0.0
+    }
+  ],
+  "wind_role_proof": [
+    {
+      "object": "SM_Utility_wind_turbine_v1_Stationary_LOD0",
+      "role": "Stationary",
+      "lod": 0,
+      "source_corner_match": {
+        "corners": 1392,
+        "max_position_error_m": 0.0,
+        "max_normal_vector_error": 0.0,
+        "max_uv_error": 0.0
+      }
+    },
+    {
+      "object": "SM_Utility_wind_turbine_v1_YawNacelle_LOD0",
+      "role": "YawNacelle",
+      "lod": 0,
+      "source_corner_match": {
+        "corners": 992,
+        "max_position_error_m": 0.0,
+        "max_normal_vector_error": 1.158003358398951e-05,
+        "max_uv_error": 0.0
+      }
+    },
+    {
+      "object": "SM_Utility_wind_turbine_v1_SpinRotor_LOD0",
+      "role": "SpinRotor",
+      "lod": 0,
+      "source_corner_match": {
+        "corners": 1704,
+        "max_position_error_m": 0.0,
+        "max_normal_vector_error": 1.9152508336956034e-05,
+        "max_uv_error": 0.0
+      }
+    },
+    {
+      "object": "SM_Utility_wind_turbine_v1_Stationary_LOD1",
+      "role": "Stationary",
+      "lod": 1,
+      "source_corner_match": {
+        "corners": 1176,
+        "max_position_error_m": 0.0,
+        "max_normal_vector_error": 0.0,
+        "max_uv_error": 0.0
+      }
+    },
+    {
+      "object": "SM_Utility_wind_turbine_v1_YawNacelle_LOD1",
+      "role": "YawNacelle",
+      "lod": 1,
+      "source_corner_match": {
+        "corners": 920,
+        "max_position_error_m": 0.0,
+        "max_normal_vector_error": 1.158003358398951e-05,
+        "max_uv_error": 0.0
+      }
+    },
+    {
+      "object": "SM_Utility_wind_turbine_v1_SpinRotor_LOD1",
+      "role": "SpinRotor",
+      "lod": 1,
+      "source_corner_match": {
+        "corners": 1704,
+        "max_position_error_m": 0.0,
+        "max_normal_vector_error": 1.9152508336956034e-05,
+        "max_uv_error": 0.0
+      }
+    },
+    {
+      "object": "SM_Utility_wind_turbine_v1_Stationary_LOD2",
+      "role": "Stationary",
+      "lod": 2,
+      "source_corner_match": {
+        "corners": 792,
+        "max_position_error_m": 0.0,
+        "max_normal_vector_error": 0.0,
+        "max_uv_error": 0.0
+      }
+    },
+    {
+      "object": "SM_Utility_wind_turbine_v1_YawNacelle_LOD2",
+      "role": "YawNacelle",
+      "lod": 2,
+      "source_corner_match": {
+        "corners": 776,
+        "max_position_error_m": 0.0,
+        "max_normal_vector_error": 1.158003358398951e-05,
+        "max_uv_error": 0.0
+      }
+    },
+    {
+      "object": "SM_Utility_wind_turbine_v1_SpinRotor_LOD2",
+      "role": "SpinRotor",
+      "lod": 2,
+      "source_corner_match": {
+        "corners": 1704,
+        "max_position_error_m": 0.0,
+        "max_normal_vector_error": 1.9152508336956034e-05,
+        "max_uv_error": 0.0
+      }
+    }
+  ],
+  "wind_exact_source_reassembly_all3_lods": true,
+  "wind_positions_uvs_materials_normals_match": true,
+  "measured_source_yaw_pivot_m": [
+    0.0,
+    0.0,
+    21.164999961853027
+  ],
+  "measured_concentric_collar_profile": [
+    {
+      "z_m": 20.95,
+      "radius_m": 0.62,
+      "vertices": 32
+    },
+    {
+      "z_m": 21.22,
+      "radius_m": 0.75,
+      "vertices": 32
+    },
+    {
+      "z_m": 21.38,
+      "radius_m": 0.75,
+      "vertices": 32
+    }
+  ],
+  "wind_mast_and_ground_door_stationary_all3_lods": true,
+  "all_original_and_reference_bytes_unchanged": true,
+  "all_checks_pass": true,
+  "native_import_run": false,
+  "ci_run": false,
+  "pending": "Native #125 import/stock concrete/material/basis verification, foundation depth placement, weather yaw/spin runtime adaptation and Windows playtest remain next."
+}

@@ -1,0 +1,270 @@
+{
+  "task": "D123 prerequisite gameplay commit",
+  "date": "2026-10-15",
+  "authorization": "User explicitly selected Include prerequisite gameplay commits; preserve walk assets and unrelated changes.",
+  "scope": "Accepted B003 shopping allocation, D107 daily clock, D120 sidewalk/traffic flow prerequisites, captured before D123.",
+  "source_files": [
+    {
+      "path": "CitySimVR/Source/CitySimVR/Private/Interaction/CityPaletteModel.cpp",
+      "sha256": "1c249b2e6a08b80edeec7832531e29e1af163ed62ee3115a04f92b492198c9eb"
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Private/Interaction/CityVRToolController.cpp",
+      "sha256": "247776aa50bca2b8a1acaa3cae785418bd2c50adc1beedd37fe4a0a5ad2fe181"
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Private/Persistence/CityPersistence.cpp",
+      "sha256": "5320566e7682f3ba6305280b6330e733f3ca90ab07c109d4e4d459be33918c47"
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Private/Persistence/CitySaveLibrary.cpp",
+      "sha256": "91781ecae3ef7d75cb782973dec5694cf8e576393e06db713bd49473cdfa9b81"
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Private/Presentation/CityBoardActor.cpp",
+      "sha256": "5a4c138b148e4c60faf387c987d2589403283e6f3c049fe509a94acfe8517b4e"
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Private/Presentation/CityConditionCauses.cpp",
+      "sha256": "f83ee127f9d6efda4f2a422315fe4826cd67c355b033710b1021f8ec5d74e3d1"
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Private/Presentation/CityConditionIndicators.cpp",
+      "sha256": "eb6e24f5c6520a2ef5ea543ca90d1562242743c6fba89bb4cf28939a1f4aec5c"
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Private/Presentation/CityDiagnosticOverlay.cpp",
+      "sha256": "4adc14477552e0374c1f50be54ec53e93e29edddc3b43fcc1300762b82687c3d"
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Private/Presentation/CityInspectionContent.cpp",
+      "sha256": "d8385f5ca9c7c1fda4a25fae051c7596a620b1ddf8fcf9b4d4bd04e321287874"
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Private/Presentation/CityNewCitySetup.cpp",
+      "sha256": "20511d530152e9f02e582ad952dd79e323de8c05a95eef5d875dbf9b0a5f26bc"
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Private/Presentation/CitySeasonalPresentation.cpp",
+      "sha256": "5e08ddae4a0a5e7a21513ed362754dae7a7df8c831b1ae24931d92fde49c67e8"
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Private/Presentation/CityServiceGuidance.cpp",
+      "sha256": "3a5947e46845362ff5c58efa7b34dd6a2a5e7a2d2c8b3409ad465cf154e77972"
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Private/Presentation/CityUiContent.cpp",
+      "sha256": "e14edfa547bfd7c107f4f209de04c7810c912fb27eb74ddf174f08dd83010ff0"
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Private/Sandbox/CitySandboxEnvironment.cpp",
+      "sha256": "b964218eb9f59789a37a2c9fa4fda6c80150aee30bc0a4bade5bb9ab554e25a8"
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Private/Simulation/CityCitizenSchedules.cpp",
+      "sha256": "c15a2a22e7e6ccf4224115203f262c5d55d136848fd33d9b0111f696f20c771a"
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Private/Simulation/CityDevelopmentSimulation.cpp",
+      "sha256": "d5ca05ce421f637eb24eb1115c389531af0b401a3ea2c5f91eb568eac179cec5"
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Private/Simulation/CityEconomySimulation.cpp",
+      "sha256": "60c600c155cf17acdf6f0bbe6f6c400736c535be3ecdc49b8a9011f70cf0712c"
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Private/Simulation/CityEnvironmentSimulation.cpp",
+      "sha256": "122ed6cb160fd664a26edd568758d41f508c7f9654a8e65d30e6e1f6d6124c60"
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Private/Simulation/CityHappinessSimulation.cpp",
+      "sha256": "8b2e448e95c464153f53e7bb279b546c10fa08a79f3566dcce743ef629a4f584"
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Private/Simulation/CityLoans.cpp",
+      "sha256": "d48f90e620c5aa4aa66f138ef3ba3ea23e09a2536e1d7c2b8627c1f417ddb06a"
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Private/Simulation/CityNeedsSimulation.cpp",
+      "sha256": "ebb1dd57bfbe2385ed712986f1f2c1ff30a9f5824ac7698fa5442996a46a122e"
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Private/Simulation/CityPolicies.cpp",
+      "sha256": "d0a1b40e074512d07dd08a2b1c492574842a50831401c952135cd415bfcc7480"
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Private/Simulation/CityPopulationSimulation.cpp",
+      "sha256": "ff19eddcecda8b3c707f981121095d609e5811dec0d1f260660afabb4234a915"
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Private/Simulation/CityPurchaseReservations.cpp",
+      "sha256": "9642d4069f303c41361c6f2bf1bdf71482352e4b126524b0affe641f532f6cc9"
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Private/Simulation/CityQuarterlyNews.cpp",
+      "sha256": "91c2af9d28ca8df53bf7f930dc4f12ba8038d560944275270358a6c3d8e2ec0e"
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Private/Simulation/CityReportHistory.cpp",
+      "sha256": "722f6872ccf0682849d2f33c4e5e92f061d73652a36447d48a035ea0f7b1fe3d"
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Private/Simulation/CityRoadNetwork.cpp",
+      "sha256": "ca888c3f36f8caefa9c6a9429e74248c1ed1a181c6794e6e400bb6aca3caaf12"
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Private/Simulation/CitySimulationSubsystem.cpp",
+      "sha256": "92589d7f6d10cb604b03399fce2a128dbec271c6ab3f5b84278d4f784cb81023"
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Private/Simulation/CityStationUpgrades.cpp",
+      "sha256": "73ea159ef1bb9ff29e84059f60642fcc35a374d9560bda848e656ec475d04477"
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Private/Simulation/CityTrafficSimulation.cpp",
+      "sha256": "a49ca69bee6729b10446457b179e54bb509c2e27c18626cbba58a59936ce8c3e"
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Private/Simulation/CityTrafficTrips.cpp",
+      "sha256": "f7c91e58881a5e366512186a7f859410b3dfc0b8019191154b8dc5c88a4b7769"
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Private/Tests/CityCalendarVisualTests.cpp",
+      "sha256": "546bc5c5ee3a25a1543363db9e858a18058f99e0b9cf6a2acde9148ff1dc4167"
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Private/Tests/CityCitizenScheduleTests.cpp",
+      "sha256": "2a9390b26d7b4a615d412e7e3ffc74e9de157211dee6157b94b18ae984c66989"
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Private/Tests/CityConditionCauseTests.cpp",
+      "sha256": "c6de8cf6c98549e940d603569a7ba91ccfb20e382ac931a4d1183603d256d345"
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Private/Tests/CityCurrentSaveTests.cpp",
+      "sha256": "4b424a11f75c1ecc26da1ed80de7b84524ee428925b09babbb3ead905a5d035c"
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Private/Tests/CityDailyClockTests.cpp",
+      "sha256": "418947d3e85d9a8ec30517c187632dd7438e34481a589cc7998199dc682a312e"
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Private/Tests/CityDepartureTests.cpp",
+      "sha256": "cfd9580824b1da8516a7da51c1977cce437d565b39d711987d1c98bbc57d9e84"
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Private/Tests/CityDesktopSaveRevisionTests.cpp",
+      "sha256": "43e4fc064a015561db4208608a5913c8303dd9036e9ca03bee92f0e7b9e4e0dd"
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Private/Tests/CityEnvironmentTests.cpp",
+      "sha256": "dc5d33325583d357eb532675386dba00584e61c36cf0c132f1ff38d0883943fc"
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Private/Tests/CityFlowRefinementTests.cpp",
+      "sha256": "7cd51d0d4bf0429dbb752c8e7a1437be80e9d81ac14b9bcf1e455ec33a843394"
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Private/Tests/CityFlowVisualTests.cpp",
+      "sha256": "ef486388e27d958f0ab40ab9804688d5ba09c1de34adbfef102a889e888f5d9c"
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Private/Tests/CityQuarterlyNewsTests.cpp",
+      "sha256": "8a6b5ebec8463a45abe6bf51c32146004057812e22b3fd9878aded0b145541fe"
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Private/Tests/CityReportHistoryTests.cpp",
+      "sha256": "640457d845a4920698eb581a27e841af5a85482ffd97bd04ce11d2842dd85344"
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Private/Tests/CityShoppingAllocationTests.cpp",
+      "sha256": "7de21033a7754f8258346287e54067eacc81514eea7a63e003f2197e233bbd00"
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Private/Tests/CityShoppingDepartureTests.cpp",
+      "sha256": "6e824a61b0de7fa386645422e62b9afd59356b0c37a5fec13a8663e42417aedb"
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Private/Tests/CityShoppingStatusVisualTests.cpp",
+      "sha256": "7ad0152be60211c6293961f8c19ec82543b22a9ed2ed1258ad62fb5638abd033"
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Private/Tests/CityTrafficSimulationTests.cpp",
+      "sha256": "c13b3a57adfc2fb9f479bd0c508cf6d3b8d8a43429a0c6ef867dc9bbf394ebdb"
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Private/Tests/CityVisibleTrafficTests.cpp",
+      "sha256": "43f895465396d4df1577ff249af816520fa9e9844630e3d427047466f4063596"
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Public/Persistence/CityPersistence.h",
+      "sha256": "16ca053425825dd180c72034bb4719dad9f6ee287cc6e09cdfcfc6642f43d7ed"
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Public/Presentation/CityBoardActor.h",
+      "sha256": "b6f5ddb929e5e748a5d8c6e75553f3d61aa742e3689fd4aa5463eef494e29a72"
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Public/Presentation/CityConditionIndicators.h",
+      "sha256": "70fdb776af1f3f5297298dbdf8b1fffab72415323807750a5ccfd53d63fbcf38"
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Public/Presentation/CityRoadPresentation.h",
+      "sha256": "5c9601433bdf0265d9bfa4300ca68e7ae12bed35e9ab9760cca298ca0be582f5"
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Public/Simulation/CityCalendar.h",
+      "sha256": "292c1223a37c568bc6c0949f18f2df74759499f073d8cdfff772a4a144623a86"
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Public/Simulation/CityDevelopmentSimulation.h",
+      "sha256": "d5df19ad0f9ff529d573f039c9777800c233a8fdcf49c353c57e0d2c745eaa1c"
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Public/Simulation/CityEconomySimulation.h",
+      "sha256": "e8c06a642a5ea44350b437db82fbefdbba4ecc30be1535c53b59c9b1bcc3da9e"
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Public/Simulation/CityNeedsSimulation.h",
+      "sha256": "47f5744645194badb6098493b5e7864508b3a78e5d03300bf52d13232bba52df"
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Public/Simulation/CityPopulationSimulation.h",
+      "sha256": "e73f5818278924306c166319e62b9ee1613d121207fbc7063beca835f7619133"
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Public/Simulation/CityQuarterlyNews.h",
+      "sha256": "1bc337fd89cd4c4154bd4b66ae85f826c018e74de9c44ad433199fdbb377eaa2"
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Public/Simulation/CityReportHistory.h",
+      "sha256": "2d42ffcd8a948c676800299656b155503d139925a12011d0e6612b207f32e5a6"
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Public/Simulation/CityRoadNetwork.h",
+      "sha256": "019608f4b9c7f309fee1c6d307e9e604eaa6bd525d14975a11d3d09fb443f5d5"
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Public/Simulation/CitySimulationSubsystem.h",
+      "sha256": "ca2256d99fdb6cdc37663313bfdbed0d4cbfce7f7b5d69e3087adf870a5ce45e"
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Public/Simulation/CityTrafficSimulation.h",
+      "sha256": "62a8c88b7f6104f074c015cd49128655aec3cd93e80d20994fd64d47198696c3"
+    }
+  ],
+  "walk_integration_hunks_removed": [
+    "CitySimVR/Source/CitySimVR/Private/Presentation/CityBoardActor.cpp",
+    "CitySimVR/Source/CitySimVR/Private/Tests/CityFlowVisualTests.cpp",
+    "CitySimVR/Source/CitySimVR/Private/Tests/CityVisibleTrafficTests.cpp",
+    "CitySimVR/Source/CitySimVR/Public/Presentation/CityBoardActor.h",
+    "CitySimVR/Source/CitySimVR/Public/Simulation/CitySimulationSubsystem.h"
+  ],
+  "excluded": "All D121 walk source/assets, D122 authoring, B007, D124 follow-up, player/config/package/generated files and unrelated working changes.",
+  "validation": "Existing task receipts retain Editor/package checks and user acceptance; no gameplay changes or new builds for source-control closeout.",
+  "receipts": [
+    "D107-daily-clock.json",
+    "D120-flow-delivery.json",
+    "B003-shopping-allocation-fix.json"
+  ]
+}

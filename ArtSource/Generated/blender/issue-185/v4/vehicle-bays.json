@@ -1,0 +1,39 @@
+{
+  "bays": [
+    {
+      "id": "receiving-1",
+      "target": "Truck_section_00",
+      "xyz_m": [
+        -2,
+        -9.5,
+        0
+      ],
+      "outward": [
+        0,
+        -1,
+        0
+      ],
+      "width_m": 4.8,
+      "height_m": 4.34,
+      "boundary_connector": {
+        "xyz_m": [
+          -2,
+          -20,
+          0
+        ]
+      },
+      "reserved_free_corridor": {
+        "min": [
+          -4.4,
+          -20,
+          0
+        ],
+        "max": [
+          0.3999999999999999,
+          -9.5,
+          4.2
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "issue": 125,
+  "scope": "one A/brick Compact Home; other appearances unchanged",
+  "source": "ArtSource/Blender/CityLowDensityBuildings.blend",
+  "source_sha256": "05e4b0409ac3f8785546feccf9b46443c449295819ef0ec68e7790658fb13d9e",
+  "derived_source": "ArtSource/Blender/CityHomeGroundPilot.blend",
+  "derived_source_sha256": "f59e4293401bdbac68773174f41a1155587ae6405edd5c4dca3148226377193a",
+  "export": "ArtSource/Exports/HomeGroundPilot/SM_CompactHome_GroundPilot.fbx",
+  "export_sha256": "e079dd8eec8e68275ab1ea7330fd2c7a234cdd666d80b3c3a1463305b8baf006",
+  "mesh_destination": "/Game/CitySim/Art/HomeGroundPilot/SM_CompactHome_GroundPilot",
+  "triangles": 656,
+  "sections": 4,
+  "material_bindings": {
+    "ResidentialBrick": "/Game/CitySim/Art/Materials/MI_ResidentialBrick",
+    "HomeSolidDetails": "/Game/CitySim/Art/Materials/M_HomeSolidDetails",
+    "RoofShingles": "/Game/CitySim/Art/Materials/MI_RoofShingles",
+    "HomeWindowOpaque": "/Game/CitySim/Art/Materials/M_HomeWindowOpaque"
+  },
+  "removed_walk_faces": [
+    17,
+    18,
+    19,
+    20,
+    21,
+    22
+  ],
+  "retained_faces": 327,
+  "dimensions_m": [
+    10.559999465942383,
+    10.955999374389648,
+    5.599999904632568
+  ],
+  "door_native_cm": [
+    0,
+    467,
+    0
+  ],
+  "pedestrian_width_cm": 130,
+  "unchanged": "retained positions, UVs, corner colors, semantic materials; approved source and original native meshes"
+}

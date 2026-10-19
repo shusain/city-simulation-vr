@@ -1,0 +1,33 @@
+{
+  "task": "B005",
+  "additionalFix": "B006",
+  "date": "2026-10-15",
+  "status": "B005 user-confirmed closed; B006 verified closed",
+  "testedRevision": "dev-69ded6cd3232eb02d695",
+  "schema": 67,
+  "userConfirmation": "Looks like that resolved the issue can you make sure it gets committed/pushed",
+  "deliveryReceipt": "docs/evidence/B005-water-supply-fix.json",
+  "deliveryReceiptSha256": "10df390cc2d9641750e0c89c0b32966c4ef40fca44047798e06833efb3b82147",
+  "scope": "Accepted water-source allocation, emergency fleet restore, focused regressions and acceptance records. Concurrent D107 calendar and prior traffic/distribution working changes excluded.",
+  "checks": {
+    "FinalEditor": [
+      "FleetPersistence",
+      "StaffedFleetAndCoverage",
+      "AddedLocalSupply",
+      "MultipleSourcesLoopsAndConservation",
+      "PreparedQueryEquivalence",
+      "PressureThresholdAndDetours",
+      "QualifiedPayrollPowerAndUpgradeGates",
+      "ReportedSchoolSupply",
+      "SourceGatesCriticalPriorityAndLegacy"
+    ],
+    "FinalPackaged": [
+      "FleetPersistence",
+      "AddedLocalSupply",
+      "ReportedSchoolSupply"
+    ]
+  },
+  "limitations": [
+    "Physical PCVR/Quest observations remain unconfirmed; no new gameplay/build/device/public-release work for source closeout."
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "anchors": [
+    {
+      "role": "maintenance",
+      "target": "Front_ladder_rail_-0.4",
+      "xyz_m": [
+        0,
+        -4.72,
+        0
+      ],
+      "outward": [
+        0,
+        -1,
+        0
+      ],
+      "width_m": 1.2,
+      "grade_m": 0,
+      "boundary_connector": {
+        "xyz_m": [
+          0,
+          -8,
+          0
+        ],
+        "outward": [
+          0,
+          -1,
+          0
+        ],
+        "width_m": 1.2,
+        "grade_m": 0
+      },
+      "reserved_free_corridor": {
+        "min": [
+          -0.6,
+          -8,
+          0
+        ],
+        "max": [
+          0.6,
+          -4.72,
+          2.2
+        ]
+      }
+    }
+  ],
+  "all_component_AABB_intersections": [],
+  "future_connection": "Future service sidewalk reaches the front ladder from the south site boundary; no path geometry authored."
+}

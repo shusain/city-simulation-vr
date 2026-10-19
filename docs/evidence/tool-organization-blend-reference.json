@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "repaired": 1,
+  "changed": {
+    "CitySimVR/Content/CitySim/Art/Citizens/BS_Citizen_StreetWalk.uasset": "23c739df5e475c08f7f09c6867178d40f42b1db9fc92075ebb7e5c9fbe2cb47c"
+  },
+  "removed": [],
+  "idle_and_walk_samples_verified": true,
+  "original_sample_settings_preserved": true,
+  "method": "ReplaceSampleAnimation on existing blend; no recreation/reimport"
+}

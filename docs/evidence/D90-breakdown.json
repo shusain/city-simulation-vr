@@ -1,0 +1,151 @@
+{
+  "generation_requests": [
+    {
+      "issue": 30,
+      "backend": "Blender",
+      "request_label": "Ready to Blender",
+      "provider": "configured local",
+      "state": "COMPLETED_PREVIEW_NEEDS_REVIEW_REFINEMENT",
+      "version": "v1",
+      "job": "ff6c2874772d8509209adf1a9cb5ebab",
+      "review_url": "https://git.shaun-husain.com/CitySimVR/citysim/issues/30#issuecomment-393",
+      "approved": false
+    },
+    {
+      "issue": 31,
+      "backend": "Blender",
+      "request_label": "Ready to Blender",
+      "provider": "configured local",
+      "state": "COMPLETED_PREVIEW_NEEDS_REVIEW_REFINEMENT",
+      "version": "v1",
+      "job": "a9ab3ae77509db243dbadee12d7a52b0",
+      "review_url": "https://git.shaun-husain.com/CitySimVR/citysim/issues/31#issuecomment-396",
+      "approved": false
+    }
+  ],
+  "asset_authoring_issues": [
+    {
+      "title": "D90.A1: Robotics workshop exterior - Blender source review",
+      "url": "https://git.shaun-husain.com/CitySimVR/citysim/issues/30",
+      "key": "robotics-workshop-art",
+      "number": 30
+    },
+    {
+      "title": "D90.A2: Static industrial robot cell - Blender source review",
+      "url": "https://git.shaun-husain.com/CitySimVR/citysim/issues/31",
+      "key": "industrial-robot-cell-art",
+      "number": 31
+    }
+  ],
+  "unreal_started": false,
+  "status": "LINKED_PLANNED_NOT_IMPLEMENTED",
+  "task": "D90",
+  "source_inputs": [
+    {
+      "path": "CitySimVR/Source/CitySimVR/Private/Simulation/CityTechnology.cpp",
+      "sha256": "9456eed1fccfeb0497b71e65d29472ff0e72e45a6f296d339a163c2db92d2d6e"
+    },
+    {
+      "path": "Tools/Update-CityTechnologyCatalog.py",
+      "sha256": "3a704e2c7947b1d226e130d4314c33519ce3708bbb87e8197760a0b78c95a42f"
+    },
+    {
+      "path": "Tools/CityBuildingStudyIO.py",
+      "sha256": "27c85703cb7ef45dd03fc27fe1762959760b465b0a7ba6a7c7eb0607ab8e2341"
+    },
+    {
+      "path": "ThirdParty/MaterialSymbols/D116-Approval-v1.json",
+      "sha256": "0dd6e5e393e10d2569bd0a277813e4a26ebd74ccc64e21fea0967e366596743c"
+    },
+    {
+      "path": "ArtSource/Manifests/city_low_density_buildings.json",
+      "sha256": "9ad2c8ff3b0be3c942e2e258a43ea1925366d9ede7621f933d4b368b48512558"
+    },
+    {
+      "path": "Artifacts/D90/AI/Preparation.json",
+      "sha256": "3ff83e9de1f1efd613bf63d067f19b084915d73df4fe6ae5aa0fed801132266f"
+    }
+  ],
+  "date": "2026-10-15",
+  "parent": "https://git.shaun-husain.com/CitySimVR/citysim/issues/22",
+  "issues": [
+    {
+      "depends_on": [],
+      "state": "open",
+      "key": "parent",
+      "number": 22,
+      "url": "https://git.shaun-husain.com/CitySimVR/citysim/issues/22",
+      "title": "D90: Observable AI progression and player-chosen economic systems"
+    },
+    {
+      "depends_on": [],
+      "state": "open",
+      "key": "commercial-ai",
+      "number": 23,
+      "url": "https://git.shaun-husain.com/CitySimVR/citysim/issues/23",
+      "title": "D90.1: AI institute and reversible commercial adoption"
+    },
+    {
+      "depends_on": [
+        23
+      ],
+      "state": "open",
+      "key": "robotics",
+      "number": 24,
+      "url": "https://git.shaun-husain.com/CitySimVR/citysim/issues/24",
+      "title": "D90.2: Robotics workshop and bounded industrial adoption"
+    },
+    {
+      "depends_on": [
+        23
+      ],
+      "state": "open",
+      "key": "compute-ownership",
+      "number": 25,
+      "url": "https://git.shaun-husain.com/CitySimVR/citysim/issues/25",
+      "title": "D90.3: Reversible private or municipal compute provider"
+    },
+    {
+      "depends_on": [
+        23
+      ],
+      "state": "open",
+      "key": "dividends-admission",
+      "number": 26,
+      "url": "https://git.shaun-husain.com/CitySimVR/citysim/issues/26",
+      "title": "D90.4: Funded dividends and support-aware housing admission"
+    },
+    {
+      "depends_on": [
+        26
+      ],
+      "state": "open",
+      "key": "essential-services",
+      "number": 27,
+      "url": "https://git.shaun-husain.com/CitySimVR/citysim/issues/27",
+      "title": "D90.5: Purchased essentials and visible service coverage"
+    },
+    {
+      "depends_on": [
+        23
+      ],
+      "state": "open",
+      "key": "worker-ownership",
+      "number": 28,
+      "url": "https://git.shaun-husain.com/CitySimVR/citysim/issues/28",
+      "title": "D90.6: Worker shares and actual profit distributions"
+    },
+    {
+      "depends_on": [
+        24,
+        26,
+        28
+      ],
+      "state": "open",
+      "key": "shorter-hours",
+      "number": 29,
+      "url": "https://git.shaun-husain.com/CitySimVR/citysim/issues/29",
+      "title": "D90.7: Shorter schedules with real staffing and payroll"
+    }
+  ]
+}

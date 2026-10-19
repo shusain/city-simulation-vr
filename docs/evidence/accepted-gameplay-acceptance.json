@@ -1,0 +1,43 @@
+{
+  "task": "Accepted gameplay reconciliation",
+  "date": "2026-10-17",
+  "status": "User-accepted; normal PR112 merge closeout authorized",
+  "pr": "https://git.shaun-husain.com/CitySimVR/citysim/pulls/112",
+  "candidateBuild": 113,
+  "runtimeCommit": "fa7443e4775f1e24b33d46e07570a316c38fccd1",
+  "acceptedHead": "774a1ece31e32bef4ba029c1b2af8a725273801a",
+  "gameRevision": "dev-38f1700e1710ea5e04c8",
+  "schema": 70,
+  "confirmation": {
+    "source": "Shaun in this chat, 2026-10-17",
+    "text": "Okay I tested the candidate and everything looks good. Please merge PR #112 and close out the reconciliation.",
+    "scope": "Integrated candidate gameplay acceptance and PR112 normal merge; platform unspecified, physical PCVR/Quest coverage remains unconfirmed under D114."
+  },
+  "validation": {
+    "checks": [
+      112,
+      114
+    ],
+    "candidate": 113,
+    "editorCases": 27,
+    "packagedCasesPerSize": 17,
+    "desktopSizes": [
+      "1280x800",
+      "1024x720"
+    ],
+    "reviewedCaptures": 37,
+    "runtimeChangeAfterAcceptance": false,
+    "packageRepeatRequired": false
+  },
+  "closeout": "The PR and live queue retain exact expected-head merge and merged-main check receipts. No required gameplay implementation or integrated playtest remains.",
+  "separateRemaining": [
+    "D114 physical PCVR/Quest observations",
+    "historical obsolete hospital fixture upkeep and broad balance deferred"
+  ],
+  "preserved": [
+    "newer main changes",
+    "unrelated primary source/assets",
+    "maintained package and original player profiles",
+    "D90 shared D126 CI ownership and its queued jobs"
+  ]
+}

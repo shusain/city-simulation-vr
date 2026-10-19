@@ -1,0 +1,42 @@
+[
+  {
+    "issue": 33,
+    "version": 1,
+    "pr": 64,
+    "commit": "3f6a5b89a5eba8a13fda7b7e9b1ae51ba25bee27",
+    "approval_sha256": "3c376285ecda9e828116b56f8e9ce1af56d098212a0f6424ef2298443960c5b7",
+    "png_sha256": "0388834b782f58a6d544df3f597f9a5f407b6eb8c3df4acbf92be3857d51b7a4",
+    "path": "ArtSource/Generated/comfy/issue-33/v1",
+    "all_artifacts_verified": true
+  },
+  {
+    "issue": 34,
+    "version": 1,
+    "pr": 66,
+    "commit": "387693aa690b25ff85649da20f7b2c11afd20101",
+    "approval_sha256": "076f0bce24f36b90dd6d1d270e5ac1953c59f970827ea3cc253187ab4868d0e9",
+    "png_sha256": "eca19ecd840ff8dd89222318e152b2f30d157b246bb38cb225ba7c3dae163b17",
+    "path": "ArtSource/Generated/comfy/issue-34/v1",
+    "all_artifacts_verified": true
+  },
+  {
+    "issue": 35,
+    "version": 1,
+    "pr": 68,
+    "commit": "047796a002cdc2283499cd5d1c2efd7f1dfc0e17",
+    "approval_sha256": "12beb2f621b47ab721355300395deeb336f8127150ac950b0df8791a6870bdfe",
+    "png_sha256": "16dc08a60b0cc729b2ae9161222c961026fd3cc7915ba521a3f0b69e62318144",
+    "path": "ArtSource/Generated/comfy/issue-35/v1",
+    "all_artifacts_verified": true
+  },
+  {
+    "issue": 36,
+    "version": 2,
+    "pr": 70,
+    "commit": "c5b7076e02037a0129cf6a5e1d88ce5dc9886387",
+    "approval_sha256": "46e554ee2cfeefa2388779ce4ed24406f7b533ec53b02a9a949acbd76f59b4fa",
+    "png_sha256": "d5e0e286e5391fa36c0c4f1d4c2a998eafd1eed06235b4e26ce79a6ffbcd8478",
+    "path": "ArtSource/Generated/comfy/issue-36/v2",
+    "all_artifacts_verified": true
+  }
+]

@@ -1,0 +1,150 @@
+{
+  "task": "D125",
+  "date": "2026-10-15",
+  "parent": "f685b31f525498a87516811012a621266d1cf4e7",
+  "acceptedRevision": "dev-1dec2c0ba4c9bf250bf9",
+  "schema": 70,
+  "sourceFiles": [
+    {
+      "path": "CitySimVR/Source/CitySimVR/Private/Persistence/CityPersistence.cpp",
+      "acceptedSha256": "a5f2a3300e60b2c2f0b86511d1d2e27a27c932762be5b727654053798dc61007",
+      "scopedCanonicalSha256": "9f1b5b82f5ef48c0ba0ecf413b63a7418fbc2ca50205bf0de861aeb0522845e6",
+      "preexistingUnrelatedHunksExcluded": false
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Private/Persistence/CitySaveLibrary.cpp",
+      "acceptedSha256": "7010bbcb4036e52a74356cf612d6031b08174ec65d82eb70dfe655ebb55c0df4",
+      "scopedCanonicalSha256": "acce7ab10b166e21320b831fc19e6fa015d487c1cb8b64875e6df2f0a0661f49",
+      "preexistingUnrelatedHunksExcluded": false
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Private/Presentation/CityBoardActor.cpp",
+      "acceptedSha256": "07df43052b33ffd0031df9a5644635350e0a31e122ef601572abf68ddb6f403d",
+      "scopedCanonicalSha256": "71f5d8ec40ed6e4c2a1b48b62af94c7bc98c0b79739da9450c004e3701a0e5ad",
+      "preexistingUnrelatedHunksExcluded": true
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Private/Presentation/CityConditionIndicators.cpp",
+      "acceptedSha256": "9212a17d0f2fdfd05e55df31d812e1caa0ca40fe1103be2662e1039fb7e10afa",
+      "scopedCanonicalSha256": "2b545c4998472164e2351e36d4265620fe2bbc1812b198939f8d793993de9a8c",
+      "preexistingUnrelatedHunksExcluded": false
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Private/Presentation/CityInspectionContent.cpp",
+      "acceptedSha256": "78107cfad19f8fa62b942991382b200790f3b098493e9408e1cdd4d5e5c933c4",
+      "scopedCanonicalSha256": "1b41421345d9086a462c3302ea2dfae861de03d0d3c61faecfc6d8f219d470e3",
+      "preexistingUnrelatedHunksExcluded": false
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Private/Simulation/CityFirstPlayableGuide.cpp",
+      "acceptedSha256": "b3bd86ec9525a57d97514f2764b2b53e218fd2877d484238980223dfe7fa6187",
+      "scopedCanonicalSha256": "1a371b480c7646cc0586de51f3def2422df626fb0c9fddb8e67a9b469982e178",
+      "preexistingUnrelatedHunksExcluded": false
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Private/Simulation/CityHappinessSimulation.cpp",
+      "acceptedSha256": "2b617598aebda3634ab79a2c12e14cafd543f83d32a28a871d8a6628826a5916",
+      "scopedCanonicalSha256": "2d40403b5fcaf91fe99436bf8ea4c47afec577473e1b47b2a48f0765c3b058e5",
+      "preexistingUnrelatedHunksExcluded": false
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Private/Simulation/CityHealthSimulation.cpp",
+      "acceptedSha256": "89d97a44e34759fe6b0b8fb40d55a2f3ed184cee90c120b5ce4c590a422dde9b",
+      "scopedCanonicalSha256": "31c42af44f51ec0d69e085da9f79116b73889efe3873495d226ed1714cd4d1a0",
+      "preexistingUnrelatedHunksExcluded": false
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Private/Simulation/CityHospitalCare.cpp",
+      "acceptedSha256": "efefd536238c75395517c4e955f26687040cb60909d9f3a798ac349d928c7520",
+      "scopedCanonicalSha256": "a49c56f32c850d4e88700ae4946fc82a7dbe19172c0da847e6e53fa455eeaad9",
+      "preexistingUnrelatedHunksExcluded": false
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Private/Simulation/CityPopulationSimulation.cpp",
+      "acceptedSha256": "31f388aab428c450e0caeb7d3a193fc5327a7829c1058b98fa261878a9f22d09",
+      "scopedCanonicalSha256": "4bebfd7c394d7bbf2543563eed155c20920545dd77bc26b17b9d804447772b88",
+      "preexistingUnrelatedHunksExcluded": false
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Private/Simulation/CityReportHistory.cpp",
+      "acceptedSha256": "4eb1500af8b276d08cc631f5f13a3455b987334fff4532e08f656737bb854b21",
+      "scopedCanonicalSha256": "6b2a1411a5d33cba2fff9a0a1f64d46e188cec88a57a4a1ad79d3c125058fe91",
+      "preexistingUnrelatedHunksExcluded": false
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Private/Simulation/CitySimulationSubsystem.cpp",
+      "acceptedSha256": "e767ebca52ec4376f725886e685102fcda10eead97e4adad7d87f568392b5f4b",
+      "scopedCanonicalSha256": "fe8bbc1fda946ea994cce05974c97cdd0f85e2b9b32c31586c7248225cd9b7a7",
+      "preexistingUnrelatedHunksExcluded": false
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Private/Tests/CityConditionClusterTests.cpp",
+      "acceptedSha256": "00fd740cdea35360f2d298d5e8f1ab9360fc6f1719bac39dd7ed59ab029fbfc5",
+      "scopedCanonicalSha256": "7fcee128d4b9e25f016fc0bc961e6a97f50011e5f4117cab7314db216b23f229",
+      "preexistingUnrelatedHunksExcluded": false
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Private/Tests/CityCurrentSaveTests.cpp",
+      "acceptedSha256": "1aca86ca0238789f35f456792879f672cf9d4d311decb8ecca34dc34f707033d",
+      "scopedCanonicalSha256": "2bc7d8d1c01e79e8636c35860025d2e48a1e5b23e48e9d7b627a5632c4354d6c",
+      "preexistingUnrelatedHunksExcluded": false
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Private/Tests/CityHealthTests.cpp",
+      "acceptedSha256": "1cd948dec0cc01219fd00acdecdb5374a9c2247b0ef6de912bf603cb80b221a2",
+      "scopedCanonicalSha256": "810480b3a8bd45d90590cf1fd5e696fbe322b06decfc1009d70c5f3cc8e99c95",
+      "preexistingUnrelatedHunksExcluded": false
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Private/Tests/CityHospitalCareTests.cpp",
+      "acceptedSha256": "01496beb49baaa3f5455e71820260c14185ffae89943d5050ff1df73017ace1a",
+      "scopedCanonicalSha256": "5ffba0c51cd9b7f9f43717b09a6941ac24a4daaf52425f7a2200f1769759096d",
+      "preexistingUnrelatedHunksExcluded": false
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Private/Tests/CityHousingMigrationTests.cpp",
+      "acceptedSha256": "5bd05c66471fe86ee5dc8eebad0df829594fb26e52d624667657ddd61e316a9d",
+      "scopedCanonicalSha256": "78d26648db0b978abb2b9b5bb2779cf12851bbb17572774d1bf825db970197c6",
+      "preexistingUnrelatedHunksExcluded": false
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Public/Persistence/CityPersistence.h",
+      "acceptedSha256": "0e8dbc55431b041da5085b4fe9cb6ca8859888b79a88e54f1c688521a8e059c6",
+      "scopedCanonicalSha256": "0090f2cea343f557ffa229a3af85d0d29c66e371cb995b4a53a9fd90c4cd337e",
+      "preexistingUnrelatedHunksExcluded": false
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Public/Simulation/CityHealthSimulation.h",
+      "acceptedSha256": "9d01ef74c98d9135bab3916aaa9ea176b293d86b1c57d599dce57bb8747d9a2b",
+      "scopedCanonicalSha256": "2de7845088853d1e7f620401b8eea64a24b23857af92c3f36de0ca0db1153640",
+      "preexistingUnrelatedHunksExcluded": false
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Public/Simulation/CityPopulationSimulation.h",
+      "acceptedSha256": "384bbcd2a9703d7b60338e157da87f65f04310f7e41042b1d5e2eea1be7e2481",
+      "scopedCanonicalSha256": "9e637940580fbe13f6b1e6f0ca03974bcbaa201ec9ca41b4824498290afabd9b",
+      "preexistingUnrelatedHunksExcluded": false
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Public/Simulation/CitySimulationSubsystem.h",
+      "acceptedSha256": "02b5a68b6cb0acfad75da21f11115a7dced11444364fff52f9333077bce2a643",
+      "scopedCanonicalSha256": "c7deda505ae797ea79a1e66866e88b2a44a25c5dbdda1c7597a29ac1e063e940",
+      "preexistingUnrelatedHunksExcluded": true
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Private/Tests/CityOutpatientTests.cpp",
+      "acceptedSha256": "6a2d8befb2f7147e75dab5a83ded0b1b05f9964e974208fb0d296d6aa8cdcde9",
+      "scopedCanonicalSha256": "6d8873191f6fb389187d9b5a718355a28729eea7412bc40e593f1da5d882a504",
+      "preexistingUnrelatedHunksExcluded": false
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Private/Tests/CityOutpatientVisualTests.cpp",
+      "acceptedSha256": "1f5e560f51c2c560da81cddb5a0991ef25ba193dee1707563d8d32e1500f422e",
+      "scopedCanonicalSha256": "1f5e560f51c2c560da81cddb5a0991ef25ba193dee1707563d8d32e1500f422e",
+      "preexistingUnrelatedHunksExcluded": false
+    }
+  ],
+  "verification": "All23 working source hashes equal the accepted delivery. Mixed files are reconstructed as HEAD plus only the D125 delta from the captured baseline. Reapplying baseline walk hunks reconstructs accepted source exactly.",
+  "excluded": "Preexisting D121 walk integration hunks/assets/tools/tests, D126 CI, B007 and unrelated documentation. No native/build/package/player changes at closeout.",
+  "pushed": false
+}

@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "kind": "comfy",
+  "repository": "CitySimVR/citysim",
+  "issue": 77,
+  "version": 1,
+  "source_sha": "d28931af5987d1b91f32499811c06d6c7c215213",
+  "workflow": "generate_image_zimage",
+  "workflow_sha256": "44865deff73e143107163dba9b0c30ceffa59f22721d5d11918b8f701db8d90e",
+  "model": "ollama/citysim-spec:qwen3-14b",
+  "seed": 77,
+  "prompt": "Seamless-looking full-bleed ROOM INTERIOR BACKGROUND IMAGE, a cropped first-person view from inside a hardware shop, straight forward at eye level. The camera is inside a real room; there is NO outside of the room visible anywhere. Cream room surfaces continue past EVERY edge of the picture. Two long dusty-teal shelves run horizontally across the back wall and extend BEYOND the left and right image edges. Shelves have visible TOP surfaces and side thickness with gentle contact shadows to communicate depth. A small number of chunky steel spanners, a claw hammer, pliers and orange-handled screwdrivers hang naturally on the backboard, centered in the middle half of the image. Two teal toolboxes and a few hardware bins sit on the shelves, all centered with comfortable space around them. A narrow strip of cream ceiling at the very top and cream floor at the bottom, room back corners near the left and right edges. Restrained centered one-point perspective, level camera, upright verticals. Stylized low-poly game art with broad simple matte shapes, warm cream and dusty teal palette, steel-gray tools with small rust-orange accents, soft uniform diffuse illumination, readable moderate contrast, mild baked ambient occlusion, clean sparse layout. Crop closely INTO the room: no surrounding background, no external edges, no outer box, no cabinet, no display case, no diorama or freestanding model, no window opening or window frame, no front wall, no glazing, no mullions, no sill, no border, no reflected light or glare. No outside facade, no door or sign, no people, words, letters, numbers, labels, prices, logos or watermark. This image will be mapped onto existing game window geometry and cropped to a tall 11:15 rectangle, so all important tools and boxes stay well inside the central half of the image.",
+  "prompt_id": "17b05fbc-65c5-4094-ba92-c109d846ac64",
+  "dimensions": {
+    "width": 768,
+    "height": 768
+  },
+  "png_sha256": "61166a6c64ce9cf57e080e24fb99d5628e32793e3267f7fed719365662020811",
+  "created_at": "2026-10-16T20:49:32.424Z"
+}

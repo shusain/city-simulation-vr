@@ -1,0 +1,8 @@
+# Public-source cleanup: current saves, self-contained behavior and art output paths.
+# Captured-city integration cases remain failing/pending separately under #285.
+CitySim.Persistence.CurrentFormatAndPantryUpgrade
+CitySim.Persistence.LiveCreationRevisionAndRejection
+CitySim.Shopping.LocksQuotaRoutesAndArrival
+CitySim.Outpatients.BlockedReturnAndDispensedMedicine
+CitySim.Art.NewspaperRendering
+CitySim.Assets.RuntimeOrganization

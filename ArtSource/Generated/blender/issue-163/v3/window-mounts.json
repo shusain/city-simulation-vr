@@ -1,0 +1,106 @@
+{
+  "windows": [
+    {
+      "pane": "Control_front_window_opaque_pane",
+      "frame_parts": [
+        "Control_front_window_jamb",
+        "Control_front_window_jamb.001",
+        "Control_front_window_head_sill",
+        "Control_front_window_head_sill.001"
+      ],
+      "backing": "Staffed_control_service_wing",
+      "axis": 1,
+      "sign": -1,
+      "wall_normal": [
+        0,
+        -1,
+        0
+      ]
+    },
+    {
+      "pane": "Control_side_window_opaque_pane",
+      "frame_parts": [
+        "Control_side_window_jamb",
+        "Control_side_window_jamb.001",
+        "Control_side_window_head_sill",
+        "Control_side_window_head_sill.001"
+      ],
+      "backing": "Staffed_control_service_wing",
+      "axis": 0,
+      "sign": -1,
+      "wall_normal": [
+        -1,
+        0,
+        0
+      ]
+    },
+    {
+      "pane": "Control_side_window_opaque_pane.001",
+      "frame_parts": [
+        "Control_side_window_jamb.002",
+        "Control_side_window_jamb.003",
+        "Control_side_window_head_sill.002",
+        "Control_side_window_head_sill.003"
+      ],
+      "backing": "Staffed_control_service_wing",
+      "axis": 0,
+      "sign": -1,
+      "wall_normal": [
+        -1,
+        0,
+        0
+      ]
+    },
+    {
+      "pane": "Control_side_window_opaque_pane.002",
+      "frame_parts": [
+        "Control_side_window_jamb.004",
+        "Control_side_window_jamb.005",
+        "Control_side_window_head_sill.004",
+        "Control_side_window_head_sill.005"
+      ],
+      "backing": "Staffed_control_service_wing",
+      "axis": 0,
+      "sign": -1,
+      "wall_normal": [
+        -1,
+        0,
+        0
+      ]
+    },
+    {
+      "pane": "Rear_hall_side_window_opaque_pane",
+      "frame_parts": [
+        "Rear_hall_side_window_jamb",
+        "Rear_hall_side_window_jamb.001",
+        "Rear_hall_side_window_head_sill",
+        "Rear_hall_side_window_head_sill.001"
+      ],
+      "backing": "Rear_generator_hall",
+      "axis": 0,
+      "sign": -1,
+      "wall_normal": [
+        -1,
+        0,
+        0
+      ]
+    },
+    {
+      "pane": "Rear_hall_side_window_opaque_pane.001",
+      "frame_parts": [
+        "Rear_hall_side_window_jamb.002",
+        "Rear_hall_side_window_jamb.003",
+        "Rear_hall_side_window_head_sill.002",
+        "Rear_hall_side_window_head_sill.003"
+      ],
+      "backing": "Rear_generator_hall",
+      "axis": 0,
+      "sign": -1,
+      "wall_normal": [
+        -1,
+        0,
+        0
+      ]
+    }
+  ]
+}

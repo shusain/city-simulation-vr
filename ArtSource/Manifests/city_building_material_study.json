@@ -1,0 +1,3324 @@
+{
+  "schema_version": 1,
+  "task": "D104",
+  "project": "Artifacts/D104/UnrealProject/CityPreview.uproject",
+  "output": "Artifacts/D104",
+  "source": "ArtSource/Blender/Studies/CityBuildingMaterials.blend",
+  "source_sha256": "3ca407df40242fdfc40fd06b489054d17f1f89b786969867c873c5d16bf8f7e2",
+  "approved_source": "ArtSource/Blender/Studies/CityLowDensityVariants-Revision3.blend",
+  "approved_source_sha256": "66c6fdf5cb067af1f04d1f01940e974e3939cb9e7e35c21cdb16a6b3bd941209",
+  "resolution": 800,
+  "meshes": [
+    {
+      "name": "Home_A_Current",
+      "category": "Home",
+      "variant": "A current",
+      "reference_asset_id": "building.residential.a",
+      "dimensions_m": [
+        10.559999465942383,
+        13.279997825622559,
+        5.799999713897705
+      ],
+      "bounds_min_m": [
+        -5.279999732971191,
+        -7.999998092651367,
+        -0.19999980926513672
+      ],
+      "bounds_max_m": [
+        5.279999732971191,
+        5.279999732971191,
+        5.599999904632568
+      ],
+      "triangles": 668,
+      "sections": 4,
+      "slots": [
+        "ResidentialBrick",
+        "HomeSolidDetails",
+        "RoofShingles",
+        "HomeWindowOpaque"
+      ],
+      "glazed_faces": 11,
+      "saved_geometry_signature": "01d29ad8cc51c1a7acc00128c227826adf504f7c773ca1ac88a0bc6cb7820a5f",
+      "entrance": null,
+      "roof_penetrations": [],
+      "export": "Artifacts/D104/PreviewBridge/Home_A_Current.fbx",
+      "export_sha256": "4d5868cc630f0b57399991d2902221ea2c74b8bb13988313d82fdb3bcd1d30ad",
+      "native_mesh": "/Game/CityPreview/Meshes/Home_A_Current"
+    },
+    {
+      "name": "Home_B_HipPorch",
+      "category": "Home",
+      "variant": "B",
+      "reference_asset_id": "building.residential.a",
+      "dimensions_m": [
+        10.5600004196167,
+        13.279998779296875,
+        4.799999713897705
+      ],
+      "bounds_min_m": [
+        -5.28000020980835,
+        -7.999998092651367,
+        -0.20000000298023224
+      ],
+      "bounds_max_m": [
+        5.28000020980835,
+        5.28000020980835,
+        4.599999904632568
+      ],
+      "triangles": 596,
+      "sections": 4,
+      "slots": [
+        "ResidentialBrick",
+        "HomeSolidDetails",
+        "RoofShingles",
+        "HomeWindowOpaque"
+      ],
+      "glazed_faces": 11,
+      "saved_geometry_signature": "cac7494bccc25f700589c5848e978a9eeb235dfbc309ab1fe7f51db8690b0fd0",
+      "entrance": null,
+      "roof_penetrations": [],
+      "export": "Artifacts/D104/PreviewBridge/Home_B_HipPorch.fbx",
+      "export_sha256": "10717b67423847ab602da5173b3037e58d42bcfe3f745f5137c9b74346d89b1d",
+      "native_mesh": "/Game/CityPreview/Meshes/Home_B_HipPorch"
+    },
+    {
+      "name": "Home_C_CrossGable",
+      "category": "Home",
+      "variant": "C",
+      "reference_asset_id": "building.residential.a",
+      "dimensions_m": [
+        10.5600004196167,
+        13.279998779296875,
+        4.799999713897705
+      ],
+      "bounds_min_m": [
+        -5.28000020980835,
+        -7.999998092651367,
+        -0.20000000298023224
+      ],
+      "bounds_max_m": [
+        5.28000020980835,
+        5.28000020980835,
+        4.599999904632568
+      ],
+      "triangles": 596,
+      "sections": 4,
+      "slots": [
+        "ResidentialBrick",
+        "HomeSolidDetails",
+        "RoofShingles",
+        "HomeWindowOpaque"
+      ],
+      "glazed_faces": 11,
+      "saved_geometry_signature": "d2f32fc124a6c08f76e436c6d4b54595b8478972a917166b5f21c615488e4f5f",
+      "entrance": null,
+      "roof_penetrations": [],
+      "export": "Artifacts/D104/PreviewBridge/Home_C_CrossGable.fbx",
+      "export_sha256": "399febd86075582166789ccc6f4bcbe195fb3a08ce6e4b33571a218e0b684cd0",
+      "native_mesh": "/Game/CityPreview/Meshes/Home_C_CrossGable"
+    },
+    {
+      "name": "Home_D_Veranda",
+      "category": "Home",
+      "variant": "D",
+      "reference_asset_id": "building.residential.a",
+      "dimensions_m": [
+        10.5600004196167,
+        13.279998779296875,
+        4.799999713897705
+      ],
+      "bounds_min_m": [
+        -5.28000020980835,
+        -7.999998092651367,
+        -0.20000000298023224
+      ],
+      "bounds_max_m": [
+        5.28000020980835,
+        5.28000020980835,
+        4.599999904632568
+      ],
+      "triangles": 626,
+      "sections": 4,
+      "slots": [
+        "ResidentialBrick",
+        "HomeSolidDetails",
+        "RoofShingles",
+        "HomeWindowOpaque"
+      ],
+      "glazed_faces": 11,
+      "saved_geometry_signature": "46074394e79eb17a3bb42865a6df08b4d53e4ca628020dac047e274ee21ef0cd",
+      "entrance": null,
+      "roof_penetrations": [],
+      "export": "Artifacts/D104/PreviewBridge/Home_D_Veranda.fbx",
+      "export_sha256": "8373506c54edb333c5f42b963fa7a6e73c278e65ce57d3ecc2f59e0ef048b460",
+      "native_mesh": "/Game/CityPreview/Meshes/Home_D_Veranda",
+      "native_winding_corrected_faces": 6
+    },
+    {
+      "name": "Shop_A_Current",
+      "category": "Shop",
+      "variant": "A current",
+      "reference_asset_id": "building.shop.a",
+      "dimensions_m": [
+        15.429999351501465,
+        17.614999771118164,
+        12.699999809265137
+      ],
+      "bounds_min_m": [
+        -7.714999675750732,
+        -10.399999618530273,
+        0.0
+      ],
+      "bounds_max_m": [
+        7.714999675750732,
+        7.214999675750732,
+        12.699999809265137
+      ],
+      "triangles": 704,
+      "sections": 5,
+      "slots": [
+        "CommercialBrick",
+        "Roof",
+        "RoofMembrane",
+        "StoreSignTall",
+        "BuildingWindowOpaque"
+      ],
+      "glazed_faces": 14,
+      "saved_geometry_signature": "024a754d93e26f029098fd40568a31a02026c3dd5002ef77e22c99929338766f",
+      "entrance": {
+        "style": "double glass with transom",
+        "door_leaf_count": 2,
+        "personnel_clear_width_m": 2.3,
+        "door_height_m": 2.35,
+        "floor_m": 0.16,
+        "door_front_y_m": -7.16,
+        "detail_bounds_m": [
+          [
+            -1.5299999999999998,
+            -7.42,
+            0
+          ],
+          [
+            1.5299999999999998,
+            -7.0,
+            3.4
+          ]
+        ]
+      },
+      "roof_penetrations": [],
+      "export": "Artifacts/D104/PreviewBridge/Shop_A_Current.fbx",
+      "export_sha256": "9a16a22b64660d56482da7dd41063996e0d2ed6ae9eb6387a5b298b9fc945625",
+      "native_mesh": "/Game/CityPreview/Meshes/Shop_A_Current"
+    },
+    {
+      "name": "Shop_B_MarketAwnings",
+      "category": "Shop",
+      "variant": "B",
+      "reference_asset_id": "building.shop.a",
+      "dimensions_m": [
+        15.429999351501465,
+        17.614999771118164,
+        12.0
+      ],
+      "bounds_min_m": [
+        -7.714999675750732,
+        -10.399999618530273,
+        0.0
+      ],
+      "bounds_max_m": [
+        7.714999675750732,
+        7.214999675750732,
+        12.0
+      ],
+      "triangles": 874,
+      "sections": 5,
+      "slots": [
+        "CommercialBrick",
+        "Roof",
+        "RoofMembrane",
+        "StoreSignTall",
+        "BuildingWindowOpaque"
+      ],
+      "glazed_faces": 15,
+      "saved_geometry_signature": "7acf5af4f7e859b415de5c23b3048412d98482e5b39b5e5416e892ac3429ea29",
+      "entrance": {
+        "style": "double glass with sidelights/kickplates",
+        "door_leaf_count": 2,
+        "personnel_clear_width_m": 2.3,
+        "door_height_m": 2.35,
+        "floor_m": 0.16,
+        "door_front_y_m": -7.16,
+        "detail_bounds_m": [
+          [
+            -2.0,
+            -7.42,
+            0
+          ],
+          [
+            2.0,
+            -7.0,
+            3.4
+          ]
+        ]
+      },
+      "roof_penetrations": [],
+      "export": "Artifacts/D104/PreviewBridge/Shop_B_MarketAwnings.fbx",
+      "export_sha256": "4a3ce961d97fe1795c66c2f39b8388f65d5cbde378a9220d551fb3591a58b717",
+      "native_mesh": "/Game/CityPreview/Meshes/Shop_B_MarketAwnings"
+    },
+    {
+      "name": "Shop_C_SteppedFront",
+      "category": "Shop",
+      "variant": "C",
+      "reference_asset_id": "building.shop.a",
+      "dimensions_m": [
+        15.429999351501465,
+        17.614999771118164,
+        11.600000381469727
+      ],
+      "bounds_min_m": [
+        -7.714999675750732,
+        -10.399999618530273,
+        0.0
+      ],
+      "bounds_max_m": [
+        7.714999675750732,
+        7.214999675750732,
+        11.600000381469727
+      ],
+      "triangles": 742,
+      "sections": 5,
+      "slots": [
+        "CommercialBrick",
+        "Roof",
+        "RoofMembrane",
+        "StoreSignTall",
+        "BuildingWindowOpaque"
+      ],
+      "glazed_faces": 15,
+      "saved_geometry_signature": "31aafb25e59864f489ae95e8c63ba11dd60a32c018b3963f7cafc485cdea4e04",
+      "entrance": {
+        "style": "automatic sliding pair",
+        "door_leaf_count": 2,
+        "personnel_clear_width_m": 2.4,
+        "door_height_m": 2.35,
+        "floor_m": 0.16,
+        "door_front_y_m": -7.16,
+        "detail_bounds_m": [
+          [
+            -2.4,
+            -7.42,
+            0
+          ],
+          [
+            2.4,
+            -7.0,
+            3.4
+          ]
+        ]
+      },
+      "roof_penetrations": [],
+      "export": "Artifacts/D104/PreviewBridge/Shop_C_SteppedFront.fbx",
+      "export_sha256": "219cba50dfdd1c75f4ccb0aa2e1299cf7697b7e1c6dd4b0df8b53707f0d71dfd",
+      "native_mesh": "/Game/CityPreview/Meshes/Shop_C_SteppedFront"
+    },
+    {
+      "name": "Shop_D_Canopy",
+      "category": "Shop",
+      "variant": "D",
+      "reference_asset_id": "building.shop.a",
+      "dimensions_m": [
+        15.429999351501465,
+        17.614999771118164,
+        12.0
+      ],
+      "bounds_min_m": [
+        -7.714999675750732,
+        -10.399999618530273,
+        0.0
+      ],
+      "bounds_max_m": [
+        7.714999675750732,
+        7.214999675750732,
+        12.0
+      ],
+      "triangles": 794,
+      "sections": 5,
+      "slots": [
+        "CommercialBrick",
+        "Roof",
+        "RoofMembrane",
+        "StoreSignTall",
+        "BuildingWindowOpaque"
+      ],
+      "glazed_faces": 15,
+      "saved_geometry_signature": "ab7902c424ef0bcfc260dae5cc4860a14663070a3a17ef9eb97070d48a9c5c90",
+      "entrance": {
+        "style": "glazed double-door vestibule",
+        "door_leaf_count": 2,
+        "personnel_clear_width_m": 2.3,
+        "door_height_m": 2.35,
+        "floor_m": 0.16,
+        "door_front_y_m": -7.84,
+        "detail_bounds_m": [
+          [
+            -1.625,
+            -8.1,
+            0
+          ],
+          [
+            1.625,
+            -7.0,
+            3.4
+          ]
+        ]
+      },
+      "roof_penetrations": [],
+      "export": "Artifacts/D104/PreviewBridge/Shop_D_Canopy.fbx",
+      "export_sha256": "d726feee2fb667fb4847a638b325dc53353d689f6400ba72ade7183a7e8f97dc",
+      "native_mesh": "/Game/CityPreview/Meshes/Shop_D_Canopy"
+    },
+    {
+      "name": "Factory_A_Current",
+      "category": "Factory",
+      "variant": "A current",
+      "reference_asset_id": "building.factory.a",
+      "dimensions_m": [
+        16.0,
+        17.899999618530273,
+        17.0
+      ],
+      "bounds_min_m": [
+        -8.0,
+        -10.399999618530273,
+        0.0
+      ],
+      "bounds_max_m": [
+        8.0,
+        7.5,
+        17.0
+      ],
+      "triangles": 1058,
+      "sections": 5,
+      "slots": [
+        "IndustrialBrick",
+        "Roof",
+        "IndustrialMechanical",
+        "RoofMetal",
+        "BuildingWindowOpaque"
+      ],
+      "glazed_faces": 17,
+      "saved_geometry_signature": "1aeb4e2683e5806102f88c3d9241ac7eaeb2dd77c8126f189009fbb218d5c968",
+      "entrance": {
+        "style": "glazed sectional garage",
+        "personnel": {
+          "center_x_m": 5.2,
+          "front_y_m": -7.15,
+          "width_m": 1.1,
+          "height_m": 2.05,
+          "floor_m": 0.16,
+          "path_bounds_m": [
+            [
+              4.4750000000000005,
+              -10.4,
+              0
+            ],
+            [
+              5.925,
+              -7.06,
+              0.16
+            ]
+          ]
+        },
+        "freight": [
+          {
+            "center_x_m": 0,
+            "width_m": 5.65,
+            "height_m": 4.55,
+            "floor_m": 0.08,
+            "front_y_m": -7.17,
+            "style": "glazed sectional"
+          }
+        ],
+        "dock": null,
+        "detail_bounds_m": [
+          [
+            -5.35,
+            -10.55,
+            0
+          ],
+          [
+            6.0,
+            -6.9,
+            5.3
+          ]
+        ]
+      },
+      "roof_penetrations": [],
+      "export": "Artifacts/D104/PreviewBridge/Factory_A_Current.fbx",
+      "export_sha256": "18529b229a6ae44ee86064af55542f6446fb15431b8af35963426065a96f95bf",
+      "native_mesh": "/Game/CityPreview/Meshes/Factory_A_Current"
+    },
+    {
+      "name": "Factory_B_Sawtooth",
+      "category": "Factory",
+      "variant": "B",
+      "reference_asset_id": "building.factory.a",
+      "dimensions_m": [
+        16.0,
+        18.0,
+        16.100000381469727
+      ],
+      "bounds_min_m": [
+        -8.0,
+        -10.399999618530273,
+        0.0
+      ],
+      "bounds_max_m": [
+        8.0,
+        7.599999904632568,
+        16.100000381469727
+      ],
+      "triangles": 1416,
+      "sections": 5,
+      "slots": [
+        "IndustrialBrick",
+        "Roof",
+        "IndustrialMechanical",
+        "RoofMetal",
+        "BuildingWindowOpaque"
+      ],
+      "glazed_faces": 21,
+      "saved_geometry_signature": "81c2ecb6657dfe350290105ecd68d6874e8aadd4d595e5da711335513bf6500a",
+      "entrance": {
+        "style": "warehouse roller shutter",
+        "personnel": {
+          "center_x_m": 5.2,
+          "front_y_m": -7.15,
+          "width_m": 1.1,
+          "height_m": 2.05,
+          "floor_m": 0.16,
+          "path_bounds_m": [
+            [
+              4.4750000000000005,
+              -10.4,
+              0
+            ],
+            [
+              5.925,
+              -7.06,
+              0.16
+            ]
+          ]
+        },
+        "freight": [
+          {
+            "center_x_m": 0,
+            "width_m": 5.65,
+            "height_m": 4.55,
+            "floor_m": 0.08,
+            "front_y_m": -7.17,
+            "style": "roller shutter"
+          }
+        ],
+        "dock": null,
+        "detail_bounds_m": [
+          [
+            -5.35,
+            -10.55,
+            0
+          ],
+          [
+            6.0,
+            -6.9,
+            5.3
+          ]
+        ]
+      },
+      "roof_penetrations": [
+        {
+          "center_m": [
+            -5.0,
+            -4.3
+          ],
+          "radius_m": 0.86,
+          "roof_z_m": 8.056000000000001,
+          "top_m": 16.1,
+          "style": "boiler",
+          "roof_panel_clearance_m": 0.25,
+          "roof": "sawtooth-front"
+        }
+      ],
+      "export": "Artifacts/D104/PreviewBridge/Factory_B_Sawtooth.fbx",
+      "export_sha256": "fddbdefcf6e0046d952d2ce1b3cb395424ce20f2c16cb238d19030f1d41c2211",
+      "native_mesh": "/Game/CityPreview/Meshes/Factory_B_Sawtooth"
+    },
+    {
+      "name": "Factory_C_TwinGable",
+      "category": "Factory",
+      "variant": "C",
+      "reference_asset_id": "building.factory.a",
+      "dimensions_m": [
+        16.0,
+        17.899999618530273,
+        14.760000228881836
+      ],
+      "bounds_min_m": [
+        -8.0,
+        -10.399999618530273,
+        0.0
+      ],
+      "bounds_max_m": [
+        8.0,
+        7.5,
+        14.760000228881836
+      ],
+      "triangles": 1266,
+      "sections": 5,
+      "slots": [
+        "IndustrialBrick",
+        "Roof",
+        "IndustrialMechanical",
+        "RoofMetal",
+        "BuildingWindowOpaque"
+      ],
+      "glazed_faces": 13,
+      "saved_geometry_signature": "94f4c77b3278236fd52642764995114eb957bdcdf5ccbeaca21e3078a6c2236a",
+      "entrance": {
+        "style": "raised loading dock",
+        "personnel": {
+          "center_x_m": 5.2,
+          "front_y_m": -7.15,
+          "width_m": 1.1,
+          "height_m": 2.05,
+          "floor_m": 0.16,
+          "path_bounds_m": [
+            [
+              4.4750000000000005,
+              -10.4,
+              0
+            ],
+            [
+              5.925,
+              -7.06,
+              0.16
+            ]
+          ]
+        },
+        "freight": [
+          {
+            "center_x_m": 0,
+            "width_m": 5.65,
+            "height_m": 3.65,
+            "floor_m": 1.05,
+            "front_y_m": -7.17,
+            "style": "roller shutter"
+          }
+        ],
+        "dock": {
+          "platform_top_m": 1.05,
+          "platform_bounds_m": [
+            [
+              -3.2,
+              -9.47,
+              0
+            ],
+            [
+              3.2,
+              -7.05,
+              1.05
+            ]
+          ],
+          "step_count": 5,
+          "step_rise_m": 0.21
+        },
+        "detail_bounds_m": [
+          [
+            -5.35,
+            -10.55,
+            0
+          ],
+          [
+            6.0,
+            -6.9,
+            5.3
+          ]
+        ]
+      },
+      "roof_penetrations": [
+        {
+          "center_m": [
+            -4,
+            1.5
+          ],
+          "radius_m": 0.6,
+          "roof_z_m": 9.25,
+          "top_m": 14.4,
+          "style": "capped",
+          "roof_panel_clearance_m": 0.25,
+          "roof": "twin-gable-left"
+        },
+        {
+          "center_m": [
+            4,
+            3.5
+          ],
+          "radius_m": 0.6,
+          "roof_z_m": 9.25,
+          "top_m": 12.6,
+          "style": "capped",
+          "roof_panel_clearance_m": 0.25,
+          "roof": "twin-gable-right"
+        }
+      ],
+      "export": "Artifacts/D104/PreviewBridge/Factory_C_TwinGable.fbx",
+      "export_sha256": "64cc09f23a58e13725d16f7385fea9c7c223ff7b8ef33f47b62348cd5d9afbd3",
+      "native_mesh": "/Game/CityPreview/Meshes/Factory_C_TwinGable"
+    },
+    {
+      "name": "Factory_D_Clerestory",
+      "category": "Factory",
+      "variant": "D",
+      "reference_asset_id": "building.factory.a",
+      "dimensions_m": [
+        16.0,
+        17.899999618530273,
+        12.5
+      ],
+      "bounds_min_m": [
+        -8.0,
+        -10.399999618530273,
+        0.0
+      ],
+      "bounds_max_m": [
+        8.0,
+        7.5,
+        12.5
+      ],
+      "triangles": 1638,
+      "sections": 5,
+      "slots": [
+        "IndustrialBrick",
+        "Roof",
+        "IndustrialMechanical",
+        "RoofMetal",
+        "BuildingWindowOpaque"
+      ],
+      "glazed_faces": 23,
+      "saved_geometry_signature": "741bafc68afc8c9c898a6521caa7a5bf413f3b4ba8cccbb3ac8dc5e22fe103c4",
+      "entrance": {
+        "style": "two workshop sectional bays",
+        "personnel": {
+          "center_x_m": 5.2,
+          "front_y_m": -7.15,
+          "width_m": 1.1,
+          "height_m": 2.05,
+          "floor_m": 0.16,
+          "path_bounds_m": [
+            [
+              4.4750000000000005,
+              -10.4,
+              0
+            ],
+            [
+              5.925,
+              -7.06,
+              0.16
+            ]
+          ]
+        },
+        "freight": [
+          {
+            "center_x_m": -1.47,
+            "width_m": 2.6,
+            "height_m": 4.45,
+            "floor_m": 0.08,
+            "front_y_m": -7.17,
+            "style": "glazed sectional"
+          },
+          {
+            "center_x_m": 1.47,
+            "width_m": 2.6,
+            "height_m": 4.45,
+            "floor_m": 0.08,
+            "front_y_m": -7.17,
+            "style": "glazed sectional"
+          }
+        ],
+        "dock": null,
+        "detail_bounds_m": [
+          [
+            -5.35,
+            -10.55,
+            0
+          ],
+          [
+            6.0,
+            -6.9,
+            5.3
+          ]
+        ]
+      },
+      "roof_penetrations": [
+        {
+          "center_m": [
+            5.25,
+            -3.4
+          ],
+          "radius_m": 0.38,
+          "roof_z_m": 7.6,
+          "top_m": 11.3,
+          "style": "plain",
+          "roof_panel_clearance_m": 0.25,
+          "roof": "clerestory-flat-right"
+        },
+        {
+          "center_m": [
+            5.25,
+            0
+          ],
+          "radius_m": 0.46,
+          "roof_z_m": 7.6,
+          "top_m": 12.5,
+          "style": "plain",
+          "roof_panel_clearance_m": 0.25,
+          "roof": "clerestory-flat-right"
+        },
+        {
+          "center_m": [
+            5.25,
+            3.4
+          ],
+          "radius_m": 0.38,
+          "roof_z_m": 7.6,
+          "top_m": 10.8,
+          "style": "plain",
+          "roof_panel_clearance_m": 0.25,
+          "roof": "clerestory-flat-right"
+        }
+      ],
+      "export": "Artifacts/D104/PreviewBridge/Factory_D_Clerestory.fbx",
+      "export_sha256": "b15b1547d1caa92ae6edf2619b77cc3917da1ad7e3c64122589f1a846abc5be2",
+      "native_mesh": "/Game/CityPreview/Meshes/Factory_D_Clerestory"
+    }
+  ],
+  "materials": [
+    {
+      "name": "Home_Timber",
+      "native_material": "/Game/CityPreview/Materials/M_Home_Timber",
+      "surface": "Timber",
+      "tint": [
+        1,
+        1,
+        1
+      ],
+      "metallic": 0,
+      "target_slot": "ResidentialBrick",
+      "label": "Cedar"
+    },
+    {
+      "name": "Home_Clapboard",
+      "native_material": "/Game/CityPreview/Materials/M_Home_Clapboard",
+      "surface": "Clapboard",
+      "tint": [
+        0.42,
+        0.61,
+        0.48
+      ],
+      "metallic": 0,
+      "target_slot": "ResidentialBrick",
+      "label": "Sage siding"
+    },
+    {
+      "name": "Home_Corrugated",
+      "native_material": "/Game/CityPreview/Materials/M_Home_Corrugated",
+      "surface": "Corrugated",
+      "tint": [
+        0.87,
+        0.82,
+        0.68
+      ],
+      "metallic": 0,
+      "target_slot": "ResidentialBrick",
+      "label": "Cream metal panels"
+    },
+    {
+      "name": "Shop_Timber",
+      "native_material": "/Game/CityPreview/Materials/M_Shop_Timber",
+      "surface": "Timber",
+      "tint": [
+        0.88,
+        0.82,
+        0.72
+      ],
+      "metallic": 0,
+      "target_slot": "CommercialBrick",
+      "label": "Warm timber"
+    },
+    {
+      "name": "Shop_Clapboard",
+      "native_material": "/Game/CityPreview/Materials/M_Shop_Clapboard",
+      "surface": "Clapboard",
+      "tint": [
+        0.3,
+        0.49,
+        0.67
+      ],
+      "metallic": 0,
+      "target_slot": "CommercialBrick",
+      "label": "Blue siding"
+    },
+    {
+      "name": "Shop_Corrugated",
+      "native_material": "/Game/CityPreview/Materials/M_Shop_Corrugated",
+      "surface": "Corrugated",
+      "tint": [
+        0.22,
+        0.48,
+        0.48
+      ],
+      "metallic": 0,
+      "target_slot": "CommercialBrick",
+      "label": "Teal metal panels"
+    },
+    {
+      "name": "Factory_Timber",
+      "native_material": "/Game/CityPreview/Materials/M_Factory_Timber",
+      "surface": "Timber",
+      "tint": [
+        0.65,
+        0.69,
+        0.67
+      ],
+      "metallic": 0,
+      "target_slot": "IndustrialBrick",
+      "label": "Weathered timber"
+    },
+    {
+      "name": "Factory_Clapboard",
+      "native_material": "/Game/CityPreview/Materials/M_Factory_Clapboard",
+      "surface": "Clapboard",
+      "tint": [
+        0.53,
+        0.59,
+        0.62
+      ],
+      "metallic": 0,
+      "target_slot": "IndustrialBrick",
+      "label": "Gray siding"
+    },
+    {
+      "name": "Factory_Corrugated",
+      "native_material": "/Game/CityPreview/Materials/M_Factory_Corrugated",
+      "surface": "Corrugated",
+      "tint": [
+        0.78,
+        0.82,
+        0.85
+      ],
+      "metallic": 1,
+      "target_slot": "IndustrialBrick",
+      "label": "Galvanized steel"
+    }
+  ],
+  "textures": {
+    "Timber": {
+      "tile_m": [
+        2.4,
+        2.4
+      ],
+      "maps": {
+        "BaseColor": {
+          "file": "ArtSource/Textures/MaterialStudy/Timber_BaseColor.png",
+          "sha256": "f1dd4e5d5c4ac7528465774e2be5f87389b7c795a93788221ed0427b0ce4e603",
+          "size": [
+            512,
+            512
+          ],
+          "seam_mean": 0.03286611519607843,
+          "interior_mean": 0.024335588259276314
+        },
+        "Normal": {
+          "file": "ArtSource/Textures/MaterialStudy/Timber_Normal.png",
+          "sha256": "b6ede5af52111089cdccd48b62dd779b6108cc9d94718ccd7c21ceb579c57af2",
+          "size": [
+            512,
+            512
+          ],
+          "seam_mean": 0.031842320261437906,
+          "interior_mean": 0.002791277755394392
+        },
+        "ORM": {
+          "file": "ArtSource/Textures/MaterialStudy/Timber_ORM.png",
+          "sha256": "bc9d28a1f7a922182d56298a351ee0165b7bb3ecfd36fa47d1dab7ba9968acfc",
+          "size": [
+            512,
+            512
+          ],
+          "seam_mean": 0.022686887254901963,
+          "interior_mean": 0.005343862716319398
+        }
+      }
+    },
+    "Clapboard": {
+      "tile_m": [
+        2.4,
+        2.4
+      ],
+      "maps": {
+        "BaseColor": {
+          "file": "ArtSource/Textures/MaterialStudy/Clapboard_BaseColor.png",
+          "sha256": "2e7161ea2a2d64675095444e1e2756e17b15bb73d49c6f3872b6a3223b5dfb14",
+          "size": [
+            512,
+            512
+          ],
+          "seam_mean": 0.005859374999999986,
+          "interior_mean": 0.006227201925290657
+        },
+        "Normal": {
+          "file": "ArtSource/Textures/MaterialStudy/Clapboard_Normal.png",
+          "sha256": "2ea0087eb557f1cc584cd2d6620a1fa919571d5c42124ac27da17e44173b3e29",
+          "size": [
+            512,
+            512
+          ],
+          "seam_mean": 0.011764705882352936,
+          "interior_mean": 0.0019825281710857856
+        },
+        "ORM": {
+          "file": "ArtSource/Textures/MaterialStudy/Clapboard_ORM.png",
+          "sha256": "4c2f4bd303dcf4cc23db75e5d1c0114743a791e01ec2212ff165176b1490c383",
+          "size": [
+            512,
+            512
+          ],
+          "seam_mean": 0.0017207924836601272,
+          "interior_mean": 0.0019775118951690274
+        }
+      }
+    },
+    "Corrugated": {
+      "tile_m": [
+        2.4,
+        2.4
+      ],
+      "maps": {
+        "BaseColor": {
+          "file": "ArtSource/Textures/MaterialStudy/Corrugated_BaseColor.png",
+          "sha256": "e169e0b7e26bea32a842fb5802cb0f98454d300041efab2fa96ce362ca435704",
+          "size": [
+            512,
+            512
+          ],
+          "seam_mean": 0.013143382352941164,
+          "interior_mean": 0.012802805197421422
+        },
+        "Normal": {
+          "file": "ArtSource/Textures/MaterialStudy/Corrugated_Normal.png",
+          "sha256": "9b4b7201460371e34f43281d1467635007b5b4aa3628977d01362981784f0ad4",
+          "size": [
+            512,
+            512
+          ],
+          "seam_mean": 0.003924121732026148,
+          "interior_mean": 0.003016565501771482
+        },
+        "ORM": {
+          "file": "ArtSource/Textures/MaterialStudy/Corrugated_ORM.png",
+          "sha256": "712a7c77cae304a433283145d5e24d686cbacd08f86b2c0cf9389559e29e9303",
+          "size": [
+            512,
+            512
+          ],
+          "seam_mean": 0.004360702614379086,
+          "interior_mean": 0.005085364625302176
+        }
+      }
+    }
+  },
+  "material_mapping": {
+    "Home": {
+      "ResidentialBrick": "/Game/CitySim/Art/Materials/MI_ResidentialBrick",
+      "HomeSolidDetails": "/Game/CitySim/Art/Materials/M_HomeSolidDetails",
+      "RoofShingles": "/Game/CitySim/Art/Materials/MI_RoofShingles",
+      "HomeWindowOpaque": "/Game/CitySim/Art/Materials/M_HomeWindowOpaque"
+    },
+    "Shop": {
+      "CommercialBrick": "/Game/CitySim/Art/Materials/MI_CommercialBrick",
+      "Roof": "/Game/CitySim/Art/Materials/MI_Roof",
+      "RoofMembrane": "/Game/CitySim/Art/Materials/MI_RoofMembrane",
+      "StoreSignTall": "/Game/CitySim/Art/Materials/MI_StoreSignTall",
+      "BuildingWindowOpaque": "/Game/CitySim/Art/Materials/M_BuildingWindowOpaque"
+    },
+    "Factory": {
+      "IndustrialBrick": "/Game/CitySim/Art/Materials/MI_IndustrialBrick",
+      "Roof": "/Game/CitySim/Art/Materials/MI_Roof",
+      "IndustrialMechanical": "/Game/CitySim/Art/Materials/MI_IndustrialMechanical",
+      "RoofMetal": "/Game/CitySim/Art/Materials/MI_RoofMetal",
+      "BuildingWindowOpaque": "/Game/CitySim/Art/Materials/M_BuildingWindowOpaque"
+    }
+  },
+  "renders": [
+    {
+      "key": "Home_A_Current_iso",
+      "object": "Home_A_Current",
+      "source_object": "Home_A_Current",
+      "group": "Variants",
+      "view": "iso",
+      "category": "Home",
+      "native_mesh": "/Game/CityPreview/Meshes/Home_A_Current",
+      "dimensions_m": [
+        10.559999465942383,
+        13.279997825622559,
+        5.799999713897705
+      ],
+      "triangles": 668,
+      "camera": {
+        "target_m": [
+          0,
+          -0.9,
+          2.2
+        ],
+        "position_m": [
+          23,
+          -32.9,
+          23.2
+        ],
+        "ortho_width_m": 20
+      },
+      "floor_z_m": -0.21499980926513673,
+      "ruler_front_m": -8.599998092651367,
+      "ruler_feet_m": -0.19999980926513672,
+      "overrides": {}
+    },
+    {
+      "key": "Home_A_Current_front",
+      "object": "Home_A_Current",
+      "source_object": "Home_A_Current",
+      "group": "Variants",
+      "view": "front",
+      "category": "Home",
+      "native_mesh": "/Game/CityPreview/Meshes/Home_A_Current",
+      "dimensions_m": [
+        10.559999465942383,
+        13.279997825622559,
+        5.799999713897705
+      ],
+      "triangles": 668,
+      "camera": {
+        "target_m": [
+          0,
+          -0.9,
+          2.2
+        ],
+        "position_m": [
+          0,
+          -40.9,
+          10.2
+        ],
+        "ortho_width_m": 20
+      },
+      "floor_z_m": -0.21499980926513673,
+      "ruler_front_m": -8.599998092651367,
+      "ruler_feet_m": -0.19999980926513672,
+      "overrides": {}
+    },
+    {
+      "key": "Home_A_Current_back",
+      "object": "Home_A_Current",
+      "source_object": "Home_A_Current",
+      "group": "Variants",
+      "view": "back",
+      "category": "Home",
+      "native_mesh": "/Game/CityPreview/Meshes/Home_A_Current",
+      "dimensions_m": [
+        10.559999465942383,
+        13.279997825622559,
+        5.799999713897705
+      ],
+      "triangles": 668,
+      "camera": {
+        "target_m": [
+          0,
+          -0.9,
+          2.2
+        ],
+        "position_m": [
+          -23,
+          31.1,
+          23.2
+        ],
+        "ortho_width_m": 20
+      },
+      "floor_z_m": -0.21499980926513673,
+      "ruler_front_m": -8.599998092651367,
+      "ruler_feet_m": -0.19999980926513672,
+      "overrides": {}
+    },
+    {
+      "key": "Home_B_HipPorch_iso",
+      "object": "Home_B_HipPorch",
+      "source_object": "Home_B_HipPorch",
+      "group": "Variants",
+      "view": "iso",
+      "category": "Home",
+      "native_mesh": "/Game/CityPreview/Meshes/Home_B_HipPorch",
+      "dimensions_m": [
+        10.5600004196167,
+        13.279998779296875,
+        4.799999713897705
+      ],
+      "triangles": 596,
+      "camera": {
+        "target_m": [
+          0,
+          -0.9,
+          2.2
+        ],
+        "position_m": [
+          23,
+          -32.9,
+          23.2
+        ],
+        "ortho_width_m": 20
+      },
+      "floor_z_m": -0.21500000298023225,
+      "ruler_front_m": -8.599998092651367,
+      "ruler_feet_m": -0.20000000298023224,
+      "overrides": {}
+    },
+    {
+      "key": "Home_B_HipPorch_front",
+      "object": "Home_B_HipPorch",
+      "source_object": "Home_B_HipPorch",
+      "group": "Variants",
+      "view": "front",
+      "category": "Home",
+      "native_mesh": "/Game/CityPreview/Meshes/Home_B_HipPorch",
+      "dimensions_m": [
+        10.5600004196167,
+        13.279998779296875,
+        4.799999713897705
+      ],
+      "triangles": 596,
+      "camera": {
+        "target_m": [
+          0,
+          -0.9,
+          2.2
+        ],
+        "position_m": [
+          0,
+          -40.9,
+          10.2
+        ],
+        "ortho_width_m": 20
+      },
+      "floor_z_m": -0.21500000298023225,
+      "ruler_front_m": -8.599998092651367,
+      "ruler_feet_m": -0.20000000298023224,
+      "overrides": {}
+    },
+    {
+      "key": "Home_B_HipPorch_back",
+      "object": "Home_B_HipPorch",
+      "source_object": "Home_B_HipPorch",
+      "group": "Variants",
+      "view": "back",
+      "category": "Home",
+      "native_mesh": "/Game/CityPreview/Meshes/Home_B_HipPorch",
+      "dimensions_m": [
+        10.5600004196167,
+        13.279998779296875,
+        4.799999713897705
+      ],
+      "triangles": 596,
+      "camera": {
+        "target_m": [
+          0,
+          -0.9,
+          2.2
+        ],
+        "position_m": [
+          -23,
+          31.1,
+          23.2
+        ],
+        "ortho_width_m": 20
+      },
+      "floor_z_m": -0.21500000298023225,
+      "ruler_front_m": -8.599998092651367,
+      "ruler_feet_m": -0.20000000298023224,
+      "overrides": {}
+    },
+    {
+      "key": "Home_C_CrossGable_iso",
+      "object": "Home_C_CrossGable",
+      "source_object": "Home_C_CrossGable",
+      "group": "Variants",
+      "view": "iso",
+      "category": "Home",
+      "native_mesh": "/Game/CityPreview/Meshes/Home_C_CrossGable",
+      "dimensions_m": [
+        10.5600004196167,
+        13.279998779296875,
+        4.799999713897705
+      ],
+      "triangles": 596,
+      "camera": {
+        "target_m": [
+          0,
+          -0.9,
+          2.2
+        ],
+        "position_m": [
+          23,
+          -32.9,
+          23.2
+        ],
+        "ortho_width_m": 20
+      },
+      "floor_z_m": -0.21500000298023225,
+      "ruler_front_m": -8.599998092651367,
+      "ruler_feet_m": -0.20000000298023224,
+      "overrides": {}
+    },
+    {
+      "key": "Home_C_CrossGable_front",
+      "object": "Home_C_CrossGable",
+      "source_object": "Home_C_CrossGable",
+      "group": "Variants",
+      "view": "front",
+      "category": "Home",
+      "native_mesh": "/Game/CityPreview/Meshes/Home_C_CrossGable",
+      "dimensions_m": [
+        10.5600004196167,
+        13.279998779296875,
+        4.799999713897705
+      ],
+      "triangles": 596,
+      "camera": {
+        "target_m": [
+          0,
+          -0.9,
+          2.2
+        ],
+        "position_m": [
+          0,
+          -40.9,
+          10.2
+        ],
+        "ortho_width_m": 20
+      },
+      "floor_z_m": -0.21500000298023225,
+      "ruler_front_m": -8.599998092651367,
+      "ruler_feet_m": -0.20000000298023224,
+      "overrides": {}
+    },
+    {
+      "key": "Home_C_CrossGable_back",
+      "object": "Home_C_CrossGable",
+      "source_object": "Home_C_CrossGable",
+      "group": "Variants",
+      "view": "back",
+      "category": "Home",
+      "native_mesh": "/Game/CityPreview/Meshes/Home_C_CrossGable",
+      "dimensions_m": [
+        10.5600004196167,
+        13.279998779296875,
+        4.799999713897705
+      ],
+      "triangles": 596,
+      "camera": {
+        "target_m": [
+          0,
+          -0.9,
+          2.2
+        ],
+        "position_m": [
+          -23,
+          31.1,
+          23.2
+        ],
+        "ortho_width_m": 20
+      },
+      "floor_z_m": -0.21500000298023225,
+      "ruler_front_m": -8.599998092651367,
+      "ruler_feet_m": -0.20000000298023224,
+      "overrides": {}
+    },
+    {
+      "key": "Home_D_Veranda_iso",
+      "object": "Home_D_Veranda",
+      "source_object": "Home_D_Veranda",
+      "group": "Variants",
+      "view": "iso",
+      "category": "Home",
+      "native_mesh": "/Game/CityPreview/Meshes/Home_D_Veranda",
+      "dimensions_m": [
+        10.5600004196167,
+        13.279998779296875,
+        4.799999713897705
+      ],
+      "triangles": 626,
+      "camera": {
+        "target_m": [
+          0,
+          -0.9,
+          2.2
+        ],
+        "position_m": [
+          23,
+          -32.9,
+          23.2
+        ],
+        "ortho_width_m": 20
+      },
+      "floor_z_m": -0.21500000298023225,
+      "ruler_front_m": -8.599998092651367,
+      "ruler_feet_m": -0.20000000298023224,
+      "overrides": {}
+    },
+    {
+      "key": "Home_D_Veranda_front",
+      "object": "Home_D_Veranda",
+      "source_object": "Home_D_Veranda",
+      "group": "Variants",
+      "view": "front",
+      "category": "Home",
+      "native_mesh": "/Game/CityPreview/Meshes/Home_D_Veranda",
+      "dimensions_m": [
+        10.5600004196167,
+        13.279998779296875,
+        4.799999713897705
+      ],
+      "triangles": 626,
+      "camera": {
+        "target_m": [
+          0,
+          -0.9,
+          2.2
+        ],
+        "position_m": [
+          0,
+          -40.9,
+          10.2
+        ],
+        "ortho_width_m": 20
+      },
+      "floor_z_m": -0.21500000298023225,
+      "ruler_front_m": -8.599998092651367,
+      "ruler_feet_m": -0.20000000298023224,
+      "overrides": {}
+    },
+    {
+      "key": "Home_D_Veranda_back",
+      "object": "Home_D_Veranda",
+      "source_object": "Home_D_Veranda",
+      "group": "Variants",
+      "view": "back",
+      "category": "Home",
+      "native_mesh": "/Game/CityPreview/Meshes/Home_D_Veranda",
+      "dimensions_m": [
+        10.5600004196167,
+        13.279998779296875,
+        4.799999713897705
+      ],
+      "triangles": 626,
+      "camera": {
+        "target_m": [
+          0,
+          -0.9,
+          2.2
+        ],
+        "position_m": [
+          -23,
+          31.1,
+          23.2
+        ],
+        "ortho_width_m": 20
+      },
+      "floor_z_m": -0.21500000298023225,
+      "ruler_front_m": -8.599998092651367,
+      "ruler_feet_m": -0.20000000298023224,
+      "overrides": {}
+    },
+    {
+      "key": "Shop_A_Current_iso",
+      "object": "Shop_A_Current",
+      "source_object": "Shop_A_Current",
+      "group": "Variants",
+      "view": "iso",
+      "category": "Shop",
+      "native_mesh": "/Game/CityPreview/Meshes/Shop_A_Current",
+      "dimensions_m": [
+        15.429999351501465,
+        17.614999771118164,
+        12.699999809265137
+      ],
+      "triangles": 704,
+      "camera": {
+        "target_m": [
+          0,
+          -0.9,
+          5
+        ],
+        "position_m": [
+          23,
+          -32.9,
+          26
+        ],
+        "ortho_width_m": 28
+      },
+      "floor_z_m": -0.015,
+      "ruler_front_m": -10.999999618530273,
+      "ruler_feet_m": 0.0,
+      "overrides": {}
+    },
+    {
+      "key": "Shop_A_Current_front",
+      "object": "Shop_A_Current",
+      "source_object": "Shop_A_Current",
+      "group": "Variants",
+      "view": "front",
+      "category": "Shop",
+      "native_mesh": "/Game/CityPreview/Meshes/Shop_A_Current",
+      "dimensions_m": [
+        15.429999351501465,
+        17.614999771118164,
+        12.699999809265137
+      ],
+      "triangles": 704,
+      "camera": {
+        "target_m": [
+          0,
+          -0.9,
+          5
+        ],
+        "position_m": [
+          0,
+          -40.9,
+          13
+        ],
+        "ortho_width_m": 28
+      },
+      "floor_z_m": -0.015,
+      "ruler_front_m": -10.999999618530273,
+      "ruler_feet_m": 0.0,
+      "overrides": {}
+    },
+    {
+      "key": "Shop_A_Current_back",
+      "object": "Shop_A_Current",
+      "source_object": "Shop_A_Current",
+      "group": "Variants",
+      "view": "back",
+      "category": "Shop",
+      "native_mesh": "/Game/CityPreview/Meshes/Shop_A_Current",
+      "dimensions_m": [
+        15.429999351501465,
+        17.614999771118164,
+        12.699999809265137
+      ],
+      "triangles": 704,
+      "camera": {
+        "target_m": [
+          0,
+          -0.9,
+          5
+        ],
+        "position_m": [
+          -23,
+          31.1,
+          26
+        ],
+        "ortho_width_m": 28
+      },
+      "floor_z_m": -0.015,
+      "ruler_front_m": -10.999999618530273,
+      "ruler_feet_m": 0.0,
+      "overrides": {}
+    },
+    {
+      "key": "Shop_A_Current_entrance",
+      "object": "Shop_A_Current",
+      "source_object": "Shop_A_Current",
+      "group": "Variants",
+      "view": "entrance",
+      "category": "Shop",
+      "native_mesh": "/Game/CityPreview/Meshes/Shop_A_Current",
+      "dimensions_m": [
+        15.429999351501465,
+        17.614999771118164,
+        12.699999809265137
+      ],
+      "triangles": 704,
+      "camera": {
+        "target_m": [
+          0,
+          -7.7,
+          1.85
+        ],
+        "position_m": [
+          2,
+          -25.7,
+          5.85
+        ],
+        "ortho_width_m": 7.1
+      },
+      "floor_z_m": -0.015,
+      "ruler_front_m": -10.999999618530273,
+      "ruler_feet_m": 0.0,
+      "overrides": {}
+    },
+    {
+      "key": "Shop_B_MarketAwnings_iso",
+      "object": "Shop_B_MarketAwnings",
+      "source_object": "Shop_B_MarketAwnings",
+      "group": "Variants",
+      "view": "iso",
+      "category": "Shop",
+      "native_mesh": "/Game/CityPreview/Meshes/Shop_B_MarketAwnings",
+      "dimensions_m": [
+        15.429999351501465,
+        17.614999771118164,
+        12.0
+      ],
+      "triangles": 874,
+      "camera": {
+        "target_m": [
+          0,
+          -0.9,
+          5
+        ],
+        "position_m": [
+          23,
+          -32.9,
+          26
+        ],
+        "ortho_width_m": 28
+      },
+      "floor_z_m": -0.015,
+      "ruler_front_m": -10.999999618530273,
+      "ruler_feet_m": 0.0,
+      "overrides": {}
+    },
+    {
+      "key": "Shop_B_MarketAwnings_front",
+      "object": "Shop_B_MarketAwnings",
+      "source_object": "Shop_B_MarketAwnings",
+      "group": "Variants",
+      "view": "front",
+      "category": "Shop",
+      "native_mesh": "/Game/CityPreview/Meshes/Shop_B_MarketAwnings",
+      "dimensions_m": [
+        15.429999351501465,
+        17.614999771118164,
+        12.0
+      ],
+      "triangles": 874,
+      "camera": {
+        "target_m": [
+          0,
+          -0.9,
+          5
+        ],
+        "position_m": [
+          0,
+          -40.9,
+          13
+        ],
+        "ortho_width_m": 28
+      },
+      "floor_z_m": -0.015,
+      "ruler_front_m": -10.999999618530273,
+      "ruler_feet_m": 0.0,
+      "overrides": {}
+    },
+    {
+      "key": "Shop_B_MarketAwnings_back",
+      "object": "Shop_B_MarketAwnings",
+      "source_object": "Shop_B_MarketAwnings",
+      "group": "Variants",
+      "view": "back",
+      "category": "Shop",
+      "native_mesh": "/Game/CityPreview/Meshes/Shop_B_MarketAwnings",
+      "dimensions_m": [
+        15.429999351501465,
+        17.614999771118164,
+        12.0
+      ],
+      "triangles": 874,
+      "camera": {
+        "target_m": [
+          0,
+          -0.9,
+          5
+        ],
+        "position_m": [
+          -23,
+          31.1,
+          26
+        ],
+        "ortho_width_m": 28
+      },
+      "floor_z_m": -0.015,
+      "ruler_front_m": -10.999999618530273,
+      "ruler_feet_m": 0.0,
+      "overrides": {}
+    },
+    {
+      "key": "Shop_B_MarketAwnings_entrance",
+      "object": "Shop_B_MarketAwnings",
+      "source_object": "Shop_B_MarketAwnings",
+      "group": "Variants",
+      "view": "entrance",
+      "category": "Shop",
+      "native_mesh": "/Game/CityPreview/Meshes/Shop_B_MarketAwnings",
+      "dimensions_m": [
+        15.429999351501465,
+        17.614999771118164,
+        12.0
+      ],
+      "triangles": 874,
+      "camera": {
+        "target_m": [
+          0,
+          -7.7,
+          1.85
+        ],
+        "position_m": [
+          2,
+          -25.7,
+          5.85
+        ],
+        "ortho_width_m": 7.1
+      },
+      "floor_z_m": -0.015,
+      "ruler_front_m": -10.999999618530273,
+      "ruler_feet_m": 0.0,
+      "overrides": {}
+    },
+    {
+      "key": "Shop_C_SteppedFront_iso",
+      "object": "Shop_C_SteppedFront",
+      "source_object": "Shop_C_SteppedFront",
+      "group": "Variants",
+      "view": "iso",
+      "category": "Shop",
+      "native_mesh": "/Game/CityPreview/Meshes/Shop_C_SteppedFront",
+      "dimensions_m": [
+        15.429999351501465,
+        17.614999771118164,
+        11.600000381469727
+      ],
+      "triangles": 742,
+      "camera": {
+        "target_m": [
+          0,
+          -0.9,
+          5
+        ],
+        "position_m": [
+          23,
+          -32.9,
+          26
+        ],
+        "ortho_width_m": 28
+      },
+      "floor_z_m": -0.015,
+      "ruler_front_m": -10.999999618530273,
+      "ruler_feet_m": 0.0,
+      "overrides": {}
+    },
+    {
+      "key": "Shop_C_SteppedFront_front",
+      "object": "Shop_C_SteppedFront",
+      "source_object": "Shop_C_SteppedFront",
+      "group": "Variants",
+      "view": "front",
+      "category": "Shop",
+      "native_mesh": "/Game/CityPreview/Meshes/Shop_C_SteppedFront",
+      "dimensions_m": [
+        15.429999351501465,
+        17.614999771118164,
+        11.600000381469727
+      ],
+      "triangles": 742,
+      "camera": {
+        "target_m": [
+          0,
+          -0.9,
+          5
+        ],
+        "position_m": [
+          0,
+          -40.9,
+          13
+        ],
+        "ortho_width_m": 28
+      },
+      "floor_z_m": -0.015,
+      "ruler_front_m": -10.999999618530273,
+      "ruler_feet_m": 0.0,
+      "overrides": {}
+    },
+    {
+      "key": "Shop_C_SteppedFront_back",
+      "object": "Shop_C_SteppedFront",
+      "source_object": "Shop_C_SteppedFront",
+      "group": "Variants",
+      "view": "back",
+      "category": "Shop",
+      "native_mesh": "/Game/CityPreview/Meshes/Shop_C_SteppedFront",
+      "dimensions_m": [
+        15.429999351501465,
+        17.614999771118164,
+        11.600000381469727
+      ],
+      "triangles": 742,
+      "camera": {
+        "target_m": [
+          0,
+          -0.9,
+          5
+        ],
+        "position_m": [
+          -23,
+          31.1,
+          26
+        ],
+        "ortho_width_m": 28
+      },
+      "floor_z_m": -0.015,
+      "ruler_front_m": -10.999999618530273,
+      "ruler_feet_m": 0.0,
+      "overrides": {}
+    },
+    {
+      "key": "Shop_C_SteppedFront_entrance",
+      "object": "Shop_C_SteppedFront",
+      "source_object": "Shop_C_SteppedFront",
+      "group": "Variants",
+      "view": "entrance",
+      "category": "Shop",
+      "native_mesh": "/Game/CityPreview/Meshes/Shop_C_SteppedFront",
+      "dimensions_m": [
+        15.429999351501465,
+        17.614999771118164,
+        11.600000381469727
+      ],
+      "triangles": 742,
+      "camera": {
+        "target_m": [
+          0,
+          -7.7,
+          1.85
+        ],
+        "position_m": [
+          2,
+          -25.7,
+          5.85
+        ],
+        "ortho_width_m": 7.1
+      },
+      "floor_z_m": -0.015,
+      "ruler_front_m": -10.999999618530273,
+      "ruler_feet_m": 0.0,
+      "overrides": {}
+    },
+    {
+      "key": "Shop_D_Canopy_iso",
+      "object": "Shop_D_Canopy",
+      "source_object": "Shop_D_Canopy",
+      "group": "Variants",
+      "view": "iso",
+      "category": "Shop",
+      "native_mesh": "/Game/CityPreview/Meshes/Shop_D_Canopy",
+      "dimensions_m": [
+        15.429999351501465,
+        17.614999771118164,
+        12.0
+      ],
+      "triangles": 794,
+      "camera": {
+        "target_m": [
+          0,
+          -0.9,
+          5
+        ],
+        "position_m": [
+          23,
+          -32.9,
+          26
+        ],
+        "ortho_width_m": 28
+      },
+      "floor_z_m": -0.015,
+      "ruler_front_m": -10.999999618530273,
+      "ruler_feet_m": 0.0,
+      "overrides": {}
+    },
+    {
+      "key": "Shop_D_Canopy_front",
+      "object": "Shop_D_Canopy",
+      "source_object": "Shop_D_Canopy",
+      "group": "Variants",
+      "view": "front",
+      "category": "Shop",
+      "native_mesh": "/Game/CityPreview/Meshes/Shop_D_Canopy",
+      "dimensions_m": [
+        15.429999351501465,
+        17.614999771118164,
+        12.0
+      ],
+      "triangles": 794,
+      "camera": {
+        "target_m": [
+          0,
+          -0.9,
+          5
+        ],
+        "position_m": [
+          0,
+          -40.9,
+          13
+        ],
+        "ortho_width_m": 28
+      },
+      "floor_z_m": -0.015,
+      "ruler_front_m": -10.999999618530273,
+      "ruler_feet_m": 0.0,
+      "overrides": {}
+    },
+    {
+      "key": "Shop_D_Canopy_back",
+      "object": "Shop_D_Canopy",
+      "source_object": "Shop_D_Canopy",
+      "group": "Variants",
+      "view": "back",
+      "category": "Shop",
+      "native_mesh": "/Game/CityPreview/Meshes/Shop_D_Canopy",
+      "dimensions_m": [
+        15.429999351501465,
+        17.614999771118164,
+        12.0
+      ],
+      "triangles": 794,
+      "camera": {
+        "target_m": [
+          0,
+          -0.9,
+          5
+        ],
+        "position_m": [
+          -23,
+          31.1,
+          26
+        ],
+        "ortho_width_m": 28
+      },
+      "floor_z_m": -0.015,
+      "ruler_front_m": -10.999999618530273,
+      "ruler_feet_m": 0.0,
+      "overrides": {}
+    },
+    {
+      "key": "Shop_D_Canopy_entrance",
+      "object": "Shop_D_Canopy",
+      "source_object": "Shop_D_Canopy",
+      "group": "Variants",
+      "view": "entrance",
+      "category": "Shop",
+      "native_mesh": "/Game/CityPreview/Meshes/Shop_D_Canopy",
+      "dimensions_m": [
+        15.429999351501465,
+        17.614999771118164,
+        12.0
+      ],
+      "triangles": 794,
+      "camera": {
+        "target_m": [
+          0,
+          -7.7,
+          1.85
+        ],
+        "position_m": [
+          2,
+          -25.7,
+          5.85
+        ],
+        "ortho_width_m": 7.1
+      },
+      "floor_z_m": -0.015,
+      "ruler_front_m": -10.999999618530273,
+      "ruler_feet_m": 0.0,
+      "overrides": {}
+    },
+    {
+      "key": "Factory_A_Current_iso",
+      "object": "Factory_A_Current",
+      "source_object": "Factory_A_Current",
+      "group": "Variants",
+      "view": "iso",
+      "category": "Factory",
+      "native_mesh": "/Game/CityPreview/Meshes/Factory_A_Current",
+      "dimensions_m": [
+        16.0,
+        17.899999618530273,
+        17.0
+      ],
+      "triangles": 1058,
+      "camera": {
+        "target_m": [
+          0,
+          -0.9,
+          7.4
+        ],
+        "position_m": [
+          23,
+          -32.9,
+          28.4
+        ],
+        "ortho_width_m": 32
+      },
+      "floor_z_m": -0.015,
+      "ruler_front_m": -10.999999618530273,
+      "ruler_feet_m": 0.0,
+      "overrides": {}
+    },
+    {
+      "key": "Factory_A_Current_front",
+      "object": "Factory_A_Current",
+      "source_object": "Factory_A_Current",
+      "group": "Variants",
+      "view": "front",
+      "category": "Factory",
+      "native_mesh": "/Game/CityPreview/Meshes/Factory_A_Current",
+      "dimensions_m": [
+        16.0,
+        17.899999618530273,
+        17.0
+      ],
+      "triangles": 1058,
+      "camera": {
+        "target_m": [
+          0,
+          -0.9,
+          7.4
+        ],
+        "position_m": [
+          0,
+          -40.9,
+          15.4
+        ],
+        "ortho_width_m": 32
+      },
+      "floor_z_m": -0.015,
+      "ruler_front_m": -10.999999618530273,
+      "ruler_feet_m": 0.0,
+      "overrides": {}
+    },
+    {
+      "key": "Factory_A_Current_back",
+      "object": "Factory_A_Current",
+      "source_object": "Factory_A_Current",
+      "group": "Variants",
+      "view": "back",
+      "category": "Factory",
+      "native_mesh": "/Game/CityPreview/Meshes/Factory_A_Current",
+      "dimensions_m": [
+        16.0,
+        17.899999618530273,
+        17.0
+      ],
+      "triangles": 1058,
+      "camera": {
+        "target_m": [
+          0,
+          -0.9,
+          7.4
+        ],
+        "position_m": [
+          -23,
+          31.1,
+          28.4
+        ],
+        "ortho_width_m": 32
+      },
+      "floor_z_m": -0.015,
+      "ruler_front_m": -10.999999618530273,
+      "ruler_feet_m": 0.0,
+      "overrides": {}
+    },
+    {
+      "key": "Factory_A_Current_entrance",
+      "object": "Factory_A_Current",
+      "source_object": "Factory_A_Current",
+      "group": "Variants",
+      "view": "entrance",
+      "category": "Factory",
+      "native_mesh": "/Game/CityPreview/Meshes/Factory_A_Current",
+      "dimensions_m": [
+        16.0,
+        17.899999618530273,
+        17.0
+      ],
+      "triangles": 1058,
+      "camera": {
+        "target_m": [
+          0.25,
+          -7.7,
+          1.85
+        ],
+        "position_m": [
+          2.25,
+          -25.7,
+          5.85
+        ],
+        "ortho_width_m": 13.5
+      },
+      "floor_z_m": -0.015,
+      "ruler_front_m": -10.999999618530273,
+      "ruler_feet_m": 0.0,
+      "overrides": {}
+    },
+    {
+      "key": "Factory_B_Sawtooth_iso",
+      "object": "Factory_B_Sawtooth",
+      "source_object": "Factory_B_Sawtooth",
+      "group": "Variants",
+      "view": "iso",
+      "category": "Factory",
+      "native_mesh": "/Game/CityPreview/Meshes/Factory_B_Sawtooth",
+      "dimensions_m": [
+        16.0,
+        18.0,
+        16.100000381469727
+      ],
+      "triangles": 1416,
+      "camera": {
+        "target_m": [
+          0,
+          -0.9,
+          7.4
+        ],
+        "position_m": [
+          23,
+          -32.9,
+          28.4
+        ],
+        "ortho_width_m": 32
+      },
+      "floor_z_m": -0.015,
+      "ruler_front_m": -10.999999618530273,
+      "ruler_feet_m": 0.0,
+      "overrides": {}
+    },
+    {
+      "key": "Factory_B_Sawtooth_front",
+      "object": "Factory_B_Sawtooth",
+      "source_object": "Factory_B_Sawtooth",
+      "group": "Variants",
+      "view": "front",
+      "category": "Factory",
+      "native_mesh": "/Game/CityPreview/Meshes/Factory_B_Sawtooth",
+      "dimensions_m": [
+        16.0,
+        18.0,
+        16.100000381469727
+      ],
+      "triangles": 1416,
+      "camera": {
+        "target_m": [
+          0,
+          -0.9,
+          7.4
+        ],
+        "position_m": [
+          0,
+          -40.9,
+          15.4
+        ],
+        "ortho_width_m": 32
+      },
+      "floor_z_m": -0.015,
+      "ruler_front_m": -10.999999618530273,
+      "ruler_feet_m": 0.0,
+      "overrides": {}
+    },
+    {
+      "key": "Factory_B_Sawtooth_back",
+      "object": "Factory_B_Sawtooth",
+      "source_object": "Factory_B_Sawtooth",
+      "group": "Variants",
+      "view": "back",
+      "category": "Factory",
+      "native_mesh": "/Game/CityPreview/Meshes/Factory_B_Sawtooth",
+      "dimensions_m": [
+        16.0,
+        18.0,
+        16.100000381469727
+      ],
+      "triangles": 1416,
+      "camera": {
+        "target_m": [
+          0,
+          -0.9,
+          7.4
+        ],
+        "position_m": [
+          -23,
+          31.1,
+          28.4
+        ],
+        "ortho_width_m": 32
+      },
+      "floor_z_m": -0.015,
+      "ruler_front_m": -10.999999618530273,
+      "ruler_feet_m": 0.0,
+      "overrides": {}
+    },
+    {
+      "key": "Factory_B_Sawtooth_entrance",
+      "object": "Factory_B_Sawtooth",
+      "source_object": "Factory_B_Sawtooth",
+      "group": "Variants",
+      "view": "entrance",
+      "category": "Factory",
+      "native_mesh": "/Game/CityPreview/Meshes/Factory_B_Sawtooth",
+      "dimensions_m": [
+        16.0,
+        18.0,
+        16.100000381469727
+      ],
+      "triangles": 1416,
+      "camera": {
+        "target_m": [
+          0.25,
+          -7.7,
+          1.85
+        ],
+        "position_m": [
+          2.25,
+          -25.7,
+          5.85
+        ],
+        "ortho_width_m": 13.5
+      },
+      "floor_z_m": -0.015,
+      "ruler_front_m": -10.999999618530273,
+      "ruler_feet_m": 0.0,
+      "overrides": {}
+    },
+    {
+      "key": "Factory_C_TwinGable_iso",
+      "object": "Factory_C_TwinGable",
+      "source_object": "Factory_C_TwinGable",
+      "group": "Variants",
+      "view": "iso",
+      "category": "Factory",
+      "native_mesh": "/Game/CityPreview/Meshes/Factory_C_TwinGable",
+      "dimensions_m": [
+        16.0,
+        17.899999618530273,
+        14.760000228881836
+      ],
+      "triangles": 1266,
+      "camera": {
+        "target_m": [
+          0,
+          -0.9,
+          7.4
+        ],
+        "position_m": [
+          23,
+          -32.9,
+          28.4
+        ],
+        "ortho_width_m": 32
+      },
+      "floor_z_m": -0.015,
+      "ruler_front_m": -10.999999618530273,
+      "ruler_feet_m": 0.0,
+      "overrides": {}
+    },
+    {
+      "key": "Factory_C_TwinGable_front",
+      "object": "Factory_C_TwinGable",
+      "source_object": "Factory_C_TwinGable",
+      "group": "Variants",
+      "view": "front",
+      "category": "Factory",
+      "native_mesh": "/Game/CityPreview/Meshes/Factory_C_TwinGable",
+      "dimensions_m": [
+        16.0,
+        17.899999618530273,
+        14.760000228881836
+      ],
+      "triangles": 1266,
+      "camera": {
+        "target_m": [
+          0,
+          -0.9,
+          7.4
+        ],
+        "position_m": [
+          0,
+          -40.9,
+          15.4
+        ],
+        "ortho_width_m": 32
+      },
+      "floor_z_m": -0.015,
+      "ruler_front_m": -10.999999618530273,
+      "ruler_feet_m": 0.0,
+      "overrides": {}
+    },
+    {
+      "key": "Factory_C_TwinGable_back",
+      "object": "Factory_C_TwinGable",
+      "source_object": "Factory_C_TwinGable",
+      "group": "Variants",
+      "view": "back",
+      "category": "Factory",
+      "native_mesh": "/Game/CityPreview/Meshes/Factory_C_TwinGable",
+      "dimensions_m": [
+        16.0,
+        17.899999618530273,
+        14.760000228881836
+      ],
+      "triangles": 1266,
+      "camera": {
+        "target_m": [
+          0,
+          -0.9,
+          7.4
+        ],
+        "position_m": [
+          -23,
+          31.1,
+          28.4
+        ],
+        "ortho_width_m": 32
+      },
+      "floor_z_m": -0.015,
+      "ruler_front_m": -10.999999618530273,
+      "ruler_feet_m": 0.0,
+      "overrides": {}
+    },
+    {
+      "key": "Factory_C_TwinGable_entrance",
+      "object": "Factory_C_TwinGable",
+      "source_object": "Factory_C_TwinGable",
+      "group": "Variants",
+      "view": "entrance",
+      "category": "Factory",
+      "native_mesh": "/Game/CityPreview/Meshes/Factory_C_TwinGable",
+      "dimensions_m": [
+        16.0,
+        17.899999618530273,
+        14.760000228881836
+      ],
+      "triangles": 1266,
+      "camera": {
+        "target_m": [
+          0.25,
+          -7.7,
+          1.85
+        ],
+        "position_m": [
+          2.25,
+          -25.7,
+          5.85
+        ],
+        "ortho_width_m": 13.5
+      },
+      "floor_z_m": -0.015,
+      "ruler_front_m": -10.999999618530273,
+      "ruler_feet_m": 0.0,
+      "overrides": {}
+    },
+    {
+      "key": "Factory_D_Clerestory_iso",
+      "object": "Factory_D_Clerestory",
+      "source_object": "Factory_D_Clerestory",
+      "group": "Variants",
+      "view": "iso",
+      "category": "Factory",
+      "native_mesh": "/Game/CityPreview/Meshes/Factory_D_Clerestory",
+      "dimensions_m": [
+        16.0,
+        17.899999618530273,
+        12.5
+      ],
+      "triangles": 1638,
+      "camera": {
+        "target_m": [
+          0,
+          -0.9,
+          7.4
+        ],
+        "position_m": [
+          23,
+          -32.9,
+          28.4
+        ],
+        "ortho_width_m": 32
+      },
+      "floor_z_m": -0.015,
+      "ruler_front_m": -10.999999618530273,
+      "ruler_feet_m": 0.0,
+      "overrides": {}
+    },
+    {
+      "key": "Factory_D_Clerestory_front",
+      "object": "Factory_D_Clerestory",
+      "source_object": "Factory_D_Clerestory",
+      "group": "Variants",
+      "view": "front",
+      "category": "Factory",
+      "native_mesh": "/Game/CityPreview/Meshes/Factory_D_Clerestory",
+      "dimensions_m": [
+        16.0,
+        17.899999618530273,
+        12.5
+      ],
+      "triangles": 1638,
+      "camera": {
+        "target_m": [
+          0,
+          -0.9,
+          7.4
+        ],
+        "position_m": [
+          0,
+          -40.9,
+          15.4
+        ],
+        "ortho_width_m": 32
+      },
+      "floor_z_m": -0.015,
+      "ruler_front_m": -10.999999618530273,
+      "ruler_feet_m": 0.0,
+      "overrides": {}
+    },
+    {
+      "key": "Factory_D_Clerestory_back",
+      "object": "Factory_D_Clerestory",
+      "source_object": "Factory_D_Clerestory",
+      "group": "Variants",
+      "view": "back",
+      "category": "Factory",
+      "native_mesh": "/Game/CityPreview/Meshes/Factory_D_Clerestory",
+      "dimensions_m": [
+        16.0,
+        17.899999618530273,
+        12.5
+      ],
+      "triangles": 1638,
+      "camera": {
+        "target_m": [
+          0,
+          -0.9,
+          7.4
+        ],
+        "position_m": [
+          -23,
+          31.1,
+          28.4
+        ],
+        "ortho_width_m": 32
+      },
+      "floor_z_m": -0.015,
+      "ruler_front_m": -10.999999618530273,
+      "ruler_feet_m": 0.0,
+      "overrides": {}
+    },
+    {
+      "key": "Factory_D_Clerestory_entrance",
+      "object": "Factory_D_Clerestory",
+      "source_object": "Factory_D_Clerestory",
+      "group": "Variants",
+      "view": "entrance",
+      "category": "Factory",
+      "native_mesh": "/Game/CityPreview/Meshes/Factory_D_Clerestory",
+      "dimensions_m": [
+        16.0,
+        17.899999618530273,
+        12.5
+      ],
+      "triangles": 1638,
+      "camera": {
+        "target_m": [
+          0.25,
+          -7.7,
+          1.85
+        ],
+        "position_m": [
+          2.25,
+          -25.7,
+          5.85
+        ],
+        "ortho_width_m": 13.5
+      },
+      "floor_z_m": -0.015,
+      "ruler_front_m": -10.999999618530273,
+      "ruler_feet_m": 0.0,
+      "overrides": {}
+    },
+    {
+      "key": "Home_A_Brick_iso",
+      "object": "Home_A_Brick",
+      "source_object": "Home_C_CrossGable",
+      "group": "Materials",
+      "label": "Brick reference",
+      "view": "iso",
+      "category": "Home",
+      "native_mesh": "/Game/CityPreview/Meshes/Home_C_CrossGable",
+      "dimensions_m": [
+        10.5600004196167,
+        13.279998779296875,
+        4.799999713897705
+      ],
+      "triangles": 596,
+      "camera": {
+        "target_m": [
+          0,
+          -0.9,
+          2.2
+        ],
+        "position_m": [
+          23,
+          -32.9,
+          23.2
+        ],
+        "ortho_width_m": 20
+      },
+      "floor_z_m": -0.21500000298023225,
+      "ruler_front_m": -8.599998092651367,
+      "ruler_feet_m": -0.20000000298023224,
+      "overrides": {}
+    },
+    {
+      "key": "Home_A_Brick_front",
+      "object": "Home_A_Brick",
+      "source_object": "Home_C_CrossGable",
+      "group": "Materials",
+      "label": "Brick reference",
+      "view": "front",
+      "category": "Home",
+      "native_mesh": "/Game/CityPreview/Meshes/Home_C_CrossGable",
+      "dimensions_m": [
+        10.5600004196167,
+        13.279998779296875,
+        4.799999713897705
+      ],
+      "triangles": 596,
+      "camera": {
+        "target_m": [
+          0,
+          -0.9,
+          2.2
+        ],
+        "position_m": [
+          0,
+          -40.9,
+          10.2
+        ],
+        "ortho_width_m": 20
+      },
+      "floor_z_m": -0.21500000298023225,
+      "ruler_front_m": -8.599998092651367,
+      "ruler_feet_m": -0.20000000298023224,
+      "overrides": {}
+    },
+    {
+      "key": "Home_B_Timber_iso",
+      "object": "Home_B_Timber",
+      "source_object": "Home_B_Timber",
+      "group": "Materials",
+      "label": "Cedar",
+      "view": "iso",
+      "category": "Home",
+      "native_mesh": "/Game/CityPreview/Meshes/Home_C_CrossGable",
+      "dimensions_m": [
+        10.5600004196167,
+        13.279998779296875,
+        4.799999713897705
+      ],
+      "triangles": 596,
+      "camera": {
+        "target_m": [
+          0,
+          -0.9,
+          2.2
+        ],
+        "position_m": [
+          23,
+          -32.9,
+          23.2
+        ],
+        "ortho_width_m": 20
+      },
+      "floor_z_m": -0.21500000298023225,
+      "ruler_front_m": -8.599998092651367,
+      "ruler_feet_m": -0.20000000298023224,
+      "overrides": {
+        "ResidentialBrick": "/Game/CityPreview/Materials/M_Home_Timber"
+      }
+    },
+    {
+      "key": "Home_B_Timber_front",
+      "object": "Home_B_Timber",
+      "source_object": "Home_B_Timber",
+      "group": "Materials",
+      "label": "Cedar",
+      "view": "front",
+      "category": "Home",
+      "native_mesh": "/Game/CityPreview/Meshes/Home_C_CrossGable",
+      "dimensions_m": [
+        10.5600004196167,
+        13.279998779296875,
+        4.799999713897705
+      ],
+      "triangles": 596,
+      "camera": {
+        "target_m": [
+          0,
+          -0.9,
+          2.2
+        ],
+        "position_m": [
+          0,
+          -40.9,
+          10.2
+        ],
+        "ortho_width_m": 20
+      },
+      "floor_z_m": -0.21500000298023225,
+      "ruler_front_m": -8.599998092651367,
+      "ruler_feet_m": -0.20000000298023224,
+      "overrides": {
+        "ResidentialBrick": "/Game/CityPreview/Materials/M_Home_Timber"
+      }
+    },
+    {
+      "key": "Home_C_Clapboard_iso",
+      "object": "Home_C_Clapboard",
+      "source_object": "Home_C_Clapboard",
+      "group": "Materials",
+      "label": "Sage siding",
+      "view": "iso",
+      "category": "Home",
+      "native_mesh": "/Game/CityPreview/Meshes/Home_C_CrossGable",
+      "dimensions_m": [
+        10.5600004196167,
+        13.279998779296875,
+        4.799999713897705
+      ],
+      "triangles": 596,
+      "camera": {
+        "target_m": [
+          0,
+          -0.9,
+          2.2
+        ],
+        "position_m": [
+          23,
+          -32.9,
+          23.2
+        ],
+        "ortho_width_m": 20
+      },
+      "floor_z_m": -0.21500000298023225,
+      "ruler_front_m": -8.599998092651367,
+      "ruler_feet_m": -0.20000000298023224,
+      "overrides": {
+        "ResidentialBrick": "/Game/CityPreview/Materials/M_Home_Clapboard"
+      }
+    },
+    {
+      "key": "Home_C_Clapboard_front",
+      "object": "Home_C_Clapboard",
+      "source_object": "Home_C_Clapboard",
+      "group": "Materials",
+      "label": "Sage siding",
+      "view": "front",
+      "category": "Home",
+      "native_mesh": "/Game/CityPreview/Meshes/Home_C_CrossGable",
+      "dimensions_m": [
+        10.5600004196167,
+        13.279998779296875,
+        4.799999713897705
+      ],
+      "triangles": 596,
+      "camera": {
+        "target_m": [
+          0,
+          -0.9,
+          2.2
+        ],
+        "position_m": [
+          0,
+          -40.9,
+          10.2
+        ],
+        "ortho_width_m": 20
+      },
+      "floor_z_m": -0.21500000298023225,
+      "ruler_front_m": -8.599998092651367,
+      "ruler_feet_m": -0.20000000298023224,
+      "overrides": {
+        "ResidentialBrick": "/Game/CityPreview/Materials/M_Home_Clapboard"
+      }
+    },
+    {
+      "key": "Home_D_Corrugated_iso",
+      "object": "Home_D_Corrugated",
+      "source_object": "Home_D_Corrugated",
+      "group": "Materials",
+      "label": "Cream metal panels",
+      "view": "iso",
+      "category": "Home",
+      "native_mesh": "/Game/CityPreview/Meshes/Home_C_CrossGable",
+      "dimensions_m": [
+        10.5600004196167,
+        13.279998779296875,
+        4.799999713897705
+      ],
+      "triangles": 596,
+      "camera": {
+        "target_m": [
+          0,
+          -0.9,
+          2.2
+        ],
+        "position_m": [
+          23,
+          -32.9,
+          23.2
+        ],
+        "ortho_width_m": 20
+      },
+      "floor_z_m": -0.21500000298023225,
+      "ruler_front_m": -8.599998092651367,
+      "ruler_feet_m": -0.20000000298023224,
+      "overrides": {
+        "ResidentialBrick": "/Game/CityPreview/Materials/M_Home_Corrugated"
+      }
+    },
+    {
+      "key": "Home_D_Corrugated_front",
+      "object": "Home_D_Corrugated",
+      "source_object": "Home_D_Corrugated",
+      "group": "Materials",
+      "label": "Cream metal panels",
+      "view": "front",
+      "category": "Home",
+      "native_mesh": "/Game/CityPreview/Meshes/Home_C_CrossGable",
+      "dimensions_m": [
+        10.5600004196167,
+        13.279998779296875,
+        4.799999713897705
+      ],
+      "triangles": 596,
+      "camera": {
+        "target_m": [
+          0,
+          -0.9,
+          2.2
+        ],
+        "position_m": [
+          0,
+          -40.9,
+          10.2
+        ],
+        "ortho_width_m": 20
+      },
+      "floor_z_m": -0.21500000298023225,
+      "ruler_front_m": -8.599998092651367,
+      "ruler_feet_m": -0.20000000298023224,
+      "overrides": {
+        "ResidentialBrick": "/Game/CityPreview/Materials/M_Home_Corrugated"
+      }
+    },
+    {
+      "key": "Shop_A_Brick_iso",
+      "object": "Shop_A_Brick",
+      "source_object": "Shop_C_SteppedFront",
+      "group": "Materials",
+      "label": "Brick reference",
+      "view": "iso",
+      "category": "Shop",
+      "native_mesh": "/Game/CityPreview/Meshes/Shop_C_SteppedFront",
+      "dimensions_m": [
+        15.429999351501465,
+        17.614999771118164,
+        11.600000381469727
+      ],
+      "triangles": 742,
+      "camera": {
+        "target_m": [
+          0,
+          -0.9,
+          5
+        ],
+        "position_m": [
+          23,
+          -32.9,
+          26
+        ],
+        "ortho_width_m": 28
+      },
+      "floor_z_m": -0.015,
+      "ruler_front_m": -10.999999618530273,
+      "ruler_feet_m": 0.0,
+      "overrides": {}
+    },
+    {
+      "key": "Shop_A_Brick_front",
+      "object": "Shop_A_Brick",
+      "source_object": "Shop_C_SteppedFront",
+      "group": "Materials",
+      "label": "Brick reference",
+      "view": "front",
+      "category": "Shop",
+      "native_mesh": "/Game/CityPreview/Meshes/Shop_C_SteppedFront",
+      "dimensions_m": [
+        15.429999351501465,
+        17.614999771118164,
+        11.600000381469727
+      ],
+      "triangles": 742,
+      "camera": {
+        "target_m": [
+          0,
+          -0.9,
+          5
+        ],
+        "position_m": [
+          0,
+          -40.9,
+          13
+        ],
+        "ortho_width_m": 28
+      },
+      "floor_z_m": -0.015,
+      "ruler_front_m": -10.999999618530273,
+      "ruler_feet_m": 0.0,
+      "overrides": {}
+    },
+    {
+      "key": "Shop_B_Timber_iso",
+      "object": "Shop_B_Timber",
+      "source_object": "Shop_B_Timber",
+      "group": "Materials",
+      "label": "Warm timber",
+      "view": "iso",
+      "category": "Shop",
+      "native_mesh": "/Game/CityPreview/Meshes/Shop_C_SteppedFront",
+      "dimensions_m": [
+        15.429999351501465,
+        17.614999771118164,
+        11.600000381469727
+      ],
+      "triangles": 742,
+      "camera": {
+        "target_m": [
+          0,
+          -0.9,
+          5
+        ],
+        "position_m": [
+          23,
+          -32.9,
+          26
+        ],
+        "ortho_width_m": 28
+      },
+      "floor_z_m": -0.015,
+      "ruler_front_m": -10.999999618530273,
+      "ruler_feet_m": 0.0,
+      "overrides": {
+        "CommercialBrick": "/Game/CityPreview/Materials/M_Shop_Timber"
+      }
+    },
+    {
+      "key": "Shop_B_Timber_front",
+      "object": "Shop_B_Timber",
+      "source_object": "Shop_B_Timber",
+      "group": "Materials",
+      "label": "Warm timber",
+      "view": "front",
+      "category": "Shop",
+      "native_mesh": "/Game/CityPreview/Meshes/Shop_C_SteppedFront",
+      "dimensions_m": [
+        15.429999351501465,
+        17.614999771118164,
+        11.600000381469727
+      ],
+      "triangles": 742,
+      "camera": {
+        "target_m": [
+          0,
+          -0.9,
+          5
+        ],
+        "position_m": [
+          0,
+          -40.9,
+          13
+        ],
+        "ortho_width_m": 28
+      },
+      "floor_z_m": -0.015,
+      "ruler_front_m": -10.999999618530273,
+      "ruler_feet_m": 0.0,
+      "overrides": {
+        "CommercialBrick": "/Game/CityPreview/Materials/M_Shop_Timber"
+      }
+    },
+    {
+      "key": "Shop_C_Clapboard_iso",
+      "object": "Shop_C_Clapboard",
+      "source_object": "Shop_C_Clapboard",
+      "group": "Materials",
+      "label": "Blue siding",
+      "view": "iso",
+      "category": "Shop",
+      "native_mesh": "/Game/CityPreview/Meshes/Shop_C_SteppedFront",
+      "dimensions_m": [
+        15.429999351501465,
+        17.614999771118164,
+        11.600000381469727
+      ],
+      "triangles": 742,
+      "camera": {
+        "target_m": [
+          0,
+          -0.9,
+          5
+        ],
+        "position_m": [
+          23,
+          -32.9,
+          26
+        ],
+        "ortho_width_m": 28
+      },
+      "floor_z_m": -0.015,
+      "ruler_front_m": -10.999999618530273,
+      "ruler_feet_m": 0.0,
+      "overrides": {
+        "CommercialBrick": "/Game/CityPreview/Materials/M_Shop_Clapboard"
+      }
+    },
+    {
+      "key": "Shop_C_Clapboard_front",
+      "object": "Shop_C_Clapboard",
+      "source_object": "Shop_C_Clapboard",
+      "group": "Materials",
+      "label": "Blue siding",
+      "view": "front",
+      "category": "Shop",
+      "native_mesh": "/Game/CityPreview/Meshes/Shop_C_SteppedFront",
+      "dimensions_m": [
+        15.429999351501465,
+        17.614999771118164,
+        11.600000381469727
+      ],
+      "triangles": 742,
+      "camera": {
+        "target_m": [
+          0,
+          -0.9,
+          5
+        ],
+        "position_m": [
+          0,
+          -40.9,
+          13
+        ],
+        "ortho_width_m": 28
+      },
+      "floor_z_m": -0.015,
+      "ruler_front_m": -10.999999618530273,
+      "ruler_feet_m": 0.0,
+      "overrides": {
+        "CommercialBrick": "/Game/CityPreview/Materials/M_Shop_Clapboard"
+      }
+    },
+    {
+      "key": "Shop_D_Corrugated_iso",
+      "object": "Shop_D_Corrugated",
+      "source_object": "Shop_D_Corrugated",
+      "group": "Materials",
+      "label": "Teal metal panels",
+      "view": "iso",
+      "category": "Shop",
+      "native_mesh": "/Game/CityPreview/Meshes/Shop_C_SteppedFront",
+      "dimensions_m": [
+        15.429999351501465,
+        17.614999771118164,
+        11.600000381469727
+      ],
+      "triangles": 742,
+      "camera": {
+        "target_m": [
+          0,
+          -0.9,
+          5
+        ],
+        "position_m": [
+          23,
+          -32.9,
+          26
+        ],
+        "ortho_width_m": 28
+      },
+      "floor_z_m": -0.015,
+      "ruler_front_m": -10.999999618530273,
+      "ruler_feet_m": 0.0,
+      "overrides": {
+        "CommercialBrick": "/Game/CityPreview/Materials/M_Shop_Corrugated"
+      }
+    },
+    {
+      "key": "Shop_D_Corrugated_front",
+      "object": "Shop_D_Corrugated",
+      "source_object": "Shop_D_Corrugated",
+      "group": "Materials",
+      "label": "Teal metal panels",
+      "view": "front",
+      "category": "Shop",
+      "native_mesh": "/Game/CityPreview/Meshes/Shop_C_SteppedFront",
+      "dimensions_m": [
+        15.429999351501465,
+        17.614999771118164,
+        11.600000381469727
+      ],
+      "triangles": 742,
+      "camera": {
+        "target_m": [
+          0,
+          -0.9,
+          5
+        ],
+        "position_m": [
+          0,
+          -40.9,
+          13
+        ],
+        "ortho_width_m": 28
+      },
+      "floor_z_m": -0.015,
+      "ruler_front_m": -10.999999618530273,
+      "ruler_feet_m": 0.0,
+      "overrides": {
+        "CommercialBrick": "/Game/CityPreview/Materials/M_Shop_Corrugated"
+      }
+    },
+    {
+      "key": "Factory_A_Brick_iso",
+      "object": "Factory_A_Brick",
+      "source_object": "Factory_C_TwinGable",
+      "group": "Materials",
+      "label": "Brick reference",
+      "view": "iso",
+      "category": "Factory",
+      "native_mesh": "/Game/CityPreview/Meshes/Factory_C_TwinGable",
+      "dimensions_m": [
+        16.0,
+        17.899999618530273,
+        14.760000228881836
+      ],
+      "triangles": 1266,
+      "camera": {
+        "target_m": [
+          0,
+          -0.9,
+          7.4
+        ],
+        "position_m": [
+          23,
+          -32.9,
+          28.4
+        ],
+        "ortho_width_m": 32
+      },
+      "floor_z_m": -0.015,
+      "ruler_front_m": -10.999999618530273,
+      "ruler_feet_m": 0.0,
+      "overrides": {}
+    },
+    {
+      "key": "Factory_A_Brick_front",
+      "object": "Factory_A_Brick",
+      "source_object": "Factory_C_TwinGable",
+      "group": "Materials",
+      "label": "Brick reference",
+      "view": "front",
+      "category": "Factory",
+      "native_mesh": "/Game/CityPreview/Meshes/Factory_C_TwinGable",
+      "dimensions_m": [
+        16.0,
+        17.899999618530273,
+        14.760000228881836
+      ],
+      "triangles": 1266,
+      "camera": {
+        "target_m": [
+          0,
+          -0.9,
+          7.4
+        ],
+        "position_m": [
+          0,
+          -40.9,
+          15.4
+        ],
+        "ortho_width_m": 32
+      },
+      "floor_z_m": -0.015,
+      "ruler_front_m": -10.999999618530273,
+      "ruler_feet_m": 0.0,
+      "overrides": {}
+    },
+    {
+      "key": "Factory_B_Timber_iso",
+      "object": "Factory_B_Timber",
+      "source_object": "Factory_B_Timber",
+      "group": "Materials",
+      "label": "Weathered timber",
+      "view": "iso",
+      "category": "Factory",
+      "native_mesh": "/Game/CityPreview/Meshes/Factory_C_TwinGable",
+      "dimensions_m": [
+        16.0,
+        17.899999618530273,
+        14.760000228881836
+      ],
+      "triangles": 1266,
+      "camera": {
+        "target_m": [
+          0,
+          -0.9,
+          7.4
+        ],
+        "position_m": [
+          23,
+          -32.9,
+          28.4
+        ],
+        "ortho_width_m": 32
+      },
+      "floor_z_m": -0.015,
+      "ruler_front_m": -10.999999618530273,
+      "ruler_feet_m": 0.0,
+      "overrides": {
+        "IndustrialBrick": "/Game/CityPreview/Materials/M_Factory_Timber"
+      }
+    },
+    {
+      "key": "Factory_B_Timber_front",
+      "object": "Factory_B_Timber",
+      "source_object": "Factory_B_Timber",
+      "group": "Materials",
+      "label": "Weathered timber",
+      "view": "front",
+      "category": "Factory",
+      "native_mesh": "/Game/CityPreview/Meshes/Factory_C_TwinGable",
+      "dimensions_m": [
+        16.0,
+        17.899999618530273,
+        14.760000228881836
+      ],
+      "triangles": 1266,
+      "camera": {
+        "target_m": [
+          0,
+          -0.9,
+          7.4
+        ],
+        "position_m": [
+          0,
+          -40.9,
+          15.4
+        ],
+        "ortho_width_m": 32
+      },
+      "floor_z_m": -0.015,
+      "ruler_front_m": -10.999999618530273,
+      "ruler_feet_m": 0.0,
+      "overrides": {
+        "IndustrialBrick": "/Game/CityPreview/Materials/M_Factory_Timber"
+      }
+    },
+    {
+      "key": "Factory_C_Clapboard_iso",
+      "object": "Factory_C_Clapboard",
+      "source_object": "Factory_C_Clapboard",
+      "group": "Materials",
+      "label": "Gray siding",
+      "view": "iso",
+      "category": "Factory",
+      "native_mesh": "/Game/CityPreview/Meshes/Factory_C_TwinGable",
+      "dimensions_m": [
+        16.0,
+        17.899999618530273,
+        14.760000228881836
+      ],
+      "triangles": 1266,
+      "camera": {
+        "target_m": [
+          0,
+          -0.9,
+          7.4
+        ],
+        "position_m": [
+          23,
+          -32.9,
+          28.4
+        ],
+        "ortho_width_m": 32
+      },
+      "floor_z_m": -0.015,
+      "ruler_front_m": -10.999999618530273,
+      "ruler_feet_m": 0.0,
+      "overrides": {
+        "IndustrialBrick": "/Game/CityPreview/Materials/M_Factory_Clapboard"
+      }
+    },
+    {
+      "key": "Factory_C_Clapboard_front",
+      "object": "Factory_C_Clapboard",
+      "source_object": "Factory_C_Clapboard",
+      "group": "Materials",
+      "label": "Gray siding",
+      "view": "front",
+      "category": "Factory",
+      "native_mesh": "/Game/CityPreview/Meshes/Factory_C_TwinGable",
+      "dimensions_m": [
+        16.0,
+        17.899999618530273,
+        14.760000228881836
+      ],
+      "triangles": 1266,
+      "camera": {
+        "target_m": [
+          0,
+          -0.9,
+          7.4
+        ],
+        "position_m": [
+          0,
+          -40.9,
+          15.4
+        ],
+        "ortho_width_m": 32
+      },
+      "floor_z_m": -0.015,
+      "ruler_front_m": -10.999999618530273,
+      "ruler_feet_m": 0.0,
+      "overrides": {
+        "IndustrialBrick": "/Game/CityPreview/Materials/M_Factory_Clapboard"
+      }
+    },
+    {
+      "key": "Factory_D_Corrugated_iso",
+      "object": "Factory_D_Corrugated",
+      "source_object": "Factory_D_Corrugated",
+      "group": "Materials",
+      "label": "Galvanized steel",
+      "view": "iso",
+      "category": "Factory",
+      "native_mesh": "/Game/CityPreview/Meshes/Factory_C_TwinGable",
+      "dimensions_m": [
+        16.0,
+        17.899999618530273,
+        14.760000228881836
+      ],
+      "triangles": 1266,
+      "camera": {
+        "target_m": [
+          0,
+          -0.9,
+          7.4
+        ],
+        "position_m": [
+          23,
+          -32.9,
+          28.4
+        ],
+        "ortho_width_m": 32
+      },
+      "floor_z_m": -0.015,
+      "ruler_front_m": -10.999999618530273,
+      "ruler_feet_m": 0.0,
+      "overrides": {
+        "IndustrialBrick": "/Game/CityPreview/Materials/M_Factory_Corrugated"
+      }
+    },
+    {
+      "key": "Factory_D_Corrugated_front",
+      "object": "Factory_D_Corrugated",
+      "source_object": "Factory_D_Corrugated",
+      "group": "Materials",
+      "label": "Galvanized steel",
+      "view": "front",
+      "category": "Factory",
+      "native_mesh": "/Game/CityPreview/Meshes/Factory_C_TwinGable",
+      "dimensions_m": [
+        16.0,
+        17.899999618530273,
+        14.760000228881836
+      ],
+      "triangles": 1266,
+      "camera": {
+        "target_m": [
+          0,
+          -0.9,
+          7.4
+        ],
+        "position_m": [
+          0,
+          -40.9,
+          15.4
+        ],
+        "ortho_width_m": 32
+      },
+      "floor_z_m": -0.015,
+      "ruler_front_m": -10.999999618530273,
+      "ruler_feet_m": 0.0,
+      "overrides": {
+        "IndustrialBrick": "/Game/CityPreview/Materials/M_Factory_Corrugated"
+      }
+    }
+  ],
+  "lighting": {
+    "sun_intensity": 3,
+    "sky_intensity": 1,
+    "exposure_bias": 0
+  },
+  "limitations": "Matched geometry/cameras/ruler. Blender Cycles AgX studio vs Unreal D3D11 forward daylight; lighting/tonemappers differ. No production/game/device changes.",
+  "preview_environment": {
+    "file": "ArtSource/Textures/MaterialStudy/PreviewEnvironment.hdr",
+    "sha256": "ac1af5611a96a25829a7a29c43b37c4ae8ebb619942f2368caed854554351a16",
+    "native": "/Game/CityPreview/Textures/T_StudioEnvironment",
+    "linear_color": [
+      0.19921875,
+      0.25,
+      0.330078125
+    ],
+    "provenance": "Original constant full-sphere studio reflection; no external HDRI"
+  },
+  "approval": {
+    "date": "2026-10-14",
+    "geometry_variants_and_material_examples_accepted": true,
+    "reflection_presentation_under_investigation": true,
+    "production_promotion_deferred": true,
+    "basis": "User wants to retain building improvements, variations and material examples; requests isolated reflective-plane/cue testing."
+  }
+}

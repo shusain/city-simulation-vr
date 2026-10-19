@@ -1,0 +1,3034 @@
+{
+  "issue": 125,
+  "baseline": "0826c466226c2583d912a71a71258bcc04167871",
+  "assets": [
+    {
+      "native": "/Game/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Shop_A",
+      "name": "SM_LowDensity_Shop_A",
+      "source": "ArtSource/Blender/CityLowDensityBuildings.blend",
+      "object": "SM_LowDensity_Shop_A",
+      "export": "ArtSource/Exports/LowDensity/SM_LowDensity_Shop_A.fbx",
+      "bindings": {
+        "CommercialBrick": "/Game/CitySim/Art/Materials/MI_CommercialBrick",
+        "Roof": "/Game/CitySim/Art/Materials/MI_Roof",
+        "RoofMembrane": "/Game/CitySim/Art/Materials/MI_RoofMembrane",
+        "StoreSignTall": "/Game/CitySim/Art/LowDensity/Materials/MI_Sign_market",
+        "BuildingWindowOpaque": "/Game/CitySim/Art/Materials/M_BuildingWindowOpaque"
+      },
+      "slots": [
+        "CommercialBrick",
+        "Roof",
+        "RoofMembrane",
+        "StoreSignTall",
+        "BuildingWindowOpaque"
+      ],
+      "density": "Low",
+      "appearance": "A_Brick",
+      "damaged": false,
+      "entrance": {
+        "style": "double glass with transom",
+        "door_leaf_count": 2,
+        "personnel_clear_width_m": 2.3,
+        "door_height_m": 2.35,
+        "floor_m": 0.16,
+        "door_front_y_m": -7.16,
+        "detail_bounds_m": [
+          [
+            -1.5299999999999998,
+            -7.42,
+            0
+          ],
+          [
+            1.5299999999999998,
+            -7.0,
+            3.4
+          ]
+        ]
+      },
+      "source_sha256": "05e4b0409ac3f8785546feccf9b46443c449295819ef0ec68e7790658fb13d9e",
+      "export_sha256": "317b39be26e3db618f43afdd16327ff2a98afe828cf7cb832bb23fc817130620",
+      "entry_native_cm": [
+        0,
+        672,
+        19
+      ],
+      "door_width_cm": 306,
+      "path_width_cm": 100,
+      "frontage_half_span_cm": 800,
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "target_name": "SM_CommercialGround_LowDensity_Shop_A",
+      "authored_entry_native_cm": [
+        0,
+        742,
+        19
+      ],
+      "source_translation_m": [
+        0,
+        0.7,
+        0
+      ],
+      "vestibule_recess_cm": 0
+    },
+    {
+      "native": "/Game/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Shop_A_Damaged",
+      "name": "SM_LowDensity_Shop_A_Damaged",
+      "source": "ArtSource/Blender/CityLowDensityBuildings.blend",
+      "object": "SM_LowDensity_Shop_A_Damaged",
+      "export": "ArtSource/Exports/LowDensity/SM_LowDensity_Shop_A_Damaged.fbx",
+      "bindings": {
+        "CommercialBrick": "/Game/CitySim/Art/Materials/MI_CharredBrick",
+        "Roof": "/Game/CitySim/Art/Materials/MI_CharredTrim",
+        "RoofMembrane": "/Game/CitySim/Art/Materials/MI_CharredRoofMembrane",
+        "StoreSignTall": "/Game/CitySim/Art/Materials/MI_CharredTrim",
+        "BuildingWindowOpaque": "/Game/CitySim/Art/Materials/MI_CharredTrim"
+      },
+      "slots": [
+        "CommercialBrick",
+        "Roof",
+        "RoofMembrane",
+        "StoreSignTall",
+        "BuildingWindowOpaque"
+      ],
+      "density": "Low",
+      "appearance": "A_Brick",
+      "damaged": true,
+      "entrance": {
+        "style": "double glass with transom",
+        "door_leaf_count": 2,
+        "personnel_clear_width_m": 2.3,
+        "door_height_m": 2.35,
+        "floor_m": 0.16,
+        "door_front_y_m": -7.16,
+        "detail_bounds_m": [
+          [
+            -1.5299999999999998,
+            -7.42,
+            0
+          ],
+          [
+            1.5299999999999998,
+            -7.0,
+            3.4
+          ]
+        ]
+      },
+      "source_sha256": "05e4b0409ac3f8785546feccf9b46443c449295819ef0ec68e7790658fb13d9e",
+      "export_sha256": "83b5b0707764f3c2bb28fc11ccabecb63191ab757f6a97af001032b566b039ea",
+      "entry_native_cm": [
+        0,
+        672,
+        19
+      ],
+      "door_width_cm": 306,
+      "path_width_cm": 100,
+      "frontage_half_span_cm": 800,
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "target_name": "SM_CommercialGround_LowDensity_Shop_A_Damaged",
+      "authored_entry_native_cm": [
+        0,
+        742,
+        19
+      ],
+      "source_translation_m": [
+        0,
+        0.7,
+        0
+      ],
+      "vestibule_recess_cm": 0
+    },
+    {
+      "native": "/Game/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Shop_B",
+      "name": "SM_LowDensity_Shop_B",
+      "source": "ArtSource/Blender/CityLowDensityBuildings.blend",
+      "object": "SM_LowDensity_Shop_B",
+      "export": "ArtSource/Exports/LowDensity/SM_LowDensity_Shop_B.fbx",
+      "bindings": {
+        "CommercialBrick": "/Game/CitySim/Art/LowDensity/Materials/M_Shop_Timber",
+        "Roof": "/Game/CitySim/Art/Materials/MI_Roof",
+        "RoofMembrane": "/Game/CitySim/Art/Materials/MI_RoofMembrane",
+        "StoreSignTall": "/Game/CitySim/Art/LowDensity/Materials/MI_Sign_market",
+        "BuildingWindowOpaque": "/Game/CitySim/Art/Materials/M_BuildingWindowOpaque"
+      },
+      "slots": [
+        "CommercialBrick",
+        "Roof",
+        "RoofMembrane",
+        "StoreSignTall",
+        "BuildingWindowOpaque"
+      ],
+      "density": "Low",
+      "appearance": "B_Timber",
+      "damaged": false,
+      "entrance": {
+        "style": "double glass with sidelights/kickplates",
+        "door_leaf_count": 2,
+        "personnel_clear_width_m": 2.3,
+        "door_height_m": 2.35,
+        "floor_m": 0.16,
+        "door_front_y_m": -7.16,
+        "detail_bounds_m": [
+          [
+            -2.0,
+            -7.42,
+            0
+          ],
+          [
+            2.0,
+            -7.0,
+            3.4
+          ]
+        ]
+      },
+      "source_sha256": "05e4b0409ac3f8785546feccf9b46443c449295819ef0ec68e7790658fb13d9e",
+      "export_sha256": "b956d9877485311601874f89cd7fd44d248e9eb3101aae40173cadec52e90131",
+      "entry_native_cm": [
+        0,
+        672,
+        19
+      ],
+      "door_width_cm": 400,
+      "path_width_cm": 100,
+      "frontage_half_span_cm": 800,
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "target_name": "SM_CommercialGround_LowDensity_Shop_B",
+      "authored_entry_native_cm": [
+        0,
+        742,
+        19
+      ],
+      "source_translation_m": [
+        0,
+        0.7,
+        0
+      ],
+      "vestibule_recess_cm": 0
+    },
+    {
+      "native": "/Game/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Shop_B_Damaged",
+      "name": "SM_LowDensity_Shop_B_Damaged",
+      "source": "ArtSource/Blender/CityLowDensityBuildings.blend",
+      "object": "SM_LowDensity_Shop_B_Damaged",
+      "export": "ArtSource/Exports/LowDensity/SM_LowDensity_Shop_B_Damaged.fbx",
+      "bindings": {
+        "CommercialBrick": "/Game/CitySim/Art/Materials/MI_CharredBrick",
+        "Roof": "/Game/CitySim/Art/Materials/MI_CharredTrim",
+        "RoofMembrane": "/Game/CitySim/Art/Materials/MI_CharredRoofMembrane",
+        "StoreSignTall": "/Game/CitySim/Art/Materials/MI_CharredTrim",
+        "BuildingWindowOpaque": "/Game/CitySim/Art/Materials/MI_CharredTrim"
+      },
+      "slots": [
+        "CommercialBrick",
+        "Roof",
+        "RoofMembrane",
+        "StoreSignTall",
+        "BuildingWindowOpaque"
+      ],
+      "density": "Low",
+      "appearance": "B_Timber",
+      "damaged": true,
+      "entrance": {
+        "style": "double glass with sidelights/kickplates",
+        "door_leaf_count": 2,
+        "personnel_clear_width_m": 2.3,
+        "door_height_m": 2.35,
+        "floor_m": 0.16,
+        "door_front_y_m": -7.16,
+        "detail_bounds_m": [
+          [
+            -2.0,
+            -7.42,
+            0
+          ],
+          [
+            2.0,
+            -7.0,
+            3.4
+          ]
+        ]
+      },
+      "source_sha256": "05e4b0409ac3f8785546feccf9b46443c449295819ef0ec68e7790658fb13d9e",
+      "export_sha256": "cf300d0b8021dcb6c5d7ff66a91ab5410f1afdba23d11bb11012568488a9bd8e",
+      "entry_native_cm": [
+        0,
+        672,
+        19
+      ],
+      "door_width_cm": 400,
+      "path_width_cm": 100,
+      "frontage_half_span_cm": 800,
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "target_name": "SM_CommercialGround_LowDensity_Shop_B_Damaged",
+      "authored_entry_native_cm": [
+        0,
+        742,
+        19
+      ],
+      "source_translation_m": [
+        0,
+        0.7,
+        0
+      ],
+      "vestibule_recess_cm": 0
+    },
+    {
+      "native": "/Game/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Shop_C",
+      "name": "SM_LowDensity_Shop_C",
+      "source": "ArtSource/Blender/CityLowDensityBuildings.blend",
+      "object": "SM_LowDensity_Shop_C",
+      "export": "ArtSource/Exports/LowDensity/SM_LowDensity_Shop_C.fbx",
+      "bindings": {
+        "CommercialBrick": "/Game/CitySim/Art/LowDensity/Materials/M_Shop_Clapboard",
+        "Roof": "/Game/CitySim/Art/Materials/MI_Roof",
+        "RoofMembrane": "/Game/CitySim/Art/Materials/MI_RoofMembrane",
+        "StoreSignTall": "/Game/CitySim/Art/LowDensity/Materials/MI_Sign_market",
+        "BuildingWindowOpaque": "/Game/CitySim/Art/Materials/M_BuildingWindowOpaque"
+      },
+      "slots": [
+        "CommercialBrick",
+        "Roof",
+        "RoofMembrane",
+        "StoreSignTall",
+        "BuildingWindowOpaque"
+      ],
+      "density": "Low",
+      "appearance": "C_Clapboard",
+      "damaged": false,
+      "entrance": {
+        "style": "automatic sliding pair",
+        "door_leaf_count": 2,
+        "personnel_clear_width_m": 2.4,
+        "door_height_m": 2.35,
+        "floor_m": 0.16,
+        "door_front_y_m": -7.16,
+        "detail_bounds_m": [
+          [
+            -2.4,
+            -7.42,
+            0
+          ],
+          [
+            2.4,
+            -7.0,
+            3.4
+          ]
+        ]
+      },
+      "source_sha256": "05e4b0409ac3f8785546feccf9b46443c449295819ef0ec68e7790658fb13d9e",
+      "export_sha256": "553c447286f6be68b94e6a90bce8ee83caf173a8720cf9c84de4de2e246a8805",
+      "entry_native_cm": [
+        0,
+        672,
+        19
+      ],
+      "door_width_cm": 480,
+      "path_width_cm": 100,
+      "frontage_half_span_cm": 800,
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "target_name": "SM_CommercialGround_LowDensity_Shop_C",
+      "authored_entry_native_cm": [
+        0,
+        742,
+        19
+      ],
+      "source_translation_m": [
+        0,
+        0.7,
+        0
+      ],
+      "vestibule_recess_cm": 0
+    },
+    {
+      "native": "/Game/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Shop_C_Damaged",
+      "name": "SM_LowDensity_Shop_C_Damaged",
+      "source": "ArtSource/Blender/CityLowDensityBuildings.blend",
+      "object": "SM_LowDensity_Shop_C_Damaged",
+      "export": "ArtSource/Exports/LowDensity/SM_LowDensity_Shop_C_Damaged.fbx",
+      "bindings": {
+        "CommercialBrick": "/Game/CitySim/Art/Materials/MI_CharredBrick",
+        "Roof": "/Game/CitySim/Art/Materials/MI_CharredTrim",
+        "RoofMembrane": "/Game/CitySim/Art/Materials/MI_CharredRoofMembrane",
+        "StoreSignTall": "/Game/CitySim/Art/Materials/MI_CharredTrim",
+        "BuildingWindowOpaque": "/Game/CitySim/Art/Materials/MI_CharredTrim"
+      },
+      "slots": [
+        "CommercialBrick",
+        "Roof",
+        "RoofMembrane",
+        "StoreSignTall",
+        "BuildingWindowOpaque"
+      ],
+      "density": "Low",
+      "appearance": "C_Clapboard",
+      "damaged": true,
+      "entrance": {
+        "style": "automatic sliding pair",
+        "door_leaf_count": 2,
+        "personnel_clear_width_m": 2.4,
+        "door_height_m": 2.35,
+        "floor_m": 0.16,
+        "door_front_y_m": -7.16,
+        "detail_bounds_m": [
+          [
+            -2.4,
+            -7.42,
+            0
+          ],
+          [
+            2.4,
+            -7.0,
+            3.4
+          ]
+        ]
+      },
+      "source_sha256": "05e4b0409ac3f8785546feccf9b46443c449295819ef0ec68e7790658fb13d9e",
+      "export_sha256": "af1b7ace4ef21315c40687048a1a790800fcb8c711107d75212656b93211c72c",
+      "entry_native_cm": [
+        0,
+        672,
+        19
+      ],
+      "door_width_cm": 480,
+      "path_width_cm": 100,
+      "frontage_half_span_cm": 800,
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "target_name": "SM_CommercialGround_LowDensity_Shop_C_Damaged",
+      "authored_entry_native_cm": [
+        0,
+        742,
+        19
+      ],
+      "source_translation_m": [
+        0,
+        0.7,
+        0
+      ],
+      "vestibule_recess_cm": 0
+    },
+    {
+      "native": "/Game/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Shop_D",
+      "name": "SM_LowDensity_Shop_D",
+      "source": "ArtSource/Blender/CityLowDensityBuildings.blend",
+      "object": "SM_LowDensity_Shop_D",
+      "export": "ArtSource/Exports/LowDensity/SM_LowDensity_Shop_D.fbx",
+      "bindings": {
+        "CommercialBrick": "/Game/CitySim/Art/LowDensity/Materials/M_Shop_Corrugated",
+        "Roof": "/Game/CitySim/Art/Materials/MI_Roof",
+        "RoofMembrane": "/Game/CitySim/Art/Materials/MI_RoofMembrane",
+        "StoreSignTall": "/Game/CitySim/Art/LowDensity/Materials/MI_Sign_market",
+        "BuildingWindowOpaque": "/Game/CitySim/Art/Materials/M_BuildingWindowOpaque"
+      },
+      "slots": [
+        "CommercialBrick",
+        "Roof",
+        "RoofMembrane",
+        "StoreSignTall",
+        "BuildingWindowOpaque"
+      ],
+      "density": "Low",
+      "appearance": "D_Corrugated",
+      "damaged": false,
+      "entrance": {
+        "style": "glazed double-door vestibule",
+        "door_leaf_count": 2,
+        "personnel_clear_width_m": 2.3,
+        "door_height_m": 2.35,
+        "floor_m": 0.16,
+        "door_front_y_m": -7.84,
+        "detail_bounds_m": [
+          [
+            -1.625,
+            -8.1,
+            0
+          ],
+          [
+            1.625,
+            -7.0,
+            3.4
+          ]
+        ]
+      },
+      "source_sha256": "05e4b0409ac3f8785546feccf9b46443c449295819ef0ec68e7790658fb13d9e",
+      "export_sha256": "482762c8385ea8eed606a5be52b7be9210c2b1a9e54d4b2dd667c8a0923ebb67",
+      "entry_native_cm": [
+        0,
+        720,
+        19
+      ],
+      "door_width_cm": 325,
+      "path_width_cm": 80,
+      "frontage_half_span_cm": 650,
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "target_name": "SM_CommercialGround_LowDensity_Shop_D",
+      "authored_entry_native_cm": [
+        0,
+        810,
+        19
+      ],
+      "source_translation_m": [
+        0,
+        0.7,
+        0
+      ],
+      "vestibule_recess_cm": 20
+    },
+    {
+      "native": "/Game/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Shop_D_Damaged",
+      "name": "SM_LowDensity_Shop_D_Damaged",
+      "source": "ArtSource/Blender/CityLowDensityBuildings.blend",
+      "object": "SM_LowDensity_Shop_D_Damaged",
+      "export": "ArtSource/Exports/LowDensity/SM_LowDensity_Shop_D_Damaged.fbx",
+      "bindings": {
+        "CommercialBrick": "/Game/CitySim/Art/Materials/MI_CharredBrick",
+        "Roof": "/Game/CitySim/Art/Materials/MI_CharredTrim",
+        "RoofMembrane": "/Game/CitySim/Art/Materials/MI_CharredRoofMembrane",
+        "StoreSignTall": "/Game/CitySim/Art/Materials/MI_CharredTrim",
+        "BuildingWindowOpaque": "/Game/CitySim/Art/Materials/MI_CharredTrim"
+      },
+      "slots": [
+        "CommercialBrick",
+        "Roof",
+        "RoofMembrane",
+        "StoreSignTall",
+        "BuildingWindowOpaque"
+      ],
+      "density": "Low",
+      "appearance": "D_Corrugated",
+      "damaged": true,
+      "entrance": {
+        "style": "glazed double-door vestibule",
+        "door_leaf_count": 2,
+        "personnel_clear_width_m": 2.3,
+        "door_height_m": 2.35,
+        "floor_m": 0.16,
+        "door_front_y_m": -7.84,
+        "detail_bounds_m": [
+          [
+            -1.625,
+            -8.1,
+            0
+          ],
+          [
+            1.625,
+            -7.0,
+            3.4
+          ]
+        ]
+      },
+      "source_sha256": "05e4b0409ac3f8785546feccf9b46443c449295819ef0ec68e7790658fb13d9e",
+      "export_sha256": "30e7c4f082bb432ae991e9b8640d11888060e6e990095c88a192a6cfede28658",
+      "entry_native_cm": [
+        0,
+        720,
+        19
+      ],
+      "door_width_cm": 325,
+      "path_width_cm": 80,
+      "frontage_half_span_cm": 650,
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "target_name": "SM_CommercialGround_LowDensity_Shop_D_Damaged",
+      "authored_entry_native_cm": [
+        0,
+        810,
+        19
+      ],
+      "source_translation_m": [
+        0,
+        0.7,
+        0
+      ],
+      "vestibule_recess_cm": 20
+    },
+    {
+      "native": "/Game/CitySim/Art/Meshes/SM_Building_Shop_A",
+      "name": "SM_Building_Shop_A",
+      "source": "ArtSource/Blender/CityBuildingWindows.blend",
+      "object": "SM_Building_Shop_A",
+      "export": "ArtSource/Exports/BuildingWindowStudy/SM_Building_Shop_A.fbx",
+      "bindings": {
+        "CommercialBrick": "/Game/CitySim/Art/Materials/MI_CommercialBrick",
+        "Roof": "/Game/CitySim/Art/Materials/MI_Roof",
+        "RoofMembrane": "/Game/CitySim/Art/Materials/MI_RoofMembrane",
+        "StoreSignTall": "/Game/CitySim/Art/Materials/MI_StoreSignTall",
+        "BuildingWindowOpaque": "/Game/CitySim/Art/Materials/M_BuildingWindowOpaque"
+      },
+      "slots": [
+        "CommercialBrick",
+        "Roof",
+        "RoofMembrane",
+        "StoreSignTall",
+        "BuildingWindowOpaque"
+      ],
+      "density": "Low",
+      "damaged": false,
+      "source_sha256": "0d46923a35e9e23a1c6276e94eec4f03a2752a997bcdd813c6a7980a4429c2ab",
+      "export_sha256": "d5923accb7dc06b6d50f09a4f64c32bbc530ce33fd802fc4a261d35bfd8193af",
+      "entry_native_cm": [
+        0,
+        660,
+        0
+      ],
+      "door_width_cm": 300,
+      "path_width_cm": 100,
+      "frontage_half_span_cm": 800,
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "target_name": "SM_CommercialGround_Building_Shop_A",
+      "authored_entry_native_cm": [
+        0,
+        730,
+        0
+      ],
+      "source_translation_m": [
+        0,
+        0.7,
+        0
+      ],
+      "vestibule_recess_cm": 0
+    },
+    {
+      "native": "/Game/CitySim/Art/Meshes/SM_Building_Shop_Medium_A",
+      "name": "SM_Building_Shop_Medium_A",
+      "source": "ArtSource/Blender/CityBuildingWindows.blend",
+      "object": "SM_Building_Shop_Medium_A",
+      "export": "ArtSource/Exports/BuildingWindowStudy/SM_Building_Shop_Medium_A.fbx",
+      "bindings": {
+        "CommercialBrick": "/Game/CitySim/Art/Materials/MI_CommercialBrick",
+        "Roof": "/Game/CitySim/Art/Materials/MI_Roof",
+        "RoofMembrane": "/Game/CitySim/Art/Materials/MI_RoofMembrane",
+        "StoreSignWide": "/Game/CitySim/Art/Materials/MI_StoreSignWide",
+        "BuildingWindowOpaque": "/Game/CitySim/Art/Materials/M_BuildingWindowOpaque"
+      },
+      "slots": [
+        "CommercialBrick",
+        "Roof",
+        "RoofMembrane",
+        "StoreSignWide",
+        "BuildingWindowOpaque"
+      ],
+      "density": "Medium",
+      "damaged": false,
+      "source_sha256": "0d46923a35e9e23a1c6276e94eec4f03a2752a997bcdd813c6a7980a4429c2ab",
+      "export_sha256": "4bcb86443f0a5f9622cdc3630526ca3800d2b369249cbd03a6f629318a8b6ae0",
+      "entry_native_cm": [
+        0,
+        660,
+        0
+      ],
+      "door_width_cm": 300,
+      "path_width_cm": 100,
+      "frontage_half_span_cm": 800,
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "target_name": "SM_CommercialGround_Building_Shop_Medium_A",
+      "authored_entry_native_cm": [
+        0,
+        730,
+        0
+      ],
+      "source_translation_m": [
+        0,
+        0.7,
+        0
+      ],
+      "vestibule_recess_cm": 0
+    },
+    {
+      "native": "/Game/CitySim/Art/Meshes/SM_Building_Shop_High_A",
+      "name": "SM_Building_Shop_High_A",
+      "source": "ArtSource/Blender/CityBuildingWindows.blend",
+      "object": "SM_Building_Shop_High_A",
+      "export": "ArtSource/Exports/BuildingWindowStudy/SM_Building_Shop_High_A.fbx",
+      "bindings": {
+        "CommercialBrick": "/Game/CitySim/Art/Materials/MI_CommercialBrick",
+        "Roof": "/Game/CitySim/Art/Materials/MI_Roof",
+        "RoofMembrane": "/Game/CitySim/Art/Materials/MI_RoofMembrane",
+        "StoreSignWide": "/Game/CitySim/Art/Materials/MI_StoreSignWide",
+        "BuildingWindowOpaque": "/Game/CitySim/Art/Materials/M_BuildingWindowOpaque"
+      },
+      "slots": [
+        "CommercialBrick",
+        "Roof",
+        "RoofMembrane",
+        "StoreSignWide",
+        "BuildingWindowOpaque"
+      ],
+      "density": "High",
+      "damaged": false,
+      "source_sha256": "0d46923a35e9e23a1c6276e94eec4f03a2752a997bcdd813c6a7980a4429c2ab",
+      "export_sha256": "f3bb34e9de6d9d2ccf7c658499f11ba0b1fc14c1c836c79d84802facb8cebc5e",
+      "entry_native_cm": [
+        0,
+        660,
+        0
+      ],
+      "door_width_cm": 300,
+      "path_width_cm": 100,
+      "frontage_half_span_cm": 800,
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "target_name": "SM_CommercialGround_Building_Shop_High_A",
+      "authored_entry_native_cm": [
+        0,
+        730,
+        0
+      ],
+      "source_translation_m": [
+        0,
+        0.7,
+        0
+      ],
+      "vestibule_recess_cm": 0
+    },
+    {
+      "native": "/Game/CitySim/Art/Meshes/SM_CommercialLow_StoreMarket",
+      "name": "SM_CommercialLow_StoreMarket",
+      "source": "ArtSource/Blender/CityBuildingWindows.blend",
+      "object": "SM_CommercialLow_StoreMarket",
+      "export": "ArtSource/Exports/BuildingWindowStudy/SM_CommercialLow_StoreMarket.fbx",
+      "bindings": {
+        "CommercialBrick": "/Game/CitySim/Art/Materials/MI_CommercialBrick",
+        "Roof": "/Game/CitySim/Art/Materials/MI_Roof",
+        "RoofMembrane": "/Game/CitySim/Art/Materials/MI_RoofMembrane",
+        "StoreSignTall": "/Game/CitySim/Art/Materials/MI_StoreSignTall",
+        "BuildingWindowOpaque": "/Game/CitySim/Art/Materials/M_BuildingWindowOpaque"
+      },
+      "slots": [
+        "CommercialBrick",
+        "Roof",
+        "RoofMembrane",
+        "StoreSignTall",
+        "BuildingWindowOpaque"
+      ],
+      "density": "Low",
+      "damaged": false,
+      "source_sha256": "0d46923a35e9e23a1c6276e94eec4f03a2752a997bcdd813c6a7980a4429c2ab",
+      "export_sha256": "d17ea437acd0b5847ceeb61068c02c1df22699eddf5d50ea92e707b0ae4bf77c",
+      "entry_native_cm": [
+        0,
+        660,
+        0
+      ],
+      "door_width_cm": 300,
+      "path_width_cm": 100,
+      "frontage_half_span_cm": 800,
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "target_name": "SM_CommercialGround_CommercialLow_StoreMarket",
+      "authored_entry_native_cm": [
+        0,
+        730,
+        0
+      ],
+      "source_translation_m": [
+        0,
+        0.7,
+        0
+      ],
+      "vestibule_recess_cm": 0
+    },
+    {
+      "native": "/Game/CitySim/Art/Meshes/SM_CommercialLow_StoreBakery",
+      "name": "SM_CommercialLow_StoreBakery",
+      "source": "ArtSource/Blender/CityBuildingWindows.blend",
+      "object": "SM_CommercialLow_StoreBakery",
+      "export": "ArtSource/Exports/BuildingWindowStudy/SM_CommercialLow_StoreBakery.fbx",
+      "bindings": {
+        "CommercialBrick": "/Game/CitySim/Art/Materials/MI_CommercialBrick",
+        "Roof": "/Game/CitySim/Art/Materials/MI_Roof",
+        "RoofMembrane": "/Game/CitySim/Art/Materials/MI_RoofMembrane",
+        "StoreSignTall": "/Game/CitySim/Art/Materials/MI_StoreSignTall",
+        "BuildingWindowOpaque": "/Game/CitySim/Art/Materials/M_BuildingWindowOpaque"
+      },
+      "slots": [
+        "CommercialBrick",
+        "Roof",
+        "RoofMembrane",
+        "StoreSignTall",
+        "BuildingWindowOpaque"
+      ],
+      "density": "Low",
+      "damaged": false,
+      "source_sha256": "0d46923a35e9e23a1c6276e94eec4f03a2752a997bcdd813c6a7980a4429c2ab",
+      "export_sha256": "2b95322598827752d21ecaec460c1d301649823931507ab4912c8d77747bbe94",
+      "entry_native_cm": [
+        0,
+        660,
+        0
+      ],
+      "door_width_cm": 300,
+      "path_width_cm": 100,
+      "frontage_half_span_cm": 800,
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "target_name": "SM_CommercialGround_CommercialLow_StoreBakery",
+      "authored_entry_native_cm": [
+        0,
+        730,
+        0
+      ],
+      "source_translation_m": [
+        0,
+        0.7,
+        0
+      ],
+      "vestibule_recess_cm": 0
+    },
+    {
+      "native": "/Game/CitySim/Art/Meshes/SM_CommercialLow_StoreCafe",
+      "name": "SM_CommercialLow_StoreCafe",
+      "source": "ArtSource/Blender/CityBuildingWindows.blend",
+      "object": "SM_CommercialLow_StoreCafe",
+      "export": "ArtSource/Exports/BuildingWindowStudy/SM_CommercialLow_StoreCafe.fbx",
+      "bindings": {
+        "CommercialBrick": "/Game/CitySim/Art/Materials/MI_CommercialBrick",
+        "Roof": "/Game/CitySim/Art/Materials/MI_Roof",
+        "RoofMembrane": "/Game/CitySim/Art/Materials/MI_RoofMembrane",
+        "StoreSignTall": "/Game/CitySim/Art/Materials/MI_StoreSignTall",
+        "BuildingWindowOpaque": "/Game/CitySim/Art/Materials/M_BuildingWindowOpaque"
+      },
+      "slots": [
+        "CommercialBrick",
+        "Roof",
+        "RoofMembrane",
+        "StoreSignTall",
+        "BuildingWindowOpaque"
+      ],
+      "density": "Low",
+      "damaged": false,
+      "source_sha256": "0d46923a35e9e23a1c6276e94eec4f03a2752a997bcdd813c6a7980a4429c2ab",
+      "export_sha256": "61fff037e16bda57eec68c23e99f323538b1bd94367603240a47f3872fbf496b",
+      "entry_native_cm": [
+        0,
+        660,
+        0
+      ],
+      "door_width_cm": 300,
+      "path_width_cm": 100,
+      "frontage_half_span_cm": 800,
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "target_name": "SM_CommercialGround_CommercialLow_StoreCafe",
+      "authored_entry_native_cm": [
+        0,
+        730,
+        0
+      ],
+      "source_translation_m": [
+        0,
+        0.7,
+        0
+      ],
+      "vestibule_recess_cm": 0
+    },
+    {
+      "native": "/Game/CitySim/Art/Meshes/SM_CommercialLow_StoreBooks",
+      "name": "SM_CommercialLow_StoreBooks",
+      "source": "ArtSource/Blender/CityBuildingWindows.blend",
+      "object": "SM_CommercialLow_StoreBooks",
+      "export": "ArtSource/Exports/BuildingWindowStudy/SM_CommercialLow_StoreBooks.fbx",
+      "bindings": {
+        "CommercialBrick": "/Game/CitySim/Art/Materials/MI_CommercialBrick",
+        "Roof": "/Game/CitySim/Art/Materials/MI_Roof",
+        "RoofMembrane": "/Game/CitySim/Art/Materials/MI_RoofMembrane",
+        "StoreSignTall": "/Game/CitySim/Art/Materials/MI_StoreSignTall",
+        "BuildingWindowOpaque": "/Game/CitySim/Art/Materials/M_BuildingWindowOpaque"
+      },
+      "slots": [
+        "CommercialBrick",
+        "Roof",
+        "RoofMembrane",
+        "StoreSignTall",
+        "BuildingWindowOpaque"
+      ],
+      "density": "Low",
+      "damaged": false,
+      "source_sha256": "0d46923a35e9e23a1c6276e94eec4f03a2752a997bcdd813c6a7980a4429c2ab",
+      "export_sha256": "e5c1038f35cb3b6e29d1d0697485fc767bf1b09ce4cb369c73159f2349d07c3f",
+      "entry_native_cm": [
+        0,
+        660,
+        0
+      ],
+      "door_width_cm": 300,
+      "path_width_cm": 100,
+      "frontage_half_span_cm": 800,
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "target_name": "SM_CommercialGround_CommercialLow_StoreBooks",
+      "authored_entry_native_cm": [
+        0,
+        730,
+        0
+      ],
+      "source_translation_m": [
+        0,
+        0.7,
+        0
+      ],
+      "vestibule_recess_cm": 0
+    },
+    {
+      "native": "/Game/CitySim/Art/Meshes/SM_CommercialLow_StorePharmacy",
+      "name": "SM_CommercialLow_StorePharmacy",
+      "source": "ArtSource/Blender/CityBuildingWindows.blend",
+      "object": "SM_CommercialLow_StorePharmacy",
+      "export": "ArtSource/Exports/BuildingWindowStudy/SM_CommercialLow_StorePharmacy.fbx",
+      "bindings": {
+        "CommercialBrick": "/Game/CitySim/Art/Materials/MI_CommercialBrick",
+        "Roof": "/Game/CitySim/Art/Materials/MI_Roof",
+        "RoofMembrane": "/Game/CitySim/Art/Materials/MI_RoofMembrane",
+        "StoreSignTall": "/Game/CitySim/Art/Materials/MI_StoreSignTall",
+        "BuildingWindowOpaque": "/Game/CitySim/Art/Materials/M_BuildingWindowOpaque"
+      },
+      "slots": [
+        "CommercialBrick",
+        "Roof",
+        "RoofMembrane",
+        "StoreSignTall",
+        "BuildingWindowOpaque"
+      ],
+      "density": "Low",
+      "damaged": false,
+      "source_sha256": "0d46923a35e9e23a1c6276e94eec4f03a2752a997bcdd813c6a7980a4429c2ab",
+      "export_sha256": "1e52fe5fc02c778aaf5c45ad6b0420c5dabe2e5046943a5e6c0b140081c42723",
+      "entry_native_cm": [
+        0,
+        660,
+        0
+      ],
+      "door_width_cm": 300,
+      "path_width_cm": 100,
+      "frontage_half_span_cm": 800,
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "target_name": "SM_CommercialGround_CommercialLow_StorePharmacy",
+      "authored_entry_native_cm": [
+        0,
+        730,
+        0
+      ],
+      "source_translation_m": [
+        0,
+        0.7,
+        0
+      ],
+      "vestibule_recess_cm": 0
+    },
+    {
+      "native": "/Game/CitySim/Art/Meshes/SM_CommercialLow_StoreRepairs",
+      "name": "SM_CommercialLow_StoreRepairs",
+      "source": "ArtSource/Blender/CityBuildingWindows.blend",
+      "object": "SM_CommercialLow_StoreRepairs",
+      "export": "ArtSource/Exports/BuildingWindowStudy/SM_CommercialLow_StoreRepairs.fbx",
+      "bindings": {
+        "CommercialBrick": "/Game/CitySim/Art/Materials/MI_CommercialBrick",
+        "Roof": "/Game/CitySim/Art/Materials/MI_Roof",
+        "RoofMembrane": "/Game/CitySim/Art/Materials/MI_RoofMembrane",
+        "StoreSignTall": "/Game/CitySim/Art/Materials/MI_StoreSignTall",
+        "BuildingWindowOpaque": "/Game/CitySim/Art/Materials/M_BuildingWindowOpaque"
+      },
+      "slots": [
+        "CommercialBrick",
+        "Roof",
+        "RoofMembrane",
+        "StoreSignTall",
+        "BuildingWindowOpaque"
+      ],
+      "density": "Low",
+      "damaged": false,
+      "source_sha256": "0d46923a35e9e23a1c6276e94eec4f03a2752a997bcdd813c6a7980a4429c2ab",
+      "export_sha256": "ae7e07d0714250ed212785599e99aa86c1736e125a54385ff4dc884d76d6ca14",
+      "entry_native_cm": [
+        0,
+        660,
+        0
+      ],
+      "door_width_cm": 300,
+      "path_width_cm": 100,
+      "frontage_half_span_cm": 800,
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "target_name": "SM_CommercialGround_CommercialLow_StoreRepairs",
+      "authored_entry_native_cm": [
+        0,
+        730,
+        0
+      ],
+      "source_translation_m": [
+        0,
+        0.7,
+        0
+      ],
+      "vestibule_recess_cm": 0
+    },
+    {
+      "native": "/Game/CitySim/Art/Meshes/SM_CommercialLow_StoreOutfitters",
+      "name": "SM_CommercialLow_StoreOutfitters",
+      "source": "ArtSource/Blender/CityBuildingWindows.blend",
+      "object": "SM_CommercialLow_StoreOutfitters",
+      "export": "ArtSource/Exports/BuildingWindowStudy/SM_CommercialLow_StoreOutfitters.fbx",
+      "bindings": {
+        "CommercialBrick": "/Game/CitySim/Art/Materials/MI_CommercialBrick",
+        "Roof": "/Game/CitySim/Art/Materials/MI_Roof",
+        "RoofMembrane": "/Game/CitySim/Art/Materials/MI_RoofMembrane",
+        "StoreSignTall": "/Game/CitySim/Art/Materials/MI_StoreSignTall",
+        "BuildingWindowOpaque": "/Game/CitySim/Art/Materials/M_BuildingWindowOpaque"
+      },
+      "slots": [
+        "CommercialBrick",
+        "Roof",
+        "RoofMembrane",
+        "StoreSignTall",
+        "BuildingWindowOpaque"
+      ],
+      "density": "Low",
+      "damaged": false,
+      "source_sha256": "0d46923a35e9e23a1c6276e94eec4f03a2752a997bcdd813c6a7980a4429c2ab",
+      "export_sha256": "f4f841238a18facf31215c7f5efa2ec45930aafc24f5813bb68cf3dfe5de5fd7",
+      "entry_native_cm": [
+        0,
+        660,
+        0
+      ],
+      "door_width_cm": 300,
+      "path_width_cm": 100,
+      "frontage_half_span_cm": 800,
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "target_name": "SM_CommercialGround_CommercialLow_StoreOutfitters",
+      "authored_entry_native_cm": [
+        0,
+        730,
+        0
+      ],
+      "source_translation_m": [
+        0,
+        0.7,
+        0
+      ],
+      "vestibule_recess_cm": 0
+    },
+    {
+      "native": "/Game/CitySim/Art/Meshes/SM_CommercialLow_StoreTech",
+      "name": "SM_CommercialLow_StoreTech",
+      "source": "ArtSource/Blender/CityBuildingWindows.blend",
+      "object": "SM_CommercialLow_StoreTech",
+      "export": "ArtSource/Exports/BuildingWindowStudy/SM_CommercialLow_StoreTech.fbx",
+      "bindings": {
+        "CommercialBrick": "/Game/CitySim/Art/Materials/MI_CommercialBrick",
+        "Roof": "/Game/CitySim/Art/Materials/MI_Roof",
+        "RoofMembrane": "/Game/CitySim/Art/Materials/MI_RoofMembrane",
+        "StoreSignTall": "/Game/CitySim/Art/Materials/MI_StoreSignTall",
+        "BuildingWindowOpaque": "/Game/CitySim/Art/Materials/M_BuildingWindowOpaque"
+      },
+      "slots": [
+        "CommercialBrick",
+        "Roof",
+        "RoofMembrane",
+        "StoreSignTall",
+        "BuildingWindowOpaque"
+      ],
+      "density": "Low",
+      "damaged": false,
+      "source_sha256": "0d46923a35e9e23a1c6276e94eec4f03a2752a997bcdd813c6a7980a4429c2ab",
+      "export_sha256": "2eb3f83d2d67cc590418eca8ae625bfe4167f7795ca9fdce3a5aafa71c58b0a5",
+      "entry_native_cm": [
+        0,
+        660,
+        0
+      ],
+      "door_width_cm": 300,
+      "path_width_cm": 100,
+      "frontage_half_span_cm": 800,
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "target_name": "SM_CommercialGround_CommercialLow_StoreTech",
+      "authored_entry_native_cm": [
+        0,
+        730,
+        0
+      ],
+      "source_translation_m": [
+        0,
+        0.7,
+        0
+      ],
+      "vestibule_recess_cm": 0
+    },
+    {
+      "native": "/Game/CitySim/Art/Meshes/SM_CommercialMedium_StoreMarket",
+      "name": "SM_CommercialMedium_StoreMarket",
+      "source": "ArtSource/Blender/CityBuildingWindows.blend",
+      "object": "SM_CommercialMedium_StoreMarket",
+      "export": "ArtSource/Exports/BuildingWindowStudy/SM_CommercialMedium_StoreMarket.fbx",
+      "bindings": {
+        "CommercialBrick": "/Game/CitySim/Art/Materials/MI_CommercialBrick",
+        "Roof": "/Game/CitySim/Art/Materials/MI_Roof",
+        "RoofMembrane": "/Game/CitySim/Art/Materials/MI_RoofMembrane",
+        "StoreSignWide": "/Game/CitySim/Art/Materials/MI_StoreSignWide",
+        "BuildingWindowOpaque": "/Game/CitySim/Art/Materials/M_BuildingWindowOpaque"
+      },
+      "slots": [
+        "CommercialBrick",
+        "Roof",
+        "RoofMembrane",
+        "StoreSignWide",
+        "BuildingWindowOpaque"
+      ],
+      "density": "Medium",
+      "damaged": false,
+      "source_sha256": "0d46923a35e9e23a1c6276e94eec4f03a2752a997bcdd813c6a7980a4429c2ab",
+      "export_sha256": "ccae088c26af03209d62d8c4d0fb8da814dd83b0e468a53c467c74e01358b539",
+      "entry_native_cm": [
+        0,
+        660,
+        0
+      ],
+      "door_width_cm": 300,
+      "path_width_cm": 100,
+      "frontage_half_span_cm": 800,
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "target_name": "SM_CommercialGround_CommercialMedium_StoreMarket",
+      "authored_entry_native_cm": [
+        0,
+        730,
+        0
+      ],
+      "source_translation_m": [
+        0,
+        0.7,
+        0
+      ],
+      "vestibule_recess_cm": 0
+    },
+    {
+      "native": "/Game/CitySim/Art/Meshes/SM_CommercialMedium_StoreBakery",
+      "name": "SM_CommercialMedium_StoreBakery",
+      "source": "ArtSource/Blender/CityBuildingWindows.blend",
+      "object": "SM_CommercialMedium_StoreBakery",
+      "export": "ArtSource/Exports/BuildingWindowStudy/SM_CommercialMedium_StoreBakery.fbx",
+      "bindings": {
+        "CommercialBrick": "/Game/CitySim/Art/Materials/MI_CommercialBrick",
+        "Roof": "/Game/CitySim/Art/Materials/MI_Roof",
+        "RoofMembrane": "/Game/CitySim/Art/Materials/MI_RoofMembrane",
+        "StoreSignWide": "/Game/CitySim/Art/Materials/MI_StoreSignWide",
+        "BuildingWindowOpaque": "/Game/CitySim/Art/Materials/M_BuildingWindowOpaque"
+      },
+      "slots": [
+        "CommercialBrick",
+        "Roof",
+        "RoofMembrane",
+        "StoreSignWide",
+        "BuildingWindowOpaque"
+      ],
+      "density": "Medium",
+      "damaged": false,
+      "source_sha256": "0d46923a35e9e23a1c6276e94eec4f03a2752a997bcdd813c6a7980a4429c2ab",
+      "export_sha256": "665f5736b1b9e4f08f483c2b695c65e898676bc345793af7504516de1a4f6dea",
+      "entry_native_cm": [
+        0,
+        660,
+        0
+      ],
+      "door_width_cm": 300,
+      "path_width_cm": 100,
+      "frontage_half_span_cm": 800,
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "target_name": "SM_CommercialGround_CommercialMedium_StoreBakery",
+      "authored_entry_native_cm": [
+        0,
+        730,
+        0
+      ],
+      "source_translation_m": [
+        0,
+        0.7,
+        0
+      ],
+      "vestibule_recess_cm": 0
+    },
+    {
+      "native": "/Game/CitySim/Art/Meshes/SM_CommercialMedium_StoreCafe",
+      "name": "SM_CommercialMedium_StoreCafe",
+      "source": "ArtSource/Blender/CityBuildingWindows.blend",
+      "object": "SM_CommercialMedium_StoreCafe",
+      "export": "ArtSource/Exports/BuildingWindowStudy/SM_CommercialMedium_StoreCafe.fbx",
+      "bindings": {
+        "CommercialBrick": "/Game/CitySim/Art/Materials/MI_CommercialBrick",
+        "Roof": "/Game/CitySim/Art/Materials/MI_Roof",
+        "RoofMembrane": "/Game/CitySim/Art/Materials/MI_RoofMembrane",
+        "StoreSignWide": "/Game/CitySim/Art/Materials/MI_StoreSignWide",
+        "BuildingWindowOpaque": "/Game/CitySim/Art/Materials/M_BuildingWindowOpaque"
+      },
+      "slots": [
+        "CommercialBrick",
+        "Roof",
+        "RoofMembrane",
+        "StoreSignWide",
+        "BuildingWindowOpaque"
+      ],
+      "density": "Medium",
+      "damaged": false,
+      "source_sha256": "0d46923a35e9e23a1c6276e94eec4f03a2752a997bcdd813c6a7980a4429c2ab",
+      "export_sha256": "61d1892dc6d04e7859a224114925f0b9b4813c3fc9d5919b6bbf22fcb67ab37b",
+      "entry_native_cm": [
+        0,
+        660,
+        0
+      ],
+      "door_width_cm": 300,
+      "path_width_cm": 100,
+      "frontage_half_span_cm": 800,
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "target_name": "SM_CommercialGround_CommercialMedium_StoreCafe",
+      "authored_entry_native_cm": [
+        0,
+        730,
+        0
+      ],
+      "source_translation_m": [
+        0,
+        0.7,
+        0
+      ],
+      "vestibule_recess_cm": 0
+    },
+    {
+      "native": "/Game/CitySim/Art/Meshes/SM_CommercialMedium_StoreBooks",
+      "name": "SM_CommercialMedium_StoreBooks",
+      "source": "ArtSource/Blender/CityBuildingWindows.blend",
+      "object": "SM_CommercialMedium_StoreBooks",
+      "export": "ArtSource/Exports/BuildingWindowStudy/SM_CommercialMedium_StoreBooks.fbx",
+      "bindings": {
+        "CommercialBrick": "/Game/CitySim/Art/Materials/MI_CommercialBrick",
+        "Roof": "/Game/CitySim/Art/Materials/MI_Roof",
+        "RoofMembrane": "/Game/CitySim/Art/Materials/MI_RoofMembrane",
+        "StoreSignWide": "/Game/CitySim/Art/Materials/MI_StoreSignWide",
+        "BuildingWindowOpaque": "/Game/CitySim/Art/Materials/M_BuildingWindowOpaque"
+      },
+      "slots": [
+        "CommercialBrick",
+        "Roof",
+        "RoofMembrane",
+        "StoreSignWide",
+        "BuildingWindowOpaque"
+      ],
+      "density": "Medium",
+      "damaged": false,
+      "source_sha256": "0d46923a35e9e23a1c6276e94eec4f03a2752a997bcdd813c6a7980a4429c2ab",
+      "export_sha256": "98716fa6c1863629702bb4e3742f66e564389840e7cda9f7152ef4cf358751d7",
+      "entry_native_cm": [
+        0,
+        660,
+        0
+      ],
+      "door_width_cm": 300,
+      "path_width_cm": 100,
+      "frontage_half_span_cm": 800,
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "target_name": "SM_CommercialGround_CommercialMedium_StoreBooks",
+      "authored_entry_native_cm": [
+        0,
+        730,
+        0
+      ],
+      "source_translation_m": [
+        0,
+        0.7,
+        0
+      ],
+      "vestibule_recess_cm": 0
+    },
+    {
+      "native": "/Game/CitySim/Art/Meshes/SM_CommercialMedium_StorePharmacy",
+      "name": "SM_CommercialMedium_StorePharmacy",
+      "source": "ArtSource/Blender/CityBuildingWindows.blend",
+      "object": "SM_CommercialMedium_StorePharmacy",
+      "export": "ArtSource/Exports/BuildingWindowStudy/SM_CommercialMedium_StorePharmacy.fbx",
+      "bindings": {
+        "CommercialBrick": "/Game/CitySim/Art/Materials/MI_CommercialBrick",
+        "Roof": "/Game/CitySim/Art/Materials/MI_Roof",
+        "RoofMembrane": "/Game/CitySim/Art/Materials/MI_RoofMembrane",
+        "StoreSignWide": "/Game/CitySim/Art/Materials/MI_StoreSignWide",
+        "BuildingWindowOpaque": "/Game/CitySim/Art/Materials/M_BuildingWindowOpaque"
+      },
+      "slots": [
+        "CommercialBrick",
+        "Roof",
+        "RoofMembrane",
+        "StoreSignWide",
+        "BuildingWindowOpaque"
+      ],
+      "density": "Medium",
+      "damaged": false,
+      "source_sha256": "0d46923a35e9e23a1c6276e94eec4f03a2752a997bcdd813c6a7980a4429c2ab",
+      "export_sha256": "3ca8a8c92271593c40cd3722005331a56cb55a1f56276ea926d21b8b03c674c3",
+      "entry_native_cm": [
+        0,
+        660,
+        0
+      ],
+      "door_width_cm": 300,
+      "path_width_cm": 100,
+      "frontage_half_span_cm": 800,
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "target_name": "SM_CommercialGround_CommercialMedium_StorePharmacy",
+      "authored_entry_native_cm": [
+        0,
+        730,
+        0
+      ],
+      "source_translation_m": [
+        0,
+        0.7,
+        0
+      ],
+      "vestibule_recess_cm": 0
+    },
+    {
+      "native": "/Game/CitySim/Art/Meshes/SM_CommercialMedium_StoreRepairs",
+      "name": "SM_CommercialMedium_StoreRepairs",
+      "source": "ArtSource/Blender/CityBuildingWindows.blend",
+      "object": "SM_CommercialMedium_StoreRepairs",
+      "export": "ArtSource/Exports/BuildingWindowStudy/SM_CommercialMedium_StoreRepairs.fbx",
+      "bindings": {
+        "CommercialBrick": "/Game/CitySim/Art/Materials/MI_CommercialBrick",
+        "Roof": "/Game/CitySim/Art/Materials/MI_Roof",
+        "RoofMembrane": "/Game/CitySim/Art/Materials/MI_RoofMembrane",
+        "StoreSignWide": "/Game/CitySim/Art/Materials/MI_StoreSignWide",
+        "BuildingWindowOpaque": "/Game/CitySim/Art/Materials/M_BuildingWindowOpaque"
+      },
+      "slots": [
+        "CommercialBrick",
+        "Roof",
+        "RoofMembrane",
+        "StoreSignWide",
+        "BuildingWindowOpaque"
+      ],
+      "density": "Medium",
+      "damaged": false,
+      "source_sha256": "0d46923a35e9e23a1c6276e94eec4f03a2752a997bcdd813c6a7980a4429c2ab",
+      "export_sha256": "4a67df88e2be6f43034bb8c4a208c5f4ca44ccaf473543d3dd112645c59b1d0c",
+      "entry_native_cm": [
+        0,
+        660,
+        0
+      ],
+      "door_width_cm": 300,
+      "path_width_cm": 100,
+      "frontage_half_span_cm": 800,
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "target_name": "SM_CommercialGround_CommercialMedium_StoreRepairs",
+      "authored_entry_native_cm": [
+        0,
+        730,
+        0
+      ],
+      "source_translation_m": [
+        0,
+        0.7,
+        0
+      ],
+      "vestibule_recess_cm": 0
+    },
+    {
+      "native": "/Game/CitySim/Art/Meshes/SM_CommercialMedium_StoreOutfitters",
+      "name": "SM_CommercialMedium_StoreOutfitters",
+      "source": "ArtSource/Blender/CityBuildingWindows.blend",
+      "object": "SM_CommercialMedium_StoreOutfitters",
+      "export": "ArtSource/Exports/BuildingWindowStudy/SM_CommercialMedium_StoreOutfitters.fbx",
+      "bindings": {
+        "CommercialBrick": "/Game/CitySim/Art/Materials/MI_CommercialBrick",
+        "Roof": "/Game/CitySim/Art/Materials/MI_Roof",
+        "RoofMembrane": "/Game/CitySim/Art/Materials/MI_RoofMembrane",
+        "StoreSignWide": "/Game/CitySim/Art/Materials/MI_StoreSignWide",
+        "BuildingWindowOpaque": "/Game/CitySim/Art/Materials/M_BuildingWindowOpaque"
+      },
+      "slots": [
+        "CommercialBrick",
+        "Roof",
+        "RoofMembrane",
+        "StoreSignWide",
+        "BuildingWindowOpaque"
+      ],
+      "density": "Medium",
+      "damaged": false,
+      "source_sha256": "0d46923a35e9e23a1c6276e94eec4f03a2752a997bcdd813c6a7980a4429c2ab",
+      "export_sha256": "ae06ed632a15146ee17a5e127e9c546d63114ae6a2906c05b11d32795d7c8d14",
+      "entry_native_cm": [
+        0,
+        660,
+        0
+      ],
+      "door_width_cm": 300,
+      "path_width_cm": 100,
+      "frontage_half_span_cm": 800,
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "target_name": "SM_CommercialGround_CommercialMedium_StoreOutfitters",
+      "authored_entry_native_cm": [
+        0,
+        730,
+        0
+      ],
+      "source_translation_m": [
+        0,
+        0.7,
+        0
+      ],
+      "vestibule_recess_cm": 0
+    },
+    {
+      "native": "/Game/CitySim/Art/Meshes/SM_CommercialMedium_StoreTech",
+      "name": "SM_CommercialMedium_StoreTech",
+      "source": "ArtSource/Blender/CityBuildingWindows.blend",
+      "object": "SM_CommercialMedium_StoreTech",
+      "export": "ArtSource/Exports/BuildingWindowStudy/SM_CommercialMedium_StoreTech.fbx",
+      "bindings": {
+        "CommercialBrick": "/Game/CitySim/Art/Materials/MI_CommercialBrick",
+        "Roof": "/Game/CitySim/Art/Materials/MI_Roof",
+        "RoofMembrane": "/Game/CitySim/Art/Materials/MI_RoofMembrane",
+        "StoreSignWide": "/Game/CitySim/Art/Materials/MI_StoreSignWide",
+        "BuildingWindowOpaque": "/Game/CitySim/Art/Materials/M_BuildingWindowOpaque"
+      },
+      "slots": [
+        "CommercialBrick",
+        "Roof",
+        "RoofMembrane",
+        "StoreSignWide",
+        "BuildingWindowOpaque"
+      ],
+      "density": "Medium",
+      "damaged": false,
+      "source_sha256": "0d46923a35e9e23a1c6276e94eec4f03a2752a997bcdd813c6a7980a4429c2ab",
+      "export_sha256": "8c1101a7647d4101e1f35d2dedac4801f5c4459b0381acaa0460ae2c884855d0",
+      "entry_native_cm": [
+        0,
+        660,
+        0
+      ],
+      "door_width_cm": 300,
+      "path_width_cm": 100,
+      "frontage_half_span_cm": 800,
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "target_name": "SM_CommercialGround_CommercialMedium_StoreTech",
+      "authored_entry_native_cm": [
+        0,
+        730,
+        0
+      ],
+      "source_translation_m": [
+        0,
+        0.7,
+        0
+      ],
+      "vestibule_recess_cm": 0
+    },
+    {
+      "native": "/Game/CitySim/Art/Meshes/SM_CommercialHigh_StoreMarket",
+      "name": "SM_CommercialHigh_StoreMarket",
+      "source": "ArtSource/Blender/CityBuildingWindows.blend",
+      "object": "SM_CommercialHigh_StoreMarket",
+      "export": "ArtSource/Exports/BuildingWindowStudy/SM_CommercialHigh_StoreMarket.fbx",
+      "bindings": {
+        "CommercialBrick": "/Game/CitySim/Art/Materials/MI_CommercialBrick",
+        "Roof": "/Game/CitySim/Art/Materials/MI_Roof",
+        "RoofMembrane": "/Game/CitySim/Art/Materials/MI_RoofMembrane",
+        "StoreSignWide": "/Game/CitySim/Art/Materials/MI_StoreSignWide",
+        "BuildingWindowOpaque": "/Game/CitySim/Art/Materials/M_BuildingWindowOpaque"
+      },
+      "slots": [
+        "CommercialBrick",
+        "Roof",
+        "RoofMembrane",
+        "StoreSignWide",
+        "BuildingWindowOpaque"
+      ],
+      "density": "High",
+      "damaged": false,
+      "source_sha256": "0d46923a35e9e23a1c6276e94eec4f03a2752a997bcdd813c6a7980a4429c2ab",
+      "export_sha256": "4845a6556fbd0096c769eff7c5c464265be9ef1fb089bd12c0666a05517a8416",
+      "entry_native_cm": [
+        0,
+        660,
+        0
+      ],
+      "door_width_cm": 300,
+      "path_width_cm": 100,
+      "frontage_half_span_cm": 800,
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "target_name": "SM_CommercialGround_CommercialHigh_StoreMarket",
+      "authored_entry_native_cm": [
+        0,
+        730,
+        0
+      ],
+      "source_translation_m": [
+        0,
+        0.7,
+        0
+      ],
+      "vestibule_recess_cm": 0
+    },
+    {
+      "native": "/Game/CitySim/Art/Meshes/SM_CommercialHigh_StoreBakery",
+      "name": "SM_CommercialHigh_StoreBakery",
+      "source": "ArtSource/Blender/CityBuildingWindows.blend",
+      "object": "SM_CommercialHigh_StoreBakery",
+      "export": "ArtSource/Exports/BuildingWindowStudy/SM_CommercialHigh_StoreBakery.fbx",
+      "bindings": {
+        "CommercialBrick": "/Game/CitySim/Art/Materials/MI_CommercialBrick",
+        "Roof": "/Game/CitySim/Art/Materials/MI_Roof",
+        "RoofMembrane": "/Game/CitySim/Art/Materials/MI_RoofMembrane",
+        "StoreSignWide": "/Game/CitySim/Art/Materials/MI_StoreSignWide",
+        "BuildingWindowOpaque": "/Game/CitySim/Art/Materials/M_BuildingWindowOpaque"
+      },
+      "slots": [
+        "CommercialBrick",
+        "Roof",
+        "RoofMembrane",
+        "StoreSignWide",
+        "BuildingWindowOpaque"
+      ],
+      "density": "High",
+      "damaged": false,
+      "source_sha256": "0d46923a35e9e23a1c6276e94eec4f03a2752a997bcdd813c6a7980a4429c2ab",
+      "export_sha256": "c41856297ca7c527c5bf3c63ee66986505985777ee70a0e316b6368deb005174",
+      "entry_native_cm": [
+        0,
+        660,
+        0
+      ],
+      "door_width_cm": 300,
+      "path_width_cm": 100,
+      "frontage_half_span_cm": 800,
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "target_name": "SM_CommercialGround_CommercialHigh_StoreBakery",
+      "authored_entry_native_cm": [
+        0,
+        730,
+        0
+      ],
+      "source_translation_m": [
+        0,
+        0.7,
+        0
+      ],
+      "vestibule_recess_cm": 0
+    },
+    {
+      "native": "/Game/CitySim/Art/Meshes/SM_CommercialHigh_StoreCafe",
+      "name": "SM_CommercialHigh_StoreCafe",
+      "source": "ArtSource/Blender/CityBuildingWindows.blend",
+      "object": "SM_CommercialHigh_StoreCafe",
+      "export": "ArtSource/Exports/BuildingWindowStudy/SM_CommercialHigh_StoreCafe.fbx",
+      "bindings": {
+        "CommercialBrick": "/Game/CitySim/Art/Materials/MI_CommercialBrick",
+        "Roof": "/Game/CitySim/Art/Materials/MI_Roof",
+        "RoofMembrane": "/Game/CitySim/Art/Materials/MI_RoofMembrane",
+        "StoreSignWide": "/Game/CitySim/Art/Materials/MI_StoreSignWide",
+        "BuildingWindowOpaque": "/Game/CitySim/Art/Materials/M_BuildingWindowOpaque"
+      },
+      "slots": [
+        "CommercialBrick",
+        "Roof",
+        "RoofMembrane",
+        "StoreSignWide",
+        "BuildingWindowOpaque"
+      ],
+      "density": "High",
+      "damaged": false,
+      "source_sha256": "0d46923a35e9e23a1c6276e94eec4f03a2752a997bcdd813c6a7980a4429c2ab",
+      "export_sha256": "21bbb0c4c4f7bd26fad8de4b8d76ca039ecfbb115b02e58d97b56ed60e55c5cd",
+      "entry_native_cm": [
+        0,
+        660,
+        0
+      ],
+      "door_width_cm": 300,
+      "path_width_cm": 100,
+      "frontage_half_span_cm": 800,
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "target_name": "SM_CommercialGround_CommercialHigh_StoreCafe",
+      "authored_entry_native_cm": [
+        0,
+        730,
+        0
+      ],
+      "source_translation_m": [
+        0,
+        0.7,
+        0
+      ],
+      "vestibule_recess_cm": 0
+    },
+    {
+      "native": "/Game/CitySim/Art/Meshes/SM_CommercialHigh_StoreBooks",
+      "name": "SM_CommercialHigh_StoreBooks",
+      "source": "ArtSource/Blender/CityBuildingWindows.blend",
+      "object": "SM_CommercialHigh_StoreBooks",
+      "export": "ArtSource/Exports/BuildingWindowStudy/SM_CommercialHigh_StoreBooks.fbx",
+      "bindings": {
+        "CommercialBrick": "/Game/CitySim/Art/Materials/MI_CommercialBrick",
+        "Roof": "/Game/CitySim/Art/Materials/MI_Roof",
+        "RoofMembrane": "/Game/CitySim/Art/Materials/MI_RoofMembrane",
+        "StoreSignWide": "/Game/CitySim/Art/Materials/MI_StoreSignWide",
+        "BuildingWindowOpaque": "/Game/CitySim/Art/Materials/M_BuildingWindowOpaque"
+      },
+      "slots": [
+        "CommercialBrick",
+        "Roof",
+        "RoofMembrane",
+        "StoreSignWide",
+        "BuildingWindowOpaque"
+      ],
+      "density": "High",
+      "damaged": false,
+      "source_sha256": "0d46923a35e9e23a1c6276e94eec4f03a2752a997bcdd813c6a7980a4429c2ab",
+      "export_sha256": "2320231b2e12d4926c428ad430cd453d380134804be4a4eaf6e1306aee1f079a",
+      "entry_native_cm": [
+        0,
+        660,
+        0
+      ],
+      "door_width_cm": 300,
+      "path_width_cm": 100,
+      "frontage_half_span_cm": 800,
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "target_name": "SM_CommercialGround_CommercialHigh_StoreBooks",
+      "authored_entry_native_cm": [
+        0,
+        730,
+        0
+      ],
+      "source_translation_m": [
+        0,
+        0.7,
+        0
+      ],
+      "vestibule_recess_cm": 0
+    },
+    {
+      "native": "/Game/CitySim/Art/Meshes/SM_CommercialHigh_StorePharmacy",
+      "name": "SM_CommercialHigh_StorePharmacy",
+      "source": "ArtSource/Blender/CityBuildingWindows.blend",
+      "object": "SM_CommercialHigh_StorePharmacy",
+      "export": "ArtSource/Exports/BuildingWindowStudy/SM_CommercialHigh_StorePharmacy.fbx",
+      "bindings": {
+        "CommercialBrick": "/Game/CitySim/Art/Materials/MI_CommercialBrick",
+        "Roof": "/Game/CitySim/Art/Materials/MI_Roof",
+        "RoofMembrane": "/Game/CitySim/Art/Materials/MI_RoofMembrane",
+        "StoreSignWide": "/Game/CitySim/Art/Materials/MI_StoreSignWide",
+        "BuildingWindowOpaque": "/Game/CitySim/Art/Materials/M_BuildingWindowOpaque"
+      },
+      "slots": [
+        "CommercialBrick",
+        "Roof",
+        "RoofMembrane",
+        "StoreSignWide",
+        "BuildingWindowOpaque"
+      ],
+      "density": "High",
+      "damaged": false,
+      "source_sha256": "0d46923a35e9e23a1c6276e94eec4f03a2752a997bcdd813c6a7980a4429c2ab",
+      "export_sha256": "f71b570510cdffcf078e0ec7651ddc917ef055351636e3b0ecd8c92e5636687d",
+      "entry_native_cm": [
+        0,
+        660,
+        0
+      ],
+      "door_width_cm": 300,
+      "path_width_cm": 100,
+      "frontage_half_span_cm": 800,
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "target_name": "SM_CommercialGround_CommercialHigh_StorePharmacy",
+      "authored_entry_native_cm": [
+        0,
+        730,
+        0
+      ],
+      "source_translation_m": [
+        0,
+        0.7,
+        0
+      ],
+      "vestibule_recess_cm": 0
+    },
+    {
+      "native": "/Game/CitySim/Art/Meshes/SM_CommercialHigh_StoreRepairs",
+      "name": "SM_CommercialHigh_StoreRepairs",
+      "source": "ArtSource/Blender/CityBuildingWindows.blend",
+      "object": "SM_CommercialHigh_StoreRepairs",
+      "export": "ArtSource/Exports/BuildingWindowStudy/SM_CommercialHigh_StoreRepairs.fbx",
+      "bindings": {
+        "CommercialBrick": "/Game/CitySim/Art/Materials/MI_CommercialBrick",
+        "Roof": "/Game/CitySim/Art/Materials/MI_Roof",
+        "RoofMembrane": "/Game/CitySim/Art/Materials/MI_RoofMembrane",
+        "StoreSignWide": "/Game/CitySim/Art/Materials/MI_StoreSignWide",
+        "BuildingWindowOpaque": "/Game/CitySim/Art/Materials/M_BuildingWindowOpaque"
+      },
+      "slots": [
+        "CommercialBrick",
+        "Roof",
+        "RoofMembrane",
+        "StoreSignWide",
+        "BuildingWindowOpaque"
+      ],
+      "density": "High",
+      "damaged": false,
+      "source_sha256": "0d46923a35e9e23a1c6276e94eec4f03a2752a997bcdd813c6a7980a4429c2ab",
+      "export_sha256": "b06d53615aa2377aa874b291bf5255f97a398b0b50c090eacc1c002bddf589b7",
+      "entry_native_cm": [
+        0,
+        660,
+        0
+      ],
+      "door_width_cm": 300,
+      "path_width_cm": 100,
+      "frontage_half_span_cm": 800,
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "target_name": "SM_CommercialGround_CommercialHigh_StoreRepairs",
+      "authored_entry_native_cm": [
+        0,
+        730,
+        0
+      ],
+      "source_translation_m": [
+        0,
+        0.7,
+        0
+      ],
+      "vestibule_recess_cm": 0
+    },
+    {
+      "native": "/Game/CitySim/Art/Meshes/SM_CommercialHigh_StoreOutfitters",
+      "name": "SM_CommercialHigh_StoreOutfitters",
+      "source": "ArtSource/Blender/CityBuildingWindows.blend",
+      "object": "SM_CommercialHigh_StoreOutfitters",
+      "export": "ArtSource/Exports/BuildingWindowStudy/SM_CommercialHigh_StoreOutfitters.fbx",
+      "bindings": {
+        "CommercialBrick": "/Game/CitySim/Art/Materials/MI_CommercialBrick",
+        "Roof": "/Game/CitySim/Art/Materials/MI_Roof",
+        "RoofMembrane": "/Game/CitySim/Art/Materials/MI_RoofMembrane",
+        "StoreSignWide": "/Game/CitySim/Art/Materials/MI_StoreSignWide",
+        "BuildingWindowOpaque": "/Game/CitySim/Art/Materials/M_BuildingWindowOpaque"
+      },
+      "slots": [
+        "CommercialBrick",
+        "Roof",
+        "RoofMembrane",
+        "StoreSignWide",
+        "BuildingWindowOpaque"
+      ],
+      "density": "High",
+      "damaged": false,
+      "source_sha256": "0d46923a35e9e23a1c6276e94eec4f03a2752a997bcdd813c6a7980a4429c2ab",
+      "export_sha256": "efd864a134df27f92d6584605d01355bd9deee0510cefb4b147177f82bd8c73b",
+      "entry_native_cm": [
+        0,
+        660,
+        0
+      ],
+      "door_width_cm": 300,
+      "path_width_cm": 100,
+      "frontage_half_span_cm": 800,
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "target_name": "SM_CommercialGround_CommercialHigh_StoreOutfitters",
+      "authored_entry_native_cm": [
+        0,
+        730,
+        0
+      ],
+      "source_translation_m": [
+        0,
+        0.7,
+        0
+      ],
+      "vestibule_recess_cm": 0
+    },
+    {
+      "native": "/Game/CitySim/Art/Meshes/SM_CommercialHigh_StoreTech",
+      "name": "SM_CommercialHigh_StoreTech",
+      "source": "ArtSource/Blender/CityBuildingWindows.blend",
+      "object": "SM_CommercialHigh_StoreTech",
+      "export": "ArtSource/Exports/BuildingWindowStudy/SM_CommercialHigh_StoreTech.fbx",
+      "bindings": {
+        "CommercialBrick": "/Game/CitySim/Art/Materials/MI_CommercialBrick",
+        "Roof": "/Game/CitySim/Art/Materials/MI_Roof",
+        "RoofMembrane": "/Game/CitySim/Art/Materials/MI_RoofMembrane",
+        "StoreSignWide": "/Game/CitySim/Art/Materials/MI_StoreSignWide",
+        "BuildingWindowOpaque": "/Game/CitySim/Art/Materials/M_BuildingWindowOpaque"
+      },
+      "slots": [
+        "CommercialBrick",
+        "Roof",
+        "RoofMembrane",
+        "StoreSignWide",
+        "BuildingWindowOpaque"
+      ],
+      "density": "High",
+      "damaged": false,
+      "source_sha256": "0d46923a35e9e23a1c6276e94eec4f03a2752a997bcdd813c6a7980a4429c2ab",
+      "export_sha256": "074637392743e9fbfb15db810d9d4cf759129c81ed5ef76d4c29e688216a80d1",
+      "entry_native_cm": [
+        0,
+        660,
+        0
+      ],
+      "door_width_cm": 300,
+      "path_width_cm": 100,
+      "frontage_half_span_cm": 800,
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "target_name": "SM_CommercialGround_CommercialHigh_StoreTech",
+      "authored_entry_native_cm": [
+        0,
+        730,
+        0
+      ],
+      "source_translation_m": [
+        0,
+        0.7,
+        0
+      ],
+      "vestibule_recess_cm": 0
+    },
+    {
+      "native": "/Game/CitySim/Art/Meshes/SM_Building_Shop_A_Damaged",
+      "name": "SM_Building_Shop_A_Damaged",
+      "source": "ArtSource/Blender/CityBuildingSurfacePrototype.blend",
+      "object": "SM_CommercialLow_SurfacePrototype_Damaged",
+      "export": "ArtSource/Exports/BuildingSurfacePrototypes/SM_CommercialLow_SurfacePrototype_Damaged.fbx",
+      "bindings": {
+        "CharredBrick": "/Game/CitySim/Art/Materials/MI_CharredBrick",
+        "CharredTrim": "/Game/CitySim/Art/Materials/MI_CharredTrim",
+        "CharredRoofMembrane": "/Game/CitySim/Art/Materials/MI_CharredRoofMembrane",
+        "CharredSign": "/Game/CitySim/Art/Materials/MI_CharredTrim"
+      },
+      "slots": [
+        "CharredBrick",
+        "CharredTrim",
+        "CharredRoofMembrane",
+        "CharredSign"
+      ],
+      "density": "Low",
+      "damaged": true,
+      "source_sha256": "2927bbd991dc3a8acc51f56b721b6dd04ca451a12a18efe88371d9b9337ed932",
+      "export_sha256": "82d44e4a82bad0bb02ac05d56b1d745b5db3a8713b12b76de4f8b688f9d76fc8",
+      "entry_native_cm": [
+        0,
+        660,
+        0
+      ],
+      "door_width_cm": 300,
+      "path_width_cm": 100,
+      "frontage_half_span_cm": 800,
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "target_name": "SM_CommercialGround_Building_Shop_A_Damaged",
+      "authored_entry_native_cm": [
+        0,
+        730,
+        0
+      ],
+      "source_translation_m": [
+        0,
+        0.7,
+        0
+      ],
+      "vestibule_recess_cm": 0
+    },
+    {
+      "native": "/Game/CitySim/Art/Meshes/SM_Building_Shop_Medium_A_Damaged",
+      "name": "SM_Building_Shop_Medium_A_Damaged",
+      "source": "ArtSource/Blender/CityBuildingSurfacePrototype.blend",
+      "object": "SM_CommercialMedium_SurfacePrototype_Damaged",
+      "export": "ArtSource/Exports/BuildingSurfacePrototypes/SM_CommercialMedium_SurfacePrototype_Damaged.fbx",
+      "bindings": {
+        "CharredBrick": "/Game/CitySim/Art/Materials/MI_CharredBrick",
+        "CharredTrim": "/Game/CitySim/Art/Materials/MI_CharredTrim",
+        "CharredRoofMembrane": "/Game/CitySim/Art/Materials/MI_CharredRoofMembrane",
+        "CharredSign": "/Game/CitySim/Art/Materials/MI_CharredTrim"
+      },
+      "slots": [
+        "CharredBrick",
+        "CharredTrim",
+        "CharredRoofMembrane",
+        "CharredSign"
+      ],
+      "density": "Medium",
+      "damaged": true,
+      "source_sha256": "2927bbd991dc3a8acc51f56b721b6dd04ca451a12a18efe88371d9b9337ed932",
+      "export_sha256": "5ebee5e370502c14c24ce18f7ec015b466785a05def7ef7d1082801b136e6e47",
+      "entry_native_cm": [
+        0,
+        660,
+        0
+      ],
+      "door_width_cm": 300,
+      "path_width_cm": 100,
+      "frontage_half_span_cm": 800,
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "target_name": "SM_CommercialGround_Building_Shop_Medium_A_Damaged",
+      "authored_entry_native_cm": [
+        0,
+        730,
+        0
+      ],
+      "source_translation_m": [
+        0,
+        0.7,
+        0
+      ],
+      "vestibule_recess_cm": 0
+    },
+    {
+      "native": "/Game/CitySim/Art/Meshes/SM_Building_Shop_High_A_Damaged",
+      "name": "SM_Building_Shop_High_A_Damaged",
+      "source": "ArtSource/Blender/CityBuildingSurfacePrototype.blend",
+      "object": "SM_CommercialHigh_SurfacePrototype_Damaged",
+      "export": "ArtSource/Exports/BuildingSurfacePrototypes/SM_CommercialHigh_SurfacePrototype_Damaged.fbx",
+      "bindings": {
+        "CharredBrick": "/Game/CitySim/Art/Materials/MI_CharredBrick",
+        "CharredTrim": "/Game/CitySim/Art/Materials/MI_CharredTrim",
+        "CharredRoofMembrane": "/Game/CitySim/Art/Materials/MI_CharredRoofMembrane",
+        "CharredSign": "/Game/CitySim/Art/Materials/MI_CharredTrim"
+      },
+      "slots": [
+        "CharredBrick",
+        "CharredTrim",
+        "CharredRoofMembrane",
+        "CharredSign"
+      ],
+      "density": "High",
+      "damaged": true,
+      "source_sha256": "2927bbd991dc3a8acc51f56b721b6dd04ca451a12a18efe88371d9b9337ed932",
+      "export_sha256": "87b535fe7590d15842c6334b7be3e35af4818d116a3db8a38fc9e38c8331e5e4",
+      "entry_native_cm": [
+        0,
+        660,
+        0
+      ],
+      "door_width_cm": 300,
+      "path_width_cm": 100,
+      "frontage_half_span_cm": 800,
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "target_name": "SM_CommercialGround_Building_Shop_High_A_Damaged",
+      "authored_entry_native_cm": [
+        0,
+        730,
+        0
+      ],
+      "source_translation_m": [
+        0,
+        0.7,
+        0
+      ],
+      "vestibule_recess_cm": 0
+    },
+    {
+      "native": "/Game/CitySim/Art/Meshes/SM_CommercialLow_StoreMarket_Damaged",
+      "name": "SM_CommercialLow_StoreMarket_Damaged",
+      "source": "ArtSource/Blender/CityBuildingSurfacePrototype.blend",
+      "object": "SM_CommercialLow_StoreMarket_Damaged",
+      "export": "ArtSource/Exports/BuildingSurfacePrototypes/SM_CommercialLow_StoreMarket_Damaged.fbx",
+      "bindings": {
+        "CharredBrick": "/Game/CitySim/Art/Materials/MI_CharredBrick",
+        "CharredTrim": "/Game/CitySim/Art/Materials/MI_CharredTrim",
+        "CharredRoofMembrane": "/Game/CitySim/Art/Materials/MI_CharredRoofMembrane",
+        "CharredSign": "/Game/CitySim/Art/Materials/MI_CharredTrim"
+      },
+      "slots": [
+        "CharredBrick",
+        "CharredTrim",
+        "CharredRoofMembrane",
+        "CharredSign"
+      ],
+      "density": "Low",
+      "damaged": true,
+      "source_sha256": "2927bbd991dc3a8acc51f56b721b6dd04ca451a12a18efe88371d9b9337ed932",
+      "export_sha256": "6718c6de9e763257ac4728d23b985372433fd31e7a795ec1e90d58d653bc1685",
+      "entry_native_cm": [
+        0,
+        660,
+        0
+      ],
+      "door_width_cm": 300,
+      "path_width_cm": 100,
+      "frontage_half_span_cm": 800,
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "target_name": "SM_CommercialGround_CommercialLow_StoreMarket_Damaged",
+      "authored_entry_native_cm": [
+        0,
+        730,
+        0
+      ],
+      "source_translation_m": [
+        0,
+        0.7,
+        0
+      ],
+      "vestibule_recess_cm": 0
+    },
+    {
+      "native": "/Game/CitySim/Art/Meshes/SM_CommercialLow_StoreBakery_Damaged",
+      "name": "SM_CommercialLow_StoreBakery_Damaged",
+      "source": "ArtSource/Blender/CityBuildingSurfacePrototype.blend",
+      "object": "SM_CommercialLow_StoreBakery_Damaged",
+      "export": "ArtSource/Exports/BuildingSurfacePrototypes/SM_CommercialLow_StoreBakery_Damaged.fbx",
+      "bindings": {
+        "CharredBrick": "/Game/CitySim/Art/Materials/MI_CharredBrick",
+        "CharredTrim": "/Game/CitySim/Art/Materials/MI_CharredTrim",
+        "CharredRoofMembrane": "/Game/CitySim/Art/Materials/MI_CharredRoofMembrane",
+        "CharredSign": "/Game/CitySim/Art/Materials/MI_CharredTrim"
+      },
+      "slots": [
+        "CharredBrick",
+        "CharredTrim",
+        "CharredRoofMembrane",
+        "CharredSign"
+      ],
+      "density": "Low",
+      "damaged": true,
+      "source_sha256": "2927bbd991dc3a8acc51f56b721b6dd04ca451a12a18efe88371d9b9337ed932",
+      "export_sha256": "32677e913c770f848135af5f444bf6811e233966a2a1a5a71760a07f4f49350e",
+      "entry_native_cm": [
+        0,
+        660,
+        0
+      ],
+      "door_width_cm": 300,
+      "path_width_cm": 100,
+      "frontage_half_span_cm": 800,
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "target_name": "SM_CommercialGround_CommercialLow_StoreBakery_Damaged",
+      "authored_entry_native_cm": [
+        0,
+        730,
+        0
+      ],
+      "source_translation_m": [
+        0,
+        0.7,
+        0
+      ],
+      "vestibule_recess_cm": 0
+    },
+    {
+      "native": "/Game/CitySim/Art/Meshes/SM_CommercialLow_StoreCafe_Damaged",
+      "name": "SM_CommercialLow_StoreCafe_Damaged",
+      "source": "ArtSource/Blender/CityBuildingSurfacePrototype.blend",
+      "object": "SM_CommercialLow_StoreCafe_Damaged",
+      "export": "ArtSource/Exports/BuildingSurfacePrototypes/SM_CommercialLow_StoreCafe_Damaged.fbx",
+      "bindings": {
+        "CharredBrick": "/Game/CitySim/Art/Materials/MI_CharredBrick",
+        "CharredTrim": "/Game/CitySim/Art/Materials/MI_CharredTrim",
+        "CharredRoofMembrane": "/Game/CitySim/Art/Materials/MI_CharredRoofMembrane",
+        "CharredSign": "/Game/CitySim/Art/Materials/MI_CharredTrim"
+      },
+      "slots": [
+        "CharredBrick",
+        "CharredTrim",
+        "CharredRoofMembrane",
+        "CharredSign"
+      ],
+      "density": "Low",
+      "damaged": true,
+      "source_sha256": "2927bbd991dc3a8acc51f56b721b6dd04ca451a12a18efe88371d9b9337ed932",
+      "export_sha256": "fbc01326146c4f9cddcc48f360b11333866f9dbcdbc88472be853f022640a058",
+      "entry_native_cm": [
+        0,
+        660,
+        0
+      ],
+      "door_width_cm": 300,
+      "path_width_cm": 100,
+      "frontage_half_span_cm": 800,
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "target_name": "SM_CommercialGround_CommercialLow_StoreCafe_Damaged",
+      "authored_entry_native_cm": [
+        0,
+        730,
+        0
+      ],
+      "source_translation_m": [
+        0,
+        0.7,
+        0
+      ],
+      "vestibule_recess_cm": 0
+    },
+    {
+      "native": "/Game/CitySim/Art/Meshes/SM_CommercialLow_StoreBooks_Damaged",
+      "name": "SM_CommercialLow_StoreBooks_Damaged",
+      "source": "ArtSource/Blender/CityBuildingSurfacePrototype.blend",
+      "object": "SM_CommercialLow_StoreBooks_Damaged",
+      "export": "ArtSource/Exports/BuildingSurfacePrototypes/SM_CommercialLow_StoreBooks_Damaged.fbx",
+      "bindings": {
+        "CharredBrick": "/Game/CitySim/Art/Materials/MI_CharredBrick",
+        "CharredTrim": "/Game/CitySim/Art/Materials/MI_CharredTrim",
+        "CharredRoofMembrane": "/Game/CitySim/Art/Materials/MI_CharredRoofMembrane",
+        "CharredSign": "/Game/CitySim/Art/Materials/MI_CharredTrim"
+      },
+      "slots": [
+        "CharredBrick",
+        "CharredTrim",
+        "CharredRoofMembrane",
+        "CharredSign"
+      ],
+      "density": "Low",
+      "damaged": true,
+      "source_sha256": "2927bbd991dc3a8acc51f56b721b6dd04ca451a12a18efe88371d9b9337ed932",
+      "export_sha256": "7b880225744eec58b257d464cc746b68c47e9939aa49ea2623ce9b5b7419095f",
+      "entry_native_cm": [
+        0,
+        660,
+        0
+      ],
+      "door_width_cm": 300,
+      "path_width_cm": 100,
+      "frontage_half_span_cm": 800,
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "target_name": "SM_CommercialGround_CommercialLow_StoreBooks_Damaged",
+      "authored_entry_native_cm": [
+        0,
+        730,
+        0
+      ],
+      "source_translation_m": [
+        0,
+        0.7,
+        0
+      ],
+      "vestibule_recess_cm": 0
+    },
+    {
+      "native": "/Game/CitySim/Art/Meshes/SM_CommercialLow_StorePharmacy_Damaged",
+      "name": "SM_CommercialLow_StorePharmacy_Damaged",
+      "source": "ArtSource/Blender/CityBuildingSurfacePrototype.blend",
+      "object": "SM_CommercialLow_StorePharmacy_Damaged",
+      "export": "ArtSource/Exports/BuildingSurfacePrototypes/SM_CommercialLow_StorePharmacy_Damaged.fbx",
+      "bindings": {
+        "CharredBrick": "/Game/CitySim/Art/Materials/MI_CharredBrick",
+        "CharredTrim": "/Game/CitySim/Art/Materials/MI_CharredTrim",
+        "CharredRoofMembrane": "/Game/CitySim/Art/Materials/MI_CharredRoofMembrane",
+        "CharredSign": "/Game/CitySim/Art/Materials/MI_CharredTrim"
+      },
+      "slots": [
+        "CharredBrick",
+        "CharredTrim",
+        "CharredRoofMembrane",
+        "CharredSign"
+      ],
+      "density": "Low",
+      "damaged": true,
+      "source_sha256": "2927bbd991dc3a8acc51f56b721b6dd04ca451a12a18efe88371d9b9337ed932",
+      "export_sha256": "a76c0397ab1a3a9ecbf14d7fd8c1167a56c868f93bb6d52f2487278ff9f9ea64",
+      "entry_native_cm": [
+        0,
+        660,
+        0
+      ],
+      "door_width_cm": 300,
+      "path_width_cm": 100,
+      "frontage_half_span_cm": 800,
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "target_name": "SM_CommercialGround_CommercialLow_StorePharmacy_Damaged",
+      "authored_entry_native_cm": [
+        0,
+        730,
+        0
+      ],
+      "source_translation_m": [
+        0,
+        0.7,
+        0
+      ],
+      "vestibule_recess_cm": 0
+    },
+    {
+      "native": "/Game/CitySim/Art/Meshes/SM_CommercialLow_StoreRepairs_Damaged",
+      "name": "SM_CommercialLow_StoreRepairs_Damaged",
+      "source": "ArtSource/Blender/CityBuildingSurfacePrototype.blend",
+      "object": "SM_CommercialLow_StoreRepairs_Damaged",
+      "export": "ArtSource/Exports/BuildingSurfacePrototypes/SM_CommercialLow_StoreRepairs_Damaged.fbx",
+      "bindings": {
+        "CharredBrick": "/Game/CitySim/Art/Materials/MI_CharredBrick",
+        "CharredTrim": "/Game/CitySim/Art/Materials/MI_CharredTrim",
+        "CharredRoofMembrane": "/Game/CitySim/Art/Materials/MI_CharredRoofMembrane",
+        "CharredSign": "/Game/CitySim/Art/Materials/MI_CharredTrim"
+      },
+      "slots": [
+        "CharredBrick",
+        "CharredTrim",
+        "CharredRoofMembrane",
+        "CharredSign"
+      ],
+      "density": "Low",
+      "damaged": true,
+      "source_sha256": "2927bbd991dc3a8acc51f56b721b6dd04ca451a12a18efe88371d9b9337ed932",
+      "export_sha256": "fa80f3b839b837099166e035a9278c3fb7928c9851deaaca7a2cef17cd284ef2",
+      "entry_native_cm": [
+        0,
+        660,
+        0
+      ],
+      "door_width_cm": 300,
+      "path_width_cm": 100,
+      "frontage_half_span_cm": 800,
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "target_name": "SM_CommercialGround_CommercialLow_StoreRepairs_Damaged",
+      "authored_entry_native_cm": [
+        0,
+        730,
+        0
+      ],
+      "source_translation_m": [
+        0,
+        0.7,
+        0
+      ],
+      "vestibule_recess_cm": 0
+    },
+    {
+      "native": "/Game/CitySim/Art/Meshes/SM_CommercialLow_StoreOutfitters_Damaged",
+      "name": "SM_CommercialLow_StoreOutfitters_Damaged",
+      "source": "ArtSource/Blender/CityBuildingSurfacePrototype.blend",
+      "object": "SM_CommercialLow_StoreOutfitters_Damaged",
+      "export": "ArtSource/Exports/BuildingSurfacePrototypes/SM_CommercialLow_StoreOutfitters_Damaged.fbx",
+      "bindings": {
+        "CharredBrick": "/Game/CitySim/Art/Materials/MI_CharredBrick",
+        "CharredTrim": "/Game/CitySim/Art/Materials/MI_CharredTrim",
+        "CharredRoofMembrane": "/Game/CitySim/Art/Materials/MI_CharredRoofMembrane",
+        "CharredSign": "/Game/CitySim/Art/Materials/MI_CharredTrim"
+      },
+      "slots": [
+        "CharredBrick",
+        "CharredTrim",
+        "CharredRoofMembrane",
+        "CharredSign"
+      ],
+      "density": "Low",
+      "damaged": true,
+      "source_sha256": "2927bbd991dc3a8acc51f56b721b6dd04ca451a12a18efe88371d9b9337ed932",
+      "export_sha256": "18baa9257f4110377425db790a357abdf5b3a06b9d9b41cb18263e2f084b5c88",
+      "entry_native_cm": [
+        0,
+        660,
+        0
+      ],
+      "door_width_cm": 300,
+      "path_width_cm": 100,
+      "frontage_half_span_cm": 800,
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "target_name": "SM_CommercialGround_CommercialLow_StoreOutfitters_Damaged",
+      "authored_entry_native_cm": [
+        0,
+        730,
+        0
+      ],
+      "source_translation_m": [
+        0,
+        0.7,
+        0
+      ],
+      "vestibule_recess_cm": 0
+    },
+    {
+      "native": "/Game/CitySim/Art/Meshes/SM_CommercialLow_StoreTech_Damaged",
+      "name": "SM_CommercialLow_StoreTech_Damaged",
+      "source": "ArtSource/Blender/CityBuildingSurfacePrototype.blend",
+      "object": "SM_CommercialLow_StoreTech_Damaged",
+      "export": "ArtSource/Exports/BuildingSurfacePrototypes/SM_CommercialLow_StoreTech_Damaged.fbx",
+      "bindings": {
+        "CharredBrick": "/Game/CitySim/Art/Materials/MI_CharredBrick",
+        "CharredTrim": "/Game/CitySim/Art/Materials/MI_CharredTrim",
+        "CharredRoofMembrane": "/Game/CitySim/Art/Materials/MI_CharredRoofMembrane",
+        "CharredSign": "/Game/CitySim/Art/Materials/MI_CharredTrim"
+      },
+      "slots": [
+        "CharredBrick",
+        "CharredTrim",
+        "CharredRoofMembrane",
+        "CharredSign"
+      ],
+      "density": "Low",
+      "damaged": true,
+      "source_sha256": "2927bbd991dc3a8acc51f56b721b6dd04ca451a12a18efe88371d9b9337ed932",
+      "export_sha256": "45e3692dbf1db2e639916c42519ec9c9464713ff0c27219a96e42d7cb0f6fff5",
+      "entry_native_cm": [
+        0,
+        660,
+        0
+      ],
+      "door_width_cm": 300,
+      "path_width_cm": 100,
+      "frontage_half_span_cm": 800,
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "target_name": "SM_CommercialGround_CommercialLow_StoreTech_Damaged",
+      "authored_entry_native_cm": [
+        0,
+        730,
+        0
+      ],
+      "source_translation_m": [
+        0,
+        0.7,
+        0
+      ],
+      "vestibule_recess_cm": 0
+    },
+    {
+      "native": "/Game/CitySim/Art/Meshes/SM_CommercialMedium_StoreMarket_Damaged",
+      "name": "SM_CommercialMedium_StoreMarket_Damaged",
+      "source": "ArtSource/Blender/CityBuildingSurfacePrototype.blend",
+      "object": "SM_CommercialMedium_StoreMarket_Damaged",
+      "export": "ArtSource/Exports/BuildingSurfacePrototypes/SM_CommercialMedium_StoreMarket_Damaged.fbx",
+      "bindings": {
+        "CharredBrick": "/Game/CitySim/Art/Materials/MI_CharredBrick",
+        "CharredTrim": "/Game/CitySim/Art/Materials/MI_CharredTrim",
+        "CharredRoofMembrane": "/Game/CitySim/Art/Materials/MI_CharredRoofMembrane",
+        "CharredSign": "/Game/CitySim/Art/Materials/MI_CharredTrim"
+      },
+      "slots": [
+        "CharredBrick",
+        "CharredTrim",
+        "CharredRoofMembrane",
+        "CharredSign"
+      ],
+      "density": "Medium",
+      "damaged": true,
+      "source_sha256": "2927bbd991dc3a8acc51f56b721b6dd04ca451a12a18efe88371d9b9337ed932",
+      "export_sha256": "9db27e187cf7a38fe3e86250c8a807b92b6867f90a4d28d9a277237e58f19467",
+      "entry_native_cm": [
+        0,
+        660,
+        0
+      ],
+      "door_width_cm": 300,
+      "path_width_cm": 100,
+      "frontage_half_span_cm": 800,
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "target_name": "SM_CommercialGround_CommercialMedium_StoreMarket_Damaged",
+      "authored_entry_native_cm": [
+        0,
+        730,
+        0
+      ],
+      "source_translation_m": [
+        0,
+        0.7,
+        0
+      ],
+      "vestibule_recess_cm": 0
+    },
+    {
+      "native": "/Game/CitySim/Art/Meshes/SM_CommercialMedium_StoreBakery_Damaged",
+      "name": "SM_CommercialMedium_StoreBakery_Damaged",
+      "source": "ArtSource/Blender/CityBuildingSurfacePrototype.blend",
+      "object": "SM_CommercialMedium_StoreBakery_Damaged",
+      "export": "ArtSource/Exports/BuildingSurfacePrototypes/SM_CommercialMedium_StoreBakery_Damaged.fbx",
+      "bindings": {
+        "CharredBrick": "/Game/CitySim/Art/Materials/MI_CharredBrick",
+        "CharredTrim": "/Game/CitySim/Art/Materials/MI_CharredTrim",
+        "CharredRoofMembrane": "/Game/CitySim/Art/Materials/MI_CharredRoofMembrane",
+        "CharredSign": "/Game/CitySim/Art/Materials/MI_CharredTrim"
+      },
+      "slots": [
+        "CharredBrick",
+        "CharredTrim",
+        "CharredRoofMembrane",
+        "CharredSign"
+      ],
+      "density": "Medium",
+      "damaged": true,
+      "source_sha256": "2927bbd991dc3a8acc51f56b721b6dd04ca451a12a18efe88371d9b9337ed932",
+      "export_sha256": "4637a417c235ae1f645ddd5d1ee81e9829c137733effd0c1998fe0340bf4c00f",
+      "entry_native_cm": [
+        0,
+        660,
+        0
+      ],
+      "door_width_cm": 300,
+      "path_width_cm": 100,
+      "frontage_half_span_cm": 800,
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "target_name": "SM_CommercialGround_CommercialMedium_StoreBakery_Damaged",
+      "authored_entry_native_cm": [
+        0,
+        730,
+        0
+      ],
+      "source_translation_m": [
+        0,
+        0.7,
+        0
+      ],
+      "vestibule_recess_cm": 0
+    },
+    {
+      "native": "/Game/CitySim/Art/Meshes/SM_CommercialMedium_StoreCafe_Damaged",
+      "name": "SM_CommercialMedium_StoreCafe_Damaged",
+      "source": "ArtSource/Blender/CityBuildingSurfacePrototype.blend",
+      "object": "SM_CommercialMedium_StoreCafe_Damaged",
+      "export": "ArtSource/Exports/BuildingSurfacePrototypes/SM_CommercialMedium_StoreCafe_Damaged.fbx",
+      "bindings": {
+        "CharredBrick": "/Game/CitySim/Art/Materials/MI_CharredBrick",
+        "CharredTrim": "/Game/CitySim/Art/Materials/MI_CharredTrim",
+        "CharredRoofMembrane": "/Game/CitySim/Art/Materials/MI_CharredRoofMembrane",
+        "CharredSign": "/Game/CitySim/Art/Materials/MI_CharredTrim"
+      },
+      "slots": [
+        "CharredBrick",
+        "CharredTrim",
+        "CharredRoofMembrane",
+        "CharredSign"
+      ],
+      "density": "Medium",
+      "damaged": true,
+      "source_sha256": "2927bbd991dc3a8acc51f56b721b6dd04ca451a12a18efe88371d9b9337ed932",
+      "export_sha256": "da8a403ba47f0cb83d574fba50d989d38e2851d368652be47c74f1ca1c190336",
+      "entry_native_cm": [
+        0,
+        660,
+        0
+      ],
+      "door_width_cm": 300,
+      "path_width_cm": 100,
+      "frontage_half_span_cm": 800,
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "target_name": "SM_CommercialGround_CommercialMedium_StoreCafe_Damaged",
+      "authored_entry_native_cm": [
+        0,
+        730,
+        0
+      ],
+      "source_translation_m": [
+        0,
+        0.7,
+        0
+      ],
+      "vestibule_recess_cm": 0
+    },
+    {
+      "native": "/Game/CitySim/Art/Meshes/SM_CommercialMedium_StoreBooks_Damaged",
+      "name": "SM_CommercialMedium_StoreBooks_Damaged",
+      "source": "ArtSource/Blender/CityBuildingSurfacePrototype.blend",
+      "object": "SM_CommercialMedium_StoreBooks_Damaged",
+      "export": "ArtSource/Exports/BuildingSurfacePrototypes/SM_CommercialMedium_StoreBooks_Damaged.fbx",
+      "bindings": {
+        "CharredBrick": "/Game/CitySim/Art/Materials/MI_CharredBrick",
+        "CharredTrim": "/Game/CitySim/Art/Materials/MI_CharredTrim",
+        "CharredRoofMembrane": "/Game/CitySim/Art/Materials/MI_CharredRoofMembrane",
+        "CharredSign": "/Game/CitySim/Art/Materials/MI_CharredTrim"
+      },
+      "slots": [
+        "CharredBrick",
+        "CharredTrim",
+        "CharredRoofMembrane",
+        "CharredSign"
+      ],
+      "density": "Medium",
+      "damaged": true,
+      "source_sha256": "2927bbd991dc3a8acc51f56b721b6dd04ca451a12a18efe88371d9b9337ed932",
+      "export_sha256": "74909bcc8aa2ccaf7d75bbc07c94da645e36b3c045711057e03bd6414a4b8c2d",
+      "entry_native_cm": [
+        0,
+        660,
+        0
+      ],
+      "door_width_cm": 300,
+      "path_width_cm": 100,
+      "frontage_half_span_cm": 800,
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "target_name": "SM_CommercialGround_CommercialMedium_StoreBooks_Damaged",
+      "authored_entry_native_cm": [
+        0,
+        730,
+        0
+      ],
+      "source_translation_m": [
+        0,
+        0.7,
+        0
+      ],
+      "vestibule_recess_cm": 0
+    },
+    {
+      "native": "/Game/CitySim/Art/Meshes/SM_CommercialMedium_StorePharmacy_Damaged",
+      "name": "SM_CommercialMedium_StorePharmacy_Damaged",
+      "source": "ArtSource/Blender/CityBuildingSurfacePrototype.blend",
+      "object": "SM_CommercialMedium_StorePharmacy_Damaged",
+      "export": "ArtSource/Exports/BuildingSurfacePrototypes/SM_CommercialMedium_StorePharmacy_Damaged.fbx",
+      "bindings": {
+        "CharredBrick": "/Game/CitySim/Art/Materials/MI_CharredBrick",
+        "CharredTrim": "/Game/CitySim/Art/Materials/MI_CharredTrim",
+        "CharredRoofMembrane": "/Game/CitySim/Art/Materials/MI_CharredRoofMembrane",
+        "CharredSign": "/Game/CitySim/Art/Materials/MI_CharredTrim"
+      },
+      "slots": [
+        "CharredBrick",
+        "CharredTrim",
+        "CharredRoofMembrane",
+        "CharredSign"
+      ],
+      "density": "Medium",
+      "damaged": true,
+      "source_sha256": "2927bbd991dc3a8acc51f56b721b6dd04ca451a12a18efe88371d9b9337ed932",
+      "export_sha256": "06e6293b13e015e73df652d2a8b035a25797421d8f209a954cc4a1c5fa89e4e9",
+      "entry_native_cm": [
+        0,
+        660,
+        0
+      ],
+      "door_width_cm": 300,
+      "path_width_cm": 100,
+      "frontage_half_span_cm": 800,
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "target_name": "SM_CommercialGround_CommercialMedium_StorePharmacy_Damaged",
+      "authored_entry_native_cm": [
+        0,
+        730,
+        0
+      ],
+      "source_translation_m": [
+        0,
+        0.7,
+        0
+      ],
+      "vestibule_recess_cm": 0
+    },
+    {
+      "native": "/Game/CitySim/Art/Meshes/SM_CommercialMedium_StoreRepairs_Damaged",
+      "name": "SM_CommercialMedium_StoreRepairs_Damaged",
+      "source": "ArtSource/Blender/CityBuildingSurfacePrototype.blend",
+      "object": "SM_CommercialMedium_StoreRepairs_Damaged",
+      "export": "ArtSource/Exports/BuildingSurfacePrototypes/SM_CommercialMedium_StoreRepairs_Damaged.fbx",
+      "bindings": {
+        "CharredBrick": "/Game/CitySim/Art/Materials/MI_CharredBrick",
+        "CharredTrim": "/Game/CitySim/Art/Materials/MI_CharredTrim",
+        "CharredRoofMembrane": "/Game/CitySim/Art/Materials/MI_CharredRoofMembrane",
+        "CharredSign": "/Game/CitySim/Art/Materials/MI_CharredTrim"
+      },
+      "slots": [
+        "CharredBrick",
+        "CharredTrim",
+        "CharredRoofMembrane",
+        "CharredSign"
+      ],
+      "density": "Medium",
+      "damaged": true,
+      "source_sha256": "2927bbd991dc3a8acc51f56b721b6dd04ca451a12a18efe88371d9b9337ed932",
+      "export_sha256": "16302a78cf6000108d92a411f895774f7bf7c1389c28dab772ccd7ee84a2b448",
+      "entry_native_cm": [
+        0,
+        660,
+        0
+      ],
+      "door_width_cm": 300,
+      "path_width_cm": 100,
+      "frontage_half_span_cm": 800,
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "target_name": "SM_CommercialGround_CommercialMedium_StoreRepairs_Damaged",
+      "authored_entry_native_cm": [
+        0,
+        730,
+        0
+      ],
+      "source_translation_m": [
+        0,
+        0.7,
+        0
+      ],
+      "vestibule_recess_cm": 0
+    },
+    {
+      "native": "/Game/CitySim/Art/Meshes/SM_CommercialMedium_StoreOutfitters_Damaged",
+      "name": "SM_CommercialMedium_StoreOutfitters_Damaged",
+      "source": "ArtSource/Blender/CityBuildingSurfacePrototype.blend",
+      "object": "SM_CommercialMedium_StoreOutfitters_Damaged",
+      "export": "ArtSource/Exports/BuildingSurfacePrototypes/SM_CommercialMedium_StoreOutfitters_Damaged.fbx",
+      "bindings": {
+        "CharredBrick": "/Game/CitySim/Art/Materials/MI_CharredBrick",
+        "CharredTrim": "/Game/CitySim/Art/Materials/MI_CharredTrim",
+        "CharredRoofMembrane": "/Game/CitySim/Art/Materials/MI_CharredRoofMembrane",
+        "CharredSign": "/Game/CitySim/Art/Materials/MI_CharredTrim"
+      },
+      "slots": [
+        "CharredBrick",
+        "CharredTrim",
+        "CharredRoofMembrane",
+        "CharredSign"
+      ],
+      "density": "Medium",
+      "damaged": true,
+      "source_sha256": "2927bbd991dc3a8acc51f56b721b6dd04ca451a12a18efe88371d9b9337ed932",
+      "export_sha256": "692a667b684c163c6821eb56e308f9c124b1948d5cc6874b2c58f765e38e80e9",
+      "entry_native_cm": [
+        0,
+        660,
+        0
+      ],
+      "door_width_cm": 300,
+      "path_width_cm": 100,
+      "frontage_half_span_cm": 800,
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "target_name": "SM_CommercialGround_CommercialMedium_StoreOutfitters_Damaged",
+      "authored_entry_native_cm": [
+        0,
+        730,
+        0
+      ],
+      "source_translation_m": [
+        0,
+        0.7,
+        0
+      ],
+      "vestibule_recess_cm": 0
+    },
+    {
+      "native": "/Game/CitySim/Art/Meshes/SM_CommercialMedium_StoreTech_Damaged",
+      "name": "SM_CommercialMedium_StoreTech_Damaged",
+      "source": "ArtSource/Blender/CityBuildingSurfacePrototype.blend",
+      "object": "SM_CommercialMedium_StoreTech_Damaged",
+      "export": "ArtSource/Exports/BuildingSurfacePrototypes/SM_CommercialMedium_StoreTech_Damaged.fbx",
+      "bindings": {
+        "CharredBrick": "/Game/CitySim/Art/Materials/MI_CharredBrick",
+        "CharredTrim": "/Game/CitySim/Art/Materials/MI_CharredTrim",
+        "CharredRoofMembrane": "/Game/CitySim/Art/Materials/MI_CharredRoofMembrane",
+        "CharredSign": "/Game/CitySim/Art/Materials/MI_CharredTrim"
+      },
+      "slots": [
+        "CharredBrick",
+        "CharredTrim",
+        "CharredRoofMembrane",
+        "CharredSign"
+      ],
+      "density": "Medium",
+      "damaged": true,
+      "source_sha256": "2927bbd991dc3a8acc51f56b721b6dd04ca451a12a18efe88371d9b9337ed932",
+      "export_sha256": "b58d43952efa130132c73c15d4fb962ab7e762f35d6f67134c783d608dfe9c5c",
+      "entry_native_cm": [
+        0,
+        660,
+        0
+      ],
+      "door_width_cm": 300,
+      "path_width_cm": 100,
+      "frontage_half_span_cm": 800,
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "target_name": "SM_CommercialGround_CommercialMedium_StoreTech_Damaged",
+      "authored_entry_native_cm": [
+        0,
+        730,
+        0
+      ],
+      "source_translation_m": [
+        0,
+        0.7,
+        0
+      ],
+      "vestibule_recess_cm": 0
+    },
+    {
+      "native": "/Game/CitySim/Art/Meshes/SM_CommercialHigh_StoreMarket_Damaged",
+      "name": "SM_CommercialHigh_StoreMarket_Damaged",
+      "source": "ArtSource/Blender/CityBuildingSurfacePrototype.blend",
+      "object": "SM_CommercialHigh_StoreMarket_Damaged",
+      "export": "ArtSource/Exports/BuildingSurfacePrototypes/SM_CommercialHigh_StoreMarket_Damaged.fbx",
+      "bindings": {
+        "CharredBrick": "/Game/CitySim/Art/Materials/MI_CharredBrick",
+        "CharredTrim": "/Game/CitySim/Art/Materials/MI_CharredTrim",
+        "CharredRoofMembrane": "/Game/CitySim/Art/Materials/MI_CharredRoofMembrane",
+        "CharredSign": "/Game/CitySim/Art/Materials/MI_CharredTrim"
+      },
+      "slots": [
+        "CharredBrick",
+        "CharredTrim",
+        "CharredRoofMembrane",
+        "CharredSign"
+      ],
+      "density": "High",
+      "damaged": true,
+      "source_sha256": "2927bbd991dc3a8acc51f56b721b6dd04ca451a12a18efe88371d9b9337ed932",
+      "export_sha256": "0060451e7a7f156142daca1cf91959ce3fc47f48b58b08a5a485bf6835b423d8",
+      "entry_native_cm": [
+        0,
+        660,
+        0
+      ],
+      "door_width_cm": 300,
+      "path_width_cm": 100,
+      "frontage_half_span_cm": 800,
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "target_name": "SM_CommercialGround_CommercialHigh_StoreMarket_Damaged",
+      "authored_entry_native_cm": [
+        0,
+        730,
+        0
+      ],
+      "source_translation_m": [
+        0,
+        0.7,
+        0
+      ],
+      "vestibule_recess_cm": 0
+    },
+    {
+      "native": "/Game/CitySim/Art/Meshes/SM_CommercialHigh_StoreBakery_Damaged",
+      "name": "SM_CommercialHigh_StoreBakery_Damaged",
+      "source": "ArtSource/Blender/CityBuildingSurfacePrototype.blend",
+      "object": "SM_CommercialHigh_StoreBakery_Damaged",
+      "export": "ArtSource/Exports/BuildingSurfacePrototypes/SM_CommercialHigh_StoreBakery_Damaged.fbx",
+      "bindings": {
+        "CharredBrick": "/Game/CitySim/Art/Materials/MI_CharredBrick",
+        "CharredTrim": "/Game/CitySim/Art/Materials/MI_CharredTrim",
+        "CharredRoofMembrane": "/Game/CitySim/Art/Materials/MI_CharredRoofMembrane",
+        "CharredSign": "/Game/CitySim/Art/Materials/MI_CharredTrim"
+      },
+      "slots": [
+        "CharredBrick",
+        "CharredTrim",
+        "CharredRoofMembrane",
+        "CharredSign"
+      ],
+      "density": "High",
+      "damaged": true,
+      "source_sha256": "2927bbd991dc3a8acc51f56b721b6dd04ca451a12a18efe88371d9b9337ed932",
+      "export_sha256": "86cbed50b2d147a19688f4e1265466b629a252f5e2a2658aea612ca920b35d74",
+      "entry_native_cm": [
+        0,
+        660,
+        0
+      ],
+      "door_width_cm": 300,
+      "path_width_cm": 100,
+      "frontage_half_span_cm": 800,
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "target_name": "SM_CommercialGround_CommercialHigh_StoreBakery_Damaged",
+      "authored_entry_native_cm": [
+        0,
+        730,
+        0
+      ],
+      "source_translation_m": [
+        0,
+        0.7,
+        0
+      ],
+      "vestibule_recess_cm": 0
+    },
+    {
+      "native": "/Game/CitySim/Art/Meshes/SM_CommercialHigh_StoreCafe_Damaged",
+      "name": "SM_CommercialHigh_StoreCafe_Damaged",
+      "source": "ArtSource/Blender/CityBuildingSurfacePrototype.blend",
+      "object": "SM_CommercialHigh_StoreCafe_Damaged",
+      "export": "ArtSource/Exports/BuildingSurfacePrototypes/SM_CommercialHigh_StoreCafe_Damaged.fbx",
+      "bindings": {
+        "CharredBrick": "/Game/CitySim/Art/Materials/MI_CharredBrick",
+        "CharredTrim": "/Game/CitySim/Art/Materials/MI_CharredTrim",
+        "CharredRoofMembrane": "/Game/CitySim/Art/Materials/MI_CharredRoofMembrane",
+        "CharredSign": "/Game/CitySim/Art/Materials/MI_CharredTrim"
+      },
+      "slots": [
+        "CharredBrick",
+        "CharredTrim",
+        "CharredRoofMembrane",
+        "CharredSign"
+      ],
+      "density": "High",
+      "damaged": true,
+      "source_sha256": "2927bbd991dc3a8acc51f56b721b6dd04ca451a12a18efe88371d9b9337ed932",
+      "export_sha256": "30e0054c709b077f0dcc9e30cb5cd0e6f470aef965211574ec00cb8358fab369",
+      "entry_native_cm": [
+        0,
+        660,
+        0
+      ],
+      "door_width_cm": 300,
+      "path_width_cm": 100,
+      "frontage_half_span_cm": 800,
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "target_name": "SM_CommercialGround_CommercialHigh_StoreCafe_Damaged",
+      "authored_entry_native_cm": [
+        0,
+        730,
+        0
+      ],
+      "source_translation_m": [
+        0,
+        0.7,
+        0
+      ],
+      "vestibule_recess_cm": 0
+    },
+    {
+      "native": "/Game/CitySim/Art/Meshes/SM_CommercialHigh_StoreBooks_Damaged",
+      "name": "SM_CommercialHigh_StoreBooks_Damaged",
+      "source": "ArtSource/Blender/CityBuildingSurfacePrototype.blend",
+      "object": "SM_CommercialHigh_StoreBooks_Damaged",
+      "export": "ArtSource/Exports/BuildingSurfacePrototypes/SM_CommercialHigh_StoreBooks_Damaged.fbx",
+      "bindings": {
+        "CharredBrick": "/Game/CitySim/Art/Materials/MI_CharredBrick",
+        "CharredTrim": "/Game/CitySim/Art/Materials/MI_CharredTrim",
+        "CharredRoofMembrane": "/Game/CitySim/Art/Materials/MI_CharredRoofMembrane",
+        "CharredSign": "/Game/CitySim/Art/Materials/MI_CharredTrim"
+      },
+      "slots": [
+        "CharredBrick",
+        "CharredTrim",
+        "CharredRoofMembrane",
+        "CharredSign"
+      ],
+      "density": "High",
+      "damaged": true,
+      "source_sha256": "2927bbd991dc3a8acc51f56b721b6dd04ca451a12a18efe88371d9b9337ed932",
+      "export_sha256": "1f86f48d5ca98269abb77bf05a8a4598aab7a2a114ea0f08ab344b6ff9334dc8",
+      "entry_native_cm": [
+        0,
+        660,
+        0
+      ],
+      "door_width_cm": 300,
+      "path_width_cm": 100,
+      "frontage_half_span_cm": 800,
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "target_name": "SM_CommercialGround_CommercialHigh_StoreBooks_Damaged",
+      "authored_entry_native_cm": [
+        0,
+        730,
+        0
+      ],
+      "source_translation_m": [
+        0,
+        0.7,
+        0
+      ],
+      "vestibule_recess_cm": 0
+    },
+    {
+      "native": "/Game/CitySim/Art/Meshes/SM_CommercialHigh_StorePharmacy_Damaged",
+      "name": "SM_CommercialHigh_StorePharmacy_Damaged",
+      "source": "ArtSource/Blender/CityBuildingSurfacePrototype.blend",
+      "object": "SM_CommercialHigh_StorePharmacy_Damaged",
+      "export": "ArtSource/Exports/BuildingSurfacePrototypes/SM_CommercialHigh_StorePharmacy_Damaged.fbx",
+      "bindings": {
+        "CharredBrick": "/Game/CitySim/Art/Materials/MI_CharredBrick",
+        "CharredTrim": "/Game/CitySim/Art/Materials/MI_CharredTrim",
+        "CharredRoofMembrane": "/Game/CitySim/Art/Materials/MI_CharredRoofMembrane",
+        "CharredSign": "/Game/CitySim/Art/Materials/MI_CharredTrim"
+      },
+      "slots": [
+        "CharredBrick",
+        "CharredTrim",
+        "CharredRoofMembrane",
+        "CharredSign"
+      ],
+      "density": "High",
+      "damaged": true,
+      "source_sha256": "2927bbd991dc3a8acc51f56b721b6dd04ca451a12a18efe88371d9b9337ed932",
+      "export_sha256": "bf0a52049400673e4f3fa95ecd5697f8b9523b4e272b42bd6c2dbcef11af90e8",
+      "entry_native_cm": [
+        0,
+        660,
+        0
+      ],
+      "door_width_cm": 300,
+      "path_width_cm": 100,
+      "frontage_half_span_cm": 800,
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "target_name": "SM_CommercialGround_CommercialHigh_StorePharmacy_Damaged",
+      "authored_entry_native_cm": [
+        0,
+        730,
+        0
+      ],
+      "source_translation_m": [
+        0,
+        0.7,
+        0
+      ],
+      "vestibule_recess_cm": 0
+    },
+    {
+      "native": "/Game/CitySim/Art/Meshes/SM_CommercialHigh_StoreRepairs_Damaged",
+      "name": "SM_CommercialHigh_StoreRepairs_Damaged",
+      "source": "ArtSource/Blender/CityBuildingSurfacePrototype.blend",
+      "object": "SM_CommercialHigh_StoreRepairs_Damaged",
+      "export": "ArtSource/Exports/BuildingSurfacePrototypes/SM_CommercialHigh_StoreRepairs_Damaged.fbx",
+      "bindings": {
+        "CharredBrick": "/Game/CitySim/Art/Materials/MI_CharredBrick",
+        "CharredTrim": "/Game/CitySim/Art/Materials/MI_CharredTrim",
+        "CharredRoofMembrane": "/Game/CitySim/Art/Materials/MI_CharredRoofMembrane",
+        "CharredSign": "/Game/CitySim/Art/Materials/MI_CharredTrim"
+      },
+      "slots": [
+        "CharredBrick",
+        "CharredTrim",
+        "CharredRoofMembrane",
+        "CharredSign"
+      ],
+      "density": "High",
+      "damaged": true,
+      "source_sha256": "2927bbd991dc3a8acc51f56b721b6dd04ca451a12a18efe88371d9b9337ed932",
+      "export_sha256": "0365e1221bbe393f1ed0b0ab2101102ef7d5e8a2ef125650f31dfb457cc743b5",
+      "entry_native_cm": [
+        0,
+        660,
+        0
+      ],
+      "door_width_cm": 300,
+      "path_width_cm": 100,
+      "frontage_half_span_cm": 800,
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "target_name": "SM_CommercialGround_CommercialHigh_StoreRepairs_Damaged",
+      "authored_entry_native_cm": [
+        0,
+        730,
+        0
+      ],
+      "source_translation_m": [
+        0,
+        0.7,
+        0
+      ],
+      "vestibule_recess_cm": 0
+    },
+    {
+      "native": "/Game/CitySim/Art/Meshes/SM_CommercialHigh_StoreOutfitters_Damaged",
+      "name": "SM_CommercialHigh_StoreOutfitters_Damaged",
+      "source": "ArtSource/Blender/CityBuildingSurfacePrototype.blend",
+      "object": "SM_CommercialHigh_StoreOutfitters_Damaged",
+      "export": "ArtSource/Exports/BuildingSurfacePrototypes/SM_CommercialHigh_StoreOutfitters_Damaged.fbx",
+      "bindings": {
+        "CharredBrick": "/Game/CitySim/Art/Materials/MI_CharredBrick",
+        "CharredTrim": "/Game/CitySim/Art/Materials/MI_CharredTrim",
+        "CharredRoofMembrane": "/Game/CitySim/Art/Materials/MI_CharredRoofMembrane",
+        "CharredSign": "/Game/CitySim/Art/Materials/MI_CharredTrim"
+      },
+      "slots": [
+        "CharredBrick",
+        "CharredTrim",
+        "CharredRoofMembrane",
+        "CharredSign"
+      ],
+      "density": "High",
+      "damaged": true,
+      "source_sha256": "2927bbd991dc3a8acc51f56b721b6dd04ca451a12a18efe88371d9b9337ed932",
+      "export_sha256": "a574beece1d14c2500d8500701fed615825cc74b365b47c8330b0acefa9cd894",
+      "entry_native_cm": [
+        0,
+        660,
+        0
+      ],
+      "door_width_cm": 300,
+      "path_width_cm": 100,
+      "frontage_half_span_cm": 800,
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "target_name": "SM_CommercialGround_CommercialHigh_StoreOutfitters_Damaged",
+      "authored_entry_native_cm": [
+        0,
+        730,
+        0
+      ],
+      "source_translation_m": [
+        0,
+        0.7,
+        0
+      ],
+      "vestibule_recess_cm": 0
+    },
+    {
+      "native": "/Game/CitySim/Art/Meshes/SM_CommercialHigh_StoreTech_Damaged",
+      "name": "SM_CommercialHigh_StoreTech_Damaged",
+      "source": "ArtSource/Blender/CityBuildingSurfacePrototype.blend",
+      "object": "SM_CommercialHigh_StoreTech_Damaged",
+      "export": "ArtSource/Exports/BuildingSurfacePrototypes/SM_CommercialHigh_StoreTech_Damaged.fbx",
+      "bindings": {
+        "CharredBrick": "/Game/CitySim/Art/Materials/MI_CharredBrick",
+        "CharredTrim": "/Game/CitySim/Art/Materials/MI_CharredTrim",
+        "CharredRoofMembrane": "/Game/CitySim/Art/Materials/MI_CharredRoofMembrane",
+        "CharredSign": "/Game/CitySim/Art/Materials/MI_CharredTrim"
+      },
+      "slots": [
+        "CharredBrick",
+        "CharredTrim",
+        "CharredRoofMembrane",
+        "CharredSign"
+      ],
+      "density": "High",
+      "damaged": true,
+      "source_sha256": "2927bbd991dc3a8acc51f56b721b6dd04ca451a12a18efe88371d9b9337ed932",
+      "export_sha256": "f9768fec1701bd0d3fc531b5331068a01a86a315a6fd1e1dbd01b03bef82b8ab",
+      "entry_native_cm": [
+        0,
+        660,
+        0
+      ],
+      "door_width_cm": 300,
+      "path_width_cm": 100,
+      "frontage_half_span_cm": 800,
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "target_name": "SM_CommercialGround_CommercialHigh_StoreTech_Damaged",
+      "authored_entry_native_cm": [
+        0,
+        730,
+        0
+      ],
+      "source_translation_m": [
+        0,
+        0.7,
+        0
+      ],
+      "vestibule_recess_cm": 0
+    }
+  ]
+}

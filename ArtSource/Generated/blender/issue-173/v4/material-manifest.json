@@ -1,0 +1,531 @@
+{
+  "source_id": "building.secondaryschool.a",
+  "regions": [
+    {
+      "name": "AcademicBrick",
+      "viewport_rgba": [
+        0.6499999761581421,
+        0.2800000011920929,
+        0.15000000596046448,
+        1.0
+      ],
+      "roughness_constant": 0.7200000286102295,
+      "metallic_constant": 0.0,
+      "links": [
+        {
+          "from_node": "Principled BSDF",
+          "from_socket": "BSDF",
+          "to_node": "Material Output",
+          "to_socket": "Surface"
+        },
+        {
+          "from_node": "Image Texture.001",
+          "from_socket": "Color",
+          "to_node": "Normal Map",
+          "to_socket": "Color"
+        },
+        {
+          "from_node": "Normal Map",
+          "from_socket": "Normal",
+          "to_node": "Principled BSDF",
+          "to_socket": "Normal"
+        },
+        {
+          "from_node": "Image Texture.002",
+          "from_socket": "Color",
+          "to_node": "Separate Color",
+          "to_socket": "Color"
+        },
+        {
+          "from_node": "Separate Color",
+          "from_socket": "Green",
+          "to_node": "Principled BSDF",
+          "to_socket": "Roughness"
+        },
+        {
+          "from_node": "Separate Color",
+          "from_socket": "Blue",
+          "to_node": "Principled BSDF",
+          "to_socket": "Metallic"
+        },
+        {
+          "from_node": "Image Texture",
+          "from_socket": "Color",
+          "to_node": "AcademicBrick_WarmTint_MULTIPLY",
+          "to_socket": "Color1"
+        },
+        {
+          "from_node": "AcademicBrick_WarmTint_MULTIPLY",
+          "from_socket": "Color",
+          "to_node": "Principled BSDF",
+          "to_socket": "Base Color"
+        }
+      ],
+      "normal_maps": [
+        {
+          "name": "Normal Map",
+          "space": "TANGENT",
+          "strength": 0.15000000596046448
+        }
+      ]
+    },
+    {
+      "name": "LightStone",
+      "viewport_rgba": [
+        0.8600000143051147,
+        0.7799999713897705,
+        0.6000000238418579,
+        1.0
+      ],
+      "roughness_constant": 0.7200000286102295,
+      "metallic_constant": 0.0,
+      "links": [
+        {
+          "from_node": "Principled BSDF",
+          "from_socket": "BSDF",
+          "to_node": "Material Output",
+          "to_socket": "Surface"
+        }
+      ],
+      "normal_maps": []
+    },
+    {
+      "name": "RoofMembrane",
+      "viewport_rgba": [
+        0.2199999988079071,
+        0.27000001072883606,
+        0.3100000023841858,
+        1.0
+      ],
+      "roughness_constant": 0.7200000286102295,
+      "metallic_constant": 0.0,
+      "links": [
+        {
+          "from_node": "Principled BSDF",
+          "from_socket": "BSDF",
+          "to_node": "Material Output",
+          "to_socket": "Surface"
+        },
+        {
+          "from_node": "Image Texture.001",
+          "from_socket": "Color",
+          "to_node": "Normal Map",
+          "to_socket": "Color"
+        },
+        {
+          "from_node": "Normal Map",
+          "from_socket": "Normal",
+          "to_node": "Principled BSDF",
+          "to_socket": "Normal"
+        },
+        {
+          "from_node": "Image Texture.002",
+          "from_socket": "Color",
+          "to_node": "Separate Color",
+          "to_socket": "Color"
+        },
+        {
+          "from_node": "Separate Color",
+          "from_socket": "Green",
+          "to_node": "Principled BSDF",
+          "to_socket": "Roughness"
+        },
+        {
+          "from_node": "Separate Color",
+          "from_socket": "Blue",
+          "to_node": "Principled BSDF",
+          "to_socket": "Metallic"
+        },
+        {
+          "from_node": "Image Texture",
+          "from_socket": "Color",
+          "to_node": "RoofMembrane_WarmTint_MULTIPLY",
+          "to_socket": "Color1"
+        },
+        {
+          "from_node": "RoofMembrane_WarmTint_MULTIPLY",
+          "from_socket": "Color",
+          "to_node": "Principled BSDF",
+          "to_socket": "Base Color"
+        }
+      ],
+      "normal_maps": [
+        {
+          "name": "Normal Map",
+          "space": "TANGENT",
+          "strength": 0.25
+        }
+      ]
+    },
+    {
+      "name": "WindowGlass",
+      "viewport_rgba": [
+        0.1599999964237213,
+        0.25,
+        0.3100000023841858,
+        1.0
+      ],
+      "roughness_constant": 0.3199999928474426,
+      "metallic_constant": 0.0,
+      "links": [
+        {
+          "from_node": "Principled BSDF",
+          "from_socket": "BSDF",
+          "to_node": "Material Output",
+          "to_socket": "Surface"
+        }
+      ],
+      "normal_maps": []
+    },
+    {
+      "name": "EquipmentMetal",
+      "viewport_rgba": [
+        0.25999999046325684,
+        0.28999999165534973,
+        0.30000001192092896,
+        1.0
+      ],
+      "roughness_constant": 0.7200000286102295,
+      "metallic_constant": 0.0,
+      "links": [
+        {
+          "from_node": "Principled BSDF",
+          "from_socket": "BSDF",
+          "to_node": "Material Output",
+          "to_socket": "Surface"
+        },
+        {
+          "from_node": "Image Texture",
+          "from_socket": "Color",
+          "to_node": "Principled BSDF",
+          "to_socket": "Base Color"
+        },
+        {
+          "from_node": "Image Texture.001",
+          "from_socket": "Color",
+          "to_node": "Normal Map",
+          "to_socket": "Color"
+        },
+        {
+          "from_node": "Normal Map",
+          "from_socket": "Normal",
+          "to_node": "Principled BSDF",
+          "to_socket": "Normal"
+        },
+        {
+          "from_node": "Image Texture.002",
+          "from_socket": "Color",
+          "to_node": "Separate Color",
+          "to_socket": "Color"
+        },
+        {
+          "from_node": "Separate Color",
+          "from_socket": "Green",
+          "to_node": "Principled BSDF",
+          "to_socket": "Roughness"
+        },
+        {
+          "from_node": "Separate Color",
+          "from_socket": "Blue",
+          "to_node": "Principled BSDF",
+          "to_socket": "Metallic"
+        }
+      ],
+      "normal_maps": [
+        {
+          "name": "Normal Map",
+          "space": "TANGENT",
+          "strength": 0.25
+        }
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "source": "/repo/ArtSource/Textures/BuildingSurfaces/CityBrick_BaseColor.png",
+      "copy": "/output/textures/CityBrick_BaseColor.png",
+      "source_sha256": "e4c1ad7446563e3209191ca862fc4c3e065c491debd989765bc843405a5fbbfe",
+      "copy_sha256": "e4c1ad7446563e3209191ca862fc4c3e065c491debd989765bc843405a5fbbfe",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "colorspace": "sRGB"
+    },
+    {
+      "source": "/repo/ArtSource/Textures/BuildingSurfaces/CityBrick_Normal.png",
+      "copy": "/output/textures/CityBrick_Normal.png",
+      "source_sha256": "cf71dc7902b7c3a99d9fd1e966760af9a7b428de42b22ade5fb810965866d2cc",
+      "copy_sha256": "cf71dc7902b7c3a99d9fd1e966760af9a7b428de42b22ade5fb810965866d2cc",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "colorspace": "Non-Color"
+    },
+    {
+      "source": "/repo/ArtSource/Textures/BuildingSurfaces/CityBrick_ORM.png",
+      "copy": "/output/textures/CityBrick_ORM.png",
+      "source_sha256": "39f2f1df859b4052afe98dcb632054398957455d58b205b13702210467a0c6e8",
+      "copy_sha256": "39f2f1df859b4052afe98dcb632054398957455d58b205b13702210467a0c6e8",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "colorspace": "Non-Color"
+    },
+    {
+      "source": "/repo/ArtSource/Textures/BuildingSurfaces/CityMechanical_BaseColor.png",
+      "copy": "/output/textures/CityMechanical_BaseColor.png",
+      "source_sha256": "ea75f9ab4911ad7ecf6a5e0ff5688fdc2c07ed52c3cad007ac58e8d06fe4e5ae",
+      "copy_sha256": "ea75f9ab4911ad7ecf6a5e0ff5688fdc2c07ed52c3cad007ac58e8d06fe4e5ae",
+      "dimensions": [
+        512,
+        512
+      ],
+      "colorspace": "sRGB"
+    },
+    {
+      "source": "/repo/ArtSource/Textures/BuildingSurfaces/CityMechanical_Normal.png",
+      "copy": "/output/textures/CityMechanical_Normal.png",
+      "source_sha256": "7a456d3f708d3ee42a7dfb830ac87f95ce27aeeea0e56ac444daca5da510231e",
+      "copy_sha256": "7a456d3f708d3ee42a7dfb830ac87f95ce27aeeea0e56ac444daca5da510231e",
+      "dimensions": [
+        512,
+        512
+      ],
+      "colorspace": "Non-Color"
+    },
+    {
+      "source": "/repo/ArtSource/Textures/BuildingSurfaces/CityMechanical_ORM.png",
+      "copy": "/output/textures/CityMechanical_ORM.png",
+      "source_sha256": "0e08a253e6c30a15e3675921cab4958c0cdcf088f23f05b5fcc1eb3f87dbec98",
+      "copy_sha256": "0e08a253e6c30a15e3675921cab4958c0cdcf088f23f05b5fcc1eb3f87dbec98",
+      "dimensions": [
+        512,
+        512
+      ],
+      "colorspace": "Non-Color"
+    },
+    {
+      "source": "/repo/ArtSource/Textures/RoofsSigns/RoofMembrane_BaseColor.png",
+      "copy": "/output/textures/RoofMembrane_BaseColor.png",
+      "source_sha256": "e70b663d843cb50ab4479ac5e582173464e05f510f60ce2b986837259981a587",
+      "copy_sha256": "e70b663d843cb50ab4479ac5e582173464e05f510f60ce2b986837259981a587",
+      "dimensions": [
+        512,
+        512
+      ],
+      "colorspace": "sRGB"
+    },
+    {
+      "source": "/repo/ArtSource/Textures/RoofsSigns/RoofMembrane_Normal.png",
+      "copy": "/output/textures/RoofMembrane_Normal.png",
+      "source_sha256": "0b29f7ad8fe50e859386b08d541ea37294c825d2c3a73210d3c3b15764bc19ce",
+      "copy_sha256": "0b29f7ad8fe50e859386b08d541ea37294c825d2c3a73210d3c3b15764bc19ce",
+      "dimensions": [
+        512,
+        512
+      ],
+      "colorspace": "Non-Color"
+    },
+    {
+      "source": "/repo/ArtSource/Textures/RoofsSigns/RoofMembrane_ORM.png",
+      "copy": "/output/textures/RoofMembrane_ORM.png",
+      "source_sha256": "a7ade624eb4477684f7101dd6b5c0fbe80b595c1b357ebf35715dfa91e54ec63",
+      "copy_sha256": "a7ade624eb4477684f7101dd6b5c0fbe80b595c1b357ebf35715dfa91e54ec63",
+      "dimensions": [
+        512,
+        512
+      ],
+      "colorspace": "Non-Color"
+    }
+  ],
+  "uv_recipe": "Existing UV0 preserved byte-for-byte; 2m brick repeat retained",
+  "orm_channels": {
+    "R": "AO",
+    "G": "roughness",
+    "B": "metallic"
+  },
+  "prior_receipt": {
+    "regions": {
+      "AcademicBrick": {
+        "base_constant": [
+          0.36,
+          0.18,
+          0.12,
+          1
+        ],
+        "roughness_constant": 0.7200000286102295,
+        "uv_repeat_m": 2,
+        "opaque": true,
+        "normal_strength": 0.25,
+        "orm": {
+          "R": "AO retained for native reconstruction",
+          "G": "roughness",
+          "B": "metallic"
+        }
+      },
+      "LightStone": {
+        "base_constant": [
+          0.63,
+          0.6,
+          0.51,
+          1
+        ],
+        "roughness_constant": 0.7200000286102295,
+        "uv_repeat_m": 2,
+        "opaque": true
+      },
+      "RoofMembrane": {
+        "base_constant": [
+          0.14,
+          0.16,
+          0.17,
+          1
+        ],
+        "roughness_constant": 0.7200000286102295,
+        "uv_repeat_m": 2,
+        "opaque": true,
+        "normal_strength": 0.25,
+        "orm": {
+          "R": "AO retained for native reconstruction",
+          "G": "roughness",
+          "B": "metallic"
+        }
+      },
+      "EquipmentMetal": {
+        "base_constant": [
+          0.26,
+          0.29,
+          0.3,
+          1
+        ],
+        "roughness_constant": 0.7200000286102295,
+        "uv_repeat_m": 2,
+        "opaque": true,
+        "normal_strength": 0.25,
+        "orm": {
+          "R": "AO retained for native reconstruction",
+          "G": "roughness",
+          "B": "metallic"
+        }
+      },
+      "WindowGlass": {
+        "base_constant": [
+          0.16,
+          0.25,
+          0.31,
+          1
+        ],
+        "roughness_constant": 0.3199999928474426,
+        "uv_repeat_m": 2,
+        "opaque": true
+      }
+    },
+    "textures": [
+      {
+        "source": "/repo/ArtSource/Textures/BuildingSurfaces/CityBrick_BaseColor.png",
+        "copy": "/output/textures/CityBrick_BaseColor.png",
+        "source_sha256": "e4c1ad7446563e3209191ca862fc4c3e065c491debd989765bc843405a5fbbfe",
+        "copy_sha256": "e4c1ad7446563e3209191ca862fc4c3e065c491debd989765bc843405a5fbbfe",
+        "dimensions": [
+          1024,
+          1024
+        ],
+        "colorspace": "sRGB"
+      },
+      {
+        "source": "/repo/ArtSource/Textures/BuildingSurfaces/CityBrick_Normal.png",
+        "copy": "/output/textures/CityBrick_Normal.png",
+        "source_sha256": "cf71dc7902b7c3a99d9fd1e966760af9a7b428de42b22ade5fb810965866d2cc",
+        "copy_sha256": "cf71dc7902b7c3a99d9fd1e966760af9a7b428de42b22ade5fb810965866d2cc",
+        "dimensions": [
+          1024,
+          1024
+        ],
+        "colorspace": "Non-Color"
+      },
+      {
+        "source": "/repo/ArtSource/Textures/BuildingSurfaces/CityBrick_ORM.png",
+        "copy": "/output/textures/CityBrick_ORM.png",
+        "source_sha256": "39f2f1df859b4052afe98dcb632054398957455d58b205b13702210467a0c6e8",
+        "copy_sha256": "39f2f1df859b4052afe98dcb632054398957455d58b205b13702210467a0c6e8",
+        "dimensions": [
+          1024,
+          1024
+        ],
+        "colorspace": "Non-Color"
+      },
+      {
+        "source": "/repo/ArtSource/Textures/RoofsSigns/RoofMembrane_BaseColor.png",
+        "copy": "/output/textures/RoofMembrane_BaseColor.png",
+        "source_sha256": "e70b663d843cb50ab4479ac5e582173464e05f510f60ce2b986837259981a587",
+        "copy_sha256": "e70b663d843cb50ab4479ac5e582173464e05f510f60ce2b986837259981a587",
+        "dimensions": [
+          512,
+          512
+        ],
+        "colorspace": "sRGB"
+      },
+      {
+        "source": "/repo/ArtSource/Textures/RoofsSigns/RoofMembrane_Normal.png",
+        "copy": "/output/textures/RoofMembrane_Normal.png",
+        "source_sha256": "0b29f7ad8fe50e859386b08d541ea37294c825d2c3a73210d3c3b15764bc19ce",
+        "copy_sha256": "0b29f7ad8fe50e859386b08d541ea37294c825d2c3a73210d3c3b15764bc19ce",
+        "dimensions": [
+          512,
+          512
+        ],
+        "colorspace": "Non-Color"
+      },
+      {
+        "source": "/repo/ArtSource/Textures/RoofsSigns/RoofMembrane_ORM.png",
+        "copy": "/output/textures/RoofMembrane_ORM.png",
+        "source_sha256": "a7ade624eb4477684f7101dd6b5c0fbe80b595c1b357ebf35715dfa91e54ec63",
+        "copy_sha256": "a7ade624eb4477684f7101dd6b5c0fbe80b595c1b357ebf35715dfa91e54ec63",
+        "dimensions": [
+          512,
+          512
+        ],
+        "colorspace": "Non-Color"
+      },
+      {
+        "source": "/repo/ArtSource/Textures/BuildingSurfaces/CityMechanical_BaseColor.png",
+        "copy": "/output/textures/CityMechanical_BaseColor.png",
+        "source_sha256": "ea75f9ab4911ad7ecf6a5e0ff5688fdc2c07ed52c3cad007ac58e8d06fe4e5ae",
+        "copy_sha256": "ea75f9ab4911ad7ecf6a5e0ff5688fdc2c07ed52c3cad007ac58e8d06fe4e5ae",
+        "dimensions": [
+          512,
+          512
+        ],
+        "colorspace": "sRGB"
+      },
+      {
+        "source": "/repo/ArtSource/Textures/BuildingSurfaces/CityMechanical_Normal.png",
+        "copy": "/output/textures/CityMechanical_Normal.png",
+        "source_sha256": "7a456d3f708d3ee42a7dfb830ac87f95ce27aeeea0e56ac444daca5da510231e",
+        "copy_sha256": "7a456d3f708d3ee42a7dfb830ac87f95ce27aeeea0e56ac444daca5da510231e",
+        "dimensions": [
+          512,
+          512
+        ],
+        "colorspace": "Non-Color"
+      },
+      {
+        "source": "/repo/ArtSource/Textures/BuildingSurfaces/CityMechanical_ORM.png",
+        "copy": "/output/textures/CityMechanical_ORM.png",
+        "source_sha256": "0e08a253e6c30a15e3675921cab4958c0cdcf088f23f05b5fcc1eb3f87dbec98",
+        "copy_sha256": "0e08a253e6c30a15e3675921cab4958c0cdcf088f23f05b5fcc1eb3f87dbec98",
+        "dimensions": [
+          512,
+          512
+        ],
+        "colorspace": "Non-Color"
+      }
+    ],
+    "uv": "UV0 world-projected metres / 2; tangent normals; no transparency",
+    "native_reconstruction": "deferred"
+  },
+  "native_reconstruction": "deferred; integration HELD"
+}

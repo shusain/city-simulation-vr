@@ -1,0 +1,126 @@
+{
+  "task": "D121",
+  "date": "2026-10-15",
+  "status": "source-preview-ready-unreviewed",
+  "source": "ArtSource/Blender/CityCitizenWalkCycle.blend",
+  "source_sha256": "c0298ddb637a6d19193851633e73796523ca2577b4406fbf657554ba10a72e0c",
+  "manifest": "ArtSource/Manifests/city_citizen_walk_cycle.json",
+  "validation": {
+    "task": "D121",
+    "source_sha256": "c0298ddb637a6d19193851633e73796523ca2577b4406fbf657554ba10a72e0c",
+    "pass_checks": true,
+    "rigs": [
+      {
+        "style": "Casual",
+        "lod": 0,
+        "samples": 57,
+        "maximum_ik_error_m": 0.006915161982003975,
+        "minimum_sole_m": -2.5581712179700844E-06,
+        "maximum_stance_sole_error_m": 6.560001111211022E-06,
+        "stance_world_slip_per_half_frame_m": 1.954552999469486E-06,
+        "maximum_limb_stretch_m": 1.4508561778647788E-05,
+        "loop_seam_m": 0.0
+      },
+      {
+        "style": "Casual",
+        "lod": 1,
+        "samples": 57,
+        "maximum_ik_error_m": 0.006915161982003975,
+        "minimum_sole_m": -2.553511421865551E-06,
+        "maximum_stance_sole_error_m": 6.58296130495728E-06,
+        "stance_world_slip_per_half_frame_m": 1.954552999469486E-06,
+        "maximum_limb_stretch_m": 1.4508561778647788E-05,
+        "loop_seam_m": 0.0
+      },
+      {
+        "style": "Office",
+        "lod": 0,
+        "samples": 57,
+        "maximum_ik_error_m": 0.00691509307141861,
+        "minimum_sole_m": -2.594515763121308E-06,
+        "maximum_stance_sole_error_m": 6.569467132067075E-06,
+        "stance_world_slip_per_half_frame_m": 1.915552820346485E-06,
+        "maximum_limb_stretch_m": 1.4509535648687955E-05,
+        "loop_seam_m": 0.0
+      },
+      {
+        "style": "Office",
+        "lod": 1,
+        "samples": 57,
+        "maximum_ik_error_m": 0.00691509307141861,
+        "minimum_sole_m": -2.5865094812616007E-06,
+        "maximum_stance_sole_error_m": 6.590942575712688E-06,
+        "stance_world_slip_per_half_frame_m": 1.915552820346485E-06,
+        "maximum_limb_stretch_m": 1.4509535648687955E-05,
+        "loop_seam_m": 0.0
+      },
+      {
+        "style": "Worker",
+        "lod": 0,
+        "samples": 57,
+        "maximum_ik_error_m": 0.0069151483818122176,
+        "minimum_sole_m": -2.561779865573044E-06,
+        "maximum_stance_sole_error_m": 6.5511967477505095E-06,
+        "stance_world_slip_per_half_frame_m": 1.9102567987938074E-06,
+        "maximum_limb_stretch_m": 1.4509092745029761E-05,
+        "loop_seam_m": 0.0
+      },
+      {
+        "style": "Worker",
+        "lod": 1,
+        "samples": 57,
+        "maximum_ik_error_m": 0.0069151483818122176,
+        "minimum_sole_m": -2.553214471845422E-06,
+        "maximum_stance_sole_error_m": 6.573793598363409E-06,
+        "stance_world_slip_per_half_frame_m": 1.9102567987938074E-06,
+        "maximum_limb_stretch_m": 1.4509092745029761E-05,
+        "loop_seam_m": 0.0
+      }
+    ],
+    "total_pose_samples": 342,
+    "baked_frames": 29,
+    "bake_error_m": 2.283711609736798E-05,
+    "fbx_sample_frames": 7,
+    "fbx_error_m": 2.2661033654003404E-05,
+    "export_bones": 20,
+    "controls_exported": 0,
+    "constraints_exported": 0,
+    "bridge": "Artifacts\\D121\\Walk-Casual-Authoring.fbx",
+    "bridge_sha256": "f10b3ec2a1624ee868996d0ba4c00a94d7f4f816eb26d168fec08d2bf1c0852f",
+    "protected_inputs_unchanged": true,
+    "human_review": "pending",
+    "native_status": "not imported"
+  },
+  "media": {
+    "task": "D121",
+    "source_sha256": "c0298ddb637a6d19193851633e73796523ca2577b4406fbf657554ba10a72e0c",
+    "media": {
+      "Outfits": {
+        "path": "Outfits.gif",
+        "sha256": "21eee8ca5c87ab95db6f5cccba1c4d4b8369d44e34f984e4e2d60cc7d7049da6",
+        "frames": 14
+      },
+      "Side": {
+        "path": "Side.gif",
+        "sha256": "8bd0e31b59d6219929a0054f0d61cc410137e3f2c5cb3722f28656ab58d216a3",
+        "frames": 14
+      },
+      "Front": {
+        "path": "Front.gif",
+        "sha256": "b2a3dca8b03866c3cde3273019ebf48b9c993252d6dabe2e6d054207be4cb38d",
+        "frames": 14
+      },
+      "Travel": {
+        "path": "Travel.gif",
+        "sha256": "db914cc6ae2ee05403a970a94e5ce545084cafa14258f31d7e0ae3112464bb56",
+        "frames": 42
+      }
+    }
+  },
+  "review": "Artifacts/D121/Preview/Review.html",
+  "plan": "docs/D121_CITIZEN_WALK_PLAN.md",
+  "native_integration": "planned, waiting for source approval and D107 window",
+  "editor_or_package_checks": "not run: source-only preview",
+  "physical_PC_VR_Quest": "unconfirmed",
+  "external_worker_request": "not triggered: generic worker is static-study only"
+}

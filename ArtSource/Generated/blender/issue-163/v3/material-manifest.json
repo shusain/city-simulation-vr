@@ -1,0 +1,107 @@
+{
+  "parameters": {
+    "normal_strength": 0.3,
+    "metricUV_scale": 0.5,
+    "ORM": "G roughness / B metallic"
+  },
+  "textures": [
+    {
+      "path": "/output/textures/CivicAsphalt_BaseColor.png",
+      "source": "/repo/ArtSource/Textures/CivicSurfaces/CivicAsphalt_BaseColor.png",
+      "sha256": "85e2cfe619a74da7fe74ad0c6439141f4edb63e5085208c4cfd620c5e1d988fa",
+      "dimensions": [
+        512,
+        512
+      ],
+      "colorspace": "sRGB",
+      "region": "RoofService"
+    },
+    {
+      "path": "/output/textures/CivicAsphalt_Normal.png",
+      "source": "/repo/ArtSource/Textures/CivicSurfaces/CivicAsphalt_Normal.png",
+      "sha256": "e6f9e8f0257ddbc33b012b72f9446a2c8a3679153488b4bbc67ca6e50be153fd",
+      "dimensions": [
+        512,
+        512
+      ],
+      "colorspace": "Non-Color",
+      "region": "RoofService"
+    },
+    {
+      "path": "/output/textures/CivicAsphalt_ORM.png",
+      "source": "/repo/ArtSource/Textures/CivicSurfaces/CivicAsphalt_ORM.png",
+      "sha256": "6b06b777944f76046d0f51131cdec7cca658efac60560c95ab1e854c37189ab4",
+      "dimensions": [
+        512,
+        512
+      ],
+      "colorspace": "Non-Color",
+      "region": "RoofService"
+    },
+    {
+      "path": "/output/textures/CityMechanical_BaseColor.png",
+      "source": "/repo/ArtSource/Textures/BuildingSurfaces/CityMechanical_BaseColor.png",
+      "sha256": "ea75f9ab4911ad7ecf6a5e0ff5688fdc2c07ed52c3cad007ac58e8d06fe4e5ae",
+      "dimensions": [
+        512,
+        512
+      ],
+      "colorspace": "sRGB",
+      "region": "EquipmentMetal"
+    },
+    {
+      "path": "/output/textures/CityMechanical_Normal.png",
+      "source": "/repo/ArtSource/Textures/BuildingSurfaces/CityMechanical_Normal.png",
+      "sha256": "7a456d3f708d3ee42a7dfb830ac87f95ce27aeeea0e56ac444daca5da510231e",
+      "dimensions": [
+        512,
+        512
+      ],
+      "colorspace": "Non-Color",
+      "region": "EquipmentMetal"
+    },
+    {
+      "path": "/output/textures/CityMechanical_ORM.png",
+      "source": "/repo/ArtSource/Textures/BuildingSurfaces/CityMechanical_ORM.png",
+      "sha256": "0e08a253e6c30a15e3675921cab4958c0cdcf088f23f05b5fcc1eb3f87dbec98",
+      "dimensions": [
+        512,
+        512
+      ],
+      "colorspace": "Non-Color",
+      "region": "EquipmentMetal"
+    }
+  ],
+  "base_colors": {
+    "Concrete": [
+      0.43,
+      0.45,
+      0.43,
+      1
+    ],
+    "BuildingFacade": [
+      0.39,
+      0.46,
+      0.44,
+      1
+    ],
+    "RoofService": [
+      0.095,
+      0.115,
+      0.13,
+      1
+    ],
+    "EquipmentMetal": [
+      0.26,
+      0.31,
+      0.32,
+      1
+    ],
+    "WindowAccent": [
+      0.075,
+      0.16,
+      0.21,
+      1
+    ]
+  }
+}

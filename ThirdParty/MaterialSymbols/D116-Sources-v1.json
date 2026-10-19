@@ -1,0 +1,142 @@
+{
+  "task": "D116.A1",
+  "issue": 17,
+  "version": "v1",
+  "status": "awaiting-human-review",
+  "repository": "google/material-design-icons",
+  "upstream_revision": "bd8cb85bd4bad964fe6918f79665bb40c3a8efef",
+  "license": "Apache-2.0",
+  "license_sha256": "49bbe9114e49214df2ccc324cb3ac8d1d1aa1c3a0947f94c286765e86647b32e",
+  "artifacts": [
+    {
+      "id": "account_balance_wallet",
+      "desktop_symbol": "Money",
+      "meaning": "Recorded funds shortfall",
+      "source_path": "symbols/web/account_balance_wallet/materialsymbolsoutlined/account_balance_wallet_48px.svg",
+      "upstream_revision": "bd8cb85bd4bad964fe6918f79665bb40c3a8efef",
+      "source_sha256": "1599c44260986a7cc7a2bf6f42c302ae3f79a26987cc511bbdf248c5875792f8",
+      "source_bytes": 703,
+      "png": "png/account_balance_wallet.png"
+    },
+    {
+      "id": "bolt",
+      "desktop_symbol": "Power",
+      "meaning": "Grid supply interrupted",
+      "source_path": "symbols/web/bolt/materialsymbolsoutlined/bolt_48px.svg",
+      "upstream_revision": "bd8cb85bd4bad964fe6918f79665bb40c3a8efef",
+      "source_sha256": "484d6ad4e780a1969775d75e2c2107d6429a2a51ee1ec2a0fb91a4099c60fb7b",
+      "source_bytes": 216,
+      "png": "png/bolt.png"
+    },
+    {
+      "id": "delete",
+      "desktop_symbol": "Waste",
+      "meaning": "Collection needed",
+      "source_path": "symbols/web/delete/materialsymbolsoutlined/delete_48px.svg",
+      "upstream_revision": "bd8cb85bd4bad964fe6918f79665bb40c3a8efef",
+      "source_sha256": "b1d2e5107cc3ff59a26f970b0acf7dd0881f7862fece228b5992e08c714ee29a",
+      "source_bytes": 311,
+      "png": "png/delete.png"
+    },
+    {
+      "id": "groups",
+      "desktop_symbol": "People",
+      "meaning": "Operating staff needed",
+      "source_path": "symbols/web/groups/materialsymbolsoutlined/groups_48px.svg",
+      "upstream_revision": "bd8cb85bd4bad964fe6918f79665bb40c3a8efef",
+      "source_sha256": "2f2daf9c7c4eda8d6e4f0f05644aa9bc18692ac9f031fef480499393c086eea3",
+      "source_bytes": 1013,
+      "png": "png/groups.png"
+    },
+    {
+      "id": "home",
+      "desktop_symbol": "Home",
+      "meaning": "Residence / search context",
+      "source_path": "symbols/web/home/materialsymbolsoutlined/home_48px.svg",
+      "upstream_revision": "bd8cb85bd4bad964fe6918f79665bb40c3a8efef",
+      "source_sha256": "8fcae4be0fdf48ebf7ceb9612f7fd63033b8165d3c2ef5b0228e1b240bec495f",
+      "source_bytes": 224,
+      "png": "png/home.png"
+    },
+    {
+      "id": "local_fire_department",
+      "desktop_symbol": "Fire",
+      "meaning": "Active fire",
+      "source_path": "symbols/web/local_fire_department/materialsymbolsoutlined/local_fire_department_48px.svg",
+      "upstream_revision": "bd8cb85bd4bad964fe6918f79665bb40c3a8efef",
+      "source_sha256": "028e90884bd2fad6acf409ec3ce4b1ee30b7add7335f0e6eb07ca0ff2aa23b84",
+      "source_bytes": 624,
+      "png": "png/local_fire_department.png"
+    },
+    {
+      "id": "medical_services",
+      "desktop_symbol": "Health",
+      "meaning": "Illness / care",
+      "source_path": "symbols/web/medical_services/materialsymbolsoutlined/medical_services_48px.svg",
+      "upstream_revision": "bd8cb85bd4bad964fe6918f79665bb40c3a8efef",
+      "source_sha256": "fc26a50aa85c9c2c1c6be86ba386ae8241583ba61b2c7193192c6b6d494f138a",
+      "source_bytes": 377,
+      "png": "png/medical_services.png"
+    },
+    {
+      "id": "package_2",
+      "desktop_symbol": "Leaving",
+      "meaning": "Housing search / move",
+      "source_path": "symbols/web/package_2/materialsymbolsoutlined/package_2_48px.svg",
+      "upstream_revision": "bd8cb85bd4bad964fe6918f79665bb40c3a8efef",
+      "source_sha256": "89bdfe427537377b356b451fd323549b272688d36994896eff651e7e84541f6f",
+      "source_bytes": 396,
+      "png": "png/package_2.png"
+    },
+    {
+      "id": "pause_circle",
+      "desktop_symbol": "Inspect",
+      "meaning": "Operating dependency waiting",
+      "source_path": "symbols/web/pause_circle/materialsymbolsoutlined/pause_circle_48px.svg",
+      "upstream_revision": "bd8cb85bd4bad964fe6918f79665bb40c3a8efef",
+      "source_sha256": "7e9d69cdba48381c672a191bf5343111fffe87acd56fd895eaaf154aaf6bb072",
+      "source_bytes": 457,
+      "png": "png/pause_circle.png"
+    },
+    {
+      "id": "school",
+      "desktop_symbol": "School",
+      "meaning": "Qualification / learning",
+      "source_path": "symbols/web/school/materialsymbolsoutlined/school_48px.svg",
+      "upstream_revision": "bd8cb85bd4bad964fe6918f79665bb40c3a8efef",
+      "source_sha256": "1be914ee07999a7fc838e60d9a48febd59718ecf6bb0dfa50aaf06937f1fe4ff",
+      "source_bytes": 289,
+      "png": "png/school.png"
+    },
+    {
+      "id": "sentiment_dissatisfied",
+      "desktop_symbol": "Happiness",
+      "meaning": "Sustained discontent",
+      "source_path": "symbols/web/sentiment_dissatisfied/materialsymbolsoutlined/sentiment_dissatisfied_48px.svg",
+      "upstream_revision": "bd8cb85bd4bad964fe6918f79665bb40c3a8efef",
+      "source_sha256": "522fb5a331944ba23a16470be99510e95cb1e3959c45b44fb1032879ccd0ad45",
+      "source_bytes": 836,
+      "png": "png/sentiment_dissatisfied.png"
+    },
+    {
+      "id": "shopping_basket",
+      "desktop_symbol": "Shop",
+      "meaning": "Unmet settled purchases",
+      "source_path": "symbols/web/shopping_basket/materialsymbolsoutlined/shopping_basket_48px.svg",
+      "upstream_revision": "bd8cb85bd4bad964fe6918f79665bb40c3a8efef",
+      "source_sha256": "1e647be97dc7f2ba6916524d80713d0199b4b449caccd47f6680ff3b175f3f22",
+      "source_bytes": 546,
+      "png": "png/shopping_basket.png"
+    },
+    {
+      "id": "water_drop",
+      "desktop_symbol": "Water",
+      "meaning": "Water allocation interrupted",
+      "source_path": "symbols/web/water_drop/materialsymbolsoutlined/water_drop_48px.svg",
+      "upstream_revision": "bd8cb85bd4bad964fe6918f79665bb40c3a8efef",
+      "source_sha256": "9595f261854db35ddfd3f565ae5bb1b1b516d7b7072af48887b5803eb3eb5fe6",
+      "source_bytes": 462,
+      "png": "png/water_drop.png"
+    }
+  ]
+}

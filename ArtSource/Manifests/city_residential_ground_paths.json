@@ -1,0 +1,447 @@
+{
+  "issue": 125,
+  "source": "ArtSource/Blender/CityResidentialGroundPaths.blend",
+  "source_sha256": "131d4fbf9034e1fd52183ab64ebe25eff5d3520aad24eefe862528f3af17ab54",
+  "source_inputs": "ArtSource/Manifests/city_residential_ground_sources.json",
+  "assets": [
+    {
+      "native": "/Game/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Home_A_Damaged",
+      "name": "SM_LowDensity_Home_A_Damaged",
+      "source": "ArtSource/Blender/CityLowDensityBuildings.blend",
+      "object": "SM_LowDensity_Home_A_Damaged",
+      "export": "ArtSource/Exports/LowDensity/SM_LowDensity_Home_A_Damaged.fbx",
+      "bindings": {
+        "ResidentialBrick": "/Game/CitySim/Art/Materials/MI_CharredBrick",
+        "HomeSolidDetails": "/Game/CitySim/Art/Materials/MI_CharredTrim",
+        "RoofShingles": "/Game/CitySim/Art/Materials/MI_CharredRoofShingles",
+        "HomeWindowOpaque": "/Game/CitySim/Art/Materials/MI_CharredTrim"
+      },
+      "phase": "low",
+      "damaged": true,
+      "source_sha256": "05e4b0409ac3f8785546feccf9b46443c449295819ef0ec68e7790658fb13d9e",
+      "export_sha256": "2342508ae37371c820366b56f449f9aad9d9d98fc1f3a818af18139c7fd0d6c0",
+      "target_name": "SM_ResidentialGround_Home_A_Damaged",
+      "slots": [
+        "ResidentialBrick",
+        "HomeSolidDetails",
+        "RoofShingles",
+        "HomeWindowOpaque"
+      ],
+      "door_native_cm": [
+        0,
+        467,
+        0
+      ],
+      "entry_native_cm": [
+        0,
+        467,
+        0
+      ],
+      "landing_cm": 50,
+      "ground_reserve_cm": 100,
+      "porch_policy": "door threshold",
+      "derived_export": "ArtSource/Exports/ResidentialGround/SM_ResidentialGround_Home_A_Damaged.fbx",
+      "derived_export_sha256": "9213f170c90a95e4ed1ddd339eb955ed24aee20e872520283777622308a39fba",
+      "target": "/Game/CitySim/Art/ResidentialGround/SM_ResidentialGround_Home_A_Damaged",
+      "triangles": 656,
+      "removed_faces": [
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "retained_faces": 327,
+      "dimensions_m": [
+        10.559999465942383,
+        10.955999374389648,
+        4.786327362060547
+      ]
+    },
+    {
+      "native": "/Game/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Home_B",
+      "name": "SM_LowDensity_Home_B",
+      "source": "ArtSource/Blender/CityLowDensityBuildings.blend",
+      "object": "SM_LowDensity_Home_B",
+      "export": "ArtSource/Exports/LowDensity/SM_LowDensity_Home_B.fbx",
+      "bindings": {
+        "ResidentialBrick": "/Game/CitySim/Art/LowDensity/Materials/M_Home_Timber",
+        "HomeSolidDetails": "/Game/CitySim/Art/Materials/M_HomeSolidDetails",
+        "RoofShingles": "/Game/CitySim/Art/Materials/MI_RoofShingles",
+        "HomeWindowOpaque": "/Game/CitySim/Art/Materials/M_HomeWindowOpaque"
+      },
+      "phase": "low",
+      "damaged": false,
+      "source_sha256": "05e4b0409ac3f8785546feccf9b46443c449295819ef0ec68e7790658fb13d9e",
+      "export_sha256": "7c8c47e0f079b93fce2ec9bd07712a61687038f2671f3e10ed6b650ec4e4f659",
+      "target_name": "SM_ResidentialGround_Home_B",
+      "slots": [
+        "ResidentialBrick",
+        "HomeSolidDetails",
+        "RoofShingles",
+        "HomeWindowOpaque"
+      ],
+      "door_native_cm": [
+        0,
+        467,
+        0
+      ],
+      "entry_native_cm": [
+        0,
+        615,
+        0
+      ],
+      "landing_cm": 10,
+      "ground_reserve_cm": 40,
+      "porch_policy": "retain authored deck/roof/posts; start steps at deck front",
+      "derived_export": "ArtSource/Exports/ResidentialGround/SM_ResidentialGround_Home_B.fbx",
+      "derived_export_sha256": "fa5b78b694b7df89b4ab1e2e0ffe5bc0fb27ff3d31693afece372c1bf1485a13",
+      "target": "/Game/CitySim/Art/ResidentialGround/SM_ResidentialGround_Home_B",
+      "triangles": 584,
+      "removed_faces": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "retained_faces": 292,
+      "dimensions_m": [
+        10.5600004196167,
+        11.630000114440918,
+        4.799999713897705
+      ]
+    },
+    {
+      "native": "/Game/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Home_B_Damaged",
+      "name": "SM_LowDensity_Home_B_Damaged",
+      "source": "ArtSource/Blender/CityLowDensityBuildings.blend",
+      "object": "SM_LowDensity_Home_B_Damaged",
+      "export": "ArtSource/Exports/LowDensity/SM_LowDensity_Home_B_Damaged.fbx",
+      "bindings": {
+        "ResidentialBrick": "/Game/CitySim/Art/Materials/MI_CharredBrick",
+        "HomeSolidDetails": "/Game/CitySim/Art/Materials/MI_CharredTrim",
+        "RoofShingles": "/Game/CitySim/Art/Materials/MI_CharredRoofShingles",
+        "HomeWindowOpaque": "/Game/CitySim/Art/Materials/MI_CharredTrim"
+      },
+      "phase": "low",
+      "damaged": true,
+      "source_sha256": "05e4b0409ac3f8785546feccf9b46443c449295819ef0ec68e7790658fb13d9e",
+      "export_sha256": "4efa6a653b0ce35fe1bf38c831ac307686444909f018f460eda1b18483728877",
+      "target_name": "SM_ResidentialGround_Home_B_Damaged",
+      "slots": [
+        "ResidentialBrick",
+        "HomeSolidDetails",
+        "RoofShingles",
+        "HomeWindowOpaque"
+      ],
+      "door_native_cm": [
+        0,
+        467,
+        0
+      ],
+      "entry_native_cm": [
+        0,
+        615,
+        0
+      ],
+      "landing_cm": 10,
+      "ground_reserve_cm": 40,
+      "porch_policy": "retain authored deck/roof/posts; start steps at deck front",
+      "derived_export": "ArtSource/Exports/ResidentialGround/SM_ResidentialGround_Home_B_Damaged.fbx",
+      "derived_export_sha256": "3f84dcafcc5786053e2c2bb4b72365522f1ab93dbebc182d82922110ed58ab19",
+      "target": "/Game/CitySim/Art/ResidentialGround/SM_ResidentialGround_Home_B_Damaged",
+      "triangles": 584,
+      "removed_faces": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "retained_faces": 292,
+      "dimensions_m": [
+        10.5600004196167,
+        11.630000114440918,
+        4.139933109283447
+      ]
+    },
+    {
+      "native": "/Game/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Home_C",
+      "name": "SM_LowDensity_Home_C",
+      "source": "ArtSource/Blender/CityLowDensityBuildings.blend",
+      "object": "SM_LowDensity_Home_C",
+      "export": "ArtSource/Exports/LowDensity/SM_LowDensity_Home_C.fbx",
+      "bindings": {
+        "ResidentialBrick": "/Game/CitySim/Art/LowDensity/Materials/M_Home_Clapboard",
+        "HomeSolidDetails": "/Game/CitySim/Art/Materials/M_HomeSolidDetails",
+        "RoofShingles": "/Game/CitySim/Art/Materials/MI_RoofShingles",
+        "HomeWindowOpaque": "/Game/CitySim/Art/Materials/M_HomeWindowOpaque"
+      },
+      "phase": "low",
+      "damaged": false,
+      "source_sha256": "05e4b0409ac3f8785546feccf9b46443c449295819ef0ec68e7790658fb13d9e",
+      "export_sha256": "42bc62001b4eb5fd85bc3b175dc97e8b71e2e0f432e747abd7b5e62390bb571d",
+      "target_name": "SM_ResidentialGround_Home_C",
+      "slots": [
+        "ResidentialBrick",
+        "HomeSolidDetails",
+        "RoofShingles",
+        "HomeWindowOpaque"
+      ],
+      "door_native_cm": [
+        0,
+        467,
+        0
+      ],
+      "entry_native_cm": [
+        0,
+        603,
+        0
+      ],
+      "landing_cm": 10,
+      "ground_reserve_cm": 40,
+      "porch_policy": "retain authored deck/roof/posts; start steps at deck front",
+      "derived_export": "ArtSource/Exports/ResidentialGround/SM_ResidentialGround_Home_C.fbx",
+      "derived_export_sha256": "ba7480f5e3dad8aa5ba743319e3603d67d375a3bfd2342ca2182e1622c64606a",
+      "target": "/Game/CitySim/Art/ResidentialGround/SM_ResidentialGround_Home_C",
+      "triangles": 584,
+      "removed_faces": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "retained_faces": 292,
+      "dimensions_m": [
+        10.5600004196167,
+        11.530000686645508,
+        4.799999713897705
+      ]
+    },
+    {
+      "native": "/Game/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Home_C_Damaged",
+      "name": "SM_LowDensity_Home_C_Damaged",
+      "source": "ArtSource/Blender/CityLowDensityBuildings.blend",
+      "object": "SM_LowDensity_Home_C_Damaged",
+      "export": "ArtSource/Exports/LowDensity/SM_LowDensity_Home_C_Damaged.fbx",
+      "bindings": {
+        "ResidentialBrick": "/Game/CitySim/Art/Materials/MI_CharredBrick",
+        "HomeSolidDetails": "/Game/CitySim/Art/Materials/MI_CharredTrim",
+        "RoofShingles": "/Game/CitySim/Art/Materials/MI_CharredRoofShingles",
+        "HomeWindowOpaque": "/Game/CitySim/Art/Materials/MI_CharredTrim"
+      },
+      "phase": "low",
+      "damaged": true,
+      "source_sha256": "05e4b0409ac3f8785546feccf9b46443c449295819ef0ec68e7790658fb13d9e",
+      "export_sha256": "efd55963ad67a7c092b5ae90370ceb31372dc89b06a3801fded1b58dbf4541d5",
+      "target_name": "SM_ResidentialGround_Home_C_Damaged",
+      "slots": [
+        "ResidentialBrick",
+        "HomeSolidDetails",
+        "RoofShingles",
+        "HomeWindowOpaque"
+      ],
+      "door_native_cm": [
+        0,
+        467,
+        0
+      ],
+      "entry_native_cm": [
+        0,
+        603,
+        0
+      ],
+      "landing_cm": 10,
+      "ground_reserve_cm": 40,
+      "porch_policy": "retain authored deck/roof/posts; start steps at deck front",
+      "derived_export": "ArtSource/Exports/ResidentialGround/SM_ResidentialGround_Home_C_Damaged.fbx",
+      "derived_export_sha256": "0e779ef97b4abe6fc7d135b99a9db1d372b2dbf3bb5f0d89b6763652a52d0c82",
+      "target": "/Game/CitySim/Art/ResidentialGround/SM_ResidentialGround_Home_C_Damaged",
+      "triangles": 584,
+      "removed_faces": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "retained_faces": 292,
+      "dimensions_m": [
+        10.5600004196167,
+        11.530000686645508,
+        3.8957340717315674
+      ]
+    },
+    {
+      "native": "/Game/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Home_D",
+      "name": "SM_LowDensity_Home_D",
+      "source": "ArtSource/Blender/CityLowDensityBuildings.blend",
+      "object": "SM_LowDensity_Home_D",
+      "export": "ArtSource/Exports/LowDensity/SM_LowDensity_Home_D.fbx",
+      "bindings": {
+        "ResidentialBrick": "/Game/CitySim/Art/LowDensity/Materials/M_Home_Corrugated",
+        "HomeSolidDetails": "/Game/CitySim/Art/Materials/M_HomeSolidDetails",
+        "RoofShingles": "/Game/CitySim/Art/Materials/MI_RoofShingles",
+        "HomeWindowOpaque": "/Game/CitySim/Art/Materials/M_HomeWindowOpaque"
+      },
+      "phase": "low",
+      "damaged": false,
+      "source_sha256": "05e4b0409ac3f8785546feccf9b46443c449295819ef0ec68e7790658fb13d9e",
+      "export_sha256": "b7c97cbac94f6260098c5de4ea52d8b25e84e893fd3834dbf5361655008c3cf5",
+      "target_name": "SM_ResidentialGround_Home_D",
+      "slots": [
+        "ResidentialBrick",
+        "HomeSolidDetails",
+        "RoofShingles",
+        "HomeWindowOpaque"
+      ],
+      "door_native_cm": [
+        0,
+        467,
+        0
+      ],
+      "entry_native_cm": [
+        0,
+        629,
+        0
+      ],
+      "landing_cm": 10,
+      "ground_reserve_cm": 40,
+      "porch_policy": "retain authored deck/roof/posts; start steps at deck front",
+      "derived_export": "ArtSource/Exports/ResidentialGround/SM_ResidentialGround_Home_D.fbx",
+      "derived_export_sha256": "1b4af9fde889f9b0be83ad6eed0e291b590ceb01556e9071ee287ef4e5257dd7",
+      "target": "/Game/CitySim/Art/ResidentialGround/SM_ResidentialGround_Home_D",
+      "triangles": 614,
+      "removed_faces": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "retained_faces": 306,
+      "dimensions_m": [
+        10.5600004196167,
+        11.579999923706055,
+        4.799999713897705
+      ]
+    },
+    {
+      "native": "/Game/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Home_D_Damaged",
+      "name": "SM_LowDensity_Home_D_Damaged",
+      "source": "ArtSource/Blender/CityLowDensityBuildings.blend",
+      "object": "SM_LowDensity_Home_D_Damaged",
+      "export": "ArtSource/Exports/LowDensity/SM_LowDensity_Home_D_Damaged.fbx",
+      "bindings": {
+        "ResidentialBrick": "/Game/CitySim/Art/Materials/MI_CharredBrick",
+        "HomeSolidDetails": "/Game/CitySim/Art/Materials/MI_CharredTrim",
+        "RoofShingles": "/Game/CitySim/Art/Materials/MI_CharredRoofShingles",
+        "HomeWindowOpaque": "/Game/CitySim/Art/Materials/MI_CharredTrim"
+      },
+      "phase": "low",
+      "damaged": true,
+      "source_sha256": "05e4b0409ac3f8785546feccf9b46443c449295819ef0ec68e7790658fb13d9e",
+      "export_sha256": "d2ba7a3287aaecf5eaa6146dcd2a7518c51baa55b0f0781576eee3a4d66339d9",
+      "target_name": "SM_ResidentialGround_Home_D_Damaged",
+      "slots": [
+        "ResidentialBrick",
+        "HomeSolidDetails",
+        "RoofShingles",
+        "HomeWindowOpaque"
+      ],
+      "door_native_cm": [
+        0,
+        467,
+        0
+      ],
+      "entry_native_cm": [
+        0,
+        629,
+        0
+      ],
+      "landing_cm": 10,
+      "ground_reserve_cm": 40,
+      "porch_policy": "retain authored deck/roof/posts; start steps at deck front",
+      "derived_export": "ArtSource/Exports/ResidentialGround/SM_ResidentialGround_Home_D_Damaged.fbx",
+      "derived_export_sha256": "4a281f70caad3fdb4751e63dd6d682a0233fe72ab38b4d949f67f69d97a6c674",
+      "target": "/Game/CitySim/Art/ResidentialGround/SM_ResidentialGround_Home_D_Damaged",
+      "triangles": 614,
+      "removed_faces": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "retained_faces": 306,
+      "dimensions_m": [
+        10.5600004196167,
+        11.579999923706055,
+        3.5737290382385254
+      ]
+    },
+    {
+      "native": "/Game/CitySim/Art/Meshes/SM_Building_Residential_A_Damaged",
+      "name": "SM_Building_Residential_A_Damaged",
+      "source": "ArtSource/Blender/CityBuildingWindows.blend",
+      "object": "SM_Building_Residential_A_Damaged",
+      "export": "ArtSource/Exports/BuildingWindowStudy/SM_Building_Residential_A_Damaged.fbx",
+      "bindings": {
+        "CharredBrick": "/Game/CitySim/Art/Materials/MI_CharredBrick",
+        "CharredTrim": "/Game/CitySim/Art/Materials/MI_CharredTrim",
+        "CharredRoofShingles": "/Game/CitySim/Art/Materials/MI_CharredRoofShingles"
+      },
+      "phase": "low-alias",
+      "damaged": true,
+      "source_sha256": "0d46923a35e9e23a1c6276e94eec4f03a2752a997bcdd813c6a7980a4429c2ab",
+      "export_sha256": "7e76f64dd03633d75f6096b589d1916eea18a5509fe1258430d260a5c365e21d",
+      "target_name": "SM_ResidentialGround_Home_Legacy_Damaged",
+      "slots": [
+        "CharredBrick",
+        "CharredTrim",
+        "CharredRoofShingles"
+      ],
+      "door_native_cm": [
+        0,
+        467,
+        0
+      ],
+      "entry_native_cm": [
+        0,
+        467,
+        0
+      ],
+      "landing_cm": 50,
+      "ground_reserve_cm": 100,
+      "porch_policy": "door threshold",
+      "derived_export": "ArtSource/Exports/ResidentialGround/SM_ResidentialGround_Home_Legacy_Damaged.fbx",
+      "derived_export_sha256": "edb8fa7d470d2e9a9621d0e8270c6aeba0f1da66f3b22cee9482454c1430a743",
+      "target": "/Game/CitySim/Art/ResidentialGround/SM_ResidentialGround_Home_Legacy_Damaged",
+      "triangles": 656,
+      "removed_faces": [
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "retained_faces": 327,
+      "dimensions_m": [
+        10.559999465942383,
+        10.955999374389648,
+        4.786327362060547
+      ]
+    }
+  ],
+  "preserved": "All retained positions/UVs/corner colors/materials and authored porches; approved originals unchanged"
+}

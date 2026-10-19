@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "task": "D58",
+  "title": "Town D · lower pitch and lower octave comparison",
+  "sampleRate": 48000,
+  "targetLUFS": -24.0,
+  "truePeakCeilingDBTP": -6.0,
+  "provenance": {
+    "description": "Original mechanical synthesis refining the user's preferred Town D. All candidates preserve D's motor timing, paired-tone ratio, harmonics, rotation swell and seeded air texture. No recorded samples appear in the outputs.",
+    "tool": "SuperCollider 3.14.1 built-in UGens",
+    "referenceManifest": "AudioSource/Soundscape/town-references.json",
+    "status": "Town G is user-selected for now (2026-10-11). D/F remain comparison alternatives; production loop/end behavior, game integration and device acceptance remain pending."
+  },
+  "selection": {
+    "Town": "G selected for now: lower pitch plus quiet lower octave"
+  },
+  "candidates": [
+    {
+      "id": "Town-D", "group": "Town", "label": "D · current preferred reference",
+      "synth": "TownMechanical",
+      "intent": "The current 600/720 Hz candidate, retained for a direct level-matched comparison.",
+      "parameters": {"duration": 24, "nominalHz": 600, "lowerRatio": 0.28, "spinUp": 4, "spinDown": 5, "wailDepth": 0, "secondaryRatio": 1.2, "secondaryGain": 0.72, "brightness": 0.78, "rotationHz": 0.05, "rotationDepth": 0.5, "airGain": 0.018, "motorGain": 0.035, "cutoffHz": 3400, "seed": 5802, "lowerOctaveGain": 0}
+    },
+    {
+      "id": "Town-F", "group": "Town", "label": "F · modestly lower pitch",
+      "synth": "TownMechanical",
+      "intent": "Both held tones lowered 10 percent to 540/648 Hz (about 1.8 semitones); the rest of D's character is retained.",
+      "parameters": {"duration": 24, "nominalHz": 540, "lowerRatio": 0.28, "spinUp": 4, "spinDown": 5, "wailDepth": 0, "secondaryRatio": 1.2, "secondaryGain": 0.72, "brightness": 0.78, "rotationHz": 0.05, "rotationDepth": 0.5, "airGain": 0.018, "motorGain": 0.035, "cutoffHz": 3400, "seed": 5802, "lowerOctaveGain": 0}
+    },
+    {
+      "id": "Town-G", "group": "Town", "label": "G · lower pitch with quiet lower octave",
+      "synth": "TownMechanical",
+      "intent": "The same 540/648 Hz tones as F, plus quiet 270/324 Hz components for more low body without changing the two-tone identity.",
+      "parameters": {"duration": 24, "nominalHz": 540, "lowerRatio": 0.28, "spinUp": 4, "spinDown": 5, "wailDepth": 0, "secondaryRatio": 1.2, "secondaryGain": 0.72, "brightness": 0.78, "rotationHz": 0.05, "rotationDepth": 0.5, "airGain": 0.018, "motorGain": 0.035, "cutoffHz": 3400, "seed": 5802, "lowerOctaveGain": 0.22}
+    }
+  ]
+}

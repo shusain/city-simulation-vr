@@ -1,0 +1,1145 @@
+{
+  "issue": 125,
+  "integration_issue": 192,
+  "source_manifest": "ArtSource/Manifests/city_nuclear_integration.json",
+  "source_manifest_sha256": "ccd4c4382145767b1e8a9f1df3e5b964b49a8e5fc13a80aa8ab98421da4b9075",
+  "site_cells": [
+    4,
+    4
+  ],
+  "native_mapping": "x=source.x*100,y=-source.y*100,z=source.z*100; presentation yaw2",
+  "support_policy": "97 structural/equipment strips including32 per open annular shell; no parcel support",
+  "regions": [
+    {
+      "component": "Control wing",
+      "rectangle_cm": [
+        -1250.0,
+        -0.0,
+        -350.0,
+        1150.0,
+        0
+      ],
+      "yaw_degrees": 0
+    },
+    {
+      "component": "Open cooling shell",
+      "sector": 0,
+      "rectangle_cm": [
+        -977.7016775528723,
+        382.1249772038972,
+        -875.7440272541969,
+        408.9997627426917,
+        0
+      ],
+      "yaw_degrees": 95.625
+    },
+    {
+      "component": "Open cooling shell",
+      "sector": 1,
+      "rectangle_cm": [
+        -785.2608139580416,
+        545.7196749979341,
+        -683.3031636593662,
+        572.5944605367288,
+        0
+      ],
+      "yaw_degrees": 106.875
+    },
+    {
+      "component": "Open cooling shell",
+      "sector": 2,
+      "rectangle_cm": [
+        -564.6019053233755,
+        668.6275964985634,
+        -462.6442550247001,
+        695.5023820373578,
+        0
+      ],
+      "yaw_degrees": 118.125
+    },
+    {
+      "component": "Open cooling shell",
+      "sector": 3,
+      "rectangle_cm": [
+        -324.20474976076304,
+        746.1254592100715,
+        -222.24709946208765,
+        773.0002447488662,
+        0
+      ],
+      "yaw_degrees": 129.375
+    },
+    {
+      "component": "Open cooling shell",
+      "sector": 4,
+      "rectangle_cm": [
+        -73.30767514219731,
+        775.2350637297582,
+        28.649975156478106,
+        802.1098492685528,
+        0
+      ],
+      "yaw_degrees": 140.625
+    },
+    {
+      "component": "Open cooling shell",
+      "sector": 5,
+      "rectangle_cm": [
+        178.44748465943047,
+        754.8377442807853,
+        280.40513495810586,
+        781.7125298195799,
+        0
+      ],
+      "yaw_degrees": 151.875
+    },
+    {
+      "component": "Open cooling shell",
+      "sector": 6,
+      "rectangle_cm": [
+        421.3859200388646,
+        685.7173584106288,
+        523.34357033754,
+        712.5921439494234,
+        0
+      ],
+      "yaw_degrees": 163.125
+    },
+    {
+      "component": "Open cooling shell",
+      "sector": 7,
+      "rectangle_cm": [
+        646.1716431659164,
+        570.5301637851201,
+        748.1292934645918,
+        597.4049493239145,
+        0
+      ],
+      "yaw_degrees": 174.375
+    },
+    {
+      "component": "Open cooling shell",
+      "sector": 8,
+      "rectangle_cm": [
+        844.1662647621006,
+        413.70273969599356,
+        946.123915060776,
+        440.5775252347881,
+        0
+      ],
+      "yaw_degrees": 185.625
+    },
+    {
+      "component": "Open cooling shell",
+      "sector": 9,
+      "rectangle_cm": [
+        1007.7609625561375,
+        221.26187610116295,
+        1109.718612854813,
+        248.13666163995748,
+        0
+      ],
+      "yaw_degrees": 196.875
+    },
+    {
+      "component": "Open cooling shell",
+      "sector": 10,
+      "rectangle_cm": [
+        1130.6688840567667,
+        0.6029674664966933,
+        1232.6265343554423,
+        27.47775300529122,
+        0
+      ],
+      "yaw_degrees": 208.125
+    },
+    {
+      "component": "Open cooling shell",
+      "sector": 11,
+      "rectangle_cm": [
+        1208.1667467682748,
+        -239.7941880961156,
+        1310.1243970669505,
+        -212.91940255732106,
+        0
+      ],
+      "yaw_degrees": 219.375
+    },
+    {
+      "component": "Open cooling shell",
+      "sector": 12,
+      "rectangle_cm": [
+        1237.276351287961,
+        -490.691262714682,
+        1339.2340015866366,
+        -463.8164771758875,
+        0
+      ],
+      "yaw_degrees": 230.62500000000003
+    },
+    {
+      "component": "Open cooling shell",
+      "sector": 13,
+      "rectangle_cm": [
+        1216.8790318389886,
+        -742.4464225163092,
+        1318.8366821376642,
+        -715.5716369775146,
+        0
+      ],
+      "yaw_degrees": 241.875
+    },
+    {
+      "component": "Open cooling shell",
+      "sector": 14,
+      "rectangle_cm": [
+        1147.758645968832,
+        -985.3848578957432,
+        1249.7162962675077,
+        -958.5100723569485,
+        0
+      ],
+      "yaw_degrees": 253.125
+    },
+    {
+      "component": "Open cooling shell",
+      "sector": 15,
+      "rectangle_cm": [
+        1032.571451343323,
+        -1210.1705810227957,
+        1134.5291016419985,
+        -1183.295795484001,
+        0
+      ],
+      "yaw_degrees": 264.375
+    },
+    {
+      "component": "Open cooling shell",
+      "sector": 16,
+      "rectangle_cm": [
+        875.7440272541977,
+        -1408.165202618979,
+        977.7016775528731,
+        -1381.2904170801844,
+        0
+      ],
+      "yaw_degrees": 275.625
+    },
+    {
+      "component": "Open cooling shell",
+      "sector": 17,
+      "rectangle_cm": [
+        683.3031636593663,
+        -1571.759900413016,
+        785.2608139580417,
+        -1544.8851148742215,
+        0
+      ],
+      "yaw_degrees": 286.875
+    },
+    {
+      "component": "Open cooling shell",
+      "sector": 18,
+      "rectangle_cm": [
+        462.6442550247001,
+        -1694.6678219136454,
+        564.6019053233755,
+        -1667.7930363748508,
+        0
+      ],
+      "yaw_degrees": 298.125
+    },
+    {
+      "component": "Open cooling shell",
+      "sector": 19,
+      "rectangle_cm": [
+        222.24709946208873,
+        -1772.1656846251535,
+        324.2047497607641,
+        -1745.2908990863589,
+        0
+      ],
+      "yaw_degrees": 309.37499999999994
+    },
+    {
+      "component": "Open cooling shell",
+      "sector": 20,
+      "rectangle_cm": [
+        -28.649975156477367,
+        -1801.2752891448404,
+        73.30767514219805,
+        -1774.4005036060457,
+        0
+      ],
+      "yaw_degrees": 320.625
+    },
+    {
+      "component": "Open cooling shell",
+      "sector": 21,
+      "rectangle_cm": [
+        -280.4051349581057,
+        -1780.8779696958675,
+        -178.4474846594303,
+        -1754.0031841570728,
+        0
+      ],
+      "yaw_degrees": 331.875
+    },
+    {
+      "component": "Open cooling shell",
+      "sector": 22,
+      "rectangle_cm": [
+        -523.3435703375397,
+        -1711.757583825711,
+        -421.3859200388643,
+        -1684.8827982869163,
+        0
+      ],
+      "yaw_degrees": 343.125
+    },
+    {
+      "component": "Open cooling shell",
+      "sector": 23,
+      "rectangle_cm": [
+        -748.1292934645921,
+        -1596.570389200202,
+        -646.1716431659167,
+        -1569.6956036614074,
+        0
+      ],
+      "yaw_degrees": 354.375
+    },
+    {
+      "component": "Open cooling shell",
+      "sector": 24,
+      "rectangle_cm": [
+        -946.1239150607754,
+        -1439.7429651110763,
+        -844.1662647621,
+        -1412.8681795722816,
+        0
+      ],
+      "yaw_degrees": 365.625
+    },
+    {
+      "component": "Open cooling shell",
+      "sector": 25,
+      "rectangle_cm": [
+        -1109.7186128548128,
+        -1247.302101516245,
+        -1007.7609625561373,
+        -1220.4273159774505,
+        0
+      ],
+      "yaw_degrees": 376.875
+    },
+    {
+      "component": "Open cooling shell",
+      "sector": 26,
+      "rectangle_cm": [
+        -1232.6265343554421,
+        -1026.643192881579,
+        -1130.6688840567665,
+        -999.7684073427843,
+        0
+      ],
+      "yaw_degrees": 388.125
+    },
+    {
+      "component": "Open cooling shell",
+      "sector": 27,
+      "rectangle_cm": [
+        -1310.1243970669502,
+        -786.2460373189663,
+        -1208.1667467682746,
+        -759.3712517801716,
+        0
+      ],
+      "yaw_degrees": 399.375
+    },
+    {
+      "component": "Open cooling shell",
+      "sector": 28,
+      "rectangle_cm": [
+        -1339.2340015866369,
+        -535.3489627004014,
+        -1237.2763512879612,
+        -508.47417716160686,
+        0
+      ],
+      "yaw_degrees": 410.625
+    },
+    {
+      "component": "Open cooling shell",
+      "sector": 29,
+      "rectangle_cm": [
+        -1318.836682137664,
+        -283.5938028987732,
+        -1216.8790318389883,
+        -256.7190173599787,
+        0
+      ],
+      "yaw_degrees": 421.875
+    },
+    {
+      "component": "Open cooling shell",
+      "sector": 30,
+      "rectangle_cm": [
+        -1249.716296267508,
+        -40.65536751933911,
+        -1147.7586459688323,
+        -13.780581980544582,
+        0
+      ],
+      "yaw_degrees": 433.125
+    },
+    {
+      "component": "Open cooling shell",
+      "sector": 31,
+      "rectangle_cm": [
+        -1134.5291016419987,
+        184.13035560771334,
+        -1032.5714513433231,
+        211.00514114650787,
+        0
+      ],
+      "yaw_degrees": 444.375
+    },
+    {
+      "component": "Intake pier",
+      "rectangle_cm": [
+        -320.0000047683716,
+        -1028.0000686645508,
+        -283.99999141693115,
+        -992.0000076293945,
+        0
+      ],
+      "yaw_degrees": 0
+    },
+    {
+      "component": "Intake pier.001",
+      "rectangle_cm": [
+        -465.86079597473145,
+        -1380.13916015625,
+        -429.86083030700684,
+        -1344.1390991210938,
+        0
+      ],
+      "yaw_degrees": 0
+    },
+    {
+      "component": "Intake pier.002",
+      "rectangle_cm": [
+        -818.0000305175781,
+        -1526.0000228881836,
+        -782.0000171661377,
+        -1489.9999618530273,
+        0
+      ],
+      "yaw_degrees": 0
+    },
+    {
+      "component": "Intake pier.003",
+      "rectangle_cm": [
+        -1170.139217376709,
+        -1380.13916015625,
+        -1134.1391563415527,
+        -1344.1390991210938,
+        0
+      ],
+      "yaw_degrees": 0
+    },
+    {
+      "component": "Intake pier.004",
+      "rectangle_cm": [
+        -1315.999984741211,
+        -1028.0000686645508,
+        -1279.9999237060547,
+        -992.0000076293945,
+        0
+      ],
+      "yaw_degrees": 0
+    },
+    {
+      "component": "Intake pier.005",
+      "rectangle_cm": [
+        -1170.139217376709,
+        -675.8607864379883,
+        -1134.1391563415527,
+        -639.8608207702637,
+        0
+      ],
+      "yaw_degrees": 0
+    },
+    {
+      "component": "Intake pier.006",
+      "rectangle_cm": [
+        -818.0000305175781,
+        -529.9999713897705,
+        -782.0000171661377,
+        -494.0000057220459,
+        0
+      ],
+      "yaw_degrees": 0
+    },
+    {
+      "component": "Intake pier.007",
+      "rectangle_cm": [
+        -465.86079597473145,
+        -675.8607864379883,
+        -429.86083030700684,
+        -639.8608207702637,
+        0
+      ],
+      "yaw_degrees": 0
+    },
+    {
+      "component": "Open cooling shell.001",
+      "sector": 0,
+      "rectangle_cm": [
+        -1132.5687606204544,
+        -1190.2669046132394,
+        -1030.611106839319,
+        -1163.3920943533901,
+        0
+      ],
+      "yaw_degrees": 95.625
+    },
+    {
+      "component": "Open cooling shell.001",
+      "sector": 1,
+      "rectangle_cm": [
+        -1243.9106045934154,
+        -966.2460692878904,
+        -1141.95295081228,
+        -939.3712590280411,
+        0
+      ],
+      "yaw_degrees": 106.875
+    },
+    {
+      "component": "Open cooling shell.001",
+      "sector": 2,
+      "rectangle_cm": [
+        -1309.408749353105,
+        -724.8080153025974,
+        -1207.4510955719695,
+        -697.9332050427481,
+        0
+      ],
+      "yaw_degrees": 118.125
+    },
+    {
+      "component": "Open cooling shell.001",
+      "sector": 3,
+      "rectangle_cm": [
+        -1326.5461379281896,
+        -475.23107167199504,
+        -1224.5884841470543,
+        -448.3562614121459,
+        0
+      ],
+      "yaw_degrees": 129.375
+    },
+    {
+      "component": "Open cooling shell.001",
+      "sector": 4,
+      "rectangle_cm": [
+        -1294.6641900864884,
+        -227.106340375444,
+        -1192.706536305353,
+        -200.23153011559486,
+        0
+      ],
+      "yaw_degrees": 140.625
+    },
+    {
+      "component": "Open cooling shell.001",
+      "sector": 5,
+      "rectangle_cm": [
+        -1214.9881112039545,
+        10.030884313280225,
+        -1113.0304574228192,
+        36.905694573129395,
+        0
+      ],
+      "yaw_degrees": 151.875
+    },
+    {
+      "component": "Open cooling shell.001",
+      "sector": 6,
+      "rectangle_cm": [
+        -1090.5798083091845,
+        227.06755183747907,
+        -988.622154528049,
+        253.9423620973282,
+        0
+      ],
+      "yaw_degrees": 163.125
+    },
+    {
+      "component": "Open cooling shell.001",
+      "sector": 7,
+      "rectangle_cm": [
+        -926.2202227134444,
+        415.6630647797621,
+        -824.2625689323088,
+        442.53787503961127,
+        0
+      ],
+      "yaw_degrees": 174.375
+    },
+    {
+      "component": "Open cooling shell.001",
+      "sector": 8,
+      "rectangle_cm": [
+        -728.2256011172605,
+        568.5698033433401,
+        -626.2679473361248,
+        595.4446136031894,
+        0
+      ],
+      "yaw_degrees": 185.625
+    },
+    {
+      "component": "Open cooling shell.001",
+      "sector": 9,
+      "rectangle_cm": [
+        -504.2047657919117,
+        679.9116473163012,
+        -402.2471120107762,
+        706.7864575761505,
+        0
+      ],
+      "yaw_degrees": 196.875
+    },
+    {
+      "component": "Open cooling shell.001",
+      "sector": 10,
+      "rectangle_cm": [
+        -262.76671180661856,
+        745.4097920759905,
+        -160.80905802548307,
+        772.2846023358397,
+        0
+      ],
+      "yaw_degrees": 208.125
+    },
+    {
+      "component": "Open cooling shell.001",
+      "sector": 11,
+      "rectangle_cm": [
+        -13.189768176016358,
+        762.5471806510755,
+        88.76788560511916,
+        789.4219909109247,
+        0
+      ],
+      "yaw_degrees": 219.375
+    },
+    {
+      "component": "Open cooling shell.001",
+      "sector": 12,
+      "rectangle_cm": [
+        234.93496312053486,
+        730.665232809374,
+        336.89261690167035,
+        757.5400430692232,
+        0
+      ],
+      "yaw_degrees": 230.62500000000003
+    },
+    {
+      "component": "Open cooling shell.001",
+      "sector": 13,
+      "rectangle_cm": [
+        472.0721878092589,
+        650.9891539268405,
+        574.0298415903944,
+        677.8639641866897,
+        0
+      ],
+      "yaw_degrees": 241.875
+    },
+    {
+      "component": "Open cooling shell.001",
+      "sector": 14,
+      "rectangle_cm": [
+        689.1088553334578,
+        526.5808510320704,
+        791.0665091145934,
+        553.4556612919197,
+        0
+      ],
+      "yaw_degrees": 253.125
+    },
+    {
+      "component": "Open cooling shell.001",
+      "sector": 15,
+      "rectangle_cm": [
+        877.704368275741,
+        362.22126543633,
+        979.6620220568766,
+        389.0960756961791,
+        0
+      ],
+      "yaw_degrees": 264.375
+    },
+    {
+      "component": "Open cooling shell.001",
+      "sector": 16,
+      "rectangle_cm": [
+        1030.6111068393188,
+        164.22664384014683,
+        1132.5687606204542,
+        191.10145409999598,
+        0
+      ],
+      "yaw_degrees": 275.625
+    },
+    {
+      "component": "Open cooling shell.001",
+      "sector": 17,
+      "rectangle_cm": [
+        1141.9529508122803,
+        -59.79419148520243,
+        1243.9106045934157,
+        -32.91938122535326,
+        0
+      ],
+      "yaw_degrees": 286.875
+    },
+    {
+      "component": "Open cooling shell.001",
+      "sector": 18,
+      "rectangle_cm": [
+        1207.4510955719693,
+        -301.23224547049557,
+        1309.4087493531047,
+        -274.35743521064643,
+        0
+      ],
+      "yaw_degrees": 298.125
+    },
+    {
+      "component": "Open cooling shell.001",
+      "sector": 19,
+      "rectangle_cm": [
+        1224.5884841470547,
+        -550.8091891010972,
+        1326.54613792819,
+        -523.934378841248,
+        0
+      ],
+      "yaw_degrees": 309.37499999999994
+    },
+    {
+      "component": "Open cooling shell.001",
+      "sector": 20,
+      "rectangle_cm": [
+        1192.706536305353,
+        -798.933920397648,
+        1294.6641900864884,
+        -772.0591101377987,
+        0
+      ],
+      "yaw_degrees": 320.625
+    },
+    {
+      "component": "Open cooling shell.001",
+      "sector": 21,
+      "rectangle_cm": [
+        1113.0304574228194,
+        -1036.071145086373,
+        1214.9881112039548,
+        -1009.1963348265238,
+        0
+      ],
+      "yaw_degrees": 331.875
+    },
+    {
+      "component": "Open cooling shell.001",
+      "sector": 22,
+      "rectangle_cm": [
+        988.622154528049,
+        -1253.107812610572,
+        1090.5798083091845,
+        -1226.2330023507227,
+        0
+      ],
+      "yaw_degrees": 343.125
+    },
+    {
+      "component": "Open cooling shell.001",
+      "sector": 23,
+      "rectangle_cm": [
+        824.2625689323087,
+        -1441.7033255528554,
+        926.2202227134443,
+        -1414.8285152930061,
+        0
+      ],
+      "yaw_degrees": 354.375
+    },
+    {
+      "component": "Open cooling shell.001",
+      "sector": 24,
+      "rectangle_cm": [
+        626.2679473361255,
+        -1594.6100641164328,
+        728.2256011172611,
+        -1567.7352538565835,
+        0
+      ],
+      "yaw_degrees": 365.625
+    },
+    {
+      "component": "Open cooling shell.001",
+      "sector": 25,
+      "rectangle_cm": [
+        402.24711201077633,
+        -1705.9519080893942,
+        504.2047657919118,
+        -1679.077097829545,
+        0
+      ],
+      "yaw_degrees": 376.875
+    },
+    {
+      "component": "Open cooling shell.001",
+      "sector": 26,
+      "rectangle_cm": [
+        160.80905802548313,
+        -1771.4500528490837,
+        262.7667118066186,
+        -1744.5752425892344,
+        0
+      ],
+      "yaw_degrees": 388.125
+    },
+    {
+      "component": "Open cooling shell.001",
+      "sector": 27,
+      "rectangle_cm": [
+        -88.76788560511939,
+        -1788.5874414241684,
+        13.18976817601613,
+        -1761.7126311643192,
+        0
+      ],
+      "yaw_degrees": 399.375
+    },
+    {
+      "component": "Open cooling shell.001",
+      "sector": 28,
+      "rectangle_cm": [
+        -336.89261690166956,
+        -1756.7054935824672,
+        -234.93496312053406,
+        -1729.830683322618,
+        0
+      ],
+      "yaw_degrees": 410.625
+    },
+    {
+      "component": "Open cooling shell.001",
+      "sector": 29,
+      "rectangle_cm": [
+        -574.0298415903941,
+        -1677.0294146999336,
+        -472.07218780925854,
+        -1650.1546044400843,
+        0
+      ],
+      "yaw_degrees": 421.875
+    },
+    {
+      "component": "Open cooling shell.001",
+      "sector": 30,
+      "rectangle_cm": [
+        -791.0665091145929,
+        -1552.6211118051635,
+        -689.1088553334573,
+        -1525.7463015453143,
+        0
+      ],
+      "yaw_degrees": 433.125
+    },
+    {
+      "component": "Open cooling shell.001",
+      "sector": 31,
+      "rectangle_cm": [
+        -979.6620220568766,
+        -1388.2615262094232,
+        -877.704368275741,
+        -1361.386715949574,
+        0
+      ],
+      "yaw_degrees": 444.375
+    },
+    {
+      "component": "Intake pier.008",
+      "rectangle_cm": [
+        1259.999942779541,
+        -1028.0000686645508,
+        1296.0000038146973,
+        -992.0000076293945,
+        0
+      ],
+      "yaw_degrees": 0
+    },
+    {
+      "component": "Intake pier.009",
+      "rectangle_cm": [
+        1114.139175415039,
+        -1380.13916015625,
+        1150.1392364501953,
+        -1344.1390991210938,
+        0
+      ],
+      "yaw_degrees": 0
+    },
+    {
+      "component": "Intake pier.010",
+      "rectangle_cm": [
+        762.000036239624,
+        -1526.0000228881836,
+        798.0000019073486,
+        -1489.9999618530273,
+        0
+      ],
+      "yaw_degrees": 0
+    },
+    {
+      "component": "Intake pier.011",
+      "rectangle_cm": [
+        409.86084938049316,
+        -1380.13916015625,
+        445.8608150482178,
+        -1344.1390991210938,
+        0
+      ],
+      "yaw_degrees": 0
+    },
+    {
+      "component": "Intake pier.012",
+      "rectangle_cm": [
+        263.99998664855957,
+        -1028.0000686645508,
+        300.0,
+        -992.0000076293945,
+        0
+      ],
+      "yaw_degrees": 0
+    },
+    {
+      "component": "Intake pier.013",
+      "rectangle_cm": [
+        409.86084938049316,
+        -675.8607864379883,
+        445.8608150482178,
+        -639.8608207702637,
+        0
+      ],
+      "yaw_degrees": 0
+    },
+    {
+      "component": "Intake pier.014",
+      "rectangle_cm": [
+        762.000036239624,
+        -529.9999713897705,
+        798.0000019073486,
+        -494.0000057220459,
+        0
+      ],
+      "yaw_degrees": 0
+    },
+    {
+      "component": "Intake pier.015",
+      "rectangle_cm": [
+        1114.139175415039,
+        -675.8607864379883,
+        1150.1392364501953,
+        -639.8608207702637,
+        0
+      ],
+      "yaw_degrees": 0
+    },
+    {
+      "component": "Turbine hall",
+      "rectangle_cm": [
+        250.0,
+        -450.0,
+        1150.0,
+        850.0,
+        0
+      ],
+      "yaw_degrees": 0
+    },
+    {
+      "component": "Hall structural pilaster",
+      "rectangle_cm": [
+        1147.0000267028809,
+        688.0000114440918,
+        1165.000057220459,
+        711.9999885559082,
+        0
+      ],
+      "yaw_degrees": 0
+    },
+    {
+      "component": "Hall structural pilaster.001",
+      "rectangle_cm": [
+        1147.0000267028809,
+        288.0000114440918,
+        1165.000057220459,
+        311.9999885559082,
+        0
+      ],
+      "yaw_degrees": 0
+    },
+    {
+      "component": "Hall structural pilaster.002",
+      "rectangle_cm": [
+        1147.0000267028809,
+        -112.00000047683716,
+        1165.000057220459,
+        -87.99999952316284,
+        0
+      ],
+      "yaw_degrees": 0
+    },
+    {
+      "component": "Hall structural pilaster.003",
+      "rectangle_cm": [
+        1147.0000267028809,
+        -411.9999885559082,
+        1165.000057220459,
+        -388.0000114440918,
+        0
+      ],
+      "yaw_degrees": 0
+    },
+    {
+      "component": "Vehicle bay frame",
+      "rectangle_cm": [
+        555.0000190734863,
+        850.999927520752,
+        1044.9999809265137,
+        871.0000038146973,
+        0
+      ],
+      "yaw_degrees": 0
+    },
+    {
+      "component": "Vehicle bay shutter",
+      "rectangle_cm": [
+        575.0,
+        867.9999351501465,
+        1025.0,
+        880.0000190734863,
+        0
+      ],
+      "yaw_degrees": 0
+    },
+    {
+      "component": "Door surround",
+      "rectangle_cm": [
+        -973.9999771118164,
+        1147.9999542236328,
+        -826.0000228881836,
+        1165.999984741211,
+        0
+      ],
+      "yaw_degrees": 0
+    },
+    {
+      "component": "Pedestrian door",
+      "rectangle_cm": [
+        -960.0000381469727,
+        1165.999984741211,
+        -839.9999618530273,
+        1176.0000228881836,
+        0
+      ],
+      "yaw_degrees": 0
+    },
+    {
+      "component": "Pipe saddle",
+      "rectangle_cm": [
+        -220.00000476837158,
+        -162.5,
+        -179.99999523162842,
+        -97.49999642372131,
+        0
+      ],
+      "yaw_degrees": 0
+    },
+    {
+      "component": "Pipe saddle.001",
+      "rectangle_cm": [
+        139.9999976158142,
+        -162.5,
+        180.00000715255737,
+        -97.49999642372131,
+        0
+      ],
+      "yaw_degrees": 0
+    },
+    {
+      "component": "Service cabinet",
+      "rectangle_cm": [
+        -225.0,
+        759.9999904632568,
+        -115.00000953674316,
+        839.9999618530273,
+        0
+      ],
+      "yaw_degrees": 0
+    },
+    {
+      "component": "Service cabinet.001",
+      "rectangle_cm": [
+        -55.000001192092896,
+        759.9999904632568,
+        55.000001192092896,
+        839.9999618530273,
+        0
+      ],
+      "yaw_degrees": 0
+    },
+    {
+      "component": "Service cabinet.002",
+      "rectangle_cm": [
+        115.00000953674316,
+        759.9999904632568,
+        225.0,
+        839.9999618530273,
+        0
+      ],
+      "yaw_degrees": 0
+    },
+    {
+      "component": "Transformer assembly 0",
+      "rectangle_cm": [
+        -183.99999141693115,
+        345.0000047683716,
+        103.99999618530273,
+        555.0000190734863,
+        15.0
+      ],
+      "yaw_degrees": 0
+    },
+    {
+      "component": "Transformer assembly 1",
+      "rectangle_cm": [
+        -183.99999141693115,
+        -34.99999642372131,
+        103.99999618530273,
+        175.0,
+        15.0
+      ],
+      "yaw_degrees": 0
+    }
+  ]
+}

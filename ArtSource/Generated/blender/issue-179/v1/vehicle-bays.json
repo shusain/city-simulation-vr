@@ -1,0 +1,74 @@
+{
+  "bays": [
+    {
+      "id": "Bay1",
+      "target": "Bay1Leaf",
+      "xyz_m": [
+        -1,
+        -5.22,
+        0
+      ],
+      "outward": [
+        0,
+        -1,
+        0
+      ],
+      "width_m": 4.5,
+      "height_m": 3.6,
+      "boundary_connector": {
+        "xyz_m": [
+          -1,
+          -16,
+          0
+        ]
+      },
+      "reserved_free_corridor": {
+        "min": [
+          -3.25,
+          -16,
+          0
+        ],
+        "max": [
+          1.25,
+          -5.22,
+          3.6
+        ]
+      }
+    },
+    {
+      "id": "Bay2",
+      "target": "Bay2Leaf",
+      "xyz_m": [
+        6,
+        -5.22,
+        0
+      ],
+      "outward": [
+        0,
+        -1,
+        0
+      ],
+      "width_m": 4.5,
+      "height_m": 3.6,
+      "boundary_connector": {
+        "xyz_m": [
+          6,
+          -16,
+          0
+        ]
+      },
+      "reserved_free_corridor": {
+        "min": [
+          3.75,
+          -16,
+          0
+        ],
+        "max": [
+          8.25,
+          -5.22,
+          3.6
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "issue": 157,
+  "defect": 275,
+  "pr": 276,
+  "head": "56394c0b493c227ed83aff4a47f5f1561dbe7330",
+  "tested": "56394c0b493c227ed83aff4a47f5f1561dbe7330",
+  "native_build": 361,
+  "windows_build": 362,
+  "game_revision": "dev-9553954bf7e67bf990a5",
+  "status": "accepted and merged",
+  "editor_tests": [
+    "CitySim.Presentation.ApprovedCivicBatchCooked",
+    "CitySim.Terrain.ApprovedCivicGround",
+    "CitySim.Terrain.CivicSidewalkCaps",
+    "CitySim.Civic.ApprovedEntranceFrontage",
+    "CitySim.Presentation.ApprovedUtilityBatchCooked",
+    "CitySim.Assets.RuntimeOrganization"
+  ],
+  "client_tests": [
+    "CitySim.Presentation.ApprovedCivicBatchCooked",
+    "CitySim.Civic.ApprovedEntranceFrontage",
+    "CitySim.Assets.RuntimeOrganization"
+  ],
+  "package": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\CI\\Builds\\362-56394c0b493c-WindowsCandidate-33f3a8ba\\CitySimVR-Windows.zip",
+  "package_sha256": "e021b96dee3987dbd89852e8ee4438854c4bfb96c26e44de01704257c286cd56",
+  "package_bytes": 628412687,
+  "runtime_files": 53,
+  "required_source_packages": 224,
+  "actual_cooked_exports": 224,
+  "container_count": 5,
+  "launcher": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\Remaining157\\Play-ApprovedCivic157.cmd",
+  "executable": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\Remaining157\\Extracted-Build362\\CitySimVR\\Binaries\\Win64\\CitySimVR.exe",
+  "profile": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\Remaining157\\Play-Build362-IsolatedProfile",
+  "fixture": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\Remaining157\\Play-Build362-IsolatedProfile\\Saved\\SaveGames\\Cities\\00000000000000000000000000000157.json",
+  "fixture_sha256": "57ace6be7fb411f15892f2c820a81bc0db2a7d1a71252f70464392f1455b8a6b",
+  "gallery": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\Remaining157\\Review.html",
+  "plot_sizes": {
+    "primary": [
+      4,
+      4
+    ],
+    "secondary": [
+      5,
+      5
+    ],
+    "college": [
+      6,
+      5
+    ],
+    "police": [
+      5,
+      4
+    ],
+    "fire": [
+      5,
+      4
+    ],
+    "hospital": [
+      5,
+      5
+    ],
+    "waste_and_recycling": [
+      6,
+      5
+    ]
+  },
+  "compatibility": "Older saves using the previous specialized footprints may reject validation; original player files preserved.",
+  "headset": "unconfirmed; Windows-only candidate",
+  "steep_grades": "deferred separately in #197",
+  "startup_marker": "CITYSIM_DESKTOP_PACKAGED_SMOKE_COMPLETE MenusOnly=1 SyntheticButtons=1 PhysicalInputPending=1",
+  "native_import_build": 354,
+  "catalog_preparation_build": 355,
+  "catalog_preparation_aggregate": "failed only fixed-slot fixture; scoped product retention receipt preserved",
+  "native_review": "34 front/rear-LOD2 images manually reviewed; saved terrain equality and20-120cm plot relief verified",
+  "source_artifacts_unchanged": 357,
+  "native_packages": 211,
+  "material_regions": 90,
+  "source_texture_maps_reused": 9,
+  "source_corner_parity": 30873,
+  "acceptance": {
+    "date": "2026-10-19",
+    "source": "Shaun in current chat",
+    "quote": "The civics buildings look all good go ahead and get those changes merged and update the corresponding dev-tasks/issues",
+    "scope": "remaining15 education/civic/waste batch delivered in Windows362"
+  },
+  "merge": "6232ec24242dfbe485a99d2a183b7bae2bc749db",
+  "accepted_and_merged_trees_identical": true,
+  "closed_issues": [
+    157,
+    275,
+    242,
+    244,
+    246,
+    270,
+    248,
+    250,
+    252,
+    254,
+    256,
+    258,
+    260,
+    262,
+    264,
+    266,
+    268
+  ],
+  "ci_window": "released; existing worker enabled",
+  "next": "Remaining development queue; #197 separate; #49 headset observations unconfirmed"
+}

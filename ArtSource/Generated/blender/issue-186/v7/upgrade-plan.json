@@ -1,0 +1,43 @@
+{
+  "family": "recycling",
+  "stage": "medium",
+  "stage_index": 1,
+  "existing_stages": [
+    "base",
+    "medium"
+  ],
+  "existing_upgrade_count": 1,
+  "gameplay_changes": false,
+  "source_site_m": [
+    48,
+    40
+  ],
+  "current_native_footprint": [
+    4,
+    3
+  ],
+  "retained_entrance_centres": [
+    [
+      -15,
+      -8
+    ],
+    [
+      -2,
+      -8
+    ]
+  ],
+  "progression": "Wider two-bay hall; two presses, longer supported sorting lines and additional bound bales.",
+  "occupied_bounds": [
+    [
+      -20.25,
+      -9.399999618530273,
+      0.0
+    ],
+    [
+      18.149999618530273,
+      19.149999618530273,
+      8.710000038146973
+    ]
+  ],
+  "technical_fit_note": "13 existing solids adjusted in place: continuous pilaster roof contact and 3mm door reveals / 6mm public seam; no gameplay, stage or footprint change."
+}

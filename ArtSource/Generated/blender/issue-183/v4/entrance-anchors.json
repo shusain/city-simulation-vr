@@ -1,0 +1,88 @@
+{
+  "anchors": [
+    {
+      "role": "pedestrian",
+      "target": "PublicLeaf_-15.46",
+      "xyz_m": [
+        -15,
+        -8.24,
+        0
+      ],
+      "outward": [
+        0,
+        -1,
+        0
+      ],
+      "width_m": 1.8,
+      "grade_m": 0,
+      "boundary_connector": {
+        "xyz_m": [
+          -15,
+          -20,
+          0
+        ],
+        "outward": [
+          0,
+          -1,
+          0
+        ],
+        "width_m": 1.8,
+        "grade_m": 0
+      },
+      "reserved_free_corridor": {
+        "min": [
+          -15.9,
+          -20,
+          0
+        ],
+        "max": [
+          -14.1,
+          -8.24,
+          2.4
+        ]
+      }
+    },
+    {
+      "role": "service",
+      "target": "ReceivingDoor",
+      "xyz_m": [
+        -2,
+        -8.2,
+        0
+      ],
+      "outward": [
+        0,
+        -1,
+        0
+      ],
+      "width_m": 4.5,
+      "grade_m": 0,
+      "boundary_connector": {
+        "xyz_m": [
+          -2,
+          -20,
+          0
+        ],
+        "outward": [
+          0,
+          -1,
+          0
+        ],
+        "width_m": 4.5,
+        "grade_m": 0
+      },
+      "reserved_free_corridor": {
+        "min": [
+          -4.25,
+          -20,
+          0
+        ],
+        "max": [
+          0.25,
+          -8.2,
+          4.2
+        ]
+      }
+    }
+  ]
+}

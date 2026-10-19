@@ -1,0 +1,40 @@
+{
+  "maps": [
+    {
+      "region": "OpaqueFacade",
+      "image": "CityBrick_BaseColor.png",
+      "original_path": "//../repo/ArtSource/Textures/BuildingSurfaces/CityBrick_BaseColor.png",
+      "packed": true,
+      "outputs": [
+        "Color1"
+      ]
+    },
+    {
+      "region": "OpaqueFacade",
+      "image": "CityBrick_Normal.png",
+      "original_path": "//../repo/ArtSource/Textures/BuildingSurfaces/CityBrick_Normal.png",
+      "packed": true,
+      "outputs": [
+        "Color"
+      ]
+    },
+    {
+      "region": "OpaqueFacade",
+      "image": "CityBrick_ORM.png",
+      "original_path": "//../repo/ArtSource/Textures/BuildingSurfaces/CityBrick_ORM.png",
+      "packed": true,
+      "outputs": [
+        "Color"
+      ]
+    }
+  ],
+  "regions": [
+    "RoofService",
+    "OpaqueFacade",
+    "LightMetal",
+    "TechGlass",
+    "DoorAccent"
+  ],
+  "provenance": "/repo/ArtSource/Blender/CityCivicSurfaces.blend",
+  "handoff": "Civic source material reuse in Blender; FBX does not transfer shader graphs. Native basecolor/normal/roughness mapping and runtime appearance pending; other regions retain opaque v1 constants."
+}

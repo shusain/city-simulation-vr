@@ -1,0 +1,76 @@
+{
+  "furnace": [
+    "FurnaceR2_Occupied",
+    "FurnaceR2_Roof",
+    "FurnaceR2_FeedDuct",
+    "FurnaceR2_Hatch_-17",
+    "FurnaceR2_HatchFrame_-17L",
+    "FurnaceR2_HatchFrame_-17R",
+    "FurnaceR2_HatchFrame_-17H",
+    "FurnaceR2_HatchFrame_-17S",
+    "FurnaceR2_Hatch_-13",
+    "FurnaceR2_HatchFrame_-13L",
+    "FurnaceR2_HatchFrame_-13R",
+    "FurnaceR2_HatchFrame_-13H",
+    "FurnaceR2_HatchFrame_-13S",
+    "FurnaceR2_AshDrawer",
+    "FurnaceR2_AshHandle",
+    "FurnaceR2_OpenFlue"
+  ],
+  "annex_bounds": {
+    "name": "FurnaceR2_Occupied",
+    "min": [
+      -19.0,
+      8.0,
+      0.0
+    ],
+    "max": [
+      -10.5,
+      16.0,
+      5.5
+    ]
+  },
+  "roof": {
+    "name": "FurnaceR2_Roof",
+    "min": [
+      -19.0,
+      8.0,
+      5.5
+    ],
+    "max": [
+      -10.5,
+      16.0,
+      5.699999809265137
+    ]
+  },
+  "duct": {
+    "name": "FurnaceR2_FeedDuct",
+    "min": [
+      -10.5,
+      8.5,
+      2.5999999046325684
+    ],
+    "max": [
+      -7.949999809265137,
+      9.699999809265137,
+      3.5999999046325684
+    ]
+  },
+  "flues": [
+    {
+      "component": "FurnaceR2_OpenFlue",
+      "centre_m": [
+        -16.5,
+        12
+      ],
+      "outer_radius_m": 0.7,
+      "inner_radius_m": 0.56,
+      "sides": 12,
+      "root_z": 5.7,
+      "top_z": 14.2,
+      "air_opening": true,
+      "throat_uncapped": true
+    }
+  ],
+  "source_only": true
+}

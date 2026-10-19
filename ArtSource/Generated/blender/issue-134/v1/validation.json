@@ -1,0 +1,327 @@
+{
+  "mesh_geometry_sha256": "ff57c83fc902ddf9b5ce9faf6cb38ddf8724dbe36d1d0fb8004975ca50b01851",
+  "dimensions_m": [
+    0.44999998807907104,
+    0.3499999940395355,
+    0.44999998807907104
+  ],
+  "triangles": 70,
+  "material_slots": [
+    "DuneGrass"
+  ],
+  "roundtrip_pass": true,
+  "blender_version": "5.1.1",
+  "render_engine": "CYCLES",
+  "render_device": "CPU",
+  "reference_sha256": {
+    "ArtSource/Generated/comfy/issue-123/v1/approval.json": "cd720b85c44386dec305e3110d7c8d1aa702dc62aa689b4375d88e8dba508fbf",
+    "ArtSource/Generated/comfy/issue-123/v1/asset.png": "a4f1eadbcef4ce61879463b710bd54910f10864179e93a4eff69efec38d0a3b4",
+    "ArtSource/Generated/comfy/issue-123/v1/unreal-handoff.json": "5fba12a32587cb88e0a3791f19394d718ea4cbeca113d916e603916836ae3b9f",
+    "ArtSource/Generated/comfy/issue-124/v1/approval.json": "e9a5b23f9b0ce83d28d976158d7cfeeb5f262dbb283876909389dd15111f6a40",
+    "ArtSource/Generated/comfy/issue-124/v1/asset.png": "1ddcd5e5043988801680dcf070607df1f7411050c21d0d463f985b64b071f1ee",
+    "ArtSource/Generated/comfy/issue-124/v1/unreal-handoff.json": "6924da5d2fb7a1cefc95c02b4dd1fd67197d12f26c10b178f161fade64b4d161",
+    "ArtSource/Manifests/city_environment_kit.json": "fdb6027ccd649f4ee3868700f8a92105bef408a61738d5df5bdd171cee195eeb"
+  },
+  "D108_source_review": {
+    "asset": "SM_Scenery_DuneGrass_A",
+    "review_only": true,
+    "blade_count": 7,
+    "dimensions_m": [
+      0.44999998807907104,
+      0.3499999940395355,
+      0.44999998807907104
+    ],
+    "bounds_m": [
+      [
+        -0.22499999403953552,
+        -0.17499999701976776,
+        0.0
+      ],
+      [
+        0.22499999403953552,
+        0.17499999701976776,
+        0.44999998807907104
+      ]
+    ],
+    "min_z": 0.0,
+    "pivot": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "rotation": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "triangles": 70,
+    "material_count": 1,
+    "material": {
+      "name": "DuneGrass",
+      "rgba": [
+        0.28999999165534973,
+        0.35499998927116394,
+        0.23499999940395355,
+        1.0
+      ],
+      "roughness": 0.88,
+      "opaque": true
+    },
+    "UV0": {
+      "finite": true,
+      "min_triangle_area": 3.689998922348087e-05
+    },
+    "normals": "flat; closed wedge normals recalculated outward",
+    "collision": "none",
+    "source_LODs": 1,
+    "fbx_roundtrip": {
+      "pass": true,
+      "dimensions_m": [
+        0.44999998807907104,
+        0.3499999940395355,
+        0.44999998807907104
+      ],
+      "triangles": 70,
+      "material_slots": [
+        "DuneGrass"
+      ]
+    },
+    "approved_references": [
+      {
+        "issue": 123,
+        "version": 1,
+        "files": {
+          "asset.png": {
+            "path": "/repo/ArtSource/Generated/comfy/issue-123/v1/asset.png",
+            "sha256": "a4f1eadbcef4ce61879463b710bd54910f10864179e93a4eff69efec38d0a3b4"
+          },
+          "approval.json": {
+            "path": "/repo/ArtSource/Generated/comfy/issue-123/v1/approval.json",
+            "sha256": "cd720b85c44386dec305e3110d7c8d1aa702dc62aa689b4375d88e8dba508fbf",
+            "payload": {
+              "schema": 1,
+              "kind": "comfy",
+              "repository": "CitySimVR/citysim",
+              "issue": 123,
+              "version": 1,
+              "by": "shaun",
+              "comment_id": 1791,
+              "request_url": "https://git.shaun-husain.com/CitySimVR/citysim/issues/123#issuecomment-1791",
+              "approved_at": "2026-10-17T23:08:44.319Z",
+              "job_id": "744ccdcd-c6f0-43c3-93b4-694543c746e9",
+              "source_sha": "12863ff34032e0e460febd8215012363c7a7fd49",
+              "artifacts": [
+                {
+                  "name": "asset.png",
+                  "bytes": 426089,
+                  "sha256": "a4f1eadbcef4ce61879463b710bd54910f10864179e93a4eff69efec38d0a3b4"
+                },
+                {
+                  "name": "workflow.json",
+                  "bytes": 3590,
+                  "sha256": "15812b3008a4ab1ebc1a1dbcc22e8b399bea8255ceaa9f2b4fa4ac8770bbb506"
+                },
+                {
+                  "name": "provenance.json",
+                  "bytes": 1867,
+                  "sha256": "eefaa3d954d0368ae76a78258aed5b2600be3119ac51692abeebabd934a74043"
+                },
+                {
+                  "name": "README.md",
+                  "bytes": 378,
+                  "sha256": "f68a82a9fe195e1dc55c2d49a6d1af61ef7f782014336ba35f5da0e5a15be3aa"
+                }
+              ],
+              "workflow": "generate_image_zimage",
+              "workflow_sha256": "a55edc97ca33fb786e4d4c87d704c5dd05d39f753e070924c89c21c8f73d066e",
+              "seed": 123,
+              "prompt": "Create a single clean game-art concept sheet for a stylized low-poly tabletop coastal city game. Arrange six clearly separated little asset studies on an opaque plain warm-gray background: two simple seashell variations (one pale ivory fan shell and one small rounded spiral shell), two chunky five-armed starfish variations in muted sandy ochre, one short weathered driftwood branch, and one compact sparse dune-grass clump. Three-quarter elevated orthographic views, consistent scale relationships, broad faceted geometry and simple flat materials, soft even studio light. Each object has a clean readable silhouette, modest detail and plausible forms suitable for inexpensive static scenery. Shells and starfish are small beach accents; driftwood is somewhat larger, grass clump modest. Subdued brown-gray, ivory, tan and gray-green palette consistent with damp shoreline sand and existing angular low-poly city rocks. Give objects generous empty space and show whole objects without clipping. No beach scene, water, extra rocks, pedestals, containers, buildings, people, realistic fur or surface microdetail, writing, labels, borders, logos or watermark. One 768x768 square image; opaque background is intentional. City Sim VR beach-prop concept study.",
+              "archive": {
+                "url": "https://git.shaun-husain.com/attachments/b367a808-9722-4e22-a72a-826d85fd4a14",
+                "sha256": "39b4a40929d8c6aff6da289b0b96a9c4268fc13de0aa0fb1048c0665934034d4"
+              },
+              "review_url": "https://git.shaun-husain.com/CitySimVR/citysim/issues/123#issuecomment-1776"
+            }
+          },
+          "unreal-handoff.json": {
+            "path": "/repo/ArtSource/Generated/comfy/issue-123/v1/unreal-handoff.json",
+            "sha256": "5fba12a32587cb88e0a3791f19394d718ea4cbeca113d916e603916836ae3b9f",
+            "payload": {
+              "schema": 1,
+              "kind": "comfy",
+              "repository": "CitySimVR/citysim",
+              "asset_issue": 123,
+              "approved_version": 1,
+              "approval_manifest": "approval.json",
+              "approval_sha256": "cd720b85c44386dec305e3110d7c8d1aa702dc62aa689b4375d88e8dba508fbf",
+              "source_context_sha": "12863ff34032e0e460febd8215012363c7a7fd49",
+              "artifacts": [
+                {
+                  "name": "asset.png",
+                  "bytes": 426089,
+                  "sha256": "a4f1eadbcef4ce61879463b710bd54910f10864179e93a4eff69efec38d0a3b4"
+                },
+                {
+                  "name": "workflow.json",
+                  "bytes": 3590,
+                  "sha256": "15812b3008a4ab1ebc1a1dbcc22e8b399bea8255ceaa9f2b4fa4ac8770bbb506"
+                },
+                {
+                  "name": "provenance.json",
+                  "bytes": 1867,
+                  "sha256": "eefaa3d954d0368ae76a78258aed5b2600be3119ac51692abeebabd934a74043"
+                },
+                {
+                  "name": "README.md",
+                  "bytes": 378,
+                  "sha256": "f68a82a9fe195e1dc55c2d49a6d1af61ef7f782014336ba35f5da0e5a15be3aa"
+                },
+                {
+                  "name": "source-bundle.zip",
+                  "bytes": 428047,
+                  "sha256": "39b4a40929d8c6aff6da289b0b96a9c4268fc13de0aa0fb1048c0665934034d4"
+                },
+                {
+                  "name": "approval.json",
+                  "bytes": 2708,
+                  "sha256": "cd720b85c44386dec305e3110d7c8d1aa702dc62aa689b4375d88e8dba508fbf"
+                }
+              ],
+              "unreal": {
+                "status": "not_imported",
+                "destination": "choose in the separate integration issue",
+                "role": "image source; determine concept/UI/texture usage"
+              }
+            }
+          }
+        },
+        "image_loaded": true,
+        "image_size": [
+          768,
+          768
+        ]
+      },
+      {
+        "issue": 124,
+        "version": 1,
+        "files": {
+          "asset.png": {
+            "path": "/repo/ArtSource/Generated/comfy/issue-124/v1/asset.png",
+            "sha256": "1ddcd5e5043988801680dcf070607df1f7411050c21d0d463f985b64b071f1ee"
+          },
+          "approval.json": {
+            "path": "/repo/ArtSource/Generated/comfy/issue-124/v1/approval.json",
+            "sha256": "e9a5b23f9b0ce83d28d976158d7cfeeb5f262dbb283876909389dd15111f6a40",
+            "payload": {
+              "schema": 1,
+              "kind": "comfy",
+              "repository": "CitySimVR/citysim",
+              "issue": 124,
+              "version": 1,
+              "by": "shaun",
+              "comment_id": 1792,
+              "request_url": "https://git.shaun-husain.com/CitySimVR/citysim/issues/124#issuecomment-1792",
+              "approved_at": "2026-10-17T23:08:44.656Z",
+              "job_id": "84efff1d-1e71-4944-a95d-f8a84bb0e879",
+              "source_sha": "12863ff34032e0e460febd8215012363c7a7fd49",
+              "artifacts": [
+                {
+                  "name": "asset.png",
+                  "bytes": 518438,
+                  "sha256": "1ddcd5e5043988801680dcf070607df1f7411050c21d0d463f985b64b071f1ee"
+                },
+                {
+                  "name": "workflow.json",
+                  "bytes": 3021,
+                  "sha256": "2d681dfe333517defb4b9d3b23b08b147d2412461890359e546e78b273bac273"
+                },
+                {
+                  "name": "provenance.json",
+                  "bytes": 1298,
+                  "sha256": "c9297c171dbf4dee9cd464698677e4987f573073be5d7f4e09d458361daa3e2b"
+                },
+                {
+                  "name": "README.md",
+                  "bytes": 378,
+                  "sha256": "f68a82a9fe195e1dc55c2d49a6d1af61ef7f782014336ba35f5da0e5a15be3aa"
+                }
+              ],
+              "workflow": "generate_image_zimage",
+              "workflow_sha256": "4b2b8f3fed8b0234ebd9a522a8a5d8c881977bd37e9670d3268ac642a92784a9",
+              "seed": 124,
+              "prompt": "A stylized low-poly tabletop city view from an elevated oblique camera angle, showing a gentle curving sandy shore with muted blue-green water in the foreground. A narrow grass verge and a small road with two or three simplified low-rise buildings in the background. Subdued warm gray-beige damp sand, simple faceted dark city rocks, pale ivory seashells, muted sandy ochre starfish, short weathered driftwood, and sparse gray-green dune-grass tufts. Three small clusters of beach props along the shore, with broad stretches of empty sand. Soft diffuse daylight, simple water edge. 768x768, low-poly forms, flat materials, no people, vehicles, or details. City Sim VR beach-prop concept.",
+              "archive": {
+                "url": "https://git.shaun-husain.com/attachments/26640055-38de-4549-8e07-0c49affe1041",
+                "sha256": "cbc2c4097cd9537243589a69d48ed8d144a676b9d484c36b316da109479df911"
+              },
+              "review_url": "https://git.shaun-husain.com/CitySimVR/citysim/issues/124#issuecomment-1779"
+            }
+          },
+          "unreal-handoff.json": {
+            "path": "/repo/ArtSource/Generated/comfy/issue-124/v1/unreal-handoff.json",
+            "sha256": "6924da5d2fb7a1cefc95c02b4dd1fd67197d12f26c10b178f161fade64b4d161",
+            "payload": {
+              "schema": 1,
+              "kind": "comfy",
+              "repository": "CitySimVR/citysim",
+              "asset_issue": 124,
+              "approved_version": 1,
+              "approval_manifest": "approval.json",
+              "approval_sha256": "e9a5b23f9b0ce83d28d976158d7cfeeb5f262dbb283876909389dd15111f6a40",
+              "source_context_sha": "12863ff34032e0e460febd8215012363c7a7fd49",
+              "artifacts": [
+                {
+                  "name": "asset.png",
+                  "bytes": 518438,
+                  "sha256": "1ddcd5e5043988801680dcf070607df1f7411050c21d0d463f985b64b071f1ee"
+                },
+                {
+                  "name": "workflow.json",
+                  "bytes": 3021,
+                  "sha256": "2d681dfe333517defb4b9d3b23b08b147d2412461890359e546e78b273bac273"
+                },
+                {
+                  "name": "provenance.json",
+                  "bytes": 1298,
+                  "sha256": "c9297c171dbf4dee9cd464698677e4987f573073be5d7f4e09d458361daa3e2b"
+                },
+                {
+                  "name": "README.md",
+                  "bytes": 378,
+                  "sha256": "f68a82a9fe195e1dc55c2d49a6d1af61ef7f782014336ba35f5da0e5a15be3aa"
+                },
+                {
+                  "name": "source-bundle.zip",
+                  "bytes": 520009,
+                  "sha256": "cbc2c4097cd9537243589a69d48ed8d144a676b9d484c36b316da109479df911"
+                },
+                {
+                  "name": "approval.json",
+                  "bytes": 2139,
+                  "sha256": "e9a5b23f9b0ce83d28d976158d7cfeeb5f262dbb283876909389dd15111f6a40"
+                }
+              ],
+              "unreal": {
+                "status": "not_imported",
+                "destination": "choose in the separate integration issue",
+                "role": "image source; determine concept/UI/texture usage"
+              }
+            }
+          }
+        },
+        "image_loaded": true,
+        "image_size": [
+          768,
+          768
+        ]
+      }
+    ],
+    "production_modified": false,
+    "distance_readability": "not assessed; close-up source preview only"
+  }
+}

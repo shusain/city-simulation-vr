@@ -1,0 +1,791 @@
+{
+  "status": "passed",
+  "packages": 87,
+  "resolved_in_different_checkout": true,
+  "reimported": false,
+  "files": [
+    {
+      "package": "/Game/CitySim/Audio/Soundscape/Sirens/SW_Police_Intro",
+      "relative_filenames": [
+        "../../../../../../AudioSource/Soundscape/Unreal/Waves/Sirens/SW_Police_Intro.wav"
+      ],
+      "source": "AudioSource/Soundscape/Unreal/Waves/Sirens/SW_Police_Intro.wav",
+      "source_sha256": "0f6ba8c001e6a85533311e4ea76072e1550fdc7d9e1990740869185ad9b61685",
+      "md5_timestamps_labels_unchanged": true
+    },
+    {
+      "package": "/Game/CitySim/Audio/Soundscape/Sirens/SW_Police_Loop",
+      "relative_filenames": [
+        "../../../../../../AudioSource/Soundscape/Unreal/Waves/Sirens/SW_Police_Loop.wav"
+      ],
+      "source": "AudioSource/Soundscape/Unreal/Waves/Sirens/SW_Police_Loop.wav",
+      "source_sha256": "929e8cf9d7482e7c91d88627ebe8fc3de0daab83ebfc3dfc483fbd0841dde40f",
+      "md5_timestamps_labels_unchanged": true
+    },
+    {
+      "package": "/Game/CitySim/Audio/Soundscape/Sirens/SW_Police_Outro",
+      "relative_filenames": [
+        "../../../../../../AudioSource/Soundscape/Unreal/Waves/Sirens/SW_Police_Outro.wav"
+      ],
+      "source": "AudioSource/Soundscape/Unreal/Waves/Sirens/SW_Police_Outro.wav",
+      "source_sha256": "411a6d82961cbcfe47adc4ac82c6afb683d5b793bc461be50b51d3d944065630",
+      "md5_timestamps_labels_unchanged": true
+    },
+    {
+      "package": "/Game/CitySim/Audio/Soundscape/Sirens/SW_Fire_Intro",
+      "relative_filenames": [
+        "../../../../../../AudioSource/Soundscape/Unreal/Waves/Sirens/SW_Fire_Intro.wav"
+      ],
+      "source": "AudioSource/Soundscape/Unreal/Waves/Sirens/SW_Fire_Intro.wav",
+      "source_sha256": "2617f0d82358cadd3000c3ce3bff0ce1c104d0a90167c655a2d88dbf3f6d3835",
+      "md5_timestamps_labels_unchanged": true
+    },
+    {
+      "package": "/Game/CitySim/Audio/Soundscape/Sirens/SW_Fire_Loop",
+      "relative_filenames": [
+        "../../../../../../AudioSource/Soundscape/Unreal/Waves/Sirens/SW_Fire_Loop.wav"
+      ],
+      "source": "AudioSource/Soundscape/Unreal/Waves/Sirens/SW_Fire_Loop.wav",
+      "source_sha256": "934820eb2e7e525867a24f1bb74b17a68e8493626e68b7a720ee9682e550fbf5",
+      "md5_timestamps_labels_unchanged": true
+    },
+    {
+      "package": "/Game/CitySim/Audio/Soundscape/Sirens/SW_Fire_Outro",
+      "relative_filenames": [
+        "../../../../../../AudioSource/Soundscape/Unreal/Waves/Sirens/SW_Fire_Outro.wav"
+      ],
+      "source": "AudioSource/Soundscape/Unreal/Waves/Sirens/SW_Fire_Outro.wav",
+      "source_sha256": "fbcc40120f7f51d293d8c989284d71639c225aecc5a4d2e7324fb7773a90e2c6",
+      "md5_timestamps_labels_unchanged": true
+    },
+    {
+      "package": "/Game/CitySim/Audio/Soundscape/Sirens/SW_Ambulance_Intro",
+      "relative_filenames": [
+        "../../../../../../AudioSource/Soundscape/Unreal/Waves/Sirens/SW_Ambulance_Intro.wav"
+      ],
+      "source": "AudioSource/Soundscape/Unreal/Waves/Sirens/SW_Ambulance_Intro.wav",
+      "source_sha256": "69eb5e9d40f8a89fee2f0dc5641f934e90f358d9201b669bc9e6ef5867022e52",
+      "md5_timestamps_labels_unchanged": true
+    },
+    {
+      "package": "/Game/CitySim/Audio/Soundscape/Sirens/SW_Ambulance_Loop",
+      "relative_filenames": [
+        "../../../../../../AudioSource/Soundscape/Unreal/Waves/Sirens/SW_Ambulance_Loop.wav"
+      ],
+      "source": "AudioSource/Soundscape/Unreal/Waves/Sirens/SW_Ambulance_Loop.wav",
+      "source_sha256": "096ae47dc5aef77356bf57386ab798d4653a8d8e4a02bcb6b0996b2e56103601",
+      "md5_timestamps_labels_unchanged": true
+    },
+    {
+      "package": "/Game/CitySim/Audio/Soundscape/Sirens/SW_Ambulance_Outro",
+      "relative_filenames": [
+        "../../../../../../AudioSource/Soundscape/Unreal/Waves/Sirens/SW_Ambulance_Outro.wav"
+      ],
+      "source": "AudioSource/Soundscape/Unreal/Waves/Sirens/SW_Ambulance_Outro.wav",
+      "source_sha256": "54516995689e0b7cd5a6484da823baf3877912ae35e82e4b531d08cf61d84d03",
+      "md5_timestamps_labels_unchanged": true
+    },
+    {
+      "package": "/Game/CitySim/Audio/Soundscape/Sirens/SW_Town_Intro",
+      "relative_filenames": [
+        "../../../../../../AudioSource/Soundscape/Unreal/Waves/Sirens/SW_Town_Intro.wav"
+      ],
+      "source": "AudioSource/Soundscape/Unreal/Waves/Sirens/SW_Town_Intro.wav",
+      "source_sha256": "42a89da2d65b2852d3400aae11d47475e9b453123c22cd7359876b4045b06a74",
+      "md5_timestamps_labels_unchanged": true
+    },
+    {
+      "package": "/Game/CitySim/Audio/Soundscape/Sirens/SW_Town_Loop",
+      "relative_filenames": [
+        "../../../../../../AudioSource/Soundscape/Unreal/Waves/Sirens/SW_Town_Loop.wav"
+      ],
+      "source": "AudioSource/Soundscape/Unreal/Waves/Sirens/SW_Town_Loop.wav",
+      "source_sha256": "1937b5d46e79aae483cc10598e58ad164661a880978239e9b9fe569adffedbaa",
+      "md5_timestamps_labels_unchanged": true
+    },
+    {
+      "package": "/Game/CitySim/Audio/Soundscape/Sirens/SW_Town_Outro",
+      "relative_filenames": [
+        "../../../../../../AudioSource/Soundscape/Unreal/Waves/Sirens/SW_Town_Outro.wav"
+      ],
+      "source": "AudioSource/Soundscape/Unreal/Waves/Sirens/SW_Town_Outro.wav",
+      "source_sha256": "1ed7001e0798abb1c7fd3992e5e9ef62a74f40f2ebc30a1eb089b60c223160b2",
+      "md5_timestamps_labels_unchanged": true
+    },
+    {
+      "package": "/Game/CitySim/Audio/Soundscape/Sirens/SW_Police_Alternate",
+      "relative_filenames": [
+        "../../../../../../AudioSource/Soundscape/Unreal/Waves/Sirens/SW_Police_Alternate.wav"
+      ],
+      "source": "AudioSource/Soundscape/Unreal/Waves/Sirens/SW_Police_Alternate.wav",
+      "source_sha256": "9da791e1ea6be95ff69d4517c74f378978c2c85a3e914991efff88ec12c663a7",
+      "md5_timestamps_labels_unchanged": true
+    },
+    {
+      "package": "/Game/CitySim/Audio/Soundscape/Sirens/SW_Fire_Horn",
+      "relative_filenames": [
+        "../../../../../../AudioSource/Soundscape/Unreal/Waves/Sirens/SW_Fire_Horn.wav"
+      ],
+      "source": "AudioSource/Soundscape/Unreal/Waves/Sirens/SW_Fire_Horn.wav",
+      "source_sha256": "aecd4f3cfcf093170ed190af0816cae7d2e3bf744dc20d9c1c50a792fbb65221",
+      "md5_timestamps_labels_unchanged": true
+    },
+    {
+      "package": "/Game/CitySim/Audio/Soundscape/Ambience/Park/SW_Park_Foliage",
+      "relative_filenames": [
+        "../../../../../../../AudioSource/Soundscape/Unreal/Waves/Ambience/Park/SW_Park_Foliage.wav"
+      ],
+      "source": "AudioSource/Soundscape/Unreal/Waves/Ambience/Park/SW_Park_Foliage.wav",
+      "source_sha256": "a35d15c1f719785f14de53d85d1b741de6e2f2b0cccb702e04291fa4036c634d",
+      "md5_timestamps_labels_unchanged": true
+    },
+    {
+      "package": "/Game/CitySim/Audio/Soundscape/Ambience/Park/SW_Park_Fountain",
+      "relative_filenames": [
+        "../../../../../../../AudioSource/Soundscape/Unreal/Waves/Ambience/Park/SW_Park_Fountain.wav"
+      ],
+      "source": "AudioSource/Soundscape/Unreal/Waves/Ambience/Park/SW_Park_Fountain.wav",
+      "source_sha256": "f2f663982d0636fa8eb3af6a23af00a8602a0f7e01c41239f2782a192fe2e15c",
+      "md5_timestamps_labels_unchanged": true
+    },
+    {
+      "package": "/Game/CitySim/Audio/Soundscape/Ambience/Park/SW_Water_Shore",
+      "relative_filenames": [
+        "../../../../../../../AudioSource/Soundscape/Unreal/Waves/Ambience/Park/SW_Water_Shore.wav"
+      ],
+      "source": "AudioSource/Soundscape/Unreal/Waves/Ambience/Park/SW_Water_Shore.wav",
+      "source_sha256": "15570246328f41d0b410fa4303c514ac8d75add063d6472bec629516c4b13198",
+      "md5_timestamps_labels_unchanged": true
+    },
+    {
+      "package": "/Game/CitySim/Audio/Soundscape/Ambience/Industry/SW_Industry_Idle",
+      "relative_filenames": [
+        "../../../../../../../AudioSource/Soundscape/Unreal/Waves/Ambience/Industry/SW_Industry_Idle.wav"
+      ],
+      "source": "AudioSource/Soundscape/Unreal/Waves/Ambience/Industry/SW_Industry_Idle.wav",
+      "source_sha256": "8d11ebaebea6e8f9940dc8e0d5bab757ea0d138afd5aaca8547bf04332d0fe96",
+      "md5_timestamps_labels_unchanged": true
+    },
+    {
+      "package": "/Game/CitySim/Audio/Soundscape/Ambience/Industry/SW_Industry_Working",
+      "relative_filenames": [
+        "../../../../../../../AudioSource/Soundscape/Unreal/Waves/Ambience/Industry/SW_Industry_Working.wav"
+      ],
+      "source": "AudioSource/Soundscape/Unreal/Waves/Ambience/Industry/SW_Industry_Working.wav",
+      "source_sha256": "ecee15a4ae9134811c510c35c29270efc0e99f29e651e7a5cac04e93f152d6d9",
+      "md5_timestamps_labels_unchanged": true
+    },
+    {
+      "package": "/Game/CitySim/Audio/Soundscape/Ambience/City/SW_City_Distant",
+      "relative_filenames": [
+        "../../../../../../../AudioSource/Soundscape/Unreal/Waves/Ambience/City/SW_City_Distant.wav"
+      ],
+      "source": "AudioSource/Soundscape/Unreal/Waves/Ambience/City/SW_City_Distant.wav",
+      "source_sha256": "9b28ebeaef1cd1e12d469827752de694b788f1babc6c82572583a3459b5c4450",
+      "md5_timestamps_labels_unchanged": true
+    },
+    {
+      "package": "/Game/CitySim/Audio/Soundscape/Ambience/City/SW_Market_Murmur",
+      "relative_filenames": [
+        "../../../../../../../AudioSource/Soundscape/Unreal/Waves/Ambience/City/SW_Market_Murmur.wav"
+      ],
+      "source": "AudioSource/Soundscape/Unreal/Waves/Ambience/City/SW_Market_Murmur.wav",
+      "source_sha256": "eeebadf44ae6f38892c7e5f9eceae929d3750b73e8c16a2eb6f872a56625db6e",
+      "md5_timestamps_labels_unchanged": true
+    },
+    {
+      "package": "/Game/CitySim/Audio/Soundscape/Ambience/City/SW_Car_Pass",
+      "relative_filenames": [
+        "../../../../../../../AudioSource/Soundscape/Unreal/Waves/Ambience/City/SW_Car_Pass.wav"
+      ],
+      "source": "AudioSource/Soundscape/Unreal/Waves/Ambience/City/SW_Car_Pass.wav",
+      "source_sha256": "227db3a7e016f4cf7b2c250b00428b0de0390578a54a0024c2fb1fccd86af7e2",
+      "md5_timestamps_labels_unchanged": true
+    },
+    {
+      "package": "/Game/CitySim/Audio/Soundscape/Ambience/City/SW_Truck_Pass",
+      "relative_filenames": [
+        "../../../../../../../AudioSource/Soundscape/Unreal/Waves/Ambience/City/SW_Truck_Pass.wav"
+      ],
+      "source": "AudioSource/Soundscape/Unreal/Waves/Ambience/City/SW_Truck_Pass.wav",
+      "source_sha256": "28eb7acfb7401db3531c981fc26955a49b60468daed08fda0b67d1ddc4ed6828",
+      "md5_timestamps_labels_unchanged": true
+    },
+    {
+      "package": "/Game/CitySim/Audio/Soundscape/Ambience/Wildlife/SW_Bird_Chirp_A",
+      "relative_filenames": [
+        "../../../../../../../AudioSource/Soundscape/Unreal/Waves/Ambience/Wildlife/SW_Bird_Chirp_A.wav"
+      ],
+      "source": "AudioSource/Soundscape/Unreal/Waves/Ambience/Wildlife/SW_Bird_Chirp_A.wav",
+      "source_sha256": "fe032d4cd7ace689c2b12e0e01f2237b8791863014620665ad869f53b31b603a",
+      "md5_timestamps_labels_unchanged": true
+    },
+    {
+      "package": "/Game/CitySim/Audio/Soundscape/Ambience/Wildlife/SW_Bird_Chirp_B",
+      "relative_filenames": [
+        "../../../../../../../AudioSource/Soundscape/Unreal/Waves/Ambience/Wildlife/SW_Bird_Chirp_B.wav"
+      ],
+      "source": "AudioSource/Soundscape/Unreal/Waves/Ambience/Wildlife/SW_Bird_Chirp_B.wav",
+      "source_sha256": "036451d9d0b69cc208936c4004fba86c1b90b6d0489d61ec8cb599f684fcccf0",
+      "md5_timestamps_labels_unchanged": true
+    },
+    {
+      "package": "/Game/CitySim/Audio/Soundscape/Ambience/Wildlife/SW_Bird_Chirp_C",
+      "relative_filenames": [
+        "../../../../../../../AudioSource/Soundscape/Unreal/Waves/Ambience/Wildlife/SW_Bird_Chirp_C.wav"
+      ],
+      "source": "AudioSource/Soundscape/Unreal/Waves/Ambience/Wildlife/SW_Bird_Chirp_C.wav",
+      "source_sha256": "cb029af3ae1c4a62f920448156f2ec11af15d51615848a8bac7674373fb90bc8",
+      "md5_timestamps_labels_unchanged": true
+    },
+    {
+      "package": "/Game/CitySim/Audio/Soundscape/Ambience/Wildlife/SW_Night_Crickets_Light",
+      "relative_filenames": [
+        "../../../../../../../AudioSource/Soundscape/Unreal/Waves/Ambience/Wildlife/SW_Night_Crickets_Light.wav"
+      ],
+      "source": "AudioSource/Soundscape/Unreal/Waves/Ambience/Wildlife/SW_Night_Crickets_Light.wav",
+      "source_sha256": "d7a05a7b8ff268d83b753c763b5edb43da7d8e83c6c90cd7080f6e281bc61089",
+      "md5_timestamps_labels_unchanged": true
+    },
+    {
+      "package": "/Game/CitySim/Audio/Soundscape/Ambience/Wildlife/SW_Night_Crickets_Dense",
+      "relative_filenames": [
+        "../../../../../../../AudioSource/Soundscape/Unreal/Waves/Ambience/Wildlife/SW_Night_Crickets_Dense.wav"
+      ],
+      "source": "AudioSource/Soundscape/Unreal/Waves/Ambience/Wildlife/SW_Night_Crickets_Dense.wav",
+      "source_sha256": "58049d95c5789c4a7fbfaf9d4b6ffd6ec9d196662b6e3fa36a17cd95c4ca479c",
+      "md5_timestamps_labels_unchanged": true
+    },
+    {
+      "package": "/Game/CitySim/Audio/Soundscape/Ambience/Weather/SW_Wind_Light",
+      "relative_filenames": [
+        "../../../../../../../AudioSource/Soundscape/Unreal/Waves/Ambience/Weather/SW_Wind_Light.wav"
+      ],
+      "source": "AudioSource/Soundscape/Unreal/Waves/Ambience/Weather/SW_Wind_Light.wav",
+      "source_sha256": "6b4e8854e8d9e476fc20c128b81b7d8751ee8e9477a9aa34630b7406b0dcec40",
+      "md5_timestamps_labels_unchanged": true
+    },
+    {
+      "package": "/Game/CitySim/Audio/Soundscape/Ambience/Weather/SW_Wind_Gusts",
+      "relative_filenames": [
+        "../../../../../../../AudioSource/Soundscape/Unreal/Waves/Ambience/Weather/SW_Wind_Gusts.wav"
+      ],
+      "source": "AudioSource/Soundscape/Unreal/Waves/Ambience/Weather/SW_Wind_Gusts.wav",
+      "source_sha256": "28feaeceed4b8ece8d947dd70569609c9d16a90b6cdc7e12473f8ebf3b5deb15",
+      "md5_timestamps_labels_unchanged": true
+    },
+    {
+      "package": "/Game/CitySim/Audio/Soundscape/Ambience/Weather/SW_Rain_Light",
+      "relative_filenames": [
+        "../../../../../../../AudioSource/Soundscape/Unreal/Waves/Ambience/Weather/SW_Rain_Light.wav"
+      ],
+      "source": "AudioSource/Soundscape/Unreal/Waves/Ambience/Weather/SW_Rain_Light.wav",
+      "source_sha256": "903c1041e13163656e94cc3b7a8fe4153089efb92ae7af80296456782c1cf3cf",
+      "md5_timestamps_labels_unchanged": true
+    },
+    {
+      "package": "/Game/CitySim/Audio/Soundscape/Ambience/Weather/SW_Rain_Heavy",
+      "relative_filenames": [
+        "../../../../../../../AudioSource/Soundscape/Unreal/Waves/Ambience/Weather/SW_Rain_Heavy.wav"
+      ],
+      "source": "AudioSource/Soundscape/Unreal/Waves/Ambience/Weather/SW_Rain_Heavy.wav",
+      "source_sha256": "f99171a2047bf07ea3bff8c3cf5f9a74e9cf17472a8f15b5902f9140aad4e789",
+      "md5_timestamps_labels_unchanged": true
+    },
+    {
+      "package": "/Game/CitySim/Audio/Soundscape/Ambience/Weather/SW_Storm_Roar",
+      "relative_filenames": [
+        "../../../../../../../AudioSource/Soundscape/Unreal/Waves/Ambience/Weather/SW_Storm_Roar.wav"
+      ],
+      "source": "AudioSource/Soundscape/Unreal/Waves/Ambience/Weather/SW_Storm_Roar.wav",
+      "source_sha256": "3c09b7535be9799994a9f0b9790ac814b836d3992b7d36fe8a51af4fd845615f",
+      "md5_timestamps_labels_unchanged": true
+    },
+    {
+      "package": "/Game/CitySim/Audio/Soundscape/Ambience/Weather/SW_Thunder_Near",
+      "relative_filenames": [
+        "../../../../../../../AudioSource/Soundscape/Unreal/Waves/Ambience/Weather/SW_Thunder_Near.wav"
+      ],
+      "source": "AudioSource/Soundscape/Unreal/Waves/Ambience/Weather/SW_Thunder_Near.wav",
+      "source_sha256": "e967fee92c24894e23d61a15be72ede20d3431662e33c0b3360bac9438e51a3d",
+      "md5_timestamps_labels_unchanged": true
+    },
+    {
+      "package": "/Game/CitySim/Audio/Soundscape/Ambience/Weather/SW_Thunder_Distant",
+      "relative_filenames": [
+        "../../../../../../../AudioSource/Soundscape/Unreal/Waves/Ambience/Weather/SW_Thunder_Distant.wav"
+      ],
+      "source": "AudioSource/Soundscape/Unreal/Waves/Ambience/Weather/SW_Thunder_Distant.wav",
+      "source_sha256": "51ae13d453948a9943183be273de78d82076c7446c967cd629bbc7e9d4df8294",
+      "md5_timestamps_labels_unchanged": true
+    },
+    {
+      "package": "/Game/CitySim/Audio/Soundscape/Effects/Activity/SW_Fire_Crackle",
+      "relative_filenames": [
+        "../../../../../../../AudioSource/Soundscape/Unreal/Waves/Effects/Activity/SW_Fire_Crackle.wav"
+      ],
+      "source": "AudioSource/Soundscape/Unreal/Waves/Effects/Activity/SW_Fire_Crackle.wav",
+      "source_sha256": "94fbcf7a36c622f4647cae2edb5620d3fa6f0b54d7ab9adf9bfabf05322a3ee0",
+      "md5_timestamps_labels_unchanged": true
+    },
+    {
+      "package": "/Game/CitySim/Audio/Soundscape/Effects/Activity/SW_Earthquake_Rumble",
+      "relative_filenames": [
+        "../../../../../../../AudioSource/Soundscape/Unreal/Waves/Effects/Activity/SW_Earthquake_Rumble.wav"
+      ],
+      "source": "AudioSource/Soundscape/Unreal/Waves/Effects/Activity/SW_Earthquake_Rumble.wav",
+      "source_sha256": "4715c93beae5fde8dd002220a0b08a15ac336edd0630a0c7c22a8fe27369c1f7",
+      "md5_timestamps_labels_unchanged": true
+    },
+    {
+      "package": "/Game/CitySim/Audio/Soundscape/Effects/Activity/SW_Construction_Tap",
+      "relative_filenames": [
+        "../../../../../../../AudioSource/Soundscape/Unreal/Waves/Effects/Activity/SW_Construction_Tap.wav"
+      ],
+      "source": "AudioSource/Soundscape/Unreal/Waves/Effects/Activity/SW_Construction_Tap.wav",
+      "source_sha256": "d8f0f2758b34560bc27f8574176d05244e483eb2b065ff7af7bb5bcbbb3c2ebe",
+      "md5_timestamps_labels_unchanged": true
+    },
+    {
+      "package": "/Game/CitySim/Audio/Soundscape/Effects/Activity/SW_Demolition_Impact",
+      "relative_filenames": [
+        "../../../../../../../AudioSource/Soundscape/Unreal/Waves/Effects/Activity/SW_Demolition_Impact.wav"
+      ],
+      "source": "AudioSource/Soundscape/Unreal/Waves/Effects/Activity/SW_Demolition_Impact.wav",
+      "source_sha256": "e6d6bcdd6864e7fe24b524b70d9694f63748b1938b44dc37dce00623b3b3d773",
+      "md5_timestamps_labels_unchanged": true
+    },
+    {
+      "package": "/Game/CitySim/Audio/Soundscape/UI/SW_Action_Confirm",
+      "relative_filenames": [
+        "../../../../../../AudioSource/Soundscape/Unreal/Waves/UI/SW_Action_Confirm.wav"
+      ],
+      "source": "AudioSource/Soundscape/Unreal/Waves/UI/SW_Action_Confirm.wav",
+      "source_sha256": "0948f87ec1ced25abf19600570794b7080561bb6e900fef4e528b5a5025a9931",
+      "md5_timestamps_labels_unchanged": true
+    },
+    {
+      "package": "/Game/CitySim/Audio/Soundscape/UI/SW_Action_Denied",
+      "relative_filenames": [
+        "../../../../../../AudioSource/Soundscape/Unreal/Waves/UI/SW_Action_Denied.wav"
+      ],
+      "source": "AudioSource/Soundscape/Unreal/Waves/UI/SW_Action_Denied.wav",
+      "source_sha256": "9fadc0d8b0e53d7e4195d4f48d403577fbcc4d22b2766f5fb3eb09a413ad8e31",
+      "md5_timestamps_labels_unchanged": true
+    },
+    {
+      "package": "/Game/CitySim/Audio/Soundscape/UI/SW_Objective_Complete",
+      "relative_filenames": [
+        "../../../../../../AudioSource/Soundscape/Unreal/Waves/UI/SW_Objective_Complete.wav"
+      ],
+      "source": "AudioSource/Soundscape/Unreal/Waves/UI/SW_Objective_Complete.wav",
+      "source_sha256": "8327e744951e94c5ffba85a7a728695897edcef60facb191eef901f56f350415",
+      "md5_timestamps_labels_unchanged": true
+    },
+    {
+      "package": "/Game/CitySim/Audio/Soundscape/UI/SW_Milestone_Reached",
+      "relative_filenames": [
+        "../../../../../../AudioSource/Soundscape/Unreal/Waves/UI/SW_Milestone_Reached.wav"
+      ],
+      "source": "AudioSource/Soundscape/Unreal/Waves/UI/SW_Milestone_Reached.wav",
+      "source_sha256": "ac6b7bab5d37d2d93976006b1764e0f0ca5840e388f959eb9fd3fed4361a8899",
+      "md5_timestamps_labels_unchanged": true
+    },
+    {
+      "package": "/Game/CitySim/Audio/Soundscape/UI/SW_Service_Attention",
+      "relative_filenames": [
+        "../../../../../../AudioSource/Soundscape/Unreal/Waves/UI/SW_Service_Attention.wav"
+      ],
+      "source": "AudioSource/Soundscape/Unreal/Waves/UI/SW_Service_Attention.wav",
+      "source_sha256": "03ebfea1eb9d31483c777f1eb972a8d7fd416974c66458692c25da1362f26449",
+      "md5_timestamps_labels_unchanged": true
+    },
+    {
+      "package": "/Game/CitySim/Audio/Soundscape/UI/SW_Incident_Notice",
+      "relative_filenames": [
+        "../../../../../../AudioSource/Soundscape/Unreal/Waves/UI/SW_Incident_Notice.wav"
+      ],
+      "source": "AudioSource/Soundscape/Unreal/Waves/UI/SW_Incident_Notice.wav",
+      "source_sha256": "02ed54554e91579856e9323224a68f9a98c9d9fbd66094e7a0dec081391f7b87",
+      "md5_timestamps_labels_unchanged": true
+    },
+    {
+      "package": "/Game/CitySim/Audio/Soundscape/UI/SW_Service_Recovered",
+      "relative_filenames": [
+        "../../../../../../AudioSource/Soundscape/Unreal/Waves/UI/SW_Service_Recovered.wav"
+      ],
+      "source": "AudioSource/Soundscape/Unreal/Waves/UI/SW_Service_Recovered.wav",
+      "source_sha256": "0c3cd0fa5680e85abd3a423bfd6b4748ffe2e1dcd0b7b3774ed08d07ad60fdfa",
+      "md5_timestamps_labels_unchanged": true
+    },
+    {
+      "package": "/Game/CitySim/Audio/Soundscape/Ambience/Weather/SW_Rain_Moderate",
+      "relative_filenames": [
+        "../../../../../../../AudioSource/Soundscape/Unreal/Waves/Ambience/Weather/SW_Rain_Moderate.wav"
+      ],
+      "source": "AudioSource/Soundscape/Unreal/Waves/Ambience/Weather/SW_Rain_Moderate.wav",
+      "source_sha256": "f145e528df868130305a237a4a0882876ad1292ab52fcc532e3971c4ce625e4d",
+      "md5_timestamps_labels_unchanged": true
+    },
+    {
+      "package": "/Game/CitySim/Audio/Soundscape/Ambience/Weather/SW_Rain_Downpour",
+      "relative_filenames": [
+        "../../../../../../../AudioSource/Soundscape/Unreal/Waves/Ambience/Weather/SW_Rain_Downpour.wav"
+      ],
+      "source": "AudioSource/Soundscape/Unreal/Waves/Ambience/Weather/SW_Rain_Downpour.wav",
+      "source_sha256": "82a97aca66bde37c9f6154cf1392ca4fbce8a950888b2683dab493c8a2173bf6",
+      "md5_timestamps_labels_unchanged": true
+    },
+    {
+      "package": "/Game/CitySim/Audio/Soundscape/Ambience/Industry/SW_Industry_Clank",
+      "relative_filenames": [
+        "../../../../../../../AudioSource/Soundscape/Unreal/Waves/Ambience/Industry/SW_Industry_Clank.wav"
+      ],
+      "source": "AudioSource/Soundscape/Unreal/Waves/Ambience/Industry/SW_Industry_Clank.wav",
+      "source_sha256": "22789cb72a6a65449cafd2eb026d097eda7b990e4d093ac7283dc0ff572650a5",
+      "md5_timestamps_labels_unchanged": true
+    },
+    {
+      "package": "/Game/CitySim/Audio/Soundscape/Ambience/Wildlife/SW_Cricket_Chirp_Pair",
+      "relative_filenames": [
+        "../../../../../../../AudioSource/Soundscape/Unreal/Waves/Ambience/Wildlife/SW_Cricket_Chirp_Pair.wav"
+      ],
+      "source": "AudioSource/Soundscape/Unreal/Waves/Ambience/Wildlife/SW_Cricket_Chirp_Pair.wav",
+      "source_sha256": "484b6a13614adad1139fb6270c25d4a55ed73c6b0e3188b05bbc7cd1c7e972af",
+      "md5_timestamps_labels_unchanged": true
+    },
+    {
+      "package": "/Game/CitySim/Audio/Soundscape/Ambience/City/SW_Car_Idle",
+      "relative_filenames": [
+        "../../../../../../../AudioSource/Soundscape/Unreal/Waves/Ambience/City/SW_Car_Idle.wav"
+      ],
+      "source": "AudioSource/Soundscape/Unreal/Waves/Ambience/City/SW_Car_Idle.wav",
+      "source_sha256": "bfddc7ea0d59bbdc991f9017614db4d7f5b9cffbf855eff98eb67061811bf24c",
+      "md5_timestamps_labels_unchanged": true
+    },
+    {
+      "package": "/Game/CitySim/Audio/Soundscape/Ambience/City/SW_Car_Driving",
+      "relative_filenames": [
+        "../../../../../../../AudioSource/Soundscape/Unreal/Waves/Ambience/City/SW_Car_Driving.wav"
+      ],
+      "source": "AudioSource/Soundscape/Unreal/Waves/Ambience/City/SW_Car_Driving.wav",
+      "source_sha256": "bba338ae75417eafa4d070eebb92be405702404883f0f4b4c8ba31d13d8930c3",
+      "md5_timestamps_labels_unchanged": true
+    },
+    {
+      "package": "/Game/CitySim/Audio/Soundscape/Ambience/City/SW_Truck_Idle",
+      "relative_filenames": [
+        "../../../../../../../AudioSource/Soundscape/Unreal/Waves/Ambience/City/SW_Truck_Idle.wav"
+      ],
+      "source": "AudioSource/Soundscape/Unreal/Waves/Ambience/City/SW_Truck_Idle.wav",
+      "source_sha256": "0088fb5a1d90b2d140c8a786b65496a66bd385dcb86a93676ca5d8db7ecc3937",
+      "md5_timestamps_labels_unchanged": true
+    },
+    {
+      "package": "/Game/CitySim/Audio/Soundscape/Ambience/City/SW_Truck_Driving",
+      "relative_filenames": [
+        "../../../../../../../AudioSource/Soundscape/Unreal/Waves/Ambience/City/SW_Truck_Driving.wav"
+      ],
+      "source": "AudioSource/Soundscape/Unreal/Waves/Ambience/City/SW_Truck_Driving.wav",
+      "source_sha256": "4626d686d2446c8dbccb652119ed24df6fc4f8b8bfb8a4fd9a1bd4ec5359e756",
+      "md5_timestamps_labels_unchanged": true
+    },
+    {
+      "package": "/Game/CitySim/Audio/Music/Approved/SW_Music_Afterglow",
+      "relative_filenames": [
+        "../../../../../../AudioSource/Music/CitySoundtrack/UnrealApproved/Afterglow.wav"
+      ],
+      "source": "AudioSource/Music/CitySoundtrack/UnrealApproved/Afterglow.wav",
+      "source_sha256": "5204ef2b824fb41a4bbc6dfd4ae75fc4a786d9ef5c823a3f6ba172a5eccb0687",
+      "md5_timestamps_labels_unchanged": true
+    },
+    {
+      "package": "/Game/CitySim/Audio/Music/Approved/SW_Music_GlassCanal",
+      "relative_filenames": [
+        "../../../../../../AudioSource/Music/CitySoundtrack/UnrealApproved/GlassCanal.wav"
+      ],
+      "source": "AudioSource/Music/CitySoundtrack/UnrealApproved/GlassCanal.wav",
+      "source_sha256": "77694d270a4f2aae3ee850498e1a8b05c4ae8f651dcf6469af06bd1c8856c714",
+      "md5_timestamps_labels_unchanged": true
+    },
+    {
+      "package": "/Game/CitySim/Audio/Music/Approved/SW_Music_NeonCourtyard",
+      "relative_filenames": [
+        "../../../../../../AudioSource/Music/CitySoundtrack/UnrealApproved/NeonCourtyard.wav"
+      ],
+      "source": "AudioSource/Music/CitySoundtrack/UnrealApproved/NeonCourtyard.wav",
+      "source_sha256": "40be0e60558f40654ddddac1e10f997bbb23957835f0954ed1509ee3b2684fdf",
+      "md5_timestamps_labels_unchanged": true
+    },
+    {
+      "package": "/Game/CitySim/Audio/Music/Approved/SW_Music_LanternWalk",
+      "relative_filenames": [
+        "../../../../../../AudioSource/Music/CitySoundtrack/UnrealApproved/LanternWalk.wav"
+      ],
+      "source": "AudioSource/Music/CitySoundtrack/UnrealApproved/LanternWalk.wav",
+      "source_sha256": "670f6f4b8f36aacd44dbfba39b285d0d9752baa5b7b914ad48a08fdcccec515d",
+      "md5_timestamps_labels_unchanged": true
+    },
+    {
+      "package": "/Game/CitySim/Audio/Music/Approved/SW_Music_NightTransit",
+      "relative_filenames": [
+        "../../../../../../AudioSource/Music/CitySoundtrack/UnrealApproved/NightTransit.wav"
+      ],
+      "source": "AudioSource/Music/CitySoundtrack/UnrealApproved/NightTransit.wav",
+      "source_sha256": "1dd6bdfbd17b95db7f2b458bbdc4fbd97467c8673b8a3c0aa80805da8025cb0e",
+      "md5_timestamps_labels_unchanged": true
+    },
+    {
+      "package": "/Game/CitySim/Audio/Music/Approved/SW_Music_RooftopRain",
+      "relative_filenames": [
+        "../../../../../../AudioSource/Music/CitySoundtrack/UnrealApproved/RooftopRain.wav"
+      ],
+      "source": "AudioSource/Music/CitySoundtrack/UnrealApproved/RooftopRain.wav",
+      "source_sha256": "93ae65acfbe004eae6492e24526c24bc7870e4e9357aeef49e43537598162f0c",
+      "md5_timestamps_labels_unchanged": true
+    },
+    {
+      "package": "/Game/CitySim/Audio/Music/Approved/SW_Music_PaperLanterns",
+      "relative_filenames": [
+        "../../../../../../AudioSource/Music/CitySoundtrack/UnrealApproved/PaperLanterns.wav"
+      ],
+      "source": "AudioSource/Music/CitySoundtrack/UnrealApproved/PaperLanterns.wav",
+      "source_sha256": "17eb4afde0bcb031a0d252173fbde992e2a1965253770cb0c9225a5d63533d04",
+      "md5_timestamps_labels_unchanged": true
+    },
+    {
+      "package": "/Game/CitySim/Audio/Music/Approved/SW_Music_TidalCircuit",
+      "relative_filenames": [
+        "../../../../../../AudioSource/Music/CitySoundtrack/UnrealApproved/TidalCircuit.wav"
+      ],
+      "source": "AudioSource/Music/CitySoundtrack/UnrealApproved/TidalCircuit.wav",
+      "source_sha256": "524ca72ade8cb1ce5f289a1e6aba9717e4efb47795dd2dc4cdcb377386fbf793",
+      "md5_timestamps_labels_unchanged": true
+    },
+    {
+      "package": "/Game/CitySim/Audio/Music/Approved/SW_Music_BlueHour",
+      "relative_filenames": [
+        "../../../../../../AudioSource/Music/CitySoundtrack/UnrealApproved/BlueHour.wav"
+      ],
+      "source": "AudioSource/Music/CitySoundtrack/UnrealApproved/BlueHour.wav",
+      "source_sha256": "cce490728fd7d32adeb790a1218c1375f38928899acb42e2d58bd1f5428797a4",
+      "md5_timestamps_labels_unchanged": true
+    },
+    {
+      "package": "/Game/CitySim/Art/Parks/Meshes/SM_Park_Field_Casual",
+      "relative_filenames": [
+        "../../../../../../ArtSource/Exports/CitizenSportsRefinement/SM_Park_Field_Casual.fbx"
+      ],
+      "source": "ArtSource/Exports/CitizenSportsRefinement/SM_Park_Field_Casual.fbx",
+      "source_sha256": "aa8f9a56c18e59433faa1632304c8e2af0098b88f3ecf7fbf8fb6420a24ce4b2",
+      "md5_timestamps_labels_unchanged": true
+    },
+    {
+      "package": "/Game/CitySim/Art/Parks/Meshes/SK_Park_Field_Casual",
+      "relative_filenames": [
+        "../../../../../../ArtSource/Exports/CitizenSportsRefinement/SK_Park_Field_Casual.fbx"
+      ],
+      "source": "ArtSource/Exports/CitizenSportsRefinement/SK_Park_Field_Casual.fbx",
+      "source_sha256": "5b285affb7fcd11773890be054a09fe48de42f1babcfb3194ee98a65f823042a",
+      "md5_timestamps_labels_unchanged": true
+    },
+    {
+      "package": "/Game/CitySim/Art/Parks/Meshes/SM_Park_Field_Office",
+      "relative_filenames": [
+        "../../../../../../ArtSource/Exports/CitizenSportsRefinement/SM_Park_Field_Office.fbx"
+      ],
+      "source": "ArtSource/Exports/CitizenSportsRefinement/SM_Park_Field_Office.fbx",
+      "source_sha256": "d05912088bf7e70660a4489a731a5a4b834df176a2fe701a4ddaddd60359950f",
+      "md5_timestamps_labels_unchanged": true
+    },
+    {
+      "package": "/Game/CitySim/Art/Parks/Meshes/SK_Park_Field_Office",
+      "relative_filenames": [
+        "../../../../../../ArtSource/Exports/CitizenSportsRefinement/SK_Park_Field_Office.fbx"
+      ],
+      "source": "ArtSource/Exports/CitizenSportsRefinement/SK_Park_Field_Office.fbx",
+      "source_sha256": "8b6e2c9e531c15010d01823adbf3c294dd384a770e7217e228aecc53dd9f8578",
+      "md5_timestamps_labels_unchanged": true
+    },
+    {
+      "package": "/Game/CitySim/Art/Parks/Meshes/SM_Park_Field_Worker",
+      "relative_filenames": [
+        "../../../../../../ArtSource/Exports/CitizenSportsRefinement/SM_Park_Field_Worker.fbx"
+      ],
+      "source": "ArtSource/Exports/CitizenSportsRefinement/SM_Park_Field_Worker.fbx",
+      "source_sha256": "2f434527b8e12deb1581fb598e03c919d3d9c4ec375e3caaf3716a5c5a2beeda",
+      "md5_timestamps_labels_unchanged": true
+    },
+    {
+      "package": "/Game/CitySim/Art/Parks/Meshes/SK_Park_Field_Worker",
+      "relative_filenames": [
+        "../../../../../../ArtSource/Exports/CitizenSportsRefinement/SK_Park_Field_Worker.fbx"
+      ],
+      "source": "ArtSource/Exports/CitizenSportsRefinement/SK_Park_Field_Worker.fbx",
+      "source_sha256": "852b95f7154a85ffde35a847bb2fc36cd4368734dec8b4dc9d85af02fc19fcc7",
+      "md5_timestamps_labels_unchanged": true
+    },
+    {
+      "package": "/Game/CitySim/Art/Parks/Animations/AS_Park_BaseballPitch",
+      "relative_filenames": [
+        "../../../../../../ArtSource/Exports/CitizenSportsRefinement/AS_Park_BaseballPitch.fbx"
+      ],
+      "source": "ArtSource/Exports/CitizenSportsRefinement/AS_Park_BaseballPitch.fbx",
+      "source_sha256": "5055ccbbbb790da806c29e45974c7ddbe35516c3caeb54c45fee9c61007b95ae",
+      "md5_timestamps_labels_unchanged": true
+    },
+    {
+      "package": "/Game/CitySim/Art/Parks/Animations/AS_Park_BaseballSwing",
+      "relative_filenames": [
+        "../../../../../../ArtSource/Exports/CitizenSportsRefinement/AS_Park_BaseballSwing.fbx"
+      ],
+      "source": "ArtSource/Exports/CitizenSportsRefinement/AS_Park_BaseballSwing.fbx",
+      "source_sha256": "341e4b823ffae2bb3376f1aebd30d738773322685e02f00835f622a8fa0c31a9",
+      "md5_timestamps_labels_unchanged": true
+    },
+    {
+      "package": "/Game/CitySim/Art/Parks/Animations/AS_Park_SoccerKick",
+      "relative_filenames": [
+        "../../../../../../ArtSource/Exports/CitizenSportsRefinement/AS_Park_SoccerKick.fbx"
+      ],
+      "source": "ArtSource/Exports/CitizenSportsRefinement/AS_Park_SoccerKick.fbx",
+      "source_sha256": "a9fd70fdfc22cb1df7c2d5933c783158e99cc2d79b43bb9a4f0b96c7db5ab1a8",
+      "md5_timestamps_labels_unchanged": true
+    },
+    {
+      "package": "/Game/CitySim/Art/Parks/Animations/AS_Park_SoccerRun",
+      "relative_filenames": [
+        "../../../../../../ArtSource/Exports/CitizenSportsRefinement/AS_Park_SoccerRun.fbx"
+      ],
+      "source": "ArtSource/Exports/CitizenSportsRefinement/AS_Park_SoccerRun.fbx",
+      "source_sha256": "b412657a19f7ec7b7a536e3778e1824949ff4192ce24de2cea39863946540acc",
+      "md5_timestamps_labels_unchanged": true
+    },
+    {
+      "package": "/Game/CitySim/Art/Parks/Animations/AS_Park_GoalkeeperSave",
+      "relative_filenames": [
+        "../../../../../../ArtSource/Exports/CitizenSportsRefinement/AS_Park_GoalkeeperSave.fbx"
+      ],
+      "source": "ArtSource/Exports/CitizenSportsRefinement/AS_Park_GoalkeeperSave.fbx",
+      "source_sha256": "6c9afee65967d8a394a762d7ddae8da6df9258435bdddd49677e6f03ddfdd647",
+      "md5_timestamps_labels_unchanged": true
+    },
+    {
+      "package": "/Game/CitySim/Art/Citizens/AS_Citizen_Walk",
+      "relative_filenames": [
+        "../../../../../ArtSource/Exports/CitizenWalk/AS_Citizen_Walk.fbx"
+      ],
+      "source": "ArtSource/Exports/CitizenWalk/AS_Citizen_Walk.fbx",
+      "source_sha256": "d746b2a930a17b4ab143c57361149011caa8ddadd54e4e9ce1d338c4c9347f70",
+      "md5_timestamps_labels_unchanged": true
+    },
+    {
+      "package": "/Game/CitySim/Art/Textures/T_RepairDisplays",
+      "relative_filenames": [
+        "../../../../../ArtSource/Derived/EditorialArt/RepairDisplays.png"
+      ],
+      "source": "ArtSource/Derived/EditorialArt/RepairDisplays.png",
+      "source_sha256": "8a41e0803a6ee8b880ef7e1375f3523aea1d70890490b8b56a35462c01509944",
+      "md5_timestamps_labels_unchanged": true
+    },
+    {
+      "package": "/Game/CitySim/Art/Textures/T_StorefrontRoom_market",
+      "relative_filenames": [
+        "../../../../../ArtSource/Derived/StorefrontRooms/market.png"
+      ],
+      "source": "ArtSource/Derived/StorefrontRooms/market.png",
+      "source_sha256": "b981bfa56a55303c299f14e7bc096e83c8ebc9057d899ca3b3d2a13d7c902355",
+      "md5_timestamps_labels_unchanged": true
+    },
+    {
+      "package": "/Game/CitySim/Art/Textures/T_StorefrontRoom_bakery",
+      "relative_filenames": [
+        "../../../../../ArtSource/Derived/StorefrontRooms/bakery.png"
+      ],
+      "source": "ArtSource/Derived/StorefrontRooms/bakery.png",
+      "source_sha256": "a0ada97a74b5b19966123b6576e9e1eb742464e3e76ff86acea6897cbfad71f4",
+      "md5_timestamps_labels_unchanged": true
+    },
+    {
+      "package": "/Game/CitySim/Art/Textures/T_StorefrontRoom_books",
+      "relative_filenames": [
+        "../../../../../ArtSource/Derived/StorefrontRooms/books.png"
+      ],
+      "source": "ArtSource/Derived/StorefrontRooms/books.png",
+      "source_sha256": "47d87ea5e7d30157fbb626f3109a4ba1ba22d41717326206f213577e66d1560d",
+      "md5_timestamps_labels_unchanged": true
+    },
+    {
+      "package": "/Game/CitySim/Art/Textures/T_StorefrontRoom_cafe",
+      "relative_filenames": [
+        "../../../../../ArtSource/Derived/StorefrontRooms/cafe.png"
+      ],
+      "source": "ArtSource/Derived/StorefrontRooms/cafe.png",
+      "source_sha256": "6757d9832af8b051fb2f65316045fbd0c13db654d84f551d433ca0e43b3b9883",
+      "md5_timestamps_labels_unchanged": true
+    },
+    {
+      "package": "/Game/CitySim/Art/Textures/T_StorefrontRoom_outfitters",
+      "relative_filenames": [
+        "../../../../../ArtSource/Derived/StorefrontRooms/outfitters.png"
+      ],
+      "source": "ArtSource/Derived/StorefrontRooms/outfitters.png",
+      "source_sha256": "4d83a82c82b27770059ed0c8ff3721da9eec6961caeb000cf18e66af3d8193eb",
+      "md5_timestamps_labels_unchanged": true
+    },
+    {
+      "package": "/Game/CitySim/Art/Textures/T_StorefrontRoom_pharmacy",
+      "relative_filenames": [
+        "../../../../../ArtSource/Derived/StorefrontRooms/pharmacy.png"
+      ],
+      "source": "ArtSource/Derived/StorefrontRooms/pharmacy.png",
+      "source_sha256": "bb3d6be272efe11a8440e0f3f5818d88edba399db658d5d39996eee1e6861d49",
+      "md5_timestamps_labels_unchanged": true
+    },
+    {
+      "package": "/Game/CitySim/Art/Textures/T_StorefrontRoom_repairs",
+      "relative_filenames": [
+        "../../../../../ArtSource/Derived/StorefrontRooms/repairs.png"
+      ],
+      "source": "ArtSource/Derived/StorefrontRooms/repairs.png",
+      "source_sha256": "abc3d4817222823a2a732e1bb7d9741ef1308c381157940e72816625232d05bc",
+      "md5_timestamps_labels_unchanged": true
+    },
+    {
+      "package": "/Game/CitySim/Art/Textures/T_StorefrontRoom_tech",
+      "relative_filenames": [
+        "../../../../../ArtSource/Derived/StorefrontRooms/tech.png"
+      ],
+      "source": "ArtSource/Derived/StorefrontRooms/tech.png",
+      "source_sha256": "695f2da0c6e59cac393a862f2ce281ccc148b9cd8208cc54d875ae154a772324",
+      "md5_timestamps_labels_unchanged": true
+    },
+    {
+      "package": "/Game/CitySim/UI/Newspaper/T_Automation",
+      "relative_filenames": [
+        "../../../../../ArtSource/Derived/EditorialArt/NewspaperAutomation.png"
+      ],
+      "source": "ArtSource/Derived/EditorialArt/NewspaperAutomation.png",
+      "source_sha256": "17c1f37fb83c2eaa1a887b9dc3b4f69b5a15ea3baf471784bbdb9303fc6ea1f0",
+      "md5_timestamps_labels_unchanged": true
+    },
+    {
+      "package": "/Game/CitySim/UI/Newspaper/T_Commerce",
+      "relative_filenames": [
+        "../../../../../ArtSource/Derived/EditorialArt/NewspaperCommerce.png"
+      ],
+      "source": "ArtSource/Derived/EditorialArt/NewspaperCommerce.png",
+      "source_sha256": "7530049482fabbb64d4995339be88999a1b6812f7b72534fa66f570555017fa7",
+      "md5_timestamps_labels_unchanged": true
+    },
+    {
+      "package": "/Game/CitySim/UI/Newspaper/T_Housing",
+      "relative_filenames": [
+        "../../../../../ArtSource/Derived/EditorialArt/NewspaperHousing.png"
+      ],
+      "source": "ArtSource/Derived/EditorialArt/NewspaperHousing.png",
+      "source_sha256": "3d8226205198c1995746b5e17767de1efbae287dbaa32c9b318941c34b05f6f1",
+      "md5_timestamps_labels_unchanged": true
+    }
+  ]
+}

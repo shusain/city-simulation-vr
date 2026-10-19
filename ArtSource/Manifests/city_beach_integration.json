@@ -1,0 +1,429 @@
+{
+  "schema_version": 1,
+  "task": "D108 beach scenery integration",
+  "master": "/Game/CitySim/Art/Technology/Materials/M_TechnologySolid",
+  "assets": [
+    {
+      "dimensions": [
+        0.22,
+        0.18,
+        0.045
+      ],
+      "head": "bd4df9aa281f1369fb9d8ef26d538cad7294f38f",
+      "sourcePR": 135,
+      "branch": "codex/asset-blender-130-v2",
+      "issue": 130,
+      "integration": 136,
+      "version": 2,
+      "name": "FanShell",
+      "sourceDirectory": "ArtSource/Generated/blender/issue-130/v2",
+      "approvalSha256": "8d07417773774939e4262826e9d143f0b9b0d3fd77b0cffc025d0fdb6a5fd0ef",
+      "fbxSha256": "cf199659a6e393c2fe7f17fe5ea3d0b32357b9b5c248f28f681d61c4deb08763",
+      "blendSha256": "d44ef97278064fbc6f384078104838cc49b208b22ce803e1e8fd43183368eac0",
+      "triangles": 94,
+      "files": [
+        {
+          "path": "ArtSource/Generated/blender/issue-130/v2/INTEGRATION.md",
+          "bytes": 340,
+          "sha256": "97edeb3947cdbbcf7ae5172ccac6b8e5a3ce66d81b79c80129a4d27725831933"
+        },
+        {
+          "path": "ArtSource/Generated/blender/issue-130/v2/approval.json",
+          "bytes": 1770,
+          "sha256": "8d07417773774939e4262826e9d143f0b9b0d3fd77b0cffc025d0fdb6a5fd0ef"
+        },
+        {
+          "path": "ArtSource/Generated/blender/issue-130/v2/asset.blend",
+          "bytes": 98874,
+          "sha256": "d44ef97278064fbc6f384078104838cc49b208b22ce803e1e8fd43183368eac0"
+        },
+        {
+          "path": "ArtSource/Generated/blender/issue-130/v2/asset.fbx",
+          "bytes": 18140,
+          "sha256": "cf199659a6e393c2fe7f17fe5ea3d0b32357b9b5c248f28f681d61c4deb08763"
+        },
+        {
+          "path": "ArtSource/Generated/blender/issue-130/v2/preview.png",
+          "bytes": 275366,
+          "sha256": "a09f99000484d1150d9eb6ec62841ee9a74e4c3b21559ed30324156c59e984a9"
+        },
+        {
+          "path": "ArtSource/Generated/blender/issue-130/v2/preview_top.png",
+          "bytes": 272771,
+          "sha256": "6e30c40d295b8991d1e496c3ffd00630beab14f7017fa68665a8f42944f2671f"
+        },
+        {
+          "path": "ArtSource/Generated/blender/issue-130/v2/provenance.json",
+          "bytes": 1697,
+          "sha256": "695e81ccbd08bc3636a232e13e5a075447c717dcc1434bb45a85d6270dc57b34"
+        },
+        {
+          "path": "ArtSource/Generated/blender/issue-130/v2/source-bundle.zip",
+          "bytes": 666959,
+          "sha256": "9abe9906ba96dc2fab43504496754963acac344aefa40d558b7493d0759dfaa6"
+        },
+        {
+          "path": "ArtSource/Generated/blender/issue-130/v2/unreal-handoff.json",
+          "bytes": 1716,
+          "sha256": "a69ddb0a23e52469f962e3d31b730d9e8037387b8a57281536c79c3ce2706a81"
+        },
+        {
+          "path": "ArtSource/Generated/blender/issue-130/v2/validation.json",
+          "bytes": 3046,
+          "sha256": "0734032a7699d251812346c42a75bc8e08b6126e7c7e94bddee345a35e6475a1"
+        }
+      ],
+      "meshDestination": "/Game/CitySim/Art/Beach/Meshes/SM_Scenery_FanShell_A",
+      "materialDestination": "/Game/CitySim/Art/Beach/Materials/MI_BeachFanShell",
+      "materialSlot": "Shell",
+      "linearColor": [
+        0.8299999833106995,
+        0.7599999904632568,
+        0.6200000047683716,
+        1.0
+      ],
+      "roughness": 0.72,
+      "collision": "none",
+      "lods": 1,
+      "scale": "metric FBX to centimetres, imported scale1; actual dimensions verified"
+    },
+    {
+      "dimensions": [
+        0.16,
+        0.12,
+        0.11
+      ],
+      "head": "de5b7309f82d87eecf6b80ecf8b859e55307fa5c",
+      "sourcePR": 137,
+      "branch": "codex/asset-blender-131-v2",
+      "issue": 131,
+      "integration": 138,
+      "version": 2,
+      "name": "SpiralShell",
+      "sourceDirectory": "ArtSource/Generated/blender/issue-131/v2",
+      "approvalSha256": "e1abb0c23cbf04bc06add6afa4ac7bc064e339235e30c72591e0e898432363e6",
+      "fbxSha256": "e3f6204d36ef425af16d54af48ad544365b09b62368019c98456bc34ef445728",
+      "blendSha256": "a6b6f0b945f176cdc27cf3ada882cd1ee18da53020e4aa20f4dfb9d5e28f8a3d",
+      "triangles": 112,
+      "files": [
+        {
+          "path": "ArtSource/Generated/blender/issue-131/v2/INTEGRATION.md",
+          "bytes": 340,
+          "sha256": "97edeb3947cdbbcf7ae5172ccac6b8e5a3ce66d81b79c80129a4d27725831933"
+        },
+        {
+          "path": "ArtSource/Generated/blender/issue-131/v2/approval.json",
+          "bytes": 1925,
+          "sha256": "e1abb0c23cbf04bc06add6afa4ac7bc064e339235e30c72591e0e898432363e6"
+        },
+        {
+          "path": "ArtSource/Generated/blender/issue-131/v2/asset.blend",
+          "bytes": 97649,
+          "sha256": "a6b6f0b945f176cdc27cf3ada882cd1ee18da53020e4aa20f4dfb9d5e28f8a3d"
+        },
+        {
+          "path": "ArtSource/Generated/blender/issue-131/v2/asset.fbx",
+          "bytes": 18300,
+          "sha256": "e3f6204d36ef425af16d54af48ad544365b09b62368019c98456bc34ef445728"
+        },
+        {
+          "path": "ArtSource/Generated/blender/issue-131/v2/preview.png",
+          "bytes": 267681,
+          "sha256": "83ac2f3c143acc4d406d696d80b3eba0ad45c808b398ba467eee45c822dd5f6a"
+        },
+        {
+          "path": "ArtSource/Generated/blender/issue-131/v2/preview_side.png",
+          "bytes": 249017,
+          "sha256": "a7ba036f1826e49377d4d44d6c7096989def85fe8f0893729fbbf7b8592ba28b"
+        },
+        {
+          "path": "ArtSource/Generated/blender/issue-131/v2/preview_top.png",
+          "bytes": 265744,
+          "sha256": "33a55160e34173c93919a6218715271124500d41f81b79a6157b837d5e4b74dd"
+        },
+        {
+          "path": "ArtSource/Generated/blender/issue-131/v2/provenance.json",
+          "bytes": 11217,
+          "sha256": "6e9278c87c76a308a00dec801bc40cc4c9e96b34a635705dd23ce6cb07397a91"
+        },
+        {
+          "path": "ArtSource/Generated/blender/issue-131/v2/source-bundle.zip",
+          "bytes": 1288956,
+          "sha256": "e50f45706a90b40d308de79c2ce12c2521b4bd3d54ac6f2a035edd8abbb92542"
+        },
+        {
+          "path": "ArtSource/Generated/blender/issue-131/v2/unreal-handoff.json",
+          "bytes": 1872,
+          "sha256": "42ae3877d3d4e55246340535c89ef9094ea463017c117aa0d026850f86b526a6"
+        },
+        {
+          "path": "ArtSource/Generated/blender/issue-131/v2/validation.json",
+          "bytes": 13860,
+          "sha256": "794783ab43f9cd43fd73d3b7101b666ef505949058d261de4cd44c149903282f"
+        }
+      ],
+      "meshDestination": "/Game/CitySim/Art/Beach/Meshes/SM_Scenery_SpiralShell_A",
+      "materialDestination": "/Game/CitySim/Art/Beach/Materials/MI_BeachSpiralShell",
+      "materialSlot": "Shell",
+      "linearColor": [
+        0.7200000286102295,
+        0.675000011920929,
+        0.5899999737739563,
+        1.0
+      ],
+      "roughness": 0.79,
+      "collision": "none",
+      "lods": 1,
+      "scale": "metric FBX to centimetres, imported scale1; actual dimensions verified"
+    },
+    {
+      "dimensions": [
+        0.3,
+        0.29,
+        0.045
+      ],
+      "head": "7ca9bcc0b1df56389a8746f3e1516576fab17f76",
+      "sourcePR": 139,
+      "branch": "codex/asset-blender-132-v1",
+      "issue": 132,
+      "integration": 140,
+      "version": 1,
+      "name": "Starfish",
+      "sourceDirectory": "ArtSource/Generated/blender/issue-132/v1",
+      "approvalSha256": "c003caa232c0a7d18f9bb97e4f92c5f86954bfc889be086f90eaacdff1b679a0",
+      "fbxSha256": "294ef9728de531ba459f3b9f212b27c437fa760617e3796f8405ff8b28184624",
+      "blendSha256": "69517afb43aa23da7912f63d1372f1f3bbc35a802c77be6e4f2482a6d1ad534f",
+      "triangles": 60,
+      "files": [
+        {
+          "path": "ArtSource/Generated/blender/issue-132/v1/INTEGRATION.md",
+          "bytes": 340,
+          "sha256": "97edeb3947cdbbcf7ae5172ccac6b8e5a3ce66d81b79c80129a4d27725831933"
+        },
+        {
+          "path": "ArtSource/Generated/blender/issue-132/v1/approval.json",
+          "bytes": 1769,
+          "sha256": "c003caa232c0a7d18f9bb97e4f92c5f86954bfc889be086f90eaacdff1b679a0"
+        },
+        {
+          "path": "ArtSource/Generated/blender/issue-132/v1/asset.blend",
+          "bytes": 100157,
+          "sha256": "69517afb43aa23da7912f63d1372f1f3bbc35a802c77be6e4f2482a6d1ad534f"
+        },
+        {
+          "path": "ArtSource/Generated/blender/issue-132/v1/asset.fbx",
+          "bytes": 17788,
+          "sha256": "294ef9728de531ba459f3b9f212b27c437fa760617e3796f8405ff8b28184624"
+        },
+        {
+          "path": "ArtSource/Generated/blender/issue-132/v1/preview.png",
+          "bytes": 94453,
+          "sha256": "8656dffdb7c76d00892351a76ea1403d62eecc9823fe6db9050614cacda76d51"
+        },
+        {
+          "path": "ArtSource/Generated/blender/issue-132/v1/preview_top.png",
+          "bytes": 94096,
+          "sha256": "e98b9acd027b15ab1acd06aeb39ec641e41732c5d5f4c1e5fd90a72303a93150"
+        },
+        {
+          "path": "ArtSource/Generated/blender/issue-132/v1/provenance.json",
+          "bytes": 1569,
+          "sha256": "4adaa3eb95ebe2d3bf5ffc6c2bf95332b50d0cf2cbd4276d080566376772960a"
+        },
+        {
+          "path": "ArtSource/Generated/blender/issue-132/v1/source-bundle.zip",
+          "bytes": 303408,
+          "sha256": "2ff0331d003a767affddb62f610ed9a599b3fcfa34cceddbcac4d14c93aaba2b"
+        },
+        {
+          "path": "ArtSource/Generated/blender/issue-132/v1/unreal-handoff.json",
+          "bytes": 1715,
+          "sha256": "d5ba4a14f9595f659da77ba8dbbe6ff3d0c3cec237fa5e3e4f75d52dc51eaead"
+        },
+        {
+          "path": "ArtSource/Generated/blender/issue-132/v1/validation.json",
+          "bytes": 2956,
+          "sha256": "987e56cb50485800c01a18a46c2a4bd7ebdf4dc6f77293b7cc9fbbaa07cc15b5"
+        }
+      ],
+      "meshDestination": "/Game/CitySim/Art/Beach/Meshes/SM_Scenery_Starfish_A",
+      "materialDestination": "/Game/CitySim/Art/Beach/Materials/MI_BeachStarfish",
+      "materialSlot": "Starfish",
+      "linearColor": [
+        0.5699999928474426,
+        0.3199999928474426,
+        0.11500000208616257,
+        1.0
+      ],
+      "roughness": 0.83,
+      "collision": "none",
+      "lods": 1,
+      "scale": "metric FBX to centimetres, imported scale1; actual dimensions verified"
+    },
+    {
+      "dimensions": [
+        1.2,
+        0.32,
+        0.22
+      ],
+      "head": "e0a9a2d190cc039f3faa7c6401558097941f7551",
+      "sourcePR": 141,
+      "branch": "codex/asset-blender-133-v1",
+      "issue": 133,
+      "integration": 142,
+      "version": 1,
+      "name": "Driftwood",
+      "sourceDirectory": "ArtSource/Generated/blender/issue-133/v1",
+      "approvalSha256": "d1a1e013ee5f684d6cdec2e4f8716c7268d775fecdf23306fb3c3991aef85138",
+      "fbxSha256": "494407c2a341bb744f23e1eacb1090e7e56f9a7ac19cb528c332116ba98a2231",
+      "blendSha256": "5465d200cee94759abb29a7b16ad4394db2fc6d5594586b447172fc2a9989b6c",
+      "triangles": 92,
+      "files": [
+        {
+          "path": "ArtSource/Generated/blender/issue-133/v1/INTEGRATION.md",
+          "bytes": 340,
+          "sha256": "97edeb3947cdbbcf7ae5172ccac6b8e5a3ce66d81b79c80129a4d27725831933"
+        },
+        {
+          "path": "ArtSource/Generated/blender/issue-133/v1/approval.json",
+          "bytes": 1773,
+          "sha256": "d1a1e013ee5f684d6cdec2e4f8716c7268d775fecdf23306fb3c3991aef85138"
+        },
+        {
+          "path": "ArtSource/Generated/blender/issue-133/v1/asset.blend",
+          "bytes": 100255,
+          "sha256": "5465d200cee94759abb29a7b16ad4394db2fc6d5594586b447172fc2a9989b6c"
+        },
+        {
+          "path": "ArtSource/Generated/blender/issue-133/v1/asset.fbx",
+          "bytes": 17836,
+          "sha256": "494407c2a341bb744f23e1eacb1090e7e56f9a7ac19cb528c332116ba98a2231"
+        },
+        {
+          "path": "ArtSource/Generated/blender/issue-133/v1/preview.png",
+          "bytes": 247167,
+          "sha256": "f1dd52fd74df3b4886af6dd936e509b375433c1d3d3399ac5ab27b44218d4030"
+        },
+        {
+          "path": "ArtSource/Generated/blender/issue-133/v1/preview_top.png",
+          "bytes": 252623,
+          "sha256": "84c7a19c73a81e1a0540752e57ca3ec76614c6e35a971e71c3c701007a2555c5"
+        },
+        {
+          "path": "ArtSource/Generated/blender/issue-133/v1/provenance.json",
+          "bytes": 10368,
+          "sha256": "77be3f0b994ad01e2f4ea6d5ddb3506bf1274dfc49b1b35b619c4b79d6db5f69"
+        },
+        {
+          "path": "ArtSource/Generated/blender/issue-133/v1/source-bundle.zip",
+          "bytes": 623667,
+          "sha256": "1cbbe4147b1a89aeffd5d146c13f8ad654c5e37912fb60f61360d481462dc661"
+        },
+        {
+          "path": "ArtSource/Generated/blender/issue-133/v1/unreal-handoff.json",
+          "bytes": 1719,
+          "sha256": "5e03036052fa393af03a4d5c7d9a0eead4922f783a9ae0e46de2bc241014a70c"
+        },
+        {
+          "path": "ArtSource/Generated/blender/issue-133/v1/validation.json",
+          "bytes": 12714,
+          "sha256": "e17a274f5697d8a8b946f7291960a213ea2081307b600d88c22ed5ee579c4ec5"
+        }
+      ],
+      "meshDestination": "/Game/CitySim/Art/Beach/Meshes/SM_Scenery_Driftwood_A",
+      "materialDestination": "/Game/CitySim/Art/Beach/Materials/MI_BeachDriftwood",
+      "materialSlot": "Driftwood",
+      "linearColor": [
+        0.4300000071525574,
+        0.36500000953674316,
+        0.2849999964237213,
+        1.0
+      ],
+      "roughness": 0.88,
+      "collision": "none",
+      "lods": 1,
+      "scale": "metric FBX to centimetres, imported scale1; actual dimensions verified"
+    },
+    {
+      "dimensions": [
+        0.45,
+        0.35,
+        0.45
+      ],
+      "head": "71ec91c688d2bd4f30b0f18000cb85bd6723a36a",
+      "sourcePR": 143,
+      "branch": "codex/asset-blender-134-v1",
+      "issue": 134,
+      "integration": 144,
+      "version": 1,
+      "name": "DuneGrass",
+      "sourceDirectory": "ArtSource/Generated/blender/issue-134/v1",
+      "approvalSha256": "8838b18b8634eba62c82cea92e27a342e35e1fccb3013f3e6601ebe67d7805b0",
+      "fbxSha256": "1a0b52c260e1722b2c9120dd9e1909587a789e1a29810c3f7126e7a5a1db6a51",
+      "blendSha256": "e82a13b13dac2a232f7ee0bd68996131082675e8d4fe20a75c109fa23be9310e",
+      "triangles": 70,
+      "files": [
+        {
+          "path": "ArtSource/Generated/blender/issue-134/v1/INTEGRATION.md",
+          "bytes": 340,
+          "sha256": "97edeb3947cdbbcf7ae5172ccac6b8e5a3ce66d81b79c80129a4d27725831933"
+        },
+        {
+          "path": "ArtSource/Generated/blender/issue-134/v1/approval.json",
+          "bytes": 1621,
+          "sha256": "8838b18b8634eba62c82cea92e27a342e35e1fccb3013f3e6601ebe67d7805b0"
+        },
+        {
+          "path": "ArtSource/Generated/blender/issue-134/v1/asset.blend",
+          "bytes": 100325,
+          "sha256": "e82a13b13dac2a232f7ee0bd68996131082675e8d4fe20a75c109fa23be9310e"
+        },
+        {
+          "path": "ArtSource/Generated/blender/issue-134/v1/asset.fbx",
+          "bytes": 18124,
+          "sha256": "1a0b52c260e1722b2c9120dd9e1909587a789e1a29810c3f7126e7a5a1db6a51"
+        },
+        {
+          "path": "ArtSource/Generated/blender/issue-134/v1/preview.png",
+          "bytes": 159928,
+          "sha256": "d9f20ce9b70c09434c81644b3a62c7420ca33d8714c2a6b766ded6dccef58afe"
+        },
+        {
+          "path": "ArtSource/Generated/blender/issue-134/v1/provenance.json",
+          "bytes": 11387,
+          "sha256": "6859205df8600ccbdbce0a75df649fde9a89627fedbb51cf66a9854e13cfea02"
+        },
+        {
+          "path": "ArtSource/Generated/blender/issue-134/v1/source-bundle.zip",
+          "bytes": 283111,
+          "sha256": "033bc3acb67b50238b043b93e06d009bfa142eee3f3772edec5c0c3718a19420"
+        },
+        {
+          "path": "ArtSource/Generated/blender/issue-134/v1/unreal-handoff.json",
+          "bytes": 1567,
+          "sha256": "cfbde8d9600e33215fcd8ad7d92a1eab2ae32a91d644b6d6cce6650ebedbcc0f"
+        },
+        {
+          "path": "ArtSource/Generated/blender/issue-134/v1/validation.json",
+          "bytes": 14310,
+          "sha256": "c3b3db7bb950360a825bf6dde4b391c962ead46b9774b5e351ef94d90643e150"
+        }
+      ],
+      "meshDestination": "/Game/CitySim/Art/Beach/Meshes/SM_Scenery_DuneGrass_A",
+      "materialDestination": "/Game/CitySim/Art/Beach/Materials/MI_BeachDuneGrass",
+      "materialSlot": "DuneGrass",
+      "linearColor": [
+        0.28999999165534973,
+        0.35499998927116394,
+        0.23499999940395355,
+        1.0
+      ],
+      "roughness": 0.88,
+      "collision": "none",
+      "lods": 1,
+      "scale": "metric FBX to centimetres, imported scale1; actual dimensions verified"
+    }
+  ],
+  "totalSourceTriangles": 428,
+  "placement": "Cosmetic deterministic sparse clusters on shoreline ground, five ISM pools, no saved authority/per-prop tick/physics; reviewed natural size retained."
+}

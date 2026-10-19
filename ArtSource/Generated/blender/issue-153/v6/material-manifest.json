@@ -1,0 +1,155 @@
+{
+  "regions": [
+    "BuildingFacade",
+    "Concrete",
+    "RoofService",
+    "EquipmentMetal",
+    "WindowAccent"
+  ],
+  "textures": [
+    {
+      "region": "RoofService",
+      "image": "CivicAsphalt_BaseColor.png.001",
+      "source": "/repo/ArtSource/Textures/CivicSurfaces/CivicAsphalt_BaseColor.png",
+      "bundle": "/output/textures/CivicAsphalt_BaseColor.png",
+      "sha256": "85e2cfe619a74da7fe74ad0c6439141f4edb63e5085208c4cfd620c5e1d988fa",
+      "dimensions": [
+        512,
+        512
+      ],
+      "channels": 4,
+      "colorspace": "sRGB",
+      "meaning": "BaseColor"
+    },
+    {
+      "region": "RoofService",
+      "image": "CivicAsphalt_Normal.png.001",
+      "source": "/repo/ArtSource/Textures/CivicSurfaces/CivicAsphalt_Normal.png",
+      "bundle": "/output/textures/CivicAsphalt_Normal.png",
+      "sha256": "e6f9e8f0257ddbc33b012b72f9446a2c8a3679153488b4bbc67ca6e50be153fd",
+      "dimensions": [
+        512,
+        512
+      ],
+      "channels": 4,
+      "colorspace": "Non-Color",
+      "meaning": "Normal"
+    },
+    {
+      "region": "RoofService",
+      "image": "CivicAsphalt_ORM.png.001",
+      "source": "/repo/ArtSource/Textures/CivicSurfaces/CivicAsphalt_ORM.png",
+      "bundle": "/output/textures/CivicAsphalt_ORM.png",
+      "sha256": "6b06b777944f76046d0f51131cdec7cca658efac60560c95ab1e854c37189ab4",
+      "dimensions": [
+        512,
+        512
+      ],
+      "channels": 4,
+      "colorspace": "Non-Color",
+      "meaning": "ORM"
+    },
+    {
+      "region": "EquipmentMetal",
+      "image": "CityMechanical_BaseColor.png.001",
+      "source": "/repo/ArtSource/Textures/BuildingSurfaces/CityMechanical_BaseColor.png",
+      "bundle": "/output/textures/CityMechanical_BaseColor.png",
+      "sha256": "ea75f9ab4911ad7ecf6a5e0ff5688fdc2c07ed52c3cad007ac58e8d06fe4e5ae",
+      "dimensions": [
+        512,
+        512
+      ],
+      "channels": 4,
+      "colorspace": "sRGB",
+      "meaning": "BaseColor"
+    },
+    {
+      "region": "EquipmentMetal",
+      "image": "CityMechanical_Normal.png.001",
+      "source": "/repo/ArtSource/Textures/BuildingSurfaces/CityMechanical_Normal.png",
+      "bundle": "/output/textures/CityMechanical_Normal.png",
+      "sha256": "7a456d3f708d3ee42a7dfb830ac87f95ce27aeeea0e56ac444daca5da510231e",
+      "dimensions": [
+        512,
+        512
+      ],
+      "channels": 4,
+      "colorspace": "Non-Color",
+      "meaning": "Normal"
+    },
+    {
+      "region": "EquipmentMetal",
+      "image": "CityMechanical_ORM.png.001",
+      "source": "/repo/ArtSource/Textures/BuildingSurfaces/CityMechanical_ORM.png",
+      "bundle": "/output/textures/CityMechanical_ORM.png",
+      "sha256": "0e08a253e6c30a15e3675921cab4958c0cdcf088f23f05b5fcc1eb3f87dbec98",
+      "dimensions": [
+        512,
+        512
+      ],
+      "channels": 4,
+      "colorspace": "Non-Color",
+      "meaning": "ORM"
+    }
+  ],
+  "orm_channels": {
+    "R": "AO",
+    "G": "roughness",
+    "B": "metallic"
+  },
+  "native_reconstruction": "FBX does not transfer shader graphs. Reconstruct UV scale 0.5, BaseColor sRGB, tangent normal linear strength .35, ORM linear G roughness and EquipmentMetal B metallic. AO supplied in R, not connected in Blender. Concrete retains editable object-space noise bump; remaining regions use editable Principled constants.",
+  "new_texture_bakes": [],
+  "source_policy": "Existing maps copied read-only with SHA256 provenance and packed into blend; no repository writes.",
+  "material_parameters": {
+    "Concrete": {
+      "base_color": [
+        0.5600000023841858,
+        0.5799999833106995,
+        0.550000011920929,
+        1.0
+      ],
+      "roughness": 0.8299999833106995,
+      "metallic": 0.0
+    },
+    "BuildingFacade": {
+      "base_color": [
+        0.36000001430511475,
+        0.4300000071525574,
+        0.4300000071525574,
+        1.0
+      ],
+      "roughness": 0.6800000071525574,
+      "metallic": 0.0
+    },
+    "RoofService": {
+      "base_color": [
+        0.10499999672174454,
+        0.12999999523162842,
+        0.15000000596046448,
+        1.0
+      ],
+      "roughness": 0.7799999713897705,
+      "metallic": 0.0
+    },
+    "EquipmentMetal": {
+      "base_color": [
+        0.23999999463558197,
+        0.3400000035762787,
+        0.3400000035762787,
+        1.0
+      ],
+      "roughness": 0.33000001311302185,
+      "metallic": 0.699999988079071
+    },
+    "WindowAccent": {
+      "base_color": [
+        0.03500000014901161,
+        0.10000000149011612,
+        0.14000000059604645,
+        1.0
+      ],
+      "roughness": 0.2199999988079071,
+      "metallic": 0.25
+    }
+  }
+}

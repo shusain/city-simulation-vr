@@ -1,0 +1,21 @@
+{
+  "issue": 150,
+  "pullRequest": 154,
+  "userApproved": true,
+  "approvedHead": "63db8fbf78522d54edd6c6738564a95e20b9aefa",
+  "mergeCommit": "1fa985459a1b319bd8e653c82f9d90f100af9fc5",
+  "approvedAndMergedTree": "b3a50232061d1ea00c74c508c6ea24fab5a721c0",
+  "sourceDroneBuild": 184,
+  "sourceStatus": "passed",
+  "sourceOfflineChecks": 31,
+  "sourcePythonCases": 34,
+  "sourceEditorSeconds": 143.15,
+  "sourceExactNativeCases": 7,
+  "mergedMainDroneBuild": 187,
+  "mergedMainStatus": "passed",
+  "issue150RemainsOpen": true,
+  "mergedMainOfflineChecks": 31,
+  "mergedMainOfflineExitCode": 0,
+  "mergedMainEditorSeconds": 156.76,
+  "mergedMainExactNativeCases": 7
+}

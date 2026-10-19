@@ -1,0 +1,30 @@
+[
+  {
+    "density": "Medium",
+    "source": "C:\\Users\\shaun\\.codex\\worktrees\\d122-newspaper-storefronts\\city-sim-builder\\ArtSource\\Exports\\BuildingWindowStudy\\SM_CommercialMedium_StoreRepairs.fbx",
+    "source_sha256": "4a67df88e2be6f43034bb8c4a208c5f4ca44ccaf473543d3dd112645c59b1d0c",
+    "triangles": 1682,
+    "regular_panes": 11,
+    "excluded_glass_count": 36,
+    "pane_cm": [
+      220,
+      300
+    ],
+    "regular_pane_uvs": "existing normalized0..1; unchanged",
+    "full_receipt": "Artifacts/D122/DensityRooms/DensitySourceInspection.json"
+  },
+  {
+    "density": "High",
+    "source": "C:\\Users\\shaun\\.codex\\worktrees\\d122-newspaper-storefronts\\city-sim-builder\\ArtSource\\Exports\\BuildingWindowStudy\\SM_CommercialHigh_StoreRepairs.fbx",
+    "source_sha256": "b06d53615aa2377aa874b291bf5255f97a398b0b50c090eacc1c002bddf589b7",
+    "triangles": 2906,
+    "regular_panes": 11,
+    "excluded_glass_count": 72,
+    "pane_cm": [
+      220,
+      300
+    ],
+    "regular_pane_uvs": "existing normalized0..1; unchanged",
+    "full_receipt": "Artifacts/D122/DensityRooms/DensitySourceInspection.json"
+  }
+]

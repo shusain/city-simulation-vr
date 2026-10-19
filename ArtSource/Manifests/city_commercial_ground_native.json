@@ -1,0 +1,2413 @@
+{
+  "issue": 125,
+  "files": [
+    {
+      "target": "/Game/CitySim/Art/CommercialGround/SM_CommercialGround_LowDensity_Shop_A",
+      "file": "CitySimVR/Content/CitySim/Art/CommercialGround/SM_CommercialGround_LowDensity_Shop_A.uasset",
+      "sha256": "aba7a3f33e985e3f5e52a3567f71c99c8936cb34a17e8eb524e114c60cb5cab4",
+      "bytes": 34716,
+      "triangles": 704,
+      "slots": [
+        "CommercialBrick",
+        "Roof",
+        "RoofMembrane",
+        "StoreSignTall",
+        "BuildingWindowOpaque"
+      ],
+      "dimensions_cm": [
+        1543.0,
+        1541.5000610351562,
+        1270.0
+      ],
+      "entry_native_cm": [
+        0,
+        672,
+        19
+      ],
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "source_sha256": "2eb78e5a8917e17dd65ba5207d8fb1c0df7470eaca8c5051f0b6d9bc0ab43d59"
+    },
+    {
+      "target": "/Game/CitySim/Art/CommercialGround/SM_CommercialGround_LowDensity_Shop_A_Damaged",
+      "file": "CitySimVR/Content/CitySim/Art/CommercialGround/SM_CommercialGround_LowDensity_Shop_A_Damaged.uasset",
+      "sha256": "8a1e3c0d5e8ff7d7babf31a2bfe1ab15b11c6ccf2f5c6d57567770966d21b75c",
+      "bytes": 35370,
+      "triangles": 704,
+      "slots": [
+        "CommercialBrick",
+        "Roof",
+        "RoofMembrane",
+        "StoreSignTall",
+        "BuildingWindowOpaque"
+      ],
+      "dimensions_cm": [
+        1543.0,
+        1541.5000610351562,
+        1039.01171875
+      ],
+      "entry_native_cm": [
+        0,
+        672,
+        19
+      ],
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "source_sha256": "550002cde60e89ccb87dcef85f8efc014edbacca43a828e486b249f4901c708e"
+    },
+    {
+      "target": "/Game/CitySim/Art/CommercialGround/SM_CommercialGround_LowDensity_Shop_B",
+      "file": "CitySimVR/Content/CitySim/Art/CommercialGround/SM_CommercialGround_LowDensity_Shop_B.uasset",
+      "sha256": "f946b1c3b57f3f6f24ccdc913199597a9744a51ddee2420bee47f747c5f5635d",
+      "bytes": 38680,
+      "triangles": 874,
+      "slots": [
+        "CommercialBrick",
+        "Roof",
+        "RoofMembrane",
+        "StoreSignTall",
+        "BuildingWindowOpaque"
+      ],
+      "dimensions_cm": [
+        1543.0,
+        1564.5001220703125,
+        1200.0
+      ],
+      "entry_native_cm": [
+        0,
+        672,
+        19
+      ],
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "source_sha256": "19884f873710a6f47aa13e6e97af2c5d43ed16f9898c45831a3721530263a50a"
+    },
+    {
+      "target": "/Game/CitySim/Art/CommercialGround/SM_CommercialGround_LowDensity_Shop_B_Damaged",
+      "file": "CitySimVR/Content/CitySim/Art/CommercialGround/SM_CommercialGround_LowDensity_Shop_B_Damaged.uasset",
+      "sha256": "468cb20bc17896e803f0f9fdb7cff60eb0a984eba4b1d5c1fe44329b211b08c0",
+      "bytes": 39543,
+      "triangles": 874,
+      "slots": [
+        "CommercialBrick",
+        "Roof",
+        "RoofMembrane",
+        "StoreSignTall",
+        "BuildingWindowOpaque"
+      ],
+      "dimensions_cm": [
+        1543.0,
+        1564.5001220703125,
+        1017.6854858398438
+      ],
+      "entry_native_cm": [
+        0,
+        672,
+        19
+      ],
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "source_sha256": "0a4657ffd3feb1ee685dcdbbf9141f6059f46af7e3e124412e01ff80a4693f70"
+    },
+    {
+      "target": "/Game/CitySim/Art/CommercialGround/SM_CommercialGround_LowDensity_Shop_C",
+      "file": "CitySimVR/Content/CitySim/Art/CommercialGround/SM_CommercialGround_LowDensity_Shop_C.uasset",
+      "sha256": "6462aac680d94050d9d66ec05de2f22d2507ce998be6a3850a411a3a857f4833",
+      "bytes": 35585,
+      "triangles": 742,
+      "slots": [
+        "CommercialBrick",
+        "Roof",
+        "RoofMembrane",
+        "StoreSignTall",
+        "BuildingWindowOpaque"
+      ],
+      "dimensions_cm": [
+        1543.0,
+        1564.0001220703125,
+        1160.0
+      ],
+      "entry_native_cm": [
+        0,
+        672,
+        19
+      ],
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "source_sha256": "9439e9f1ab30c1e6373c2652038aaf0ba24c0827a36ece0e47d3dafb7fc4c9f9"
+    },
+    {
+      "target": "/Game/CitySim/Art/CommercialGround/SM_CommercialGround_LowDensity_Shop_C_Damaged",
+      "file": "CitySimVR/Content/CitySim/Art/CommercialGround/SM_CommercialGround_LowDensity_Shop_C_Damaged.uasset",
+      "sha256": "db0eaff25dd397a94bf5166f0c4f6db1885a5dbaf4ea7808d7d7dc5709c5e0af",
+      "bytes": 36571,
+      "triangles": 742,
+      "slots": [
+        "CommercialBrick",
+        "Roof",
+        "RoofMembrane",
+        "StoreSignTall",
+        "BuildingWindowOpaque"
+      ],
+      "dimensions_cm": [
+        1543.0,
+        1564.0001220703125,
+        997.5684814453125
+      ],
+      "entry_native_cm": [
+        0,
+        672,
+        19
+      ],
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "source_sha256": "785ecfb46fede617232bff16a2830320f7253d2a38b6f0ff14a27451220fdb54"
+    },
+    {
+      "target": "/Game/CitySim/Art/CommercialGround/SM_CommercialGround_LowDensity_Shop_D",
+      "file": "CitySimVR/Content/CitySim/Art/CommercialGround/SM_CommercialGround_LowDensity_Shop_D.uasset",
+      "sha256": "066a6f2e14603f95113a682ea167a918994d21f656696e942c6a53b5c00cdf0e",
+      "bytes": 37158,
+      "triangles": 794,
+      "slots": [
+        "CommercialBrick",
+        "Roof",
+        "RoofMembrane",
+        "StoreSignTall",
+        "BuildingWindowOpaque"
+      ],
+      "dimensions_cm": [
+        1543.0,
+        1566.0000610351562,
+        1200.0
+      ],
+      "entry_native_cm": [
+        0,
+        720,
+        19
+      ],
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "source_sha256": "cdf62e15e083f6e562488b3eeed89d3c230d291fc960ded4cbc5986bcb4d8b91"
+    },
+    {
+      "target": "/Game/CitySim/Art/CommercialGround/SM_CommercialGround_LowDensity_Shop_D_Damaged",
+      "file": "CitySimVR/Content/CitySim/Art/CommercialGround/SM_CommercialGround_LowDensity_Shop_D_Damaged.uasset",
+      "sha256": "db9c90f22596b8928b58b5371956c35b4db7b96ea474c3322d0a5a94843e4894",
+      "bytes": 37780,
+      "triangles": 794,
+      "slots": [
+        "CommercialBrick",
+        "Roof",
+        "RoofMembrane",
+        "StoreSignTall",
+        "BuildingWindowOpaque"
+      ],
+      "dimensions_cm": [
+        1543.0,
+        1566.0000610351562,
+        948.4351806640625
+      ],
+      "entry_native_cm": [
+        0,
+        720,
+        19
+      ],
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "source_sha256": "8b3ff746ce95ce17daab3d1ec4f1853dfc73d79670fc06b796bdd347f713479d"
+    },
+    {
+      "target": "/Game/CitySim/Art/CommercialGround/SM_CommercialGround_Building_Shop_A",
+      "file": "CitySimVR/Content/CitySim/Art/CommercialGround/SM_CommercialGround_Building_Shop_A.uasset",
+      "sha256": "0f48f6d2811828de861ee9f6ca181b639ffef4bebedda16951bf93abb4b122ad",
+      "bytes": 29946,
+      "triangles": 578,
+      "slots": [
+        "CommercialBrick",
+        "Roof",
+        "RoofMembrane",
+        "StoreSignTall",
+        "BuildingWindowOpaque"
+      ],
+      "dimensions_cm": [
+        1543.0,
+        1541.5000610351562,
+        1200.0
+      ],
+      "entry_native_cm": [
+        0,
+        660,
+        0
+      ],
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "source_sha256": "64bdd347a4924db118fb7af74157541a825267671fdae9168bf7821f6cfd44e4"
+    },
+    {
+      "target": "/Game/CitySim/Art/CommercialGround/SM_CommercialGround_Building_Shop_Medium_A",
+      "file": "CitySimVR/Content/CitySim/Art/CommercialGround/SM_CommercialGround_Building_Shop_Medium_A.uasset",
+      "sha256": "f58b46de547d9ba115ca9b1e2b258b1afc0eaa6c18c55f0183e7bfca9deac2cc",
+      "bytes": 57913,
+      "triangles": 1790,
+      "slots": [
+        "CommercialBrick",
+        "Roof",
+        "RoofMembrane",
+        "StoreSignWide",
+        "BuildingWindowOpaque"
+      ],
+      "dimensions_cm": [
+        1543.0,
+        1541.5000610351562,
+        2300.0
+      ],
+      "entry_native_cm": [
+        0,
+        660,
+        0
+      ],
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "source_sha256": "9908e9aa08cb62060882f0bae0a49857799d4d7639f3c89a79e69d6a0733782a"
+    },
+    {
+      "target": "/Game/CitySim/Art/CommercialGround/SM_CommercialGround_Building_Shop_High_A",
+      "file": "CitySimVR/Content/CitySim/Art/CommercialGround/SM_CommercialGround_Building_Shop_High_A.uasset",
+      "sha256": "2a47f5aacfc74a77723c1197999272685e7112b1fa318bb292748e8724f20fcf",
+      "bytes": 82500,
+      "triangles": 3014,
+      "slots": [
+        "CommercialBrick",
+        "Roof",
+        "RoofMembrane",
+        "StoreSignWide",
+        "BuildingWindowOpaque"
+      ],
+      "dimensions_cm": [
+        1543.0,
+        1541.5000610351562,
+        3900.0
+      ],
+      "entry_native_cm": [
+        0,
+        660,
+        0
+      ],
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "source_sha256": "9582b752fb2ca61972dbf3b9d05c4457c039267f1a484884e10c3240b3a7cc21"
+    },
+    {
+      "target": "/Game/CitySim/Art/CommercialGround/SM_CommercialGround_CommercialLow_StoreMarket",
+      "file": "CitySimVR/Content/CitySim/Art/CommercialGround/SM_CommercialGround_CommercialLow_StoreMarket.uasset",
+      "sha256": "2317486c2228bc155772436790a085c8fe455822963afb8d539543de063b7e2d",
+      "bytes": 29997,
+      "triangles": 578,
+      "slots": [
+        "CommercialBrick",
+        "Roof",
+        "RoofMembrane",
+        "StoreSignTall",
+        "BuildingWindowOpaque"
+      ],
+      "dimensions_cm": [
+        1543.0,
+        1541.5000610351562,
+        1200.0
+      ],
+      "entry_native_cm": [
+        0,
+        660,
+        0
+      ],
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "source_sha256": "fe51882a8edf0a6b56bcfccb639c142805978392ea3f6b9b542a67d16c852047"
+    },
+    {
+      "target": "/Game/CitySim/Art/CommercialGround/SM_CommercialGround_CommercialLow_StoreBakery",
+      "file": "CitySimVR/Content/CitySim/Art/CommercialGround/SM_CommercialGround_CommercialLow_StoreBakery.uasset",
+      "sha256": "4d8f493b9032a4d34335f03ec18caf07d4561b90b132458f8b124756e57aebd0",
+      "bytes": 29999,
+      "triangles": 578,
+      "slots": [
+        "CommercialBrick",
+        "Roof",
+        "RoofMembrane",
+        "StoreSignTall",
+        "BuildingWindowOpaque"
+      ],
+      "dimensions_cm": [
+        1543.0,
+        1541.5000610351562,
+        1200.0
+      ],
+      "entry_native_cm": [
+        0,
+        660,
+        0
+      ],
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "source_sha256": "10fdc61757064ff5afeb237c7708e3d11ee740fc9f09ec817dfcd7825e0feb46"
+    },
+    {
+      "target": "/Game/CitySim/Art/CommercialGround/SM_CommercialGround_CommercialLow_StoreCafe",
+      "file": "CitySimVR/Content/CitySim/Art/CommercialGround/SM_CommercialGround_CommercialLow_StoreCafe.uasset",
+      "sha256": "c35b99bee6c31cdc2d35e5341bea5624a4a48c2f8c45d98f052e6084f58022f9",
+      "bytes": 29986,
+      "triangles": 578,
+      "slots": [
+        "CommercialBrick",
+        "Roof",
+        "RoofMembrane",
+        "StoreSignTall",
+        "BuildingWindowOpaque"
+      ],
+      "dimensions_cm": [
+        1543.0,
+        1541.5000610351562,
+        1200.0
+      ],
+      "entry_native_cm": [
+        0,
+        660,
+        0
+      ],
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "source_sha256": "dfdd6b8cea4419dd867e2bf04af247e706c9976598ce26a87e05b39cd709349c"
+    },
+    {
+      "target": "/Game/CitySim/Art/CommercialGround/SM_CommercialGround_CommercialLow_StoreBooks",
+      "file": "CitySimVR/Content/CitySim/Art/CommercialGround/SM_CommercialGround_CommercialLow_StoreBooks.uasset",
+      "sha256": "fab81eccc4deb14a28817e33381118cee73c568599cce9ce068af15fea48c720",
+      "bytes": 29994,
+      "triangles": 578,
+      "slots": [
+        "CommercialBrick",
+        "Roof",
+        "RoofMembrane",
+        "StoreSignTall",
+        "BuildingWindowOpaque"
+      ],
+      "dimensions_cm": [
+        1543.0,
+        1541.5000610351562,
+        1200.0
+      ],
+      "entry_native_cm": [
+        0,
+        660,
+        0
+      ],
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "source_sha256": "8a213ea1952d7e0298cc8249739e7c0b7ba5a6e5db5fa0982144c922a377595e"
+    },
+    {
+      "target": "/Game/CitySim/Art/CommercialGround/SM_CommercialGround_CommercialLow_StorePharmacy",
+      "file": "CitySimVR/Content/CitySim/Art/CommercialGround/SM_CommercialGround_CommercialLow_StorePharmacy.uasset",
+      "sha256": "8022e9a4c19fc34c86c2e431e6aedc0ae78fe75601572e81689976be724c77a2",
+      "bytes": 30018,
+      "triangles": 578,
+      "slots": [
+        "CommercialBrick",
+        "Roof",
+        "RoofMembrane",
+        "StoreSignTall",
+        "BuildingWindowOpaque"
+      ],
+      "dimensions_cm": [
+        1543.0,
+        1541.5000610351562,
+        1200.0
+      ],
+      "entry_native_cm": [
+        0,
+        660,
+        0
+      ],
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "source_sha256": "2d842280d820d2d01264e16397c26bf1e96677d1f93d24109389f4f28783d2ca"
+    },
+    {
+      "target": "/Game/CitySim/Art/CommercialGround/SM_CommercialGround_CommercialLow_StoreRepairs",
+      "file": "CitySimVR/Content/CitySim/Art/CommercialGround/SM_CommercialGround_CommercialLow_StoreRepairs.uasset",
+      "sha256": "15719d6b6750d24f22682a0e2d25f3aad26aad63a5550417528f0ad39e284ec9",
+      "bytes": 30012,
+      "triangles": 578,
+      "slots": [
+        "CommercialBrick",
+        "Roof",
+        "RoofMembrane",
+        "StoreSignTall",
+        "BuildingWindowOpaque"
+      ],
+      "dimensions_cm": [
+        1543.0,
+        1541.5000610351562,
+        1200.0
+      ],
+      "entry_native_cm": [
+        0,
+        660,
+        0
+      ],
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "source_sha256": "777b4dfd1ef98b9177e30f6fa0632c4353a4b4065e49d8a48d43631809f8a10f"
+    },
+    {
+      "target": "/Game/CitySim/Art/CommercialGround/SM_CommercialGround_CommercialLow_StoreOutfitters",
+      "file": "CitySimVR/Content/CitySim/Art/CommercialGround/SM_CommercialGround_CommercialLow_StoreOutfitters.uasset",
+      "sha256": "b27e1cb641703b0bb49ad18f5a253d1472094174fd50b5508205b8e0dc535fa8",
+      "bytes": 30044,
+      "triangles": 578,
+      "slots": [
+        "CommercialBrick",
+        "Roof",
+        "RoofMembrane",
+        "StoreSignTall",
+        "BuildingWindowOpaque"
+      ],
+      "dimensions_cm": [
+        1543.0,
+        1541.5000610351562,
+        1200.0
+      ],
+      "entry_native_cm": [
+        0,
+        660,
+        0
+      ],
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "source_sha256": "28ce383a753e5f0facabd1225c71ffcb699602724b2c75064615698692b85d67"
+    },
+    {
+      "target": "/Game/CitySim/Art/CommercialGround/SM_CommercialGround_CommercialLow_StoreTech",
+      "file": "CitySimVR/Content/CitySim/Art/CommercialGround/SM_CommercialGround_CommercialLow_StoreTech.uasset",
+      "sha256": "983b478647d8087c10ef8f3cd5332f9f1774be036268200f05a81a8f03118a91",
+      "bytes": 29986,
+      "triangles": 578,
+      "slots": [
+        "CommercialBrick",
+        "Roof",
+        "RoofMembrane",
+        "StoreSignTall",
+        "BuildingWindowOpaque"
+      ],
+      "dimensions_cm": [
+        1543.0,
+        1541.5000610351562,
+        1200.0
+      ],
+      "entry_native_cm": [
+        0,
+        660,
+        0
+      ],
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "source_sha256": "9254ca63a32ee5816a8549af15c159f74e45a7c97a445a8a76bf504318c748dd"
+    },
+    {
+      "target": "/Game/CitySim/Art/CommercialGround/SM_CommercialGround_CommercialMedium_StoreMarket",
+      "file": "CitySimVR/Content/CitySim/Art/CommercialGround/SM_CommercialGround_CommercialMedium_StoreMarket.uasset",
+      "sha256": "8b634012d0d072c6d0344f0603682d0f5a517f1c1b6e80bef13c50162ba54c2a",
+      "bytes": 57928,
+      "triangles": 1790,
+      "slots": [
+        "CommercialBrick",
+        "Roof",
+        "RoofMembrane",
+        "StoreSignWide",
+        "BuildingWindowOpaque"
+      ],
+      "dimensions_cm": [
+        1543.0,
+        1541.5000610351562,
+        2300.0
+      ],
+      "entry_native_cm": [
+        0,
+        660,
+        0
+      ],
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "source_sha256": "6fb5902bede7d2b0f3cc4382964c0b829fc80d758e58010b72508a2c9ccc0c41"
+    },
+    {
+      "target": "/Game/CitySim/Art/CommercialGround/SM_CommercialGround_CommercialMedium_StoreBakery",
+      "file": "CitySimVR/Content/CitySim/Art/CommercialGround/SM_CommercialGround_CommercialMedium_StoreBakery.uasset",
+      "sha256": "e3285ff1a2fe47dbb30fd70b216e9ac1afdf8cd71ca60ceaed77378ce0179a24",
+      "bytes": 57920,
+      "triangles": 1790,
+      "slots": [
+        "CommercialBrick",
+        "Roof",
+        "RoofMembrane",
+        "StoreSignWide",
+        "BuildingWindowOpaque"
+      ],
+      "dimensions_cm": [
+        1543.0,
+        1541.5000610351562,
+        2300.0
+      ],
+      "entry_native_cm": [
+        0,
+        660,
+        0
+      ],
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "source_sha256": "43ad428cc9926a13861593e7252c5f10abce4305ab8242748c833fe32e75a094"
+    },
+    {
+      "target": "/Game/CitySim/Art/CommercialGround/SM_CommercialGround_CommercialMedium_StoreCafe",
+      "file": "CitySimVR/Content/CitySim/Art/CommercialGround/SM_CommercialGround_CommercialMedium_StoreCafe.uasset",
+      "sha256": "4de6819b3c0d353ff7915f76fc201e7d0a9a33d3ed0f5fce8a1c2ce9adf98cc1",
+      "bytes": 57920,
+      "triangles": 1790,
+      "slots": [
+        "CommercialBrick",
+        "Roof",
+        "RoofMembrane",
+        "StoreSignWide",
+        "BuildingWindowOpaque"
+      ],
+      "dimensions_cm": [
+        1543.0,
+        1541.5000610351562,
+        2300.0
+      ],
+      "entry_native_cm": [
+        0,
+        660,
+        0
+      ],
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "source_sha256": "493b5d7ccb03510e39a6694b479a62ce7f1f878764dda4697ced1572cdf00c3e"
+    },
+    {
+      "target": "/Game/CitySim/Art/CommercialGround/SM_CommercialGround_CommercialMedium_StoreBooks",
+      "file": "CitySimVR/Content/CitySim/Art/CommercialGround/SM_CommercialGround_CommercialMedium_StoreBooks.uasset",
+      "sha256": "9e5415003c851eb324d339c57aec15a6dc668f822efb4b352382d4b1f39898ad",
+      "bytes": 57928,
+      "triangles": 1790,
+      "slots": [
+        "CommercialBrick",
+        "Roof",
+        "RoofMembrane",
+        "StoreSignWide",
+        "BuildingWindowOpaque"
+      ],
+      "dimensions_cm": [
+        1543.0,
+        1541.5000610351562,
+        2300.0
+      ],
+      "entry_native_cm": [
+        0,
+        660,
+        0
+      ],
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "source_sha256": "585ac630db1800970b9d7e41c4195fcd879cb4842cd36d665bf8c30ff11dd522"
+    },
+    {
+      "target": "/Game/CitySim/Art/CommercialGround/SM_CommercialGround_CommercialMedium_StorePharmacy",
+      "file": "CitySimVR/Content/CitySim/Art/CommercialGround/SM_CommercialGround_CommercialMedium_StorePharmacy.uasset",
+      "sha256": "a1ed4dbded6261712b5a55d2bb9a060d078040703f3a7fd9415d517494ba5122",
+      "bytes": 57941,
+      "triangles": 1790,
+      "slots": [
+        "CommercialBrick",
+        "Roof",
+        "RoofMembrane",
+        "StoreSignWide",
+        "BuildingWindowOpaque"
+      ],
+      "dimensions_cm": [
+        1543.0,
+        1541.5000610351562,
+        2300.0
+      ],
+      "entry_native_cm": [
+        0,
+        660,
+        0
+      ],
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "source_sha256": "41aacb45359947d2226cca811e359c86448d027cad1b69a50fff234899c822ea"
+    },
+    {
+      "target": "/Game/CitySim/Art/CommercialGround/SM_CommercialGround_CommercialMedium_StoreRepairs",
+      "file": "CitySimVR/Content/CitySim/Art/CommercialGround/SM_CommercialGround_CommercialMedium_StoreRepairs.uasset",
+      "sha256": "34b50807d6bfdfd7a5c3bc38aca98505a3a3091a19958aaa72be4de3cff4deff",
+      "bytes": 57926,
+      "triangles": 1790,
+      "slots": [
+        "CommercialBrick",
+        "Roof",
+        "RoofMembrane",
+        "StoreSignWide",
+        "BuildingWindowOpaque"
+      ],
+      "dimensions_cm": [
+        1543.0,
+        1541.5000610351562,
+        2300.0
+      ],
+      "entry_native_cm": [
+        0,
+        660,
+        0
+      ],
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "source_sha256": "50e495215d8a8ccf1edc5252304e7b9be5bf1c9c4ca8687675616e3ba257b6c3"
+    },
+    {
+      "target": "/Game/CitySim/Art/CommercialGround/SM_CommercialGround_CommercialMedium_StoreOutfitters",
+      "file": "CitySimVR/Content/CitySim/Art/CommercialGround/SM_CommercialGround_CommercialMedium_StoreOutfitters.uasset",
+      "sha256": "07acd6d39bed1a55e149d1e571a7bc4cc10da563dcc78055d3027463004e9d3b",
+      "bytes": 57961,
+      "triangles": 1790,
+      "slots": [
+        "CommercialBrick",
+        "Roof",
+        "RoofMembrane",
+        "StoreSignWide",
+        "BuildingWindowOpaque"
+      ],
+      "dimensions_cm": [
+        1543.0,
+        1541.5000610351562,
+        2300.0
+      ],
+      "entry_native_cm": [
+        0,
+        660,
+        0
+      ],
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "source_sha256": "8f57128a2ab50e2e48b2110888ab05f33f893e18cfb9d9ed0430a43c2db59647"
+    },
+    {
+      "target": "/Game/CitySim/Art/CommercialGround/SM_CommercialGround_CommercialMedium_StoreTech",
+      "file": "CitySimVR/Content/CitySim/Art/CommercialGround/SM_CommercialGround_CommercialMedium_StoreTech.uasset",
+      "sha256": "53b80046dcc2873496194fbf1e81796ab613f0940b217894c1c489b7efc80bd4",
+      "bytes": 57902,
+      "triangles": 1790,
+      "slots": [
+        "CommercialBrick",
+        "Roof",
+        "RoofMembrane",
+        "StoreSignWide",
+        "BuildingWindowOpaque"
+      ],
+      "dimensions_cm": [
+        1543.0,
+        1541.5000610351562,
+        2300.0
+      ],
+      "entry_native_cm": [
+        0,
+        660,
+        0
+      ],
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "source_sha256": "6b3759f61de615794c86ea90faec952e20d9ad72f39857d4a6638e7c15a07828"
+    },
+    {
+      "target": "/Game/CitySim/Art/CommercialGround/SM_CommercialGround_CommercialHigh_StoreMarket",
+      "file": "CitySimVR/Content/CitySim/Art/CommercialGround/SM_CommercialGround_CommercialHigh_StoreMarket.uasset",
+      "sha256": "77442ce4eec6aec10308400bb8ba01a08bb184e743add34d4ddb0166c97ebe67",
+      "bytes": 82522,
+      "triangles": 3014,
+      "slots": [
+        "CommercialBrick",
+        "Roof",
+        "RoofMembrane",
+        "StoreSignWide",
+        "BuildingWindowOpaque"
+      ],
+      "dimensions_cm": [
+        1543.0,
+        1541.5000610351562,
+        3900.0
+      ],
+      "entry_native_cm": [
+        0,
+        660,
+        0
+      ],
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "source_sha256": "1f53373bc56c4bad1a888815b1011cca73d1027685abab3ee8ad1ff929ff78be"
+    },
+    {
+      "target": "/Game/CitySim/Art/CommercialGround/SM_CommercialGround_CommercialHigh_StoreBakery",
+      "file": "CitySimVR/Content/CitySim/Art/CommercialGround/SM_CommercialGround_CommercialHigh_StoreBakery.uasset",
+      "sha256": "151336d8b4aee64242103c55f488cd53d4b37f1b094a83576ce16b7cf40ebd27",
+      "bytes": 82514,
+      "triangles": 3014,
+      "slots": [
+        "CommercialBrick",
+        "Roof",
+        "RoofMembrane",
+        "StoreSignWide",
+        "BuildingWindowOpaque"
+      ],
+      "dimensions_cm": [
+        1543.0,
+        1541.5000610351562,
+        3900.0
+      ],
+      "entry_native_cm": [
+        0,
+        660,
+        0
+      ],
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "source_sha256": "f2850671a4f0bdd6a91c65b40d55c1fb4d846b3e0c5e46bfb48ad4cbd1c43fb1"
+    },
+    {
+      "target": "/Game/CitySim/Art/CommercialGround/SM_CommercialGround_CommercialHigh_StoreCafe",
+      "file": "CitySimVR/Content/CitySim/Art/CommercialGround/SM_CommercialGround_CommercialHigh_StoreCafe.uasset",
+      "sha256": "a8f076176ba4a4aa31e52ed5cb21bc5f1932460a0da63819912d0af2bf32ecd2",
+      "bytes": 82513,
+      "triangles": 3014,
+      "slots": [
+        "CommercialBrick",
+        "Roof",
+        "RoofMembrane",
+        "StoreSignWide",
+        "BuildingWindowOpaque"
+      ],
+      "dimensions_cm": [
+        1543.0,
+        1541.5000610351562,
+        3900.0
+      ],
+      "entry_native_cm": [
+        0,
+        660,
+        0
+      ],
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "source_sha256": "750995aa004d4a993a94786e4d7128bf26bed4b9d37964bb7a2b7e249263abf0"
+    },
+    {
+      "target": "/Game/CitySim/Art/CommercialGround/SM_CommercialGround_CommercialHigh_StoreBooks",
+      "file": "CitySimVR/Content/CitySim/Art/CommercialGround/SM_CommercialGround_CommercialHigh_StoreBooks.uasset",
+      "sha256": "148211ae12dc508e6fe7ff6a49761a4a437457064e4f825603a605be2075f90a",
+      "bytes": 82517,
+      "triangles": 3014,
+      "slots": [
+        "CommercialBrick",
+        "Roof",
+        "RoofMembrane",
+        "StoreSignWide",
+        "BuildingWindowOpaque"
+      ],
+      "dimensions_cm": [
+        1543.0,
+        1541.5000610351562,
+        3900.0
+      ],
+      "entry_native_cm": [
+        0,
+        660,
+        0
+      ],
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "source_sha256": "8889ca648d9cfd53082a3e019bad6f754483b3fe37ba1eb2739a970c9b09cae2"
+    },
+    {
+      "target": "/Game/CitySim/Art/CommercialGround/SM_CommercialGround_CommercialHigh_StorePharmacy",
+      "file": "CitySimVR/Content/CitySim/Art/CommercialGround/SM_CommercialGround_CommercialHigh_StorePharmacy.uasset",
+      "sha256": "fe0250073265316d5354cfaab740e86691f8c7c75a80076e5a3b6fdcb94edd21",
+      "bytes": 82446,
+      "triangles": 3014,
+      "slots": [
+        "CommercialBrick",
+        "Roof",
+        "RoofMembrane",
+        "StoreSignWide",
+        "BuildingWindowOpaque"
+      ],
+      "dimensions_cm": [
+        1543.0,
+        1541.5000610351562,
+        3900.0
+      ],
+      "entry_native_cm": [
+        0,
+        660,
+        0
+      ],
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "source_sha256": "2bd1b38856bae836e15a11a651705403d40a26e4431144db37500550c990dbd7"
+    },
+    {
+      "target": "/Game/CitySim/Art/CommercialGround/SM_CommercialGround_CommercialHigh_StoreRepairs",
+      "file": "CitySimVR/Content/CitySim/Art/CommercialGround/SM_CommercialGround_CommercialHigh_StoreRepairs.uasset",
+      "sha256": "090f110856ab96e556875af75c2d5155f81f3c50f72c3eda61ce2c3a77baedf7",
+      "bytes": 82427,
+      "triangles": 3014,
+      "slots": [
+        "CommercialBrick",
+        "Roof",
+        "RoofMembrane",
+        "StoreSignWide",
+        "BuildingWindowOpaque"
+      ],
+      "dimensions_cm": [
+        1543.0,
+        1541.5000610351562,
+        3900.0
+      ],
+      "entry_native_cm": [
+        0,
+        660,
+        0
+      ],
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "source_sha256": "9e14612c3a376acebc8c212a2384a400af111b6784b8c7d4b3bf99a7755db29e"
+    },
+    {
+      "target": "/Game/CitySim/Art/CommercialGround/SM_CommercialGround_CommercialHigh_StoreOutfitters",
+      "file": "CitySimVR/Content/CitySim/Art/CommercialGround/SM_CommercialGround_CommercialHigh_StoreOutfitters.uasset",
+      "sha256": "acfbca0bc7a7a8da6dfc0a6ec5f68edc04267a64d7dfd084e4918e07472e47d7",
+      "bytes": 82462,
+      "triangles": 3014,
+      "slots": [
+        "CommercialBrick",
+        "Roof",
+        "RoofMembrane",
+        "StoreSignWide",
+        "BuildingWindowOpaque"
+      ],
+      "dimensions_cm": [
+        1543.0,
+        1541.5000610351562,
+        3900.0
+      ],
+      "entry_native_cm": [
+        0,
+        660,
+        0
+      ],
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "source_sha256": "78a216804347cd46693e5b8defd4280ed9d3cfb2f4aa277eef74366b3edc77ca"
+    },
+    {
+      "target": "/Game/CitySim/Art/CommercialGround/SM_CommercialGround_CommercialHigh_StoreTech",
+      "file": "CitySimVR/Content/CitySim/Art/CommercialGround/SM_CommercialGround_CommercialHigh_StoreTech.uasset",
+      "sha256": "358e9d5a9b47ac9e408486ae11e1b004f6e8d0a12b372f1921ce5d77e80c3e41",
+      "bytes": 82402,
+      "triangles": 3014,
+      "slots": [
+        "CommercialBrick",
+        "Roof",
+        "RoofMembrane",
+        "StoreSignWide",
+        "BuildingWindowOpaque"
+      ],
+      "dimensions_cm": [
+        1543.0,
+        1541.5000610351562,
+        3900.0
+      ],
+      "entry_native_cm": [
+        0,
+        660,
+        0
+      ],
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "source_sha256": "5c504e2b1daa16221c2fad19529470d5c10ce43604ef0cec99ffe95480ce21d5"
+    },
+    {
+      "target": "/Game/CitySim/Art/CommercialGround/SM_CommercialGround_Building_Shop_A_Damaged",
+      "file": "CitySimVR/Content/CitySim/Art/CommercialGround/SM_CommercialGround_Building_Shop_A_Damaged.uasset",
+      "sha256": "ae886513d379da874be9dd3f91cbae63670bcd91573e536cc32e8170d6f6538a",
+      "bytes": 20096,
+      "triangles": 226,
+      "slots": [
+        "CharredBrick",
+        "CharredTrim",
+        "CharredRoofMembrane",
+        "CharredSign"
+      ],
+      "dimensions_cm": [
+        1540.0001220703125,
+        1535.0001220703125,
+        981.7433471679688
+      ],
+      "entry_native_cm": [
+        0,
+        660,
+        0
+      ],
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "source_sha256": "daf3cdc70d8a15b93728132389d029bd7b84f78210c5d9ba893264e1f88af26d"
+    },
+    {
+      "target": "/Game/CitySim/Art/CommercialGround/SM_CommercialGround_Building_Shop_Medium_A_Damaged",
+      "file": "CitySimVR/Content/CitySim/Art/CommercialGround/SM_CommercialGround_Building_Shop_Medium_A_Damaged.uasset",
+      "sha256": "29c94bef1d8652f1112d6849a8732b685524069818ff70fd5fbd20e0c11fcc48",
+      "bytes": 22441,
+      "triangles": 286,
+      "slots": [
+        "CharredBrick",
+        "CharredTrim",
+        "CharredRoofMembrane",
+        "CharredSign"
+      ],
+      "dimensions_cm": [
+        1540.0,
+        1523.5000610351562,
+        1910.128173828125
+      ],
+      "entry_native_cm": [
+        0,
+        660,
+        0
+      ],
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "source_sha256": "c3960b44c826f54a2f6bd9bd3359bf326b17662614b9febcc5187ce32a6ba4c4"
+    },
+    {
+      "target": "/Game/CitySim/Art/CommercialGround/SM_CommercialGround_Building_Shop_High_A_Damaged",
+      "file": "CitySimVR/Content/CitySim/Art/CommercialGround/SM_CommercialGround_Building_Shop_High_A_Damaged.uasset",
+      "sha256": "7c5cc56b1d4cf1fd79e309a9edb970954c86353a9437ddc389560a1ad2b92a8b",
+      "bytes": 24418,
+      "triangles": 358,
+      "slots": [
+        "CharredBrick",
+        "CharredTrim",
+        "CharredRoofMembrane",
+        "CharredSign"
+      ],
+      "dimensions_cm": [
+        1540.0,
+        1523.5000610351562,
+        3290.01513671875
+      ],
+      "entry_native_cm": [
+        0,
+        660,
+        0
+      ],
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "source_sha256": "0a45e6eb6e0916dab497d2bede932258cc4babb071c94b09df2e262d49090371"
+    },
+    {
+      "target": "/Game/CitySim/Art/CommercialGround/SM_CommercialGround_CommercialLow_StoreMarket_Damaged",
+      "file": "CitySimVR/Content/CitySim/Art/CommercialGround/SM_CommercialGround_CommercialLow_StoreMarket_Damaged.uasset",
+      "sha256": "243f1a054cdf2ae002c652af48c9fb464205e96feb10bf4ef737c67bca6d9fb8",
+      "bytes": 20156,
+      "triangles": 226,
+      "slots": [
+        "CharredBrick",
+        "CharredTrim",
+        "CharredRoofMembrane",
+        "CharredSign"
+      ],
+      "dimensions_cm": [
+        1540.0001220703125,
+        1535.0001220703125,
+        981.7433471679688
+      ],
+      "entry_native_cm": [
+        0,
+        660,
+        0
+      ],
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "source_sha256": "237348c8dd97c925ac39b775754edb60ff0bfa3ac8b0ddfcd14f4001312ab8d0"
+    },
+    {
+      "target": "/Game/CitySim/Art/CommercialGround/SM_CommercialGround_CommercialLow_StoreBakery_Damaged",
+      "file": "CitySimVR/Content/CitySim/Art/CommercialGround/SM_CommercialGround_CommercialLow_StoreBakery_Damaged.uasset",
+      "sha256": "b5a508188658407755f4c602bff9eea38f4b8f5e68a767f17938378c5d8ff24d",
+      "bytes": 20152,
+      "triangles": 226,
+      "slots": [
+        "CharredBrick",
+        "CharredTrim",
+        "CharredRoofMembrane",
+        "CharredSign"
+      ],
+      "dimensions_cm": [
+        1540.0001220703125,
+        1535.0001220703125,
+        981.7433471679688
+      ],
+      "entry_native_cm": [
+        0,
+        660,
+        0
+      ],
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "source_sha256": "8b094b6ca7c797d349e5a0d67d78ebe8282801679c4c57d5c49a0a74f2003bd7"
+    },
+    {
+      "target": "/Game/CitySim/Art/CommercialGround/SM_CommercialGround_CommercialLow_StoreCafe_Damaged",
+      "file": "CitySimVR/Content/CitySim/Art/CommercialGround/SM_CommercialGround_CommercialLow_StoreCafe_Damaged.uasset",
+      "sha256": "5768e67cad0f143caba1d0ba88cfc82bb0b2c756d4569adaab1a10bc02be3858",
+      "bytes": 20148,
+      "triangles": 226,
+      "slots": [
+        "CharredBrick",
+        "CharredTrim",
+        "CharredRoofMembrane",
+        "CharredSign"
+      ],
+      "dimensions_cm": [
+        1540.0001220703125,
+        1535.0001220703125,
+        981.7433471679688
+      ],
+      "entry_native_cm": [
+        0,
+        660,
+        0
+      ],
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "source_sha256": "c561740072aefc9a506b6fd34dc44d553b6c09605058bddf757f0137eaf27691"
+    },
+    {
+      "target": "/Game/CitySim/Art/CommercialGround/SM_CommercialGround_CommercialLow_StoreBooks_Damaged",
+      "file": "CitySimVR/Content/CitySim/Art/CommercialGround/SM_CommercialGround_CommercialLow_StoreBooks_Damaged.uasset",
+      "sha256": "0a0084f21bc795d81bbe78a3e6c51b2e9a44f96c6c97b47d3d54f52679e0f018",
+      "bytes": 20155,
+      "triangles": 226,
+      "slots": [
+        "CharredBrick",
+        "CharredTrim",
+        "CharredRoofMembrane",
+        "CharredSign"
+      ],
+      "dimensions_cm": [
+        1540.0001220703125,
+        1535.0001220703125,
+        981.7433471679688
+      ],
+      "entry_native_cm": [
+        0,
+        660,
+        0
+      ],
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "source_sha256": "2df0fb2d60d10d7d988b4588183586b5ccf91aefb30ad27521d8b09625e6c0d4"
+    },
+    {
+      "target": "/Game/CitySim/Art/CommercialGround/SM_CommercialGround_CommercialLow_StorePharmacy_Damaged",
+      "file": "CitySimVR/Content/CitySim/Art/CommercialGround/SM_CommercialGround_CommercialLow_StorePharmacy_Damaged.uasset",
+      "sha256": "e5c83fd36257aae7b2c3a61cee6145661e2d1c417ec09e2b019fa5d6b1a89bb7",
+      "bytes": 20159,
+      "triangles": 226,
+      "slots": [
+        "CharredBrick",
+        "CharredTrim",
+        "CharredRoofMembrane",
+        "CharredSign"
+      ],
+      "dimensions_cm": [
+        1540.0001220703125,
+        1535.0001220703125,
+        981.7433471679688
+      ],
+      "entry_native_cm": [
+        0,
+        660,
+        0
+      ],
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "source_sha256": "94764f1f6540fe9a4b434429da75ab572d7d8b58d57f28dad9bec6255abac67f"
+    },
+    {
+      "target": "/Game/CitySim/Art/CommercialGround/SM_CommercialGround_CommercialLow_StoreRepairs_Damaged",
+      "file": "CitySimVR/Content/CitySim/Art/CommercialGround/SM_CommercialGround_CommercialLow_StoreRepairs_Damaged.uasset",
+      "sha256": "542735caf9f298503eee0759aa271d73f3c95657c8c735757ba62bdc77f92c67",
+      "bytes": 20153,
+      "triangles": 226,
+      "slots": [
+        "CharredBrick",
+        "CharredTrim",
+        "CharredRoofMembrane",
+        "CharredSign"
+      ],
+      "dimensions_cm": [
+        1540.0001220703125,
+        1535.0001220703125,
+        981.7433471679688
+      ],
+      "entry_native_cm": [
+        0,
+        660,
+        0
+      ],
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "source_sha256": "12b975d2b261f6040f6bffa298dc313c5890462b5ec17dff9ca3b0e874ea6e18"
+    },
+    {
+      "target": "/Game/CitySim/Art/CommercialGround/SM_CommercialGround_CommercialLow_StoreOutfitters_Damaged",
+      "file": "CitySimVR/Content/CitySim/Art/CommercialGround/SM_CommercialGround_CommercialLow_StoreOutfitters_Damaged.uasset",
+      "sha256": "8008e5d4c85b4629e9b503c1784f47dd8996f69bd0403c3b0bfa44b4a90a3036",
+      "bytes": 20178,
+      "triangles": 226,
+      "slots": [
+        "CharredBrick",
+        "CharredTrim",
+        "CharredRoofMembrane",
+        "CharredSign"
+      ],
+      "dimensions_cm": [
+        1540.0001220703125,
+        1535.0001220703125,
+        981.7433471679688
+      ],
+      "entry_native_cm": [
+        0,
+        660,
+        0
+      ],
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "source_sha256": "297bf4d5502fbdac5c7710237521b0bd54117e4eff7a1250ccd5975dedde420e"
+    },
+    {
+      "target": "/Game/CitySim/Art/CommercialGround/SM_CommercialGround_CommercialLow_StoreTech_Damaged",
+      "file": "CitySimVR/Content/CitySim/Art/CommercialGround/SM_CommercialGround_CommercialLow_StoreTech_Damaged.uasset",
+      "sha256": "aa47e7690a19d4bd796c35c2b99fba4d78f547765ed442eff613a372fee557bf",
+      "bytes": 20139,
+      "triangles": 226,
+      "slots": [
+        "CharredBrick",
+        "CharredTrim",
+        "CharredRoofMembrane",
+        "CharredSign"
+      ],
+      "dimensions_cm": [
+        1540.0001220703125,
+        1535.0001220703125,
+        981.7433471679688
+      ],
+      "entry_native_cm": [
+        0,
+        660,
+        0
+      ],
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "source_sha256": "b009fec16b47024a6c95f1be60d6699de325cffbde4febb0e9c67d3454c0e5a2"
+    },
+    {
+      "target": "/Game/CitySim/Art/CommercialGround/SM_CommercialGround_CommercialMedium_StoreMarket_Damaged",
+      "file": "CitySimVR/Content/CitySim/Art/CommercialGround/SM_CommercialGround_CommercialMedium_StoreMarket_Damaged.uasset",
+      "sha256": "92ec265ffff171811ab24d22a405e00ee728326af9e2a557bd697cc0a3b70a31",
+      "bytes": 22487,
+      "triangles": 286,
+      "slots": [
+        "CharredBrick",
+        "CharredTrim",
+        "CharredRoofMembrane",
+        "CharredSign"
+      ],
+      "dimensions_cm": [
+        1540.0,
+        1523.5000610351562,
+        1910.128173828125
+      ],
+      "entry_native_cm": [
+        0,
+        660,
+        0
+      ],
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "source_sha256": "ef237bcd3318e92197044f51018a89e3bf57fb1b38f6d70ba03d3555db51f0db"
+    },
+    {
+      "target": "/Game/CitySim/Art/CommercialGround/SM_CommercialGround_CommercialMedium_StoreBakery_Damaged",
+      "file": "CitySimVR/Content/CitySim/Art/CommercialGround/SM_CommercialGround_CommercialMedium_StoreBakery_Damaged.uasset",
+      "sha256": "fd57f7fb3a43afb4ce8d38ef26c84bbc5fd189575db62fad9e05b795e2e90be5",
+      "bytes": 22477,
+      "triangles": 286,
+      "slots": [
+        "CharredBrick",
+        "CharredTrim",
+        "CharredRoofMembrane",
+        "CharredSign"
+      ],
+      "dimensions_cm": [
+        1540.0,
+        1523.5000610351562,
+        1910.128173828125
+      ],
+      "entry_native_cm": [
+        0,
+        660,
+        0
+      ],
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "source_sha256": "54a17ea8f3713f8580b6d13e0a60eda444fd2bb42d195a5cb74e294cd9cdd9e1"
+    },
+    {
+      "target": "/Game/CitySim/Art/CommercialGround/SM_CommercialGround_CommercialMedium_StoreCafe_Damaged",
+      "file": "CitySimVR/Content/CitySim/Art/CommercialGround/SM_CommercialGround_CommercialMedium_StoreCafe_Damaged.uasset",
+      "sha256": "0be257dabba88c197f635000fa9bf0e63d9d20b56d0b6daa9d3abb890e4c3442",
+      "bytes": 22465,
+      "triangles": 286,
+      "slots": [
+        "CharredBrick",
+        "CharredTrim",
+        "CharredRoofMembrane",
+        "CharredSign"
+      ],
+      "dimensions_cm": [
+        1540.0,
+        1523.5000610351562,
+        1910.128173828125
+      ],
+      "entry_native_cm": [
+        0,
+        660,
+        0
+      ],
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "source_sha256": "74b7a7b3257ba8fd2614e91c72cff2a3240d7f7a256ba99f60bcf9607ef4985d"
+    },
+    {
+      "target": "/Game/CitySim/Art/CommercialGround/SM_CommercialGround_CommercialMedium_StoreBooks_Damaged",
+      "file": "CitySimVR/Content/CitySim/Art/CommercialGround/SM_CommercialGround_CommercialMedium_StoreBooks_Damaged.uasset",
+      "sha256": "b0becbf5a54a4c79999ccad58ce15a2a4ed246dd52692f6e209031275a4d4e07",
+      "bytes": 22474,
+      "triangles": 286,
+      "slots": [
+        "CharredBrick",
+        "CharredTrim",
+        "CharredRoofMembrane",
+        "CharredSign"
+      ],
+      "dimensions_cm": [
+        1540.0,
+        1523.5000610351562,
+        1910.128173828125
+      ],
+      "entry_native_cm": [
+        0,
+        660,
+        0
+      ],
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "source_sha256": "69c0ba4c464b1fe03b3506fa0c093319019e2a65f8df371c421cd1fc4eba9a21"
+    },
+    {
+      "target": "/Game/CitySim/Art/CommercialGround/SM_CommercialGround_CommercialMedium_StorePharmacy_Damaged",
+      "file": "CitySimVR/Content/CitySim/Art/CommercialGround/SM_CommercialGround_CommercialMedium_StorePharmacy_Damaged.uasset",
+      "sha256": "e223210a34ba4e30ab9dadf3ee8156ef95cad1ea7d8aa288ed99a3390f7be2fc",
+      "bytes": 22490,
+      "triangles": 286,
+      "slots": [
+        "CharredBrick",
+        "CharredTrim",
+        "CharredRoofMembrane",
+        "CharredSign"
+      ],
+      "dimensions_cm": [
+        1540.0,
+        1523.5000610351562,
+        1910.128173828125
+      ],
+      "entry_native_cm": [
+        0,
+        660,
+        0
+      ],
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "source_sha256": "0a9138479ec16e75235161fb3a46700f8497e53e091fec579f37c7cc2d0283a9"
+    },
+    {
+      "target": "/Game/CitySim/Art/CommercialGround/SM_CommercialGround_CommercialMedium_StoreRepairs_Damaged",
+      "file": "CitySimVR/Content/CitySim/Art/CommercialGround/SM_CommercialGround_CommercialMedium_StoreRepairs_Damaged.uasset",
+      "sha256": "752531507ac8e0a2a98981ea72306c2f7766296e62a524c5656d5ebbdcb44d87",
+      "bytes": 22482,
+      "triangles": 286,
+      "slots": [
+        "CharredBrick",
+        "CharredTrim",
+        "CharredRoofMembrane",
+        "CharredSign"
+      ],
+      "dimensions_cm": [
+        1540.0,
+        1523.5000610351562,
+        1910.128173828125
+      ],
+      "entry_native_cm": [
+        0,
+        660,
+        0
+      ],
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "source_sha256": "0a6e372dfeb81b71c012da61623a8ea02b5b0b5247c9ab3e5dd4a1000784698b"
+    },
+    {
+      "target": "/Game/CitySim/Art/CommercialGround/SM_CommercialGround_CommercialMedium_StoreOutfitters_Damaged",
+      "file": "CitySimVR/Content/CitySim/Art/CommercialGround/SM_CommercialGround_CommercialMedium_StoreOutfitters_Damaged.uasset",
+      "sha256": "6dcb8c17bdc75f33f1ab753174995d55cedac3bd57121fa98af313c8a939b50e",
+      "bytes": 22495,
+      "triangles": 286,
+      "slots": [
+        "CharredBrick",
+        "CharredTrim",
+        "CharredRoofMembrane",
+        "CharredSign"
+      ],
+      "dimensions_cm": [
+        1540.0,
+        1523.5000610351562,
+        1910.128173828125
+      ],
+      "entry_native_cm": [
+        0,
+        660,
+        0
+      ],
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "source_sha256": "9fc4b297499381db87832aa65ad20120c1f612c66d120396e459bd925215191a"
+    },
+    {
+      "target": "/Game/CitySim/Art/CommercialGround/SM_CommercialGround_CommercialMedium_StoreTech_Damaged",
+      "file": "CitySimVR/Content/CitySim/Art/CommercialGround/SM_CommercialGround_CommercialMedium_StoreTech_Damaged.uasset",
+      "sha256": "f950d043d9c3b2b709681870cff343220c392eb87866e9829a9b5bee8aec91d0",
+      "bytes": 22459,
+      "triangles": 286,
+      "slots": [
+        "CharredBrick",
+        "CharredTrim",
+        "CharredRoofMembrane",
+        "CharredSign"
+      ],
+      "dimensions_cm": [
+        1540.0,
+        1523.5000610351562,
+        1910.128173828125
+      ],
+      "entry_native_cm": [
+        0,
+        660,
+        0
+      ],
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "source_sha256": "b58add16deecdeddb18254ce5800401394823e5817e1b0095e3fcdf6bf51b6e9"
+    },
+    {
+      "target": "/Game/CitySim/Art/CommercialGround/SM_CommercialGround_CommercialHigh_StoreMarket_Damaged",
+      "file": "CitySimVR/Content/CitySim/Art/CommercialGround/SM_CommercialGround_CommercialHigh_StoreMarket_Damaged.uasset",
+      "sha256": "5e7d5f931b7b2722bbe62421db8c717f963c96fa77a8e17cdebe052a2a2e90d4",
+      "bytes": 24449,
+      "triangles": 358,
+      "slots": [
+        "CharredBrick",
+        "CharredTrim",
+        "CharredRoofMembrane",
+        "CharredSign"
+      ],
+      "dimensions_cm": [
+        1540.0,
+        1523.5000610351562,
+        3290.01513671875
+      ],
+      "entry_native_cm": [
+        0,
+        660,
+        0
+      ],
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "source_sha256": "8600bca9b36e5f523501c5349f3f72474cc03432eeebe5a6c5f3444a8ac04eff"
+    },
+    {
+      "target": "/Game/CitySim/Art/CommercialGround/SM_CommercialGround_CommercialHigh_StoreBakery_Damaged",
+      "file": "CitySimVR/Content/CitySim/Art/CommercialGround/SM_CommercialGround_CommercialHigh_StoreBakery_Damaged.uasset",
+      "sha256": "0ea41c5f4d13a6853102e7285a413779eb53c56a28bf754f6a85a3dabf6de70a",
+      "bytes": 24440,
+      "triangles": 358,
+      "slots": [
+        "CharredBrick",
+        "CharredTrim",
+        "CharredRoofMembrane",
+        "CharredSign"
+      ],
+      "dimensions_cm": [
+        1540.0,
+        1523.5000610351562,
+        3290.01513671875
+      ],
+      "entry_native_cm": [
+        0,
+        660,
+        0
+      ],
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "source_sha256": "58a0a485406c956a1581fd863b69e7f6351ce39faf256b7b822b873d3c48e861"
+    },
+    {
+      "target": "/Game/CitySim/Art/CommercialGround/SM_CommercialGround_CommercialHigh_StoreCafe_Damaged",
+      "file": "CitySimVR/Content/CitySim/Art/CommercialGround/SM_CommercialGround_CommercialHigh_StoreCafe_Damaged.uasset",
+      "sha256": "80bca8e8323c295ba28e3b864ce01506ff4af5c9ddd912a517e0d1b073f17b2a",
+      "bytes": 24442,
+      "triangles": 358,
+      "slots": [
+        "CharredBrick",
+        "CharredTrim",
+        "CharredRoofMembrane",
+        "CharredSign"
+      ],
+      "dimensions_cm": [
+        1540.0,
+        1523.5000610351562,
+        3290.01513671875
+      ],
+      "entry_native_cm": [
+        0,
+        660,
+        0
+      ],
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "source_sha256": "58ee8452b4de35a1514a3b16338c79dd45d767efc4e443f6435ff59fb69aa13f"
+    },
+    {
+      "target": "/Game/CitySim/Art/CommercialGround/SM_CommercialGround_CommercialHigh_StoreBooks_Damaged",
+      "file": "CitySimVR/Content/CitySim/Art/CommercialGround/SM_CommercialGround_CommercialHigh_StoreBooks_Damaged.uasset",
+      "sha256": "453f32f43b68cf4f3974eab7dbc23f39689c58d18f8f6107331211b9e448ab1b",
+      "bytes": 24448,
+      "triangles": 358,
+      "slots": [
+        "CharredBrick",
+        "CharredTrim",
+        "CharredRoofMembrane",
+        "CharredSign"
+      ],
+      "dimensions_cm": [
+        1540.0,
+        1523.5000610351562,
+        3290.01513671875
+      ],
+      "entry_native_cm": [
+        0,
+        660,
+        0
+      ],
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "source_sha256": "a82df097f534b2917248216898324e775c3780a43b69d08d45b15a9be1794e3f"
+    },
+    {
+      "target": "/Game/CitySim/Art/CommercialGround/SM_CommercialGround_CommercialHigh_StorePharmacy_Damaged",
+      "file": "CitySimVR/Content/CitySim/Art/CommercialGround/SM_CommercialGround_CommercialHigh_StorePharmacy_Damaged.uasset",
+      "sha256": "6f4ec479b40bd852a2d2f8d7e542f5808903810d3ca2b2329458670aad14a4ec",
+      "bytes": 24452,
+      "triangles": 358,
+      "slots": [
+        "CharredBrick",
+        "CharredTrim",
+        "CharredRoofMembrane",
+        "CharredSign"
+      ],
+      "dimensions_cm": [
+        1540.0,
+        1523.5000610351562,
+        3290.01513671875
+      ],
+      "entry_native_cm": [
+        0,
+        660,
+        0
+      ],
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "source_sha256": "3eb7528fbfac3556440ab349195db97ec5afe0467c550dc1a46238c2d07721fc"
+    },
+    {
+      "target": "/Game/CitySim/Art/CommercialGround/SM_CommercialGround_CommercialHigh_StoreRepairs_Damaged",
+      "file": "CitySimVR/Content/CitySim/Art/CommercialGround/SM_CommercialGround_CommercialHigh_StoreRepairs_Damaged.uasset",
+      "sha256": "c998ebd30c1aaf18c22b07220ac56b60f2bce3edd80a2311dd1ef6054dc63018",
+      "bytes": 24446,
+      "triangles": 358,
+      "slots": [
+        "CharredBrick",
+        "CharredTrim",
+        "CharredRoofMembrane",
+        "CharredSign"
+      ],
+      "dimensions_cm": [
+        1540.0,
+        1523.5000610351562,
+        3290.01513671875
+      ],
+      "entry_native_cm": [
+        0,
+        660,
+        0
+      ],
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "source_sha256": "21ba4d4610b70c18bba42f3614c1f9337f7813d3372aaeb32f360231f41ccc70"
+    },
+    {
+      "target": "/Game/CitySim/Art/CommercialGround/SM_CommercialGround_CommercialHigh_StoreOutfitters_Damaged",
+      "file": "CitySimVR/Content/CitySim/Art/CommercialGround/SM_CommercialGround_CommercialHigh_StoreOutfitters_Damaged.uasset",
+      "sha256": "44b7658b795a46fc6ab0e5581f7fd0b07a60c35af12c7d55537397625c9976ee",
+      "bytes": 24470,
+      "triangles": 358,
+      "slots": [
+        "CharredBrick",
+        "CharredTrim",
+        "CharredRoofMembrane",
+        "CharredSign"
+      ],
+      "dimensions_cm": [
+        1540.0,
+        1523.5000610351562,
+        3290.01513671875
+      ],
+      "entry_native_cm": [
+        0,
+        660,
+        0
+      ],
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "source_sha256": "c51690f3494d4ee1355f3585f2e496ddc73c48654c6ee7a29d0687327af11086"
+    },
+    {
+      "target": "/Game/CitySim/Art/CommercialGround/SM_CommercialGround_CommercialHigh_StoreTech_Damaged",
+      "file": "CitySimVR/Content/CitySim/Art/CommercialGround/SM_CommercialGround_CommercialHigh_StoreTech_Damaged.uasset",
+      "sha256": "5a9a4d2053629e7638664b84dd585781ec9bf7d07b51aa0719c5dc5a67b93b45",
+      "bytes": 24430,
+      "triangles": 358,
+      "slots": [
+        "CharredBrick",
+        "CharredTrim",
+        "CharredRoofMembrane",
+        "CharredSign"
+      ],
+      "dimensions_cm": [
+        1540.0,
+        1523.5000610351562,
+        3290.01513671875
+      ],
+      "entry_native_cm": [
+        0,
+        660,
+        0
+      ],
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "source_sha256": "445abe4e97a49ae9780682f5292f77413a93a905f37aadba17fea1117fcef14a"
+    },
+    {
+      "target": "/Game/CitySim/Art/CommercialGround/SM_CommercialGround_LowDensity_Shop_A_repairs",
+      "file": "CitySimVR/Content/CitySim/Art/CommercialGround/SM_CommercialGround_LowDensity_Shop_A_repairs.uasset",
+      "sha256": "f0106b583564d58b2218ed8614fab492f5fdb88f422c053cccdf9df6f617665b",
+      "bytes": 34756,
+      "triangles": 704,
+      "slots": [
+        "CommercialBrick",
+        "Roof",
+        "RoofMembrane",
+        "StoreSignTall",
+        "BuildingWindowOpaque"
+      ],
+      "dimensions_cm": [
+        1543.0,
+        1541.5000610351562,
+        1270.0
+      ],
+      "entry_native_cm": [
+        0,
+        672,
+        19
+      ],
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "source_sha256": "2eb78e5a8917e17dd65ba5207d8fb1c0df7470eaca8c5051f0b6d9bc0ab43d59"
+    },
+    {
+      "target": "/Game/CitySim/Art/CommercialGround/SM_CommercialGround_LowDensity_Shop_A_bakery",
+      "file": "CitySimVR/Content/CitySim/Art/CommercialGround/SM_CommercialGround_LowDensity_Shop_A_bakery.uasset",
+      "sha256": "c77f3d5ae21cc0c8d68b6959ea97ef9389e3dfce050f08096a4ab8cc77f4a482",
+      "bytes": 34744,
+      "triangles": 704,
+      "slots": [
+        "CommercialBrick",
+        "Roof",
+        "RoofMembrane",
+        "StoreSignTall",
+        "BuildingWindowOpaque"
+      ],
+      "dimensions_cm": [
+        1543.0,
+        1541.5000610351562,
+        1270.0
+      ],
+      "entry_native_cm": [
+        0,
+        672,
+        19
+      ],
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "source_sha256": "2eb78e5a8917e17dd65ba5207d8fb1c0df7470eaca8c5051f0b6d9bc0ab43d59"
+    },
+    {
+      "target": "/Game/CitySim/Art/CommercialGround/SM_CommercialGround_LowDensity_Shop_A_cafe",
+      "file": "CitySimVR/Content/CitySim/Art/CommercialGround/SM_CommercialGround_LowDensity_Shop_A_cafe.uasset",
+      "sha256": "d6938a83c5c5552bdcbc85f4caa0142412cad97e1eb8bac6dbbdbcd08e7805a3",
+      "bytes": 34720,
+      "triangles": 704,
+      "slots": [
+        "CommercialBrick",
+        "Roof",
+        "RoofMembrane",
+        "StoreSignTall",
+        "BuildingWindowOpaque"
+      ],
+      "dimensions_cm": [
+        1543.0,
+        1541.5000610351562,
+        1270.0
+      ],
+      "entry_native_cm": [
+        0,
+        672,
+        19
+      ],
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "source_sha256": "2eb78e5a8917e17dd65ba5207d8fb1c0df7470eaca8c5051f0b6d9bc0ab43d59"
+    },
+    {
+      "target": "/Game/CitySim/Art/CommercialGround/SM_CommercialGround_LowDensity_Shop_A_books",
+      "file": "CitySimVR/Content/CitySim/Art/CommercialGround/SM_CommercialGround_LowDensity_Shop_A_books.uasset",
+      "sha256": "74a456d1b11a8d7bb5bd3b63037603a8f39346f8a9f7de9d2769630c20d7e7d5",
+      "bytes": 34732,
+      "triangles": 704,
+      "slots": [
+        "CommercialBrick",
+        "Roof",
+        "RoofMembrane",
+        "StoreSignTall",
+        "BuildingWindowOpaque"
+      ],
+      "dimensions_cm": [
+        1543.0,
+        1541.5000610351562,
+        1270.0
+      ],
+      "entry_native_cm": [
+        0,
+        672,
+        19
+      ],
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "source_sha256": "2eb78e5a8917e17dd65ba5207d8fb1c0df7470eaca8c5051f0b6d9bc0ab43d59"
+    },
+    {
+      "target": "/Game/CitySim/Art/CommercialGround/SM_CommercialGround_LowDensity_Shop_A_pharmacy",
+      "file": "CitySimVR/Content/CitySim/Art/CommercialGround/SM_CommercialGround_LowDensity_Shop_A_pharmacy.uasset",
+      "sha256": "6f4ebe3b737f2840cd22d2486764c966d1b6d4fc16dd03a0e0e358f494d0fb06",
+      "bytes": 34768,
+      "triangles": 704,
+      "slots": [
+        "CommercialBrick",
+        "Roof",
+        "RoofMembrane",
+        "StoreSignTall",
+        "BuildingWindowOpaque"
+      ],
+      "dimensions_cm": [
+        1543.0,
+        1541.5000610351562,
+        1270.0
+      ],
+      "entry_native_cm": [
+        0,
+        672,
+        19
+      ],
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "source_sha256": "2eb78e5a8917e17dd65ba5207d8fb1c0df7470eaca8c5051f0b6d9bc0ab43d59"
+    },
+    {
+      "target": "/Game/CitySim/Art/CommercialGround/SM_CommercialGround_LowDensity_Shop_A_outfitters",
+      "file": "CitySimVR/Content/CitySim/Art/CommercialGround/SM_CommercialGround_LowDensity_Shop_A_outfitters.uasset",
+      "sha256": "4494bfe3e24ff221b859c6196d8defdeac8b09c9431ad69819fdb4116f992b5d",
+      "bytes": 34792,
+      "triangles": 704,
+      "slots": [
+        "CommercialBrick",
+        "Roof",
+        "RoofMembrane",
+        "StoreSignTall",
+        "BuildingWindowOpaque"
+      ],
+      "dimensions_cm": [
+        1543.0,
+        1541.5000610351562,
+        1270.0
+      ],
+      "entry_native_cm": [
+        0,
+        672,
+        19
+      ],
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "source_sha256": "2eb78e5a8917e17dd65ba5207d8fb1c0df7470eaca8c5051f0b6d9bc0ab43d59"
+    },
+    {
+      "target": "/Game/CitySim/Art/CommercialGround/SM_CommercialGround_LowDensity_Shop_A_tech",
+      "file": "CitySimVR/Content/CitySim/Art/CommercialGround/SM_CommercialGround_LowDensity_Shop_A_tech.uasset",
+      "sha256": "c10abfc43ffdea5948f6943a252dcbb3685b25ee0a16e2b8a021300db6f450be",
+      "bytes": 34720,
+      "triangles": 704,
+      "slots": [
+        "CommercialBrick",
+        "Roof",
+        "RoofMembrane",
+        "StoreSignTall",
+        "BuildingWindowOpaque"
+      ],
+      "dimensions_cm": [
+        1543.0,
+        1541.5000610351562,
+        1270.0
+      ],
+      "entry_native_cm": [
+        0,
+        672,
+        19
+      ],
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "source_sha256": "2eb78e5a8917e17dd65ba5207d8fb1c0df7470eaca8c5051f0b6d9bc0ab43d59"
+    },
+    {
+      "target": "/Game/CitySim/Art/CommercialGround/SM_CommercialGround_LowDensity_Shop_B_repairs",
+      "file": "CitySimVR/Content/CitySim/Art/CommercialGround/SM_CommercialGround_LowDensity_Shop_B_repairs.uasset",
+      "sha256": "14f008c2b39edc8aa1f64ffade5cc4b5e569711d002ed2667a51fa3910e4172c",
+      "bytes": 38720,
+      "triangles": 874,
+      "slots": [
+        "CommercialBrick",
+        "Roof",
+        "RoofMembrane",
+        "StoreSignTall",
+        "BuildingWindowOpaque"
+      ],
+      "dimensions_cm": [
+        1543.0,
+        1564.5001220703125,
+        1200.0
+      ],
+      "entry_native_cm": [
+        0,
+        672,
+        19
+      ],
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "source_sha256": "19884f873710a6f47aa13e6e97af2c5d43ed16f9898c45831a3721530263a50a"
+    },
+    {
+      "target": "/Game/CitySim/Art/CommercialGround/SM_CommercialGround_LowDensity_Shop_B_bakery",
+      "file": "CitySimVR/Content/CitySim/Art/CommercialGround/SM_CommercialGround_LowDensity_Shop_B_bakery.uasset",
+      "sha256": "90f1f4ed370490ac2087712690e0497705409242dc1e819679676cad7404376a",
+      "bytes": 38708,
+      "triangles": 874,
+      "slots": [
+        "CommercialBrick",
+        "Roof",
+        "RoofMembrane",
+        "StoreSignTall",
+        "BuildingWindowOpaque"
+      ],
+      "dimensions_cm": [
+        1543.0,
+        1564.5001220703125,
+        1200.0
+      ],
+      "entry_native_cm": [
+        0,
+        672,
+        19
+      ],
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "source_sha256": "19884f873710a6f47aa13e6e97af2c5d43ed16f9898c45831a3721530263a50a"
+    },
+    {
+      "target": "/Game/CitySim/Art/CommercialGround/SM_CommercialGround_LowDensity_Shop_B_cafe",
+      "file": "CitySimVR/Content/CitySim/Art/CommercialGround/SM_CommercialGround_LowDensity_Shop_B_cafe.uasset",
+      "sha256": "b25c17cba559aa012883ddf275ffe38c842ba77022a57fa8672f365258a14bcd",
+      "bytes": 38684,
+      "triangles": 874,
+      "slots": [
+        "CommercialBrick",
+        "Roof",
+        "RoofMembrane",
+        "StoreSignTall",
+        "BuildingWindowOpaque"
+      ],
+      "dimensions_cm": [
+        1543.0,
+        1564.5001220703125,
+        1200.0
+      ],
+      "entry_native_cm": [
+        0,
+        672,
+        19
+      ],
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "source_sha256": "19884f873710a6f47aa13e6e97af2c5d43ed16f9898c45831a3721530263a50a"
+    },
+    {
+      "target": "/Game/CitySim/Art/CommercialGround/SM_CommercialGround_LowDensity_Shop_B_books",
+      "file": "CitySimVR/Content/CitySim/Art/CommercialGround/SM_CommercialGround_LowDensity_Shop_B_books.uasset",
+      "sha256": "95af0c8dafc19436fd24cb9b4667a2aca3dcadf8a5edfcca81146c52214e233e",
+      "bytes": 38696,
+      "triangles": 874,
+      "slots": [
+        "CommercialBrick",
+        "Roof",
+        "RoofMembrane",
+        "StoreSignTall",
+        "BuildingWindowOpaque"
+      ],
+      "dimensions_cm": [
+        1543.0,
+        1564.5001220703125,
+        1200.0
+      ],
+      "entry_native_cm": [
+        0,
+        672,
+        19
+      ],
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "source_sha256": "19884f873710a6f47aa13e6e97af2c5d43ed16f9898c45831a3721530263a50a"
+    },
+    {
+      "target": "/Game/CitySim/Art/CommercialGround/SM_CommercialGround_LowDensity_Shop_B_pharmacy",
+      "file": "CitySimVR/Content/CitySim/Art/CommercialGround/SM_CommercialGround_LowDensity_Shop_B_pharmacy.uasset",
+      "sha256": "c9c1b16578451e625cab6f678f8d6b30cc551e6754f2fd71f2a741c4a3313ed8",
+      "bytes": 38732,
+      "triangles": 874,
+      "slots": [
+        "CommercialBrick",
+        "Roof",
+        "RoofMembrane",
+        "StoreSignTall",
+        "BuildingWindowOpaque"
+      ],
+      "dimensions_cm": [
+        1543.0,
+        1564.5001220703125,
+        1200.0
+      ],
+      "entry_native_cm": [
+        0,
+        672,
+        19
+      ],
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "source_sha256": "19884f873710a6f47aa13e6e97af2c5d43ed16f9898c45831a3721530263a50a"
+    },
+    {
+      "target": "/Game/CitySim/Art/CommercialGround/SM_CommercialGround_LowDensity_Shop_B_outfitters",
+      "file": "CitySimVR/Content/CitySim/Art/CommercialGround/SM_CommercialGround_LowDensity_Shop_B_outfitters.uasset",
+      "sha256": "b3c5e52998b8b1e0c7c5330cf054a7ec9b73af63b2fb364c7e427990fa3dd164",
+      "bytes": 38756,
+      "triangles": 874,
+      "slots": [
+        "CommercialBrick",
+        "Roof",
+        "RoofMembrane",
+        "StoreSignTall",
+        "BuildingWindowOpaque"
+      ],
+      "dimensions_cm": [
+        1543.0,
+        1564.5001220703125,
+        1200.0
+      ],
+      "entry_native_cm": [
+        0,
+        672,
+        19
+      ],
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "source_sha256": "19884f873710a6f47aa13e6e97af2c5d43ed16f9898c45831a3721530263a50a"
+    },
+    {
+      "target": "/Game/CitySim/Art/CommercialGround/SM_CommercialGround_LowDensity_Shop_B_tech",
+      "file": "CitySimVR/Content/CitySim/Art/CommercialGround/SM_CommercialGround_LowDensity_Shop_B_tech.uasset",
+      "sha256": "6e8b420ace36383f5a221b7e0c108a8c4087a13aaf1f5a5c351762fec7efa64e",
+      "bytes": 38684,
+      "triangles": 874,
+      "slots": [
+        "CommercialBrick",
+        "Roof",
+        "RoofMembrane",
+        "StoreSignTall",
+        "BuildingWindowOpaque"
+      ],
+      "dimensions_cm": [
+        1543.0,
+        1564.5001220703125,
+        1200.0
+      ],
+      "entry_native_cm": [
+        0,
+        672,
+        19
+      ],
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "source_sha256": "19884f873710a6f47aa13e6e97af2c5d43ed16f9898c45831a3721530263a50a"
+    },
+    {
+      "target": "/Game/CitySim/Art/CommercialGround/SM_CommercialGround_LowDensity_Shop_C_repairs",
+      "file": "CitySimVR/Content/CitySim/Art/CommercialGround/SM_CommercialGround_LowDensity_Shop_C_repairs.uasset",
+      "sha256": "be97b9ec3ad14acc0eea6e0131c69a0ceda8c5691ef7d1f38ec7ed3ded3f1940",
+      "bytes": 35625,
+      "triangles": 742,
+      "slots": [
+        "CommercialBrick",
+        "Roof",
+        "RoofMembrane",
+        "StoreSignTall",
+        "BuildingWindowOpaque"
+      ],
+      "dimensions_cm": [
+        1543.0,
+        1564.0001220703125,
+        1160.0
+      ],
+      "entry_native_cm": [
+        0,
+        672,
+        19
+      ],
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "source_sha256": "9439e9f1ab30c1e6373c2652038aaf0ba24c0827a36ece0e47d3dafb7fc4c9f9"
+    },
+    {
+      "target": "/Game/CitySim/Art/CommercialGround/SM_CommercialGround_LowDensity_Shop_C_bakery",
+      "file": "CitySimVR/Content/CitySim/Art/CommercialGround/SM_CommercialGround_LowDensity_Shop_C_bakery.uasset",
+      "sha256": "d91d06bf88464fe44f374841a496d8b5e350b0b9487cfbe09fa11dbb7ec45fa9",
+      "bytes": 35613,
+      "triangles": 742,
+      "slots": [
+        "CommercialBrick",
+        "Roof",
+        "RoofMembrane",
+        "StoreSignTall",
+        "BuildingWindowOpaque"
+      ],
+      "dimensions_cm": [
+        1543.0,
+        1564.0001220703125,
+        1160.0
+      ],
+      "entry_native_cm": [
+        0,
+        672,
+        19
+      ],
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "source_sha256": "9439e9f1ab30c1e6373c2652038aaf0ba24c0827a36ece0e47d3dafb7fc4c9f9"
+    },
+    {
+      "target": "/Game/CitySim/Art/CommercialGround/SM_CommercialGround_LowDensity_Shop_C_cafe",
+      "file": "CitySimVR/Content/CitySim/Art/CommercialGround/SM_CommercialGround_LowDensity_Shop_C_cafe.uasset",
+      "sha256": "c0bcb664281b2e83784109a7554878095b7158fe248a660941f6030cc7ccafe8",
+      "bytes": 35589,
+      "triangles": 742,
+      "slots": [
+        "CommercialBrick",
+        "Roof",
+        "RoofMembrane",
+        "StoreSignTall",
+        "BuildingWindowOpaque"
+      ],
+      "dimensions_cm": [
+        1543.0,
+        1564.0001220703125,
+        1160.0
+      ],
+      "entry_native_cm": [
+        0,
+        672,
+        19
+      ],
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "source_sha256": "9439e9f1ab30c1e6373c2652038aaf0ba24c0827a36ece0e47d3dafb7fc4c9f9"
+    },
+    {
+      "target": "/Game/CitySim/Art/CommercialGround/SM_CommercialGround_LowDensity_Shop_C_books",
+      "file": "CitySimVR/Content/CitySim/Art/CommercialGround/SM_CommercialGround_LowDensity_Shop_C_books.uasset",
+      "sha256": "61be8968d417a3ffec49a2e5e6bb4187f95d09ef9052901bc62cc8e33d2d44a6",
+      "bytes": 35601,
+      "triangles": 742,
+      "slots": [
+        "CommercialBrick",
+        "Roof",
+        "RoofMembrane",
+        "StoreSignTall",
+        "BuildingWindowOpaque"
+      ],
+      "dimensions_cm": [
+        1543.0,
+        1564.0001220703125,
+        1160.0
+      ],
+      "entry_native_cm": [
+        0,
+        672,
+        19
+      ],
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "source_sha256": "9439e9f1ab30c1e6373c2652038aaf0ba24c0827a36ece0e47d3dafb7fc4c9f9"
+    },
+    {
+      "target": "/Game/CitySim/Art/CommercialGround/SM_CommercialGround_LowDensity_Shop_C_pharmacy",
+      "file": "CitySimVR/Content/CitySim/Art/CommercialGround/SM_CommercialGround_LowDensity_Shop_C_pharmacy.uasset",
+      "sha256": "39321b570705a3374fe8c1a093d7d966291361fda50b8481dedc462f8d53db1c",
+      "bytes": 35637,
+      "triangles": 742,
+      "slots": [
+        "CommercialBrick",
+        "Roof",
+        "RoofMembrane",
+        "StoreSignTall",
+        "BuildingWindowOpaque"
+      ],
+      "dimensions_cm": [
+        1543.0,
+        1564.0001220703125,
+        1160.0
+      ],
+      "entry_native_cm": [
+        0,
+        672,
+        19
+      ],
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "source_sha256": "9439e9f1ab30c1e6373c2652038aaf0ba24c0827a36ece0e47d3dafb7fc4c9f9"
+    },
+    {
+      "target": "/Game/CitySim/Art/CommercialGround/SM_CommercialGround_LowDensity_Shop_C_outfitters",
+      "file": "CitySimVR/Content/CitySim/Art/CommercialGround/SM_CommercialGround_LowDensity_Shop_C_outfitters.uasset",
+      "sha256": "661acdfb218eada39d30c28aaa91c5c0a7d2718faf7e29b8c71fda7ec82b9325",
+      "bytes": 35661,
+      "triangles": 742,
+      "slots": [
+        "CommercialBrick",
+        "Roof",
+        "RoofMembrane",
+        "StoreSignTall",
+        "BuildingWindowOpaque"
+      ],
+      "dimensions_cm": [
+        1543.0,
+        1564.0001220703125,
+        1160.0
+      ],
+      "entry_native_cm": [
+        0,
+        672,
+        19
+      ],
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "source_sha256": "9439e9f1ab30c1e6373c2652038aaf0ba24c0827a36ece0e47d3dafb7fc4c9f9"
+    },
+    {
+      "target": "/Game/CitySim/Art/CommercialGround/SM_CommercialGround_LowDensity_Shop_C_tech",
+      "file": "CitySimVR/Content/CitySim/Art/CommercialGround/SM_CommercialGround_LowDensity_Shop_C_tech.uasset",
+      "sha256": "dc290b8e8982962b2b09964203d18e463683470d8da9132667a4002fb3895b2c",
+      "bytes": 35589,
+      "triangles": 742,
+      "slots": [
+        "CommercialBrick",
+        "Roof",
+        "RoofMembrane",
+        "StoreSignTall",
+        "BuildingWindowOpaque"
+      ],
+      "dimensions_cm": [
+        1543.0,
+        1564.0001220703125,
+        1160.0
+      ],
+      "entry_native_cm": [
+        0,
+        672,
+        19
+      ],
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "source_sha256": "9439e9f1ab30c1e6373c2652038aaf0ba24c0827a36ece0e47d3dafb7fc4c9f9"
+    },
+    {
+      "target": "/Game/CitySim/Art/CommercialGround/SM_CommercialGround_LowDensity_Shop_D_repairs",
+      "file": "CitySimVR/Content/CitySim/Art/CommercialGround/SM_CommercialGround_LowDensity_Shop_D_repairs.uasset",
+      "sha256": "85a80ff57d7b9b917694e914be101f8fa7ac5eb5dd2752c60653ace575e9fd43",
+      "bytes": 37198,
+      "triangles": 794,
+      "slots": [
+        "CommercialBrick",
+        "Roof",
+        "RoofMembrane",
+        "StoreSignTall",
+        "BuildingWindowOpaque"
+      ],
+      "dimensions_cm": [
+        1543.0,
+        1566.0000610351562,
+        1200.0
+      ],
+      "entry_native_cm": [
+        0,
+        720,
+        19
+      ],
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "source_sha256": "cdf62e15e083f6e562488b3eeed89d3c230d291fc960ded4cbc5986bcb4d8b91"
+    },
+    {
+      "target": "/Game/CitySim/Art/CommercialGround/SM_CommercialGround_LowDensity_Shop_D_bakery",
+      "file": "CitySimVR/Content/CitySim/Art/CommercialGround/SM_CommercialGround_LowDensity_Shop_D_bakery.uasset",
+      "sha256": "f010bbaf53d18c5b9b4abcc7dcf1d2e94fd6d07e37093b645bd02f739601af30",
+      "bytes": 37186,
+      "triangles": 794,
+      "slots": [
+        "CommercialBrick",
+        "Roof",
+        "RoofMembrane",
+        "StoreSignTall",
+        "BuildingWindowOpaque"
+      ],
+      "dimensions_cm": [
+        1543.0,
+        1566.0000610351562,
+        1200.0
+      ],
+      "entry_native_cm": [
+        0,
+        720,
+        19
+      ],
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "source_sha256": "cdf62e15e083f6e562488b3eeed89d3c230d291fc960ded4cbc5986bcb4d8b91"
+    },
+    {
+      "target": "/Game/CitySim/Art/CommercialGround/SM_CommercialGround_LowDensity_Shop_D_cafe",
+      "file": "CitySimVR/Content/CitySim/Art/CommercialGround/SM_CommercialGround_LowDensity_Shop_D_cafe.uasset",
+      "sha256": "ff82edf8c862f53aec8a3c67e3fd8af8ff327547665d2b607b06e61062a140aa",
+      "bytes": 37162,
+      "triangles": 794,
+      "slots": [
+        "CommercialBrick",
+        "Roof",
+        "RoofMembrane",
+        "StoreSignTall",
+        "BuildingWindowOpaque"
+      ],
+      "dimensions_cm": [
+        1543.0,
+        1566.0000610351562,
+        1200.0
+      ],
+      "entry_native_cm": [
+        0,
+        720,
+        19
+      ],
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "source_sha256": "cdf62e15e083f6e562488b3eeed89d3c230d291fc960ded4cbc5986bcb4d8b91"
+    },
+    {
+      "target": "/Game/CitySim/Art/CommercialGround/SM_CommercialGround_LowDensity_Shop_D_books",
+      "file": "CitySimVR/Content/CitySim/Art/CommercialGround/SM_CommercialGround_LowDensity_Shop_D_books.uasset",
+      "sha256": "9fdcff3119d598d9a89c61b17edfdde52985f56fd66875f1f7b9eb56e882514b",
+      "bytes": 37174,
+      "triangles": 794,
+      "slots": [
+        "CommercialBrick",
+        "Roof",
+        "RoofMembrane",
+        "StoreSignTall",
+        "BuildingWindowOpaque"
+      ],
+      "dimensions_cm": [
+        1543.0,
+        1566.0000610351562,
+        1200.0
+      ],
+      "entry_native_cm": [
+        0,
+        720,
+        19
+      ],
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "source_sha256": "cdf62e15e083f6e562488b3eeed89d3c230d291fc960ded4cbc5986bcb4d8b91"
+    },
+    {
+      "target": "/Game/CitySim/Art/CommercialGround/SM_CommercialGround_LowDensity_Shop_D_pharmacy",
+      "file": "CitySimVR/Content/CitySim/Art/CommercialGround/SM_CommercialGround_LowDensity_Shop_D_pharmacy.uasset",
+      "sha256": "05a7f07584e4a242b26b849f90b7ae42b68f54d72b24911ce7fa61260c0ef57d",
+      "bytes": 37210,
+      "triangles": 794,
+      "slots": [
+        "CommercialBrick",
+        "Roof",
+        "RoofMembrane",
+        "StoreSignTall",
+        "BuildingWindowOpaque"
+      ],
+      "dimensions_cm": [
+        1543.0,
+        1566.0000610351562,
+        1200.0
+      ],
+      "entry_native_cm": [
+        0,
+        720,
+        19
+      ],
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "source_sha256": "cdf62e15e083f6e562488b3eeed89d3c230d291fc960ded4cbc5986bcb4d8b91"
+    },
+    {
+      "target": "/Game/CitySim/Art/CommercialGround/SM_CommercialGround_LowDensity_Shop_D_outfitters",
+      "file": "CitySimVR/Content/CitySim/Art/CommercialGround/SM_CommercialGround_LowDensity_Shop_D_outfitters.uasset",
+      "sha256": "a6e0cf384c368994e6d9fd2dc9d0b0db37e0ebb7ba25f7acdf6a59ddcbab1a45",
+      "bytes": 37234,
+      "triangles": 794,
+      "slots": [
+        "CommercialBrick",
+        "Roof",
+        "RoofMembrane",
+        "StoreSignTall",
+        "BuildingWindowOpaque"
+      ],
+      "dimensions_cm": [
+        1543.0,
+        1566.0000610351562,
+        1200.0
+      ],
+      "entry_native_cm": [
+        0,
+        720,
+        19
+      ],
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "source_sha256": "cdf62e15e083f6e562488b3eeed89d3c230d291fc960ded4cbc5986bcb4d8b91"
+    },
+    {
+      "target": "/Game/CitySim/Art/CommercialGround/SM_CommercialGround_LowDensity_Shop_D_tech",
+      "file": "CitySimVR/Content/CitySim/Art/CommercialGround/SM_CommercialGround_LowDensity_Shop_D_tech.uasset",
+      "sha256": "3d1238a81ba1ce505900d6373cabd3f0187d7d9466e5183cb925798cca26c93c",
+      "bytes": 37162,
+      "triangles": 794,
+      "slots": [
+        "CommercialBrick",
+        "Roof",
+        "RoofMembrane",
+        "StoreSignTall",
+        "BuildingWindowOpaque"
+      ],
+      "dimensions_cm": [
+        1543.0,
+        1566.0000610351562,
+        1200.0
+      ],
+      "entry_native_cm": [
+        0,
+        720,
+        19
+      ],
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "source_sha256": "cdf62e15e083f6e562488b3eeed89d3c230d291fc960ded4cbc5986bcb4d8b91"
+    }
+  ],
+  "build": 263,
+  "submitted": "839b9700f73c5d3487c0cad43392e06b682d4b3d",
+  "tested": "839b9700f73c5d3487c0cad43392e06b682d4b3d",
+  "url": "https://drone.shaun-husain.com/CitySimVR/citysim/263",
+  "status": "passed"
+}

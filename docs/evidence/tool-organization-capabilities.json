@@ -1,0 +1,46 @@
+{
+  "issue": 150,
+  "scope": "Semantic starter/seasonal asset capabilities",
+  "baseline": "2f300bc8996ba41e672ea5356893c563ed3bd9d7",
+  "manifests": [
+    {
+      "manifest": "ArtSource/Manifests/city_starter_kit.json",
+      "entries": 156,
+      "capabilityCounts": {
+        "building_refinement": 8,
+        "building_surfaces": 66,
+        "paired_park_lods": 16,
+        "reviewed_building": 60
+      },
+      "allOtherFieldsIdentical": true
+    },
+    {
+      "manifest": "ArtSource/Manifests/city_seasonal_kit.json",
+      "entries": 14,
+      "capabilityCounts": {
+        "building_refinement": 0,
+        "building_surfaces": 1,
+        "paired_park_lods": 2,
+        "reviewed_building": 1
+      },
+      "allOtherFieldsIdentical": true
+    }
+  ],
+  "pythonSyntaxFiles": 332,
+  "nativeImportsRun": false,
+  "nativeAssetsChanged": false,
+  "approvalsChanged": false,
+  "provenanceRetained": true,
+  "focusedRefinementSelection": {
+    "oldHardcodedCount": 14,
+    "currentCapabilityEntries": 8,
+    "newRequirement": "nonempty explicit capability set"
+  },
+  "remaining": "Broader functional tool organization and coordinated native/editable-source naming; no filesystem uasset moves",
+  "localOfflineChecks": 31,
+  "localPythonCases": 34,
+  "localManifestCases": 15,
+  "localResult": "Artifacts/ToolingValidation/987321bcbac8437ba6c8d84b24485ca7/Result.json",
+  "ciStatus": "not submitted",
+  "focusedNativeCases": 7
+}

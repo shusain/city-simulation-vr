@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "createdUTC": "2026-10-12T23:46:49.433623+00:00",
+  "task": "D82",
+  "status": "Draft originals; listening approval pending",
+  "method": "SuperCollider 3.14.1 NRT; oscillator/seeded-noise instruments; static gain; no samples, voices or third-party music",
+  "sources": {
+    "Presets.json": "e4d010d681631c2d8e5ce8cdb716182efc953eec56db3fd38cbd032322013b14",
+    "DreamSynths.scd": "56487ecc819b30b56e0536f285ddfa631846ad3016d50f5e42f592bc178f3eae"
+  },
+  "assets": [
+    {
+      "id": "CloudDistrict",
+      "title": "Cloud District",
+      "seconds": 96.0,
+      "frames": 4608000,
+      "channels": 2,
+      "sampleRate": 48000,
+      "bits": 16,
+      "integratedLUFS": -24.0,
+      "truePeakDBTP": -16.1,
+      "loudnessRangeLU": 1.5,
+      "file": "CloudDistrict.wav",
+      "sha256": "85a1bed6f0044efbd7ad804c0946f3ef8a3920cb9708094ab8f15771a95609cc",
+      "masterSha256": "af1502084cf0de801532fd47a0491d0a8844bf2fe34df859a6ac4f34e718c33f",
+      "scoreSha256": "fcaef19648549a15293278347314f291a69014d7fc9018b87d2f4164c197f507",
+      "package": "/Game/CitySim/Audio/Music/SW_Music_CloudDistrict"
+    },
+    {
+      "id": "GlassCanal",
+      "title": "Glass Canal",
+      "seconds": 87.27272916666666,
+      "frames": 4189091,
+      "channels": 2,
+      "sampleRate": 48000,
+      "bits": 16,
+      "integratedLUFS": -24.0,
+      "truePeakDBTP": -15.7,
+      "loudnessRangeLU": 2.5,
+      "file": "GlassCanal.wav",
+      "sha256": "b5c1252c0229a32cb4310c6c062dcd668ab0e7236f0deec15116d80afd365709",
+      "masterSha256": "3e2a57a91101dd04266cae05d09c55306554ea94ac8560f6fba2ba53cc5b7f57",
+      "scoreSha256": "5946b9f0b70d53b7c3c660cd05748dba8e0b70ff7acdb636ef992813d5626db7",
+      "package": "/Game/CitySim/Audio/Music/SW_Music_GlassCanal"
+    },
+    {
+      "id": "Afterglow",
+      "title": "Afterglow",
+      "seconds": 101.052625,
+      "frames": 4850526,
+      "channels": 2,
+      "sampleRate": 48000,
+      "bits": 16,
+      "integratedLUFS": -24.0,
+      "truePeakDBTP": -14.8,
+      "loudnessRangeLU": 2.6,
+      "file": "Afterglow.wav",
+      "sha256": "7c3410ee35f2725c8153877a275f880f14980fcde658ca13dbff6c8fdebf87ea",
+      "masterSha256": "be9388cbb2ba00c7b9f7bc7449c578af861363a2149f1ab744f6c1dceaa0d19e",
+      "scoreSha256": "7cc19c831ba4a959250d564808dd8ff1bfc5b8ae0519b22d332ddf3363319b15",
+      "package": "/Game/CitySim/Audio/Music/SW_Music_Afterglow"
+    }
+  ]
+}

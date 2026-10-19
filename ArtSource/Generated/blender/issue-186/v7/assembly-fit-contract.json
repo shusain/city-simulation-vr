@@ -1,0 +1,264 @@
+{
+  "family": "recycling",
+  "stage": "medium",
+  "roof_supports": [
+    {
+      "part": "Front_Pilaster_-7.7",
+      "roof": "Hall_SlateRoof",
+      "contact_axis": 2,
+      "embed_m": 0.01
+    },
+    {
+      "part": "Front_Pilaster_4",
+      "roof": "Hall_SlateRoof",
+      "contact_axis": 2,
+      "embed_m": 0.01
+    },
+    {
+      "part": "Front_Pilaster_17.7",
+      "roof": "Hall_SlateRoof",
+      "contact_axis": 2,
+      "embed_m": 0.01
+    }
+  ],
+  "doors": [
+    {
+      "id": "public",
+      "leaves": [
+        "PublicDoor_-15.51",
+        "PublicDoor_-14.49"
+      ],
+      "left_jamb": "EntryJamb_-16.15",
+      "right_jamb": "EntryJamb_-13.85",
+      "header": "EntryHeader",
+      "axis": 1,
+      "sign": -1,
+      "inner_opening": {
+        "min": [
+          -16.059999465942383,
+          -8.4,
+          0
+        ],
+        "max": [
+          -13.940000534057617,
+          -7.9,
+          2.7100000381469727
+        ]
+      },
+      "edge_reveal_m": 0.003,
+      "centre_or_panel_seam_m": 0.006
+    },
+    {
+      "id": "receiving_1",
+      "leaves": [
+        "ReceivingDoor_-2"
+      ],
+      "left_jamb": "BayJamb_-2_-2.55",
+      "right_jamb": "BayJamb_-2_2.55",
+      "header": "BayHeader_-2",
+      "axis": 1,
+      "sign": -1,
+      "inner_opening": {
+        "min": [
+          -4.440000057220459,
+          -8.4,
+          0
+        ],
+        "max": [
+          0.4399999976158142,
+          -7.9,
+          4.724999904632568
+        ]
+      },
+      "edge_reveal_m": 0.003,
+      "centre_or_panel_seam_m": 0.006
+    },
+    {
+      "id": "receiving_2",
+      "leaves": [
+        "ReceivingDoor_10"
+      ],
+      "left_jamb": "BayJamb_10_-2.55",
+      "right_jamb": "BayJamb_10_2.55",
+      "header": "BayHeader_10",
+      "axis": 1,
+      "sign": -1,
+      "inner_opening": {
+        "min": [
+          7.559999942779541,
+          -8.4,
+          0
+        ],
+        "max": [
+          12.440000534057617,
+          -7.9,
+          4.724999904632568
+        ]
+      },
+      "edge_reveal_m": 0.003,
+      "centre_or_panel_seam_m": 0.006
+    }
+  ],
+  "ray_checks": [
+    {
+      "part": "PublicDoor_-15.51",
+      "point": [
+        -16.04499920654297,
+        0.015000000026077032
+      ],
+      "first_hit": "PublicDoor_-15.51"
+    },
+    {
+      "part": "PublicDoor_-15.51",
+      "point": [
+        -15.015000259399415,
+        0.015000000026077032
+      ],
+      "first_hit": "PublicDoor_-15.51"
+    },
+    {
+      "part": "PublicDoor_-15.51",
+      "point": [
+        -16.04499920654297,
+        2.6950000171661377
+      ],
+      "first_hit": "PublicDoor_-15.51"
+    },
+    {
+      "part": "PublicDoor_-15.51",
+      "point": [
+        -15.015000259399415,
+        2.6950000171661377
+      ],
+      "first_hit": "PublicDoor_-15.51"
+    },
+    {
+      "part": "PublicDoor_-15.51",
+      "point": [
+        -15.529999732971191,
+        1.3550000085961074
+      ],
+      "first_hit": "PublicDoor_-15.51"
+    },
+    {
+      "part": "PublicDoor_-14.49",
+      "point": [
+        -14.984999740600585,
+        0.015000000026077032
+      ],
+      "first_hit": "PublicDoor_-14.49"
+    },
+    {
+      "part": "PublicDoor_-14.49",
+      "point": [
+        -13.954999839782715,
+        0.015000000026077032
+      ],
+      "first_hit": "PublicDoor_-14.49"
+    },
+    {
+      "part": "PublicDoor_-14.49",
+      "point": [
+        -14.984999740600585,
+        2.6950000171661377
+      ],
+      "first_hit": "PublicDoor_-14.49"
+    },
+    {
+      "part": "PublicDoor_-14.49",
+      "point": [
+        -13.954999839782715,
+        2.6950000171661377
+      ],
+      "first_hit": "PublicDoor_-14.49"
+    },
+    {
+      "part": "PublicDoor_-14.49",
+      "point": [
+        -14.46999979019165,
+        1.3550000085961074
+      ],
+      "first_hit": "PublicDoor_-14.49"
+    },
+    {
+      "part": "ReceivingDoor_-2",
+      "point": [
+        -4.424999797821045,
+        0.015000000026077032
+      ],
+      "first_hit": "ReceivingDoor_-2"
+    },
+    {
+      "part": "ReceivingDoor_-2",
+      "point": [
+        0.4250000064373016,
+        0.015000000026077032
+      ],
+      "first_hit": "ReceivingDoor_-2"
+    },
+    {
+      "part": "ReceivingDoor_-2",
+      "point": [
+        -4.424999797821045,
+        4.710000122070313
+      ],
+      "first_hit": "ReceivingDoor_-2"
+    },
+    {
+      "part": "ReceivingDoor_-2",
+      "point": [
+        0.4250000064373016,
+        4.710000122070313
+      ],
+      "first_hit": "ReceivingDoor_-2"
+    },
+    {
+      "part": "ReceivingDoor_-2",
+      "point": [
+        -1.9999998956918716,
+        2.3625000610481948
+      ],
+      "first_hit": "ReceivingDoor_-2"
+    },
+    {
+      "part": "ReceivingDoor_10",
+      "point": [
+        7.575000202178955,
+        0.015000000026077032
+      ],
+      "first_hit": "ReceivingDoor_10"
+    },
+    {
+      "part": "ReceivingDoor_10",
+      "point": [
+        12.425000274658203,
+        0.015000000026077032
+      ],
+      "first_hit": "ReceivingDoor_10"
+    },
+    {
+      "part": "ReceivingDoor_10",
+      "point": [
+        7.575000202178955,
+        4.710000122070313
+      ],
+      "first_hit": "ReceivingDoor_10"
+    },
+    {
+      "part": "ReceivingDoor_10",
+      "point": [
+        12.425000274658203,
+        4.710000122070313
+      ],
+      "first_hit": "ReceivingDoor_10"
+    },
+    {
+      "part": "ReceivingDoor_10",
+      "point": [
+        10.000000238418579,
+        2.3625000610481948
+      ],
+      "first_hit": "ReceivingDoor_10"
+    }
+  ]
+}

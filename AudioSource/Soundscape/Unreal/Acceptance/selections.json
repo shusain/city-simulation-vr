@@ -1,0 +1,150 @@
+{
+  "task": "D58",
+  "feedbackDate": "2026-10-11",
+  "audition": "Artifacts/D58/Audition-20261011-v1",
+  "decisions": {
+    "Police": {
+      "persistent": "Police-A",
+      "accent": "Police-B",
+      "direction": "Occasional short alternate phrase when passing civilian vehicles or bystanders, to vary the persistent sound. Prefer actual traffic proximity/interaction as eligibility; randomize whether/which eligible encounter receives an accent, with cooldown and bounded voices. No arbitrary global random sirens."
+    },
+    "Fire": {
+      "persistent": "Fire-A",
+      "accent": "Separate horn derived from Fire-B's horn character",
+      "direction": "Keep the A wail. Author the honk as a separate short sound, rather than importing B's fixed horn schedule into the persistent loop. Traffic/bystander eligibility, cooldown and mixing policy need integration."
+    },
+    "Ambulance": {
+      "persistent": "Ambulance-A",
+      "direction": "Keep the selected A character."
+    },
+    "Town": {
+      "selected": "Town-G",
+      "reviewedAudition": "Artifacts/D58/Town-20261011-v3-Pitch",
+      "master": "Artifacts/D58/Town-20261011-v3-Pitch/Masters/Town-G.wav",
+      "selectionStatus": "Selected for now by the user on 2026-10-11",
+      "direction": "Keep G's 540/648 Hz two-tone character with quiet 270/324 Hz octave components and D-derived motor timing. Use this identity for production loop/end authoring; runtime integration and device/lifecycle/fatigue checks remain pending."
+    }
+  },
+  "sirenProductionAcceptance": {
+    "pack": "Artifacts/D58/Production-20261011-v2",
+    "status": "User accepts these siren source sounds as good to ship for now, 2026-10-11",
+    "nextPriority": "Generate and review the remaining D58 sample library before incorporating audio into Unreal",
+    "publication": "Source-content acceptance only; no package publication or device installation requested"
+  },
+  "libraryFeedback": {
+    "reviewedPack": "Artifacts/D58/Library-20261011-v4",
+    "date": "2026-10-11",
+    "acceptedForNow": [
+      "Scene-Park-Day",
+      "Bird-Chirp-A",
+      "Bird-Chirp-B",
+      "Bird-Chirp-C",
+      "Industry-Idle",
+      "Fire-Crackle",
+      "Earthquake-Rumble",
+      "Construction-Tap",
+      "Demolition-Impact",
+      "Action-Confirm",
+      "Action-Denied",
+      "Objective-Complete",
+      "Milestone-Reached",
+      "Service-Attention",
+      "Incident-Notice",
+      "Service-Recovered"
+    ],
+    "generalDirection": "Park and industry are liked overall. City and weather are generally good, subject to the specific revisions below. Individual activity/disaster and notification sources are good to roll with; fine tuning can follow later.",
+    "requestedRevisions": {
+      "insects": "Both night cricket beds and park-night mix sound too clean/robotic/beepy; add rougher waveform/texture and irregular insect-like phrasing.",
+      "industry": "Retain the engine hum and add more pronounced machine clanks/occasional work sounds.",
+      "city": "Remove unclear low-frequency swells; make the car and truck passes more realistic.",
+      "weather": "Reduce the storm scene's continuous noise. Light rain needs quieter pitter-patter and clearly different intensity from heavy rain; provide several levels including downpour."
+    },
+    "revisionPack": "Artifacts/D58/Library-20261011-v5",
+    "revisionStatus": "Requested source revisions pending listening review; no new subjective acceptance implied"
+  },
+  "libraryRefinementFeedback": {
+    "reviewedPack": "Artifacts/D58/Library-20261011-v5",
+    "date": "2026-10-11",
+    "newlyAcceptedForNow": [
+      "Car-Pass",
+      "Truck-Pass",
+      "City-Distant",
+      "Scene-City",
+      "Industry-Working",
+      "Industry-Clank",
+      "Scene-Industry"
+    ],
+    "direction": "City scene and car/truck passes are much better and good to keep; revised industrial sounds are also good to keep. Crickets are better but need a slightly higher pitch. Rain now sounds too sharp; soften it toward a middle ground while retaining the differentiated intensity levels.",
+    "requestedRevisions": [
+      "Night-Crickets-Light",
+      "Night-Crickets-Dense",
+      "Rain-Light",
+      "Rain-Moderate",
+      "Rain-Heavy",
+      "Rain-Downpour",
+      "Scene-Park-Night",
+      "Scene-Weather"
+    ],
+    "revisionPack": "Artifacts/D58/Library-20261011-v6",
+    "revisionStatus": "Higher cricket pitch and softened rain are pending listening review"
+  },
+  "cricketPairFeedback": {
+    "reviewedPack": "Artifacts/D58/Library-20261011-v6",
+    "date": "2026-10-11",
+    "newlyAcceptedForNow": [
+      "Rain-Light",
+      "Rain-Moderate",
+      "Rain-Heavy",
+      "Rain-Downpour"
+    ],
+    "direction": "Rain is good now and should be retained. Cricket frequency means pitch, not more frequent call arrivals. Use a higher-pitched chirp-chirp two-part call in most cases, keeping overall call cadence steady.",
+    "requestedRevisions": [
+      "Night-Crickets-Light",
+      "Night-Crickets-Dense",
+      "Scene-Park-Night"
+    ],
+    "revisionPack": "Artifacts/D58/Library-20261011-v7",
+    "revisionStatus": "Higher-pitched paired cricket calls and an isolated pair audition pending listening review"
+  },
+  "cricketAcceptance": {
+    "reviewedPack": "Artifacts/D58/Library-20261011-v7",
+    "date": "2026-10-11",
+    "newlyAcceptedForNow": [
+      "Cricket-Chirp-Pair",
+      "Night-Crickets-Light",
+      "Night-Crickets-Dense",
+      "Scene-Park-Night"
+    ],
+    "status": "User says these sound good; retain the paired higher-pitched cricket identity",
+    "currentReviewRound": "Requested core source listening/refinement round complete",
+    "nextDirection": "User asks about other sounds. Optional traffic/service-operation and construction/demolition variety are proposed; no additional sounds have been generated or accepted from this question. Unreal integration remains deferred pending the next agreed slice and shared native window."
+  },
+  "unrealPreparation": {
+    "date": "2026-10-11",
+    "direction": "User requests getting audio assets in place without disturbing the concurrent Blender/Unreal integration session",
+    "staging": "AudioSource/D58/Unreal",
+    "scope": "Stage accepted PCM16 WAVs and import metadata outside CitySimVR; prepare focused SoundWave import tooling. D83 currently owns the exclusive native window, so no Editor/build/import/Content/runtime/C++ work in this slice.",
+    "nativeImport": "Pending explicit D83 release and recorded D58 native-window claim; no additional source-listening approval is needed"
+  },
+  "sourceHandoff": {
+    "date": "2026-10-11",
+    "status": "Source preparation complete and ready for delegated runtime integration after D83 release",
+    "handoff": "AudioSource/D58/Unreal/Handoff.json",
+    "integrationOwner": "List pending headset validations",
+    "integrationOwnerThreadId": "01a10a82-390e-7041-aa68-192a8d42bc43",
+    "coordinationEvidence": "Direct human instruction verified in that thread: coordinate with that agent on the integration work and what it's built already to hand off",
+    "remainingSourceWork": [],
+    "nativeWorkInThisChat": "None; no native-window claim, imports, builds or runtime C++/MetaSound changes. The integration owner will claim the D58 task window after D83's explicit release."
+  },
+  "acceptanceScope": "Current requested core source review/refinement round is complete: selected sirens, park-day/birds, city/car/truck and industrial sounds/scenes, all four rain sources, activity/disaster/notification sounds, and paired higher-pitched crickets/park-night are accepted for now. Optional additional source sounds are suggestions only. Actual Unreal playback/event/mix/spatial/lifecycle, platform/device fatigue and measured cost remain pending.",
+  "rainSirenFeedback20261012": {
+    "feedback": "Rain still sounds crackly/fire-like; vehicle sirens remain too loud without zooming onto responders",
+    "revisionScope": [
+      "Four rain beds: rounded drops and continuous wash",
+      "Vehicle phases and accents: logical 3D camera/emitter attenuation"
+    ],
+    "status": "Implemented and locally verified; user listening pending",
+    "priorAcceptedSourcesPreserved": true,
+    "candidate": "integration-2026.10.12.1"
+  }
+}

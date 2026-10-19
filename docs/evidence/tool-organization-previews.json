@@ -1,0 +1,62 @@
+{
+  "issue": 150,
+  "scope": "Blender preview orchestration and shared sheet API",
+  "baseline": "1fa985459a1b319bd8e653c82f9d90f100af9fc5",
+  "movedImplementations": [
+    {
+      "original": "CityAssetPreview.py",
+      "canonical": "Tools/Assets/Blender/CityAssetPreview.py",
+      "functionBodiesIdentical": true,
+      "functions": [
+        "digest",
+        "preview_scene",
+        "evaluated_copy",
+        "fit_camera",
+        "studio_lights",
+        "render_asset"
+      ]
+    },
+    {
+      "original": "Render-CityBlendPreviews.py",
+      "canonical": "Tools/Assets/Blender/Render-CityBlendPreviews.py",
+      "functionBodiesIdentical": true,
+      "functions": [
+        "visible_meshes",
+        "parse_args",
+        "main"
+      ]
+    },
+    {
+      "original": "Render-CityPreviewSheet.py",
+      "canonical": "Tools/Assets/Preview/CityPreviewSheets.py",
+      "functionBodiesIdentical": true,
+      "functions": [
+        "font",
+        "fitted_text",
+        "compose",
+        "main"
+      ]
+    }
+  ],
+  "sourceNativeAssetsChanged": false,
+  "nativeImportsRun": false,
+  "sourceApprovalsChanged": false,
+  "localOfflineChecks": 34,
+  "localPythonCases": 41,
+  "localPreviewWrapperCases": 16,
+  "localResult": "Artifacts/ToolingValidation/56b6e07f63b24a53abaa879651943fbd/Result.json",
+  "renderingFixturesOnly": true,
+  "productionSourceChanges": false,
+  "sharedProcessFix": "Literal CreateNew files and concurrent raw output streams replace wildcard-sensitive PowerShell5 redirect paths",
+  "pythonSyntaxFiles": 336,
+  "powershellSyntaxFiles": 75,
+  "ci190": {
+    "localIsolatedProfileResult": "Artifacts/PreviewCiValidation/Tooling/local-a53277068bb9-32e3ddfd/Result.json",
+    "status": "failed before Editor",
+    "negativeDiagnosticProbe": "Missing Pillow reproduced with PythonNOUSERSITE; actual stderr printed and retained",
+    "head": "a53277068bb92e1ca71212842459c1dd1085eb22",
+    "correction": "CI entry uses existing bundled Python/Pillow from Windows account profile and persists logs/receipts outside ephemeral checkout",
+    "reproducedRuntimeGap": "Interactive Python loses Pillow with user-site disabled; bundled runtime passes all34 checks",
+    "failure": "preview-contracts child exit1; ephemeral logs cleaned"
+  }
+}

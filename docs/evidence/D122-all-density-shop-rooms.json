@@ -1,0 +1,810 @@
+{
+  "task": "D122",
+  "slice": "all-eight-shop-room-windows-at-every-density",
+  "status": "ready-for-native-appearance-playtest-confirmation",
+  "commit": "5b9b57d158f7940d15ed2035adca2883bf68dc15",
+  "gameRevision": "dev-f1097b63c1f0562edbcb",
+  "saveSchema": 68,
+  "pullRequest": "https://git.shaun-husain.com/CitySimVR/citysim/pulls/73",
+  "sourceAcceptance": "Shaun: Looks great before shipping can you add this to the medium and high density versions of the shops; exact77-84 v1 accepted from closeups972.",
+  "sourceExports": [
+    {
+      "key": "repairs",
+      "issue": 77,
+      "version": 1,
+      "pr": 85,
+      "commit": "180a7dc5cbf243839eaaccf41ab013ae77224595",
+      "approval_sha256": "7122038aab1547921ef3892d05b38ad72b8bc54d333c9454af018606a181808e",
+      "png_sha256": "61166a6c64ce9cf57e080e24fb99d5628e32793e3267f7fed719365662020811",
+      "bundle_sha256": "0c22de42b125049b92be054ddf2a28fcb7aef4738071ff7a269fdb8f8c75f22e",
+      "directory": "ArtSource/Generated/comfy/issue-77/v1",
+      "source_context_sha": "d28931af5987d1b91f32499811c06d6c7c215213",
+      "all_artifacts_verified": true
+    },
+    {
+      "key": "market",
+      "issue": 78,
+      "version": 1,
+      "pr": 87,
+      "commit": "94633be1d549218bf0d927b26950bab17dc2c0a0",
+      "approval_sha256": "fd6821821e08edeea19abbe6f84748ed87483eb1e45c6ebf828ffd7b69faea06",
+      "png_sha256": "477a79928600a3d5bad3651fb64a7d5c24803ca4b980307521f1bf124d5c4398",
+      "bundle_sha256": "8ec29972b1b4bc2628e3f2fada3b980e548b06959a44dc832997573bbfc29e7a",
+      "directory": "ArtSource/Generated/comfy/issue-78/v1",
+      "source_context_sha": "d28931af5987d1b91f32499811c06d6c7c215213",
+      "all_artifacts_verified": true
+    },
+    {
+      "key": "bakery",
+      "issue": 79,
+      "version": 1,
+      "pr": 89,
+      "commit": "60664d3965ff0fad6d479e7250d3700ccea64227",
+      "approval_sha256": "96f1be88df8caad75259fe112bf09664b3a9dcd22ee827dcfcda3ad00bfc84ae",
+      "png_sha256": "b21fd4307983fe8e7a7e455f3fab0bd46785e057809404334c18045dc0dd6ee1",
+      "bundle_sha256": "c8ee00913beddf6fd10ac2ad80177b62ee803e66a6ed2519421ee5964e8f70dd",
+      "directory": "ArtSource/Generated/comfy/issue-79/v1",
+      "source_context_sha": "d28931af5987d1b91f32499811c06d6c7c215213",
+      "all_artifacts_verified": true
+    },
+    {
+      "key": "cafe",
+      "issue": 80,
+      "version": 1,
+      "pr": 91,
+      "commit": "897d8b85130f102f714d0ac9063fcd4440875c08",
+      "approval_sha256": "38dd9eddef0238b9c53b7da51e3beb4015e957cf9f193b3aee1ac0fde754bc2b",
+      "png_sha256": "f36a05a9fda1fbd7f180d14bcdafa4a569e7a0eef55d52e5025aff6ee482eaad",
+      "bundle_sha256": "7f395d33fd79b725cfa2b2f0c85c161aff002afafc0ec1312dc2b9b04e20d1fb",
+      "directory": "ArtSource/Generated/comfy/issue-80/v1",
+      "source_context_sha": "d28931af5987d1b91f32499811c06d6c7c215213",
+      "all_artifacts_verified": true
+    },
+    {
+      "key": "books",
+      "issue": 81,
+      "version": 1,
+      "pr": 93,
+      "commit": "6ab67ffb3d53f0e6c7d41dab6fac06b97a8768fd",
+      "approval_sha256": "476d15eb56c8bf2df4183fe8cb3a1a48609634d1deb1fc46384e87d86602c628",
+      "png_sha256": "c93711c4318cd9f11d1780154ccca0ab3ecf07a327150dc373f9f299b53075a2",
+      "bundle_sha256": "3d78c1fb6b1abaf71387ed434848e4d53dd89e41304b5d36d4644bf44470ba39",
+      "directory": "ArtSource/Generated/comfy/issue-81/v1",
+      "source_context_sha": "d28931af5987d1b91f32499811c06d6c7c215213",
+      "all_artifacts_verified": true
+    },
+    {
+      "key": "pharmacy",
+      "issue": 82,
+      "version": 1,
+      "pr": 95,
+      "commit": "ae64cd6d7c1815892318b320d89494b7cb32ac64",
+      "approval_sha256": "3f1cbe12d5444d0092e4aaa8256db92d36f2e7c36f96c25b6fa85ab75c53b932",
+      "png_sha256": "ad274ed9876347425862c972054f6c1273f523cbd8d60635b4c5ab948078d0ea",
+      "bundle_sha256": "b44bc7fa512432afc7db1178911f068c427bcc6b17c66d64276d6a8e1fba77bc",
+      "directory": "ArtSource/Generated/comfy/issue-82/v1",
+      "source_context_sha": "86fe0c28603e8eeec5a969193d8e2a11e2111e39",
+      "all_artifacts_verified": true
+    },
+    {
+      "key": "outfitters",
+      "issue": 83,
+      "version": 1,
+      "pr": 97,
+      "commit": "77985407feb452c661f1e70d0b4c549ac4be7c17",
+      "approval_sha256": "db64069481cd0f8870c9d8ce1cf0eeda4721399d021354e82bdf8cb7f4ca8733",
+      "png_sha256": "7e438f4cd7854894024f29667a59c8e5d3652cf5da0d4f8743ba9dfa3b557682",
+      "bundle_sha256": "613dacdd225ae0b2326ac21159770ef5038566588ea09ad683ca36fecd1ef008",
+      "directory": "ArtSource/Generated/comfy/issue-83/v1",
+      "source_context_sha": "86fe0c28603e8eeec5a969193d8e2a11e2111e39",
+      "all_artifacts_verified": true
+    },
+    {
+      "key": "tech",
+      "issue": 84,
+      "version": 1,
+      "pr": 99,
+      "commit": "b7523013caba34d5f2bb7d03fd12a2a673ec2e7b",
+      "approval_sha256": "6f2ae130fe1a43e11b419e4bf2dbded7b36f1a46c9b3ab31c4850993afd69585",
+      "png_sha256": "aa16e4a87f0295c4529b104d731b54e5c034c889a3c38a79aac46c0c71444dec",
+      "bundle_sha256": "f26cb55b24278127d69d64b8ba1d20b6c7148f6503426c2e32913ace3c6229ea",
+      "directory": "ArtSource/Generated/comfy/issue-84/v1",
+      "source_context_sha": "86fe0c28603e8eeec5a969193d8e2a11e2111e39",
+      "all_artifacts_verified": true
+    }
+  ],
+  "sourceMerges": [
+    {
+      "pr": 85,
+      "merge": "37339b24035f65b0ebf3b2b0796b9fa21e4318ae",
+      "sourceOnlyFiles": 8
+    },
+    {
+      "pr": 87,
+      "merge": "e8b31669a35b78f5f09828a098cf4cee354be101",
+      "sourceOnlyFiles": 8
+    },
+    {
+      "pr": 89,
+      "merge": "9bb2260c2d4171ceef0ac3fea56195392bb63b08",
+      "sourceOnlyFiles": 8
+    },
+    {
+      "pr": 91,
+      "merge": "ced836bd12c19bee23f8a543eb5d31153046a0cc",
+      "sourceOnlyFiles": 8
+    },
+    {
+      "pr": 93,
+      "merge": "37565dcbe6e72eacae3469f71b79faf797c60979",
+      "sourceOnlyFiles": 8
+    },
+    {
+      "pr": 95,
+      "merge": "6a6a82ac1c45c3c52a3f3a39378b1693490f4d7c",
+      "sourceOnlyFiles": 8
+    },
+    {
+      "pr": 97,
+      "merge": "dcb99428500b87c9a4259db02b6beb458cb48fea",
+      "sourceOnlyFiles": 8
+    },
+    {
+      "pr": 99,
+      "merge": "88e57d79778d6a33f1bd25c5616a7a4d9a31f309",
+      "sourceOnlyFiles": 8
+    }
+  ],
+  "behavior": [
+    "All8 existing business room textures cover legacy low/medium/high and active low A/B/C/D:56 meshes,616 regular ground panes.",
+    "Original entrance/transom/sidelights and upper glass retained, matching business signs/facades/damage unchanged.",
+    "One shared stock-node opaque master/eight material instances/eight mip-safe512x1024 textures; zero added geometry/actors/material slots.",
+    "Exact550x750 source crop11:15, both axes scaled.88 into484x660 inset; no nonuniform stretch.",
+    "Existing warm night-glow controls retained; merchandise is subdued by that illumination.",
+    "Newspaper source33-35 native alpha ink unchanged; three UI proofs match candidate62 byte-for-byte."
+  ],
+  "check": {
+    "task": "D122",
+    "build": 88,
+    "mode": "Check",
+    "status": "passed",
+    "submittedCommit": "5b9b57d158f7940d15ed2035adca2883bf68dc15",
+    "testedCommit": "5b9b57d158f7940d15ed2035adca2883bf68dc15",
+    "editorSeconds": 88.21,
+    "tests": [
+      "CitySim.Art.D122References",
+      "CitySim.Art.D122NewspaperRendering",
+      "CitySim.News.NewspaperEditorialFacts",
+      "CitySim.News.SharedNavigationAndBounds",
+      "CitySim.Art.StorefrontAssets"
+    ],
+    "output": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\CI\\Builds\\88-5b9b57d158f7-Check-2b6860b4",
+    "url": "https://drone.shaun-husain.com/CitySimVR/citysim/88",
+    "verifiedUtc": "2026-10-16T20:35:34.751789-05:00"
+  },
+  "windows": {
+    "task": "D122",
+    "build": 89,
+    "mode": "WindowsCandidate",
+    "status": "passed",
+    "submittedCommit": "5b9b57d158f7940d15ed2035adca2883bf68dc15",
+    "testedCommit": "5b9b57d158f7940d15ed2035adca2883bf68dc15",
+    "editorSeconds": 87.63,
+    "tests": [
+      "CitySim.Art.D122References",
+      "CitySim.Art.D122NewspaperRendering",
+      "CitySim.News.NewspaperEditorialFacts",
+      "CitySim.News.SharedNavigationAndBounds",
+      "CitySim.Art.StorefrontAssets"
+    ],
+    "output": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\CI\\Builds\\89-5b9b57d158f7-WindowsCandidate-867f1cb9",
+    "url": "https://drone.shaun-husain.com/CitySimVR/citysim/89",
+    "verifiedUtc": "2026-10-16T20:46:17.092122-05:00",
+    "package": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\CI\\Builds\\89-5b9b57d158f7-WindowsCandidate-867f1cb9\\CitySimVR-Windows.zip",
+    "packageSha256": "04b4ccf8675747d0465efe924d194427f6974966d6da1bfb4aa4ca135789c4a1",
+    "extracted": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\D122\\DensityRooms\\Extracted-Build89",
+    "executable": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\D122\\DensityRooms\\Extracted-Build89\\CitySimVR\\Binaries\\Win64\\CitySimVR.exe",
+    "executableSha256": "c821850bd7ad0b90b1dbaa2e7bf10ad5fca6c0e1428cf5c49ee60a26b6e14ed4",
+    "gameRevision": "dev-f1097b63c1f0562edbcb",
+    "revisionStampFoundInExecutable": true,
+    "runtimeFiles": 53,
+    "profile": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\D122\\DensityRooms\\Play-Build89-IsolatedProfile",
+    "saveSchema": 68,
+    "profileState": "fresh isolated; no real player files copied",
+    "visualReview": "passed",
+    "visualCaptures": [
+      {
+        "file": "Bakery-High-A-Day-Close.png",
+        "sha256": "443bd4f794a4faab8235f6ca467e87612818014cd15e5f741cb84becbd14d64a"
+      },
+      {
+        "file": "Bakery-High-A-Day.png",
+        "sha256": "d5ab8b6b94c41c45442a0792bb72fedc1af58fdc6cb9f39998961966ffea4232"
+      },
+      {
+        "file": "Bakery-Low-A-Day.png",
+        "sha256": "548cb5a531d7964048f1885093bd94d9888bbbe32d87adf57aca5c19d9c921ab"
+      },
+      {
+        "file": "Bakery-Medium-A-Day-Close.png",
+        "sha256": "a92fafc6bb8134a2ff8bdaf404ff5284a39e980ad398dd5da8f00bdbb51fae57"
+      },
+      {
+        "file": "Bakery-Medium-A-Day.png",
+        "sha256": "23e8990eefac8ffbefde33d2adac60db917bde9188c41777f18369bf0d5981e3"
+      },
+      {
+        "file": "Books-High-A-Day-Close.png",
+        "sha256": "a3dcade7ab78aad91a349fb4e8e7320b5769530ddff0d4385ca2db5cf3fe229a"
+      },
+      {
+        "file": "Books-High-A-Day.png",
+        "sha256": "708ab28510db5409bf9771e1eba6bb0c19a184cbf76f0fee374e29852cbd2728"
+      },
+      {
+        "file": "Books-Low-A-Day.png",
+        "sha256": "8c048cb50ba18553710027fdd58ad75cd502086cbd0989470422c947efcd754a"
+      },
+      {
+        "file": "Books-Medium-A-Day-Close.png",
+        "sha256": "bc48d81a1fd02cded59ef576910a5e6935e6a4eb65f5e7e5deb3f007760d3e3b"
+      },
+      {
+        "file": "Books-Medium-A-Day.png",
+        "sha256": "f0664173f38c2292c20b31f959c04f6b824749b337919b978c77a4dda5e90ccf"
+      },
+      {
+        "file": "Cafe-High-A-Day-Close.png",
+        "sha256": "6ac38daac460dd0945070f1df5a6efd6c179db31526a80f8f321aa481e8a2b59"
+      },
+      {
+        "file": "Cafe-High-A-Day.png",
+        "sha256": "ae89f4113a1f84df4583280d82e296dbd8f7648655650badb425d3554a5b0a4c"
+      },
+      {
+        "file": "Cafe-Low-A-Day.png",
+        "sha256": "5a688e536c040642f69c077131c3cd1128b158fc8e6b20305d732c71c382cab3"
+      },
+      {
+        "file": "Cafe-Medium-A-Day-Close.png",
+        "sha256": "7907c3f2145ed42d91a7a1bc2ad9b120dde102b253feca185b9023c7255e90f0"
+      },
+      {
+        "file": "Cafe-Medium-A-Day.png",
+        "sha256": "437ad8f1820e0622c942dc6834e690dd3c34615640408d5857e148fa6a832901"
+      },
+      {
+        "file": "Market-High-A-Day-Close.png",
+        "sha256": "fa9e535e3333e6ae7a10902374d33e4468ba6a65853250f1c9624108bc969a77"
+      },
+      {
+        "file": "Market-High-A-Day.png",
+        "sha256": "2aad9fce92701bf4cd4da4c019cd41275dfef2a67147e0522ec2cc18eab28735"
+      },
+      {
+        "file": "Market-Low-A-Day.png",
+        "sha256": "34a5dbd5ade2267b975890a86ebdcae40eab765a3f5731a2f7e85bbdbf42cf76"
+      },
+      {
+        "file": "Market-Medium-A-Day-Close.png",
+        "sha256": "d9700d7aab9fa295b63f3f39fb1cadc4adf15d9b03bb0f1da8fbafa86a2844f4"
+      },
+      {
+        "file": "Market-Medium-A-Day.png",
+        "sha256": "7feb95d84c8b0a9bf436404b2d89f163c8cbc4d99288607edf3a14e3462c9bf4"
+      },
+      {
+        "file": "Newspaper-1000.png",
+        "sha256": "51e8ae9817cc5d1ad6f78e6fdd9103935683b0715c3f89943a7fff949495bfe8"
+      },
+      {
+        "file": "Newspaper-700.png",
+        "sha256": "5dd610448bee41b10bf2d2091a45c8020639c9ed42ecad85c20c77a8915db992"
+      },
+      {
+        "file": "Newspaper-920.png",
+        "sha256": "9ae17e3b9c342d61628c4160bfa4c811dd5980173ed707810bf329181cf941a8"
+      },
+      {
+        "file": "Outfitters-High-A-Day-Close.png",
+        "sha256": "4e2f3b4bbcf90420515f0a3fc1b069f3bf3577e9bf78d9bfd444bb8ba6073a80"
+      },
+      {
+        "file": "Outfitters-High-A-Day.png",
+        "sha256": "848f23e24b06291f96ac734482b9d82b6a6e71abb9c47cb8da7690243ef05804"
+      },
+      {
+        "file": "Outfitters-Low-A-Day.png",
+        "sha256": "2d6b2bd0b6013d5fd9f356dcfba334e88cd8008193efe9e41167eab9e71a6417"
+      },
+      {
+        "file": "Outfitters-Medium-A-Day-Close.png",
+        "sha256": "b9a616189752c7bd2972e22dca8211bd13166b9d12e9bcb241cb95fae8806e22"
+      },
+      {
+        "file": "Outfitters-Medium-A-Day.png",
+        "sha256": "55714a426175dbf12b37916d41e2127d4b8688e77f8a6932c5e6ef1f3a76b67f"
+      },
+      {
+        "file": "Pharmacy-High-A-Day-Close.png",
+        "sha256": "88f00ec78bc72683454936b5fb2d1866018e4a14721be35f34b9c890e5fe4dbb"
+      },
+      {
+        "file": "Pharmacy-High-A-Day.png",
+        "sha256": "800537ef671bc5379d264a2ccac64d7456e35278eab88140f2e1428162e969a0"
+      },
+      {
+        "file": "Pharmacy-Low-A-Day.png",
+        "sha256": "846ace1685afe24d84d37909f43a0e3c41f1554718d70b7cd9902b6df481f895"
+      },
+      {
+        "file": "Pharmacy-Medium-A-Day-Close.png",
+        "sha256": "5f84a959ed9b6d31ff92f3b3002f4a9ece5ab1bc6802a5cc1ee422c0e39b1394"
+      },
+      {
+        "file": "Pharmacy-Medium-A-Day.png",
+        "sha256": "b4a80d093b42d159d4e170594a53fae6451bfe9dc49b4f49632eb566b4abcd76"
+      },
+      {
+        "file": "Repairs-High-A-Day-Close.png",
+        "sha256": "c0b68414104a6021b9b8da633ede4c71ea597125f5b526f6879b5bc9d0d43369"
+      },
+      {
+        "file": "Repairs-High-A-Day.png",
+        "sha256": "91aaea043c66c1ecb6ef8818ea6ac97d2b97ea0059d5e2fb383016485d49711f"
+      },
+      {
+        "file": "Repairs-High-A-Night.png",
+        "sha256": "9a6208b433a0bdb2d975e5f457079686e647b83f7cd747cc119d71a37bcf9dc8"
+      },
+      {
+        "file": "Repairs-Low-A-Day.png",
+        "sha256": "b7ddd9cbd172360eb21dbdb4201238180f02d5c8eda9c5fdd7d65eed2aa846b6"
+      },
+      {
+        "file": "Repairs-Low-A-Night.png",
+        "sha256": "516630843fdd8399786ac62cd0ea0ba3822144085a8c9c32d037b3c47c432d6b"
+      },
+      {
+        "file": "Repairs-Low-B-Day.png",
+        "sha256": "ed3b253a1414c85d36e5183f261bc642f9f30c95a8555f2f23767dec95619f68"
+      },
+      {
+        "file": "Repairs-Low-C-Day.png",
+        "sha256": "7e76804db13c36820fe9a485d90f0776e0de4382b349e719b08beedc1b373296"
+      },
+      {
+        "file": "Repairs-Low-D-Day.png",
+        "sha256": "9254e4afede39b844cc8bdd1f7c6e357d03b07c1deca7502ad5630d22b3e6037"
+      },
+      {
+        "file": "Repairs-Medium-A-Day-Close.png",
+        "sha256": "56cee5335714e8f39ae3caffbd8145bb9b95cf2c2f6318d97385b19ab6f619f9"
+      },
+      {
+        "file": "Repairs-Medium-A-Day.png",
+        "sha256": "c1640ee21682bc6e01c3b86eaee980cd3432815f45f5751104bba0afa32d85ac"
+      },
+      {
+        "file": "Repairs-Medium-A-Night.png",
+        "sha256": "556b5e307c2d3ceedfe2e53a60ef49246805955ad9c907f0237ff08582a5d675"
+      },
+      {
+        "file": "Tech-High-A-Day-Close.png",
+        "sha256": "838b1fe72e3e890641a51d7d9c699fad913162596ac5a654a7880b836fd476ff"
+      },
+      {
+        "file": "Tech-High-A-Day.png",
+        "sha256": "01df1693f4d281019f0d5a7b368a8ac1aac24fed91994982977ac80ce0a91628"
+      },
+      {
+        "file": "Tech-Low-A-Day.png",
+        "sha256": "5d976f427c3fda82b48ef834d053e3637bba613cdae7d102d7da04bdd1cd52a0"
+      },
+      {
+        "file": "Tech-Medium-A-Day-Close.png",
+        "sha256": "adfc12ce1acb956da5619d641bf84e2e7568dcf8267a7a0a3c5367ddec732b1d"
+      },
+      {
+        "file": "Tech-Medium-A-Day.png",
+        "sha256": "8f4340963aed0978369843bf00fae0a973ee3b9390474f7a1eadaf047d8cdf54"
+      }
+    ],
+    "both_resolution_captures_identical": true,
+    "startupEvidence": "CI packaged menu smoke; extracted53 runtime files exactly match smoke-tested archive",
+    "visualNotes": [
+      "All49 unique native proofs inspected; both resolution sets are byte-identical,98 captures total.",
+      "Room identities and11:15 crops correct; entrances/upper glass retained, existing warm night glow preserved.",
+      "Newspaper three proofs byte-identical to62. Fixed SceneCapture gallery, not manual city/headset/performance acceptance."
+    ]
+  },
+  "quest": {
+    "task": "D122",
+    "build": 89,
+    "mode": "QuestCandidate",
+    "status": "passed",
+    "submittedCommit": "5b9b57d158f7940d15ed2035adca2883bf68dc15",
+    "testedCommit": "5b9b57d158f7940d15ed2035adca2883bf68dc15",
+    "editorSeconds": 116.35,
+    "tests": [
+      "CitySim.Art.D122References",
+      "CitySim.Art.D122NewspaperRendering",
+      "CitySim.News.NewspaperEditorialFacts",
+      "CitySim.News.SharedNavigationAndBounds",
+      "CitySim.Art.StorefrontAssets"
+    ],
+    "output": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\CI\\Builds\\89-5b9b57d158f7-QuestCandidate-2580b2dd",
+    "url": "https://drone.shaun-husain.com/CitySimVR/citysim/89",
+    "verifiedUtc": "2026-10-16T20:52:07.632349-05:00",
+    "package": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\CI\\Builds\\89-5b9b57d158f7-QuestCandidate-2580b2dd\\QuestCandidate\\Android_ASTC\\CitySimVR-arm64.apk",
+    "packageSha256": "a64d213618349e328436636e5e1933f8e177432403f7c6682034a20060f9fb6f",
+    "signerSha256": "fb8ac4ce5f1998deb6bf2c1a61b303bef91e0b69750f5cdfd9df77d1773a5352",
+    "questVerification": {
+      "status": "passed",
+      "apkSha256": "a64d213618349e328436636e5e1933f8e177432403f7c6682034a20060f9fb6f",
+      "package": "com.shaun.citysimvr.smoketest",
+      "abi": "arm64-v8a",
+      "minSdk": 32,
+      "targetSdk": 35,
+      "signed": true,
+      "signerSha256": "fb8ac4ce5f1998deb6bf2c1a61b303bef91e0b69750f5cdfd9df77d1773a5352",
+      "stagedPayloads": [
+        {
+          "name": "CitySimVR-Android_ASTC.pak",
+          "bytes": 10482619,
+          "sha256": "2761d336c4486531721d35a73e15be32e21fcad94d6b42312799934c2039fb1c"
+        },
+        {
+          "name": "CitySimVR-Android_ASTC.ucas",
+          "bytes": 105750976,
+          "sha256": "046b273d5cf63a8fb2444b4a14e33e24fd50487d1c9bc00a5864baff0f89854b"
+        },
+        {
+          "name": "CitySimVR-Android_ASTC.utoc",
+          "bytes": 252165,
+          "sha256": "a205bd5f218f8849d32767ee7d69f3cd154ab9e672d677c2180577fbcf966f85"
+        },
+        {
+          "name": "global.ucas",
+          "bytes": 2804800,
+          "sha256": "8b00d3abf4b227fe1f29460d0797a6d71917a8e36c89edf3be47a8955c49add5"
+        },
+        {
+          "name": "global.utoc",
+          "bytes": 710,
+          "sha256": "942f97a65e4b89ec4307d2fc9d11c82e34f9bc8e45c608fef4ddb1b59f218962"
+        }
+      ],
+      "headset": "unconfirmed-not-installed",
+      "verifiedUtc": "2026-10-17T01:50:53.2306027Z"
+    },
+    "independent_embedded_payload_check": "all5 lengths/SHA match this cook receipt",
+    "headset": "unconfirmed-not-installed"
+  },
+  "nativeCaptureReview": {
+    "task": "D122",
+    "candidate": 89,
+    "commit": "5b9b57d158f7940d15ed2035adca2883bf68dc15",
+    "source": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\CI\\Builds\\89-5b9b57d158f7-WindowsCandidate-867f1cb9\\Client-1280-Report\\D122",
+    "images": [
+      {
+        "file": "Bakery-High-A-Day-Close.png",
+        "sha256": "443bd4f794a4faab8235f6ca467e87612818014cd15e5f741cb84becbd14d64a",
+        "bytes": 925215
+      },
+      {
+        "file": "Bakery-High-A-Day.png",
+        "sha256": "d5ab8b6b94c41c45442a0792bb72fedc1af58fdc6cb9f39998961966ffea4232",
+        "bytes": 791431
+      },
+      {
+        "file": "Bakery-Low-A-Day.png",
+        "sha256": "548cb5a531d7964048f1885093bd94d9888bbbe32d87adf57aca5c19d9c921ab",
+        "bytes": 792080
+      },
+      {
+        "file": "Bakery-Medium-A-Day-Close.png",
+        "sha256": "a92fafc6bb8134a2ff8bdaf404ff5284a39e980ad398dd5da8f00bdbb51fae57",
+        "bytes": 927155
+      },
+      {
+        "file": "Bakery-Medium-A-Day.png",
+        "sha256": "23e8990eefac8ffbefde33d2adac60db917bde9188c41777f18369bf0d5981e3",
+        "bytes": 867983
+      },
+      {
+        "file": "Books-High-A-Day-Close.png",
+        "sha256": "a3dcade7ab78aad91a349fb4e8e7320b5769530ddff0d4385ca2db5cf3fe229a",
+        "bytes": 931140
+      },
+      {
+        "file": "Books-High-A-Day.png",
+        "sha256": "708ab28510db5409bf9771e1eba6bb0c19a184cbf76f0fee374e29852cbd2728",
+        "bytes": 791793
+      },
+      {
+        "file": "Books-Low-A-Day.png",
+        "sha256": "8c048cb50ba18553710027fdd58ad75cd502086cbd0989470422c947efcd754a",
+        "bytes": 793323
+      },
+      {
+        "file": "Books-Medium-A-Day-Close.png",
+        "sha256": "bc48d81a1fd02cded59ef576910a5e6935e6a4eb65f5e7e5deb3f007760d3e3b",
+        "bytes": 932907
+      },
+      {
+        "file": "Books-Medium-A-Day.png",
+        "sha256": "f0664173f38c2292c20b31f959c04f6b824749b337919b978c77a4dda5e90ccf",
+        "bytes": 869027
+      },
+      {
+        "file": "Cafe-High-A-Day-Close.png",
+        "sha256": "6ac38daac460dd0945070f1df5a6efd6c179db31526a80f8f321aa481e8a2b59",
+        "bytes": 922374
+      },
+      {
+        "file": "Cafe-High-A-Day.png",
+        "sha256": "ae89f4113a1f84df4583280d82e296dbd8f7648655650badb425d3554a5b0a4c",
+        "bytes": 790956
+      },
+      {
+        "file": "Cafe-Low-A-Day.png",
+        "sha256": "5a688e536c040642f69c077131c3cd1128b158fc8e6b20305d732c71c382cab3",
+        "bytes": 789529
+      },
+      {
+        "file": "Cafe-Medium-A-Day-Close.png",
+        "sha256": "7907c3f2145ed42d91a7a1bc2ad9b120dde102b253feca185b9023c7255e90f0",
+        "bytes": 924570
+      },
+      {
+        "file": "Cafe-Medium-A-Day.png",
+        "sha256": "437ad8f1820e0622c942dc6834e690dd3c34615640408d5857e148fa6a832901",
+        "bytes": 866331
+      },
+      {
+        "file": "Market-High-A-Day-Close.png",
+        "sha256": "fa9e535e3333e6ae7a10902374d33e4468ba6a65853250f1c9624108bc969a77",
+        "bytes": 923842
+      },
+      {
+        "file": "Market-High-A-Day.png",
+        "sha256": "2aad9fce92701bf4cd4da4c019cd41275dfef2a67147e0522ec2cc18eab28735",
+        "bytes": 791450
+      },
+      {
+        "file": "Market-Low-A-Day.png",
+        "sha256": "34a5dbd5ade2267b975890a86ebdcae40eab765a3f5731a2f7e85bbdbf42cf76",
+        "bytes": 792259
+      },
+      {
+        "file": "Market-Medium-A-Day-Close.png",
+        "sha256": "d9700d7aab9fa295b63f3f39fb1cadc4adf15d9b03bb0f1da8fbafa86a2844f4",
+        "bytes": 925658
+      },
+      {
+        "file": "Market-Medium-A-Day.png",
+        "sha256": "7feb95d84c8b0a9bf436404b2d89f163c8cbc4d99288607edf3a14e3462c9bf4",
+        "bytes": 868256
+      },
+      {
+        "file": "Newspaper-1000.png",
+        "sha256": "51e8ae9817cc5d1ad6f78e6fdd9103935683b0715c3f89943a7fff949495bfe8",
+        "bytes": 69318
+      },
+      {
+        "file": "Newspaper-700.png",
+        "sha256": "5dd610448bee41b10bf2d2091a45c8020639c9ed42ecad85c20c77a8915db992",
+        "bytes": 115463
+      },
+      {
+        "file": "Newspaper-920.png",
+        "sha256": "9ae17e3b9c342d61628c4160bfa4c811dd5980173ed707810bf329181cf941a8",
+        "bytes": 121211
+      },
+      {
+        "file": "Outfitters-High-A-Day-Close.png",
+        "sha256": "4e2f3b4bbcf90420515f0a3fc1b069f3bf3577e9bf78d9bfd444bb8ba6073a80",
+        "bytes": 923709
+      },
+      {
+        "file": "Outfitters-High-A-Day.png",
+        "sha256": "848f23e24b06291f96ac734482b9d82b6a6e71abb9c47cb8da7690243ef05804",
+        "bytes": 790817
+      },
+      {
+        "file": "Outfitters-Low-A-Day.png",
+        "sha256": "2d6b2bd0b6013d5fd9f356dcfba334e88cd8008193efe9e41167eab9e71a6417",
+        "bytes": 789706
+      },
+      {
+        "file": "Outfitters-Medium-A-Day-Close.png",
+        "sha256": "b9a616189752c7bd2972e22dca8211bd13166b9d12e9bcb241cb95fae8806e22",
+        "bytes": 925799
+      },
+      {
+        "file": "Outfitters-Medium-A-Day.png",
+        "sha256": "55714a426175dbf12b37916d41e2127d4b8688e77f8a6932c5e6ef1f3a76b67f",
+        "bytes": 867305
+      },
+      {
+        "file": "Pharmacy-High-A-Day-Close.png",
+        "sha256": "88f00ec78bc72683454936b5fb2d1866018e4a14721be35f34b9c890e5fe4dbb",
+        "bytes": 927398
+      },
+      {
+        "file": "Pharmacy-High-A-Day.png",
+        "sha256": "800537ef671bc5379d264a2ccac64d7456e35278eab88140f2e1428162e969a0",
+        "bytes": 791447
+      },
+      {
+        "file": "Pharmacy-Low-A-Day.png",
+        "sha256": "846ace1685afe24d84d37909f43a0e3c41f1554718d70b7cd9902b6df481f895",
+        "bytes": 792527
+      },
+      {
+        "file": "Pharmacy-Medium-A-Day-Close.png",
+        "sha256": "5f84a959ed9b6d31ff92f3b3002f4a9ece5ab1bc6802a5cc1ee422c0e39b1394",
+        "bytes": 929488
+      },
+      {
+        "file": "Pharmacy-Medium-A-Day.png",
+        "sha256": "b4a80d093b42d159d4e170594a53fae6451bfe9dc49b4f49632eb566b4abcd76",
+        "bytes": 868154
+      },
+      {
+        "file": "Repairs-High-A-Day-Close.png",
+        "sha256": "c0b68414104a6021b9b8da633ede4c71ea597125f5b526f6879b5bc9d0d43369",
+        "bytes": 925952
+      },
+      {
+        "file": "Repairs-High-A-Day.png",
+        "sha256": "91aaea043c66c1ecb6ef8818ea6ac97d2b97ea0059d5e2fb383016485d49711f",
+        "bytes": 791681
+      },
+      {
+        "file": "Repairs-High-A-Night.png",
+        "sha256": "9a6208b433a0bdb2d975e5f457079686e647b83f7cd747cc119d71a37bcf9dc8",
+        "bytes": 787565
+      },
+      {
+        "file": "Repairs-Low-A-Day.png",
+        "sha256": "b7ddd9cbd172360eb21dbdb4201238180f02d5c8eda9c5fdd7d65eed2aa846b6",
+        "bytes": 791843
+      },
+      {
+        "file": "Repairs-Low-A-Night.png",
+        "sha256": "516630843fdd8399786ac62cd0ea0ba3822144085a8c9c32d037b3c47c432d6b",
+        "bytes": 792071
+      },
+      {
+        "file": "Repairs-Low-B-Day.png",
+        "sha256": "ed3b253a1414c85d36e5183f261bc642f9f30c95a8555f2f23767dec95619f68",
+        "bytes": 758138
+      },
+      {
+        "file": "Repairs-Low-C-Day.png",
+        "sha256": "7e76804db13c36820fe9a485d90f0776e0de4382b349e719b08beedc1b373296",
+        "bytes": 751308
+      },
+      {
+        "file": "Repairs-Low-D-Day.png",
+        "sha256": "9254e4afede39b844cc8bdd1f7c6e357d03b07c1deca7502ad5630d22b3e6037",
+        "bytes": 755758
+      },
+      {
+        "file": "Repairs-Medium-A-Day-Close.png",
+        "sha256": "56cee5335714e8f39ae3caffbd8145bb9b95cf2c2f6318d97385b19ab6f619f9",
+        "bytes": 927886
+      },
+      {
+        "file": "Repairs-Medium-A-Day.png",
+        "sha256": "c1640ee21682bc6e01c3b86eaee980cd3432815f45f5751104bba0afa32d85ac",
+        "bytes": 868743
+      },
+      {
+        "file": "Repairs-Medium-A-Night.png",
+        "sha256": "556b5e307c2d3ceedfe2e53a60ef49246805955ad9c907f0237ff08582a5d675",
+        "bytes": 863096
+      },
+      {
+        "file": "Tech-High-A-Day-Close.png",
+        "sha256": "838b1fe72e3e890641a51d7d9c699fad913162596ac5a654a7880b836fd476ff",
+        "bytes": 923055
+      },
+      {
+        "file": "Tech-High-A-Day.png",
+        "sha256": "01df1693f4d281019f0d5a7b368a8ac1aac24fed91994982977ac80ce0a91628",
+        "bytes": 791250
+      },
+      {
+        "file": "Tech-Low-A-Day.png",
+        "sha256": "5d976f427c3fda82b48ef834d053e3637bba613cdae7d102d7da04bdd1cd52a0",
+        "bytes": 791917
+      },
+      {
+        "file": "Tech-Medium-A-Day-Close.png",
+        "sha256": "adfc12ce1acb956da5619d641bf84e2e7568dcf8267a7a0a3c5367ddec732b1d",
+        "bytes": 925248
+      },
+      {
+        "file": "Tech-Medium-A-Day.png",
+        "sha256": "8f4340963aed0978369843bf00fae0a973ee3b9390474f7a1eadaf047d8cdf54",
+        "bytes": 868333
+      }
+    ],
+    "review": "passed",
+    "description": "24 full business/density views,16 medium/high closes,3 repairs night densities,3 extra low appearances,3 native newspaper proofs",
+    "reviewedUtc": "2026-10-16T20:45:40.462098-05:00",
+    "reviewNotes": [
+      "24 business/density full views show correct corresponding signs and room content, retained upper glass and geometry.",
+      "16 medium/high close views retain both regular front panes, doorway exclusion and reviewed11:15 proportions.",
+      "Three repairs night views retain existing warm window glow; merchandise is subdued by that original illumination.",
+      "Low B/C/D entrances/transoms/sidelights remain original glass, regular panes show approved rooms.",
+      "Three actual native Slate paper proofs visually inspected and byte-identical to candidate62."
+    ],
+    "limitations": "Packaged Desktop fixed-resolution SceneCapture gallery using actual native assets/materials; no manual input, normal city playthrough, physical headset/stereo/comfort or performance measurement claim.",
+    "paperComparison62": [
+      {
+        "name": "Newspaper-1000.png",
+        "unchangedFrom62": true
+      },
+      {
+        "name": "Newspaper-700.png",
+        "unchangedFrom62": true
+      },
+      {
+        "name": "Newspaper-920.png",
+        "unchangedFrom62": true
+      }
+    ]
+  },
+  "importEvidence": {
+    "build": 87,
+    "status": "passed; Editor86.04s/four cases/73 exact recovered products",
+    "receipt": "docs/evidence/D122-room-native-import.json",
+    "sha256": "c0416838338626ed90a9c7340ffe69ca1c24122d6059cbfab1f6c7d39c950e3f"
+  },
+  "failedAttempts": [
+    {
+      "commit": "d63c4530dbbaf63b9736550505eeb0e8d2310bb5",
+      "tested": "7c017073e121ade8d826290be0813fd3f6e063a5",
+      "status": "failed",
+      "editorSeconds": 85.69,
+      "reason": "UE5.7.4 MaterialEditingLibrary setter returns false unconditionally; verify getter instead"
+    },
+    {
+      "status": "failed",
+      "editorSeconds": 86.39,
+      "commit": "86196e3fcb5be30019b4911e378714adedb3c6b3",
+      "reason": "Market uses base low-density A-D names; corrected target map/capture; static files check added"
+    }
+  ],
+  "queueHousekeeping": {
+    "sourceChecks": "69-76 all pass;8 normal source PR merges",
+    "mainChecks": "78 and80 pass; six queued duplicate source-only79/81-85 skipped after exact8-file-only merge diff review",
+    "receipt": "Artifacts/D122/DensityRooms/Skipped-Source-Mains.json"
+  },
+  "manualAcceptance": "pending updated native appearance/playtest confirmation before normal PR73 merge",
+  "headset": "unconfirmed-not-installed",
+  "performance": "not measured; zero geometry added and existing five material sections retained",
+  "maintainedPackageOrPlayerSync": false,
+  "deviceInstall": false,
+  "publicRelease": false,
+  "launcher": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\D122\\Integration\\Play-D122.cmd",
+  "verifiedUtc": "2026-10-16T20:54:40.545313-05:00",
+  "nativeHandoff": {
+    "queueLatest": 89,
+    "candidate": 89,
+    "overallBuildStatus": "success",
+    "workerTaskState": "Running",
+    "workerLeftEnabled": true,
+    "task": "D122",
+    "nativeProcessCount": 0,
+    "verifiedUtc": "2026-10-17T01:56:13.2003867Z",
+    "exclusiveCiLockFree": true,
+    "commit": "5b9b57d158f7940d15ed2035adca2883bf68dc15",
+    "existingWorkerCount": 1,
+    "claimReleased": true
+  }
+}

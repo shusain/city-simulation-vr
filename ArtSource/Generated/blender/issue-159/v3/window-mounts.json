@@ -1,0 +1,1266 @@
+{
+  "windows": [
+    {
+      "pane": "East clerestory -4 pane",
+      "frames": [
+        "East clerestory -4 jamb A",
+        "East clerestory -4 jamb B",
+        "East clerestory -4 sill",
+        "East clerestory -4 head"
+      ],
+      "backing_solid": "Generation hall",
+      "wall_normal": [
+        1,
+        0,
+        0
+      ],
+      "measured_bounds": {
+        "East clerestory -4 pane": {
+          "name": "East clerestory -4 pane",
+          "min": [
+            11.989999771118164,
+            -5.25,
+            4.075000286102295
+          ],
+          "max": [
+            12.09000015258789,
+            -2.75,
+            5.224999904632568
+          ]
+        },
+        "Generation hall": {
+          "name": "Generation hall",
+          "min": [
+            -2.0,
+            -6.5,
+            0.0
+          ],
+          "max": [
+            12.0,
+            12.5,
+            6.400000095367432
+          ]
+        },
+        "East clerestory -4 jamb A": {
+          "name": "East clerestory -4 jamb A",
+          "min": [
+            11.984999656677246,
+            -5.350000381469727,
+            3.9750001430511475
+          ],
+          "max": [
+            12.154999732971191,
+            -5.25,
+            5.325000286102295
+          ]
+        },
+        "East clerestory -4 jamb B": {
+          "name": "East clerestory -4 jamb B",
+          "min": [
+            11.984999656677246,
+            -2.75,
+            3.9750001430511475
+          ],
+          "max": [
+            12.154999732971191,
+            -2.6500000953674316,
+            5.325000286102295
+          ]
+        },
+        "East clerestory -4 sill": {
+          "name": "East clerestory -4 sill",
+          "min": [
+            11.984999656677246,
+            -5.25,
+            3.9750001430511475
+          ],
+          "max": [
+            12.154999732971191,
+            -2.75,
+            4.075000286102295
+          ]
+        },
+        "East clerestory -4 head": {
+          "name": "East clerestory -4 head",
+          "min": [
+            11.984999656677246,
+            -5.25,
+            5.224999904632568
+          ],
+          "max": [
+            12.154999732971191,
+            -2.75,
+            5.325000286102295
+          ]
+        }
+      },
+      "complete_rim": true,
+      "wall_mount_pass": true
+    },
+    {
+      "pane": "East clerestory 0 pane",
+      "frames": [
+        "East clerestory 0 jamb A",
+        "East clerestory 0 jamb B",
+        "East clerestory 0 sill",
+        "East clerestory 0 head"
+      ],
+      "backing_solid": "Generation hall",
+      "wall_normal": [
+        1,
+        0,
+        0
+      ],
+      "measured_bounds": {
+        "East clerestory 0 pane": {
+          "name": "East clerestory 0 pane",
+          "min": [
+            11.989999771118164,
+            -1.25,
+            4.075000286102295
+          ],
+          "max": [
+            12.09000015258789,
+            1.25,
+            5.224999904632568
+          ]
+        },
+        "Generation hall": {
+          "name": "Generation hall",
+          "min": [
+            -2.0,
+            -6.5,
+            0.0
+          ],
+          "max": [
+            12.0,
+            12.5,
+            6.400000095367432
+          ]
+        },
+        "East clerestory 0 jamb A": {
+          "name": "East clerestory 0 jamb A",
+          "min": [
+            11.984999656677246,
+            -1.3499999046325684,
+            3.9750001430511475
+          ],
+          "max": [
+            12.154999732971191,
+            -1.25,
+            5.325000286102295
+          ]
+        },
+        "East clerestory 0 jamb B": {
+          "name": "East clerestory 0 jamb B",
+          "min": [
+            11.984999656677246,
+            1.25,
+            3.9750001430511475
+          ],
+          "max": [
+            12.154999732971191,
+            1.3499999046325684,
+            5.325000286102295
+          ]
+        },
+        "East clerestory 0 sill": {
+          "name": "East clerestory 0 sill",
+          "min": [
+            11.984999656677246,
+            -1.25,
+            3.9750001430511475
+          ],
+          "max": [
+            12.154999732971191,
+            1.25,
+            4.075000286102295
+          ]
+        },
+        "East clerestory 0 head": {
+          "name": "East clerestory 0 head",
+          "min": [
+            11.984999656677246,
+            -1.25,
+            5.224999904632568
+          ],
+          "max": [
+            12.154999732971191,
+            1.25,
+            5.325000286102295
+          ]
+        }
+      },
+      "complete_rim": true,
+      "wall_mount_pass": true
+    },
+    {
+      "pane": "East clerestory 4 pane",
+      "frames": [
+        "East clerestory 4 jamb A",
+        "East clerestory 4 jamb B",
+        "East clerestory 4 sill",
+        "East clerestory 4 head"
+      ],
+      "backing_solid": "Generation hall",
+      "wall_normal": [
+        1,
+        0,
+        0
+      ],
+      "measured_bounds": {
+        "East clerestory 4 pane": {
+          "name": "East clerestory 4 pane",
+          "min": [
+            11.989999771118164,
+            2.75,
+            4.075000286102295
+          ],
+          "max": [
+            12.09000015258789,
+            5.25,
+            5.224999904632568
+          ]
+        },
+        "Generation hall": {
+          "name": "Generation hall",
+          "min": [
+            -2.0,
+            -6.5,
+            0.0
+          ],
+          "max": [
+            12.0,
+            12.5,
+            6.400000095367432
+          ]
+        },
+        "East clerestory 4 jamb A": {
+          "name": "East clerestory 4 jamb A",
+          "min": [
+            11.984999656677246,
+            2.6500000953674316,
+            3.9750001430511475
+          ],
+          "max": [
+            12.154999732971191,
+            2.75,
+            5.325000286102295
+          ]
+        },
+        "East clerestory 4 jamb B": {
+          "name": "East clerestory 4 jamb B",
+          "min": [
+            11.984999656677246,
+            5.25,
+            3.9750001430511475
+          ],
+          "max": [
+            12.154999732971191,
+            5.350000381469727,
+            5.325000286102295
+          ]
+        },
+        "East clerestory 4 sill": {
+          "name": "East clerestory 4 sill",
+          "min": [
+            11.984999656677246,
+            2.75,
+            3.9750001430511475
+          ],
+          "max": [
+            12.154999732971191,
+            5.25,
+            4.075000286102295
+          ]
+        },
+        "East clerestory 4 head": {
+          "name": "East clerestory 4 head",
+          "min": [
+            11.984999656677246,
+            2.75,
+            5.224999904632568
+          ],
+          "max": [
+            12.154999732971191,
+            5.25,
+            5.325000286102295
+          ]
+        }
+      },
+      "complete_rim": true,
+      "wall_mount_pass": true
+    },
+    {
+      "pane": "East clerestory 8 pane",
+      "frames": [
+        "East clerestory 8 jamb A",
+        "East clerestory 8 jamb B",
+        "East clerestory 8 sill",
+        "East clerestory 8 head"
+      ],
+      "backing_solid": "Generation hall",
+      "wall_normal": [
+        1,
+        0,
+        0
+      ],
+      "measured_bounds": {
+        "East clerestory 8 pane": {
+          "name": "East clerestory 8 pane",
+          "min": [
+            11.989999771118164,
+            6.75,
+            4.075000286102295
+          ],
+          "max": [
+            12.09000015258789,
+            9.25,
+            5.224999904632568
+          ]
+        },
+        "Generation hall": {
+          "name": "Generation hall",
+          "min": [
+            -2.0,
+            -6.5,
+            0.0
+          ],
+          "max": [
+            12.0,
+            12.5,
+            6.400000095367432
+          ]
+        },
+        "East clerestory 8 jamb A": {
+          "name": "East clerestory 8 jamb A",
+          "min": [
+            11.984999656677246,
+            6.649999618530273,
+            3.9750001430511475
+          ],
+          "max": [
+            12.154999732971191,
+            6.75,
+            5.325000286102295
+          ]
+        },
+        "East clerestory 8 jamb B": {
+          "name": "East clerestory 8 jamb B",
+          "min": [
+            11.984999656677246,
+            9.25,
+            3.9750001430511475
+          ],
+          "max": [
+            12.154999732971191,
+            9.350000381469727,
+            5.325000286102295
+          ]
+        },
+        "East clerestory 8 sill": {
+          "name": "East clerestory 8 sill",
+          "min": [
+            11.984999656677246,
+            6.75,
+            3.9750001430511475
+          ],
+          "max": [
+            12.154999732971191,
+            9.25,
+            4.075000286102295
+          ]
+        },
+        "East clerestory 8 head": {
+          "name": "East clerestory 8 head",
+          "min": [
+            11.984999656677246,
+            6.75,
+            5.224999904632568
+          ],
+          "max": [
+            12.154999732971191,
+            9.25,
+            5.325000286102295
+          ]
+        }
+      },
+      "complete_rim": true,
+      "wall_mount_pass": true
+    },
+    {
+      "pane": "Control front -12 1.6 pane",
+      "frames": [
+        "Control front -12 1.6 jamb A",
+        "Control front -12 1.6 jamb B",
+        "Control front -12 1.6 sill",
+        "Control front -12 1.6 head"
+      ],
+      "backing_solid": "Worker control building",
+      "wall_normal": [
+        0,
+        -1,
+        0
+      ],
+      "measured_bounds": {
+        "Control front -12 1.6 pane": {
+          "name": "Control front -12 1.6 pane",
+          "min": [
+            -12.800000190734863,
+            -11.59000015258789,
+            0.9700000286102295
+          ],
+          "max": [
+            -11.199999809265137,
+            -11.489999771118164,
+            2.2300000190734863
+          ]
+        },
+        "Worker control building": {
+          "name": "Worker control building",
+          "min": [
+            -13.5,
+            -11.5,
+            0.0
+          ],
+          "max": [
+            -4.5,
+            -4.5,
+            5.900000095367432
+          ]
+        },
+        "Control front -12 1.6 jamb A": {
+          "name": "Control front -12 1.6 jamb A",
+          "min": [
+            -12.90000057220459,
+            -11.654999732971191,
+            0.8700000047683716
+          ],
+          "max": [
+            -12.800000190734863,
+            -11.484999656677246,
+            2.3299999237060547
+          ]
+        },
+        "Control front -12 1.6 jamb B": {
+          "name": "Control front -12 1.6 jamb B",
+          "min": [
+            -11.199999809265137,
+            -11.654999732971191,
+            0.8700000047683716
+          ],
+          "max": [
+            -11.09999942779541,
+            -11.484999656677246,
+            2.3299999237060547
+          ]
+        },
+        "Control front -12 1.6 sill": {
+          "name": "Control front -12 1.6 sill",
+          "min": [
+            -12.800000190734863,
+            -11.654999732971191,
+            0.8700000047683716
+          ],
+          "max": [
+            -11.199999809265137,
+            -11.484999656677246,
+            0.9700000286102295
+          ]
+        },
+        "Control front -12 1.6 head": {
+          "name": "Control front -12 1.6 head",
+          "min": [
+            -12.800000190734863,
+            -11.654999732971191,
+            2.2300000190734863
+          ],
+          "max": [
+            -11.199999809265137,
+            -11.484999656677246,
+            2.3299999237060547
+          ]
+        }
+      },
+      "complete_rim": true,
+      "wall_mount_pass": true
+    },
+    {
+      "pane": "Control front -12 4.3 pane",
+      "frames": [
+        "Control front -12 4.3 jamb A",
+        "Control front -12 4.3 jamb B",
+        "Control front -12 4.3 sill",
+        "Control front -12 4.3 head"
+      ],
+      "backing_solid": "Worker control building",
+      "wall_normal": [
+        0,
+        -1,
+        0
+      ],
+      "measured_bounds": {
+        "Control front -12 4.3 pane": {
+          "name": "Control front -12 4.3 pane",
+          "min": [
+            -12.800000190734863,
+            -11.59000015258789,
+            3.6700000762939453
+          ],
+          "max": [
+            -11.199999809265137,
+            -11.489999771118164,
+            4.930000305175781
+          ]
+        },
+        "Worker control building": {
+          "name": "Worker control building",
+          "min": [
+            -13.5,
+            -11.5,
+            0.0
+          ],
+          "max": [
+            -4.5,
+            -4.5,
+            5.900000095367432
+          ]
+        },
+        "Control front -12 4.3 jamb A": {
+          "name": "Control front -12 4.3 jamb A",
+          "min": [
+            -12.90000057220459,
+            -11.654999732971191,
+            3.570000171661377
+          ],
+          "max": [
+            -12.800000190734863,
+            -11.484999656677246,
+            5.03000020980835
+          ]
+        },
+        "Control front -12 4.3 jamb B": {
+          "name": "Control front -12 4.3 jamb B",
+          "min": [
+            -11.199999809265137,
+            -11.654999732971191,
+            3.570000171661377
+          ],
+          "max": [
+            -11.09999942779541,
+            -11.484999656677246,
+            5.03000020980835
+          ]
+        },
+        "Control front -12 4.3 sill": {
+          "name": "Control front -12 4.3 sill",
+          "min": [
+            -12.800000190734863,
+            -11.654999732971191,
+            3.569999933242798
+          ],
+          "max": [
+            -11.199999809265137,
+            -11.484999656677246,
+            3.669999837875366
+          ]
+        },
+        "Control front -12 4.3 head": {
+          "name": "Control front -12 4.3 head",
+          "min": [
+            -12.800000190734863,
+            -11.654999732971191,
+            4.929999828338623
+          ],
+          "max": [
+            -11.199999809265137,
+            -11.484999656677246,
+            5.03000020980835
+          ]
+        }
+      },
+      "complete_rim": true,
+      "wall_mount_pass": true
+    },
+    {
+      "pane": "Control front -9 4.3 pane",
+      "frames": [
+        "Control front -9 4.3 jamb A",
+        "Control front -9 4.3 jamb B",
+        "Control front -9 4.3 sill",
+        "Control front -9 4.3 head"
+      ],
+      "backing_solid": "Worker control building",
+      "wall_normal": [
+        0,
+        -1,
+        0
+      ],
+      "measured_bounds": {
+        "Control front -9 4.3 pane": {
+          "name": "Control front -9 4.3 pane",
+          "min": [
+            -9.800000190734863,
+            -11.59000015258789,
+            3.6700000762939453
+          ],
+          "max": [
+            -8.199999809265137,
+            -11.489999771118164,
+            4.930000305175781
+          ]
+        },
+        "Worker control building": {
+          "name": "Worker control building",
+          "min": [
+            -13.5,
+            -11.5,
+            0.0
+          ],
+          "max": [
+            -4.5,
+            -4.5,
+            5.900000095367432
+          ]
+        },
+        "Control front -9 4.3 jamb A": {
+          "name": "Control front -9 4.3 jamb A",
+          "min": [
+            -9.90000057220459,
+            -11.654999732971191,
+            3.570000171661377
+          ],
+          "max": [
+            -9.800000190734863,
+            -11.484999656677246,
+            5.03000020980835
+          ]
+        },
+        "Control front -9 4.3 jamb B": {
+          "name": "Control front -9 4.3 jamb B",
+          "min": [
+            -8.199999809265137,
+            -11.654999732971191,
+            3.570000171661377
+          ],
+          "max": [
+            -8.09999942779541,
+            -11.484999656677246,
+            5.03000020980835
+          ]
+        },
+        "Control front -9 4.3 sill": {
+          "name": "Control front -9 4.3 sill",
+          "min": [
+            -9.800000190734863,
+            -11.654999732971191,
+            3.569999933242798
+          ],
+          "max": [
+            -8.199999809265137,
+            -11.484999656677246,
+            3.669999837875366
+          ]
+        },
+        "Control front -9 4.3 head": {
+          "name": "Control front -9 4.3 head",
+          "min": [
+            -9.800000190734863,
+            -11.654999732971191,
+            4.929999828338623
+          ],
+          "max": [
+            -8.199999809265137,
+            -11.484999656677246,
+            5.03000020980835
+          ]
+        }
+      },
+      "complete_rim": true,
+      "wall_mount_pass": true
+    },
+    {
+      "pane": "Control front -6 1.6 pane",
+      "frames": [
+        "Control front -6 1.6 jamb A",
+        "Control front -6 1.6 jamb B",
+        "Control front -6 1.6 sill",
+        "Control front -6 1.6 head"
+      ],
+      "backing_solid": "Worker control building",
+      "wall_normal": [
+        0,
+        -1,
+        0
+      ],
+      "measured_bounds": {
+        "Control front -6 1.6 pane": {
+          "name": "Control front -6 1.6 pane",
+          "min": [
+            -6.800000190734863,
+            -11.59000015258789,
+            0.9700000286102295
+          ],
+          "max": [
+            -5.199999809265137,
+            -11.489999771118164,
+            2.2300000190734863
+          ]
+        },
+        "Worker control building": {
+          "name": "Worker control building",
+          "min": [
+            -13.5,
+            -11.5,
+            0.0
+          ],
+          "max": [
+            -4.5,
+            -4.5,
+            5.900000095367432
+          ]
+        },
+        "Control front -6 1.6 jamb A": {
+          "name": "Control front -6 1.6 jamb A",
+          "min": [
+            -6.900000095367432,
+            -11.654999732971191,
+            0.8700000047683716
+          ],
+          "max": [
+            -6.799999713897705,
+            -11.484999656677246,
+            2.3299999237060547
+          ]
+        },
+        "Control front -6 1.6 jamb B": {
+          "name": "Control front -6 1.6 jamb B",
+          "min": [
+            -5.200000286102295,
+            -11.654999732971191,
+            0.8700000047683716
+          ],
+          "max": [
+            -5.099999904632568,
+            -11.484999656677246,
+            2.3299999237060547
+          ]
+        },
+        "Control front -6 1.6 sill": {
+          "name": "Control front -6 1.6 sill",
+          "min": [
+            -6.800000190734863,
+            -11.654999732971191,
+            0.8700000047683716
+          ],
+          "max": [
+            -5.199999809265137,
+            -11.484999656677246,
+            0.9700000286102295
+          ]
+        },
+        "Control front -6 1.6 head": {
+          "name": "Control front -6 1.6 head",
+          "min": [
+            -6.800000190734863,
+            -11.654999732971191,
+            2.2300000190734863
+          ],
+          "max": [
+            -5.199999809265137,
+            -11.484999656677246,
+            2.3299999237060547
+          ]
+        }
+      },
+      "complete_rim": true,
+      "wall_mount_pass": true
+    },
+    {
+      "pane": "Control front -6 4.3 pane",
+      "frames": [
+        "Control front -6 4.3 jamb A",
+        "Control front -6 4.3 jamb B",
+        "Control front -6 4.3 sill",
+        "Control front -6 4.3 head"
+      ],
+      "backing_solid": "Worker control building",
+      "wall_normal": [
+        0,
+        -1,
+        0
+      ],
+      "measured_bounds": {
+        "Control front -6 4.3 pane": {
+          "name": "Control front -6 4.3 pane",
+          "min": [
+            -6.800000190734863,
+            -11.59000015258789,
+            3.6700000762939453
+          ],
+          "max": [
+            -5.199999809265137,
+            -11.489999771118164,
+            4.930000305175781
+          ]
+        },
+        "Worker control building": {
+          "name": "Worker control building",
+          "min": [
+            -13.5,
+            -11.5,
+            0.0
+          ],
+          "max": [
+            -4.5,
+            -4.5,
+            5.900000095367432
+          ]
+        },
+        "Control front -6 4.3 jamb A": {
+          "name": "Control front -6 4.3 jamb A",
+          "min": [
+            -6.900000095367432,
+            -11.654999732971191,
+            3.570000171661377
+          ],
+          "max": [
+            -6.799999713897705,
+            -11.484999656677246,
+            5.03000020980835
+          ]
+        },
+        "Control front -6 4.3 jamb B": {
+          "name": "Control front -6 4.3 jamb B",
+          "min": [
+            -5.200000286102295,
+            -11.654999732971191,
+            3.570000171661377
+          ],
+          "max": [
+            -5.099999904632568,
+            -11.484999656677246,
+            5.03000020980835
+          ]
+        },
+        "Control front -6 4.3 sill": {
+          "name": "Control front -6 4.3 sill",
+          "min": [
+            -6.800000190734863,
+            -11.654999732971191,
+            3.569999933242798
+          ],
+          "max": [
+            -5.199999809265137,
+            -11.484999656677246,
+            3.669999837875366
+          ]
+        },
+        "Control front -6 4.3 head": {
+          "name": "Control front -6 4.3 head",
+          "min": [
+            -6.800000190734863,
+            -11.654999732971191,
+            4.929999828338623
+          ],
+          "max": [
+            -5.199999809265137,
+            -11.484999656677246,
+            5.03000020980835
+          ]
+        }
+      },
+      "complete_rim": true,
+      "wall_mount_pass": true
+    },
+    {
+      "pane": "West staff -9 1.6 pane",
+      "frames": [
+        "West staff -9 1.6 jamb A",
+        "West staff -9 1.6 jamb B",
+        "West staff -9 1.6 sill",
+        "West staff -9 1.6 head"
+      ],
+      "backing_solid": "Worker control building",
+      "wall_normal": [
+        -1,
+        0,
+        0
+      ],
+      "measured_bounds": {
+        "West staff -9 1.6 pane": {
+          "name": "West staff -9 1.6 pane",
+          "min": [
+            -13.59000015258789,
+            -9.800000190734863,
+            0.9750000238418579
+          ],
+          "max": [
+            -13.489999771118164,
+            -8.199999809265137,
+            2.2249999046325684
+          ]
+        },
+        "Worker control building": {
+          "name": "Worker control building",
+          "min": [
+            -13.5,
+            -11.5,
+            0.0
+          ],
+          "max": [
+            -4.5,
+            -4.5,
+            5.900000095367432
+          ]
+        },
+        "West staff -9 1.6 jamb A": {
+          "name": "West staff -9 1.6 jamb A",
+          "min": [
+            -13.654999732971191,
+            -9.90000057220459,
+            0.875
+          ],
+          "max": [
+            -13.484999656677246,
+            -9.800000190734863,
+            2.325000047683716
+          ]
+        },
+        "West staff -9 1.6 jamb B": {
+          "name": "West staff -9 1.6 jamb B",
+          "min": [
+            -13.654999732971191,
+            -8.199999809265137,
+            0.875
+          ],
+          "max": [
+            -13.484999656677246,
+            -8.09999942779541,
+            2.325000047683716
+          ]
+        },
+        "West staff -9 1.6 sill": {
+          "name": "West staff -9 1.6 sill",
+          "min": [
+            -13.654999732971191,
+            -9.800000190734863,
+            0.875
+          ],
+          "max": [
+            -13.484999656677246,
+            -8.199999809265137,
+            0.9750000238418579
+          ]
+        },
+        "West staff -9 1.6 head": {
+          "name": "West staff -9 1.6 head",
+          "min": [
+            -13.654999732971191,
+            -9.800000190734863,
+            2.2250001430511475
+          ],
+          "max": [
+            -13.484999656677246,
+            -8.199999809265137,
+            2.325000047683716
+          ]
+        }
+      },
+      "complete_rim": true,
+      "wall_mount_pass": true
+    },
+    {
+      "pane": "West staff -9 4.3 pane",
+      "frames": [
+        "West staff -9 4.3 jamb A",
+        "West staff -9 4.3 jamb B",
+        "West staff -9 4.3 sill",
+        "West staff -9 4.3 head"
+      ],
+      "backing_solid": "Worker control building",
+      "wall_normal": [
+        -1,
+        0,
+        0
+      ],
+      "measured_bounds": {
+        "West staff -9 4.3 pane": {
+          "name": "West staff -9 4.3 pane",
+          "min": [
+            -13.59000015258789,
+            -9.800000190734863,
+            3.6750001907348633
+          ],
+          "max": [
+            -13.489999771118164,
+            -8.199999809265137,
+            4.925000190734863
+          ]
+        },
+        "Worker control building": {
+          "name": "Worker control building",
+          "min": [
+            -13.5,
+            -11.5,
+            0.0
+          ],
+          "max": [
+            -4.5,
+            -4.5,
+            5.900000095367432
+          ]
+        },
+        "West staff -9 4.3 jamb A": {
+          "name": "West staff -9 4.3 jamb A",
+          "min": [
+            -13.654999732971191,
+            -9.90000057220459,
+            3.575000286102295
+          ],
+          "max": [
+            -13.484999656677246,
+            -9.800000190734863,
+            5.025000095367432
+          ]
+        },
+        "West staff -9 4.3 jamb B": {
+          "name": "West staff -9 4.3 jamb B",
+          "min": [
+            -13.654999732971191,
+            -8.199999809265137,
+            3.575000286102295
+          ],
+          "max": [
+            -13.484999656677246,
+            -8.09999942779541,
+            5.025000095367432
+          ]
+        },
+        "West staff -9 4.3 sill": {
+          "name": "West staff -9 4.3 sill",
+          "min": [
+            -13.654999732971191,
+            -9.800000190734863,
+            3.575000047683716
+          ],
+          "max": [
+            -13.484999656677246,
+            -8.199999809265137,
+            3.674999952316284
+          ]
+        },
+        "West staff -9 4.3 head": {
+          "name": "West staff -9 4.3 head",
+          "min": [
+            -13.654999732971191,
+            -9.800000190734863,
+            4.924999713897705
+          ],
+          "max": [
+            -13.484999656677246,
+            -8.199999809265137,
+            5.025000095367432
+          ]
+        }
+      },
+      "complete_rim": true,
+      "wall_mount_pass": true
+    },
+    {
+      "pane": "West staff -6 1.6 pane",
+      "frames": [
+        "West staff -6 1.6 jamb A",
+        "West staff -6 1.6 jamb B",
+        "West staff -6 1.6 sill",
+        "West staff -6 1.6 head"
+      ],
+      "backing_solid": "Worker control building",
+      "wall_normal": [
+        -1,
+        0,
+        0
+      ],
+      "measured_bounds": {
+        "West staff -6 1.6 pane": {
+          "name": "West staff -6 1.6 pane",
+          "min": [
+            -13.59000015258789,
+            -6.800000190734863,
+            0.9750000238418579
+          ],
+          "max": [
+            -13.489999771118164,
+            -5.199999809265137,
+            2.2249999046325684
+          ]
+        },
+        "Worker control building": {
+          "name": "Worker control building",
+          "min": [
+            -13.5,
+            -11.5,
+            0.0
+          ],
+          "max": [
+            -4.5,
+            -4.5,
+            5.900000095367432
+          ]
+        },
+        "West staff -6 1.6 jamb A": {
+          "name": "West staff -6 1.6 jamb A",
+          "min": [
+            -13.654999732971191,
+            -6.900000095367432,
+            0.875
+          ],
+          "max": [
+            -13.484999656677246,
+            -6.799999713897705,
+            2.325000047683716
+          ]
+        },
+        "West staff -6 1.6 jamb B": {
+          "name": "West staff -6 1.6 jamb B",
+          "min": [
+            -13.654999732971191,
+            -5.200000286102295,
+            0.875
+          ],
+          "max": [
+            -13.484999656677246,
+            -5.099999904632568,
+            2.325000047683716
+          ]
+        },
+        "West staff -6 1.6 sill": {
+          "name": "West staff -6 1.6 sill",
+          "min": [
+            -13.654999732971191,
+            -6.800000190734863,
+            0.875
+          ],
+          "max": [
+            -13.484999656677246,
+            -5.199999809265137,
+            0.9750000238418579
+          ]
+        },
+        "West staff -6 1.6 head": {
+          "name": "West staff -6 1.6 head",
+          "min": [
+            -13.654999732971191,
+            -6.800000190734863,
+            2.2250001430511475
+          ],
+          "max": [
+            -13.484999656677246,
+            -5.199999809265137,
+            2.325000047683716
+          ]
+        }
+      },
+      "complete_rim": true,
+      "wall_mount_pass": true
+    },
+    {
+      "pane": "West staff -6 4.3 pane",
+      "frames": [
+        "West staff -6 4.3 jamb A",
+        "West staff -6 4.3 jamb B",
+        "West staff -6 4.3 sill",
+        "West staff -6 4.3 head"
+      ],
+      "backing_solid": "Worker control building",
+      "wall_normal": [
+        -1,
+        0,
+        0
+      ],
+      "measured_bounds": {
+        "West staff -6 4.3 pane": {
+          "name": "West staff -6 4.3 pane",
+          "min": [
+            -13.59000015258789,
+            -6.800000190734863,
+            3.6750001907348633
+          ],
+          "max": [
+            -13.489999771118164,
+            -5.199999809265137,
+            4.925000190734863
+          ]
+        },
+        "Worker control building": {
+          "name": "Worker control building",
+          "min": [
+            -13.5,
+            -11.5,
+            0.0
+          ],
+          "max": [
+            -4.5,
+            -4.5,
+            5.900000095367432
+          ]
+        },
+        "West staff -6 4.3 jamb A": {
+          "name": "West staff -6 4.3 jamb A",
+          "min": [
+            -13.654999732971191,
+            -6.900000095367432,
+            3.575000286102295
+          ],
+          "max": [
+            -13.484999656677246,
+            -6.799999713897705,
+            5.025000095367432
+          ]
+        },
+        "West staff -6 4.3 jamb B": {
+          "name": "West staff -6 4.3 jamb B",
+          "min": [
+            -13.654999732971191,
+            -5.200000286102295,
+            3.575000286102295
+          ],
+          "max": [
+            -13.484999656677246,
+            -5.099999904632568,
+            5.025000095367432
+          ]
+        },
+        "West staff -6 4.3 sill": {
+          "name": "West staff -6 4.3 sill",
+          "min": [
+            -13.654999732971191,
+            -6.800000190734863,
+            3.575000047683716
+          ],
+          "max": [
+            -13.484999656677246,
+            -5.199999809265137,
+            3.674999952316284
+          ]
+        },
+        "West staff -6 4.3 head": {
+          "name": "West staff -6 4.3 head",
+          "min": [
+            -13.654999732971191,
+            -6.800000190734863,
+            4.924999713897705
+          ],
+          "max": [
+            -13.484999656677246,
+            -5.199999809265137,
+            5.025000095367432
+          ]
+        }
+      },
+      "complete_rim": true,
+      "wall_mount_pass": true
+    }
+  ],
+  "all_mounts_pass": true
+}

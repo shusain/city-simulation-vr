@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "kind": "comfy",
+  "repository": "CitySimVR/citysim",
+  "issue": 34,
+  "version": 1,
+  "source_sha": "f482eff94e62fbc62692b8270dcfcdca5269d5cc",
+  "workflow": "generate_image_zimage",
+  "workflow_sha256": "d5c97354f7ace4ad721462f38259ded8033f77ff6275eafc9b5016fc16556b57",
+  "model": "ollama/citysim-spec:qwen3-14b",
+  "seed": 34,
+  "prompt": "A small neighborhood shop with an awning and simple shelves/crates, a delivery handcart, and a few walking customers. Calm ordinary trade scene. Black-ink woodcut style on warm ivory paper. Restrained cross-hatching, bold readable silhouettes. Central square composition with generous clear outer margins. No text, logos, colors, or photorealism. Early industrial/civic illustration character, classic serif newspaper style. 768x768 resolution",
+  "prompt_id": "f85f15e8-f67a-412a-bee7-4350f38fbf1c",
+  "dimensions": {
+    "width": 768,
+    "height": 768
+  },
+  "png_sha256": "eca19ecd840ff8dd89222318e152b2f30d157b246bb38cb225ba7c3dae163b17",
+  "created_at": "2026-10-15T22:55:14.241Z"
+}

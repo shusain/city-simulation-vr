@@ -1,0 +1,47 @@
+# D74 final hospital-care pass and desktop closeout — 2026-10-11
+
+The user requested an end to the current optimization round. This is its last focused implementation slice, followed by one final desktop comparison and map-size recommendation. Remaining waste/traffic and service work will be separately prioritized rather than extending D74 indefinitely. Larger production maps and per-city persistence belong to D72; formal XR timing belongs to D67/D23.
+
+## Change and correctness contract
+
+Hospital scheduling now prepares citizen lookups once per call, looks up medical leave through the current interrupting-patient set, and indexes surviving health journeys before releasing missing-route reservations. Exposure is calculated once per home in the advancing phase. The two subsequent arrival/scheduling phases do not build unused population exposure data. Purchase reservations still release only their locks when the buyer disappears or goes on medical leave.
+
+All preparation is call-scoped. Recovery, illness, detention, outages, arrivals and population changes can alter inputs between phases. Each phase sees fresh authoritative state; there is no persistent care cache or reduced simulation cadence. Stable patient/hospital iteration, the64-search limit, ward/fleet capacity, route eligibility, actual pickup/admission, treatment deadlines, unemployment-clock protection and finance remain unchanged. No save schema, map size, traffic budget, UI, art or headset quality change is introduced by this pass.
+
+`-CityBenchmarkReferenceCare` / runner `-ReferenceCare` retains the old lookups and exposure preparation for generated, populated, running benchmark controls. Raw normal-game, saved-city, empty and paused controls cannot select it. Existing care tests exercise both paths. The dense full-state comparison combines the reference care path with the previously verified reference service path, including road edits, severe illness, utility/housing changes, settlement,1x/3x/5x, multi-step catch-up and reloads at frames4/160/325.
+
+## Validation and measurements
+
+All232 rendered tests pass with zero failures, unexpected errors or handled ensures. The twelve known Meta203 startup property diagnostics remain. Warnings-as-errors Editor compilation passes111.77s, and all273 project C++ files pass formatting. The protected saved-city400-day replays produce matching1x/3x/5x outcomes: first growth step4775,96 buildings,920 residents and treasury32152. The D80 protected emergency checkpoint reaches day637 with strict validation and paired full-state continuation. Source saves and the archived pre-art profiling executable are unchanged.
+
+Controls use the Ryzen7 9800X3D/RTX5080 workstation, offscreen packaged Development/D3D11,3840x2160,100% scene scale/secondary100%,4xMSAA, Stats panel, daytime/Clear, audio/VSync/frame cap off. No competing Editor/game/import/build process was present at capture start; timing runs execute serially without screenshots. Normal64 controls retain32 route candidates/64 visible/2048 simulated-trip caps. The mixed finite-water city contains493 buildings,5960 residents,1036 road cells and82.86% developed coverage. Each pair uses the same executable and compares complete authoritative endpoint state, normalizing only the wall-time accumulator.
+
+The5x pair captures days100–256/months4–10,156 steps over75s with6s warmup and a day100 start gate. Care drops9.84→5.72ms/day (41.9%); total fixed-step mean40.05→35.65ms (11.0%). The full-state fingerprint is `5A4F3E544491C61F05ADB1E65ED68C01D2661CC0` on both paths and the prior D80 normal-budget baseline. Worst frame136.08→123.71ms and slow-frame wall share10.47→9.53% improve in this pair, but isolated maxima are noisy and do not establish hitch elimination. Whole simulation-tick peak67.54→53.90ms; monthly-tick peak55.79→48.76ms. Maximum one step/render tick and zero catch-up ticks mean these hitches cannot be explained by multiple catch-up steps. Frame mean2.85→2.83ms, p95 2.90→2.90ms and p99 3.10→3.15ms illustrate why averages/percentiles alone miss rare stalls.
+
+The1x pair captures days62–102,40 steps over96s after5s warmup. Care drops1.21→0.58ms/day (52.3%), but the absolute saving is0.64ms and total fixed-step mean falls only34.65→33.88ms (2.2%). Worst frame122.78→122.03ms and slow-frame wall share2.12→2.09% show little tail improvement. Both endpoints match `D3AC4E8D175584E4CB6B50A084919D7A60AF0CB6`. This earlier, quieter period must not be presented as equivalent to the later5x care workload.
+
+After preparation, the normal64/5x service scopes cost17.17ms/day, waste8.12ms, care5.72ms and traffic update/advance3.24ms. These scopes include nested work and some evaluation outside the fixed-step scope; do not add them as disjoint contributions or subtract unrelated peak maxima to explain a particular frame. Future work should attribute actual slow frames before selecting another implementation slice. Expanded128/512 research traffic is substantially more expensive than this normal32/64 profile.
+
+## Final capacity observation and decision
+
+One current-code80 research run uses834 buildings,12020 residents,1600 road cells and85.34% developed coverage. It deliberately uses expanded128 routing/512 visible limits rather than normal64's32/64, so the two sizes are not a pure dimension-only comparison. Finite-water rules remain version1. It captures days100–256/months4–10 over75.003s at requested5x:4.992x achieved clock,74.27ms fixed-step mean,3.77ms frame mean (265.3 FPS),p50/p95/p99 3.05/3.40/3.70ms and245.05ms worst frame. Slow frames are0.784% of frames but consume19.64% of wall time. Actual traffic averages774.63 records, peaks1074;495 homes/63 shops remain operational. Whole simulation-tick peak127.01ms/monthly114.02ms; maximum one step/render tick and no catch-up ticks. Memory report764.91MiB. Care/waste/traffic scopes cost10.48/12.81/12.28ms per day. This is a capacity observation, not a matched before/after care comparison.
+
+**Recommendation:** Retain64x64 and normal traffic budgets as the production baseline. Use80x80 as the first modest D72 prototype, preserving the current save-disabled/export-rejected isolation until per-city dimensions and save compatibility exist. High average throughput on this workstation supports exploration, but245ms stalls and substantial slow-frame wall time prevent claiming uniformly smooth30 FPS, laptop suitability, headset acceptance or a universal maximum. Current96/128 were not retested; older results must not be presented as current-code limits or extrapolated from80. Future dimensions/fidelity targets can request a focused D81 follow-up, rather than extending D74 indefinitely.
+
+The local implementation round ends here after eight CPU slices and the correctness fixes exposed during testing. No further optimization matrix or implementation slice is required for this round. Physical current-code Desktop/laptop flows, XR timing and new-map compatibility retain their explicit owners. D72 is the next implementation/design task; D81 records lower-priority measured hotspots.
+
+## Final integration and reproduction
+
+Normal Windows packaging passes52s; research80 packaging56s and restored normal64 packaging56s. Restored64 loads/continues the protected pre59 city229→233 at native4K with normal32/64 limits. Quest build/cook/package passes170.22s; ARM64/min32/target35, signing and embedded cooked payload validation pass. No installation, publication, commit or push occurred. Physical Desktop/PCVR/Quest and laptop checks remain pending. UI/assets were not regenerated for this CPU change; source tests and runtime/save checks cover the changed behavior, rather than repeating the prior UI capture matrix.
+
+| Package / purpose | Bytes | SHA256 |
+| --- | ---: | --- |
+| Within-pair64 Windows timing executable | — | `96A80B103DD1DAA06DCA19FE791C52E5B64DD4CF2D0D713E0015CB25A2E9B463` |
+| Restored normal64 Windows executable |302354432| `2C7FE58240EB1AE65260B4D6EBB869FF9CEEE6A0E522F03DE094972D0A58F0A6` |
+| Signed normal64 Quest APK |190784674| `0B5DE5FC8EBC65E1D1CC2A14C76F73EA7C84A9D39B63E5E730702438F3BFCAEF` |
+
+The restored target was rebuilt after the capacity trial, so its binary identity is separate from the within-pair executable. Every before/after pair shares exactly one executable; the final normal package has its own startup/load/default-grid proof. No across-executable paired CPU claim is made.
+
+Maintained artifacts: `Artifacts/D74-Care/Implementation.json`, `EditorBuild.log`, `Format.log`, `Full.log`, `Test.ps1`, `Compare.ps1`, `Reports.json`, `Summary.json`, `FinalProfiles.json`, `Research80Metrics.json`, `Integrate.ps1`, `Verify.ps1` and package/capture logs. `Reports.json` stores the exact four control paths/metadata; research80 report is `Artifacts/Benchmarks/Desktop-20261011-153424-Late-80-6400-5-Stats-Day-3840x2160-Neutral-TabletopShadows/Report.json`, restored64 proof `Desktop-20261011-153709-Saved-1-Clear-Stats-Day-3840x2160-Neutral-TabletopShadows/Report.json`.
+
+Build/test/package commands retain the verified ENVIRONMENT baseline. Add runner `-ReferenceCare` only to an isolated generated populated/running control. `Artifacts/D74-Care/Compare.ps1 -Grid 64 -Include1x` reproduces these normal-budget pairs; it does not accept saved/paused controls. Clinical/full tests are in `Test.ps1`; the original city/emergency save paths are read-only probes. Do not repeat the full optimization matrix without a new source change or concrete target question.

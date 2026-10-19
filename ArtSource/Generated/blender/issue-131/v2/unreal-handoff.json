@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "kind": "blender",
+  "repository": "CitySimVR/citysim",
+  "asset_issue": 131,
+  "approved_version": 2,
+  "approval_manifest": "approval.json",
+  "approval_sha256": "e1abb0c23cbf04bc06add6afa4ac7bc064e339235e30c72591e0e898432363e6",
+  "source_context_sha": "e5425d699e1a4f80b2303c4f7eff5e31fb3bf009",
+  "artifacts": [
+    {
+      "name": "asset.blend",
+      "bytes": 97649,
+      "sha256": "a6b6f0b945f176cdc27cf3ada882cd1ee18da53020e4aa20f4dfb9d5e28f8a3d"
+    },
+    {
+      "name": "asset.fbx",
+      "bytes": 18300,
+      "sha256": "e3f6204d36ef425af16d54af48ad544365b09b62368019c98456bc34ef445728"
+    },
+    {
+      "name": "preview.png",
+      "bytes": 267681,
+      "sha256": "83ac2f3c143acc4d406d696d80b3eba0ad45c808b398ba467eee45c822dd5f6a"
+    },
+    {
+      "name": "preview_side.png",
+      "bytes": 249017,
+      "sha256": "a7ba036f1826e49377d4d44d6c7096989def85fe8f0893729fbbf7b8592ba28b"
+    },
+    {
+      "name": "preview_top.png",
+      "bytes": 265744,
+      "sha256": "33a55160e34173c93919a6218715271124500d41f81b79a6157b837d5e4b74dd"
+    },
+    {
+      "name": "provenance.json",
+      "bytes": 11217,
+      "sha256": "6e9278c87c76a308a00dec801bc40cc4c9e96b34a635705dd23ce6cb07397a91"
+    },
+    {
+      "name": "validation.json",
+      "bytes": 13860,
+      "sha256": "794783ab43f9cd43fd73d3b7101b666ef505949058d261de4cd44c149903282f"
+    },
+    {
+      "name": "source-bundle.zip",
+      "bytes": 1288956,
+      "sha256": "e50f45706a90b40d308de79c2ce12c2521b4bd3d54ac6f2a035edd8abbb92542"
+    },
+    {
+      "name": "approval.json",
+      "bytes": 1925,
+      "sha256": "e1abb0c23cbf04bc06add6afa4ac7bc064e339235e30c72591e0e898432363e6"
+    }
+  ],
+  "unreal": {
+    "status": "not_imported",
+    "destination": "choose in the separate integration issue",
+    "role": "Blender source and exports; validate importer contract"
+  }
+}

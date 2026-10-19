@@ -1,0 +1,40 @@
+{
+  "date": "2026-10-11",
+  "reviewedConcurrentChanges": [
+    {
+      "path": "AudioSource/D58/library-presets.json",
+      "threadId": "01a12d03-38be-7771-a8f5-36fdfa155031",
+      "threadTitle": "Compare SuperCollider and MetaSounds",
+      "evidenceItemIds": ["exec-5e47dced-367b-457f-8a51-deeeae4be310", "exec-91f24731-1838-4b3f-8c62-40bc18e8c237"],
+      "reason": "The active audio chat added and then updated library presets during this inventory; the maintenance task never writes audio sources."
+    },
+    {
+      "path": "AudioSource/D58/SampleLibrary.scd",
+      "threadId": "01a12d03-38be-7771-a8f5-36fdfa155031",
+      "threadTitle": "Compare SuperCollider and MetaSounds",
+      "evidenceItemIds": [
+        "exec-5e47dced-367b-457f-8a51-deeeae4be310",
+        "exec-2ee4667e-3ba1-4f03-83f4-f550ff3d9e5b"
+      ],
+      "reason": "The active audio chat added and then updated this source during the cleanup inventory; this maintenance task never writes audio sources."
+    },
+    {
+      "path": "Artifacts/D83/sports-preview.json",
+      "threadId": "01a12cfa-7450-7dd3-afb9-aa5dc6892267",
+      "threadTitle": "Improve Blender park assets",
+      "evidenceItemIds": [
+        "exec-bf8530e6-6ea1-4faf-a33e-0571816c245b"
+      ],
+      "reason": "The Blender chat updated preview limitations metadata during this session; its explicit command writes this JSON."
+    },
+    {
+      "path": "Artifacts/D83/Sports.log",
+      "threadId": "01a12cfa-7450-7dd3-afb9-aa5dc6892267",
+      "threadTitle": "Improve Blender park assets",
+      "evidenceItemIds": [
+        "exec-5da26370-fccf-4d96-af7e-96bb1eb5cb22"
+      ],
+      "reason": "The Blender chat ran validate-only and redirected output to this log during this session; source and source-preview captures remain unchanged."
+    }
+  ]
+}

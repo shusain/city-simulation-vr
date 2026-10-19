@@ -1,0 +1,22 @@
+{
+  "task": "D128",
+  "issue": 75,
+  "pr": 76,
+  "acceptedSource": "351b4eb71bb2307137e4a77902c62208afae3e21",
+  "gameRevision": "dev-2cf842bf48baee7df77b",
+  "schema": 68,
+  "acceptedBy": "Shaun",
+  "acceptedUtc": "2026-10-16T21:58:59.2994092Z",
+  "basis": "Screenshot review and explicit instruction to ship to main",
+  "userStatement": "Looks good from the screenshot go ahead and ship it to main",
+  "authorization": "Normal scoped PR76 merge to main and completed-issue closeout",
+  "manualDesktopInput": "not claimed; screenshot acceptance is the supplied acceptance basis",
+  "physicalPCVRQuest": "unconfirmed; retained under D114",
+  "evidence": "D128-zone-visibility.json",
+  "checks": [
+    "Drone65 Editor108.13s/four exact cases",
+    "Windows66 Editor109.22s/four cases/menu startup/two packaged cases at1280 and1024/12 reviewed captures/ZIP and53 extracted files",
+    "Quest66 Editor130.37s/four cases/signed ARM64/min32/target35/five embedded-cook hashes"
+  ],
+  "closeoutDelta": "Documentation/evidence only; production, tests, manifests, assets and packages unchanged"
+}

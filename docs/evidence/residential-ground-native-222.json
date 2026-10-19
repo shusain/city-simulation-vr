@@ -1,0 +1,378 @@
+{
+  "build": 222,
+  "head": "8b854509bcf7f3b731d9142e2c32a491ab019c7f",
+  "tested": "8b854509bcf7f3b731d9142e2c32a491ab019c7f",
+  "status": "passed",
+  "editorTests": [
+    "CitySim.Placement.Transactions",
+    "CitySim.Terrain.DeterminismAndFixtures",
+    "CitySim.Simulation.CitizenArrivalSchedules",
+    "CitySim.Art.ImportedKit",
+    "CitySim.Art.CivicLightEmission",
+    "CitySim.Art.StorefrontAssets",
+    "CitySim.Art.DamagedVariantsParticles",
+    "CitySim.Art.LowDensityVariants",
+    "CitySim.Presentation.LowDensityLifecycle",
+    "CitySim.Terrain.ResidentialGroundVariants",
+    "CitySim.Presentation.ResidentialGroundCooked",
+    "CitySim.Terrain.CompactHomeWalk",
+    "CitySim.Terrain.ResidentialFoundationFineSamplesAndEntrances",
+    "CitySim.Terrain.BuildingSupportMeasurements",
+    "CitySim.Presentation.SeasonalDecorationsHomePorchAndDoorWreaths",
+    "CitySim.Dimensions.BoardPresentation",
+    "CitySim.Roads.SampledGroundPaving"
+  ],
+  "captures": 24,
+  "contacts": [
+    {
+      "case": "Residential-B-Flat",
+      "mode": "ResidentialGround",
+      "tiles_x": "2",
+      "tiles_y": "2",
+      "rotation": "0",
+      "lot_relief_cm": "0",
+      "old_road_contact_error_cm": "0",
+      "contact_error_cm": "0.000",
+      "connector_lateral_offset_cm": "0"
+    },
+    {
+      "case": "Residential-C-Flat",
+      "mode": "ResidentialGround",
+      "tiles_x": "2",
+      "tiles_y": "2",
+      "rotation": "1",
+      "lot_relief_cm": "0",
+      "old_road_contact_error_cm": "0",
+      "contact_error_cm": "0.000",
+      "connector_lateral_offset_cm": "0"
+    },
+    {
+      "case": "Residential-D-Flat",
+      "mode": "ResidentialGround",
+      "tiles_x": "2",
+      "tiles_y": "2",
+      "rotation": "2",
+      "lot_relief_cm": "0",
+      "old_road_contact_error_cm": "0",
+      "contact_error_cm": "0.000",
+      "connector_lateral_offset_cm": "0"
+    },
+    {
+      "case": "Residential-A-Damaged",
+      "mode": "ResidentialGround",
+      "tiles_x": "2",
+      "tiles_y": "2",
+      "rotation": "0",
+      "lot_relief_cm": "233",
+      "old_road_contact_error_cm": "0",
+      "contact_error_cm": "0.000",
+      "connector_lateral_offset_cm": "0"
+    },
+    {
+      "case": "Residential-B-Hills",
+      "mode": "ResidentialGround",
+      "tiles_x": "2",
+      "tiles_y": "2",
+      "rotation": "0",
+      "lot_relief_cm": "233",
+      "old_road_contact_error_cm": "0",
+      "contact_error_cm": "0.000",
+      "connector_lateral_offset_cm": "0"
+    },
+    {
+      "case": "Residential-B-Damaged",
+      "mode": "ResidentialGround",
+      "tiles_x": "2",
+      "tiles_y": "2",
+      "rotation": "0",
+      "lot_relief_cm": "233",
+      "old_road_contact_error_cm": "0",
+      "contact_error_cm": "0.000",
+      "connector_lateral_offset_cm": "0"
+    },
+    {
+      "case": "Residential-C-Hills",
+      "mode": "ResidentialGround",
+      "tiles_x": "2",
+      "tiles_y": "2",
+      "rotation": "1",
+      "lot_relief_cm": "233",
+      "old_road_contact_error_cm": "0",
+      "contact_error_cm": "0.000",
+      "connector_lateral_offset_cm": "0"
+    },
+    {
+      "case": "Residential-C-Damaged",
+      "mode": "ResidentialGround",
+      "tiles_x": "2",
+      "tiles_y": "2",
+      "rotation": "1",
+      "lot_relief_cm": "233",
+      "old_road_contact_error_cm": "0",
+      "contact_error_cm": "0.000",
+      "connector_lateral_offset_cm": "0"
+    },
+    {
+      "case": "Residential-D-Hills",
+      "mode": "ResidentialGround",
+      "tiles_x": "2",
+      "tiles_y": "2",
+      "rotation": "2",
+      "lot_relief_cm": "233",
+      "old_road_contact_error_cm": "0",
+      "contact_error_cm": "0.000",
+      "connector_lateral_offset_cm": "0"
+    },
+    {
+      "case": "Residential-D-Damaged",
+      "mode": "ResidentialGround",
+      "tiles_x": "2",
+      "tiles_y": "2",
+      "rotation": "2",
+      "lot_relief_cm": "233",
+      "old_road_contact_error_cm": "0",
+      "contact_error_cm": "0.000",
+      "connector_lateral_offset_cm": "0"
+    },
+    {
+      "case": "Residential-Legacy-Damaged",
+      "mode": "ResidentialGround",
+      "tiles_x": "2",
+      "tiles_y": "2",
+      "rotation": "3",
+      "lot_relief_cm": "233",
+      "old_road_contact_error_cm": "0",
+      "contact_error_cm": "0.000",
+      "connector_lateral_offset_cm": "0"
+    },
+    {
+      "case": "Residential-Playable",
+      "mode": "ResidentialGround",
+      "tiles_x": "2",
+      "tiles_y": "2",
+      "rotation": "0",
+      "lot_relief_cm": "50",
+      "old_road_contact_error_cm": "0",
+      "contact_error_cm": "0.000",
+      "connector_lateral_offset_cm": "0"
+    }
+  ],
+  "rails": [
+    {
+      "case": "Residential-B-Flat",
+      "actual_risers": "2",
+      "rail_vertices": "0",
+      "road_terrain_error_cm": "0.0000"
+    },
+    {
+      "case": "Residential-C-Flat",
+      "actual_risers": "2",
+      "rail_vertices": "0",
+      "road_terrain_error_cm": "0.0000"
+    },
+    {
+      "case": "Residential-D-Flat",
+      "actual_risers": "2",
+      "rail_vertices": "0",
+      "road_terrain_error_cm": "0.0000"
+    },
+    {
+      "case": "Residential-A-Damaged",
+      "actual_risers": "6",
+      "rail_vertices": "368",
+      "road_terrain_error_cm": "0.0000"
+    },
+    {
+      "case": "Residential-B-Hills",
+      "actual_risers": "6",
+      "rail_vertices": "368",
+      "road_terrain_error_cm": "0.0000"
+    },
+    {
+      "case": "Residential-B-Damaged",
+      "actual_risers": "6",
+      "rail_vertices": "368",
+      "road_terrain_error_cm": "0.0000"
+    },
+    {
+      "case": "Residential-C-Hills",
+      "actual_risers": "6",
+      "rail_vertices": "368",
+      "road_terrain_error_cm": "0.0000"
+    },
+    {
+      "case": "Residential-C-Damaged",
+      "actual_risers": "6",
+      "rail_vertices": "368",
+      "road_terrain_error_cm": "0.0000"
+    },
+    {
+      "case": "Residential-D-Hills",
+      "actual_risers": "7",
+      "rail_vertices": "400",
+      "road_terrain_error_cm": "0.0000"
+    },
+    {
+      "case": "Residential-D-Damaged",
+      "actual_risers": "7",
+      "rail_vertices": "400",
+      "road_terrain_error_cm": "0.0000"
+    },
+    {
+      "case": "Residential-Legacy-Damaged",
+      "actual_risers": "15",
+      "rail_vertices": "656",
+      "road_terrain_error_cm": "0.0000"
+    },
+    {
+      "case": "Residential-Playable",
+      "actual_risers": "5",
+      "rail_vertices": "304",
+      "road_terrain_error_cm": "0.0000"
+    }
+  ],
+  "comparisonCases": [
+    "Residential-B-Flat",
+    "Residential-C-Flat",
+    "Residential-D-Flat",
+    "Residential-A-Damaged",
+    "Residential-B-Hills",
+    "Residential-B-Damaged",
+    "Residential-C-Hills",
+    "Residential-C-Damaged",
+    "Residential-D-Hills",
+    "Residential-D-Damaged",
+    "Residential-Legacy-Damaged",
+    "Residential-Playable"
+  ],
+  "source": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\CI\\Builds\\222-8b854509bcf7-Check-e0b8d430",
+  "visualReview": {
+    "status": "reviewed",
+    "captures": 24,
+    "actualTargetAndInstanceAssertion": "passed each forced case",
+    "observations": "Distinct healthy/charred bodies, preserved porches, stair/sidewalk joins and >4-riser rails inspected; full D-hills and legacy15-riser closeups inspected",
+    "reviewedUtc": "2026-10-18T08:01:41.977155+00:00"
+  },
+  "images": [
+    {
+      "file": "Native/Residential-A-Damaged-ResidentialGround-Contact.png",
+      "sha256": "3e4667873c2349f92ca9a2be4ce2b5dd6dfbbbb749e870b9be354b43de79c3e9",
+      "bytes": 1162968
+    },
+    {
+      "file": "Native/Residential-A-Damaged-ResidentialGround-Overview.png",
+      "sha256": "06d82c157605c67788dc7a1ab23dade334340ea378072ab69a74a7c20a318caa",
+      "bytes": 1258779
+    },
+    {
+      "file": "Native/Residential-B-Damaged-ResidentialGround-Contact.png",
+      "sha256": "dbd1593b568988335c22bb180e256d58436aa19abbbf8aafb4ac54f01fe734e9",
+      "bytes": 1150470
+    },
+    {
+      "file": "Native/Residential-B-Damaged-ResidentialGround-Overview.png",
+      "sha256": "91c338eed3d3ec073be1b0e21a4d4fef67e92541ad675915ae30132c08d22865",
+      "bytes": 1252265
+    },
+    {
+      "file": "Native/Residential-B-Flat-ResidentialGround-Contact.png",
+      "sha256": "7d2a17d1c9c9275c7d8ea67dcec3aade4597966f1ea9fbc8dcda52bfa1998158",
+      "bytes": 1140141
+    },
+    {
+      "file": "Native/Residential-B-Flat-ResidentialGround-Overview.png",
+      "sha256": "7f71718ae3d17c85746261eb5e78906b1832ded516ca996597be9026fb735ff3",
+      "bytes": 1259022
+    },
+    {
+      "file": "Native/Residential-B-Hills-ResidentialGround-Contact.png",
+      "sha256": "709d6959c8958b521adbde028f59d16f481871a10dee018b47b40db6ebee297b",
+      "bytes": 1148442
+    },
+    {
+      "file": "Native/Residential-B-Hills-ResidentialGround-Overview.png",
+      "sha256": "0a4f2cde655d18ed1ec19acb490fab7da19cbdf7effbe632595faef5495d656f",
+      "bytes": 1263384
+    },
+    {
+      "file": "Native/Residential-C-Damaged-ResidentialGround-Contact.png",
+      "sha256": "0b8c1133393b1f43bc59d6e879b18c33e41d3e712e4d7379fd9bbe51222cbc8c",
+      "bytes": 1108006
+    },
+    {
+      "file": "Native/Residential-C-Damaged-ResidentialGround-Overview.png",
+      "sha256": "7b4048836c5aa4da6391d5fac6afba3f8440faaab3abe58d21aa15986f825f06",
+      "bytes": 1180817
+    },
+    {
+      "file": "Native/Residential-C-Flat-ResidentialGround-Contact.png",
+      "sha256": "3212f214d9370d5298b39d880bbf2ffc62bbb9fa84aaae695390524086a2bf9e",
+      "bytes": 1101126
+    },
+    {
+      "file": "Native/Residential-C-Flat-ResidentialGround-Overview.png",
+      "sha256": "43837b6e1bc712da58f2ab413b21756cc87955241d379644f95aa5bdf27118a6",
+      "bytes": 1211425
+    },
+    {
+      "file": "Native/Residential-C-Hills-ResidentialGround-Contact.png",
+      "sha256": "23b082a7c24a9c66718c5c83f7b466db12fbf33131570869c8e78e0a1d854df0",
+      "bytes": 1123848
+    },
+    {
+      "file": "Native/Residential-C-Hills-ResidentialGround-Overview.png",
+      "sha256": "ae99afff9b3c37011132f45159e038ec62254004632744065b32a7ee4648f5d0",
+      "bytes": 1206856
+    },
+    {
+      "file": "Native/Residential-D-Damaged-ResidentialGround-Contact.png",
+      "sha256": "87d761db1ebe4a6e1118be344d9ad796c286fb4963e57474ff94ea597ec59614",
+      "bytes": 1157556
+    },
+    {
+      "file": "Native/Residential-D-Damaged-ResidentialGround-Overview.png",
+      "sha256": "ad00664a961cd33702915a5609c451e3d178dcee8b9e4363ed32a8ffaae9667d",
+      "bytes": 1245334
+    },
+    {
+      "file": "Native/Residential-D-Flat-ResidentialGround-Contact.png",
+      "sha256": "215b1e92c687f9a785aeebc7e3febd0754abe089578b32494f7623f197149d98",
+      "bytes": 1137701
+    },
+    {
+      "file": "Native/Residential-D-Flat-ResidentialGround-Overview.png",
+      "sha256": "e3b1274df719a7e13cf293055a3887b819c1725a3a1c496126962dcc815b6f05",
+      "bytes": 1238143
+    },
+    {
+      "file": "Native/Residential-D-Hills-ResidentialGround-Contact.png",
+      "sha256": "4b79e977b8885775842787b86fff4425d3aaac333d7f316cbb75bc362d9857d2",
+      "bytes": 1170826
+    },
+    {
+      "file": "Native/Residential-D-Hills-ResidentialGround-Overview.png",
+      "sha256": "c27f0d969af3ffb31886cb4c07824eda86ff6cb9750a1731b2bba86ae99dd1cb",
+      "bytes": 1245347
+    },
+    {
+      "file": "Native/Residential-Legacy-Damaged-ResidentialGround-Contact.png",
+      "sha256": "e34cf5528559a231bb5ead0f23709211d0a7bb54d0cfe68847b8ffbd5154583c",
+      "bytes": 1128776
+    },
+    {
+      "file": "Native/Residential-Legacy-Damaged-ResidentialGround-Overview.png",
+      "sha256": "826ae19c85e06aac1dfc34b642ac9c1acc3ba5a9fcbcd22292295f64c3d9be89",
+      "bytes": 1225966
+    },
+    {
+      "file": "Native/Residential-Playable-ResidentialGround-Contact.png",
+      "sha256": "55022873d443493e0a74d158390f78a14db3d6a774db1cbee820f04d69fb34f9",
+      "bytes": 1193936
+    },
+    {
+      "file": "Native/Residential-Playable-ResidentialGround-Overview.png",
+      "sha256": "ae99f8c14d98bf354c45abd3a35c5ee8b30f56bf8497a6f18bb9694bdfd92d68",
+      "bytes": 1094683
+    }
+  ]
+}

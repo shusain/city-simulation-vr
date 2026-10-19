@@ -1,0 +1,42 @@
+{
+  "task": "D58",
+  "reviewDate": "2026-10-11",
+  "purpose": "Public recordings analyzed for timbre and timing; generated candidates contain no reference audio.",
+  "references": [
+    {
+      "id": "Streamwood-72831",
+      "title": "Tornado siren in Streamwood IL.wav",
+      "author": "audible-edge",
+      "page": "https://freesound.org/people/audible-edge/sounds/72831/",
+      "publicPreview": "https://cdn.freesound.org/previews/72/72831_995351-hq.mp3",
+      "listedLicense": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "measurement": "Public 56-second preview, mono decode at 48 kHz: prominent sustained components around 468-470 and 702-704 Hz during 5-20 seconds, higher harmonics and later pitch coast-down.",
+      "limitation": "Author describes editing/filtering/compression of a close test recording. Recorded ratios do not establish a particular siren model or unprocessed source response."
+    },
+    {
+      "id": "Thunderbolt-635127",
+      "title": "Thunderbolt 1000T In Alert (Ambience",
+      "author": "mordeby",
+      "page": "https://freesound.org/people/mordeby/sounds/635127/",
+      "publicPreview": "https://cdn.freesound.org/previews/635/635127_14005032-hq.mp3",
+      "listedLicense": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "measurement": "Public 79.993-second preview: sustained components around 600 and 720 Hz at 20-30 seconds, startup pitch rise and time-varying level; substantial environmental low-frequency noise.",
+      "limitation": "Model and recording location are supplied by the uploader. Ambient noise and propagation prevent treating the recorded amplitudes as factory calibration."
+    },
+    {
+      "id": "FederalSignal-Model2-manual",
+      "page": "https://www.fedsig.com/resources/",
+      "document": "https://files.plytix.com/api/v1.1/file/public_files/pim/assets/f0/e4/79/60/6079e4f0302a91ac42e7f633/texts/74/41/6a/65/656a4174531b026e3327f229/Model-2-SirenManual_255154.pdf",
+      "finding": "Manufacturer describes rotor/stator air pulses, pitch tied to motor speed, steady and wailing signals, and a 533 Hz top frequency for the 60 Hz version (printed pages 7, 9-10)."
+    },
+    {
+      "id": "FederalSignal-rotating-siren",
+      "page": "https://www.fedsig.com/product/2001-130-equinox-high-power-directional-rotating-siren/",
+      "finding": "Manufacturer describes a directional projector rotating at 3 RPM (20 seconds/revolution), with steady, wail and fast-wail options. A slow amplitude swell is a design approximation, not a faithful model of propagation."
+    }
+  ],
+  "analysisEvidence": "Artifacts/D58/TownReferences/Analysis.json",
+  "distribution": "Only original synth outputs are audition masters. Reference recordings stay in ignored analysis artifacts and are not copied into Content, cooked packages or generated sounds."
+}

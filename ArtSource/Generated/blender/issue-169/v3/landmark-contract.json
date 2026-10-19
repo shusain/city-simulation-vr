@@ -1,0 +1,589 @@
+{
+  "site_m": [
+    32,
+    32
+  ],
+  "proposal_only": true,
+  "previous_site_m": [
+    32,
+    24
+  ],
+  "rows": 3,
+  "tables_per_row": 4,
+  "groups": [
+    {
+      "id": "R1T1",
+      "row": 1,
+      "column": 1,
+      "panel": [
+        "R1T1_PV",
+        "R1T1_Backsheet"
+      ],
+      "frame": [
+        "R1T1_FrameSide0",
+        "R1T1_FrameSide1",
+        "R1T1_FrameEdge0",
+        "R1T1_FrameEdge1"
+      ],
+      "backrail": [
+        "R1T1_PitchStandOff0",
+        "R1T1_PitchSpine0",
+        "R1T1_PitchStandOff1",
+        "R1T1_PitchSpine1",
+        "R1T1_Backrail0",
+        "R1T1_Backrail1",
+        "R1T1_PanelCableTray",
+        "R1T1_FlexiblePitchLoop0",
+        "R1T1_FlexiblePitchLoop1",
+        "R1T1_FlexiblePitchLoop2"
+      ],
+      "mount": [
+        "R1T1_SteelFoot",
+        "R1T1_Mast",
+        "R1T1_FixedSlewRace",
+        "R1T1_YawBearing",
+        "R1T1_YawGearMotor",
+        "R1T1_MotorBridge",
+        "R1T1_YokeCrosshead",
+        "R1T1_Fork0",
+        "R1T1_TiltBearing0",
+        "R1T1_Fork1",
+        "R1T1_TiltBearing1",
+        "R1T1_PitchGearMotor",
+        "R1T1_PitchMotorStatorBracket",
+        "R1T1_PitchMotorStatorEnd",
+        "R1T1_TorqueTube",
+        "R1T1_MastCableRiser",
+        "R1T1_YawServiceLoop"
+      ]
+    },
+    {
+      "id": "R1T2",
+      "row": 1,
+      "column": 2,
+      "panel": [
+        "R1T2_PV",
+        "R1T2_Backsheet"
+      ],
+      "frame": [
+        "R1T2_FrameSide0",
+        "R1T2_FrameSide1",
+        "R1T2_FrameEdge0",
+        "R1T2_FrameEdge1"
+      ],
+      "backrail": [
+        "R1T2_PitchStandOff0",
+        "R1T2_PitchSpine0",
+        "R1T2_PitchStandOff1",
+        "R1T2_PitchSpine1",
+        "R1T2_Backrail0",
+        "R1T2_Backrail1",
+        "R1T2_PanelCableTray",
+        "R1T2_FlexiblePitchLoop0",
+        "R1T2_FlexiblePitchLoop1",
+        "R1T2_FlexiblePitchLoop2"
+      ],
+      "mount": [
+        "R1T2_SteelFoot",
+        "R1T2_Mast",
+        "R1T2_FixedSlewRace",
+        "R1T2_YawBearing",
+        "R1T2_YawGearMotor",
+        "R1T2_MotorBridge",
+        "R1T2_YokeCrosshead",
+        "R1T2_Fork0",
+        "R1T2_TiltBearing0",
+        "R1T2_Fork1",
+        "R1T2_TiltBearing1",
+        "R1T2_PitchGearMotor",
+        "R1T2_PitchMotorStatorBracket",
+        "R1T2_PitchMotorStatorEnd",
+        "R1T2_TorqueTube",
+        "R1T2_MastCableRiser",
+        "R1T2_YawServiceLoop"
+      ]
+    },
+    {
+      "id": "R1T3",
+      "row": 1,
+      "column": 3,
+      "panel": [
+        "R1T3_PV",
+        "R1T3_Backsheet"
+      ],
+      "frame": [
+        "R1T3_FrameSide0",
+        "R1T3_FrameSide1",
+        "R1T3_FrameEdge0",
+        "R1T3_FrameEdge1"
+      ],
+      "backrail": [
+        "R1T3_PitchStandOff0",
+        "R1T3_PitchSpine0",
+        "R1T3_PitchStandOff1",
+        "R1T3_PitchSpine1",
+        "R1T3_Backrail0",
+        "R1T3_Backrail1",
+        "R1T3_PanelCableTray",
+        "R1T3_FlexiblePitchLoop0",
+        "R1T3_FlexiblePitchLoop1",
+        "R1T3_FlexiblePitchLoop2"
+      ],
+      "mount": [
+        "R1T3_SteelFoot",
+        "R1T3_Mast",
+        "R1T3_FixedSlewRace",
+        "R1T3_YawBearing",
+        "R1T3_YawGearMotor",
+        "R1T3_MotorBridge",
+        "R1T3_YokeCrosshead",
+        "R1T3_Fork0",
+        "R1T3_TiltBearing0",
+        "R1T3_Fork1",
+        "R1T3_TiltBearing1",
+        "R1T3_PitchGearMotor",
+        "R1T3_PitchMotorStatorBracket",
+        "R1T3_PitchMotorStatorEnd",
+        "R1T3_TorqueTube",
+        "R1T3_MastCableRiser",
+        "R1T3_YawServiceLoop"
+      ]
+    },
+    {
+      "id": "R1T4",
+      "row": 1,
+      "column": 4,
+      "panel": [
+        "R1T4_PV",
+        "R1T4_Backsheet"
+      ],
+      "frame": [
+        "R1T4_FrameSide0",
+        "R1T4_FrameSide1",
+        "R1T4_FrameEdge0",
+        "R1T4_FrameEdge1"
+      ],
+      "backrail": [
+        "R1T4_PitchStandOff0",
+        "R1T4_PitchSpine0",
+        "R1T4_PitchStandOff1",
+        "R1T4_PitchSpine1",
+        "R1T4_Backrail0",
+        "R1T4_Backrail1",
+        "R1T4_PanelCableTray",
+        "R1T4_FlexiblePitchLoop0",
+        "R1T4_FlexiblePitchLoop1",
+        "R1T4_FlexiblePitchLoop2"
+      ],
+      "mount": [
+        "R1T4_SteelFoot",
+        "R1T4_Mast",
+        "R1T4_FixedSlewRace",
+        "R1T4_YawBearing",
+        "R1T4_YawGearMotor",
+        "R1T4_MotorBridge",
+        "R1T4_YokeCrosshead",
+        "R1T4_Fork0",
+        "R1T4_TiltBearing0",
+        "R1T4_Fork1",
+        "R1T4_TiltBearing1",
+        "R1T4_PitchGearMotor",
+        "R1T4_PitchMotorStatorBracket",
+        "R1T4_PitchMotorStatorEnd",
+        "R1T4_TorqueTube",
+        "R1T4_MastCableRiser",
+        "R1T4_YawServiceLoop"
+      ]
+    },
+    {
+      "id": "R2T1",
+      "row": 2,
+      "column": 1,
+      "panel": [
+        "R2T1_PV",
+        "R2T1_Backsheet"
+      ],
+      "frame": [
+        "R2T1_FrameSide0",
+        "R2T1_FrameSide1",
+        "R2T1_FrameEdge0",
+        "R2T1_FrameEdge1"
+      ],
+      "backrail": [
+        "R2T1_PitchStandOff0",
+        "R2T1_PitchSpine0",
+        "R2T1_PitchStandOff1",
+        "R2T1_PitchSpine1",
+        "R2T1_Backrail0",
+        "R2T1_Backrail1",
+        "R2T1_PanelCableTray",
+        "R2T1_FlexiblePitchLoop0",
+        "R2T1_FlexiblePitchLoop1",
+        "R2T1_FlexiblePitchLoop2"
+      ],
+      "mount": [
+        "R2T1_SteelFoot",
+        "R2T1_Mast",
+        "R2T1_FixedSlewRace",
+        "R2T1_YawBearing",
+        "R2T1_YawGearMotor",
+        "R2T1_MotorBridge",
+        "R2T1_YokeCrosshead",
+        "R2T1_Fork0",
+        "R2T1_TiltBearing0",
+        "R2T1_Fork1",
+        "R2T1_TiltBearing1",
+        "R2T1_PitchGearMotor",
+        "R2T1_PitchMotorStatorBracket",
+        "R2T1_PitchMotorStatorEnd",
+        "R2T1_TorqueTube",
+        "R2T1_MastCableRiser",
+        "R2T1_YawServiceLoop"
+      ]
+    },
+    {
+      "id": "R2T2",
+      "row": 2,
+      "column": 2,
+      "panel": [
+        "R2T2_PV",
+        "R2T2_Backsheet"
+      ],
+      "frame": [
+        "R2T2_FrameSide0",
+        "R2T2_FrameSide1",
+        "R2T2_FrameEdge0",
+        "R2T2_FrameEdge1"
+      ],
+      "backrail": [
+        "R2T2_PitchStandOff0",
+        "R2T2_PitchSpine0",
+        "R2T2_PitchStandOff1",
+        "R2T2_PitchSpine1",
+        "R2T2_Backrail0",
+        "R2T2_Backrail1",
+        "R2T2_PanelCableTray",
+        "R2T2_FlexiblePitchLoop0",
+        "R2T2_FlexiblePitchLoop1",
+        "R2T2_FlexiblePitchLoop2"
+      ],
+      "mount": [
+        "R2T2_SteelFoot",
+        "R2T2_Mast",
+        "R2T2_FixedSlewRace",
+        "R2T2_YawBearing",
+        "R2T2_YawGearMotor",
+        "R2T2_MotorBridge",
+        "R2T2_YokeCrosshead",
+        "R2T2_Fork0",
+        "R2T2_TiltBearing0",
+        "R2T2_Fork1",
+        "R2T2_TiltBearing1",
+        "R2T2_PitchGearMotor",
+        "R2T2_PitchMotorStatorBracket",
+        "R2T2_PitchMotorStatorEnd",
+        "R2T2_TorqueTube",
+        "R2T2_MastCableRiser",
+        "R2T2_YawServiceLoop"
+      ]
+    },
+    {
+      "id": "R2T3",
+      "row": 2,
+      "column": 3,
+      "panel": [
+        "R2T3_PV",
+        "R2T3_Backsheet"
+      ],
+      "frame": [
+        "R2T3_FrameSide0",
+        "R2T3_FrameSide1",
+        "R2T3_FrameEdge0",
+        "R2T3_FrameEdge1"
+      ],
+      "backrail": [
+        "R2T3_PitchStandOff0",
+        "R2T3_PitchSpine0",
+        "R2T3_PitchStandOff1",
+        "R2T3_PitchSpine1",
+        "R2T3_Backrail0",
+        "R2T3_Backrail1",
+        "R2T3_PanelCableTray",
+        "R2T3_FlexiblePitchLoop0",
+        "R2T3_FlexiblePitchLoop1",
+        "R2T3_FlexiblePitchLoop2"
+      ],
+      "mount": [
+        "R2T3_SteelFoot",
+        "R2T3_Mast",
+        "R2T3_FixedSlewRace",
+        "R2T3_YawBearing",
+        "R2T3_YawGearMotor",
+        "R2T3_MotorBridge",
+        "R2T3_YokeCrosshead",
+        "R2T3_Fork0",
+        "R2T3_TiltBearing0",
+        "R2T3_Fork1",
+        "R2T3_TiltBearing1",
+        "R2T3_PitchGearMotor",
+        "R2T3_PitchMotorStatorBracket",
+        "R2T3_PitchMotorStatorEnd",
+        "R2T3_TorqueTube",
+        "R2T3_MastCableRiser",
+        "R2T3_YawServiceLoop"
+      ]
+    },
+    {
+      "id": "R2T4",
+      "row": 2,
+      "column": 4,
+      "panel": [
+        "R2T4_PV",
+        "R2T4_Backsheet"
+      ],
+      "frame": [
+        "R2T4_FrameSide0",
+        "R2T4_FrameSide1",
+        "R2T4_FrameEdge0",
+        "R2T4_FrameEdge1"
+      ],
+      "backrail": [
+        "R2T4_PitchStandOff0",
+        "R2T4_PitchSpine0",
+        "R2T4_PitchStandOff1",
+        "R2T4_PitchSpine1",
+        "R2T4_Backrail0",
+        "R2T4_Backrail1",
+        "R2T4_PanelCableTray",
+        "R2T4_FlexiblePitchLoop0",
+        "R2T4_FlexiblePitchLoop1",
+        "R2T4_FlexiblePitchLoop2"
+      ],
+      "mount": [
+        "R2T4_SteelFoot",
+        "R2T4_Mast",
+        "R2T4_FixedSlewRace",
+        "R2T4_YawBearing",
+        "R2T4_YawGearMotor",
+        "R2T4_MotorBridge",
+        "R2T4_YokeCrosshead",
+        "R2T4_Fork0",
+        "R2T4_TiltBearing0",
+        "R2T4_Fork1",
+        "R2T4_TiltBearing1",
+        "R2T4_PitchGearMotor",
+        "R2T4_PitchMotorStatorBracket",
+        "R2T4_PitchMotorStatorEnd",
+        "R2T4_TorqueTube",
+        "R2T4_MastCableRiser",
+        "R2T4_YawServiceLoop"
+      ]
+    },
+    {
+      "id": "R3T1",
+      "row": 3,
+      "column": 1,
+      "panel": [
+        "R3T1_PV",
+        "R3T1_Backsheet"
+      ],
+      "frame": [
+        "R3T1_FrameSide0",
+        "R3T1_FrameSide1",
+        "R3T1_FrameEdge0",
+        "R3T1_FrameEdge1"
+      ],
+      "backrail": [
+        "R3T1_PitchStandOff0",
+        "R3T1_PitchSpine0",
+        "R3T1_PitchStandOff1",
+        "R3T1_PitchSpine1",
+        "R3T1_Backrail0",
+        "R3T1_Backrail1",
+        "R3T1_PanelCableTray",
+        "R3T1_FlexiblePitchLoop0",
+        "R3T1_FlexiblePitchLoop1",
+        "R3T1_FlexiblePitchLoop2"
+      ],
+      "mount": [
+        "R3T1_SteelFoot",
+        "R3T1_Mast",
+        "R3T1_FixedSlewRace",
+        "R3T1_YawBearing",
+        "R3T1_YawGearMotor",
+        "R3T1_MotorBridge",
+        "R3T1_YokeCrosshead",
+        "R3T1_Fork0",
+        "R3T1_TiltBearing0",
+        "R3T1_Fork1",
+        "R3T1_TiltBearing1",
+        "R3T1_PitchGearMotor",
+        "R3T1_PitchMotorStatorBracket",
+        "R3T1_PitchMotorStatorEnd",
+        "R3T1_TorqueTube",
+        "R3T1_MastCableRiser",
+        "R3T1_YawServiceLoop"
+      ]
+    },
+    {
+      "id": "R3T2",
+      "row": 3,
+      "column": 2,
+      "panel": [
+        "R3T2_PV",
+        "R3T2_Backsheet"
+      ],
+      "frame": [
+        "R3T2_FrameSide0",
+        "R3T2_FrameSide1",
+        "R3T2_FrameEdge0",
+        "R3T2_FrameEdge1"
+      ],
+      "backrail": [
+        "R3T2_PitchStandOff0",
+        "R3T2_PitchSpine0",
+        "R3T2_PitchStandOff1",
+        "R3T2_PitchSpine1",
+        "R3T2_Backrail0",
+        "R3T2_Backrail1",
+        "R3T2_PanelCableTray",
+        "R3T2_FlexiblePitchLoop0",
+        "R3T2_FlexiblePitchLoop1",
+        "R3T2_FlexiblePitchLoop2"
+      ],
+      "mount": [
+        "R3T2_SteelFoot",
+        "R3T2_Mast",
+        "R3T2_FixedSlewRace",
+        "R3T2_YawBearing",
+        "R3T2_YawGearMotor",
+        "R3T2_MotorBridge",
+        "R3T2_YokeCrosshead",
+        "R3T2_Fork0",
+        "R3T2_TiltBearing0",
+        "R3T2_Fork1",
+        "R3T2_TiltBearing1",
+        "R3T2_PitchGearMotor",
+        "R3T2_PitchMotorStatorBracket",
+        "R3T2_PitchMotorStatorEnd",
+        "R3T2_TorqueTube",
+        "R3T2_MastCableRiser",
+        "R3T2_YawServiceLoop"
+      ]
+    },
+    {
+      "id": "R3T3",
+      "row": 3,
+      "column": 3,
+      "panel": [
+        "R3T3_PV",
+        "R3T3_Backsheet"
+      ],
+      "frame": [
+        "R3T3_FrameSide0",
+        "R3T3_FrameSide1",
+        "R3T3_FrameEdge0",
+        "R3T3_FrameEdge1"
+      ],
+      "backrail": [
+        "R3T3_PitchStandOff0",
+        "R3T3_PitchSpine0",
+        "R3T3_PitchStandOff1",
+        "R3T3_PitchSpine1",
+        "R3T3_Backrail0",
+        "R3T3_Backrail1",
+        "R3T3_PanelCableTray",
+        "R3T3_FlexiblePitchLoop0",
+        "R3T3_FlexiblePitchLoop1",
+        "R3T3_FlexiblePitchLoop2"
+      ],
+      "mount": [
+        "R3T3_SteelFoot",
+        "R3T3_Mast",
+        "R3T3_FixedSlewRace",
+        "R3T3_YawBearing",
+        "R3T3_YawGearMotor",
+        "R3T3_MotorBridge",
+        "R3T3_YokeCrosshead",
+        "R3T3_Fork0",
+        "R3T3_TiltBearing0",
+        "R3T3_Fork1",
+        "R3T3_TiltBearing1",
+        "R3T3_PitchGearMotor",
+        "R3T3_PitchMotorStatorBracket",
+        "R3T3_PitchMotorStatorEnd",
+        "R3T3_TorqueTube",
+        "R3T3_MastCableRiser",
+        "R3T3_YawServiceLoop"
+      ]
+    },
+    {
+      "id": "R3T4",
+      "row": 3,
+      "column": 4,
+      "panel": [
+        "R3T4_PV",
+        "R3T4_Backsheet"
+      ],
+      "frame": [
+        "R3T4_FrameSide0",
+        "R3T4_FrameSide1",
+        "R3T4_FrameEdge0",
+        "R3T4_FrameEdge1"
+      ],
+      "backrail": [
+        "R3T4_PitchStandOff0",
+        "R3T4_PitchSpine0",
+        "R3T4_PitchStandOff1",
+        "R3T4_PitchSpine1",
+        "R3T4_Backrail0",
+        "R3T4_Backrail1",
+        "R3T4_PanelCableTray",
+        "R3T4_FlexiblePitchLoop0",
+        "R3T4_FlexiblePitchLoop1",
+        "R3T4_FlexiblePitchLoop2"
+      ],
+      "mount": [
+        "R3T4_SteelFoot",
+        "R3T4_Mast",
+        "R3T4_FixedSlewRace",
+        "R3T4_YawBearing",
+        "R3T4_YawGearMotor",
+        "R3T4_MotorBridge",
+        "R3T4_YokeCrosshead",
+        "R3T4_Fork0",
+        "R3T4_TiltBearing0",
+        "R3T4_Fork1",
+        "R3T4_TiltBearing1",
+        "R3T4_PitchGearMotor",
+        "R3T4_PitchMotorStatorBracket",
+        "R3T4_PitchMotorStatorEnd",
+        "R3T4_TorqueTube",
+        "R3T4_MastCableRiser",
+        "R3T4_YawServiceLoop"
+      ]
+    }
+  ],
+  "tilt_degrees": 23,
+  "row_y_bounds_m": [
+    [
+      -9.879356384277344,
+      -6.14263391494751
+    ],
+    [
+      -2.0793557167053223,
+      1.6573660373687744
+    ],
+    [
+      5.720643997192383,
+      9.457366943359375
+    ]
+  ],
+  "row_clear_gaps_m": [
+    4.0632781982421875,
+    4.063277959823608
+  ],
+  "continuous_neighbor_gap_m": 0.6495858845892117,
+  "cabinet_service_target": "Inverter0_FlushDoor",
+  "lod_plan": "Later LOD: simplify bearings/motors/rails, bake cells; retain raised mounts. V1 preserved."
+}

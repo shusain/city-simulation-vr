@@ -1,0 +1,1564 @@
+{
+  "task": "D83",
+  "schema_version": 1,
+  "runtime_selected": false,
+  "assets": [
+    {
+      "asset_id": "building.service.a",
+      "name": "SM_Building_Service_A",
+      "source": "ArtSource/Blender/CityParkRefinement.blend",
+      "source_input": "ArtSource/Blender/CityBuildingRefinement.blend",
+      "export": "ArtSource/Exports/ParkRefinement/SM_Building_Service_A.fbx",
+      "sha256": "0cd7370629c4149584e5119e7b302d89667661b34ae8656b06d6fc5d45aab22e",
+      "triangles_before": 788,
+      "triangles_after": 2228,
+      "bounds_m": [
+        [
+          -8.0,
+          -10.399999618530273,
+          0.0
+        ],
+        [
+          8.0,
+          7.0,
+          13.0
+        ]
+      ],
+      "material_slots": [
+        "Service",
+        "Trim"
+      ],
+      "changes": [
+        {
+          "kind": "cylinder",
+          "radial_segments_before": 12,
+          "radial_segments_after": 48,
+          "center": [
+            -4.0,
+            2.5,
+            5.0
+          ],
+          "radius": 3.0,
+          "height": 2.0
+        },
+        {
+          "kind": "cylinder",
+          "radial_segments_before": 12,
+          "radial_segments_after": 48,
+          "center": [
+            4.0,
+            2.5,
+            5.0
+          ],
+          "radius": 3.0,
+          "height": 2.0
+        },
+        {
+          "kind": "cylinder",
+          "radial_segments_before": 12,
+          "radial_segments_after": 48,
+          "center": [
+            0.0,
+            -1.5,
+            8.0
+          ],
+          "radius": 2.2000000346790656,
+          "height": 8.0
+        },
+        {
+          "kind": "cylinder",
+          "radial_segments_before": 12,
+          "radial_segments_after": 48,
+          "center": [
+            -4.0,
+            2.5,
+            6.150000095367432
+          ],
+          "radius": 3.0,
+          "height": 0.3000001907348633
+        },
+        {
+          "kind": "cylinder",
+          "radial_segments_before": 12,
+          "radial_segments_after": 48,
+          "center": [
+            -4.0,
+            2.5,
+            6.340000152587891
+          ],
+          "radius": 2.599999860616827,
+          "height": 0.07999992370605469
+        },
+        {
+          "kind": "cylinder",
+          "radial_segments_before": 12,
+          "radial_segments_after": 48,
+          "center": [
+            4.0,
+            2.5,
+            6.150000095367432
+          ],
+          "radius": 3.0,
+          "height": 0.3000001907348633
+        },
+        {
+          "kind": "cylinder",
+          "radial_segments_before": 12,
+          "radial_segments_after": 48,
+          "center": [
+            4.0,
+            2.5,
+            6.340000152587891
+          ],
+          "radius": 2.599999860616827,
+          "height": 0.07999992370605469
+        },
+        {
+          "kind": "cylinder",
+          "radial_segments_before": 12,
+          "radial_segments_after": 48,
+          "center": [
+            -4.0,
+            2.5,
+            6.849999904632568
+          ],
+          "radius": 0.4200000778833953,
+          "height": 0.4499998092651367
+        },
+        {
+          "kind": "cylinder",
+          "radial_segments_before": 12,
+          "radial_segments_after": 48,
+          "center": [
+            4.0,
+            2.5,
+            6.849999904632568
+          ],
+          "radius": 0.4200000778833953,
+          "height": 0.4499998092651367
+        },
+        {
+          "kind": "cylinder",
+          "radial_segments_before": 12,
+          "radial_segments_after": 48,
+          "center": [
+            4.800000190734863,
+            -3.5,
+            4.900000095367432
+          ],
+          "radius": 0.599999912579848,
+          "height": 1.3000001907348633
+        }
+      ],
+      "roundtrip_pass": true,
+      "footprint_cells": [
+        2,
+        2
+      ],
+      "entrance_sides_local": [
+        "-Y"
+      ],
+      "prototype_only": true
+    },
+    {
+      "asset_id": "building.park.a",
+      "name": "SM_Building_Park_A",
+      "source": "ArtSource/Blender/CityParkRefinement.blend",
+      "source_input": "ArtSource/Blender/CityStarterKit.blend",
+      "export": "ArtSource/Exports/ParkRefinement/SM_Building_Park_A.fbx",
+      "sha256": "c50eec382e1addd7fb741b096aac2d3b4701596224d90d246df00318f74c82f3",
+      "triangles_before": 432,
+      "triangles_after": 656,
+      "bounds_m": [
+        [
+          -11.0,
+          -11.0,
+          0.0
+        ],
+        [
+          11.0,
+          11.0,
+          7.349999904632568
+        ]
+      ],
+      "material_slots": [
+        "Park",
+        "Trim",
+        "Bark",
+        "Canopy"
+      ],
+      "changes": [
+        {
+          "kind": "cylinder",
+          "radial_segments_before": 12,
+          "radial_segments_after": 48,
+          "center": [
+            0.0,
+            0.0,
+            0.8500000238418579
+          ],
+          "radius": 2.4000000476837156,
+          "height": 0.800000011920929
+        },
+        {
+          "kind": "pruned_trunk",
+          "radial_segments_before": 12,
+          "radial_segments_after": 12,
+          "center": [
+            -7.0,
+            -7.0,
+            2.4000003337860107
+          ],
+          "radius": 0.17,
+          "height": 4.000000476837158
+        },
+        {
+          "kind": "pruned_crown",
+          "vertices_before": 24,
+          "lobes": 1,
+          "triangles_after": 64,
+          "radial_segments": 8,
+          "symmetry": "centered eightfold crown",
+          "flat_shaded": true
+        },
+        {
+          "kind": "pruned_trunk",
+          "radial_segments_before": 12,
+          "radial_segments_after": 12,
+          "center": [
+            7.0,
+            -7.0,
+            2.4000003337860107
+          ],
+          "radius": 0.17,
+          "height": 4.000000476837158
+        },
+        {
+          "kind": "pruned_crown",
+          "vertices_before": 24,
+          "lobes": 1,
+          "triangles_after": 64,
+          "radial_segments": 8,
+          "symmetry": "centered eightfold crown",
+          "flat_shaded": true
+        },
+        {
+          "kind": "pruned_trunk",
+          "radial_segments_before": 12,
+          "radial_segments_after": 12,
+          "center": [
+            -7.0,
+            7.0,
+            2.4000003337860107
+          ],
+          "radius": 0.17,
+          "height": 4.000000476837158
+        },
+        {
+          "kind": "pruned_crown",
+          "vertices_before": 24,
+          "lobes": 1,
+          "triangles_after": 64,
+          "radial_segments": 8,
+          "symmetry": "centered eightfold crown",
+          "flat_shaded": true
+        },
+        {
+          "kind": "pruned_trunk",
+          "radial_segments_before": 12,
+          "radial_segments_after": 12,
+          "center": [
+            7.0,
+            7.0,
+            2.4000003337860107
+          ],
+          "radius": 0.17,
+          "height": 4.000000476837158
+        },
+        {
+          "kind": "pruned_crown",
+          "vertices_before": 24,
+          "lobes": 1,
+          "triangles_after": 64,
+          "radial_segments": 8,
+          "symmetry": "centered eightfold crown",
+          "flat_shaded": true
+        }
+      ],
+      "roundtrip_pass": true,
+      "footprint_cells": [
+        3,
+        3
+      ],
+      "entrance_sides_local": [
+        "-Y",
+        "+X",
+        "+Y",
+        "-X"
+      ],
+      "prototype_only": true
+    },
+    {
+      "asset_id": "building.park.neighborhood",
+      "name": "SM_Building_NeighborhoodPark_A",
+      "source": "ArtSource/Blender/CityParkRefinement.blend",
+      "source_input": "ArtSource/Blender/CityParkKit.blend",
+      "export": "ArtSource/Exports/ParkRefinement/SM_Building_NeighborhoodPark_A.fbx",
+      "sha256": "29c877c84b15ce229b4421b411f71210419fe2afbed89285cbc7bafd8b987364",
+      "triangles_before": 448,
+      "triangles_after": 2536,
+      "bounds_m": [
+        [
+          -20.0,
+          -20.0,
+          0.0
+        ],
+        [
+          20.0,
+          20.0,
+          8.220000267028809
+        ]
+      ],
+      "material_slots": [
+        "Park",
+        "Trim"
+      ],
+      "changes": [
+        {
+          "kind": "crown",
+          "vertices_before": 12,
+          "lobes": 1,
+          "triangles_after": 320
+        },
+        {
+          "kind": "crown",
+          "vertices_before": 12,
+          "lobes": 1,
+          "triangles_after": 320
+        },
+        {
+          "kind": "crown",
+          "vertices_before": 12,
+          "lobes": 1,
+          "triangles_after": 320
+        },
+        {
+          "kind": "crown",
+          "vertices_before": 12,
+          "lobes": 1,
+          "triangles_after": 320
+        },
+        {
+          "kind": "crown",
+          "vertices_before": 12,
+          "lobes": 1,
+          "triangles_after": 320
+        },
+        {
+          "kind": "crown",
+          "vertices_before": 12,
+          "lobes": 1,
+          "triangles_after": 320
+        },
+        {
+          "kind": "cylinder",
+          "radial_segments_before": 12,
+          "radial_segments_after": 48,
+          "center": [
+            0.0,
+            0.0,
+            0.574999988079071
+          ],
+          "radius": 2.099999850136888,
+          "height": 0.5499999523162842
+        },
+        {
+          "kind": "cylinder",
+          "radial_segments_before": 12,
+          "radial_segments_after": 48,
+          "center": [
+            0.0,
+            0.0,
+            1.399999976158142
+          ],
+          "radius": 0.4499999841054278,
+          "height": 1.7999999523162842
+        }
+      ],
+      "roundtrip_pass": true,
+      "footprint_cells": [
+        5,
+        5
+      ],
+      "entrance_sides_local": [
+        "-Y",
+        "+X",
+        "+Y",
+        "-X"
+      ],
+      "prototype_only": true
+    },
+    {
+      "asset_id": "building.park.city",
+      "name": "SM_Building_CityPark_A",
+      "source": "ArtSource/Blender/CityParkRefinement.blend",
+      "source_input": "ArtSource/Blender/CityParkKit.blend",
+      "export": "ArtSource/Exports/ParkRefinement/SM_Building_CityPark_A.fbx",
+      "sha256": "252ec24f96888d7e513bac0f09f26c623dc5701c4cf1e91aadf722ea59915998",
+      "triangles_before": 648,
+      "triangles_after": 4248,
+      "bounds_m": [
+        [
+          -28.0,
+          -28.0,
+          0.0
+        ],
+        [
+          28.0,
+          28.0,
+          8.220000267028809
+        ]
+      ],
+      "material_slots": [
+        "Park",
+        "Trim"
+      ],
+      "changes": [
+        {
+          "kind": "crown",
+          "vertices_before": 12,
+          "lobes": 1,
+          "triangles_after": 320
+        },
+        {
+          "kind": "crown",
+          "vertices_before": 12,
+          "lobes": 1,
+          "triangles_after": 320
+        },
+        {
+          "kind": "crown",
+          "vertices_before": 12,
+          "lobes": 1,
+          "triangles_after": 320
+        },
+        {
+          "kind": "crown",
+          "vertices_before": 12,
+          "lobes": 1,
+          "triangles_after": 320
+        },
+        {
+          "kind": "crown",
+          "vertices_before": 12,
+          "lobes": 1,
+          "triangles_after": 320
+        },
+        {
+          "kind": "crown",
+          "vertices_before": 12,
+          "lobes": 1,
+          "triangles_after": 320
+        },
+        {
+          "kind": "crown",
+          "vertices_before": 12,
+          "lobes": 1,
+          "triangles_after": 320
+        },
+        {
+          "kind": "crown",
+          "vertices_before": 12,
+          "lobes": 1,
+          "triangles_after": 320
+        },
+        {
+          "kind": "crown",
+          "vertices_before": 12,
+          "lobes": 1,
+          "triangles_after": 320
+        },
+        {
+          "kind": "crown",
+          "vertices_before": 12,
+          "lobes": 1,
+          "triangles_after": 320
+        },
+        {
+          "kind": "crown",
+          "vertices_before": 12,
+          "lobes": 1,
+          "triangles_after": 320
+        },
+        {
+          "kind": "crown",
+          "vertices_before": 12,
+          "lobes": 1,
+          "triangles_after": 320
+        }
+      ],
+      "roundtrip_pass": true,
+      "footprint_cells": [
+        7,
+        7
+      ],
+      "entrance_sides_local": [
+        "-Y",
+        "+X",
+        "+Y",
+        "-X"
+      ],
+      "prototype_only": true
+    },
+    {
+      "asset_id": "building.park.skate",
+      "name": "SM_Building_SkatePark_A",
+      "source": "ArtSource/Blender/CityParkRefinement.blend",
+      "source_input": "ArtSource/Blender/CitySportsParkKit.blend",
+      "export": "ArtSource/Exports/ParkRefinement/SM_Building_SkatePark_A.fbx",
+      "sha256": "fe26f1b17df8e934062e4490033f5107c413fa54f8c48beafa5a1d5f1d96adb1",
+      "triangles_before": 288,
+      "triangles_after": 1104,
+      "bounds_m": [
+        [
+          -20.0,
+          -20.0,
+          0.0
+        ],
+        [
+          20.0,
+          20.0,
+          5.799999713897705
+        ]
+      ],
+      "material_slots": [
+        "Park",
+        "Traffic"
+      ],
+      "changes": [
+        {
+          "kind": "crown",
+          "vertices_before": 12,
+          "lobes": 1,
+          "triangles_after": 320
+        },
+        {
+          "kind": "crown",
+          "vertices_before": 12,
+          "lobes": 1,
+          "triangles_after": 320
+        },
+        {
+          "kind": "ramp",
+          "riding_panels_before": 5,
+          "riding_panels_after": 32,
+          "maximum_curve_error_m": 0.000732421875
+        },
+        {
+          "kind": "ramp",
+          "riding_panels_before": 5,
+          "riding_panels_after": 32,
+          "maximum_curve_error_m": 0.000732421875
+        }
+      ],
+      "roundtrip_pass": true,
+      "footprint_cells": [
+        5,
+        5
+      ],
+      "entrance_sides_local": [
+        "-Y",
+        "+X",
+        "+Y",
+        "-X"
+      ],
+      "prototype_only": true
+    },
+    {
+      "asset_id": "building.service.medium.a",
+      "name": "SM_Building_Service_Medium_A",
+      "source": "ArtSource/Blender/CityParkRefinement.blend",
+      "source_input": "ArtSource/Blender/CityBuildingRefinement.blend",
+      "export": "ArtSource/Exports/ParkRefinement/SM_Building_Service_Medium_A.fbx",
+      "sha256": "6b01762af5c354cdf664baa3085d7a9a59169f7a271c01c3425bad9d1da90d8f",
+      "triangles_before": 988,
+      "triangles_after": 3004,
+      "bounds_m": [
+        [
+          -8.0,
+          -10.399999618530273,
+          0.0
+        ],
+        [
+          8.0,
+          7.0,
+          13.0
+        ]
+      ],
+      "material_slots": [
+        "Service",
+        "Trim"
+      ],
+      "changes": [
+        {
+          "kind": "cylinder",
+          "radial_segments_before": 12,
+          "radial_segments_after": 48,
+          "center": [
+            -4.0,
+            2.5,
+            5.0
+          ],
+          "radius": 3.0,
+          "height": 2.0
+        },
+        {
+          "kind": "cylinder",
+          "radial_segments_before": 12,
+          "radial_segments_after": 48,
+          "center": [
+            4.0,
+            2.5,
+            5.0
+          ],
+          "radius": 3.0,
+          "height": 2.0
+        },
+        {
+          "kind": "cylinder",
+          "radial_segments_before": 12,
+          "radial_segments_after": 48,
+          "center": [
+            0.0,
+            -1.5,
+            8.0
+          ],
+          "radius": 2.2000000346790656,
+          "height": 8.0
+        },
+        {
+          "kind": "cylinder",
+          "radial_segments_before": 12,
+          "radial_segments_after": 48,
+          "center": [
+            -4.0,
+            2.5,
+            6.150000095367432
+          ],
+          "radius": 3.0,
+          "height": 0.3000001907348633
+        },
+        {
+          "kind": "cylinder",
+          "radial_segments_before": 12,
+          "radial_segments_after": 48,
+          "center": [
+            -4.0,
+            2.5,
+            6.340000152587891
+          ],
+          "radius": 2.599999860616827,
+          "height": 0.07999992370605469
+        },
+        {
+          "kind": "cylinder",
+          "radial_segments_before": 12,
+          "radial_segments_after": 48,
+          "center": [
+            4.0,
+            2.5,
+            6.150000095367432
+          ],
+          "radius": 3.0,
+          "height": 0.3000001907348633
+        },
+        {
+          "kind": "cylinder",
+          "radial_segments_before": 12,
+          "radial_segments_after": 48,
+          "center": [
+            4.0,
+            2.5,
+            6.340000152587891
+          ],
+          "radius": 2.599999860616827,
+          "height": 0.07999992370605469
+        },
+        {
+          "kind": "cylinder",
+          "radial_segments_before": 12,
+          "radial_segments_after": 48,
+          "center": [
+            -4.0,
+            2.5,
+            6.849999904632568
+          ],
+          "radius": 0.4200000778833953,
+          "height": 0.4499998092651367
+        },
+        {
+          "kind": "cylinder",
+          "radial_segments_before": 12,
+          "radial_segments_after": 48,
+          "center": [
+            4.0,
+            2.5,
+            6.849999904632568
+          ],
+          "radius": 0.4200000778833953,
+          "height": 0.4499998092651367
+        },
+        {
+          "kind": "cylinder",
+          "radial_segments_before": 12,
+          "radial_segments_after": 48,
+          "center": [
+            4.800000190734863,
+            -3.5,
+            4.900000095367432
+          ],
+          "radius": 0.599999912579848,
+          "height": 1.3000001907348633
+        },
+        {
+          "kind": "cylinder",
+          "radial_segments_before": 12,
+          "radial_segments_after": 48,
+          "center": [
+            -4.0,
+            0.0,
+            10.5
+          ],
+          "radius": 1.5,
+          "height": 3.0
+        },
+        {
+          "kind": "cylinder",
+          "radial_segments_before": 12,
+          "radial_segments_after": 48,
+          "center": [
+            -4.0,
+            0.0,
+            12.130000114440918
+          ],
+          "radius": 1.6500000982573508,
+          "height": 0.25
+        },
+        {
+          "kind": "cylinder",
+          "radial_segments_before": 12,
+          "radial_segments_after": 48,
+          "center": [
+            4.0,
+            0.0,
+            10.5
+          ],
+          "radius": 1.5,
+          "height": 3.0
+        },
+        {
+          "kind": "cylinder",
+          "radial_segments_before": 12,
+          "radial_segments_after": 48,
+          "center": [
+            4.0,
+            0.0,
+            12.130000114440918
+          ],
+          "radius": 1.6500000982573508,
+          "height": 0.25
+        }
+      ],
+      "roundtrip_pass": true,
+      "footprint_cells": [
+        2,
+        2
+      ],
+      "entrance_sides_local": [
+        "-Y"
+      ],
+      "prototype_only": true
+    },
+    {
+      "asset_id": "building.service.high.a",
+      "name": "SM_Building_Service_High_A",
+      "source": "ArtSource/Blender/CityParkRefinement.blend",
+      "source_input": "ArtSource/Blender/CityBuildingRefinement.blend",
+      "export": "ArtSource/Exports/ParkRefinement/SM_Building_Service_High_A.fbx",
+      "sha256": "4b8c841e396b6a77913c7cc4d281e54284c38fa5197da4b0ff51322d12a5a9fc",
+      "triangles_before": 1100,
+      "triangles_after": 3404,
+      "bounds_m": [
+        [
+          -8.0,
+          -10.399999618530273,
+          0.0
+        ],
+        [
+          8.0,
+          7.0,
+          15.25
+        ]
+      ],
+      "material_slots": [
+        "Service",
+        "Trim"
+      ],
+      "changes": [
+        {
+          "kind": "cylinder",
+          "radial_segments_before": 12,
+          "radial_segments_after": 48,
+          "center": [
+            -4.0,
+            2.5,
+            5.0
+          ],
+          "radius": 3.0,
+          "height": 2.0
+        },
+        {
+          "kind": "cylinder",
+          "radial_segments_before": 12,
+          "radial_segments_after": 48,
+          "center": [
+            4.0,
+            2.5,
+            5.0
+          ],
+          "radius": 3.0,
+          "height": 2.0
+        },
+        {
+          "kind": "cylinder",
+          "radial_segments_before": 12,
+          "radial_segments_after": 48,
+          "center": [
+            0.0,
+            -1.5,
+            8.0
+          ],
+          "radius": 2.2000000346790656,
+          "height": 8.0
+        },
+        {
+          "kind": "cylinder",
+          "radial_segments_before": 12,
+          "radial_segments_after": 48,
+          "center": [
+            -4.0,
+            2.5,
+            6.150000095367432
+          ],
+          "radius": 3.0,
+          "height": 0.3000001907348633
+        },
+        {
+          "kind": "cylinder",
+          "radial_segments_before": 12,
+          "radial_segments_after": 48,
+          "center": [
+            -4.0,
+            2.5,
+            6.340000152587891
+          ],
+          "radius": 2.599999860616827,
+          "height": 0.07999992370605469
+        },
+        {
+          "kind": "cylinder",
+          "radial_segments_before": 12,
+          "radial_segments_after": 48,
+          "center": [
+            4.0,
+            2.5,
+            6.150000095367432
+          ],
+          "radius": 3.0,
+          "height": 0.3000001907348633
+        },
+        {
+          "kind": "cylinder",
+          "radial_segments_before": 12,
+          "radial_segments_after": 48,
+          "center": [
+            4.0,
+            2.5,
+            6.340000152587891
+          ],
+          "radius": 2.599999860616827,
+          "height": 0.07999992370605469
+        },
+        {
+          "kind": "cylinder",
+          "radial_segments_before": 12,
+          "radial_segments_after": 48,
+          "center": [
+            -4.0,
+            2.5,
+            6.849999904632568
+          ],
+          "radius": 0.4200000778833953,
+          "height": 0.4499998092651367
+        },
+        {
+          "kind": "cylinder",
+          "radial_segments_before": 12,
+          "radial_segments_after": 48,
+          "center": [
+            4.0,
+            2.5,
+            6.849999904632568
+          ],
+          "radius": 0.4200000778833953,
+          "height": 0.4499998092651367
+        },
+        {
+          "kind": "cylinder",
+          "radial_segments_before": 12,
+          "radial_segments_after": 48,
+          "center": [
+            4.800000190734863,
+            -3.5,
+            4.900000095367432
+          ],
+          "radius": 0.599999912579848,
+          "height": 1.3000001907348633
+        },
+        {
+          "kind": "cylinder",
+          "radial_segments_before": 12,
+          "radial_segments_after": 48,
+          "center": [
+            -4.0,
+            0.0,
+            10.5
+          ],
+          "radius": 1.5,
+          "height": 3.0
+        },
+        {
+          "kind": "cylinder",
+          "radial_segments_before": 12,
+          "radial_segments_after": 48,
+          "center": [
+            -4.0,
+            0.0,
+            12.130000114440918
+          ],
+          "radius": 1.6500000982573508,
+          "height": 0.25
+        },
+        {
+          "kind": "cylinder",
+          "radial_segments_before": 12,
+          "radial_segments_after": 48,
+          "center": [
+            -4.0,
+            0.0,
+            13.75
+          ],
+          "radius": 1.199999825159696,
+          "height": 3.0
+        },
+        {
+          "kind": "cylinder",
+          "radial_segments_before": 12,
+          "radial_segments_after": 48,
+          "center": [
+            4.0,
+            0.0,
+            10.5
+          ],
+          "radius": 1.5,
+          "height": 3.0
+        },
+        {
+          "kind": "cylinder",
+          "radial_segments_before": 12,
+          "radial_segments_after": 48,
+          "center": [
+            4.0,
+            0.0,
+            12.130000114440918
+          ],
+          "radius": 1.6500000982573508,
+          "height": 0.25
+        },
+        {
+          "kind": "cylinder",
+          "radial_segments_before": 12,
+          "radial_segments_after": 48,
+          "center": [
+            4.0,
+            0.0,
+            13.75
+          ],
+          "radius": 1.2000000238418578,
+          "height": 3.0
+        }
+      ],
+      "roundtrip_pass": true,
+      "footprint_cells": [
+        2,
+        2
+      ],
+      "entrance_sides_local": [
+        "-Y"
+      ],
+      "prototype_only": true
+    },
+    {
+      "asset_id": "building.watertower.a",
+      "name": "SM_Building_WaterTower_A",
+      "source": "ArtSource/Blender/CityParkRefinement.blend",
+      "source_input": "ArtSource/Blender/CityAlternativeFacilityKit.blend",
+      "export": "ArtSource/Exports/ParkRefinement/SM_Building_WaterTower_A.fbx",
+      "sha256": "d5cea52c1726b7c7fc171b6cb2332aad96723219e610db1ef992a07f6438801b",
+      "triangles_before": 160,
+      "triangles_after": 448,
+      "bounds_m": [
+        [
+          -3.799999952316284,
+          -3.799999952316284,
+          0.0
+        ],
+        [
+          3.799999952316284,
+          3.799999952316284,
+          12.375
+        ]
+      ],
+      "material_slots": [
+        "Service",
+        "Trim"
+      ],
+      "changes": [
+        {
+          "kind": "cylinder",
+          "radial_segments_before": 12,
+          "radial_segments_after": 48,
+          "center": [
+            0.0,
+            0.0,
+            10.0
+          ],
+          "radius": 3.0,
+          "height": 4.0
+        },
+        {
+          "kind": "cylinder",
+          "radial_segments_before": 12,
+          "radial_segments_after": 48,
+          "center": [
+            0.0,
+            0.0,
+            12.199999809265137
+          ],
+          "radius": 3.200000113248823,
+          "height": 0.35000038146972656
+        }
+      ],
+      "roundtrip_pass": true,
+      "footprint_cells": [
+        1,
+        1
+      ],
+      "entrance_sides_local": [
+        "-Y"
+      ],
+      "prototype_only": true
+    }
+  ],
+  "citizens": [
+    {
+      "name": "SK_Citizen_Rig_Casual",
+      "source_input": "ArtSource/Exports/CitizenPrototypes/SM_Citizen_PC_Casual.fbx",
+      "source": "ArtSource/Blender/CityCitizenRigPrototype.blend",
+      "export": "ArtSource/Exports/ParkRefinement/SK_Citizen_Rig_Casual.fbx",
+      "sha256": "d00db8428ef32a9213a3b9d5e09623ff1394fde0ce7a8a9acf17e3df0b28d565",
+      "triangles": 754,
+      "bones": [
+        "root",
+        "pelvis",
+        "spine",
+        "chest",
+        "neck",
+        "head",
+        "clavicle.L",
+        "upper_arm.L",
+        "forearm.L",
+        "hand.L",
+        "clavicle.R",
+        "upper_arm.R",
+        "forearm.R",
+        "hand.R",
+        "thigh.L",
+        "shin.L",
+        "foot.L",
+        "thigh.R",
+        "shin.R",
+        "foot.R"
+      ],
+      "maximum_weights_per_vertex": 2,
+      "all_weights_normalized": true,
+      "actions": [
+        "SK_Citizen_Rig_Casual_Rig_Idle",
+        "SK_Citizen_Rig_Casual_Rig_Walk",
+        "SK_Citizen_Rig_Casual_Rig_SkateBalance",
+        "SK_Citizen_Rig_Casual_Rig_Cheer",
+        "SK_Citizen_Rig_Casual_Rig_SeatedIdle",
+        "SK_Citizen_Rig_Casual_Rig_SkatePush",
+        "SK_Citizen_Rig_Casual_Rig_SkateCarve",
+        "SK_Citizen_Rig_Casual_Rig_BaseballPitch",
+        "SK_Citizen_Rig_Casual_Rig_BaseballSwing",
+        "SK_Citizen_Rig_Casual_Rig_SoccerRun",
+        "SK_Citizen_Rig_Casual_Rig_SoccerKick",
+        "SK_Citizen_Rig_Casual_Rig_GoalkeeperSave",
+        "SK_Citizen_Rig_Casual_Rig_BasketballDribble",
+        "SK_Citizen_Rig_Casual_Rig_BasketballShot",
+        "SK_Citizen_Rig_Casual_Rig_SkateKickflip",
+        "SK_Citizen_Rig_Casual_Rig_Skate180",
+        "SK_Citizen_Rig_Casual_Rig_SkateLipStall"
+      ],
+      "clips": {
+        "Idle": 48,
+        "Walk": 24,
+        "SkateBalance": 48,
+        "Cheer": 48,
+        "SeatedIdle": 48,
+        "SkatePush": 48,
+        "SkateCarve": 96,
+        "BaseballPitch": 72,
+        "BaseballSwing": 48,
+        "SoccerRun": 24,
+        "SoccerKick": 48,
+        "GoalkeeperSave": 48,
+        "BasketballDribble": 48,
+        "BasketballShot": 72,
+        "SkateKickflip": 72,
+        "Skate180": 96,
+        "SkateLipStall": 120
+      },
+      "prototype_only": true,
+      "original_geometry_and_rgba_preserved": true
+    },
+    {
+      "name": "SK_Citizen_Rig_Casual_LOD1",
+      "source_input": "ArtSource/Exports/CitizenPrototypes/SM_Citizen_PC_Casual_LOD1.fbx",
+      "source": "ArtSource/Blender/CityCitizenRigPrototype.blend",
+      "export": "ArtSource/Exports/ParkRefinement/SK_Citizen_Rig_Casual_LOD1.fbx",
+      "sha256": "47c2fe1e2d42ecb6f7652c47f54807a0d37f674380b2e651b678e14379df9136",
+      "triangles": 420,
+      "bones": [
+        "root",
+        "pelvis",
+        "spine",
+        "chest",
+        "neck",
+        "head",
+        "clavicle.L",
+        "upper_arm.L",
+        "forearm.L",
+        "hand.L",
+        "clavicle.R",
+        "upper_arm.R",
+        "forearm.R",
+        "hand.R",
+        "thigh.L",
+        "shin.L",
+        "foot.L",
+        "thigh.R",
+        "shin.R",
+        "foot.R"
+      ],
+      "maximum_weights_per_vertex": 2,
+      "all_weights_normalized": true,
+      "actions": [
+        "SK_Citizen_Rig_Casual_LOD1_Rig_Idle",
+        "SK_Citizen_Rig_Casual_LOD1_Rig_Walk",
+        "SK_Citizen_Rig_Casual_LOD1_Rig_SkateBalance",
+        "SK_Citizen_Rig_Casual_LOD1_Rig_Cheer",
+        "SK_Citizen_Rig_Casual_LOD1_Rig_SeatedIdle",
+        "SK_Citizen_Rig_Casual_LOD1_Rig_SkatePush",
+        "SK_Citizen_Rig_Casual_LOD1_Rig_SkateCarve",
+        "SK_Citizen_Rig_Casual_LOD1_Rig_BaseballPitch",
+        "SK_Citizen_Rig_Casual_LOD1_Rig_BaseballSwing",
+        "SK_Citizen_Rig_Casual_LOD1_Rig_SoccerRun",
+        "SK_Citizen_Rig_Casual_LOD1_Rig_SoccerKick",
+        "SK_Citizen_Rig_Casual_LOD1_Rig_GoalkeeperSave",
+        "SK_Citizen_Rig_Casual_LOD1_Rig_BasketballDribble",
+        "SK_Citizen_Rig_Casual_LOD1_Rig_BasketballShot",
+        "SK_Citizen_Rig_Casual_LOD1_Rig_SkateKickflip",
+        "SK_Citizen_Rig_Casual_LOD1_Rig_Skate180",
+        "SK_Citizen_Rig_Casual_LOD1_Rig_SkateLipStall"
+      ],
+      "clips": {
+        "Idle": 48,
+        "Walk": 24,
+        "SkateBalance": 48,
+        "Cheer": 48,
+        "SeatedIdle": 48,
+        "SkatePush": 48,
+        "SkateCarve": 96,
+        "BaseballPitch": 72,
+        "BaseballSwing": 48,
+        "SoccerRun": 24,
+        "SoccerKick": 48,
+        "GoalkeeperSave": 48,
+        "BasketballDribble": 48,
+        "BasketballShot": 72,
+        "SkateKickflip": 72,
+        "Skate180": 96,
+        "SkateLipStall": 120
+      },
+      "prototype_only": true,
+      "original_geometry_and_rgba_preserved": true
+    },
+    {
+      "name": "SK_Citizen_Rig_Office",
+      "source_input": "ArtSource/Exports/CitizenPrototypes/SM_Citizen_PC_Office.fbx",
+      "source": "ArtSource/Blender/CityCitizenRigPrototype.blend",
+      "export": "ArtSource/Exports/ParkRefinement/SK_Citizen_Rig_Office.fbx",
+      "sha256": "f937fa6a1bf2b63713478189cb6645bed1ee56a8d8d8565bdeebd5714f3f93c0",
+      "triangles": 754,
+      "bones": [
+        "root",
+        "pelvis",
+        "spine",
+        "chest",
+        "neck",
+        "head",
+        "clavicle.L",
+        "upper_arm.L",
+        "forearm.L",
+        "hand.L",
+        "clavicle.R",
+        "upper_arm.R",
+        "forearm.R",
+        "hand.R",
+        "thigh.L",
+        "shin.L",
+        "foot.L",
+        "thigh.R",
+        "shin.R",
+        "foot.R"
+      ],
+      "maximum_weights_per_vertex": 2,
+      "all_weights_normalized": true,
+      "actions": [
+        "SK_Citizen_Rig_Office_Rig_Idle",
+        "SK_Citizen_Rig_Office_Rig_Walk",
+        "SK_Citizen_Rig_Office_Rig_SkateBalance",
+        "SK_Citizen_Rig_Office_Rig_Cheer",
+        "SK_Citizen_Rig_Office_Rig_SeatedIdle",
+        "SK_Citizen_Rig_Office_Rig_SkatePush",
+        "SK_Citizen_Rig_Office_Rig_SkateCarve",
+        "SK_Citizen_Rig_Office_Rig_BaseballPitch",
+        "SK_Citizen_Rig_Office_Rig_BaseballSwing",
+        "SK_Citizen_Rig_Office_Rig_SoccerRun",
+        "SK_Citizen_Rig_Office_Rig_SoccerKick",
+        "SK_Citizen_Rig_Office_Rig_GoalkeeperSave",
+        "SK_Citizen_Rig_Office_Rig_BasketballDribble",
+        "SK_Citizen_Rig_Office_Rig_BasketballShot",
+        "SK_Citizen_Rig_Office_Rig_SkateKickflip",
+        "SK_Citizen_Rig_Office_Rig_Skate180",
+        "SK_Citizen_Rig_Office_Rig_SkateLipStall"
+      ],
+      "clips": {
+        "Idle": 48,
+        "Walk": 24,
+        "SkateBalance": 48,
+        "Cheer": 48,
+        "SeatedIdle": 48,
+        "SkatePush": 48,
+        "SkateCarve": 96,
+        "BaseballPitch": 72,
+        "BaseballSwing": 48,
+        "SoccerRun": 24,
+        "SoccerKick": 48,
+        "GoalkeeperSave": 48,
+        "BasketballDribble": 48,
+        "BasketballShot": 72,
+        "SkateKickflip": 72,
+        "Skate180": 96,
+        "SkateLipStall": 120
+      },
+      "prototype_only": true,
+      "original_geometry_and_rgba_preserved": true
+    },
+    {
+      "name": "SK_Citizen_Rig_Office_LOD1",
+      "source_input": "ArtSource/Exports/CitizenPrototypes/SM_Citizen_PC_Office_LOD1.fbx",
+      "source": "ArtSource/Blender/CityCitizenRigPrototype.blend",
+      "export": "ArtSource/Exports/ParkRefinement/SK_Citizen_Rig_Office_LOD1.fbx",
+      "sha256": "5d6e4a42c6238ac42a12b2f3d7e0dcc319aebebefeaee4fb0b5177abd612cf2d",
+      "triangles": 420,
+      "bones": [
+        "root",
+        "pelvis",
+        "spine",
+        "chest",
+        "neck",
+        "head",
+        "clavicle.L",
+        "upper_arm.L",
+        "forearm.L",
+        "hand.L",
+        "clavicle.R",
+        "upper_arm.R",
+        "forearm.R",
+        "hand.R",
+        "thigh.L",
+        "shin.L",
+        "foot.L",
+        "thigh.R",
+        "shin.R",
+        "foot.R"
+      ],
+      "maximum_weights_per_vertex": 2,
+      "all_weights_normalized": true,
+      "actions": [
+        "SK_Citizen_Rig_Office_LOD1_Rig_Idle",
+        "SK_Citizen_Rig_Office_LOD1_Rig_Walk",
+        "SK_Citizen_Rig_Office_LOD1_Rig_SkateBalance",
+        "SK_Citizen_Rig_Office_LOD1_Rig_Cheer",
+        "SK_Citizen_Rig_Office_LOD1_Rig_SeatedIdle",
+        "SK_Citizen_Rig_Office_LOD1_Rig_SkatePush",
+        "SK_Citizen_Rig_Office_LOD1_Rig_SkateCarve",
+        "SK_Citizen_Rig_Office_LOD1_Rig_BaseballPitch",
+        "SK_Citizen_Rig_Office_LOD1_Rig_BaseballSwing",
+        "SK_Citizen_Rig_Office_LOD1_Rig_SoccerRun",
+        "SK_Citizen_Rig_Office_LOD1_Rig_SoccerKick",
+        "SK_Citizen_Rig_Office_LOD1_Rig_GoalkeeperSave",
+        "SK_Citizen_Rig_Office_LOD1_Rig_BasketballDribble",
+        "SK_Citizen_Rig_Office_LOD1_Rig_BasketballShot",
+        "SK_Citizen_Rig_Office_LOD1_Rig_SkateKickflip",
+        "SK_Citizen_Rig_Office_LOD1_Rig_Skate180",
+        "SK_Citizen_Rig_Office_LOD1_Rig_SkateLipStall"
+      ],
+      "clips": {
+        "Idle": 48,
+        "Walk": 24,
+        "SkateBalance": 48,
+        "Cheer": 48,
+        "SeatedIdle": 48,
+        "SkatePush": 48,
+        "SkateCarve": 96,
+        "BaseballPitch": 72,
+        "BaseballSwing": 48,
+        "SoccerRun": 24,
+        "SoccerKick": 48,
+        "GoalkeeperSave": 48,
+        "BasketballDribble": 48,
+        "BasketballShot": 72,
+        "SkateKickflip": 72,
+        "Skate180": 96,
+        "SkateLipStall": 120
+      },
+      "prototype_only": true,
+      "original_geometry_and_rgba_preserved": true
+    },
+    {
+      "name": "SK_Citizen_Rig_Worker",
+      "source_input": "ArtSource/Exports/CitizenPrototypes/SM_Citizen_PC_Worker.fbx",
+      "source": "ArtSource/Blender/CityCitizenRigPrototype.blend",
+      "export": "ArtSource/Exports/ParkRefinement/SK_Citizen_Rig_Worker.fbx",
+      "sha256": "dbbf43ccc3b3a3eab5b2dafcc188fa41c55699f30fd3cfe879e1e3bd6689aaf4",
+      "triangles": 754,
+      "bones": [
+        "root",
+        "pelvis",
+        "spine",
+        "chest",
+        "neck",
+        "head",
+        "clavicle.L",
+        "upper_arm.L",
+        "forearm.L",
+        "hand.L",
+        "clavicle.R",
+        "upper_arm.R",
+        "forearm.R",
+        "hand.R",
+        "thigh.L",
+        "shin.L",
+        "foot.L",
+        "thigh.R",
+        "shin.R",
+        "foot.R"
+      ],
+      "maximum_weights_per_vertex": 2,
+      "all_weights_normalized": true,
+      "actions": [
+        "SK_Citizen_Rig_Worker_Rig_Idle",
+        "SK_Citizen_Rig_Worker_Rig_Walk",
+        "SK_Citizen_Rig_Worker_Rig_SkateBalance",
+        "SK_Citizen_Rig_Worker_Rig_Cheer",
+        "SK_Citizen_Rig_Worker_Rig_SeatedIdle",
+        "SK_Citizen_Rig_Worker_Rig_SkatePush",
+        "SK_Citizen_Rig_Worker_Rig_SkateCarve",
+        "SK_Citizen_Rig_Worker_Rig_BaseballPitch",
+        "SK_Citizen_Rig_Worker_Rig_BaseballSwing",
+        "SK_Citizen_Rig_Worker_Rig_SoccerRun",
+        "SK_Citizen_Rig_Worker_Rig_SoccerKick",
+        "SK_Citizen_Rig_Worker_Rig_GoalkeeperSave",
+        "SK_Citizen_Rig_Worker_Rig_BasketballDribble",
+        "SK_Citizen_Rig_Worker_Rig_BasketballShot",
+        "SK_Citizen_Rig_Worker_Rig_SkateKickflip",
+        "SK_Citizen_Rig_Worker_Rig_Skate180",
+        "SK_Citizen_Rig_Worker_Rig_SkateLipStall"
+      ],
+      "clips": {
+        "Idle": 48,
+        "Walk": 24,
+        "SkateBalance": 48,
+        "Cheer": 48,
+        "SeatedIdle": 48,
+        "SkatePush": 48,
+        "SkateCarve": 96,
+        "BaseballPitch": 72,
+        "BaseballSwing": 48,
+        "SoccerRun": 24,
+        "SoccerKick": 48,
+        "GoalkeeperSave": 48,
+        "BasketballDribble": 48,
+        "BasketballShot": 72,
+        "SkateKickflip": 72,
+        "Skate180": 96,
+        "SkateLipStall": 120
+      },
+      "prototype_only": true,
+      "original_geometry_and_rgba_preserved": true
+    },
+    {
+      "name": "SK_Citizen_Rig_Worker_LOD1",
+      "source_input": "ArtSource/Exports/CitizenPrototypes/SM_Citizen_PC_Worker_LOD1.fbx",
+      "source": "ArtSource/Blender/CityCitizenRigPrototype.blend",
+      "export": "ArtSource/Exports/ParkRefinement/SK_Citizen_Rig_Worker_LOD1.fbx",
+      "sha256": "7bc8ceeb745dcd9b823278ac15b470c94e834f98604d1076b3d6c7bfe5533b25",
+      "triangles": 420,
+      "bones": [
+        "root",
+        "pelvis",
+        "spine",
+        "chest",
+        "neck",
+        "head",
+        "clavicle.L",
+        "upper_arm.L",
+        "forearm.L",
+        "hand.L",
+        "clavicle.R",
+        "upper_arm.R",
+        "forearm.R",
+        "hand.R",
+        "thigh.L",
+        "shin.L",
+        "foot.L",
+        "thigh.R",
+        "shin.R",
+        "foot.R"
+      ],
+      "maximum_weights_per_vertex": 2,
+      "all_weights_normalized": true,
+      "actions": [
+        "SK_Citizen_Rig_Worker_LOD1_Rig_Idle",
+        "SK_Citizen_Rig_Worker_LOD1_Rig_Walk",
+        "SK_Citizen_Rig_Worker_LOD1_Rig_SkateBalance",
+        "SK_Citizen_Rig_Worker_LOD1_Rig_Cheer",
+        "SK_Citizen_Rig_Worker_LOD1_Rig_SeatedIdle",
+        "SK_Citizen_Rig_Worker_LOD1_Rig_SkatePush",
+        "SK_Citizen_Rig_Worker_LOD1_Rig_SkateCarve",
+        "SK_Citizen_Rig_Worker_LOD1_Rig_BaseballPitch",
+        "SK_Citizen_Rig_Worker_LOD1_Rig_BaseballSwing",
+        "SK_Citizen_Rig_Worker_LOD1_Rig_SoccerRun",
+        "SK_Citizen_Rig_Worker_LOD1_Rig_SoccerKick",
+        "SK_Citizen_Rig_Worker_LOD1_Rig_GoalkeeperSave",
+        "SK_Citizen_Rig_Worker_LOD1_Rig_BasketballDribble",
+        "SK_Citizen_Rig_Worker_LOD1_Rig_BasketballShot",
+        "SK_Citizen_Rig_Worker_LOD1_Rig_SkateKickflip",
+        "SK_Citizen_Rig_Worker_LOD1_Rig_Skate180",
+        "SK_Citizen_Rig_Worker_LOD1_Rig_SkateLipStall"
+      ],
+      "clips": {
+        "Idle": 48,
+        "Walk": 24,
+        "SkateBalance": 48,
+        "Cheer": 48,
+        "SeatedIdle": 48,
+        "SkatePush": 48,
+        "SkateCarve": 96,
+        "BaseballPitch": 72,
+        "BaseballSwing": 48,
+        "SoccerRun": 24,
+        "SoccerKick": 48,
+        "GoalkeeperSave": 48,
+        "BasketballDribble": 48,
+        "BasketballShot": 72,
+        "SkateKickflip": 72,
+        "Skate180": 96,
+        "SkateLipStall": 120
+      },
+      "prototype_only": true,
+      "original_geometry_and_rgba_preserved": true
+    }
+  ],
+  "protected_inputs": {
+    "ArtSource/Exports/SM_Building_WaterTower_A_Damaged.fbx": "0c9c7e64ad8a55abdf633a2e688901c4ac139610d4323653cf1c2b39111658cf",
+    "ArtSource/Exports/SM_Building_Park_A_Damaged.fbx": "ed206e0a973678ad6bbaf822095395441f7f753e94ad8156c91bdac5eadf78b6",
+    "ArtSource/Blender/CityDamageKit.blend": "3b5bdeef9cf556720d54ff86bed3bc54ef68d2a30bbb04060383bfd33b0a3dc7",
+    "ArtSource/Exports/BuildingRefinementNative/SM_Building_Service_Medium_A.fbx": "ac3ec7f885780dd398d59a426ac8e8dbec9cf21fc2d1efbf34a0b3f31a1e995b",
+    "ArtSource/Exports/BuildingRefinementNative/SM_Building_Service_A.fbx": "91d2e9a5c19ded032041ef14c3b834c8c87de0dd432e4fb016320323b84392b6",
+    "ArtSource/Exports/SM_Building_NeighborhoodPark_A_Damaged.fbx": "8a3ba9f9eee5c4926c8a96d772c1eca770e07b2f4f4443bc53c95324b79ef23b",
+    "ArtSource/Exports/CitizenPrototypes/SM_Citizen_PC_Office.fbx": "dd8372d6c75a20732532db8a68c81cc4ade29c456b228502549f645948c440b9",
+    "ArtSource/Exports/CitizenPrototypes/SM_Citizen_PC_Worker.fbx": "9e5e838fca0e6182e18a5cde2a1067bae6fabbec37fae4dcf15881c60a56010b",
+    "ArtSource/Exports/CitizenPrototypes/SM_Citizen_PC_Worker_LOD1.fbx": "cca67c18718a2483cb410fd6c0fbb77cdfadd71d302f8e770a5aeb7d738d7c33",
+    "ArtSource/Exports/SM_Building_NeighborhoodPark_A.fbx": "1d5ff2e6578415375a7eb669ee3908630b33a22f955b4d810690480c342a2a47",
+    "ArtSource/Exports/SM_Building_SkatePark_A.fbx": "936d4b7a42f7fe841de4d1cdfbdcc2f7874d7670209eaa31e77c81e921371f49",
+    "ArtSource/Blender/CityParkKit.blend": "ad9c2b3979e09829e869f18ea33f57cc6c495b8711efec4a72a48c2c303f84c6",
+    "ArtSource/Exports/CitizenPrototypes/SM_Citizen_PC_Office_LOD1.fbx": "cdc9eca72e9cbf283817889bf447e551d42cbabeeaf1b45fcaf1550417099aa3",
+    "ArtSource/Exports/BuildingRefinementNative/SM_Building_Service_Medium_A_Damaged.fbx": "2c79d4f13fce94e84b0849a0add65a4efc5d832eb069cbf7801b4ebf29ff396d",
+    "ArtSource/Exports/SM_Building_SkatePark_A_Damaged.fbx": "37c2acdec19608e5626d057498d2fc73c607b372bf373258998b95aad0282fa9",
+    "ArtSource/Manifests/city_citizen_prototype.json": "b698dc6508f4a649d669f5c174d61114f09c67be45731107bab90eab405d8d72",
+    "ArtSource/Exports/BuildingRefinementNative/SM_Building_Service_A_Damaged.fbx": "1bad858db6d5025a9885ea33482bb6fb510bb75e31e056bf955d2fc5cbaf0c8d",
+    "ArtSource/Exports/CitizenPrototypes/SM_Citizen_PC_Casual_LOD1.fbx": "320baa11f46d4d79b48899a8cd9a7fd16a6e86b8d7754bed1a3ae44683b1f377",
+    "ArtSource/Exports/SM_Building_CityPark_A_Damaged.fbx": "75ff1be5fe33fc2555ae28d6835253df17cd57c9b1e30dc677deb277b1d62192",
+    "ArtSource/Exports/SM_Building_WaterTower_A.fbx": "417ea110016439357ef9df8a610afdebd47d89997aadb7305cab32975a96b636",
+    "ArtSource/Exports/CitizenPrototypes/SM_Citizen_PC_Casual.fbx": "aee2a8c104c40f36634f2e4e1fa8be3ef43a3ce663fbd2af943149c19eecfaf7",
+    "ArtSource/Exports/BuildingRefinementNative/SM_Building_Service_High_A_Damaged.fbx": "ce98c1f95b2bf6adb59d5e1795140e4fa202bbe385f52d77368bb776d089ec93",
+    "ArtSource/Exports/SM_Building_CityPark_A.fbx": "e33857cfa222ac8c3adac23f1b164b00577acbac3fb1232371aa0aa7d2a56c32",
+    "ArtSource/Blender/CityStarterKit.blend": "46f7bb21ab1e6a3b22e38c674ae3be88e8df211880a87b1ef45a5ca09dab3fb6",
+    "ArtSource/Blender/CityAlternativeFacilityKit.blend": "fc121824997108cbb29eb416d72d20010044b5697415fbdf041dfc1922565e32",
+    "ArtSource/Exports/SM_Scenery_Broadleaf_A.fbx": "c94c4ce10c35e9985d424a957641f09ac2bdbee3a3b5ba5bc2e166b1022bb1ba",
+    "ArtSource/Blender/CityParkDamageKit.blend": "0cf68f3b0b8ee70d7b05315fa67e46d7b6bd79d12d7f0ad9a9bf527fba4897fc",
+    "ArtSource/Blender/CityBuildingRefinement.blend": "ceb4d09d97c0089f8f50ae23db846b242f745590b7ff3fc3dce133e12bb4d758",
+    "ArtSource/Blender/CitySportsParkKit.blend": "cfc8ee31ee2554f4dbd702b3b6bcb74cfc0746a0b8f15b1d1f39d545d8ee280c",
+    "ArtSource/Manifests/city_citizen_presentation.json": "bf13320d5b508c4847446a229e29bccce878e9f1f5fa21b105034f94e0a8a501",
+    "ArtSource/Blender/CityEnvironmentKit.blend": "c301054ba7a6b5c5d6c95bd03afbfea620ff03bf9bd282d337cc5794508bc5cc",
+    "ArtSource/Exports/BuildingRefinementNative/SM_Building_Service_High_A.fbx": "788075b3035e3124bcac63d92796e132bbae4c58dfdf09866a72253f3ac9a1ef",
+    "ArtSource/Exports/SM_Building_Park_A.fbx": "6e531c7b859a46a4dc80fb8d88e31cc2c814e9bbdf8fb450e9b7f234f8994d89",
+    "ArtSource/Blender/CityCitizenPrototype.blend": "453c3ecf7799aa9d969d7136241e7f7e1cb02f6210b6f362f5033da98afcd3d0"
+  },
+  "source_sha256": "2f07054b74d1ff4a6213948bb1fd0ff73d96c63a8e0d0866e5f393b44c854018",
+  "rig_source_sha256": "7b4a3ec93e56a89af850970d00b96eb892a6174857b56896bc39e595e0eff01b",
+  "shading": "Authored smooth side/curve normals; flat caps and architectural edges. No custom shader.",
+  "tree_detail": "Simple park: single symmetric64-triangle flat crown and flat12-sided tapered bark trunk; other crowns320 triangles",
+  "animation": "20-bone original project humanoid; seventeen in-place Blender clips, 24fps",
+  "skateboard_preview": {
+    "scale": 0.65,
+    "length_m": 0.7150000000000001,
+    "deck_width_m": 0.22749999999999998,
+    "wheel_span_m": 0.29250000000000004,
+    "deck_top_m": 0.052000000000000005,
+    "wheel_clearance_m": 0.0845,
+    "citizen_height_m": 1.431415
+  },
+  "limitations": [
+    "Blender-only prototype; not imported, built, deployed or runtime approved",
+    "Damaged and December park counterparts remain a later isolated authoring gate",
+    "32-panel ramps use quadratic height; runtime still uses old piecewise height until coordinated integration",
+    "Current runtime ISM pools cannot play skeletal clips; bounded platform animation policy needs separate design/measurement",
+    "PCVR/Quest appearance, export import policy and rendering/animation costs unverified"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "task": "B007",
+  "status": "complete-user-accepted-authorized-normal-merge",
+  "acceptedSourceCommit": "b6e1f038c155a237a59bdee5d3a1426a2ef19f9a",
+  "candidateBuild": 23,
+  "candidateRevision": "dev-49672220698ffc0226c2",
+  "schemaVersion": 68,
+  "packageSha256": "0858550eb01d0d74cdee4e52cabafc659b557194f18f50b541ad7c1b7561dc17",
+  "userConfirmation": "Okay I tested the candidate and the Technology icons and navigation look good. Please mark B007 complete and merge PR #45.",
+  "confirmationSource": "Direct human message in this task2026-10-16",
+  "pullRequest": "https://git.shaun-husain.com/CitySimVR/citysim/pulls/45",
+  "verifiedChecks": [
+    "Drone22 Editor109.50s/five exact cases",
+    "Windows23 Editor108.35s/five cases/package/menu smoke/two Technology runs;18 reviewed captures/53 extracted files",
+    "Quest21 stage signed ARM64/min32/target35/five embedded-cook containers; subsequent change is Desktop test-only"
+  ],
+  "sourceReview": "Complete14-file main-relative diff reviewed; no blocking findings. Placement locks, review tool independence, Back routes, icon mappings and exact CI selection retained.",
+  "preserved": {
+    "primaryHead": "5dd807d175e0507e23657cc3883568272ced6641",
+    "sourceFiles": 386,
+    "maintainedWindowsFiles": 53
+  },
+  "physicalPCVRQuest": "unconfirmed-under-D114; no device installation",
+  "mergeStatus": "pending normal API merge/readback",
+  "createdUtc": "2026-10-16T17:08:11.928282+00:00"
+}

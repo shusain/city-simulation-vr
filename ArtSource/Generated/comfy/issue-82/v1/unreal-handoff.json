@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "kind": "comfy",
+  "repository": "CitySimVR/citysim",
+  "asset_issue": 82,
+  "approved_version": 1,
+  "approval_manifest": "approval.json",
+  "approval_sha256": "3f1cbe12d5444d0092e4aaa8256db92d36f2e7c36f96c25b6fa85ab75c53b932",
+  "source_context_sha": "86fe0c28603e8eeec5a969193d8e2a11e2111e39",
+  "artifacts": [
+    {
+      "name": "asset.png",
+      "bytes": 542869,
+      "sha256": "ad274ed9876347425862c972054f6c1273f523cbd8d60635b4c5ab948078d0ea"
+    },
+    {
+      "name": "workflow.json",
+      "bytes": 4169,
+      "sha256": "74b463a952b3fb62b8d33d056651637bee5f0463b8ff2ac8dce05bef91f757aa"
+    },
+    {
+      "name": "provenance.json",
+      "bytes": 2445,
+      "sha256": "e1f0c3e72c5c02441131838029449a4d0037afab05b61149de1034f117c6f7c9"
+    },
+    {
+      "name": "README.md",
+      "bytes": 378,
+      "sha256": "f68a82a9fe195e1dc55c2d49a6d1af61ef7f782014336ba35f5da0e5a15be3aa"
+    },
+    {
+      "name": "source-bundle.zip",
+      "bytes": 545264,
+      "sha256": "b44bc7fa512432afc7db1178911f068c427bcc6b17c66d64276d6a8e1fba77bc"
+    },
+    {
+      "name": "approval.json",
+      "bytes": 3283,
+      "sha256": "3f1cbe12d5444d0092e4aaa8256db92d36f2e7c36f96c25b6fa85ab75c53b932"
+    }
+  ],
+  "unreal": {
+    "status": "not_imported",
+    "destination": "choose in the separate integration issue",
+    "role": "image source; determine concept/UI/texture usage"
+  }
+}

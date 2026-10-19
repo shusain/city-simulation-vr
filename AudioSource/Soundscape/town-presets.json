@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "task": "D58",
+  "title": "Town warning · mechanical reference refinement",
+  "sampleRate": 48000,
+  "targetLUFS": -24.0,
+  "truePeakCeilingDBTP": -6.0,
+  "provenance": {
+    "description": "Original synthesis informed by analysis of two public siren-test previews and manufacturer mechanical-siren documentation. No sampled recording appears in these outputs.",
+    "tool": "SuperCollider 3.14.1 built-in UGens",
+    "referenceManifest": "AudioSource/Soundscape/town-references.json",
+    "status": "Original Town A is the preferred starting direction; C/D/E require listening review. No Unreal integration or real-warning signal conformity is claimed."
+  },
+  "selection": {
+    "Police": "A persistent, B occasional traffic-linked variation; runtime implementation pending",
+    "Fire": "A persistent, separate B-like horn accent near traffic; runtime implementation pending",
+    "Ambulance": "A preferred",
+    "Town": "A preferred over B, refine toward traditional mechanical tornado-siren references"
+  },
+  "candidates": [
+    {
+      "id": "Town-A", "group": "Town", "label": "Original A · preferred starting direction",
+      "intent": "Unchanged first-audition Town A, included as a level-matched comparison baseline.",
+      "parameters": {"duration": 16, "centerHz": 340, "depthHz": 120, "sweepHz": 0.125, "shape": 0, "second": 0.55, "third": 0.28, "fifth": 0.09, "detune": 0.006, "rotorHz": 27, "rotorDepth": 0.26, "cutoffHz": 2400, "attack": 0.8, "release": 1.2}
+    },
+    {
+      "id": "Town-C", "group": "Town", "label": "C · classic single-tone motor siren",
+      "synth": "TownMechanical",
+      "intent": "Motor rises to a sustained 533 Hz tone, with rich chopper harmonics, gentle projected-horn swell and a long coast-down. Single-tone reference direction.",
+      "parameters": {"duration": 24, "nominalHz": 533, "lowerRatio": 0.3, "spinUp": 3.5, "spinDown": 5, "wailDepth": 0, "secondaryGain": 0, "brightness": 0.86, "rotationHz": 0.05, "rotationDepth": 0.30, "airGain": 0.012, "motorGain": 0.03, "cutoffHz": 3400, "seed": 5802}
+    },
+    {
+      "id": "Town-D", "group": "Town", "label": "D · two-tone rotating warning",
+      "synth": "TownMechanical",
+      "intent": "Sustained 600/720 Hz tones after motor startup, richer harmonics and a stronger slow level swell. Informed by the recorded Thunderbolt test, with no sample playback.",
+      "parameters": {"duration": 24, "nominalHz": 600, "lowerRatio": 0.28, "spinUp": 4, "spinDown": 5, "wailDepth": 0, "secondaryRatio": 1.2, "secondaryGain": 0.72, "brightness": 0.78, "rotationHz": 0.05, "rotationDepth": 0.5, "airGain": 0.018, "motorGain": 0.035, "cutoffHz": 3400, "seed": 5802}
+    },
+    {
+      "id": "Town-E", "group": "Town", "label": "E · deeper slow mechanical wail",
+      "synth": "TownMechanical",
+      "intent": "Keeps Town A's slow rise/fall character but adds motor inertia and richer 468/702 Hz harmonic families at the upper part of the cycle. Informed by the Streamwood recording's measured tone ratio.",
+      "parameters": {"duration": 24, "nominalHz": 468, "lowerRatio": 0.38, "spinUp": 3, "spinDown": 5.5, "sweepHz": 0.08333333333333333, "wailDepth": 0.24, "secondaryRatio": 1.5, "secondaryGain": 0.5, "brightness": 0.82, "rotationHz": 0.05, "rotationDepth": 0.22, "airGain": 0.014, "motorGain": 0.035, "cutoffHz": 3100, "seed": 5802}
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "issue": 150,
+  "entries": [
+    {
+      "legacy": "Deploy-QuestSandbox.ps1",
+      "canonical": "Distribution/Deploy-QuestSandbox.ps1",
+      "parameters_preserved": true,
+      "body_preserved_after_root_resolution": true,
+      "body_sha256": "2cdf091a32fa7f24c646b63d6065b07285d2ed5955432c1a4663d9319edc1022"
+    },
+    {
+      "legacy": "Start-DesktopSandbox.ps1",
+      "canonical": "Launch/Start-DesktopSandbox.ps1",
+      "parameters_preserved": true,
+      "body_preserved_after_root_resolution": true,
+      "body_sha256": "40baadf290a687299a1ec61890aebe0e9b92f1b18b0572d43c134588d06c4c06"
+    },
+    {
+      "legacy": "Build-CitySimVR.ps1",
+      "canonical": "Build/Build-CitySimVR.ps1",
+      "parameters_preserved": true,
+      "body_preserved_after_root_resolution": true,
+      "body_sha256": "2856c85d2551268141c171afc8ab5d2c644c6787607d7eade5362bf5fb4a7c6d"
+    },
+    {
+      "legacy": "Deploy-CitySimVR.ps1",
+      "canonical": "Distribution/Deploy-CitySimVR.ps1",
+      "parameters_preserved": true,
+      "body_preserved_after_root_resolution": true,
+      "body_sha256": "c5b6f0cd5a5b296733587c1e8ea7032daf8a0e997fd7b233c9456c368a14caf7"
+    },
+    {
+      "legacy": "Build-QuestSandbox.ps1",
+      "canonical": "Build/Build-QuestSandbox.ps1",
+      "parameters_preserved": true,
+      "body_preserved_after_root_resolution": true,
+      "body_sha256": "f1a69a1741844fb570ac4367dc902d7b372c3ec47dc1b37f2289b108a6e7d064"
+    },
+    {
+      "legacy": "Start-CitySandboxEditor.ps1",
+      "canonical": "Launch/Start-CitySandboxEditor.ps1",
+      "parameters_preserved": true,
+      "body_preserved_after_root_resolution": true,
+      "body_sha256": "7316aa0f2dd2a98b0d95c9c6c1466d20328b7c9fae7821ab1710ec2c38319eab"
+    },
+    {
+      "legacy": "Build-PCVRSandbox.ps1",
+      "canonical": "Build/Build-PCVRSandbox.ps1",
+      "parameters_preserved": true,
+      "body_preserved_after_root_resolution": true,
+      "body_sha256": "57d7fdcf115d387d583ac100a9c0ea2086a5b97534998f27b8f2d188256c5ac9"
+    },
+    {
+      "legacy": "Start-PCVRSandbox.ps1",
+      "canonical": "Launch/Start-PCVRSandbox.ps1",
+      "parameters_preserved": true,
+      "body_preserved_after_root_resolution": true,
+      "body_sha256": "8efa67d2ab6fa084296d01e79620bae3fbab4cfffabb3343c53c52e7cb5b1add"
+    }
+  ],
+  "scope": "No build, launch or deploy execution; eight actual forwarder fixtures plus unchanged body/parameter comparisons"
+}

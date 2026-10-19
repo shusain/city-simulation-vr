@@ -1,0 +1,10 @@
+{
+  "purpose": "Neutral room specular reflection with broad light features; diffuse lights unchanged",
+  "source_size": [
+    512,
+    256
+  ],
+  "native_cube_max_size": 64,
+  "live_recapture": false,
+  "sha256": "a1d4920a161e7f74ad78a4c05d8ff1497847c71e5793576ae6ec77f49ac16c8f"
+}

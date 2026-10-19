@@ -1,0 +1,17 @@
+{
+  "stage": "BASE",
+  "asset": "building.power.a",
+  "capacity_reference_percent": 100,
+  "actual_counts": {
+    "generator_halls": 1,
+    "staffed_control_wings": 1,
+    "architectural_panes": 4
+  },
+  "family_reserved_site_m": [
+    32,
+    32
+  ],
+  "boundary_y_m": -16,
+  "runtime_catalog_footprint_changed": false,
+  "gameplay_changes": false
+}

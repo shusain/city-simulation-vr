@@ -1,0 +1,11 @@
+{
+  "issue": 125,
+  "recipe": "Generate-CityConcreteTexture.py",
+  "seed": 125,
+  "size_px": 512,
+  "tile_metres": 1,
+  "srgb": true,
+  "roughness": 0.9,
+  "metallic": 0,
+  "sha256": "d2be2d0996d8b96093294569f40025b6a202b153693e4914ed602bc6c6fed0fe"
+}

@@ -1,0 +1,223 @@
+{
+  "semantic_regions": [
+    "Concrete",
+    "BuildingFacade",
+    "RoofService",
+    "EquipmentMetal",
+    "WindowAccent",
+    "CoalFuel"
+  ],
+  "textures": [
+    {
+      "source": "ArtSource/Textures/CivicSurfaces/CivicAsphalt_BaseColor.png",
+      "copy": "/output/textures/CivicAsphalt_BaseColor.png",
+      "sha256": "85e2cfe619a74da7fe74ad0c6439141f4edb63e5085208c4cfd620c5e1d988fa",
+      "dimensions": [
+        512,
+        512
+      ],
+      "channels": 4,
+      "colorspace": "sRGB",
+      "region": "RoofService",
+      "mapping": "metric UV0 scaled 0.5",
+      "ORM": null
+    },
+    {
+      "source": "ArtSource/Textures/CivicSurfaces/CivicAsphalt_Normal.png",
+      "copy": "/output/textures/CivicAsphalt_Normal.png",
+      "sha256": "e6f9e8f0257ddbc33b012b72f9446a2c8a3679153488b4bbc67ca6e50be153fd",
+      "dimensions": [
+        512,
+        512
+      ],
+      "channels": 4,
+      "colorspace": "Non-Color",
+      "region": "RoofService",
+      "mapping": "metric UV0 scaled 0.5",
+      "ORM": null
+    },
+    {
+      "source": "ArtSource/Textures/CivicSurfaces/CivicAsphalt_ORM.png",
+      "copy": "/output/textures/CivicAsphalt_ORM.png",
+      "sha256": "6b06b777944f76046d0f51131cdec7cca658efac60560c95ab1e854c37189ab4",
+      "dimensions": [
+        512,
+        512
+      ],
+      "channels": 4,
+      "colorspace": "Non-Color",
+      "region": "RoofService",
+      "mapping": "metric UV0 scaled 0.5",
+      "ORM": "R AO retained; G roughness connected; B metallic connected"
+    },
+    {
+      "source": "ArtSource/Textures/BuildingSurfaces/CityMechanical_BaseColor.png",
+      "copy": "/output/textures/CityMechanical_BaseColor.png",
+      "sha256": "ea75f9ab4911ad7ecf6a5e0ff5688fdc2c07ed52c3cad007ac58e8d06fe4e5ae",
+      "dimensions": [
+        512,
+        512
+      ],
+      "channels": 4,
+      "colorspace": "sRGB",
+      "region": "EquipmentMetal",
+      "mapping": "metric UV0 scaled 0.5",
+      "ORM": null
+    },
+    {
+      "source": "ArtSource/Textures/BuildingSurfaces/CityMechanical_Normal.png",
+      "copy": "/output/textures/CityMechanical_Normal.png",
+      "sha256": "7a456d3f708d3ee42a7dfb830ac87f95ce27aeeea0e56ac444daca5da510231e",
+      "dimensions": [
+        512,
+        512
+      ],
+      "channels": 4,
+      "colorspace": "Non-Color",
+      "region": "EquipmentMetal",
+      "mapping": "metric UV0 scaled 0.5",
+      "ORM": null
+    },
+    {
+      "source": "ArtSource/Textures/BuildingSurfaces/CityMechanical_ORM.png",
+      "copy": "/output/textures/CityMechanical_ORM.png",
+      "sha256": "0e08a253e6c30a15e3675921cab4958c0cdcf088f23f05b5fcc1eb3f87dbec98",
+      "dimensions": [
+        512,
+        512
+      ],
+      "channels": 4,
+      "colorspace": "Non-Color",
+      "region": "EquipmentMetal",
+      "mapping": "metric UV0 scaled 0.5",
+      "ORM": "R AO retained; G roughness connected; B metallic connected"
+    }
+  ],
+  "node_connections": {
+    "Concrete": [
+      {
+        "from": "ShaderNodeBsdfPrincipled.BSDF",
+        "to": "ShaderNodeOutputMaterial.Surface"
+      },
+      {
+        "from": "ShaderNodeTexNoise.Factor",
+        "to": "ShaderNodeBump.Height"
+      },
+      {
+        "from": "ShaderNodeBump.Normal",
+        "to": "ShaderNodeBsdfPrincipled.Normal"
+      }
+    ],
+    "BuildingFacade": [
+      {
+        "from": "ShaderNodeBsdfPrincipled.BSDF",
+        "to": "ShaderNodeOutputMaterial.Surface"
+      }
+    ],
+    "RoofService": [
+      {
+        "from": "ShaderNodeBsdfPrincipled.BSDF",
+        "to": "ShaderNodeOutputMaterial.Surface"
+      },
+      {
+        "from": "ShaderNodeTexCoord.UV",
+        "to": "ShaderNodeVectorMath.Vector"
+      },
+      {
+        "from": "ShaderNodeVectorMath.Vector",
+        "to": "ShaderNodeTexImage.Vector"
+      },
+      {
+        "from": "ShaderNodeTexImage.Color",
+        "to": "ShaderNodeBsdfPrincipled.Base Color"
+      },
+      {
+        "from": "ShaderNodeVectorMath.Vector",
+        "to": "ShaderNodeTexImage.Vector"
+      },
+      {
+        "from": "ShaderNodeTexImage.Color",
+        "to": "ShaderNodeNormalMap.Color"
+      },
+      {
+        "from": "ShaderNodeNormalMap.Normal",
+        "to": "ShaderNodeBsdfPrincipled.Normal"
+      },
+      {
+        "from": "ShaderNodeVectorMath.Vector",
+        "to": "ShaderNodeTexImage.Vector"
+      },
+      {
+        "from": "ShaderNodeTexImage.Color",
+        "to": "ShaderNodeSeparateColor.Color"
+      },
+      {
+        "from": "ShaderNodeSeparateColor.Green",
+        "to": "ShaderNodeBsdfPrincipled.Roughness"
+      },
+      {
+        "from": "ShaderNodeSeparateColor.Blue",
+        "to": "ShaderNodeBsdfPrincipled.Metallic"
+      }
+    ],
+    "EquipmentMetal": [
+      {
+        "from": "ShaderNodeBsdfPrincipled.BSDF",
+        "to": "ShaderNodeOutputMaterial.Surface"
+      },
+      {
+        "from": "ShaderNodeTexCoord.UV",
+        "to": "ShaderNodeVectorMath.Vector"
+      },
+      {
+        "from": "ShaderNodeVectorMath.Vector",
+        "to": "ShaderNodeTexImage.Vector"
+      },
+      {
+        "from": "ShaderNodeTexImage.Color",
+        "to": "ShaderNodeBsdfPrincipled.Base Color"
+      },
+      {
+        "from": "ShaderNodeVectorMath.Vector",
+        "to": "ShaderNodeTexImage.Vector"
+      },
+      {
+        "from": "ShaderNodeTexImage.Color",
+        "to": "ShaderNodeNormalMap.Color"
+      },
+      {
+        "from": "ShaderNodeNormalMap.Normal",
+        "to": "ShaderNodeBsdfPrincipled.Normal"
+      },
+      {
+        "from": "ShaderNodeVectorMath.Vector",
+        "to": "ShaderNodeTexImage.Vector"
+      },
+      {
+        "from": "ShaderNodeTexImage.Color",
+        "to": "ShaderNodeSeparateColor.Color"
+      },
+      {
+        "from": "ShaderNodeSeparateColor.Green",
+        "to": "ShaderNodeBsdfPrincipled.Roughness"
+      },
+      {
+        "from": "ShaderNodeSeparateColor.Blue",
+        "to": "ShaderNodeBsdfPrincipled.Metallic"
+      }
+    ],
+    "WindowAccent": [
+      {
+        "from": "ShaderNodeBsdfPrincipled.BSDF",
+        "to": "ShaderNodeOutputMaterial.Surface"
+      }
+    ],
+    "CoalFuel": [
+      {
+        "from": "ShaderNodeBsdfPrincipled.BSDF",
+        "to": "ShaderNodeOutputMaterial.Surface"
+      }
+    ]
+  },
+  "native_reconstruction": "Deferred; FBX does not transfer shader graphs."
+}

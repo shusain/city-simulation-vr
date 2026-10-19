@@ -1,0 +1,114 @@
+{
+  "regions": [
+    "AcademicBrick",
+    "CampusAccent",
+    "EquipmentMetal",
+    "LightStone",
+    "RoofMembrane",
+    "WindowGlass"
+  ],
+  "maps": [
+    {
+      "source": "/repo/ArtSource/Textures/BuildingSurfaces/CityBrick_BaseColor.png",
+      "copy": "/output/textures/CityBrick_BaseColor.png",
+      "source_sha256": "e4c1ad7446563e3209191ca862fc4c3e065c491debd989765bc843405a5fbbfe",
+      "copy_sha256": "e4c1ad7446563e3209191ca862fc4c3e065c491debd989765bc843405a5fbbfe",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "colorspace": "sRGB"
+    },
+    {
+      "source": "/repo/ArtSource/Textures/BuildingSurfaces/CityBrick_Normal.png",
+      "copy": "/output/textures/CityBrick_Normal.png",
+      "source_sha256": "cf71dc7902b7c3a99d9fd1e966760af9a7b428de42b22ade5fb810965866d2cc",
+      "copy_sha256": "cf71dc7902b7c3a99d9fd1e966760af9a7b428de42b22ade5fb810965866d2cc",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "colorspace": "Non-Color"
+    },
+    {
+      "source": "/repo/ArtSource/Textures/BuildingSurfaces/CityBrick_ORM.png",
+      "copy": "/output/textures/CityBrick_ORM.png",
+      "source_sha256": "39f2f1df859b4052afe98dcb632054398957455d58b205b13702210467a0c6e8",
+      "copy_sha256": "39f2f1df859b4052afe98dcb632054398957455d58b205b13702210467a0c6e8",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "colorspace": "Non-Color"
+    },
+    {
+      "source": "/repo/ArtSource/Textures/BuildingSurfaces/CityMechanical_BaseColor.png",
+      "copy": "/output/textures/CityMechanical_BaseColor.png",
+      "source_sha256": "ea75f9ab4911ad7ecf6a5e0ff5688fdc2c07ed52c3cad007ac58e8d06fe4e5ae",
+      "copy_sha256": "ea75f9ab4911ad7ecf6a5e0ff5688fdc2c07ed52c3cad007ac58e8d06fe4e5ae",
+      "dimensions": [
+        512,
+        512
+      ],
+      "colorspace": "sRGB"
+    },
+    {
+      "source": "/repo/ArtSource/Textures/BuildingSurfaces/CityMechanical_Normal.png",
+      "copy": "/output/textures/CityMechanical_Normal.png",
+      "source_sha256": "7a456d3f708d3ee42a7dfb830ac87f95ce27aeeea0e56ac444daca5da510231e",
+      "copy_sha256": "7a456d3f708d3ee42a7dfb830ac87f95ce27aeeea0e56ac444daca5da510231e",
+      "dimensions": [
+        512,
+        512
+      ],
+      "colorspace": "Non-Color"
+    },
+    {
+      "source": "/repo/ArtSource/Textures/BuildingSurfaces/CityMechanical_ORM.png",
+      "copy": "/output/textures/CityMechanical_ORM.png",
+      "source_sha256": "0e08a253e6c30a15e3675921cab4958c0cdcf088f23f05b5fcc1eb3f87dbec98",
+      "copy_sha256": "0e08a253e6c30a15e3675921cab4958c0cdcf088f23f05b5fcc1eb3f87dbec98",
+      "dimensions": [
+        512,
+        512
+      ],
+      "colorspace": "Non-Color"
+    },
+    {
+      "source": "/repo/ArtSource/Textures/RoofsSigns/RoofMembrane_BaseColor.png",
+      "copy": "/output/textures/RoofMembrane_BaseColor.png",
+      "source_sha256": "e70b663d843cb50ab4479ac5e582173464e05f510f60ce2b986837259981a587",
+      "copy_sha256": "e70b663d843cb50ab4479ac5e582173464e05f510f60ce2b986837259981a587",
+      "dimensions": [
+        512,
+        512
+      ],
+      "colorspace": "sRGB"
+    },
+    {
+      "source": "/repo/ArtSource/Textures/RoofsSigns/RoofMembrane_Normal.png",
+      "copy": "/output/textures/RoofMembrane_Normal.png",
+      "source_sha256": "0b29f7ad8fe50e859386b08d541ea37294c825d2c3a73210d3c3b15764bc19ce",
+      "copy_sha256": "0b29f7ad8fe50e859386b08d541ea37294c825d2c3a73210d3c3b15764bc19ce",
+      "dimensions": [
+        512,
+        512
+      ],
+      "colorspace": "Non-Color"
+    },
+    {
+      "source": "/repo/ArtSource/Textures/RoofsSigns/RoofMembrane_ORM.png",
+      "copy": "/output/textures/RoofMembrane_ORM.png",
+      "source_sha256": "a7ade624eb4477684f7101dd6b5c0fbe80b595c1b357ebf35715dfa91e54ec63",
+      "copy_sha256": "a7ade624eb4477684f7101dd6b5c0fbe80b595c1b357ebf35715dfa91e54ec63",
+      "dimensions": [
+        512,
+        512
+      ],
+      "colorspace": "Non-Color"
+    }
+  ],
+  "shader_policy": "Exact completed v3 node graphs and shader constants retained. ORM R=AO G=roughness B=metallic, tangent normals; native reconstruction deferred.",
+  "uv_repeat_m": 2,
+  "new_materials": false
+}

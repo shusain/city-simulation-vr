@@ -1,0 +1,44 @@
+{
+  "family": "fire",
+  "stage": "medium",
+  "stage_index": 1,
+  "existing_stages": [
+    "base",
+    "medium",
+    "high"
+  ],
+  "existing_upgrade_count": 2,
+  "gameplay_changes": false,
+  "source_site_m": [
+    40,
+    32
+  ],
+  "current_native_footprint": [
+    3,
+    2
+  ],
+  "retained_entrance_centres": {
+    "pedestrian": [
+      -12,
+      -5
+    ],
+    "service": [
+      -1,
+      -5
+    ]
+  },
+  "progression": "Second matching apparatus bay and additional mounted roof service capacity; fixed crew block and training tower, no arbitrary scaling.",
+  "occupied_bounds": {
+    "min": [
+      -17.14,
+      -6.505,
+      0.0
+    ],
+    "max": [
+      10.14,
+      8.110000000000001,
+      11.07
+    ]
+  },
+  "LOD_notes": "Future LOD1 simplify frames and roof louvres; LOD2 flatten emblem and rims. Not authored or promoted."
+}

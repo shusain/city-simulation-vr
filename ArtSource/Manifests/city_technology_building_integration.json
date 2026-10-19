@@ -1,0 +1,715 @@
+{
+  "schema_version": 1,
+  "task": "D90 approved technology buildings",
+  "assets": [
+    {
+      "issue": 101,
+      "version": 5,
+      "sourcePR": 113,
+      "sourceHead": "f356975ec3766e4485dd324feb3f5b75b140f95a",
+      "sourceDirectory": "ArtSource/Generated/blender/issue-101/v5",
+      "approvalSha256": "aa979a88756a31a2e1b9c04d616e88b65ce7209d2454d89f09e5ceff23d946b7",
+      "handoffSha256": "08922ad934a4a44d670ec404bb17e7de53ce3f3795163525408b8554573200e0",
+      "handoffArtifactsVerified": 20,
+      "approvalArtifactsVerified": 18,
+      "exportSha256": "6e6925320440f88736e5b1db9f75482b7f5c88881507500df63f839f992d22b8",
+      "sourceBlendSha256": "0dbf56834a0ef66b3acf380774dcbb4dc4d55d5a97a5471c43c1dfc3e2737a51",
+      "triangles": 1224,
+      "dimensions_m": [
+        20.0,
+        20.5,
+        7.275000095367432
+      ],
+      "slots": [
+        "OpaqueFacade_SourceTexture_MetricRepair",
+        "RoofService_SourceTexture_MetricRepair",
+        "LightMetal_MetricRepair",
+        "TechGlass_MetricRepair",
+        "DoorAccent_MetricRepair"
+      ],
+      "exactGitBlobLineEndingsRestored": [
+        "approval.json",
+        "before_graph_audit.json",
+        "frame_validation.json",
+        "INTEGRATION.md",
+        "material_texture_manifest.json",
+        "unreal-handoff.json",
+        "validation.json"
+      ],
+      "definition_id": "DigitalExchange",
+      "mesh_destination": "/Game/CitySim/Art/Technology/Meshes/SM_DigitalExchange",
+      "footprint": [
+        3,
+        3
+      ],
+      "logical_height_cm": 727.5,
+      "entrance_sides": 1,
+      "presentation_yaw_offset_quarter_turns": 2,
+      "material_bindings": {
+        "OpaqueFacade_SourceTexture_MetricRepair": {
+          "kind": "civic",
+          "parent": "/Game/CitySim/Art/Materials/M_CivicBrick",
+          "tint": [
+            0.8199999928474426,
+            0.7300000190734863,
+            0.47999998927116394
+          ],
+          "destination": "/Game/CitySim/Art/Technology/Materials/MI_DigitalExchange_OpaqueFacade",
+          "source_slot": "OpaqueFacade_SourceTexture_MetricRepair",
+          "source_images": [
+            {
+              "name": "CityBrick_BaseColor.png.001",
+              "sha256": "e4c1ad7446563e3209191ca862fc4c3e065c491debd989765bc843405a5fbbfe",
+              "colorspace": "sRGB"
+            },
+            {
+              "name": "CityBrick_Normal.png.001",
+              "sha256": "cf71dc7902b7c3a99d9fd1e966760af9a7b428de42b22ade5fb810965866d2cc",
+              "colorspace": "Non-Color"
+            },
+            {
+              "name": "CityBrick_ORM.png.001",
+              "sha256": "39f2f1df859b4052afe98dcb632054398957455d58b205b13702210467a0c6e8",
+              "colorspace": "Non-Color"
+            }
+          ]
+        },
+        "RoofService_SourceTexture_MetricRepair": {
+          "kind": "civic",
+          "parent": "/Game/CitySim/Art/Materials/M_CivicAsphalt",
+          "tint": [
+            0.12999999523162842,
+            0.15000000596046448,
+            0.17000000178813934
+          ],
+          "destination": "/Game/CitySim/Art/Technology/Materials/MI_DigitalExchange_RoofService",
+          "source_slot": "RoofService_SourceTexture_MetricRepair",
+          "source_images": [
+            {
+              "name": "CivicAsphalt_BaseColor.png.001",
+              "sha256": "85e2cfe619a74da7fe74ad0c6439141f4edb63e5085208c4cfd620c5e1d988fa",
+              "colorspace": "sRGB"
+            },
+            {
+              "name": "CivicAsphalt_Normal.png.001",
+              "sha256": "e6f9e8f0257ddbc33b012b72f9446a2c8a3679153488b4bbc67ca6e50be153fd",
+              "colorspace": "Non-Color"
+            },
+            {
+              "name": "CivicAsphalt_ORM.png.001",
+              "sha256": "6b06b777944f76046d0f51131cdec7cca658efac60560c95ab1e854c37189ab4",
+              "colorspace": "Non-Color"
+            }
+          ]
+        },
+        "LightMetal_MetricRepair": {
+          "kind": "solid",
+          "color": [
+            0.6299999952316284,
+            0.7099999785423279,
+            0.7400000095367432
+          ],
+          "roughness": 0.28999999165534973,
+          "metallic": 0.75,
+          "destination": "/Game/CitySim/Art/Technology/Materials/MI_DigitalExchange_LightMetal",
+          "source_slot": "LightMetal_MetricRepair",
+          "source_images": []
+        },
+        "TechGlass_MetricRepair": {
+          "kind": "solid",
+          "color": [
+            0.03500000014901161,
+            0.25999999046325684,
+            0.28999999165534973
+          ],
+          "roughness": 0.25,
+          "metallic": 0.25,
+          "destination": "/Game/CitySim/Art/Technology/Materials/MI_DigitalExchange_TechGlass",
+          "source_slot": "TechGlass_MetricRepair",
+          "source_images": []
+        },
+        "DoorAccent_MetricRepair": {
+          "kind": "solid",
+          "color": [
+            0.08500000089406967,
+            0.14000000059604645,
+            0.1599999964237213
+          ],
+          "roughness": 0.4300000071525574,
+          "metallic": 0.25,
+          "destination": "/Game/CitySim/Art/Technology/Materials/MI_DigitalExchange_DoorAccent",
+          "source_slot": "DoorAccent_MetricRepair",
+          "source_images": []
+        }
+      },
+      "uv_policy": "Preserve approved UV0 exactly; no atlas rebake or regeneration",
+      "collision_policy": "No generated physics collision; existing logical placement/selection retained",
+      "lod_policy": "Reviewed <=5000-triangle landmark mesh at LOD0; no Nanite or new benchmark program"
+    },
+    {
+      "issue": 102,
+      "version": 4,
+      "sourcePR": 115,
+      "sourceHead": "287b464939fdf89e735a6894a988bae748c13fd4",
+      "sourceDirectory": "ArtSource/Generated/blender/issue-102/v4",
+      "approvalSha256": "1a63f41dab214cc29f57eca89b3c42f44b9865a79071076664911803d98b4740",
+      "handoffSha256": "8df22650a663b6d2f3ea86b552c2196da9c549127bec009870bdaaea7feab60c",
+      "handoffArtifactsVerified": 20,
+      "approvalArtifactsVerified": 18,
+      "exportSha256": "571b1bf7f09f95f541f65c5d6312019882b3c1ca4862b36f29977da60d64ae91",
+      "sourceBlendSha256": "35a132170ecc259cedc8476cbb9b776a3a37e9d394ce82a2b84db9c870905610",
+      "triangles": 3256,
+      "dimensions_m": [
+        14.399999618530273,
+        14.449999809265137,
+        7.797500133514404
+      ],
+      "slots": [
+        "OpaqueFacade",
+        "RoofService",
+        "LightMetal",
+        "TechGlass",
+        "DoorAccent"
+      ],
+      "exactGitBlobLineEndingsRestored": [
+        "approval.json",
+        "frame_validation.json",
+        "INTEGRATION.md",
+        "material-texture-manifest.json",
+        "provenance.json",
+        "unreal-handoff.json",
+        "validation.json"
+      ],
+      "definition_id": "ComputingCenter",
+      "mesh_destination": "/Game/CitySim/Art/Technology/Meshes/SM_ComputingCenter",
+      "footprint": [
+        2,
+        2
+      ],
+      "logical_height_cm": 779.75,
+      "entrance_sides": 1,
+      "presentation_yaw_offset_quarter_turns": 2,
+      "material_bindings": {
+        "OpaqueFacade": {
+          "kind": "raw-maps",
+          "prefix": "CityBrick",
+          "normal_strength": 1.0,
+          "tint": [
+            1,
+            1,
+            1
+          ],
+          "destination": "/Game/CitySim/Art/Technology/Materials/MI_ComputingCenter_OpaqueFacade",
+          "source_slot": "OpaqueFacade",
+          "source_images": [
+            {
+              "name": "CityBrick_BaseColor.png",
+              "sha256": "e4c1ad7446563e3209191ca862fc4c3e065c491debd989765bc843405a5fbbfe",
+              "colorspace": "sRGB"
+            },
+            {
+              "name": "CityBrick_Normal.png",
+              "sha256": "cf71dc7902b7c3a99d9fd1e966760af9a7b428de42b22ade5fb810965866d2cc",
+              "colorspace": "Non-Color"
+            },
+            {
+              "name": "CityBrick_ORM.png",
+              "sha256": "39f2f1df859b4052afe98dcb632054398957455d58b205b13702210467a0c6e8",
+              "colorspace": "Non-Color"
+            }
+          ]
+        },
+        "RoofService": {
+          "kind": "raw-maps",
+          "prefix": "CivicAsphalt",
+          "normal_strength": 1.0,
+          "tint": [
+            1,
+            1,
+            1
+          ],
+          "destination": "/Game/CitySim/Art/Technology/Materials/MI_ComputingCenter_RoofService",
+          "source_slot": "RoofService",
+          "source_images": [
+            {
+              "name": "CivicAsphalt_BaseColor.png",
+              "sha256": "85e2cfe619a74da7fe74ad0c6439141f4edb63e5085208c4cfd620c5e1d988fa",
+              "colorspace": "sRGB"
+            },
+            {
+              "name": "CivicAsphalt_Normal.png",
+              "sha256": "e6f9e8f0257ddbc33b012b72f9446a2c8a3679153488b4bbc67ca6e50be153fd",
+              "colorspace": "Non-Color"
+            },
+            {
+              "name": "CivicAsphalt_ORM.png",
+              "sha256": "6b06b777944f76046d0f51131cdec7cca658efac60560c95ab1e854c37189ab4",
+              "colorspace": "Non-Color"
+            }
+          ]
+        },
+        "LightMetal": {
+          "kind": "solid",
+          "color": [
+            0.7300000190734863,
+            0.8100000023841858,
+            0.8199999928474426
+          ],
+          "roughness": 0.44999998807907104,
+          "metallic": 0.6499999761581421,
+          "destination": "/Game/CitySim/Art/Technology/Materials/MI_ComputingCenter_LightMetal",
+          "source_slot": "LightMetal",
+          "source_images": []
+        },
+        "TechGlass": {
+          "kind": "solid",
+          "color": [
+            0.03500000014901161,
+            0.28999999165534973,
+            0.33000001311302185
+          ],
+          "roughness": 0.3199999928474426,
+          "metallic": 0.0,
+          "destination": "/Game/CitySim/Art/Technology/Materials/MI_ComputingCenter_TechGlass",
+          "source_slot": "TechGlass",
+          "source_images": []
+        },
+        "DoorAccent": {
+          "kind": "solid",
+          "color": [
+            0.10000000149011612,
+            0.1899999976158142,
+            0.2199999988079071
+          ],
+          "roughness": 0.44999998807907104,
+          "metallic": 0.0,
+          "destination": "/Game/CitySim/Art/Technology/Materials/MI_ComputingCenter_DoorAccent",
+          "source_slot": "DoorAccent",
+          "source_images": []
+        }
+      },
+      "uv_policy": "Preserve approved UV0 exactly; no atlas rebake or regeneration",
+      "collision_policy": "No generated physics collision; existing logical placement/selection retained",
+      "lod_policy": "Reviewed <=5000-triangle landmark mesh at LOD0; no Nanite or new benchmark program"
+    },
+    {
+      "issue": 103,
+      "version": 3,
+      "sourcePR": 117,
+      "sourceHead": "f0c05d68228d046ec1acf825fcdf3b209fa06ffd",
+      "sourceDirectory": "ArtSource/Generated/blender/issue-103/v3",
+      "approvalSha256": "ec19cc1ba05064c58f5b59bafd242f1569c8a3ed80db97e4c99c6e101f523348",
+      "handoffSha256": "85991ba556354c67414d9b985fc74f0b5b6e84b291aa46a51f0c0d76f4ceac84",
+      "handoffArtifactsVerified": 19,
+      "approvalArtifactsVerified": 17,
+      "exportSha256": "e707e79bbfd43909e4938c3e59777595cda52ad9356d7a17d9519a06648d29a8",
+      "sourceBlendSha256": "6fc47d49c8e1f5eaf3499e12db8ef515957f89f14dd34b82136af12d5faf7cb6",
+      "triangles": 3432,
+      "dimensions_m": [
+        23.600000381469727,
+        23.600000381469727,
+        7.739999771118164
+      ],
+      "slots": [
+        "OpaqueFacade_v3",
+        "RoofService_v3",
+        "TechGlass_v3",
+        "LightMetal_v3",
+        "DoorAccent_v3"
+      ],
+      "exactGitBlobLineEndingsRestored": [
+        "approval.json",
+        "frame_components.json",
+        "INTEGRATION.md",
+        "material_texture_manifest.json",
+        "provenance.json",
+        "unreal-handoff.json",
+        "validation.json"
+      ],
+      "definition_id": "ResearchCampus",
+      "mesh_destination": "/Game/CitySim/Art/Technology/Meshes/SM_ResearchCampus",
+      "footprint": [
+        3,
+        3
+      ],
+      "logical_height_cm": 774.0,
+      "entrance_sides": 1,
+      "presentation_yaw_offset_quarter_turns": 2,
+      "material_bindings": {
+        "OpaqueFacade_v3": {
+          "kind": "raw-maps",
+          "prefix": "CityBrick",
+          "normal_strength": 0.3499999940395355,
+          "tint": [
+            1,
+            1,
+            1
+          ],
+          "destination": "/Game/CitySim/Art/Technology/Materials/MI_ResearchCampus_OpaqueFacade",
+          "source_slot": "OpaqueFacade_v3",
+          "source_images": [
+            {
+              "name": "CityBrick_BaseColor.png.001",
+              "sha256": "e4c1ad7446563e3209191ca862fc4c3e065c491debd989765bc843405a5fbbfe",
+              "colorspace": "sRGB"
+            },
+            {
+              "name": "CityBrick_Normal.png.001",
+              "sha256": "cf71dc7902b7c3a99d9fd1e966760af9a7b428de42b22ade5fb810965866d2cc",
+              "colorspace": "Non-Color"
+            },
+            {
+              "name": "CityBrick_ORM.png.001",
+              "sha256": "39f2f1df859b4052afe98dcb632054398957455d58b205b13702210467a0c6e8",
+              "colorspace": "Non-Color"
+            }
+          ]
+        },
+        "RoofService_v3": {
+          "kind": "raw-maps",
+          "prefix": "CivicAsphalt",
+          "normal_strength": 0.3499999940395355,
+          "tint": [
+            1,
+            1,
+            1
+          ],
+          "destination": "/Game/CitySim/Art/Technology/Materials/MI_ResearchCampus_RoofService",
+          "source_slot": "RoofService_v3",
+          "source_images": [
+            {
+              "name": "CivicAsphalt_BaseColor.png",
+              "sha256": "85e2cfe619a74da7fe74ad0c6439141f4edb63e5085208c4cfd620c5e1d988fa",
+              "colorspace": "sRGB"
+            },
+            {
+              "name": "CivicAsphalt_Normal.png",
+              "sha256": "e6f9e8f0257ddbc33b012b72f9446a2c8a3679153488b4bbc67ca6e50be153fd",
+              "colorspace": "Non-Color"
+            },
+            {
+              "name": "CivicAsphalt_ORM.png",
+              "sha256": "6b06b777944f76046d0f51131cdec7cca658efac60560c95ab1e854c37189ab4",
+              "colorspace": "Non-Color"
+            }
+          ]
+        },
+        "TechGlass_v3": {
+          "kind": "solid",
+          "color": [
+            0.03500000014901161,
+            0.28999999165534973,
+            0.3199999928474426
+          ],
+          "roughness": 0.3199999928474426,
+          "metallic": 0.0,
+          "destination": "/Game/CitySim/Art/Technology/Materials/MI_ResearchCampus_TechGlass",
+          "source_slot": "TechGlass_v3",
+          "source_images": []
+        },
+        "LightMetal_v3": {
+          "kind": "solid",
+          "color": [
+            0.7200000286102295,
+            0.800000011920929,
+            0.8100000023841858
+          ],
+          "roughness": 0.6499999761581421,
+          "metallic": 0.6499999761581421,
+          "destination": "/Game/CitySim/Art/Technology/Materials/MI_ResearchCampus_LightMetal",
+          "source_slot": "LightMetal_v3",
+          "source_images": []
+        },
+        "DoorAccent_v3": {
+          "kind": "solid",
+          "color": [
+            0.17000000178813934,
+            0.30000001192092896,
+            0.3199999928474426
+          ],
+          "roughness": 0.6499999761581421,
+          "metallic": 0.0,
+          "destination": "/Game/CitySim/Art/Technology/Materials/MI_ResearchCampus_DoorAccent",
+          "source_slot": "DoorAccent_v3",
+          "source_images": []
+        }
+      },
+      "uv_policy": "Preserve approved UV0 exactly; no atlas rebake or regeneration",
+      "collision_policy": "No generated physics collision; existing logical placement/selection retained",
+      "lod_policy": "Reviewed <=5000-triangle landmark mesh at LOD0; no Nanite or new benchmark program"
+    },
+    {
+      "issue": 104,
+      "version": 3,
+      "sourcePR": 119,
+      "sourceHead": "8d49f4d139f4680b95266f265d6d5f43f36527d4",
+      "sourceDirectory": "ArtSource/Generated/blender/issue-104/v3",
+      "approvalSha256": "4be407fd91ec74afba9080d4c70c2f1ab1ba148aef0d06b8f36ce1829869597b",
+      "handoffSha256": "d844a581a3204184ffa97eb8fcdc4d4b53fd311223500f4f4be7efcf4ff81145",
+      "handoffArtifactsVerified": 11,
+      "approvalArtifactsVerified": 9,
+      "exportSha256": "b662c8f8795468ce43c492a2624c4e9299947640995c771b4bfaea750cd91e58",
+      "sourceBlendSha256": "18aa241d4ce5ddf5252784246572d3ed993c1f500e4b974e5c8eb3bd3b359e06",
+      "triangles": 3596,
+      "dimensions_m": [
+        20.6200008392334,
+        21.03499984741211,
+        9.3100004196167
+      ],
+      "slots": [
+        "RoofService",
+        "OpaqueFacade",
+        "LightMetal",
+        "TechGlass",
+        "DoorAccent"
+      ],
+      "exactGitBlobLineEndingsRestored": [
+        "approval.json",
+        "INTEGRATION.md",
+        "material_manifest.json",
+        "provenance.json",
+        "unreal-handoff.json",
+        "validation.json"
+      ],
+      "definition_id": "AIInstitute",
+      "mesh_destination": "/Game/CitySim/Art/Technology/Meshes/SM_AIInstitute",
+      "footprint": [
+        3,
+        3
+      ],
+      "logical_height_cm": 931.0,
+      "entrance_sides": 1,
+      "presentation_yaw_offset_quarter_turns": 2,
+      "material_bindings": {
+        "RoofService": {
+          "kind": "solid",
+          "color": [
+            0.0949999988079071,
+            0.125,
+            0.13500000536441803
+          ],
+          "roughness": 0.5299999713897705,
+          "metallic": 0.0,
+          "destination": "/Game/CitySim/Art/Technology/Materials/MI_AIInstitute_RoofService",
+          "source_slot": "RoofService",
+          "source_images": []
+        },
+        "OpaqueFacade": {
+          "kind": "civic",
+          "parent": "/Game/CitySim/Art/Materials/M_CivicBrick",
+          "tint": [
+            0.8199999928474426,
+            0.7300000190734863,
+            0.47999998927116394
+          ],
+          "destination": "/Game/CitySim/Art/Technology/Materials/MI_AIInstitute_OpaqueFacade",
+          "source_slot": "OpaqueFacade",
+          "source_images": [
+            {
+              "name": "CityBrick_BaseColor.png",
+              "sha256": "e4c1ad7446563e3209191ca862fc4c3e065c491debd989765bc843405a5fbbfe",
+              "colorspace": "sRGB"
+            },
+            {
+              "name": "CityBrick_Normal.png",
+              "sha256": "cf71dc7902b7c3a99d9fd1e966760af9a7b428de42b22ade5fb810965866d2cc",
+              "colorspace": "Non-Color"
+            },
+            {
+              "name": "CityBrick_ORM.png",
+              "sha256": "39f2f1df859b4052afe98dcb632054398957455d58b205b13702210467a0c6e8",
+              "colorspace": "Non-Color"
+            }
+          ]
+        },
+        "LightMetal": {
+          "kind": "solid",
+          "color": [
+            0.7599999904632568,
+            0.7900000214576721,
+            0.7300000190734863
+          ],
+          "roughness": 0.5299999713897705,
+          "metallic": 0.3499999940395355,
+          "destination": "/Game/CitySim/Art/Technology/Materials/MI_AIInstitute_LightMetal",
+          "source_slot": "LightMetal",
+          "source_images": []
+        },
+        "TechGlass": {
+          "kind": "solid",
+          "color": [
+            0.03500000014901161,
+            0.3400000035762787,
+            0.36000001430511475
+          ],
+          "roughness": 0.3199999928474426,
+          "metallic": 0.0,
+          "destination": "/Game/CitySim/Art/Technology/Materials/MI_AIInstitute_TechGlass",
+          "source_slot": "TechGlass",
+          "source_images": []
+        },
+        "DoorAccent": {
+          "kind": "solid",
+          "color": [
+            0.03500000014901161,
+            0.11999999731779099,
+            0.14499999582767487
+          ],
+          "roughness": 0.5299999713897705,
+          "metallic": 0.0,
+          "destination": "/Game/CitySim/Art/Technology/Materials/MI_AIInstitute_DoorAccent",
+          "source_slot": "DoorAccent",
+          "source_images": []
+        }
+      },
+      "uv_policy": "Preserve approved UV0 exactly; no atlas rebake or regeneration",
+      "collision_policy": "No generated physics collision; existing logical placement/selection retained",
+      "lod_policy": "Reviewed <=5000-triangle landmark mesh at LOD0; no Nanite or new benchmark program"
+    },
+    {
+      "issue": 105,
+      "version": 4,
+      "sourcePR": 121,
+      "sourceHead": "6c0fafde70b656a844dc51c1972c2135cec01d47",
+      "sourceDirectory": "ArtSource/Generated/blender/issue-105/v4",
+      "approvalSha256": "ed6389e8a3890029e5a444d355e8ca73f228abf3b01500cf41183337ffaaa951",
+      "handoffSha256": "aaff4cbfaffe72e254a244d8bf2e2045d3a7bbbf4a64a5c30c65b13f8fb2d2a8",
+      "handoffArtifactsVerified": 12,
+      "approvalArtifactsVerified": 10,
+      "exportSha256": "f4c5b6f85db804a122e39782053e4a4be582000c0dc3e69da0a27ae049f5c2e9",
+      "sourceBlendSha256": "1658f0608a9a78f3c2e78c33ea545d1af31392328bed835f3eafdbec87ddba1e",
+      "triangles": 1284,
+      "dimensions_m": [
+        20.0,
+        19.950000762939453,
+        7.929999828338623
+      ],
+      "slots": [
+        "OpaqueFacade_CivicReuse",
+        "RoofService_CivicReuse",
+        "LightMetal",
+        "TechGlass",
+        "DoorAccent"
+      ],
+      "exactGitBlobLineEndingsRestored": [
+        "approval.json",
+        "frame_checks.json",
+        "INTEGRATION.md",
+        "materials.json",
+        "unreal-handoff.json",
+        "validation.json"
+      ],
+      "definition_id": "EnterpriseAICenter",
+      "mesh_destination": "/Game/CitySim/Art/Technology/Meshes/SM_EnterpriseAICenter",
+      "footprint": [
+        3,
+        3
+      ],
+      "logical_height_cm": 793.0,
+      "entrance_sides": 1,
+      "presentation_yaw_offset_quarter_turns": 2,
+      "material_bindings": {
+        "OpaqueFacade_CivicReuse": {
+          "kind": "civic",
+          "parent": "/Game/CitySim/Art/Materials/M_CivicBrick",
+          "tint": [
+            0.8199999928474426,
+            0.7300000190734863,
+            0.47999998927116394
+          ],
+          "destination": "/Game/CitySim/Art/Technology/Materials/MI_EnterpriseAICenter_OpaqueFacade",
+          "source_slot": "OpaqueFacade_CivicReuse",
+          "source_images": [
+            {
+              "name": "CityBrick_BaseColor.png",
+              "sha256": "e4c1ad7446563e3209191ca862fc4c3e065c491debd989765bc843405a5fbbfe",
+              "colorspace": "sRGB"
+            },
+            {
+              "name": "CityBrick_Normal.png",
+              "sha256": "cf71dc7902b7c3a99d9fd1e966760af9a7b428de42b22ade5fb810965866d2cc",
+              "colorspace": "Non-Color"
+            },
+            {
+              "name": "CityBrick_ORM.png",
+              "sha256": "39f2f1df859b4052afe98dcb632054398957455d58b205b13702210467a0c6e8",
+              "colorspace": "Non-Color"
+            }
+          ]
+        },
+        "RoofService_CivicReuse": {
+          "kind": "civic",
+          "parent": "/Game/CitySim/Art/Materials/M_CivicAsphalt",
+          "tint": [
+            0.12999999523162842,
+            0.15000000596046448,
+            0.17000000178813934
+          ],
+          "destination": "/Game/CitySim/Art/Technology/Materials/MI_EnterpriseAICenter_RoofService",
+          "source_slot": "RoofService_CivicReuse",
+          "source_images": [
+            {
+              "name": "CivicAsphalt_BaseColor.png",
+              "sha256": "85e2cfe619a74da7fe74ad0c6439141f4edb63e5085208c4cfd620c5e1d988fa",
+              "colorspace": "sRGB"
+            },
+            {
+              "name": "CivicAsphalt_Normal.png",
+              "sha256": "e6f9e8f0257ddbc33b012b72f9446a2c8a3679153488b4bbc67ca6e50be153fd",
+              "colorspace": "Non-Color"
+            },
+            {
+              "name": "CivicAsphalt_ORM.png",
+              "sha256": "6b06b777944f76046d0f51131cdec7cca658efac60560c95ab1e854c37189ab4",
+              "colorspace": "Non-Color"
+            }
+          ]
+        },
+        "LightMetal": {
+          "kind": "solid",
+          "color": [
+            0.7699999809265137,
+            0.8399999737739563,
+            0.8500000238418579
+          ],
+          "roughness": 0.3199999928474426,
+          "metallic": 0.550000011920929,
+          "destination": "/Game/CitySim/Art/Technology/Materials/MI_EnterpriseAICenter_LightMetal",
+          "source_slot": "LightMetal",
+          "source_images": []
+        },
+        "TechGlass": {
+          "kind": "solid",
+          "color": [
+            0.03500000014901161,
+            0.2800000011920929,
+            0.3199999928474426
+          ],
+          "roughness": 0.2800000011920929,
+          "metallic": 0.0,
+          "destination": "/Game/CitySim/Art/Technology/Materials/MI_EnterpriseAICenter_TechGlass",
+          "source_slot": "TechGlass",
+          "source_images": []
+        },
+        "DoorAccent": {
+          "kind": "solid",
+          "color": [
+            0.11999999731779099,
+            0.1899999976158142,
+            0.20999999344348907
+          ],
+          "roughness": 0.7200000286102295,
+          "metallic": 0.0,
+          "destination": "/Game/CitySim/Art/Technology/Materials/MI_EnterpriseAICenter_DoorAccent",
+          "source_slot": "DoorAccent",
+          "source_images": []
+        }
+      },
+      "uv_policy": "Preserve approved UV0 exactly; no atlas rebake or regeneration",
+      "collision_policy": "No generated physics collision; existing logical placement/selection retained",
+      "lod_policy": "Reviewed <=5000-triangle landmark mesh at LOD0; no Nanite or new benchmark program"
+    }
+  ],
+  "source_readback": "Approved5.1.1 files inspected read-only in local Blender5.0.1; forward-version warning retained, no resave; original SHA unchanged",
+  "import_contract": "Legacy checked FBX route, metric->cm, normals imported/Mikk tangents, explicit material slots, opaque ISM materials, no automatic textures/materials, no lightmap UV regeneration"
+}

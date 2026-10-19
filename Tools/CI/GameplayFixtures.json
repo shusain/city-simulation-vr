@@ -1,0 +1,12 @@
+[
+  {
+    "name": "shopping",
+    "path": "Artifacts/B003/D107Followup/ReportedCity.json",
+    "sha256": "72c2d4a0909a23135251a25953c8f1203eb297adadc39ac2126e46753481b64f"
+  },
+  {
+    "name": "health",
+    "path": "Artifacts/D127/ReportedCity.json",
+    "sha256": "276727c3a77e63654c7fc0e1fa67bed1e8214980e38ee37724049a45d1e77e27"
+  }
+]

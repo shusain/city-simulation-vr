@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "title": "Neon Courtyard — hybrid groove study",
+  "bpm": 90,
+  "bars": 12,
+  "seed": 821014,
+  "targetLUFS": -24,
+  "truePeakCeilingDBTP": -6,
+  "sample": {
+    "file": "GeneratedTexture.mp3",
+    "sha256": "4b08aa95e424bacb97dbbab8eb72716c8c2802ed8a14b9a081f3dcc261b88a13",
+    "trimStartSeconds": 2,
+    "trimSeconds": 6,
+    "highpassHz": 240,
+    "lowpassHz": 2200,
+    "referenceMidi": 45,
+    "referenceNoteEvidence": "Strong spectral peak near110Hz in1–4s windows; use A2 as processing anchor, not a claim of single-note purity.",
+    "preparedPeak": 0.5,
+    "gain": 0.16
+  },
+  "chords": [[57,60,64,67,71],[53,57,60,64,67],[62,65,69,72,76],[64,67,71,74,78]],
+  "phrases": [
+    [[0,69],[1.5,72],[2,76],[3.5,74],[4,72],[6,71]],
+    [[0,69],[1.5,72],[2,76],[3.5,79],[4,76],[6,72]],
+    [[0,74],[1.5,77],[2,81],[3.5,79],[4,76],[6,77]],
+    [[0,76],[1.5,79],[2,83],[3.5,81],[4,79],[6,74]]
+  ],
+  "kickBeats": [0,1.5,2,2.75],
+  "snareBeats": [1,3],
+  "hatBeats": [0,0.52,1,1.52,2,2.52,3,3.52],
+  "intent": "Firm authored kick/snare/bass groove from the start; generated texture provides background color, with soft original melodic phrases. Short audition only; no game asset adoption."
+}

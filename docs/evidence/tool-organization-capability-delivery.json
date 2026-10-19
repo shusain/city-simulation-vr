@@ -1,0 +1,55 @@
+{
+  "issue": 150,
+  "mergedPR": 152,
+  "mergeCommit": "2f300bc8996ba41e672ea5356893c563ed3bd9d7",
+  "draftPR": 154,
+  "submittedHead": "63db8fbf78522d54edd6c6738564a95e20b9aefa",
+  "ci": [
+    {
+      "build": 183,
+      "sha": "2f300bc8996ba41e672ea5356893c563ed3bd9d7",
+      "status": "passed",
+      "offlineChecks": 31,
+      "editorSeconds": 157.23,
+      "exactTests": [
+        "CitySim.Placement.Transactions",
+        "CitySim.Terrain.DeterminismAndFixtures",
+        "CitySim.Simulation.CitizenArrivalSchedules",
+        "CitySim.Art.ImportedKit",
+        "CitySim.Art.CivicLightEmission"
+      ],
+      "receipt": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\CI\\Builds\\183-2f300bc8996b-Check-724e34d5\\Result.json",
+      "receiptSha256": "f16e55a4ae75538dba53ee9b51401e21a9a352de213881e8107466ddf912e136",
+      "finishedUtc": "2026-10-18T04:49:50.0817764Z"
+    },
+    {
+      "build": 184,
+      "sha": "63db8fbf78522d54edd6c6738564a95e20b9aefa",
+      "status": "passed",
+      "offlineChecks": 31,
+      "editorSeconds": 143.15,
+      "exactTests": [
+        "CitySim.Placement.Transactions",
+        "CitySim.Terrain.DeterminismAndFixtures",
+        "CitySim.Simulation.CitizenArrivalSchedules",
+        "CitySim.Art.ImportedKit",
+        "CitySim.Art.CivicLightEmission",
+        "CitySim.Art.StorefrontAssets",
+        "CitySim.Art.DamagedVariantsParticles"
+      ],
+      "receipt": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\CI\\Builds\\184-63db8fbf7852-Check-17f8b0de\\Result.json",
+      "receiptSha256": "4ec1198b6428d1eec957a782602359bb4fe711dc71b67a5580b128fcbd9188cc",
+      "finishedUtc": "2026-10-18T04:53:53.1718138Z"
+    }
+  ],
+  "localOfflineChecks": 31,
+  "localPythonCases": 34,
+  "manifestCapabilityCases": 15,
+  "nativeImportsRerun": false,
+  "packagesRerun": false,
+  "nativeAssetChanges": false,
+  "sourceApprovalsChanged": false,
+  "primaryPlayerFilesTouched": false,
+  "sharedClaimOwnerIssue": 125,
+  "next": "Review PR154; native/editable-source naming and broader functional organization remain under150"
+}

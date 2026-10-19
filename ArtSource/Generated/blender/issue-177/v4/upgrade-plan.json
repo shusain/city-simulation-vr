@@ -1,0 +1,45 @@
+{
+  "family": "police",
+  "stage": "high",
+  "stage_index": 2,
+  "existing_stages": [
+    "base",
+    "medium",
+    "high"
+  ],
+  "existing_upgrade_count": 2,
+  "gameplay_changes": false,
+  "source_site_m": [
+    40,
+    32
+  ],
+  "current_native_footprint": [
+    3,
+    2
+  ],
+  "retained_entrance_centres": [
+    [
+      -10,
+      -5
+    ],
+    [
+      2,
+      -5
+    ]
+  ],
+  "progression": "Third compact office floor and three functional response bays; no vehicles or future stages.",
+  "occupied_bounds": {
+    "min": [
+      -16.1200008392334,
+      -6.800000190734863,
+      0.0
+    ],
+    "max": [
+      18.1200008392334,
+      8.119999885559082,
+      12.65000057220459
+    ]
+  },
+  "LOD1": "Simplify four-bar rims and relief and remove section ribs.",
+  "LOD2": "Collapse roof equipment and emblem; retain entrances and massing."
+}

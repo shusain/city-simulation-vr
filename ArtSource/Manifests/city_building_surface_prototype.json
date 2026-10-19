@@ -1,0 +1,4916 @@
+{
+  "task": "D79",
+  "prototype_only": true,
+  "geometry_unchanged": false,
+  "production_imported": false,
+  "brick_tile_m": [
+    2.4,
+    2.4
+  ],
+  "brick_readability_scale": 2.0,
+  "mechanical_tile_m": [
+    0.5,
+    0.5
+  ],
+  "vertex_channels": "A=existing night-window mask; R=paint(0)/exposed metal(1) only on Mechanical",
+  "normal_convention": "DirectX; Blender shader flips green",
+  "assets": [
+    {
+      "asset_id": "building.residential.a.surfaces",
+      "prototype_only": true,
+      "export": "ArtSource/Exports/BuildingSurfacePrototypes/SM_ResidentialLow_SurfacePrototype.fbx",
+      "source": "ArtSource/Blender/CityBuildingSurfacePrototype.blend",
+      "accepted_geometry_sha256": "057a1c16edbf4eb74d559e6dcff4e89eb1ddc5f4bdf378019c40f20f8b7628b9",
+      "accepted_geometry_export": "ArtSource/Exports/SM_Building_Residential_A.fbx",
+      "input_geometry_export": "ArtSource/Exports/SM_Building_Residential_A.fbx",
+      "input_geometry_sha256": "057a1c16edbf4eb74d559e6dcff4e89eb1ddc5f4bdf378019c40f20f8b7628b9",
+      "geometry_refinement": null,
+      "triangles": 90,
+      "sections": 3,
+      "roof_sign_detail": {
+        "roof_type": "RoofShingles",
+        "roof_tile_m": 4.8,
+        "roof_slot": 2,
+        "roof_faces": [
+          9,
+          10
+        ],
+        "mechanical_slot": null
+      },
+      "category": "Residential",
+      "density": "Low",
+      "damaged": false,
+      "dimensions_m": [
+        16.0,
+        18.399999618530273,
+        9.0
+      ],
+      "mechanical_mask_values": [],
+      "material_slots": {
+        "ResidentialBrick": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_ResidentialBrick",
+        "Roof": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_Roof",
+        "RoofShingles": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_RoofShingles"
+      },
+      "destination": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes",
+      "sha256": "0fcf72620115c44e5a8da65a6e4c3747281ca3ac6a60466ea137aeee93beff17"
+    },
+    {
+      "asset_id": "building.residential.a.damaged.surfaces",
+      "prototype_only": true,
+      "export": "ArtSource/Exports/BuildingSurfacePrototypes/SM_ResidentialLow_SurfacePrototype_Damaged.fbx",
+      "source": "ArtSource/Blender/CityBuildingSurfacePrototype.blend",
+      "accepted_geometry_sha256": "0dc2b210b32a43c2e33bcbadbbccf5d3fbe023cba672816f08332bf6bac8939b",
+      "accepted_geometry_export": "ArtSource/Exports/SM_Building_Residential_A_Damaged.fbx",
+      "input_geometry_export": "ArtSource/Exports/SM_Building_Residential_A_Damaged.fbx",
+      "input_geometry_sha256": "0dc2b210b32a43c2e33bcbadbbccf5d3fbe023cba672816f08332bf6bac8939b",
+      "geometry_refinement": null,
+      "triangles": 90,
+      "sections": 3,
+      "roof_sign_detail": {
+        "roof_type": "RoofShingles",
+        "roof_tile_m": 4.8,
+        "roof_slot": 2,
+        "roof_faces": [
+          9,
+          10
+        ],
+        "mechanical_slot": null
+      },
+      "category": "Residential",
+      "density": "Low",
+      "damaged": true,
+      "dimensions_m": [
+        16.0,
+        18.399999618530273,
+        6.997908592224121
+      ],
+      "mechanical_mask_values": [],
+      "material_slots": {
+        "CharredBrick": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredBrick",
+        "CharredTrim": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredTrim",
+        "CharredRoofShingles": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredRoofShingles"
+      },
+      "destination": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes",
+      "sha256": "6052a46d7b80d8fb94b304def8e58525e1d5bcedfaf13f533f82a53a3f32cfe2"
+    },
+    {
+      "asset_id": "building.residential.medium.a.surfaces",
+      "prototype_only": true,
+      "export": "ArtSource/Exports/BuildingSurfacePrototypes/SM_ResidentialMedium_SurfacePrototype.fbx",
+      "source": "ArtSource/Blender/CityBuildingSurfacePrototype.blend",
+      "accepted_geometry_sha256": "6a3863dc4a6b3f34a5f3889acab97cddd0cfaac8bf7fa6342351fab1ce87e275",
+      "accepted_geometry_export": "ArtSource/Exports/SM_Building_Residential_Medium_A.fbx",
+      "input_geometry_export": "ArtSource/Exports/SM_Building_Residential_Medium_A.fbx",
+      "input_geometry_sha256": "6a3863dc4a6b3f34a5f3889acab97cddd0cfaac8bf7fa6342351fab1ce87e275",
+      "geometry_refinement": null,
+      "triangles": 250,
+      "sections": 3,
+      "roof_sign_detail": {
+        "roof_type": "RoofMembrane",
+        "roof_tile_m": 8,
+        "roof_slot": 2,
+        "roof_faces": [
+          5,
+          17
+        ],
+        "mechanical_slot": null
+      },
+      "category": "Residential",
+      "density": "Medium",
+      "damaged": false,
+      "dimensions_m": [
+        14.069999694824219,
+        17.434999465942383,
+        22.0
+      ],
+      "mechanical_mask_values": [],
+      "material_slots": {
+        "ResidentialBrick": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_ResidentialBrick",
+        "Roof": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_Roof",
+        "RoofMembrane": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_RoofMembrane"
+      },
+      "destination": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes",
+      "sha256": "af1f5588b3627ed568c3ecf13f1f71352c963d794dadf16eeca9db096df1a6cd"
+    },
+    {
+      "asset_id": "building.residential.medium.a.damaged.surfaces",
+      "prototype_only": true,
+      "export": "ArtSource/Exports/BuildingSurfacePrototypes/SM_ResidentialMedium_SurfacePrototype_Damaged.fbx",
+      "source": "ArtSource/Blender/CityBuildingSurfacePrototype.blend",
+      "accepted_geometry_sha256": "b112ac6c06cca98a268320c2399c96ba15d01d999eaf07f28ccb03d2208626e1",
+      "accepted_geometry_export": "ArtSource/Exports/SM_Building_Residential_Medium_A_Damaged.fbx",
+      "input_geometry_export": "ArtSource/Exports/SM_Building_Residential_Medium_A_Damaged.fbx",
+      "input_geometry_sha256": "b112ac6c06cca98a268320c2399c96ba15d01d999eaf07f28ccb03d2208626e1",
+      "geometry_refinement": null,
+      "triangles": 250,
+      "sections": 3,
+      "roof_sign_detail": {
+        "roof_type": "RoofMembrane",
+        "roof_tile_m": 8,
+        "roof_slot": 2,
+        "roof_faces": [
+          5,
+          17
+        ],
+        "mechanical_slot": null
+      },
+      "category": "Residential",
+      "density": "Medium",
+      "damaged": true,
+      "dimensions_m": [
+        14.069999694824219,
+        17.434999465942383,
+        18.809249877929688
+      ],
+      "mechanical_mask_values": [],
+      "material_slots": {
+        "CharredBrick": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredBrick",
+        "CharredTrim": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredTrim",
+        "CharredRoofMembrane": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredRoofMembrane"
+      },
+      "destination": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes",
+      "sha256": "e93cd756515774858d9e0dad4affece3541923cc99727e3cea4ee38020ae6fd1"
+    },
+    {
+      "asset_id": "building.residential.high.a.surfaces",
+      "prototype_only": true,
+      "export": "ArtSource/Exports/BuildingSurfacePrototypes/SM_ResidentialHigh_SurfacePrototype.fbx",
+      "source": "ArtSource/Blender/CityBuildingSurfacePrototype.blend",
+      "accepted_geometry_sha256": "e64f4deb35d89bf86c540a917a2b88e59b28ad959885689231223bc1c801a5ea",
+      "accepted_geometry_export": "ArtSource/Exports/SM_Building_Residential_High_A.fbx",
+      "input_geometry_export": "ArtSource/Exports/SM_Building_Residential_High_A.fbx",
+      "input_geometry_sha256": "e64f4deb35d89bf86c540a917a2b88e59b28ad959885689231223bc1c801a5ea",
+      "geometry_refinement": null,
+      "triangles": 814,
+      "sections": 4,
+      "roof_sign_detail": {
+        "roof_type": "RoofMembrane",
+        "roof_tile_m": 8,
+        "roof_slot": 3,
+        "roof_faces": [
+          11
+        ],
+        "mechanical_slot": 2
+      },
+      "category": "Residential",
+      "density": "High",
+      "damaged": false,
+      "dimensions_m": [
+        14.0,
+        17.399999618530273,
+        41.0
+      ],
+      "mechanical_mask_values": [
+        0,
+        1
+      ],
+      "material_slots": {
+        "ResidentialBrick": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_ResidentialBrick",
+        "Roof": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_Roof",
+        "Mechanical": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_Mechanical",
+        "RoofMembrane": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_RoofMembrane"
+      },
+      "destination": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes",
+      "sha256": "f017e3b9b15ec367a25729c80a2e15984597d32d867fbe1f4a16a11589a55020"
+    },
+    {
+      "asset_id": "building.residential.high.a.damaged.surfaces",
+      "prototype_only": true,
+      "export": "ArtSource/Exports/BuildingSurfacePrototypes/SM_ResidentialHigh_SurfacePrototype_Damaged.fbx",
+      "source": "ArtSource/Blender/CityBuildingSurfacePrototype.blend",
+      "accepted_geometry_sha256": "3e58cde6d45e371d580b3e16bf70ab00171d8fd7d4c3baf2485857cf1488c055",
+      "accepted_geometry_export": "ArtSource/Exports/SM_Building_Residential_High_A_Damaged.fbx",
+      "input_geometry_export": "ArtSource/Exports/SM_Building_Residential_High_A_Damaged.fbx",
+      "input_geometry_sha256": "3e58cde6d45e371d580b3e16bf70ab00171d8fd7d4c3baf2485857cf1488c055",
+      "geometry_refinement": null,
+      "triangles": 814,
+      "sections": 4,
+      "roof_sign_detail": {
+        "roof_type": "RoofMembrane",
+        "roof_tile_m": 8,
+        "roof_slot": 3,
+        "roof_faces": [
+          11
+        ],
+        "mechanical_slot": 2
+      },
+      "category": "Residential",
+      "density": "High",
+      "damaged": true,
+      "dimensions_m": [
+        14.0,
+        17.399999618530273,
+        34.80591583251953
+      ],
+      "mechanical_mask_values": [
+        0,
+        1
+      ],
+      "material_slots": {
+        "CharredBrick": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredBrick",
+        "CharredTrim": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredTrim",
+        "CharredMechanical": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredMechanical",
+        "CharredRoofMembrane": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredRoofMembrane"
+      },
+      "destination": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes",
+      "sha256": "ded0e505c3a287928d8b268f3fc218a2dad3b15c012a190310c29ef3ac0fc3c1"
+    },
+    {
+      "asset_id": "building.shop.a.surfaces",
+      "prototype_only": true,
+      "export": "ArtSource/Exports/BuildingSurfacePrototypes/SM_CommercialLow_SurfacePrototype.fbx",
+      "source": "ArtSource/Blender/CityBuildingSurfacePrototype.blend",
+      "accepted_geometry_sha256": "11263b1cde7bd4acc90aae3d01b40a074abb3c05da358735f83f69f0f265359b",
+      "accepted_geometry_export": "ArtSource/Exports/SM_Building_Shop_A.fbx",
+      "input_geometry_export": "ArtSource/Exports/SM_Building_Shop_A.fbx",
+      "input_geometry_sha256": "11263b1cde7bd4acc90aae3d01b40a074abb3c05da358735f83f69f0f265359b",
+      "geometry_refinement": null,
+      "triangles": 118,
+      "sections": 4,
+      "roof_sign_detail": {
+        "roof_type": "RoofMembrane",
+        "roof_tile_m": 8,
+        "roof_slot": 2,
+        "roof_faces": [
+          5
+        ],
+        "mechanical_slot": null,
+        "sign_faces": [
+          15
+        ],
+        "sign_slot": 3,
+        "sign_aspect": "Tall",
+        "sign_local_uv": {
+          "60": [
+            1.0,
+            0.0
+          ],
+          "61": [
+            1.0,
+            1.0
+          ],
+          "62": [
+            0.0,
+            1.0
+          ],
+          "63": [
+            0.0,
+            0.0
+          ]
+        },
+        "sign_atlas_index": 0
+      },
+      "category": "Commercial",
+      "density": "Low",
+      "damaged": false,
+      "dimensions_m": [
+        15.399999618530273,
+        17.549999237060547,
+        12.0
+      ],
+      "mechanical_mask_values": [],
+      "material_slots": {
+        "CommercialBrick": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CommercialBrick",
+        "Roof": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_Roof",
+        "RoofMembrane": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_RoofMembrane",
+        "StoreSignTall": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_StoreSignTall"
+      },
+      "destination": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes",
+      "sha256": "6c13f2e77098efda44318c05b83b472bcec1e1152044785ab154fee7ae1e547b"
+    },
+    {
+      "asset_id": "building.shop.a.damaged.surfaces",
+      "prototype_only": true,
+      "export": "ArtSource/Exports/BuildingSurfacePrototypes/SM_CommercialLow_SurfacePrototype_Damaged.fbx",
+      "source": "ArtSource/Blender/CityBuildingSurfacePrototype.blend",
+      "accepted_geometry_sha256": "a4a80339e863762502e2f6913c3c5a5172c70cd51a4cd521ba61f09b426876b6",
+      "accepted_geometry_export": "ArtSource/Exports/SM_Building_Shop_A_Damaged.fbx",
+      "input_geometry_export": "ArtSource/Exports/SM_Building_Shop_A_Damaged.fbx",
+      "input_geometry_sha256": "a4a80339e863762502e2f6913c3c5a5172c70cd51a4cd521ba61f09b426876b6",
+      "geometry_refinement": null,
+      "triangles": 118,
+      "sections": 4,
+      "roof_sign_detail": {
+        "roof_type": "RoofMembrane",
+        "roof_tile_m": 8,
+        "roof_slot": 2,
+        "roof_faces": [
+          5
+        ],
+        "mechanical_slot": null,
+        "sign_faces": [
+          15
+        ],
+        "sign_slot": 3,
+        "sign_aspect": "Tall",
+        "sign_local_uv": {
+          "60": [
+            1.0,
+            0.0
+          ],
+          "61": [
+            1.0,
+            1.0
+          ],
+          "62": [
+            0.0,
+            1.0
+          ],
+          "63": [
+            0.0,
+            0.0
+          ]
+        },
+        "sign_atlas_index": 0
+      },
+      "category": "Commercial",
+      "density": "Low",
+      "damaged": true,
+      "dimensions_m": [
+        15.399999618530273,
+        17.549999237060547,
+        9.81743335723877
+      ],
+      "mechanical_mask_values": [],
+      "material_slots": {
+        "CharredBrick": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredBrick",
+        "CharredTrim": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredTrim",
+        "CharredRoofMembrane": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredRoofMembrane",
+        "CharredSign": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredTrim"
+      },
+      "destination": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes",
+      "sha256": "82d44e4a82bad0bb02ac05d56b1d745b5db3a8713b12b76de4f8b688f9d76fc8"
+    },
+    {
+      "asset_id": "building.shop.medium.a.surfaces",
+      "prototype_only": true,
+      "export": "ArtSource/Exports/BuildingSurfacePrototypes/SM_CommercialMedium_SurfacePrototype.fbx",
+      "source": "ArtSource/Blender/CityBuildingSurfacePrototype.blend",
+      "accepted_geometry_sha256": "9908357a700dc20b8dfca7b43ed119c802ef99d6840c466a16df68bcfe84398a",
+      "accepted_geometry_export": "ArtSource/Exports/BuildingSurfaceGeometry/SM_CommercialMedium_SurfaceGeometry.fbx",
+      "input_geometry_export": "ArtSource/Exports/SM_Building_Shop_Medium_A.fbx",
+      "input_geometry_sha256": "f5b9d15eb900163adcdd42dcbb032e046065e3cd8b12b4e29f24aa649d2c5556",
+      "geometry_refinement": {
+        "sign_bottom_m": 10,
+        "sign_roof_inset_m": 1.1,
+        "edited_source_vertices": [
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39
+        ],
+        "source_vertex_count": 244,
+        "source_face_count": 89
+      },
+      "triangles": 178,
+      "sections": 4,
+      "roof_sign_detail": {
+        "roof_type": "RoofMembrane",
+        "roof_tile_m": 8,
+        "roof_slot": 2,
+        "roof_faces": [
+          5,
+          17
+        ],
+        "mechanical_slot": null,
+        "sign_faces": [
+          27
+        ],
+        "sign_slot": 3,
+        "sign_aspect": "Wide",
+        "sign_local_uv": {
+          "108": [
+            1.0,
+            0.0
+          ],
+          "109": [
+            1.0,
+            1.0
+          ],
+          "110": [
+            0.0,
+            1.0
+          ],
+          "111": [
+            0.0,
+            0.0
+          ]
+        },
+        "sign_atlas_index": 2
+      },
+      "category": "Commercial",
+      "density": "Medium",
+      "damaged": false,
+      "dimensions_m": [
+        15.399999618530273,
+        17.434999465942383,
+        23.0
+      ],
+      "mechanical_mask_values": [],
+      "material_slots": {
+        "CommercialBrick": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CommercialBrick",
+        "Roof": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_Roof",
+        "RoofMembrane": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_RoofMembrane",
+        "StoreSignWide": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_StoreSignWide"
+      },
+      "destination": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes",
+      "sha256": "81a481bba5dce09efbf83166b50e41f97106ceac9647af228578e78dbc82402e"
+    },
+    {
+      "asset_id": "building.shop.medium.a.damaged.surfaces",
+      "prototype_only": true,
+      "export": "ArtSource/Exports/BuildingSurfacePrototypes/SM_CommercialMedium_SurfacePrototype_Damaged.fbx",
+      "source": "ArtSource/Blender/CityBuildingSurfacePrototype.blend",
+      "accepted_geometry_sha256": "453a58e54b7bb87d7a766f83ad70f7958a39f90cfac787f474c76358e32bd6f0",
+      "accepted_geometry_export": "ArtSource/Exports/BuildingSurfaceGeometry/SM_CommercialMedium_SurfaceGeometry_Damaged.fbx",
+      "input_geometry_export": "ArtSource/Exports/SM_Building_Shop_Medium_A_Damaged.fbx",
+      "input_geometry_sha256": "a86dc4a0482364b02a2b0cc1925303198c838fb43d063347c2b8c0f9a0da6fd8",
+      "geometry_refinement": {
+        "sign_bottom_m": 10,
+        "sign_roof_inset_m": 1.1,
+        "edited_source_vertices": [
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39
+        ],
+        "source_vertex_count": 244,
+        "source_face_count": 89
+      },
+      "triangles": 178,
+      "sections": 4,
+      "roof_sign_detail": {
+        "roof_type": "RoofMembrane",
+        "roof_tile_m": 8,
+        "roof_slot": 2,
+        "roof_faces": [
+          5,
+          17
+        ],
+        "mechanical_slot": null,
+        "sign_faces": [
+          27
+        ],
+        "sign_slot": 3,
+        "sign_aspect": "Wide",
+        "sign_local_uv": {
+          "108": [
+            1.0,
+            0.0
+          ],
+          "109": [
+            0.0,
+            0.0
+          ],
+          "110": [
+            0.0,
+            1.0
+          ],
+          "111": [
+            1.0,
+            1.0
+          ]
+        },
+        "sign_atlas_index": 2
+      },
+      "category": "Commercial",
+      "density": "Medium",
+      "damaged": true,
+      "dimensions_m": [
+        15.399999618530273,
+        17.434999465942383,
+        19.101282119750977
+      ],
+      "mechanical_mask_values": [],
+      "material_slots": {
+        "CharredBrick": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredBrick",
+        "CharredTrim": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredTrim",
+        "CharredRoofMembrane": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredRoofMembrane",
+        "CharredSign": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredTrim"
+      },
+      "destination": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes",
+      "sha256": "5ebee5e370502c14c24ce18f7ec015b466785a05def7ef7d1082801b136e6e47"
+    },
+    {
+      "asset_id": "building.shop.high.a.surfaces",
+      "prototype_only": true,
+      "export": "ArtSource/Exports/BuildingSurfacePrototypes/SM_CommercialHigh_SurfacePrototype.fbx",
+      "source": "ArtSource/Blender/CityBuildingSurfacePrototype.blend",
+      "accepted_geometry_sha256": "fa6bea3b683be1abe07d99045da30726d91be8af3380f62c072f9dff4812f65d",
+      "accepted_geometry_export": "ArtSource/Exports/SM_Building_Shop_High_A.fbx",
+      "input_geometry_export": "ArtSource/Exports/SM_Building_Shop_High_A.fbx",
+      "input_geometry_sha256": "fa6bea3b683be1abe07d99045da30726d91be8af3380f62c072f9dff4812f65d",
+      "geometry_refinement": null,
+      "triangles": 250,
+      "sections": 4,
+      "roof_sign_detail": {
+        "roof_type": "RoofMembrane",
+        "roof_tile_m": 8,
+        "roof_slot": 2,
+        "roof_faces": [
+          5,
+          17
+        ],
+        "mechanical_slot": null,
+        "sign_faces": [
+          27
+        ],
+        "sign_slot": 3,
+        "sign_aspect": "Wide",
+        "sign_local_uv": {
+          "108": [
+            1.0,
+            0.0
+          ],
+          "109": [
+            1.0,
+            1.0
+          ],
+          "110": [
+            0.0,
+            1.0
+          ],
+          "111": [
+            0.0,
+            0.0
+          ]
+        },
+        "sign_atlas_index": 3
+      },
+      "category": "Commercial",
+      "density": "High",
+      "damaged": false,
+      "dimensions_m": [
+        15.399999618530273,
+        17.434999465942383,
+        39.0
+      ],
+      "mechanical_mask_values": [],
+      "material_slots": {
+        "CommercialBrick": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CommercialBrick",
+        "Roof": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_Roof",
+        "RoofMembrane": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_RoofMembrane",
+        "StoreSignWide": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_StoreSignWide"
+      },
+      "destination": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes",
+      "sha256": "17ec7201c5f80dd685f37d86c57974b3ab8a0346d8011a163ac37a171c788d24"
+    },
+    {
+      "asset_id": "building.shop.high.a.damaged.surfaces",
+      "prototype_only": true,
+      "export": "ArtSource/Exports/BuildingSurfacePrototypes/SM_CommercialHigh_SurfacePrototype_Damaged.fbx",
+      "source": "ArtSource/Blender/CityBuildingSurfacePrototype.blend",
+      "accepted_geometry_sha256": "f2aff0bba50724693a170e571fa958b0550fe9a6d98020e49d460f500ce92658",
+      "accepted_geometry_export": "ArtSource/Exports/SM_Building_Shop_High_A_Damaged.fbx",
+      "input_geometry_export": "ArtSource/Exports/SM_Building_Shop_High_A_Damaged.fbx",
+      "input_geometry_sha256": "f2aff0bba50724693a170e571fa958b0550fe9a6d98020e49d460f500ce92658",
+      "geometry_refinement": null,
+      "triangles": 250,
+      "sections": 4,
+      "roof_sign_detail": {
+        "roof_type": "RoofMembrane",
+        "roof_tile_m": 8,
+        "roof_slot": 2,
+        "roof_faces": [
+          5,
+          17
+        ],
+        "mechanical_slot": null,
+        "sign_faces": [
+          27
+        ],
+        "sign_slot": 3,
+        "sign_aspect": "Wide",
+        "sign_local_uv": {
+          "108": [
+            1.0,
+            0.0
+          ],
+          "109": [
+            1.0,
+            1.0
+          ],
+          "110": [
+            0.0,
+            1.0
+          ],
+          "111": [
+            0.0,
+            0.0
+          ]
+        },
+        "sign_atlas_index": 3
+      },
+      "category": "Commercial",
+      "density": "High",
+      "damaged": true,
+      "dimensions_m": [
+        15.399999618530273,
+        17.434999465942383,
+        32.900150299072266
+      ],
+      "mechanical_mask_values": [],
+      "material_slots": {
+        "CharredBrick": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredBrick",
+        "CharredTrim": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredTrim",
+        "CharredRoofMembrane": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredRoofMembrane",
+        "CharredSign": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredTrim"
+      },
+      "destination": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes",
+      "sha256": "87b535fe7590d15842c6334b7be3e35af4818d116a3db8a38fc9e38c8331e5e4"
+    },
+    {
+      "asset_id": "building.factory.a.surfaces",
+      "prototype_only": true,
+      "export": "ArtSource/Exports/BuildingSurfacePrototypes/SM_IndustrialLow_SurfacePrototype.fbx",
+      "source": "ArtSource/Blender/CityBuildingSurfacePrototype.blend",
+      "accepted_geometry_sha256": "f33b7eae1adf7dca0d9c812f67b65fab7ae9cb70b448c093ae205a1bce6e7b5b",
+      "accepted_geometry_export": "ArtSource/Exports/SM_Building_Factory_A.fbx",
+      "input_geometry_export": "ArtSource/Exports/SM_Building_Factory_A.fbx",
+      "input_geometry_sha256": "f33b7eae1adf7dca0d9c812f67b65fab7ae9cb70b448c093ae205a1bce6e7b5b",
+      "geometry_refinement": null,
+      "triangles": 232,
+      "sections": 4,
+      "roof_sign_detail": {
+        "roof_type": "RoofMetal",
+        "roof_tile_m": 4.8,
+        "roof_slot": 3,
+        "roof_faces": [
+          11
+        ],
+        "mechanical_slot": 2
+      },
+      "category": "Industrial",
+      "density": "Low",
+      "damaged": false,
+      "dimensions_m": [
+        16.0,
+        17.899999618530273,
+        17.0
+      ],
+      "mechanical_mask_values": [
+        1
+      ],
+      "material_slots": {
+        "IndustrialBrick": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_IndustrialBrick",
+        "Roof": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_Roof",
+        "IndustrialMechanical": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_IndustrialMechanical",
+        "RoofMetal": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_RoofMetal"
+      },
+      "destination": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes",
+      "sha256": "2608fb3b96f19197e19c1cf4c27917552af759b075950a58d9d66c687433ede0"
+    },
+    {
+      "asset_id": "building.factory.a.damaged.surfaces",
+      "prototype_only": true,
+      "export": "ArtSource/Exports/BuildingSurfacePrototypes/SM_IndustrialLow_SurfacePrototype_Damaged.fbx",
+      "source": "ArtSource/Blender/CityBuildingSurfacePrototype.blend",
+      "accepted_geometry_sha256": "95e7d2c360b12d6b81cb009507116887aeac3e8c5e1c3a2e0ddf0a03bcfca1aa",
+      "accepted_geometry_export": "ArtSource/Exports/SM_Building_Factory_A_Damaged.fbx",
+      "input_geometry_export": "ArtSource/Exports/SM_Building_Factory_A_Damaged.fbx",
+      "input_geometry_sha256": "95e7d2c360b12d6b81cb009507116887aeac3e8c5e1c3a2e0ddf0a03bcfca1aa",
+      "geometry_refinement": null,
+      "triangles": 232,
+      "sections": 4,
+      "roof_sign_detail": {
+        "roof_type": "RoofMetal",
+        "roof_tile_m": 4.8,
+        "roof_slot": 3,
+        "roof_faces": [
+          11
+        ],
+        "mechanical_slot": 2
+      },
+      "category": "Industrial",
+      "density": "Low",
+      "damaged": true,
+      "dimensions_m": [
+        16.0,
+        17.899999618530273,
+        12.766651153564453
+      ],
+      "mechanical_mask_values": [
+        1
+      ],
+      "material_slots": {
+        "CharredBrick": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredBrick",
+        "CharredTrim": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredTrim",
+        "CharredMechanical": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredMechanical",
+        "CharredRoofMetal": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredRoofMetal"
+      },
+      "destination": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes",
+      "sha256": "6da8cbb921a4f78766e64700744158e55cc9f765a53db61205bce0e1b6584114"
+    },
+    {
+      "asset_id": "building.factory.medium.a.surfaces",
+      "prototype_only": true,
+      "export": "ArtSource/Exports/BuildingSurfacePrototypes/SM_IndustrialMedium_SurfacePrototype.fbx",
+      "source": "ArtSource/Blender/CityBuildingSurfacePrototype.blend",
+      "accepted_geometry_sha256": "d5efe5099598d12c5c4a23256252d12f56c85125e06e6e0182738f467f88a94c",
+      "accepted_geometry_export": "ArtSource/Exports/BuildingSurfaceGeometry/SM_IndustrialMedium_SurfaceGeometry.fbx",
+      "input_geometry_export": "ArtSource/Exports/SM_Building_Factory_Medium_A.fbx",
+      "input_geometry_sha256": "93ca309a03b6ed6e96b823c4da1c077dbff0bf8bf1703f9f9d7873785329ba62",
+      "geometry_refinement": {
+        "added_facade_windows": 23,
+        "open_upper_windows": 12,
+        "open_angle_degrees": 20,
+        "source_faces_preserved": 106,
+        "added_faces": 83,
+        "edited_source_vertices": [
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          96,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107,
+          108,
+          109,
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118,
+          119,
+          120,
+          121,
+          122,
+          123,
+          124,
+          125,
+          126,
+          127,
+          128,
+          129,
+          130,
+          131,
+          132,
+          133,
+          134,
+          135,
+          136,
+          137,
+          138,
+          139,
+          140,
+          141,
+          142,
+          143,
+          144,
+          145,
+          146,
+          147,
+          148,
+          149,
+          150,
+          151,
+          152,
+          153,
+          154,
+          155,
+          156,
+          157,
+          158,
+          159,
+          160,
+          161,
+          162,
+          163,
+          164,
+          165,
+          166,
+          167
+        ],
+        "source_vertex_count": 184,
+        "source_face_count": 106
+      },
+      "triangles": 410,
+      "sections": 4,
+      "roof_sign_detail": {
+        "roof_type": "RoofMetal",
+        "roof_tile_m": 4.8,
+        "roof_slot": 3,
+        "roof_faces": [
+          11
+        ],
+        "mechanical_slot": 2
+      },
+      "category": "Industrial",
+      "density": "Medium",
+      "damaged": false,
+      "dimensions_m": [
+        16.0,
+        17.899999618530273,
+        28.0
+      ],
+      "mechanical_mask_values": [
+        0,
+        1
+      ],
+      "material_slots": {
+        "IndustrialBrick": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_IndustrialBrick",
+        "Roof": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_Roof",
+        "IndustrialMechanical": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_IndustrialMechanical",
+        "RoofMetal": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_RoofMetal"
+      },
+      "destination": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes",
+      "sha256": "d43b735924dc9a1cec0b419a22129c89cc53447bf0ba98ae234aeeae7a7c0693"
+    },
+    {
+      "asset_id": "building.factory.medium.a.damaged.surfaces",
+      "prototype_only": true,
+      "export": "ArtSource/Exports/BuildingSurfacePrototypes/SM_IndustrialMedium_SurfacePrototype_Damaged.fbx",
+      "source": "ArtSource/Blender/CityBuildingSurfacePrototype.blend",
+      "accepted_geometry_sha256": "0b213184d63a459107450e3d8adcbd09edfea4cefc149909c306eaf0d3e1f427",
+      "accepted_geometry_export": "ArtSource/Exports/BuildingSurfaceGeometry/SM_IndustrialMedium_SurfaceGeometry_Damaged.fbx",
+      "input_geometry_export": "ArtSource/Exports/SM_Building_Factory_Medium_A_Damaged.fbx",
+      "input_geometry_sha256": "70fb76ee61a115afeed9177836fd3fde49a30acf954e6a9524f1ab45228f7012",
+      "geometry_refinement": {
+        "added_facade_windows": 23,
+        "open_upper_windows": 12,
+        "open_angle_degrees": 20,
+        "source_faces_preserved": 106,
+        "added_faces": 83,
+        "edited_source_vertices": [
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          96,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107,
+          108,
+          109,
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118,
+          119,
+          120,
+          121,
+          122,
+          123,
+          124,
+          125,
+          126,
+          127,
+          128,
+          129,
+          130,
+          131,
+          132,
+          133,
+          134,
+          135,
+          136,
+          137,
+          138,
+          139,
+          140,
+          141,
+          142,
+          143,
+          144,
+          145,
+          146,
+          147,
+          148,
+          149,
+          150,
+          151,
+          152,
+          153,
+          154,
+          155,
+          156,
+          157,
+          158,
+          159,
+          160,
+          161,
+          162,
+          163,
+          164,
+          165,
+          166,
+          167
+        ],
+        "source_vertex_count": 184,
+        "source_face_count": 106
+      },
+      "triangles": 410,
+      "sections": 4,
+      "roof_sign_detail": {
+        "roof_type": "RoofMetal",
+        "roof_tile_m": 4.8,
+        "roof_slot": 3,
+        "roof_faces": [
+          11
+        ],
+        "mechanical_slot": 2
+      },
+      "category": "Industrial",
+      "density": "Medium",
+      "damaged": true,
+      "dimensions_m": [
+        16.0,
+        17.899999618530273,
+        23.928918838500977
+      ],
+      "mechanical_mask_values": [
+        0,
+        1
+      ],
+      "material_slots": {
+        "CharredBrick": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredBrick",
+        "CharredTrim": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredTrim",
+        "CharredMechanical": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredMechanical",
+        "CharredRoofMetal": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredRoofMetal"
+      },
+      "destination": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes",
+      "sha256": "757e346fd16a6e6a622c63f7bdc08e3f887eeab7dc9a11d740e8d8ed9f7bd3c6"
+    },
+    {
+      "asset_id": "building.factory.high.a.surfaces",
+      "prototype_only": true,
+      "export": "ArtSource/Exports/BuildingSurfacePrototypes/SM_IndustrialHigh_SurfacePrototype.fbx",
+      "source": "ArtSource/Blender/CityBuildingSurfacePrototype.blend",
+      "accepted_geometry_sha256": "ff234773d2e2513e66654139ec15c302eb5d44c263baece4fc8ad26f1bc0c368",
+      "accepted_geometry_export": "ArtSource/Exports/BuildingSurfaceGeometry/SM_IndustrialHigh_SurfaceGeometry.fbx",
+      "input_geometry_export": "ArtSource/Exports/SM_Building_Factory_High_A.fbx",
+      "input_geometry_sha256": "16afa64fa0d1eb3174be1aa36eccda8b283792821ff09a910ebe336438342c8f",
+      "geometry_refinement": {
+        "added_facade_windows": 34,
+        "open_upper_windows": 12,
+        "open_angle_degrees": 20,
+        "source_faces_preserved": 120,
+        "added_faces": 94,
+        "edited_source_vertices": [
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91,
+          92,
+          93,
+          94,
+          95,
+          96,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103,
+          120,
+          121,
+          122,
+          123,
+          124,
+          125,
+          126,
+          127,
+          128,
+          129,
+          130,
+          131,
+          132,
+          133,
+          134,
+          135,
+          136,
+          137,
+          138,
+          139,
+          140,
+          141,
+          142,
+          143,
+          144,
+          145,
+          146,
+          147,
+          148,
+          149,
+          150,
+          151,
+          152,
+          153,
+          154,
+          155,
+          156,
+          157,
+          158,
+          159,
+          160,
+          161,
+          162,
+          163,
+          164,
+          165,
+          166,
+          167,
+          168,
+          169,
+          170,
+          171,
+          172,
+          173,
+          174,
+          175,
+          176,
+          177,
+          178,
+          179,
+          180,
+          181,
+          182,
+          183,
+          184,
+          185,
+          186,
+          187,
+          188,
+          189,
+          190,
+          191
+        ],
+        "source_vertex_count": 208,
+        "source_face_count": 120
+      },
+      "triangles": 476,
+      "sections": 4,
+      "roof_sign_detail": {
+        "roof_type": "RoofMetal",
+        "roof_tile_m": 4.8,
+        "roof_slot": 3,
+        "roof_faces": [
+          11
+        ],
+        "mechanical_slot": 2
+      },
+      "category": "Industrial",
+      "density": "High",
+      "damaged": false,
+      "dimensions_m": [
+        16.0,
+        17.899999618530273,
+        41.0
+      ],
+      "mechanical_mask_values": [
+        0,
+        1
+      ],
+      "material_slots": {
+        "IndustrialBrick": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_IndustrialBrick",
+        "Roof": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_Roof",
+        "IndustrialMechanical": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_IndustrialMechanical",
+        "RoofMetal": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_RoofMetal"
+      },
+      "destination": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes",
+      "sha256": "f1c415b35509075aecbce6e9712c72b23a9346ce78255fb0818f6e8eec8633e7"
+    },
+    {
+      "asset_id": "building.factory.high.a.damaged.surfaces",
+      "prototype_only": true,
+      "export": "ArtSource/Exports/BuildingSurfacePrototypes/SM_IndustrialHigh_SurfacePrototype_Damaged.fbx",
+      "source": "ArtSource/Blender/CityBuildingSurfacePrototype.blend",
+      "accepted_geometry_sha256": "8bdef77220f5be81878ea525863655fa7132d6788ba480186d6c4c2daee90d75",
+      "accepted_geometry_export": "ArtSource/Exports/BuildingSurfaceGeometry/SM_IndustrialHigh_SurfaceGeometry_Damaged.fbx",
+      "input_geometry_export": "ArtSource/Exports/SM_Building_Factory_High_A_Damaged.fbx",
+      "input_geometry_sha256": "f7508dc942948f9302d332a6453805f38cb334fb238acf5285fd530d28f47bc4",
+      "geometry_refinement": {
+        "added_facade_windows": 34,
+        "open_upper_windows": 12,
+        "open_angle_degrees": 20,
+        "source_faces_preserved": 120,
+        "added_faces": 94,
+        "edited_source_vertices": [
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91,
+          92,
+          93,
+          94,
+          95,
+          96,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103,
+          120,
+          121,
+          122,
+          123,
+          124,
+          125,
+          126,
+          127,
+          128,
+          129,
+          130,
+          131,
+          132,
+          133,
+          134,
+          135,
+          136,
+          137,
+          138,
+          139,
+          140,
+          141,
+          142,
+          143,
+          144,
+          145,
+          146,
+          147,
+          148,
+          149,
+          150,
+          151,
+          152,
+          153,
+          154,
+          155,
+          156,
+          157,
+          158,
+          159,
+          160,
+          161,
+          162,
+          163,
+          164,
+          165,
+          166,
+          167,
+          168,
+          169,
+          170,
+          171,
+          172,
+          173,
+          174,
+          175,
+          176,
+          177,
+          178,
+          179,
+          180,
+          181,
+          182,
+          183,
+          184,
+          185,
+          186,
+          187,
+          188,
+          189,
+          190,
+          191
+        ],
+        "source_vertex_count": 208,
+        "source_face_count": 120
+      },
+      "triangles": 476,
+      "sections": 4,
+      "roof_sign_detail": {
+        "roof_type": "RoofMetal",
+        "roof_tile_m": 4.8,
+        "roof_slot": 3,
+        "roof_faces": [
+          11
+        ],
+        "mechanical_slot": 2
+      },
+      "category": "Industrial",
+      "density": "High",
+      "damaged": true,
+      "dimensions_m": [
+        16.0,
+        17.899999618530273,
+        35.2599983215332
+      ],
+      "mechanical_mask_values": [
+        0,
+        1
+      ],
+      "material_slots": {
+        "CharredBrick": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredBrick",
+        "CharredTrim": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredTrim",
+        "CharredMechanical": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredMechanical",
+        "CharredRoofMetal": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredRoofMetal"
+      },
+      "destination": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes",
+      "sha256": "ec191284db94f622b7ae6f1f01c3733afedd8f22220dcb2b6a10e8f8f01f32ec"
+    }
+  ],
+  "roof_sign_textures": "ArtSource/Textures/RoofsSigns/roofs_signs.json",
+  "sign_variants": [
+    {
+      "asset_id": "building.shop.a.surfaces.store.market",
+      "prototype_only": true,
+      "export": "ArtSource/Exports/BuildingSurfacePrototypes/SM_CommercialLow_StoreMarket.fbx",
+      "source": "ArtSource/Blender/CityBuildingSurfacePrototype.blend",
+      "accepted_geometry_sha256": "11263b1cde7bd4acc90aae3d01b40a074abb3c05da358735f83f69f0f265359b",
+      "accepted_geometry_export": "ArtSource/Exports/SM_Building_Shop_A.fbx",
+      "input_geometry_export": "ArtSource/Exports/SM_Building_Shop_A.fbx",
+      "input_geometry_sha256": "11263b1cde7bd4acc90aae3d01b40a074abb3c05da358735f83f69f0f265359b",
+      "geometry_refinement": null,
+      "triangles": 118,
+      "sections": 4,
+      "roof_sign_detail": {
+        "roof_type": "RoofMembrane",
+        "roof_tile_m": 8,
+        "roof_slot": 2,
+        "roof_faces": [
+          5
+        ],
+        "mechanical_slot": null,
+        "sign_faces": [
+          15
+        ],
+        "sign_slot": 3,
+        "sign_aspect": "Tall",
+        "sign_local_uv": {
+          "60": [
+            1.0,
+            0.0
+          ],
+          "61": [
+            1.0,
+            1.0
+          ],
+          "62": [
+            0.0,
+            1.0
+          ],
+          "63": [
+            0.0,
+            0.0
+          ]
+        },
+        "sign_atlas_index": 0
+      },
+      "category": "Commercial",
+      "density": "Low",
+      "damaged": false,
+      "dimensions_m": [
+        15.399999618530273,
+        17.549999237060547,
+        12.0
+      ],
+      "mechanical_mask_values": [],
+      "material_slots": {
+        "CommercialBrick": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CommercialBrick",
+        "Roof": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_Roof",
+        "RoofMembrane": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_RoofMembrane",
+        "StoreSignTall": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_StoreSignTall"
+      },
+      "destination": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes",
+      "sha256": "93cb905df951c531deaf26863169f74c98e90a6867be536863794edeaef59141",
+      "base_asset_id": "building.shop.a.surfaces",
+      "business": "market"
+    },
+    {
+      "asset_id": "building.shop.a.surfaces.store.bakery",
+      "prototype_only": true,
+      "export": "ArtSource/Exports/BuildingSurfacePrototypes/SM_CommercialLow_StoreBakery.fbx",
+      "source": "ArtSource/Blender/CityBuildingSurfacePrototype.blend",
+      "accepted_geometry_sha256": "11263b1cde7bd4acc90aae3d01b40a074abb3c05da358735f83f69f0f265359b",
+      "accepted_geometry_export": "ArtSource/Exports/SM_Building_Shop_A.fbx",
+      "input_geometry_export": "ArtSource/Exports/SM_Building_Shop_A.fbx",
+      "input_geometry_sha256": "11263b1cde7bd4acc90aae3d01b40a074abb3c05da358735f83f69f0f265359b",
+      "geometry_refinement": null,
+      "triangles": 118,
+      "sections": 4,
+      "roof_sign_detail": {
+        "roof_type": "RoofMembrane",
+        "roof_tile_m": 8,
+        "roof_slot": 2,
+        "roof_faces": [
+          5
+        ],
+        "mechanical_slot": null,
+        "sign_faces": [
+          15
+        ],
+        "sign_slot": 3,
+        "sign_aspect": "Tall",
+        "sign_local_uv": {
+          "60": [
+            1.0,
+            0.0
+          ],
+          "61": [
+            1.0,
+            1.0
+          ],
+          "62": [
+            0.0,
+            1.0
+          ],
+          "63": [
+            0.0,
+            0.0
+          ]
+        },
+        "sign_atlas_index": 1
+      },
+      "category": "Commercial",
+      "density": "Low",
+      "damaged": false,
+      "dimensions_m": [
+        15.399999618530273,
+        17.549999237060547,
+        12.0
+      ],
+      "mechanical_mask_values": [],
+      "material_slots": {
+        "CommercialBrick": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CommercialBrick",
+        "Roof": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_Roof",
+        "RoofMembrane": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_RoofMembrane",
+        "StoreSignTall": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_StoreSignTall"
+      },
+      "destination": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes",
+      "sha256": "6938816e07423d94d9216f9ce6fc0dd9a06b667a388271c8b328811f34f285a2",
+      "base_asset_id": "building.shop.a.surfaces",
+      "business": "bakery"
+    },
+    {
+      "asset_id": "building.shop.a.surfaces.store.cafe",
+      "prototype_only": true,
+      "export": "ArtSource/Exports/BuildingSurfacePrototypes/SM_CommercialLow_StoreCafe.fbx",
+      "source": "ArtSource/Blender/CityBuildingSurfacePrototype.blend",
+      "accepted_geometry_sha256": "11263b1cde7bd4acc90aae3d01b40a074abb3c05da358735f83f69f0f265359b",
+      "accepted_geometry_export": "ArtSource/Exports/SM_Building_Shop_A.fbx",
+      "input_geometry_export": "ArtSource/Exports/SM_Building_Shop_A.fbx",
+      "input_geometry_sha256": "11263b1cde7bd4acc90aae3d01b40a074abb3c05da358735f83f69f0f265359b",
+      "geometry_refinement": null,
+      "triangles": 118,
+      "sections": 4,
+      "roof_sign_detail": {
+        "roof_type": "RoofMembrane",
+        "roof_tile_m": 8,
+        "roof_slot": 2,
+        "roof_faces": [
+          5
+        ],
+        "mechanical_slot": null,
+        "sign_faces": [
+          15
+        ],
+        "sign_slot": 3,
+        "sign_aspect": "Tall",
+        "sign_local_uv": {
+          "60": [
+            1.0,
+            0.0
+          ],
+          "61": [
+            1.0,
+            1.0
+          ],
+          "62": [
+            0.0,
+            1.0
+          ],
+          "63": [
+            0.0,
+            0.0
+          ]
+        },
+        "sign_atlas_index": 2
+      },
+      "category": "Commercial",
+      "density": "Low",
+      "damaged": false,
+      "dimensions_m": [
+        15.399999618530273,
+        17.549999237060547,
+        12.0
+      ],
+      "mechanical_mask_values": [],
+      "material_slots": {
+        "CommercialBrick": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CommercialBrick",
+        "Roof": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_Roof",
+        "RoofMembrane": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_RoofMembrane",
+        "StoreSignTall": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_StoreSignTall"
+      },
+      "destination": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes",
+      "sha256": "aae697aefe1e11b99650757b6ca8bd586f58a28c05dae89d2372dc9bd19ea227",
+      "base_asset_id": "building.shop.a.surfaces",
+      "business": "cafe"
+    },
+    {
+      "asset_id": "building.shop.a.surfaces.store.books",
+      "prototype_only": true,
+      "export": "ArtSource/Exports/BuildingSurfacePrototypes/SM_CommercialLow_StoreBooks.fbx",
+      "source": "ArtSource/Blender/CityBuildingSurfacePrototype.blend",
+      "accepted_geometry_sha256": "11263b1cde7bd4acc90aae3d01b40a074abb3c05da358735f83f69f0f265359b",
+      "accepted_geometry_export": "ArtSource/Exports/SM_Building_Shop_A.fbx",
+      "input_geometry_export": "ArtSource/Exports/SM_Building_Shop_A.fbx",
+      "input_geometry_sha256": "11263b1cde7bd4acc90aae3d01b40a074abb3c05da358735f83f69f0f265359b",
+      "geometry_refinement": null,
+      "triangles": 118,
+      "sections": 4,
+      "roof_sign_detail": {
+        "roof_type": "RoofMembrane",
+        "roof_tile_m": 8,
+        "roof_slot": 2,
+        "roof_faces": [
+          5
+        ],
+        "mechanical_slot": null,
+        "sign_faces": [
+          15
+        ],
+        "sign_slot": 3,
+        "sign_aspect": "Tall",
+        "sign_local_uv": {
+          "60": [
+            1.0,
+            0.0
+          ],
+          "61": [
+            1.0,
+            1.0
+          ],
+          "62": [
+            0.0,
+            1.0
+          ],
+          "63": [
+            0.0,
+            0.0
+          ]
+        },
+        "sign_atlas_index": 3
+      },
+      "category": "Commercial",
+      "density": "Low",
+      "damaged": false,
+      "dimensions_m": [
+        15.399999618530273,
+        17.549999237060547,
+        12.0
+      ],
+      "mechanical_mask_values": [],
+      "material_slots": {
+        "CommercialBrick": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CommercialBrick",
+        "Roof": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_Roof",
+        "RoofMembrane": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_RoofMembrane",
+        "StoreSignTall": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_StoreSignTall"
+      },
+      "destination": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes",
+      "sha256": "73214f9da212d480e3e4f4d72f4725017c34f6bdb4ed19c9f71f829d36af0569",
+      "base_asset_id": "building.shop.a.surfaces",
+      "business": "books"
+    },
+    {
+      "asset_id": "building.shop.a.surfaces.store.pharmacy",
+      "prototype_only": true,
+      "export": "ArtSource/Exports/BuildingSurfacePrototypes/SM_CommercialLow_StorePharmacy.fbx",
+      "source": "ArtSource/Blender/CityBuildingSurfacePrototype.blend",
+      "accepted_geometry_sha256": "11263b1cde7bd4acc90aae3d01b40a074abb3c05da358735f83f69f0f265359b",
+      "accepted_geometry_export": "ArtSource/Exports/SM_Building_Shop_A.fbx",
+      "input_geometry_export": "ArtSource/Exports/SM_Building_Shop_A.fbx",
+      "input_geometry_sha256": "11263b1cde7bd4acc90aae3d01b40a074abb3c05da358735f83f69f0f265359b",
+      "geometry_refinement": null,
+      "triangles": 118,
+      "sections": 4,
+      "roof_sign_detail": {
+        "roof_type": "RoofMembrane",
+        "roof_tile_m": 8,
+        "roof_slot": 2,
+        "roof_faces": [
+          5
+        ],
+        "mechanical_slot": null,
+        "sign_faces": [
+          15
+        ],
+        "sign_slot": 3,
+        "sign_aspect": "Tall",
+        "sign_local_uv": {
+          "60": [
+            1.0,
+            0.0
+          ],
+          "61": [
+            1.0,
+            1.0
+          ],
+          "62": [
+            0.0,
+            1.0
+          ],
+          "63": [
+            0.0,
+            0.0
+          ]
+        },
+        "sign_atlas_index": 4
+      },
+      "category": "Commercial",
+      "density": "Low",
+      "damaged": false,
+      "dimensions_m": [
+        15.399999618530273,
+        17.549999237060547,
+        12.0
+      ],
+      "mechanical_mask_values": [],
+      "material_slots": {
+        "CommercialBrick": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CommercialBrick",
+        "Roof": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_Roof",
+        "RoofMembrane": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_RoofMembrane",
+        "StoreSignTall": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_StoreSignTall"
+      },
+      "destination": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes",
+      "sha256": "8ffa16caf27c38228091ffdf2af21c9057bb10eaa800126be0d5f4cfc3a8733a",
+      "base_asset_id": "building.shop.a.surfaces",
+      "business": "pharmacy"
+    },
+    {
+      "asset_id": "building.shop.a.surfaces.store.repairs",
+      "prototype_only": true,
+      "export": "ArtSource/Exports/BuildingSurfacePrototypes/SM_CommercialLow_StoreRepairs.fbx",
+      "source": "ArtSource/Blender/CityBuildingSurfacePrototype.blend",
+      "accepted_geometry_sha256": "11263b1cde7bd4acc90aae3d01b40a074abb3c05da358735f83f69f0f265359b",
+      "accepted_geometry_export": "ArtSource/Exports/SM_Building_Shop_A.fbx",
+      "input_geometry_export": "ArtSource/Exports/SM_Building_Shop_A.fbx",
+      "input_geometry_sha256": "11263b1cde7bd4acc90aae3d01b40a074abb3c05da358735f83f69f0f265359b",
+      "geometry_refinement": null,
+      "triangles": 118,
+      "sections": 4,
+      "roof_sign_detail": {
+        "roof_type": "RoofMembrane",
+        "roof_tile_m": 8,
+        "roof_slot": 2,
+        "roof_faces": [
+          5
+        ],
+        "mechanical_slot": null,
+        "sign_faces": [
+          15
+        ],
+        "sign_slot": 3,
+        "sign_aspect": "Tall",
+        "sign_local_uv": {
+          "60": [
+            1.0,
+            0.0
+          ],
+          "61": [
+            1.0,
+            1.0
+          ],
+          "62": [
+            0.0,
+            1.0
+          ],
+          "63": [
+            0.0,
+            0.0
+          ]
+        },
+        "sign_atlas_index": 5
+      },
+      "category": "Commercial",
+      "density": "Low",
+      "damaged": false,
+      "dimensions_m": [
+        15.399999618530273,
+        17.549999237060547,
+        12.0
+      ],
+      "mechanical_mask_values": [],
+      "material_slots": {
+        "CommercialBrick": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CommercialBrick",
+        "Roof": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_Roof",
+        "RoofMembrane": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_RoofMembrane",
+        "StoreSignTall": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_StoreSignTall"
+      },
+      "destination": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes",
+      "sha256": "4907923706fa2bb76a21f0a34619b7717e2a677ea74c6a36c5e7fa2db0778ea1",
+      "base_asset_id": "building.shop.a.surfaces",
+      "business": "repairs"
+    },
+    {
+      "asset_id": "building.shop.a.surfaces.store.outfitters",
+      "prototype_only": true,
+      "export": "ArtSource/Exports/BuildingSurfacePrototypes/SM_CommercialLow_StoreOutfitters.fbx",
+      "source": "ArtSource/Blender/CityBuildingSurfacePrototype.blend",
+      "accepted_geometry_sha256": "11263b1cde7bd4acc90aae3d01b40a074abb3c05da358735f83f69f0f265359b",
+      "accepted_geometry_export": "ArtSource/Exports/SM_Building_Shop_A.fbx",
+      "input_geometry_export": "ArtSource/Exports/SM_Building_Shop_A.fbx",
+      "input_geometry_sha256": "11263b1cde7bd4acc90aae3d01b40a074abb3c05da358735f83f69f0f265359b",
+      "geometry_refinement": null,
+      "triangles": 118,
+      "sections": 4,
+      "roof_sign_detail": {
+        "roof_type": "RoofMembrane",
+        "roof_tile_m": 8,
+        "roof_slot": 2,
+        "roof_faces": [
+          5
+        ],
+        "mechanical_slot": null,
+        "sign_faces": [
+          15
+        ],
+        "sign_slot": 3,
+        "sign_aspect": "Tall",
+        "sign_local_uv": {
+          "60": [
+            1.0,
+            0.0
+          ],
+          "61": [
+            1.0,
+            1.0
+          ],
+          "62": [
+            0.0,
+            1.0
+          ],
+          "63": [
+            0.0,
+            0.0
+          ]
+        },
+        "sign_atlas_index": 6
+      },
+      "category": "Commercial",
+      "density": "Low",
+      "damaged": false,
+      "dimensions_m": [
+        15.399999618530273,
+        17.549999237060547,
+        12.0
+      ],
+      "mechanical_mask_values": [],
+      "material_slots": {
+        "CommercialBrick": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CommercialBrick",
+        "Roof": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_Roof",
+        "RoofMembrane": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_RoofMembrane",
+        "StoreSignTall": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_StoreSignTall"
+      },
+      "destination": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes",
+      "sha256": "972480a74439799348ea0e7397e7b74b576b6dfc4e3baddfd93c42d1cdeef208",
+      "base_asset_id": "building.shop.a.surfaces",
+      "business": "outfitters"
+    },
+    {
+      "asset_id": "building.shop.a.surfaces.store.tech",
+      "prototype_only": true,
+      "export": "ArtSource/Exports/BuildingSurfacePrototypes/SM_CommercialLow_StoreTech.fbx",
+      "source": "ArtSource/Blender/CityBuildingSurfacePrototype.blend",
+      "accepted_geometry_sha256": "11263b1cde7bd4acc90aae3d01b40a074abb3c05da358735f83f69f0f265359b",
+      "accepted_geometry_export": "ArtSource/Exports/SM_Building_Shop_A.fbx",
+      "input_geometry_export": "ArtSource/Exports/SM_Building_Shop_A.fbx",
+      "input_geometry_sha256": "11263b1cde7bd4acc90aae3d01b40a074abb3c05da358735f83f69f0f265359b",
+      "geometry_refinement": null,
+      "triangles": 118,
+      "sections": 4,
+      "roof_sign_detail": {
+        "roof_type": "RoofMembrane",
+        "roof_tile_m": 8,
+        "roof_slot": 2,
+        "roof_faces": [
+          5
+        ],
+        "mechanical_slot": null,
+        "sign_faces": [
+          15
+        ],
+        "sign_slot": 3,
+        "sign_aspect": "Tall",
+        "sign_local_uv": {
+          "60": [
+            1.0,
+            0.0
+          ],
+          "61": [
+            1.0,
+            1.0
+          ],
+          "62": [
+            0.0,
+            1.0
+          ],
+          "63": [
+            0.0,
+            0.0
+          ]
+        },
+        "sign_atlas_index": 7
+      },
+      "category": "Commercial",
+      "density": "Low",
+      "damaged": false,
+      "dimensions_m": [
+        15.399999618530273,
+        17.549999237060547,
+        12.0
+      ],
+      "mechanical_mask_values": [],
+      "material_slots": {
+        "CommercialBrick": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CommercialBrick",
+        "Roof": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_Roof",
+        "RoofMembrane": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_RoofMembrane",
+        "StoreSignTall": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_StoreSignTall"
+      },
+      "destination": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes",
+      "sha256": "148eeef1fc5bca11dc3b2fb75fbc5930934547b3efd3c28059c058d461055a19",
+      "base_asset_id": "building.shop.a.surfaces",
+      "business": "tech"
+    },
+    {
+      "asset_id": "building.shop.a.damaged.surfaces.store.market",
+      "prototype_only": true,
+      "export": "ArtSource/Exports/BuildingSurfacePrototypes/SM_CommercialLow_StoreMarket_Damaged.fbx",
+      "source": "ArtSource/Blender/CityBuildingSurfacePrototype.blend",
+      "accepted_geometry_sha256": "a4a80339e863762502e2f6913c3c5a5172c70cd51a4cd521ba61f09b426876b6",
+      "accepted_geometry_export": "ArtSource/Exports/SM_Building_Shop_A_Damaged.fbx",
+      "input_geometry_export": "ArtSource/Exports/SM_Building_Shop_A_Damaged.fbx",
+      "input_geometry_sha256": "a4a80339e863762502e2f6913c3c5a5172c70cd51a4cd521ba61f09b426876b6",
+      "geometry_refinement": null,
+      "triangles": 118,
+      "sections": 4,
+      "roof_sign_detail": {
+        "roof_type": "RoofMembrane",
+        "roof_tile_m": 8,
+        "roof_slot": 2,
+        "roof_faces": [
+          5
+        ],
+        "mechanical_slot": null,
+        "sign_faces": [
+          15
+        ],
+        "sign_slot": 3,
+        "sign_aspect": "Tall",
+        "sign_local_uv": {
+          "60": [
+            1.0,
+            0.0
+          ],
+          "61": [
+            1.0,
+            1.0
+          ],
+          "62": [
+            0.0,
+            1.0
+          ],
+          "63": [
+            0.0,
+            0.0
+          ]
+        },
+        "sign_atlas_index": 0
+      },
+      "category": "Commercial",
+      "density": "Low",
+      "damaged": true,
+      "dimensions_m": [
+        15.399999618530273,
+        17.549999237060547,
+        9.81743335723877
+      ],
+      "mechanical_mask_values": [],
+      "material_slots": {
+        "CharredBrick": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredBrick",
+        "CharredTrim": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredTrim",
+        "CharredRoofMembrane": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredRoofMembrane",
+        "CharredSign": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredTrim"
+      },
+      "destination": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes",
+      "sha256": "6718c6de9e763257ac4728d23b985372433fd31e7a795ec1e90d58d653bc1685",
+      "base_asset_id": "building.shop.a.damaged.surfaces",
+      "business": "market"
+    },
+    {
+      "asset_id": "building.shop.a.damaged.surfaces.store.bakery",
+      "prototype_only": true,
+      "export": "ArtSource/Exports/BuildingSurfacePrototypes/SM_CommercialLow_StoreBakery_Damaged.fbx",
+      "source": "ArtSource/Blender/CityBuildingSurfacePrototype.blend",
+      "accepted_geometry_sha256": "a4a80339e863762502e2f6913c3c5a5172c70cd51a4cd521ba61f09b426876b6",
+      "accepted_geometry_export": "ArtSource/Exports/SM_Building_Shop_A_Damaged.fbx",
+      "input_geometry_export": "ArtSource/Exports/SM_Building_Shop_A_Damaged.fbx",
+      "input_geometry_sha256": "a4a80339e863762502e2f6913c3c5a5172c70cd51a4cd521ba61f09b426876b6",
+      "geometry_refinement": null,
+      "triangles": 118,
+      "sections": 4,
+      "roof_sign_detail": {
+        "roof_type": "RoofMembrane",
+        "roof_tile_m": 8,
+        "roof_slot": 2,
+        "roof_faces": [
+          5
+        ],
+        "mechanical_slot": null,
+        "sign_faces": [
+          15
+        ],
+        "sign_slot": 3,
+        "sign_aspect": "Tall",
+        "sign_local_uv": {
+          "60": [
+            1.0,
+            0.0
+          ],
+          "61": [
+            1.0,
+            1.0
+          ],
+          "62": [
+            0.0,
+            1.0
+          ],
+          "63": [
+            0.0,
+            0.0
+          ]
+        },
+        "sign_atlas_index": 1
+      },
+      "category": "Commercial",
+      "density": "Low",
+      "damaged": true,
+      "dimensions_m": [
+        15.399999618530273,
+        17.549999237060547,
+        9.81743335723877
+      ],
+      "mechanical_mask_values": [],
+      "material_slots": {
+        "CharredBrick": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredBrick",
+        "CharredTrim": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredTrim",
+        "CharredRoofMembrane": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredRoofMembrane",
+        "CharredSign": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredTrim"
+      },
+      "destination": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes",
+      "sha256": "32677e913c770f848135af5f444bf6811e233966a2a1a5a71760a07f4f49350e",
+      "base_asset_id": "building.shop.a.damaged.surfaces",
+      "business": "bakery"
+    },
+    {
+      "asset_id": "building.shop.a.damaged.surfaces.store.cafe",
+      "prototype_only": true,
+      "export": "ArtSource/Exports/BuildingSurfacePrototypes/SM_CommercialLow_StoreCafe_Damaged.fbx",
+      "source": "ArtSource/Blender/CityBuildingSurfacePrototype.blend",
+      "accepted_geometry_sha256": "a4a80339e863762502e2f6913c3c5a5172c70cd51a4cd521ba61f09b426876b6",
+      "accepted_geometry_export": "ArtSource/Exports/SM_Building_Shop_A_Damaged.fbx",
+      "input_geometry_export": "ArtSource/Exports/SM_Building_Shop_A_Damaged.fbx",
+      "input_geometry_sha256": "a4a80339e863762502e2f6913c3c5a5172c70cd51a4cd521ba61f09b426876b6",
+      "geometry_refinement": null,
+      "triangles": 118,
+      "sections": 4,
+      "roof_sign_detail": {
+        "roof_type": "RoofMembrane",
+        "roof_tile_m": 8,
+        "roof_slot": 2,
+        "roof_faces": [
+          5
+        ],
+        "mechanical_slot": null,
+        "sign_faces": [
+          15
+        ],
+        "sign_slot": 3,
+        "sign_aspect": "Tall",
+        "sign_local_uv": {
+          "60": [
+            1.0,
+            0.0
+          ],
+          "61": [
+            1.0,
+            1.0
+          ],
+          "62": [
+            0.0,
+            1.0
+          ],
+          "63": [
+            0.0,
+            0.0
+          ]
+        },
+        "sign_atlas_index": 2
+      },
+      "category": "Commercial",
+      "density": "Low",
+      "damaged": true,
+      "dimensions_m": [
+        15.399999618530273,
+        17.549999237060547,
+        9.81743335723877
+      ],
+      "mechanical_mask_values": [],
+      "material_slots": {
+        "CharredBrick": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredBrick",
+        "CharredTrim": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredTrim",
+        "CharredRoofMembrane": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredRoofMembrane",
+        "CharredSign": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredTrim"
+      },
+      "destination": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes",
+      "sha256": "fbc01326146c4f9cddcc48f360b11333866f9dbcdbc88472be853f022640a058",
+      "base_asset_id": "building.shop.a.damaged.surfaces",
+      "business": "cafe"
+    },
+    {
+      "asset_id": "building.shop.a.damaged.surfaces.store.books",
+      "prototype_only": true,
+      "export": "ArtSource/Exports/BuildingSurfacePrototypes/SM_CommercialLow_StoreBooks_Damaged.fbx",
+      "source": "ArtSource/Blender/CityBuildingSurfacePrototype.blend",
+      "accepted_geometry_sha256": "a4a80339e863762502e2f6913c3c5a5172c70cd51a4cd521ba61f09b426876b6",
+      "accepted_geometry_export": "ArtSource/Exports/SM_Building_Shop_A_Damaged.fbx",
+      "input_geometry_export": "ArtSource/Exports/SM_Building_Shop_A_Damaged.fbx",
+      "input_geometry_sha256": "a4a80339e863762502e2f6913c3c5a5172c70cd51a4cd521ba61f09b426876b6",
+      "geometry_refinement": null,
+      "triangles": 118,
+      "sections": 4,
+      "roof_sign_detail": {
+        "roof_type": "RoofMembrane",
+        "roof_tile_m": 8,
+        "roof_slot": 2,
+        "roof_faces": [
+          5
+        ],
+        "mechanical_slot": null,
+        "sign_faces": [
+          15
+        ],
+        "sign_slot": 3,
+        "sign_aspect": "Tall",
+        "sign_local_uv": {
+          "60": [
+            1.0,
+            0.0
+          ],
+          "61": [
+            1.0,
+            1.0
+          ],
+          "62": [
+            0.0,
+            1.0
+          ],
+          "63": [
+            0.0,
+            0.0
+          ]
+        },
+        "sign_atlas_index": 3
+      },
+      "category": "Commercial",
+      "density": "Low",
+      "damaged": true,
+      "dimensions_m": [
+        15.399999618530273,
+        17.549999237060547,
+        9.81743335723877
+      ],
+      "mechanical_mask_values": [],
+      "material_slots": {
+        "CharredBrick": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredBrick",
+        "CharredTrim": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredTrim",
+        "CharredRoofMembrane": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredRoofMembrane",
+        "CharredSign": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredTrim"
+      },
+      "destination": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes",
+      "sha256": "7b880225744eec58b257d464cc746b68c47e9939aa49ea2623ce9b5b7419095f",
+      "base_asset_id": "building.shop.a.damaged.surfaces",
+      "business": "books"
+    },
+    {
+      "asset_id": "building.shop.a.damaged.surfaces.store.pharmacy",
+      "prototype_only": true,
+      "export": "ArtSource/Exports/BuildingSurfacePrototypes/SM_CommercialLow_StorePharmacy_Damaged.fbx",
+      "source": "ArtSource/Blender/CityBuildingSurfacePrototype.blend",
+      "accepted_geometry_sha256": "a4a80339e863762502e2f6913c3c5a5172c70cd51a4cd521ba61f09b426876b6",
+      "accepted_geometry_export": "ArtSource/Exports/SM_Building_Shop_A_Damaged.fbx",
+      "input_geometry_export": "ArtSource/Exports/SM_Building_Shop_A_Damaged.fbx",
+      "input_geometry_sha256": "a4a80339e863762502e2f6913c3c5a5172c70cd51a4cd521ba61f09b426876b6",
+      "geometry_refinement": null,
+      "triangles": 118,
+      "sections": 4,
+      "roof_sign_detail": {
+        "roof_type": "RoofMembrane",
+        "roof_tile_m": 8,
+        "roof_slot": 2,
+        "roof_faces": [
+          5
+        ],
+        "mechanical_slot": null,
+        "sign_faces": [
+          15
+        ],
+        "sign_slot": 3,
+        "sign_aspect": "Tall",
+        "sign_local_uv": {
+          "60": [
+            1.0,
+            0.0
+          ],
+          "61": [
+            1.0,
+            1.0
+          ],
+          "62": [
+            0.0,
+            1.0
+          ],
+          "63": [
+            0.0,
+            0.0
+          ]
+        },
+        "sign_atlas_index": 4
+      },
+      "category": "Commercial",
+      "density": "Low",
+      "damaged": true,
+      "dimensions_m": [
+        15.399999618530273,
+        17.549999237060547,
+        9.81743335723877
+      ],
+      "mechanical_mask_values": [],
+      "material_slots": {
+        "CharredBrick": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredBrick",
+        "CharredTrim": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredTrim",
+        "CharredRoofMembrane": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredRoofMembrane",
+        "CharredSign": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredTrim"
+      },
+      "destination": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes",
+      "sha256": "a76c0397ab1a3a9ecbf14d7fd8c1167a56c868f93bb6d52f2487278ff9f9ea64",
+      "base_asset_id": "building.shop.a.damaged.surfaces",
+      "business": "pharmacy"
+    },
+    {
+      "asset_id": "building.shop.a.damaged.surfaces.store.repairs",
+      "prototype_only": true,
+      "export": "ArtSource/Exports/BuildingSurfacePrototypes/SM_CommercialLow_StoreRepairs_Damaged.fbx",
+      "source": "ArtSource/Blender/CityBuildingSurfacePrototype.blend",
+      "accepted_geometry_sha256": "a4a80339e863762502e2f6913c3c5a5172c70cd51a4cd521ba61f09b426876b6",
+      "accepted_geometry_export": "ArtSource/Exports/SM_Building_Shop_A_Damaged.fbx",
+      "input_geometry_export": "ArtSource/Exports/SM_Building_Shop_A_Damaged.fbx",
+      "input_geometry_sha256": "a4a80339e863762502e2f6913c3c5a5172c70cd51a4cd521ba61f09b426876b6",
+      "geometry_refinement": null,
+      "triangles": 118,
+      "sections": 4,
+      "roof_sign_detail": {
+        "roof_type": "RoofMembrane",
+        "roof_tile_m": 8,
+        "roof_slot": 2,
+        "roof_faces": [
+          5
+        ],
+        "mechanical_slot": null,
+        "sign_faces": [
+          15
+        ],
+        "sign_slot": 3,
+        "sign_aspect": "Tall",
+        "sign_local_uv": {
+          "60": [
+            1.0,
+            0.0
+          ],
+          "61": [
+            1.0,
+            1.0
+          ],
+          "62": [
+            0.0,
+            1.0
+          ],
+          "63": [
+            0.0,
+            0.0
+          ]
+        },
+        "sign_atlas_index": 5
+      },
+      "category": "Commercial",
+      "density": "Low",
+      "damaged": true,
+      "dimensions_m": [
+        15.399999618530273,
+        17.549999237060547,
+        9.81743335723877
+      ],
+      "mechanical_mask_values": [],
+      "material_slots": {
+        "CharredBrick": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredBrick",
+        "CharredTrim": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredTrim",
+        "CharredRoofMembrane": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredRoofMembrane",
+        "CharredSign": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredTrim"
+      },
+      "destination": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes",
+      "sha256": "fa80f3b839b837099166e035a9278c3fb7928c9851deaaca7a2cef17cd284ef2",
+      "base_asset_id": "building.shop.a.damaged.surfaces",
+      "business": "repairs"
+    },
+    {
+      "asset_id": "building.shop.a.damaged.surfaces.store.outfitters",
+      "prototype_only": true,
+      "export": "ArtSource/Exports/BuildingSurfacePrototypes/SM_CommercialLow_StoreOutfitters_Damaged.fbx",
+      "source": "ArtSource/Blender/CityBuildingSurfacePrototype.blend",
+      "accepted_geometry_sha256": "a4a80339e863762502e2f6913c3c5a5172c70cd51a4cd521ba61f09b426876b6",
+      "accepted_geometry_export": "ArtSource/Exports/SM_Building_Shop_A_Damaged.fbx",
+      "input_geometry_export": "ArtSource/Exports/SM_Building_Shop_A_Damaged.fbx",
+      "input_geometry_sha256": "a4a80339e863762502e2f6913c3c5a5172c70cd51a4cd521ba61f09b426876b6",
+      "geometry_refinement": null,
+      "triangles": 118,
+      "sections": 4,
+      "roof_sign_detail": {
+        "roof_type": "RoofMembrane",
+        "roof_tile_m": 8,
+        "roof_slot": 2,
+        "roof_faces": [
+          5
+        ],
+        "mechanical_slot": null,
+        "sign_faces": [
+          15
+        ],
+        "sign_slot": 3,
+        "sign_aspect": "Tall",
+        "sign_local_uv": {
+          "60": [
+            1.0,
+            0.0
+          ],
+          "61": [
+            1.0,
+            1.0
+          ],
+          "62": [
+            0.0,
+            1.0
+          ],
+          "63": [
+            0.0,
+            0.0
+          ]
+        },
+        "sign_atlas_index": 6
+      },
+      "category": "Commercial",
+      "density": "Low",
+      "damaged": true,
+      "dimensions_m": [
+        15.399999618530273,
+        17.549999237060547,
+        9.81743335723877
+      ],
+      "mechanical_mask_values": [],
+      "material_slots": {
+        "CharredBrick": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredBrick",
+        "CharredTrim": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredTrim",
+        "CharredRoofMembrane": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredRoofMembrane",
+        "CharredSign": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredTrim"
+      },
+      "destination": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes",
+      "sha256": "18baa9257f4110377425db790a357abdf5b3a06b9d9b41cb18263e2f084b5c88",
+      "base_asset_id": "building.shop.a.damaged.surfaces",
+      "business": "outfitters"
+    },
+    {
+      "asset_id": "building.shop.a.damaged.surfaces.store.tech",
+      "prototype_only": true,
+      "export": "ArtSource/Exports/BuildingSurfacePrototypes/SM_CommercialLow_StoreTech_Damaged.fbx",
+      "source": "ArtSource/Blender/CityBuildingSurfacePrototype.blend",
+      "accepted_geometry_sha256": "a4a80339e863762502e2f6913c3c5a5172c70cd51a4cd521ba61f09b426876b6",
+      "accepted_geometry_export": "ArtSource/Exports/SM_Building_Shop_A_Damaged.fbx",
+      "input_geometry_export": "ArtSource/Exports/SM_Building_Shop_A_Damaged.fbx",
+      "input_geometry_sha256": "a4a80339e863762502e2f6913c3c5a5172c70cd51a4cd521ba61f09b426876b6",
+      "geometry_refinement": null,
+      "triangles": 118,
+      "sections": 4,
+      "roof_sign_detail": {
+        "roof_type": "RoofMembrane",
+        "roof_tile_m": 8,
+        "roof_slot": 2,
+        "roof_faces": [
+          5
+        ],
+        "mechanical_slot": null,
+        "sign_faces": [
+          15
+        ],
+        "sign_slot": 3,
+        "sign_aspect": "Tall",
+        "sign_local_uv": {
+          "60": [
+            1.0,
+            0.0
+          ],
+          "61": [
+            1.0,
+            1.0
+          ],
+          "62": [
+            0.0,
+            1.0
+          ],
+          "63": [
+            0.0,
+            0.0
+          ]
+        },
+        "sign_atlas_index": 7
+      },
+      "category": "Commercial",
+      "density": "Low",
+      "damaged": true,
+      "dimensions_m": [
+        15.399999618530273,
+        17.549999237060547,
+        9.81743335723877
+      ],
+      "mechanical_mask_values": [],
+      "material_slots": {
+        "CharredBrick": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredBrick",
+        "CharredTrim": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredTrim",
+        "CharredRoofMembrane": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredRoofMembrane",
+        "CharredSign": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredTrim"
+      },
+      "destination": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes",
+      "sha256": "45e3692dbf1db2e639916c42519ec9c9464713ff0c27219a96e42d7cb0f6fff5",
+      "base_asset_id": "building.shop.a.damaged.surfaces",
+      "business": "tech"
+    },
+    {
+      "asset_id": "building.shop.medium.a.surfaces.store.market",
+      "prototype_only": true,
+      "export": "ArtSource/Exports/BuildingSurfacePrototypes/SM_CommercialMedium_StoreMarket.fbx",
+      "source": "ArtSource/Blender/CityBuildingSurfacePrototype.blend",
+      "accepted_geometry_sha256": "9908357a700dc20b8dfca7b43ed119c802ef99d6840c466a16df68bcfe84398a",
+      "accepted_geometry_export": "ArtSource/Exports/BuildingSurfaceGeometry/SM_CommercialMedium_SurfaceGeometry.fbx",
+      "input_geometry_export": "ArtSource/Exports/SM_Building_Shop_Medium_A.fbx",
+      "input_geometry_sha256": "f5b9d15eb900163adcdd42dcbb032e046065e3cd8b12b4e29f24aa649d2c5556",
+      "geometry_refinement": {
+        "sign_bottom_m": 10,
+        "sign_roof_inset_m": 1.1,
+        "edited_source_vertices": [
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39
+        ],
+        "source_vertex_count": 244,
+        "source_face_count": 89
+      },
+      "triangles": 178,
+      "sections": 4,
+      "roof_sign_detail": {
+        "roof_type": "RoofMembrane",
+        "roof_tile_m": 8,
+        "roof_slot": 2,
+        "roof_faces": [
+          5,
+          17
+        ],
+        "mechanical_slot": null,
+        "sign_faces": [
+          27
+        ],
+        "sign_slot": 3,
+        "sign_aspect": "Wide",
+        "sign_local_uv": {
+          "108": [
+            1.0,
+            0.0
+          ],
+          "109": [
+            1.0,
+            1.0
+          ],
+          "110": [
+            0.0,
+            1.0
+          ],
+          "111": [
+            0.0,
+            0.0
+          ]
+        },
+        "sign_atlas_index": 0
+      },
+      "category": "Commercial",
+      "density": "Medium",
+      "damaged": false,
+      "dimensions_m": [
+        15.399999618530273,
+        17.434999465942383,
+        23.0
+      ],
+      "mechanical_mask_values": [],
+      "material_slots": {
+        "CommercialBrick": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CommercialBrick",
+        "Roof": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_Roof",
+        "RoofMembrane": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_RoofMembrane",
+        "StoreSignWide": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_StoreSignWide"
+      },
+      "destination": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes",
+      "sha256": "a7cae529c8eb03ff893b287c89738cec67888cf395ce285a0be4fa87c0fc123b",
+      "base_asset_id": "building.shop.medium.a.surfaces",
+      "business": "market"
+    },
+    {
+      "asset_id": "building.shop.medium.a.surfaces.store.bakery",
+      "prototype_only": true,
+      "export": "ArtSource/Exports/BuildingSurfacePrototypes/SM_CommercialMedium_StoreBakery.fbx",
+      "source": "ArtSource/Blender/CityBuildingSurfacePrototype.blend",
+      "accepted_geometry_sha256": "9908357a700dc20b8dfca7b43ed119c802ef99d6840c466a16df68bcfe84398a",
+      "accepted_geometry_export": "ArtSource/Exports/BuildingSurfaceGeometry/SM_CommercialMedium_SurfaceGeometry.fbx",
+      "input_geometry_export": "ArtSource/Exports/SM_Building_Shop_Medium_A.fbx",
+      "input_geometry_sha256": "f5b9d15eb900163adcdd42dcbb032e046065e3cd8b12b4e29f24aa649d2c5556",
+      "geometry_refinement": {
+        "sign_bottom_m": 10,
+        "sign_roof_inset_m": 1.1,
+        "edited_source_vertices": [
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39
+        ],
+        "source_vertex_count": 244,
+        "source_face_count": 89
+      },
+      "triangles": 178,
+      "sections": 4,
+      "roof_sign_detail": {
+        "roof_type": "RoofMembrane",
+        "roof_tile_m": 8,
+        "roof_slot": 2,
+        "roof_faces": [
+          5,
+          17
+        ],
+        "mechanical_slot": null,
+        "sign_faces": [
+          27
+        ],
+        "sign_slot": 3,
+        "sign_aspect": "Wide",
+        "sign_local_uv": {
+          "108": [
+            1.0,
+            0.0
+          ],
+          "109": [
+            1.0,
+            1.0
+          ],
+          "110": [
+            0.0,
+            1.0
+          ],
+          "111": [
+            0.0,
+            0.0
+          ]
+        },
+        "sign_atlas_index": 1
+      },
+      "category": "Commercial",
+      "density": "Medium",
+      "damaged": false,
+      "dimensions_m": [
+        15.399999618530273,
+        17.434999465942383,
+        23.0
+      ],
+      "mechanical_mask_values": [],
+      "material_slots": {
+        "CommercialBrick": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CommercialBrick",
+        "Roof": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_Roof",
+        "RoofMembrane": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_RoofMembrane",
+        "StoreSignWide": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_StoreSignWide"
+      },
+      "destination": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes",
+      "sha256": "ef328bb1051ec9bdc7d14800e3777d09fdfc1416ef5c5a6b26f355e5693d6bde",
+      "base_asset_id": "building.shop.medium.a.surfaces",
+      "business": "bakery"
+    },
+    {
+      "asset_id": "building.shop.medium.a.surfaces.store.cafe",
+      "prototype_only": true,
+      "export": "ArtSource/Exports/BuildingSurfacePrototypes/SM_CommercialMedium_StoreCafe.fbx",
+      "source": "ArtSource/Blender/CityBuildingSurfacePrototype.blend",
+      "accepted_geometry_sha256": "9908357a700dc20b8dfca7b43ed119c802ef99d6840c466a16df68bcfe84398a",
+      "accepted_geometry_export": "ArtSource/Exports/BuildingSurfaceGeometry/SM_CommercialMedium_SurfaceGeometry.fbx",
+      "input_geometry_export": "ArtSource/Exports/SM_Building_Shop_Medium_A.fbx",
+      "input_geometry_sha256": "f5b9d15eb900163adcdd42dcbb032e046065e3cd8b12b4e29f24aa649d2c5556",
+      "geometry_refinement": {
+        "sign_bottom_m": 10,
+        "sign_roof_inset_m": 1.1,
+        "edited_source_vertices": [
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39
+        ],
+        "source_vertex_count": 244,
+        "source_face_count": 89
+      },
+      "triangles": 178,
+      "sections": 4,
+      "roof_sign_detail": {
+        "roof_type": "RoofMembrane",
+        "roof_tile_m": 8,
+        "roof_slot": 2,
+        "roof_faces": [
+          5,
+          17
+        ],
+        "mechanical_slot": null,
+        "sign_faces": [
+          27
+        ],
+        "sign_slot": 3,
+        "sign_aspect": "Wide",
+        "sign_local_uv": {
+          "108": [
+            1.0,
+            0.0
+          ],
+          "109": [
+            1.0,
+            1.0
+          ],
+          "110": [
+            0.0,
+            1.0
+          ],
+          "111": [
+            0.0,
+            0.0
+          ]
+        },
+        "sign_atlas_index": 2
+      },
+      "category": "Commercial",
+      "density": "Medium",
+      "damaged": false,
+      "dimensions_m": [
+        15.399999618530273,
+        17.434999465942383,
+        23.0
+      ],
+      "mechanical_mask_values": [],
+      "material_slots": {
+        "CommercialBrick": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CommercialBrick",
+        "Roof": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_Roof",
+        "RoofMembrane": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_RoofMembrane",
+        "StoreSignWide": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_StoreSignWide"
+      },
+      "destination": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes",
+      "sha256": "8cd20ff9a187ba2e6c089f6e9c9e01610ac338399f0ce725b6916a66089a1c37",
+      "base_asset_id": "building.shop.medium.a.surfaces",
+      "business": "cafe"
+    },
+    {
+      "asset_id": "building.shop.medium.a.surfaces.store.books",
+      "prototype_only": true,
+      "export": "ArtSource/Exports/BuildingSurfacePrototypes/SM_CommercialMedium_StoreBooks.fbx",
+      "source": "ArtSource/Blender/CityBuildingSurfacePrototype.blend",
+      "accepted_geometry_sha256": "9908357a700dc20b8dfca7b43ed119c802ef99d6840c466a16df68bcfe84398a",
+      "accepted_geometry_export": "ArtSource/Exports/BuildingSurfaceGeometry/SM_CommercialMedium_SurfaceGeometry.fbx",
+      "input_geometry_export": "ArtSource/Exports/SM_Building_Shop_Medium_A.fbx",
+      "input_geometry_sha256": "f5b9d15eb900163adcdd42dcbb032e046065e3cd8b12b4e29f24aa649d2c5556",
+      "geometry_refinement": {
+        "sign_bottom_m": 10,
+        "sign_roof_inset_m": 1.1,
+        "edited_source_vertices": [
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39
+        ],
+        "source_vertex_count": 244,
+        "source_face_count": 89
+      },
+      "triangles": 178,
+      "sections": 4,
+      "roof_sign_detail": {
+        "roof_type": "RoofMembrane",
+        "roof_tile_m": 8,
+        "roof_slot": 2,
+        "roof_faces": [
+          5,
+          17
+        ],
+        "mechanical_slot": null,
+        "sign_faces": [
+          27
+        ],
+        "sign_slot": 3,
+        "sign_aspect": "Wide",
+        "sign_local_uv": {
+          "108": [
+            1.0,
+            0.0
+          ],
+          "109": [
+            1.0,
+            1.0
+          ],
+          "110": [
+            0.0,
+            1.0
+          ],
+          "111": [
+            0.0,
+            0.0
+          ]
+        },
+        "sign_atlas_index": 3
+      },
+      "category": "Commercial",
+      "density": "Medium",
+      "damaged": false,
+      "dimensions_m": [
+        15.399999618530273,
+        17.434999465942383,
+        23.0
+      ],
+      "mechanical_mask_values": [],
+      "material_slots": {
+        "CommercialBrick": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CommercialBrick",
+        "Roof": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_Roof",
+        "RoofMembrane": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_RoofMembrane",
+        "StoreSignWide": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_StoreSignWide"
+      },
+      "destination": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes",
+      "sha256": "1ac1c0bd15890cfc881e4ab9a373d13edabaf8791469e5a16491e776fd6d4730",
+      "base_asset_id": "building.shop.medium.a.surfaces",
+      "business": "books"
+    },
+    {
+      "asset_id": "building.shop.medium.a.surfaces.store.pharmacy",
+      "prototype_only": true,
+      "export": "ArtSource/Exports/BuildingSurfacePrototypes/SM_CommercialMedium_StorePharmacy.fbx",
+      "source": "ArtSource/Blender/CityBuildingSurfacePrototype.blend",
+      "accepted_geometry_sha256": "9908357a700dc20b8dfca7b43ed119c802ef99d6840c466a16df68bcfe84398a",
+      "accepted_geometry_export": "ArtSource/Exports/BuildingSurfaceGeometry/SM_CommercialMedium_SurfaceGeometry.fbx",
+      "input_geometry_export": "ArtSource/Exports/SM_Building_Shop_Medium_A.fbx",
+      "input_geometry_sha256": "f5b9d15eb900163adcdd42dcbb032e046065e3cd8b12b4e29f24aa649d2c5556",
+      "geometry_refinement": {
+        "sign_bottom_m": 10,
+        "sign_roof_inset_m": 1.1,
+        "edited_source_vertices": [
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39
+        ],
+        "source_vertex_count": 244,
+        "source_face_count": 89
+      },
+      "triangles": 178,
+      "sections": 4,
+      "roof_sign_detail": {
+        "roof_type": "RoofMembrane",
+        "roof_tile_m": 8,
+        "roof_slot": 2,
+        "roof_faces": [
+          5,
+          17
+        ],
+        "mechanical_slot": null,
+        "sign_faces": [
+          27
+        ],
+        "sign_slot": 3,
+        "sign_aspect": "Wide",
+        "sign_local_uv": {
+          "108": [
+            1.0,
+            0.0
+          ],
+          "109": [
+            1.0,
+            1.0
+          ],
+          "110": [
+            0.0,
+            1.0
+          ],
+          "111": [
+            0.0,
+            0.0
+          ]
+        },
+        "sign_atlas_index": 4
+      },
+      "category": "Commercial",
+      "density": "Medium",
+      "damaged": false,
+      "dimensions_m": [
+        15.399999618530273,
+        17.434999465942383,
+        23.0
+      ],
+      "mechanical_mask_values": [],
+      "material_slots": {
+        "CommercialBrick": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CommercialBrick",
+        "Roof": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_Roof",
+        "RoofMembrane": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_RoofMembrane",
+        "StoreSignWide": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_StoreSignWide"
+      },
+      "destination": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes",
+      "sha256": "1088d121b7e30534d03473b66cee4b56d2f8f9bf3947fa244c4861b7848022c4",
+      "base_asset_id": "building.shop.medium.a.surfaces",
+      "business": "pharmacy"
+    },
+    {
+      "asset_id": "building.shop.medium.a.surfaces.store.repairs",
+      "prototype_only": true,
+      "export": "ArtSource/Exports/BuildingSurfacePrototypes/SM_CommercialMedium_StoreRepairs.fbx",
+      "source": "ArtSource/Blender/CityBuildingSurfacePrototype.blend",
+      "accepted_geometry_sha256": "9908357a700dc20b8dfca7b43ed119c802ef99d6840c466a16df68bcfe84398a",
+      "accepted_geometry_export": "ArtSource/Exports/BuildingSurfaceGeometry/SM_CommercialMedium_SurfaceGeometry.fbx",
+      "input_geometry_export": "ArtSource/Exports/SM_Building_Shop_Medium_A.fbx",
+      "input_geometry_sha256": "f5b9d15eb900163adcdd42dcbb032e046065e3cd8b12b4e29f24aa649d2c5556",
+      "geometry_refinement": {
+        "sign_bottom_m": 10,
+        "sign_roof_inset_m": 1.1,
+        "edited_source_vertices": [
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39
+        ],
+        "source_vertex_count": 244,
+        "source_face_count": 89
+      },
+      "triangles": 178,
+      "sections": 4,
+      "roof_sign_detail": {
+        "roof_type": "RoofMembrane",
+        "roof_tile_m": 8,
+        "roof_slot": 2,
+        "roof_faces": [
+          5,
+          17
+        ],
+        "mechanical_slot": null,
+        "sign_faces": [
+          27
+        ],
+        "sign_slot": 3,
+        "sign_aspect": "Wide",
+        "sign_local_uv": {
+          "108": [
+            1.0,
+            0.0
+          ],
+          "109": [
+            1.0,
+            1.0
+          ],
+          "110": [
+            0.0,
+            1.0
+          ],
+          "111": [
+            0.0,
+            0.0
+          ]
+        },
+        "sign_atlas_index": 5
+      },
+      "category": "Commercial",
+      "density": "Medium",
+      "damaged": false,
+      "dimensions_m": [
+        15.399999618530273,
+        17.434999465942383,
+        23.0
+      ],
+      "mechanical_mask_values": [],
+      "material_slots": {
+        "CommercialBrick": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CommercialBrick",
+        "Roof": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_Roof",
+        "RoofMembrane": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_RoofMembrane",
+        "StoreSignWide": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_StoreSignWide"
+      },
+      "destination": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes",
+      "sha256": "9cafca2ec93af7eb32ac86ad4152a126a5c934fff477c4e439a278cc390fbae8",
+      "base_asset_id": "building.shop.medium.a.surfaces",
+      "business": "repairs"
+    },
+    {
+      "asset_id": "building.shop.medium.a.surfaces.store.outfitters",
+      "prototype_only": true,
+      "export": "ArtSource/Exports/BuildingSurfacePrototypes/SM_CommercialMedium_StoreOutfitters.fbx",
+      "source": "ArtSource/Blender/CityBuildingSurfacePrototype.blend",
+      "accepted_geometry_sha256": "9908357a700dc20b8dfca7b43ed119c802ef99d6840c466a16df68bcfe84398a",
+      "accepted_geometry_export": "ArtSource/Exports/BuildingSurfaceGeometry/SM_CommercialMedium_SurfaceGeometry.fbx",
+      "input_geometry_export": "ArtSource/Exports/SM_Building_Shop_Medium_A.fbx",
+      "input_geometry_sha256": "f5b9d15eb900163adcdd42dcbb032e046065e3cd8b12b4e29f24aa649d2c5556",
+      "geometry_refinement": {
+        "sign_bottom_m": 10,
+        "sign_roof_inset_m": 1.1,
+        "edited_source_vertices": [
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39
+        ],
+        "source_vertex_count": 244,
+        "source_face_count": 89
+      },
+      "triangles": 178,
+      "sections": 4,
+      "roof_sign_detail": {
+        "roof_type": "RoofMembrane",
+        "roof_tile_m": 8,
+        "roof_slot": 2,
+        "roof_faces": [
+          5,
+          17
+        ],
+        "mechanical_slot": null,
+        "sign_faces": [
+          27
+        ],
+        "sign_slot": 3,
+        "sign_aspect": "Wide",
+        "sign_local_uv": {
+          "108": [
+            1.0,
+            0.0
+          ],
+          "109": [
+            1.0,
+            1.0
+          ],
+          "110": [
+            0.0,
+            1.0
+          ],
+          "111": [
+            0.0,
+            0.0
+          ]
+        },
+        "sign_atlas_index": 6
+      },
+      "category": "Commercial",
+      "density": "Medium",
+      "damaged": false,
+      "dimensions_m": [
+        15.399999618530273,
+        17.434999465942383,
+        23.0
+      ],
+      "mechanical_mask_values": [],
+      "material_slots": {
+        "CommercialBrick": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CommercialBrick",
+        "Roof": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_Roof",
+        "RoofMembrane": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_RoofMembrane",
+        "StoreSignWide": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_StoreSignWide"
+      },
+      "destination": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes",
+      "sha256": "3d6530739b90dd1cc0e44fe8c99a46976508bee59bac4db8b1d2d52c7f058256",
+      "base_asset_id": "building.shop.medium.a.surfaces",
+      "business": "outfitters"
+    },
+    {
+      "asset_id": "building.shop.medium.a.surfaces.store.tech",
+      "prototype_only": true,
+      "export": "ArtSource/Exports/BuildingSurfacePrototypes/SM_CommercialMedium_StoreTech.fbx",
+      "source": "ArtSource/Blender/CityBuildingSurfacePrototype.blend",
+      "accepted_geometry_sha256": "9908357a700dc20b8dfca7b43ed119c802ef99d6840c466a16df68bcfe84398a",
+      "accepted_geometry_export": "ArtSource/Exports/BuildingSurfaceGeometry/SM_CommercialMedium_SurfaceGeometry.fbx",
+      "input_geometry_export": "ArtSource/Exports/SM_Building_Shop_Medium_A.fbx",
+      "input_geometry_sha256": "f5b9d15eb900163adcdd42dcbb032e046065e3cd8b12b4e29f24aa649d2c5556",
+      "geometry_refinement": {
+        "sign_bottom_m": 10,
+        "sign_roof_inset_m": 1.1,
+        "edited_source_vertices": [
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39
+        ],
+        "source_vertex_count": 244,
+        "source_face_count": 89
+      },
+      "triangles": 178,
+      "sections": 4,
+      "roof_sign_detail": {
+        "roof_type": "RoofMembrane",
+        "roof_tile_m": 8,
+        "roof_slot": 2,
+        "roof_faces": [
+          5,
+          17
+        ],
+        "mechanical_slot": null,
+        "sign_faces": [
+          27
+        ],
+        "sign_slot": 3,
+        "sign_aspect": "Wide",
+        "sign_local_uv": {
+          "108": [
+            1.0,
+            0.0
+          ],
+          "109": [
+            1.0,
+            1.0
+          ],
+          "110": [
+            0.0,
+            1.0
+          ],
+          "111": [
+            0.0,
+            0.0
+          ]
+        },
+        "sign_atlas_index": 7
+      },
+      "category": "Commercial",
+      "density": "Medium",
+      "damaged": false,
+      "dimensions_m": [
+        15.399999618530273,
+        17.434999465942383,
+        23.0
+      ],
+      "mechanical_mask_values": [],
+      "material_slots": {
+        "CommercialBrick": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CommercialBrick",
+        "Roof": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_Roof",
+        "RoofMembrane": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_RoofMembrane",
+        "StoreSignWide": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_StoreSignWide"
+      },
+      "destination": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes",
+      "sha256": "8c9c67213aa6d6b27e9ff1c1dea4c2a18ef2914773324452f8dd43fc2c7b219c",
+      "base_asset_id": "building.shop.medium.a.surfaces",
+      "business": "tech"
+    },
+    {
+      "asset_id": "building.shop.medium.a.damaged.surfaces.store.market",
+      "prototype_only": true,
+      "export": "ArtSource/Exports/BuildingSurfacePrototypes/SM_CommercialMedium_StoreMarket_Damaged.fbx",
+      "source": "ArtSource/Blender/CityBuildingSurfacePrototype.blend",
+      "accepted_geometry_sha256": "453a58e54b7bb87d7a766f83ad70f7958a39f90cfac787f474c76358e32bd6f0",
+      "accepted_geometry_export": "ArtSource/Exports/BuildingSurfaceGeometry/SM_CommercialMedium_SurfaceGeometry_Damaged.fbx",
+      "input_geometry_export": "ArtSource/Exports/SM_Building_Shop_Medium_A_Damaged.fbx",
+      "input_geometry_sha256": "a86dc4a0482364b02a2b0cc1925303198c838fb43d063347c2b8c0f9a0da6fd8",
+      "geometry_refinement": {
+        "sign_bottom_m": 10,
+        "sign_roof_inset_m": 1.1,
+        "edited_source_vertices": [
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39
+        ],
+        "source_vertex_count": 244,
+        "source_face_count": 89
+      },
+      "triangles": 178,
+      "sections": 4,
+      "roof_sign_detail": {
+        "roof_type": "RoofMembrane",
+        "roof_tile_m": 8,
+        "roof_slot": 2,
+        "roof_faces": [
+          5,
+          17
+        ],
+        "mechanical_slot": null,
+        "sign_faces": [
+          27
+        ],
+        "sign_slot": 3,
+        "sign_aspect": "Wide",
+        "sign_local_uv": {
+          "108": [
+            1.0,
+            0.0
+          ],
+          "109": [
+            0.0,
+            0.0
+          ],
+          "110": [
+            0.0,
+            1.0
+          ],
+          "111": [
+            1.0,
+            1.0
+          ]
+        },
+        "sign_atlas_index": 0
+      },
+      "category": "Commercial",
+      "density": "Medium",
+      "damaged": true,
+      "dimensions_m": [
+        15.399999618530273,
+        17.434999465942383,
+        19.101282119750977
+      ],
+      "mechanical_mask_values": [],
+      "material_slots": {
+        "CharredBrick": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredBrick",
+        "CharredTrim": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredTrim",
+        "CharredRoofMembrane": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredRoofMembrane",
+        "CharredSign": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredTrim"
+      },
+      "destination": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes",
+      "sha256": "9db27e187cf7a38fe3e86250c8a807b92b6867f90a4d28d9a277237e58f19467",
+      "base_asset_id": "building.shop.medium.a.damaged.surfaces",
+      "business": "market"
+    },
+    {
+      "asset_id": "building.shop.medium.a.damaged.surfaces.store.bakery",
+      "prototype_only": true,
+      "export": "ArtSource/Exports/BuildingSurfacePrototypes/SM_CommercialMedium_StoreBakery_Damaged.fbx",
+      "source": "ArtSource/Blender/CityBuildingSurfacePrototype.blend",
+      "accepted_geometry_sha256": "453a58e54b7bb87d7a766f83ad70f7958a39f90cfac787f474c76358e32bd6f0",
+      "accepted_geometry_export": "ArtSource/Exports/BuildingSurfaceGeometry/SM_CommercialMedium_SurfaceGeometry_Damaged.fbx",
+      "input_geometry_export": "ArtSource/Exports/SM_Building_Shop_Medium_A_Damaged.fbx",
+      "input_geometry_sha256": "a86dc4a0482364b02a2b0cc1925303198c838fb43d063347c2b8c0f9a0da6fd8",
+      "geometry_refinement": {
+        "sign_bottom_m": 10,
+        "sign_roof_inset_m": 1.1,
+        "edited_source_vertices": [
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39
+        ],
+        "source_vertex_count": 244,
+        "source_face_count": 89
+      },
+      "triangles": 178,
+      "sections": 4,
+      "roof_sign_detail": {
+        "roof_type": "RoofMembrane",
+        "roof_tile_m": 8,
+        "roof_slot": 2,
+        "roof_faces": [
+          5,
+          17
+        ],
+        "mechanical_slot": null,
+        "sign_faces": [
+          27
+        ],
+        "sign_slot": 3,
+        "sign_aspect": "Wide",
+        "sign_local_uv": {
+          "108": [
+            1.0,
+            0.0
+          ],
+          "109": [
+            0.0,
+            0.0
+          ],
+          "110": [
+            0.0,
+            1.0
+          ],
+          "111": [
+            1.0,
+            1.0
+          ]
+        },
+        "sign_atlas_index": 1
+      },
+      "category": "Commercial",
+      "density": "Medium",
+      "damaged": true,
+      "dimensions_m": [
+        15.399999618530273,
+        17.434999465942383,
+        19.101282119750977
+      ],
+      "mechanical_mask_values": [],
+      "material_slots": {
+        "CharredBrick": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredBrick",
+        "CharredTrim": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredTrim",
+        "CharredRoofMembrane": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredRoofMembrane",
+        "CharredSign": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredTrim"
+      },
+      "destination": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes",
+      "sha256": "4637a417c235ae1f645ddd5d1ee81e9829c137733effd0c1998fe0340bf4c00f",
+      "base_asset_id": "building.shop.medium.a.damaged.surfaces",
+      "business": "bakery"
+    },
+    {
+      "asset_id": "building.shop.medium.a.damaged.surfaces.store.cafe",
+      "prototype_only": true,
+      "export": "ArtSource/Exports/BuildingSurfacePrototypes/SM_CommercialMedium_StoreCafe_Damaged.fbx",
+      "source": "ArtSource/Blender/CityBuildingSurfacePrototype.blend",
+      "accepted_geometry_sha256": "453a58e54b7bb87d7a766f83ad70f7958a39f90cfac787f474c76358e32bd6f0",
+      "accepted_geometry_export": "ArtSource/Exports/BuildingSurfaceGeometry/SM_CommercialMedium_SurfaceGeometry_Damaged.fbx",
+      "input_geometry_export": "ArtSource/Exports/SM_Building_Shop_Medium_A_Damaged.fbx",
+      "input_geometry_sha256": "a86dc4a0482364b02a2b0cc1925303198c838fb43d063347c2b8c0f9a0da6fd8",
+      "geometry_refinement": {
+        "sign_bottom_m": 10,
+        "sign_roof_inset_m": 1.1,
+        "edited_source_vertices": [
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39
+        ],
+        "source_vertex_count": 244,
+        "source_face_count": 89
+      },
+      "triangles": 178,
+      "sections": 4,
+      "roof_sign_detail": {
+        "roof_type": "RoofMembrane",
+        "roof_tile_m": 8,
+        "roof_slot": 2,
+        "roof_faces": [
+          5,
+          17
+        ],
+        "mechanical_slot": null,
+        "sign_faces": [
+          27
+        ],
+        "sign_slot": 3,
+        "sign_aspect": "Wide",
+        "sign_local_uv": {
+          "108": [
+            1.0,
+            0.0
+          ],
+          "109": [
+            0.0,
+            0.0
+          ],
+          "110": [
+            0.0,
+            1.0
+          ],
+          "111": [
+            1.0,
+            1.0
+          ]
+        },
+        "sign_atlas_index": 2
+      },
+      "category": "Commercial",
+      "density": "Medium",
+      "damaged": true,
+      "dimensions_m": [
+        15.399999618530273,
+        17.434999465942383,
+        19.101282119750977
+      ],
+      "mechanical_mask_values": [],
+      "material_slots": {
+        "CharredBrick": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredBrick",
+        "CharredTrim": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredTrim",
+        "CharredRoofMembrane": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredRoofMembrane",
+        "CharredSign": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredTrim"
+      },
+      "destination": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes",
+      "sha256": "da8a403ba47f0cb83d574fba50d989d38e2851d368652be47c74f1ca1c190336",
+      "base_asset_id": "building.shop.medium.a.damaged.surfaces",
+      "business": "cafe"
+    },
+    {
+      "asset_id": "building.shop.medium.a.damaged.surfaces.store.books",
+      "prototype_only": true,
+      "export": "ArtSource/Exports/BuildingSurfacePrototypes/SM_CommercialMedium_StoreBooks_Damaged.fbx",
+      "source": "ArtSource/Blender/CityBuildingSurfacePrototype.blend",
+      "accepted_geometry_sha256": "453a58e54b7bb87d7a766f83ad70f7958a39f90cfac787f474c76358e32bd6f0",
+      "accepted_geometry_export": "ArtSource/Exports/BuildingSurfaceGeometry/SM_CommercialMedium_SurfaceGeometry_Damaged.fbx",
+      "input_geometry_export": "ArtSource/Exports/SM_Building_Shop_Medium_A_Damaged.fbx",
+      "input_geometry_sha256": "a86dc4a0482364b02a2b0cc1925303198c838fb43d063347c2b8c0f9a0da6fd8",
+      "geometry_refinement": {
+        "sign_bottom_m": 10,
+        "sign_roof_inset_m": 1.1,
+        "edited_source_vertices": [
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39
+        ],
+        "source_vertex_count": 244,
+        "source_face_count": 89
+      },
+      "triangles": 178,
+      "sections": 4,
+      "roof_sign_detail": {
+        "roof_type": "RoofMembrane",
+        "roof_tile_m": 8,
+        "roof_slot": 2,
+        "roof_faces": [
+          5,
+          17
+        ],
+        "mechanical_slot": null,
+        "sign_faces": [
+          27
+        ],
+        "sign_slot": 3,
+        "sign_aspect": "Wide",
+        "sign_local_uv": {
+          "108": [
+            1.0,
+            0.0
+          ],
+          "109": [
+            0.0,
+            0.0
+          ],
+          "110": [
+            0.0,
+            1.0
+          ],
+          "111": [
+            1.0,
+            1.0
+          ]
+        },
+        "sign_atlas_index": 3
+      },
+      "category": "Commercial",
+      "density": "Medium",
+      "damaged": true,
+      "dimensions_m": [
+        15.399999618530273,
+        17.434999465942383,
+        19.101282119750977
+      ],
+      "mechanical_mask_values": [],
+      "material_slots": {
+        "CharredBrick": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredBrick",
+        "CharredTrim": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredTrim",
+        "CharredRoofMembrane": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredRoofMembrane",
+        "CharredSign": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredTrim"
+      },
+      "destination": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes",
+      "sha256": "74909bcc8aa2ccaf7d75bbc07c94da645e36b3c045711057e03bd6414a4b8c2d",
+      "base_asset_id": "building.shop.medium.a.damaged.surfaces",
+      "business": "books"
+    },
+    {
+      "asset_id": "building.shop.medium.a.damaged.surfaces.store.pharmacy",
+      "prototype_only": true,
+      "export": "ArtSource/Exports/BuildingSurfacePrototypes/SM_CommercialMedium_StorePharmacy_Damaged.fbx",
+      "source": "ArtSource/Blender/CityBuildingSurfacePrototype.blend",
+      "accepted_geometry_sha256": "453a58e54b7bb87d7a766f83ad70f7958a39f90cfac787f474c76358e32bd6f0",
+      "accepted_geometry_export": "ArtSource/Exports/BuildingSurfaceGeometry/SM_CommercialMedium_SurfaceGeometry_Damaged.fbx",
+      "input_geometry_export": "ArtSource/Exports/SM_Building_Shop_Medium_A_Damaged.fbx",
+      "input_geometry_sha256": "a86dc4a0482364b02a2b0cc1925303198c838fb43d063347c2b8c0f9a0da6fd8",
+      "geometry_refinement": {
+        "sign_bottom_m": 10,
+        "sign_roof_inset_m": 1.1,
+        "edited_source_vertices": [
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39
+        ],
+        "source_vertex_count": 244,
+        "source_face_count": 89
+      },
+      "triangles": 178,
+      "sections": 4,
+      "roof_sign_detail": {
+        "roof_type": "RoofMembrane",
+        "roof_tile_m": 8,
+        "roof_slot": 2,
+        "roof_faces": [
+          5,
+          17
+        ],
+        "mechanical_slot": null,
+        "sign_faces": [
+          27
+        ],
+        "sign_slot": 3,
+        "sign_aspect": "Wide",
+        "sign_local_uv": {
+          "108": [
+            1.0,
+            0.0
+          ],
+          "109": [
+            0.0,
+            0.0
+          ],
+          "110": [
+            0.0,
+            1.0
+          ],
+          "111": [
+            1.0,
+            1.0
+          ]
+        },
+        "sign_atlas_index": 4
+      },
+      "category": "Commercial",
+      "density": "Medium",
+      "damaged": true,
+      "dimensions_m": [
+        15.399999618530273,
+        17.434999465942383,
+        19.101282119750977
+      ],
+      "mechanical_mask_values": [],
+      "material_slots": {
+        "CharredBrick": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredBrick",
+        "CharredTrim": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredTrim",
+        "CharredRoofMembrane": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredRoofMembrane",
+        "CharredSign": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredTrim"
+      },
+      "destination": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes",
+      "sha256": "06e6293b13e015e73df652d2a8b035a25797421d8f209a954cc4a1c5fa89e4e9",
+      "base_asset_id": "building.shop.medium.a.damaged.surfaces",
+      "business": "pharmacy"
+    },
+    {
+      "asset_id": "building.shop.medium.a.damaged.surfaces.store.repairs",
+      "prototype_only": true,
+      "export": "ArtSource/Exports/BuildingSurfacePrototypes/SM_CommercialMedium_StoreRepairs_Damaged.fbx",
+      "source": "ArtSource/Blender/CityBuildingSurfacePrototype.blend",
+      "accepted_geometry_sha256": "453a58e54b7bb87d7a766f83ad70f7958a39f90cfac787f474c76358e32bd6f0",
+      "accepted_geometry_export": "ArtSource/Exports/BuildingSurfaceGeometry/SM_CommercialMedium_SurfaceGeometry_Damaged.fbx",
+      "input_geometry_export": "ArtSource/Exports/SM_Building_Shop_Medium_A_Damaged.fbx",
+      "input_geometry_sha256": "a86dc4a0482364b02a2b0cc1925303198c838fb43d063347c2b8c0f9a0da6fd8",
+      "geometry_refinement": {
+        "sign_bottom_m": 10,
+        "sign_roof_inset_m": 1.1,
+        "edited_source_vertices": [
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39
+        ],
+        "source_vertex_count": 244,
+        "source_face_count": 89
+      },
+      "triangles": 178,
+      "sections": 4,
+      "roof_sign_detail": {
+        "roof_type": "RoofMembrane",
+        "roof_tile_m": 8,
+        "roof_slot": 2,
+        "roof_faces": [
+          5,
+          17
+        ],
+        "mechanical_slot": null,
+        "sign_faces": [
+          27
+        ],
+        "sign_slot": 3,
+        "sign_aspect": "Wide",
+        "sign_local_uv": {
+          "108": [
+            1.0,
+            0.0
+          ],
+          "109": [
+            0.0,
+            0.0
+          ],
+          "110": [
+            0.0,
+            1.0
+          ],
+          "111": [
+            1.0,
+            1.0
+          ]
+        },
+        "sign_atlas_index": 5
+      },
+      "category": "Commercial",
+      "density": "Medium",
+      "damaged": true,
+      "dimensions_m": [
+        15.399999618530273,
+        17.434999465942383,
+        19.101282119750977
+      ],
+      "mechanical_mask_values": [],
+      "material_slots": {
+        "CharredBrick": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredBrick",
+        "CharredTrim": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredTrim",
+        "CharredRoofMembrane": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredRoofMembrane",
+        "CharredSign": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredTrim"
+      },
+      "destination": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes",
+      "sha256": "16302a78cf6000108d92a411f895774f7bf7c1389c28dab772ccd7ee84a2b448",
+      "base_asset_id": "building.shop.medium.a.damaged.surfaces",
+      "business": "repairs"
+    },
+    {
+      "asset_id": "building.shop.medium.a.damaged.surfaces.store.outfitters",
+      "prototype_only": true,
+      "export": "ArtSource/Exports/BuildingSurfacePrototypes/SM_CommercialMedium_StoreOutfitters_Damaged.fbx",
+      "source": "ArtSource/Blender/CityBuildingSurfacePrototype.blend",
+      "accepted_geometry_sha256": "453a58e54b7bb87d7a766f83ad70f7958a39f90cfac787f474c76358e32bd6f0",
+      "accepted_geometry_export": "ArtSource/Exports/BuildingSurfaceGeometry/SM_CommercialMedium_SurfaceGeometry_Damaged.fbx",
+      "input_geometry_export": "ArtSource/Exports/SM_Building_Shop_Medium_A_Damaged.fbx",
+      "input_geometry_sha256": "a86dc4a0482364b02a2b0cc1925303198c838fb43d063347c2b8c0f9a0da6fd8",
+      "geometry_refinement": {
+        "sign_bottom_m": 10,
+        "sign_roof_inset_m": 1.1,
+        "edited_source_vertices": [
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39
+        ],
+        "source_vertex_count": 244,
+        "source_face_count": 89
+      },
+      "triangles": 178,
+      "sections": 4,
+      "roof_sign_detail": {
+        "roof_type": "RoofMembrane",
+        "roof_tile_m": 8,
+        "roof_slot": 2,
+        "roof_faces": [
+          5,
+          17
+        ],
+        "mechanical_slot": null,
+        "sign_faces": [
+          27
+        ],
+        "sign_slot": 3,
+        "sign_aspect": "Wide",
+        "sign_local_uv": {
+          "108": [
+            1.0,
+            0.0
+          ],
+          "109": [
+            0.0,
+            0.0
+          ],
+          "110": [
+            0.0,
+            1.0
+          ],
+          "111": [
+            1.0,
+            1.0
+          ]
+        },
+        "sign_atlas_index": 6
+      },
+      "category": "Commercial",
+      "density": "Medium",
+      "damaged": true,
+      "dimensions_m": [
+        15.399999618530273,
+        17.434999465942383,
+        19.101282119750977
+      ],
+      "mechanical_mask_values": [],
+      "material_slots": {
+        "CharredBrick": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredBrick",
+        "CharredTrim": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredTrim",
+        "CharredRoofMembrane": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredRoofMembrane",
+        "CharredSign": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredTrim"
+      },
+      "destination": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes",
+      "sha256": "692a667b684c163c6821eb56e308f9c124b1948d5cc6874b2c58f765e38e80e9",
+      "base_asset_id": "building.shop.medium.a.damaged.surfaces",
+      "business": "outfitters"
+    },
+    {
+      "asset_id": "building.shop.medium.a.damaged.surfaces.store.tech",
+      "prototype_only": true,
+      "export": "ArtSource/Exports/BuildingSurfacePrototypes/SM_CommercialMedium_StoreTech_Damaged.fbx",
+      "source": "ArtSource/Blender/CityBuildingSurfacePrototype.blend",
+      "accepted_geometry_sha256": "453a58e54b7bb87d7a766f83ad70f7958a39f90cfac787f474c76358e32bd6f0",
+      "accepted_geometry_export": "ArtSource/Exports/BuildingSurfaceGeometry/SM_CommercialMedium_SurfaceGeometry_Damaged.fbx",
+      "input_geometry_export": "ArtSource/Exports/SM_Building_Shop_Medium_A_Damaged.fbx",
+      "input_geometry_sha256": "a86dc4a0482364b02a2b0cc1925303198c838fb43d063347c2b8c0f9a0da6fd8",
+      "geometry_refinement": {
+        "sign_bottom_m": 10,
+        "sign_roof_inset_m": 1.1,
+        "edited_source_vertices": [
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39
+        ],
+        "source_vertex_count": 244,
+        "source_face_count": 89
+      },
+      "triangles": 178,
+      "sections": 4,
+      "roof_sign_detail": {
+        "roof_type": "RoofMembrane",
+        "roof_tile_m": 8,
+        "roof_slot": 2,
+        "roof_faces": [
+          5,
+          17
+        ],
+        "mechanical_slot": null,
+        "sign_faces": [
+          27
+        ],
+        "sign_slot": 3,
+        "sign_aspect": "Wide",
+        "sign_local_uv": {
+          "108": [
+            1.0,
+            0.0
+          ],
+          "109": [
+            0.0,
+            0.0
+          ],
+          "110": [
+            0.0,
+            1.0
+          ],
+          "111": [
+            1.0,
+            1.0
+          ]
+        },
+        "sign_atlas_index": 7
+      },
+      "category": "Commercial",
+      "density": "Medium",
+      "damaged": true,
+      "dimensions_m": [
+        15.399999618530273,
+        17.434999465942383,
+        19.101282119750977
+      ],
+      "mechanical_mask_values": [],
+      "material_slots": {
+        "CharredBrick": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredBrick",
+        "CharredTrim": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredTrim",
+        "CharredRoofMembrane": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredRoofMembrane",
+        "CharredSign": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredTrim"
+      },
+      "destination": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes",
+      "sha256": "b58d43952efa130132c73c15d4fb962ab7e762f35d6f67134c783d608dfe9c5c",
+      "base_asset_id": "building.shop.medium.a.damaged.surfaces",
+      "business": "tech"
+    },
+    {
+      "asset_id": "building.shop.high.a.surfaces.store.market",
+      "prototype_only": true,
+      "export": "ArtSource/Exports/BuildingSurfacePrototypes/SM_CommercialHigh_StoreMarket.fbx",
+      "source": "ArtSource/Blender/CityBuildingSurfacePrototype.blend",
+      "accepted_geometry_sha256": "fa6bea3b683be1abe07d99045da30726d91be8af3380f62c072f9dff4812f65d",
+      "accepted_geometry_export": "ArtSource/Exports/SM_Building_Shop_High_A.fbx",
+      "input_geometry_export": "ArtSource/Exports/SM_Building_Shop_High_A.fbx",
+      "input_geometry_sha256": "fa6bea3b683be1abe07d99045da30726d91be8af3380f62c072f9dff4812f65d",
+      "geometry_refinement": null,
+      "triangles": 250,
+      "sections": 4,
+      "roof_sign_detail": {
+        "roof_type": "RoofMembrane",
+        "roof_tile_m": 8,
+        "roof_slot": 2,
+        "roof_faces": [
+          5,
+          17
+        ],
+        "mechanical_slot": null,
+        "sign_faces": [
+          27
+        ],
+        "sign_slot": 3,
+        "sign_aspect": "Wide",
+        "sign_local_uv": {
+          "108": [
+            1.0,
+            0.0
+          ],
+          "109": [
+            1.0,
+            1.0
+          ],
+          "110": [
+            0.0,
+            1.0
+          ],
+          "111": [
+            0.0,
+            0.0
+          ]
+        },
+        "sign_atlas_index": 0
+      },
+      "category": "Commercial",
+      "density": "High",
+      "damaged": false,
+      "dimensions_m": [
+        15.399999618530273,
+        17.434999465942383,
+        39.0
+      ],
+      "mechanical_mask_values": [],
+      "material_slots": {
+        "CommercialBrick": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CommercialBrick",
+        "Roof": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_Roof",
+        "RoofMembrane": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_RoofMembrane",
+        "StoreSignWide": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_StoreSignWide"
+      },
+      "destination": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes",
+      "sha256": "31d6779b2ad347ebc06dbac286ace7014874c3569643a8a311cfaef732e8e4e7",
+      "base_asset_id": "building.shop.high.a.surfaces",
+      "business": "market"
+    },
+    {
+      "asset_id": "building.shop.high.a.surfaces.store.bakery",
+      "prototype_only": true,
+      "export": "ArtSource/Exports/BuildingSurfacePrototypes/SM_CommercialHigh_StoreBakery.fbx",
+      "source": "ArtSource/Blender/CityBuildingSurfacePrototype.blend",
+      "accepted_geometry_sha256": "fa6bea3b683be1abe07d99045da30726d91be8af3380f62c072f9dff4812f65d",
+      "accepted_geometry_export": "ArtSource/Exports/SM_Building_Shop_High_A.fbx",
+      "input_geometry_export": "ArtSource/Exports/SM_Building_Shop_High_A.fbx",
+      "input_geometry_sha256": "fa6bea3b683be1abe07d99045da30726d91be8af3380f62c072f9dff4812f65d",
+      "geometry_refinement": null,
+      "triangles": 250,
+      "sections": 4,
+      "roof_sign_detail": {
+        "roof_type": "RoofMembrane",
+        "roof_tile_m": 8,
+        "roof_slot": 2,
+        "roof_faces": [
+          5,
+          17
+        ],
+        "mechanical_slot": null,
+        "sign_faces": [
+          27
+        ],
+        "sign_slot": 3,
+        "sign_aspect": "Wide",
+        "sign_local_uv": {
+          "108": [
+            1.0,
+            0.0
+          ],
+          "109": [
+            1.0,
+            1.0
+          ],
+          "110": [
+            0.0,
+            1.0
+          ],
+          "111": [
+            0.0,
+            0.0
+          ]
+        },
+        "sign_atlas_index": 1
+      },
+      "category": "Commercial",
+      "density": "High",
+      "damaged": false,
+      "dimensions_m": [
+        15.399999618530273,
+        17.434999465942383,
+        39.0
+      ],
+      "mechanical_mask_values": [],
+      "material_slots": {
+        "CommercialBrick": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CommercialBrick",
+        "Roof": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_Roof",
+        "RoofMembrane": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_RoofMembrane",
+        "StoreSignWide": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_StoreSignWide"
+      },
+      "destination": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes",
+      "sha256": "863bc739f807000de1850a889bce749cd8677503e14a2a742a134bca3a2c2f28",
+      "base_asset_id": "building.shop.high.a.surfaces",
+      "business": "bakery"
+    },
+    {
+      "asset_id": "building.shop.high.a.surfaces.store.cafe",
+      "prototype_only": true,
+      "export": "ArtSource/Exports/BuildingSurfacePrototypes/SM_CommercialHigh_StoreCafe.fbx",
+      "source": "ArtSource/Blender/CityBuildingSurfacePrototype.blend",
+      "accepted_geometry_sha256": "fa6bea3b683be1abe07d99045da30726d91be8af3380f62c072f9dff4812f65d",
+      "accepted_geometry_export": "ArtSource/Exports/SM_Building_Shop_High_A.fbx",
+      "input_geometry_export": "ArtSource/Exports/SM_Building_Shop_High_A.fbx",
+      "input_geometry_sha256": "fa6bea3b683be1abe07d99045da30726d91be8af3380f62c072f9dff4812f65d",
+      "geometry_refinement": null,
+      "triangles": 250,
+      "sections": 4,
+      "roof_sign_detail": {
+        "roof_type": "RoofMembrane",
+        "roof_tile_m": 8,
+        "roof_slot": 2,
+        "roof_faces": [
+          5,
+          17
+        ],
+        "mechanical_slot": null,
+        "sign_faces": [
+          27
+        ],
+        "sign_slot": 3,
+        "sign_aspect": "Wide",
+        "sign_local_uv": {
+          "108": [
+            1.0,
+            0.0
+          ],
+          "109": [
+            1.0,
+            1.0
+          ],
+          "110": [
+            0.0,
+            1.0
+          ],
+          "111": [
+            0.0,
+            0.0
+          ]
+        },
+        "sign_atlas_index": 2
+      },
+      "category": "Commercial",
+      "density": "High",
+      "damaged": false,
+      "dimensions_m": [
+        15.399999618530273,
+        17.434999465942383,
+        39.0
+      ],
+      "mechanical_mask_values": [],
+      "material_slots": {
+        "CommercialBrick": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CommercialBrick",
+        "Roof": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_Roof",
+        "RoofMembrane": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_RoofMembrane",
+        "StoreSignWide": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_StoreSignWide"
+      },
+      "destination": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes",
+      "sha256": "d12c474a3ee144473c3026b2fb95e05f17424899e559fe32f582f33163d493fc",
+      "base_asset_id": "building.shop.high.a.surfaces",
+      "business": "cafe"
+    },
+    {
+      "asset_id": "building.shop.high.a.surfaces.store.books",
+      "prototype_only": true,
+      "export": "ArtSource/Exports/BuildingSurfacePrototypes/SM_CommercialHigh_StoreBooks.fbx",
+      "source": "ArtSource/Blender/CityBuildingSurfacePrototype.blend",
+      "accepted_geometry_sha256": "fa6bea3b683be1abe07d99045da30726d91be8af3380f62c072f9dff4812f65d",
+      "accepted_geometry_export": "ArtSource/Exports/SM_Building_Shop_High_A.fbx",
+      "input_geometry_export": "ArtSource/Exports/SM_Building_Shop_High_A.fbx",
+      "input_geometry_sha256": "fa6bea3b683be1abe07d99045da30726d91be8af3380f62c072f9dff4812f65d",
+      "geometry_refinement": null,
+      "triangles": 250,
+      "sections": 4,
+      "roof_sign_detail": {
+        "roof_type": "RoofMembrane",
+        "roof_tile_m": 8,
+        "roof_slot": 2,
+        "roof_faces": [
+          5,
+          17
+        ],
+        "mechanical_slot": null,
+        "sign_faces": [
+          27
+        ],
+        "sign_slot": 3,
+        "sign_aspect": "Wide",
+        "sign_local_uv": {
+          "108": [
+            1.0,
+            0.0
+          ],
+          "109": [
+            1.0,
+            1.0
+          ],
+          "110": [
+            0.0,
+            1.0
+          ],
+          "111": [
+            0.0,
+            0.0
+          ]
+        },
+        "sign_atlas_index": 3
+      },
+      "category": "Commercial",
+      "density": "High",
+      "damaged": false,
+      "dimensions_m": [
+        15.399999618530273,
+        17.434999465942383,
+        39.0
+      ],
+      "mechanical_mask_values": [],
+      "material_slots": {
+        "CommercialBrick": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CommercialBrick",
+        "Roof": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_Roof",
+        "RoofMembrane": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_RoofMembrane",
+        "StoreSignWide": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_StoreSignWide"
+      },
+      "destination": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes",
+      "sha256": "e3a6ad69626646fb8d7ea3bfe7ff523abf5956f0212d97a50870c86887c50603",
+      "base_asset_id": "building.shop.high.a.surfaces",
+      "business": "books"
+    },
+    {
+      "asset_id": "building.shop.high.a.surfaces.store.pharmacy",
+      "prototype_only": true,
+      "export": "ArtSource/Exports/BuildingSurfacePrototypes/SM_CommercialHigh_StorePharmacy.fbx",
+      "source": "ArtSource/Blender/CityBuildingSurfacePrototype.blend",
+      "accepted_geometry_sha256": "fa6bea3b683be1abe07d99045da30726d91be8af3380f62c072f9dff4812f65d",
+      "accepted_geometry_export": "ArtSource/Exports/SM_Building_Shop_High_A.fbx",
+      "input_geometry_export": "ArtSource/Exports/SM_Building_Shop_High_A.fbx",
+      "input_geometry_sha256": "fa6bea3b683be1abe07d99045da30726d91be8af3380f62c072f9dff4812f65d",
+      "geometry_refinement": null,
+      "triangles": 250,
+      "sections": 4,
+      "roof_sign_detail": {
+        "roof_type": "RoofMembrane",
+        "roof_tile_m": 8,
+        "roof_slot": 2,
+        "roof_faces": [
+          5,
+          17
+        ],
+        "mechanical_slot": null,
+        "sign_faces": [
+          27
+        ],
+        "sign_slot": 3,
+        "sign_aspect": "Wide",
+        "sign_local_uv": {
+          "108": [
+            1.0,
+            0.0
+          ],
+          "109": [
+            1.0,
+            1.0
+          ],
+          "110": [
+            0.0,
+            1.0
+          ],
+          "111": [
+            0.0,
+            0.0
+          ]
+        },
+        "sign_atlas_index": 4
+      },
+      "category": "Commercial",
+      "density": "High",
+      "damaged": false,
+      "dimensions_m": [
+        15.399999618530273,
+        17.434999465942383,
+        39.0
+      ],
+      "mechanical_mask_values": [],
+      "material_slots": {
+        "CommercialBrick": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CommercialBrick",
+        "Roof": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_Roof",
+        "RoofMembrane": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_RoofMembrane",
+        "StoreSignWide": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_StoreSignWide"
+      },
+      "destination": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes",
+      "sha256": "869b75966140433848880ed53f21850b6a0faa77bfcd461b3575dbc3b5d35507",
+      "base_asset_id": "building.shop.high.a.surfaces",
+      "business": "pharmacy"
+    },
+    {
+      "asset_id": "building.shop.high.a.surfaces.store.repairs",
+      "prototype_only": true,
+      "export": "ArtSource/Exports/BuildingSurfacePrototypes/SM_CommercialHigh_StoreRepairs.fbx",
+      "source": "ArtSource/Blender/CityBuildingSurfacePrototype.blend",
+      "accepted_geometry_sha256": "fa6bea3b683be1abe07d99045da30726d91be8af3380f62c072f9dff4812f65d",
+      "accepted_geometry_export": "ArtSource/Exports/SM_Building_Shop_High_A.fbx",
+      "input_geometry_export": "ArtSource/Exports/SM_Building_Shop_High_A.fbx",
+      "input_geometry_sha256": "fa6bea3b683be1abe07d99045da30726d91be8af3380f62c072f9dff4812f65d",
+      "geometry_refinement": null,
+      "triangles": 250,
+      "sections": 4,
+      "roof_sign_detail": {
+        "roof_type": "RoofMembrane",
+        "roof_tile_m": 8,
+        "roof_slot": 2,
+        "roof_faces": [
+          5,
+          17
+        ],
+        "mechanical_slot": null,
+        "sign_faces": [
+          27
+        ],
+        "sign_slot": 3,
+        "sign_aspect": "Wide",
+        "sign_local_uv": {
+          "108": [
+            1.0,
+            0.0
+          ],
+          "109": [
+            1.0,
+            1.0
+          ],
+          "110": [
+            0.0,
+            1.0
+          ],
+          "111": [
+            0.0,
+            0.0
+          ]
+        },
+        "sign_atlas_index": 5
+      },
+      "category": "Commercial",
+      "density": "High",
+      "damaged": false,
+      "dimensions_m": [
+        15.399999618530273,
+        17.434999465942383,
+        39.0
+      ],
+      "mechanical_mask_values": [],
+      "material_slots": {
+        "CommercialBrick": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CommercialBrick",
+        "Roof": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_Roof",
+        "RoofMembrane": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_RoofMembrane",
+        "StoreSignWide": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_StoreSignWide"
+      },
+      "destination": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes",
+      "sha256": "3ef79e7f2f21ce32319d78d1b255a4f8ff8870a5a37a48ea6b5ba3fed39c71c6",
+      "base_asset_id": "building.shop.high.a.surfaces",
+      "business": "repairs"
+    },
+    {
+      "asset_id": "building.shop.high.a.surfaces.store.outfitters",
+      "prototype_only": true,
+      "export": "ArtSource/Exports/BuildingSurfacePrototypes/SM_CommercialHigh_StoreOutfitters.fbx",
+      "source": "ArtSource/Blender/CityBuildingSurfacePrototype.blend",
+      "accepted_geometry_sha256": "fa6bea3b683be1abe07d99045da30726d91be8af3380f62c072f9dff4812f65d",
+      "accepted_geometry_export": "ArtSource/Exports/SM_Building_Shop_High_A.fbx",
+      "input_geometry_export": "ArtSource/Exports/SM_Building_Shop_High_A.fbx",
+      "input_geometry_sha256": "fa6bea3b683be1abe07d99045da30726d91be8af3380f62c072f9dff4812f65d",
+      "geometry_refinement": null,
+      "triangles": 250,
+      "sections": 4,
+      "roof_sign_detail": {
+        "roof_type": "RoofMembrane",
+        "roof_tile_m": 8,
+        "roof_slot": 2,
+        "roof_faces": [
+          5,
+          17
+        ],
+        "mechanical_slot": null,
+        "sign_faces": [
+          27
+        ],
+        "sign_slot": 3,
+        "sign_aspect": "Wide",
+        "sign_local_uv": {
+          "108": [
+            1.0,
+            0.0
+          ],
+          "109": [
+            1.0,
+            1.0
+          ],
+          "110": [
+            0.0,
+            1.0
+          ],
+          "111": [
+            0.0,
+            0.0
+          ]
+        },
+        "sign_atlas_index": 6
+      },
+      "category": "Commercial",
+      "density": "High",
+      "damaged": false,
+      "dimensions_m": [
+        15.399999618530273,
+        17.434999465942383,
+        39.0
+      ],
+      "mechanical_mask_values": [],
+      "material_slots": {
+        "CommercialBrick": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CommercialBrick",
+        "Roof": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_Roof",
+        "RoofMembrane": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_RoofMembrane",
+        "StoreSignWide": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_StoreSignWide"
+      },
+      "destination": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes",
+      "sha256": "7faa94b4a2bdf27c0c895ed531e411ad2f0ef8ffddf490797c6c8bdb56fa66fb",
+      "base_asset_id": "building.shop.high.a.surfaces",
+      "business": "outfitters"
+    },
+    {
+      "asset_id": "building.shop.high.a.surfaces.store.tech",
+      "prototype_only": true,
+      "export": "ArtSource/Exports/BuildingSurfacePrototypes/SM_CommercialHigh_StoreTech.fbx",
+      "source": "ArtSource/Blender/CityBuildingSurfacePrototype.blend",
+      "accepted_geometry_sha256": "fa6bea3b683be1abe07d99045da30726d91be8af3380f62c072f9dff4812f65d",
+      "accepted_geometry_export": "ArtSource/Exports/SM_Building_Shop_High_A.fbx",
+      "input_geometry_export": "ArtSource/Exports/SM_Building_Shop_High_A.fbx",
+      "input_geometry_sha256": "fa6bea3b683be1abe07d99045da30726d91be8af3380f62c072f9dff4812f65d",
+      "geometry_refinement": null,
+      "triangles": 250,
+      "sections": 4,
+      "roof_sign_detail": {
+        "roof_type": "RoofMembrane",
+        "roof_tile_m": 8,
+        "roof_slot": 2,
+        "roof_faces": [
+          5,
+          17
+        ],
+        "mechanical_slot": null,
+        "sign_faces": [
+          27
+        ],
+        "sign_slot": 3,
+        "sign_aspect": "Wide",
+        "sign_local_uv": {
+          "108": [
+            1.0,
+            0.0
+          ],
+          "109": [
+            1.0,
+            1.0
+          ],
+          "110": [
+            0.0,
+            1.0
+          ],
+          "111": [
+            0.0,
+            0.0
+          ]
+        },
+        "sign_atlas_index": 7
+      },
+      "category": "Commercial",
+      "density": "High",
+      "damaged": false,
+      "dimensions_m": [
+        15.399999618530273,
+        17.434999465942383,
+        39.0
+      ],
+      "mechanical_mask_values": [],
+      "material_slots": {
+        "CommercialBrick": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CommercialBrick",
+        "Roof": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_Roof",
+        "RoofMembrane": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_RoofMembrane",
+        "StoreSignWide": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_StoreSignWide"
+      },
+      "destination": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes",
+      "sha256": "48d6e4d23db7e7fe9f73b104edf0bb89105b4bf7a009a2fe4dacacf4e8e26985",
+      "base_asset_id": "building.shop.high.a.surfaces",
+      "business": "tech"
+    },
+    {
+      "asset_id": "building.shop.high.a.damaged.surfaces.store.market",
+      "prototype_only": true,
+      "export": "ArtSource/Exports/BuildingSurfacePrototypes/SM_CommercialHigh_StoreMarket_Damaged.fbx",
+      "source": "ArtSource/Blender/CityBuildingSurfacePrototype.blend",
+      "accepted_geometry_sha256": "f2aff0bba50724693a170e571fa958b0550fe9a6d98020e49d460f500ce92658",
+      "accepted_geometry_export": "ArtSource/Exports/SM_Building_Shop_High_A_Damaged.fbx",
+      "input_geometry_export": "ArtSource/Exports/SM_Building_Shop_High_A_Damaged.fbx",
+      "input_geometry_sha256": "f2aff0bba50724693a170e571fa958b0550fe9a6d98020e49d460f500ce92658",
+      "geometry_refinement": null,
+      "triangles": 250,
+      "sections": 4,
+      "roof_sign_detail": {
+        "roof_type": "RoofMembrane",
+        "roof_tile_m": 8,
+        "roof_slot": 2,
+        "roof_faces": [
+          5,
+          17
+        ],
+        "mechanical_slot": null,
+        "sign_faces": [
+          27
+        ],
+        "sign_slot": 3,
+        "sign_aspect": "Wide",
+        "sign_local_uv": {
+          "108": [
+            1.0,
+            0.0
+          ],
+          "109": [
+            1.0,
+            1.0
+          ],
+          "110": [
+            0.0,
+            1.0
+          ],
+          "111": [
+            0.0,
+            0.0
+          ]
+        },
+        "sign_atlas_index": 0
+      },
+      "category": "Commercial",
+      "density": "High",
+      "damaged": true,
+      "dimensions_m": [
+        15.399999618530273,
+        17.434999465942383,
+        32.900150299072266
+      ],
+      "mechanical_mask_values": [],
+      "material_slots": {
+        "CharredBrick": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredBrick",
+        "CharredTrim": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredTrim",
+        "CharredRoofMembrane": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredRoofMembrane",
+        "CharredSign": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredTrim"
+      },
+      "destination": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes",
+      "sha256": "0060451e7a7f156142daca1cf91959ce3fc47f48b58b08a5a485bf6835b423d8",
+      "base_asset_id": "building.shop.high.a.damaged.surfaces",
+      "business": "market"
+    },
+    {
+      "asset_id": "building.shop.high.a.damaged.surfaces.store.bakery",
+      "prototype_only": true,
+      "export": "ArtSource/Exports/BuildingSurfacePrototypes/SM_CommercialHigh_StoreBakery_Damaged.fbx",
+      "source": "ArtSource/Blender/CityBuildingSurfacePrototype.blend",
+      "accepted_geometry_sha256": "f2aff0bba50724693a170e571fa958b0550fe9a6d98020e49d460f500ce92658",
+      "accepted_geometry_export": "ArtSource/Exports/SM_Building_Shop_High_A_Damaged.fbx",
+      "input_geometry_export": "ArtSource/Exports/SM_Building_Shop_High_A_Damaged.fbx",
+      "input_geometry_sha256": "f2aff0bba50724693a170e571fa958b0550fe9a6d98020e49d460f500ce92658",
+      "geometry_refinement": null,
+      "triangles": 250,
+      "sections": 4,
+      "roof_sign_detail": {
+        "roof_type": "RoofMembrane",
+        "roof_tile_m": 8,
+        "roof_slot": 2,
+        "roof_faces": [
+          5,
+          17
+        ],
+        "mechanical_slot": null,
+        "sign_faces": [
+          27
+        ],
+        "sign_slot": 3,
+        "sign_aspect": "Wide",
+        "sign_local_uv": {
+          "108": [
+            1.0,
+            0.0
+          ],
+          "109": [
+            1.0,
+            1.0
+          ],
+          "110": [
+            0.0,
+            1.0
+          ],
+          "111": [
+            0.0,
+            0.0
+          ]
+        },
+        "sign_atlas_index": 1
+      },
+      "category": "Commercial",
+      "density": "High",
+      "damaged": true,
+      "dimensions_m": [
+        15.399999618530273,
+        17.434999465942383,
+        32.900150299072266
+      ],
+      "mechanical_mask_values": [],
+      "material_slots": {
+        "CharredBrick": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredBrick",
+        "CharredTrim": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredTrim",
+        "CharredRoofMembrane": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredRoofMembrane",
+        "CharredSign": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredTrim"
+      },
+      "destination": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes",
+      "sha256": "86cbed50b2d147a19688f4e1265466b629a252f5e2a2658aea612ca920b35d74",
+      "base_asset_id": "building.shop.high.a.damaged.surfaces",
+      "business": "bakery"
+    },
+    {
+      "asset_id": "building.shop.high.a.damaged.surfaces.store.cafe",
+      "prototype_only": true,
+      "export": "ArtSource/Exports/BuildingSurfacePrototypes/SM_CommercialHigh_StoreCafe_Damaged.fbx",
+      "source": "ArtSource/Blender/CityBuildingSurfacePrototype.blend",
+      "accepted_geometry_sha256": "f2aff0bba50724693a170e571fa958b0550fe9a6d98020e49d460f500ce92658",
+      "accepted_geometry_export": "ArtSource/Exports/SM_Building_Shop_High_A_Damaged.fbx",
+      "input_geometry_export": "ArtSource/Exports/SM_Building_Shop_High_A_Damaged.fbx",
+      "input_geometry_sha256": "f2aff0bba50724693a170e571fa958b0550fe9a6d98020e49d460f500ce92658",
+      "geometry_refinement": null,
+      "triangles": 250,
+      "sections": 4,
+      "roof_sign_detail": {
+        "roof_type": "RoofMembrane",
+        "roof_tile_m": 8,
+        "roof_slot": 2,
+        "roof_faces": [
+          5,
+          17
+        ],
+        "mechanical_slot": null,
+        "sign_faces": [
+          27
+        ],
+        "sign_slot": 3,
+        "sign_aspect": "Wide",
+        "sign_local_uv": {
+          "108": [
+            1.0,
+            0.0
+          ],
+          "109": [
+            1.0,
+            1.0
+          ],
+          "110": [
+            0.0,
+            1.0
+          ],
+          "111": [
+            0.0,
+            0.0
+          ]
+        },
+        "sign_atlas_index": 2
+      },
+      "category": "Commercial",
+      "density": "High",
+      "damaged": true,
+      "dimensions_m": [
+        15.399999618530273,
+        17.434999465942383,
+        32.900150299072266
+      ],
+      "mechanical_mask_values": [],
+      "material_slots": {
+        "CharredBrick": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredBrick",
+        "CharredTrim": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredTrim",
+        "CharredRoofMembrane": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredRoofMembrane",
+        "CharredSign": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredTrim"
+      },
+      "destination": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes",
+      "sha256": "30e0054c709b077f0dcc9e30cb5cd0e6f470aef965211574ec00cb8358fab369",
+      "base_asset_id": "building.shop.high.a.damaged.surfaces",
+      "business": "cafe"
+    },
+    {
+      "asset_id": "building.shop.high.a.damaged.surfaces.store.books",
+      "prototype_only": true,
+      "export": "ArtSource/Exports/BuildingSurfacePrototypes/SM_CommercialHigh_StoreBooks_Damaged.fbx",
+      "source": "ArtSource/Blender/CityBuildingSurfacePrototype.blend",
+      "accepted_geometry_sha256": "f2aff0bba50724693a170e571fa958b0550fe9a6d98020e49d460f500ce92658",
+      "accepted_geometry_export": "ArtSource/Exports/SM_Building_Shop_High_A_Damaged.fbx",
+      "input_geometry_export": "ArtSource/Exports/SM_Building_Shop_High_A_Damaged.fbx",
+      "input_geometry_sha256": "f2aff0bba50724693a170e571fa958b0550fe9a6d98020e49d460f500ce92658",
+      "geometry_refinement": null,
+      "triangles": 250,
+      "sections": 4,
+      "roof_sign_detail": {
+        "roof_type": "RoofMembrane",
+        "roof_tile_m": 8,
+        "roof_slot": 2,
+        "roof_faces": [
+          5,
+          17
+        ],
+        "mechanical_slot": null,
+        "sign_faces": [
+          27
+        ],
+        "sign_slot": 3,
+        "sign_aspect": "Wide",
+        "sign_local_uv": {
+          "108": [
+            1.0,
+            0.0
+          ],
+          "109": [
+            1.0,
+            1.0
+          ],
+          "110": [
+            0.0,
+            1.0
+          ],
+          "111": [
+            0.0,
+            0.0
+          ]
+        },
+        "sign_atlas_index": 3
+      },
+      "category": "Commercial",
+      "density": "High",
+      "damaged": true,
+      "dimensions_m": [
+        15.399999618530273,
+        17.434999465942383,
+        32.900150299072266
+      ],
+      "mechanical_mask_values": [],
+      "material_slots": {
+        "CharredBrick": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredBrick",
+        "CharredTrim": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredTrim",
+        "CharredRoofMembrane": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredRoofMembrane",
+        "CharredSign": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredTrim"
+      },
+      "destination": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes",
+      "sha256": "1f86f48d5ca98269abb77bf05a8a4598aab7a2a114ea0f08ab344b6ff9334dc8",
+      "base_asset_id": "building.shop.high.a.damaged.surfaces",
+      "business": "books"
+    },
+    {
+      "asset_id": "building.shop.high.a.damaged.surfaces.store.pharmacy",
+      "prototype_only": true,
+      "export": "ArtSource/Exports/BuildingSurfacePrototypes/SM_CommercialHigh_StorePharmacy_Damaged.fbx",
+      "source": "ArtSource/Blender/CityBuildingSurfacePrototype.blend",
+      "accepted_geometry_sha256": "f2aff0bba50724693a170e571fa958b0550fe9a6d98020e49d460f500ce92658",
+      "accepted_geometry_export": "ArtSource/Exports/SM_Building_Shop_High_A_Damaged.fbx",
+      "input_geometry_export": "ArtSource/Exports/SM_Building_Shop_High_A_Damaged.fbx",
+      "input_geometry_sha256": "f2aff0bba50724693a170e571fa958b0550fe9a6d98020e49d460f500ce92658",
+      "geometry_refinement": null,
+      "triangles": 250,
+      "sections": 4,
+      "roof_sign_detail": {
+        "roof_type": "RoofMembrane",
+        "roof_tile_m": 8,
+        "roof_slot": 2,
+        "roof_faces": [
+          5,
+          17
+        ],
+        "mechanical_slot": null,
+        "sign_faces": [
+          27
+        ],
+        "sign_slot": 3,
+        "sign_aspect": "Wide",
+        "sign_local_uv": {
+          "108": [
+            1.0,
+            0.0
+          ],
+          "109": [
+            1.0,
+            1.0
+          ],
+          "110": [
+            0.0,
+            1.0
+          ],
+          "111": [
+            0.0,
+            0.0
+          ]
+        },
+        "sign_atlas_index": 4
+      },
+      "category": "Commercial",
+      "density": "High",
+      "damaged": true,
+      "dimensions_m": [
+        15.399999618530273,
+        17.434999465942383,
+        32.900150299072266
+      ],
+      "mechanical_mask_values": [],
+      "material_slots": {
+        "CharredBrick": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredBrick",
+        "CharredTrim": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredTrim",
+        "CharredRoofMembrane": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredRoofMembrane",
+        "CharredSign": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredTrim"
+      },
+      "destination": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes",
+      "sha256": "bf0a52049400673e4f3fa95ecd5697f8b9523b4e272b42bd6c2dbcef11af90e8",
+      "base_asset_id": "building.shop.high.a.damaged.surfaces",
+      "business": "pharmacy"
+    },
+    {
+      "asset_id": "building.shop.high.a.damaged.surfaces.store.repairs",
+      "prototype_only": true,
+      "export": "ArtSource/Exports/BuildingSurfacePrototypes/SM_CommercialHigh_StoreRepairs_Damaged.fbx",
+      "source": "ArtSource/Blender/CityBuildingSurfacePrototype.blend",
+      "accepted_geometry_sha256": "f2aff0bba50724693a170e571fa958b0550fe9a6d98020e49d460f500ce92658",
+      "accepted_geometry_export": "ArtSource/Exports/SM_Building_Shop_High_A_Damaged.fbx",
+      "input_geometry_export": "ArtSource/Exports/SM_Building_Shop_High_A_Damaged.fbx",
+      "input_geometry_sha256": "f2aff0bba50724693a170e571fa958b0550fe9a6d98020e49d460f500ce92658",
+      "geometry_refinement": null,
+      "triangles": 250,
+      "sections": 4,
+      "roof_sign_detail": {
+        "roof_type": "RoofMembrane",
+        "roof_tile_m": 8,
+        "roof_slot": 2,
+        "roof_faces": [
+          5,
+          17
+        ],
+        "mechanical_slot": null,
+        "sign_faces": [
+          27
+        ],
+        "sign_slot": 3,
+        "sign_aspect": "Wide",
+        "sign_local_uv": {
+          "108": [
+            1.0,
+            0.0
+          ],
+          "109": [
+            1.0,
+            1.0
+          ],
+          "110": [
+            0.0,
+            1.0
+          ],
+          "111": [
+            0.0,
+            0.0
+          ]
+        },
+        "sign_atlas_index": 5
+      },
+      "category": "Commercial",
+      "density": "High",
+      "damaged": true,
+      "dimensions_m": [
+        15.399999618530273,
+        17.434999465942383,
+        32.900150299072266
+      ],
+      "mechanical_mask_values": [],
+      "material_slots": {
+        "CharredBrick": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredBrick",
+        "CharredTrim": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredTrim",
+        "CharredRoofMembrane": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredRoofMembrane",
+        "CharredSign": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredTrim"
+      },
+      "destination": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes",
+      "sha256": "0365e1221bbe393f1ed0b0ab2101102ef7d5e8a2ef125650f31dfb457cc743b5",
+      "base_asset_id": "building.shop.high.a.damaged.surfaces",
+      "business": "repairs"
+    },
+    {
+      "asset_id": "building.shop.high.a.damaged.surfaces.store.outfitters",
+      "prototype_only": true,
+      "export": "ArtSource/Exports/BuildingSurfacePrototypes/SM_CommercialHigh_StoreOutfitters_Damaged.fbx",
+      "source": "ArtSource/Blender/CityBuildingSurfacePrototype.blend",
+      "accepted_geometry_sha256": "f2aff0bba50724693a170e571fa958b0550fe9a6d98020e49d460f500ce92658",
+      "accepted_geometry_export": "ArtSource/Exports/SM_Building_Shop_High_A_Damaged.fbx",
+      "input_geometry_export": "ArtSource/Exports/SM_Building_Shop_High_A_Damaged.fbx",
+      "input_geometry_sha256": "f2aff0bba50724693a170e571fa958b0550fe9a6d98020e49d460f500ce92658",
+      "geometry_refinement": null,
+      "triangles": 250,
+      "sections": 4,
+      "roof_sign_detail": {
+        "roof_type": "RoofMembrane",
+        "roof_tile_m": 8,
+        "roof_slot": 2,
+        "roof_faces": [
+          5,
+          17
+        ],
+        "mechanical_slot": null,
+        "sign_faces": [
+          27
+        ],
+        "sign_slot": 3,
+        "sign_aspect": "Wide",
+        "sign_local_uv": {
+          "108": [
+            1.0,
+            0.0
+          ],
+          "109": [
+            1.0,
+            1.0
+          ],
+          "110": [
+            0.0,
+            1.0
+          ],
+          "111": [
+            0.0,
+            0.0
+          ]
+        },
+        "sign_atlas_index": 6
+      },
+      "category": "Commercial",
+      "density": "High",
+      "damaged": true,
+      "dimensions_m": [
+        15.399999618530273,
+        17.434999465942383,
+        32.900150299072266
+      ],
+      "mechanical_mask_values": [],
+      "material_slots": {
+        "CharredBrick": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredBrick",
+        "CharredTrim": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredTrim",
+        "CharredRoofMembrane": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredRoofMembrane",
+        "CharredSign": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredTrim"
+      },
+      "destination": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes",
+      "sha256": "a574beece1d14c2500d8500701fed615825cc74b365b47c8330b0acefa9cd894",
+      "base_asset_id": "building.shop.high.a.damaged.surfaces",
+      "business": "outfitters"
+    },
+    {
+      "asset_id": "building.shop.high.a.damaged.surfaces.store.tech",
+      "prototype_only": true,
+      "export": "ArtSource/Exports/BuildingSurfacePrototypes/SM_CommercialHigh_StoreTech_Damaged.fbx",
+      "source": "ArtSource/Blender/CityBuildingSurfacePrototype.blend",
+      "accepted_geometry_sha256": "f2aff0bba50724693a170e571fa958b0550fe9a6d98020e49d460f500ce92658",
+      "accepted_geometry_export": "ArtSource/Exports/SM_Building_Shop_High_A_Damaged.fbx",
+      "input_geometry_export": "ArtSource/Exports/SM_Building_Shop_High_A_Damaged.fbx",
+      "input_geometry_sha256": "f2aff0bba50724693a170e571fa958b0550fe9a6d98020e49d460f500ce92658",
+      "geometry_refinement": null,
+      "triangles": 250,
+      "sections": 4,
+      "roof_sign_detail": {
+        "roof_type": "RoofMembrane",
+        "roof_tile_m": 8,
+        "roof_slot": 2,
+        "roof_faces": [
+          5,
+          17
+        ],
+        "mechanical_slot": null,
+        "sign_faces": [
+          27
+        ],
+        "sign_slot": 3,
+        "sign_aspect": "Wide",
+        "sign_local_uv": {
+          "108": [
+            1.0,
+            0.0
+          ],
+          "109": [
+            1.0,
+            1.0
+          ],
+          "110": [
+            0.0,
+            1.0
+          ],
+          "111": [
+            0.0,
+            0.0
+          ]
+        },
+        "sign_atlas_index": 7
+      },
+      "category": "Commercial",
+      "density": "High",
+      "damaged": true,
+      "dimensions_m": [
+        15.399999618530273,
+        17.434999465942383,
+        32.900150299072266
+      ],
+      "mechanical_mask_values": [],
+      "material_slots": {
+        "CharredBrick": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredBrick",
+        "CharredTrim": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredTrim",
+        "CharredRoofMembrane": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredRoofMembrane",
+        "CharredSign": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredTrim"
+      },
+      "destination": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes",
+      "sha256": "f9768fec1701bd0d3fc531b5331068a01a86a315a6fd1e1dbd01b03bef82b8ab",
+      "base_asset_id": "building.shop.high.a.damaged.surfaces",
+      "business": "tech"
+    }
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "task": "D91",
+  "slice": "CitizenScale",
+  "prototype_only": true,
+  "source": "ArtSource/Blender/CityResidentialDetails.blend",
+  "source_sha256": "9d755c772a561401c892e135cdf7498e3fa509c4eea270731618781a7b95045a",
+  "assets": [
+    {
+      "name": "SM_HomeScale_Before",
+      "export": "ArtSource/Exports/HomeScaleStudy/SM_HomeScale_Before.fbx",
+      "sha256": "59ee603461b472cd48f6fdfdaee8b55b207a94bc345034af5036f84d206161e0",
+      "triangles": 668,
+      "sections": 4,
+      "slots": [
+        "ResidentialBrick",
+        "HomeSolidDetails",
+        "RoofShingles",
+        "HomeWindowOpaque"
+      ],
+      "dimensions_m": [
+        14.079999923706055,
+        15.039999008178711,
+        9.199999809265137
+      ],
+      "roundtrip_pass": true
+    },
+    {
+      "name": "SM_HomeScale_Refined",
+      "export": "ArtSource/Exports/HomeScaleStudy/SM_HomeScale_Refined.fbx",
+      "sha256": "37ab112c7d89a2866506556ad399b8e4b58581abb5065f16a77beea9dc4d4347",
+      "triangles": 668,
+      "sections": 4,
+      "slots": [
+        "ResidentialBrick",
+        "HomeSolidDetails",
+        "RoofShingles",
+        "HomeWindowOpaque"
+      ],
+      "dimensions_m": [
+        10.559999465942383,
+        13.279997825622559,
+        5.799999713897705
+      ],
+      "roundtrip_pass": true
+    }
+  ],
+  "views": [
+    "Artifacts/D91/Scale/Blender/SM_HomeScale_Before-Whole.png",
+    "Artifacts/D91/Scale/Blender/SM_HomeScale_Before-Entrance.png",
+    "Artifacts/D91/Scale/Blender/SM_HomeScale_Before-Chimney.png",
+    "Artifacts/D91/Scale/Blender/SM_HomeScale_Refined-Whole.png",
+    "Artifacts/D91/Scale/Blender/SM_HomeScale_Refined-Entrance.png",
+    "Artifacts/D91/Scale/Blender/SM_HomeScale_Refined-Chimney.png"
+  ],
+  "citizens": [
+    {
+      "kind": "Street",
+      "export": "ArtSource/Exports/CitizenPresentation/SM_Citizen_PC_Casual.fbx",
+      "native_mesh": "/Game/CitySim/Art/PC/Meshes/SM_Citizen_PC_Casual",
+      "scale_before": 0.72,
+      "scale_after": 1.15,
+      "x": -1.8,
+      "source_min_z_m": 0.125,
+      "source_height_m": 1.244999885559082,
+      "height_before_m": 0.896399917602539,
+      "height_after_m": 1.4317498683929442,
+      "sha256": "6fceb1d90d7d41a0040e573d573d749b000f83491bd41e517436c0b4b1c830ba"
+    },
+    {
+      "kind": "Park",
+      "export": "ArtSource/Exports/HomeScaleStudy/Reference_Park_Field.fbx",
+      "native_mesh": "/Game/CitySim/Art/Parks/Meshes/SM_Park_Field_Casual",
+      "scale_before": 0.811,
+      "scale_after": 0.811,
+      "x": 1.8,
+      "source_min_z_m": -3.401726416996098e-06,
+      "source_height_m": 1.731334869354896,
+      "height_before_m": 1.4041125790468207,
+      "height_after_m": 1.4041125790468207,
+      "sha256": "aa8f9a56c18e59433faa1632304c8e2af0098b88f3ecf7fbf8fb6420a24ce4b2",
+      "reference_provenance": "Byte-identical snapshot of the citizen mesh used by the accepted D91 scale study; source sports work remains separate"
+    }
+  ],
+  "texture": "ArtSource/Textures/HomeWindowStudy/HomeGlass.png",
+  "dimensions": {
+    "door_before_m": [
+      2.64,
+      4
+    ],
+    "door_after_m": [
+      1.1,
+      1.85
+    ],
+    "knob_height_m": 0.85,
+    "window_before_m": [
+      1.936,
+      1.8
+    ],
+    "window_after_m": [
+      1.4,
+      1.3
+    ],
+    "window_sill_m": 0.75,
+    "eaves_m": 3,
+    "roof_ridge_m": 4.6,
+    "chimney_top_m": 5.6,
+    "wall_width_m": 9.24,
+    "logical_lot_m": [
+      16,
+      16
+    ],
+    "brick_repeat_m": 2.4
+  },
+  "street_origin_offset_cm": 89.625,
+  "street_foot_support_cm": 104,
+  "notes": "User accepts door design/chimney geometry; resize house and street citizens coherently. Shared wall/chimney brick2.4m UV repeat. Citizen meshes/park transforms and source studies preserved; no broader building adoption."
+}

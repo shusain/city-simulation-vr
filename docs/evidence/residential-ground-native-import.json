@@ -1,0 +1,229 @@
+{
+  "issue": 125,
+  "files": [
+    {
+      "target": "/Game/CitySim/Art/ResidentialGround/SM_ResidentialGround_Home_A_Damaged",
+      "file": "CitySimVR/Content/CitySim/Art/ResidentialGround/SM_ResidentialGround_Home_A_Damaged.uasset",
+      "sha256": "3b6af395dfd318ca266af61d0016172681e598a5470e07e626808766a168a07f",
+      "bytes": 34036,
+      "triangles": 656,
+      "slots": [
+        "ResidentialBrick",
+        "HomeSolidDetails",
+        "RoofShingles",
+        "HomeWindowOpaque"
+      ],
+      "dimensions_cm": [
+        1056.0,
+        1095.5999755859375,
+        478.63275146484375
+      ],
+      "entry_native_cm": [
+        0,
+        467,
+        0
+      ],
+      "landing_cm": 50,
+      "ground_reserve_cm": 100,
+      "source_sha256": "9213f170c90a95e4ed1ddd339eb955ed24aee20e872520283777622308a39fba"
+    },
+    {
+      "target": "/Game/CitySim/Art/ResidentialGround/SM_ResidentialGround_Home_B",
+      "file": "CitySimVR/Content/CitySim/Art/ResidentialGround/SM_ResidentialGround_Home_B.uasset",
+      "sha256": "9785b34451f677539da916c2b29f600bea3afc5f2539ffca134557298d12a4fc",
+      "bytes": 31470,
+      "triangles": 584,
+      "slots": [
+        "ResidentialBrick",
+        "HomeSolidDetails",
+        "RoofShingles",
+        "HomeWindowOpaque"
+      ],
+      "dimensions_cm": [
+        1056.0001220703125,
+        1163.0000610351562,
+        480.0
+      ],
+      "entry_native_cm": [
+        0,
+        615,
+        0
+      ],
+      "landing_cm": 10,
+      "ground_reserve_cm": 40,
+      "source_sha256": "fa5b78b694b7df89b4ab1e2e0ffe5bc0fb27ff3d31693afece372c1bf1485a13"
+    },
+    {
+      "target": "/Game/CitySim/Art/ResidentialGround/SM_ResidentialGround_Home_B_Damaged",
+      "file": "CitySimVR/Content/CitySim/Art/ResidentialGround/SM_ResidentialGround_Home_B_Damaged.uasset",
+      "sha256": "1dff88915def0e439f4d80ae7081dd8494fa15866cde21460c65bfc69c0eadc3",
+      "bytes": 31978,
+      "triangles": 584,
+      "slots": [
+        "ResidentialBrick",
+        "HomeSolidDetails",
+        "RoofShingles",
+        "HomeWindowOpaque"
+      ],
+      "dimensions_cm": [
+        1056.0001220703125,
+        1163.0000610351562,
+        413.9933166503906
+      ],
+      "entry_native_cm": [
+        0,
+        615,
+        0
+      ],
+      "landing_cm": 10,
+      "ground_reserve_cm": 40,
+      "source_sha256": "3f84dcafcc5786053e2c2bb4b72365522f1ab93dbebc182d82922110ed58ab19"
+    },
+    {
+      "target": "/Game/CitySim/Art/ResidentialGround/SM_ResidentialGround_Home_C",
+      "file": "CitySimVR/Content/CitySim/Art/ResidentialGround/SM_ResidentialGround_Home_C.uasset",
+      "sha256": "56b0c55393b0c5f9c42218a5882e3b8746be1e3bb03f65b31f3a97568b4215b5",
+      "bytes": 31482,
+      "triangles": 584,
+      "slots": [
+        "ResidentialBrick",
+        "HomeSolidDetails",
+        "RoofShingles",
+        "HomeWindowOpaque"
+      ],
+      "dimensions_cm": [
+        1056.0001220703125,
+        1153.0000610351562,
+        480.0
+      ],
+      "entry_native_cm": [
+        0,
+        603,
+        0
+      ],
+      "landing_cm": 10,
+      "ground_reserve_cm": 40,
+      "source_sha256": "ba7480f5e3dad8aa5ba743319e3603d67d375a3bfd2342ca2182e1622c64606a"
+    },
+    {
+      "target": "/Game/CitySim/Art/ResidentialGround/SM_ResidentialGround_Home_C_Damaged",
+      "file": "CitySimVR/Content/CitySim/Art/ResidentialGround/SM_ResidentialGround_Home_C_Damaged.uasset",
+      "sha256": "40eac0d9682a133f13ff6f387a8fff8b3ac41a1d2626f3d27e598b0c68369f23",
+      "bytes": 31930,
+      "triangles": 584,
+      "slots": [
+        "ResidentialBrick",
+        "HomeSolidDetails",
+        "RoofShingles",
+        "HomeWindowOpaque"
+      ],
+      "dimensions_cm": [
+        1056.0001220703125,
+        1153.0000610351562,
+        389.5733947753906
+      ],
+      "entry_native_cm": [
+        0,
+        603,
+        0
+      ],
+      "landing_cm": 10,
+      "ground_reserve_cm": 40,
+      "source_sha256": "0e779ef97b4abe6fc7d135b99a9db1d372b2dbf3bb5f0d89b6763652a52d0c82"
+    },
+    {
+      "target": "/Game/CitySim/Art/ResidentialGround/SM_ResidentialGround_Home_D",
+      "file": "CitySimVR/Content/CitySim/Art/ResidentialGround/SM_ResidentialGround_Home_D.uasset",
+      "sha256": "dbd922dcc145f96a1c929f9373ff90602441aab3ce3981a0caa9e4f57b8a1f96",
+      "bytes": 32063,
+      "triangles": 614,
+      "slots": [
+        "ResidentialBrick",
+        "HomeSolidDetails",
+        "RoofShingles",
+        "HomeWindowOpaque"
+      ],
+      "dimensions_cm": [
+        1056.0001220703125,
+        1158.0001220703125,
+        480.0
+      ],
+      "entry_native_cm": [
+        0,
+        629,
+        0
+      ],
+      "landing_cm": 10,
+      "ground_reserve_cm": 40,
+      "source_sha256": "1b4af9fde889f9b0be83ad6eed0e291b590ceb01556e9071ee287ef4e5257dd7"
+    },
+    {
+      "target": "/Game/CitySim/Art/ResidentialGround/SM_ResidentialGround_Home_D_Damaged",
+      "file": "CitySimVR/Content/CitySim/Art/ResidentialGround/SM_ResidentialGround_Home_D_Damaged.uasset",
+      "sha256": "ce2e2da7b1e44c642a5fb809fa79412db3f316e7145ea846f886a4f8f991c7fe",
+      "bytes": 32725,
+      "triangles": 614,
+      "slots": [
+        "ResidentialBrick",
+        "HomeSolidDetails",
+        "RoofShingles",
+        "HomeWindowOpaque"
+      ],
+      "dimensions_cm": [
+        1056.0001220703125,
+        1158.0001220703125,
+        357.3728942871094
+      ],
+      "entry_native_cm": [
+        0,
+        629,
+        0
+      ],
+      "landing_cm": 10,
+      "ground_reserve_cm": 40,
+      "source_sha256": "4a281f70caad3fdb4751e63dd6d682a0233fe72ab38b4d949f67f69d97a6c674"
+    },
+    {
+      "target": "/Game/CitySim/Art/ResidentialGround/SM_ResidentialGround_Home_Legacy_Damaged",
+      "file": "CitySimVR/Content/CitySim/Art/ResidentialGround/SM_ResidentialGround_Home_Legacy_Damaged.uasset",
+      "sha256": "32c88854e79a1d5fe0cc13981de41df492b03c7b4407c68f8ed2e9b94a2fabed",
+      "bytes": 33142,
+      "triangles": 656,
+      "slots": [
+        "CharredBrick",
+        "CharredTrim",
+        "CharredRoofShingles"
+      ],
+      "dimensions_cm": [
+        1056.0,
+        1095.5999755859375,
+        478.63275146484375
+      ],
+      "entry_native_cm": [
+        0,
+        467,
+        0
+      ],
+      "landing_cm": 50,
+      "ground_reserve_cm": 100,
+      "source_sha256": "edb8fa7d470d2e9a9621d0e8270c6aeba0f1da66f3b22cee9482454c1430a743"
+    }
+  ],
+  "build": 207,
+  "head": "a240ddc6b3c5c16067fe582a2f9326bd8ccd4560",
+  "tested": "a240ddc6b3c5c16067fe582a2f9326bd8ccd4560",
+  "status": "passed",
+  "tests": [
+    "CitySim.Placement.Transactions",
+    "CitySim.Terrain.DeterminismAndFixtures",
+    "CitySim.Simulation.CitizenArrivalSchedules",
+    "CitySim.Art.ImportedKit",
+    "CitySim.Art.CivicLightEmission",
+    "CitySim.Art.StorefrontAssets",
+    "CitySim.Art.DamagedVariantsParticles",
+    "CitySim.Art.LowDensityVariants",
+    "CitySim.Presentation.LowDensityLifecycle"
+  ],
+  "editorSeconds": 143.44,
+  "gameplayIntegration": "pending new runtime mapping/porch anchors and native views"
+}

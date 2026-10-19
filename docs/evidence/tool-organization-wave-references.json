@@ -1,0 +1,31 @@
+{
+  "status": "passed",
+  "repaired": 21,
+  "changed": {
+    "CitySimVR/Content/CitySim/Audio/Soundscape/Graphs/MS_Action_Confirm.uasset": "7d2a51a3b4bab9c931bc2e0855934477d880bb6d577ac02fb31aeca64422efdb",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/Graphs/MS_Action_Denied.uasset": "bc9f0b3678472c45dbe7e910ff4bd664d824858ed055df6afebae1a719406b92",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/Graphs/MS_Ambulance_Intro.uasset": "3ed1e7ee7838df3052eeeeb1eb2b846a7fe171e8e27fc6565bf2dcea87e8e270",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/Graphs/MS_Ambulance_Loop.uasset": "5bc84d86ce475334ee4044e37983e7285921a218f63a837ed4ab100ef63f7355",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/Graphs/MS_Ambulance_Outro.uasset": "81f35e63f80671f6c847acd5f18c53ad3512d91ca32bb48bae408ab6a7f2d3a2",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/Graphs/MS_Fire_Horn.uasset": "ea5866cc301e040859ba3599894ebdac944e3ec75ee1925f19791864a6310253",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/Graphs/MS_Fire_Intro.uasset": "e80ac67aa6183df544f262e7f19afa2df09bf5b8d9f71e3bc6c937694e0ea399",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/Graphs/MS_Fire_Loop.uasset": "1c1b6df80888d32ef6d8daa9a33c0fff911b3f30e752a932b2ebb2270dc4a45b",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/Graphs/MS_Fire_Outro.uasset": "2b4f85a58928aa6b25c97f3acfaa55192d1c10aa3180e8b8f511f62747386b03",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/Graphs/MS_Incident_Notice.uasset": "146a9473ee4f1ddeb6f420b2b79f33e48481de2980bb994c2a878fa28990da74",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/Graphs/MS_Milestone_Reached.uasset": "5dae6c0e65124f1de4b9643faaa6562f0d07170853481317b0db5308cdef7c22",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/Graphs/MS_Objective_Complete.uasset": "9badf59b6779c64a283b4c204dfc0c3a22cd1ea4c2761353546d9303d1031099",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/Graphs/MS_Police_Alternate.uasset": "f81197bffaa3ec94f6c364f8137667c09545d3f59e303f0f3425ffc902108f69",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/Graphs/MS_Police_Intro.uasset": "cffe52bff606dd1c3495342ecb98be51adce5613bab70b1e496287635843386e",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/Graphs/MS_Police_Loop.uasset": "bb42e1b6a05bd8f77dc0a40f73015b23376cbf31255d3226b3ea010d494911ba",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/Graphs/MS_Police_Outro.uasset": "5a53d8b2afcd3ed89d2cb9a773775d16c10a110cc11923a701e94123916dd5b4",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/Graphs/MS_Service_Attention.uasset": "9380c70da45e9d11b727986bb52e8db87798559da30f2ef5dddb38c89d64f0c5",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/Graphs/MS_Service_Recovered.uasset": "e37af6a4406496cc05f0c23f6e16e9e4bbf1587918c2cb179fbddfd10b8e3f98",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/Graphs/MS_Town_Intro.uasset": "afab85bc87286437280e7eb023536233b40ba77db614940706d82f5f4f607772",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/Graphs/MS_Town_Loop.uasset": "02bb1e978f32adfa197204882e9cb12f4ec46f2b778a2f1c2358a9d5e87040bf",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/Graphs/MS_Town_Outro.uasset": "cdb09a8cb95d855f897253e6637029d219e9de0378ce98c14e7bb0627c982226"
+  },
+  "removed": [],
+  "stale_dependencies": {},
+  "graph_nodes_connections_and_other_literals_preserved": true,
+  "method": "MetaSound document builder replaces only the Wave Asset literal; no graph recreation/reimport"
+}

@@ -1,0 +1,64 @@
+{
+  "family": "recycling",
+  "stage": "base",
+  "roof_supports": [],
+  "doors": [
+    {
+      "id": "public",
+      "leaves": [
+        "Public_double_leaf",
+        "Public_double_leaf.001"
+      ],
+      "left_jamb": "Public_jamb",
+      "right_jamb": "Public_jamb.001",
+      "header": "Public_head",
+      "axis": 1,
+      "sign": -1,
+      "inner_opening": {
+        "min": [
+          -16.06,
+          -8.4,
+          0
+        ],
+        "max": [
+          -13.94,
+          -7.9,
+          2.75
+        ]
+      },
+      "edge_reveal_m": 0.003,
+      "centre_or_panel_seam_m": 0.006
+    },
+    {
+      "id": "receiving-1",
+      "leaves": [
+        "Truck_section_00",
+        "Truck_section_01",
+        "Truck_section_02",
+        "Truck_section_03",
+        "Truck_section_04",
+        "Truck_section_05",
+        "Truck_section_06"
+      ],
+      "left_jamb": "Truck_frame_jamb",
+      "right_jamb": "Truck_frame_jamb.001",
+      "header": "Truck_frame_head",
+      "axis": 1,
+      "sign": -1,
+      "inner_opening": {
+        "min": [
+          -4.43,
+          -8.4,
+          0
+        ],
+        "max": [
+          0.43,
+          -7.9,
+          4.425
+        ]
+      },
+      "edge_reveal_m": 0.003,
+      "centre_or_panel_seam_m": 0.006
+    }
+  ]
+}

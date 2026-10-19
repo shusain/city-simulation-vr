@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "sampleRate": 48000,
+  "loopSeamHalfBlendMilliseconds": 40,
+  "truePeakCeilingDBTP": -9,
+  "reviewStatus": "Requested steady vehicle loops; listening in the integrated candidate pending.",
+  "samples": [
+    {"id":"Car-Idle","kind":0,"variant":0,"loop":true,"seconds":20,"targetLUFS":-34,"group":"City activity","intent":"Quiet steady petrol idle, no tire or pass-by envelope."},
+    {"id":"Car-Driving","kind":0,"variant":1,"loop":true,"seconds":20,"targetLUFS":-31,"group":"City activity","intent":"Steady engine and tires; actual Unreal emitter motion owns passing effects."},
+    {"id":"Truck-Idle","kind":0,"variant":2,"loop":true,"seconds":20,"targetLUFS":-33,"group":"City activity","intent":"Steady lower diesel idle for freight and garbage trucks."},
+    {"id":"Truck-Driving","kind":0,"variant":3,"loop":true,"seconds":20,"targetLUFS":-30,"group":"City activity","intent":"Steady truck engine and tires, without a prerecorded pass."}
+  ]
+}

@@ -1,0 +1,203 @@
+{
+  "issue": 125,
+  "baseline": "8144a5b2c3f81d4ed4c5284edf3934d048de98c2",
+  "scope": "medium/high and construction healthy/damaged; old ground walks only",
+  "assets": [
+    {
+      "native": "/Game/CitySim/Art/Meshes/SM_Building_Residential_Medium_A",
+      "name": "SM_Building_Residential_Medium_A",
+      "source": "ArtSource/Blender/CityBuildingWindows.blend",
+      "object": "SM_Building_Residential_Medium_A",
+      "export": "ArtSource/Exports/BuildingWindowStudy/SM_Building_Residential_Medium_A.fbx",
+      "bindings": {
+        "ResidentialBrick": "/Game/CitySim/Art/Materials/MI_ResidentialBrick",
+        "Roof": "/Game/CitySim/Art/Materials/MI_Roof",
+        "RoofMembrane": "/Game/CitySim/Art/Materials/MI_RoofMembrane",
+        "BuildingWindowOpaque": "/Game/CitySim/Art/Materials/M_BuildingWindowOpaque"
+      },
+      "phase": "medium",
+      "damaged": false,
+      "source_sha256": "0d46923a35e9e23a1c6276e94eec4f03a2752a997bcdd813c6a7980a4429c2ab",
+      "export_sha256": "4f74cdc03599fba32453da6a951f755b983428c6fbeeca3cd5213a90206d2286",
+      "slots": [
+        "ResidentialBrick",
+        "Roof",
+        "RoofMembrane",
+        "BuildingWindowOpaque"
+      ],
+      "target_name": "SM_ResidentialGround_Medium",
+      "body_front_cm": 700,
+      "entry_native_cm": [
+        0,
+        730,
+        0
+      ],
+      "path_width_cm": 100,
+      "door_width_cm": 300,
+      "landing_cm": 10,
+      "ground_reserve_cm": 80
+    },
+    {
+      "native": "/Game/CitySim/Art/Meshes/SM_Building_Residential_High_A",
+      "name": "SM_Building_Residential_High_A",
+      "source": "ArtSource/Blender/CityBuildingWindows.blend",
+      "object": "SM_Building_Residential_High_A",
+      "export": "ArtSource/Exports/BuildingWindowStudy/SM_Building_Residential_High_A.fbx",
+      "bindings": {
+        "ResidentialBrick": "/Game/CitySim/Art/Materials/MI_ResidentialBrick",
+        "Roof": "/Game/CitySim/Art/Materials/MI_Roof",
+        "Mechanical": "/Game/CitySim/Art/Materials/MI_Mechanical",
+        "RoofMembrane": "/Game/CitySim/Art/Materials/MI_RoofMembrane",
+        "BuildingWindowOpaque": "/Game/CitySim/Art/Materials/M_BuildingWindowOpaque"
+      },
+      "phase": "high",
+      "damaged": false,
+      "source_sha256": "0d46923a35e9e23a1c6276e94eec4f03a2752a997bcdd813c6a7980a4429c2ab",
+      "export_sha256": "9d5cf2174e7ae65c8111232ef0ef027678244839a5e9bc8ee69dc3a5b51f3b51",
+      "slots": [
+        "ResidentialBrick",
+        "Roof",
+        "Mechanical",
+        "RoofMembrane",
+        "BuildingWindowOpaque"
+      ],
+      "target_name": "SM_ResidentialGround_High",
+      "body_front_cm": 650,
+      "entry_native_cm": [
+        0,
+        680,
+        0
+      ],
+      "path_width_cm": 130,
+      "door_width_cm": 300,
+      "landing_cm": 10,
+      "ground_reserve_cm": 60
+    },
+    {
+      "native": "/Game/CitySim/Art/Meshes/SM_Building_Residential_Construction_A",
+      "name": "SM_Building_Residential_Construction_A",
+      "source": "ArtSource/Blender/CityStarterKit.blend",
+      "object": "SM_Building_Residential_Construction_A",
+      "export": "ArtSource/Exports/SM_Building_Residential_Construction_A.fbx",
+      "bindings": {
+        "Roof": "/Game/CitySim/Art/Materials/MI_CityRoof",
+        "Trim": "/Game/CitySim/Art/Materials/MI_CityTrim"
+      },
+      "phase": "construction",
+      "damaged": false,
+      "source_sha256": "46f7bb21ab1e6a3b22e38c674ae3be88e8df211880a87b1ef45a5ca09dab3fb6",
+      "export_sha256": "56e23af3a179b6a34a5621d59b508893362a07e9c4b5a4263bee3a97d21b462c",
+      "slots": [
+        "Roof",
+        "Trim"
+      ],
+      "target_name": "SM_ResidentialGround_Construction",
+      "body_front_cm": 750,
+      "entry_native_cm": [
+        0,
+        750,
+        80
+      ],
+      "path_width_cm": 80,
+      "door_width_cm": 300,
+      "landing_cm": 10,
+      "ground_reserve_cm": 80
+    },
+    {
+      "native": "/Game/CitySim/Art/Meshes/SM_Building_Residential_Medium_A_Damaged",
+      "name": "SM_Building_Residential_Medium_A_Damaged",
+      "source": "ArtSource/Blender/CityBuildingSurfacePrototype.blend",
+      "object": "SM_ResidentialMedium_SurfacePrototype_Damaged",
+      "export": "ArtSource/Exports/BuildingSurfacePrototypes/SM_ResidentialMedium_SurfacePrototype_Damaged.fbx",
+      "bindings": {
+        "CharredBrick": "/Game/CitySim/Art/Materials/MI_CharredBrick",
+        "CharredTrim": "/Game/CitySim/Art/Materials/MI_CharredTrim",
+        "CharredRoofMembrane": "/Game/CitySim/Art/Materials/MI_CharredRoofMembrane"
+      },
+      "phase": "medium",
+      "damaged": true,
+      "source_sha256": "2927bbd991dc3a8acc51f56b721b6dd04ca451a12a18efe88371d9b9337ed932",
+      "export_sha256": "e93cd756515774858d9e0dad4affece3541923cc99727e3cea4ee38020ae6fd1",
+      "slots": [
+        "CharredBrick",
+        "CharredTrim",
+        "CharredRoofMembrane"
+      ],
+      "target_name": "SM_ResidentialGround_Medium_Damaged",
+      "body_front_cm": 700,
+      "entry_native_cm": [
+        0,
+        730,
+        0
+      ],
+      "path_width_cm": 100,
+      "door_width_cm": 300,
+      "landing_cm": 10,
+      "ground_reserve_cm": 80
+    },
+    {
+      "native": "/Game/CitySim/Art/Meshes/SM_Building_Residential_High_A_Damaged",
+      "name": "SM_Building_Residential_High_A_Damaged",
+      "source": "ArtSource/Blender/CityBuildingSurfacePrototype.blend",
+      "object": "SM_ResidentialHigh_SurfacePrototype_Damaged",
+      "export": "ArtSource/Exports/BuildingSurfacePrototypes/SM_ResidentialHigh_SurfacePrototype_Damaged.fbx",
+      "bindings": {
+        "CharredBrick": "/Game/CitySim/Art/Materials/MI_CharredBrick",
+        "CharredTrim": "/Game/CitySim/Art/Materials/MI_CharredTrim",
+        "CharredMechanical": "/Game/CitySim/Art/Materials/MI_CharredMechanical",
+        "CharredRoofMembrane": "/Game/CitySim/Art/Materials/MI_CharredRoofMembrane"
+      },
+      "phase": "high",
+      "damaged": true,
+      "source_sha256": "2927bbd991dc3a8acc51f56b721b6dd04ca451a12a18efe88371d9b9337ed932",
+      "export_sha256": "ded0e505c3a287928d8b268f3fc218a2dad3b15c012a190310c29ef3ac0fc3c1",
+      "slots": [
+        "CharredBrick",
+        "CharredTrim",
+        "CharredMechanical",
+        "CharredRoofMembrane"
+      ],
+      "target_name": "SM_ResidentialGround_High_Damaged",
+      "body_front_cm": 650,
+      "entry_native_cm": [
+        0,
+        680,
+        0
+      ],
+      "path_width_cm": 130,
+      "door_width_cm": 300,
+      "landing_cm": 10,
+      "ground_reserve_cm": 60
+    },
+    {
+      "native": "/Game/CitySim/Art/Meshes/SM_Building_Residential_Construction_A_Damaged",
+      "name": "SM_Building_Residential_Construction_A_Damaged",
+      "source": "ArtSource/Blender/CityDamageKit.blend",
+      "object": "SM_Building_Residential_Construction_A_Damaged",
+      "export": "ArtSource/Exports/SM_Building_Residential_Construction_A_Damaged.fbx",
+      "bindings": {
+        "Charred": "/Game/CitySim/Art/Materials/MI_CityCharred",
+        "CharredTrim": "/Game/CitySim/Art/Materials/MI_CityCharredTrim"
+      },
+      "phase": "construction",
+      "damaged": true,
+      "source_sha256": "3b5bdeef9cf556720d54ff86bed3bc54ef68d2a30bbb04060383bfd33b0a3dc7",
+      "export_sha256": "c8caeb8cf5501eb496b7c75c365d25faedb262b1b1165d774f3f95b320bc0529",
+      "slots": [
+        "Charred",
+        "CharredTrim"
+      ],
+      "target_name": "SM_ResidentialGround_Construction_Damaged",
+      "body_front_cm": 750,
+      "entry_native_cm": [
+        0,
+        750,
+        80
+      ],
+      "path_width_cm": 80,
+      "door_width_cm": 300,
+      "landing_cm": 10,
+      "ground_reserve_cm": 80
+    }
+  ]
+}

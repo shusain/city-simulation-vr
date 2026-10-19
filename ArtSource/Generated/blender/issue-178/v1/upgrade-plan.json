@@ -1,0 +1,44 @@
+{
+  "family": "fire",
+  "stage": "base",
+  "stage_index": 0,
+  "existing_stages": [
+    "base",
+    "medium",
+    "high"
+  ],
+  "existing_upgrade_count": 2,
+  "gameplay_changes": false,
+  "source_site_m": [
+    40,
+    32
+  ],
+  "current_native_footprint": [
+    3,
+    2
+  ],
+  "retained_entrance_centres": {
+    "pedestrian": [
+      -12,
+      -5
+    ],
+    "service": [
+      -1,
+      -5
+    ]
+  },
+  "progression": "Base: two-storey crew/admin, single generous apparatus bay, enclosed link and supported hose tower. Medium/high remain separately authored real family stages; no stage added here.",
+  "actual_occupied_bounds": {
+    "min": [
+      -17.09000015258789,
+      -6.150000095367432,
+      0.0
+    ],
+    "max": [
+      3.0899999141693115,
+      8.09000015258789,
+      10.949999809265137
+    ]
+  },
+  "future_LOD": "LOD1 simplify rims, emblem and vent; LOD2 merge frames and remove small roof details. Approved originals retained."
+}

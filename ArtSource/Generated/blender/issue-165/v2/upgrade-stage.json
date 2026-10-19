@@ -1,0 +1,25 @@
+{
+  "asset_id": "building.service.medium.a",
+  "stage": "water_medium",
+  "capacity_percent_reference": 200,
+  "module_counts": {
+    "clarifiers": 3,
+    "upright_process_vessels": 4,
+    "attached_filter_wings": 1
+  },
+  "occupied_envelope_m": {
+    "min": [
+      -15.229999542236328,
+      -11.300000190734863,
+      0.0
+    ],
+    "max": [
+      17.625,
+      12.430000305175781,
+      6.519999980926514
+    ]
+  },
+  "base_identity": "parent #157 reviewed geometry packet; no completed parent staged",
+  "review_only": true,
+  "lower_LOD_plan": "Preserve building masses, portals, clarifier diameters and major pipes; reduce secondary rings, frames and fixtures. No mobile performance claim."
+}

@@ -1,0 +1,387 @@
+{
+  "schema": 1,
+  "task": "D58",
+  "sampleRate": 48000,
+  "truePeakCeilingDBTP": -9,
+  "loopSeamHalfBlendMilliseconds": 20,
+  "provenance": "Original seeded SuperCollider synthesis using built-in UGens. No recorded audio, intelligible speech, external samples or Quarks. Wildlife/crowd are synthesized drafts for listening review, not species or human recordings.",
+  "reviewStatus": "The requested core source review/refinement round is complete. Paired higher-pitched crickets and park-night are accepted alongside rain, city/car/truck, industry/clanks, park-day, birds, activity/disaster sounds, notifications and sirens. Retain the current sound identities. Optional supplemental sounds remain proposals; native/device integration and checks are pending.",
+  "revisionFocus": [
+    "Rain-Light",
+    "Rain-Moderate",
+    "Rain-Heavy",
+    "Rain-Downpour"
+  ],
+  "samples": [
+    {
+      "id": "Park-Foliage",
+      "group": "Park and water",
+      "kind": 0,
+      "variant": 0,
+      "loop": true,
+      "seconds": 20,
+      "targetLUFS": -34,
+      "intent": "Gentle leafy rustle and low breeze for suitable park/vegetation areas."
+    },
+    {
+      "id": "Park-Fountain",
+      "group": "Park and water",
+      "kind": 1,
+      "variant": 0,
+      "loop": true,
+      "seconds": 20,
+      "targetLUFS": -34,
+      "intent": "Light fountain water hiss and small splashes; only where water features exist."
+    },
+    {
+      "id": "Water-Shore",
+      "group": "Park and water",
+      "kind": 2,
+      "variant": 0,
+      "loop": true,
+      "seconds": 20,
+      "targetLUFS": -34,
+      "intent": "Slow shoreline wash for appropriate lake/coastal scenery."
+    },
+    {
+      "id": "Industry-Idle",
+      "group": "Industry",
+      "kind": 3,
+      "variant": 0,
+      "loop": true,
+      "seconds": 20,
+      "targetLUFS": -34,
+      "intent": "Low motor/mechanical bed for quieter industrial activity."
+    },
+    {
+      "id": "Industry-Working",
+      "group": "Industry",
+      "kind": 16,
+      "variant": 0,
+      "loop": true,
+      "seconds": 20,
+      "targetLUFS": -32,
+      "intent": "Steady motor drive with more pronounced irregular tool bursts and metal rattles."
+    },
+    {
+      "id": "City-Distant",
+      "group": "City activity",
+      "kind": 4,
+      "variant": 0,
+      "loop": true,
+      "seconds": 20,
+      "targetLUFS": -36,
+      "intent": "Restrained band-limited distant city wash; wandering bass oscillator removed."
+    },
+    {
+      "id": "Market-Murmur",
+      "group": "City activity",
+      "kind": 5,
+      "variant": 0,
+      "loop": true,
+      "seconds": 20,
+      "targetLUFS": -35,
+      "intent": "Optional stylized crowd-like murmur for active commercial areas; no words or recorded people."
+    },
+    {
+      "id": "Car-Pass",
+      "group": "City activity",
+      "kind": 14,
+      "variant": 0,
+      "loop": false,
+      "seconds": 3,
+      "targetLUFS": -29,
+      "intent": "Combustion pulses and tire/road whoosh with smooth approach/departure level, replacing the low rev sweep. Runtime owns position/Doppler."
+    },
+    {
+      "id": "Truck-Pass",
+      "group": "City activity",
+      "kind": 14,
+      "variant": 1,
+      "loop": false,
+      "seconds": 4,
+      "targetLUFS": -29,
+      "intent": "Heavier pulsed engine body and tire noise with a longer passing envelope; no pure subbass rev sweep."
+    },
+    {
+      "id": "Bird-Chirp-A",
+      "group": "Day and night wildlife",
+      "kind": 11,
+      "variant": 0,
+      "loop": false,
+      "seconds": 1.2,
+      "targetLUFS": -28,
+      "intent": "Short medium-register synthesized bird phrase for varied day scheduling."
+    },
+    {
+      "id": "Bird-Chirp-B",
+      "group": "Day and night wildlife",
+      "kind": 11,
+      "variant": 1,
+      "loop": false,
+      "seconds": 1.7,
+      "targetLUFS": -28,
+      "intent": "Quicker higher synthesized bird phrase; no species identity claimed."
+    },
+    {
+      "id": "Bird-Chirp-C",
+      "group": "Day and night wildlife",
+      "kind": 11,
+      "variant": 2,
+      "loop": false,
+      "seconds": 1.5,
+      "targetLUFS": -28,
+      "intent": "Slower lower synthesized bird phrase to vary daytime calls."
+    },
+    {
+      "id": "Night-Crickets-Light",
+      "group": "Day and night wildlife",
+      "kind": 8,
+      "variant": 0,
+      "loop": true,
+      "seconds": 20,
+      "targetLUFS": -35,
+      "intent": "Sparse higher-pitched chirp-chirp pairs with a clear pause between the two chirps, rough wing texture and the existing overall call rate."
+    },
+    {
+      "id": "Night-Crickets-Dense",
+      "group": "Day and night wildlife",
+      "kind": 8,
+      "variant": 1,
+      "loop": true,
+      "seconds": 20,
+      "targetLUFS": -35,
+      "intent": "More overlapping voices using the same higher-pitched paired call; voice count and call-arrival rates are unchanged from the preceding dense bed."
+    },
+    {
+      "id": "Wind-Light",
+      "group": "Weather",
+      "kind": 6,
+      "variant": 0,
+      "loop": true,
+      "seconds": 20,
+      "targetLUFS": -36,
+      "intent": "Quiet broad wind base for light weather."
+    },
+    {
+      "id": "Wind-Gusts",
+      "group": "Weather",
+      "kind": 6,
+      "variant": 1,
+      "loop": true,
+      "seconds": 20,
+      "targetLUFS": -34,
+      "intent": "More textured gusts, to blend with actual weather intensity."
+    },
+    {
+      "id": "Rain-Light",
+      "group": "Weather",
+      "kind": 7,
+      "variant": 0,
+      "loop": true,
+      "seconds": 20,
+      "targetLUFS": -39,
+      "intent": "Quiet sparse pitter-patter with softer droplet attacks and less sharp high-frequency texture."
+    },
+    {
+      "id": "Rain-Heavy",
+      "group": "Weather",
+      "kind": 7,
+      "variant": 1,
+      "loop": true,
+      "seconds": 20,
+      "targetLUFS": -33,
+      "intent": "Dense surface rain and splashes with a fuller, softened wash; below the separate downpour level."
+    },
+    {
+      "id": "Storm-Roar",
+      "group": "Weather",
+      "kind": 10,
+      "variant": 0,
+      "loop": true,
+      "seconds": 20,
+      "targetLUFS": -33,
+      "intent": "Broad wind/storm or tornado activity layer, kept separate from the accepted warning siren."
+    },
+    {
+      "id": "Thunder-Near",
+      "group": "Weather",
+      "kind": 13,
+      "variant": 0,
+      "loop": false,
+      "seconds": 5.5,
+      "targetLUFS": -28,
+      "intent": "Sharper thunder onset with rolling decay; trigger only for appropriate storm events."
+    },
+    {
+      "id": "Thunder-Distant",
+      "group": "Weather",
+      "kind": 13,
+      "variant": 1,
+      "loop": false,
+      "seconds": 6,
+      "targetLUFS": -29,
+      "intent": "Rounder distant rolling thunder alternative."
+    },
+    {
+      "id": "Fire-Crackle",
+      "group": "Activity and disasters",
+      "kind": 9,
+      "variant": 0,
+      "loop": true,
+      "seconds": 20,
+      "targetLUFS": -34,
+      "intent": "Local fire body/crackle texture for an actual burning site, independent of sirens."
+    },
+    {
+      "id": "Earthquake-Rumble",
+      "group": "Activity and disasters",
+      "kind": 15,
+      "variant": 0,
+      "loop": false,
+      "seconds": 5,
+      "targetLUFS": -28,
+      "intent": "Short ground/structure rumble and rattling texture for an actual quake event."
+    },
+    {
+      "id": "Construction-Tap",
+      "group": "Activity and disasters",
+      "kind": 15,
+      "variant": 1,
+      "loop": false,
+      "seconds": 0.9,
+      "targetLUFS": -27,
+      "intent": "Three restrained work/placement taps; no free-running building hammer actors."
+    },
+    {
+      "id": "Demolition-Impact",
+      "group": "Activity and disasters",
+      "kind": 15,
+      "variant": 2,
+      "loop": false,
+      "seconds": 1.8,
+      "targetLUFS": -27,
+      "intent": "Short low impact and crumble, tied to a real completed demolition."
+    },
+    {
+      "id": "Action-Confirm",
+      "group": "Notifications",
+      "kind": 12,
+      "variant": 0,
+      "loop": false,
+      "seconds": 0.55,
+      "targetLUFS": -24,
+      "intent": "Small soft success/confirmation cue; optional for frequent routine actions."
+    },
+    {
+      "id": "Action-Denied",
+      "group": "Notifications",
+      "kind": 12,
+      "variant": 1,
+      "loop": false,
+      "seconds": 0.7,
+      "targetLUFS": -24,
+      "intent": "Gentle lower double cue for a rejected actionable command."
+    },
+    {
+      "id": "Objective-Complete",
+      "group": "Notifications",
+      "kind": 12,
+      "variant": 2,
+      "loop": false,
+      "seconds": 1.3,
+      "targetLUFS": -24,
+      "intent": "Warm short rising completion cue, once per newly completed objective."
+    },
+    {
+      "id": "Milestone-Reached",
+      "group": "Notifications",
+      "kind": 12,
+      "variant": 3,
+      "loop": false,
+      "seconds": 2.1,
+      "targetLUFS": -24,
+      "intent": "Slightly fuller three-note milestone cue; notification motif, not background music."
+    },
+    {
+      "id": "Service-Attention",
+      "group": "Notifications",
+      "kind": 12,
+      "variant": 4,
+      "loop": false,
+      "seconds": 1,
+      "targetLUFS": -24,
+      "intent": "Restrained repeated note for a newly actionable service issue."
+    },
+    {
+      "id": "Incident-Notice",
+      "group": "Notifications",
+      "kind": 12,
+      "variant": 5,
+      "loop": false,
+      "seconds": 1.4,
+      "targetLUFS": -24,
+      "intent": "More distinct short incident notice, subordinate to critical sirens/visible alerts."
+    },
+    {
+      "id": "Service-Recovered",
+      "group": "Notifications",
+      "kind": 12,
+      "variant": 6,
+      "loop": false,
+      "seconds": 1,
+      "targetLUFS": -24,
+      "intent": "Soft rising recovery cue for a meaningful resolved issue, without high-speed flooding."
+    },
+    {
+      "id": "Rain-Moderate",
+      "group": "Weather",
+      "kind": 7,
+      "variant": 2,
+      "loop": true,
+      "seconds": 20,
+      "targetLUFS": -36,
+      "intent": "Middle rain level: more frequent rounded drops with a restrained wash; used in the storm scene."
+    },
+    {
+      "id": "Rain-Downpour",
+      "group": "Weather",
+      "kind": 7,
+      "variant": 3,
+      "loop": true,
+      "seconds": 20,
+      "targetLUFS": -30,
+      "intent": "Torrential option with a broad but less sharp continuous wash; reserve for severe rainfall."
+    },
+    {
+      "id": "Industry-Clank",
+      "group": "Industry",
+      "kind": 17,
+      "variant": 0,
+      "loop": false,
+      "seconds": 1.5,
+      "targetLUFS": -29,
+      "intent": "Distinct metal strike followed by short uneven ringing/rattle, separate from the accepted idle hum."
+    },
+    {
+      "id": "Cricket-Chirp-Pair",
+      "group": "Day and night wildlife",
+      "kind": 8,
+      "variant": 2,
+      "loop": false,
+      "seconds": 0.8,
+      "targetLUFS": -35,
+      "intent": "One isolated higher-pitched chirp-chirp call, making the two-part pattern easy to judge; also available as a future wildlife event source."
+    }
+  ],
+  "futureMixPolicy": {
+    "state": "Samples and offline mix illustrations only; no runtime implementation",
+    "ambience": "Area envelopes and zoom/focus drive selected local beds; broad distant mix remains quieter. Weather/day-night/season/location and actual city activity gate suitability. No ticking actor per building/citizen.",
+    "wildlife": "Schedule a small bounded pool of varied bird one-shots and suitable night-insect beds. Use natural timing variation at wall-clock speed, not simulation-speed replay.",
+    "notifications": "New actionable transitions only, deduplicated across load/resume and rate-limited/coalesced at high simulation speed. Routine confirmation cues should be optional. Audio supplements visible state.",
+    "controls": "Shared saved effects/ambience controls; later D82 music control is separate. Pause/menu/suspend/load/switch must cancel/rebuild only currently suitable layers.",
+    "rain": "Choose/crossfade light, moderate, heavy and downpour with actual rainfall intensity; do not normalize all four to the same loudness. Targets -39/-36/-33/-30 LUFS are review authoring levels, not engine mixer settings.",
+    "review": "Current requested core source refinement is complete; retain accepted sounds. Any future supplemental sources need their own listening review. No physical localization/comfort or actual voice/memory/CPU acceptance is established by these exports."
+  },
+  "review": "Focused runtime feedback: round rain droplet attacks and emphasize continuous water wash; retain four distinct loudness levels and every other accepted source."
+}

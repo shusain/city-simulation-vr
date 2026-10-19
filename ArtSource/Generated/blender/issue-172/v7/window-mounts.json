@@ -1,0 +1,2669 @@
+{
+  "windows": [
+    {
+      "pane": "WestOuter00_Pane",
+      "frame_parts": [
+        "WestOuter00_JambL",
+        "WestOuter00_JambR",
+        "WestOuter00_Head",
+        "WestOuter00_Sill"
+      ],
+      "backing": "TeachingWing_West",
+      "axis": 0,
+      "sign": -1,
+      "measured_bounds": {
+        "name": "WestOuter00_Pane",
+        "min": [
+          -13.557499885559082,
+          -9.107500076293945,
+          1.192500114440918
+        ],
+        "max": [
+          -13.522500038146973,
+          -6.892499923706055,
+          2.7074999809265137
+        ]
+      },
+      "frame_bounds": [
+        {
+          "name": "WestOuter00_JambL",
+          "min": [
+            -13.649999618530273,
+            -9.225000381469727,
+            1.0750000476837158
+          ],
+          "max": [
+            -13.489999771118164,
+            -9.125,
+            2.825000047683716
+          ]
+        },
+        {
+          "name": "WestOuter00_JambR",
+          "min": [
+            -13.649999618530273,
+            -6.875,
+            1.0750000476837158
+          ],
+          "max": [
+            -13.489999771118164,
+            -6.774999618530273,
+            2.825000047683716
+          ]
+        },
+        {
+          "name": "WestOuter00_Head",
+          "min": [
+            -13.649999618530273,
+            -9.125,
+            2.7250001430511475
+          ],
+          "max": [
+            -13.489999771118164,
+            -6.875,
+            2.825000047683716
+          ]
+        },
+        {
+          "name": "WestOuter00_Sill",
+          "min": [
+            -13.649999618530273,
+            -9.125,
+            1.0750000476837158
+          ],
+          "max": [
+            -13.489999771118164,
+            -6.875,
+            1.1749999523162842
+          ]
+        }
+      ],
+      "backing_bounds": {
+        "name": "TeachingWing_West",
+        "min": [
+          -13.5,
+          -11.0,
+          0.0
+        ],
+        "max": [
+          -6.5,
+          13.0,
+          3.6500000953674316
+        ]
+      },
+      "checks": {
+        "containment": true,
+        "rim_wall_contact": true,
+        "pane_clear": true,
+        "corners_disjoint": true,
+        "parent_shape_preserved": true,
+        "rail_end_clearance_m": 0,
+        "requested_1mm_clearance": false
+      }
+    },
+    {
+      "pane": "WestOuter01_Pane",
+      "frame_parts": [
+        "WestOuter01_JambL",
+        "WestOuter01_JambR",
+        "WestOuter01_Head",
+        "WestOuter01_Sill"
+      ],
+      "backing": "TeachingWing_West",
+      "axis": 0,
+      "sign": -1,
+      "measured_bounds": {
+        "name": "WestOuter01_Pane",
+        "min": [
+          -13.557499885559082,
+          -5.607500076293945,
+          1.192500114440918
+        ],
+        "max": [
+          -13.522500038146973,
+          -3.3924999237060547,
+          2.7074999809265137
+        ]
+      },
+      "frame_bounds": [
+        {
+          "name": "WestOuter01_JambL",
+          "min": [
+            -13.649999618530273,
+            -5.725000381469727,
+            1.0750000476837158
+          ],
+          "max": [
+            -13.489999771118164,
+            -5.625,
+            2.825000047683716
+          ]
+        },
+        {
+          "name": "WestOuter01_JambR",
+          "min": [
+            -13.649999618530273,
+            -3.375,
+            1.0750000476837158
+          ],
+          "max": [
+            -13.489999771118164,
+            -3.2750000953674316,
+            2.825000047683716
+          ]
+        },
+        {
+          "name": "WestOuter01_Head",
+          "min": [
+            -13.649999618530273,
+            -5.625,
+            2.7250001430511475
+          ],
+          "max": [
+            -13.489999771118164,
+            -3.375,
+            2.825000047683716
+          ]
+        },
+        {
+          "name": "WestOuter01_Sill",
+          "min": [
+            -13.649999618530273,
+            -5.625,
+            1.0750000476837158
+          ],
+          "max": [
+            -13.489999771118164,
+            -3.375,
+            1.1749999523162842
+          ]
+        }
+      ],
+      "backing_bounds": {
+        "name": "TeachingWing_West",
+        "min": [
+          -13.5,
+          -11.0,
+          0.0
+        ],
+        "max": [
+          -6.5,
+          13.0,
+          3.6500000953674316
+        ]
+      },
+      "checks": {
+        "containment": true,
+        "rim_wall_contact": true,
+        "pane_clear": true,
+        "corners_disjoint": true,
+        "parent_shape_preserved": true,
+        "rail_end_clearance_m": 0,
+        "requested_1mm_clearance": false
+      }
+    },
+    {
+      "pane": "WestOuter02_Pane",
+      "frame_parts": [
+        "WestOuter02_JambL",
+        "WestOuter02_JambR",
+        "WestOuter02_Head",
+        "WestOuter02_Sill"
+      ],
+      "backing": "TeachingWing_West",
+      "axis": 0,
+      "sign": -1,
+      "measured_bounds": {
+        "name": "WestOuter02_Pane",
+        "min": [
+          -13.557499885559082,
+          -2.1075000762939453,
+          1.192500114440918
+        ],
+        "max": [
+          -13.522500038146973,
+          0.10749995708465576,
+          2.7074999809265137
+        ]
+      },
+      "frame_bounds": [
+        {
+          "name": "WestOuter02_JambL",
+          "min": [
+            -13.649999618530273,
+            -2.2249999046325684,
+            1.0750000476837158
+          ],
+          "max": [
+            -13.489999771118164,
+            -2.125,
+            2.825000047683716
+          ]
+        },
+        {
+          "name": "WestOuter02_JambR",
+          "min": [
+            -13.649999618530273,
+            0.125,
+            1.0750000476837158
+          ],
+          "max": [
+            -13.489999771118164,
+            0.22499999403953552,
+            2.825000047683716
+          ]
+        },
+        {
+          "name": "WestOuter02_Head",
+          "min": [
+            -13.649999618530273,
+            -2.125,
+            2.7250001430511475
+          ],
+          "max": [
+            -13.489999771118164,
+            0.125,
+            2.825000047683716
+          ]
+        },
+        {
+          "name": "WestOuter02_Sill",
+          "min": [
+            -13.649999618530273,
+            -2.125,
+            1.0750000476837158
+          ],
+          "max": [
+            -13.489999771118164,
+            0.125,
+            1.1749999523162842
+          ]
+        }
+      ],
+      "backing_bounds": {
+        "name": "TeachingWing_West",
+        "min": [
+          -13.5,
+          -11.0,
+          0.0
+        ],
+        "max": [
+          -6.5,
+          13.0,
+          3.6500000953674316
+        ]
+      },
+      "checks": {
+        "containment": true,
+        "rim_wall_contact": true,
+        "pane_clear": true,
+        "corners_disjoint": true,
+        "parent_shape_preserved": true,
+        "rail_end_clearance_m": 0,
+        "requested_1mm_clearance": false
+      }
+    },
+    {
+      "pane": "WestOuter03_Pane",
+      "frame_parts": [
+        "WestOuter03_JambL",
+        "WestOuter03_JambR",
+        "WestOuter03_Head",
+        "WestOuter03_Sill"
+      ],
+      "backing": "TeachingWing_West",
+      "axis": 0,
+      "sign": -1,
+      "measured_bounds": {
+        "name": "WestOuter03_Pane",
+        "min": [
+          -13.557499885559082,
+          1.3925000429153442,
+          1.192500114440918
+        ],
+        "max": [
+          -13.522500038146973,
+          3.6075000762939453,
+          2.7074999809265137
+        ]
+      },
+      "frame_bounds": [
+        {
+          "name": "WestOuter03_JambL",
+          "min": [
+            -13.649999618530273,
+            1.2750000953674316,
+            1.0750000476837158
+          ],
+          "max": [
+            -13.489999771118164,
+            1.375,
+            2.825000047683716
+          ]
+        },
+        {
+          "name": "WestOuter03_JambR",
+          "min": [
+            -13.649999618530273,
+            3.625,
+            1.0750000476837158
+          ],
+          "max": [
+            -13.489999771118164,
+            3.7249999046325684,
+            2.825000047683716
+          ]
+        },
+        {
+          "name": "WestOuter03_Head",
+          "min": [
+            -13.649999618530273,
+            1.375,
+            2.7250001430511475
+          ],
+          "max": [
+            -13.489999771118164,
+            3.625,
+            2.825000047683716
+          ]
+        },
+        {
+          "name": "WestOuter03_Sill",
+          "min": [
+            -13.649999618530273,
+            1.375,
+            1.0750000476837158
+          ],
+          "max": [
+            -13.489999771118164,
+            3.625,
+            1.1749999523162842
+          ]
+        }
+      ],
+      "backing_bounds": {
+        "name": "TeachingWing_West",
+        "min": [
+          -13.5,
+          -11.0,
+          0.0
+        ],
+        "max": [
+          -6.5,
+          13.0,
+          3.6500000953674316
+        ]
+      },
+      "checks": {
+        "containment": true,
+        "rim_wall_contact": true,
+        "pane_clear": true,
+        "corners_disjoint": true,
+        "parent_shape_preserved": true,
+        "rail_end_clearance_m": 0,
+        "requested_1mm_clearance": false
+      }
+    },
+    {
+      "pane": "WestOuter04_Pane",
+      "frame_parts": [
+        "WestOuter04_JambL",
+        "WestOuter04_JambR",
+        "WestOuter04_Head",
+        "WestOuter04_Sill"
+      ],
+      "backing": "TeachingWing_West",
+      "axis": 0,
+      "sign": -1,
+      "measured_bounds": {
+        "name": "WestOuter04_Pane",
+        "min": [
+          -13.557499885559082,
+          4.892499923706055,
+          1.192500114440918
+        ],
+        "max": [
+          -13.522500038146973,
+          7.107500076293945,
+          2.7074999809265137
+        ]
+      },
+      "frame_bounds": [
+        {
+          "name": "WestOuter04_JambL",
+          "min": [
+            -13.649999618530273,
+            4.774999618530273,
+            1.0750000476837158
+          ],
+          "max": [
+            -13.489999771118164,
+            4.875,
+            2.825000047683716
+          ]
+        },
+        {
+          "name": "WestOuter04_JambR",
+          "min": [
+            -13.649999618530273,
+            7.125,
+            1.0750000476837158
+          ],
+          "max": [
+            -13.489999771118164,
+            7.225000381469727,
+            2.825000047683716
+          ]
+        },
+        {
+          "name": "WestOuter04_Head",
+          "min": [
+            -13.649999618530273,
+            4.875,
+            2.7250001430511475
+          ],
+          "max": [
+            -13.489999771118164,
+            7.125,
+            2.825000047683716
+          ]
+        },
+        {
+          "name": "WestOuter04_Sill",
+          "min": [
+            -13.649999618530273,
+            4.875,
+            1.0750000476837158
+          ],
+          "max": [
+            -13.489999771118164,
+            7.125,
+            1.1749999523162842
+          ]
+        }
+      ],
+      "backing_bounds": {
+        "name": "TeachingWing_West",
+        "min": [
+          -13.5,
+          -11.0,
+          0.0
+        ],
+        "max": [
+          -6.5,
+          13.0,
+          3.6500000953674316
+        ]
+      },
+      "checks": {
+        "containment": true,
+        "rim_wall_contact": true,
+        "pane_clear": true,
+        "corners_disjoint": true,
+        "parent_shape_preserved": true,
+        "rail_end_clearance_m": 0,
+        "requested_1mm_clearance": false
+      }
+    },
+    {
+      "pane": "WestOuter05_Pane",
+      "frame_parts": [
+        "WestOuter05_JambL",
+        "WestOuter05_JambR",
+        "WestOuter05_Head",
+        "WestOuter05_Sill"
+      ],
+      "backing": "TeachingWing_West",
+      "axis": 0,
+      "sign": -1,
+      "measured_bounds": {
+        "name": "WestOuter05_Pane",
+        "min": [
+          -13.557499885559082,
+          8.392499923706055,
+          1.192500114440918
+        ],
+        "max": [
+          -13.522500038146973,
+          10.607500076293945,
+          2.7074999809265137
+        ]
+      },
+      "frame_bounds": [
+        {
+          "name": "WestOuter05_JambL",
+          "min": [
+            -13.649999618530273,
+            8.274999618530273,
+            1.0750000476837158
+          ],
+          "max": [
+            -13.489999771118164,
+            8.375,
+            2.825000047683716
+          ]
+        },
+        {
+          "name": "WestOuter05_JambR",
+          "min": [
+            -13.649999618530273,
+            10.625,
+            1.0750000476837158
+          ],
+          "max": [
+            -13.489999771118164,
+            10.725000381469727,
+            2.825000047683716
+          ]
+        },
+        {
+          "name": "WestOuter05_Head",
+          "min": [
+            -13.649999618530273,
+            8.375,
+            2.7250001430511475
+          ],
+          "max": [
+            -13.489999771118164,
+            10.625,
+            2.825000047683716
+          ]
+        },
+        {
+          "name": "WestOuter05_Sill",
+          "min": [
+            -13.649999618530273,
+            8.375,
+            1.0750000476837158
+          ],
+          "max": [
+            -13.489999771118164,
+            10.625,
+            1.1749999523162842
+          ]
+        }
+      ],
+      "backing_bounds": {
+        "name": "TeachingWing_West",
+        "min": [
+          -13.5,
+          -11.0,
+          0.0
+        ],
+        "max": [
+          -6.5,
+          13.0,
+          3.6500000953674316
+        ]
+      },
+      "checks": {
+        "containment": true,
+        "rim_wall_contact": true,
+        "pane_clear": true,
+        "corners_disjoint": true,
+        "parent_shape_preserved": true,
+        "rail_end_clearance_m": 0,
+        "requested_1mm_clearance": false
+      }
+    },
+    {
+      "pane": "Courtyard00_Pane",
+      "frame_parts": [
+        "Courtyard00_JambL",
+        "Courtyard00_JambR",
+        "Courtyard00_Head",
+        "Courtyard00_Sill"
+      ],
+      "backing": "TeachingWing_West",
+      "axis": 0,
+      "sign": 1,
+      "measured_bounds": {
+        "name": "Courtyard00_Pane",
+        "min": [
+          -6.477499961853027,
+          -7.082499980926514,
+          1.192500114440918
+        ],
+        "max": [
+          -6.442500114440918,
+          -4.917500019073486,
+          2.7074999809265137
+        ]
+      },
+      "frame_bounds": [
+        {
+          "name": "Courtyard00_JambL",
+          "min": [
+            -6.509999752044678,
+            -7.200000286102295,
+            1.0750000476837158
+          ],
+          "max": [
+            -6.349999904632568,
+            -7.099999904632568,
+            2.825000047683716
+          ]
+        },
+        {
+          "name": "Courtyard00_JambR",
+          "min": [
+            -6.509999752044678,
+            -4.900000095367432,
+            1.0750000476837158
+          ],
+          "max": [
+            -6.349999904632568,
+            -4.799999713897705,
+            2.825000047683716
+          ]
+        },
+        {
+          "name": "Courtyard00_Head",
+          "min": [
+            -6.509999752044678,
+            -7.099999904632568,
+            2.7250001430511475
+          ],
+          "max": [
+            -6.349999904632568,
+            -4.900000095367432,
+            2.825000047683716
+          ]
+        },
+        {
+          "name": "Courtyard00_Sill",
+          "min": [
+            -6.509999752044678,
+            -7.099999904632568,
+            1.0750000476837158
+          ],
+          "max": [
+            -6.349999904632568,
+            -4.900000095367432,
+            1.1749999523162842
+          ]
+        }
+      ],
+      "backing_bounds": {
+        "name": "TeachingWing_West",
+        "min": [
+          -13.5,
+          -11.0,
+          0.0
+        ],
+        "max": [
+          -6.5,
+          13.0,
+          3.6500000953674316
+        ]
+      },
+      "checks": {
+        "containment": true,
+        "rim_wall_contact": true,
+        "pane_clear": true,
+        "corners_disjoint": true,
+        "parent_shape_preserved": true,
+        "rail_end_clearance_m": 0,
+        "requested_1mm_clearance": false
+      }
+    },
+    {
+      "pane": "Courtyard01_Pane",
+      "frame_parts": [
+        "Courtyard01_JambL",
+        "Courtyard01_JambR",
+        "Courtyard01_Head",
+        "Courtyard01_Sill"
+      ],
+      "backing": "TeachingWing_West",
+      "axis": 0,
+      "sign": 1,
+      "measured_bounds": {
+        "name": "Courtyard01_Pane",
+        "min": [
+          -6.477499961853027,
+          -3.5824999809265137,
+          1.192500114440918
+        ],
+        "max": [
+          -6.442500114440918,
+          -1.4175000190734863,
+          2.7074999809265137
+        ]
+      },
+      "frame_bounds": [
+        {
+          "name": "Courtyard01_JambL",
+          "min": [
+            -6.509999752044678,
+            -3.700000047683716,
+            1.0750000476837158
+          ],
+          "max": [
+            -6.349999904632568,
+            -3.6000001430511475,
+            2.825000047683716
+          ]
+        },
+        {
+          "name": "Courtyard01_JambR",
+          "min": [
+            -6.509999752044678,
+            -1.399999976158142,
+            1.0750000476837158
+          ],
+          "max": [
+            -6.349999904632568,
+            -1.3000000715255737,
+            2.825000047683716
+          ]
+        },
+        {
+          "name": "Courtyard01_Head",
+          "min": [
+            -6.509999752044678,
+            -3.5999999046325684,
+            2.7250001430511475
+          ],
+          "max": [
+            -6.349999904632568,
+            -1.399999976158142,
+            2.825000047683716
+          ]
+        },
+        {
+          "name": "Courtyard01_Sill",
+          "min": [
+            -6.509999752044678,
+            -3.5999999046325684,
+            1.0750000476837158
+          ],
+          "max": [
+            -6.349999904632568,
+            -1.399999976158142,
+            1.1749999523162842
+          ]
+        }
+      ],
+      "backing_bounds": {
+        "name": "TeachingWing_West",
+        "min": [
+          -13.5,
+          -11.0,
+          0.0
+        ],
+        "max": [
+          -6.5,
+          13.0,
+          3.6500000953674316
+        ]
+      },
+      "checks": {
+        "containment": true,
+        "rim_wall_contact": true,
+        "pane_clear": true,
+        "corners_disjoint": true,
+        "parent_shape_preserved": true,
+        "rail_end_clearance_m": 0,
+        "requested_1mm_clearance": false
+      }
+    },
+    {
+      "pane": "Courtyard02_Pane",
+      "frame_parts": [
+        "Courtyard02_JambL",
+        "Courtyard02_JambR",
+        "Courtyard02_Head",
+        "Courtyard02_Sill"
+      ],
+      "backing": "TeachingWing_West",
+      "axis": 0,
+      "sign": 1,
+      "measured_bounds": {
+        "name": "Courtyard02_Pane",
+        "min": [
+          -6.477499961853027,
+          -0.08249998092651367,
+          1.192500114440918
+        ],
+        "max": [
+          -6.442500114440918,
+          2.0824999809265137,
+          2.7074999809265137
+        ]
+      },
+      "frame_bounds": [
+        {
+          "name": "Courtyard02_JambL",
+          "min": [
+            -6.509999752044678,
+            -0.20000000298023224,
+            1.0750000476837158
+          ],
+          "max": [
+            -6.349999904632568,
+            -0.10000000894069672,
+            2.825000047683716
+          ]
+        },
+        {
+          "name": "Courtyard02_JambR",
+          "min": [
+            -6.509999752044678,
+            2.1000001430511475,
+            1.0750000476837158
+          ],
+          "max": [
+            -6.349999904632568,
+            2.200000047683716,
+            2.825000047683716
+          ]
+        },
+        {
+          "name": "Courtyard02_Head",
+          "min": [
+            -6.509999752044678,
+            -0.10000002384185791,
+            2.7250001430511475
+          ],
+          "max": [
+            -6.349999904632568,
+            2.0999999046325684,
+            2.825000047683716
+          ]
+        },
+        {
+          "name": "Courtyard02_Sill",
+          "min": [
+            -6.509999752044678,
+            -0.10000002384185791,
+            1.0750000476837158
+          ],
+          "max": [
+            -6.349999904632568,
+            2.0999999046325684,
+            1.1749999523162842
+          ]
+        }
+      ],
+      "backing_bounds": {
+        "name": "TeachingWing_West",
+        "min": [
+          -13.5,
+          -11.0,
+          0.0
+        ],
+        "max": [
+          -6.5,
+          13.0,
+          3.6500000953674316
+        ]
+      },
+      "checks": {
+        "containment": true,
+        "rim_wall_contact": true,
+        "pane_clear": true,
+        "corners_disjoint": true,
+        "parent_shape_preserved": true,
+        "rail_end_clearance_m": 0,
+        "requested_1mm_clearance": false
+      }
+    },
+    {
+      "pane": "Courtyard03_Pane",
+      "frame_parts": [
+        "Courtyard03_JambL",
+        "Courtyard03_JambR",
+        "Courtyard03_Head",
+        "Courtyard03_Sill"
+      ],
+      "backing": "TeachingWing_West",
+      "axis": 0,
+      "sign": 1,
+      "measured_bounds": {
+        "name": "Courtyard03_Pane",
+        "min": [
+          -6.477499961853027,
+          3.4175000190734863,
+          1.192500114440918
+        ],
+        "max": [
+          -6.442500114440918,
+          5.582499980926514,
+          2.7074999809265137
+        ]
+      },
+      "frame_bounds": [
+        {
+          "name": "Courtyard03_JambL",
+          "min": [
+            -6.509999752044678,
+            3.299999952316284,
+            1.0750000476837158
+          ],
+          "max": [
+            -6.349999904632568,
+            3.3999998569488525,
+            2.825000047683716
+          ]
+        },
+        {
+          "name": "Courtyard03_JambR",
+          "min": [
+            -6.509999752044678,
+            5.599999904632568,
+            1.0750000476837158
+          ],
+          "max": [
+            -6.349999904632568,
+            5.700000286102295,
+            2.825000047683716
+          ]
+        },
+        {
+          "name": "Courtyard03_Head",
+          "min": [
+            -6.509999752044678,
+            3.4000000953674316,
+            2.7250001430511475
+          ],
+          "max": [
+            -6.349999904632568,
+            5.599999904632568,
+            2.825000047683716
+          ]
+        },
+        {
+          "name": "Courtyard03_Sill",
+          "min": [
+            -6.509999752044678,
+            3.4000000953674316,
+            1.0750000476837158
+          ],
+          "max": [
+            -6.349999904632568,
+            5.599999904632568,
+            1.1749999523162842
+          ]
+        }
+      ],
+      "backing_bounds": {
+        "name": "TeachingWing_West",
+        "min": [
+          -13.5,
+          -11.0,
+          0.0
+        ],
+        "max": [
+          -6.5,
+          13.0,
+          3.6500000953674316
+        ]
+      },
+      "checks": {
+        "containment": true,
+        "rim_wall_contact": true,
+        "pane_clear": true,
+        "corners_disjoint": true,
+        "parent_shape_preserved": true,
+        "rail_end_clearance_m": 0,
+        "requested_1mm_clearance": false
+      }
+    },
+    {
+      "pane": "WestFront0_Pane",
+      "frame_parts": [
+        "WestFront0_JambL",
+        "WestFront0_JambR",
+        "WestFront0_Head",
+        "WestFront0_Sill"
+      ],
+      "backing": "TeachingWing_West",
+      "axis": 1,
+      "sign": -1,
+      "measured_bounds": {
+        "name": "WestFront0_Pane",
+        "min": [
+          -12.707499504089355,
+          -11.057499885559082,
+          1.192500114440918
+        ],
+        "max": [
+          -10.692500114440918,
+          -11.022500038146973,
+          2.7074999809265137
+        ]
+      },
+      "frame_bounds": [
+        {
+          "name": "WestFront0_JambL",
+          "min": [
+            -12.824999809265137,
+            -11.149999618530273,
+            1.0750000476837158
+          ],
+          "max": [
+            -12.72499942779541,
+            -10.989999771118164,
+            2.825000047683716
+          ]
+        },
+        {
+          "name": "WestFront0_JambR",
+          "min": [
+            -10.675000190734863,
+            -11.149999618530273,
+            1.0750000476837158
+          ],
+          "max": [
+            -10.574999809265137,
+            -10.989999771118164,
+            2.825000047683716
+          ]
+        },
+        {
+          "name": "WestFront0_Head",
+          "min": [
+            -12.72499942779541,
+            -11.149999618530273,
+            2.7250001430511475
+          ],
+          "max": [
+            -10.675000190734863,
+            -10.989999771118164,
+            2.825000047683716
+          ]
+        },
+        {
+          "name": "WestFront0_Sill",
+          "min": [
+            -12.72499942779541,
+            -11.149999618530273,
+            1.0750000476837158
+          ],
+          "max": [
+            -10.675000190734863,
+            -10.989999771118164,
+            1.1749999523162842
+          ]
+        }
+      ],
+      "backing_bounds": {
+        "name": "TeachingWing_West",
+        "min": [
+          -13.5,
+          -11.0,
+          0.0
+        ],
+        "max": [
+          -6.5,
+          13.0,
+          3.6500000953674316
+        ]
+      },
+      "checks": {
+        "containment": true,
+        "rim_wall_contact": true,
+        "pane_clear": true,
+        "corners_disjoint": true,
+        "parent_shape_preserved": true,
+        "rail_end_clearance_m": 0,
+        "requested_1mm_clearance": false
+      }
+    },
+    {
+      "pane": "WestFront1_Pane",
+      "frame_parts": [
+        "WestFront1_JambL",
+        "WestFront1_JambR",
+        "WestFront1_Head",
+        "WestFront1_Sill"
+      ],
+      "backing": "TeachingWing_West",
+      "axis": 1,
+      "sign": -1,
+      "measured_bounds": {
+        "name": "WestFront1_Pane",
+        "min": [
+          -9.307499885559082,
+          -11.057499885559082,
+          1.192500114440918
+        ],
+        "max": [
+          -7.292500019073486,
+          -11.022500038146973,
+          2.7074999809265137
+        ]
+      },
+      "frame_bounds": [
+        {
+          "name": "WestFront1_JambL",
+          "min": [
+            -9.425000190734863,
+            -11.149999618530273,
+            1.0750000476837158
+          ],
+          "max": [
+            -9.324999809265137,
+            -10.989999771118164,
+            2.825000047683716
+          ]
+        },
+        {
+          "name": "WestFront1_JambR",
+          "min": [
+            -7.275000095367432,
+            -11.149999618530273,
+            1.0750000476837158
+          ],
+          "max": [
+            -7.174999713897705,
+            -10.989999771118164,
+            2.825000047683716
+          ]
+        },
+        {
+          "name": "WestFront1_Head",
+          "min": [
+            -9.324999809265137,
+            -11.149999618530273,
+            2.7250001430511475
+          ],
+          "max": [
+            -7.275000095367432,
+            -10.989999771118164,
+            2.825000047683716
+          ]
+        },
+        {
+          "name": "WestFront1_Sill",
+          "min": [
+            -9.324999809265137,
+            -11.149999618530273,
+            1.0750000476837158
+          ],
+          "max": [
+            -7.275000095367432,
+            -10.989999771118164,
+            1.1749999523162842
+          ]
+        }
+      ],
+      "backing_bounds": {
+        "name": "TeachingWing_West",
+        "min": [
+          -13.5,
+          -11.0,
+          0.0
+        ],
+        "max": [
+          -6.5,
+          13.0,
+          3.6500000953674316
+        ]
+      },
+      "checks": {
+        "containment": true,
+        "rim_wall_contact": true,
+        "pane_clear": true,
+        "corners_disjoint": true,
+        "parent_shape_preserved": true,
+        "rail_end_clearance_m": 0,
+        "requested_1mm_clearance": false
+      }
+    },
+    {
+      "pane": "NorthTeaching0_Pane",
+      "frame_parts": [
+        "NorthTeaching0_JambL",
+        "NorthTeaching0_JambR",
+        "NorthTeaching0_Head",
+        "NorthTeaching0_Sill"
+      ],
+      "backing": "TeachingWing_North",
+      "axis": 1,
+      "sign": -1,
+      "measured_bounds": {
+        "name": "NorthTeaching0_Pane",
+        "min": [
+          -5.832500457763672,
+          6.942500114440918,
+          1.2174999713897705
+        ],
+        "max": [
+          -3.767500162124634,
+          6.977499961853027,
+          2.7825000286102295
+        ]
+      },
+      "frame_bounds": [
+        {
+          "name": "NorthTeaching0_JambL",
+          "min": [
+            -5.950000286102295,
+            6.849999904632568,
+            1.100000023841858
+          ],
+          "max": [
+            -5.849999904632568,
+            7.009999752044678,
+            2.9000000953674316
+          ]
+        },
+        {
+          "name": "NorthTeaching0_JambR",
+          "min": [
+            -3.75,
+            6.849999904632568,
+            1.100000023841858
+          ],
+          "max": [
+            -3.6500000953674316,
+            7.009999752044678,
+            2.9000000953674316
+          ]
+        },
+        {
+          "name": "NorthTeaching0_Head",
+          "min": [
+            -5.850000381469727,
+            6.849999904632568,
+            2.799999952316284
+          ],
+          "max": [
+            -3.750000238418579,
+            7.009999752044678,
+            2.8999998569488525
+          ]
+        },
+        {
+          "name": "NorthTeaching0_Sill",
+          "min": [
+            -5.850000381469727,
+            6.849999904632568,
+            1.100000023841858
+          ],
+          "max": [
+            -3.750000238418579,
+            7.009999752044678,
+            1.1999999284744263
+          ]
+        }
+      ],
+      "backing_bounds": {
+        "name": "TeachingWing_North",
+        "min": [
+          -6.5,
+          7.0,
+          0.0
+        ],
+        "max": [
+          4.5,
+          13.0,
+          3.8499999046325684
+        ]
+      },
+      "checks": {
+        "containment": true,
+        "rim_wall_contact": true,
+        "pane_clear": true,
+        "corners_disjoint": true,
+        "parent_shape_preserved": true,
+        "rail_end_clearance_m": 0,
+        "requested_1mm_clearance": false
+      }
+    },
+    {
+      "pane": "NorthTeaching1_Pane",
+      "frame_parts": [
+        "NorthTeaching1_JambL",
+        "NorthTeaching1_JambR",
+        "NorthTeaching1_Head",
+        "NorthTeaching1_Sill"
+      ],
+      "backing": "TeachingWing_North",
+      "axis": 1,
+      "sign": -1,
+      "measured_bounds": {
+        "name": "NorthTeaching1_Pane",
+        "min": [
+          -2.8324999809265137,
+          6.942500114440918,
+          1.2174999713897705
+        ],
+        "max": [
+          -0.7674999237060547,
+          6.977499961853027,
+          2.7825000286102295
+        ]
+      },
+      "frame_bounds": [
+        {
+          "name": "NorthTeaching1_JambL",
+          "min": [
+            -2.950000047683716,
+            6.849999904632568,
+            1.100000023841858
+          ],
+          "max": [
+            -2.8500001430511475,
+            7.009999752044678,
+            2.9000000953674316
+          ]
+        },
+        {
+          "name": "NorthTeaching1_JambR",
+          "min": [
+            -0.75,
+            6.849999904632568,
+            1.100000023841858
+          ],
+          "max": [
+            -0.6499999761581421,
+            7.009999752044678,
+            2.9000000953674316
+          ]
+        },
+        {
+          "name": "NorthTeaching1_Head",
+          "min": [
+            -2.8499999046325684,
+            6.849999904632568,
+            2.799999952316284
+          ],
+          "max": [
+            -0.75,
+            7.009999752044678,
+            2.8999998569488525
+          ]
+        },
+        {
+          "name": "NorthTeaching1_Sill",
+          "min": [
+            -2.8499999046325684,
+            6.849999904632568,
+            1.100000023841858
+          ],
+          "max": [
+            -0.75,
+            7.009999752044678,
+            1.1999999284744263
+          ]
+        }
+      ],
+      "backing_bounds": {
+        "name": "TeachingWing_North",
+        "min": [
+          -6.5,
+          7.0,
+          0.0
+        ],
+        "max": [
+          4.5,
+          13.0,
+          3.8499999046325684
+        ]
+      },
+      "checks": {
+        "containment": true,
+        "rim_wall_contact": true,
+        "pane_clear": true,
+        "corners_disjoint": true,
+        "parent_shape_preserved": true,
+        "rail_end_clearance_m": 0,
+        "requested_1mm_clearance": false
+      }
+    },
+    {
+      "pane": "NorthTeaching2_Pane",
+      "frame_parts": [
+        "NorthTeaching2_JambL",
+        "NorthTeaching2_JambR",
+        "NorthTeaching2_Head",
+        "NorthTeaching2_Sill"
+      ],
+      "backing": "TeachingWing_North",
+      "axis": 1,
+      "sign": -1,
+      "measured_bounds": {
+        "name": "NorthTeaching2_Pane",
+        "min": [
+          0.16750001907348633,
+          6.942500114440918,
+          1.2174999713897705
+        ],
+        "max": [
+          2.2325000762939453,
+          6.977499961853027,
+          2.7825000286102295
+        ]
+      },
+      "frame_bounds": [
+        {
+          "name": "NorthTeaching2_JambL",
+          "min": [
+            0.05000000074505806,
+            6.849999904632568,
+            1.100000023841858
+          ],
+          "max": [
+            0.15000000596046448,
+            7.009999752044678,
+            2.9000000953674316
+          ]
+        },
+        {
+          "name": "NorthTeaching2_JambR",
+          "min": [
+            2.25,
+            6.849999904632568,
+            1.100000023841858
+          ],
+          "max": [
+            2.3499999046325684,
+            7.009999752044678,
+            2.9000000953674316
+          ]
+        },
+        {
+          "name": "NorthTeaching2_Head",
+          "min": [
+            0.15000009536743164,
+            6.849999904632568,
+            2.799999952316284
+          ],
+          "max": [
+            2.25,
+            7.009999752044678,
+            2.8999998569488525
+          ]
+        },
+        {
+          "name": "NorthTeaching2_Sill",
+          "min": [
+            0.15000009536743164,
+            6.849999904632568,
+            1.100000023841858
+          ],
+          "max": [
+            2.25,
+            7.009999752044678,
+            1.1999999284744263
+          ]
+        }
+      ],
+      "backing_bounds": {
+        "name": "TeachingWing_North",
+        "min": [
+          -6.5,
+          7.0,
+          0.0
+        ],
+        "max": [
+          4.5,
+          13.0,
+          3.8499999046325684
+        ]
+      },
+      "checks": {
+        "containment": true,
+        "rim_wall_contact": true,
+        "pane_clear": true,
+        "corners_disjoint": true,
+        "parent_shape_preserved": true,
+        "rail_end_clearance_m": 0,
+        "requested_1mm_clearance": false
+      }
+    },
+    {
+      "pane": "NorthRear0_Pane",
+      "frame_parts": [
+        "NorthRear0_JambL",
+        "NorthRear0_JambR",
+        "NorthRear0_Head",
+        "NorthRear0_Sill"
+      ],
+      "backing": "TeachingWing_North",
+      "axis": 1,
+      "sign": 1,
+      "measured_bounds": {
+        "name": "NorthRear0_Pane",
+        "min": [
+          -5.832500457763672,
+          13.022500038146973,
+          1.2174999713897705
+        ],
+        "max": [
+          -3.767500162124634,
+          13.057499885559082,
+          2.7825000286102295
+        ]
+      },
+      "frame_bounds": [
+        {
+          "name": "NorthRear0_JambL",
+          "min": [
+            -5.950000286102295,
+            12.989999771118164,
+            1.100000023841858
+          ],
+          "max": [
+            -5.849999904632568,
+            13.149999618530273,
+            2.9000000953674316
+          ]
+        },
+        {
+          "name": "NorthRear0_JambR",
+          "min": [
+            -3.75,
+            12.989999771118164,
+            1.100000023841858
+          ],
+          "max": [
+            -3.6500000953674316,
+            13.149999618530273,
+            2.9000000953674316
+          ]
+        },
+        {
+          "name": "NorthRear0_Head",
+          "min": [
+            -5.850000381469727,
+            12.989999771118164,
+            2.799999952316284
+          ],
+          "max": [
+            -3.750000238418579,
+            13.149999618530273,
+            2.8999998569488525
+          ]
+        },
+        {
+          "name": "NorthRear0_Sill",
+          "min": [
+            -5.850000381469727,
+            12.989999771118164,
+            1.100000023841858
+          ],
+          "max": [
+            -3.750000238418579,
+            13.149999618530273,
+            1.1999999284744263
+          ]
+        }
+      ],
+      "backing_bounds": {
+        "name": "TeachingWing_North",
+        "min": [
+          -6.5,
+          7.0,
+          0.0
+        ],
+        "max": [
+          4.5,
+          13.0,
+          3.8499999046325684
+        ]
+      },
+      "checks": {
+        "containment": true,
+        "rim_wall_contact": true,
+        "pane_clear": true,
+        "corners_disjoint": true,
+        "parent_shape_preserved": true,
+        "rail_end_clearance_m": 0,
+        "requested_1mm_clearance": false
+      }
+    },
+    {
+      "pane": "NorthRear1_Pane",
+      "frame_parts": [
+        "NorthRear1_JambL",
+        "NorthRear1_JambR",
+        "NorthRear1_Head",
+        "NorthRear1_Sill"
+      ],
+      "backing": "TeachingWing_North",
+      "axis": 1,
+      "sign": 1,
+      "measured_bounds": {
+        "name": "NorthRear1_Pane",
+        "min": [
+          -2.8324999809265137,
+          13.022500038146973,
+          1.2174999713897705
+        ],
+        "max": [
+          -0.7674999237060547,
+          13.057499885559082,
+          2.7825000286102295
+        ]
+      },
+      "frame_bounds": [
+        {
+          "name": "NorthRear1_JambL",
+          "min": [
+            -2.950000047683716,
+            12.989999771118164,
+            1.100000023841858
+          ],
+          "max": [
+            -2.8500001430511475,
+            13.149999618530273,
+            2.9000000953674316
+          ]
+        },
+        {
+          "name": "NorthRear1_JambR",
+          "min": [
+            -0.75,
+            12.989999771118164,
+            1.100000023841858
+          ],
+          "max": [
+            -0.6499999761581421,
+            13.149999618530273,
+            2.9000000953674316
+          ]
+        },
+        {
+          "name": "NorthRear1_Head",
+          "min": [
+            -2.8499999046325684,
+            12.989999771118164,
+            2.799999952316284
+          ],
+          "max": [
+            -0.75,
+            13.149999618530273,
+            2.8999998569488525
+          ]
+        },
+        {
+          "name": "NorthRear1_Sill",
+          "min": [
+            -2.8499999046325684,
+            12.989999771118164,
+            1.100000023841858
+          ],
+          "max": [
+            -0.75,
+            13.149999618530273,
+            1.1999999284744263
+          ]
+        }
+      ],
+      "backing_bounds": {
+        "name": "TeachingWing_North",
+        "min": [
+          -6.5,
+          7.0,
+          0.0
+        ],
+        "max": [
+          4.5,
+          13.0,
+          3.8499999046325684
+        ]
+      },
+      "checks": {
+        "containment": true,
+        "rim_wall_contact": true,
+        "pane_clear": true,
+        "corners_disjoint": true,
+        "parent_shape_preserved": true,
+        "rail_end_clearance_m": 0,
+        "requested_1mm_clearance": false
+      }
+    },
+    {
+      "pane": "NorthRear2_Pane",
+      "frame_parts": [
+        "NorthRear2_JambL",
+        "NorthRear2_JambR",
+        "NorthRear2_Head",
+        "NorthRear2_Sill"
+      ],
+      "backing": "TeachingWing_North",
+      "axis": 1,
+      "sign": 1,
+      "measured_bounds": {
+        "name": "NorthRear2_Pane",
+        "min": [
+          0.16750001907348633,
+          13.022500038146973,
+          1.2174999713897705
+        ],
+        "max": [
+          2.2325000762939453,
+          13.057499885559082,
+          2.7825000286102295
+        ]
+      },
+      "frame_bounds": [
+        {
+          "name": "NorthRear2_JambL",
+          "min": [
+            0.05000000074505806,
+            12.989999771118164,
+            1.100000023841858
+          ],
+          "max": [
+            0.15000000596046448,
+            13.149999618530273,
+            2.9000000953674316
+          ]
+        },
+        {
+          "name": "NorthRear2_JambR",
+          "min": [
+            2.25,
+            12.989999771118164,
+            1.100000023841858
+          ],
+          "max": [
+            2.3499999046325684,
+            13.149999618530273,
+            2.9000000953674316
+          ]
+        },
+        {
+          "name": "NorthRear2_Head",
+          "min": [
+            0.15000009536743164,
+            12.989999771118164,
+            2.799999952316284
+          ],
+          "max": [
+            2.25,
+            13.149999618530273,
+            2.8999998569488525
+          ]
+        },
+        {
+          "name": "NorthRear2_Sill",
+          "min": [
+            0.15000009536743164,
+            12.989999771118164,
+            1.100000023841858
+          ],
+          "max": [
+            2.25,
+            13.149999618530273,
+            1.1999999284744263
+          ]
+        }
+      ],
+      "backing_bounds": {
+        "name": "TeachingWing_North",
+        "min": [
+          -6.5,
+          7.0,
+          0.0
+        ],
+        "max": [
+          4.5,
+          13.0,
+          3.8499999046325684
+        ]
+      },
+      "checks": {
+        "containment": true,
+        "rim_wall_contact": true,
+        "pane_clear": true,
+        "corners_disjoint": true,
+        "parent_shape_preserved": true,
+        "rail_end_clearance_m": 0,
+        "requested_1mm_clearance": false
+      }
+    },
+    {
+      "pane": "HallSide0_Pane",
+      "frame_parts": [
+        "HallSide0_JambL",
+        "HallSide0_JambR",
+        "HallSide0_Head",
+        "HallSide0_Sill"
+      ],
+      "backing": "AssemblyHall",
+      "axis": 0,
+      "sign": 1,
+      "measured_bounds": {
+        "name": "HallSide0_Pane",
+        "min": [
+          13.022500038146973,
+          -6.082499980926514,
+          2.692500114440918
+        ],
+        "max": [
+          13.057499885559082,
+          -3.9175000190734863,
+          4.107500076293945
+        ]
+      },
+      "frame_bounds": [
+        {
+          "name": "HallSide0_JambL",
+          "min": [
+            12.989999771118164,
+            -6.200000286102295,
+            2.575000047683716
+          ],
+          "max": [
+            13.149999618530273,
+            -6.099999904632568,
+            4.224999904632568
+          ]
+        },
+        {
+          "name": "HallSide0_JambR",
+          "min": [
+            12.989999771118164,
+            -3.8999998569488525,
+            2.575000047683716
+          ],
+          "max": [
+            13.149999618530273,
+            -3.799999952316284,
+            4.224999904632568
+          ]
+        },
+        {
+          "name": "HallSide0_Head",
+          "min": [
+            12.989999771118164,
+            -6.099999904632568,
+            4.125
+          ],
+          "max": [
+            13.149999618530273,
+            -3.9000000953674316,
+            4.225000381469727
+          ]
+        },
+        {
+          "name": "HallSide0_Sill",
+          "min": [
+            12.989999771118164,
+            -6.099999904632568,
+            2.575000047683716
+          ],
+          "max": [
+            13.149999618530273,
+            -3.9000000953674316,
+            2.674999952316284
+          ]
+        }
+      ],
+      "backing_bounds": {
+        "name": "AssemblyHall",
+        "min": [
+          5.0,
+          -8.0,
+          0.0
+        ],
+        "max": [
+          13.0,
+          8.0,
+          5.050000190734863
+        ]
+      },
+      "checks": {
+        "containment": true,
+        "rim_wall_contact": true,
+        "pane_clear": true,
+        "corners_disjoint": true,
+        "parent_shape_preserved": true,
+        "rail_end_clearance_m": 0,
+        "requested_1mm_clearance": false
+      }
+    },
+    {
+      "pane": "HallSide1_Pane",
+      "frame_parts": [
+        "HallSide1_JambL",
+        "HallSide1_JambR",
+        "HallSide1_Head",
+        "HallSide1_Sill"
+      ],
+      "backing": "AssemblyHall",
+      "axis": 0,
+      "sign": 1,
+      "measured_bounds": {
+        "name": "HallSide1_Pane",
+        "min": [
+          13.022500038146973,
+          -2.5824999809265137,
+          2.692500114440918
+        ],
+        "max": [
+          13.057499885559082,
+          -0.41750001907348633,
+          4.107500076293945
+        ]
+      },
+      "frame_bounds": [
+        {
+          "name": "HallSide1_JambL",
+          "min": [
+            12.989999771118164,
+            -2.700000047683716,
+            2.575000047683716
+          ],
+          "max": [
+            13.149999618530273,
+            -2.6000001430511475,
+            4.224999904632568
+          ]
+        },
+        {
+          "name": "HallSide1_JambR",
+          "min": [
+            12.989999771118164,
+            -0.4000000059604645,
+            2.575000047683716
+          ],
+          "max": [
+            13.149999618530273,
+            -0.29999998211860657,
+            4.224999904632568
+          ]
+        },
+        {
+          "name": "HallSide1_Head",
+          "min": [
+            12.989999771118164,
+            -2.5999999046325684,
+            4.125
+          ],
+          "max": [
+            13.149999618530273,
+            -0.3999999761581421,
+            4.225000381469727
+          ]
+        },
+        {
+          "name": "HallSide1_Sill",
+          "min": [
+            12.989999771118164,
+            -2.5999999046325684,
+            2.575000047683716
+          ],
+          "max": [
+            13.149999618530273,
+            -0.3999999761581421,
+            2.674999952316284
+          ]
+        }
+      ],
+      "backing_bounds": {
+        "name": "AssemblyHall",
+        "min": [
+          5.0,
+          -8.0,
+          0.0
+        ],
+        "max": [
+          13.0,
+          8.0,
+          5.050000190734863
+        ]
+      },
+      "checks": {
+        "containment": true,
+        "rim_wall_contact": true,
+        "pane_clear": true,
+        "corners_disjoint": true,
+        "parent_shape_preserved": true,
+        "rail_end_clearance_m": 0,
+        "requested_1mm_clearance": false
+      }
+    },
+    {
+      "pane": "HallSide2_Pane",
+      "frame_parts": [
+        "HallSide2_JambL",
+        "HallSide2_JambR",
+        "HallSide2_Head",
+        "HallSide2_Sill"
+      ],
+      "backing": "AssemblyHall",
+      "axis": 0,
+      "sign": 1,
+      "measured_bounds": {
+        "name": "HallSide2_Pane",
+        "min": [
+          13.022500038146973,
+          0.9175000190734863,
+          2.692500114440918
+        ],
+        "max": [
+          13.057499885559082,
+          3.0824999809265137,
+          4.107500076293945
+        ]
+      },
+      "frame_bounds": [
+        {
+          "name": "HallSide2_JambL",
+          "min": [
+            12.989999771118164,
+            0.800000011920929,
+            2.575000047683716
+          ],
+          "max": [
+            13.149999618530273,
+            0.9000000357627869,
+            4.224999904632568
+          ]
+        },
+        {
+          "name": "HallSide2_JambR",
+          "min": [
+            12.989999771118164,
+            3.1000001430511475,
+            2.575000047683716
+          ],
+          "max": [
+            13.149999618530273,
+            3.200000047683716,
+            4.224999904632568
+          ]
+        },
+        {
+          "name": "HallSide2_Head",
+          "min": [
+            12.989999771118164,
+            0.8999999761581421,
+            4.125
+          ],
+          "max": [
+            13.149999618530273,
+            3.0999999046325684,
+            4.225000381469727
+          ]
+        },
+        {
+          "name": "HallSide2_Sill",
+          "min": [
+            12.989999771118164,
+            0.8999999761581421,
+            2.575000047683716
+          ],
+          "max": [
+            13.149999618530273,
+            3.0999999046325684,
+            2.674999952316284
+          ]
+        }
+      ],
+      "backing_bounds": {
+        "name": "AssemblyHall",
+        "min": [
+          5.0,
+          -8.0,
+          0.0
+        ],
+        "max": [
+          13.0,
+          8.0,
+          5.050000190734863
+        ]
+      },
+      "checks": {
+        "containment": true,
+        "rim_wall_contact": true,
+        "pane_clear": true,
+        "corners_disjoint": true,
+        "parent_shape_preserved": true,
+        "rail_end_clearance_m": 0,
+        "requested_1mm_clearance": false
+      }
+    },
+    {
+      "pane": "HallSide3_Pane",
+      "frame_parts": [
+        "HallSide3_JambL",
+        "HallSide3_JambR",
+        "HallSide3_Head",
+        "HallSide3_Sill"
+      ],
+      "backing": "AssemblyHall",
+      "axis": 0,
+      "sign": 1,
+      "measured_bounds": {
+        "name": "HallSide3_Pane",
+        "min": [
+          13.022500038146973,
+          4.417500019073486,
+          2.692500114440918
+        ],
+        "max": [
+          13.057499885559082,
+          6.582499980926514,
+          4.107500076293945
+        ]
+      },
+      "frame_bounds": [
+        {
+          "name": "HallSide3_JambL",
+          "min": [
+            12.989999771118164,
+            4.299999713897705,
+            2.575000047683716
+          ],
+          "max": [
+            13.149999618530273,
+            4.400000095367432,
+            4.224999904632568
+          ]
+        },
+        {
+          "name": "HallSide3_JambR",
+          "min": [
+            12.989999771118164,
+            6.599999904632568,
+            2.575000047683716
+          ],
+          "max": [
+            13.149999618530273,
+            6.700000286102295,
+            4.224999904632568
+          ]
+        },
+        {
+          "name": "HallSide3_Head",
+          "min": [
+            12.989999771118164,
+            4.400000095367432,
+            4.125
+          ],
+          "max": [
+            13.149999618530273,
+            6.599999904632568,
+            4.225000381469727
+          ]
+        },
+        {
+          "name": "HallSide3_Sill",
+          "min": [
+            12.989999771118164,
+            4.400000095367432,
+            2.575000047683716
+          ],
+          "max": [
+            13.149999618530273,
+            6.599999904632568,
+            2.674999952316284
+          ]
+        }
+      ],
+      "backing_bounds": {
+        "name": "AssemblyHall",
+        "min": [
+          5.0,
+          -8.0,
+          0.0
+        ],
+        "max": [
+          13.0,
+          8.0,
+          5.050000190734863
+        ]
+      },
+      "checks": {
+        "containment": true,
+        "rim_wall_contact": true,
+        "pane_clear": true,
+        "corners_disjoint": true,
+        "parent_shape_preserved": true,
+        "rail_end_clearance_m": 0,
+        "requested_1mm_clearance": false
+      }
+    },
+    {
+      "pane": "HallFront0_Pane",
+      "frame_parts": [
+        "HallFront0_JambL",
+        "HallFront0_JambR",
+        "HallFront0_Head",
+        "HallFront0_Sill"
+      ],
+      "backing": "AssemblyHall",
+      "axis": 1,
+      "sign": -1,
+      "measured_bounds": {
+        "name": "HallFront0_Pane",
+        "min": [
+          5.817500114440918,
+          -8.057499885559082,
+          3.1424999237060547
+        ],
+        "max": [
+          7.382499694824219,
+          -8.022500038146973,
+          4.257500171661377
+        ]
+      },
+      "frame_bounds": [
+        {
+          "name": "HallFront0_JambL",
+          "min": [
+            5.699999809265137,
+            -8.149999618530273,
+            3.0250000953674316
+          ],
+          "max": [
+            5.800000190734863,
+            -7.989999771118164,
+            4.375
+          ]
+        },
+        {
+          "name": "HallFront0_JambR",
+          "min": [
+            7.399999618530273,
+            -8.149999618530273,
+            3.0250000953674316
+          ],
+          "max": [
+            7.5,
+            -7.989999771118164,
+            4.375
+          ]
+        },
+        {
+          "name": "HallFront0_Head",
+          "min": [
+            5.799999713897705,
+            -8.149999618530273,
+            4.274999618530273
+          ],
+          "max": [
+            7.400000095367432,
+            -7.989999771118164,
+            4.375
+          ]
+        },
+        {
+          "name": "HallFront0_Sill",
+          "min": [
+            5.799999713897705,
+            -8.149999618530273,
+            3.0250000953674316
+          ],
+          "max": [
+            7.400000095367432,
+            -7.989999771118164,
+            3.125
+          ]
+        }
+      ],
+      "backing_bounds": {
+        "name": "AssemblyHall",
+        "min": [
+          5.0,
+          -8.0,
+          0.0
+        ],
+        "max": [
+          13.0,
+          8.0,
+          5.050000190734863
+        ]
+      },
+      "checks": {
+        "containment": true,
+        "rim_wall_contact": true,
+        "pane_clear": true,
+        "corners_disjoint": true,
+        "parent_shape_preserved": true,
+        "rail_end_clearance_m": 0,
+        "requested_1mm_clearance": false
+      }
+    },
+    {
+      "pane": "HallFront1_Pane",
+      "frame_parts": [
+        "HallFront1_JambL",
+        "HallFront1_JambR",
+        "HallFront1_Head",
+        "HallFront1_Sill"
+      ],
+      "backing": "AssemblyHall",
+      "axis": 1,
+      "sign": -1,
+      "measured_bounds": {
+        "name": "HallFront1_Pane",
+        "min": [
+          10.617499351501465,
+          -8.057499885559082,
+          3.1424999237060547
+        ],
+        "max": [
+          12.182499885559082,
+          -8.022500038146973,
+          4.257500171661377
+        ]
+      },
+      "frame_bounds": [
+        {
+          "name": "HallFront1_JambL",
+          "min": [
+            10.5,
+            -8.149999618530273,
+            3.0250000953674316
+          ],
+          "max": [
+            10.600000381469727,
+            -7.989999771118164,
+            4.375
+          ]
+        },
+        {
+          "name": "HallFront1_JambR",
+          "min": [
+            12.199999809265137,
+            -8.149999618530273,
+            3.0250000953674316
+          ],
+          "max": [
+            12.300000190734863,
+            -7.989999771118164,
+            4.375
+          ]
+        },
+        {
+          "name": "HallFront1_Head",
+          "min": [
+            10.59999942779541,
+            -8.149999618530273,
+            4.274999618530273
+          ],
+          "max": [
+            12.199999809265137,
+            -7.989999771118164,
+            4.375
+          ]
+        },
+        {
+          "name": "HallFront1_Sill",
+          "min": [
+            10.59999942779541,
+            -8.149999618530273,
+            3.0250000953674316
+          ],
+          "max": [
+            12.199999809265137,
+            -7.989999771118164,
+            3.125
+          ]
+        }
+      ],
+      "backing_bounds": {
+        "name": "AssemblyHall",
+        "min": [
+          5.0,
+          -8.0,
+          0.0
+        ],
+        "max": [
+          13.0,
+          8.0,
+          5.050000190734863
+        ]
+      },
+      "checks": {
+        "containment": true,
+        "rim_wall_contact": true,
+        "pane_clear": true,
+        "corners_disjoint": true,
+        "parent_shape_preserved": true,
+        "rail_end_clearance_m": 0,
+        "requested_1mm_clearance": false
+      }
+    },
+    {
+      "pane": "ReceptionBay0_Pane",
+      "frame_parts": [
+        "ReceptionBay0_JambL",
+        "ReceptionBay0_JambR",
+        "ReceptionBay0_Head",
+        "ReceptionBay0_Sill"
+      ],
+      "backing": "Reception",
+      "axis": 1,
+      "sign": -1,
+      "measured_bounds": {
+        "name": "ReceptionBay0_Pane",
+        "min": [
+          -5.307499885559082,
+          -10.057499885559082,
+          1.1675000190734863
+        ],
+        "max": [
+          -3.692500114440918,
+          -10.022500038146973,
+          2.432499885559082
+        ]
+      },
+      "frame_bounds": [
+        {
+          "name": "ReceptionBay0_JambL",
+          "min": [
+            -5.425000190734863,
+            -10.149999618530273,
+            1.0499999523162842
+          ],
+          "max": [
+            -5.324999809265137,
+            -9.989999771118164,
+            2.549999952316284
+          ]
+        },
+        {
+          "name": "ReceptionBay0_JambR",
+          "min": [
+            -3.674999952316284,
+            -10.149999618530273,
+            1.0499999523162842
+          ],
+          "max": [
+            -3.575000047683716,
+            -9.989999771118164,
+            2.549999952316284
+          ]
+        },
+        {
+          "name": "ReceptionBay0_Head",
+          "min": [
+            -5.324999809265137,
+            -10.149999618530273,
+            2.450000047683716
+          ],
+          "max": [
+            -3.674999952316284,
+            -9.989999771118164,
+            2.549999952316284
+          ]
+        },
+        {
+          "name": "ReceptionBay0_Sill",
+          "min": [
+            -5.324999809265137,
+            -10.149999618530273,
+            1.0500000715255737
+          ],
+          "max": [
+            -3.674999952316284,
+            -9.989999771118164,
+            1.149999976158142
+          ]
+        }
+      ],
+      "backing_bounds": {
+        "name": "Reception",
+        "min": [
+          -6.0,
+          -10.0,
+          0.0
+        ],
+        "max": [
+          4.0,
+          -4.0,
+          3.25
+        ]
+      },
+      "checks": {
+        "containment": true,
+        "rim_wall_contact": true,
+        "pane_clear": true,
+        "corners_disjoint": true,
+        "parent_shape_preserved": true,
+        "rail_end_clearance_m": 0,
+        "requested_1mm_clearance": false
+      }
+    },
+    {
+      "pane": "ReceptionBay1_Pane",
+      "frame_parts": [
+        "ReceptionBay1_JambL",
+        "ReceptionBay1_JambR",
+        "ReceptionBay1_Head",
+        "ReceptionBay1_Sill"
+      ],
+      "backing": "Reception",
+      "axis": 1,
+      "sign": -1,
+      "measured_bounds": {
+        "name": "ReceptionBay1_Pane",
+        "min": [
+          1.2924998998641968,
+          -10.057499885559082,
+          1.1675000190734863
+        ],
+        "max": [
+          2.9074997901916504,
+          -10.022500038146973,
+          2.432499885559082
+        ]
+      },
+      "frame_bounds": [
+        {
+          "name": "ReceptionBay1_JambL",
+          "min": [
+            1.1750000715255737,
+            -10.149999618530273,
+            1.0499999523162842
+          ],
+          "max": [
+            1.274999976158142,
+            -9.989999771118164,
+            2.549999952316284
+          ]
+        },
+        {
+          "name": "ReceptionBay1_JambR",
+          "min": [
+            2.924999952316284,
+            -10.149999618530273,
+            1.0499999523162842
+          ],
+          "max": [
+            3.0249998569488525,
+            -9.989999771118164,
+            2.549999952316284
+          ]
+        },
+        {
+          "name": "ReceptionBay1_Head",
+          "min": [
+            1.2749998569488525,
+            -10.149999618530273,
+            2.450000047683716
+          ],
+          "max": [
+            2.924999952316284,
+            -9.989999771118164,
+            2.549999952316284
+          ]
+        },
+        {
+          "name": "ReceptionBay1_Sill",
+          "min": [
+            1.2749998569488525,
+            -10.149999618530273,
+            1.0500000715255737
+          ],
+          "max": [
+            2.924999952316284,
+            -9.989999771118164,
+            1.149999976158142
+          ]
+        }
+      ],
+      "backing_bounds": {
+        "name": "Reception",
+        "min": [
+          -6.0,
+          -10.0,
+          0.0
+        ],
+        "max": [
+          4.0,
+          -4.0,
+          3.25
+        ]
+      },
+      "checks": {
+        "containment": true,
+        "rim_wall_contact": true,
+        "pane_clear": true,
+        "corners_disjoint": true,
+        "parent_shape_preserved": true,
+        "rail_end_clearance_m": 0,
+        "requested_1mm_clearance": false
+      }
+    }
+  ],
+  "doors": [
+    {
+      "target": "PublicDoor_Leaf0",
+      "leaves": [
+        "PublicDoor_Leaf0",
+        "PublicDoor_Leaf1"
+      ],
+      "frame_parts": [
+        "PublicDoor_JambL",
+        "PublicDoor_JambR",
+        "PublicDoor_Head"
+      ],
+      "backing": "Reception",
+      "axis": 1,
+      "sign": -1,
+      "clear_width_m": 1.8,
+      "clear_height_m": 2.4,
+      "face_m": -10.0
+    },
+    {
+      "target": "StaffDoor_Leaf0",
+      "leaves": [
+        "StaffDoor_Leaf0",
+        "StaffDoor_Leaf1"
+      ],
+      "frame_parts": [
+        "StaffDoor_JambL",
+        "StaffDoor_JambR",
+        "StaffDoor_Head"
+      ],
+      "backing": "AssemblyHall",
+      "axis": 1,
+      "sign": -1,
+      "clear_width_m": 2.4,
+      "clear_height_m": 2.6,
+      "face_m": -8.0
+    }
+  ],
+  "note": "Inherited flush rail ends retained exactly; zero overlap, not 1mm separation."
+}

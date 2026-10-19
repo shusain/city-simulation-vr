@@ -1,0 +1,216 @@
+{
+  "parent_issue": 157,
+  "terrain_owner_issue": 125,
+  "source_base": "a5168fe0bf45f0d93e3b8c5b4b0cc69a310a84e8",
+  "assets": [
+    {
+      "issue": 158,
+      "version": 4,
+      "key": "coal",
+      "head": "90fcb9a9894632bc6b269aa4974f28020648d423",
+      "integration_issue": 220,
+      "export_directory": "ArtSource/Generated/blender/issue-158/v4",
+      "approval_sha256": "2fe9572ef56fce52da98506b553b997a72fbce49036db0a10458b41f59ef0afe",
+      "source_sha256": "823afab44558ac2c09bdd043b86be558312a6a029c95c6d953dcaceda19dd863",
+      "fbx_sha256": "70831d3d798970d8a0d0f3512b6401b5593f64e11ff606eae952ccac2a34c655",
+      "site_m": [
+        32,
+        32
+      ],
+      "site_cells": [
+        4,
+        4
+      ]
+    },
+    {
+      "issue": 159,
+      "version": 3,
+      "key": "oil",
+      "head": "1d1177b1ae40cbf4038d3ba7dbf62088c99d90a3",
+      "integration_issue": 222,
+      "export_directory": "ArtSource/Generated/blender/issue-159/v3",
+      "approval_sha256": "45abb473f7320cb30c4b44248b90bf952e94d765ccf61665f55adcc70936ce5e",
+      "source_sha256": "87b79121be0f6262e7be62b0f6c2414447baa0bab98d4ab83118ec91f81325e0",
+      "fbx_sha256": "b1874b634da098c6e8eb8a627146c2161dcfa0f5a9334d61826e298ed56ea4b1",
+      "site_m": [
+        32,
+        32
+      ],
+      "site_cells": [
+        4,
+        4
+      ]
+    },
+    {
+      "issue": 160,
+      "version": 2,
+      "key": "power_base",
+      "head": "b66350db94d6822f9c3626f04ed1067b4ae546a7",
+      "integration_issue": 224,
+      "export_directory": "ArtSource/Generated/blender/issue-160/v2",
+      "approval_sha256": "7cd6e65cb57e02ba4428ece8ef9803f5fc3fa3f8f912422bee2f8f572c634941",
+      "source_sha256": "6ec9a3d4a7eac6817120949d5bb13d735dfabb842d44f1dcaa605bb6b46914cc",
+      "fbx_sha256": "b35d8f8836b0b16b1f469867758ef09fde1e86901bd39d72c098ae12e888cb67",
+      "site_m": [
+        32,
+        32
+      ],
+      "site_cells": [
+        4,
+        4
+      ]
+    },
+    {
+      "issue": 161,
+      "version": 2,
+      "key": "water_base",
+      "head": "5edde83700611977a300c9253232608ab4f8359a",
+      "integration_issue": 226,
+      "export_directory": "ArtSource/Generated/blender/issue-161/v2",
+      "approval_sha256": "9fc8531e0e21b9429cea2255ed751809a9f67689b7d9e536173ba1bf3a243502",
+      "source_sha256": "986fb3bbe30ca0f93ac7e7d46f9ad0e06ee8c57b80465f48fb05650b41e3b276",
+      "fbx_sha256": "d5a4eaac2ba1fa29539e0f1476a6353b7f8a0095e37e09e8b92eaa2af531026b",
+      "site_m": [
+        48,
+        32
+      ],
+      "site_cells": [
+        6,
+        4
+      ]
+    },
+    {
+      "issue": 163,
+      "version": 3,
+      "key": "power_medium",
+      "head": "c3d0a644eecdd63390d85b070e0a0abb8a6231c6",
+      "integration_issue": 228,
+      "export_directory": "ArtSource/Generated/blender/issue-163/v3",
+      "approval_sha256": "167af48fe7ea9fb6bb9b590b643753dc069cd437854b1dffbc13a83ab3f2eb8f",
+      "source_sha256": "13177a9747a108c7607f782e75aab99a39932d211796425a30738cb1d7f7d08e",
+      "fbx_sha256": "aa432f78ad4af7b0a81a8991a1f330ec5b8e3300fdd734779b8d67e99c7f7c9b",
+      "site_m": [
+        32,
+        32
+      ],
+      "site_cells": [
+        4,
+        4
+      ]
+    },
+    {
+      "issue": 164,
+      "version": 3,
+      "key": "power_high",
+      "head": "dc8ee8118d24ffb1c97aa0f9622beddacac9c299",
+      "integration_issue": 230,
+      "export_directory": "ArtSource/Generated/blender/issue-164/v3",
+      "approval_sha256": "6858c855d47090dd8d65549485a66bb6d6a4fda2ada9f479af6904da6a66f129",
+      "source_sha256": "3faa050350123ee1e03cbe697f3d7f537609a7001ca489f50eed406a88bc8843",
+      "fbx_sha256": "217b25d8edd5d2e6fbaf80df0e2c6875e977480643e3106acb94783e63723265",
+      "site_m": [
+        32,
+        32
+      ],
+      "site_cells": [
+        4,
+        4
+      ]
+    },
+    {
+      "issue": 165,
+      "version": 2,
+      "key": "water_medium",
+      "head": "a53beae57686dea49d2a64dc35bf4f8f1bc41e44",
+      "integration_issue": 232,
+      "export_directory": "ArtSource/Generated/blender/issue-165/v2",
+      "approval_sha256": "495187ed68a65aa75a630da1cd287844c3db759232b0845191a6fa425e1fc805",
+      "source_sha256": "ae48d33c66fe4451aaec641a965ba2c1b1cc7c09a1ed8b16d612ad1837d1ebf5",
+      "fbx_sha256": "bdd261e76d9ef650b61b4d235c7e15d206c9fcf210e889ae4d8e1110aced966d",
+      "site_m": [
+        48,
+        32
+      ],
+      "site_cells": [
+        6,
+        4
+      ]
+    },
+    {
+      "issue": 166,
+      "version": 2,
+      "key": "water_high",
+      "head": "80d197e2e6af15c5678a38b693abd25e446cb87f",
+      "integration_issue": 234,
+      "export_directory": "ArtSource/Generated/blender/issue-166/v2",
+      "approval_sha256": "c2dc99f6726dddc2ec93723c63e3fa0cb6c41af5b12bf6101c866fdb4a6dfead",
+      "source_sha256": "433c59143c352b6768882860b7e3eb8d0b2d34add2fb7091180c68fdf7b695f1",
+      "fbx_sha256": "dbabb0dbad1051befc994dfa77e58a2b34d99112677e5cd2f76ee01ad34eecc2",
+      "site_m": [
+        48,
+        32
+      ],
+      "site_cells": [
+        6,
+        4
+      ]
+    },
+    {
+      "issue": 167,
+      "version": 3,
+      "key": "water_tower",
+      "head": "474d623683174b9a96d3379f66491bb13a57ae3f",
+      "integration_issue": 236,
+      "export_directory": "ArtSource/Generated/blender/issue-167/v3",
+      "approval_sha256": "07e042e255661e7bf6cd048b45d5a14ff90582dcf9544030ffbfc920204196aa",
+      "source_sha256": "93b5922f96fbc512f905b76421a761885d344de4537143fa436fba29e658511b",
+      "fbx_sha256": "441d8fdcd3876a89128f761d580561eb212e73a1a2550deb02761ca5621a7031",
+      "site_m": [
+        16,
+        16
+      ],
+      "site_cells": [
+        2,
+        2
+      ]
+    },
+    {
+      "issue": 168,
+      "version": 1,
+      "key": "wind_turbine",
+      "head": "13384e71672619d3410b2fa7fa8ec9ec57315e49",
+      "integration_issue": 238,
+      "export_directory": "ArtSource/Generated/blender/issue-168/v1",
+      "approval_sha256": "7c0ed83a2ff992e9a12d1c81c8a2fbe4f2fddc63e7cc62ea741f0bdbc8fda65b",
+      "source_sha256": "a604b8d1c710da011dab0cb3a1773f0ef1093a1b91c7090b55e36fbee6150536",
+      "fbx_sha256": "a727affde6dd962284f7604519121b0eb1067ed423eecc95cf47e443dba11997",
+      "site_m": [
+        24,
+        24
+      ],
+      "site_cells": [
+        3,
+        3
+      ]
+    },
+    {
+      "issue": 169,
+      "version": 3,
+      "key": "solar_farm",
+      "head": "3bffe2e6e93f8916585ad038e8b7a57c7c9fb154",
+      "integration_issue": 240,
+      "export_directory": "ArtSource/Generated/blender/issue-169/v3",
+      "approval_sha256": "7d2d03d5103f7eea8bff210296d71325cdcd6e16f72d3698bbd01ebe37fdc230",
+      "source_sha256": "f178f4f07d2c5121f897fc92ac26b5aa89db5f5637afc64eb5d78f51a7825aa8",
+      "fbx_sha256": "bdd62726f08cbd4ad72bb9264d17579f65a526664b28941ad4e0aa28e86711ee",
+      "site_m": [
+        32,
+        32
+      ],
+      "site_cells": [
+        4,
+        4
+      ]
+    }
+  ]
+}

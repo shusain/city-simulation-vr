@@ -1,0 +1,19 @@
+{
+  "task": "D102",
+  "date": "2026-10-13",
+  "removed_files": 1765,
+  "removed_logical_bytes": 23395920053,
+  "single_link_bytes": 15751174086,
+  "shared_link_bytes": 7644745967,
+  "noncandidate_paths_checked": 41611,
+  "protected_hashes_checked": 2764,
+  "remaining_targets": [],
+  "missing_unplanned_files": [],
+  "changed_protected_files": [],
+  "passed": true,
+  "limitations": [
+    "Shared hard links removed only extra names; original public ZIP data remains",
+    "Logical/single-link totals are not measured physical disk-space recovery",
+    "Six preexisting long Playtests/QA paths were omitted from initial inventory and never targeted"
+  ]
+}

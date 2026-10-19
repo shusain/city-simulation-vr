@@ -1,0 +1,146 @@
+[
+  {
+    "material": "OpaqueFacade_SourceTexture",
+    "uv_layers": [
+      "UV0",
+      "UVMap"
+    ],
+    "images": [
+      {
+        "node": "Image Texture",
+        "image": "CityBrick_BaseColor.png",
+        "size": [
+          1024,
+          1024
+        ],
+        "vector_links": []
+      },
+      {
+        "node": "Image Texture.001",
+        "image": "CityBrick_Normal.png",
+        "size": [
+          1024,
+          1024
+        ],
+        "vector_links": []
+      },
+      {
+        "node": "Image Texture.002",
+        "image": "CityBrick_ORM.png",
+        "size": [
+          1024,
+          1024
+        ],
+        "vector_links": []
+      },
+      {
+        "node": "Image Texture.003",
+        "image": "DigitalExchange_BaseColor_0",
+        "size": [
+          256,
+          256
+        ],
+        "vector_links": []
+      }
+    ]
+  },
+  {
+    "material": "RoofService_SourceTexture",
+    "uv_layers": [
+      "UV0",
+      "UVMap"
+    ],
+    "images": [
+      {
+        "node": "Image Texture",
+        "image": "CivicAsphalt_BaseColor.png",
+        "size": [
+          512,
+          512
+        ],
+        "vector_links": []
+      },
+      {
+        "node": "Image Texture.001",
+        "image": "CivicAsphalt_Normal.png",
+        "size": [
+          512,
+          512
+        ],
+        "vector_links": []
+      },
+      {
+        "node": "Image Texture.002",
+        "image": "CivicAsphalt_ORM.png",
+        "size": [
+          512,
+          512
+        ],
+        "vector_links": []
+      },
+      {
+        "node": "Image Texture.003",
+        "image": "DigitalExchange_BaseColor_1",
+        "size": [
+          256,
+          256
+        ],
+        "vector_links": []
+      }
+    ]
+  },
+  {
+    "material": "LightMetal",
+    "uv_layers": [
+      "UV0",
+      "UVMap"
+    ],
+    "images": [
+      {
+        "node": "Image Texture",
+        "image": "DigitalExchange_BaseColor_2",
+        "size": [
+          256,
+          256
+        ],
+        "vector_links": []
+      }
+    ]
+  },
+  {
+    "material": "TechGlass",
+    "uv_layers": [
+      "UV0",
+      "UVMap"
+    ],
+    "images": [
+      {
+        "node": "Image Texture",
+        "image": "DigitalExchange_BaseColor_3",
+        "size": [
+          256,
+          256
+        ],
+        "vector_links": []
+      }
+    ]
+  },
+  {
+    "material": "DoorAccent",
+    "uv_layers": [
+      "UV0",
+      "UVMap"
+    ],
+    "images": [
+      {
+        "node": "Image Texture",
+        "image": "DigitalExchange_BaseColor_4",
+        "size": [
+          256,
+          256
+        ],
+        "vector_links": []
+      }
+    ]
+  }
+]

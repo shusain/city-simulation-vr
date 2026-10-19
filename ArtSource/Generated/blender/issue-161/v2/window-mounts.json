@@ -1,0 +1,1350 @@
+{
+  "windows": [
+    {
+      "pane": "Control_front_-6.9_1.65_pane",
+      "frame_parts": [
+        "Control_front_-6.9_1.65_left_jamb",
+        "Control_front_-6.9_1.65_right_jamb",
+        "Control_front_-6.9_1.65_sill",
+        "Control_front_-6.9_1.65_head"
+      ],
+      "backing": "Worker_control_two_storey_block",
+      "axis": 1,
+      "sign": -1,
+      "wall_normal": [
+        0,
+        -1,
+        0
+      ],
+      "pane_bounds": {
+        "name": "Control_front_-6.9_1.65_pane",
+        "min": [
+          -7.715000152587891,
+          -10.59000015258789,
+          1.034999966621399
+        ],
+        "max": [
+          -6.085000038146973,
+          -10.489999771118164,
+          2.2649998664855957
+        ],
+        "triangles": 12,
+        "material": "WindowAccent"
+      },
+      "frame_bounds": [
+        {
+          "name": "Control_front_-6.9_1.65_left_jamb",
+          "min": [
+            -7.824999809265137,
+            -10.649999618530273,
+            0.9249999523162842
+          ],
+          "max": [
+            -7.715000152587891,
+            -10.489999771118164,
+            2.375
+          ],
+          "triangles": 12,
+          "material": "EquipmentMetal"
+        },
+        {
+          "name": "Control_front_-6.9_1.65_right_jamb",
+          "min": [
+            -6.085000038146973,
+            -10.649999618530273,
+            0.9249999523162842
+          ],
+          "max": [
+            -5.975000381469727,
+            -10.489999771118164,
+            2.375
+          ],
+          "triangles": 12,
+          "material": "EquipmentMetal"
+        },
+        {
+          "name": "Control_front_-6.9_1.65_sill",
+          "min": [
+            -7.715000152587891,
+            -10.649999618530273,
+            0.925000011920929
+          ],
+          "max": [
+            -6.085000038146973,
+            -10.489999771118164,
+            1.034999966621399
+          ],
+          "triangles": 12,
+          "material": "EquipmentMetal"
+        },
+        {
+          "name": "Control_front_-6.9_1.65_head",
+          "min": [
+            -7.715000152587891,
+            -10.649999618530273,
+            2.2649998664855957
+          ],
+          "max": [
+            -6.085000038146973,
+            -10.489999771118164,
+            2.375
+          ],
+          "triangles": 12,
+          "material": "EquipmentMetal"
+        }
+      ],
+      "wall_bounds": {
+        "name": "Worker_control_two_storey_block",
+        "min": [
+          -12.0,
+          -10.5,
+          0.0
+        ],
+        "max": [
+          -3.0,
+          -3.5,
+          6.300000190734863
+        ],
+        "triangles": 12,
+        "material": "BuildingFacade"
+      },
+      "mount_assertions_pass": true,
+      "rear_embed_m": 0.01,
+      "minimum_wall_edge_margin_m": 0.9249999523162842
+    },
+    {
+      "pane": "Control_front_-4.5_1.65_pane",
+      "frame_parts": [
+        "Control_front_-4.5_1.65_left_jamb",
+        "Control_front_-4.5_1.65_right_jamb",
+        "Control_front_-4.5_1.65_sill",
+        "Control_front_-4.5_1.65_head"
+      ],
+      "backing": "Worker_control_two_storey_block",
+      "axis": 1,
+      "sign": -1,
+      "wall_normal": [
+        0,
+        -1,
+        0
+      ],
+      "pane_bounds": {
+        "name": "Control_front_-4.5_1.65_pane",
+        "min": [
+          -5.315000057220459,
+          -10.59000015258789,
+          1.034999966621399
+        ],
+        "max": [
+          -3.684999942779541,
+          -10.489999771118164,
+          2.2649998664855957
+        ],
+        "triangles": 12,
+        "material": "WindowAccent"
+      },
+      "frame_bounds": [
+        {
+          "name": "Control_front_-4.5_1.65_left_jamb",
+          "min": [
+            -5.424999713897705,
+            -10.649999618530273,
+            0.9249999523162842
+          ],
+          "max": [
+            -5.315000057220459,
+            -10.489999771118164,
+            2.375
+          ],
+          "triangles": 12,
+          "material": "EquipmentMetal"
+        },
+        {
+          "name": "Control_front_-4.5_1.65_right_jamb",
+          "min": [
+            -3.68500018119812,
+            -10.649999618530273,
+            0.9249999523162842
+          ],
+          "max": [
+            -3.575000047683716,
+            -10.489999771118164,
+            2.375
+          ],
+          "triangles": 12,
+          "material": "EquipmentMetal"
+        },
+        {
+          "name": "Control_front_-4.5_1.65_sill",
+          "min": [
+            -5.315000057220459,
+            -10.649999618530273,
+            0.925000011920929
+          ],
+          "max": [
+            -3.684999942779541,
+            -10.489999771118164,
+            1.034999966621399
+          ],
+          "triangles": 12,
+          "material": "EquipmentMetal"
+        },
+        {
+          "name": "Control_front_-4.5_1.65_head",
+          "min": [
+            -5.315000057220459,
+            -10.649999618530273,
+            2.2649998664855957
+          ],
+          "max": [
+            -3.684999942779541,
+            -10.489999771118164,
+            2.375
+          ],
+          "triangles": 12,
+          "material": "EquipmentMetal"
+        }
+      ],
+      "wall_bounds": {
+        "name": "Worker_control_two_storey_block",
+        "min": [
+          -12.0,
+          -10.5,
+          0.0
+        ],
+        "max": [
+          -3.0,
+          -3.5,
+          6.300000190734863
+        ],
+        "triangles": 12,
+        "material": "BuildingFacade"
+      },
+      "mount_assertions_pass": true,
+      "rear_embed_m": 0.01,
+      "minimum_wall_edge_margin_m": 0.9249999523162842
+    },
+    {
+      "pane": "Control_front_-6.9_4.65_pane",
+      "frame_parts": [
+        "Control_front_-6.9_4.65_left_jamb",
+        "Control_front_-6.9_4.65_right_jamb",
+        "Control_front_-6.9_4.65_sill",
+        "Control_front_-6.9_4.65_head"
+      ],
+      "backing": "Worker_control_two_storey_block",
+      "axis": 1,
+      "sign": -1,
+      "wall_normal": [
+        0,
+        -1,
+        0
+      ],
+      "pane_bounds": {
+        "name": "Control_front_-6.9_4.65_pane",
+        "min": [
+          -7.715000152587891,
+          -10.59000015258789,
+          4.034999847412109
+        ],
+        "max": [
+          -6.085000038146973,
+          -10.489999771118164,
+          5.265000343322754
+        ],
+        "triangles": 12,
+        "material": "WindowAccent"
+      },
+      "frame_bounds": [
+        {
+          "name": "Control_front_-6.9_4.65_left_jamb",
+          "min": [
+            -7.824999809265137,
+            -10.649999618530273,
+            3.9250001907348633
+          ],
+          "max": [
+            -7.715000152587891,
+            -10.489999771118164,
+            5.375
+          ],
+          "triangles": 12,
+          "material": "EquipmentMetal"
+        },
+        {
+          "name": "Control_front_-6.9_4.65_right_jamb",
+          "min": [
+            -6.085000038146973,
+            -10.649999618530273,
+            3.9250001907348633
+          ],
+          "max": [
+            -5.975000381469727,
+            -10.489999771118164,
+            5.375
+          ],
+          "triangles": 12,
+          "material": "EquipmentMetal"
+        },
+        {
+          "name": "Control_front_-6.9_4.65_sill",
+          "min": [
+            -7.715000152587891,
+            -10.649999618530273,
+            3.924999952316284
+          ],
+          "max": [
+            -6.085000038146973,
+            -10.489999771118164,
+            4.034999847412109
+          ],
+          "triangles": 12,
+          "material": "EquipmentMetal"
+        },
+        {
+          "name": "Control_front_-6.9_4.65_head",
+          "min": [
+            -7.715000152587891,
+            -10.649999618530273,
+            5.265000343322754
+          ],
+          "max": [
+            -6.085000038146973,
+            -10.489999771118164,
+            5.375
+          ],
+          "triangles": 12,
+          "material": "EquipmentMetal"
+        }
+      ],
+      "wall_bounds": {
+        "name": "Worker_control_two_storey_block",
+        "min": [
+          -12.0,
+          -10.5,
+          0.0
+        ],
+        "max": [
+          -3.0,
+          -3.5,
+          6.300000190734863
+        ],
+        "triangles": 12,
+        "material": "BuildingFacade"
+      },
+      "mount_assertions_pass": true,
+      "rear_embed_m": 0.01,
+      "minimum_wall_edge_margin_m": 3.924999952316284
+    },
+    {
+      "pane": "Control_front_-4.5_4.65_pane",
+      "frame_parts": [
+        "Control_front_-4.5_4.65_left_jamb",
+        "Control_front_-4.5_4.65_right_jamb",
+        "Control_front_-4.5_4.65_sill",
+        "Control_front_-4.5_4.65_head"
+      ],
+      "backing": "Worker_control_two_storey_block",
+      "axis": 1,
+      "sign": -1,
+      "wall_normal": [
+        0,
+        -1,
+        0
+      ],
+      "pane_bounds": {
+        "name": "Control_front_-4.5_4.65_pane",
+        "min": [
+          -5.315000057220459,
+          -10.59000015258789,
+          4.034999847412109
+        ],
+        "max": [
+          -3.684999942779541,
+          -10.489999771118164,
+          5.265000343322754
+        ],
+        "triangles": 12,
+        "material": "WindowAccent"
+      },
+      "frame_bounds": [
+        {
+          "name": "Control_front_-4.5_4.65_left_jamb",
+          "min": [
+            -5.424999713897705,
+            -10.649999618530273,
+            3.9250001907348633
+          ],
+          "max": [
+            -5.315000057220459,
+            -10.489999771118164,
+            5.375
+          ],
+          "triangles": 12,
+          "material": "EquipmentMetal"
+        },
+        {
+          "name": "Control_front_-4.5_4.65_right_jamb",
+          "min": [
+            -3.68500018119812,
+            -10.649999618530273,
+            3.9250001907348633
+          ],
+          "max": [
+            -3.575000047683716,
+            -10.489999771118164,
+            5.375
+          ],
+          "triangles": 12,
+          "material": "EquipmentMetal"
+        },
+        {
+          "name": "Control_front_-4.5_4.65_sill",
+          "min": [
+            -5.315000057220459,
+            -10.649999618530273,
+            3.924999952316284
+          ],
+          "max": [
+            -3.684999942779541,
+            -10.489999771118164,
+            4.034999847412109
+          ],
+          "triangles": 12,
+          "material": "EquipmentMetal"
+        },
+        {
+          "name": "Control_front_-4.5_4.65_head",
+          "min": [
+            -5.315000057220459,
+            -10.649999618530273,
+            5.265000343322754
+          ],
+          "max": [
+            -3.684999942779541,
+            -10.489999771118164,
+            5.375
+          ],
+          "triangles": 12,
+          "material": "EquipmentMetal"
+        }
+      ],
+      "wall_bounds": {
+        "name": "Worker_control_two_storey_block",
+        "min": [
+          -12.0,
+          -10.5,
+          0.0
+        ],
+        "max": [
+          -3.0,
+          -3.5,
+          6.300000190734863
+        ],
+        "triangles": 12,
+        "material": "BuildingFacade"
+      },
+      "mount_assertions_pass": true,
+      "rear_embed_m": 0.01,
+      "minimum_wall_edge_margin_m": 3.924999952316284
+    },
+    {
+      "pane": "Control_side_-8.9_1.65_pane",
+      "frame_parts": [
+        "Control_side_-8.9_1.65_left_jamb",
+        "Control_side_-8.9_1.65_right_jamb",
+        "Control_side_-8.9_1.65_sill",
+        "Control_side_-8.9_1.65_head"
+      ],
+      "backing": "Worker_control_two_storey_block",
+      "axis": 0,
+      "sign": -1,
+      "wall_normal": [
+        -1,
+        0,
+        0
+      ],
+      "pane_bounds": {
+        "name": "Control_side_-8.9_1.65_pane",
+        "min": [
+          -12.09000015258789,
+          -9.6899995803833,
+          1.034999966621399
+        ],
+        "max": [
+          -11.989999771118164,
+          -8.109999656677246,
+          2.2649998664855957
+        ],
+        "triangles": 12,
+        "material": "WindowAccent"
+      },
+      "frame_bounds": [
+        {
+          "name": "Control_side_-8.9_1.65_left_jamb",
+          "min": [
+            -12.149999618530273,
+            -9.800000190734863,
+            0.9249999523162842
+          ],
+          "max": [
+            -11.989999771118164,
+            -9.6899995803833,
+            2.375
+          ],
+          "triangles": 12,
+          "material": "EquipmentMetal"
+        },
+        {
+          "name": "Control_side_-8.9_1.65_right_jamb",
+          "min": [
+            -12.149999618530273,
+            -8.110000610351562,
+            0.9249999523162842
+          ],
+          "max": [
+            -11.989999771118164,
+            -8.0,
+            2.375
+          ],
+          "triangles": 12,
+          "material": "EquipmentMetal"
+        },
+        {
+          "name": "Control_side_-8.9_1.65_sill",
+          "min": [
+            -12.149999618530273,
+            -9.6899995803833,
+            0.925000011920929
+          ],
+          "max": [
+            -11.989999771118164,
+            -8.109999656677246,
+            1.034999966621399
+          ],
+          "triangles": 12,
+          "material": "EquipmentMetal"
+        },
+        {
+          "name": "Control_side_-8.9_1.65_head",
+          "min": [
+            -12.149999618530273,
+            -9.6899995803833,
+            2.2649998664855957
+          ],
+          "max": [
+            -11.989999771118164,
+            -8.109999656677246,
+            2.375
+          ],
+          "triangles": 12,
+          "material": "EquipmentMetal"
+        }
+      ],
+      "wall_bounds": {
+        "name": "Worker_control_two_storey_block",
+        "min": [
+          -12.0,
+          -10.5,
+          0.0
+        ],
+        "max": [
+          -3.0,
+          -3.5,
+          6.300000190734863
+        ],
+        "triangles": 12,
+        "material": "BuildingFacade"
+      },
+      "mount_assertions_pass": true,
+      "rear_embed_m": 0.01,
+      "minimum_wall_edge_margin_m": 0.6999998092651367
+    },
+    {
+      "pane": "Control_side_-8.9_4.65_pane",
+      "frame_parts": [
+        "Control_side_-8.9_4.65_left_jamb",
+        "Control_side_-8.9_4.65_right_jamb",
+        "Control_side_-8.9_4.65_sill",
+        "Control_side_-8.9_4.65_head"
+      ],
+      "backing": "Worker_control_two_storey_block",
+      "axis": 0,
+      "sign": -1,
+      "wall_normal": [
+        -1,
+        0,
+        0
+      ],
+      "pane_bounds": {
+        "name": "Control_side_-8.9_4.65_pane",
+        "min": [
+          -12.09000015258789,
+          -9.6899995803833,
+          4.034999847412109
+        ],
+        "max": [
+          -11.989999771118164,
+          -8.109999656677246,
+          5.265000343322754
+        ],
+        "triangles": 12,
+        "material": "WindowAccent"
+      },
+      "frame_bounds": [
+        {
+          "name": "Control_side_-8.9_4.65_left_jamb",
+          "min": [
+            -12.149999618530273,
+            -9.800000190734863,
+            3.9250001907348633
+          ],
+          "max": [
+            -11.989999771118164,
+            -9.6899995803833,
+            5.375
+          ],
+          "triangles": 12,
+          "material": "EquipmentMetal"
+        },
+        {
+          "name": "Control_side_-8.9_4.65_right_jamb",
+          "min": [
+            -12.149999618530273,
+            -8.110000610351562,
+            3.9250001907348633
+          ],
+          "max": [
+            -11.989999771118164,
+            -8.0,
+            5.375
+          ],
+          "triangles": 12,
+          "material": "EquipmentMetal"
+        },
+        {
+          "name": "Control_side_-8.9_4.65_sill",
+          "min": [
+            -12.149999618530273,
+            -9.6899995803833,
+            3.924999952316284
+          ],
+          "max": [
+            -11.989999771118164,
+            -8.109999656677246,
+            4.034999847412109
+          ],
+          "triangles": 12,
+          "material": "EquipmentMetal"
+        },
+        {
+          "name": "Control_side_-8.9_4.65_head",
+          "min": [
+            -12.149999618530273,
+            -9.6899995803833,
+            5.265000343322754
+          ],
+          "max": [
+            -11.989999771118164,
+            -8.109999656677246,
+            5.375
+          ],
+          "triangles": 12,
+          "material": "EquipmentMetal"
+        }
+      ],
+      "wall_bounds": {
+        "name": "Worker_control_two_storey_block",
+        "min": [
+          -12.0,
+          -10.5,
+          0.0
+        ],
+        "max": [
+          -3.0,
+          -3.5,
+          6.300000190734863
+        ],
+        "triangles": 12,
+        "material": "BuildingFacade"
+      },
+      "mount_assertions_pass": true,
+      "rear_embed_m": 0.01,
+      "minimum_wall_edge_margin_m": 0.6999998092651367
+    },
+    {
+      "pane": "Control_side_-6.5_1.65_pane",
+      "frame_parts": [
+        "Control_side_-6.5_1.65_left_jamb",
+        "Control_side_-6.5_1.65_right_jamb",
+        "Control_side_-6.5_1.65_sill",
+        "Control_side_-6.5_1.65_head"
+      ],
+      "backing": "Worker_control_two_storey_block",
+      "axis": 0,
+      "sign": -1,
+      "wall_normal": [
+        -1,
+        0,
+        0
+      ],
+      "pane_bounds": {
+        "name": "Control_side_-6.5_1.65_pane",
+        "min": [
+          -12.09000015258789,
+          -7.289999961853027,
+          1.034999966621399
+        ],
+        "max": [
+          -11.989999771118164,
+          -5.710000038146973,
+          2.2649998664855957
+        ],
+        "triangles": 12,
+        "material": "WindowAccent"
+      },
+      "frame_bounds": [
+        {
+          "name": "Control_side_-6.5_1.65_left_jamb",
+          "min": [
+            -12.149999618530273,
+            -7.399999618530273,
+            0.9249999523162842
+          ],
+          "max": [
+            -11.989999771118164,
+            -7.289999961853027,
+            2.375
+          ],
+          "triangles": 12,
+          "material": "EquipmentMetal"
+        },
+        {
+          "name": "Control_side_-6.5_1.65_right_jamb",
+          "min": [
+            -12.149999618530273,
+            -5.710000038146973,
+            0.9249999523162842
+          ],
+          "max": [
+            -11.989999771118164,
+            -5.600000381469727,
+            2.375
+          ],
+          "triangles": 12,
+          "material": "EquipmentMetal"
+        },
+        {
+          "name": "Control_side_-6.5_1.65_sill",
+          "min": [
+            -12.149999618530273,
+            -7.289999961853027,
+            0.925000011920929
+          ],
+          "max": [
+            -11.989999771118164,
+            -5.710000038146973,
+            1.034999966621399
+          ],
+          "triangles": 12,
+          "material": "EquipmentMetal"
+        },
+        {
+          "name": "Control_side_-6.5_1.65_head",
+          "min": [
+            -12.149999618530273,
+            -7.289999961853027,
+            2.2649998664855957
+          ],
+          "max": [
+            -11.989999771118164,
+            -5.710000038146973,
+            2.375
+          ],
+          "triangles": 12,
+          "material": "EquipmentMetal"
+        }
+      ],
+      "wall_bounds": {
+        "name": "Worker_control_two_storey_block",
+        "min": [
+          -12.0,
+          -10.5,
+          0.0
+        ],
+        "max": [
+          -3.0,
+          -3.5,
+          6.300000190734863
+        ],
+        "triangles": 12,
+        "material": "BuildingFacade"
+      },
+      "mount_assertions_pass": true,
+      "rear_embed_m": 0.01,
+      "minimum_wall_edge_margin_m": 0.9249999523162842
+    },
+    {
+      "pane": "Control_side_-6.5_4.65_pane",
+      "frame_parts": [
+        "Control_side_-6.5_4.65_left_jamb",
+        "Control_side_-6.5_4.65_right_jamb",
+        "Control_side_-6.5_4.65_sill",
+        "Control_side_-6.5_4.65_head"
+      ],
+      "backing": "Worker_control_two_storey_block",
+      "axis": 0,
+      "sign": -1,
+      "wall_normal": [
+        -1,
+        0,
+        0
+      ],
+      "pane_bounds": {
+        "name": "Control_side_-6.5_4.65_pane",
+        "min": [
+          -12.09000015258789,
+          -7.289999961853027,
+          4.034999847412109
+        ],
+        "max": [
+          -11.989999771118164,
+          -5.710000038146973,
+          5.265000343322754
+        ],
+        "triangles": 12,
+        "material": "WindowAccent"
+      },
+      "frame_bounds": [
+        {
+          "name": "Control_side_-6.5_4.65_left_jamb",
+          "min": [
+            -12.149999618530273,
+            -7.399999618530273,
+            3.9250001907348633
+          ],
+          "max": [
+            -11.989999771118164,
+            -7.289999961853027,
+            5.375
+          ],
+          "triangles": 12,
+          "material": "EquipmentMetal"
+        },
+        {
+          "name": "Control_side_-6.5_4.65_right_jamb",
+          "min": [
+            -12.149999618530273,
+            -5.710000038146973,
+            3.9250001907348633
+          ],
+          "max": [
+            -11.989999771118164,
+            -5.600000381469727,
+            5.375
+          ],
+          "triangles": 12,
+          "material": "EquipmentMetal"
+        },
+        {
+          "name": "Control_side_-6.5_4.65_sill",
+          "min": [
+            -12.149999618530273,
+            -7.289999961853027,
+            3.924999952316284
+          ],
+          "max": [
+            -11.989999771118164,
+            -5.710000038146973,
+            4.034999847412109
+          ],
+          "triangles": 12,
+          "material": "EquipmentMetal"
+        },
+        {
+          "name": "Control_side_-6.5_4.65_head",
+          "min": [
+            -12.149999618530273,
+            -7.289999961853027,
+            5.265000343322754
+          ],
+          "max": [
+            -11.989999771118164,
+            -5.710000038146973,
+            5.375
+          ],
+          "triangles": 12,
+          "material": "EquipmentMetal"
+        }
+      ],
+      "wall_bounds": {
+        "name": "Worker_control_two_storey_block",
+        "min": [
+          -12.0,
+          -10.5,
+          0.0
+        ],
+        "max": [
+          -3.0,
+          -3.5,
+          6.300000190734863
+        ],
+        "triangles": 12,
+        "material": "BuildingFacade"
+      },
+      "mount_assertions_pass": true,
+      "rear_embed_m": 0.01,
+      "minimum_wall_edge_margin_m": 3.1000003814697266
+    },
+    {
+      "pane": "Control_side_-4.65_1.65_pane",
+      "frame_parts": [
+        "Control_side_-4.65_1.65_left_jamb",
+        "Control_side_-4.65_1.65_right_jamb",
+        "Control_side_-4.65_1.65_sill",
+        "Control_side_-4.65_1.65_head"
+      ],
+      "backing": "Worker_control_two_storey_block",
+      "axis": 0,
+      "sign": -1,
+      "wall_normal": [
+        -1,
+        0,
+        0
+      ],
+      "pane_bounds": {
+        "name": "Control_side_-4.65_1.65_pane",
+        "min": [
+          -12.09000015258789,
+          -5.440000057220459,
+          1.034999966621399
+        ],
+        "max": [
+          -11.989999771118164,
+          -3.8600001335144043,
+          2.2649998664855957
+        ],
+        "triangles": 12,
+        "material": "WindowAccent"
+      },
+      "frame_bounds": [
+        {
+          "name": "Control_side_-4.65_1.65_left_jamb",
+          "min": [
+            -12.149999618530273,
+            -5.549999713897705,
+            0.9249999523162842
+          ],
+          "max": [
+            -11.989999771118164,
+            -5.440000057220459,
+            2.375
+          ],
+          "triangles": 12,
+          "material": "EquipmentMetal"
+        },
+        {
+          "name": "Control_side_-4.65_1.65_right_jamb",
+          "min": [
+            -12.149999618530273,
+            -3.8600001335144043,
+            0.9249999523162842
+          ],
+          "max": [
+            -11.989999771118164,
+            -3.75,
+            2.375
+          ],
+          "triangles": 12,
+          "material": "EquipmentMetal"
+        },
+        {
+          "name": "Control_side_-4.65_1.65_sill",
+          "min": [
+            -12.149999618530273,
+            -5.440000057220459,
+            0.925000011920929
+          ],
+          "max": [
+            -11.989999771118164,
+            -3.8600001335144043,
+            1.034999966621399
+          ],
+          "triangles": 12,
+          "material": "EquipmentMetal"
+        },
+        {
+          "name": "Control_side_-4.65_1.65_head",
+          "min": [
+            -12.149999618530273,
+            -5.440000057220459,
+            2.2649998664855957
+          ],
+          "max": [
+            -11.989999771118164,
+            -3.8600001335144043,
+            2.375
+          ],
+          "triangles": 12,
+          "material": "EquipmentMetal"
+        }
+      ],
+      "wall_bounds": {
+        "name": "Worker_control_two_storey_block",
+        "min": [
+          -12.0,
+          -10.5,
+          0.0
+        ],
+        "max": [
+          -3.0,
+          -3.5,
+          6.300000190734863
+        ],
+        "triangles": 12,
+        "material": "BuildingFacade"
+      },
+      "mount_assertions_pass": true,
+      "rear_embed_m": 0.01,
+      "minimum_wall_edge_margin_m": 0.9249999523162842
+    },
+    {
+      "pane": "Control_side_-4.65_4.65_pane",
+      "frame_parts": [
+        "Control_side_-4.65_4.65_left_jamb",
+        "Control_side_-4.65_4.65_right_jamb",
+        "Control_side_-4.65_4.65_sill",
+        "Control_side_-4.65_4.65_head"
+      ],
+      "backing": "Worker_control_two_storey_block",
+      "axis": 0,
+      "sign": -1,
+      "wall_normal": [
+        -1,
+        0,
+        0
+      ],
+      "pane_bounds": {
+        "name": "Control_side_-4.65_4.65_pane",
+        "min": [
+          -12.09000015258789,
+          -5.440000057220459,
+          4.034999847412109
+        ],
+        "max": [
+          -11.989999771118164,
+          -3.8600001335144043,
+          5.265000343322754
+        ],
+        "triangles": 12,
+        "material": "WindowAccent"
+      },
+      "frame_bounds": [
+        {
+          "name": "Control_side_-4.65_4.65_left_jamb",
+          "min": [
+            -12.149999618530273,
+            -5.549999713897705,
+            3.9250001907348633
+          ],
+          "max": [
+            -11.989999771118164,
+            -5.440000057220459,
+            5.375
+          ],
+          "triangles": 12,
+          "material": "EquipmentMetal"
+        },
+        {
+          "name": "Control_side_-4.65_4.65_right_jamb",
+          "min": [
+            -12.149999618530273,
+            -3.8600001335144043,
+            3.9250001907348633
+          ],
+          "max": [
+            -11.989999771118164,
+            -3.75,
+            5.375
+          ],
+          "triangles": 12,
+          "material": "EquipmentMetal"
+        },
+        {
+          "name": "Control_side_-4.65_4.65_sill",
+          "min": [
+            -12.149999618530273,
+            -5.440000057220459,
+            3.924999952316284
+          ],
+          "max": [
+            -11.989999771118164,
+            -3.8600001335144043,
+            4.034999847412109
+          ],
+          "triangles": 12,
+          "material": "EquipmentMetal"
+        },
+        {
+          "name": "Control_side_-4.65_4.65_head",
+          "min": [
+            -12.149999618530273,
+            -5.440000057220459,
+            5.265000343322754
+          ],
+          "max": [
+            -11.989999771118164,
+            -3.8600001335144043,
+            5.375
+          ],
+          "triangles": 12,
+          "material": "EquipmentMetal"
+        }
+      ],
+      "wall_bounds": {
+        "name": "Worker_control_two_storey_block",
+        "min": [
+          -12.0,
+          -10.5,
+          0.0
+        ],
+        "max": [
+          -3.0,
+          -3.5,
+          6.300000190734863
+        ],
+        "triangles": 12,
+        "material": "BuildingFacade"
+      },
+      "mount_assertions_pass": true,
+      "rear_embed_m": 0.01,
+      "minimum_wall_edge_margin_m": 3.924999952316284
+    },
+    {
+      "pane": "Hall_clerestory_2.8_pane",
+      "frame_parts": [
+        "Hall_clerestory_2.8_left_jamb",
+        "Hall_clerestory_2.8_right_jamb",
+        "Hall_clerestory_2.8_sill",
+        "Hall_clerestory_2.8_head"
+      ],
+      "backing": "Filter_pump_hall",
+      "axis": 1,
+      "sign": -1,
+      "wall_normal": [
+        0,
+        -1,
+        0
+      ],
+      "pane_bounds": {
+        "name": "Hall_clerestory_2.8_pane",
+        "min": [
+          2.125,
+          -10.09000015258789,
+          3.299999952316284
+        ],
+        "max": [
+          3.4749999046325684,
+          -9.989999771118164,
+          4.099999904632568
+        ],
+        "triangles": 12,
+        "material": "WindowAccent"
+      },
+      "frame_bounds": [
+        {
+          "name": "Hall_clerestory_2.8_left_jamb",
+          "min": [
+            2.0149998664855957,
+            -10.149999618530273,
+            3.190000057220459
+          ],
+          "max": [
+            2.125,
+            -9.989999771118164,
+            4.210000038146973
+          ],
+          "triangles": 12,
+          "material": "EquipmentMetal"
+        },
+        {
+          "name": "Hall_clerestory_2.8_right_jamb",
+          "min": [
+            3.4749999046325684,
+            -10.149999618530273,
+            3.190000057220459
+          ],
+          "max": [
+            3.5850000381469727,
+            -9.989999771118164,
+            4.210000038146973
+          ],
+          "triangles": 12,
+          "material": "EquipmentMetal"
+        },
+        {
+          "name": "Hall_clerestory_2.8_sill",
+          "min": [
+            2.125,
+            -10.149999618530273,
+            3.18999981880188
+          ],
+          "max": [
+            3.4749999046325684,
+            -9.989999771118164,
+            3.299999952316284
+          ],
+          "triangles": 12,
+          "material": "EquipmentMetal"
+        },
+        {
+          "name": "Hall_clerestory_2.8_head",
+          "min": [
+            2.125,
+            -10.149999618530273,
+            4.100000381469727
+          ],
+          "max": [
+            3.4749999046325684,
+            -9.989999771118164,
+            4.210000038146973
+          ],
+          "triangles": 12,
+          "material": "EquipmentMetal"
+        }
+      ],
+      "wall_bounds": {
+        "name": "Filter_pump_hall",
+        "min": [
+          1.5,
+          -10.0,
+          0.0
+        ],
+        "max": [
+          11.5,
+          -3.0,
+          4.599999904632568
+        ],
+        "triangles": 12,
+        "material": "BuildingFacade"
+      },
+      "mount_assertions_pass": true,
+      "rear_embed_m": 0.01,
+      "minimum_wall_edge_margin_m": 0.5149998664855957
+    },
+    {
+      "pane": "Hall_clerestory_4.5_pane",
+      "frame_parts": [
+        "Hall_clerestory_4.5_left_jamb",
+        "Hall_clerestory_4.5_right_jamb",
+        "Hall_clerestory_4.5_sill",
+        "Hall_clerestory_4.5_head"
+      ],
+      "backing": "Filter_pump_hall",
+      "axis": 1,
+      "sign": -1,
+      "wall_normal": [
+        0,
+        -1,
+        0
+      ],
+      "pane_bounds": {
+        "name": "Hall_clerestory_4.5_pane",
+        "min": [
+          3.825000047683716,
+          -10.09000015258789,
+          3.299999952316284
+        ],
+        "max": [
+          5.175000190734863,
+          -9.989999771118164,
+          4.099999904632568
+        ],
+        "triangles": 12,
+        "material": "WindowAccent"
+      },
+      "frame_bounds": [
+        {
+          "name": "Hall_clerestory_4.5_left_jamb",
+          "min": [
+            3.7149999141693115,
+            -10.149999618530273,
+            3.190000057220459
+          ],
+          "max": [
+            3.825000047683716,
+            -9.989999771118164,
+            4.210000038146973
+          ],
+          "triangles": 12,
+          "material": "EquipmentMetal"
+        },
+        {
+          "name": "Hall_clerestory_4.5_right_jamb",
+          "min": [
+            5.175000190734863,
+            -10.149999618530273,
+            3.190000057220459
+          ],
+          "max": [
+            5.284999847412109,
+            -9.989999771118164,
+            4.210000038146973
+          ],
+          "triangles": 12,
+          "material": "EquipmentMetal"
+        },
+        {
+          "name": "Hall_clerestory_4.5_sill",
+          "min": [
+            3.825000047683716,
+            -10.149999618530273,
+            3.18999981880188
+          ],
+          "max": [
+            5.175000190734863,
+            -9.989999771118164,
+            3.299999952316284
+          ],
+          "triangles": 12,
+          "material": "EquipmentMetal"
+        },
+        {
+          "name": "Hall_clerestory_4.5_head",
+          "min": [
+            3.825000047683716,
+            -10.149999618530273,
+            4.100000381469727
+          ],
+          "max": [
+            5.175000190734863,
+            -9.989999771118164,
+            4.210000038146973
+          ],
+          "triangles": 12,
+          "material": "EquipmentMetal"
+        }
+      ],
+      "wall_bounds": {
+        "name": "Filter_pump_hall",
+        "min": [
+          1.5,
+          -10.0,
+          0.0
+        ],
+        "max": [
+          11.5,
+          -3.0,
+          4.599999904632568
+        ],
+        "triangles": 12,
+        "material": "BuildingFacade"
+      },
+      "mount_assertions_pass": true,
+      "rear_embed_m": 0.01,
+      "minimum_wall_edge_margin_m": 2.2149999141693115
+    }
+  ],
+  "door_glazing": "Personnel_door_glass retained unchanged; not an architectural pane",
+  "checks": "Measured world geometry: wall contact, tangential edge margins, aperture fit, open rim and disjoint corners"
+}

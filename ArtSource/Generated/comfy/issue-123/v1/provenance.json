@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "kind": "comfy",
+  "repository": "CitySimVR/citysim",
+  "issue": 123,
+  "version": 1,
+  "source_sha": "12863ff34032e0e460febd8215012363c7a7fd49",
+  "workflow": "generate_image_zimage",
+  "workflow_sha256": "a55edc97ca33fb786e4d4c87d704c5dd05d39f753e070924c89c21c8f73d066e",
+  "model": "ollama/citysim-spec:qwen3-14b",
+  "seed": 123,
+  "prompt": "Create a single clean game-art concept sheet for a stylized low-poly tabletop coastal city game. Arrange six clearly separated little asset studies on an opaque plain warm-gray background: two simple seashell variations (one pale ivory fan shell and one small rounded spiral shell), two chunky five-armed starfish variations in muted sandy ochre, one short weathered driftwood branch, and one compact sparse dune-grass clump. Three-quarter elevated orthographic views, consistent scale relationships, broad faceted geometry and simple flat materials, soft even studio light. Each object has a clean readable silhouette, modest detail and plausible forms suitable for inexpensive static scenery. Shells and starfish are small beach accents; driftwood is somewhat larger, grass clump modest. Subdued brown-gray, ivory, tan and gray-green palette consistent with damp shoreline sand and existing angular low-poly city rocks. Give objects generous empty space and show whole objects without clipping. No beach scene, water, extra rocks, pedestals, containers, buildings, people, realistic fur or surface microdetail, writing, labels, borders, logos or watermark. One 768x768 square image; opaque background is intentional. City Sim VR beach-prop concept study.",
+  "prompt_id": "744ccdcd-c6f0-43c3-93b4-694543c746e9",
+  "dimensions": {
+    "width": 768,
+    "height": 768
+  },
+  "png_sha256": "a4f1eadbcef4ce61879463b710bd54910f10864179e93a4eff69efec38d0a3b4",
+  "created_at": "2026-10-17T22:59:30.961Z"
+}

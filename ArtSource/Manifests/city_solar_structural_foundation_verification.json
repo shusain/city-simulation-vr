@@ -1,0 +1,329 @@
+{
+  "parent_issue": 157,
+  "source_issue": 169,
+  "version": 3,
+  "override_manifest": "ArtSource/Manifests/city_solar_structural_foundation_override.json",
+  "override_manifest_sha256": "9539de559145bf5290e18e50ed2ba02ccce33e58c354e174a85ba7059b5fc633",
+  "retained_columns": [
+    {
+      "component": "R1T1_SteelFoot",
+      "closed_edges": 14,
+      "signed_volume_m3": 0.5183978875478116,
+      "cap_area_m2": 0.5183993464267843,
+      "source_top_z_m": 0.0,
+      "original_contact_triangles_exact": true,
+      "unit_planes_m": [
+        -1,
+        0
+      ],
+      "hole_ray_probes": []
+    },
+    {
+      "component": "R1T2_SteelFoot",
+      "closed_edges": 14,
+      "signed_volume_m3": 0.5183995962142944,
+      "cap_area_m2": 0.5184000075512462,
+      "source_top_z_m": 0.0,
+      "original_contact_triangles_exact": true,
+      "unit_planes_m": [
+        -1,
+        0
+      ],
+      "hole_ray_probes": []
+    },
+    {
+      "component": "R1T3_SteelFoot",
+      "closed_edges": 14,
+      "signed_volume_m3": 0.5184006293614705,
+      "cap_area_m2": 0.5184000075512462,
+      "source_top_z_m": 0.0,
+      "original_contact_triangles_exact": true,
+      "unit_planes_m": [
+        -1,
+        0
+      ],
+      "hole_ray_probes": []
+    },
+    {
+      "component": "R1T4_SteelFoot",
+      "closed_edges": 14,
+      "signed_volume_m3": 0.518396298090617,
+      "cap_area_m2": 0.5183993464267843,
+      "source_top_z_m": 0.0,
+      "original_contact_triangles_exact": true,
+      "unit_planes_m": [
+        -1,
+        0
+      ],
+      "hole_ray_probes": []
+    },
+    {
+      "component": "R2T1_SteelFoot",
+      "closed_edges": 14,
+      "signed_volume_m3": 0.5183992336193723,
+      "cap_area_m2": 0.5183995476386664,
+      "source_top_z_m": 0.0,
+      "original_contact_triangles_exact": true,
+      "unit_planes_m": [
+        -1,
+        0
+      ],
+      "hole_ray_probes": []
+    },
+    {
+      "component": "R2T2_SteelFoot",
+      "closed_edges": 14,
+      "signed_volume_m3": 0.5184001922607423,
+      "cap_area_m2": 0.5184001800183584,
+      "source_top_z_m": 0.0,
+      "original_contact_triangles_exact": true,
+      "unit_planes_m": [
+        -1,
+        0
+      ],
+      "hole_ray_probes": []
+    },
+    {
+      "component": "R2T3_SteelFoot",
+      "closed_edges": 14,
+      "signed_volume_m3": 0.5184001922607424,
+      "cap_area_m2": 0.5184001800183584,
+      "source_top_z_m": 0.0,
+      "original_contact_triangles_exact": true,
+      "unit_planes_m": [
+        -1,
+        0
+      ],
+      "hole_ray_probes": []
+    },
+    {
+      "component": "R2T4_SteelFoot",
+      "closed_edges": 14,
+      "signed_volume_m3": 0.5183993925650916,
+      "cap_area_m2": 0.5183995476386664,
+      "source_top_z_m": 0.0,
+      "original_contact_triangles_exact": true,
+      "unit_planes_m": [
+        -1,
+        0
+      ],
+      "hole_ray_probes": []
+    },
+    {
+      "component": "R3T1_SteelFoot",
+      "closed_edges": 14,
+      "signed_volume_m3": 0.51839820543925,
+      "cap_area_m2": 0.5183993464267843,
+      "source_top_z_m": 0.0,
+      "original_contact_triangles_exact": true,
+      "unit_planes_m": [
+        -1,
+        0
+      ],
+      "hole_ray_probes": []
+    },
+    {
+      "component": "R3T2_SteelFoot",
+      "closed_edges": 14,
+      "signed_volume_m3": 0.5183995962142944,
+      "cap_area_m2": 0.5184000075512462,
+      "source_top_z_m": 0.0,
+      "original_contact_triangles_exact": true,
+      "unit_planes_m": [
+        -1,
+        0
+      ],
+      "hole_ray_probes": []
+    },
+    {
+      "component": "R3T3_SteelFoot",
+      "closed_edges": 14,
+      "signed_volume_m3": 0.5184006293614702,
+      "cap_area_m2": 0.5184000075512462,
+      "source_top_z_m": 0.0,
+      "original_contact_triangles_exact": true,
+      "unit_planes_m": [
+        -1,
+        0
+      ],
+      "hole_ray_probes": []
+    },
+    {
+      "component": "R3T4_SteelFoot",
+      "closed_edges": 14,
+      "signed_volume_m3": 0.5183966159820557,
+      "cap_area_m2": 0.5183993464267843,
+      "source_top_z_m": 0.0,
+      "original_contact_triangles_exact": true,
+      "unit_planes_m": [
+        -1,
+        0
+      ],
+      "hole_ray_probes": []
+    },
+    {
+      "component": "Inverter0_Foot0",
+      "closed_edges": 14,
+      "signed_volume_m3": 0.10399401187896723,
+      "cap_area_m2": 0.1039998362644791,
+      "source_top_z_m": 0.0,
+      "original_contact_triangles_exact": true,
+      "unit_planes_m": [
+        -1,
+        0
+      ],
+      "hole_ray_probes": []
+    },
+    {
+      "component": "Inverter0_Foot1",
+      "closed_edges": 14,
+      "signed_volume_m3": 0.10400370756785116,
+      "cap_area_m2": 0.1039998362644791,
+      "source_top_z_m": 0.0,
+      "original_contact_triangles_exact": true,
+      "unit_planes_m": [
+        -1,
+        0
+      ],
+      "hole_ray_probes": []
+    },
+    {
+      "component": "Inverter1_Foot0",
+      "closed_edges": 14,
+      "signed_volume_m3": 0.104002038637797,
+      "cap_area_m2": 0.1039998362644791,
+      "source_top_z_m": 0.0,
+      "original_contact_triangles_exact": true,
+      "unit_planes_m": [
+        -1,
+        0
+      ],
+      "hole_ray_probes": []
+    },
+    {
+      "component": "Inverter1_Foot1",
+      "closed_edges": 14,
+      "signed_volume_m3": 0.10400132338205981,
+      "cap_area_m2": 0.1039998362644791,
+      "source_top_z_m": 0.0,
+      "original_contact_triangles_exact": true,
+      "unit_planes_m": [
+        -1,
+        0
+      ],
+      "hole_ray_probes": []
+    }
+  ],
+  "retained_component_names": [
+    "Inverter0_Foot0",
+    "Inverter0_Foot1",
+    "Inverter1_Foot0",
+    "Inverter1_Foot1",
+    "R1T1_SteelFoot",
+    "R1T2_SteelFoot",
+    "R1T3_SteelFoot",
+    "R1T4_SteelFoot",
+    "R2T1_SteelFoot",
+    "R2T2_SteelFoot",
+    "R2T3_SteelFoot",
+    "R2T4_SteelFoot",
+    "R3T1_SteelFoot",
+    "R3T2_SteelFoot",
+    "R3T3_SteelFoot",
+    "R3T4_SteelFoot"
+  ],
+  "excluded_contact_names": [
+    "CabinetGroundFeed",
+    "EastGroundDuct",
+    "GroundRowDuct0",
+    "GroundRowDuct1",
+    "GroundRowDuct2",
+    "R1T1_MastCableRiser",
+    "R1T2_MastCableRiser",
+    "R1T3_MastCableRiser",
+    "R1T4_MastCableRiser",
+    "R2T1_MastCableRiser",
+    "R2T2_MastCableRiser",
+    "R2T3_MastCableRiser",
+    "R2T4_MastCableRiser",
+    "R3T1_MastCableRiser",
+    "R3T2_MastCableRiser",
+    "R3T3_MastCableRiser",
+    "R3T4_MastCableRiser"
+  ],
+  "source_cable_kind_exclusions": 14,
+  "explicit_semantic_duct_exclusions": 3,
+  "all_actual_mesh_groups_are_feet": true,
+  "no_extra_vertices_or_faces": true,
+  "no_excluded_cable_or_duct_column": true,
+  "all_original_contact_caps_and_unit_topology_exact": true,
+  "actual_fbx_readback": {
+    "fbx": "ArtSource/Exports/UtilityIntegration/Foundations/SM_Utility_solar_farm_v3_StructuralFeet_Z0.fbx",
+    "triangles": 192,
+    "corners": 448,
+    "max_position_error_m": 1.3486991292666062e-06,
+    "max_normal_vector_error": 8.742277655541959e-08,
+    "max_uv_error": 0.0
+  },
+  "preserved_other_foundation_groups": [
+    {
+      "key": "SM_Utility_coal_v4_Foundation_Z0",
+      "export": "ArtSource/Exports/UtilityIntegration/Foundations/SM_Utility_coal_v4_Foundation_Z0.fbx",
+      "sha256": "c0b5be414bb8e7a978a3f74773d7463627116a64620120cbb7173efdccdc9265"
+    },
+    {
+      "key": "SM_Utility_coal_v4_Foundation_Z0p25",
+      "export": "ArtSource/Exports/UtilityIntegration/Foundations/SM_Utility_coal_v4_Foundation_Z0p25.fbx",
+      "sha256": "873d44b73182280049414297aaa27a05ef590d8f7d2ee80b57cbcebee6376ed5"
+    },
+    {
+      "key": "SM_Utility_oil_v3_Foundation_Z0",
+      "export": "ArtSource/Exports/UtilityIntegration/Foundations/SM_Utility_oil_v3_Foundation_Z0.fbx",
+      "sha256": "df3359d9a0b088c0b67c80f79c9807600b4b9ba64858b5235fc678de63d7a4a3"
+    },
+    {
+      "key": "SM_Utility_power_base_v2_Foundation_Z0",
+      "export": "ArtSource/Exports/UtilityIntegration/Foundations/SM_Utility_power_base_v2_Foundation_Z0.fbx",
+      "sha256": "4d43cfd901772c07d58612ca6c88fb34dfa6fafb9d51dd7d4b7233f72540c3b3"
+    },
+    {
+      "key": "SM_Utility_water_base_v2_Foundation_Z0",
+      "export": "ArtSource/Exports/UtilityIntegration/Foundations/SM_Utility_water_base_v2_Foundation_Z0.fbx",
+      "sha256": "42822fe4fb288208fa324e744d870e422947b6bdd66b69cabf0d52964fba9148"
+    },
+    {
+      "key": "SM_Utility_power_medium_v3_Foundation_Z0",
+      "export": "ArtSource/Exports/UtilityIntegration/Foundations/SM_Utility_power_medium_v3_Foundation_Z0.fbx",
+      "sha256": "7a01a06cd7c772bf6b53508a921c3785df1792533012a922ccc0760dce4f084a"
+    },
+    {
+      "key": "SM_Utility_power_high_v3_Foundation_Z0",
+      "export": "ArtSource/Exports/UtilityIntegration/Foundations/SM_Utility_power_high_v3_Foundation_Z0.fbx",
+      "sha256": "d3fdadc56bb8a3b1eabc924a7db6e28f9c483c087198f87578bc4184b521b251"
+    },
+    {
+      "key": "SM_Utility_water_medium_v2_Foundation_Z0",
+      "export": "ArtSource/Exports/UtilityIntegration/Foundations/SM_Utility_water_medium_v2_Foundation_Z0.fbx",
+      "sha256": "d17329c6963819d0f098680afea214add1d328548c2f81ccb6fff2759c78579c"
+    },
+    {
+      "key": "SM_Utility_water_high_v2_Foundation_Z0",
+      "export": "ArtSource/Exports/UtilityIntegration/Foundations/SM_Utility_water_high_v2_Foundation_Z0.fbx",
+      "sha256": "34de3e0ae861624ee4101c021fc6db725386bb2ff2754f3fc21488152c3976a2"
+    },
+    {
+      "key": "SM_Utility_water_tower_v3_Foundation_Z0",
+      "export": "ArtSource/Exports/UtilityIntegration/Foundations/SM_Utility_water_tower_v3_Foundation_Z0.fbx",
+      "sha256": "ed4ced2e7513ee5c3d2877aaaaeebae75e9bd24af7ec22fed499f7f11ff1b49a"
+    },
+    {
+      "key": "SM_Utility_wind_turbine_v1_Foundation_Z0",
+      "export": "ArtSource/Exports/UtilityIntegration/Foundations/SM_Utility_wind_turbine_v1_Foundation_Z0.fbx",
+      "sha256": "43e77118b0e8b39f69111e56d692a538868a82c1109c286ffb4d4874955412bc"
+    }
+  ],
+  "all_frozen_preparations_and_approved_assets_unchanged": true,
+  "no_original_source_tag_reclassification": true,
+  "native_execution_or_body_cable_articulation_changes": false,
+  "all_checks_pass": true
+}

@@ -1,0 +1,36 @@
+{
+  "asset_id": "building.power.high.a",
+  "stage": "high",
+  "capacity_percent_reference": 300,
+  "module_counts": {
+    "generator_halls": 3,
+    "control_storeys": 2,
+    "exhaust_units": 3,
+    "hall_vent_units": 3,
+    "switchgear_cabinets": 5,
+    "transformer_cases": 4,
+    "primary_entrances": 2
+  },
+  "occupied_envelope_m": [
+    26.749999046325684,
+    19.624999523162842,
+    8.299999237060547
+  ],
+  "base_identity": {
+    "source": "review packet baseline; fresh source, no completed parent",
+    "primary_hall": [
+      9,
+      10,
+      5.5
+    ],
+    "personnel_x": -5.6,
+    "service_x": 3,
+    "corrected_control_side_rows_y": [
+      -2.8,
+      -0.5,
+      1.0
+    ]
+  },
+  "review_only": true,
+  "future_lower_lod_plan": "Preserve three hall masses, two-storey control, primary portals, exhausts and major process pipes; reduce secondary rings, louver blades, frames and cabinet fixtures. No mobile-performance claim."
+}

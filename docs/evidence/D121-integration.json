@@ -1,0 +1,514 @@
+{
+  "task": "D121.2",
+  "date": "2026-10-15",
+  "status": "Maintained Windows ready for playtest; shared Quest archive verified",
+  "revision": "dev-27bb30632e82c9f1af04",
+  "schema": 68,
+  "approved_source": {
+    "path": "ArtSource/Blender/CityCitizenWalkCycle-v2.blend",
+    "sha256": "1cf0a3d40f92d23c80b2a84fa4e5cf2026617748a5940ebb318107e1a82940bb",
+    "version": 2,
+    "receipt": "docs/evidence/D121-v2-approval.json"
+  },
+  "behavior": "Approved v2 walk on existing skeletal field outfits; stock idle/walk blend; board-owned32/8 Desktop/Quest pool,30/15Hz poses, distance-driven phase, waiting idle, pause/reset/turn/identity and static overflow. No authoritative root motion, save/routing/arrival/economy changes.",
+  "native_assets": {
+    "task": "D121.2",
+    "source_sha256": "1cf0a3d40f92d23c80b2a84fa4e5cf2026617748a5940ebb318107e1a82940bb",
+    "assets": [
+      "/Game/CitySim/Art/Citizens/AS_Citizen_Walk_D121.AS_Citizen_Walk_D121",
+      "/Game/CitySim/Art/Citizens/BS_Citizen_StreetWalk_D121.BS_Citizen_StreetWalk_D121"
+    ],
+    "reused_skeleton": "/Game/CitySim/Art/Parks/Meshes/SK_Park_Skate_Casual_Skeleton.SK_Park_Skate_Casual_Skeleton",
+    "seconds": 1.1666666269302368,
+    "mesh_or_skeleton_saved": false
+  },
+  "windows": {
+    "path": "Artifacts/PCVRSandbox/Windows/CitySimVR/Binaries/Win64/CitySimVR.exe",
+    "sha256": "22059e264b3d8a146284dff322a959bb1f3728e0a50d3363836cf604cad39230",
+    "candidate": "Artifacts/D121/Integration/WindowsCandidate/CitySimVR/Binaries/Win64/CitySimVR.exe",
+    "default_replaced": true,
+    "promotion_receipt": "Artifacts/D121/Integration/DefaultPromotion.json",
+    "why": "Original Desktop session closed; verified candidate copied byte-identically, all53 D107 files preserved and existing launchers retained."
+  },
+  "quest": {
+    "path": "Artifacts/D121/Integration/QuestPackage/Android_ASTC/CitySimVR-arm64.apk",
+    "sha256": "a24128d1fe69164bab8d91f746d0eca2699a043c7fc7fcd710c7c12c313e9e5c",
+    "installed": false,
+    "embedded_containers": [
+      {
+        "file": "CitySimVR-Android_ASTC.pak",
+        "sha256": "06698e89bbbcf5e9d324619d02b0cea5af1c2dcb6fe72d94a618b6d20827fcf5",
+        "bytes": 10481026
+      },
+      {
+        "file": "CitySimVR-Android_ASTC.utoc",
+        "sha256": "36c3e6b43324a47073895e273cac5c550a009f96a256583e5d1f75ff39f26763",
+        "bytes": 248191
+      },
+      {
+        "file": "CitySimVR-Android_ASTC.ucas",
+        "sha256": "83b09c62f89a12fbfd153bac8b7bfe1c9730711a8adee36c4f96ee52bc36a617",
+        "bytes": 103997808
+      }
+    ]
+  },
+  "tests": {
+    "Final": [
+      "FullDayRoutine",
+      "NativeWalk",
+      "StreetPool",
+      "WalkMotion"
+    ],
+    "Second": [
+      "FullDayRoutine",
+      "NativeWalk",
+      "StreetPool",
+      "WalkMotion",
+      "NativeRigLODAndDeckContact",
+      "CitizenAssetsAndPlatform",
+      "VisiblePool"
+    ],
+    "PackagedDelivery": [
+      "FullDayRoutine",
+      "StreetPool",
+      "WalkMotion"
+    ],
+    "D120DeliveryEditor": [
+      "CitizenWalkVisual",
+      "FlowVisual"
+    ],
+    "D120DeliveryPackaged": [
+      "CitizenWalkVisual",
+      "FlowVisual"
+    ]
+  },
+  "cooked_assets": [
+    {
+      "platform": "Windows",
+      "path": "../../../CitySimVR/Content/CitySim/Art/Citizens/AS_Citizen_Walk_D121.uasset",
+      "bytes": 3296,
+      "cooked_hash": "639f9cd8ccd3ce67f004d0610ae973e2e47a02c8"
+    },
+    {
+      "platform": "Windows",
+      "path": "../../../CitySimVR/Content/CitySim/Art/Citizens/BS_Citizen_StreetWalk_D121.uasset",
+      "bytes": 754,
+      "cooked_hash": "178c0a401a395755cc9b0c08943e12988fe75650"
+    },
+    {
+      "platform": "Windows",
+      "path": "../../../CitySimVR/Content/CitySim/Art/Parks/Meshes/SK_Park_Field_Casual.uasset",
+      "bytes": 11224,
+      "cooked_hash": "09a802aa7f5c582952b713624cc2b4c4b38b335f"
+    },
+    {
+      "platform": "Windows",
+      "path": "../../../CitySimVR/Content/CitySim/Art/Parks/Meshes/SK_Park_Field_Office.uasset",
+      "bytes": 11237,
+      "cooked_hash": "a0ca881c35e2fd0e42a79b4f1a93245711d89985"
+    },
+    {
+      "platform": "Windows",
+      "path": "../../../CitySimVR/Content/CitySim/Art/Parks/Meshes/SK_Park_Field_Worker.uasset",
+      "bytes": 11176,
+      "cooked_hash": "f8e132bdb63fc8cb02004d1724945552d347c8e7"
+    },
+    {
+      "platform": "Windows",
+      "path": "../../../CitySimVR/Content/CitySim/Art/Parks/Animations/AS_Park_Idle_D83.uasset",
+      "bytes": 710,
+      "cooked_hash": "99f8a8135b2c840c58ad046fb85b7a3e716e97b0"
+    },
+    {
+      "platform": "Windows",
+      "path": "../../../CitySimVR/Content/CitySim/Art/Parks/Meshes/SK_Park_Skate_Casual_Skeleton.uasset",
+      "bytes": 1571,
+      "cooked_hash": "9c39c5167fa0e16cf22025744b0a1c40e6b4a6f8"
+    },
+    {
+      "platform": "Quest",
+      "path": "../../../CitySimVR/Content/CitySim/Art/Citizens/AS_Citizen_Walk_D121.uasset",
+      "bytes": 740,
+      "cooked_hash": "2330c05855ed894a5979da463063f16d2e237540"
+    },
+    {
+      "platform": "Quest",
+      "path": "../../../CitySimVR/Content/CitySim/Art/Citizens/BS_Citizen_StreetWalk_D121.uasset",
+      "bytes": 754,
+      "cooked_hash": "178c0a401a395755cc9b0c08943e12988fe75650"
+    },
+    {
+      "platform": "Quest",
+      "path": "../../../CitySimVR/Content/CitySim/Art/Parks/Meshes/SK_Park_Field_Casual.uasset",
+      "bytes": 12241,
+      "cooked_hash": "09a802aa7f5c582952b713624cc2b4c4b38b335f"
+    },
+    {
+      "platform": "Quest",
+      "path": "../../../CitySimVR/Content/CitySim/Art/Parks/Meshes/SK_Park_Field_Office.uasset",
+      "bytes": 12269,
+      "cooked_hash": "a0ca881c35e2fd0e42a79b4f1a93245711d89985"
+    },
+    {
+      "platform": "Quest",
+      "path": "../../../CitySimVR/Content/CitySim/Art/Parks/Meshes/SK_Park_Field_Worker.uasset",
+      "bytes": 12268,
+      "cooked_hash": "f8e132bdb63fc8cb02004d1724945552d347c8e7"
+    },
+    {
+      "platform": "Quest",
+      "path": "../../../CitySimVR/Content/CitySim/Art/Parks/Animations/AS_Park_Idle_D83.uasset",
+      "bytes": 732,
+      "cooked_hash": "423c6470f9133f9ea111025ec2a7fbbac62b03d2"
+    },
+    {
+      "platform": "Quest",
+      "path": "../../../CitySimVR/Content/CitySim/Art/Parks/Meshes/SK_Park_Skate_Casual_Skeleton.uasset",
+      "bytes": 1647,
+      "cooked_hash": "9c39c5167fa0e16cf22025744b0a1c40e6b4a6f8"
+    }
+  ],
+  "screenshots": [
+    {
+      "path": "Artifacts/D121/Integration/D121-D120DeliveryEditor-User/Saved/Automation/CitizenWalk/CornerToWork-0.png",
+      "sha256": "0091fc5446e18822ebfd3336271659bf3e5dc8cd500c8331cc0732f1970752e9"
+    },
+    {
+      "path": "Artifacts/D121/Integration/D121-D120DeliveryEditor-User/Saved/Automation/CitizenWalk/CornerToWork-1.png",
+      "sha256": "0ec08215af4ccdacf7e9a799bd3257fc7f2aa9ee34cee0070f2ee69647bbab76"
+    },
+    {
+      "path": "Artifacts/D121/Integration/D121-D120DeliveryEditor-User/Saved/Automation/CitizenWalk/CornerToWork-2.png",
+      "sha256": "dc73a43ba5b2d2280799326a2dd6939585f957d77c55d3b71d62551ef34a8f9e"
+    },
+    {
+      "path": "Artifacts/D121/Integration/D121-D120DeliveryEditor-User/Saved/Automation/CitizenWalk/CornerToWork-3.png",
+      "sha256": "3fa32a43ed817a863b4c220fa460fb261f795f7e3e5bd8ca5d7f4e9fce76478a"
+    },
+    {
+      "path": "Artifacts/D121/Integration/D121-D120DeliveryEditor-User/Saved/Automation/CitizenWalk/CornerToWork-4.png",
+      "sha256": "ff4256391003bb9bdbe69fc0041de190d766955a9b28fb8af2cc26824654f392"
+    },
+    {
+      "path": "Artifacts/D121/Integration/D121-D120DeliveryEditor-User/Saved/Automation/CitizenWalk/CornerToWork-5.png",
+      "sha256": "9c88e647a36ca4b6a820fdf30202cef1e48f2bce98e4c33adadbe14cae37506b"
+    },
+    {
+      "path": "Artifacts/D121/Integration/D121-D120DeliveryEditor-User/Saved/Automation/CitizenWalk/CornerToWork-6.png",
+      "sha256": "67758ed965b1e6a13cd15739cf3949be5defdd269fad891a053fc03d73981df3"
+    },
+    {
+      "path": "Artifacts/D121/Integration/D121-D120DeliveryEditor-User/Saved/Automation/CitizenWalk/HomeToShop-0.png",
+      "sha256": "9180ae24c3aeddf76c79309d6c289f368e72f350f9d56bbf19974c49bcca5749"
+    },
+    {
+      "path": "Artifacts/D121/Integration/D121-D120DeliveryEditor-User/Saved/Automation/CitizenWalk/HomeToShop-1.png",
+      "sha256": "cd14d0a77255d2ce8bb7ecb0b5c3af03a12abc08ecba4fbf7b3954bc9df37eba"
+    },
+    {
+      "path": "Artifacts/D121/Integration/D121-D120DeliveryEditor-User/Saved/Automation/CitizenWalk/HomeToShop-2.png",
+      "sha256": "6d112bac56dd1d18613b5020577e9c513ad2675c9cf792cafc0838a9aca05cc4"
+    },
+    {
+      "path": "Artifacts/D121/Integration/D121-D120DeliveryEditor-User/Saved/Automation/CitizenWalk/HomeToShop-3.png",
+      "sha256": "8b0709c47c916e8c1ff8d7bf8a7621f2e384c7d03b670748a034a81bd981ae74"
+    },
+    {
+      "path": "Artifacts/D121/Integration/D121-D120DeliveryEditor-User/Saved/Automation/CitizenWalk/HomeToShop-4.png",
+      "sha256": "4ab70059448f553eb21a5c1644c140430dbe484e6c78ab474eb93edd696b684f"
+    },
+    {
+      "path": "Artifacts/D121/Integration/D121-D120DeliveryEditor-User/Saved/Automation/CitizenWalk/HomeToShop-5.png",
+      "sha256": "4659df2866f6089612e01a93c2b55c026bd7c42ada04447861842a3b2314d2a2"
+    },
+    {
+      "path": "Artifacts/D121/Integration/D121-D120DeliveryEditor-User/Saved/Automation/CitizenWalk/HomeToShop-6.png",
+      "sha256": "1835f7771257495c28a7d1cbaa1b200cdc1381973b8d47d855115c02a402dbd0"
+    },
+    {
+      "path": "Artifacts/D121/Integration/D121-D120DeliveryEditor-User/Saved/Automation/CitizenWalk/ReturnHome-0.png",
+      "sha256": "49cba05893debb88396e166cbfe5e74845352574dae186aa9773f4773abaddf3"
+    },
+    {
+      "path": "Artifacts/D121/Integration/D121-D120DeliveryEditor-User/Saved/Automation/CitizenWalk/ReturnHome-1.png",
+      "sha256": "4e874872e198d65578c77b6de36a541e043e010aa265e2231ebc18ddbeb687e4"
+    },
+    {
+      "path": "Artifacts/D121/Integration/D121-D120DeliveryEditor-User/Saved/Automation/CitizenWalk/ReturnHome-2.png",
+      "sha256": "0178c539c1a9d3bc88e716592c151e36d0af248fce65f02d20d0c4e131375ee9"
+    },
+    {
+      "path": "Artifacts/D121/Integration/D121-D120DeliveryEditor-User/Saved/Automation/CitizenWalk/ReturnHome-3.png",
+      "sha256": "816fec23959e41f7164f6c0ac593130a2f4e2904982d0abeedf75c493217d095"
+    },
+    {
+      "path": "Artifacts/D121/Integration/D121-D120DeliveryEditor-User/Saved/Automation/CitizenWalk/ReturnHome-4.png",
+      "sha256": "f57576155be808f3bca997f0b10bc78b0ac9435aba85b34a6a48c7b505c6169b"
+    },
+    {
+      "path": "Artifacts/D121/Integration/D121-D120DeliveryEditor-User/Saved/Automation/CitizenWalk/ReturnHome-5.png",
+      "sha256": "e2378ed171455727eb7fa5790e10d6338cefa24d9dcc43f3987c06c07bcdfd61"
+    },
+    {
+      "path": "Artifacts/D121/Integration/D121-D120DeliveryEditor-User/Saved/Automation/CitizenWalk/ReturnHome-6.png",
+      "sha256": "25b12bcdfe08718f3353ec79300a8c7b973bfa0fca404318b436cde7a8cd9009"
+    },
+    {
+      "path": "Artifacts/D121/Integration/D121-D120DeliveryEditor-User/Saved/Automation/Flow/AvenuePassing-0.png",
+      "sha256": "6d11c0089319e998c41f71eb84e360699d5deb9ed6af545bf21ab9711c0a9743"
+    },
+    {
+      "path": "Artifacts/D121/Integration/D121-D120DeliveryEditor-User/Saved/Automation/Flow/AvenuePassing-1.png",
+      "sha256": "3bb0af5d4b528b3d15cdb875a246e9a606bcb3cacadb359d00482b36fce9bbe1"
+    },
+    {
+      "path": "Artifacts/D121/Integration/D121-D120DeliveryEditor-User/Saved/Automation/Flow/AvenuePassing-2.png",
+      "sha256": "aa6bced2fae40f337e1737d7438d09c2a53b9de21b9bd8eeb612ec729e123880"
+    },
+    {
+      "path": "Artifacts/D121/Integration/D121-D120DeliveryEditor-User/Saved/Automation/Flow/HighwayRightLane-0.png",
+      "sha256": "e3a0fe00f4c7beeab2c3c7b1d0541d2d71b0da4412859ee15b87e76a5a46795c"
+    },
+    {
+      "path": "Artifacts/D121/Integration/D121-D120DeliveryEditor-User/Saved/Automation/Flow/HighwayRightLane-1.png",
+      "sha256": "59ead6513d4bc628270c349e37e68df8d5dfcd8b05ec59eaa81278cc77b3b045"
+    },
+    {
+      "path": "Artifacts/D121/Integration/D121-D120DeliveryEditor-User/Saved/Automation/Flow/HighwayRightLane-2.png",
+      "sha256": "d621909752b3ee71dae8db7f5a9e33feafa8727dff8ea13fedbcd98603777420"
+    },
+    {
+      "path": "Artifacts/D121/Integration/D121-D120DeliveryEditor-User/Saved/Automation/Flow/LocalPullOver-0.png",
+      "sha256": "3198d7964830b226c3787b6cf137c3b93556679cb7be72e5f5e3b9b2c9efef5e"
+    },
+    {
+      "path": "Artifacts/D121/Integration/D121-D120DeliveryEditor-User/Saved/Automation/Flow/LocalPullOver-1.png",
+      "sha256": "bbda3c8cf69940b198aad87bffcc6e5b307f070cc1dcc478fe57154e303f3ae6"
+    },
+    {
+      "path": "Artifacts/D121/Integration/D121-D120DeliveryEditor-User/Saved/Automation/Flow/LocalPullOver-2.png",
+      "sha256": "92fdc3f466022c346490a5aeca051ba3d7e90ca0d70c3558fc308e5ffce17522"
+    },
+    {
+      "path": "Artifacts/D121/Integration/D121-D120DeliveryEditor-User/Saved/Automation/Flow/LocalRejoin-0.png",
+      "sha256": "990adc8072dac08d0070bb9f233290e9bcc4811391077574f98743dfbd9170ee"
+    },
+    {
+      "path": "Artifacts/D121/Integration/D121-D120DeliveryEditor-User/Saved/Automation/Flow/LocalRejoin-1.png",
+      "sha256": "ac710929505672ee3c061dbcb9b5b8e3cda76d31b17c730a27b1835c54cbc251"
+    },
+    {
+      "path": "Artifacts/D121/Integration/D121-D120DeliveryEditor-User/Saved/Automation/Flow/LocalRejoin-2.png",
+      "sha256": "7b63af8127792ffebca9bd36db85be72f9611cfa5c6449f57f05e68423ac7967"
+    },
+    {
+      "path": "Artifacts/D121/Integration/D121-D120DeliveryEditor-User/Saved/Automation/Flow/PedestrianPass-0.png",
+      "sha256": "e5ff6e804714d6f774568706b813719ab84b9b1f7164374a410b5579a2d54b96"
+    },
+    {
+      "path": "Artifacts/D121/Integration/D121-D120DeliveryEditor-User/Saved/Automation/Flow/PedestrianPass-1.png",
+      "sha256": "1859d8bfabdb693466cbdd88c6c1503932aa46e6a14b62f0f62966b933dd79af"
+    },
+    {
+      "path": "Artifacts/D121/Integration/D121-D120DeliveryEditor-User/Saved/Automation/Flow/PedestrianPass-2.png",
+      "sha256": "e55a0718f14846d372ff87c5f3a9e1dc5be5dacaa38f704365f4dc59e2c7a89f"
+    },
+    {
+      "path": "Artifacts/D121/Integration/D121-D120DeliveryPackaged-User/Saved/Automation/CitizenWalk/CornerToWork-0.png",
+      "sha256": "0091fc5446e18822ebfd3336271659bf3e5dc8cd500c8331cc0732f1970752e9"
+    },
+    {
+      "path": "Artifacts/D121/Integration/D121-D120DeliveryPackaged-User/Saved/Automation/CitizenWalk/CornerToWork-1.png",
+      "sha256": "0ec08215af4ccdacf7e9a799bd3257fc7f2aa9ee34cee0070f2ee69647bbab76"
+    },
+    {
+      "path": "Artifacts/D121/Integration/D121-D120DeliveryPackaged-User/Saved/Automation/CitizenWalk/CornerToWork-2.png",
+      "sha256": "951a7ee19c597c372632004889ae0a3f1dc7b7ccf8f0a18c0ad6eb7ce82de9f2"
+    },
+    {
+      "path": "Artifacts/D121/Integration/D121-D120DeliveryPackaged-User/Saved/Automation/CitizenWalk/CornerToWork-3.png",
+      "sha256": "3fa32a43ed817a863b4c220fa460fb261f795f7e3e5bd8ca5d7f4e9fce76478a"
+    },
+    {
+      "path": "Artifacts/D121/Integration/D121-D120DeliveryPackaged-User/Saved/Automation/CitizenWalk/CornerToWork-4.png",
+      "sha256": "ff4256391003bb9bdbe69fc0041de190d766955a9b28fb8af2cc26824654f392"
+    },
+    {
+      "path": "Artifacts/D121/Integration/D121-D120DeliveryPackaged-User/Saved/Automation/CitizenWalk/CornerToWork-5.png",
+      "sha256": "9c88e647a36ca4b6a820fdf30202cef1e48f2bce98e4c33adadbe14cae37506b"
+    },
+    {
+      "path": "Artifacts/D121/Integration/D121-D120DeliveryPackaged-User/Saved/Automation/CitizenWalk/CornerToWork-6.png",
+      "sha256": "278b49529518121623c095497305207c1413433295f456b5cfe0b3d1766bbe17"
+    },
+    {
+      "path": "Artifacts/D121/Integration/D121-D120DeliveryPackaged-User/Saved/Automation/CitizenWalk/HomeToShop-0.png",
+      "sha256": "de88b3b5155f01824cfbba8c3a73f537780879d64236f6447d8ca621eeab03d1"
+    },
+    {
+      "path": "Artifacts/D121/Integration/D121-D120DeliveryPackaged-User/Saved/Automation/CitizenWalk/HomeToShop-1.png",
+      "sha256": "cd14d0a77255d2ce8bb7ecb0b5c3af03a12abc08ecba4fbf7b3954bc9df37eba"
+    },
+    {
+      "path": "Artifacts/D121/Integration/D121-D120DeliveryPackaged-User/Saved/Automation/CitizenWalk/HomeToShop-2.png",
+      "sha256": "6d112bac56dd1d18613b5020577e9c513ad2675c9cf792cafc0838a9aca05cc4"
+    },
+    {
+      "path": "Artifacts/D121/Integration/D121-D120DeliveryPackaged-User/Saved/Automation/CitizenWalk/HomeToShop-3.png",
+      "sha256": "8b0709c47c916e8c1ff8d7bf8a7621f2e384c7d03b670748a034a81bd981ae74"
+    },
+    {
+      "path": "Artifacts/D121/Integration/D121-D120DeliveryPackaged-User/Saved/Automation/CitizenWalk/HomeToShop-4.png",
+      "sha256": "f0aeb3807a273cb473b375e930e925af3e577a7925e5fd29497f3499e9e5dbb9"
+    },
+    {
+      "path": "Artifacts/D121/Integration/D121-D120DeliveryPackaged-User/Saved/Automation/CitizenWalk/HomeToShop-5.png",
+      "sha256": "6852b962fb100346c25870c5afdf684f6c7a9c0ccdf01693ac131323c69f6535"
+    },
+    {
+      "path": "Artifacts/D121/Integration/D121-D120DeliveryPackaged-User/Saved/Automation/CitizenWalk/HomeToShop-6.png",
+      "sha256": "1835f7771257495c28a7d1cbaa1b200cdc1381973b8d47d855115c02a402dbd0"
+    },
+    {
+      "path": "Artifacts/D121/Integration/D121-D120DeliveryPackaged-User/Saved/Automation/CitizenWalk/ReturnHome-0.png",
+      "sha256": "49cba05893debb88396e166cbfe5e74845352574dae186aa9773f4773abaddf3"
+    },
+    {
+      "path": "Artifacts/D121/Integration/D121-D120DeliveryPackaged-User/Saved/Automation/CitizenWalk/ReturnHome-1.png",
+      "sha256": "3b8730096ebf92022d8e3507ce1234c3744dd6fdf567f5c07ca6cc9dc3c6fef7"
+    },
+    {
+      "path": "Artifacts/D121/Integration/D121-D120DeliveryPackaged-User/Saved/Automation/CitizenWalk/ReturnHome-2.png",
+      "sha256": "0178c539c1a9d3bc88e716592c151e36d0af248fce65f02d20d0c4e131375ee9"
+    },
+    {
+      "path": "Artifacts/D121/Integration/D121-D120DeliveryPackaged-User/Saved/Automation/CitizenWalk/ReturnHome-3.png",
+      "sha256": "816fec23959e41f7164f6c0ac593130a2f4e2904982d0abeedf75c493217d095"
+    },
+    {
+      "path": "Artifacts/D121/Integration/D121-D120DeliveryPackaged-User/Saved/Automation/CitizenWalk/ReturnHome-4.png",
+      "sha256": "f57576155be808f3bca997f0b10bc78b0ac9435aba85b34a6a48c7b505c6169b"
+    },
+    {
+      "path": "Artifacts/D121/Integration/D121-D120DeliveryPackaged-User/Saved/Automation/CitizenWalk/ReturnHome-5.png",
+      "sha256": "e2378ed171455727eb7fa5790e10d6338cefa24d9dcc43f3987c06c07bcdfd61"
+    },
+    {
+      "path": "Artifacts/D121/Integration/D121-D120DeliveryPackaged-User/Saved/Automation/CitizenWalk/ReturnHome-6.png",
+      "sha256": "25b12bcdfe08718f3353ec79300a8c7b973bfa0fca404318b436cde7a8cd9009"
+    },
+    {
+      "path": "Artifacts/D121/Integration/D121-D120DeliveryPackaged-User/Saved/Automation/Flow/AvenuePassing-0.png",
+      "sha256": "6d11c0089319e998c41f71eb84e360699d5deb9ed6af545bf21ab9711c0a9743"
+    },
+    {
+      "path": "Artifacts/D121/Integration/D121-D120DeliveryPackaged-User/Saved/Automation/Flow/AvenuePassing-1.png",
+      "sha256": "3bb0af5d4b528b3d15cdb875a246e9a606bcb3cacadb359d00482b36fce9bbe1"
+    },
+    {
+      "path": "Artifacts/D121/Integration/D121-D120DeliveryPackaged-User/Saved/Automation/Flow/AvenuePassing-2.png",
+      "sha256": "aa6bced2fae40f337e1737d7438d09c2a53b9de21b9bd8eeb612ec729e123880"
+    },
+    {
+      "path": "Artifacts/D121/Integration/D121-D120DeliveryPackaged-User/Saved/Automation/Flow/HighwayRightLane-0.png",
+      "sha256": "90472e6e92f3c9623da8a819f782a9036a9579b562f6c83965bae2973aa114b1"
+    },
+    {
+      "path": "Artifacts/D121/Integration/D121-D120DeliveryPackaged-User/Saved/Automation/Flow/HighwayRightLane-1.png",
+      "sha256": "89a83676f57032557368bded5d3de36bbcf7e8b2c29f6e1924e5b3cc3742aee2"
+    },
+    {
+      "path": "Artifacts/D121/Integration/D121-D120DeliveryPackaged-User/Saved/Automation/Flow/HighwayRightLane-2.png",
+      "sha256": "90866d350f259d15659ce231d4124ed937c2ee156241f34673fa707ab5d8483b"
+    },
+    {
+      "path": "Artifacts/D121/Integration/D121-D120DeliveryPackaged-User/Saved/Automation/Flow/LocalPullOver-0.png",
+      "sha256": "2fe6d958f0a986534393da5a44816aa366b64015a7946d363b1c60b21be8f336"
+    },
+    {
+      "path": "Artifacts/D121/Integration/D121-D120DeliveryPackaged-User/Saved/Automation/Flow/LocalPullOver-1.png",
+      "sha256": "18513b94f0fac86abe82412572af18b2e0a940b81111dc641b1692423eb3fac4"
+    },
+    {
+      "path": "Artifacts/D121/Integration/D121-D120DeliveryPackaged-User/Saved/Automation/Flow/LocalPullOver-2.png",
+      "sha256": "1c90cd83bf448b224cf395e2a59a96225452b43d87894220f7541097a85e631b"
+    },
+    {
+      "path": "Artifacts/D121/Integration/D121-D120DeliveryPackaged-User/Saved/Automation/Flow/LocalRejoin-0.png",
+      "sha256": "990adc8072dac08d0070bb9f233290e9bcc4811391077574f98743dfbd9170ee"
+    },
+    {
+      "path": "Artifacts/D121/Integration/D121-D120DeliveryPackaged-User/Saved/Automation/Flow/LocalRejoin-1.png",
+      "sha256": "ac710929505672ee3c061dbcb9b5b8e3cda76d31b17c730a27b1835c54cbc251"
+    },
+    {
+      "path": "Artifacts/D121/Integration/D121-D120DeliveryPackaged-User/Saved/Automation/Flow/LocalRejoin-2.png",
+      "sha256": "7b63af8127792ffebca9bd36db85be72f9611cfa5c6449f57f05e68423ac7967"
+    },
+    {
+      "path": "Artifacts/D121/Integration/D121-D120DeliveryPackaged-User/Saved/Automation/Flow/PedestrianPass-0.png",
+      "sha256": "e5ff6e804714d6f774568706b813719ab84b9b1f7164374a410b5579a2d54b96"
+    },
+    {
+      "path": "Artifacts/D121/Integration/D121-D120DeliveryPackaged-User/Saved/Automation/Flow/PedestrianPass-1.png",
+      "sha256": "1859d8bfabdb693466cbdd88c6c1503932aa46e6a14b62f0f62966b933dd79af"
+    },
+    {
+      "path": "Artifacts/D121/Integration/D121-D120DeliveryPackaged-User/Saved/Automation/Flow/PedestrianPass-2.png",
+      "sha256": "e55a0718f14846d372ff87c5f3a9e1dc5be5dacaa38f704365f4dc59e2c7a89f"
+    }
+  ],
+  "source_changes": [
+    {
+      "path": "CitySimVR/Source/CitySimVR/Private/Presentation/CityBoardActor.cpp",
+      "before_sha256": "10c277c9aa88411eae14da4d82e9e573d9282f213b4e1d049ba5249122841a46",
+      "after_sha256": "d506f0c01a86601cc616af5726f27e07e27144d97eeb11db6f7f53f00c4a2c02",
+      "diff": "--- CitySimVR/Source/CitySimVR/Private/Presentation/CityBoardActor.cpp (before D121)\n+++ CitySimVR/Source/CitySimVR/Private/Presentation/CityBoardActor.cpp (D121)\n@@ -4,6 +4,7 @@\n #include \"Presentation/CityUiContent.h\"\n #include \"Presentation/CityDesktopModelPreview.h\"\n #include \"Presentation/CityCitizenPresentation.h\"\n+#include \"Animation/BlendSpace1D.h\"\n #include \"Presentation/CityAtmosphereComponent.h\"\n #include \"Misc/Paths.h\"\n #include \"Simulation/CityParkSimulation.h\"\n@@ -636,6 +637,9 @@\n \t\t                     ParkClips[Index]));\n \t\tParkCitizenAnimations[Index] = Animation.Object;\n \t}\n+\tstatic ConstructorHelpers::FObjectFinder<UBlendSpace1D> StreetBlend(TEXT(\"/Game/CitySim/Art/Citizens/BS_Citizen_StreetWalk_D121.BS_Citizen_StreetWalk_D121\"));\n+\tStreetWalkBlend=StreetBlend.Object;\n+\tbStreetSkeletalAnimation=!FParse::Param(FCommandLine::Get(),TEXT(\"CityStaticStreetCitizens\"));\n \tbParkSkeletalAnimation = !FParse::Param(FCommandLine::Get(), TEXT(\"CityStaticParkCitizens\"));\n \tbParkBenchmarkMotion = FParse::Param(FCommandLine::Get(), TEXT(\"CityBenchmark\")) &&\n \t                       FParse::Param(FCommandLine::Get(), TEXT(\"CityBenchmarkParkMotion\"));\n@@ -4338,6 +4342,7 @@\n {\n \tTArray<FTransform> Pedestrians, Cars, Trucks, PoliceCars, FireEngines, Ambulances, Garbage, Recycling;\n \tTArray<FTransform> OfficePedestrians, WorkerPedestrians;\n+\tTArray<FCityStreetWalkerSample> StreetWalkers;\n \tif (SimulationSubsystem && PlacementModel)\n \t{\n \t\tconst FCityTrafficSnapshot& Traffic = SimulationSubsystem->GetTrafficSnapshot();\n@@ -4426,6 +4431,15 @@\n \t\t\t\t    Vehicle.SpeedUnitsPerStep * CityBoardPicking::LogicalCellSizeCm / FCityTrafficSimulation::TrafficUnitsPerCell);\n \t\t\tconst int32 CitizenVariant = CityCitizenPresentation::VariantIndex(\n \t\t\t    Vehicle.SourceId ? Vehicle.SourceId : Vehicle.Id, bRefinedCitizens);\n+\t\t\tif(bWalk)\n+\t\t\t{\n+\t\t\t\tFCityStreetWalkerSample Sample;\n+\t\t\t\tSample.Id=Vehicle.Id; Sample.Identity=Vehicle.SourceId ? Vehicle.SourceId : Vehicle.Id;\n+\t\t\t\tSample.Trip=HashCombineFast(GetTypeHash(Vehicle.OriginEntityId),GetTypeHash(Vehicle.DestinationEntityId)) ^ (Vehicle.bReturning ? 0x80000000u : 0);\n+\t\t\t\tSample.Variant=CitizenVariant;\n+\t\t\t\tSample.Transform=FTransform(FRotator(0,Direction.Rotation().Yaw,0),Location,FVector(CityCitizenPresentation::StreetUniformScale));\n+\t\t\t\tStreetWalkers.Add(Sample); ++VisibleCount; continue;\n+\t\t\t}\n \t\t\tTArray<FTransform>& Transforms =\n \t\t\t    Vehicle.VehicleType == ECityTripVehicleType::GarbageTruck\n \t\t\t        ? (Vehicle.bTransitTrip && RecyclingTrips.Contains(Vehicle.SourceId) ? Recycling : Garbage)\n@@ -4444,6 +4458,7 @@\n \t\t\t++VisibleCount;\n \t\t}\n \t}\n+\tRenderStreetWalkers(StreetWalkers,Pedestrians,OfficePedestrians,WorkerPedestrians);\n \t// Reuse the bounded instance pools. Rendering never changes traffic state.\n \tauto UpdatePool = [](UInstancedStaticMeshComponent* Pool, const TArray<FTransform>& Transforms)\n \t{\n"
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Private/Tests/CityFlowVisualTests.cpp",
+      "before_sha256": "ef486388e27d958f0ab40ab9804688d5ba09c1de34adbfef102a889e888f5d9c",
+      "after_sha256": "50d1031603b81cca3d56cde27b06ad014fee8d6dc5d2ee3bc5e597d1813f418c",
+      "diff": "--- CitySimVR/Source/CitySimVR/Private/Tests/CityFlowVisualTests.cpp (before D121)\n+++ CitySimVR/Source/CitySimVR/Private/Tests/CityFlowVisualTests.cpp (D121)\n@@ -7,6 +7,7 @@\n #include \"Components/SceneCaptureComponent2D.h\"\n #include \"Components/PrimitiveComponent.h\"\n #include \"Components/InstancedStaticMeshComponent.h\"\n+#include \"Components/SkeletalMeshComponent.h\"\n #include \"EngineUtils.h\"\n #include \"ImageUtils.h\"\n #include \"Misc/CommandLine.h\"\n@@ -89,7 +90,12 @@\n \t\tBoard->UpdatePopulationTraffic();\n \t\tconst bool Walk=Scenario==2 || Scenario==4;\n \t\tif(Walk)\n-\t\t\tTest->TestEqual(TEXT(\"all four walking meshes are presented\"),Board->CitizenInstances->GetInstanceCount()+Board->OfficeCitizenInstances->GetInstanceCount()+Board->WorkerCitizenInstances->GetInstanceCount(),4);\n+\t\t{\n+\t\t\tint32 WalkerCount=Board->CitizenInstances->GetInstanceCount()+Board->OfficeCitizenInstances->GetInstanceCount()+Board->WorkerCitizenInstances->GetInstanceCount();\n+\t\t\tfor(auto Component:Board->StreetAnimatedWalkers)\n+\t\t\t\tif(Component->IsVisible()){++WalkerCount;Capture->ShowOnlyComponent(Component);}\n+\t\t\tTest->TestEqual(TEXT(\"all four walking meshes are presented exactly once\"),WalkerCount,4);\n+\t\t}\n \t\telse if(Scenario==0 || Scenario==3)\n \t\t\tTest->TestEqual(TEXT(\"responder is actually presented\"),Board->FireResponseInstances->GetInstanceCount(),1);\n \t\tCapture->FOVAngle=Walk?40:60;\n"
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Private/Tests/CityVisibleTrafficTests.cpp",
+      "before_sha256": "4e51397ea4acf5be8c8c8234a7d7e8e3532f8f484f05659d77f9e2ed4aad2f76",
+      "after_sha256": "f206f086fca62e7f8ac966803a8e4208e4f0488814e69eb5fc05dbbba267e5e3",
+      "diff": "--- CitySimVR/Source/CitySimVR/Private/Tests/CityVisibleTrafficTests.cpp (before D121)\n+++ CitySimVR/Source/CitySimVR/Private/Tests/CityVisibleTrafficTests.cpp (D121)\n@@ -158,6 +158,7 @@\n \tUWorld* World = UWorld::CreateWorld(EWorldType::Game, false, TEXT(\"CityTrafficPoolTest\"), nullptr, true,\n \t                                    ERHIFeatureLevel::Num, &Values);\n \tACityBoardActor* Board = World->SpawnActor<ACityBoardActor>();\n+\tBoard->bStreetSkeletalAnimation = false; // Retain the instanced fallback regression; D121 tests cover animation.\n \tUCitySimulationSubsystem* Simulation = World->GetSubsystem<UCitySimulationSubsystem>();\n \tSimulation->PlacementModel->SetTerrain(nullptr);\n \tMakeTrafficRoad(*Simulation->PlacementModel);\n"
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Public/Presentation/CityBoardActor.h",
+      "before_sha256": "b6c516f92365b3a1724b9504bd0f0545f5144cb6890981bcc0e04af8e7727f52",
+      "after_sha256": "e02b094d483fc6863481ce9df9e152e1420baea11729601541ed4268c123e6f6",
+      "diff": "--- CitySimVR/Source/CitySimVR/Public/Presentation/CityBoardActor.h (before D121)\n+++ CitySimVR/Source/CitySimVR/Public/Presentation/CityBoardActor.h (D121)\n@@ -1,4 +1,5 @@\n #pragma once\n+#include \"Presentation/CityCitizenWalkMotion.h\"\n \n #include \"Presentation/CityWindRotorMotion.h\"\n #include \"CoreMinimal.h\"\n@@ -344,6 +345,20 @@\n \tTArray<TObjectPtr<USkeletalMeshComponent>> ParkAnimatedVisitors;\n \tTArray<int32> ParkAssignedAnimations;\n \tTArray<float> ParkAssignedTimes;\n+\tUPROPERTY()\n+\tTObjectPtr<class UBlendSpace1D> StreetWalkBlend;\n+\tUPROPERTY()\n+\tTArray<TObjectPtr<USkeletalMeshComponent>> StreetAnimatedWalkers;\n+\tTMap<uint64, FCityCitizenWalkMotion> StreetWalkStates;\n+\tTArray<uint64> StreetAssignedIds;\n+\tTArray<float> StreetAssignedPhases, StreetAssignedWeights;\n+\tuint64 StreetWalkGeneration = MAX_uint64, StreetWalkNetwork = 0;\n+\tdouble StreetPoseClock = -1;\n+\tbool bStreetSkeletalAnimation = true;\n+\tvoid RenderStreetWalkers(const TArray<FCityStreetWalkerSample>& Samples, TArray<FTransform>& Casual,\n+\t                         TArray<FTransform>& Office, TArray<FTransform>& Worker);\n+\tfriend class FCityCitizenWalkRuntimeTest;\n+\tfriend class FCityCitizenWalkVisualCommand;\n \tdouble ParkPoseAccumulator = 0;\n \tbool bParkSkeletalAnimation = true;\n \tbool bParkBenchmarkMotion = false;\n"
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Public/Simulation/CitySimulationSubsystem.h",
+      "before_sha256": "983dc1549f23ca6f2b40520996854fbc474fb2c310eca3751d1a562ecb8887cb",
+      "after_sha256": "517fb401acc15305b85f6184b633a8a8ca1be61676f168a393d7028d0a934fb5",
+      "diff": "--- CitySimVR/Source/CitySimVR/Public/Simulation/CitySimulationSubsystem.h (before D121)\n+++ CitySimVR/Source/CitySimVR/Public/Simulation/CitySimulationSubsystem.h (D121)\n@@ -45,6 +45,7 @@\n \tfriend class FCitySeasonalDecorationPresentationTest;\n \tfriend class FCityVisibleTrafficTest;\n \tfriend class FCityFlowVisualCommand;\n+\tfriend class FCityCitizenWalkVisualCommand;\n \tfriend class FCityRoadStructureTest;\n \tfriend class FCityRoadUnderpassTest;\n \tfriend class FCityRaisedBranchTest;\n"
+    }
+  ],
+  "preservation": {
+    "non_owned_baseline_inputs": 2564,
+    "all_match": true,
+    "maintained_package_files": 53,
+    "active_user_files": 84,
+    "live_user_changes_preserved": [],
+    "generated_editor_settings_restored": [
+      "CitySimVR/Saved/Config/WindowsEditor/EditorPerProjectUserSettings.ini"
+    ],
+    "approved_source_unchanged": true,
+    "settings_recovery_source": "Artifacts/D107/Before/CitySimVR/Saved/Config/WindowsEditor/EditorPerProjectUserSettings.ini"
+  },
+  "review": "Artifacts/D121/Integration/Review/Review.html",
+  "limitations": [
+    "Game/user playtest acceptance and physical PCVR/Quest observations remain pending.",
+    "Current schema68 is retained; no simulation/save-format or routing change. Source approval does not establish game/headset acceptance.",
+    "No device install, source push, PR/merge, public release, full suite or profiling."
+  ],
+  "next": "User playtest via existing Desktop/PCVR launchers; record moving/waiting/turning appearance and any physical headset observations.",
+  "nativeWindowReleased": true,
+  "dependency_heartbeat": "PAUSED after delivery"
+}

@@ -1,0 +1,14 @@
+{
+  "provenance": "Original project procedural 32x32 radial/ring alpha masks; native Engine sprite particles",
+  "systems": {
+    "P_CityRain": {
+      "drops": 320,
+      "splashes": 48
+    },
+    "P_CitySnow": {
+      "flakes": 320
+    }
+  },
+  "simulation": "CPU packed buffers; asynchronous immutable terrain snapshot; no mesh particles, lights, scene collision, sorting or warmup",
+  "materials": "Unlit translucent, depth tested, two triangles per sprite; small masks; no custom shader/plugin"
+}

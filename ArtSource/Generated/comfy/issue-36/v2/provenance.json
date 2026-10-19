@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "kind": "comfy",
+  "repository": "CitySimVR/citysim",
+  "issue": 36,
+  "version": 2,
+  "base_version": 1,
+  "source_sha": "f482eff94e62fbc62692b8270dcfcdca5269d5cc",
+  "workflow": "generate_image_zimage",
+  "workflow_sha256": "12bc2fc5e7c5537cc7303a976d57d2fd7baefe9ab465e16aaa2e9943afa29dde",
+  "model": "ollama/citysim-spec:qwen3-14b",
+  "seed": 36,
+  "prompt": "A flat front-facing concept sheet featuring four equal rectangular storefront window display panels arranged in a precise 2x2 grid with narrow neutral gutters. Each panel shows simple shelving with recognizable broad silhouettes of hand tools: wrenches/spanners, hammers, screwdrivers, pliers, tidy toolboxes, and a few small hardware bins. Muted teal, warm cream, gray, and restrained warm accents. Even diffuse neutral lighting, broad shapes, no glass glare, reflections, perspective convergence, cast shadows, window frames, lettering, numbers, price tags, brands, logos, watermarks, or people. The background is neutral, and the image is 768x768 pixels.",
+  "prompt_id": "51044374-b4cf-4d1a-a628-adab85a6edf6",
+  "parent_prompt_id": "bd914718-6a44-4d3c-94e7-04345a34612f",
+  "dimensions": {
+    "width": 768,
+    "height": 768
+  },
+  "png_sha256": "d5e0e286e5391fa36c0c4f1d4c2a998eafd1eed06235b4e26ce79a6ffbcd8478",
+  "created_at": "2026-10-16T18:11:30.209Z"
+}

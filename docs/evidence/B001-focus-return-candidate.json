@@ -1,0 +1,118 @@
+{
+  "task": "B001",
+  "issue": "https://git.shaun-husain.com/CitySimVR/citysim/issues/62",
+  "pullRequest": "https://git.shaun-husain.com/CitySimVR/citysim/pulls/72",
+  "status": "Ready for human prompt/focus-return playtest",
+  "date": "2026-10-17",
+  "submittedCommit": "63d561dbdb69e578e0c0accceb4a3f317257f064",
+  "testedCommit": "63d561dbdb69e578e0c0accceb4a3f317257f064",
+  "gameRevision": "dev-14935146e2542af845e4",
+  "schema": 68,
+  "originalCheck": {
+    "build": 42,
+    "status": "passed",
+    "editorSeconds": 107.27,
+    "testedCommit": "1d729c69eea53a1ee099aa73f1453be659189c3d"
+  },
+  "finalCheck": {
+    "build": 103,
+    "status": "passed",
+    "tests": [
+      "CitySim.Desktop.FocusRestoresEntryMenu",
+      "CitySim.Desktop.SharedContentAndActions",
+      "CitySim.Menu.EnvironmentAndTransitions",
+      "CitySim.Desktop.VideoConfirmationAndRecovery",
+      "CitySim.Presentation.ContextualZoneVisibility"
+    ],
+    "editorSeconds": 90.55
+  },
+  "windowsCandidate": {
+    "embeddedRevisionStamp": true,
+    "packagedMenuFocus": "passed",
+    "runtimeFiles": 53,
+    "beforeAfterEntryIdentical": false,
+    "visualReview": "seven captures reviewed; entry restored and menu navigation visible",
+    "editorSeconds": 90.12,
+    "clientTests": [
+      "CitySim.Desktop.FocusRestoresEntryMenu",
+      "CitySim.Presentation.ContextualZoneVisibility",
+      "CitySim.Desktop.ContextualZoneVisibility"
+    ],
+    "extractedMatchesTestedArchive": true,
+    "url": "https://drone.shaun-husain.com/CitySimVR/citysim/104",
+    "status": "passed",
+    "zip": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\CI\\Builds\\104-63d561dbdb69-WindowsCandidate-3d8f6c5e\\CitySimVR-Windows.zip",
+    "clientSizes": [
+      "1280x800",
+      "1024x720"
+    ],
+    "zipSha256": "03288abd49209578f3cdb6b4a6c507f58834a6c2033761e08edcf2e8020a377d",
+    "build": 104
+  },
+  "launcher": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\B001\\FocusFix\\Play-B001.cmd",
+  "candidate": {
+    "task": "B001",
+    "build": 104,
+    "commit": "63d561dbdb69e578e0c0accceb4a3f317257f064",
+    "testedCommit": "63d561dbdb69e578e0c0accceb4a3f317257f064",
+    "executable": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\B001\\Windows-104\\CitySimVR\\Binaries\\Win64\\CitySimVR.exe",
+    "executableSha256": "8C575AC060F0DA11B9B4D443E721A442B16BCDF6B57BD1C450A19CD2BE0EEB18",
+    "zip": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\CI\\Builds\\104-63d561dbdb69-WindowsCandidate-3d8f6c5e\\CitySimVR-Windows.zip",
+    "zipSha256": "03288abd49209578f3cdb6b4a6c507f58834a6c2033761e08edcf2e8020a377d",
+    "files": 53,
+    "profile": "C:/Users/shaun/Development/city-sim-builder/Artifacts/B001/FocusFix/Playtest-104-IsolatedProfile",
+    "startupEvidence": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\CI\\Builds\\104-63d561dbdb69-WindowsCandidate-3d8f6c5e\\PackagedSmoke\\D68-Automation-1280-800\\Saved\\Automation\\Desktop\\Entry.png",
+    "startupEvidenceBasis": "CI rendered startup/focus smoke; extracted runtime is byte-identical; no duplicate local Unreal run",
+    "acceptance": "Pending actual Windows prompt, focus return, Alt-Tab and relaunch",
+    "schema": 68,
+    "gameRevision": "dev-14935146e2542af845e4",
+    "revisionStampFoundInExecutable": true,
+    "profileState": "not created or launched; first attempt reserved for human test"
+  },
+  "failureHistory": [
+    {
+      "build": 93,
+      "status": "failure",
+      "phase": "clone merge",
+      "cause": "Newer main conflicts in CI Tests/ClientTests and development plan; no native command ran",
+      "resolution": "Merged current main88e57d7 into branch; focus fix unchanged; scoped manifests/task record resolved"
+    },
+    {
+      "resolution": "Narrow PR-ref ancestry check plus nine actual-guard Git cases; push/non-PR promotion exactness retained",
+      "phase": "checkout identity",
+      "build": 97,
+      "status": "failure",
+      "cause": "Promoted PR clone merged advanced main; wrapper required exact submitted SHA for promote"
+    },
+    {
+      "localDiagnostic": "One retained-executable rerun; no build/package; idle worker held then restored",
+      "cause": "Test driver forced focus false each phase; recovery reset entry pages; tax fixture indexed zero rows",
+      "resolution": "Restore observed focus, retain explicit recovery assertions and guard empty fixture; failed smoke evidence now copied in finally",
+      "build": 101,
+      "phase": "packaged smoke",
+      "status": "failure"
+    }
+  ],
+  "checkoutGuardTests": "Nine actual-guard divergent-Git cases passed; exact push/non-PR promotion checks retained",
+  "localNativeException": "One failed CI101 packaged-smoke diagnostic rerun; no local build/cook/package; idle worker held then resumed; original runtime focus implementation unchanged",
+  "preservation": {
+    "finalCandidateProfile": "Not created or launched; first attempt reserved for user",
+    "primarySourceCatalogMaintainedFiles": 437,
+    "primaryHead": "5dd807d175e0507e23657cc3883568272ced6641",
+    "playerFiles": "No player file operations; every automated launch used isolated profiles",
+    "allHashesUnchanged": true
+  },
+  "native": {
+    "activeQueueBuilds": [],
+    "ciLock": "clear",
+    "ownedProcesses": 0,
+    "worker": "same single worker enabled/running"
+  },
+  "remaining": [
+    "Actual Windows permission prompt identity/first-location focus return",
+    "Alt-Tab and relaunch menu/input acceptance",
+    "No merge or bug closure before human acceptance"
+  ],
+  "next": "Use Play-B001.cmd for first attempt, allow the Windows prompt normally if it appears, verify menu visible/clickable, Alt-Tab away/back, close and run same launcher again; report exact prompt/file and outcome",
+  "verifiedUtc": "2026-10-17T17:49:38.2307269Z"
+}

@@ -1,0 +1,457 @@
+{
+  "mesh_geometry_sha256": "1ebb3e55c9b4feda1520a059082f2286375da723c8ec709e9b30c5315aa1c6c8",
+  "dimensions_m": [
+    20.0,
+    20.5,
+    7.275000095367432
+  ],
+  "triangles": 1224,
+  "material_slots": [
+    "OpaqueFacade_SourceTexture_MetricRepair",
+    "RoofService_SourceTexture_MetricRepair",
+    "LightMetal_MetricRepair",
+    "TechGlass_MetricRepair",
+    "DoorAccent_MetricRepair"
+  ],
+  "roundtrip_pass": true,
+  "blender_version": "5.1.1",
+  "render_engine": "CYCLES",
+  "render_device": "CPU",
+  "reference_sha256": {
+    "ArtSource/Blender/CityCivicSurfaces.blend": "00c628ceb16b773e3428c4774ec106a268b4d87517ba2b88755be8f5bba71a8f",
+    "ArtSource/Blender/CityLowDensityBuildings.blend": "05e4b0409ac3f8785546feccf9b46443c449295819ef0ec68e7790658fb13d9e",
+    "ArtSource/Manifests/city_civic_surface_study.json": "87e0264b0eeee05d0149c346490a0a42879f9ffa1d2335f1be317640d1d4046a",
+    "ArtSource/Manifests/city_low_density_buildings.json": "9ad2c8ff3b0be3c942e2e258a43ea1925366d9ede7621f933d4b368b48512558"
+  },
+  "uv_material_repair": {
+    "review_only": true,
+    "before_geometry_sha256": "cc8570e2beaf6c5facf64cb17be7f0fc7d9352fc7d51f737b268ebdd6a6c50d7",
+    "after_geometry_sha256": "cc8570e2beaf6c5facf64cb17be7f0fc7d9352fc7d51f737b268ebdd6a6c50d7",
+    "unchanged_geometry": true,
+    "cause": "Actual prior node/image/UV bindings recorded in before_graph_audit.json. Prior recipe retained atlas and source nodes on one UV0; stale atlas overrides removed; original civic graphs restored with explicitly shared metric UV0.",
+    "uv_metrics": {
+      "OpaqueFacade_SourceTexture_MetricRepair": {
+        "faces": 30,
+        "collapsed": 0,
+        "nonfinite": 0,
+        "min_area": 0.26999962806712574
+      },
+      "RoofService_SourceTexture_MetricRepair": {
+        "faces": 168,
+        "collapsed": 0,
+        "nonfinite": 0,
+        "min_area": 0.0005499875069290283
+      },
+      "LightMetal_MetricRepair": {
+        "faces": 294,
+        "collapsed": 0,
+        "nonfinite": 0,
+        "min_area": 0.0019249855995440157
+      },
+      "TechGlass_MetricRepair": {
+        "faces": 18,
+        "collapsed": 0,
+        "nonfinite": 0,
+        "min_area": 0.03239996681213597
+      },
+      "DoorAccent_MetricRepair": {
+        "faces": 102,
+        "collapsed": 0,
+        "nonfinite": 0,
+        "min_area": 0.014399972534192784
+      }
+    },
+    "tiled_overlap": "Expected across faces; not a bake atlas. Every face projected including hardware.",
+    "perpendicular_facade_uv_units_per_m": {
+      "east_west": {
+        "samples": 40,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "front_rear": {
+        "samples": 40,
+        "min": 1.0,
+        "max": 1.0
+      }
+    },
+    "fbx": {
+      "uv_layers": [
+        "UV0"
+      ],
+      "uv_triangle_corner_fingerprint_match": true,
+      "material_count": 5,
+      "uv_present": true
+    },
+    "entrance": "-Y",
+    "presentation_yaw_offset_quarter_turns": 2,
+    "frame": {
+      "components": [
+        {
+          "tag": "ReviewStudy:48",
+          "type": "post",
+          "lo": [
+            -8.410000801086426,
+            -5.769999980926514,
+            1.0099999904632568
+          ],
+          "hi": [
+            -8.289999961853027,
+            -5.549999713897705,
+            4.159999847412109
+          ]
+        },
+        {
+          "tag": "ReviewStudy:56",
+          "type": "post",
+          "lo": [
+            -4.960000038146973,
+            -5.769999980926514,
+            1.0099999904632568
+          ],
+          "hi": [
+            -4.840000152587891,
+            -5.549999713897705,
+            4.159999847412109
+          ]
+        },
+        {
+          "tag": "ReviewStudy:64",
+          "type": "post",
+          "lo": [
+            -1.5099999904632568,
+            -5.769999980926514,
+            1.0099999904632568
+          ],
+          "hi": [
+            -1.3900001049041748,
+            -5.549999713897705,
+            4.159999847412109
+          ]
+        },
+        {
+          "tag": "ReviewStudy:72",
+          "type": "post",
+          "lo": [
+            1.940000057220459,
+            -5.769999980926514,
+            1.0099999904632568
+          ],
+          "hi": [
+            2.059999942779541,
+            -5.549999713897705,
+            4.159999847412109
+          ]
+        },
+        {
+          "tag": "ReviewStudy:296",
+          "type": "post",
+          "lo": [
+            -9.24000072479248,
+            -3.5199999809265137,
+            1.600000262260437
+          ],
+          "hi": [
+            -9.039999961853027,
+            -3.380000114440918,
+            3.700000047683716
+          ]
+        },
+        {
+          "tag": "ReviewStudy:304",
+          "type": "post",
+          "lo": [
+            -9.24000072479248,
+            -0.07000000029802322,
+            1.600000262260437
+          ],
+          "hi": [
+            -9.039999961853027,
+            0.07000000029802322,
+            3.700000047683716
+          ]
+        },
+        {
+          "tag": "ReviewStudy:312",
+          "type": "post",
+          "lo": [
+            -9.24000072479248,
+            3.380000114440918,
+            1.600000262260437
+          ],
+          "hi": [
+            -9.039999961853027,
+            3.5199999809265137,
+            3.700000047683716
+          ]
+        },
+        {
+          "tag": "ReviewStudy:320",
+          "type": "post",
+          "lo": [
+            -9.24000072479248,
+            4.980000019073486,
+            1.600000262260437
+          ],
+          "hi": [
+            -9.039999961853027,
+            5.12000036239624,
+            3.700000047683716
+          ]
+        },
+        {
+          "tag": "ReviewStudy:488",
+          "type": "rail",
+          "lo": [
+            0.5999999046325684,
+            0.46000000834465027,
+            6.62999963760376
+          ],
+          "hi": [
+            5.400000095367432,
+            0.6399999856948853,
+            6.809999942779541
+          ]
+        },
+        {
+          "tag": "ReviewStudy:496",
+          "type": "rail",
+          "lo": [
+            0.5999999046325684,
+            1.0299999713897705,
+            6.62999963760376
+          ],
+          "hi": [
+            5.400000095367432,
+            1.2100000381469727,
+            6.809999942779541
+          ]
+        },
+        {
+          "tag": "ReviewStudy:504",
+          "type": "rail",
+          "lo": [
+            0.5999999046325684,
+            1.600000023841858,
+            6.62999963760376
+          ],
+          "hi": [
+            5.400000095367432,
+            1.78000009059906,
+            6.809999942779541
+          ]
+        },
+        {
+          "tag": "ReviewStudy:512",
+          "type": "rail",
+          "lo": [
+            0.5999999046325684,
+            2.1700000762939453,
+            6.62999963760376
+          ],
+          "hi": [
+            5.400000095367432,
+            2.3499999046325684,
+            6.809999942779541
+          ]
+        },
+        {
+          "tag": "ReviewStudy:520",
+          "type": "rail",
+          "lo": [
+            0.5999999046325684,
+            2.740000009536743,
+            6.62999963760376
+          ],
+          "hi": [
+            5.400000095367432,
+            2.919999837875366,
+            6.809999942779541
+          ]
+        },
+        {
+          "tag": "ReviewStudy:528",
+          "type": "rail",
+          "lo": [
+            0.5999999046325684,
+            3.31000018119812,
+            6.62999963760376
+          ],
+          "hi": [
+            5.400000095367432,
+            3.490000009536743,
+            6.809999942779541
+          ]
+        },
+        {
+          "tag": "ReviewStudy:544",
+          "type": "post",
+          "lo": [
+            -4.090000152587891,
+            3.1100001335144043,
+            5.440000057220459
+          ],
+          "hi": [
+            -3.9100000858306885,
+            3.2899999618530273,
+            6.839999675750732
+          ]
+        },
+        {
+          "tag": "ReviewStudy:568",
+          "type": "rail",
+          "lo": [
+            -8.289999961853027,
+            -5.769999980926514,
+            1.0099999904632568
+          ],
+          "hi": [
+            -4.960000038146973,
+            -5.549999713897705,
+            1.190000057220459
+          ]
+        },
+        {
+          "tag": "ReviewStudy:576",
+          "type": "rail",
+          "lo": [
+            -4.840000152587891,
+            -5.769999980926514,
+            1.0099999904632568
+          ],
+          "hi": [
+            -1.5099999904632568,
+            -5.549999713897705,
+            1.190000057220459
+          ]
+        },
+        {
+          "tag": "ReviewStudy:584",
+          "type": "rail",
+          "lo": [
+            -1.3899999856948853,
+            -5.769999980926514,
+            1.0099999904632568
+          ],
+          "hi": [
+            1.9399999380111694,
+            -5.549999713897705,
+            1.190000057220459
+          ]
+        },
+        {
+          "tag": "ReviewStudy:592",
+          "type": "rail",
+          "lo": [
+            -8.289999961853027,
+            -5.779999732971191,
+            3.9800002574920654
+          ],
+          "hi": [
+            -4.960000038146973,
+            -5.539999961853027,
+            4.160000324249268
+          ]
+        },
+        {
+          "tag": "ReviewStudy:600",
+          "type": "rail",
+          "lo": [
+            -4.840000152587891,
+            -5.779999732971191,
+            3.9800002574920654
+          ],
+          "hi": [
+            -1.5099999904632568,
+            -5.539999961853027,
+            4.160000324249268
+          ]
+        },
+        {
+          "tag": "ReviewStudy:608",
+          "type": "rail",
+          "lo": [
+            -1.3899999856948853,
+            -5.779999732971191,
+            3.9800002574920654
+          ],
+          "hi": [
+            1.9399999380111694,
+            -5.539999961853027,
+            4.160000324249268
+          ]
+        },
+        {
+          "tag": "ReviewStudy:808",
+          "type": "rail",
+          "lo": [
+            2.9000000953674316,
+            -6.139999866485596,
+            0.43999993801116943
+          ],
+          "hi": [
+            4.400000095367432,
+            -5.940000057220459,
+            0.48499995470046997
+          ]
+        }
+      ],
+      "tested_pair_count": 117,
+      "touching_joint_count": 12,
+      "joints": [
+        [
+          "ReviewStudy:48",
+          "ReviewStudy:568"
+        ],
+        [
+          "ReviewStudy:48",
+          "ReviewStudy:592"
+        ],
+        [
+          "ReviewStudy:56",
+          "ReviewStudy:568"
+        ],
+        [
+          "ReviewStudy:56",
+          "ReviewStudy:576"
+        ],
+        [
+          "ReviewStudy:56",
+          "ReviewStudy:592"
+        ],
+        [
+          "ReviewStudy:56",
+          "ReviewStudy:600"
+        ],
+        [
+          "ReviewStudy:64",
+          "ReviewStudy:576"
+        ],
+        [
+          "ReviewStudy:64",
+          "ReviewStudy:584"
+        ],
+        [
+          "ReviewStudy:64",
+          "ReviewStudy:600"
+        ],
+        [
+          "ReviewStudy:64",
+          "ReviewStudy:608"
+        ],
+        [
+          "ReviewStudy:72",
+          "ReviewStudy:584"
+        ],
+        [
+          "ReviewStudy:72",
+          "ReviewStudy:608"
+        ]
+      ],
+      "offending_pairs": [],
+      "duplicate_trim_faces": [],
+      "tolerance_m": 1e-06,
+      "scope": "Axis-aligned disconnected metal cuboids; exact duplicate polygons only. Angled bars and partial coplanar faces not certified."
+    },
+    "source_blend_sha256": "00c628ceb16b773e3428c4774ec106a268b4d87517ba2b88755be8f5bba71a8f"
+  }
+}

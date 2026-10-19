@@ -1,0 +1,8 @@
+{
+  "parent": "/previous/asset.blend",
+  "parent_recipe_sha256": "035dc147e7c6d0782c3eb4040e9dd986b172ac6b918daaac7f092df5ec6e3c03",
+  "authorized_scope": "Complete architectural window frames only; preserved all other recipe masses, process equipment and portals",
+  "derived_recipe_executions": 1,
+  "human_review_required": true,
+  "production_inputs_untouched": true
+}

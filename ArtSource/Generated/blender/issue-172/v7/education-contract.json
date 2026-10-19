@@ -1,0 +1,654 @@
+{
+  "source_id": "building.primaryschool.a",
+  "review_only": true,
+  "integration": "HELD",
+  "source_proposed_site_m": [
+    32,
+    32
+  ],
+  "teaching_wing_count": 2,
+  "groups": [
+    {
+      "name": "TeachingWing_West",
+      "role": "classroom wing 1",
+      "bounds": {
+        "name": "TeachingWing_West",
+        "min": [
+          -13.5,
+          -11.0,
+          0.0
+        ],
+        "max": [
+          -6.5,
+          13.0,
+          3.6500000953674316
+        ]
+      }
+    },
+    {
+      "name": "TeachingWing_North",
+      "role": "classroom wing 2",
+      "bounds": {
+        "name": "TeachingWing_North",
+        "min": [
+          -6.5,
+          7.0,
+          0.0
+        ],
+        "max": [
+          4.5,
+          13.0,
+          3.8499999046325684
+        ]
+      }
+    },
+    {
+      "name": "Reception",
+      "role": "admin / reception and sheltered main entrance",
+      "bounds": {
+        "name": "Reception",
+        "min": [
+          -6.0,
+          -10.0,
+          0.0
+        ],
+        "max": [
+          4.0,
+          -4.0,
+          3.25
+        ]
+      }
+    },
+    {
+      "name": "AssemblyHall",
+      "role": "shared assembly / multipurpose hall",
+      "bounds": {
+        "name": "AssemblyHall",
+        "min": [
+          5.0,
+          -8.0,
+          0.0
+        ],
+        "max": [
+          13.0,
+          8.0,
+          5.050000190734863
+        ]
+      }
+    },
+    {
+      "name": "HallLink",
+      "role": "enclosed corridor",
+      "bounds": {
+        "name": "HallLink",
+        "min": [
+          4.0,
+          -7.0,
+          0.0
+        ],
+        "max": [
+          6.0,
+          -4.0,
+          3.200000047683716
+        ]
+      }
+    },
+    {
+      "name": "West_Roof",
+      "role": "roof",
+      "bounds": {
+        "name": "West_Roof",
+        "min": [
+          -13.609999656677246,
+          -11.109999656677246,
+          3.6500000953674316
+        ],
+        "max": [
+          -6.390000343322754,
+          13.109999656677246,
+          3.809999942779541
+        ]
+      }
+    },
+    {
+      "name": "West_RoofEdge_-11.0",
+      "role": "roof edge",
+      "bounds": {
+        "name": "West_RoofEdge_-11.0",
+        "min": [
+          -13.65999984741211,
+          -11.0649995803833,
+          3.7100000381469727
+        ],
+        "max": [
+          -6.340000152587891,
+          -10.9350004196167,
+          3.929999828338623
+        ]
+      }
+    },
+    {
+      "name": "West_RoofEdge_13.0",
+      "role": "roof edge",
+      "bounds": {
+        "name": "West_RoofEdge_13.0",
+        "min": [
+          -13.65999984741211,
+          12.9350004196167,
+          3.7100000381469727
+        ],
+        "max": [
+          -6.340000152587891,
+          13.0649995803833,
+          3.929999828338623
+        ]
+      }
+    },
+    {
+      "name": "West_RoofEdge_-13.5",
+      "role": "roof edge",
+      "bounds": {
+        "name": "West_RoofEdge_-13.5",
+        "min": [
+          -13.5649995803833,
+          -11.0,
+          3.7100000381469727
+        ],
+        "max": [
+          -13.4350004196167,
+          13.0,
+          3.929999828338623
+        ]
+      }
+    },
+    {
+      "name": "West_RoofEdge_-6.5",
+      "role": "roof edge",
+      "bounds": {
+        "name": "West_RoofEdge_-6.5",
+        "min": [
+          -6.565000057220459,
+          -11.0,
+          3.7100000381469727
+        ],
+        "max": [
+          -6.434999942779541,
+          13.0,
+          3.929999828338623
+        ]
+      }
+    },
+    {
+      "name": "North_Roof",
+      "role": "roof",
+      "bounds": {
+        "name": "North_Roof",
+        "min": [
+          -6.610000133514404,
+          6.890000343322754,
+          3.8500001430511475
+        ],
+        "max": [
+          4.610000133514404,
+          13.109999656677246,
+          4.010000228881836
+        ]
+      }
+    },
+    {
+      "name": "North_RoofEdge_7.0",
+      "role": "roof edge",
+      "bounds": {
+        "name": "North_RoofEdge_7.0",
+        "min": [
+          -6.659999847412109,
+          6.934999942779541,
+          3.9100000858306885
+        ],
+        "max": [
+          4.659999847412109,
+          7.065000057220459,
+          4.130000114440918
+        ]
+      }
+    },
+    {
+      "name": "North_RoofEdge_13.0",
+      "role": "roof edge",
+      "bounds": {
+        "name": "North_RoofEdge_13.0",
+        "min": [
+          -6.659999847412109,
+          12.9350004196167,
+          3.9100000858306885
+        ],
+        "max": [
+          4.659999847412109,
+          13.0649995803833,
+          4.130000114440918
+        ]
+      }
+    },
+    {
+      "name": "North_RoofEdge_-6.5",
+      "role": "roof edge",
+      "bounds": {
+        "name": "North_RoofEdge_-6.5",
+        "min": [
+          -6.565000057220459,
+          7.0,
+          3.9100000858306885
+        ],
+        "max": [
+          -6.434999942779541,
+          13.0,
+          4.130000114440918
+        ]
+      }
+    },
+    {
+      "name": "North_RoofEdge_4.5",
+      "role": "roof edge",
+      "bounds": {
+        "name": "North_RoofEdge_4.5",
+        "min": [
+          4.434999942779541,
+          7.0,
+          3.9100000858306885
+        ],
+        "max": [
+          4.565000057220459,
+          13.0,
+          4.130000114440918
+        ]
+      }
+    },
+    {
+      "name": "Admin_Roof",
+      "role": "roof",
+      "bounds": {
+        "name": "Admin_Roof",
+        "min": [
+          -6.110000133514404,
+          -10.109999656677246,
+          3.25
+        ],
+        "max": [
+          4.110000133514404,
+          -3.890000104904175,
+          3.4099998474121094
+        ]
+      }
+    },
+    {
+      "name": "Admin_RoofEdge_-10.0",
+      "role": "roof edge",
+      "bounds": {
+        "name": "Admin_RoofEdge_-10.0",
+        "min": [
+          -6.159999847412109,
+          -10.0649995803833,
+          3.31000018119812
+        ],
+        "max": [
+          4.159999847412109,
+          -9.9350004196167,
+          3.5299999713897705
+        ]
+      }
+    },
+    {
+      "name": "Admin_RoofEdge_-4.0",
+      "role": "roof edge",
+      "bounds": {
+        "name": "Admin_RoofEdge_-4.0",
+        "min": [
+          -6.159999847412109,
+          -4.065000057220459,
+          3.31000018119812
+        ],
+        "max": [
+          4.159999847412109,
+          -3.934999942779541,
+          3.5299999713897705
+        ]
+      }
+    },
+    {
+      "name": "Admin_RoofEdge_-6.0",
+      "role": "roof edge",
+      "bounds": {
+        "name": "Admin_RoofEdge_-6.0",
+        "min": [
+          -6.065000057220459,
+          -10.0,
+          3.31000018119812
+        ],
+        "max": [
+          -5.934999942779541,
+          -4.0,
+          3.5299999713897705
+        ]
+      }
+    },
+    {
+      "name": "Admin_RoofEdge_4.0",
+      "role": "roof edge",
+      "bounds": {
+        "name": "Admin_RoofEdge_4.0",
+        "min": [
+          3.934999942779541,
+          -10.0,
+          3.31000018119812
+        ],
+        "max": [
+          4.065000057220459,
+          -4.0,
+          3.5299999713897705
+        ]
+      }
+    },
+    {
+      "name": "Hall_Roof",
+      "role": "roof",
+      "bounds": {
+        "name": "Hall_Roof",
+        "min": [
+          4.889999866485596,
+          -8.109999656677246,
+          5.050000190734863
+        ],
+        "max": [
+          13.110000610351562,
+          8.109999656677246,
+          5.210000038146973
+        ]
+      }
+    },
+    {
+      "name": "Hall_RoofEdge_-8.0",
+      "role": "roof edge",
+      "bounds": {
+        "name": "Hall_RoofEdge_-8.0",
+        "min": [
+          4.840000152587891,
+          -8.0649995803833,
+          5.109999656677246
+        ],
+        "max": [
+          13.15999984741211,
+          -7.934999942779541,
+          5.329999923706055
+        ]
+      }
+    },
+    {
+      "name": "Hall_RoofEdge_8.0",
+      "role": "roof edge",
+      "bounds": {
+        "name": "Hall_RoofEdge_8.0",
+        "min": [
+          4.840000152587891,
+          7.934999942779541,
+          5.109999656677246
+        ],
+        "max": [
+          13.15999984741211,
+          8.0649995803833,
+          5.329999923706055
+        ]
+      }
+    },
+    {
+      "name": "Hall_RoofEdge_5.0",
+      "role": "roof edge",
+      "bounds": {
+        "name": "Hall_RoofEdge_5.0",
+        "min": [
+          4.934999942779541,
+          -8.0,
+          5.109999656677246
+        ],
+        "max": [
+          5.065000057220459,
+          8.0,
+          5.329999923706055
+        ]
+      }
+    },
+    {
+      "name": "Hall_RoofEdge_13.0",
+      "role": "roof edge",
+      "bounds": {
+        "name": "Hall_RoofEdge_13.0",
+        "min": [
+          12.9350004196167,
+          -8.0,
+          5.109999656677246
+        ],
+        "max": [
+          13.0649995803833,
+          8.0,
+          5.329999923706055
+        ]
+      }
+    },
+    {
+      "name": "Link_Roof",
+      "role": "roof",
+      "bounds": {
+        "name": "Link_Roof",
+        "min": [
+          3.8899998664855957,
+          -7.110000133514404,
+          3.200000047683716
+        ],
+        "max": [
+          6.110000133514404,
+          -3.8899998664855957,
+          3.359999895095825
+        ]
+      }
+    },
+    {
+      "name": "Link_RoofEdge_-7.0",
+      "role": "roof edge",
+      "bounds": {
+        "name": "Link_RoofEdge_-7.0",
+        "min": [
+          3.8400001525878906,
+          -7.065000057220459,
+          3.259999990463257
+        ],
+        "max": [
+          6.159999847412109,
+          -6.934999942779541,
+          3.4799997806549072
+        ]
+      }
+    },
+    {
+      "name": "Link_RoofEdge_-4.0",
+      "role": "roof edge",
+      "bounds": {
+        "name": "Link_RoofEdge_-4.0",
+        "min": [
+          3.8400001525878906,
+          -4.065000057220459,
+          3.259999990463257
+        ],
+        "max": [
+          6.159999847412109,
+          -3.934999942779541,
+          3.4799997806549072
+        ]
+      }
+    },
+    {
+      "name": "Link_RoofEdge_4.0",
+      "role": "roof edge",
+      "bounds": {
+        "name": "Link_RoofEdge_4.0",
+        "min": [
+          3.934999942779541,
+          -7.0,
+          3.259999990463257
+        ],
+        "max": [
+          4.065000057220459,
+          -4.0,
+          3.4799997806549072
+        ]
+      }
+    },
+    {
+      "name": "Link_RoofEdge_6.0",
+      "role": "roof edge",
+      "bounds": {
+        "name": "Link_RoofEdge_6.0",
+        "min": [
+          5.934999942779541,
+          -7.0,
+          3.259999990463257
+        ],
+        "max": [
+          6.065000057220459,
+          -4.0,
+          3.4799997806549072
+        ]
+      }
+    },
+    {
+      "name": "WelcomeCanopy",
+      "role": "entry canopy",
+      "bounds": {
+        "name": "WelcomeCanopy",
+        "min": [
+          -3.5,
+          -11.975000381469727,
+          2.950000047683716
+        ],
+        "max": [
+          1.5,
+          -9.725000381469727,
+          3.1499998569488525
+        ]
+      }
+    }
+  ],
+  "actual_bounds": {
+    "min": [
+      -13.65999984741211,
+      -12.050000190734863,
+      0.0
+    ],
+    "max": [
+      13.15999984741211,
+      13.149999618530273,
+      5.615000247955322
+    ]
+  },
+  "expansion_reservation": {
+    "id": "future_northeast_classroom",
+    "min": [
+      5,
+      9,
+      0
+    ],
+    "max": [
+      14,
+      14,
+      6
+    ],
+    "purpose": "hypothetical future wing"
+  },
+  "lod_plan": {
+    "LOD1": "Simplify four-piece rims to hollow rims; reduce roof edges and vents; retain classroom rhythm and entrance canopy.",
+    "LOD2": "Remove facade hardware and secondary roof trim, bake windows; preserve two teaching wings, hall height and stable entrances. Existing low-poly source preserved."
+  },
+  "current_occupied_bounds": {
+    "min": [
+      -13.65999984741211,
+      -12.0649995803833,
+      0.0
+    ],
+    "max": [
+      13.15999984741211,
+      13.149999618530273,
+      5.615000247955322
+    ]
+  },
+  "book_support_group": "Book_Pediment",
+  "book_relief_groups": [
+    "Book_Backplate",
+    "Book_LeftPages",
+    "Book_Pediment",
+    "Book_RightPages"
+  ],
+  "actual_occupied_bounds": {
+    "min": [
+      -13.65999984741211,
+      -12.149999618530273,
+      0.0
+    ],
+    "max": [
+      13.15999984741211,
+      13.149999618530273,
+      5.615000247955322
+    ]
+  },
+  "book_components": [
+    {
+      "name": "Book_Pediment",
+      "min": [
+        -2.8499999046325684,
+        -11.949999809265137,
+        3.1500000953674316
+      ],
+      "max": [
+        0.8500000238418579,
+        -11.720000267028809,
+        5.0
+      ]
+    },
+    {
+      "name": "Book_Backplate",
+      "min": [
+        -2.75,
+        -11.984999656677246,
+        3.2699999809265137
+      ],
+      "max": [
+        0.75,
+        -11.90999984741211,
+        4.940000057220459
+      ]
+    },
+    {
+      "name": "Book_LeftPages",
+      "min": [
+        -2.549999952316284,
+        -12.149999618530273,
+        3.390000104904175
+      ],
+      "max": [
+        -1.0399999618530273,
+        -11.979999542236328,
+        4.800000190734863
+      ]
+    },
+    {
+      "name": "Book_RightPages",
+      "min": [
+        -0.9599999785423279,
+        -12.149999618530273,
+        3.390000104904175
+      ],
+      "max": [
+        0.550000011920929,
+        -11.979999542236328,
+        4.800000190734863
+      ]
+    }
+  ]
+}

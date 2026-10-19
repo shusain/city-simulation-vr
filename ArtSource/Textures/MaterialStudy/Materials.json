@@ -1,0 +1,232 @@
+{
+  "schema_version": 1,
+  "task": "D104",
+  "seed": 104,
+  "provenance": "Original project-generated seamless maps; no external assets or baked lighting",
+  "normal_convention": "DirectX; green inverted in Blender",
+  "surfaces": {
+    "Timber": {
+      "tile_m": [
+        2.4,
+        2.4
+      ],
+      "maps": {
+        "BaseColor": {
+          "file": "ArtSource/Textures/MaterialStudy/Timber_BaseColor.png",
+          "sha256": "f1dd4e5d5c4ac7528465774e2be5f87389b7c795a93788221ed0427b0ce4e603",
+          "size": [
+            512,
+            512
+          ],
+          "seam_mean": 0.03286611519607843,
+          "interior_mean": 0.024335588259276314
+        },
+        "Normal": {
+          "file": "ArtSource/Textures/MaterialStudy/Timber_Normal.png",
+          "sha256": "b6ede5af52111089cdccd48b62dd779b6108cc9d94718ccd7c21ceb579c57af2",
+          "size": [
+            512,
+            512
+          ],
+          "seam_mean": 0.031842320261437906,
+          "interior_mean": 0.002791277755394392
+        },
+        "ORM": {
+          "file": "ArtSource/Textures/MaterialStudy/Timber_ORM.png",
+          "sha256": "bc9d28a1f7a922182d56298a351ee0165b7bb3ecfd36fa47d1dab7ba9968acfc",
+          "size": [
+            512,
+            512
+          ],
+          "seam_mean": 0.022686887254901963,
+          "interior_mean": 0.005343862716319398
+        }
+      }
+    },
+    "Clapboard": {
+      "tile_m": [
+        2.4,
+        2.4
+      ],
+      "maps": {
+        "BaseColor": {
+          "file": "ArtSource/Textures/MaterialStudy/Clapboard_BaseColor.png",
+          "sha256": "2e7161ea2a2d64675095444e1e2756e17b15bb73d49c6f3872b6a3223b5dfb14",
+          "size": [
+            512,
+            512
+          ],
+          "seam_mean": 0.005859374999999986,
+          "interior_mean": 0.006227201925290657
+        },
+        "Normal": {
+          "file": "ArtSource/Textures/MaterialStudy/Clapboard_Normal.png",
+          "sha256": "2ea0087eb557f1cc584cd2d6620a1fa919571d5c42124ac27da17e44173b3e29",
+          "size": [
+            512,
+            512
+          ],
+          "seam_mean": 0.011764705882352936,
+          "interior_mean": 0.0019825281710857856
+        },
+        "ORM": {
+          "file": "ArtSource/Textures/MaterialStudy/Clapboard_ORM.png",
+          "sha256": "4c2f4bd303dcf4cc23db75e5d1c0114743a791e01ec2212ff165176b1490c383",
+          "size": [
+            512,
+            512
+          ],
+          "seam_mean": 0.0017207924836601272,
+          "interior_mean": 0.0019775118951690274
+        }
+      }
+    },
+    "Corrugated": {
+      "tile_m": [
+        2.4,
+        2.4
+      ],
+      "maps": {
+        "BaseColor": {
+          "file": "ArtSource/Textures/MaterialStudy/Corrugated_BaseColor.png",
+          "sha256": "e169e0b7e26bea32a842fb5802cb0f98454d300041efab2fa96ce362ca435704",
+          "size": [
+            512,
+            512
+          ],
+          "seam_mean": 0.013143382352941164,
+          "interior_mean": 0.012802805197421422
+        },
+        "Normal": {
+          "file": "ArtSource/Textures/MaterialStudy/Corrugated_Normal.png",
+          "sha256": "9b4b7201460371e34f43281d1467635007b5b4aa3628977d01362981784f0ad4",
+          "size": [
+            512,
+            512
+          ],
+          "seam_mean": 0.003924121732026148,
+          "interior_mean": 0.003016565501771482
+        },
+        "ORM": {
+          "file": "ArtSource/Textures/MaterialStudy/Corrugated_ORM.png",
+          "sha256": "712a7c77cae304a433283145d5e24d686cbacd08f86b2c0cf9389559e29e9303",
+          "size": [
+            512,
+            512
+          ],
+          "seam_mean": 0.004360702614379086,
+          "interior_mean": 0.005085364625302176
+        }
+      }
+    }
+  },
+  "options": {
+    "Home": [
+      [
+        "Timber",
+        "Cedar",
+        [
+          1,
+          1,
+          1
+        ],
+        0
+      ],
+      [
+        "Clapboard",
+        "Sage siding",
+        [
+          0.42,
+          0.61,
+          0.48
+        ],
+        0
+      ],
+      [
+        "Corrugated",
+        "Cream metal panels",
+        [
+          0.87,
+          0.82,
+          0.68
+        ],
+        0
+      ]
+    ],
+    "Shop": [
+      [
+        "Timber",
+        "Warm timber",
+        [
+          0.88,
+          0.82,
+          0.72
+        ],
+        0
+      ],
+      [
+        "Clapboard",
+        "Blue siding",
+        [
+          0.3,
+          0.49,
+          0.67
+        ],
+        0
+      ],
+      [
+        "Corrugated",
+        "Teal metal panels",
+        [
+          0.22,
+          0.48,
+          0.48
+        ],
+        0
+      ]
+    ],
+    "Factory": [
+      [
+        "Timber",
+        "Weathered timber",
+        [
+          0.65,
+          0.69,
+          0.67
+        ],
+        0
+      ],
+      [
+        "Clapboard",
+        "Gray siding",
+        [
+          0.53,
+          0.59,
+          0.62
+        ],
+        0
+      ],
+      [
+        "Corrugated",
+        "Galvanized steel",
+        [
+          0.78,
+          0.82,
+          0.85
+        ],
+        1
+      ]
+    ]
+  },
+  "preview_environment": {
+    "file": "ArtSource/Textures/MaterialStudy/PreviewEnvironment.hdr",
+    "sha256": "ac1af5611a96a25829a7a29c43b37c4ae8ebb619942f2368caed854554351a16",
+    "native": "/Game/CityPreview/Textures/T_StudioEnvironment",
+    "linear_color": [
+      0.19921875,
+      0.25,
+      0.330078125
+    ],
+    "provenance": "Original constant full-sphere studio reflection; no external HDRI"
+  }
+}

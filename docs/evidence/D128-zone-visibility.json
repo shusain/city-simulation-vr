@@ -1,0 +1,143 @@
+{
+  "task": "D128",
+  "issue": "https://git.shaun-husain.com/CitySimVR/citysim/issues/75",
+  "pr": "https://git.shaun-husain.com/CitySimVR/citysim/pulls/76",
+  "status": "ready-for-human-playtest",
+  "commit": "351b4eb71bb2307137e4a77902c62208afae3e21",
+  "gameRevision": "dev-2cf842bf48baee7df77b",
+  "schema": 68,
+  "behavior": "All stored zone colors show during any zoning tool; hide on leaving zoning. Heat maps, paint previews and current-city zoning persistence retained.",
+  "editor": {
+    "task": "D128",
+    "status": "passed",
+    "build": 65,
+    "mode": "Check",
+    "submittedCommit": "351b4eb71bb2307137e4a77902c62208afae3e21",
+    "testedCommit": "351b4eb71bb2307137e4a77902c62208afae3e21",
+    "output": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\CI\\Builds\\65-351b4eb71bb2-Check-5ab836f8",
+    "editorSeconds": 108.13,
+    "tests": [
+      "CitySim.Presentation.ContextualZoneVisibility",
+      "CitySim.Presentation.ContinuousHeatMaps",
+      "CitySim.Desktop.SharedContentAndActions",
+      "CitySim.Placement.Transactions"
+    ],
+    "url": "https://drone.shaun-husain.com/CitySimVR/citysim/65",
+    "humanAcceptance": "pending"
+  },
+  "windows": {
+    "task": "D128",
+    "status": "passed",
+    "build": 66,
+    "mode": "WindowsCandidate",
+    "submittedCommit": "351b4eb71bb2307137e4a77902c62208afae3e21",
+    "testedCommit": "351b4eb71bb2307137e4a77902c62208afae3e21",
+    "output": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\CI\\Builds\\66-351b4eb71bb2-WindowsCandidate-150ad30d",
+    "editorSeconds": 109.22,
+    "tests": [
+      "CitySim.Presentation.ContextualZoneVisibility",
+      "CitySim.Presentation.ContinuousHeatMaps",
+      "CitySim.Desktop.SharedContentAndActions",
+      "CitySim.Placement.Transactions"
+    ],
+    "url": "https://drone.shaun-husain.com/CitySimVR/citysim/66",
+    "humanAcceptance": "pending",
+    "zip": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\CI\\Builds\\66-351b4eb71bb2-WindowsCandidate-150ad30d\\CitySimVR-Windows.zip",
+    "zipSha256": "dbe05921cad35fc5d6b9331243848cabffed75f818cf9238649f8f7163327ecc",
+    "clientTests": [
+      "CitySim.Presentation.ContextualZoneVisibility",
+      "CitySim.Desktop.ContextualZoneVisibility"
+    ],
+    "visualReview": "passed",
+    "visualEvidence": "Both six-view contact sheets reviewed: Inspect has no stored-zone colors, all three zoning choices show all27 squares, Inspect hides again, reload restores zoning; actual1280/1024 captures."
+  },
+  "quest": {
+    "task": "D128",
+    "status": "passed",
+    "build": 66,
+    "mode": "QuestCandidate",
+    "submittedCommit": "351b4eb71bb2307137e4a77902c62208afae3e21",
+    "testedCommit": "351b4eb71bb2307137e4a77902c62208afae3e21",
+    "output": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\CI\\Builds\\66-351b4eb71bb2-QuestCandidate-697955f0",
+    "editorSeconds": 130.37,
+    "tests": [
+      "CitySim.Presentation.ContextualZoneVisibility",
+      "CitySim.Presentation.ContinuousHeatMaps",
+      "CitySim.Desktop.SharedContentAndActions",
+      "CitySim.Placement.Transactions"
+    ],
+    "url": "https://drone.shaun-husain.com/CitySimVR/citysim/66",
+    "humanAcceptance": "pending",
+    "quest": {
+      "status": "passed",
+      "apkSha256": "3ab163a3f0d60376ef6986af9b8c12654bab074fc3e0e0a07666fa24a9c5ad80",
+      "package": "com.shaun.citysimvr.smoketest",
+      "abi": "arm64-v8a",
+      "minSdk": 32,
+      "targetSdk": 35,
+      "signed": true,
+      "signerSha256": "fb8ac4ce5f1998deb6bf2c1a61b303bef91e0b69750f5cdfd9df77d1773a5352",
+      "stagedPayloads": [
+        {
+          "name": "CitySimVR-Android_ASTC.pak",
+          "bytes": 10481231,
+          "sha256": "bfa0c9b2f0046a6a1a5797f0857957f526acc2933d9ea68247a995f340d0bb31"
+        },
+        {
+          "name": "CitySimVR-Android_ASTC.ucas",
+          "bytes": 103997808,
+          "sha256": "961fe95bc2891528bbf143eba40e67a83d5c3a561de70c54a96e425082ac7140"
+        },
+        {
+          "name": "CitySimVR-Android_ASTC.utoc",
+          "bytes": 248191,
+          "sha256": "6fd42094bdc5aa04343919b425cc0306785b8831e9aaebc9342a40acb76dd69c"
+        },
+        {
+          "name": "global.ucas",
+          "bytes": 2804800,
+          "sha256": "8b00d3abf4b227fe1f29460d0797a6d71917a8e36c89edf3be47a8955c49add5"
+        },
+        {
+          "name": "global.utoc",
+          "bytes": 710,
+          "sha256": "942f97a65e4b89ec4307d2fc9d11c82e34f9bc8e45c608fef4ddb1b59f218962"
+        }
+      ],
+      "headset": "unconfirmed-not-installed",
+      "verifiedUtc": "2026-10-16T20:52:50.1318004Z"
+    }
+  },
+  "candidate": {
+    "task": "D128",
+    "build": 66,
+    "commit": "351b4eb71bb2307137e4a77902c62208afae3e21",
+    "testedCommit": "351b4eb71bb2307137e4a77902c62208afae3e21",
+    "executable": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\D128\\Extracted-Build66\\CitySimVR\\Binaries\\Win64\\CitySimVR.exe",
+    "zip": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\CI\\Builds\\66-351b4eb71bb2-WindowsCandidate-150ad30d\\CitySimVR-Windows.zip",
+    "zipSha256": "dbe05921cad35fc5d6b9331243848cabffed75f818cf9238649f8f7163327ecc",
+    "files": 53,
+    "profile": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\D128\\Play-Build66-IsolatedProfile",
+    "schema": 68,
+    "startupEvidence": "CI menu smoke and feature captures; extracted runtime byte-identical; no duplicate local launch",
+    "humanAcceptance": "pending",
+    "startupVisualReview": "passed: actual CI entry-menu capture reviewed"
+  },
+  "sourceReview": "nine-file remote-main diff reviewed; no blocking finding",
+  "preservation": {
+    "maintainedPackage": "not-promoted",
+    "playerProfiles": "not-touched",
+    "primarySourceFiles": 386,
+    "catalog": "unchanged",
+    "primaryHead": "5dd807d175e0507e23657cc3883568272ced6641"
+  },
+  "limitations": [
+    "Human input/appearance acceptance pending",
+    "Physical PCVR/Quest appearance unconfirmed",
+    "No merge, default promotion, device install or public release",
+    "Candidate schema68 is isolated from maintained newer player cities"
+  ],
+  "previousFailure": "63 compiled114.01s/3of4 cases; missing actual-road fixture. Corrected64 passes; final65 and both66 stages pass.",
+  "next": "User playtest of exact candidate, then normal review/acceptance/merge closeout",
+  "verifiedUtc": "2026-10-16T20:52:54.3244766Z"
+}

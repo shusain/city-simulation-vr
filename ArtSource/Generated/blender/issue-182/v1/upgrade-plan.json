@@ -1,0 +1,43 @@
+{
+  "family": "hospital",
+  "stage": "medium",
+  "stage_index": 1,
+  "existing_stages": [
+    "base",
+    "medium"
+  ],
+  "existing_upgrade_count": 1,
+  "gameplay_changes": false,
+  "source_site_m": [
+    48,
+    40
+  ],
+  "current_native_footprint": [
+    4,
+    3
+  ],
+  "retained_entrance_centres": [
+    [
+      -7,
+      -7
+    ],
+    [
+      11.5,
+      -7
+    ]
+  ],
+  "progression": "Third ward floor plus real full-width rear clinical wing. Separate emergency wing and enclosed link retained.",
+  "occupied_bounds": {
+    "min": [
+      -17.149999618530273,
+      -10.050000190734863,
+      0.0
+    ],
+    "max": [
+      18.149999618530273,
+      14.149999618530273,
+      11.299999237060547
+    ]
+  },
+  "LOD_notes": "Future LOD1/LOD2 simplify rims, medical relief and roof equipment; no production replacement in this review."
+}

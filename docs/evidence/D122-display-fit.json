@@ -1,0 +1,82 @@
+{
+  "task": "D122",
+  "feedback": "Original entrance glass; uniform contain fit",
+  "meshes": [
+    {
+      "source": "ArtSource/Exports/BuildingWindowStudy/SM_CommercialLow_StoreRepairs.fbx",
+      "sha256": "ae7e07d0714250ed212785599e99aa86c1736e125a54385ff4dc884d76d6ca14",
+      "regular_panes": 11,
+      "regular_pane_cm": [
+        220,
+        300
+      ],
+      "excluded_entrance_faces": 0
+    },
+    {
+      "source": "ArtSource/Exports/BuildingWindowStudy/SM_CommercialMedium_StoreRepairs.fbx",
+      "sha256": "4a67df88e2be6f43034bb8c4a208c5f4ca44ccaf473543d3dd112645c59b1d0c",
+      "regular_panes": 11,
+      "regular_pane_cm": [
+        220,
+        300
+      ],
+      "excluded_entrance_faces": 0
+    },
+    {
+      "source": "ArtSource/Exports/BuildingWindowStudy/SM_CommercialHigh_StoreRepairs.fbx",
+      "sha256": "b06d53615aa2377aa874b291bf5255f97a398b0b50c090eacc1c002bddf589b7",
+      "regular_panes": 11,
+      "regular_pane_cm": [
+        220,
+        300
+      ],
+      "excluded_entrance_faces": 0
+    },
+    {
+      "source": "ArtSource/Exports/LowDensity/SM_LowDensity_Shop_A.fbx",
+      "sha256": "317b39be26e3db618f43afdd16327ff2a98afe828cf7cb832bb23fc817130620",
+      "regular_panes": 11,
+      "regular_pane_cm": [
+        220,
+        300
+      ],
+      "excluded_entrance_faces": 3
+    },
+    {
+      "source": "ArtSource/Exports/LowDensity/SM_LowDensity_Shop_B.fbx",
+      "sha256": "b956d9877485311601874f89cd7fd44d248e9eb3101aae40173cadec52e90131",
+      "regular_panes": 11,
+      "regular_pane_cm": [
+        220,
+        300
+      ],
+      "excluded_entrance_faces": 4
+    },
+    {
+      "source": "ArtSource/Exports/LowDensity/SM_LowDensity_Shop_C.fbx",
+      "sha256": "553c447286f6be68b94e6a90bce8ee83caf173a8720cf9c84de4de2e246a8805",
+      "regular_panes": 11,
+      "regular_pane_cm": [
+        220,
+        300
+      ],
+      "excluded_entrance_faces": 4
+    },
+    {
+      "source": "ArtSource/Exports/LowDensity/SM_LowDensity_Shop_D.fbx",
+      "sha256": "482762c8385ea8eed606a5be52b7be9210c2b1a9e54d4b2dd667c8a0923ebb67",
+      "regular_panes": 11,
+      "regular_pane_cm": [
+        220,
+        300
+      ],
+      "excluded_entrance_faces": 4
+    }
+  ],
+  "physical_cm_per_atlas_pixel": [
+    0.9090909090909091,
+    0.9090909090909091
+  ],
+  "max_aspect_error": 1e-12,
+  "geometry_changed": false
+}

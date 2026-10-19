@@ -1,0 +1,99 @@
+*.uasset filter=lfs diff=lfs merge=lfs -text
+*.umap filter=lfs diff=lfs merge=lfs -text
+*.blend filter=lfs diff=lfs merge=lfs -text
+*.fbx filter=lfs diff=lfs merge=lfs -text
+*.exr filter=lfs diff=lfs merge=lfs -text
+*.hdr filter=lfs diff=lfs merge=lfs -text
+*.psd filter=lfs diff=lfs merge=lfs -text
+*.tga filter=lfs diff=lfs merge=lfs -text
+*.tif filter=lfs diff=lfs merge=lfs -text
+*.tiff filter=lfs diff=lfs merge=lfs -text
+AudioSource/Music/CitySoundtrack/UnrealApproved/*.wav filter=lfs diff=lfs merge=lfs -text
+AudioSource/Music/CitySoundtrack/Hybrid5/GeneratedTexture.mp3 filter=lfs diff=lfs merge=lfs -text
+AudioSource/Music/CitySoundtrack/** -text
+Tools/CitySoundtrackScore.py -text
+Tools/Render-CityHybridMusic.py -text
+Tools/Render-CityMusic.py -text
+
+# D122 approval/handoff hashes identify exact source bytes, including JSON newlines.
+ArtSource/Generated/comfy/issue-33/v1/** -text
+ArtSource/Generated/comfy/issue-34/v1/** -text
+ArtSource/Generated/comfy/issue-35/v1/** -text
+ArtSource/Generated/comfy/issue-36/v2/** -text
+ArtSource/Generated/comfy/issue-77/v1/** -text
+ArtSource/Generated/comfy/issue-78/v1/** -text
+ArtSource/Generated/comfy/issue-79/v1/** -text
+ArtSource/Generated/comfy/issue-80/v1/** -text
+ArtSource/Generated/comfy/issue-81/v1/** -text
+ArtSource/Generated/comfy/issue-82/v1/** -text
+ArtSource/Generated/comfy/issue-83/v1/** -text
+ArtSource/Generated/comfy/issue-84/v1/** -text
+# D90 exact approved Blender bundle hashes include JSON newline bytes.
+ArtSource/Generated/blender/issue-101/v5/** -text
+ArtSource/Generated/blender/issue-102/v4/** -text
+ArtSource/Generated/blender/issue-103/v3/** -text
+ArtSource/Generated/blender/issue-104/v3/** -text
+ArtSource/Generated/blender/issue-105/v4/** -text
+ArtSource/Generated/blender/issue-153/v6/** -text
+
+# Soundscape source receipts have pinned byte hashes.
+AudioSource/Soundscape/** -text
+
+# Approved building source batch: preserve exact approval and artifact bytes.
+ArtSource/Generated/blender/issue-158/v4/** -text
+ArtSource/Generated/blender/issue-159/v3/** -text
+ArtSource/Generated/blender/issue-160/v2/** -text
+ArtSource/Generated/blender/issue-161/v2/** -text
+ArtSource/Generated/blender/issue-163/v3/** -text
+ArtSource/Generated/blender/issue-164/v3/** -text
+ArtSource/Generated/blender/issue-165/v2/** -text
+ArtSource/Generated/blender/issue-166/v2/** -text
+ArtSource/Generated/blender/issue-167/v3/** -text
+ArtSource/Generated/blender/issue-168/v1/** -text
+ArtSource/Generated/blender/issue-169/v3/** -text
+ArtSource/Generated/blender/issue-172/v7/** -text
+ArtSource/Generated/blender/issue-173/v4/** -text
+ArtSource/Generated/blender/issue-174/v5/** -text
+ArtSource/Generated/blender/issue-175/v1/** -text
+ArtSource/Generated/blender/issue-176/v2/** -text
+ArtSource/Generated/blender/issue-177/v4/** -text
+ArtSource/Generated/blender/issue-178/v1/** -text
+ArtSource/Generated/blender/issue-179/v1/** -text
+ArtSource/Generated/blender/issue-180/v1/** -text
+ArtSource/Generated/blender/issue-181/v1/** -text
+ArtSource/Generated/blender/issue-182/v1/** -text
+ArtSource/Generated/blender/issue-183/v4/** -text
+ArtSource/Generated/blender/issue-184/v3/** -text
+ArtSource/Generated/blender/issue-185/v4/** -text
+ArtSource/Generated/blender/issue-186/v7/** -text
+
+# Offline utility preparation manifests identify exact derived output hashes.
+ArtSource/Manifests/city_utility_preparation_inputs.json -text
+ArtSource/Manifests/city_utility_integration.json -text
+ArtSource/Manifests/city_utility_preparation_verification.json -text
+
+# Unit-contact columns and wind-role derivative receipts preserve raw hash bytes.
+ArtSource/Manifests/city_utility_ground_wind_preparation.json -text
+ArtSource/Manifests/city_utility_ground_wind_verification.json -text
+
+# Source-only native batch recipe plan and offline proof preserve raw hashes.
+ArtSource/Manifests/city_utility_native_import_plan.json -text
+ArtSource/Manifests/city_utility_native_recipe_offline_verification.json -text
+
+# Preserve the exact pinned utility preparation README bytes on Windows.
+ArtSource/Exports/UtilityIntegration/README.md -text
+
+# Solar physical-foot override has independent immutable manifest/proof pins.
+ArtSource/Manifests/city_solar_structural_foundation_override.json -text
+ArtSource/Manifests/city_solar_structural_foundation_verification.json -text
+
+# Exact native render expectations preserve independent new source/buffer proofs.
+ArtSource/Manifests/city_water_tower_render_surface_proof.json -text
+ArtSource/Manifests/city_wind_rotor_empty_slot_proof.json -text
+ArtSource/Manifests/city_utility_native_render_buffer_verification.json -text
+ArtSource/Manifests/city_wind_winding273.json -text
+ArtSource/Manifests/city_wind_winding273_native.json -text
+ArtSource/Manifests/city_approved_utility_native.json -text
+
+# Exact #157 native preparation receipt and measured input hashes.
+ArtSource/Manifests/city_civic_batch*.json -text

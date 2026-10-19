@@ -1,0 +1,160 @@
+{
+  "issue": 125,
+  "files": [
+    {
+      "target": "/Game/CitySim/Art/ResidentialGround/SM_ResidentialGround_Medium",
+      "file": "CitySimVR/Content/CitySim/Art/ResidentialGround/SM_ResidentialGround_Medium.uasset",
+      "sha256": "2e0df8707aee6eef21283536f316848f0dc03daecad1d53b58c67a000df46c8a",
+      "bytes": 60483,
+      "triangles": 2246,
+      "slots": [
+        "ResidentialBrick",
+        "Roof",
+        "RoofMembrane",
+        "BuildingWindowOpaque"
+      ],
+      "dimensions_cm": [
+        1443.0,
+        1501.5,
+        2200.0
+      ],
+      "entry_native_cm": [
+        0,
+        730,
+        0
+      ],
+      "landing_cm": 10,
+      "ground_reserve_cm": 80,
+      "source_sha256": "538599604890381c784651f651fee3e542c499ceb9416c61cb100bb76cd5f9f2"
+    },
+    {
+      "target": "/Game/CitySim/Art/ResidentialGround/SM_ResidentialGround_High",
+      "file": "CitySimVR/Content/CitySim/Art/ResidentialGround/SM_ResidentialGround_High.uasset",
+      "sha256": "c772208d44a367ff5d92bc47c6cb43b353b63a35060c8d06cdbe1b0f5f23e212",
+      "bytes": 96728,
+      "triangles": 3962,
+      "slots": [
+        "ResidentialBrick",
+        "Roof",
+        "Mechanical",
+        "RoofMembrane",
+        "BuildingWindowOpaque"
+      ],
+      "dimensions_cm": [
+        1400.0001220703125,
+        1480.0000610351562,
+        4100.0
+      ],
+      "entry_native_cm": [
+        0,
+        680,
+        0
+      ],
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "source_sha256": "0921d2b28d2864a1ae5fe489d2fdf82ecc6b7b4393d7683f370e40488ea37ff1"
+    },
+    {
+      "target": "/Game/CitySim/Art/ResidentialGround/SM_ResidentialGround_Construction",
+      "file": "CitySimVR/Content/CitySim/Art/ResidentialGround/SM_ResidentialGround_Construction.uasset",
+      "sha256": "054f1cf5f0993f330e7fa8761e461ffa9e5b063074442f31e7b5f36c4d451ca3",
+      "bytes": 17574,
+      "triangles": 288,
+      "slots": [
+        "Roof",
+        "Trim"
+      ],
+      "dimensions_cm": [
+        1500.0001220703125,
+        1500.0001220703125,
+        2000.0000089406967
+      ],
+      "entry_native_cm": [
+        0,
+        750,
+        80
+      ],
+      "landing_cm": 10,
+      "ground_reserve_cm": 80,
+      "source_sha256": "e1bc6bcdccf745af45863793baa0d1425d927435516b2537c9f369e5216081cc"
+    },
+    {
+      "target": "/Game/CitySim/Art/ResidentialGround/SM_ResidentialGround_Medium_Damaged",
+      "file": "CitySimVR/Content/CitySim/Art/ResidentialGround/SM_ResidentialGround_Medium_Damaged.uasset",
+      "sha256": "270c1226a2589f88caf5ac5f54629f4141f459a1502d345f3c6ade7bfafee89a",
+      "bytes": 23071,
+      "triangles": 358,
+      "slots": [
+        "CharredBrick",
+        "CharredTrim",
+        "CharredRoofMembrane"
+      ],
+      "dimensions_cm": [
+        1407.0001220703125,
+        1483.5000610351562,
+        1880.925048828125
+      ],
+      "entry_native_cm": [
+        0,
+        730,
+        0
+      ],
+      "landing_cm": 10,
+      "ground_reserve_cm": 80,
+      "source_sha256": "f5a070af4a9f28f4e4496dd29dca7f03d8f04486725bf9b848efff860b282536"
+    },
+    {
+      "target": "/Game/CitySim/Art/ResidentialGround/SM_ResidentialGround_High_Damaged",
+      "file": "CitySimVR/Content/CitySim/Art/ResidentialGround/SM_ResidentialGround_High_Damaged.uasset",
+      "sha256": "551b6d436f8545284742901aac6964a1ff6edc0e23487d7dd8395751cc45d3b6",
+      "bytes": 39740,
+      "triangles": 922,
+      "slots": [
+        "CharredBrick",
+        "CharredTrim",
+        "CharredMechanical",
+        "CharredRoofMembrane"
+      ],
+      "dimensions_cm": [
+        1400.0001220703125,
+        1480.0000610351562,
+        3480.591552734375
+      ],
+      "entry_native_cm": [
+        0,
+        680,
+        0
+      ],
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "source_sha256": "7f970331caa60d4bd1c7b6607d81579bf835649d45f9121052d06f821b2c91a0"
+    },
+    {
+      "target": "/Game/CitySim/Art/ResidentialGround/SM_ResidentialGround_Construction_Damaged",
+      "file": "CitySimVR/Content/CitySim/Art/ResidentialGround/SM_ResidentialGround_Construction_Damaged.uasset",
+      "sha256": "477801eadb306ed9c20574129d110b7a23eed36cf465ed3913775a0937f6bfc7",
+      "bytes": 18166,
+      "triangles": 288,
+      "slots": [
+        "Charred",
+        "CharredTrim"
+      ],
+      "dimensions_cm": [
+        1500.000244140625,
+        1500.000244140625,
+        1605.3208097219467
+      ],
+      "entry_native_cm": [
+        0,
+        750,
+        80
+      ],
+      "landing_cm": 10,
+      "ground_reserve_cm": 80,
+      "source_sha256": "560df9d672c3f62bc40f80e0687771a796220759b34581869684d2474bd85dcd"
+    }
+  ],
+  "build": 247,
+  "source_commit": "d80f88aef5085b8524b239c6cb8e5f57902cc351",
+  "preparation_only": true
+}

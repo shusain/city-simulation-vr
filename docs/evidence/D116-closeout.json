@@ -1,0 +1,36 @@
+{
+  "pr": "https://git.shaun-husain.com/CitySimVR/citysim/pulls/21",
+  "accepted_revision": "dev-4b67421e51447720f574",
+  "task": "D116",
+  "merge_commit": "e77e3e74d4a58be65d0a82b5b3fb1f49b4064167",
+  "closed_issues": [
+    {
+      "comment": "https://git.shaun-husain.com/CitySimVR/citysim/issues/16#issuecomment-333",
+      "state": "closed",
+      "issue": 16
+    },
+    {
+      "comment": "https://git.shaun-husain.com/CitySimVR/citysim/issues/17#issuecomment-337",
+      "state": "closed",
+      "issue": 17
+    },
+    {
+      "comment": "https://git.shaun-husain.com/CitySimVR/citysim/issues/18#issuecomment-341",
+      "state": "closed",
+      "issue": 18
+    },
+    {
+      "comment": "https://git.shaun-husain.com/CitySimVR/citysim/issues/19#issuecomment-345",
+      "state": "closed",
+      "issue": 19
+    },
+    {
+      "comment": "https://git.shaun-husain.com/CitySimVR/citysim/issues/15#issuecomment-349",
+      "state": "closed",
+      "issue": 15
+    }
+  ],
+  "head": "9c9b203e796de8ce0bccb2b655ed98bce6ef3a7a",
+  "merged": true,
+  "remaining": "D114 physical PCVR/Quest observations unconfirmed"
+}

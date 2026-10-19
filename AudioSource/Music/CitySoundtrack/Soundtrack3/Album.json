@@ -1,0 +1,134 @@
+{
+  "schema": 1,
+  "task": "D82",
+  "date": "2026-10-13",
+  "title": "City Sim VR \u2014 Soundtrack revision3",
+  "status": "All nine final recordings user-approved2026-10-13; integrated in Unreal",
+  "tracks": [
+    {
+      "id": "Afterglow",
+      "title": "Afterglow",
+      "bpm": 112,
+      "bars": 76,
+      "source": "AudioSource/Music/CitySoundtrack/Soundtrack2/Afterglow.json",
+      "intent": "Clear piano attacks locked to the beat, shorter replies and a more energetic 112 BPM groove, with a short break and a developing final theme.",
+      "method": "Original synthesis; no recorded/generated samples",
+      "reuse": "Artifacts/D82/Soundtrack2/Work/Afterglow",
+      "decision": "User-approved exact recording",
+      "approvedMp3Sha256": "0abeef6cd3430ccc8d3a02abcacd635f9f780a4bbb87c85d44c43f3e0b20d913"
+    },
+    {
+      "id": "GlassCanal",
+      "title": "Glass Canal",
+      "bpm": 94,
+      "bars": 64,
+      "source": "AudioSource/Music/CitySoundtrack/Soundtrack1/GlassCanal.json",
+      "intent": "Aligned glass-key motif with brisk syncopated percussion, alternating longer bells and short piano answers.",
+      "method": "Original synthesis; no recorded/generated samples",
+      "reuse": "Artifacts/D82/Soundtrack1/Work/GlassCanal",
+      "decision": "User-approved exact recording",
+      "approvedMp3Sha256": "dbad50c1155a67f61722c0ca6d56aa6f79b099ba9ff3829d84af97f92d59cca6"
+    },
+    {
+      "id": "NeonCourtyard",
+      "title": "Neon Courtyard",
+      "bpm": 90,
+      "bars": 64,
+      "source": "AudioSource/Music/CitySoundtrack/Hybrid7/Composition.json",
+      "intent": "Reviewed hybrid direction with articulated responses, firm beat and quiet generated texture.",
+      "method": "Original authored synthesis plus verified ACE-Step texture",
+      "reuse": "Artifacts/D82/Audition7",
+      "decision": "User-approved exact recording",
+      "approvedMp3Sha256": "ec1ccf7f2410d89a2effee78248897bba4513075a2f4a8c35ecf965c1db4f056"
+    },
+    {
+      "id": "LanternWalk",
+      "title": "Lantern Walk",
+      "bpm": 104,
+      "bars": 72,
+      "source": "AudioSource/Music/CitySoundtrack/Soundtrack3/LanternWalk.json",
+      "intent": "Steel-pan-style replies blended with wooden mallets, keeping the 104 BPM groove and current composition.",
+      "method": "Original synthesis; no recorded/generated samples",
+      "decision": "User-approved exact recording",
+      "approvedMp3Sha256": "648efa3fb8d54dace7db55dff6ef160c1d3cdcfded9970e6952d818d39404baf"
+    },
+    {
+      "id": "NightTransit",
+      "title": "Night Transit",
+      "bpm": 90,
+      "bars": 72,
+      "source": "AudioSource/Music/CitySoundtrack/Soundtrack1/NightTransit.json",
+      "intent": "Softened sine lead, darker call-and-response harmony, restrained digital arps and a steady electronic beat.",
+      "method": "Original synthesis; no recorded/generated samples",
+      "reuse": "Artifacts/D82/Soundtrack1/Work/NightTransit",
+      "decision": "User-approved exact recording",
+      "approvedMp3Sha256": "6a78331c34f4cad33dc04d7e477b7a5bf2e721628ffe7d05de1fb46d559e097b"
+    },
+    {
+      "id": "RooftopRain",
+      "title": "Rooftop Rain",
+      "bpm": 84,
+      "bars": 72,
+      "source": "AudioSource/Music/CitySoundtrack/Soundtrack1/RooftopRain.json",
+      "intent": "Tremolo electric keys, softened organ responses and a spacious broken-beat rooftop mood.",
+      "method": "Original synthesis; no recorded/generated samples",
+      "reuse": "Artifacts/D82/Soundtrack1/Work/RooftopRain",
+      "decision": "User-approved exact recording",
+      "approvedMp3Sha256": "593bb71f55359b30910837b78f706506750f4e02c22b131c5bc2c4f6e71abc35"
+    },
+    {
+      "id": "PaperLanterns",
+      "title": "Paper Lanterns",
+      "bpm": 92,
+      "bars": 56,
+      "source": "AudioSource/Music/CitySoundtrack/Soundtrack1/PaperLanterns.json",
+      "intent": "Picked-string phrases, clear rests, major-key mallet answers and a lightly bouncing beat.",
+      "method": "Original synthesis; no recorded/generated samples",
+      "reuse": "Artifacts/D82/Soundtrack1/Work/PaperLanterns",
+      "decision": "User-approved exact recording",
+      "approvedMp3Sha256": "a79ada655a66c37e2406bbe5a5af2aaa48aaeece365e6a69eaaee108df346cd5"
+    },
+    {
+      "id": "TidalCircuit",
+      "title": "Tidal Circuit",
+      "bpm": 96,
+      "bars": 64,
+      "source": "AudioSource/Music/CitySoundtrack/Soundtrack1/TidalCircuit.json",
+      "intent": "Rounded short arpeggios, measured four-on-the-floor pulse and changing digital call-and-response sections.",
+      "method": "Original synthesis; no recorded/generated samples",
+      "reuse": "Artifacts/D82/Soundtrack1/Work/TidalCircuit",
+      "decision": "User-approved exact recording",
+      "approvedMp3Sha256": "1150f23c8bc8e9e31ba07802a8cf1ec5cefe6862076d2950921c6a2f64c8273b"
+    },
+    {
+      "id": "BlueHour",
+      "title": "Blue Hour",
+      "bpm": 80,
+      "bars": 64,
+      "source": "AudioSource/Music/CitySoundtrack/Soundtrack1/BlueHour.json",
+      "intent": "Breathy sine/flute lead, warm organ answers and an unhurried but clearly defined evening pulse.",
+      "method": "Original synthesis; no recorded/generated samples",
+      "reuse": "Artifacts/D82/Soundtrack1/Work/BlueHour",
+      "decision": "User-approved exact recording",
+      "approvedMp3Sha256": "2fddea7bf1dcde86369d990b21f204ba0184d34b66f6b270f7b67b6ce53b46b5"
+    }
+  ],
+  "reviewSubset": [
+    "LanternWalk"
+  ],
+  "reviewTitle": "City Sim VR \u2014 Lantern Walk: steel pan and mallets",
+  "feedbackSource": "Artifacts/D82/Soundtrack2/Feedback/6d91d08379080c46db00cd38208873e3ccfed548b0f15d47d987978930a70993/e9e331b2-7224-40d7-9af4-472f3994c221.json",
+  "earlierApprovalsSource": "Artifacts/D82/Soundtrack1/Feedback/a4322f0070025d67c0eca8920fceb8ad1c5abfc0158cd2a8702f0d9e3a046012/d1ebf0b8-0617-4989-806d-578d10c7337e.json",
+  "reviewDownloads": [
+    {
+      "label": "Download full nine-track set",
+      "path": "CitySimVR-Initial-Soundtrack-Feedback-MP3.zip",
+      "serverOnly": true
+    },
+    {
+      "label": "Download full playlist",
+      "path": "CitySimVR-Initial-Soundtrack.m3u"
+    }
+  ],
+  "reviewLimits": "Synthesized steel-pan character is authoring intent, not a real recording or assistant perceptual review."
+}

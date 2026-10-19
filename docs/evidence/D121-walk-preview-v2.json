@@ -1,0 +1,199 @@
+{
+  "task": "D121",
+  "version": 2,
+  "date": "2026-10-15",
+  "status": "revised-source-preview-ready-unreviewed",
+  "feedback": "Broad gait accepted; align hands with forearms, add upper-body twist and slight forward lean",
+  "source": "ArtSource/Blender/CityCitizenWalkCycle-v2.blend",
+  "source_sha256": "1cf0a3d40f92d23c80b2a84fa4e5cf2026617748a5940ebb318107e1a82940bb",
+  "manifest": "ArtSource/Manifests/city_citizen_walk_cycle_v2.json",
+  "validation": {
+    "task": "D121",
+    "version": 2,
+    "source_sha256": "1cf0a3d40f92d23c80b2a84fa4e5cf2026617748a5940ebb318107e1a82940bb",
+    "pass_checks": true,
+    "rigs": [
+      {
+        "style": "Casual",
+        "lod": 0,
+        "samples": 57,
+        "maximum_ik_error_m": 0.004597004240488706,
+        "minimum_sole_m": -2.7473931822896702E-06,
+        "maximum_stance_sole_error_m": 5.7610277508501895E-06,
+        "stance_world_slip_per_half_frame_m": 1.5993083865479687E-06,
+        "maximum_limb_stretch_m": 1.4434829963938522E-05,
+        "loop_seam_m": 0.0,
+        "maximum_forearm_follow_error_deg": 0.07912936237050427,
+        "maximum_wrist_direction_angle_deg": 0.08156468499537084,
+        "shoulder_twist_range_deg": [
+          -10.073803893582417,
+          10.073803893582417
+        ],
+        "forward_torso_lean_range_deg": [
+          6.489956923824686,
+          6.499999793170362
+        ]
+      },
+      {
+        "style": "Casual",
+        "lod": 1,
+        "samples": 57,
+        "maximum_ik_error_m": 0.004597004240488706,
+        "minimum_sole_m": -2.7499784209794598E-06,
+        "maximum_stance_sole_error_m": 5.801908628200181E-06,
+        "stance_world_slip_per_half_frame_m": 1.5993083865479687E-06,
+        "maximum_limb_stretch_m": 1.4434829963938522E-05,
+        "loop_seam_m": 0.0,
+        "maximum_forearm_follow_error_deg": 0.07912936237050427,
+        "maximum_wrist_direction_angle_deg": 0.08156468499537084,
+        "shoulder_twist_range_deg": [
+          -10.073803893582417,
+          10.073803893582417
+        ],
+        "forward_torso_lean_range_deg": [
+          6.489956923824686,
+          6.499999793170362
+        ]
+      },
+      {
+        "style": "Office",
+        "lod": 0,
+        "samples": 57,
+        "maximum_ik_error_m": 0.004596955292720948,
+        "minimum_sole_m": -2.7573310035222676E-06,
+        "maximum_stance_sole_error_m": 5.800999133498408E-06,
+        "stance_world_slip_per_half_frame_m": 1.7105533553209032E-06,
+        "maximum_limb_stretch_m": 1.4425282926999738E-05,
+        "loop_seam_m": 0.0,
+        "maximum_forearm_follow_error_deg": 0.07912936237050427,
+        "maximum_wrist_direction_angle_deg": 0.08156468499537084,
+        "shoulder_twist_range_deg": [
+          -10.073803893582417,
+          10.073803893582417
+        ],
+        "forward_torso_lean_range_deg": [
+          6.489956923824686,
+          6.499999793170362
+        ]
+      },
+      {
+        "style": "Office",
+        "lod": 1,
+        "samples": 57,
+        "maximum_ik_error_m": 0.004596955292720948,
+        "minimum_sole_m": -2.7574956220632885E-06,
+        "maximum_stance_sole_error_m": 5.8426244322618E-06,
+        "stance_world_slip_per_half_frame_m": 1.7105533553209032E-06,
+        "maximum_limb_stretch_m": 1.4425282926999738E-05,
+        "loop_seam_m": 0.0,
+        "maximum_forearm_follow_error_deg": 0.08846931922527276,
+        "maximum_wrist_direction_angle_deg": 0.08156468499537084,
+        "shoulder_twist_range_deg": [
+          -10.073803893582417,
+          10.073803893582417
+        ],
+        "forward_torso_lean_range_deg": [
+          6.489956923824686,
+          6.499999793170362
+        ]
+      },
+      {
+        "style": "Worker",
+        "lod": 0,
+        "samples": 57,
+        "maximum_ik_error_m": 0.0045969501851836556,
+        "minimum_sole_m": -2.7178234631719533E-06,
+        "maximum_stance_sole_error_m": 5.87074646318797E-06,
+        "stance_world_slip_per_half_frame_m": 1.800344580696127E-06,
+        "maximum_limb_stretch_m": 1.4413257182543937E-05,
+        "loop_seam_m": 0.0,
+        "maximum_forearm_follow_error_deg": 0.07912936237050427,
+        "maximum_wrist_direction_angle_deg": 0.08156468499537084,
+        "shoulder_twist_range_deg": [
+          -10.073803893582417,
+          10.073803893582417
+        ],
+        "forward_torso_lean_range_deg": [
+          6.489956923824686,
+          6.499999793170362
+        ]
+      },
+      {
+        "style": "Worker",
+        "lod": 1,
+        "samples": 57,
+        "maximum_ik_error_m": 0.0045969501851836556,
+        "minimum_sole_m": -2.7176142793905456E-06,
+        "maximum_stance_sole_error_m": 5.911068910791073E-06,
+        "stance_world_slip_per_half_frame_m": 1.800344580696127E-06,
+        "maximum_limb_stretch_m": 1.4413257182543937E-05,
+        "loop_seam_m": 0.0,
+        "maximum_forearm_follow_error_deg": 0.07912936237050427,
+        "maximum_wrist_direction_angle_deg": 0.08156468499537084,
+        "shoulder_twist_range_deg": [
+          -10.073803893582417,
+          10.073803893582417
+        ],
+        "forward_torso_lean_range_deg": [
+          6.489956923824686,
+          6.499999793170362
+        ]
+      }
+    ],
+    "total_pose_samples": 342,
+    "baked_frames": 29,
+    "bake_error_m": 2.2624855901158042E-05,
+    "fbx_sample_frames": 7,
+    "fbx_error_m": 2.2599238945986144E-05,
+    "export_bones": 20,
+    "controls_exported": 0,
+    "constraints_exported": 0,
+    "bridge": "Artifacts\\D121\\V2\\Walk-Casual-Authoring.fbx",
+    "bridge_sha256": "3beb3a212dad937f04a36d99fd35bb28612130c9c5a37a70f3ac019c61fccb43",
+    "protected_inputs_unchanged": true,
+    "human_review": "pending",
+    "native_status": "not imported"
+  },
+  "media": {
+    "task": "D121",
+    "version": 2,
+    "source_sha256": "1cf0a3d40f92d23c80b2a84fa4e5cf2026617748a5940ebb318107e1a82940bb",
+    "media": {
+      "Outfits": {
+        "path": "Outfits.gif",
+        "sha256": "bcc73086fbd99de8d263e792264eb6a806343837a3308050ad3a40e396737281",
+        "frames": 14
+      },
+      "Side": {
+        "path": "Side.gif",
+        "sha256": "979daeb715e51c85bbde830d3cd41429debcf533c08b45da6ed9075b1e0430da",
+        "frames": 14
+      },
+      "Front": {
+        "path": "Front.gif",
+        "sha256": "c081693d298aedf626395522f098486c75bb32681b1f44414efed6287574d7f9",
+        "frames": 14
+      },
+      "Travel": {
+        "path": "Travel.gif",
+        "sha256": "842929ce4a7650297bc5dc0866e3248cb707605c22bc9929d227df576919a873",
+        "frames": 42
+      }
+    }
+  },
+  "review": "Artifacts/D121/V2/Preview/Review.html",
+  "plan": "docs/D121_CITIZEN_WALK_PLAN.md",
+  "previous_version": "docs/evidence/D121-walk-preview.json",
+  "protected_inputs": {
+    "ArtSource/Blender/CityCitizenControlRig.blend": "20036a3a5d42525a517b2358cf4f0bbe979d5cbb8621d2ea53a00f76a6800f27",
+    "ArtSource/Manifests/city_citizen_control_rig.json": "b547d20e465413d7507ec3b9b6778e508e78f18b6a55128bb90c1d0c4cf2eb75",
+    "ArtSource/Blender/CityCitizenSportsScale.blend": "988dffe1f2b8849f30f4e5ad551f213e9a0441da9e1c5ab1dadc6dfc1e25ebdc",
+    "ArtSource/Blender/CityCitizenWalkCycle.blend": "c0298ddb637a6d19193851633e73796523ca2577b4406fbf657554ba10a72e0c",
+    "ArtSource/Manifests/city_citizen_walk_cycle.json": "386bc899c2ce2ed14b29a7ee02536c7c1f93b578b3ec9eb738f27e95eca696d0",
+    "Tools/CityCitizenRigControls.py": "f7e883112ec481cd309a4e6193f1112307032d352cb7835b1f90abf3d1a4f02f",
+    "Tools/CityCitizenSportsMotion.py": "8c70b4aa799e04150b7ae883f48975db171837ad1cc433cb2de729a96092dccb"
+  },
+  "native_integration": "planned, awaiting source approval and shared native window",
+  "editor_or_package_checks": "not run: source-only revision",
+  "physical_PC_VR_Quest": "unconfirmed"
+}

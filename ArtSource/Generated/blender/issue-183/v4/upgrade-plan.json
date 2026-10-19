@@ -1,0 +1,45 @@
+{
+  "family": "wastedepot",
+  "stage": "base",
+  "stage_index": 0,
+  "existing_stages": [
+    "base",
+    "medium"
+  ],
+  "existing_upgrade_count": 1,
+  "gameplay_changes": false,
+  "source_site_m": [
+    48,
+    40
+  ],
+  "current_native_footprint": [
+    4,
+    3
+  ],
+  "retained_entrance_centres": {
+    "pedestrian": [
+      -15,
+      -8,
+      0
+    ],
+    "service": [
+      -2,
+      -8,
+      0
+    ]
+  },
+  "progression": "Existing medium adds second receiving bay, rear process group, second furnace flue and second dumpster. No additional gameplay tier.",
+  "occupied_bounds": {
+    "min": [
+      -20.25,
+      -9.25,
+      0.0
+    ],
+    "max": [
+      23.0,
+      16.239999771118164,
+      14.199999809265137
+    ]
+  },
+  "future_LOD": "LOD1 simplify frame profiles, skip ribs and gear; LOD2 merge frame silhouettes and simplify mounted bin relief. Approved references unchanged."
+}

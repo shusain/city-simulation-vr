@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "kind": "comfy",
+  "repository": "CitySimVR/citysim",
+  "issue": 35,
+  "version": 1,
+  "source_sha": "f482eff94e62fbc62692b8270dcfcdca5269d5cc",
+  "workflow": "generate_image_zimage",
+  "workflow_sha256": "da95e56ebb916d7dd762a209a7e9df07b30a9d521c2d41e3dfbbf5dca8a055f0",
+  "model": "ollama/citysim-spec:qwen3-14b",
+  "seed": 35,
+  "prompt": "A believable articulated industrial robot arm over a simple workbench with a human technician beside it, depicted in a black-ink woodcut style with restrained cross-hatching, bold readable silhouettes, warm ivory paper ground, and generous clear outer margins. Landscape composition contained within a square768px image, matching a classic serif city newspaper aesthetic. No text, logos, color ink, or photorealism—only a balanced depiction of ordinary industrial work with connected equipment and plausible human scale.",
+  "prompt_id": "9c19b01e-d72b-442f-93c9-eb22aaae41a4",
+  "dimensions": {
+    "width": 768,
+    "height": 768
+  },
+  "png_sha256": "16dc08a60b0cc729b2ae9161222c961026fd3cc7915ba521a3f0b69e62318144",
+  "created_at": "2026-10-15T22:56:25.025Z"
+}

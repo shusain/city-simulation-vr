@@ -1,0 +1,18 @@
+{
+  "status": "materialized",
+  "source": {
+    "head": "1e2a1e8e05d212ba9cb469b8bef415ec44ee97f9",
+    "workspace": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\CI\\Workspaces\\drone-yBIwEDfSduDqqqPd\\drone\\src",
+    "renamed": 247,
+    "files": 321,
+    "maps_changed": [],
+    "pipeline_status": "not established by collection"
+  },
+  "renamed": 247,
+  "changed": 321,
+  "removed": 247,
+  "changed_packages_within_reviewed_scope": true,
+  "semantic_constructor_paths_restored": true,
+  "one_time_preparation_removed": true,
+  "primary_source_or_player_changes": false
+}

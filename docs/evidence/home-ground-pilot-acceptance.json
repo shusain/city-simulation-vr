@@ -1,0 +1,20 @@
+{
+  "issue": 125,
+  "pr": 147,
+  "acceptedHead": "f0a4fbf76d1337a6e1801b16bedb0f5491906981",
+  "windowsCandidate": 201,
+  "gameRevision": "dev-cc0c8ac35d4bcbfe3a11",
+  "date": "2026-10-18",
+  "acceptance": "Shaun: The road connection and railings look good in game now. Go ahead and merge this.",
+  "scope": "Accepted foundation/Compact Home/road/rail pilot; broader rollout continues under125.",
+  "sourceTree": "b61633147c156740946c289c0cd876dd0fb15886",
+  "contentTree": "f70551db9df701c0942b69e7396654940413eca6",
+  "next": [
+    "residential",
+    "commercial",
+    "industrial",
+    "specialized: police/fire/education/health",
+    "utilities after their asset updates"
+  ],
+  "quest": "deferred-PC-first; no headset acceptance claimed"
+}

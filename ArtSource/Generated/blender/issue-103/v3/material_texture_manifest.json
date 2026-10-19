@@ -1,0 +1,113 @@
+{
+  "OpaqueFacade": {
+    "images": [
+      {
+        "source": "ArtSource/Textures/BuildingSurfaces/CityBrick_BaseColor.png",
+        "sha256": "e4c1ad7446563e3209191ca862fc4c3e065c491debd989765bc843405a5fbbfe",
+        "image": "CityBrick_BaseColor.png.001",
+        "size": [
+          1024,
+          1024
+        ],
+        "color_space": "sRGB",
+        "channels": "BaseColor",
+        "reuse": "original unchanged; no new bake"
+      },
+      {
+        "source": "ArtSource/Textures/BuildingSurfaces/CityBrick_Normal.png",
+        "sha256": "cf71dc7902b7c3a99d9fd1e966760af9a7b428de42b22ade5fb810965866d2cc",
+        "image": "CityBrick_Normal.png.001",
+        "size": [
+          1024,
+          1024
+        ],
+        "color_space": "Non-Color",
+        "channels": "Normal",
+        "reuse": "original unchanged; no new bake"
+      },
+      {
+        "source": "ArtSource/Textures/BuildingSurfaces/CityBrick_ORM.png",
+        "sha256": "39f2f1df859b4052afe98dcb632054398957455d58b205b13702210467a0c6e8",
+        "image": "CityBrick_ORM.png.001",
+        "size": [
+          1024,
+          1024
+        ],
+        "color_space": "Non-Color",
+        "channels": "ORM",
+        "reuse": "original unchanged; no new bake"
+      }
+    ],
+    "uv_density": "1 UV repeat per 2 metres, dominant-axis metric projection",
+    "native_binding": "existing civic brick facade",
+    "ORM": "R=AO (native hookup pending), G=roughness, B=metallic",
+    "source_material_reference": "CivicBrick_Trim",
+    "handoff": "image maps supplied; native hookup/appearance pending"
+  },
+  "RoofService": {
+    "images": [
+      {
+        "source": "ArtSource/Textures/CivicSurfaces/CivicAsphalt_BaseColor.png",
+        "sha256": "85e2cfe619a74da7fe74ad0c6439141f4edb63e5085208c4cfd620c5e1d988fa",
+        "image": "CivicAsphalt_BaseColor.png",
+        "size": [
+          512,
+          512
+        ],
+        "color_space": "sRGB",
+        "channels": "BaseColor",
+        "reuse": "original unchanged; no new bake"
+      },
+      {
+        "source": "ArtSource/Textures/CivicSurfaces/CivicAsphalt_Normal.png",
+        "sha256": "e6f9e8f0257ddbc33b012b72f9446a2c8a3679153488b4bbc67ca6e50be153fd",
+        "image": "CivicAsphalt_Normal.png",
+        "size": [
+          512,
+          512
+        ],
+        "color_space": "Non-Color",
+        "channels": "Normal",
+        "reuse": "original unchanged; no new bake"
+      },
+      {
+        "source": "ArtSource/Textures/CivicSurfaces/CivicAsphalt_ORM.png",
+        "sha256": "6b06b777944f76046d0f51131cdec7cca658efac60560c95ab1e854c37189ab4",
+        "image": "CivicAsphalt_ORM.png",
+        "size": [
+          512,
+          512
+        ],
+        "color_space": "Non-Color",
+        "channels": "ORM",
+        "reuse": "original unchanged; no new bake"
+      }
+    ],
+    "uv_density": "1 UV repeat per 2 metres, dominant-axis metric projection",
+    "native_binding": "MI_CivicAsphaltRoof",
+    "ORM": "R=AO (native hookup pending), G=roughness, B=metallic",
+    "source_material_reference": "CivicAsphaltRoof",
+    "handoff": "image maps supplied; native hookup/appearance pending"
+  },
+  "LightMetal": {
+    "images": [],
+    "native_binding": "reusable LightMetal PBR semantic; exact native instance pending",
+    "roughness": 0.65,
+    "metallic": 0.65,
+    "room_color": null
+  },
+  "TechGlass": {
+    "images": [],
+    "native_binding": "reusable TechGlass PBR semantic; exact native instance pending",
+    "roughness": 0.32,
+    "metallic": 0,
+    "room_color": "TechGlass pane-local UV can be reassigned independently; no unapproved room pixels"
+  },
+  "DoorAccent": {
+    "images": [],
+    "native_binding": "reusable DoorAccent PBR semantic; exact native instance pending",
+    "roughness": 0.65,
+    "metallic": 0,
+    "room_color": null
+  }
+}

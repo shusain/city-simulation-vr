@@ -1,0 +1,47 @@
+{
+  "bays": [
+    {
+      "target": "ReceivingDoor",
+      "xyz_m": [
+        -2,
+        -8.2,
+        0
+      ],
+      "outward": [
+        0,
+        -1,
+        0
+      ],
+      "width_m": 4.5,
+      "grade_m": 0,
+      "boundary_connector": {
+        "xyz_m": [
+          -2,
+          -20,
+          0
+        ],
+        "outward": [
+          0,
+          -1,
+          0
+        ],
+        "width_m": 4.5,
+        "grade_m": 0
+      },
+      "reserved_free_corridor": {
+        "min": [
+          -4.25,
+          -20,
+          0
+        ],
+        "max": [
+          0.25,
+          -8.2,
+          4.2
+        ]
+      },
+      "id": "receiving-01",
+      "height_m": 4.5
+    }
+  ]
+}

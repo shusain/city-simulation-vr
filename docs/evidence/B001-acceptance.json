@@ -1,0 +1,33 @@
+{
+  "task": "B001",
+  "issue": "https://git.shaun-husain.com/CitySimVR/citysim/issues/62",
+  "status": "complete-user-accepted-authorized-normal-merge",
+  "date": "2026-10-17",
+  "acceptedSourceCommit": "63d561dbdb69e578e0c0accceb4a3f317257f064",
+  "candidateBuild": 104,
+  "candidateRevision": "dev-14935146e2542af845e4",
+  "schemaVersion": 68,
+  "packageSha256": "03288abd49209578f3cdb6b4a6c507f58834a6c2033761e08edcf2e8020a377d",
+  "userConfirmation": "I tested candidate #104 and the menu works after allowing the prompt, Alt-Tabbing, and relaunching. Please mark B001 complete and merge PR #72.",
+  "confirmationSource": "Direct human message in this task on 2026-10-17",
+  "acceptedObservations": [
+    "Menu works after allowing the Windows prompt and returning focus",
+    "Menu works after Alt-Tab",
+    "Menu works after relaunch"
+  ],
+  "pullRequest": "https://git.shaun-husain.com/CitySimVR/citysim/pulls/72",
+  "verifiedChecks": [
+    "Drone103 Editor90.55s/five exact cases",
+    "Windows104 Editor90.12s/five exact cases; compile/cook/package; focus/menu smoke; three Client cases at1280x800 and1024x720",
+    "Seven captures visually reviewed; ZIP/hash and all53 extracted runtime files plus embedded revision verified",
+    "Nine actual checkout-guard divergent-Git cases"
+  ],
+  "sourceReview": "Complete11-file main-relative implementation diff reviewed: focus edge pairing, lifecycle/input gating, synthetic smoke state/frame timing, tax assertion guard, PR-only promotion ancestry and failed evidence retention; no blocking findings.",
+  "closeoutScope": "Documentation/evidence only; accepted gameplay, assets, config, Tools and pipeline unchanged. No package repeat.",
+  "limitations": [
+    "Exact Windows prompt text/type not captured; functional Allow/focus return is user-confirmed",
+    "Physical PCVR/Quest observations remain unconfirmed under D114"
+  ],
+  "mergeStatus": "Pending normal expected-head API merge and readback",
+  "createdUtc": "2026-10-17T17:57:22.1588170Z"
+}

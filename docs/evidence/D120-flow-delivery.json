@@ -1,0 +1,386 @@
+{
+  "task": "D120",
+  "bugs": [
+    "B003",
+    "B004"
+  ],
+  "date": "2026-10-15",
+  "status": "Delivered to maintained Windows and shared Quest archive; user playtest pending",
+  "revision": "dev-c9cfe5afeacc5b330b97",
+  "schema": 67,
+  "nativeInputs": 1086,
+  "behavior": [
+    "Origin-only departure admission verified against an occupied shop and blocked origin; stock/funding reservations remain authoritative.",
+    "Two saved pedestrian tracks with pedestrian-scale gaps, passing, interpolated lateral offsets; avenue sidewalk space widened inside its existing cell.",
+    "Local ordinary vehicles roll forward during pull-over and rejoin immediately when safe; headings follow a smooth lateral curve.",
+    "Declared motor lanes now have real routes/connectors, highway responders use the inner lane, ordinary traffic safely moves right without stopping, opposing carriageway continues.",
+    "A fast responder retains clearance behind a merging car for the visible transition step; occupied outer lanes prevent unsafe merges.",
+    "Current67 saves retain optional pedestrianTrack and waiting routes; extra derived lane connectors preserve existing physical network fingerprints."
+  ],
+  "sourceChanges": [
+    {
+      "path": "CitySimVR\\Source\\CitySimVR\\Private\\Persistence\\CityPersistence.cpp",
+      "sha256": "fd99ff58723cb5bbe9429b8b7ee972c08a7464d169ba1ff9f3426667e2e4ca45"
+    },
+    {
+      "path": "CitySimVR\\Source\\CitySimVR\\Private\\Presentation\\CityBoardActor.cpp",
+      "sha256": "304455539135060a87567758970a554fce66c2896696c509bc7ae76eb74440e3"
+    },
+    {
+      "path": "CitySimVR\\Source\\CitySimVR\\Private\\Simulation\\CityRoadNetwork.cpp",
+      "sha256": "bb73a049278a6379022118d3a7d2d912a06a6500a7454855007a2144056d154f"
+    },
+    {
+      "path": "CitySimVR\\Source\\CitySimVR\\Private\\Simulation\\CityTrafficSimulation.cpp",
+      "sha256": "e266347beebfa8787a0b17914d001ef26ca74de84ea357a397656bd1c4cd91d8"
+    },
+    {
+      "path": "CitySimVR\\Source\\CitySimVR\\Private\\Simulation\\CityTrafficTrips.cpp",
+      "sha256": "1acf11cbb9af807a72bd5e7a687f9a3b828a8e2df80943f8ea09f259773da8a0"
+    },
+    {
+      "path": "CitySimVR\\Source\\CitySimVR\\Private\\Tests\\CityDepartureTests.cpp",
+      "sha256": "f1ca9f3df14d2a429bdb0e00175f15e978d77bd766a10ce71330785c1677f6e3"
+    },
+    {
+      "path": "CitySimVR\\Source\\CitySimVR\\Private\\Tests\\CityShoppingDepartureTests.cpp",
+      "sha256": "0590516d871c90a3d63e6b0ee3c83830aff70929ea86885c1482c2e6107c9cdf"
+    },
+    {
+      "path": "CitySimVR\\Source\\CitySimVR\\Private\\Tests\\CityTrafficSimulationTests.cpp",
+      "sha256": "5559c00fd53d80af703f282a433df42226058b331a065b5571e63bda19bc1a48"
+    },
+    {
+      "path": "CitySimVR\\Source\\CitySimVR\\Private\\Tests\\CityVisibleTrafficTests.cpp",
+      "sha256": "4e51397ea4acf5be8c8c8234a7d7e8e3532f8f484f05659d77f9e2ed4aad2f76"
+    },
+    {
+      "path": "CitySimVR\\Source\\CitySimVR\\Public\\Presentation\\CityBoardActor.h",
+      "sha256": "b6c516f92365b3a1724b9504bd0f0545f5144cb6890981bcc0e04af8e7727f52"
+    },
+    {
+      "path": "CitySimVR\\Source\\CitySimVR\\Public\\Presentation\\CityRoadPresentation.h",
+      "sha256": "d1a036975c88aeaf169ec18073842719c14a83d087fe9bcc49d813ef418b481c"
+    },
+    {
+      "path": "CitySimVR\\Source\\CitySimVR\\Public\\Simulation\\CitySimulationSubsystem.h",
+      "sha256": "cdbc4fd2d1ba9a8818620d3c85276bdb8e13d4b75ce467dbe2b0de49083f2294"
+    },
+    {
+      "path": "CitySimVR\\Source\\CitySimVR\\Public\\Simulation\\CityTrafficSimulation.h",
+      "sha256": "c818aac67f6ed53ddd8d79c980c3c34f23ff9b2f1eaa45f6313043eaf86e599c"
+    }
+  ],
+  "newSources": [
+    {
+      "path": "CitySimVR\\Source\\CitySimVR\\Private\\Tests\\CityFlowRefinementTests.cpp",
+      "sha256": "7cd51d0d4bf0429dbb752c8e7a1437be80e9d81ac14b9bcf1e455ec33a843394"
+    },
+    {
+      "path": "CitySimVR\\Source\\CitySimVR\\Private\\Tests\\CityFlowVisualTests.cpp",
+      "sha256": "ef486388e27d958f0ab40ab9804688d5ba09c1de34adbfef102a889e888f5d9c"
+    }
+  ],
+  "windows": {
+    "path": "Artifacts/PCVRSandbox/Windows/CitySimVR/Binaries/Win64/CitySimVR.exe",
+    "sha256": "8fc9362eb08b230852779ec1dd0c58174c0999f4ce87d04ea19635543b28a6cf"
+  },
+  "quest": {
+    "path": "Artifacts/D120/QuestPackage/Android_ASTC/CitySimVR-arm64.apk",
+    "sha256": "d44c68716fef49a8da282f2a1804df2d243d6900e2c6acad85f688524415ccac",
+    "installed": false
+  },
+  "tests": {
+    "Fourth": [
+      "HighwayLaneYield",
+      "OccupiedShopDeparture",
+      "RollingYieldAndRejoin",
+      "SideBySideAndPassing",
+      "Definitions",
+      "DeterministicGraphTopology",
+      "FreightCargo",
+      "PurchaseArrivalSettlement",
+      "EmergencyIntersectionPriority",
+      "EmergencyYieldAndResume",
+      "FairPortalDepartures",
+      "IntersectionConnectorQueue",
+      "LiveTripLifecycle",
+      "OccupiedResponseCurb",
+      "OpposingResponseYield",
+      "PortalMergeAtConnector",
+      "ReportedShoppingCity",
+      "RestoreAndCatchUp",
+      "SharedLaneAcrossRoutes",
+      "SpeedLimitsAndFollowing",
+      "VisiblePool"
+    ],
+    "FinalPackaged": [
+      "HighwayLaneYield",
+      "OccupiedShopDeparture",
+      "RollingYieldAndRejoin",
+      "SideBySideAndPassing",
+      "ReportedShoppingCity"
+    ]
+  },
+  "copiedCity": {
+    "originalInputsUnchanged": true,
+    "departureDay": 9,
+    "arrivalDay": 54,
+    "continuationDays": 400,
+    "reloadedDay": 4,
+    "initialPurchases": 388,
+    "finalPurchases": 729
+  },
+  "screenshots": [
+    {
+      "path": "Artifacts/D120/Visual-FinalReadyEditor-D120/Saved/Automation/Flow/AvenuePassing-0.png",
+      "sha256": "526488a536b0eb2b0a9f99326e2baca79768d1f824b3c10900d4d7eba6b085bc"
+    },
+    {
+      "path": "Artifacts/D120/Visual-FinalReadyEditor-D120/Saved/Automation/Flow/AvenuePassing-1.png",
+      "sha256": "f753eac7d79b1e5e69afc025a73b5c48b79fd0995617feeb7a623f03f99448b6"
+    },
+    {
+      "path": "Artifacts/D120/Visual-FinalReadyEditor-D120/Saved/Automation/Flow/AvenuePassing-2.png",
+      "sha256": "63b4818e777fee264048eae3e3c96f4798ea1ecbd6d2759e312fe2ddba578107"
+    },
+    {
+      "path": "Artifacts/D120/Visual-FinalReadyEditor-D120/Saved/Automation/Flow/HighwayRightLane-0.png",
+      "sha256": "a2257a57351a4a4f3c422b8e0b38a398199124465539ee8addaf32da90fdb15d"
+    },
+    {
+      "path": "Artifacts/D120/Visual-FinalReadyEditor-D120/Saved/Automation/Flow/HighwayRightLane-1.png",
+      "sha256": "f7c07b811cb1b16720fe14b19d3171dcae6c97fa58b31df4ff07a205aa283c6c"
+    },
+    {
+      "path": "Artifacts/D120/Visual-FinalReadyEditor-D120/Saved/Automation/Flow/HighwayRightLane-2.png",
+      "sha256": "88077c0c34add250925d4b3e1d29e03823f657b8adfa9479ba6e933c782a86cd"
+    },
+    {
+      "path": "Artifacts/D120/Visual-FinalReadyEditor-D120/Saved/Automation/Flow/LocalPullOver-0.png",
+      "sha256": "5d1dc0548f4c5eff14b4d3d4256fa8ad7033d5244f7f053e2a2e3841cc968d3f"
+    },
+    {
+      "path": "Artifacts/D120/Visual-FinalReadyEditor-D120/Saved/Automation/Flow/LocalPullOver-1.png",
+      "sha256": "ec33fe79d6d1ee1cb6f4227646b09e0f7720685e24cb5267747bc09737d71fe1"
+    },
+    {
+      "path": "Artifacts/D120/Visual-FinalReadyEditor-D120/Saved/Automation/Flow/LocalPullOver-2.png",
+      "sha256": "444c7a08a5d600364615d796e751777a59f87f9acdb665ea096177934f9f28a2"
+    },
+    {
+      "path": "Artifacts/D120/Visual-FinalReadyEditor-D120/Saved/Automation/Flow/LocalRejoin-0.png",
+      "sha256": "990adc8072dac08d0070bb9f233290e9bcc4811391077574f98743dfbd9170ee"
+    },
+    {
+      "path": "Artifacts/D120/Visual-FinalReadyEditor-D120/Saved/Automation/Flow/LocalRejoin-1.png",
+      "sha256": "ac710929505672ee3c061dbcb9b5b8e3cda76d31b17c730a27b1835c54cbc251"
+    },
+    {
+      "path": "Artifacts/D120/Visual-FinalReadyEditor-D120/Saved/Automation/Flow/LocalRejoin-2.png",
+      "sha256": "7b63af8127792ffebca9bd36db85be72f9611cfa5c6449f57f05e68423ac7967"
+    },
+    {
+      "path": "Artifacts/D120/Visual-FinalReadyEditor-D120/Saved/Automation/Flow/PedestrianPass-0.png",
+      "sha256": "b9bcf44dd6a92fd75733224946681208c175b2bc04ba1f7d41792a3e6142451b"
+    },
+    {
+      "path": "Artifacts/D120/Visual-FinalReadyEditor-D120/Saved/Automation/Flow/PedestrianPass-1.png",
+      "sha256": "73859f36eb01be7e2a72b900ca2e22e93d29dfce2147186517b41487bf03164a"
+    },
+    {
+      "path": "Artifacts/D120/Visual-FinalReadyEditor-D120/Saved/Automation/Flow/PedestrianPass-2.png",
+      "sha256": "b5be411d46f15ec28b3113214d410efa2ff8a3b33a4b53de86c1061548a3f88a"
+    },
+    {
+      "path": "Artifacts/D120/Visual-FinalPackaged-D120/Saved/Automation/Flow/AvenuePassing-0.png",
+      "sha256": "526488a536b0eb2b0a9f99326e2baca79768d1f824b3c10900d4d7eba6b085bc"
+    },
+    {
+      "path": "Artifacts/D120/Visual-FinalPackaged-D120/Saved/Automation/Flow/AvenuePassing-1.png",
+      "sha256": "f753eac7d79b1e5e69afc025a73b5c48b79fd0995617feeb7a623f03f99448b6"
+    },
+    {
+      "path": "Artifacts/D120/Visual-FinalPackaged-D120/Saved/Automation/Flow/AvenuePassing-2.png",
+      "sha256": "63b4818e777fee264048eae3e3c96f4798ea1ecbd6d2759e312fe2ddba578107"
+    },
+    {
+      "path": "Artifacts/D120/Visual-FinalPackaged-D120/Saved/Automation/Flow/HighwayRightLane-0.png",
+      "sha256": "2d1b45743ecd0f426624b465391b8096db3ca9d525d79c660eafbbbe781612f2"
+    },
+    {
+      "path": "Artifacts/D120/Visual-FinalPackaged-D120/Saved/Automation/Flow/HighwayRightLane-1.png",
+      "sha256": "489c83520de6ad88f5968d3c110767f96e5e78b3951af335f71bd18b0fc1d5b8"
+    },
+    {
+      "path": "Artifacts/D120/Visual-FinalPackaged-D120/Saved/Automation/Flow/HighwayRightLane-2.png",
+      "sha256": "835b6530d619ca767605af5a4ed95560ce11f3efd2472c973c13b5e9211622c5"
+    },
+    {
+      "path": "Artifacts/D120/Visual-FinalPackaged-D120/Saved/Automation/Flow/LocalPullOver-0.png",
+      "sha256": "a6a14f654fe62561ca60e24ac75bc4b5fd4c4b050ff76b6941634dbce41bc1d7"
+    },
+    {
+      "path": "Artifacts/D120/Visual-FinalPackaged-D120/Saved/Automation/Flow/LocalPullOver-1.png",
+      "sha256": "3e10353f60da181e7fdf2be767c8cd4d44d68f1b49d677fa65b56528c1099c0f"
+    },
+    {
+      "path": "Artifacts/D120/Visual-FinalPackaged-D120/Saved/Automation/Flow/LocalPullOver-2.png",
+      "sha256": "d17fd2eaf0389f4794e6679091c8f42cc343987bbdc235c3500027849a9dc6fe"
+    },
+    {
+      "path": "Artifacts/D120/Visual-FinalPackaged-D120/Saved/Automation/Flow/LocalRejoin-0.png",
+      "sha256": "990adc8072dac08d0070bb9f233290e9bcc4811391077574f98743dfbd9170ee"
+    },
+    {
+      "path": "Artifacts/D120/Visual-FinalPackaged-D120/Saved/Automation/Flow/LocalRejoin-1.png",
+      "sha256": "ac710929505672ee3c061dbcb9b5b8e3cda76d31b17c730a27b1835c54cbc251"
+    },
+    {
+      "path": "Artifacts/D120/Visual-FinalPackaged-D120/Saved/Automation/Flow/LocalRejoin-2.png",
+      "sha256": "7b63af8127792ffebca9bd36db85be72f9611cfa5c6449f57f05e68423ac7967"
+    },
+    {
+      "path": "Artifacts/D120/Visual-FinalPackaged-D120/Saved/Automation/Flow/PedestrianPass-0.png",
+      "sha256": "b9bcf44dd6a92fd75733224946681208c175b2bc04ba1f7d41792a3e6142451b"
+    },
+    {
+      "path": "Artifacts/D120/Visual-FinalPackaged-D120/Saved/Automation/Flow/PedestrianPass-1.png",
+      "sha256": "73859f36eb01be7e2a72b900ca2e22e93d29dfce2147186517b41487bf03164a"
+    },
+    {
+      "path": "Artifacts/D120/Visual-FinalPackaged-D120/Saved/Automation/Flow/PedestrianPass-2.png",
+      "sha256": "b5be411d46f15ec28b3113214d410efa2ff8a3b33a4b53de86c1061548a3f88a"
+    }
+  ],
+  "startup": {
+    "path": "Artifacts/D120/Startup-D68-Automation/Saved/Automation/Desktop/Entry.png",
+    "sha256": "7eb99bbd8779046e36e4957062e3a24ebe4940a0983493b97c9b054abba27cb6"
+  },
+  "visualReview": "All five packaged movement scenarios reviewed at start/mid/end; pedestrians occupy distinct sidewalk tracks, local vehicles move forward while steering to/from shoulder, highway car moves to outer lane while responder uses inner lane. Startup menu inspected separately.",
+  "preserved": {
+    "unchangedInputs": 1256,
+    "intentionalExistingSourceChanges": 13,
+    "newSources": 2,
+    "generatedConfigRestored": [
+      {
+        "path": "C:\\Users\\shaun\\Development\\city-sim-builder\\CitySimVR\\Saved\\Config\\WindowsEditor\\EditorPerProjectUserSettings.ini",
+        "beforeSha256": "8d2d7130c6fdabd004af171d652e5bb1acf378996d0706c129392802fff26478",
+        "generatedAfterSha256": "83fb8eb77eed881e13c4e197510c4499936154895b88da952cb052fc5cf368f1"
+      }
+    ],
+    "previousWindowsFiles": 53,
+    "previousWindowsManifest": "Artifacts/D120/PreviousWindowsHashes.json",
+    "originalPlayerSaveUnchanged": true,
+    "publicReleaseUnchanged": true,
+    "absentGeneratedCrashConfigs": [
+      {
+        "path": "C:\\Users\\shaun\\Development\\city-sim-builder\\CitySimVR\\Saved\\Config\\CrashReportClient\\UECC-Windows-37F018904541E0BAF0224EAF33ED2758\\CrashReportClient.ini",
+        "beforeSha256": "ce69d7e7bbd1a64729bd4d5724f3c1efc47c6c3d555da9d2c6ad741eddc3d893",
+        "capturedCopy": "Artifacts/D120/Before/CitySimVR/Saved/Config/CrashReportClient/UECC-Windows-37F018904541E0BAF0224EAF33ED2758/CrashReportClient.ini",
+        "cause": "Absent during final audit; cause unassigned. Generated crash configuration only."
+      },
+      {
+        "path": "C:\\Users\\shaun\\Development\\city-sim-builder\\CitySimVR\\Saved\\Config\\CrashReportClient\\UECC-Windows-56DCE01A41266D2419D4E1A923D14C18\\CrashReportClient.ini",
+        "beforeSha256": "ce69d7e7bbd1a64729bd4d5724f3c1efc47c6c3d555da9d2c6ad741eddc3d893",
+        "capturedCopy": "Artifacts/D120/Before/CitySimVR/Saved/Config/CrashReportClient/UECC-Windows-56DCE01A41266D2419D4E1A923D14C18/CrashReportClient.ini",
+        "cause": "Absent during final audit; cause unassigned. Generated crash configuration only."
+      },
+      {
+        "path": "C:\\Users\\shaun\\Development\\city-sim-builder\\CitySimVR\\Saved\\Config\\CrashReportClient\\UECC-Windows-933A84944DADDAE288E3FA8B149FAF6E\\CrashReportClient.ini",
+        "beforeSha256": "ce69d7e7bbd1a64729bd4d5724f3c1efc47c6c3d555da9d2c6ad741eddc3d893",
+        "capturedCopy": "Artifacts/D120/Before/CitySimVR/Saved/Config/CrashReportClient/UECC-Windows-933A84944DADDAE288E3FA8B149FAF6E/CrashReportClient.ini",
+        "cause": "Absent during final audit; cause unassigned. Generated crash configuration only."
+      },
+      {
+        "path": "C:\\Users\\shaun\\Development\\city-sim-builder\\CitySimVR\\Saved\\Config\\CrashReportClient\\UECC-Windows-9B0DEBD14193FADB11251C9F3B71A5BA\\CrashReportClient.ini",
+        "beforeSha256": "ce69d7e7bbd1a64729bd4d5724f3c1efc47c6c3d555da9d2c6ad741eddc3d893",
+        "capturedCopy": "Artifacts/D120/Before/CitySimVR/Saved/Config/CrashReportClient/UECC-Windows-9B0DEBD14193FADB11251C9F3B71A5BA/CrashReportClient.ini",
+        "cause": "Absent during final audit; cause unassigned. Generated crash configuration only."
+      },
+      {
+        "path": "C:\\Users\\shaun\\Development\\city-sim-builder\\CitySimVR\\Saved\\Config\\CrashReportClient\\UECC-Windows-9DC3601F41B0477826AE3CB6048C530C\\CrashReportClient.ini",
+        "beforeSha256": "ce69d7e7bbd1a64729bd4d5724f3c1efc47c6c3d555da9d2c6ad741eddc3d893",
+        "capturedCopy": "Artifacts/D120/Before/CitySimVR/Saved/Config/CrashReportClient/UECC-Windows-9DC3601F41B0477826AE3CB6048C530C/CrashReportClient.ini",
+        "cause": "Absent during final audit; cause unassigned. Generated crash configuration only."
+      },
+      {
+        "path": "C:\\Users\\shaun\\Development\\city-sim-builder\\CitySimVR\\Saved\\Config\\CrashReportClient\\UECC-Windows-B62FD62E48D169886AAA2F82A8813712\\CrashReportClient.ini",
+        "beforeSha256": "ce69d7e7bbd1a64729bd4d5724f3c1efc47c6c3d555da9d2c6ad741eddc3d893",
+        "capturedCopy": "Artifacts/D120/Before/CitySimVR/Saved/Config/CrashReportClient/UECC-Windows-B62FD62E48D169886AAA2F82A8813712/CrashReportClient.ini",
+        "cause": "Absent during final audit; cause unassigned. Generated crash configuration only."
+      },
+      {
+        "path": "C:\\Users\\shaun\\Development\\city-sim-builder\\CitySimVR\\Saved\\Config\\CrashReportClient\\UECC-Windows-E63277AD43829126B14D1C8883F46942\\CrashReportClient.ini",
+        "beforeSha256": "ce69d7e7bbd1a64729bd4d5724f3c1efc47c6c3d555da9d2c6ad741eddc3d893",
+        "capturedCopy": "Artifacts/D120/Before/CitySimVR/Saved/Config/CrashReportClient/UECC-Windows-E63277AD43829126B14D1C8883F46942/CrashReportClient.ini",
+        "cause": "Absent during final audit; cause unassigned. Generated crash configuration only."
+      }
+    ]
+  },
+  "cleanup": {
+    "files": 27,
+    "logicalBytes": 9590607152,
+    "receipt": "Artifacts/D120/PublishedPackageCleanup/RemovalReceipt.json",
+    "latestRetained": "playtest-2026.10.15.3",
+    "olderRegistryProposal": "Superseded; no proposed file removed"
+  },
+  "logs": [
+    {
+      "path": "Artifacts/D120/EditorBuild-Tenth.log",
+      "sha256": "5a932e94d81ff5a4ed6d2c5fd9db4c846f9cb2e2ca6301944e890f9250ae236c"
+    },
+    {
+      "path": "Artifacts/D120/Tests-Fourth.log",
+      "sha256": "a30910de0eed85ff78eaf3325d73262bfbb2f505dccd6fed6ab5ebe9d5fa5821"
+    },
+    {
+      "path": "Artifacts/D120/Visual-FinalReadyEditor.log",
+      "sha256": "4ff4b1ad4ed5342bb27d36430875c4b2efdc071c3c2f9c15a4370656fa6d369f"
+    },
+    {
+      "path": "Artifacts/D120/WindowsPackage-Delivered.log",
+      "sha256": "92b7af7da6c4d7cc9ae779b218711c0cc3a878738b0128bc79eb5ed89714e5e1"
+    },
+    {
+      "path": "Artifacts/D120/Tests-FinalPackaged.log",
+      "sha256": "fd8a8debb2e682beb3b2fd017136d630acb00cf711ba19cfd98038c261a5a9a0"
+    },
+    {
+      "path": "Artifacts/D120/Visual-FinalPackaged.log",
+      "sha256": "303e362c7d0c2ff57f4f46fcbca3e4f80ddc732f8c6778c14eb01249afbeb948"
+    },
+    {
+      "path": "Artifacts/D120/Startup.log",
+      "sha256": "66b1fceff7f154449ed9a28dfc00f455da6fd18092af184aff1545e7746e2e90"
+    },
+    {
+      "path": "Artifacts/D120/QuestPackage.log",
+      "sha256": "caea9d9189a1d1f2d46094b1ddb856d9fbb148bee45c5ac78182b4ea4d4cc214"
+    },
+    {
+      "path": "Artifacts/D120/QuestVerification.txt",
+      "sha256": "ed9fe00b5cc1f9fe67096bcd756c9f58d825eb966c01d199a18440addb522a6d"
+    },
+    {
+      "path": "Artifacts/D120/Fourth/ShoppingFix.txt",
+      "sha256": "35285b86c8ff2c5a5b68f61dce136799878bb023a2c1ddd04b236f7b92651142"
+    },
+    {
+      "path": "Artifacts/D120/FinalPackaged/ShoppingFix.txt",
+      "sha256": "35285b86c8ff2c5a5b68f61dce136799878bb023a2c1ddd04b236f7b92651142"
+    }
+  ],
+  "nativeWindowReleased": true,
+  "limitations": [
+    "Physical Desktop/PCVR/Quest playtest remains unconfirmed; Quest not installed.",
+    "Shop funding/stock, retail capacity, travel time and real congestion remain authoritative; unmet-month alerts are not forcibly cleared.",
+    "No source push, implementation PR/merge, public release, full-suite or performance program."
+  ],
+  "next": "User playtest via existing Desktop/PCVR launchers; B003/B004 remain open pending acceptance. D90.1/#23 is the next feature after review.",
+  "iterations": [
+    "Initial camera close-ups exposed near-plane clipping; corrected to0.1cm. Storage failures were not counted as passes.",
+    "Resumed Editor capture initially preceded the road rebuild; final fixture waits for the normal board refresh. A packaged attempt exposed an unsafe explicit private rebuild after replacing the city model; that manual call was removed. Failed logs retained.",
+    "After the21-case functional Editor pass, subsequent source edits were limited to the isolated visual fixture setup. Final warnings-as-errors Editor and packaged visual/functional checks validate the delivered fixture and binary."
+  ]
+}

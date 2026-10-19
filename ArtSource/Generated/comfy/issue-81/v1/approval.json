@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "kind": "comfy",
+  "repository": "CitySimVR/citysim",
+  "issue": 81,
+  "version": 1,
+  "by": "shaun",
+  "comment_id": 1010,
+  "request_url": "https://git.shaun-husain.com/CitySimVR/citysim/issues/81#issuecomment-1010",
+  "approved_at": "2026-10-17T00:56:11.420Z",
+  "job_id": "aeea144b-96c5-4150-8ac0-f55280619432",
+  "source_sha": "d28931af5987d1b91f32499811c06d6c7c215213",
+  "artifacts": [
+    {
+      "name": "asset.png",
+      "bytes": 538603,
+      "sha256": "c93711c4318cd9f11d1780154ccca0ab3ecf07a327150dc373f9f299b53075a2"
+    },
+    {
+      "name": "workflow.json",
+      "bytes": 4343,
+      "sha256": "2298799e952cc8a09533bec0096345bbf1ea4f0a2e8cc9069ee70ce9f4faeb7b"
+    },
+    {
+      "name": "provenance.json",
+      "bytes": 2619,
+      "sha256": "406d49d0069f6701173b946adaffe99cfd2507e43e1b4006c9793e82ee4642bd"
+    },
+    {
+      "name": "README.md",
+      "bytes": 378,
+      "sha256": "f68a82a9fe195e1dc55c2d49a6d1af61ef7f782014336ba35f5da0e5a15be3aa"
+    }
+  ],
+  "workflow": "generate_image_zimage",
+  "workflow_sha256": "cf5eb1c4057714c65aed4c3cce38ffe49ec75dd4c335a6a61791af2276e23072",
+  "seed": 81,
+  "prompt": "Full-bleed ROOM INTERIOR BACKGROUND IMAGE, a cropped first-person view from inside a neighborhood bookshop, straight forward at eye level. The camera is inside a real room; there is NO outside of the room visible anywhere. Cream room surfaces continue past EVERY edge of the picture. Two long dusty-teal shelves run horizontally across the back wall and extend BEYOND the left and right image edges. Shelves have visible TOP surfaces and side thickness with gentle contact shadows to communicate depth. Short rows of upright books with differently colored solid spines, two small stacks of closed books and a few face-out books on low shelves. Covers and spines are plain muted colors with absolutely no letters or symbols. Broad clear book silhouettes, muted blue and terracotta accents. Keep ALL important merchandise centered in the MIDDLE HALF of the image with comfortable space around it; outer shelf ends and room side surfaces are unimportant crop continuation. A narrow strip of cream ceiling at the very top and cream floor at the bottom, room back corners near the left and right edges. Restrained centered one-point perspective, level camera, upright verticals. Stylized low-poly game art with broad simple matte shapes, warm cream and dusty teal palette, soft uniform diffuse illumination, readable moderate contrast, mild baked ambient occlusion, clean sparse layout. Crop closely INTO the room: no surrounding background, no external edges, no outer box, no cabinet enclosure, no display case, no diorama or freestanding model, no window opening or window frame, no front wall, no glazing, no mullions, no sill, no border, no glare or reflections. No outside facade, no door or shop sign, no people, words, letters, numbers, labels, prices, logos or watermark. Single room image, no atlas, collage or multiple panels. This image will be mapped onto existing game window geometry and cropped to a tall 11:15 rectangle, so all important merchandise stays well inside the central half of the image.",
+  "archive": {
+    "url": "https://git.shaun-husain.com/attachments/8dda9f11-1a09-461d-9c75-6bbaf2178918",
+    "sha256": "3d78c1fb6b1abaf71387ed434848e4d53dd89e41304b5d36d4644bf44470ba39"
+  },
+  "review_url": "https://git.shaun-husain.com/CitySimVR/citysim/issues/81#issuecomment-928"
+}

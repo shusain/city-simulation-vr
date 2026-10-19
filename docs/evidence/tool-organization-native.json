@@ -1,0 +1,2037 @@
+{
+  "status": "passed",
+  "renamed": 247,
+  "references": {
+    "/Game/CitySim/Art/Citizens/AS_Citizen_Walk_D121": [
+      "/Game/CitySim/Art/Citizens/BS_Citizen_StreetWalk_D121"
+    ],
+    "/Game/CitySim/Art/Citizens/BS_Citizen_StreetWalk_D121": [],
+    "/Game/CitySim/Art/Materials/M_D122RepairWindows": [],
+    "/Game/CitySim/Art/Materials/M_D122ShopWindows": [
+      "/Game/CitySim/Art/Materials/MI_D122Room_bakery",
+      "/Game/CitySim/Art/Materials/MI_D122Room_books",
+      "/Game/CitySim/Art/Materials/MI_D122Room_cafe",
+      "/Game/CitySim/Art/Materials/MI_D122Room_market",
+      "/Game/CitySim/Art/Materials/MI_D122Room_outfitters",
+      "/Game/CitySim/Art/Materials/MI_D122Room_pharmacy",
+      "/Game/CitySim/Art/Materials/MI_D122Room_repairs",
+      "/Game/CitySim/Art/Materials/MI_D122Room_tech"
+    ],
+    "/Game/CitySim/Art/Materials/MI_D122Room_bakery": [
+      "/Game/CitySim/Art/Meshes/SM_CommercialHigh_StoreBakery",
+      "/Game/CitySim/Art/Meshes/SM_CommercialLow_StoreBakery",
+      "/Game/CitySim/Art/Meshes/SM_CommercialMedium_StoreBakery",
+      "/Game/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Shop_A_bakery",
+      "/Game/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Shop_B_bakery",
+      "/Game/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Shop_C_bakery",
+      "/Game/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Shop_D_bakery"
+    ],
+    "/Game/CitySim/Art/Materials/MI_D122Room_books": [
+      "/Game/CitySim/Art/Meshes/SM_CommercialHigh_StoreBooks",
+      "/Game/CitySim/Art/Meshes/SM_CommercialLow_StoreBooks",
+      "/Game/CitySim/Art/Meshes/SM_CommercialMedium_StoreBooks",
+      "/Game/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Shop_A_books",
+      "/Game/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Shop_B_books",
+      "/Game/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Shop_C_books",
+      "/Game/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Shop_D_books"
+    ],
+    "/Game/CitySim/Art/Materials/MI_D122Room_cafe": [
+      "/Game/CitySim/Art/Meshes/SM_CommercialHigh_StoreCafe",
+      "/Game/CitySim/Art/Meshes/SM_CommercialLow_StoreCafe",
+      "/Game/CitySim/Art/Meshes/SM_CommercialMedium_StoreCafe",
+      "/Game/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Shop_A_cafe",
+      "/Game/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Shop_B_cafe",
+      "/Game/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Shop_C_cafe",
+      "/Game/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Shop_D_cafe"
+    ],
+    "/Game/CitySim/Art/Materials/MI_D122Room_market": [
+      "/Game/CitySim/Art/Meshes/SM_CommercialHigh_StoreMarket",
+      "/Game/CitySim/Art/Meshes/SM_CommercialLow_StoreMarket",
+      "/Game/CitySim/Art/Meshes/SM_CommercialMedium_StoreMarket",
+      "/Game/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Shop_A",
+      "/Game/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Shop_B",
+      "/Game/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Shop_C",
+      "/Game/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Shop_D"
+    ],
+    "/Game/CitySim/Art/Materials/MI_D122Room_outfitters": [
+      "/Game/CitySim/Art/Meshes/SM_CommercialHigh_StoreOutfitters",
+      "/Game/CitySim/Art/Meshes/SM_CommercialLow_StoreOutfitters",
+      "/Game/CitySim/Art/Meshes/SM_CommercialMedium_StoreOutfitters",
+      "/Game/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Shop_A_outfitters",
+      "/Game/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Shop_B_outfitters",
+      "/Game/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Shop_C_outfitters",
+      "/Game/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Shop_D_outfitters"
+    ],
+    "/Game/CitySim/Art/Materials/MI_D122Room_pharmacy": [
+      "/Game/CitySim/Art/Meshes/SM_CommercialHigh_StorePharmacy",
+      "/Game/CitySim/Art/Meshes/SM_CommercialLow_StorePharmacy",
+      "/Game/CitySim/Art/Meshes/SM_CommercialMedium_StorePharmacy",
+      "/Game/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Shop_A_pharmacy",
+      "/Game/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Shop_B_pharmacy",
+      "/Game/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Shop_C_pharmacy",
+      "/Game/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Shop_D_pharmacy"
+    ],
+    "/Game/CitySim/Art/Materials/MI_D122Room_repairs": [
+      "/Game/CitySim/Art/Meshes/SM_CommercialHigh_StoreRepairs",
+      "/Game/CitySim/Art/Meshes/SM_CommercialLow_StoreRepairs",
+      "/Game/CitySim/Art/Meshes/SM_CommercialMedium_StoreRepairs",
+      "/Game/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Shop_A_repairs",
+      "/Game/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Shop_B_repairs",
+      "/Game/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Shop_C_repairs",
+      "/Game/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Shop_D_repairs"
+    ],
+    "/Game/CitySim/Art/Materials/MI_D122Room_tech": [
+      "/Game/CitySim/Art/Meshes/SM_CommercialHigh_StoreTech",
+      "/Game/CitySim/Art/Meshes/SM_CommercialLow_StoreTech",
+      "/Game/CitySim/Art/Meshes/SM_CommercialMedium_StoreTech",
+      "/Game/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Shop_A_tech",
+      "/Game/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Shop_B_tech",
+      "/Game/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Shop_C_tech",
+      "/Game/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Shop_D_tech"
+    ],
+    "/Game/CitySim/Art/Parks/Animations/AS_Park_BaseballPitch_D83": [],
+    "/Game/CitySim/Art/Parks/Animations/AS_Park_BaseballSwing_D83": [],
+    "/Game/CitySim/Art/Parks/Animations/AS_Park_BasketballDribble_D83": [],
+    "/Game/CitySim/Art/Parks/Animations/AS_Park_BasketballShot_D83": [],
+    "/Game/CitySim/Art/Parks/Animations/AS_Park_GoalkeeperSave_D83": [],
+    "/Game/CitySim/Art/Parks/Animations/AS_Park_Idle_D83": [
+      "/Game/CitySim/Art/Citizens/BS_Citizen_StreetWalk_D121"
+    ],
+    "/Game/CitySim/Art/Parks/Animations/AS_Park_Skate180_D83": [],
+    "/Game/CitySim/Art/Parks/Animations/AS_Park_SkateCarve_D83": [],
+    "/Game/CitySim/Art/Parks/Animations/AS_Park_SkateKickflip_D83": [],
+    "/Game/CitySim/Art/Parks/Animations/AS_Park_SkateLipStall_D83": [],
+    "/Game/CitySim/Art/Parks/Animations/AS_Park_SkatePush_D83": [],
+    "/Game/CitySim/Art/Parks/Animations/AS_Park_SoccerKick_D83": [],
+    "/Game/CitySim/Art/Parks/Animations/AS_Park_SoccerRun_D83": [],
+    "/Game/CitySim/Art/Parks/Animations/AS_Park_Walk_D83": [],
+    "/Game/CitySim/Art/Prototypes/D79/Materials/M_CityBrick": [
+      "/Game/CitySim/Art/Prototypes/D79/Materials/MI_CharredBrick",
+      "/Game/CitySim/Art/Prototypes/D79/Materials/MI_CommercialBrick",
+      "/Game/CitySim/Art/Prototypes/D79/Materials/MI_IndustrialBrick",
+      "/Game/CitySim/Art/Prototypes/D79/Materials/MI_ResidentialBrick"
+    ],
+    "/Game/CitySim/Art/Prototypes/D79/Materials/M_CityMechanical": [
+      "/Game/CitySim/Art/Prototypes/D79/Materials/MI_CharredMechanical",
+      "/Game/CitySim/Art/Prototypes/D79/Materials/MI_IndustrialMechanical",
+      "/Game/CitySim/Art/Prototypes/D79/Materials/MI_Mechanical"
+    ],
+    "/Game/CitySim/Art/Prototypes/D79/Materials/M_CityRoof": [
+      "/Game/CitySim/Art/Prototypes/D79/Materials/MI_CharredRoofMembrane",
+      "/Game/CitySim/Art/Prototypes/D79/Materials/MI_CharredRoofMetal",
+      "/Game/CitySim/Art/Prototypes/D79/Materials/MI_CharredRoofShingles",
+      "/Game/CitySim/Art/Prototypes/D79/Materials/MI_RoofMembrane",
+      "/Game/CitySim/Art/Prototypes/D79/Materials/MI_RoofMetal",
+      "/Game/CitySim/Art/Prototypes/D79/Materials/MI_RoofShingles"
+    ],
+    "/Game/CitySim/Art/Prototypes/D79/Materials/M_StoreSigns": [
+      "/Game/CitySim/Art/Prototypes/D79/Materials/MI_StoreSignTall",
+      "/Game/CitySim/Art/Prototypes/D79/Materials/MI_StoreSignWide"
+    ],
+    "/Game/CitySim/Art/Prototypes/D79/Materials/MI_CharredBrick": [
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_StoreBakery_Damaged",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_StoreBooks_Damaged",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_StoreCafe_Damaged",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_StoreMarket_Damaged",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_StoreOutfitters_Damaged",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_StorePharmacy_Damaged",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_StoreRepairs_Damaged",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_StoreTech_Damaged",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_SurfacePrototype_Damaged",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_StoreBakery_Damaged",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_StoreBooks_Damaged",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_StoreCafe_Damaged",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_StoreMarket_Damaged",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_StoreOutfitters_Damaged",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_StorePharmacy_Damaged",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_StoreRepairs_Damaged",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_StoreTech_Damaged",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_SurfacePrototype_Damaged",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_StoreBakery_Damaged",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_StoreBooks_Damaged",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_StoreCafe_Damaged",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_StoreMarket_Damaged",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_StoreOutfitters_Damaged",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_StorePharmacy_Damaged",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_StoreRepairs_Damaged",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_StoreTech_Damaged",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_SurfacePrototype_Damaged",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_IndustrialHigh_SurfacePrototype_Damaged",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_IndustrialLow_SurfacePrototype_Damaged",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_IndustrialMedium_SurfacePrototype_Damaged",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_ResidentialHigh_SurfacePrototype_Damaged",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_ResidentialLow_SurfacePrototype_Damaged",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_ResidentialMedium_SurfacePrototype_Damaged"
+    ],
+    "/Game/CitySim/Art/Prototypes/D79/Materials/MI_CharredMechanical": [
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_IndustrialHigh_SurfacePrototype_Damaged",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_IndustrialLow_SurfacePrototype_Damaged",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_IndustrialMedium_SurfacePrototype_Damaged",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_ResidentialHigh_SurfacePrototype_Damaged"
+    ],
+    "/Game/CitySim/Art/Prototypes/D79/Materials/MI_CharredRoofMembrane": [
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_StoreBakery_Damaged",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_StoreBooks_Damaged",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_StoreCafe_Damaged",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_StoreMarket_Damaged",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_StoreOutfitters_Damaged",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_StorePharmacy_Damaged",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_StoreRepairs_Damaged",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_StoreTech_Damaged",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_SurfacePrototype_Damaged",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_StoreBakery_Damaged",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_StoreBooks_Damaged",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_StoreCafe_Damaged",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_StoreMarket_Damaged",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_StoreOutfitters_Damaged",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_StorePharmacy_Damaged",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_StoreRepairs_Damaged",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_StoreTech_Damaged",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_SurfacePrototype_Damaged",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_StoreBakery_Damaged",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_StoreBooks_Damaged",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_StoreCafe_Damaged",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_StoreMarket_Damaged",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_StoreOutfitters_Damaged",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_StorePharmacy_Damaged",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_StoreRepairs_Damaged",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_StoreTech_Damaged",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_SurfacePrototype_Damaged",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_ResidentialHigh_SurfacePrototype_Damaged",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_ResidentialMedium_SurfacePrototype_Damaged"
+    ],
+    "/Game/CitySim/Art/Prototypes/D79/Materials/MI_CharredRoofMetal": [
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_IndustrialHigh_SurfacePrototype_Damaged",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_IndustrialLow_SurfacePrototype_Damaged",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_IndustrialMedium_SurfacePrototype_Damaged"
+    ],
+    "/Game/CitySim/Art/Prototypes/D79/Materials/MI_CharredRoofShingles": [
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_ResidentialLow_SurfacePrototype_Damaged"
+    ],
+    "/Game/CitySim/Art/Prototypes/D79/Materials/MI_CharredTrim": [
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_StoreBakery_Damaged",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_StoreBooks_Damaged",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_StoreCafe_Damaged",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_StoreMarket_Damaged",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_StoreOutfitters_Damaged",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_StorePharmacy_Damaged",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_StoreRepairs_Damaged",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_StoreTech_Damaged",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_SurfacePrototype_Damaged",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_StoreBakery_Damaged",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_StoreBooks_Damaged",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_StoreCafe_Damaged",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_StoreMarket_Damaged",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_StoreOutfitters_Damaged",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_StorePharmacy_Damaged",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_StoreRepairs_Damaged",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_StoreTech_Damaged",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_SurfacePrototype_Damaged",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_StoreBakery_Damaged",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_StoreBooks_Damaged",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_StoreCafe_Damaged",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_StoreMarket_Damaged",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_StoreOutfitters_Damaged",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_StorePharmacy_Damaged",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_StoreRepairs_Damaged",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_StoreTech_Damaged",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_SurfacePrototype_Damaged",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_IndustrialHigh_SurfacePrototype_Damaged",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_IndustrialLow_SurfacePrototype_Damaged",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_IndustrialMedium_SurfacePrototype_Damaged",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_ResidentialHigh_SurfacePrototype_Damaged",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_ResidentialLow_SurfacePrototype_Damaged",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_ResidentialMedium_SurfacePrototype_Damaged"
+    ],
+    "/Game/CitySim/Art/Prototypes/D79/Materials/MI_CommercialBrick": [
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_StoreBakery",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_StoreBooks",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_StoreCafe",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_StoreMarket",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_StoreOutfitters",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_StorePharmacy",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_StoreRepairs",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_StoreTech",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_SurfacePrototype",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_StoreBakery",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_StoreBooks",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_StoreCafe",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_StoreMarket",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_StoreOutfitters",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_StorePharmacy",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_StoreRepairs",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_StoreTech",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_SurfacePrototype",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_StoreBakery",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_StoreBooks",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_StoreCafe",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_StoreMarket",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_StoreOutfitters",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_StorePharmacy",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_StoreRepairs",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_StoreTech",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_SurfacePrototype"
+    ],
+    "/Game/CitySim/Art/Prototypes/D79/Materials/MI_IndustrialBrick": [
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_IndustrialHigh_SurfacePrototype",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_IndustrialLow_SurfacePrototype",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_IndustrialMedium_SurfacePrototype"
+    ],
+    "/Game/CitySim/Art/Prototypes/D79/Materials/MI_IndustrialMechanical": [
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_IndustrialHigh_SurfacePrototype",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_IndustrialLow_SurfacePrototype",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_IndustrialMedium_SurfacePrototype"
+    ],
+    "/Game/CitySim/Art/Prototypes/D79/Materials/MI_Mechanical": [
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_ResidentialHigh_SurfacePrototype"
+    ],
+    "/Game/CitySim/Art/Prototypes/D79/Materials/MI_ResidentialBrick": [
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_ResidentialHigh_SurfacePrototype",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_ResidentialLow_SurfacePrototype",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_ResidentialMedium_SurfacePrototype"
+    ],
+    "/Game/CitySim/Art/Prototypes/D79/Materials/MI_Roof": [
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_StoreBakery",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_StoreBooks",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_StoreCafe",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_StoreMarket",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_StoreOutfitters",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_StorePharmacy",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_StoreRepairs",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_StoreTech",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_SurfacePrototype",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_StoreBakery",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_StoreBooks",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_StoreCafe",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_StoreMarket",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_StoreOutfitters",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_StorePharmacy",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_StoreRepairs",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_StoreTech",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_SurfacePrototype",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_StoreBakery",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_StoreBooks",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_StoreCafe",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_StoreMarket",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_StoreOutfitters",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_StorePharmacy",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_StoreRepairs",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_StoreTech",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_SurfacePrototype",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_IndustrialHigh_SurfacePrototype",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_IndustrialLow_SurfacePrototype",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_IndustrialMedium_SurfacePrototype",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_ResidentialHigh_SurfacePrototype",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_ResidentialLow_SurfacePrototype",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_ResidentialMedium_SurfacePrototype"
+    ],
+    "/Game/CitySim/Art/Prototypes/D79/Materials/MI_RoofMembrane": [
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_StoreBakery",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_StoreBooks",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_StoreCafe",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_StoreMarket",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_StoreOutfitters",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_StorePharmacy",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_StoreRepairs",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_StoreTech",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_SurfacePrototype",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_StoreBakery",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_StoreBooks",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_StoreCafe",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_StoreMarket",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_StoreOutfitters",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_StorePharmacy",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_StoreRepairs",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_StoreTech",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_SurfacePrototype",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_StoreBakery",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_StoreBooks",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_StoreCafe",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_StoreMarket",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_StoreOutfitters",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_StorePharmacy",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_StoreRepairs",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_StoreTech",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_SurfacePrototype",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_ResidentialHigh_SurfacePrototype",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_ResidentialMedium_SurfacePrototype"
+    ],
+    "/Game/CitySim/Art/Prototypes/D79/Materials/MI_RoofMetal": [
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_IndustrialHigh_SurfacePrototype",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_IndustrialLow_SurfacePrototype",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_IndustrialMedium_SurfacePrototype"
+    ],
+    "/Game/CitySim/Art/Prototypes/D79/Materials/MI_RoofShingles": [
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_ResidentialLow_SurfacePrototype"
+    ],
+    "/Game/CitySim/Art/Prototypes/D79/Materials/MI_StoreSignTall": [
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_StoreBakery",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_StoreBooks",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_StoreCafe",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_StoreMarket",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_StoreOutfitters",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_StorePharmacy",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_StoreRepairs",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_StoreTech",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_SurfacePrototype"
+    ],
+    "/Game/CitySim/Art/Prototypes/D79/Materials/MI_StoreSignWide": [
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_StoreBakery",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_StoreBooks",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_StoreCafe",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_StoreMarket",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_StoreOutfitters",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_StorePharmacy",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_StoreRepairs",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_StoreTech",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_SurfacePrototype",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_StoreBakery",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_StoreBooks",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_StoreCafe",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_StoreMarket",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_StoreOutfitters",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_StorePharmacy",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_StoreRepairs",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_StoreTech",
+      "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_SurfacePrototype"
+    ],
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_StoreBakery": [],
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_StoreBakery_Damaged": [],
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_StoreBooks": [],
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_StoreBooks_Damaged": [],
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_StoreCafe": [],
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_StoreCafe_Damaged": [],
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_StoreMarket": [],
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_StoreMarket_Damaged": [],
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_StoreOutfitters": [],
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_StoreOutfitters_Damaged": [],
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_StorePharmacy": [],
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_StorePharmacy_Damaged": [],
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_StoreRepairs": [],
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_StoreRepairs_Damaged": [],
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_StoreTech": [],
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_StoreTech_Damaged": [],
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_SurfacePrototype": [],
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_SurfacePrototype_Damaged": [],
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_StoreBakery": [],
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_StoreBakery_Damaged": [],
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_StoreBooks": [],
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_StoreBooks_Damaged": [],
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_StoreCafe": [],
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_StoreCafe_Damaged": [],
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_StoreMarket": [],
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_StoreMarket_Damaged": [],
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_StoreOutfitters": [],
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_StoreOutfitters_Damaged": [],
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_StorePharmacy": [],
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_StorePharmacy_Damaged": [],
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_StoreRepairs": [],
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_StoreRepairs_Damaged": [],
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_StoreTech": [],
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_StoreTech_Damaged": [],
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_SurfacePrototype": [],
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_SurfacePrototype_Damaged": [],
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_StoreBakery": [],
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_StoreBakery_Damaged": [],
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_StoreBooks": [],
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_StoreBooks_Damaged": [],
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_StoreCafe": [],
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_StoreCafe_Damaged": [],
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_StoreMarket": [],
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_StoreMarket_Damaged": [],
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_StoreOutfitters": [],
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_StoreOutfitters_Damaged": [],
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_StorePharmacy": [],
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_StorePharmacy_Damaged": [],
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_StoreRepairs": [],
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_StoreRepairs_Damaged": [],
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_StoreTech": [],
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_StoreTech_Damaged": [],
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_SurfacePrototype": [],
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_SurfacePrototype_Damaged": [],
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_IndustrialHigh_SurfacePrototype": [],
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_IndustrialHigh_SurfacePrototype_Damaged": [],
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_IndustrialLow_SurfacePrototype": [],
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_IndustrialLow_SurfacePrototype_Damaged": [],
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_IndustrialMedium_SurfacePrototype": [],
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_IndustrialMedium_SurfacePrototype_Damaged": [],
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_ResidentialHigh_SurfacePrototype": [],
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_ResidentialHigh_SurfacePrototype_Damaged": [],
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_ResidentialLow_SurfacePrototype": [],
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_ResidentialLow_SurfacePrototype_Damaged": [],
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_ResidentialMedium_SurfacePrototype": [],
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_ResidentialMedium_SurfacePrototype_Damaged": [],
+    "/Game/CitySim/Art/Prototypes/D79/Textures/T_CityBrick_BaseColor": [
+      "/Game/CitySim/Art/Prototypes/D79/Materials/M_CityBrick"
+    ],
+    "/Game/CitySim/Art/Prototypes/D79/Textures/T_CityBrick_Normal": [
+      "/Game/CitySim/Art/Prototypes/D79/Materials/M_CityBrick"
+    ],
+    "/Game/CitySim/Art/Prototypes/D79/Textures/T_CityBrick_ORM": [
+      "/Game/CitySim/Art/Prototypes/D79/Materials/M_CityBrick"
+    ],
+    "/Game/CitySim/Art/Prototypes/D79/Textures/T_CityMechanical_BaseColor": [
+      "/Game/CitySim/Art/Prototypes/D79/Materials/M_CityMechanical"
+    ],
+    "/Game/CitySim/Art/Prototypes/D79/Textures/T_CityMechanical_Normal": [
+      "/Game/CitySim/Art/Prototypes/D79/Materials/M_CityMechanical"
+    ],
+    "/Game/CitySim/Art/Prototypes/D79/Textures/T_CityMechanical_ORM": [
+      "/Game/CitySim/Art/Prototypes/D79/Materials/M_CityMechanical"
+    ],
+    "/Game/CitySim/Art/Prototypes/D79/Textures/T_RoofMembrane_BaseColor": [
+      "/Game/CitySim/Art/Prototypes/D79/Materials/M_CityRoof",
+      "/Game/CitySim/Art/Prototypes/D79/Materials/MI_CharredRoofMembrane",
+      "/Game/CitySim/Art/Prototypes/D79/Materials/MI_RoofMembrane"
+    ],
+    "/Game/CitySim/Art/Prototypes/D79/Textures/T_RoofMembrane_Normal": [
+      "/Game/CitySim/Art/Prototypes/D79/Materials/M_CityRoof",
+      "/Game/CitySim/Art/Prototypes/D79/Materials/MI_CharredRoofMembrane",
+      "/Game/CitySim/Art/Prototypes/D79/Materials/MI_RoofMembrane"
+    ],
+    "/Game/CitySim/Art/Prototypes/D79/Textures/T_RoofMembrane_ORM": [
+      "/Game/CitySim/Art/Prototypes/D79/Materials/M_CityRoof",
+      "/Game/CitySim/Art/Prototypes/D79/Materials/MI_CharredRoofMembrane",
+      "/Game/CitySim/Art/Prototypes/D79/Materials/MI_RoofMembrane"
+    ],
+    "/Game/CitySim/Art/Prototypes/D79/Textures/T_RoofMetal_BaseColor": [
+      "/Game/CitySim/Art/Prototypes/D79/Materials/MI_CharredRoofMetal",
+      "/Game/CitySim/Art/Prototypes/D79/Materials/MI_RoofMetal"
+    ],
+    "/Game/CitySim/Art/Prototypes/D79/Textures/T_RoofMetal_Normal": [
+      "/Game/CitySim/Art/Prototypes/D79/Materials/MI_CharredRoofMetal",
+      "/Game/CitySim/Art/Prototypes/D79/Materials/MI_RoofMetal"
+    ],
+    "/Game/CitySim/Art/Prototypes/D79/Textures/T_RoofMetal_ORM": [
+      "/Game/CitySim/Art/Prototypes/D79/Materials/MI_CharredRoofMetal",
+      "/Game/CitySim/Art/Prototypes/D79/Materials/MI_RoofMetal"
+    ],
+    "/Game/CitySim/Art/Prototypes/D79/Textures/T_RoofShingles_BaseColor": [
+      "/Game/CitySim/Art/Prototypes/D79/Materials/MI_CharredRoofShingles",
+      "/Game/CitySim/Art/Prototypes/D79/Materials/MI_RoofShingles"
+    ],
+    "/Game/CitySim/Art/Prototypes/D79/Textures/T_RoofShingles_Normal": [
+      "/Game/CitySim/Art/Prototypes/D79/Materials/MI_CharredRoofShingles",
+      "/Game/CitySim/Art/Prototypes/D79/Materials/MI_RoofShingles"
+    ],
+    "/Game/CitySim/Art/Prototypes/D79/Textures/T_RoofShingles_ORM": [
+      "/Game/CitySim/Art/Prototypes/D79/Materials/MI_CharredRoofShingles",
+      "/Game/CitySim/Art/Prototypes/D79/Materials/MI_RoofShingles"
+    ],
+    "/Game/CitySim/Art/Prototypes/D79/Textures/T_StoreSigns_Tall_BaseColor": [
+      "/Game/CitySim/Art/Prototypes/D79/Materials/MI_StoreSignTall"
+    ],
+    "/Game/CitySim/Art/Prototypes/D79/Textures/T_StoreSigns_Wide_BaseColor": [
+      "/Game/CitySim/Art/Prototypes/D79/Materials/M_StoreSigns",
+      "/Game/CitySim/Art/Prototypes/D79/Materials/MI_StoreSignWide"
+    ],
+    "/Game/CitySim/Art/Textures/T_D122RepairDisplays": [
+      "/Game/CitySim/Art/Materials/M_D122RepairWindows"
+    ],
+    "/Game/CitySim/Art/Textures/T_D122Room_bakery": [
+      "/Game/CitySim/Art/Materials/MI_D122Room_bakery"
+    ],
+    "/Game/CitySim/Art/Textures/T_D122Room_books": [
+      "/Game/CitySim/Art/Materials/MI_D122Room_books"
+    ],
+    "/Game/CitySim/Art/Textures/T_D122Room_cafe": [
+      "/Game/CitySim/Art/Materials/MI_D122Room_cafe"
+    ],
+    "/Game/CitySim/Art/Textures/T_D122Room_market": [
+      "/Game/CitySim/Art/Materials/M_D122ShopWindows",
+      "/Game/CitySim/Art/Materials/MI_D122Room_market"
+    ],
+    "/Game/CitySim/Art/Textures/T_D122Room_outfitters": [
+      "/Game/CitySim/Art/Materials/MI_D122Room_outfitters"
+    ],
+    "/Game/CitySim/Art/Textures/T_D122Room_pharmacy": [
+      "/Game/CitySim/Art/Materials/MI_D122Room_pharmacy"
+    ],
+    "/Game/CitySim/Art/Textures/T_D122Room_repairs": [
+      "/Game/CitySim/Art/Materials/MI_D122Room_repairs"
+    ],
+    "/Game/CitySim/Art/Textures/T_D122Room_tech": [
+      "/Game/CitySim/Art/Materials/MI_D122Room_tech"
+    ],
+    "/Game/CitySim/Audio/D58/Ambience/City/SW_Car_Driving": [
+      "/Game/CitySim/Audio/D58/Graphs/SC_Car_Driving"
+    ],
+    "/Game/CitySim/Audio/D58/Ambience/City/SW_Car_Idle": [
+      "/Game/CitySim/Audio/D58/Graphs/SC_Car_Idle"
+    ],
+    "/Game/CitySim/Audio/D58/Ambience/City/SW_Car_Pass": [
+      "/Game/CitySim/Audio/D58/Graphs/MS_Car_Pass"
+    ],
+    "/Game/CitySim/Audio/D58/Ambience/City/SW_City_Distant": [
+      "/Game/CitySim/Audio/D58/Graphs/MS_City_Distant"
+    ],
+    "/Game/CitySim/Audio/D58/Ambience/City/SW_Market_Murmur": [
+      "/Game/CitySim/Audio/D58/Graphs/MS_Market_Murmur"
+    ],
+    "/Game/CitySim/Audio/D58/Ambience/City/SW_Truck_Driving": [
+      "/Game/CitySim/Audio/D58/Graphs/SC_Truck_Driving"
+    ],
+    "/Game/CitySim/Audio/D58/Ambience/City/SW_Truck_Idle": [
+      "/Game/CitySim/Audio/D58/Graphs/SC_Truck_Idle"
+    ],
+    "/Game/CitySim/Audio/D58/Ambience/City/SW_Truck_Pass": [
+      "/Game/CitySim/Audio/D58/Graphs/MS_Truck_Pass"
+    ],
+    "/Game/CitySim/Audio/D58/Ambience/Industry/SW_Industry_Clank": [
+      "/Game/CitySim/Audio/D58/Graphs/MS_Industry_Clank"
+    ],
+    "/Game/CitySim/Audio/D58/Ambience/Industry/SW_Industry_Idle": [
+      "/Game/CitySim/Audio/D58/Graphs/MS_Industry_Idle"
+    ],
+    "/Game/CitySim/Audio/D58/Ambience/Industry/SW_Industry_Working": [
+      "/Game/CitySim/Audio/D58/Graphs/MS_Industry_Working"
+    ],
+    "/Game/CitySim/Audio/D58/Ambience/Park/SW_Park_Foliage": [
+      "/Game/CitySim/Audio/D58/Graphs/MS_Park_Foliage"
+    ],
+    "/Game/CitySim/Audio/D58/Ambience/Park/SW_Park_Fountain": [
+      "/Game/CitySim/Audio/D58/Graphs/MS_Park_Fountain"
+    ],
+    "/Game/CitySim/Audio/D58/Ambience/Park/SW_Water_Shore": [
+      "/Game/CitySim/Audio/D58/Graphs/MS_Water_Shore"
+    ],
+    "/Game/CitySim/Audio/D58/Ambience/Weather/SW_Rain_Downpour": [
+      "/Game/CitySim/Audio/D58/Graphs/MS_Rain_Downpour"
+    ],
+    "/Game/CitySim/Audio/D58/Ambience/Weather/SW_Rain_Heavy": [
+      "/Game/CitySim/Audio/D58/Graphs/MS_Rain_Heavy"
+    ],
+    "/Game/CitySim/Audio/D58/Ambience/Weather/SW_Rain_Light": [
+      "/Game/CitySim/Audio/D58/Graphs/MS_Rain_Light"
+    ],
+    "/Game/CitySim/Audio/D58/Ambience/Weather/SW_Rain_Moderate": [
+      "/Game/CitySim/Audio/D58/Graphs/MS_Rain_Moderate"
+    ],
+    "/Game/CitySim/Audio/D58/Ambience/Weather/SW_Storm_Roar": [
+      "/Game/CitySim/Audio/D58/Graphs/MS_Storm_Roar"
+    ],
+    "/Game/CitySim/Audio/D58/Ambience/Weather/SW_Thunder_Distant": [
+      "/Game/CitySim/Audio/D58/Graphs/MS_Thunder_Distant"
+    ],
+    "/Game/CitySim/Audio/D58/Ambience/Weather/SW_Thunder_Near": [
+      "/Game/CitySim/Audio/D58/Graphs/MS_Thunder_Near"
+    ],
+    "/Game/CitySim/Audio/D58/Ambience/Weather/SW_Wind_Gusts": [
+      "/Game/CitySim/Audio/D58/Graphs/MS_Wind_Gusts"
+    ],
+    "/Game/CitySim/Audio/D58/Ambience/Weather/SW_Wind_Light": [
+      "/Game/CitySim/Audio/D58/Graphs/MS_Wind_Light"
+    ],
+    "/Game/CitySim/Audio/D58/Ambience/Wildlife/SW_Bird_Chirp_A": [
+      "/Game/CitySim/Audio/D58/Graphs/MS_Bird_Chirp_A"
+    ],
+    "/Game/CitySim/Audio/D58/Ambience/Wildlife/SW_Bird_Chirp_B": [
+      "/Game/CitySim/Audio/D58/Graphs/MS_Bird_Chirp_B"
+    ],
+    "/Game/CitySim/Audio/D58/Ambience/Wildlife/SW_Bird_Chirp_C": [
+      "/Game/CitySim/Audio/D58/Graphs/MS_Bird_Chirp_C"
+    ],
+    "/Game/CitySim/Audio/D58/Ambience/Wildlife/SW_Cricket_Chirp_Pair": [
+      "/Game/CitySim/Audio/D58/Graphs/MS_Cricket_Chirp_Pair"
+    ],
+    "/Game/CitySim/Audio/D58/Ambience/Wildlife/SW_Night_Crickets_Dense": [
+      "/Game/CitySim/Audio/D58/Graphs/MS_Night_Crickets_Dense"
+    ],
+    "/Game/CitySim/Audio/D58/Ambience/Wildlife/SW_Night_Crickets_Light": [
+      "/Game/CitySim/Audio/D58/Graphs/MS_Night_Crickets_Light"
+    ],
+    "/Game/CitySim/Audio/D58/Effects/Activity/SW_Construction_Tap": [
+      "/Game/CitySim/Audio/D58/Graphs/MS_Construction_Tap"
+    ],
+    "/Game/CitySim/Audio/D58/Effects/Activity/SW_Demolition_Impact": [
+      "/Game/CitySim/Audio/D58/Graphs/MS_Demolition_Impact"
+    ],
+    "/Game/CitySim/Audio/D58/Effects/Activity/SW_Earthquake_Rumble": [
+      "/Game/CitySim/Audio/D58/Graphs/MS_Earthquake_Rumble"
+    ],
+    "/Game/CitySim/Audio/D58/Effects/Activity/SW_Fire_Crackle": [
+      "/Game/CitySim/Audio/D58/Graphs/MS_Fire_Crackle"
+    ],
+    "/Game/CitySim/Audio/D58/Graphs/MS_Action_Confirm": [],
+    "/Game/CitySim/Audio/D58/Graphs/MS_Action_Denied": [],
+    "/Game/CitySim/Audio/D58/Graphs/MS_Ambulance_Intro": [],
+    "/Game/CitySim/Audio/D58/Graphs/MS_Ambulance_Loop": [],
+    "/Game/CitySim/Audio/D58/Graphs/MS_Ambulance_Outro": [],
+    "/Game/CitySim/Audio/D58/Graphs/MS_Bird_Chirp_A": [],
+    "/Game/CitySim/Audio/D58/Graphs/MS_Bird_Chirp_B": [],
+    "/Game/CitySim/Audio/D58/Graphs/MS_Bird_Chirp_C": [],
+    "/Game/CitySim/Audio/D58/Graphs/MS_Car_Pass": [],
+    "/Game/CitySim/Audio/D58/Graphs/MS_City_Distant": [],
+    "/Game/CitySim/Audio/D58/Graphs/MS_Construction_Tap": [],
+    "/Game/CitySim/Audio/D58/Graphs/MS_Cricket_Chirp_Pair": [],
+    "/Game/CitySim/Audio/D58/Graphs/MS_Demolition_Impact": [],
+    "/Game/CitySim/Audio/D58/Graphs/MS_Earthquake_Rumble": [],
+    "/Game/CitySim/Audio/D58/Graphs/MS_Fire_Crackle": [],
+    "/Game/CitySim/Audio/D58/Graphs/MS_Fire_Horn": [],
+    "/Game/CitySim/Audio/D58/Graphs/MS_Fire_Intro": [],
+    "/Game/CitySim/Audio/D58/Graphs/MS_Fire_Loop": [],
+    "/Game/CitySim/Audio/D58/Graphs/MS_Fire_Outro": [],
+    "/Game/CitySim/Audio/D58/Graphs/MS_Incident_Notice": [],
+    "/Game/CitySim/Audio/D58/Graphs/MS_Industry_Clank": [],
+    "/Game/CitySim/Audio/D58/Graphs/MS_Industry_Idle": [],
+    "/Game/CitySim/Audio/D58/Graphs/MS_Industry_Working": [],
+    "/Game/CitySim/Audio/D58/Graphs/MS_Market_Murmur": [],
+    "/Game/CitySim/Audio/D58/Graphs/MS_Milestone_Reached": [],
+    "/Game/CitySim/Audio/D58/Graphs/MS_Night_Crickets_Dense": [],
+    "/Game/CitySim/Audio/D58/Graphs/MS_Night_Crickets_Light": [],
+    "/Game/CitySim/Audio/D58/Graphs/MS_Objective_Complete": [],
+    "/Game/CitySim/Audio/D58/Graphs/MS_Park_Foliage": [],
+    "/Game/CitySim/Audio/D58/Graphs/MS_Park_Fountain": [],
+    "/Game/CitySim/Audio/D58/Graphs/MS_Police_Alternate": [],
+    "/Game/CitySim/Audio/D58/Graphs/MS_Police_Intro": [],
+    "/Game/CitySim/Audio/D58/Graphs/MS_Police_Loop": [],
+    "/Game/CitySim/Audio/D58/Graphs/MS_Police_Outro": [],
+    "/Game/CitySim/Audio/D58/Graphs/MS_Rain_Downpour": [],
+    "/Game/CitySim/Audio/D58/Graphs/MS_Rain_Heavy": [],
+    "/Game/CitySim/Audio/D58/Graphs/MS_Rain_Light": [],
+    "/Game/CitySim/Audio/D58/Graphs/MS_Rain_Moderate": [],
+    "/Game/CitySim/Audio/D58/Graphs/MS_Service_Attention": [],
+    "/Game/CitySim/Audio/D58/Graphs/MS_Service_Recovered": [],
+    "/Game/CitySim/Audio/D58/Graphs/MS_Storm_Roar": [],
+    "/Game/CitySim/Audio/D58/Graphs/MS_Thunder_Distant": [],
+    "/Game/CitySim/Audio/D58/Graphs/MS_Thunder_Near": [],
+    "/Game/CitySim/Audio/D58/Graphs/MS_Town_Intro": [],
+    "/Game/CitySim/Audio/D58/Graphs/MS_Town_Loop": [],
+    "/Game/CitySim/Audio/D58/Graphs/MS_Town_Outro": [],
+    "/Game/CitySim/Audio/D58/Graphs/MS_Truck_Pass": [],
+    "/Game/CitySim/Audio/D58/Graphs/MS_Water_Shore": [],
+    "/Game/CitySim/Audio/D58/Graphs/MS_Wind_Gusts": [],
+    "/Game/CitySim/Audio/D58/Graphs/MS_Wind_Light": [],
+    "/Game/CitySim/Audio/D58/Graphs/SC_Car_Driving": [],
+    "/Game/CitySim/Audio/D58/Graphs/SC_Car_Idle": [],
+    "/Game/CitySim/Audio/D58/Graphs/SC_Truck_Driving": [],
+    "/Game/CitySim/Audio/D58/Graphs/SC_Truck_Idle": [],
+    "/Game/CitySim/Audio/D58/Sirens/SW_Ambulance_Intro": [
+      "/Game/CitySim/Audio/D58/Graphs/MS_Ambulance_Intro"
+    ],
+    "/Game/CitySim/Audio/D58/Sirens/SW_Ambulance_Loop": [
+      "/Game/CitySim/Audio/D58/Graphs/MS_Ambulance_Loop"
+    ],
+    "/Game/CitySim/Audio/D58/Sirens/SW_Ambulance_Outro": [
+      "/Game/CitySim/Audio/D58/Graphs/MS_Ambulance_Outro"
+    ],
+    "/Game/CitySim/Audio/D58/Sirens/SW_Fire_Horn": [
+      "/Game/CitySim/Audio/D58/Graphs/MS_Fire_Horn"
+    ],
+    "/Game/CitySim/Audio/D58/Sirens/SW_Fire_Intro": [
+      "/Game/CitySim/Audio/D58/Graphs/MS_Fire_Intro"
+    ],
+    "/Game/CitySim/Audio/D58/Sirens/SW_Fire_Loop": [
+      "/Game/CitySim/Audio/D58/Graphs/MS_Fire_Loop"
+    ],
+    "/Game/CitySim/Audio/D58/Sirens/SW_Fire_Outro": [
+      "/Game/CitySim/Audio/D58/Graphs/MS_Fire_Outro"
+    ],
+    "/Game/CitySim/Audio/D58/Sirens/SW_Police_Alternate": [
+      "/Game/CitySim/Audio/D58/Graphs/MS_Police_Alternate"
+    ],
+    "/Game/CitySim/Audio/D58/Sirens/SW_Police_Intro": [
+      "/Game/CitySim/Audio/D58/Graphs/MS_Police_Intro"
+    ],
+    "/Game/CitySim/Audio/D58/Sirens/SW_Police_Loop": [
+      "/Game/CitySim/Audio/D58/Graphs/MS_Police_Loop"
+    ],
+    "/Game/CitySim/Audio/D58/Sirens/SW_Police_Outro": [
+      "/Game/CitySim/Audio/D58/Graphs/MS_Police_Outro"
+    ],
+    "/Game/CitySim/Audio/D58/Sirens/SW_Town_Intro": [
+      "/Game/CitySim/Audio/D58/Graphs/MS_Town_Intro"
+    ],
+    "/Game/CitySim/Audio/D58/Sirens/SW_Town_Loop": [
+      "/Game/CitySim/Audio/D58/Graphs/MS_Town_Loop"
+    ],
+    "/Game/CitySim/Audio/D58/Sirens/SW_Town_Outro": [
+      "/Game/CitySim/Audio/D58/Graphs/MS_Town_Outro"
+    ],
+    "/Game/CitySim/Audio/D58/UI/SW_Action_Confirm": [
+      "/Game/CitySim/Audio/D58/Graphs/MS_Action_Confirm"
+    ],
+    "/Game/CitySim/Audio/D58/UI/SW_Action_Denied": [
+      "/Game/CitySim/Audio/D58/Graphs/MS_Action_Denied"
+    ],
+    "/Game/CitySim/Audio/D58/UI/SW_Incident_Notice": [
+      "/Game/CitySim/Audio/D58/Graphs/MS_Incident_Notice"
+    ],
+    "/Game/CitySim/Audio/D58/UI/SW_Milestone_Reached": [
+      "/Game/CitySim/Audio/D58/Graphs/MS_Milestone_Reached"
+    ],
+    "/Game/CitySim/Audio/D58/UI/SW_Objective_Complete": [
+      "/Game/CitySim/Audio/D58/Graphs/MS_Objective_Complete"
+    ],
+    "/Game/CitySim/Audio/D58/UI/SW_Service_Attention": [
+      "/Game/CitySim/Audio/D58/Graphs/MS_Service_Attention"
+    ],
+    "/Game/CitySim/Audio/D58/UI/SW_Service_Recovered": [
+      "/Game/CitySim/Audio/D58/Graphs/MS_Service_Recovered"
+    ]
+  },
+  "classes": {
+    "/Game/CitySim/Art/Citizens/AS_Citizen_Walk_D121": "/Script/Engine.AnimSequence",
+    "/Game/CitySim/Art/Citizens/BS_Citizen_StreetWalk_D121": "/Script/Engine.BlendSpace1D",
+    "/Game/CitySim/Art/Materials/M_D122RepairWindows": "/Script/Engine.Material",
+    "/Game/CitySim/Art/Materials/M_D122ShopWindows": "/Script/Engine.Material",
+    "/Game/CitySim/Art/Materials/MI_D122Room_bakery": "/Script/Engine.MaterialInstanceConstant",
+    "/Game/CitySim/Art/Materials/MI_D122Room_books": "/Script/Engine.MaterialInstanceConstant",
+    "/Game/CitySim/Art/Materials/MI_D122Room_cafe": "/Script/Engine.MaterialInstanceConstant",
+    "/Game/CitySim/Art/Materials/MI_D122Room_market": "/Script/Engine.MaterialInstanceConstant",
+    "/Game/CitySim/Art/Materials/MI_D122Room_outfitters": "/Script/Engine.MaterialInstanceConstant",
+    "/Game/CitySim/Art/Materials/MI_D122Room_pharmacy": "/Script/Engine.MaterialInstanceConstant",
+    "/Game/CitySim/Art/Materials/MI_D122Room_repairs": "/Script/Engine.MaterialInstanceConstant",
+    "/Game/CitySim/Art/Materials/MI_D122Room_tech": "/Script/Engine.MaterialInstanceConstant",
+    "/Game/CitySim/Art/Parks/Animations/AS_Park_BaseballPitch_D83": "/Script/Engine.AnimSequence",
+    "/Game/CitySim/Art/Parks/Animations/AS_Park_BaseballSwing_D83": "/Script/Engine.AnimSequence",
+    "/Game/CitySim/Art/Parks/Animations/AS_Park_BasketballDribble_D83": "/Script/Engine.AnimSequence",
+    "/Game/CitySim/Art/Parks/Animations/AS_Park_BasketballShot_D83": "/Script/Engine.AnimSequence",
+    "/Game/CitySim/Art/Parks/Animations/AS_Park_GoalkeeperSave_D83": "/Script/Engine.AnimSequence",
+    "/Game/CitySim/Art/Parks/Animations/AS_Park_Idle_D83": "/Script/Engine.AnimSequence",
+    "/Game/CitySim/Art/Parks/Animations/AS_Park_Skate180_D83": "/Script/Engine.AnimSequence",
+    "/Game/CitySim/Art/Parks/Animations/AS_Park_SkateCarve_D83": "/Script/Engine.AnimSequence",
+    "/Game/CitySim/Art/Parks/Animations/AS_Park_SkateKickflip_D83": "/Script/Engine.AnimSequence",
+    "/Game/CitySim/Art/Parks/Animations/AS_Park_SkateLipStall_D83": "/Script/Engine.AnimSequence",
+    "/Game/CitySim/Art/Parks/Animations/AS_Park_SkatePush_D83": "/Script/Engine.AnimSequence",
+    "/Game/CitySim/Art/Parks/Animations/AS_Park_SoccerKick_D83": "/Script/Engine.AnimSequence",
+    "/Game/CitySim/Art/Parks/Animations/AS_Park_SoccerRun_D83": "/Script/Engine.AnimSequence",
+    "/Game/CitySim/Art/Parks/Animations/AS_Park_Walk_D83": "/Script/Engine.AnimSequence",
+    "/Game/CitySim/Art/Prototypes/D79/Materials/M_CityBrick": "/Script/Engine.Material",
+    "/Game/CitySim/Art/Prototypes/D79/Materials/M_CityMechanical": "/Script/Engine.Material",
+    "/Game/CitySim/Art/Prototypes/D79/Materials/M_CityRoof": "/Script/Engine.Material",
+    "/Game/CitySim/Art/Prototypes/D79/Materials/M_StoreSigns": "/Script/Engine.Material",
+    "/Game/CitySim/Art/Prototypes/D79/Materials/MI_CharredBrick": "/Script/Engine.MaterialInstanceConstant",
+    "/Game/CitySim/Art/Prototypes/D79/Materials/MI_CharredMechanical": "/Script/Engine.MaterialInstanceConstant",
+    "/Game/CitySim/Art/Prototypes/D79/Materials/MI_CharredRoofMembrane": "/Script/Engine.MaterialInstanceConstant",
+    "/Game/CitySim/Art/Prototypes/D79/Materials/MI_CharredRoofMetal": "/Script/Engine.MaterialInstanceConstant",
+    "/Game/CitySim/Art/Prototypes/D79/Materials/MI_CharredRoofShingles": "/Script/Engine.MaterialInstanceConstant",
+    "/Game/CitySim/Art/Prototypes/D79/Materials/MI_CharredTrim": "/Script/Engine.MaterialInstanceConstant",
+    "/Game/CitySim/Art/Prototypes/D79/Materials/MI_CommercialBrick": "/Script/Engine.MaterialInstanceConstant",
+    "/Game/CitySim/Art/Prototypes/D79/Materials/MI_IndustrialBrick": "/Script/Engine.MaterialInstanceConstant",
+    "/Game/CitySim/Art/Prototypes/D79/Materials/MI_IndustrialMechanical": "/Script/Engine.MaterialInstanceConstant",
+    "/Game/CitySim/Art/Prototypes/D79/Materials/MI_Mechanical": "/Script/Engine.MaterialInstanceConstant",
+    "/Game/CitySim/Art/Prototypes/D79/Materials/MI_ResidentialBrick": "/Script/Engine.MaterialInstanceConstant",
+    "/Game/CitySim/Art/Prototypes/D79/Materials/MI_Roof": "/Script/Engine.MaterialInstanceConstant",
+    "/Game/CitySim/Art/Prototypes/D79/Materials/MI_RoofMembrane": "/Script/Engine.MaterialInstanceConstant",
+    "/Game/CitySim/Art/Prototypes/D79/Materials/MI_RoofMetal": "/Script/Engine.MaterialInstanceConstant",
+    "/Game/CitySim/Art/Prototypes/D79/Materials/MI_RoofShingles": "/Script/Engine.MaterialInstanceConstant",
+    "/Game/CitySim/Art/Prototypes/D79/Materials/MI_StoreSignTall": "/Script/Engine.MaterialInstanceConstant",
+    "/Game/CitySim/Art/Prototypes/D79/Materials/MI_StoreSignWide": "/Script/Engine.MaterialInstanceConstant",
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_StoreBakery": "/Script/Engine.StaticMesh",
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_StoreBakery_Damaged": "/Script/Engine.StaticMesh",
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_StoreBooks": "/Script/Engine.StaticMesh",
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_StoreBooks_Damaged": "/Script/Engine.StaticMesh",
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_StoreCafe": "/Script/Engine.StaticMesh",
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_StoreCafe_Damaged": "/Script/Engine.StaticMesh",
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_StoreMarket": "/Script/Engine.StaticMesh",
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_StoreMarket_Damaged": "/Script/Engine.StaticMesh",
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_StoreOutfitters": "/Script/Engine.StaticMesh",
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_StoreOutfitters_Damaged": "/Script/Engine.StaticMesh",
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_StorePharmacy": "/Script/Engine.StaticMesh",
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_StorePharmacy_Damaged": "/Script/Engine.StaticMesh",
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_StoreRepairs": "/Script/Engine.StaticMesh",
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_StoreRepairs_Damaged": "/Script/Engine.StaticMesh",
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_StoreTech": "/Script/Engine.StaticMesh",
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_StoreTech_Damaged": "/Script/Engine.StaticMesh",
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_SurfacePrototype": "/Script/Engine.StaticMesh",
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_SurfacePrototype_Damaged": "/Script/Engine.StaticMesh",
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_StoreBakery": "/Script/Engine.StaticMesh",
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_StoreBakery_Damaged": "/Script/Engine.StaticMesh",
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_StoreBooks": "/Script/Engine.StaticMesh",
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_StoreBooks_Damaged": "/Script/Engine.StaticMesh",
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_StoreCafe": "/Script/Engine.StaticMesh",
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_StoreCafe_Damaged": "/Script/Engine.StaticMesh",
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_StoreMarket": "/Script/Engine.StaticMesh",
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_StoreMarket_Damaged": "/Script/Engine.StaticMesh",
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_StoreOutfitters": "/Script/Engine.StaticMesh",
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_StoreOutfitters_Damaged": "/Script/Engine.StaticMesh",
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_StorePharmacy": "/Script/Engine.StaticMesh",
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_StorePharmacy_Damaged": "/Script/Engine.StaticMesh",
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_StoreRepairs": "/Script/Engine.StaticMesh",
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_StoreRepairs_Damaged": "/Script/Engine.StaticMesh",
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_StoreTech": "/Script/Engine.StaticMesh",
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_StoreTech_Damaged": "/Script/Engine.StaticMesh",
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_SurfacePrototype": "/Script/Engine.StaticMesh",
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_SurfacePrototype_Damaged": "/Script/Engine.StaticMesh",
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_StoreBakery": "/Script/Engine.StaticMesh",
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_StoreBakery_Damaged": "/Script/Engine.StaticMesh",
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_StoreBooks": "/Script/Engine.StaticMesh",
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_StoreBooks_Damaged": "/Script/Engine.StaticMesh",
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_StoreCafe": "/Script/Engine.StaticMesh",
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_StoreCafe_Damaged": "/Script/Engine.StaticMesh",
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_StoreMarket": "/Script/Engine.StaticMesh",
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_StoreMarket_Damaged": "/Script/Engine.StaticMesh",
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_StoreOutfitters": "/Script/Engine.StaticMesh",
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_StoreOutfitters_Damaged": "/Script/Engine.StaticMesh",
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_StorePharmacy": "/Script/Engine.StaticMesh",
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_StorePharmacy_Damaged": "/Script/Engine.StaticMesh",
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_StoreRepairs": "/Script/Engine.StaticMesh",
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_StoreRepairs_Damaged": "/Script/Engine.StaticMesh",
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_StoreTech": "/Script/Engine.StaticMesh",
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_StoreTech_Damaged": "/Script/Engine.StaticMesh",
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_SurfacePrototype": "/Script/Engine.StaticMesh",
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_SurfacePrototype_Damaged": "/Script/Engine.StaticMesh",
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_IndustrialHigh_SurfacePrototype": "/Script/Engine.StaticMesh",
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_IndustrialHigh_SurfacePrototype_Damaged": "/Script/Engine.StaticMesh",
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_IndustrialLow_SurfacePrototype": "/Script/Engine.StaticMesh",
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_IndustrialLow_SurfacePrototype_Damaged": "/Script/Engine.StaticMesh",
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_IndustrialMedium_SurfacePrototype": "/Script/Engine.StaticMesh",
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_IndustrialMedium_SurfacePrototype_Damaged": "/Script/Engine.StaticMesh",
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_ResidentialHigh_SurfacePrototype": "/Script/Engine.StaticMesh",
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_ResidentialHigh_SurfacePrototype_Damaged": "/Script/Engine.StaticMesh",
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_ResidentialLow_SurfacePrototype": "/Script/Engine.StaticMesh",
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_ResidentialLow_SurfacePrototype_Damaged": "/Script/Engine.StaticMesh",
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_ResidentialMedium_SurfacePrototype": "/Script/Engine.StaticMesh",
+    "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_ResidentialMedium_SurfacePrototype_Damaged": "/Script/Engine.StaticMesh",
+    "/Game/CitySim/Art/Prototypes/D79/Textures/T_CityBrick_BaseColor": "/Script/Engine.Texture2D",
+    "/Game/CitySim/Art/Prototypes/D79/Textures/T_CityBrick_Normal": "/Script/Engine.Texture2D",
+    "/Game/CitySim/Art/Prototypes/D79/Textures/T_CityBrick_ORM": "/Script/Engine.Texture2D",
+    "/Game/CitySim/Art/Prototypes/D79/Textures/T_CityMechanical_BaseColor": "/Script/Engine.Texture2D",
+    "/Game/CitySim/Art/Prototypes/D79/Textures/T_CityMechanical_Normal": "/Script/Engine.Texture2D",
+    "/Game/CitySim/Art/Prototypes/D79/Textures/T_CityMechanical_ORM": "/Script/Engine.Texture2D",
+    "/Game/CitySim/Art/Prototypes/D79/Textures/T_RoofMembrane_BaseColor": "/Script/Engine.Texture2D",
+    "/Game/CitySim/Art/Prototypes/D79/Textures/T_RoofMembrane_Normal": "/Script/Engine.Texture2D",
+    "/Game/CitySim/Art/Prototypes/D79/Textures/T_RoofMembrane_ORM": "/Script/Engine.Texture2D",
+    "/Game/CitySim/Art/Prototypes/D79/Textures/T_RoofMetal_BaseColor": "/Script/Engine.Texture2D",
+    "/Game/CitySim/Art/Prototypes/D79/Textures/T_RoofMetal_Normal": "/Script/Engine.Texture2D",
+    "/Game/CitySim/Art/Prototypes/D79/Textures/T_RoofMetal_ORM": "/Script/Engine.Texture2D",
+    "/Game/CitySim/Art/Prototypes/D79/Textures/T_RoofShingles_BaseColor": "/Script/Engine.Texture2D",
+    "/Game/CitySim/Art/Prototypes/D79/Textures/T_RoofShingles_Normal": "/Script/Engine.Texture2D",
+    "/Game/CitySim/Art/Prototypes/D79/Textures/T_RoofShingles_ORM": "/Script/Engine.Texture2D",
+    "/Game/CitySim/Art/Prototypes/D79/Textures/T_StoreSigns_Tall_BaseColor": "/Script/Engine.Texture2D",
+    "/Game/CitySim/Art/Prototypes/D79/Textures/T_StoreSigns_Wide_BaseColor": "/Script/Engine.Texture2D",
+    "/Game/CitySim/Art/Textures/T_D122RepairDisplays": "/Script/Engine.Texture2D",
+    "/Game/CitySim/Art/Textures/T_D122Room_bakery": "/Script/Engine.Texture2D",
+    "/Game/CitySim/Art/Textures/T_D122Room_books": "/Script/Engine.Texture2D",
+    "/Game/CitySim/Art/Textures/T_D122Room_cafe": "/Script/Engine.Texture2D",
+    "/Game/CitySim/Art/Textures/T_D122Room_market": "/Script/Engine.Texture2D",
+    "/Game/CitySim/Art/Textures/T_D122Room_outfitters": "/Script/Engine.Texture2D",
+    "/Game/CitySim/Art/Textures/T_D122Room_pharmacy": "/Script/Engine.Texture2D",
+    "/Game/CitySim/Art/Textures/T_D122Room_repairs": "/Script/Engine.Texture2D",
+    "/Game/CitySim/Art/Textures/T_D122Room_tech": "/Script/Engine.Texture2D",
+    "/Game/CitySim/Audio/D58/Ambience/City/SW_Car_Driving": "/Script/Engine.SoundWave",
+    "/Game/CitySim/Audio/D58/Ambience/City/SW_Car_Idle": "/Script/Engine.SoundWave",
+    "/Game/CitySim/Audio/D58/Ambience/City/SW_Car_Pass": "/Script/Engine.SoundWave",
+    "/Game/CitySim/Audio/D58/Ambience/City/SW_City_Distant": "/Script/Engine.SoundWave",
+    "/Game/CitySim/Audio/D58/Ambience/City/SW_Market_Murmur": "/Script/Engine.SoundWave",
+    "/Game/CitySim/Audio/D58/Ambience/City/SW_Truck_Driving": "/Script/Engine.SoundWave",
+    "/Game/CitySim/Audio/D58/Ambience/City/SW_Truck_Idle": "/Script/Engine.SoundWave",
+    "/Game/CitySim/Audio/D58/Ambience/City/SW_Truck_Pass": "/Script/Engine.SoundWave",
+    "/Game/CitySim/Audio/D58/Ambience/Industry/SW_Industry_Clank": "/Script/Engine.SoundWave",
+    "/Game/CitySim/Audio/D58/Ambience/Industry/SW_Industry_Idle": "/Script/Engine.SoundWave",
+    "/Game/CitySim/Audio/D58/Ambience/Industry/SW_Industry_Working": "/Script/Engine.SoundWave",
+    "/Game/CitySim/Audio/D58/Ambience/Park/SW_Park_Foliage": "/Script/Engine.SoundWave",
+    "/Game/CitySim/Audio/D58/Ambience/Park/SW_Park_Fountain": "/Script/Engine.SoundWave",
+    "/Game/CitySim/Audio/D58/Ambience/Park/SW_Water_Shore": "/Script/Engine.SoundWave",
+    "/Game/CitySim/Audio/D58/Ambience/Weather/SW_Rain_Downpour": "/Script/Engine.SoundWave",
+    "/Game/CitySim/Audio/D58/Ambience/Weather/SW_Rain_Heavy": "/Script/Engine.SoundWave",
+    "/Game/CitySim/Audio/D58/Ambience/Weather/SW_Rain_Light": "/Script/Engine.SoundWave",
+    "/Game/CitySim/Audio/D58/Ambience/Weather/SW_Rain_Moderate": "/Script/Engine.SoundWave",
+    "/Game/CitySim/Audio/D58/Ambience/Weather/SW_Storm_Roar": "/Script/Engine.SoundWave",
+    "/Game/CitySim/Audio/D58/Ambience/Weather/SW_Thunder_Distant": "/Script/Engine.SoundWave",
+    "/Game/CitySim/Audio/D58/Ambience/Weather/SW_Thunder_Near": "/Script/Engine.SoundWave",
+    "/Game/CitySim/Audio/D58/Ambience/Weather/SW_Wind_Gusts": "/Script/Engine.SoundWave",
+    "/Game/CitySim/Audio/D58/Ambience/Weather/SW_Wind_Light": "/Script/Engine.SoundWave",
+    "/Game/CitySim/Audio/D58/Ambience/Wildlife/SW_Bird_Chirp_A": "/Script/Engine.SoundWave",
+    "/Game/CitySim/Audio/D58/Ambience/Wildlife/SW_Bird_Chirp_B": "/Script/Engine.SoundWave",
+    "/Game/CitySim/Audio/D58/Ambience/Wildlife/SW_Bird_Chirp_C": "/Script/Engine.SoundWave",
+    "/Game/CitySim/Audio/D58/Ambience/Wildlife/SW_Cricket_Chirp_Pair": "/Script/Engine.SoundWave",
+    "/Game/CitySim/Audio/D58/Ambience/Wildlife/SW_Night_Crickets_Dense": "/Script/Engine.SoundWave",
+    "/Game/CitySim/Audio/D58/Ambience/Wildlife/SW_Night_Crickets_Light": "/Script/Engine.SoundWave",
+    "/Game/CitySim/Audio/D58/Effects/Activity/SW_Construction_Tap": "/Script/Engine.SoundWave",
+    "/Game/CitySim/Audio/D58/Effects/Activity/SW_Demolition_Impact": "/Script/Engine.SoundWave",
+    "/Game/CitySim/Audio/D58/Effects/Activity/SW_Earthquake_Rumble": "/Script/Engine.SoundWave",
+    "/Game/CitySim/Audio/D58/Effects/Activity/SW_Fire_Crackle": "/Script/Engine.SoundWave",
+    "/Game/CitySim/Audio/D58/Graphs/MS_Action_Confirm": "/Script/MetasoundEngine.MetaSoundSource",
+    "/Game/CitySim/Audio/D58/Graphs/MS_Action_Denied": "/Script/MetasoundEngine.MetaSoundSource",
+    "/Game/CitySim/Audio/D58/Graphs/MS_Ambulance_Intro": "/Script/MetasoundEngine.MetaSoundSource",
+    "/Game/CitySim/Audio/D58/Graphs/MS_Ambulance_Loop": "/Script/MetasoundEngine.MetaSoundSource",
+    "/Game/CitySim/Audio/D58/Graphs/MS_Ambulance_Outro": "/Script/MetasoundEngine.MetaSoundSource",
+    "/Game/CitySim/Audio/D58/Graphs/MS_Bird_Chirp_A": "/Script/MetasoundEngine.MetaSoundSource",
+    "/Game/CitySim/Audio/D58/Graphs/MS_Bird_Chirp_B": "/Script/MetasoundEngine.MetaSoundSource",
+    "/Game/CitySim/Audio/D58/Graphs/MS_Bird_Chirp_C": "/Script/MetasoundEngine.MetaSoundSource",
+    "/Game/CitySim/Audio/D58/Graphs/MS_Car_Pass": "/Script/MetasoundEngine.MetaSoundSource",
+    "/Game/CitySim/Audio/D58/Graphs/MS_City_Distant": "/Script/MetasoundEngine.MetaSoundSource",
+    "/Game/CitySim/Audio/D58/Graphs/MS_Construction_Tap": "/Script/MetasoundEngine.MetaSoundSource",
+    "/Game/CitySim/Audio/D58/Graphs/MS_Cricket_Chirp_Pair": "/Script/MetasoundEngine.MetaSoundSource",
+    "/Game/CitySim/Audio/D58/Graphs/MS_Demolition_Impact": "/Script/MetasoundEngine.MetaSoundSource",
+    "/Game/CitySim/Audio/D58/Graphs/MS_Earthquake_Rumble": "/Script/MetasoundEngine.MetaSoundSource",
+    "/Game/CitySim/Audio/D58/Graphs/MS_Fire_Crackle": "/Script/MetasoundEngine.MetaSoundSource",
+    "/Game/CitySim/Audio/D58/Graphs/MS_Fire_Horn": "/Script/MetasoundEngine.MetaSoundSource",
+    "/Game/CitySim/Audio/D58/Graphs/MS_Fire_Intro": "/Script/MetasoundEngine.MetaSoundSource",
+    "/Game/CitySim/Audio/D58/Graphs/MS_Fire_Loop": "/Script/MetasoundEngine.MetaSoundSource",
+    "/Game/CitySim/Audio/D58/Graphs/MS_Fire_Outro": "/Script/MetasoundEngine.MetaSoundSource",
+    "/Game/CitySim/Audio/D58/Graphs/MS_Incident_Notice": "/Script/MetasoundEngine.MetaSoundSource",
+    "/Game/CitySim/Audio/D58/Graphs/MS_Industry_Clank": "/Script/MetasoundEngine.MetaSoundSource",
+    "/Game/CitySim/Audio/D58/Graphs/MS_Industry_Idle": "/Script/MetasoundEngine.MetaSoundSource",
+    "/Game/CitySim/Audio/D58/Graphs/MS_Industry_Working": "/Script/MetasoundEngine.MetaSoundSource",
+    "/Game/CitySim/Audio/D58/Graphs/MS_Market_Murmur": "/Script/MetasoundEngine.MetaSoundSource",
+    "/Game/CitySim/Audio/D58/Graphs/MS_Milestone_Reached": "/Script/MetasoundEngine.MetaSoundSource",
+    "/Game/CitySim/Audio/D58/Graphs/MS_Night_Crickets_Dense": "/Script/MetasoundEngine.MetaSoundSource",
+    "/Game/CitySim/Audio/D58/Graphs/MS_Night_Crickets_Light": "/Script/MetasoundEngine.MetaSoundSource",
+    "/Game/CitySim/Audio/D58/Graphs/MS_Objective_Complete": "/Script/MetasoundEngine.MetaSoundSource",
+    "/Game/CitySim/Audio/D58/Graphs/MS_Park_Foliage": "/Script/MetasoundEngine.MetaSoundSource",
+    "/Game/CitySim/Audio/D58/Graphs/MS_Park_Fountain": "/Script/MetasoundEngine.MetaSoundSource",
+    "/Game/CitySim/Audio/D58/Graphs/MS_Police_Alternate": "/Script/MetasoundEngine.MetaSoundSource",
+    "/Game/CitySim/Audio/D58/Graphs/MS_Police_Intro": "/Script/MetasoundEngine.MetaSoundSource",
+    "/Game/CitySim/Audio/D58/Graphs/MS_Police_Loop": "/Script/MetasoundEngine.MetaSoundSource",
+    "/Game/CitySim/Audio/D58/Graphs/MS_Police_Outro": "/Script/MetasoundEngine.MetaSoundSource",
+    "/Game/CitySim/Audio/D58/Graphs/MS_Rain_Downpour": "/Script/MetasoundEngine.MetaSoundSource",
+    "/Game/CitySim/Audio/D58/Graphs/MS_Rain_Heavy": "/Script/MetasoundEngine.MetaSoundSource",
+    "/Game/CitySim/Audio/D58/Graphs/MS_Rain_Light": "/Script/MetasoundEngine.MetaSoundSource",
+    "/Game/CitySim/Audio/D58/Graphs/MS_Rain_Moderate": "/Script/MetasoundEngine.MetaSoundSource",
+    "/Game/CitySim/Audio/D58/Graphs/MS_Service_Attention": "/Script/MetasoundEngine.MetaSoundSource",
+    "/Game/CitySim/Audio/D58/Graphs/MS_Service_Recovered": "/Script/MetasoundEngine.MetaSoundSource",
+    "/Game/CitySim/Audio/D58/Graphs/MS_Storm_Roar": "/Script/MetasoundEngine.MetaSoundSource",
+    "/Game/CitySim/Audio/D58/Graphs/MS_Thunder_Distant": "/Script/MetasoundEngine.MetaSoundSource",
+    "/Game/CitySim/Audio/D58/Graphs/MS_Thunder_Near": "/Script/MetasoundEngine.MetaSoundSource",
+    "/Game/CitySim/Audio/D58/Graphs/MS_Town_Intro": "/Script/MetasoundEngine.MetaSoundSource",
+    "/Game/CitySim/Audio/D58/Graphs/MS_Town_Loop": "/Script/MetasoundEngine.MetaSoundSource",
+    "/Game/CitySim/Audio/D58/Graphs/MS_Town_Outro": "/Script/MetasoundEngine.MetaSoundSource",
+    "/Game/CitySim/Audio/D58/Graphs/MS_Truck_Pass": "/Script/MetasoundEngine.MetaSoundSource",
+    "/Game/CitySim/Audio/D58/Graphs/MS_Water_Shore": "/Script/MetasoundEngine.MetaSoundSource",
+    "/Game/CitySim/Audio/D58/Graphs/MS_Wind_Gusts": "/Script/MetasoundEngine.MetaSoundSource",
+    "/Game/CitySim/Audio/D58/Graphs/MS_Wind_Light": "/Script/MetasoundEngine.MetaSoundSource",
+    "/Game/CitySim/Audio/D58/Graphs/SC_Car_Driving": "/Script/Engine.SoundCue",
+    "/Game/CitySim/Audio/D58/Graphs/SC_Car_Idle": "/Script/Engine.SoundCue",
+    "/Game/CitySim/Audio/D58/Graphs/SC_Truck_Driving": "/Script/Engine.SoundCue",
+    "/Game/CitySim/Audio/D58/Graphs/SC_Truck_Idle": "/Script/Engine.SoundCue",
+    "/Game/CitySim/Audio/D58/Sirens/SW_Ambulance_Intro": "/Script/Engine.SoundWave",
+    "/Game/CitySim/Audio/D58/Sirens/SW_Ambulance_Loop": "/Script/Engine.SoundWave",
+    "/Game/CitySim/Audio/D58/Sirens/SW_Ambulance_Outro": "/Script/Engine.SoundWave",
+    "/Game/CitySim/Audio/D58/Sirens/SW_Fire_Horn": "/Script/Engine.SoundWave",
+    "/Game/CitySim/Audio/D58/Sirens/SW_Fire_Intro": "/Script/Engine.SoundWave",
+    "/Game/CitySim/Audio/D58/Sirens/SW_Fire_Loop": "/Script/Engine.SoundWave",
+    "/Game/CitySim/Audio/D58/Sirens/SW_Fire_Outro": "/Script/Engine.SoundWave",
+    "/Game/CitySim/Audio/D58/Sirens/SW_Police_Alternate": "/Script/Engine.SoundWave",
+    "/Game/CitySim/Audio/D58/Sirens/SW_Police_Intro": "/Script/Engine.SoundWave",
+    "/Game/CitySim/Audio/D58/Sirens/SW_Police_Loop": "/Script/Engine.SoundWave",
+    "/Game/CitySim/Audio/D58/Sirens/SW_Police_Outro": "/Script/Engine.SoundWave",
+    "/Game/CitySim/Audio/D58/Sirens/SW_Town_Intro": "/Script/Engine.SoundWave",
+    "/Game/CitySim/Audio/D58/Sirens/SW_Town_Loop": "/Script/Engine.SoundWave",
+    "/Game/CitySim/Audio/D58/Sirens/SW_Town_Outro": "/Script/Engine.SoundWave",
+    "/Game/CitySim/Audio/D58/UI/SW_Action_Confirm": "/Script/Engine.SoundWave",
+    "/Game/CitySim/Audio/D58/UI/SW_Action_Denied": "/Script/Engine.SoundWave",
+    "/Game/CitySim/Audio/D58/UI/SW_Incident_Notice": "/Script/Engine.SoundWave",
+    "/Game/CitySim/Audio/D58/UI/SW_Milestone_Reached": "/Script/Engine.SoundWave",
+    "/Game/CitySim/Audio/D58/UI/SW_Objective_Complete": "/Script/Engine.SoundWave",
+    "/Game/CitySim/Audio/D58/UI/SW_Service_Attention": "/Script/Engine.SoundWave",
+    "/Game/CitySim/Audio/D58/UI/SW_Service_Recovered": "/Script/Engine.SoundWave"
+  },
+  "redirectors_removed": 124,
+  "dependency_packages_checked": 792,
+  "portable_import_filenames": true,
+  "ephemeral_workspace_strings": false,
+  "repointed": [
+    {
+      "package": "/Game/CitySim/Audio/Soundscape/Sirens/SW_Police_Intro",
+      "source": "AudioSource/Soundscape/Unreal/Waves/Sirens/SW_Police_Intro.wav",
+      "sha256": "0f6ba8c001e6a85533311e4ea76072e1550fdc7d9e1990740869185ad9b61685"
+    },
+    {
+      "package": "/Game/CitySim/Audio/Soundscape/Sirens/SW_Police_Loop",
+      "source": "AudioSource/Soundscape/Unreal/Waves/Sirens/SW_Police_Loop.wav",
+      "sha256": "929e8cf9d7482e7c91d88627ebe8fc3de0daab83ebfc3dfc483fbd0841dde40f"
+    },
+    {
+      "package": "/Game/CitySim/Audio/Soundscape/Sirens/SW_Police_Outro",
+      "source": "AudioSource/Soundscape/Unreal/Waves/Sirens/SW_Police_Outro.wav",
+      "sha256": "411a6d82961cbcfe47adc4ac82c6afb683d5b793bc461be50b51d3d944065630"
+    },
+    {
+      "package": "/Game/CitySim/Audio/Soundscape/Sirens/SW_Fire_Intro",
+      "source": "AudioSource/Soundscape/Unreal/Waves/Sirens/SW_Fire_Intro.wav",
+      "sha256": "2617f0d82358cadd3000c3ce3bff0ce1c104d0a90167c655a2d88dbf3f6d3835"
+    },
+    {
+      "package": "/Game/CitySim/Audio/Soundscape/Sirens/SW_Fire_Loop",
+      "source": "AudioSource/Soundscape/Unreal/Waves/Sirens/SW_Fire_Loop.wav",
+      "sha256": "934820eb2e7e525867a24f1bb74b17a68e8493626e68b7a720ee9682e550fbf5"
+    },
+    {
+      "package": "/Game/CitySim/Audio/Soundscape/Sirens/SW_Fire_Outro",
+      "source": "AudioSource/Soundscape/Unreal/Waves/Sirens/SW_Fire_Outro.wav",
+      "sha256": "fbcc40120f7f51d293d8c989284d71639c225aecc5a4d2e7324fb7773a90e2c6"
+    },
+    {
+      "package": "/Game/CitySim/Audio/Soundscape/Sirens/SW_Ambulance_Intro",
+      "source": "AudioSource/Soundscape/Unreal/Waves/Sirens/SW_Ambulance_Intro.wav",
+      "sha256": "69eb5e9d40f8a89fee2f0dc5641f934e90f358d9201b669bc9e6ef5867022e52"
+    },
+    {
+      "package": "/Game/CitySim/Audio/Soundscape/Sirens/SW_Ambulance_Loop",
+      "source": "AudioSource/Soundscape/Unreal/Waves/Sirens/SW_Ambulance_Loop.wav",
+      "sha256": "096ae47dc5aef77356bf57386ab798d4653a8d8e4a02bcb6b0996b2e56103601"
+    },
+    {
+      "package": "/Game/CitySim/Audio/Soundscape/Sirens/SW_Ambulance_Outro",
+      "source": "AudioSource/Soundscape/Unreal/Waves/Sirens/SW_Ambulance_Outro.wav",
+      "sha256": "54516995689e0b7cd5a6484da823baf3877912ae35e82e4b531d08cf61d84d03"
+    },
+    {
+      "package": "/Game/CitySim/Audio/Soundscape/Sirens/SW_Town_Intro",
+      "source": "AudioSource/Soundscape/Unreal/Waves/Sirens/SW_Town_Intro.wav",
+      "sha256": "42a89da2d65b2852d3400aae11d47475e9b453123c22cd7359876b4045b06a74"
+    },
+    {
+      "package": "/Game/CitySim/Audio/Soundscape/Sirens/SW_Town_Loop",
+      "source": "AudioSource/Soundscape/Unreal/Waves/Sirens/SW_Town_Loop.wav",
+      "sha256": "1937b5d46e79aae483cc10598e58ad164661a880978239e9b9fe569adffedbaa"
+    },
+    {
+      "package": "/Game/CitySim/Audio/Soundscape/Sirens/SW_Town_Outro",
+      "source": "AudioSource/Soundscape/Unreal/Waves/Sirens/SW_Town_Outro.wav",
+      "sha256": "1ed7001e0798abb1c7fd3992e5e9ef62a74f40f2ebc30a1eb089b60c223160b2"
+    },
+    {
+      "package": "/Game/CitySim/Audio/Soundscape/Sirens/SW_Police_Alternate",
+      "source": "AudioSource/Soundscape/Unreal/Waves/Sirens/SW_Police_Alternate.wav",
+      "sha256": "9da791e1ea6be95ff69d4517c74f378978c2c85a3e914991efff88ec12c663a7"
+    },
+    {
+      "package": "/Game/CitySim/Audio/Soundscape/Sirens/SW_Fire_Horn",
+      "source": "AudioSource/Soundscape/Unreal/Waves/Sirens/SW_Fire_Horn.wav",
+      "sha256": "aecd4f3cfcf093170ed190af0816cae7d2e3bf744dc20d9c1c50a792fbb65221"
+    },
+    {
+      "package": "/Game/CitySim/Audio/Soundscape/Ambience/Park/SW_Park_Foliage",
+      "source": "AudioSource/Soundscape/Unreal/Waves/Ambience/Park/SW_Park_Foliage.wav",
+      "sha256": "a35d15c1f719785f14de53d85d1b741de6e2f2b0cccb702e04291fa4036c634d"
+    },
+    {
+      "package": "/Game/CitySim/Audio/Soundscape/Ambience/Park/SW_Park_Fountain",
+      "source": "AudioSource/Soundscape/Unreal/Waves/Ambience/Park/SW_Park_Fountain.wav",
+      "sha256": "f2f663982d0636fa8eb3af6a23af00a8602a0f7e01c41239f2782a192fe2e15c"
+    },
+    {
+      "package": "/Game/CitySim/Audio/Soundscape/Ambience/Park/SW_Water_Shore",
+      "source": "AudioSource/Soundscape/Unreal/Waves/Ambience/Park/SW_Water_Shore.wav",
+      "sha256": "15570246328f41d0b410fa4303c514ac8d75add063d6472bec629516c4b13198"
+    },
+    {
+      "package": "/Game/CitySim/Audio/Soundscape/Ambience/Industry/SW_Industry_Idle",
+      "source": "AudioSource/Soundscape/Unreal/Waves/Ambience/Industry/SW_Industry_Idle.wav",
+      "sha256": "8d11ebaebea6e8f9940dc8e0d5bab757ea0d138afd5aaca8547bf04332d0fe96"
+    },
+    {
+      "package": "/Game/CitySim/Audio/Soundscape/Ambience/Industry/SW_Industry_Working",
+      "source": "AudioSource/Soundscape/Unreal/Waves/Ambience/Industry/SW_Industry_Working.wav",
+      "sha256": "ecee15a4ae9134811c510c35c29270efc0e99f29e651e7a5cac04e93f152d6d9"
+    },
+    {
+      "package": "/Game/CitySim/Audio/Soundscape/Ambience/City/SW_City_Distant",
+      "source": "AudioSource/Soundscape/Unreal/Waves/Ambience/City/SW_City_Distant.wav",
+      "sha256": "9b28ebeaef1cd1e12d469827752de694b788f1babc6c82572583a3459b5c4450"
+    },
+    {
+      "package": "/Game/CitySim/Audio/Soundscape/Ambience/City/SW_Market_Murmur",
+      "source": "AudioSource/Soundscape/Unreal/Waves/Ambience/City/SW_Market_Murmur.wav",
+      "sha256": "eeebadf44ae6f38892c7e5f9eceae929d3750b73e8c16a2eb6f872a56625db6e"
+    },
+    {
+      "package": "/Game/CitySim/Audio/Soundscape/Ambience/City/SW_Car_Pass",
+      "source": "AudioSource/Soundscape/Unreal/Waves/Ambience/City/SW_Car_Pass.wav",
+      "sha256": "227db3a7e016f4cf7b2c250b00428b0de0390578a54a0024c2fb1fccd86af7e2"
+    },
+    {
+      "package": "/Game/CitySim/Audio/Soundscape/Ambience/City/SW_Truck_Pass",
+      "source": "AudioSource/Soundscape/Unreal/Waves/Ambience/City/SW_Truck_Pass.wav",
+      "sha256": "28eb7acfb7401db3531c981fc26955a49b60468daed08fda0b67d1ddc4ed6828"
+    },
+    {
+      "package": "/Game/CitySim/Audio/Soundscape/Ambience/Wildlife/SW_Bird_Chirp_A",
+      "source": "AudioSource/Soundscape/Unreal/Waves/Ambience/Wildlife/SW_Bird_Chirp_A.wav",
+      "sha256": "fe032d4cd7ace689c2b12e0e01f2237b8791863014620665ad869f53b31b603a"
+    },
+    {
+      "package": "/Game/CitySim/Audio/Soundscape/Ambience/Wildlife/SW_Bird_Chirp_B",
+      "source": "AudioSource/Soundscape/Unreal/Waves/Ambience/Wildlife/SW_Bird_Chirp_B.wav",
+      "sha256": "036451d9d0b69cc208936c4004fba86c1b90b6d0489d61ec8cb599f684fcccf0"
+    },
+    {
+      "package": "/Game/CitySim/Audio/Soundscape/Ambience/Wildlife/SW_Bird_Chirp_C",
+      "source": "AudioSource/Soundscape/Unreal/Waves/Ambience/Wildlife/SW_Bird_Chirp_C.wav",
+      "sha256": "cb029af3ae1c4a62f920448156f2ec11af15d51615848a8bac7674373fb90bc8"
+    },
+    {
+      "package": "/Game/CitySim/Audio/Soundscape/Ambience/Wildlife/SW_Night_Crickets_Light",
+      "source": "AudioSource/Soundscape/Unreal/Waves/Ambience/Wildlife/SW_Night_Crickets_Light.wav",
+      "sha256": "d7a05a7b8ff268d83b753c763b5edb43da7d8e83c6c90cd7080f6e281bc61089"
+    },
+    {
+      "package": "/Game/CitySim/Audio/Soundscape/Ambience/Wildlife/SW_Night_Crickets_Dense",
+      "source": "AudioSource/Soundscape/Unreal/Waves/Ambience/Wildlife/SW_Night_Crickets_Dense.wav",
+      "sha256": "58049d95c5789c4a7fbfaf9d4b6ffd6ec9d196662b6e3fa36a17cd95c4ca479c"
+    },
+    {
+      "package": "/Game/CitySim/Audio/Soundscape/Ambience/Weather/SW_Wind_Light",
+      "source": "AudioSource/Soundscape/Unreal/Waves/Ambience/Weather/SW_Wind_Light.wav",
+      "sha256": "6b4e8854e8d9e476fc20c128b81b7d8751ee8e9477a9aa34630b7406b0dcec40"
+    },
+    {
+      "package": "/Game/CitySim/Audio/Soundscape/Ambience/Weather/SW_Wind_Gusts",
+      "source": "AudioSource/Soundscape/Unreal/Waves/Ambience/Weather/SW_Wind_Gusts.wav",
+      "sha256": "28feaeceed4b8ece8d947dd70569609c9d16a90b6cdc7e12473f8ebf3b5deb15"
+    },
+    {
+      "package": "/Game/CitySim/Audio/Soundscape/Ambience/Weather/SW_Rain_Light",
+      "source": "AudioSource/Soundscape/Unreal/Waves/Ambience/Weather/SW_Rain_Light.wav",
+      "sha256": "903c1041e13163656e94cc3b7a8fe4153089efb92ae7af80296456782c1cf3cf"
+    },
+    {
+      "package": "/Game/CitySim/Audio/Soundscape/Ambience/Weather/SW_Rain_Heavy",
+      "source": "AudioSource/Soundscape/Unreal/Waves/Ambience/Weather/SW_Rain_Heavy.wav",
+      "sha256": "f99171a2047bf07ea3bff8c3cf5f9a74e9cf17472a8f15b5902f9140aad4e789"
+    },
+    {
+      "package": "/Game/CitySim/Audio/Soundscape/Ambience/Weather/SW_Storm_Roar",
+      "source": "AudioSource/Soundscape/Unreal/Waves/Ambience/Weather/SW_Storm_Roar.wav",
+      "sha256": "3c09b7535be9799994a9f0b9790ac814b836d3992b7d36fe8a51af4fd845615f"
+    },
+    {
+      "package": "/Game/CitySim/Audio/Soundscape/Ambience/Weather/SW_Thunder_Near",
+      "source": "AudioSource/Soundscape/Unreal/Waves/Ambience/Weather/SW_Thunder_Near.wav",
+      "sha256": "e967fee92c24894e23d61a15be72ede20d3431662e33c0b3360bac9438e51a3d"
+    },
+    {
+      "package": "/Game/CitySim/Audio/Soundscape/Ambience/Weather/SW_Thunder_Distant",
+      "source": "AudioSource/Soundscape/Unreal/Waves/Ambience/Weather/SW_Thunder_Distant.wav",
+      "sha256": "51ae13d453948a9943183be273de78d82076c7446c967cd629bbc7e9d4df8294"
+    },
+    {
+      "package": "/Game/CitySim/Audio/Soundscape/Effects/Activity/SW_Fire_Crackle",
+      "source": "AudioSource/Soundscape/Unreal/Waves/Effects/Activity/SW_Fire_Crackle.wav",
+      "sha256": "94fbcf7a36c622f4647cae2edb5620d3fa6f0b54d7ab9adf9bfabf05322a3ee0"
+    },
+    {
+      "package": "/Game/CitySim/Audio/Soundscape/Effects/Activity/SW_Earthquake_Rumble",
+      "source": "AudioSource/Soundscape/Unreal/Waves/Effects/Activity/SW_Earthquake_Rumble.wav",
+      "sha256": "4715c93beae5fde8dd002220a0b08a15ac336edd0630a0c7c22a8fe27369c1f7"
+    },
+    {
+      "package": "/Game/CitySim/Audio/Soundscape/Effects/Activity/SW_Construction_Tap",
+      "source": "AudioSource/Soundscape/Unreal/Waves/Effects/Activity/SW_Construction_Tap.wav",
+      "sha256": "d8f0f2758b34560bc27f8574176d05244e483eb2b065ff7af7bb5bcbbb3c2ebe"
+    },
+    {
+      "package": "/Game/CitySim/Audio/Soundscape/Effects/Activity/SW_Demolition_Impact",
+      "source": "AudioSource/Soundscape/Unreal/Waves/Effects/Activity/SW_Demolition_Impact.wav",
+      "sha256": "e6d6bcdd6864e7fe24b524b70d9694f63748b1938b44dc37dce00623b3b3d773"
+    },
+    {
+      "package": "/Game/CitySim/Audio/Soundscape/UI/SW_Action_Confirm",
+      "source": "AudioSource/Soundscape/Unreal/Waves/UI/SW_Action_Confirm.wav",
+      "sha256": "0948f87ec1ced25abf19600570794b7080561bb6e900fef4e528b5a5025a9931"
+    },
+    {
+      "package": "/Game/CitySim/Audio/Soundscape/UI/SW_Action_Denied",
+      "source": "AudioSource/Soundscape/Unreal/Waves/UI/SW_Action_Denied.wav",
+      "sha256": "9fadc0d8b0e53d7e4195d4f48d403577fbcc4d22b2766f5fb3eb09a413ad8e31"
+    },
+    {
+      "package": "/Game/CitySim/Audio/Soundscape/UI/SW_Objective_Complete",
+      "source": "AudioSource/Soundscape/Unreal/Waves/UI/SW_Objective_Complete.wav",
+      "sha256": "8327e744951e94c5ffba85a7a728695897edcef60facb191eef901f56f350415"
+    },
+    {
+      "package": "/Game/CitySim/Audio/Soundscape/UI/SW_Milestone_Reached",
+      "source": "AudioSource/Soundscape/Unreal/Waves/UI/SW_Milestone_Reached.wav",
+      "sha256": "ac6b7bab5d37d2d93976006b1764e0f0ca5840e388f959eb9fd3fed4361a8899"
+    },
+    {
+      "package": "/Game/CitySim/Audio/Soundscape/UI/SW_Service_Attention",
+      "source": "AudioSource/Soundscape/Unreal/Waves/UI/SW_Service_Attention.wav",
+      "sha256": "03ebfea1eb9d31483c777f1eb972a8d7fd416974c66458692c25da1362f26449"
+    },
+    {
+      "package": "/Game/CitySim/Audio/Soundscape/UI/SW_Incident_Notice",
+      "source": "AudioSource/Soundscape/Unreal/Waves/UI/SW_Incident_Notice.wav",
+      "sha256": "02ed54554e91579856e9323224a68f9a98c9d9fbd66094e7a0dec081391f7b87"
+    },
+    {
+      "package": "/Game/CitySim/Audio/Soundscape/UI/SW_Service_Recovered",
+      "source": "AudioSource/Soundscape/Unreal/Waves/UI/SW_Service_Recovered.wav",
+      "sha256": "0c3cd0fa5680e85abd3a423bfd6b4748ffe2e1dcd0b7b3774ed08d07ad60fdfa"
+    },
+    {
+      "package": "/Game/CitySim/Audio/Soundscape/Ambience/Weather/SW_Rain_Moderate",
+      "source": "AudioSource/Soundscape/Unreal/Waves/Ambience/Weather/SW_Rain_Moderate.wav",
+      "sha256": "f145e528df868130305a237a4a0882876ad1292ab52fcc532e3971c4ce625e4d"
+    },
+    {
+      "package": "/Game/CitySim/Audio/Soundscape/Ambience/Weather/SW_Rain_Downpour",
+      "source": "AudioSource/Soundscape/Unreal/Waves/Ambience/Weather/SW_Rain_Downpour.wav",
+      "sha256": "82a97aca66bde37c9f6154cf1392ca4fbce8a950888b2683dab493c8a2173bf6"
+    },
+    {
+      "package": "/Game/CitySim/Audio/Soundscape/Ambience/Industry/SW_Industry_Clank",
+      "source": "AudioSource/Soundscape/Unreal/Waves/Ambience/Industry/SW_Industry_Clank.wav",
+      "sha256": "22789cb72a6a65449cafd2eb026d097eda7b990e4d093ac7283dc0ff572650a5"
+    },
+    {
+      "package": "/Game/CitySim/Audio/Soundscape/Ambience/Wildlife/SW_Cricket_Chirp_Pair",
+      "source": "AudioSource/Soundscape/Unreal/Waves/Ambience/Wildlife/SW_Cricket_Chirp_Pair.wav",
+      "sha256": "484b6a13614adad1139fb6270c25d4a55ed73c6b0e3188b05bbc7cd1c7e972af"
+    },
+    {
+      "package": "/Game/CitySim/Audio/Soundscape/Ambience/City/SW_Car_Idle",
+      "source": "AudioSource/Soundscape/Unreal/Waves/Ambience/City/SW_Car_Idle.wav",
+      "sha256": "bfddc7ea0d59bbdc991f9017614db4d7f5b9cffbf855eff98eb67061811bf24c"
+    },
+    {
+      "package": "/Game/CitySim/Audio/Soundscape/Ambience/City/SW_Car_Driving",
+      "source": "AudioSource/Soundscape/Unreal/Waves/Ambience/City/SW_Car_Driving.wav",
+      "sha256": "bba338ae75417eafa4d070eebb92be405702404883f0f4b4c8ba31d13d8930c3"
+    },
+    {
+      "package": "/Game/CitySim/Audio/Soundscape/Ambience/City/SW_Truck_Idle",
+      "source": "AudioSource/Soundscape/Unreal/Waves/Ambience/City/SW_Truck_Idle.wav",
+      "sha256": "0088fb5a1d90b2d140c8a786b65496a66bd385dcb86a93676ca5d8db7ecc3937"
+    },
+    {
+      "package": "/Game/CitySim/Audio/Soundscape/Ambience/City/SW_Truck_Driving",
+      "source": "AudioSource/Soundscape/Unreal/Waves/Ambience/City/SW_Truck_Driving.wav",
+      "sha256": "4626d686d2446c8dbccb652119ed24df6fc4f8b8bfb8a4fd9a1bd4ec5359e756"
+    },
+    {
+      "package": "/Game/CitySim/Audio/Music/Approved/SW_Music_Afterglow",
+      "source": "AudioSource/Music/CitySoundtrack/UnrealApproved/Afterglow.wav",
+      "sha256": "5204ef2b824fb41a4bbc6dfd4ae75fc4a786d9ef5c823a3f6ba172a5eccb0687"
+    },
+    {
+      "package": "/Game/CitySim/Audio/Music/Approved/SW_Music_GlassCanal",
+      "source": "AudioSource/Music/CitySoundtrack/UnrealApproved/GlassCanal.wav",
+      "sha256": "77694d270a4f2aae3ee850498e1a8b05c4ae8f651dcf6469af06bd1c8856c714"
+    },
+    {
+      "package": "/Game/CitySim/Audio/Music/Approved/SW_Music_NeonCourtyard",
+      "source": "AudioSource/Music/CitySoundtrack/UnrealApproved/NeonCourtyard.wav",
+      "sha256": "40be0e60558f40654ddddac1e10f997bbb23957835f0954ed1509ee3b2684fdf"
+    },
+    {
+      "package": "/Game/CitySim/Audio/Music/Approved/SW_Music_LanternWalk",
+      "source": "AudioSource/Music/CitySoundtrack/UnrealApproved/LanternWalk.wav",
+      "sha256": "670f6f4b8f36aacd44dbfba39b285d0d9752baa5b7b914ad48a08fdcccec515d"
+    },
+    {
+      "package": "/Game/CitySim/Audio/Music/Approved/SW_Music_NightTransit",
+      "source": "AudioSource/Music/CitySoundtrack/UnrealApproved/NightTransit.wav",
+      "sha256": "1dd6bdfbd17b95db7f2b458bbdc4fbd97467c8673b8a3c0aa80805da8025cb0e"
+    },
+    {
+      "package": "/Game/CitySim/Audio/Music/Approved/SW_Music_RooftopRain",
+      "source": "AudioSource/Music/CitySoundtrack/UnrealApproved/RooftopRain.wav",
+      "sha256": "93ae65acfbe004eae6492e24526c24bc7870e4e9357aeef49e43537598162f0c"
+    },
+    {
+      "package": "/Game/CitySim/Audio/Music/Approved/SW_Music_PaperLanterns",
+      "source": "AudioSource/Music/CitySoundtrack/UnrealApproved/PaperLanterns.wav",
+      "sha256": "17eb4afde0bcb031a0d252173fbde992e2a1965253770cb0c9225a5d63533d04"
+    },
+    {
+      "package": "/Game/CitySim/Audio/Music/Approved/SW_Music_TidalCircuit",
+      "source": "AudioSource/Music/CitySoundtrack/UnrealApproved/TidalCircuit.wav",
+      "sha256": "524ca72ade8cb1ce5f289a1e6aba9717e4efb47795dd2dc4cdcb377386fbf793"
+    },
+    {
+      "package": "/Game/CitySim/Audio/Music/Approved/SW_Music_BlueHour",
+      "source": "AudioSource/Music/CitySoundtrack/UnrealApproved/BlueHour.wav",
+      "sha256": "cce490728fd7d32adeb790a1218c1375f38928899acb42e2d58bd1f5428797a4"
+    },
+    {
+      "package": "/Game/CitySim/Art/Parks/Meshes/SM_Park_Field_Casual",
+      "source": "ArtSource/Exports/CitizenSportsRefinement/SM_Park_Field_Casual.fbx",
+      "sha256": "aa8f9a56c18e59433faa1632304c8e2af0098b88f3ecf7fbf8fb6420a24ce4b2"
+    },
+    {
+      "package": "/Game/CitySim/Art/Parks/Meshes/SK_Park_Field_Casual",
+      "source": "ArtSource/Exports/CitizenSportsRefinement/SK_Park_Field_Casual.fbx",
+      "sha256": "5b285affb7fcd11773890be054a09fe48de42f1babcfb3194ee98a65f823042a"
+    },
+    {
+      "package": "/Game/CitySim/Art/Parks/Meshes/SM_Park_Field_Office",
+      "source": "ArtSource/Exports/CitizenSportsRefinement/SM_Park_Field_Office.fbx",
+      "sha256": "d05912088bf7e70660a4489a731a5a4b834df176a2fe701a4ddaddd60359950f"
+    },
+    {
+      "package": "/Game/CitySim/Art/Parks/Meshes/SK_Park_Field_Office",
+      "source": "ArtSource/Exports/CitizenSportsRefinement/SK_Park_Field_Office.fbx",
+      "sha256": "8b6e2c9e531c15010d01823adbf3c294dd384a770e7217e228aecc53dd9f8578"
+    },
+    {
+      "package": "/Game/CitySim/Art/Parks/Meshes/SM_Park_Field_Worker",
+      "source": "ArtSource/Exports/CitizenSportsRefinement/SM_Park_Field_Worker.fbx",
+      "sha256": "2f434527b8e12deb1581fb598e03c919d3d9c4ec375e3caaf3716a5c5a2beeda"
+    },
+    {
+      "package": "/Game/CitySim/Art/Parks/Meshes/SK_Park_Field_Worker",
+      "source": "ArtSource/Exports/CitizenSportsRefinement/SK_Park_Field_Worker.fbx",
+      "sha256": "852b95f7154a85ffde35a847bb2fc36cd4368734dec8b4dc9d85af02fc19fcc7"
+    },
+    {
+      "package": "/Game/CitySim/Art/Parks/Animations/AS_Park_BaseballPitch",
+      "source": "ArtSource/Exports/CitizenSportsRefinement/AS_Park_BaseballPitch.fbx",
+      "sha256": "5055ccbbbb790da806c29e45974c7ddbe35516c3caeb54c45fee9c61007b95ae"
+    },
+    {
+      "package": "/Game/CitySim/Art/Parks/Animations/AS_Park_BaseballSwing",
+      "source": "ArtSource/Exports/CitizenSportsRefinement/AS_Park_BaseballSwing.fbx",
+      "sha256": "341e4b823ffae2bb3376f1aebd30d738773322685e02f00835f622a8fa0c31a9"
+    },
+    {
+      "package": "/Game/CitySim/Art/Parks/Animations/AS_Park_SoccerKick",
+      "source": "ArtSource/Exports/CitizenSportsRefinement/AS_Park_SoccerKick.fbx",
+      "sha256": "a9fd70fdfc22cb1df7c2d5933c783158e99cc2d79b43bb9a4f0b96c7db5ab1a8"
+    },
+    {
+      "package": "/Game/CitySim/Art/Parks/Animations/AS_Park_SoccerRun",
+      "source": "ArtSource/Exports/CitizenSportsRefinement/AS_Park_SoccerRun.fbx",
+      "sha256": "b412657a19f7ec7b7a536e3778e1824949ff4192ce24de2cea39863946540acc"
+    },
+    {
+      "package": "/Game/CitySim/Art/Parks/Animations/AS_Park_GoalkeeperSave",
+      "source": "ArtSource/Exports/CitizenSportsRefinement/AS_Park_GoalkeeperSave.fbx",
+      "sha256": "6c9afee65967d8a394a762d7ddae8da6df9258435bdddd49677e6f03ddfdd647"
+    },
+    {
+      "package": "/Game/CitySim/Art/Citizens/AS_Citizen_Walk",
+      "source": "ArtSource/Exports/CitizenWalk/AS_Citizen_Walk.fbx",
+      "sha256": "d746b2a930a17b4ab143c57361149011caa8ddadd54e4e9ce1d338c4c9347f70"
+    },
+    {
+      "package": "/Game/CitySim/Art/Textures/T_RepairDisplays",
+      "source": "ArtSource/Derived/EditorialArt/RepairDisplays.png",
+      "sha256": "8a41e0803a6ee8b880ef7e1375f3523aea1d70890490b8b56a35462c01509944"
+    },
+    {
+      "package": "/Game/CitySim/Art/Textures/T_StorefrontRoom_market",
+      "source": "ArtSource/Derived/StorefrontRooms/market.png",
+      "sha256": "b981bfa56a55303c299f14e7bc096e83c8ebc9057d899ca3b3d2a13d7c902355"
+    },
+    {
+      "package": "/Game/CitySim/Art/Textures/T_StorefrontRoom_bakery",
+      "source": "ArtSource/Derived/StorefrontRooms/bakery.png",
+      "sha256": "a0ada97a74b5b19966123b6576e9e1eb742464e3e76ff86acea6897cbfad71f4"
+    },
+    {
+      "package": "/Game/CitySim/Art/Textures/T_StorefrontRoom_books",
+      "source": "ArtSource/Derived/StorefrontRooms/books.png",
+      "sha256": "47d87ea5e7d30157fbb626f3109a4ba1ba22d41717326206f213577e66d1560d"
+    },
+    {
+      "package": "/Game/CitySim/Art/Textures/T_StorefrontRoom_cafe",
+      "source": "ArtSource/Derived/StorefrontRooms/cafe.png",
+      "sha256": "6757d9832af8b051fb2f65316045fbd0c13db654d84f551d433ca0e43b3b9883"
+    },
+    {
+      "package": "/Game/CitySim/Art/Textures/T_StorefrontRoom_outfitters",
+      "source": "ArtSource/Derived/StorefrontRooms/outfitters.png",
+      "sha256": "4d83a82c82b27770059ed0c8ff3721da9eec6961caeb000cf18e66af3d8193eb"
+    },
+    {
+      "package": "/Game/CitySim/Art/Textures/T_StorefrontRoom_pharmacy",
+      "source": "ArtSource/Derived/StorefrontRooms/pharmacy.png",
+      "sha256": "bb3d6be272efe11a8440e0f3f5818d88edba399db658d5d39996eee1e6861d49"
+    },
+    {
+      "package": "/Game/CitySim/Art/Textures/T_StorefrontRoom_repairs",
+      "source": "ArtSource/Derived/StorefrontRooms/repairs.png",
+      "sha256": "abc3d4817222823a2a732e1bb7d9741ef1308c381157940e72816625232d05bc"
+    },
+    {
+      "package": "/Game/CitySim/Art/Textures/T_StorefrontRoom_tech",
+      "source": "ArtSource/Derived/StorefrontRooms/tech.png",
+      "sha256": "695f2da0c6e59cac393a862f2ce281ccc148b9cd8208cc54d875ae154a772324"
+    },
+    {
+      "package": "/Game/CitySim/UI/Newspaper/T_Automation",
+      "source": "ArtSource/Derived/EditorialArt/NewspaperAutomation.png",
+      "sha256": "17c1f37fb83c2eaa1a887b9dc3b4f69b5a15ea3baf471784bbdb9303fc6ea1f0"
+    },
+    {
+      "package": "/Game/CitySim/UI/Newspaper/T_Commerce",
+      "source": "ArtSource/Derived/EditorialArt/NewspaperCommerce.png",
+      "sha256": "7530049482fabbb64d4995339be88999a1b6812f7b72534fa66f570555017fa7"
+    },
+    {
+      "package": "/Game/CitySim/UI/Newspaper/T_Housing",
+      "source": "ArtSource/Derived/EditorialArt/NewspaperHousing.png",
+      "sha256": "3d8226205198c1995746b5e17767de1efbae287dbaa32c9b318941c34b05f6f1"
+    }
+  ],
+  "changed": {
+    "CitySimVR/Content/CitySim/Art/Citizens/AS_Citizen_Walk.uasset": "8d448bb5d5c7c08479a92256f6cb36f1f5055bb47f5074c9aa05585aa739200f",
+    "CitySimVR/Content/CitySim/Art/Citizens/BS_Citizen_StreetWalk.uasset": "124aaf41422db4ae2b5bb1ae878d707e4126d34df4611d8f69a7c0562f64a145",
+    "CitySimVR/Content/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Shop_A.uasset": "3561943b4a2b2c5c63698eb02ee91dde19de3390cfec2a989e434f44030f7858",
+    "CitySimVR/Content/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Shop_A_bakery.uasset": "e9e5a778d3b5a13718f97c9316dfa4234c71db1a5b5ee599bb6acf86fd6bf340",
+    "CitySimVR/Content/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Shop_A_books.uasset": "f15c6fcdcd95430eb9b27a58a905894c7464742daf14512f294bc58c3bff77ca",
+    "CitySimVR/Content/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Shop_A_cafe.uasset": "06d1ddbcc369592114d9139daae1052e5f6549e600479c3f8e749e745d00efe8",
+    "CitySimVR/Content/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Shop_A_outfitters.uasset": "be244bd806abfe05a8606400dd0f1b2ac00a2bc1443eae5ec30d9cac9ed0f59a",
+    "CitySimVR/Content/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Shop_A_pharmacy.uasset": "078cb4346cf40b73dc74c8472a8117f93f203ff608c1fb43eb774a3b625023db",
+    "CitySimVR/Content/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Shop_A_repairs.uasset": "147b9f6d162cfd8c1bba94e778ddf5f6d36822fa7a38fb1287ad5bb2447c197c",
+    "CitySimVR/Content/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Shop_A_tech.uasset": "7b9f0517485572b70243c9308de70428d600914cd6a3bd2fb2748e6ab87f4432",
+    "CitySimVR/Content/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Shop_B.uasset": "4cecafb531fe687710a7beda57fdfa0f6942e1523116f7d993d7b0a6d65677fa",
+    "CitySimVR/Content/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Shop_B_bakery.uasset": "71a24ae22180849bc2759f9db4689c71799f78a3cae49b49ac124e298812d367",
+    "CitySimVR/Content/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Shop_B_books.uasset": "72739db406b29c3c9de940d75a058762e1f4c7a538928d79298eaaae42fb1f25",
+    "CitySimVR/Content/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Shop_B_cafe.uasset": "8ec1acdffaa98017e9a680bcd31712c3b4b3657bd017186bda31ee4a19029320",
+    "CitySimVR/Content/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Shop_B_outfitters.uasset": "22c1807f0f44b72200278e61cd95a82edf41bf94378a7848f2af967c04c54382",
+    "CitySimVR/Content/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Shop_B_pharmacy.uasset": "8411feeaaf60348d05e649ecf178a8c7e32c6661fcaebe643899823317631833",
+    "CitySimVR/Content/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Shop_B_repairs.uasset": "09847962c02425cd5109c15f16281d19e400d8ea2cabff81de3b09af3f265720",
+    "CitySimVR/Content/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Shop_B_tech.uasset": "23e4cd472db03e62e262be874a18207556d22184dd6668b41bfd27765fcba64e",
+    "CitySimVR/Content/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Shop_C.uasset": "9eebd3a4ac4dbe3bb83c8cc473ea5df7a92d56ffebf695835e8aeb16cccdd8cd",
+    "CitySimVR/Content/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Shop_C_bakery.uasset": "89773c2836665f5d907e7a6f1f9b128bfb7c1dccce6a33466b07078f592a6b4d",
+    "CitySimVR/Content/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Shop_C_books.uasset": "49899459b3319b6160c367cefd971f4b3b04dc547918cdd70985bab7d7fc06ea",
+    "CitySimVR/Content/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Shop_C_cafe.uasset": "ff66c7d879f4115d9be4b9fbeb1b61fc1a439b61160d9bd608a2c4c0206da523",
+    "CitySimVR/Content/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Shop_C_outfitters.uasset": "3e08e3e351de89c1e3d5a36e5504abfb47e4b0d6c85c906d67b8d727496ea2f6",
+    "CitySimVR/Content/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Shop_C_pharmacy.uasset": "469e23fb1292ecdd28a0b15f8f1fc290258963461158219a9a0bb709194c7109",
+    "CitySimVR/Content/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Shop_C_repairs.uasset": "5bca6fe8c0a0e1a9517b366eadd4ce8ba7b8b28c3e5ab371a89b6e938e90f9d6",
+    "CitySimVR/Content/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Shop_C_tech.uasset": "9b2e287bd1961f904550ba9d2860efadd4f6bbe5ed3cc7b47f81a13b3cbbe954",
+    "CitySimVR/Content/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Shop_D.uasset": "f2ed3eda072a1413ded9b6f5ad3659d7dc1e673ecdcabfbf53068258d4d84303",
+    "CitySimVR/Content/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Shop_D_bakery.uasset": "cb918f717a3068218f1c80be9a81b896a42ceab4f5711caed0d7286cfcacb045",
+    "CitySimVR/Content/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Shop_D_books.uasset": "77044ea1a003d38ea78edca7a40a98c92bc67b685b80d340d3e083a04aef99f2",
+    "CitySimVR/Content/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Shop_D_cafe.uasset": "f055e6f637bea44c1b7cd13b0cc1b93922f9c46b89aa2dcce2ac596ae9dbeee1",
+    "CitySimVR/Content/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Shop_D_outfitters.uasset": "21e2ea6097a88887b96b24cd34941bbf608a8a798b0d74e7563d51d7d4c01e12",
+    "CitySimVR/Content/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Shop_D_pharmacy.uasset": "e76de0f2eddc5b5f17ebbba637be603884b7b2585051a5348d7a3d69ac171213",
+    "CitySimVR/Content/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Shop_D_repairs.uasset": "22d6e77778e1e9520dedd9c86062b17cc1400f42b84cd1d119efea2ad3d71b72",
+    "CitySimVR/Content/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Shop_D_tech.uasset": "00fcdcc72a621e4810f25d53a35acc401fc88c167c5f17beb48bf6fd70a5e93f",
+    "CitySimVR/Content/CitySim/Art/Materials/MI_StorefrontRoom_bakery.uasset": "c382f8c94062a5c3abbecbe2226175ad5ff09595d585ef6890e4698242ec793a",
+    "CitySimVR/Content/CitySim/Art/Materials/MI_StorefrontRoom_books.uasset": "9124db0c4e0b68139dc16b25faac02ae324a61f1ca4757789c580ea64adff8dd",
+    "CitySimVR/Content/CitySim/Art/Materials/MI_StorefrontRoom_cafe.uasset": "6a04c9938582f07c786940b92f05efc67c32c0fa3a5e17f176803e3362f5c325",
+    "CitySimVR/Content/CitySim/Art/Materials/MI_StorefrontRoom_market.uasset": "c5b01a97aad61c4ac38fc15a331b3867d1159302263fa941ed322bdc2c842bf0",
+    "CitySimVR/Content/CitySim/Art/Materials/MI_StorefrontRoom_outfitters.uasset": "b074a69d1762505380f6b982f1a828e2a0f544337c66f652960360d00d4934e6",
+    "CitySimVR/Content/CitySim/Art/Materials/MI_StorefrontRoom_pharmacy.uasset": "656595b9f32d0ecca0dbe5945782e8e8fa84c59e4c9af4e27db866ce644dc0ce",
+    "CitySimVR/Content/CitySim/Art/Materials/MI_StorefrontRoom_repairs.uasset": "caea25ddfe4d4c817bdde49c4e7e481c15e0eeaa1b009f4f02a22480269c457d",
+    "CitySimVR/Content/CitySim/Art/Materials/MI_StorefrontRoom_tech.uasset": "8a66fe05a9539d3f29d541e444b68ba4ffbc34b27098625428a1a8aa5e88dcb4",
+    "CitySimVR/Content/CitySim/Art/Materials/M_RepairDisplayWindows.uasset": "9f52e833ab87279eef7e79f1a630bd8778f16724d384b4007406021b4b194b7a",
+    "CitySimVR/Content/CitySim/Art/Materials/M_StorefrontRoomWindows.uasset": "14f1903184f12ec854d474bb7894eb0bc89e9f29586513d426fc5c77edabb66a",
+    "CitySimVR/Content/CitySim/Art/Meshes/SM_CommercialHigh_StoreBakery.uasset": "3dff7498f12deb1d2ef99fcd215153412680fdcc4e78ffe1d1d273561ddd58f4",
+    "CitySimVR/Content/CitySim/Art/Meshes/SM_CommercialHigh_StoreBooks.uasset": "be1e1e8a328abe92c7f2cfaee438f52580ad017d9e6bd7929b65d496bf18fac5",
+    "CitySimVR/Content/CitySim/Art/Meshes/SM_CommercialHigh_StoreCafe.uasset": "efeddf8bc220bd4ebadb85eacd05a81e4d11779eacb31ae2d634426b6ef49506",
+    "CitySimVR/Content/CitySim/Art/Meshes/SM_CommercialHigh_StoreMarket.uasset": "e3bf7b38b51eb6a9be1131c1e878699a87bffcba6a96ac5d1f6cc0852061b897",
+    "CitySimVR/Content/CitySim/Art/Meshes/SM_CommercialHigh_StoreOutfitters.uasset": "0154ed04ccd688737140b6825b0047f01d593ee95fd5dda38fac36e4fd4a69fe",
+    "CitySimVR/Content/CitySim/Art/Meshes/SM_CommercialHigh_StorePharmacy.uasset": "21a724ce8010d0ea3ee1da403ca6b24cf484ebc7b9c34a3562364ead975c7042",
+    "CitySimVR/Content/CitySim/Art/Meshes/SM_CommercialHigh_StoreRepairs.uasset": "b6e011c29b49a4f0f1dcfcd616554e5f5620a82da82dd6b22ac5aa915efb8588",
+    "CitySimVR/Content/CitySim/Art/Meshes/SM_CommercialHigh_StoreTech.uasset": "27831b45b7a5d1ef58368a46818cf78efccf52a18f9b14f170d0f8e7f40aec5e",
+    "CitySimVR/Content/CitySim/Art/Meshes/SM_CommercialLow_StoreBakery.uasset": "5f48bc4246c995cce5010d1d79df0280df31ec64ca48f207539a011be0f36c9f",
+    "CitySimVR/Content/CitySim/Art/Meshes/SM_CommercialLow_StoreBooks.uasset": "aac2b09ebde4c729a940d0492a1ede70e030b048016e5cf20bdc5578f5901b09",
+    "CitySimVR/Content/CitySim/Art/Meshes/SM_CommercialLow_StoreCafe.uasset": "513525c29121e071abe89517334ee5abfdeba73699f25bcaa703a272a08c4112",
+    "CitySimVR/Content/CitySim/Art/Meshes/SM_CommercialLow_StoreMarket.uasset": "cbc14b3ddea4eacd07935277b42684a4f7c3e70563585d7df94dfb5d1536c4b4",
+    "CitySimVR/Content/CitySim/Art/Meshes/SM_CommercialLow_StoreOutfitters.uasset": "cabc14158a45066a086d0bac07f58bc53fddef15a6f74f79da9d226be66b5a00",
+    "CitySimVR/Content/CitySim/Art/Meshes/SM_CommercialLow_StorePharmacy.uasset": "d57ccb841dc879d01e7864dd31a27676bf4222f9d1cda5957298371da5499b22",
+    "CitySimVR/Content/CitySim/Art/Meshes/SM_CommercialLow_StoreRepairs.uasset": "b654ed872bb3e32381961116f781fa129fa954ed577a0c074babab743410309f",
+    "CitySimVR/Content/CitySim/Art/Meshes/SM_CommercialLow_StoreTech.uasset": "8dbd2e695923c36e1a98c60e5018932c0c81d88284f08715a1cd538e1c2bd467",
+    "CitySimVR/Content/CitySim/Art/Meshes/SM_CommercialMedium_StoreBakery.uasset": "e26b6f0dfc1129dcb7ad212141fc2ad8a0e08a0efa63ee9cfca0cd61a9866f9e",
+    "CitySimVR/Content/CitySim/Art/Meshes/SM_CommercialMedium_StoreBooks.uasset": "82f73332feb498cfb79130864010974a5c50c412ea0447e104938397140772b7",
+    "CitySimVR/Content/CitySim/Art/Meshes/SM_CommercialMedium_StoreCafe.uasset": "d3d90773b93a8b3d7358ed6b649b5ed2ae571ba17cc337d7a0739dd4c88cdc44",
+    "CitySimVR/Content/CitySim/Art/Meshes/SM_CommercialMedium_StoreMarket.uasset": "993e181fc271345a03c8b9c24c084523896ddaa111d28acc58a09a56e138ed8d",
+    "CitySimVR/Content/CitySim/Art/Meshes/SM_CommercialMedium_StoreOutfitters.uasset": "992bf5adf5dfc612f382b6dfa99798b9771cb9492662484998a01512fb3a297b",
+    "CitySimVR/Content/CitySim/Art/Meshes/SM_CommercialMedium_StorePharmacy.uasset": "2a063a03c9ddcec729ffdabec0eabb126d1bdee94d6c51322d97276c129d4b49",
+    "CitySimVR/Content/CitySim/Art/Meshes/SM_CommercialMedium_StoreRepairs.uasset": "f683ab89b1f18951719d2513ea33e90ac0095880f9e8c9556522d7c0784f5577",
+    "CitySimVR/Content/CitySim/Art/Meshes/SM_CommercialMedium_StoreTech.uasset": "31805debdcf38758afcbe26ea5668c1c1697fa709623e34be18a39ab6c1781e7",
+    "CitySimVR/Content/CitySim/Art/Parks/Animations/AS_Park_BaseballPitch.uasset": "de50012c3198f3c04a4eab16442918f1d757c6f498d73493a3ee0a8deef03acc",
+    "CitySimVR/Content/CitySim/Art/Parks/Animations/AS_Park_BaseballSwing.uasset": "e66d0806401dbec466feec1e52e9d359dc77c67a6e1a0b07990cad99686006fb",
+    "CitySimVR/Content/CitySim/Art/Parks/Animations/AS_Park_BasketballDribble.uasset": "56634b1bd7a736ea0b6a00a931c66d8561a79ce387206a86797fd8e2ad330922",
+    "CitySimVR/Content/CitySim/Art/Parks/Animations/AS_Park_BasketballShot.uasset": "bb207a0fab437dcb1b7996240e35a2b5b2d2da84c9b830b81b46dde0ccb1787d",
+    "CitySimVR/Content/CitySim/Art/Parks/Animations/AS_Park_GoalkeeperSave.uasset": "415b7d55ac8ecdb0acf4ab05f138a25473daa84b47dce21e840b65fb063696f5",
+    "CitySimVR/Content/CitySim/Art/Parks/Animations/AS_Park_Idle.uasset": "a88b9190d7db848e31f60c189a0e80dbc290b4eb1ff4272eea14211e8c3cec3f",
+    "CitySimVR/Content/CitySim/Art/Parks/Animations/AS_Park_Skate180.uasset": "9c2e0f76b2cbebce1d910da281ee05e5cb5bb7eeca7eb5d9e3166d23cb001aac",
+    "CitySimVR/Content/CitySim/Art/Parks/Animations/AS_Park_SkateCarve.uasset": "8b1d4101dca5da7efb0e5b0b1067d986d9ef3e563160a75bfd23d6d9811d106c",
+    "CitySimVR/Content/CitySim/Art/Parks/Animations/AS_Park_SkateKickflip.uasset": "98f5df90403a6c00c22cce30ff808b9d8d04f00b32b92aecb2b84e8e80ccd2d7",
+    "CitySimVR/Content/CitySim/Art/Parks/Animations/AS_Park_SkateLipStall.uasset": "cdaf065935ba135ee7d24c06ff959a679f8839c7cd1aebb3b3f391708d9935f6",
+    "CitySimVR/Content/CitySim/Art/Parks/Animations/AS_Park_SkatePush.uasset": "02963947b4ecbecbd3f55aedb2242ba43c65835403ee7bdc4ea4e8a53b12cbd4",
+    "CitySimVR/Content/CitySim/Art/Parks/Animations/AS_Park_SoccerKick.uasset": "1b3e34e8daec3722633e35fceb6e878ff85543d95c488a5e34a6a6c84869f9b0",
+    "CitySimVR/Content/CitySim/Art/Parks/Animations/AS_Park_SoccerRun.uasset": "de752b492e132d81db600acee51f7b93e4bd29a8a0120d5c63d78cacf76893dc",
+    "CitySimVR/Content/CitySim/Art/Parks/Animations/AS_Park_Walk.uasset": "aacc1fe75d8b04caea38c738b0ee1df8b6985a2b78fb7e7a06d6279fa26c8768",
+    "CitySimVR/Content/CitySim/Art/Parks/Meshes/SK_Park_Field_Casual.uasset": "5b9cfdd585516f32355a714d34990564a6a197b7565a8ec7ed6df3b6f49ca45f",
+    "CitySimVR/Content/CitySim/Art/Parks/Meshes/SK_Park_Field_Office.uasset": "510360a9c4c35d50ba42a4ecc40141455559375c5c6cef2f2d8482219fa221fb",
+    "CitySimVR/Content/CitySim/Art/Parks/Meshes/SK_Park_Field_Worker.uasset": "a0f503917a6ee1edddef058a71d82483994a095e196573dbad33f78fd9898ff2",
+    "CitySimVR/Content/CitySim/Art/Parks/Meshes/SM_Park_Field_Casual.uasset": "23e5ff39508b16ceaecf367a016775b5b821d5db07ab54eb1857458498f7864d",
+    "CitySimVR/Content/CitySim/Art/Parks/Meshes/SM_Park_Field_Office.uasset": "cab7c752754f75a1fcc9e2d768735773616dfa6887170dae6f35cf5410c2ea72",
+    "CitySimVR/Content/CitySim/Art/Parks/Meshes/SM_Park_Field_Worker.uasset": "d9acdec468489e3ecc70131ef6b1720dcafc2b80e7ba87fb6dee5315d630257e",
+    "CitySimVR/Content/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredBrick.uasset": "0ed5369e7fe8be236b7cfe2c61026ba7eb373e623eba943abec2770b8fa9572e",
+    "CitySimVR/Content/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredMechanical.uasset": "d76fba59f24a0e5eefbb667a53610d802eea12f483a9ac0f6b24b262402593d6",
+    "CitySimVR/Content/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredRoofMembrane.uasset": "d05fa8f2372fe69460ef1c58a76990814e401982b999c5047fa14684897be9be",
+    "CitySimVR/Content/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredRoofMetal.uasset": "4347fef33028f3fe47df0e1d355474f124890e2d0eeeb93e1f712b0d915b99e6",
+    "CitySimVR/Content/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredRoofShingles.uasset": "718074611695d106b003fff306139aeba3479ff9d021f32898cc4fb6f5a322a5",
+    "CitySimVR/Content/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredTrim.uasset": "3b5758304a39dcee870e37d25413ca1b2d968c995e44b837c7ae09dd22656bb3",
+    "CitySimVR/Content/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CommercialBrick.uasset": "d08f5184c3ad9fa8eb699acf358b65a9151afe52aacf69105669c535695a44c1",
+    "CitySimVR/Content/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_IndustrialBrick.uasset": "72c6a3e51f7349350a7248fc519c6a9da637083a3a6f334845594814cdb81a92",
+    "CitySimVR/Content/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_IndustrialMechanical.uasset": "e672edd39956bf2ee73fe49deb2c2d7a5ba669d53b35d7a20d0ae222b3abd6c9",
+    "CitySimVR/Content/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_Mechanical.uasset": "a2a51f91de9914568d6f98a6175b47a8b598c100aab9c3a8bb86b2f970e6b85e",
+    "CitySimVR/Content/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_ResidentialBrick.uasset": "8d651ba9abeb87e3182d82d2972272a079ecd1ae31823bfd1c9aab81ad294a84",
+    "CitySimVR/Content/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_Roof.uasset": "732eb73d9f6dba5f1e9d00cce090ce0741e76c6845a826df7f57f44d8ff06a52",
+    "CitySimVR/Content/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_RoofMembrane.uasset": "7de22fa3dc62ddd0911777b22cd5d0c727322b14c0d5bc07e41c252c0d74d6c0",
+    "CitySimVR/Content/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_RoofMetal.uasset": "a41258e98f5d5262784995c1a9e871e5506295a032dc72df766b7a60e6ec6117",
+    "CitySimVR/Content/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_RoofShingles.uasset": "b3ca65efab925dadc8c72bcda5f88d9243e1787e89d18a939b4dfe555409364a",
+    "CitySimVR/Content/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_StoreSignTall.uasset": "1039cecff14ce15737f7388ef48837a1fc2e3719e601d4999646e212878d5852",
+    "CitySimVR/Content/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_StoreSignWide.uasset": "4715cbc75b15f80c7cb9aaec28ff89f6b118b2814eb233fbcf24b1f843695901",
+    "CitySimVR/Content/CitySim/Art/Prototypes/BuildingSurfaces/Materials/M_CityBrick.uasset": "9f8d9427b14f4b8def51f312328a2fdb6981ed75aee8e682e35e9b1599ca6771",
+    "CitySimVR/Content/CitySim/Art/Prototypes/BuildingSurfaces/Materials/M_CityMechanical.uasset": "c11bbf623ebfc8365005233b75580684ff65d640442bd7ddca667fec4fa14e85",
+    "CitySimVR/Content/CitySim/Art/Prototypes/BuildingSurfaces/Materials/M_CityRoof.uasset": "8259f6f8c216216d496efca8941941e2489e9218b84ce5f163d550025729c991",
+    "CitySimVR/Content/CitySim/Art/Prototypes/BuildingSurfaces/Materials/M_StoreSigns.uasset": "9f063716c0b73423f27380877dd9e929f8ebe8d069da2ff1267129753c2eda86",
+    "CitySimVR/Content/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_CommercialHigh_StoreBakery.uasset": "757b7b780667cca1ede3e8d881a6e90d3ff2739d82dfbe5c1f8cf950d9620862",
+    "CitySimVR/Content/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_CommercialHigh_StoreBakery_Damaged.uasset": "6e577bb7809a8bf1a59063f02b06b2de87d146bdfd9117825ba46e1db03cb22c",
+    "CitySimVR/Content/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_CommercialHigh_StoreBooks.uasset": "c522025f2b66d105759bc41526a76e63e09039be33cd8812c97dfbc618c37e10",
+    "CitySimVR/Content/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_CommercialHigh_StoreBooks_Damaged.uasset": "53330fa9dbcee06505b3e4bb600d7f32c1bc305280ef9d8bf8432d179561c28c",
+    "CitySimVR/Content/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_CommercialHigh_StoreCafe.uasset": "1dfd878bd8070e2ce113e5c9657f3f80acf7378c87ebba2b582ecf7f3724311b",
+    "CitySimVR/Content/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_CommercialHigh_StoreCafe_Damaged.uasset": "6ce800c9adb5416252b1592ea09f9916611e70a6178910f5e8178378e4b6c25f",
+    "CitySimVR/Content/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_CommercialHigh_StoreMarket.uasset": "738d98ff7ea137149e411e5abc79f8be691ee610883075e1310d7b21e0db84fd",
+    "CitySimVR/Content/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_CommercialHigh_StoreMarket_Damaged.uasset": "710db86573fdb1ef0a14380d5824855c7cf69cdef71f59a6eb7a94a8777cadac",
+    "CitySimVR/Content/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_CommercialHigh_StoreOutfitters.uasset": "20eaf55d8aea5df3e4160f9cd510d840df1628a7fe476bbf4a897ae5e0a1dc41",
+    "CitySimVR/Content/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_CommercialHigh_StoreOutfitters_Damaged.uasset": "aa2c24336e779e8ddae045b49fb9e48618f5433940fa35d1014b152118e9a91c",
+    "CitySimVR/Content/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_CommercialHigh_StorePharmacy.uasset": "109a9fc78b7ae5a7a37e777f73ddf9262ec76196060d65eba8efdb121278ccb8",
+    "CitySimVR/Content/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_CommercialHigh_StorePharmacy_Damaged.uasset": "d330595035b2414fb9486b117bb98afbf81ec338e654b27442a8d30a9897ae23",
+    "CitySimVR/Content/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_CommercialHigh_StoreRepairs.uasset": "a65d1f027dca7ee7b1915d4b22a94a722f951d25b4339dc5cf786f26e836e4f9",
+    "CitySimVR/Content/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_CommercialHigh_StoreRepairs_Damaged.uasset": "9578d2d21ae1ace5a56bcb7e47e17bae6468dcd8dd77b0cba9d4eab41e51dd0f",
+    "CitySimVR/Content/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_CommercialHigh_StoreTech.uasset": "6fbc6c9810ed8626039dbf3c29b83308056b3c2935f9cc85ccfbdd00aba69f91",
+    "CitySimVR/Content/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_CommercialHigh_StoreTech_Damaged.uasset": "c8b4d5bb2dd0ee6f9a3fea0d039d20f259aaa94d63b8497eadccdbba3103e393",
+    "CitySimVR/Content/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_CommercialHigh_SurfacePrototype.uasset": "87c57aa518d0e6f5a40e080e4e77be5aab1b02603fdae50d6335498491d3c1c5",
+    "CitySimVR/Content/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_CommercialHigh_SurfacePrototype_Damaged.uasset": "1741a689170a8b6602b383268e721031bdeb3ad89737d0c5bb632a207c79063d",
+    "CitySimVR/Content/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_CommercialLow_StoreBakery.uasset": "1d29fd99a7bfa31c415f76f147d6c86e833346ccfc1814f17e7acfd4c77cabdf",
+    "CitySimVR/Content/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_CommercialLow_StoreBakery_Damaged.uasset": "4bee563b822dae1f07c116e3e898e8361cac1d648347e4138ae599604d75ac4a",
+    "CitySimVR/Content/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_CommercialLow_StoreBooks.uasset": "00f7518e64811a94798287719668ddc18ebc93fd27dd9fa8cd1076ed4c5e6907",
+    "CitySimVR/Content/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_CommercialLow_StoreBooks_Damaged.uasset": "8c2a901cc87c77dfbd10eca367995ff33015c273baff782973bb7f8dabeeb740",
+    "CitySimVR/Content/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_CommercialLow_StoreCafe.uasset": "443244d018ec4ff8c63fde3016ea8aad00faa46b2c829fd6fd715a54440440ec",
+    "CitySimVR/Content/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_CommercialLow_StoreCafe_Damaged.uasset": "55cf547249a9ef98ee17c6316e26eb3ee87e05a609f516c24832c13529309011",
+    "CitySimVR/Content/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_CommercialLow_StoreMarket.uasset": "2781ef77823f08f83431f6baf3a0ad605fe2fde33bd094e76098cadd43f0eb57",
+    "CitySimVR/Content/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_CommercialLow_StoreMarket_Damaged.uasset": "8186aaad85bbd1095e4da03159040c066e037b1b55e3a85992e382ea6a1ad0c7",
+    "CitySimVR/Content/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_CommercialLow_StoreOutfitters.uasset": "0ad658cf262ef7f99aa0ea71ad390d37221180da36032b2821c9f9d87cd4c887",
+    "CitySimVR/Content/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_CommercialLow_StoreOutfitters_Damaged.uasset": "72f6b1831ac9b12b9f0e908b8b5c2dfa3b181e67561333d811ef4d48863f7908",
+    "CitySimVR/Content/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_CommercialLow_StorePharmacy.uasset": "781310ecaba7301f38c846e47737dd068c8259297fe2aa83979c78fca7fb4820",
+    "CitySimVR/Content/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_CommercialLow_StorePharmacy_Damaged.uasset": "f57c83ceef2a6370e36e0bc1bbb0160001a811669d73878f5f4c319fbc91b3c2",
+    "CitySimVR/Content/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_CommercialLow_StoreRepairs.uasset": "caeafb5d733c33f71d5c8f4ef0ce52e8400ae2bcbe48ebe7d519ecccd0fde00d",
+    "CitySimVR/Content/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_CommercialLow_StoreRepairs_Damaged.uasset": "09a9f4f27229a279b43220c14a3640ab9a100259d36460a1763ca41d8556b213",
+    "CitySimVR/Content/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_CommercialLow_StoreTech.uasset": "3710e97e37faeb9e27ed56ae798c589c9f1cc2ae116d454f2f9d77a0fa40589f",
+    "CitySimVR/Content/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_CommercialLow_StoreTech_Damaged.uasset": "284463cf23b2d16d18a88e2705ae0a07422ccaf6bf1d91b9363459f887a76b6b",
+    "CitySimVR/Content/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_CommercialLow_SurfacePrototype.uasset": "ee41d4277a06526e1842a40a8d7fe94da021172a348110050c178af76f72340a",
+    "CitySimVR/Content/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_CommercialLow_SurfacePrototype_Damaged.uasset": "8efe28b36e98f2ee5f97d0c689aaf43ab5963b392103dc05138306b22a109325",
+    "CitySimVR/Content/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_CommercialMedium_StoreBakery.uasset": "1a5b0e75cc0ca026a6559a9f2e173301f473d6e1ef80e40575c5e138bcd10191",
+    "CitySimVR/Content/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_CommercialMedium_StoreBakery_Damaged.uasset": "65484a9565adba7d142937e6fcb53e27c7cde18470011758618118269edfacd1",
+    "CitySimVR/Content/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_CommercialMedium_StoreBooks.uasset": "acd988e4bd72e6dbe98a7f4dd74ad228b227bf7ac4912bb072a68c04eb77faf5",
+    "CitySimVR/Content/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_CommercialMedium_StoreBooks_Damaged.uasset": "1a759930aa8f47d389d021753c683516c70c4ac29954f390ab4618f3623d38a4",
+    "CitySimVR/Content/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_CommercialMedium_StoreCafe.uasset": "e917f54a809781a5a1387caf1a19c23df92b74acb8d359db1fbfeb0ec1009e0b",
+    "CitySimVR/Content/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_CommercialMedium_StoreCafe_Damaged.uasset": "09c60c31a68d96a70083a35ae086734ea83689fe9d1b1003e669d85dd2f242a8",
+    "CitySimVR/Content/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_CommercialMedium_StoreMarket.uasset": "aa4a59c24f0bbaab303402d31548c080b98bf779bd11d717540369c8f3d22551",
+    "CitySimVR/Content/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_CommercialMedium_StoreMarket_Damaged.uasset": "06f42c5fee2470456318be7c0da1780b3037bcf4ac63fb86fde2f3c92cf29df6",
+    "CitySimVR/Content/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_CommercialMedium_StoreOutfitters.uasset": "69383572bd626b3f29082f48b3feaffba57bd184f70ff46caec97351c83af24b",
+    "CitySimVR/Content/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_CommercialMedium_StoreOutfitters_Damaged.uasset": "db6440463afbcbeec19c9f03b43035478ede12c05bf8de6562dbab55fe383b47",
+    "CitySimVR/Content/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_CommercialMedium_StorePharmacy.uasset": "ca06d97c3df493b0f101721c5d06f69108dd9f80cde8c1f6af8fe536470f049e",
+    "CitySimVR/Content/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_CommercialMedium_StorePharmacy_Damaged.uasset": "056ee4f7a79c4b43a58ee6d633a0bb7bedc6b98aac97e44cd99ac59c60d9d6da",
+    "CitySimVR/Content/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_CommercialMedium_StoreRepairs.uasset": "f49325fd420e01129a9c19888eae185a580c22a5287ecc787039282839b8adeb",
+    "CitySimVR/Content/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_CommercialMedium_StoreRepairs_Damaged.uasset": "713ca31b96785b0b56cd467e1fead052130c991b5c750ad3aab8ec9a86158c5f",
+    "CitySimVR/Content/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_CommercialMedium_StoreTech.uasset": "b53c6465d73bca892b974ff20d4137d3d8b3e0397de9ebb3f55b1139fb3d2cb1",
+    "CitySimVR/Content/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_CommercialMedium_StoreTech_Damaged.uasset": "692c90856ee65baff59984264870bef4b626b6c0f9754658a14e3e25243da03d",
+    "CitySimVR/Content/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_CommercialMedium_SurfacePrototype.uasset": "e9a808195ae20b1f74366d43731a05b701531e5a0cc8a9087fabf0ad283edf5d",
+    "CitySimVR/Content/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_CommercialMedium_SurfacePrototype_Damaged.uasset": "6407d4ce3b889181c10945d85c0c893b864df34b9f24aa84a655859569137ca4",
+    "CitySimVR/Content/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_IndustrialHigh_SurfacePrototype.uasset": "9d753b5b4602d008abc5a20a03b380ad92759a3781f20a02adfde2201a7d130f",
+    "CitySimVR/Content/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_IndustrialHigh_SurfacePrototype_Damaged.uasset": "7cef917b039dc7672f4829c7e50ab4e8f3464d7a13e02738305dbc7f266da765",
+    "CitySimVR/Content/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_IndustrialLow_SurfacePrototype.uasset": "16d31cdc1eafa869bbbbaff9d91cc9d1690df01285265450c82c3758ac308fbd",
+    "CitySimVR/Content/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_IndustrialLow_SurfacePrototype_Damaged.uasset": "67584447cbf22948ec69017885006ceb1003ffdf4c156c4e00f6de5e014e6aab",
+    "CitySimVR/Content/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_IndustrialMedium_SurfacePrototype.uasset": "fad2e26e17876c3ba95f99ec0ea5dfcb5c7c94af834dc75c1234d8cc8512bd9e",
+    "CitySimVR/Content/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_IndustrialMedium_SurfacePrototype_Damaged.uasset": "03bad2688c273fb5effd46171824dc068b791fe81a52f893f83731ef3c5d0a81",
+    "CitySimVR/Content/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_ResidentialHigh_SurfacePrototype.uasset": "df9f2ffb820fc9ac971fad88fdbcd5ff299478aadc2e1aacfae81a4db08a0a0a",
+    "CitySimVR/Content/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_ResidentialHigh_SurfacePrototype_Damaged.uasset": "1de5781e8daf49401cad2782f648f0ff98602d694588553a87558de9a43d079e",
+    "CitySimVR/Content/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_ResidentialLow_SurfacePrototype.uasset": "1d89aca6568e9aa1b8708481c37d159a8633a1fba48e80f094e49aba03a2d973",
+    "CitySimVR/Content/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_ResidentialLow_SurfacePrototype_Damaged.uasset": "48cb1b758be8d0172e40285180e80c62df7f9e3c8503a0a7bf5e8f6d691d0750",
+    "CitySimVR/Content/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_ResidentialMedium_SurfacePrototype.uasset": "5370d765bd957edc3c021d1b2d6e0ad923670cb749712bbd75af70e037c8223d",
+    "CitySimVR/Content/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_ResidentialMedium_SurfacePrototype_Damaged.uasset": "26ee740a903a2feaf31f71cfd62b72260c733b3b060091d59831937a8b2a6996",
+    "CitySimVR/Content/CitySim/Art/Prototypes/BuildingSurfaces/Textures/T_CityBrick_BaseColor.uasset": "a8c685214ac022ee39f991fd5a005ca232bf8ac4e6542f7795e9dc5865fdf921",
+    "CitySimVR/Content/CitySim/Art/Prototypes/BuildingSurfaces/Textures/T_CityBrick_Normal.uasset": "799d19e207f65ed1a444d036ff10393322ebbfb9a4252ce883a6a8ee7c4b63b0",
+    "CitySimVR/Content/CitySim/Art/Prototypes/BuildingSurfaces/Textures/T_CityBrick_ORM.uasset": "e8b0d18f97f9f002642eec92a6d28f97d77c38a955186dc9ebc091cf161ffb60",
+    "CitySimVR/Content/CitySim/Art/Prototypes/BuildingSurfaces/Textures/T_CityMechanical_BaseColor.uasset": "2895fb69ca6381f38c790da38ebd179e95cc041b2dcf96e162a0efe581a16c1c",
+    "CitySimVR/Content/CitySim/Art/Prototypes/BuildingSurfaces/Textures/T_CityMechanical_Normal.uasset": "dc34210f951485c5bb1595a6d3e2810b1a0f845ac65d8afa0cfd1005ce207c92",
+    "CitySimVR/Content/CitySim/Art/Prototypes/BuildingSurfaces/Textures/T_CityMechanical_ORM.uasset": "a7ba56114eb6e4a3c0138d1286953df68227f805a546c19aa6082a0fa78b4a93",
+    "CitySimVR/Content/CitySim/Art/Prototypes/BuildingSurfaces/Textures/T_RoofMembrane_BaseColor.uasset": "473350d46e081b097f2979f5d6fdb64df371493c4cc6b48c7c0de16e7aa21a14",
+    "CitySimVR/Content/CitySim/Art/Prototypes/BuildingSurfaces/Textures/T_RoofMembrane_Normal.uasset": "413951f550f5ba4e168be1abbf5ab5a5626fce0bcc26ab0b7b6e1e7b908ecc23",
+    "CitySimVR/Content/CitySim/Art/Prototypes/BuildingSurfaces/Textures/T_RoofMembrane_ORM.uasset": "cc0496f4ae24281cc046f5b78636332ecec737595278d57017098809128052df",
+    "CitySimVR/Content/CitySim/Art/Prototypes/BuildingSurfaces/Textures/T_RoofMetal_BaseColor.uasset": "63463da0990406fc205a9e45ec9c8fb721969f067dc325db60dbd17fec34f6da",
+    "CitySimVR/Content/CitySim/Art/Prototypes/BuildingSurfaces/Textures/T_RoofMetal_Normal.uasset": "d93b701b990ea200fa1cf0f2b0ffaa05c2e3ddf67455affff0b9970d5a0a2966",
+    "CitySimVR/Content/CitySim/Art/Prototypes/BuildingSurfaces/Textures/T_RoofMetal_ORM.uasset": "7e6931dee367cab34edf5a7044d3648a204312d580a02298e79431bebd2fe471",
+    "CitySimVR/Content/CitySim/Art/Prototypes/BuildingSurfaces/Textures/T_RoofShingles_BaseColor.uasset": "41c742f33713f0c36e4ee15d5edb263af2904ad56973e534bdf22d98fe33079d",
+    "CitySimVR/Content/CitySim/Art/Prototypes/BuildingSurfaces/Textures/T_RoofShingles_Normal.uasset": "33d71c3fde7c4b7dd36e427ea57af277a0e4d6ddd8b9381f10bd5756fbba46af",
+    "CitySimVR/Content/CitySim/Art/Prototypes/BuildingSurfaces/Textures/T_RoofShingles_ORM.uasset": "711c60e631eea14d3bca25705463258c1551228e3c6ce9990f003f1ff9dd3665",
+    "CitySimVR/Content/CitySim/Art/Prototypes/BuildingSurfaces/Textures/T_StoreSigns_Tall_BaseColor.uasset": "4474e7ed631f994ac2ec54027eb674909d81bd898cf79658ee895a227c32633e",
+    "CitySimVR/Content/CitySim/Art/Prototypes/BuildingSurfaces/Textures/T_StoreSigns_Wide_BaseColor.uasset": "182a1b9a9c1c3c275cfc06307f1249d0e1c2d655436c7d704826ee130b9e37f3",
+    "CitySimVR/Content/CitySim/Art/Textures/T_RepairDisplays.uasset": "8723b9d7712702f6cff30178c44b15e56f780da043e3dcf1860bfe1b726c5df8",
+    "CitySimVR/Content/CitySim/Art/Textures/T_StorefrontRoom_bakery.uasset": "03c4fad429429cb838fc6f3e281b0a6e84774bab3386b8a5c1061bd2718de2aa",
+    "CitySimVR/Content/CitySim/Art/Textures/T_StorefrontRoom_books.uasset": "cec258b6de876a84c63a9c768565521d5dc3366010f581bd1fe66e62860e644b",
+    "CitySimVR/Content/CitySim/Art/Textures/T_StorefrontRoom_cafe.uasset": "59e1837ab7484802a9dbd98a92f71326c6ec86f7f4f10687a672a4acbd2a283a",
+    "CitySimVR/Content/CitySim/Art/Textures/T_StorefrontRoom_market.uasset": "f5440188727e4cdabf864b227c61916d23d2a353a2674ea8038a6816481a552a",
+    "CitySimVR/Content/CitySim/Art/Textures/T_StorefrontRoom_outfitters.uasset": "dbc0a4c96c6720d7cdab3a9bc13db9d6921992f8fe368daa04ab259cfc286951",
+    "CitySimVR/Content/CitySim/Art/Textures/T_StorefrontRoom_pharmacy.uasset": "ad50d29b07e1fb772b76772eee762af11067bbb69b34d45e9cb74de63baf4225",
+    "CitySimVR/Content/CitySim/Art/Textures/T_StorefrontRoom_repairs.uasset": "d45490bffa0dcede515d8f45f35c105072586d6036d90ada221d2b602f0b81d0",
+    "CitySimVR/Content/CitySim/Art/Textures/T_StorefrontRoom_tech.uasset": "d05ed88d11aaf7fff6fb3efc59a5e32f2a14f12fa57a74714872e4390113c207",
+    "CitySimVR/Content/CitySim/Audio/Music/Approved/SW_Music_Afterglow.uasset": "4ccedf8773b383ea7eeb43b658665fd6764f3c3ffe2ae8268b12d52b26ad9e11",
+    "CitySimVR/Content/CitySim/Audio/Music/Approved/SW_Music_BlueHour.uasset": "227113658587a5b8cc13d029df2e68c1b214241486b6411748a5b7c346023381",
+    "CitySimVR/Content/CitySim/Audio/Music/Approved/SW_Music_GlassCanal.uasset": "a70eae14de182f25ad943313072397199e34de730e664079f7e1fcff33e613ad",
+    "CitySimVR/Content/CitySim/Audio/Music/Approved/SW_Music_LanternWalk.uasset": "3a93f4397cc240e066392ffeb6850ba9c10fc5f2b14c5a097665b26895aec080",
+    "CitySimVR/Content/CitySim/Audio/Music/Approved/SW_Music_NeonCourtyard.uasset": "c4baae0e8f44d7c162f0b452072474ced1f011596bce8a5e1d282019319b7ca1",
+    "CitySimVR/Content/CitySim/Audio/Music/Approved/SW_Music_NightTransit.uasset": "7d89b3f30e9fc89fd9914c7dce0ff5c4173960e3cd8b9cadb7592cd4dea9c614",
+    "CitySimVR/Content/CitySim/Audio/Music/Approved/SW_Music_PaperLanterns.uasset": "f7f24d3447d4d2862c02d3964d6cf08af66467ae2713e36a52823be4273fc52b",
+    "CitySimVR/Content/CitySim/Audio/Music/Approved/SW_Music_RooftopRain.uasset": "c0f2342a9c42a67ee9f48be0adf23cfb6b76ed29044878b89e52c2c9b86cb3ed",
+    "CitySimVR/Content/CitySim/Audio/Music/Approved/SW_Music_TidalCircuit.uasset": "1b4439c164d7a8aaa480d3d70bcfcd2e9ab7b6d927756ad88a3cf628595dcbcd",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/Ambience/City/SW_Car_Driving.uasset": "3a83984e3347506df015cb2083d96cfe2570746e51e5fab36dbce42c7df41cbc",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/Ambience/City/SW_Car_Idle.uasset": "f4cf57211389a5ab5a2f2f7ea0774e820fdef75e2fb643cc2c49f13056750daa",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/Ambience/City/SW_Car_Pass.uasset": "c1a652c856c0f374f361629ce5691a31f95a42d8b5750bb15977a9666b130ec5",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/Ambience/City/SW_City_Distant.uasset": "40dd0f7abd87ce7150f42d35ac7b84947c4c01671deb231d68b487ef6563b699",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/Ambience/City/SW_Market_Murmur.uasset": "28d5506039e9b970dc821959f2bb148d2a08ca2ee7bde3b3344db3f610505f58",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/Ambience/City/SW_Truck_Driving.uasset": "e5967a1a4c497bb7f879060a58f8baa0e3e2c56cc82d16128ff16ca27b081cf5",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/Ambience/City/SW_Truck_Idle.uasset": "c3e92c4dfefce986d7a7c53198f9d8cb3602454c3652ae4f9c536d0783c641a7",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/Ambience/City/SW_Truck_Pass.uasset": "b2ba21562c0539a05b2080aa8b18200bf44df789298c8adbd632a5bb32b368bd",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/Ambience/Industry/SW_Industry_Clank.uasset": "61232ef95a32c1c2259629c5b632e15cba56103a9140e7aa8ec039c957932def",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/Ambience/Industry/SW_Industry_Idle.uasset": "a87e003c2ce6c9337091a6a021f0200b882abaeb61faf15fc28c11f132b67dbe",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/Ambience/Industry/SW_Industry_Working.uasset": "bab54beae7ff641ec014aedb48f415e25f6f87ea405762a011eb055243c43495",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/Ambience/Park/SW_Park_Foliage.uasset": "f51d761fd5918328659e2e6f4f7ca192edc1f9689fa92697a7821d92e889f0fc",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/Ambience/Park/SW_Park_Fountain.uasset": "0ac27d13ab5dbc5bed5cf71fe20744a51dd68e046c0979b435a06d09b8f68057",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/Ambience/Park/SW_Water_Shore.uasset": "287e0461f84a4c82887f3035b4b1d112bc5ac615f67982bda34115a27b146520",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/Ambience/Weather/SW_Rain_Downpour.uasset": "9a04a7c3dac8646ef44b73c927e0ce20305479cfd0777bc62f8c98cc15f195f3",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/Ambience/Weather/SW_Rain_Heavy.uasset": "90c30231d3f20921c49f463fcf7d718e145820f7a6cd43049f1de29f001b2ba8",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/Ambience/Weather/SW_Rain_Light.uasset": "907d2968c904aa356eb09bd857b824f8f71d72e046cec43696a46db4bd4dc019",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/Ambience/Weather/SW_Rain_Moderate.uasset": "56b01a1ec950071d1169160c4274a1371227572c4da763aefea09f01c42fc98e",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/Ambience/Weather/SW_Storm_Roar.uasset": "044c87392268d46f146b180b6bc939197a9849898cbeb989c2ea6426c89a97f7",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/Ambience/Weather/SW_Thunder_Distant.uasset": "152d9e7911b9199b2c419a3c70a0fa574c26dbd2b8cd9a4ab6314ad055ff1ed0",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/Ambience/Weather/SW_Thunder_Near.uasset": "31078f8585e1be9962615dff6a838048005af116a3ae7da9fd71b62b0ecd4efc",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/Ambience/Weather/SW_Wind_Gusts.uasset": "d92334d0aef8e590e0c91ad6b90c1cbcdbdd304b2da56135bf715f72d1988236",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/Ambience/Weather/SW_Wind_Light.uasset": "52f3b6196e6a31da691ece542bb2d4a2b354a9153c91f3f6033361c760304f52",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/Ambience/Wildlife/SW_Bird_Chirp_A.uasset": "7ed625394770ce5cfd42e0f68c6c02caaed366c4285cafd4fdba537ced421304",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/Ambience/Wildlife/SW_Bird_Chirp_B.uasset": "28711f36b8064c81efe6ddc745590292f1ebb927b6a78936e8830b31ceee52c4",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/Ambience/Wildlife/SW_Bird_Chirp_C.uasset": "c171acf8376c48b675a994894b7f94eacff3e0a3a7bc05e33cc62e82e390d3d9",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/Ambience/Wildlife/SW_Cricket_Chirp_Pair.uasset": "5b5d58c61a3e8a607ea8c37b6a72921b485f63c5bc152637ab87127d30a6f442",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/Ambience/Wildlife/SW_Night_Crickets_Dense.uasset": "11781bd99f40536ad48afff2f74f85024724b4af340c476974ddea393d8eecab",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/Ambience/Wildlife/SW_Night_Crickets_Light.uasset": "a150098bcee01d5f7ac2d3c35e4d997a6b68fcda19c8c02d1a8088827caec02c",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/Effects/Activity/SW_Construction_Tap.uasset": "df6953e80be96bb321e555d0b996a7bfea1079ef32ec8a3d4ac16af6761e28c9",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/Effects/Activity/SW_Demolition_Impact.uasset": "f7b2b9512d1b1527e110593758fb0fda6d99ac251ef1f3d4e4305a6b1f67dafc",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/Effects/Activity/SW_Earthquake_Rumble.uasset": "b26aa990f5daabf2716888be1cbf358eed86e02d2acab8aff3224de91ec70986",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/Effects/Activity/SW_Fire_Crackle.uasset": "dbbea206f7425189c4e64a2ac250368fe6a118726a16bd572dc01a3848374836",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/Graphs/MS_Action_Confirm.uasset": "081a195de3da6df1a4db40d79c454fe62a3eff573e74502e259ce961c6da8925",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/Graphs/MS_Action_Denied.uasset": "dc7cc558a3f29248af1f19c07e9e4f4985dd9835426653cbb0e37d9f2f50c54c",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/Graphs/MS_Ambulance_Intro.uasset": "19af7418a8a940e591c10a907d6e089f1721892170ff23ed289586ebac9ecb3b",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/Graphs/MS_Ambulance_Loop.uasset": "119eea1108e65ffb2719cea5babf719c2f4cc9b92e0fc784fc23f103c19a5a08",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/Graphs/MS_Ambulance_Outro.uasset": "955b708bc9376501244bf62b970b5c7369bb1c71a50d2842befcfd327c4786cd",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/Graphs/MS_Bird_Chirp_A.uasset": "86b726e56108d3a877750cde31cf10b3cfe055f8bc0ce7a626571519a02f92f6",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/Graphs/MS_Bird_Chirp_B.uasset": "1f75e827d16dec29cdd36e7d0e56ecbe7d5df05cef4206ab813ee6459bf868e5",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/Graphs/MS_Bird_Chirp_C.uasset": "895710b3c28ac63d7870f0a3e0e866e8cf1134c72cb47732e02b7d514d4a4b45",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/Graphs/MS_Car_Pass.uasset": "5eab3664b14eb197c2c1593f45c632efa0f7d6024b6ed4f5ca7847811f911eea",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/Graphs/MS_City_Distant.uasset": "1fcc27ad47bcf3d034c5203f1c44349ffe5bc9f5e0a022f37f37f7bb543a523a",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/Graphs/MS_Construction_Tap.uasset": "ae5bd683dfced1f5d94bdf4e530d5bf705215e04dc8963d9ff3fb101065aff95",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/Graphs/MS_Cricket_Chirp_Pair.uasset": "2e0fec2bd893acd0b4afe1cfb6beaafc8a98f93bab3fa7c9c166a3bce593dd48",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/Graphs/MS_Demolition_Impact.uasset": "81ea28e6a9898bd9277a728ca999f9e7ffb624ea41e24e86b7ea57974ba4f2d3",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/Graphs/MS_Earthquake_Rumble.uasset": "888385dbd755f2dae958888e6b0583b914eefe6d75ad3ca982fa869789537241",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/Graphs/MS_Fire_Crackle.uasset": "80caaa392a9ad3b0903e6aabf8d90c93980a0a5ad12bf7bc562552c23164ea52",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/Graphs/MS_Fire_Horn.uasset": "60c298cd501a110f335a6620bcfb924c6bf3df3eaa9060e8098b25efb4387a3c",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/Graphs/MS_Fire_Intro.uasset": "f332d3404d01ba0026971497aa2d5a3ea526cd1609b2db9a5b7120e50984c939",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/Graphs/MS_Fire_Loop.uasset": "a82f0c620f9939307a58db8ad1138233ada84cd43da543511a375c481056aabe",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/Graphs/MS_Fire_Outro.uasset": "2a00b8966c006db95aea0d23986d2ce2c7bebfc09f4dad97fd3a14884993afb6",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/Graphs/MS_Incident_Notice.uasset": "867b1f3758cf9c484f0354a9d0148dbb02ff1cbffce4c18b475b38f80dff8343",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/Graphs/MS_Industry_Clank.uasset": "d4a5e3f4b8b268524f2a9181f0a519288b76bec986e5453cd424f1cf34c7207f",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/Graphs/MS_Industry_Idle.uasset": "18d42ecc116e03771bc855d7b9de8c93b38e1be04d3dca778579eff24b940204",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/Graphs/MS_Industry_Working.uasset": "ae780b5d4db78b8951348c47f29dd594856cbc90492d86616e5f7414b379f918",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/Graphs/MS_Market_Murmur.uasset": "e5b64c669b5ee386ada844f2a59a53942332d4b1dabf16ba52b6a320d64d0024",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/Graphs/MS_Milestone_Reached.uasset": "cb07354fac6461bf1be415d246a050660c6af61eb3f962d3c7daf7de580d88a1",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/Graphs/MS_Night_Crickets_Dense.uasset": "59ef8fc7dc7918cfd688779336def10f1448ea62d5a4ae65126749c83768aec8",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/Graphs/MS_Night_Crickets_Light.uasset": "c5eff306c03b6865e020e8c9a769b7c26051ecd9ad36e3acb7a6a3f1540f9ae3",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/Graphs/MS_Objective_Complete.uasset": "5c4ef6ca5968a1c2d7f873306b167ff86f090511116447e2d1279aa279a70ccc",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/Graphs/MS_Park_Foliage.uasset": "f2cb0978303644f840e4dcd448048870b40086d422e970eab8f7a950e10b6f7d",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/Graphs/MS_Park_Fountain.uasset": "45c091a4a30a7d38fd8fe3688f448e79f9fd5cb32460a604f83ea929a1d957bd",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/Graphs/MS_Police_Alternate.uasset": "0b50ef0e86dcbcb5af94d97298c871c7fe99d015713372b51b2c1b5209c66c35",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/Graphs/MS_Police_Intro.uasset": "8e98b90c426142a7a42372bba3cc1f8411bc5e2351801a0be97043004f60ddb1",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/Graphs/MS_Police_Loop.uasset": "e45d6030756508f328d5f6f2388cb63f867d81c2e344b612e4315dc599dfe0ba",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/Graphs/MS_Police_Outro.uasset": "efb937e9190e12ac37badb8533b51d09a9927642bde8ee945694fa9db254e013",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/Graphs/MS_Rain_Downpour.uasset": "ec47553ee513fccab72a6731e0e82399d3f070296d2553536a26743d9a1539dd",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/Graphs/MS_Rain_Heavy.uasset": "800b330dbfb57f0228a9f104e4086d41ce94ccd2968fbfb2cc7afd94982689a4",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/Graphs/MS_Rain_Light.uasset": "111c8b07b84d7742195ac06dd9bff8a469e3ac8bcc79a2efaae0b24714eedf87",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/Graphs/MS_Rain_Moderate.uasset": "0dfcd0a58bf45e5f8bb65c3849cc3d249d5b40678ad1b12452aa727754f36424",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/Graphs/MS_Service_Attention.uasset": "911952aa38de3ee7b685b53a9688184c5a71a862ea3cdf06c94531615aa90e7b",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/Graphs/MS_Service_Recovered.uasset": "5a44085b01b0c9357b6c5f25d70f7e9702bac16b82474ddf2d2af3dd3c8f21c7",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/Graphs/MS_Storm_Roar.uasset": "2e652868cd0d1b87d5bd1e807c6a40443e844adb700346d750e0944d6e452d40",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/Graphs/MS_Thunder_Distant.uasset": "524430e2d04d42ae74230143432416ecf2e5236e0c7329b63f9940d35994c7b9",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/Graphs/MS_Thunder_Near.uasset": "3c1d533d4a67d1ae0dabcaa3bd895196461138e64a79e8ae624997f795313caf",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/Graphs/MS_Town_Intro.uasset": "df7cdaff554da173bc7cdb3684ee530d4e5a581b1ab25184cd88dcb67d3bc711",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/Graphs/MS_Town_Loop.uasset": "c55eb5e182a70247db465a8d19954204a7eca4ea118cad00afb30433d471fd21",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/Graphs/MS_Town_Outro.uasset": "d60479b219ce345c02dfcc38e91e1b68c8d7b503e01947c5523e902e2e0b74b2",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/Graphs/MS_Truck_Pass.uasset": "9cabcce9ae4aaf84467643bc0fa7c226ab8bfcfb8b39c8e743d90174233b6afe",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/Graphs/MS_Water_Shore.uasset": "2c79a5085e3df7b9ddcdb95de7950779922b9e1e24b182958617635db46c308a",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/Graphs/MS_Wind_Gusts.uasset": "c07c522cd93acaa167768278100ed47f092ab7a089b38cc13d8ed3b10c00e3e3",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/Graphs/MS_Wind_Light.uasset": "9530efeff37948c863ec74961456c871b965d198119d4778953f2faa9f68a136",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/Graphs/SC_Car_Driving.uasset": "2b1a38c9550ef06ca071a80b51b9fa59a8c1f1f3cf0cd6795ba689435133676a",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/Graphs/SC_Car_Idle.uasset": "2f10fb78fb8bba2f581ec4fffc644af3c63d4eaeb4fcaf48025e58d9a09e9ef0",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/Graphs/SC_Truck_Driving.uasset": "bb67edc9ad7e0ce31c5be6143307ae8c8252fa89f32add4c773fbcda5a15d9b4",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/Graphs/SC_Truck_Idle.uasset": "fea4cdf561b718aad84abd0b1436b6756ce49e7741e9cf027126de172dae9461",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/Sirens/SW_Ambulance_Intro.uasset": "bd2ac2a5e69a92ee128b36d711a3dffe6e124f9ff68d5790e7f95d0a3607fe74",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/Sirens/SW_Ambulance_Loop.uasset": "431f757ee3e84b78a4e21a7c1356ad48bad9c50f7d220bce0e1a7b0c0d332f13",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/Sirens/SW_Ambulance_Outro.uasset": "e61dda730b1ca7c807f55c91dad361c1851057efa5885bb8502ac00cf4902222",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/Sirens/SW_Fire_Horn.uasset": "fd35939ca76adb697bf8975cef4ce24519b5dfc88b8f945aceff9c34c26614be",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/Sirens/SW_Fire_Intro.uasset": "082ed578430bcd31b566c8757566ff9d118a0213e3b209fc43b7c66325e55058",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/Sirens/SW_Fire_Loop.uasset": "63bea71a824bf2066f052190b99b510b58365c897bd1d341f3c05a7ef010caec",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/Sirens/SW_Fire_Outro.uasset": "8b116d9bc7ddeed7df613110f17499fb938cb4372f7f36f467d62bc612f47385",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/Sirens/SW_Police_Alternate.uasset": "ae205dbc5b710996e3785bcb49448f6b37b8d04f59bab2f337fcfc0c80010cb6",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/Sirens/SW_Police_Intro.uasset": "6765b4f6f652188883343e7af0fe40f1fc69307b49151a6de1d132c6e1a9162b",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/Sirens/SW_Police_Loop.uasset": "e058a37c0986394b39c7c9a21cb3f1cc077828e2635e515db725b5de181df8f2",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/Sirens/SW_Police_Outro.uasset": "7e8d5d4012a1afca384896369c9c187f32d5472a98aa706311952d9350c415e9",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/Sirens/SW_Town_Intro.uasset": "82e638f7e93357cd0f1a13c4cb3a72f7ba244ae12f4c745a73a060b02f26c9a6",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/Sirens/SW_Town_Loop.uasset": "0ef100b7eedd1ba482eac4974d66897fb60c1cd298cea89c51341822fc70b4d2",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/Sirens/SW_Town_Outro.uasset": "babaeb7e5f89ba73ea2f0f9e76d6db862a8ddcfe322c88d9eaed8e8fd5c655af",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/UI/SW_Action_Confirm.uasset": "902f1e2e7995627c965cafd0bebd42256fe65338b339f2d62fc9bf635bf5f243",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/UI/SW_Action_Denied.uasset": "a413cdf4d5a279569c8594f698c2d0ae43b2dd51b412a0a8442c51a1d4c37abe",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/UI/SW_Incident_Notice.uasset": "9b90c88e83e871fc09e755c98807a0e14fdfdd434fc7e4524c9c82b433ffa341",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/UI/SW_Milestone_Reached.uasset": "6fb90064f4a28307bf1ed1b18cac13786ca3c8d160de1b33c8d36884eceb3902",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/UI/SW_Objective_Complete.uasset": "97b62d79fce51c0ed865ea4be6d7758d68419b6637492f840746d145153e9fec",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/UI/SW_Service_Attention.uasset": "bc89e57de9806c353055752b29998860cf652521313b33492cbf7735ee28d374",
+    "CitySimVR/Content/CitySim/Audio/Soundscape/UI/SW_Service_Recovered.uasset": "6eadba529cb86b49f8c1245a3ebfe73ae2b24e1d39c37043f07bf6b9ff8b33b0",
+    "CitySimVR/Content/CitySim/UI/Newspaper/T_Automation.uasset": "4991b721a2a869c76b2532b6cfd6d7bb8a90bbae4a98baa6db0061d50dd5d842",
+    "CitySimVR/Content/CitySim/UI/Newspaper/T_Commerce.uasset": "4f31c260a5765294fcc17dd954fda8068cc86dbf206b2956ec7f06ca20a76c96",
+    "CitySimVR/Content/CitySim/UI/Newspaper/T_Housing.uasset": "bd801b1f7dfece0d413d36386bdf75514832d43825b139317f684ea8d3618712"
+  },
+  "removed": [
+    "CitySimVR/Content/CitySim/Art/Citizens/AS_Citizen_Walk_D121.uasset",
+    "CitySimVR/Content/CitySim/Art/Citizens/BS_Citizen_StreetWalk_D121.uasset",
+    "CitySimVR/Content/CitySim/Art/Materials/MI_D122Room_bakery.uasset",
+    "CitySimVR/Content/CitySim/Art/Materials/MI_D122Room_books.uasset",
+    "CitySimVR/Content/CitySim/Art/Materials/MI_D122Room_cafe.uasset",
+    "CitySimVR/Content/CitySim/Art/Materials/MI_D122Room_market.uasset",
+    "CitySimVR/Content/CitySim/Art/Materials/MI_D122Room_outfitters.uasset",
+    "CitySimVR/Content/CitySim/Art/Materials/MI_D122Room_pharmacy.uasset",
+    "CitySimVR/Content/CitySim/Art/Materials/MI_D122Room_repairs.uasset",
+    "CitySimVR/Content/CitySim/Art/Materials/MI_D122Room_tech.uasset",
+    "CitySimVR/Content/CitySim/Art/Materials/M_D122RepairWindows.uasset",
+    "CitySimVR/Content/CitySim/Art/Materials/M_D122ShopWindows.uasset",
+    "CitySimVR/Content/CitySim/Art/Parks/Animations/AS_Park_BaseballPitch_D83.uasset",
+    "CitySimVR/Content/CitySim/Art/Parks/Animations/AS_Park_BaseballSwing_D83.uasset",
+    "CitySimVR/Content/CitySim/Art/Parks/Animations/AS_Park_BasketballDribble_D83.uasset",
+    "CitySimVR/Content/CitySim/Art/Parks/Animations/AS_Park_BasketballShot_D83.uasset",
+    "CitySimVR/Content/CitySim/Art/Parks/Animations/AS_Park_GoalkeeperSave_D83.uasset",
+    "CitySimVR/Content/CitySim/Art/Parks/Animations/AS_Park_Idle_D83.uasset",
+    "CitySimVR/Content/CitySim/Art/Parks/Animations/AS_Park_Skate180_D83.uasset",
+    "CitySimVR/Content/CitySim/Art/Parks/Animations/AS_Park_SkateCarve_D83.uasset",
+    "CitySimVR/Content/CitySim/Art/Parks/Animations/AS_Park_SkateKickflip_D83.uasset",
+    "CitySimVR/Content/CitySim/Art/Parks/Animations/AS_Park_SkateLipStall_D83.uasset",
+    "CitySimVR/Content/CitySim/Art/Parks/Animations/AS_Park_SkatePush_D83.uasset",
+    "CitySimVR/Content/CitySim/Art/Parks/Animations/AS_Park_SoccerKick_D83.uasset",
+    "CitySimVR/Content/CitySim/Art/Parks/Animations/AS_Park_SoccerRun_D83.uasset",
+    "CitySimVR/Content/CitySim/Art/Parks/Animations/AS_Park_Walk_D83.uasset",
+    "CitySimVR/Content/CitySim/Art/Prototypes/D79/Materials/MI_CharredBrick.uasset",
+    "CitySimVR/Content/CitySim/Art/Prototypes/D79/Materials/MI_CharredMechanical.uasset",
+    "CitySimVR/Content/CitySim/Art/Prototypes/D79/Materials/MI_CharredRoofMembrane.uasset",
+    "CitySimVR/Content/CitySim/Art/Prototypes/D79/Materials/MI_CharredRoofMetal.uasset",
+    "CitySimVR/Content/CitySim/Art/Prototypes/D79/Materials/MI_CharredRoofShingles.uasset",
+    "CitySimVR/Content/CitySim/Art/Prototypes/D79/Materials/MI_CharredTrim.uasset",
+    "CitySimVR/Content/CitySim/Art/Prototypes/D79/Materials/MI_CommercialBrick.uasset",
+    "CitySimVR/Content/CitySim/Art/Prototypes/D79/Materials/MI_IndustrialBrick.uasset",
+    "CitySimVR/Content/CitySim/Art/Prototypes/D79/Materials/MI_IndustrialMechanical.uasset",
+    "CitySimVR/Content/CitySim/Art/Prototypes/D79/Materials/MI_Mechanical.uasset",
+    "CitySimVR/Content/CitySim/Art/Prototypes/D79/Materials/MI_ResidentialBrick.uasset",
+    "CitySimVR/Content/CitySim/Art/Prototypes/D79/Materials/MI_Roof.uasset",
+    "CitySimVR/Content/CitySim/Art/Prototypes/D79/Materials/MI_RoofMembrane.uasset",
+    "CitySimVR/Content/CitySim/Art/Prototypes/D79/Materials/MI_RoofMetal.uasset",
+    "CitySimVR/Content/CitySim/Art/Prototypes/D79/Materials/MI_RoofShingles.uasset",
+    "CitySimVR/Content/CitySim/Art/Prototypes/D79/Materials/MI_StoreSignTall.uasset",
+    "CitySimVR/Content/CitySim/Art/Prototypes/D79/Materials/MI_StoreSignWide.uasset",
+    "CitySimVR/Content/CitySim/Art/Prototypes/D79/Materials/M_CityBrick.uasset",
+    "CitySimVR/Content/CitySim/Art/Prototypes/D79/Materials/M_CityMechanical.uasset",
+    "CitySimVR/Content/CitySim/Art/Prototypes/D79/Materials/M_CityRoof.uasset",
+    "CitySimVR/Content/CitySim/Art/Prototypes/D79/Materials/M_StoreSigns.uasset",
+    "CitySimVR/Content/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_StoreBakery.uasset",
+    "CitySimVR/Content/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_StoreBakery_Damaged.uasset",
+    "CitySimVR/Content/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_StoreBooks.uasset",
+    "CitySimVR/Content/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_StoreBooks_Damaged.uasset",
+    "CitySimVR/Content/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_StoreCafe.uasset",
+    "CitySimVR/Content/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_StoreCafe_Damaged.uasset",
+    "CitySimVR/Content/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_StoreMarket.uasset",
+    "CitySimVR/Content/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_StoreMarket_Damaged.uasset",
+    "CitySimVR/Content/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_StoreOutfitters.uasset",
+    "CitySimVR/Content/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_StoreOutfitters_Damaged.uasset",
+    "CitySimVR/Content/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_StorePharmacy.uasset",
+    "CitySimVR/Content/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_StorePharmacy_Damaged.uasset",
+    "CitySimVR/Content/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_StoreRepairs.uasset",
+    "CitySimVR/Content/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_StoreRepairs_Damaged.uasset",
+    "CitySimVR/Content/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_StoreTech.uasset",
+    "CitySimVR/Content/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_StoreTech_Damaged.uasset",
+    "CitySimVR/Content/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_SurfacePrototype.uasset",
+    "CitySimVR/Content/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_SurfacePrototype_Damaged.uasset",
+    "CitySimVR/Content/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_StoreBakery.uasset",
+    "CitySimVR/Content/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_StoreBakery_Damaged.uasset",
+    "CitySimVR/Content/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_StoreBooks.uasset",
+    "CitySimVR/Content/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_StoreBooks_Damaged.uasset",
+    "CitySimVR/Content/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_StoreCafe.uasset",
+    "CitySimVR/Content/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_StoreCafe_Damaged.uasset",
+    "CitySimVR/Content/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_StoreMarket.uasset",
+    "CitySimVR/Content/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_StoreMarket_Damaged.uasset",
+    "CitySimVR/Content/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_StoreOutfitters.uasset",
+    "CitySimVR/Content/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_StoreOutfitters_Damaged.uasset",
+    "CitySimVR/Content/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_StorePharmacy.uasset",
+    "CitySimVR/Content/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_StorePharmacy_Damaged.uasset",
+    "CitySimVR/Content/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_StoreRepairs.uasset",
+    "CitySimVR/Content/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_StoreRepairs_Damaged.uasset",
+    "CitySimVR/Content/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_StoreTech.uasset",
+    "CitySimVR/Content/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_StoreTech_Damaged.uasset",
+    "CitySimVR/Content/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_SurfacePrototype.uasset",
+    "CitySimVR/Content/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_SurfacePrototype_Damaged.uasset",
+    "CitySimVR/Content/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_StoreBakery.uasset",
+    "CitySimVR/Content/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_StoreBakery_Damaged.uasset",
+    "CitySimVR/Content/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_StoreBooks.uasset",
+    "CitySimVR/Content/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_StoreBooks_Damaged.uasset",
+    "CitySimVR/Content/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_StoreCafe.uasset",
+    "CitySimVR/Content/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_StoreCafe_Damaged.uasset",
+    "CitySimVR/Content/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_StoreMarket.uasset",
+    "CitySimVR/Content/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_StoreMarket_Damaged.uasset",
+    "CitySimVR/Content/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_StoreOutfitters.uasset",
+    "CitySimVR/Content/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_StoreOutfitters_Damaged.uasset",
+    "CitySimVR/Content/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_StorePharmacy.uasset",
+    "CitySimVR/Content/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_StorePharmacy_Damaged.uasset",
+    "CitySimVR/Content/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_StoreRepairs.uasset",
+    "CitySimVR/Content/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_StoreRepairs_Damaged.uasset",
+    "CitySimVR/Content/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_StoreTech.uasset",
+    "CitySimVR/Content/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_StoreTech_Damaged.uasset",
+    "CitySimVR/Content/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_SurfacePrototype.uasset",
+    "CitySimVR/Content/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_SurfacePrototype_Damaged.uasset",
+    "CitySimVR/Content/CitySim/Art/Prototypes/D79/Meshes/SM_IndustrialHigh_SurfacePrototype.uasset",
+    "CitySimVR/Content/CitySim/Art/Prototypes/D79/Meshes/SM_IndustrialHigh_SurfacePrototype_Damaged.uasset",
+    "CitySimVR/Content/CitySim/Art/Prototypes/D79/Meshes/SM_IndustrialLow_SurfacePrototype.uasset",
+    "CitySimVR/Content/CitySim/Art/Prototypes/D79/Meshes/SM_IndustrialLow_SurfacePrototype_Damaged.uasset",
+    "CitySimVR/Content/CitySim/Art/Prototypes/D79/Meshes/SM_IndustrialMedium_SurfacePrototype.uasset",
+    "CitySimVR/Content/CitySim/Art/Prototypes/D79/Meshes/SM_IndustrialMedium_SurfacePrototype_Damaged.uasset",
+    "CitySimVR/Content/CitySim/Art/Prototypes/D79/Meshes/SM_ResidentialHigh_SurfacePrototype.uasset",
+    "CitySimVR/Content/CitySim/Art/Prototypes/D79/Meshes/SM_ResidentialHigh_SurfacePrototype_Damaged.uasset",
+    "CitySimVR/Content/CitySim/Art/Prototypes/D79/Meshes/SM_ResidentialLow_SurfacePrototype.uasset",
+    "CitySimVR/Content/CitySim/Art/Prototypes/D79/Meshes/SM_ResidentialLow_SurfacePrototype_Damaged.uasset",
+    "CitySimVR/Content/CitySim/Art/Prototypes/D79/Meshes/SM_ResidentialMedium_SurfacePrototype.uasset",
+    "CitySimVR/Content/CitySim/Art/Prototypes/D79/Meshes/SM_ResidentialMedium_SurfacePrototype_Damaged.uasset",
+    "CitySimVR/Content/CitySim/Art/Prototypes/D79/Textures/T_CityBrick_BaseColor.uasset",
+    "CitySimVR/Content/CitySim/Art/Prototypes/D79/Textures/T_CityBrick_Normal.uasset",
+    "CitySimVR/Content/CitySim/Art/Prototypes/D79/Textures/T_CityBrick_ORM.uasset",
+    "CitySimVR/Content/CitySim/Art/Prototypes/D79/Textures/T_CityMechanical_BaseColor.uasset",
+    "CitySimVR/Content/CitySim/Art/Prototypes/D79/Textures/T_CityMechanical_Normal.uasset",
+    "CitySimVR/Content/CitySim/Art/Prototypes/D79/Textures/T_CityMechanical_ORM.uasset",
+    "CitySimVR/Content/CitySim/Art/Prototypes/D79/Textures/T_RoofMembrane_BaseColor.uasset",
+    "CitySimVR/Content/CitySim/Art/Prototypes/D79/Textures/T_RoofMembrane_Normal.uasset",
+    "CitySimVR/Content/CitySim/Art/Prototypes/D79/Textures/T_RoofMembrane_ORM.uasset",
+    "CitySimVR/Content/CitySim/Art/Prototypes/D79/Textures/T_RoofMetal_BaseColor.uasset",
+    "CitySimVR/Content/CitySim/Art/Prototypes/D79/Textures/T_RoofMetal_Normal.uasset",
+    "CitySimVR/Content/CitySim/Art/Prototypes/D79/Textures/T_RoofMetal_ORM.uasset",
+    "CitySimVR/Content/CitySim/Art/Prototypes/D79/Textures/T_RoofShingles_BaseColor.uasset",
+    "CitySimVR/Content/CitySim/Art/Prototypes/D79/Textures/T_RoofShingles_Normal.uasset",
+    "CitySimVR/Content/CitySim/Art/Prototypes/D79/Textures/T_RoofShingles_ORM.uasset",
+    "CitySimVR/Content/CitySim/Art/Prototypes/D79/Textures/T_StoreSigns_Tall_BaseColor.uasset",
+    "CitySimVR/Content/CitySim/Art/Prototypes/D79/Textures/T_StoreSigns_Wide_BaseColor.uasset",
+    "CitySimVR/Content/CitySim/Art/Textures/T_D122RepairDisplays.uasset",
+    "CitySimVR/Content/CitySim/Art/Textures/T_D122Room_bakery.uasset",
+    "CitySimVR/Content/CitySim/Art/Textures/T_D122Room_books.uasset",
+    "CitySimVR/Content/CitySim/Art/Textures/T_D122Room_cafe.uasset",
+    "CitySimVR/Content/CitySim/Art/Textures/T_D122Room_market.uasset",
+    "CitySimVR/Content/CitySim/Art/Textures/T_D122Room_outfitters.uasset",
+    "CitySimVR/Content/CitySim/Art/Textures/T_D122Room_pharmacy.uasset",
+    "CitySimVR/Content/CitySim/Art/Textures/T_D122Room_repairs.uasset",
+    "CitySimVR/Content/CitySim/Art/Textures/T_D122Room_tech.uasset",
+    "CitySimVR/Content/CitySim/Audio/D58/Ambience/City/SW_Car_Driving.uasset",
+    "CitySimVR/Content/CitySim/Audio/D58/Ambience/City/SW_Car_Idle.uasset",
+    "CitySimVR/Content/CitySim/Audio/D58/Ambience/City/SW_Car_Pass.uasset",
+    "CitySimVR/Content/CitySim/Audio/D58/Ambience/City/SW_City_Distant.uasset",
+    "CitySimVR/Content/CitySim/Audio/D58/Ambience/City/SW_Market_Murmur.uasset",
+    "CitySimVR/Content/CitySim/Audio/D58/Ambience/City/SW_Truck_Driving.uasset",
+    "CitySimVR/Content/CitySim/Audio/D58/Ambience/City/SW_Truck_Idle.uasset",
+    "CitySimVR/Content/CitySim/Audio/D58/Ambience/City/SW_Truck_Pass.uasset",
+    "CitySimVR/Content/CitySim/Audio/D58/Ambience/Industry/SW_Industry_Clank.uasset",
+    "CitySimVR/Content/CitySim/Audio/D58/Ambience/Industry/SW_Industry_Idle.uasset",
+    "CitySimVR/Content/CitySim/Audio/D58/Ambience/Industry/SW_Industry_Working.uasset",
+    "CitySimVR/Content/CitySim/Audio/D58/Ambience/Park/SW_Park_Foliage.uasset",
+    "CitySimVR/Content/CitySim/Audio/D58/Ambience/Park/SW_Park_Fountain.uasset",
+    "CitySimVR/Content/CitySim/Audio/D58/Ambience/Park/SW_Water_Shore.uasset",
+    "CitySimVR/Content/CitySim/Audio/D58/Ambience/Weather/SW_Rain_Downpour.uasset",
+    "CitySimVR/Content/CitySim/Audio/D58/Ambience/Weather/SW_Rain_Heavy.uasset",
+    "CitySimVR/Content/CitySim/Audio/D58/Ambience/Weather/SW_Rain_Light.uasset",
+    "CitySimVR/Content/CitySim/Audio/D58/Ambience/Weather/SW_Rain_Moderate.uasset",
+    "CitySimVR/Content/CitySim/Audio/D58/Ambience/Weather/SW_Storm_Roar.uasset",
+    "CitySimVR/Content/CitySim/Audio/D58/Ambience/Weather/SW_Thunder_Distant.uasset",
+    "CitySimVR/Content/CitySim/Audio/D58/Ambience/Weather/SW_Thunder_Near.uasset",
+    "CitySimVR/Content/CitySim/Audio/D58/Ambience/Weather/SW_Wind_Gusts.uasset",
+    "CitySimVR/Content/CitySim/Audio/D58/Ambience/Weather/SW_Wind_Light.uasset",
+    "CitySimVR/Content/CitySim/Audio/D58/Ambience/Wildlife/SW_Bird_Chirp_A.uasset",
+    "CitySimVR/Content/CitySim/Audio/D58/Ambience/Wildlife/SW_Bird_Chirp_B.uasset",
+    "CitySimVR/Content/CitySim/Audio/D58/Ambience/Wildlife/SW_Bird_Chirp_C.uasset",
+    "CitySimVR/Content/CitySim/Audio/D58/Ambience/Wildlife/SW_Cricket_Chirp_Pair.uasset",
+    "CitySimVR/Content/CitySim/Audio/D58/Ambience/Wildlife/SW_Night_Crickets_Dense.uasset",
+    "CitySimVR/Content/CitySim/Audio/D58/Ambience/Wildlife/SW_Night_Crickets_Light.uasset",
+    "CitySimVR/Content/CitySim/Audio/D58/Effects/Activity/SW_Construction_Tap.uasset",
+    "CitySimVR/Content/CitySim/Audio/D58/Effects/Activity/SW_Demolition_Impact.uasset",
+    "CitySimVR/Content/CitySim/Audio/D58/Effects/Activity/SW_Earthquake_Rumble.uasset",
+    "CitySimVR/Content/CitySim/Audio/D58/Effects/Activity/SW_Fire_Crackle.uasset",
+    "CitySimVR/Content/CitySim/Audio/D58/Graphs/MS_Action_Confirm.uasset",
+    "CitySimVR/Content/CitySim/Audio/D58/Graphs/MS_Action_Denied.uasset",
+    "CitySimVR/Content/CitySim/Audio/D58/Graphs/MS_Ambulance_Intro.uasset",
+    "CitySimVR/Content/CitySim/Audio/D58/Graphs/MS_Ambulance_Loop.uasset",
+    "CitySimVR/Content/CitySim/Audio/D58/Graphs/MS_Ambulance_Outro.uasset",
+    "CitySimVR/Content/CitySim/Audio/D58/Graphs/MS_Bird_Chirp_A.uasset",
+    "CitySimVR/Content/CitySim/Audio/D58/Graphs/MS_Bird_Chirp_B.uasset",
+    "CitySimVR/Content/CitySim/Audio/D58/Graphs/MS_Bird_Chirp_C.uasset",
+    "CitySimVR/Content/CitySim/Audio/D58/Graphs/MS_Car_Pass.uasset",
+    "CitySimVR/Content/CitySim/Audio/D58/Graphs/MS_City_Distant.uasset",
+    "CitySimVR/Content/CitySim/Audio/D58/Graphs/MS_Construction_Tap.uasset",
+    "CitySimVR/Content/CitySim/Audio/D58/Graphs/MS_Cricket_Chirp_Pair.uasset",
+    "CitySimVR/Content/CitySim/Audio/D58/Graphs/MS_Demolition_Impact.uasset",
+    "CitySimVR/Content/CitySim/Audio/D58/Graphs/MS_Earthquake_Rumble.uasset",
+    "CitySimVR/Content/CitySim/Audio/D58/Graphs/MS_Fire_Crackle.uasset",
+    "CitySimVR/Content/CitySim/Audio/D58/Graphs/MS_Fire_Horn.uasset",
+    "CitySimVR/Content/CitySim/Audio/D58/Graphs/MS_Fire_Intro.uasset",
+    "CitySimVR/Content/CitySim/Audio/D58/Graphs/MS_Fire_Loop.uasset",
+    "CitySimVR/Content/CitySim/Audio/D58/Graphs/MS_Fire_Outro.uasset",
+    "CitySimVR/Content/CitySim/Audio/D58/Graphs/MS_Incident_Notice.uasset",
+    "CitySimVR/Content/CitySim/Audio/D58/Graphs/MS_Industry_Clank.uasset",
+    "CitySimVR/Content/CitySim/Audio/D58/Graphs/MS_Industry_Idle.uasset",
+    "CitySimVR/Content/CitySim/Audio/D58/Graphs/MS_Industry_Working.uasset",
+    "CitySimVR/Content/CitySim/Audio/D58/Graphs/MS_Market_Murmur.uasset",
+    "CitySimVR/Content/CitySim/Audio/D58/Graphs/MS_Milestone_Reached.uasset",
+    "CitySimVR/Content/CitySim/Audio/D58/Graphs/MS_Night_Crickets_Dense.uasset",
+    "CitySimVR/Content/CitySim/Audio/D58/Graphs/MS_Night_Crickets_Light.uasset",
+    "CitySimVR/Content/CitySim/Audio/D58/Graphs/MS_Objective_Complete.uasset",
+    "CitySimVR/Content/CitySim/Audio/D58/Graphs/MS_Park_Foliage.uasset",
+    "CitySimVR/Content/CitySim/Audio/D58/Graphs/MS_Park_Fountain.uasset",
+    "CitySimVR/Content/CitySim/Audio/D58/Graphs/MS_Police_Alternate.uasset",
+    "CitySimVR/Content/CitySim/Audio/D58/Graphs/MS_Police_Intro.uasset",
+    "CitySimVR/Content/CitySim/Audio/D58/Graphs/MS_Police_Loop.uasset",
+    "CitySimVR/Content/CitySim/Audio/D58/Graphs/MS_Police_Outro.uasset",
+    "CitySimVR/Content/CitySim/Audio/D58/Graphs/MS_Rain_Downpour.uasset",
+    "CitySimVR/Content/CitySim/Audio/D58/Graphs/MS_Rain_Heavy.uasset",
+    "CitySimVR/Content/CitySim/Audio/D58/Graphs/MS_Rain_Light.uasset",
+    "CitySimVR/Content/CitySim/Audio/D58/Graphs/MS_Rain_Moderate.uasset",
+    "CitySimVR/Content/CitySim/Audio/D58/Graphs/MS_Service_Attention.uasset",
+    "CitySimVR/Content/CitySim/Audio/D58/Graphs/MS_Service_Recovered.uasset",
+    "CitySimVR/Content/CitySim/Audio/D58/Graphs/MS_Storm_Roar.uasset",
+    "CitySimVR/Content/CitySim/Audio/D58/Graphs/MS_Thunder_Distant.uasset",
+    "CitySimVR/Content/CitySim/Audio/D58/Graphs/MS_Thunder_Near.uasset",
+    "CitySimVR/Content/CitySim/Audio/D58/Graphs/MS_Town_Intro.uasset",
+    "CitySimVR/Content/CitySim/Audio/D58/Graphs/MS_Town_Loop.uasset",
+    "CitySimVR/Content/CitySim/Audio/D58/Graphs/MS_Town_Outro.uasset",
+    "CitySimVR/Content/CitySim/Audio/D58/Graphs/MS_Truck_Pass.uasset",
+    "CitySimVR/Content/CitySim/Audio/D58/Graphs/MS_Water_Shore.uasset",
+    "CitySimVR/Content/CitySim/Audio/D58/Graphs/MS_Wind_Gusts.uasset",
+    "CitySimVR/Content/CitySim/Audio/D58/Graphs/MS_Wind_Light.uasset",
+    "CitySimVR/Content/CitySim/Audio/D58/Graphs/SC_Car_Driving.uasset",
+    "CitySimVR/Content/CitySim/Audio/D58/Graphs/SC_Car_Idle.uasset",
+    "CitySimVR/Content/CitySim/Audio/D58/Graphs/SC_Truck_Driving.uasset",
+    "CitySimVR/Content/CitySim/Audio/D58/Graphs/SC_Truck_Idle.uasset",
+    "CitySimVR/Content/CitySim/Audio/D58/Sirens/SW_Ambulance_Intro.uasset",
+    "CitySimVR/Content/CitySim/Audio/D58/Sirens/SW_Ambulance_Loop.uasset",
+    "CitySimVR/Content/CitySim/Audio/D58/Sirens/SW_Ambulance_Outro.uasset",
+    "CitySimVR/Content/CitySim/Audio/D58/Sirens/SW_Fire_Horn.uasset",
+    "CitySimVR/Content/CitySim/Audio/D58/Sirens/SW_Fire_Intro.uasset",
+    "CitySimVR/Content/CitySim/Audio/D58/Sirens/SW_Fire_Loop.uasset",
+    "CitySimVR/Content/CitySim/Audio/D58/Sirens/SW_Fire_Outro.uasset",
+    "CitySimVR/Content/CitySim/Audio/D58/Sirens/SW_Police_Alternate.uasset",
+    "CitySimVR/Content/CitySim/Audio/D58/Sirens/SW_Police_Intro.uasset",
+    "CitySimVR/Content/CitySim/Audio/D58/Sirens/SW_Police_Loop.uasset",
+    "CitySimVR/Content/CitySim/Audio/D58/Sirens/SW_Police_Outro.uasset",
+    "CitySimVR/Content/CitySim/Audio/D58/Sirens/SW_Town_Intro.uasset",
+    "CitySimVR/Content/CitySim/Audio/D58/Sirens/SW_Town_Loop.uasset",
+    "CitySimVR/Content/CitySim/Audio/D58/Sirens/SW_Town_Outro.uasset",
+    "CitySimVR/Content/CitySim/Audio/D58/UI/SW_Action_Confirm.uasset",
+    "CitySimVR/Content/CitySim/Audio/D58/UI/SW_Action_Denied.uasset",
+    "CitySimVR/Content/CitySim/Audio/D58/UI/SW_Incident_Notice.uasset",
+    "CitySimVR/Content/CitySim/Audio/D58/UI/SW_Milestone_Reached.uasset",
+    "CitySimVR/Content/CitySim/Audio/D58/UI/SW_Objective_Complete.uasset",
+    "CitySimVR/Content/CitySim/Audio/D58/UI/SW_Service_Attention.uasset",
+    "CitySimVR/Content/CitySim/Audio/D58/UI/SW_Service_Recovered.uasset"
+  ],
+  "stale_dependencies": {},
+  "method": "Unreal AssetTools/ObjectTools rename + soft-path/dependent saves + verified unreferenced redirector deletion; no reimport"
+}

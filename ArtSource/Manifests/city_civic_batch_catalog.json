@@ -1,0 +1,220 @@
+{
+  "issue": 157,
+  "plan_sha256": "e811a16f1a19bd27f9ea50cf92a064b8bded21abce44e1e3a36f76c8bdb321c2",
+  "definitions": [
+    {
+      "definition": "Police",
+      "old_site": [
+        3,
+        2
+      ],
+      "site": [
+        5,
+        4
+      ],
+      "economy": {
+        "cost": 800,
+        "jobs_provided": 0,
+        "monthly_upkeep": 25,
+        "utility_capacity": 0,
+        "minimum_staff_education": 1,
+        "pollution_emission": 0,
+        "construction_steps": 1,
+        "entrance_sides": 1,
+        "player_purchased_levels": true
+      },
+      "upgrade_records_unchanged": true
+    },
+    {
+      "definition": "Fire",
+      "old_site": [
+        3,
+        2
+      ],
+      "site": [
+        5,
+        4
+      ],
+      "economy": {
+        "cost": 900,
+        "jobs_provided": 0,
+        "monthly_upkeep": 30,
+        "utility_capacity": 0,
+        "minimum_staff_education": 1,
+        "pollution_emission": 0,
+        "construction_steps": 1,
+        "entrance_sides": 1,
+        "player_purchased_levels": true
+      },
+      "upgrade_records_unchanged": true
+    },
+    {
+      "definition": "School",
+      "old_site": [
+        3,
+        2
+      ],
+      "site": [
+        4,
+        4
+      ],
+      "economy": {
+        "cost": 1200,
+        "jobs_provided": 0,
+        "monthly_upkeep": 35,
+        "utility_capacity": 0,
+        "minimum_staff_education": 1,
+        "pollution_emission": 0,
+        "construction_steps": 25,
+        "entrance_sides": 1,
+        "player_purchased_levels": false
+      },
+      "upgrade_records_unchanged": true
+    },
+    {
+      "definition": "College",
+      "old_site": [
+        3,
+        3
+      ],
+      "site": [
+        6,
+        5
+      ],
+      "economy": {
+        "cost": 3000,
+        "jobs_provided": 6,
+        "monthly_upkeep": 90,
+        "utility_capacity": 0,
+        "minimum_staff_education": 1,
+        "pollution_emission": 0,
+        "construction_steps": 5,
+        "entrance_sides": 1,
+        "player_purchased_levels": false
+      },
+      "upgrade_records_unchanged": true
+    },
+    {
+      "definition": "PrimarySchool",
+      "old_site": [
+        2,
+        2
+      ],
+      "site": [
+        4,
+        4
+      ],
+      "economy": {
+        "cost": 600,
+        "jobs_provided": 4,
+        "monthly_upkeep": 20,
+        "utility_capacity": 0,
+        "minimum_staff_education": 1,
+        "pollution_emission": 0,
+        "construction_steps": 3,
+        "entrance_sides": 1,
+        "player_purchased_levels": false
+      },
+      "upgrade_records_unchanged": true
+    },
+    {
+      "definition": "SecondarySchool",
+      "old_site": [
+        3,
+        3
+      ],
+      "site": [
+        5,
+        5
+      ],
+      "economy": {
+        "cost": 1200,
+        "jobs_provided": 4,
+        "monthly_upkeep": 35,
+        "utility_capacity": 0,
+        "minimum_staff_education": 1,
+        "pollution_emission": 0,
+        "construction_steps": 4,
+        "entrance_sides": 1,
+        "player_purchased_levels": false
+      },
+      "upgrade_records_unchanged": true
+    },
+    {
+      "definition": "Hospital",
+      "old_site": [
+        4,
+        3
+      ],
+      "site": [
+        5,
+        5
+      ],
+      "economy": {
+        "cost": 2400,
+        "jobs_provided": 6,
+        "monthly_upkeep": 70,
+        "utility_capacity": 0,
+        "minimum_staff_education": 2,
+        "pollution_emission": 0,
+        "construction_steps": 5,
+        "entrance_sides": 1,
+        "player_purchased_levels": true
+      },
+      "upgrade_records_unchanged": true
+    },
+    {
+      "definition": "WasteDepot",
+      "old_site": [
+        4,
+        3
+      ],
+      "site": [
+        6,
+        5
+      ],
+      "economy": {
+        "cost": 1800,
+        "jobs_provided": 4,
+        "monthly_upkeep": 50,
+        "utility_capacity": 0,
+        "minimum_staff_education": 1,
+        "pollution_emission": 5,
+        "construction_steps": 5,
+        "entrance_sides": 1,
+        "player_purchased_levels": true
+      },
+      "upgrade_records_unchanged": true
+    },
+    {
+      "definition": "Recycling",
+      "old_site": [
+        4,
+        3
+      ],
+      "site": [
+        6,
+        5
+      ],
+      "economy": {
+        "cost": 2600,
+        "jobs_provided": 4,
+        "monthly_upkeep": 70,
+        "utility_capacity": 0,
+        "minimum_staff_education": 2,
+        "pollution_emission": 2,
+        "construction_steps": 5,
+        "entrance_sides": 1,
+        "player_purchased_levels": true
+      },
+      "upgrade_records_unchanged": true
+    }
+  ],
+  "files": [
+    {
+      "file": "CitySimVR/Content/CitySim/Data/DA_CityBuildingCatalog.uasset",
+      "sha256": "93aad6556c3747f7560678e05dfa51b43373d2823bfbbeb63d329f76f51dc5b6",
+      "bytes": 74237
+    }
+  ]
+}

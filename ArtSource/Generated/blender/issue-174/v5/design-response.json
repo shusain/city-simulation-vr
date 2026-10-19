@@ -1,0 +1,36 @@
+{
+  "revision": "college174 v5 focused technical correction",
+  "parent": "exact completed v3",
+  "modified_components": [
+    "ScienceArt_Teal_Plaque",
+    "ScienceArt_Orbit_0",
+    "ScienceArt_Orbit_1",
+    "ScienceArt_Orbit_2",
+    "ScienceArt_Nucleus",
+    "ScienceArt_CreativeStylus"
+  ],
+  "planar_factor": 2,
+  "center_xz": [
+    -3,
+    5.53
+  ],
+  "plaque_bounds": [
+    [
+      -4.139999866485596,
+      -8.15999984741211,
+      4.389999866485596
+    ],
+    [
+      -1.8600001335144043,
+      -7.989999771118164,
+      6.6700005531311035
+    ]
+  ],
+  "non_emblem_components_preserved": 515,
+  "total_components": 521,
+  "panes": 78,
+  "geometry_validation": "actual union-find components and exact one-pass group membership; full pane checks",
+  "integration": "HELD",
+  "human_review": "pending",
+  "lod_plan": "Preserve existing low-poly sources. LOD1 simplify rims and roof equipment and bake relief. LOD2 omit relief and simplify facade detail; not implemented."
+}

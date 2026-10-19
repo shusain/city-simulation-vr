@@ -1,0 +1,169 @@
+{
+  "issue": 192,
+  "source_issue": 153,
+  "date": "2026-10-18",
+  "status": "approved source exported; source/material/LOD preparation verified; coordinated native integration pending with issue125",
+  "source_pr": "https://git.shaun-husain.com/CitySimVR/citysim/pulls/191",
+  "source_export_head": "ad127b974c532f0741b6cd333c943a8f0134641f",
+  "approval_sha256": "db7dd8baf2c4844f95bf850b6d9b8114e187f764dfd0d394f106646a40e3f0b5",
+  "source_manifest": "ArtSource/Manifests/city_nuclear_integration.json",
+  "lods": [
+    {
+      "lod": 0,
+      "export": "ArtSource/Generated/blender/issue-153/v6/asset.fbx",
+      "export_sha256": "92fa39cc062731ddc3bb809ab7023c3d90bb4c7c35c448b98847870aaac0c022",
+      "triangles": 4616,
+      "sections": 5,
+      "dimensions_m": [
+        26.200000762939453,
+        27.349998474121094,
+        11.600000381469727
+      ]
+    },
+    {
+      "lod": 1,
+      "export": "ArtSource/Exports/NuclearFacility/SM_NuclearFacility_v6_LOD1.fbx",
+      "export_sha256": "fe98604fe965cc27c615bac1bcf6076be97252b5c822d58fa98f8cbd2d57ee2b",
+      "shell_segments": 16,
+      "omitted_component_prefixes": [],
+      "roundtrip_pass": true,
+      "triangles": 3592,
+      "sections": 5,
+      "dimensions_m": [
+        26.200000762939453,
+        27.349998474121094,
+        11.600000381469727
+      ]
+    },
+    {
+      "lod": 2,
+      "export": "ArtSource/Exports/NuclearFacility/SM_NuclearFacility_v6_LOD2.fbx",
+      "export_sha256": "793913fda744426354d1bfb0f9e8e155527bbc02097525bf3467aefebeae22f0",
+      "shell_segments": 8,
+      "omitted_component_prefixes": [
+        "Window mullion",
+        "Side window mullion",
+        "Unit louver",
+        "Radiator rib",
+        "Cabinet latch",
+        "Door handle",
+        "Shutter seam",
+        "Flange",
+        "Terminal"
+      ],
+      "roundtrip_pass": true,
+      "triangles": 2240,
+      "sections": 5,
+      "dimensions_m": [
+        26.200000762939453,
+        27.349998474121094,
+        11.600000381469727
+      ]
+    }
+  ],
+  "support_regions": 35,
+  "ground_contact_regions": 33,
+  "transformer_under_support_regions": 2,
+  "source_front": "-Y",
+  "pivot_m": [
+    0,
+    0,
+    0
+  ],
+  "site_cells": [
+    4,
+    4
+  ],
+  "current_catalog_cells": [
+    3,
+    3
+  ],
+  "catalog_change_owner_issue": 125,
+  "original_approved_bytes_unchanged": true,
+  "checks": {
+    "issue": 192,
+    "lods": [
+      {
+        "lod": 0,
+        "triangles": 4616,
+        "components": 162,
+        "unchanged_components": 162,
+        "full_retained_face_uv_material_winding_check": true,
+        "open_throats": 2,
+        "clear_corridors": 2,
+        "actual_fbx_readback": true
+      },
+      {
+        "lod": 1,
+        "triangles": 3592,
+        "components": 162,
+        "unchanged_components": 158,
+        "full_retained_face_uv_material_winding_check": true,
+        "open_throats": 2,
+        "clear_corridors": 2,
+        "actual_fbx_readback": true
+      },
+      {
+        "lod": 2,
+        "triangles": 2240,
+        "components": 108,
+        "unchanged_components": 104,
+        "full_retained_face_uv_material_winding_check": true,
+        "open_throats": 2,
+        "clear_corridors": 2,
+        "actual_fbx_readback": true
+      }
+    ],
+    "ground_contact_regions": 33,
+    "equipment_under_support_regions": 2,
+    "original_approved_files_unchanged": true,
+    "native_unreal_run": false,
+    "headset_appearance": "unconfirmed"
+  },
+  "source_verification": {
+    "issue": 153,
+    "version": 6,
+    "source_pr": 191,
+    "integration_issue": 192,
+    "export_head": "ad127b974c532f0741b6cd333c943a8f0134641f",
+    "approval_sha256": "db7dd8baf2c4844f95bf850b6d9b8114e187f764dfd0d394f106646a40e3f0b5",
+    "artifact_hashes_and_lengths_verified": 14,
+    "zip_crc_pass": true,
+    "source_bundle_matches_exported_files": true,
+    "original_source_sha256": "18000888137aed8050d0fbc1ae0572534a4b7bd8c4ab3a1a93bc04e359b85575",
+    "original_fbx_sha256": "92fa39cc062731ddc3bb809ab7023c3d90bb4c7c35c448b98847870aaac0c022",
+    "windows_checkout_crlf_restored_from_pinned_git_blob": [
+      "approval.json",
+      "entrance-anchors.json",
+      "material-manifest.json",
+      "unreal-handoff.json",
+      "validation.json"
+    ]
+  },
+  "preview": "Artifacts/Issue192/LODPreview/PreviewSheet-01.png",
+  "native_importer": "Tools/Import-CityNuclearFacility.py",
+  "native_importer_executed": false,
+  "native_outputs": "/Game/CitySim/Art/Utilities/Nuclear",
+  "materials": "two reusable stock-node parents and five semantic instances; reuse six existing native textures without saving them",
+  "material_limitations": [
+    "Source procedural concrete bump omitted from initial solid material; native visual review required.",
+    "LOD thresholds [1,.12,.025] and Android minimum1 are provisional; no headset/performance measurement."
+  ],
+  "exporter_fix": {
+    "source_commit": "7e7cbae7280c9a1112d69ab7fee513dda8c55cb8",
+    "tests_passed": 63,
+    "image": "registry.shaun-husain.com/opencode-runner@sha256:274c8eefadd1540c6377f0956833866eeb3f3bbcd78b3e7e7239d9c44b36faf8",
+    "rollout_health_checks": 90,
+    "rollout_failed": 0,
+    "issue_note": "https://git.shaun-husain.com/CitySimVR/citysim/issues/153#issuecomment-3177"
+  },
+  "coordination": {
+    "source_owner": "building asset review chat",
+    "final_native_runtime_ci_windows_owner": "issue125 terrain/stairs chat",
+    "peer_thread": "01a13ff9-ac36-7fe3-988f-6552755d5425"
+  },
+  "next": "review/pin prepared source commit, #125 schedules scoped native preparation then runtime terrain/path/catalog integration and Windows candidate; sourcePR checks/merge remain pending",
+  "source_ci": "Drone248 pending at last read; not a pass",
+  "device_checks": "unconfirmed; Quest package deferred under Windows-first",
+  "other_asset_families": "export/integration still held"
+}

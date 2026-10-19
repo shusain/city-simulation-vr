@@ -1,0 +1,294 @@
+{
+  "task": "D122",
+  "import_build": 52,
+  "submitted_commit": "8daac4845d5e7953b187303f7e8defc52d1c7b02",
+  "output": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\CI\\Builds\\52-8daac4845d5e-Check-325efb1e",
+  "native_import_pass": true,
+  "source": {
+    "task": "D122",
+    "assets": [
+      "/Game/CitySim/UI/Newspaper/T_Housing",
+      "/Game/CitySim/UI/Newspaper/T_Commerce",
+      "/Game/CitySim/UI/Newspaper/T_Automation",
+      "/Game/CitySim/Art/Textures/T_D122RepairDisplays",
+      "/Game/CitySim/Art/Materials/M_D122RepairWindows",
+      "/Game/CitySim/Art/Meshes/SM_CommercialLow_StoreRepairs",
+      "/Game/CitySim/Art/Meshes/SM_CommercialMedium_StoreRepairs",
+      "/Game/CitySim/Art/Meshes/SM_CommercialHigh_StoreRepairs",
+      "/Game/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Shop_A_repairs",
+      "/Game/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Shop_B_repairs",
+      "/Game/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Shop_C_repairs",
+      "/Game/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Shop_D_repairs"
+    ],
+    "files": [
+      "CitySimVR/Content/CitySim/UI/Newspaper/T_Housing.uasset",
+      "CitySimVR/Content/CitySim/UI/Newspaper/T_Commerce.uasset",
+      "CitySimVR/Content/CitySim/UI/Newspaper/T_Automation.uasset",
+      "CitySimVR/Content/CitySim/Art/Textures/T_D122RepairDisplays.uasset",
+      "CitySimVR/Content/CitySim/Art/Materials/M_D122RepairWindows.uasset",
+      "CitySimVR/Content/CitySim/Art/Meshes/SM_CommercialLow_StoreRepairs.uasset",
+      "CitySimVR/Content/CitySim/Art/Meshes/SM_CommercialMedium_StoreRepairs.uasset",
+      "CitySimVR/Content/CitySim/Art/Meshes/SM_CommercialHigh_StoreRepairs.uasset",
+      "CitySimVR/Content/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Shop_A_repairs.uasset",
+      "CitySimVR/Content/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Shop_B_repairs.uasset",
+      "CitySimVR/Content/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Shop_C_repairs.uasset",
+      "CitySimVR/Content/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Shop_D_repairs.uasset"
+    ],
+    "repairs": [
+      {
+        "mesh": "/Game/CitySim/Art/Meshes/SM_CommercialLow_StoreRepairs.SM_CommercialLow_StoreRepairs",
+        "slot": 4,
+        "slots": [
+          "CommercialBrick",
+          "Roof",
+          "RoofMembrane",
+          "StoreSignTall",
+          "BuildingWindowOpaque"
+        ],
+        "before": [
+          "/Game/CitySim/Art/Materials/MI_CommercialBrick.MI_CommercialBrick",
+          "/Game/CitySim/Art/Materials/MI_Roof.MI_Roof",
+          "/Game/CitySim/Art/Materials/MI_RoofMembrane.MI_RoofMembrane",
+          "/Game/CitySim/Art/Materials/MI_StoreSignTall.MI_StoreSignTall",
+          "/Game/CitySim/Art/Materials/M_BuildingWindowOpaque.M_BuildingWindowOpaque"
+        ],
+        "after": [
+          "/Game/CitySim/Art/Materials/MI_CommercialBrick.MI_CommercialBrick",
+          "/Game/CitySim/Art/Materials/MI_Roof.MI_Roof",
+          "/Game/CitySim/Art/Materials/MI_RoofMembrane.MI_RoofMembrane",
+          "/Game/CitySim/Art/Materials/MI_StoreSignTall.MI_StoreSignTall",
+          "/Game/CitySim/Art/Materials/M_D122RepairWindows.M_D122RepairWindows"
+        ]
+      },
+      {
+        "mesh": "/Game/CitySim/Art/Meshes/SM_CommercialMedium_StoreRepairs.SM_CommercialMedium_StoreRepairs",
+        "slot": 4,
+        "slots": [
+          "CommercialBrick",
+          "Roof",
+          "RoofMembrane",
+          "StoreSignWide",
+          "BuildingWindowOpaque"
+        ],
+        "before": [
+          "/Game/CitySim/Art/Materials/MI_CommercialBrick.MI_CommercialBrick",
+          "/Game/CitySim/Art/Materials/MI_Roof.MI_Roof",
+          "/Game/CitySim/Art/Materials/MI_RoofMembrane.MI_RoofMembrane",
+          "/Game/CitySim/Art/Materials/MI_StoreSignWide.MI_StoreSignWide",
+          "/Game/CitySim/Art/Materials/M_BuildingWindowOpaque.M_BuildingWindowOpaque"
+        ],
+        "after": [
+          "/Game/CitySim/Art/Materials/MI_CommercialBrick.MI_CommercialBrick",
+          "/Game/CitySim/Art/Materials/MI_Roof.MI_Roof",
+          "/Game/CitySim/Art/Materials/MI_RoofMembrane.MI_RoofMembrane",
+          "/Game/CitySim/Art/Materials/MI_StoreSignWide.MI_StoreSignWide",
+          "/Game/CitySim/Art/Materials/M_D122RepairWindows.M_D122RepairWindows"
+        ]
+      },
+      {
+        "mesh": "/Game/CitySim/Art/Meshes/SM_CommercialHigh_StoreRepairs.SM_CommercialHigh_StoreRepairs",
+        "slot": 4,
+        "slots": [
+          "CommercialBrick",
+          "Roof",
+          "RoofMembrane",
+          "StoreSignWide",
+          "BuildingWindowOpaque"
+        ],
+        "before": [
+          "/Game/CitySim/Art/Materials/MI_CommercialBrick.MI_CommercialBrick",
+          "/Game/CitySim/Art/Materials/MI_Roof.MI_Roof",
+          "/Game/CitySim/Art/Materials/MI_RoofMembrane.MI_RoofMembrane",
+          "/Game/CitySim/Art/Materials/MI_StoreSignWide.MI_StoreSignWide",
+          "/Game/CitySim/Art/Materials/M_BuildingWindowOpaque.M_BuildingWindowOpaque"
+        ],
+        "after": [
+          "/Game/CitySim/Art/Materials/MI_CommercialBrick.MI_CommercialBrick",
+          "/Game/CitySim/Art/Materials/MI_Roof.MI_Roof",
+          "/Game/CitySim/Art/Materials/MI_RoofMembrane.MI_RoofMembrane",
+          "/Game/CitySim/Art/Materials/MI_StoreSignWide.MI_StoreSignWide",
+          "/Game/CitySim/Art/Materials/M_D122RepairWindows.M_D122RepairWindows"
+        ]
+      },
+      {
+        "mesh": "/Game/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Shop_A_repairs.SM_LowDensity_Shop_A_repairs",
+        "slot": 4,
+        "slots": [
+          "CommercialBrick",
+          "Roof",
+          "RoofMembrane",
+          "StoreSignTall",
+          "BuildingWindowOpaque"
+        ],
+        "before": [
+          "/Game/CitySim/Art/Materials/MI_CommercialBrick.MI_CommercialBrick",
+          "/Game/CitySim/Art/Materials/MI_Roof.MI_Roof",
+          "/Game/CitySim/Art/Materials/MI_RoofMembrane.MI_RoofMembrane",
+          "/Game/CitySim/Art/LowDensity/Materials/MI_Sign_repairs.MI_Sign_repairs",
+          "/Game/CitySim/Art/Materials/M_BuildingWindowOpaque.M_BuildingWindowOpaque"
+        ],
+        "after": [
+          "/Game/CitySim/Art/Materials/MI_CommercialBrick.MI_CommercialBrick",
+          "/Game/CitySim/Art/Materials/MI_Roof.MI_Roof",
+          "/Game/CitySim/Art/Materials/MI_RoofMembrane.MI_RoofMembrane",
+          "/Game/CitySim/Art/LowDensity/Materials/MI_Sign_repairs.MI_Sign_repairs",
+          "/Game/CitySim/Art/Materials/M_D122RepairWindows.M_D122RepairWindows"
+        ]
+      },
+      {
+        "mesh": "/Game/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Shop_B_repairs.SM_LowDensity_Shop_B_repairs",
+        "slot": 4,
+        "slots": [
+          "CommercialBrick",
+          "Roof",
+          "RoofMembrane",
+          "StoreSignTall",
+          "BuildingWindowOpaque"
+        ],
+        "before": [
+          "/Game/CitySim/Art/LowDensity/Materials/M_Shop_Timber.M_Shop_Timber",
+          "/Game/CitySim/Art/Materials/MI_Roof.MI_Roof",
+          "/Game/CitySim/Art/Materials/MI_RoofMembrane.MI_RoofMembrane",
+          "/Game/CitySim/Art/LowDensity/Materials/MI_Sign_repairs.MI_Sign_repairs",
+          "/Game/CitySim/Art/Materials/M_BuildingWindowOpaque.M_BuildingWindowOpaque"
+        ],
+        "after": [
+          "/Game/CitySim/Art/LowDensity/Materials/M_Shop_Timber.M_Shop_Timber",
+          "/Game/CitySim/Art/Materials/MI_Roof.MI_Roof",
+          "/Game/CitySim/Art/Materials/MI_RoofMembrane.MI_RoofMembrane",
+          "/Game/CitySim/Art/LowDensity/Materials/MI_Sign_repairs.MI_Sign_repairs",
+          "/Game/CitySim/Art/Materials/M_D122RepairWindows.M_D122RepairWindows"
+        ]
+      },
+      {
+        "mesh": "/Game/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Shop_C_repairs.SM_LowDensity_Shop_C_repairs",
+        "slot": 4,
+        "slots": [
+          "CommercialBrick",
+          "Roof",
+          "RoofMembrane",
+          "StoreSignTall",
+          "BuildingWindowOpaque"
+        ],
+        "before": [
+          "/Game/CitySim/Art/LowDensity/Materials/M_Shop_Clapboard.M_Shop_Clapboard",
+          "/Game/CitySim/Art/Materials/MI_Roof.MI_Roof",
+          "/Game/CitySim/Art/Materials/MI_RoofMembrane.MI_RoofMembrane",
+          "/Game/CitySim/Art/LowDensity/Materials/MI_Sign_repairs.MI_Sign_repairs",
+          "/Game/CitySim/Art/Materials/M_BuildingWindowOpaque.M_BuildingWindowOpaque"
+        ],
+        "after": [
+          "/Game/CitySim/Art/LowDensity/Materials/M_Shop_Clapboard.M_Shop_Clapboard",
+          "/Game/CitySim/Art/Materials/MI_Roof.MI_Roof",
+          "/Game/CitySim/Art/Materials/MI_RoofMembrane.MI_RoofMembrane",
+          "/Game/CitySim/Art/LowDensity/Materials/MI_Sign_repairs.MI_Sign_repairs",
+          "/Game/CitySim/Art/Materials/M_D122RepairWindows.M_D122RepairWindows"
+        ]
+      },
+      {
+        "mesh": "/Game/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Shop_D_repairs.SM_LowDensity_Shop_D_repairs",
+        "slot": 4,
+        "slots": [
+          "CommercialBrick",
+          "Roof",
+          "RoofMembrane",
+          "StoreSignTall",
+          "BuildingWindowOpaque"
+        ],
+        "before": [
+          "/Game/CitySim/Art/LowDensity/Materials/M_Shop_Corrugated.M_Shop_Corrugated",
+          "/Game/CitySim/Art/Materials/MI_Roof.MI_Roof",
+          "/Game/CitySim/Art/Materials/MI_RoofMembrane.MI_RoofMembrane",
+          "/Game/CitySim/Art/LowDensity/Materials/MI_Sign_repairs.MI_Sign_repairs",
+          "/Game/CitySim/Art/Materials/M_BuildingWindowOpaque.M_BuildingWindowOpaque"
+        ],
+        "after": [
+          "/Game/CitySim/Art/LowDensity/Materials/M_Shop_Corrugated.M_Shop_Corrugated",
+          "/Game/CitySim/Art/Materials/MI_Roof.MI_Roof",
+          "/Game/CitySim/Art/Materials/MI_RoofMembrane.MI_RoofMembrane",
+          "/Game/CitySim/Art/LowDensity/Materials/MI_Sign_repairs.MI_Sign_repairs",
+          "/Game/CitySim/Art/Materials/M_D122RepairWindows.M_D122RepairWindows"
+        ]
+      }
+    ],
+    "ground_display_top_cm": 450,
+    "upper_glass_frames_night_glow_preserved": true,
+    "geometry_changed": false
+  },
+  "files": [
+    {
+      "file": "CitySimVR/Content/CitySim/UI/Newspaper/T_Housing.uasset",
+      "sha256": "b1e8846fe0825a0af63c419dd02394714fb3e0191b9932556f61bf999173e59f",
+      "bytes": 136874,
+      "prior_worktree_sha256": null
+    },
+    {
+      "file": "CitySimVR/Content/CitySim/UI/Newspaper/T_Commerce.uasset",
+      "sha256": "3019443dcf1d2240dabee992a2f857d0ed3651ee25a599c0b6156d77747f55f4",
+      "bytes": 74081,
+      "prior_worktree_sha256": null
+    },
+    {
+      "file": "CitySimVR/Content/CitySim/UI/Newspaper/T_Automation.uasset",
+      "sha256": "c7c3e4f7836550d938183537c8919558c77746c2a3cc176e19e521a88898c6de",
+      "bytes": 120400,
+      "prior_worktree_sha256": null
+    },
+    {
+      "file": "CitySimVR/Content/CitySim/Art/Textures/T_D122RepairDisplays.uasset",
+      "sha256": "d79a883dc89294b890010ef91ccd8c5ded1933c628f7016f154cb93e9c3274a1",
+      "bytes": 266215,
+      "prior_worktree_sha256": null
+    },
+    {
+      "file": "CitySimVR/Content/CitySim/Art/Materials/M_D122RepairWindows.uasset",
+      "sha256": "2886208714f5b794c4d11ed08cd6e9a012b7260cb8b05f07b7d4630bdb8c8aa3",
+      "bytes": 24000,
+      "prior_worktree_sha256": null
+    },
+    {
+      "file": "CitySimVR/Content/CitySim/Art/Meshes/SM_CommercialLow_StoreRepairs.uasset",
+      "sha256": "f9a29868c510d5286ee9a80f6cca22d9fc6859a135f2477ae87187712699d2e4",
+      "bytes": 28770,
+      "prior_worktree_sha256": "957a48fef6c6bdef64cdb984f4d55e5df3ffdae32cad096af0f860a08ebb1eb0"
+    },
+    {
+      "file": "CitySimVR/Content/CitySim/Art/Meshes/SM_CommercialMedium_StoreRepairs.uasset",
+      "sha256": "8b5d3550660af49692fb59f358b81ed6c3f324f87c607539ca3fc4b887efbb63",
+      "bytes": 55630,
+      "prior_worktree_sha256": "436ea055187b4def2cc9a1ac0b14c5fe4c92f7f2b23f466f1428d285ef6fb524"
+    },
+    {
+      "file": "CitySimVR/Content/CitySim/Art/Meshes/SM_CommercialHigh_StoreRepairs.uasset",
+      "sha256": "616c1a2711fa36fcf2148cfdfee930d84249928538faf1ab9300e47d474e2a22",
+      "bytes": 79330,
+      "prior_worktree_sha256": "55f928b338fe4b1cd62ce36b13555a7d5f6a5cf9ef087f7c3b4033b9cc8bf3b0"
+    },
+    {
+      "file": "CitySimVR/Content/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Shop_A_repairs.uasset",
+      "sha256": "f6fee14b22c2bcf3208e1b729f76fc3780f2bdb23731e198fee58b590409b954",
+      "bytes": 34758,
+      "prior_worktree_sha256": "ccdf6acb213ad002c61d44930a8f9f70d4667cea8c701a3b224bc95538a1b662"
+    },
+    {
+      "file": "CitySimVR/Content/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Shop_B_repairs.uasset",
+      "sha256": "f8636a7cb8c88d9806b62372c897f739a5287f2b288a4621ebf6fe0a50a45b5d",
+      "bytes": 38774,
+      "prior_worktree_sha256": "c59a260e29474657cfd3be91a03b7d04287361af585eb01194950c9b3ef02c77"
+    },
+    {
+      "file": "CitySimVR/Content/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Shop_C_repairs.uasset",
+      "sha256": "f036fbab7e1a08d3137e9ab2e942cdce6fba05948bdace379b344e5cde61d4c8",
+      "bytes": 35605,
+      "prior_worktree_sha256": "ff469d2091a848fafa72475f22ac65bbe6c01c6e16f8a50166aa147477a24d0e"
+    },
+    {
+      "file": "CitySimVR/Content/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Shop_D_repairs.uasset",
+      "sha256": "a5608e7c83cf5af75e5ce708e9db3e568007934e46ad1f54210484cd6434fe2b",
+      "bytes": 37132,
+      "prior_worktree_sha256": "1838c475b6337d62acabc7d5c65e00ad30cc1ad38abb14bad629146e953d28c0"
+    }
+  ],
+  "visual_review": "pending correction of first-frame paper capture",
+  "gameplay_acceptance": false
+}

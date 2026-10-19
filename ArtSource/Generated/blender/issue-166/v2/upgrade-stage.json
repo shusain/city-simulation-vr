@@ -1,0 +1,26 @@
+{
+  "asset_id": "building.service.high.a",
+  "stage": "water_high",
+  "capacity_percent_reference": 300,
+  "module_counts": {
+    "clarifiers": 4,
+    "filter_pump_trains": 2,
+    "upright_process_vessels": 6,
+    "control_wings": 2
+  },
+  "occupied_envelope_m": {
+    "min": [
+      -20.6299991607666,
+      -12.575000762939453,
+      0.0
+    ],
+    "max": [
+      21.375,
+      12.430000305175781,
+      6.519999980926514
+    ]
+  },
+  "base_identity": "parent #157 reviewed worker/control and primary pump-house; original doors retained",
+  "review_only": true,
+  "lower_LOD_plan": "Preserve masses, portals, major manifolds; reduce secondary rings, frames and fixtures. No mobile performance claim."
+}

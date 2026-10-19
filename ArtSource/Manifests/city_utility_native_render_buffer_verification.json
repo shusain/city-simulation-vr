@@ -1,0 +1,3714 @@
+{
+  "task": 157,
+  "native_owner": 125,
+  "source_proofs": {
+    "ArtSource/Manifests/city_water_tower_render_surface_proof.json": "a98d18b2282e46beaf99b1258fcd141ba33791ef3c36fcc66f74fa54de588197",
+    "ArtSource/Manifests/city_wind_rotor_empty_slot_proof.json": "9c0ac10c14f574943d4618756a9b2279f7f1f1690deab952c64a93540783a99c"
+  },
+  "original_native_plan_sha256": "8765c24b51df26308d838c12da1a7af867b0903e4ecc14b5a6e0aecbbb764b78",
+  "native_snapshot_sha256": "5c89be5bb4e2a40054e78e4e086ba2467e964b2160cf1546cfe8c4564d295f85",
+  "native_snapshot_name": "ImportDiagnostics1-Geometry.json",
+  "native_execution_performed_by": "125 terrain/stairs owner,isolated ImportDiagnostics,not source-preparation chat",
+  "diagnostic_default_materials_only": true,
+  "no_production_asset_or_gameplay_acceptance": true,
+  "tower_lods": [
+    {
+      "lod": 0,
+      "raw_source_triangles": 4224,
+      "actual_native_triangles": 4170,
+      "actual_native_material_triangles": {
+        "Paint_BlueGrey": 1322,
+        "Paint_LightGrey": 1596,
+        "Mechanical": 1252
+      },
+      "exact54_source_zero_triangles_explain_native_count": true,
+      "retained_original_probe_matches": [
+        {
+          "material": "Paint_BlueGrey",
+          "source_sample_index": 0,
+          "sample": {
+            "position_m": [
+              3.799999952316284,
+              0.0,
+              10.199999809265137
+            ],
+            "normal": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "uv0": [
+              0.0,
+              5.099999904632568
+            ]
+          },
+          "native_vertex": 55,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 3.8602424009351366e-05,
+          "uv_error": 0.0,
+          "normal_dot": 1.0
+        },
+        {
+          "material": "Paint_BlueGrey",
+          "source_sample_index": 1,
+          "sample": {
+            "position_m": [
+              2.3692612648010254,
+              -2.9709596633911133,
+              14.5
+            ],
+            "normal": [
+              -1.0599953270684637e-07,
+              0.0,
+              1.0
+            ],
+            "uv0": [
+              1.1846306324005127,
+              -1.4854798316955566
+            ]
+          },
+          "native_vertex": 614,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 2.8354775900494587e-05,
+          "uv_error": 0.0,
+          "normal_dot": 0.9999999999999944
+        },
+        {
+          "material": "Paint_BlueGrey",
+          "source_sample_index": 2,
+          "sample": {
+            "position_m": [
+              -1.2163079977035522,
+              0.5857430696487427,
+              8.649999618530273
+            ],
+            "normal": [
+              -0.3221665322780609,
+              0.1551472395658493,
+              -0.9338833093643188
+            ],
+            "uv0": [
+              -0.6081539988517761,
+              0.29287153482437134
+            ]
+          },
+          "native_vertex": 1212,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 2.654060373320722e-05,
+          "uv_error": 0.0,
+          "normal_dot": 0.9999999998303309
+        },
+        {
+          "material": "Paint_BlueGrey",
+          "source_sample_index": 3,
+          "sample": {
+            "position_m": [
+              2.5227129459381104,
+              -1.214874505996704,
+              9.399999618530273
+            ],
+            "normal": [
+              0.4951884150505066,
+              -0.23847003281116486,
+              -0.8354163765907288
+            ],
+            "uv0": [
+              1.2613564729690552,
+              -0.607437252998352
+            ]
+          },
+          "native_vertex": 1156,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 3.371747880871523e-05,
+          "uv_error": 0.0,
+          "normal_dot": 0.9999999999832065
+        },
+        {
+          "material": "Paint_BlueGrey",
+          "source_sample_index": 4,
+          "sample": {
+            "position_m": [
+              2.9709596633911133,
+              -2.3692612648010254,
+              14.5
+            ],
+            "normal": [
+              0.28066104650497437,
+              -0.223819762468338,
+              0.9333456754684448
+            ],
+            "uv0": [
+              1.4854798316955566,
+              -1.1846306324005127
+            ]
+          },
+          "native_vertex": 700,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 2.7309076429894168e-05,
+          "uv_error": 0.0,
+          "normal_dot": 0.9999999999119157
+        },
+        {
+          "material": "Paint_BlueGrey",
+          "source_sample_index": 5,
+          "sample": {
+            "position_m": [
+              -0.31174489855766296,
+              0.39091575145721436,
+              15.420000076293945
+            ],
+            "normal": [
+              -0.08617152273654938,
+              0.10805650055408478,
+              0.9904030561447144
+            ],
+            "uv0": [
+              -0.15587244927883148,
+              0.19545787572860718
+            ]
+          },
+          "native_vertex": 759,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 9.210026698932026e-06,
+          "uv_error": 0.0,
+          "normal_dot": 0.9999999999033624
+        },
+        {
+          "material": "Paint_BlueGrey",
+          "source_sample_index": 6,
+          "sample": {
+            "position_m": [
+              -1.6335722208023071,
+              3.3921477794647217,
+              10.367500305175781
+            ],
+            "normal": [
+              0.0,
+              0.0,
+              -1.0
+            ],
+            "uv0": [
+              -0.8167861104011536,
+              1.6960738897323608
+            ]
+          },
+          "native_vertex": 969,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 5.113731163517116e-05,
+          "uv_error": 0.0,
+          "normal_dot": 1.0
+        },
+        {
+          "material": "Paint_BlueGrey",
+          "source_sample_index": 7,
+          "sample": {
+            "position_m": [
+              0.853367805480957,
+              -3.7388484477996826,
+              10.367500305175781
+            ],
+            "normal": [
+              0.16258251667022705,
+              -0.7123211622238159,
+              -0.6827631592750549
+            ],
+            "uv0": [
+              0.4266839027404785,
+              5.183750152587891
+            ]
+          },
+          "native_vertex": 123,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 4.937970529937599e-05,
+          "uv_error": 0.0,
+          "normal_dot": 0.9999999998857516
+        },
+        {
+          "material": "Paint_BlueGrey",
+          "source_sample_index": 8,
+          "sample": {
+            "position_m": [
+              2.305397630508407e-16,
+              3.765000104904175,
+              10.367500305175781
+            ],
+            "normal": [
+              0.0,
+              -1.0,
+              0.0
+            ],
+            "uv0": [
+              1.1526988152542035e-16,
+              5.183750152587891
+            ]
+          },
+          "native_vertex": 152,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 4.6094983584512085e-05,
+          "uv_error": 0.0,
+          "normal_dot": 1.0
+        },
+        {
+          "material": "Paint_BlueGrey",
+          "source_sample_index": 9,
+          "sample": {
+            "position_m": [
+              0.853367805480957,
+              3.7388484477996826,
+              12.317500114440918
+            ],
+            "normal": [
+              0.16258421540260315,
+              0.7123206853866577,
+              -0.6827631592750549
+            ],
+            "uv0": [
+              0.4266839027404785,
+              1.8694242238998413
+            ]
+          },
+          "native_vertex": 1014,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 3.8254110565436516e-05,
+          "uv_error": 0.0,
+          "normal_dot": 0.9999999998613506
+        },
+        {
+          "material": "Paint_BlueGrey",
+          "source_sample_index": 10,
+          "sample": {
+            "position_m": [
+              -1.663944125175476,
+              -3.4552156925201416,
+              12.382499694824219
+            ],
+            "normal": [
+              -0.3170132040977478,
+              -0.658284068107605,
+              0.682762622833252
+            ],
+            "uv0": [
+              -0.831972062587738,
+              6.191249847412109
+            ]
+          },
+          "native_vertex": 270,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 4.6066023411096435e-05,
+          "uv_error": 0.0,
+          "normal_dot": 0.9999999999145321
+        },
+        {
+          "material": "Paint_BlueGrey",
+          "source_sample_index": 11,
+          "sample": {
+            "position_m": [
+              2.3474390506744385,
+              2.9435956478118896,
+              12.317500114440918
+            ],
+            "normal": [
+              -0.623491108417511,
+              -0.781830370426178,
+              0.0
+            ],
+            "uv0": [
+              1.4717978239059448,
+              6.158750057220459
+            ]
+          },
+          "native_vertex": 286,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 3.560667934912581e-05,
+          "uv_error": 0.0,
+          "normal_dot": 0.9999999999815097
+        },
+        {
+          "material": "Paint_BlueGrey",
+          "source_sample_index": 12,
+          "sample": {
+            "position_m": [
+              2.998323678970337,
+              2.3910834789276123,
+              14.447500228881836
+            ],
+            "normal": [
+              0.5712369680404663,
+              0.45554712414741516,
+              -0.6827629208564758
+            ],
+            "uv0": [
+              1.4991618394851685,
+              1.1955417394638062
+            ]
+          },
+          "native_vertex": 1063,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 4.3765235540709555e-05,
+          "uv_error": 0.0,
+          "normal_dot": 0.9999999999652703
+        },
+        {
+          "material": "Paint_BlueGrey",
+          "source_sample_index": 13,
+          "sample": {
+            "position_m": [
+              -3.7388484477996826,
+              -0.853367805480957,
+              14.512499809265137
+            ],
+            "normal": [
+              -0.7123187184333801,
+              -0.16258211433887482,
+              0.682765781879425
+            ],
+            "uv0": [
+              -0.4266839027404785,
+              7.256249904632568
+            ]
+          },
+          "native_vertex": 418,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 4.325309932879855e-05,
+          "uv_error": 0.0,
+          "normal_dot": 0.9999999998477107
+        },
+        {
+          "material": "Paint_BlueGrey",
+          "source_sample_index": 14,
+          "sample": {
+            "position_m": [
+              3.765000104904175,
+              0.0,
+              14.447500228881836
+            ],
+            "normal": [
+              -1.0,
+              0.0,
+              0.0
+            ],
+            "uv0": [
+              0.0,
+              7.223750114440918
+            ]
+          },
+          "native_vertex": 449,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 4.144024473557726e-05,
+          "uv_error": 0.0,
+          "normal_dot": 1.0
+        },
+        {
+          "material": "Paint_BlueGrey",
+          "source_sample_index": 15,
+          "sample": {
+            "position_m": [
+              3.6706035137176514,
+              -0.8377913236618042,
+              14.447500228881836
+            ],
+            "normal": [
+              6.478769165596532e-08,
+              0.0,
+              1.0
+            ],
+            "uv0": [
+              1.8353017568588257,
+              -0.4188956618309021
+            ]
+          },
+          "native_vertex": 524,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 4.270555292617301e-05,
+          "uv_error": 5.960464477539063e-08,
+          "normal_dot": 0.999999999999998
+        },
+        {
+          "material": "Paint_LightGrey",
+          "source_sample_index": 0,
+          "sample": {
+            "position_m": [
+              3.2899999618530273,
+              0.0,
+              9.960000038146973
+            ],
+            "normal": [
+              0.0,
+              0.0,
+              -1.0
+            ],
+            "uv0": [
+              1.6449999809265137,
+              0.0
+            ]
+          },
+          "native_vertex": 2880,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 2.9263662534137786e-05,
+          "uv_error": 0.0,
+          "normal_dot": 1.0
+        },
+        {
+          "material": "Paint_LightGrey",
+          "source_sample_index": 1,
+          "sample": {
+            "position_m": [
+              3.0569610595703125,
+              -2.437845230102539,
+              10.34000015258789
+            ],
+            "normal": [
+              0.5712370276451111,
+              -0.45554664731025696,
+              0.6827630996704102
+            ],
+            "uv0": [
+              -1.2189226150512695,
+              5.170000076293945
+            ]
+          },
+          "native_vertex": 2691,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 4.1085546929431944e-05,
+          "uv_error": 0.0,
+          "normal_dot": 0.9999999999641319
+        },
+        {
+          "material": "Paint_LightGrey",
+          "source_sample_index": 2,
+          "sample": {
+            "position_m": [
+              -0.732093870639801,
+              -3.207512855529785,
+              9.960000038146973
+            ],
+            "normal": [
+              0.22252073884010315,
+              0.9749280214309692,
+              0.0
+            ],
+            "uv0": [
+              -0.3660469353199005,
+              4.980000019073486
+            ]
+          },
+          "native_vertex": 2758,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 2.9348736361176164e-05,
+          "uv_error": 0.0,
+          "normal_dot": 0.99999999997651
+        },
+        {
+          "material": "Paint_LightGrey",
+          "source_sample_index": 3,
+          "sample": {
+            "position_m": [
+              2.5034499168395996,
+              -2.5299994945526123,
+              0.7595233917236328
+            ],
+            "normal": [
+              0.668125331401825,
+              0.0,
+              0.7440487146377563
+            ],
+            "uv0": [
+              1.2517249584197998,
+              -1.2649997472763062
+            ]
+          },
+          "native_vertex": 125,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 3.574688875959647e-05,
+          "uv_error": 1.1920928955078125e-07,
+          "normal_dot": 0.999999999984694
+        },
+        {
+          "material": "Paint_LightGrey",
+          "source_sample_index": 4,
+          "sample": {
+            "position_m": [
+              2.5299997329711914,
+              2.394017457962036,
+              5.042850971221924
+            ],
+            "normal": [
+              0.0,
+              0.7143586277961731,
+              -0.6997798681259155
+            ],
+            "uv0": [
+              1.2649998664855957,
+              2.521425485610962
+            ]
+          },
+          "native_vertex": 333,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 2.6377328273657476e-05,
+          "uv_error": 0.0,
+          "normal_dot": 0.9999999998857987
+        },
+        {
+          "material": "Paint_LightGrey",
+          "source_sample_index": 5,
+          "sample": {
+            "position_m": [
+              -2.5299999713897705,
+              2.503450632095337,
+              0.7595241069793701
+            ],
+            "normal": [
+              0.0,
+              0.7440478801727295,
+              -0.6681262850761414
+            ],
+            "uv0": [
+              -1.2649999856948853,
+              0.37976205348968506
+            ]
+          },
+          "native_vertex": 546,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 2.4481768899905082e-05,
+          "uv_error": 0.0,
+          "normal_dot": 0.9999999999768805
+        },
+        {
+          "material": "Paint_LightGrey",
+          "source_sample_index": 6,
+          "sample": {
+            "position_m": [
+              -2.450000047683716,
+              -2.5399999618530273,
+              8.960000038146973
+            ],
+            "normal": [
+              -1.362391799375473e-07,
+              -1.0,
+              0.0
+            ],
+            "uv0": [
+              -1.225000023841858,
+              4.480000019073486
+            ]
+          },
+          "native_vertex": 753,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 2.791839822445764e-05,
+          "uv_error": 0.0,
+          "normal_dot": 0.9999999999999907
+        },
+        {
+          "material": "Paint_LightGrey",
+          "source_sample_index": 7,
+          "sample": {
+            "position_m": [
+              0.7325000166893005,
+              -4.25,
+              10.15250015258789
+            ],
+            "normal": [
+              1.0,
+              0.0,
+              -9.169870054392959e-07
+            ],
+            "uv0": [
+              -2.125,
+              5.076250076293945
+            ]
+          },
+          "native_vertex": 961,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 3.954084262843325e-05,
+          "uv_error": 0.0,
+          "normal_dot": 0.9999999999995797
+        },
+        {
+          "material": "Paint_LightGrey",
+          "source_sample_index": 8,
+          "sample": {
+            "position_m": [
+              -0.4375,
+              -2.4499998092651367,
+              7.737499713897705
+            ],
+            "normal": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "uv0": [
+              -0.21875,
+              3.8687498569488525
+            ]
+          },
+          "native_vertex": 1174,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 3.6837020713478025e-05,
+          "uv_error": 0.0,
+          "normal_dot": 1.0
+        },
+        {
+          "material": "Paint_LightGrey",
+          "source_sample_index": 9,
+          "sample": {
+            "position_m": [
+              0.44091135263442993,
+              -5.067119121551514,
+              2.9774999618530273
+            ],
+            "normal": [
+              0.0,
+              0.0,
+              -0.9999999403953552
+            ],
+            "uv0": [
+              0.22045567631721497,
+              -2.533559560775757
+            ]
+          },
+          "native_vertex": 1380,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 4.383855778039531e-05,
+          "uv_error": 0.0,
+          "normal_dot": 1.0
+        },
+        {
+          "material": "Paint_LightGrey",
+          "source_sample_index": 10,
+          "sample": {
+            "position_m": [
+              0.4721197485923767,
+              -5.09832763671875,
+              5.022500038146973
+            ],
+            "normal": [
+              0.0,
+              0.0,
+              0.9999999403953552
+            ],
+            "uv0": [
+              0.23605987429618835,
+              -2.549163818359375
+            ]
+          },
+          "native_vertex": 1588,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 4.617263718236814e-05,
+          "uv_error": 0.0,
+          "normal_dot": 1.0
+        },
+        {
+          "material": "Paint_LightGrey",
+          "source_sample_index": 11,
+          "sample": {
+            "position_m": [
+              -0.00438951700925827,
+              -5.247932434082031,
+              6.977499961853027
+            ],
+            "normal": [
+              -0.195090651512146,
+              0.9807851910591125,
+              0.0
+            ],
+            "uv0": [
+              -0.002194758504629135,
+              3.4887499809265137
+            ]
+          },
+          "native_vertex": 1803,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 5.522267404472918e-05,
+          "uv_error": 0.0,
+          "normal_dot": 0.999999999868334
+        },
+        {
+          "material": "Paint_LightGrey",
+          "source_sample_index": 12,
+          "sample": {
+            "position_m": [
+              0.25313374400138855,
+              -5.242589950561523,
+              10.977499961853027
+            ],
+            "normal": [
+              0.9807853102684021,
+              0.1950901597738266,
+              0.0
+            ],
+            "uv0": [
+              -2.6212949752807617,
+              5.488749980926514
+            ]
+          },
+          "native_vertex": 2009,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 5.05786064781002e-05,
+          "uv_error": 0.0,
+          "normal_dot": 0.9999999998600025
+        },
+        {
+          "material": "Paint_LightGrey",
+          "source_sample_index": 13,
+          "sample": {
+            "position_m": [
+              -0.004389502108097076,
+              -5.292068004608154,
+              12.977499961853027
+            ],
+            "normal": [
+              0.0,
+              0.0,
+              -1.0
+            ],
+            "uv0": [
+              -0.002194751054048538,
+              -2.646034002304077
+            ]
+          },
+          "native_vertex": 2222,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 4.829256453141861e-05,
+          "uv_error": 0.0,
+          "normal_dot": 1.0
+        },
+        {
+          "material": "Paint_LightGrey",
+          "source_sample_index": 14,
+          "sample": {
+            "position_m": [
+              -0.4471190571784973,
+              -5.060911178588867,
+              14.822500228881836
+            ],
+            "normal": [
+              0.0,
+              0.0,
+              0.9999999403953552
+            ],
+            "uv0": [
+              -0.22355952858924866,
+              -2.5304555892944336
+            ]
+          },
+          "native_vertex": 2431,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 5.111340699133249e-05,
+          "uv_error": 0.0,
+          "normal_dot": 1.0
+        },
+        {
+          "material": "Paint_LightGrey",
+          "source_sample_index": 15,
+          "sample": {
+            "position_m": [
+              0.18000000715255737,
+              -2.5374999046325684,
+              15.289999961853027
+            ],
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "uv0": [
+              0.09000000357627869,
+              -1.2687499523162842
+            ]
+          },
+          "native_vertex": 2639,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 2.3214918785542214e-05,
+          "uv_error": 0.0,
+          "normal_dot": 1.0
+        },
+        {
+          "material": "Mechanical",
+          "source_sample_index": 0,
+          "sample": {
+            "position_m": [
+              -2.809999942779541,
+              -2.809999942779541,
+              0.0
+            ],
+            "normal": [
+              -1.0,
+              0.0,
+              0.0
+            ],
+            "uv0": [
+              -1.4049999713897705,
+              0.0
+            ]
+          },
+          "native_vertex": 1,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 4.39104630783895e-05,
+          "uv_error": 0.0,
+          "normal_dot": 1.0
+        },
+        {
+          "material": "Mechanical",
+          "source_sample_index": 1,
+          "sample": {
+            "position_m": [
+              0.10999999940395355,
+              0.1905255913734436,
+              0.0
+            ],
+            "normal": [
+              0.0,
+              0.0,
+              -1.0
+            ],
+            "uv0": [
+              0.054999999701976776,
+              0.0952627956867218
+            ]
+          },
+          "native_vertex": 1973,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 2.489876577163389e-06,
+          "uv_error": 2.9802322387695312e-08,
+          "normal_dot": 1.0
+        },
+        {
+          "material": "Mechanical",
+          "source_sample_index": 2,
+          "sample": {
+            "position_m": [
+              0.0,
+              0.36000001430511475,
+              1.524999976158142
+            ],
+            "normal": [
+              0.2588191628456116,
+              0.9659258127212524,
+              0.0
+            ],
+            "uv0": [
+              0.0,
+              0.762499988079071
+            ]
+          },
+          "native_vertex": 242,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 4.199488088989273e-06,
+          "uv_error": 0.0,
+          "normal_dot": 0.9999999999291497
+        },
+        {
+          "material": "Mechanical",
+          "source_sample_index": 3,
+          "sample": {
+            "position_m": [
+              -0.04500000178813934,
+              -0.6800000071525574,
+              1.1549999713897705
+            ],
+            "normal": [
+              0.0,
+              2.4835267709022446e-07,
+              -1.0
+            ],
+            "uv0": [
+              -0.02250000089406967,
+              -0.3400000035762787
+            ]
+          },
+          "native_vertex": 348,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 6.596756009708661e-06,
+          "uv_error": 2.9802322387695312e-08,
+          "normal_dot": 0.9999999999999691
+        },
+        {
+          "material": "Mechanical",
+          "source_sample_index": 4,
+          "sample": {
+            "position_m": [
+              -0.06898149102926254,
+              -0.7300000190734863,
+              1.5022276639938354
+            ],
+            "normal": [
+              -0.16258244216442108,
+              -0.6827630996704102,
+              0.7123211622238159
+            ],
+            "uv0": [
+              -0.03449074551463127,
+              -0.36500000953674316
+            ]
+          },
+          "native_vertex": 1719,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 7.370337870632483e-06,
+          "uv_error": 0.0,
+          "normal_dot": 0.9999999998869351
+        },
+        {
+          "material": "Mechanical",
+          "source_sample_index": 5,
+          "sample": {
+            "position_m": [
+              -0.06898149102926254,
+              -0.7299999594688416,
+              0.8977724313735962
+            ],
+            "normal": [
+              -0.1625823825597763,
+              -0.6827631592750549,
+              -0.7123210430145264
+            ],
+            "uv0": [
+              -0.03449074551463127,
+              0.4488862156867981
+            ]
+          },
+          "native_vertex": 2026,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 7.616869603270879e-06,
+          "uv_error": 0.0,
+          "normal_dot": 0.9999999998862443
+        },
+        {
+          "material": "Mechanical",
+          "source_sample_index": 6,
+          "sample": {
+            "position_m": [
+              -0.2486066222190857,
+              -0.6699999570846558,
+              1.1432572603225708
+            ],
+            "normal": [
+              0.0,
+              0.9999999403953552,
+              1.356259531348769e-07
+            ],
+            "uv0": [
+              -0.12430331110954285,
+              0.5716286301612854
+            ]
+          },
+          "native_vertex": 2089,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 7.721965189314673e-06,
+          "uv_error": 0.0,
+          "normal_dot": 0.9999999999999908
+        },
+        {
+          "material": "Mechanical",
+          "source_sample_index": 7,
+          "sample": {
+            "position_m": [
+              0.4350000023841858,
+              -4.582499980926514,
+              0.8274999856948853
+            ],
+            "normal": [
+              0.0,
+              0.0,
+              -1.0
+            ],
+            "uv0": [
+              0.2175000011920929,
+              -2.291249990463257
+            ]
+          },
+          "native_vertex": 475,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 4.179131541957403e-05,
+          "uv_error": 0.0,
+          "normal_dot": 1.0
+        },
+        {
+          "material": "Mechanical",
+          "source_sample_index": 8,
+          "sample": {
+            "position_m": [
+              0.4350000023841858,
+              -4.582499980926514,
+              2.992500066757202
+            ],
+            "normal": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "uv0": [
+              0.2175000011920929,
+              1.496250033378601
+            ]
+          },
+          "native_vertex": 628,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 4.229696114150768e-05,
+          "uv_error": 0.0,
+          "normal_dot": 1.0
+        },
+        {
+          "material": "Mechanical",
+          "source_sample_index": 9,
+          "sample": {
+            "position_m": [
+              -0.4350000023841858,
+              -4.65749979019165,
+              4.7275004386901855
+            ],
+            "normal": [
+              0.0,
+              0.0,
+              -1.0
+            ],
+            "uv0": [
+              -0.2175000011920929,
+              -2.328749895095825
+            ]
+          },
+          "native_vertex": 785,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 4.5277565098126035e-05,
+          "uv_error": 0.0,
+          "normal_dot": 1.0
+        },
+        {
+          "material": "Mechanical",
+          "source_sample_index": 10,
+          "sample": {
+            "position_m": [
+              0.4350000023841858,
+              -4.582499980926514,
+              6.827500343322754
+            ],
+            "normal": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "uv0": [
+              0.2175000011920929,
+              3.413750171661377
+            ]
+          },
+          "native_vertex": 943,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 4.957329450025803e-05,
+          "uv_error": 0.0,
+          "normal_dot": 1.0
+        },
+        {
+          "material": "Mechanical",
+          "source_sample_index": 11,
+          "sample": {
+            "position_m": [
+              0.4350000023841858,
+              -4.582499980926514,
+              8.692500114440918
+            ],
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "uv0": [
+              0.2175000011920929,
+              -2.291249990463257
+            ]
+          },
+          "native_vertex": 1100,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 4.330629190400211e-05,
+          "uv_error": 0.0,
+          "normal_dot": 1.0
+        },
+        {
+          "material": "Mechanical",
+          "source_sample_index": 12,
+          "sample": {
+            "position_m": [
+              0.4350000023841858,
+              -4.582499980926514,
+              10.792500495910645
+            ],
+            "normal": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "uv0": [
+              -2.291249990463257,
+              5.396250247955322
+            ]
+          },
+          "native_vertex": 1258,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 6.483626573927076e-05,
+          "uv_error": 0.0,
+          "normal_dot": 1.0
+        },
+        {
+          "material": "Mechanical",
+          "source_sample_index": 13,
+          "sample": {
+            "position_m": [
+              -0.4350000023841858,
+              -4.65749979019165,
+              12.592500686645508
+            ],
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "uv0": [
+              -0.2175000011920929,
+              -2.328749895095825
+            ]
+          },
+          "native_vertex": 1414,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 6.873115977798898e-05,
+          "uv_error": 0.0,
+          "normal_dot": 1.0
+        },
+        {
+          "material": "Mechanical",
+          "source_sample_index": 14,
+          "sample": {
+            "position_m": [
+              0.4350000023841858,
+              -4.65749979019165,
+              14.692500114440918
+            ],
+            "normal": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "uv0": [
+              -2.328749895095825,
+              7.346250057220459
+            ]
+          },
+          "native_vertex": 1568,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 4.430289392178394e-05,
+          "uv_error": 0.0,
+          "normal_dot": 1.0
+        },
+        {
+          "material": "Mechanical",
+          "source_sample_index": 15,
+          "sample": {
+            "position_m": [
+              -0.19134172797203064,
+              -2.038060188293457,
+              15.029999732971191
+            ],
+            "normal": [
+              -1.8690536762733245e-06,
+              0.0,
+              -1.0
+            ],
+            "uv0": [
+              -0.09567086398601532,
+              -1.0190300941467285
+            ]
+          },
+          "native_vertex": 1948,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 3.216641293273377e-05,
+          "uv_error": 0.0,
+          "normal_dot": 0.9999999999982534
+        }
+      ],
+      "omitted_degenerate_only_probes": [],
+      "max_position_error_cm": 6.873115977798898e-05,
+      "max_uv_error": 1.1920928955078125e-07,
+      "min_normal_dot": 0.9999999998303309
+    },
+    {
+      "lod": 1,
+      "raw_source_triangles": 3536,
+      "actual_native_triangles": 3482,
+      "actual_native_material_triangles": {
+        "Paint_BlueGrey": 1046,
+        "Paint_LightGrey": 1584,
+        "Mechanical": 852
+      },
+      "exact54_source_zero_triangles_explain_native_count": true,
+      "retained_original_probe_matches": [
+        {
+          "material": "Paint_BlueGrey",
+          "source_sample_index": 0,
+          "sample": {
+            "position_m": [
+              3.799999952316284,
+              0.0,
+              10.199999809265137
+            ],
+            "normal": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "uv0": [
+              0.0,
+              5.099999904632568
+            ]
+          },
+          "native_vertex": 55,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 3.8602424009351366e-05,
+          "uv_error": 0.0,
+          "normal_dot": 1.0
+        },
+        {
+          "material": "Paint_BlueGrey",
+          "source_sample_index": 1,
+          "sample": {
+            "position_m": [
+              -0.8455795645713806,
+              3.704725980758667,
+              10.199999809265137
+            ],
+            "normal": [
+              0.0,
+              0.0,
+              -1.0
+            ],
+            "uv0": [
+              -0.4227897822856903,
+              1.8523629903793335
+            ]
+          },
+          "native_vertex": 394,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 3.958681869730903e-05,
+          "uv_error": 0.0,
+          "normal_dot": 1.0
+        },
+        {
+          "material": "Paint_BlueGrey",
+          "source_sample_index": 2,
+          "sample": {
+            "position_m": [
+              0.19951674342155457,
+              -0.25018608570098877,
+              8.399999618530273
+            ],
+            "normal": [
+              0.14706355333328247,
+              -0.18441060185432434,
+              -0.9717844724655151
+            ],
+            "uv0": [
+              0.09975837171077728,
+              -0.12509304285049438
+            ]
+          },
+          "native_vertex": 894,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 2.3204203806730553e-05,
+          "uv_error": 5.960464477539063e-08,
+          "normal_dot": 0.9999999998622695
+        },
+        {
+          "material": "Paint_BlueGrey",
+          "source_sample_index": 3,
+          "sample": {
+            "position_m": [
+              2.799999952316284,
+              0.0,
+              9.399999618530273
+            ],
+            "normal": [
+              0.549617350101471,
+              -1.1984929715325165e-09,
+              -0.8354165554046631
+            ],
+            "uv0": [
+              1.399999976158142,
+              0.0
+            ]
+          },
+          "native_vertex": 879,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 3.3849628345253975e-05,
+          "uv_error": 0.0,
+          "normal_dot": 0.9999999999795538
+        },
+        {
+          "material": "Paint_BlueGrey",
+          "source_sample_index": 4,
+          "sample": {
+            "position_m": [
+              -0.13884279131889343,
+              0.28831005096435547,
+              8.399999618530273
+            ],
+            "normal": [
+              -3.736897724593291e-07,
+              0.0,
+              -1.0
+            ],
+            "uv0": [
+              -0.06942139565944672,
+              0.14415502548217773
+            ]
+          },
+          "native_vertex": 514,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 2.316006716797902e-05,
+          "uv_error": 0.0,
+          "normal_dot": 0.9999999999999303
+        },
+        {
+          "material": "Paint_BlueGrey",
+          "source_sample_index": 5,
+          "sample": {
+            "position_m": [
+              2.3692612648010254,
+              -2.9709596633911133,
+              14.5
+            ],
+            "normal": [
+              0.22381971776485443,
+              -0.2806611955165863,
+              0.9333456158638
+            ],
+            "uv0": [
+              1.1846306324005127,
+              -1.4854798316955566
+            ]
+          },
+          "native_vertex": 545,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 2.8354775900494587e-05,
+          "uv_error": 0.0,
+          "normal_dot": 0.9999999999097137
+        },
+        {
+          "material": "Paint_BlueGrey",
+          "source_sample_index": 6,
+          "sample": {
+            "position_m": [
+              0.5,
+              0.0,
+              15.420000076293945
+            ],
+            "normal": [
+              0.1382078379392624,
+              0.0,
+              0.9904032349586487
+            ],
+            "uv0": [
+              0.25,
+              0.0
+            ]
+          },
+          "native_vertex": 522,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 8.792867326502634e-06,
+          "uv_error": 0.0,
+          "normal_dot": 0.9999999999641976
+        },
+        {
+          "material": "Paint_BlueGrey",
+          "source_sample_index": 7,
+          "sample": {
+            "position_m": [
+              -1.6487581729888916,
+              3.4236817359924316,
+              14.5
+            ],
+            "normal": [
+              6.359972104519329e-08,
+              0.0,
+              -1.0
+            ],
+            "uv0": [
+              -0.8243790864944458,
+              1.7118408679962158
+            ]
+          },
+          "native_vertex": 423,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 3.839649608458976e-05,
+          "uv_error": 0.0,
+          "normal_dot": 0.999999999999998
+        },
+        {
+          "material": "Paint_BlueGrey",
+          "source_sample_index": 8,
+          "sample": {
+            "position_m": [
+              2.3474390506744385,
+              -2.9435956478118896,
+              10.367500305175781
+            ],
+            "normal": [
+              0.0,
+              0.0,
+              -1.0
+            ],
+            "uv0": [
+              1.1737195253372192,
+              -1.4717978239059448
+            ]
+          },
+          "native_vertex": 789,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 3.817080706823254e-05,
+          "uv_error": 1.1920928955078125e-07,
+          "normal_dot": 1.0
+        },
+        {
+          "material": "Paint_BlueGrey",
+          "source_sample_index": 9,
+          "sample": {
+            "position_m": [
+              3.7388484477996826,
+              -0.853367805480957,
+              10.432499885559082
+            ],
+            "normal": [
+              0.7123208045959473,
+              -0.16258345544338226,
+              0.6827632188796997
+            ],
+            "uv0": [
+              -0.4266839027404785,
+              5.216249942779541
+            ]
+          },
+          "native_vertex": 75,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 3.8254110565436516e-05,
+          "uv_error": 0.0,
+          "normal_dot": 0.9999999998714831
+        },
+        {
+          "material": "Paint_BlueGrey",
+          "source_sample_index": 10,
+          "sample": {
+            "position_m": [
+              1.6335722208023071,
+              3.3921477794647217,
+              10.367500305175781
+            ],
+            "normal": [
+              -0.4338841736316681,
+              -0.900968611240387,
+              0.0
+            ],
+            "uv0": [
+              0.8167861104011536,
+              5.183750152587891
+            ]
+          },
+          "native_vertex": 147,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 4.2427790285190064e-05,
+          "uv_error": 0.0,
+          "normal_dot": 0.9999999999984421
+        },
+        {
+          "material": "Paint_BlueGrey",
+          "source_sample_index": 11,
+          "sample": {
+            "position_m": [
+              -1.6335722208023071,
+              3.3921477794647217,
+              10.367500305175781
+            ],
+            "normal": [
+              -6.478769165596532e-08,
+              0.0,
+              1.0
+            ],
+            "uv0": [
+              -0.8167861104011536,
+              1.6960738897323608
+            ]
+          },
+          "native_vertex": 193,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 5.113731163517116e-05,
+          "uv_error": 0.0,
+          "normal_dot": 0.999999999999998
+        },
+        {
+          "material": "Paint_BlueGrey",
+          "source_sample_index": 12,
+          "sample": {
+            "position_m": [
+              3.7388484477996826,
+              -0.853367805480957,
+              14.447500228881836
+            ],
+            "normal": [
+              0.712321400642395,
+              -0.1625814586877823,
+              -0.6827630400657654
+            ],
+            "uv0": [
+              1.8694242238998413,
+              -0.4266839027404785
+            ]
+          },
+          "native_vertex": 807,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 4.3084552757555076e-05,
+          "uv_error": 0.0,
+          "normal_dot": 0.9999999998996192
+        },
+        {
+          "material": "Paint_BlueGrey",
+          "source_sample_index": 13,
+          "sample": {
+            "position_m": [
+              1.6335722208023071,
+              3.3921477794647217,
+              14.512499809265137
+            ],
+            "normal": [
+              -0.295053094625473,
+              -0.6126803755760193,
+              0.7331892251968384
+            ],
+            "uv0": [
+              0.8167861104011536,
+              1.6960738897323608
+            ]
+          },
+          "native_vertex": 697,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 3.510829951133722e-05,
+          "uv_error": 0.0,
+          "normal_dot": 0.9999999998847224
+        },
+        {
+          "material": "Paint_BlueGrey",
+          "source_sample_index": 14,
+          "sample": {
+            "position_m": [
+              -1.6335722208023071,
+              3.3921477794647217,
+              14.512499809265137
+            ],
+            "normal": [
+              0.295053094625473,
+              -0.6126803755760193,
+              0.7331892251968384
+            ],
+            "uv0": [
+              -0.8167861104011536,
+              7.256249904632568
+            ]
+          },
+          "native_vertex": 313,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 4.5249308805398394e-05,
+          "uv_error": 0.0,
+          "normal_dot": 0.9999999998847224
+        },
+        {
+          "material": "Paint_BlueGrey",
+          "source_sample_index": 15,
+          "sample": {
+            "position_m": [
+              3.6706035137176514,
+              -0.8377913236618042,
+              14.447500228881836
+            ],
+            "normal": [
+              6.478769165596532e-08,
+              0.0,
+              1.0
+            ],
+            "uv0": [
+              1.8353017568588257,
+              -0.4188956618309021
+            ]
+          },
+          "native_vertex": 368,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 4.270555292617301e-05,
+          "uv_error": 5.960464477539063e-08,
+          "normal_dot": 0.999999999999998
+        },
+        {
+          "material": "Paint_LightGrey",
+          "source_sample_index": 0,
+          "sample": {
+            "position_m": [
+              3.2899999618530273,
+              0.0,
+              9.960000038146973
+            ],
+            "normal": [
+              0.0,
+              0.0,
+              -1.0
+            ],
+            "uv0": [
+              1.6449999809265137,
+              0.0
+            ]
+          },
+          "native_vertex": 2856,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 2.9263662534137786e-05,
+          "uv_error": 0.0,
+          "normal_dot": 1.0
+        },
+        {
+          "material": "Paint_LightGrey",
+          "source_sample_index": 1,
+          "sample": {
+            "position_m": [
+              2.437845230102539,
+              -3.0569610595703125,
+              9.960000038146973
+            ],
+            "normal": [
+              0.45554599165916443,
+              -0.5712375044822693,
+              -0.6827631592750549
+            ],
+            "uv0": [
+              -1.5284805297851562,
+              4.980000019073486
+            ]
+          },
+          "native_vertex": 2668,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 3.833723305176121e-05,
+          "uv_error": 0.0,
+          "normal_dot": 0.9999999999655195
+        },
+        {
+          "material": "Paint_LightGrey",
+          "source_sample_index": 2,
+          "sample": {
+            "position_m": [
+              -0.732093870639801,
+              -3.207512855529785,
+              10.34000015258789
+            ],
+            "normal": [
+              0.15131962299346924,
+              0.66297447681427,
+              0.7331897616386414
+            ],
+            "uv0": [
+              -0.3660469353199005,
+              5.170000076293945
+            ]
+          },
+          "native_vertex": 2735,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 3.285767877412108e-05,
+          "uv_error": 0.0,
+          "normal_dot": 0.9999999998393464
+        },
+        {
+          "material": "Paint_LightGrey",
+          "source_sample_index": 3,
+          "sample": {
+            "position_m": [
+              -2.5034499168395996,
+              -2.5300004482269287,
+              5.040476322174072
+            ],
+            "normal": [
+              1.0774725467399549e-07,
+              -1.0,
+              0.0
+            ],
+            "uv0": [
+              -1.2517249584197998,
+              2.520238161087036
+            ]
+          },
+          "native_vertex": 122,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 2.7125287348418984e-05,
+          "uv_error": 0.0,
+          "normal_dot": 0.9999999999999942
+        },
+        {
+          "material": "Paint_LightGrey",
+          "source_sample_index": 4,
+          "sample": {
+            "position_m": [
+              2.5300002098083496,
+              -2.394017457962036,
+              9.957149505615234
+            ],
+            "normal": [
+              0.0,
+              -0.7143608331680298,
+              0.6997774839401245
+            ],
+            "uv0": [
+              1.2650001049041748,
+              4.978574752807617
+            ]
+          },
+          "native_vertex": 329,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 4.0156370680670356e-05,
+          "uv_error": 0.0,
+          "normal_dot": 0.9999999998314656
+        },
+        {
+          "material": "Paint_LightGrey",
+          "source_sample_index": 5,
+          "sample": {
+            "position_m": [
+              -2.370000123977661,
+              2.503450632095337,
+              0.7595241069793701
+            ],
+            "normal": [
+              1.0,
+              -9.050772860064171e-07,
+              0.0
+            ],
+            "uv0": [
+              1.2517253160476685,
+              0.37976205348968506
+            ]
+          },
+          "native_vertex": 539,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 2.4481768899905082e-05,
+          "uv_error": 0.0,
+          "normal_dot": 0.9999999999995905
+        },
+        {
+          "material": "Paint_LightGrey",
+          "source_sample_index": 6,
+          "sample": {
+            "position_m": [
+              -0.7000000476837158,
+              -2.3600001335144043,
+              8.779999732971191
+            ],
+            "normal": [
+              1.362391799375473e-07,
+              1.0,
+              0.0
+            ],
+            "uv0": [
+              -0.3500000238418579,
+              4.389999866485596
+            ]
+          },
+          "native_vertex": 746,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 3.343305233565923e-05,
+          "uv_error": 0.0,
+          "normal_dot": 0.9999999999999907
+        },
+        {
+          "material": "Paint_LightGrey",
+          "source_sample_index": 7,
+          "sample": {
+            "position_m": [
+              0.7325000166893005,
+              -3.2825000286102295,
+              9.079999923706055
+            ],
+            "normal": [
+              0.0,
+              0.0,
+              -1.0
+            ],
+            "uv0": [
+              0.36625000834465027,
+              -1.6412500143051147
+            ]
+          },
+          "native_vertex": 954,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 2.997728487989721e-05,
+          "uv_error": 1.1920928955078125e-07,
+          "normal_dot": 1.0
+        },
+        {
+          "material": "Paint_LightGrey",
+          "source_sample_index": 8,
+          "sample": {
+            "position_m": [
+              -0.4375,
+              -4.619999885559082,
+              7.737499713897705
+            ],
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "uv0": [
+              -0.21875,
+              -2.309999942779541
+            ]
+          },
+          "native_vertex": 1159,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 5.206048608381722e-05,
+          "uv_error": 0.0,
+          "normal_dot": 1.0
+        },
+        {
+          "material": "Paint_LightGrey",
+          "source_sample_index": 9,
+          "sample": {
+            "position_m": [
+              0.6225893497467041,
+              -4.873134136199951,
+              2.9774999618530273
+            ],
+            "normal": [
+              -0.19509078562259674,
+              -0.9807852506637573,
+              0.0
+            ],
+            "uv0": [
+              0.31129467487335205,
+              1.4887499809265137
+            ]
+          },
+          "native_vertex": 1367,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 4.1229183809694835e-05,
+          "uv_error": 0.0,
+          "normal_dot": 0.9999999998702727
+        },
+        {
+          "material": "Paint_LightGrey",
+          "source_sample_index": 10,
+          "sample": {
+            "position_m": [
+              0.581813633441925,
+              -4.856244087219238,
+              4.977499961853027
+            ],
+            "normal": [
+              0.0,
+              0.0,
+              -0.9999999403953552
+            ],
+            "uv0": [
+              0.2909068167209625,
+              -2.428122043609619
+            ]
+          },
+          "native_vertex": 1573,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 4.517198475655487e-05,
+          "uv_error": 0.0,
+          "normal_dot": 1.0
+        },
+        {
+          "material": "Paint_LightGrey",
+          "source_sample_index": 11,
+          "sample": {
+            "position_m": [
+              0.4721197485923767,
+              -5.09832763671875,
+              7.022500038146973
+            ],
+            "normal": [
+              -5.222586423769826e-06,
+              0.0,
+              0.9999999403953552
+            ],
+            "uv0": [
+              0.23605987429618835,
+              -2.549163818359375
+            ]
+          },
+          "native_vertex": 1780,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 4.617263718236814e-05,
+          "uv_error": 0.0,
+          "normal_dot": 0.9999999999863622
+        },
+        {
+          "material": "Paint_LightGrey",
+          "source_sample_index": 12,
+          "sample": {
+            "position_m": [
+              0.26124459505081177,
+              -5.239230155944824,
+              10.977499961853027
+            ],
+            "normal": [
+              -0.8314757943153381,
+              -0.5555609464645386,
+              7.358453331107739e-06
+            ],
+            "uv0": [
+              -2.619615077972412,
+              5.488749980926514
+            ]
+          },
+          "native_vertex": 1991,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 5.039663478963415e-05,
+          "uv_error": 0.0,
+          "normal_dot": 0.9999999999703999
+        },
+        {
+          "material": "Paint_LightGrey",
+          "source_sample_index": 13,
+          "sample": {
+            "position_m": [
+              0.2443547248840332,
+              -5.1984543800354,
+              12.977499961853027
+            ],
+            "normal": [
+              0.0,
+              0.0,
+              -0.9999999403953552
+            ],
+            "uv0": [
+              0.1221773624420166,
+              -2.5992271900177
+            ]
+          },
+          "native_vertex": 2197,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 5.0499734096045405e-05,
+          "uv_error": 0.0,
+          "normal_dot": 1.0
+        },
+        {
+          "material": "Paint_LightGrey",
+          "source_sample_index": 14,
+          "sample": {
+            "position_m": [
+              -0.004389502108097076,
+              -5.292068004608154,
+              14.822500228881836
+            ],
+            "normal": [
+              -5.222532308835071e-06,
+              0.0,
+              1.0
+            ],
+            "uv0": [
+              -0.002194751054048538,
+              -2.646034002304077
+            ]
+          },
+          "native_vertex": 2405,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 5.330561717130823e-05,
+          "uv_error": 0.0,
+          "normal_dot": 0.9999999999863627
+        },
+        {
+          "material": "Paint_LightGrey",
+          "source_sample_index": 15,
+          "sample": {
+            "position_m": [
+              0.28999996185302734,
+              -3.4693140983581543,
+              14.593193054199219
+            ],
+            "normal": [
+              0.0,
+              0.9467732310295105,
+              -0.3219013810157776
+            ],
+            "uv0": [
+              0.14499998092651367,
+              7.296596527099609
+            ]
+          },
+          "native_vertex": 2615,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 4.517638886385731e-05,
+          "uv_error": 0.0,
+          "normal_dot": 0.9999999999779342
+        },
+        {
+          "material": "Mechanical",
+          "source_sample_index": 0,
+          "sample": {
+            "position_m": [
+              -2.809999942779541,
+              -2.809999942779541,
+              0.0
+            ],
+            "normal": [
+              -1.0,
+              0.0,
+              0.0
+            ],
+            "uv0": [
+              -1.4049999713897705,
+              0.0
+            ]
+          },
+          "native_vertex": 1,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 4.39104630783895e-05,
+          "uv_error": 0.0,
+          "normal_dot": 1.0
+        },
+        {
+          "material": "Mechanical",
+          "source_sample_index": 1,
+          "sample": {
+            "position_m": [
+              0.2199999988079071,
+              0.0,
+              8.699999809265137
+            ],
+            "normal": [
+              0.9659258127212524,
+              0.25881895422935486,
+              0.0
+            ],
+            "uv0": [
+              0.0,
+              4.349999904632568
+            ]
+          },
+          "native_vertex": 104,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 1.9170581080237355e-05,
+          "uv_error": 0.0,
+          "normal_dot": 0.9999999999267306
+        },
+        {
+          "material": "Mechanical",
+          "source_sample_index": 2,
+          "sample": {
+            "position_m": [
+              -0.31176915764808655,
+              0.18000000715255737,
+              1.4500000476837158
+            ],
+            "normal": [
+              -1.5330412850289576e-07,
+              0.0,
+              1.0
+            ],
+            "uv0": [
+              -0.15588457882404327,
+              0.09000000357627869
+            ]
+          },
+          "native_vertex": 1050,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 5.894534738100107e-06,
+          "uv_error": 2.9802322387695312e-08,
+          "normal_dot": 0.9999999999999882
+        },
+        {
+          "material": "Mechanical",
+          "source_sample_index": 3,
+          "sample": {
+            "position_m": [
+              -0.04500000178813934,
+              -0.6800000071525574,
+              1.2450000047683716
+            ],
+            "normal": [
+              0.0,
+              -2.4835267709022446e-07,
+              1.0
+            ],
+            "uv0": [
+              -0.02250000089406967,
+              -0.3400000035762787
+            ]
+          },
+          "native_vertex": 247,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 5.963146083328347e-06,
+          "uv_error": 2.9802322387695312e-08,
+          "normal_dot": 0.9999999999999691
+        },
+        {
+          "material": "Mechanical",
+          "source_sample_index": 4,
+          "sample": {
+            "position_m": [
+              0.06898149102926254,
+              -0.6699999570846558,
+              0.8977724313735962
+            ],
+            "normal": [
+              0.1625824272632599,
+              0.682763397693634,
+              -0.7123209238052368
+            ],
+            "uv0": [
+              0.03449074551463127,
+              0.4488862156867981
+            ]
+          },
+          "native_vertex": 1338,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 6.701812777586049e-06,
+          "uv_error": 0.0,
+          "normal_dot": 0.999999999883277
+        },
+        {
+          "material": "Mechanical",
+          "source_sample_index": 5,
+          "sample": {
+            "position_m": [
+              -0.06898149102926254,
+              -0.6699999570846558,
+              0.8977724313735962
+            ],
+            "normal": [
+              -0.1625824272632599,
+              0.682763397693634,
+              -0.7123209238052368
+            ],
+            "uv0": [
+              -0.03449074551463127,
+              -0.3349999785423279
+            ]
+          },
+          "native_vertex": 1111,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 7.364551255778464e-06,
+          "uv_error": 5.960464477539063e-08,
+          "normal_dot": 0.999999999883277
+        },
+        {
+          "material": "Mechanical",
+          "source_sample_index": 6,
+          "sample": {
+            "position_m": [
+              -0.13450396060943604,
+              -0.7299999594688416,
+              0.9206997156143188
+            ],
+            "normal": [
+              -0.3170124292373657,
+              -0.6827632784843445,
+              -0.6582836508750916
+            ],
+            "uv0": [
+              -0.06725198030471802,
+              0.4603498578071594
+            ]
+          },
+          "native_vertex": 1254,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 7.780632434883462e-06,
+          "uv_error": 0.0,
+          "normal_dot": 0.9999999999022648
+        },
+        {
+          "material": "Mechanical",
+          "source_sample_index": 7,
+          "sample": {
+            "position_m": [
+              -0.22974705696105957,
+              -0.6699999570846558,
+              1.0893596410751343
+            ],
+            "normal": [
+              0.9009689092636108,
+              0.0,
+              0.4338836967945099
+            ],
+            "uv0": [
+              -0.3349999785423279,
+              0.5446798205375671
+            ]
+          },
+          "native_vertex": 1034,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 8.286546324244865e-06,
+          "uv_error": 0.0,
+          "normal_dot": 0.9999999999992726
+        },
+        {
+          "material": "Mechanical",
+          "source_sample_index": 8,
+          "sample": {
+            "position_m": [
+              0.24499988555908203,
+              -0.005469322204589844,
+              4.844666481018066
+            ],
+            "normal": [
+              0.0,
+              -0.12154088169336319,
+              0.9925864338874817
+            ],
+            "uv0": [
+              0.12249994277954102,
+              -0.002734661102294922
+            ]
+          },
+          "native_vertex": 269,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 4.376783311530547e-06,
+          "uv_error": 0.0,
+          "normal_dot": 0.9999999998943949
+        },
+        {
+          "material": "Mechanical",
+          "source_sample_index": 9,
+          "sample": {
+            "position_m": [
+              -0.4350000023841858,
+              -4.65749979019165,
+              2.0924999713897705
+            ],
+            "normal": [
+              0.0,
+              -1.0,
+              0.0
+            ],
+            "uv0": [
+              -0.2175000011920929,
+              1.0462499856948853
+            ]
+          },
+          "native_vertex": 372,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 4.335876372757304e-05,
+          "uv_error": 0.0,
+          "normal_dot": 1.0
+        },
+        {
+          "material": "Mechanical",
+          "source_sample_index": 10,
+          "sample": {
+            "position_m": [
+              0.4350000023841858,
+              -4.65749979019165,
+              4.492499828338623
+            ],
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "uv0": [
+              0.2175000011920929,
+              -2.328749895095825
+            ]
+          },
+          "native_vertex": 479,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 4.483347113861509e-05,
+          "uv_error": 0.0,
+          "normal_dot": 1.0
+        },
+        {
+          "material": "Mechanical",
+          "source_sample_index": 11,
+          "sample": {
+            "position_m": [
+              0.4350000023841858,
+              -4.582499980926514,
+              7.492499828338623
+            ],
+            "normal": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "uv0": [
+              -2.291249990463257,
+              3.7462499141693115
+            ]
+          },
+          "native_vertex": 586,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 4.515688169918031e-05,
+          "uv_error": 0.0,
+          "normal_dot": 1.0
+        },
+        {
+          "material": "Mechanical",
+          "source_sample_index": 12,
+          "sample": {
+            "position_m": [
+              0.4350000023841858,
+              -4.65749979019165,
+              9.827499389648438
+            ],
+            "normal": [
+              0.0,
+              0.0,
+              -1.0
+            ],
+            "uv0": [
+              0.2175000011920929,
+              -2.328749895095825
+            ]
+          },
+          "native_vertex": 688,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 4.27992893958479e-05,
+          "uv_error": 0.0,
+          "normal_dot": 1.0
+        },
+        {
+          "material": "Mechanical",
+          "source_sample_index": 13,
+          "sample": {
+            "position_m": [
+              -0.4350000023841858,
+              -4.582499980926514,
+              12.827499389648438
+            ],
+            "normal": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "uv0": [
+              -0.2175000011920929,
+              6.413749694824219
+            ]
+          },
+          "native_vertex": 797,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 7.21274326283697e-05,
+          "uv_error": 0.0,
+          "normal_dot": 1.0
+        },
+        {
+          "material": "Mechanical",
+          "source_sample_index": 14,
+          "sample": {
+            "position_m": [
+              0.4350000023841858,
+              -4.65749979019165,
+              15.292500495910645
+            ],
+            "normal": [
+              0.0,
+              -1.0,
+              0.0
+            ],
+            "uv0": [
+              0.2175000011920929,
+              7.646250247955322
+            ]
+          },
+          "native_vertex": 902,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 6.550612831165902e-05,
+          "uv_error": 0.0,
+          "normal_dot": 1.0
+        },
+        {
+          "material": "Mechanical",
+          "source_sample_index": 15,
+          "sample": {
+            "position_m": [
+              -0.19134172797203064,
+              -2.038060188293457,
+              15.029999732971191
+            ],
+            "normal": [
+              -1.8690536762733245e-06,
+              0.0,
+              -1.0
+            ],
+            "uv0": [
+              -0.09567086398601532,
+              -1.0190300941467285
+            ]
+          },
+          "native_vertex": 1180,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 3.216641293273377e-05,
+          "uv_error": 0.0,
+          "normal_dot": 0.9999999999982534
+        }
+      ],
+      "omitted_degenerate_only_probes": [],
+      "max_position_error_cm": 7.21274326283697e-05,
+      "max_uv_error": 1.1920928955078125e-07,
+      "min_normal_dot": 0.9999999998314656
+    },
+    {
+      "lod": 2,
+      "raw_source_triangles": 2544,
+      "actual_native_triangles": 2490,
+      "actual_native_material_triangles": {
+        "Paint_BlueGrey": 494,
+        "Paint_LightGrey": 1584,
+        "Mechanical": 412
+      },
+      "exact54_source_zero_triangles_explain_native_count": true,
+      "retained_original_probe_matches": [
+        {
+          "material": "Paint_BlueGrey",
+          "source_sample_index": 0,
+          "sample": {
+            "position_m": [
+              3.799999952316284,
+              0.0,
+              10.199999809265137
+            ],
+            "normal": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "uv0": [
+              0.0,
+              5.099999904632568
+            ]
+          },
+          "native_vertex": 55,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 3.8602424009351366e-05,
+          "uv_error": 0.0,
+          "normal_dot": 1.0
+        },
+        {
+          "material": "Paint_BlueGrey",
+          "source_sample_index": 1,
+          "sample": {
+            "position_m": [
+              -3.704725980758667,
+              -0.8455795645713806,
+              14.5
+            ],
+            "normal": [
+              -0.9749279618263245,
+              -0.2225208431482315,
+              0.0
+            ],
+            "uv0": [
+              -0.4227897822856903,
+              7.25
+            ]
+          },
+          "native_vertex": 24,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 3.4688879109369404e-05,
+          "uv_error": 0.0,
+          "normal_dot": 0.9999999999757153
+        },
+        {
+          "material": "Paint_BlueGrey",
+          "source_sample_index": 2,
+          "sample": {
+            "position_m": [
+              -3.4236817359924316,
+              1.6487581729888916,
+              10.199999809265137
+            ],
+            "normal": [
+              0.0,
+              0.0,
+              -1.0
+            ],
+            "uv0": [
+              -1.7118408679962158,
+              0.8243790864944458
+            ]
+          },
+          "native_vertex": 80,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 3.704628868018156e-05,
+          "uv_error": 0.0,
+          "normal_dot": 1.0
+        },
+        {
+          "material": "Paint_BlueGrey",
+          "source_sample_index": 3,
+          "sample": {
+            "position_m": [
+              0.30040326714515686,
+              1.3161526918411255,
+              8.649999618530273
+            ],
+            "normal": [
+              0.07956937700510025,
+              0.3486126959323883,
+              -0.9338831901550293
+            ],
+            "uv0": [
+              0.15020163357257843,
+              0.6580763459205627
+            ]
+          },
+          "native_vertex": 322,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 2.579139194312495e-05,
+          "uv_error": 0.0,
+          "normal_dot": 0.9999999999523473
+        },
+        {
+          "material": "Paint_BlueGrey",
+          "source_sample_index": 4,
+          "sample": {
+            "position_m": [
+              0.30040326714515686,
+              -1.3161526918411255,
+              8.649999618530273
+            ],
+            "normal": [
+              0.07956936955451965,
+              -0.3486126959323883,
+              -0.9338831901550293
+            ],
+            "uv0": [
+              0.15020163357257843,
+              -0.6580763459205627
+            ]
+          },
+          "native_vertex": 368,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 2.6106834411621094e-05,
+          "uv_error": 5.960464477539063e-08,
+          "normal_dot": 0.9999999999524111
+        },
+        {
+          "material": "Paint_BlueGrey",
+          "source_sample_index": 5,
+          "sample": {
+            "position_m": [
+              -0.8417112231254578,
+              1.055472493171692,
+              8.649999618530273
+            ],
+            "normal": [
+              -0.22294658422470093,
+              0.279565691947937,
+              -0.9338831901550293
+            ],
+            "uv0": [
+              -0.4208556115627289,
+              0.527736246585846
+            ]
+          },
+          "native_vertex": 416,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 2.7372488085746067e-05,
+          "uv_error": 0.0,
+          "normal_dot": 0.9999999998736978
+        },
+        {
+          "material": "Paint_BlueGrey",
+          "source_sample_index": 6,
+          "sample": {
+            "position_m": [
+              1.055472493171692,
+              -0.8417112231254578,
+              8.649999618530273
+            ],
+            "normal": [
+              0.2795651853084564,
+              -0.2229461967945099,
+              -0.9338834881782532
+            ],
+            "uv0": [
+              0.527736246585846,
+              -0.4208556115627289
+            ]
+          },
+          "native_vertex": 356,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 2.6079331024195538e-05,
+          "uv_error": 2.9802322387695312e-08,
+          "normal_dot": 0.9999999998729477
+        },
+        {
+          "material": "Paint_BlueGrey",
+          "source_sample_index": 7,
+          "sample": {
+            "position_m": [
+              -2.7297980785369873,
+              0.6230586171150208,
+              9.399999618530273
+            ],
+            "normal": [
+              -0.5358375310897827,
+              0.12230130285024643,
+              -0.835416316986084
+            ],
+            "uv0": [
+              -1.3648990392684937,
+              0.3115293085575104
+            ]
+          },
+          "native_vertex": 407,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 3.763767848088132e-05,
+          "uv_error": 2.9802322387695312e-08,
+          "normal_dot": 0.9999999998829746
+        },
+        {
+          "material": "Paint_BlueGrey",
+          "source_sample_index": 8,
+          "sample": {
+            "position_m": [
+              0.19951674342155457,
+              -0.25018608570098877,
+              8.399999618530273
+            ],
+            "normal": [
+              -3.736897724593291e-07,
+              0.0,
+              -1.0
+            ],
+            "uv0": [
+              0.09975837171077728,
+              -0.12509304285049438
+            ]
+          },
+          "native_vertex": 179,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 2.3204203806730553e-05,
+          "uv_error": 5.960464477539063e-08,
+          "normal_dot": 0.9999999999999303
+        },
+        {
+          "material": "Paint_BlueGrey",
+          "source_sample_index": 9,
+          "sample": {
+            "position_m": [
+              2.2524220943450928,
+              1.0847094058990479,
+              15.0
+            ],
+            "normal": [
+              0.2598330080509186,
+              0.12512880563735962,
+              0.9575121402740479
+            ],
+            "uv0": [
+              1.1262110471725464,
+              0.5423547029495239
+            ]
+          },
+          "native_vertex": 209,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 2.2927885589926352e-05,
+          "uv_error": 0.0,
+          "normal_dot": 0.999999999993213
+        },
+        {
+          "material": "Paint_BlueGrey",
+          "source_sample_index": 10,
+          "sample": {
+            "position_m": [
+              -1.0847094058990479,
+              -2.2524220943450928,
+              15.0
+            ],
+            "normal": [
+              -0.12512971460819244,
+              -0.2598326802253723,
+              0.9575121402740479
+            ],
+            "uv0": [
+              -0.5423547029495239,
+              -1.1262110471725464
+            ]
+          },
+          "native_vertex": 253,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 1.8344291745826095e-05,
+          "uv_error": 1.1920928955078125e-07,
+          "normal_dot": 0.9999999999894066
+        },
+        {
+          "material": "Paint_BlueGrey",
+          "source_sample_index": 11,
+          "sample": {
+            "position_m": [
+              1.5308084995570108e-16,
+              2.5,
+              15.0
+            ],
+            "normal": [
+              -1.3173777801966935e-07,
+              0.288392573595047,
+              0.9575122594833374
+            ],
+            "uv0": [
+              7.654042497785054e-17,
+              1.25
+            ]
+          },
+          "native_vertex": 300,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 2.1855694300785596e-05,
+          "uv_error": 0.0,
+          "normal_dot": 0.9999999999859416
+        },
+        {
+          "material": "Paint_BlueGrey",
+          "source_sample_index": 12,
+          "sample": {
+            "position_m": [
+              1.0847094058990479,
+              -2.2524220943450928,
+              15.0
+            ],
+            "normal": [
+              0.12512944638729095,
+              -0.2598326802253723,
+              0.9575121402740479
+            ],
+            "uv0": [
+              0.5423547029495239,
+              -1.1262110471725464
+            ]
+          },
+          "native_vertex": 238,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 2.2927885589926352e-05,
+          "uv_error": 1.1920928955078125e-07,
+          "normal_dot": 0.9999999999905942
+        },
+        {
+          "material": "Paint_BlueGrey",
+          "source_sample_index": 13,
+          "sample": {
+            "position_m": [
+              -0.31174489855766296,
+              0.39091575145721436,
+              15.420000076293945
+            ],
+            "normal": [
+              -0.08617152273654938,
+              0.10805650055408478,
+              0.9904030561447144
+            ],
+            "uv0": [
+              -0.15587244927883148,
+              0.19545787572860718
+            ]
+          },
+          "native_vertex": 291,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 9.210026698932026e-06,
+          "uv_error": 0.0,
+          "normal_dot": 0.9999999999033624
+        },
+        {
+          "material": "Paint_BlueGrey",
+          "source_sample_index": 14,
+          "sample": {
+            "position_m": [
+              0.45048442482948303,
+              -0.21694186329841614,
+              15.420000076293945
+            ],
+            "normal": [
+              0.12452205270528793,
+              -0.05996682867407799,
+              0.9904030561447144
+            ],
+            "uv0": [
+              0.22524221241474152,
+              -0.10847093164920807
+            ]
+          },
+          "native_vertex": 228,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 9.067745330684955e-06,
+          "uv_error": 1.4901161193847656e-08,
+          "normal_dot": 0.9999999999652316
+        },
+        {
+          "material": "Paint_LightGrey",
+          "source_sample_index": 0,
+          "sample": {
+            "position_m": [
+              3.2899999618530273,
+              0.0,
+              9.960000038146973
+            ],
+            "normal": [
+              0.0,
+              0.0,
+              -1.0
+            ],
+            "uv0": [
+              1.6449999809265137,
+              0.0
+            ]
+          },
+          "native_vertex": 2856,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 2.9263662534137786e-05,
+          "uv_error": 0.0,
+          "normal_dot": 1.0
+        },
+        {
+          "material": "Paint_LightGrey",
+          "source_sample_index": 1,
+          "sample": {
+            "position_m": [
+              2.437845230102539,
+              -3.0569610595703125,
+              9.960000038146973
+            ],
+            "normal": [
+              0.45554599165916443,
+              -0.5712375044822693,
+              -0.6827631592750549
+            ],
+            "uv0": [
+              -1.5284805297851562,
+              4.980000019073486
+            ]
+          },
+          "native_vertex": 2668,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 3.833723305176121e-05,
+          "uv_error": 0.0,
+          "normal_dot": 0.9999999999655195
+        },
+        {
+          "material": "Paint_LightGrey",
+          "source_sample_index": 2,
+          "sample": {
+            "position_m": [
+              -0.732093870639801,
+              -3.207512855529785,
+              10.34000015258789
+            ],
+            "normal": [
+              0.15131962299346924,
+              0.66297447681427,
+              0.7331897616386414
+            ],
+            "uv0": [
+              -0.3660469353199005,
+              5.170000076293945
+            ]
+          },
+          "native_vertex": 2735,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 3.285767877412108e-05,
+          "uv_error": 0.0,
+          "normal_dot": 0.9999999998393464
+        },
+        {
+          "material": "Paint_LightGrey",
+          "source_sample_index": 3,
+          "sample": {
+            "position_m": [
+              -2.5034499168395996,
+              -2.5300004482269287,
+              5.040476322174072
+            ],
+            "normal": [
+              1.0774725467399549e-07,
+              -1.0,
+              0.0
+            ],
+            "uv0": [
+              -1.2517249584197998,
+              2.520238161087036
+            ]
+          },
+          "native_vertex": 122,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 2.7125287348418984e-05,
+          "uv_error": 0.0,
+          "normal_dot": 0.9999999999999942
+        },
+        {
+          "material": "Paint_LightGrey",
+          "source_sample_index": 4,
+          "sample": {
+            "position_m": [
+              2.5300002098083496,
+              -2.394017457962036,
+              9.957149505615234
+            ],
+            "normal": [
+              0.0,
+              -0.7143608331680298,
+              0.6997774839401245
+            ],
+            "uv0": [
+              1.2650001049041748,
+              4.978574752807617
+            ]
+          },
+          "native_vertex": 329,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 4.0156370680670356e-05,
+          "uv_error": 0.0,
+          "normal_dot": 0.9999999998314656
+        },
+        {
+          "material": "Paint_LightGrey",
+          "source_sample_index": 5,
+          "sample": {
+            "position_m": [
+              -2.370000123977661,
+              2.503450632095337,
+              0.7595241069793701
+            ],
+            "normal": [
+              1.0,
+              -9.050772860064171e-07,
+              0.0
+            ],
+            "uv0": [
+              1.2517253160476685,
+              0.37976205348968506
+            ]
+          },
+          "native_vertex": 539,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 2.4481768899905082e-05,
+          "uv_error": 0.0,
+          "normal_dot": 0.9999999999995905
+        },
+        {
+          "material": "Paint_LightGrey",
+          "source_sample_index": 6,
+          "sample": {
+            "position_m": [
+              -0.7000000476837158,
+              -2.3600001335144043,
+              8.779999732971191
+            ],
+            "normal": [
+              1.362391799375473e-07,
+              1.0,
+              0.0
+            ],
+            "uv0": [
+              -0.3500000238418579,
+              4.389999866485596
+            ]
+          },
+          "native_vertex": 746,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 3.343305233565923e-05,
+          "uv_error": 0.0,
+          "normal_dot": 0.9999999999999907
+        },
+        {
+          "material": "Paint_LightGrey",
+          "source_sample_index": 7,
+          "sample": {
+            "position_m": [
+              0.7325000166893005,
+              -3.2825000286102295,
+              9.079999923706055
+            ],
+            "normal": [
+              0.0,
+              0.0,
+              -1.0
+            ],
+            "uv0": [
+              0.36625000834465027,
+              -1.6412500143051147
+            ]
+          },
+          "native_vertex": 954,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 2.997728487989721e-05,
+          "uv_error": 1.1920928955078125e-07,
+          "normal_dot": 1.0
+        },
+        {
+          "material": "Paint_LightGrey",
+          "source_sample_index": 8,
+          "sample": {
+            "position_m": [
+              -0.4375,
+              -4.619999885559082,
+              7.737499713897705
+            ],
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "uv0": [
+              -0.21875,
+              -2.309999942779541
+            ]
+          },
+          "native_vertex": 1159,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 5.206048608381722e-05,
+          "uv_error": 0.0,
+          "normal_dot": 1.0
+        },
+        {
+          "material": "Paint_LightGrey",
+          "source_sample_index": 9,
+          "sample": {
+            "position_m": [
+              0.6225893497467041,
+              -4.873134136199951,
+              2.9774999618530273
+            ],
+            "normal": [
+              -0.19509078562259674,
+              -0.9807852506637573,
+              0.0
+            ],
+            "uv0": [
+              0.31129467487335205,
+              1.4887499809265137
+            ]
+          },
+          "native_vertex": 1367,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 4.1229183809694835e-05,
+          "uv_error": 0.0,
+          "normal_dot": 0.9999999998702727
+        },
+        {
+          "material": "Paint_LightGrey",
+          "source_sample_index": 10,
+          "sample": {
+            "position_m": [
+              0.581813633441925,
+              -4.856244087219238,
+              4.977499961853027
+            ],
+            "normal": [
+              0.0,
+              0.0,
+              -0.9999999403953552
+            ],
+            "uv0": [
+              0.2909068167209625,
+              -2.428122043609619
+            ]
+          },
+          "native_vertex": 1573,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 4.517198475655487e-05,
+          "uv_error": 0.0,
+          "normal_dot": 1.0
+        },
+        {
+          "material": "Paint_LightGrey",
+          "source_sample_index": 11,
+          "sample": {
+            "position_m": [
+              0.4721197485923767,
+              -5.09832763671875,
+              7.022500038146973
+            ],
+            "normal": [
+              -5.222586423769826e-06,
+              0.0,
+              0.9999999403953552
+            ],
+            "uv0": [
+              0.23605987429618835,
+              -2.549163818359375
+            ]
+          },
+          "native_vertex": 1780,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 4.617263718236814e-05,
+          "uv_error": 0.0,
+          "normal_dot": 0.9999999999863622
+        },
+        {
+          "material": "Paint_LightGrey",
+          "source_sample_index": 12,
+          "sample": {
+            "position_m": [
+              0.26124459505081177,
+              -5.239230155944824,
+              10.977499961853027
+            ],
+            "normal": [
+              -0.8314757943153381,
+              -0.5555609464645386,
+              7.358453331107739e-06
+            ],
+            "uv0": [
+              -2.619615077972412,
+              5.488749980926514
+            ]
+          },
+          "native_vertex": 1991,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 5.039663478963415e-05,
+          "uv_error": 0.0,
+          "normal_dot": 0.9999999999703999
+        },
+        {
+          "material": "Paint_LightGrey",
+          "source_sample_index": 13,
+          "sample": {
+            "position_m": [
+              0.2443547248840332,
+              -5.1984543800354,
+              12.977499961853027
+            ],
+            "normal": [
+              0.0,
+              0.0,
+              -0.9999999403953552
+            ],
+            "uv0": [
+              0.1221773624420166,
+              -2.5992271900177
+            ]
+          },
+          "native_vertex": 2197,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 5.0499734096045405e-05,
+          "uv_error": 0.0,
+          "normal_dot": 1.0
+        },
+        {
+          "material": "Paint_LightGrey",
+          "source_sample_index": 14,
+          "sample": {
+            "position_m": [
+              -0.004389502108097076,
+              -5.292068004608154,
+              14.822500228881836
+            ],
+            "normal": [
+              -5.222532308835071e-06,
+              0.0,
+              1.0
+            ],
+            "uv0": [
+              -0.002194751054048538,
+              -2.646034002304077
+            ]
+          },
+          "native_vertex": 2405,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 5.330561717130823e-05,
+          "uv_error": 0.0,
+          "normal_dot": 0.9999999999863627
+        },
+        {
+          "material": "Paint_LightGrey",
+          "source_sample_index": 15,
+          "sample": {
+            "position_m": [
+              0.28999996185302734,
+              -3.4693140983581543,
+              14.593193054199219
+            ],
+            "normal": [
+              0.0,
+              0.9467732310295105,
+              -0.3219013810157776
+            ],
+            "uv0": [
+              0.14499998092651367,
+              7.296596527099609
+            ]
+          },
+          "native_vertex": 2615,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 4.517638886385731e-05,
+          "uv_error": 0.0,
+          "normal_dot": 0.9999999999779342
+        },
+        {
+          "material": "Mechanical",
+          "source_sample_index": 0,
+          "sample": {
+            "position_m": [
+              -2.809999942779541,
+              -2.809999942779541,
+              0.0
+            ],
+            "normal": [
+              -1.0,
+              0.0,
+              0.0
+            ],
+            "uv0": [
+              -1.4049999713897705,
+              0.0
+            ]
+          },
+          "native_vertex": 1,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 4.39104630783895e-05,
+          "uv_error": 0.0,
+          "normal_dot": 1.0
+        },
+        {
+          "material": "Mechanical",
+          "source_sample_index": 1,
+          "sample": {
+            "position_m": [
+              2.0900001525878906,
+              2.809999942779541,
+              0.0
+            ],
+            "normal": [
+              -1.0,
+              0.0,
+              0.0
+            ],
+            "uv0": [
+              1.4049999713897705,
+              0.0
+            ]
+          },
+          "native_vertex": 51,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 3.104938620777074e-05,
+          "uv_error": 0.0,
+          "normal_dot": 1.0
+        },
+        {
+          "material": "Mechanical",
+          "source_sample_index": 2,
+          "sample": {
+            "position_m": [
+              0.1905255913734436,
+              0.10999999940395355,
+              8.699999809265137
+            ],
+            "normal": [
+              0.7071067094802856,
+              0.7071067690849304,
+              0.0
+            ],
+            "uv0": [
+              0.054999999701976776,
+              4.349999904632568
+            ]
+          },
+          "native_vertex": 100,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 1.9176121331600034e-05,
+          "uv_error": 0.0,
+          "normal_dot": 0.9999999999999993
+        },
+        {
+          "material": "Mechanical",
+          "source_sample_index": 3,
+          "sample": {
+            "position_m": [
+              -0.10999999940395355,
+              0.1905255913734436,
+              8.699999809265137
+            ],
+            "normal": [
+              -0.258819043636322,
+              0.9659258127212524,
+              0.0
+            ],
+            "uv0": [
+              -0.054999999701976776,
+              4.349999904632568
+            ]
+          },
+          "native_vertex": 142,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 1.9176121331600034e-05,
+          "uv_error": 0.0,
+          "normal_dot": 0.9999999999277723
+        },
+        {
+          "material": "Mechanical",
+          "source_sample_index": 4,
+          "sample": {
+            "position_m": [
+              -0.36000001430511475,
+              0.0,
+              1.4500000476837158
+            ],
+            "normal": [
+              -0.9659257531166077,
+              0.258819043636322,
+              0.0
+            ],
+            "uv0": [
+              0.0,
+              0.7250000238418579
+            ]
+          },
+          "native_vertex": 182,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 5.88971356415617e-06,
+          "uv_error": 0.0,
+          "normal_dot": 0.9999999999279576
+        },
+        {
+          "material": "Mechanical",
+          "source_sample_index": 5,
+          "sample": {
+            "position_m": [
+              -0.04500000178813934,
+              -0.19999998807907104,
+              1.2450001239776611
+            ],
+            "normal": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "uv0": [
+              -0.02250000089406967,
+              0.6225000619888306
+            ]
+          },
+          "native_vertex": 209,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 3.4923439205384856e-06,
+          "uv_error": 0.0,
+          "normal_dot": 1.0
+        },
+        {
+          "material": "Mechanical",
+          "source_sample_index": 6,
+          "sample": {
+            "position_m": [
+              -0.4350000023841858,
+              -4.65749979019165,
+              1.1274999380111694
+            ],
+            "normal": [
+              0.0,
+              0.0,
+              -1.0
+            ],
+            "uv0": [
+              -0.2175000011920929,
+              -2.328749895095825
+            ]
+          },
+          "native_vertex": 257,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 4.328791173926661e-05,
+          "uv_error": 0.0,
+          "normal_dot": 1.0
+        },
+        {
+          "material": "Mechanical",
+          "source_sample_index": 7,
+          "sample": {
+            "position_m": [
+              -0.4350000023841858,
+              -4.65749979019165,
+              2.992500066757202
+            ],
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "uv0": [
+              -0.2175000011920929,
+              -2.328749895095825
+            ]
+          },
+          "native_vertex": 310,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 4.377627416825718e-05,
+          "uv_error": 0.0,
+          "normal_dot": 1.0
+        },
+        {
+          "material": "Mechanical",
+          "source_sample_index": 8,
+          "sample": {
+            "position_m": [
+              -0.4350000023841858,
+              -4.65749979019165,
+              5.69249963760376
+            ],
+            "normal": [
+              -1.0,
+              0.0,
+              0.0
+            ],
+            "uv0": [
+              -2.328749895095825,
+              2.84624981880188
+            ]
+          },
+          "native_vertex": 362,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 4.986597395084194e-05,
+          "uv_error": 0.0,
+          "normal_dot": 1.0
+        },
+        {
+          "material": "Mechanical",
+          "source_sample_index": 9,
+          "sample": {
+            "position_m": [
+              -0.4350000023841858,
+              -4.582499980926514,
+              7.427500247955322
+            ],
+            "normal": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "uv0": [
+              -0.2175000011920929,
+              3.713750123977661
+            ]
+          },
+          "native_vertex": 413,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 4.573723491310549e-05,
+          "uv_error": 0.0,
+          "normal_dot": 1.0
+        },
+        {
+          "material": "Mechanical",
+          "source_sample_index": 10,
+          "sample": {
+            "position_m": [
+              0.4350000023841858,
+              -4.582499980926514,
+              9.227499961853027
+            ],
+            "normal": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "uv0": [
+              0.2175000011920929,
+              4.613749980926514
+            ]
+          },
+          "native_vertex": 463,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 4.1940667575131705e-05,
+          "uv_error": 0.0,
+          "normal_dot": 1.0
+        },
+        {
+          "material": "Mechanical",
+          "source_sample_index": 11,
+          "sample": {
+            "position_m": [
+              0.4350000023841858,
+              -4.65749979019165,
+              11.092500686645508
+            ],
+            "normal": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "uv0": [
+              -2.328749895095825,
+              5.546250343322754
+            ]
+          },
+          "native_vertex": 512,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 6.843942253956737e-05,
+          "uv_error": 0.0,
+          "normal_dot": 1.0
+        },
+        {
+          "material": "Mechanical",
+          "source_sample_index": 12,
+          "sample": {
+            "position_m": [
+              -0.4350000023841858,
+              -4.65749979019165,
+              12.892499923706055
+            ],
+            "normal": [
+              0.0,
+              -1.0,
+              0.0
+            ],
+            "uv0": [
+              -0.2175000011920929,
+              6.446249961853027
+            ]
+          },
+          "native_vertex": 564,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 4.393181763347625e-05,
+          "uv_error": 0.0,
+          "normal_dot": 1.0
+        },
+        {
+          "material": "Mechanical",
+          "source_sample_index": 13,
+          "sample": {
+            "position_m": [
+              0.4350000023841858,
+              -4.582499980926514,
+              14.6274995803833
+            ],
+            "normal": [
+              0.0,
+              0.0,
+              -1.0
+            ],
+            "uv0": [
+              0.2175000011920929,
+              -2.291249990463257
+            ]
+          },
+          "native_vertex": 619,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 5.920514693885766e-05,
+          "uv_error": 0.0,
+          "normal_dot": 1.0
+        },
+        {
+          "material": "Mechanical",
+          "source_sample_index": 14,
+          "sample": {
+            "position_m": [
+              -0.4619397521018982,
+              -2.6913416385650635,
+              15.029999732971191
+            ],
+            "normal": [
+              -0.980785071849823,
+              -0.19509083032608032,
+              0.0
+            ],
+            "uv0": [
+              -1.3456708192825317,
+              7.514999866485596
+            ]
+          },
+          "native_vertex": 669,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 3.727954865241658e-05,
+          "uv_error": 0.0,
+          "normal_dot": 0.9999999998715378
+        },
+        {
+          "material": "Mechanical",
+          "source_sample_index": 15,
+          "sample": {
+            "position_m": [
+              -0.19134172797203064,
+              -2.038060188293457,
+              15.029999732971191
+            ],
+            "normal": [
+              -1.8690536762733245e-06,
+              0.0,
+              -1.0
+            ],
+            "uv0": [
+              -0.09567086398601532,
+              -1.0190300941467285
+            ]
+          },
+          "native_vertex": 740,
+          "native_vertex_referenced_by_render_indices": true,
+          "position_error_cm": 3.216641293273377e-05,
+          "uv_error": 0.0,
+          "normal_dot": 0.9999999999982534
+        }
+      ],
+      "omitted_degenerate_only_probes": [
+        {
+          "material": "Paint_BlueGrey",
+          "source_sample_index": 15,
+          "sample": {
+            "position_m": [
+              0.0,
+              -0.0,
+              15.449999809265137
+            ],
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "uv0": [
+              0.0,
+              0.0
+            ]
+          },
+          "source_proven_exclusively_zero_area": true,
+          "native_render_index_match": false
+        }
+      ],
+      "max_position_error_cm": 6.843942253956737e-05,
+      "max_uv_error": 1.1920928955078125e-07,
+      "min_normal_dot": 0.9999999998314656
+    }
+  ],
+  "retained_tower_original_renderable_probes": 143,
+  "omitted_exclusively_degenerate_source_probes": 1,
+  "source_position_cm_tolerance": 0.2,
+  "source_uv_tolerance": 0.0002,
+  "source_normal_dot_min": 0.99999,
+  "tolerances_unchanged": true,
+  "rotor_lods": [
+    {
+      "lod": 0,
+      "actual_native_triangles": 916,
+      "actual_native_slots": [
+        "OffWhite_PaintedSteel",
+        "BlueGrey_Machinery"
+      ],
+      "actual_native_material_triangles": {
+        "OffWhite_PaintedSteel": 824,
+        "BlueGrey_Machinery": 92
+      },
+      "only_declared_but_globally_unused_slot_pruned": true
+    },
+    {
+      "lod": 1,
+      "actual_native_triangles": 916,
+      "actual_native_slots": [
+        "OffWhite_PaintedSteel",
+        "BlueGrey_Machinery"
+      ],
+      "actual_native_material_triangles": {
+        "OffWhite_PaintedSteel": 824,
+        "BlueGrey_Machinery": 92
+      },
+      "only_declared_but_globally_unused_slot_pruned": true
+    },
+    {
+      "lod": 2,
+      "actual_native_triangles": 916,
+      "actual_native_slots": [
+        "OffWhite_PaintedSteel",
+        "BlueGrey_Machinery"
+      ],
+      "actual_native_material_triangles": {
+        "OffWhite_PaintedSteel": 824,
+        "BlueGrey_Machinery": 92
+      },
+      "only_declared_but_globally_unused_slot_pruned": true
+    }
+  ],
+  "rotor_native_uv_normal_probes": "Pending unchanged core validator after explicit source-used slot routing in aggregate native batch",
+  "all_offline_comparisons_pass": true
+}

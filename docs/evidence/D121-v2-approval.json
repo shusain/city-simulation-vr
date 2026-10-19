@@ -1,0 +1,35 @@
+{
+  "task": "D121",
+  "version": 2,
+  "date": "2026-10-15",
+  "status": "source-approved",
+  "user_statement": "This looks good, let's approve v2 and integrate it into the game once the D107 build window is free.",
+  "source": "ArtSource/Blender/CityCitizenWalkCycle-v2.blend",
+  "source_sha256": "1cf0a3d40f92d23c80b2a84fa4e5cf2026617748a5940ebb318107e1a82940bb",
+  "manifest": "ArtSource/Manifests/city_citizen_walk_cycle_v2.json",
+  "source_bytes_unchanged": true,
+  "evidence": "docs/evidence/D121-walk-preview-v2.json",
+  "validation": "Artifacts/D121/V2/SourceValidation.json",
+  "preview": "Artifacts/D121/V2/Preview/Review.html",
+  "integration": {
+    "task": "D121.2",
+    "authorized": true,
+    "dependency": "D107 explicit native/source/build-window release",
+    "status": "delivered",
+    "plan": "docs/D121_CITIZEN_WALK_PLAN.md",
+    "revision": "dev-27bb30632e82c9f1af04",
+    "receipt": "docs/evidence/D121-integration.json",
+    "dependency_satisfied": true
+  },
+  "physical_PC_VR_Quest": "unconfirmed",
+  "gameplay_or_packages_changed": false,
+  "followup": {
+    "kind": "thread heartbeat",
+    "id": "integrate-approved-citizen-walk-v2-after-d107",
+    "status": "PAUSED",
+    "interval_minutes": 10,
+    "notify": "meaningful change/completion/failure/user action only",
+    "stop_after": "playable integration delivered for user review",
+    "result": "Integration delivered for user playtest; default safely promoted after original Desktop session closed"
+  }
+}

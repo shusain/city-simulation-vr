@@ -1,0 +1,544 @@
+{
+  "schema": 1,
+  "task": "D58",
+  "createdUTC": "2026-10-12T01:05:59.981519+00:00",
+  "readiness": {
+    "sourcePreparationComplete": true,
+    "readyForDelegatedRuntimeIntegrationAfterD83Release": true,
+    "remainingSourceWork": [],
+    "nativeIntegrationComplete": false
+  },
+  "integrationOwner": {
+    "date": "2026-10-11",
+    "status": "Source preparation complete and ready for delegated runtime integration after D83 release",
+    "handoff": "AudioSource/D58/Unreal/Handoff.json",
+    "integrationOwner": "List pending headset validations",
+    "integrationOwnerThreadId": "01a10a82-390e-7041-aa68-192a8d42bc43",
+    "coordinationEvidence": "Direct human instruction verified in that thread: coordinate with that agent on the integration work and what it's built already to hand off",
+    "remainingSourceWork": [],
+    "nativeWorkInThisChat": "None; no native-window claim, imports, builds or runtime C++/MetaSound changes. The integration owner will claim the D58 task window after D83's explicit release."
+  },
+  "entryPoints": {
+    "assetManifest": "AudioSource/D58/Unreal/Manifest.json",
+    "assetManifestSha256": "d73355fd5d8495714cb181a87326b2360cde50ec7916d585faa86359d2c0f264",
+    "acceptedSelections": "AudioSource/D58/selections.json",
+    "acceptedSelectionsSha256": "5cba5f98640fd99ae1c0424197bc935a1dcba8c343527cd2e11c25f6063b24b6",
+    "sirens": "Artifacts/D58/Production-20261011-v2/Manifest.json",
+    "library": "Artifacts/D58/Library-20261011-v7/Manifest.json",
+    "phaseControlContract": "AudioSource/D58/production-presets.json",
+    "ambienceControlContract": "AudioSource/D58/library-presets.json",
+    "stageVerification": "Artifacts/D58/UnrealStaging/Verification.json",
+    "ownerGuardVerification": "Artifacts/D58/UnrealStaging/OwnershipGuardVerification.json"
+  },
+  "inventory": {
+    "sources": 50,
+    "sirenSources": 14,
+    "librarySources": 36,
+    "wholeFileLoops": 21,
+    "nonLoopingShotsOrPhases": 29,
+    "sourceWAVBytes": 45659800,
+    "format": "PCM16 mono 48kHz WAV",
+    "nativeRoot": "/Game/CitySim/Audio/D58"
+  },
+  "provenanceAndRedistributionStatus": {
+    "content": "Project-original seeded SuperCollider synthesis with built-in UGens",
+    "thirdPartyRecordedAudioIncluded": false,
+    "externalSampleLibrariesOrQuarksIncluded": false,
+    "referenceUse": "Town-warning recordings were analyzed for pitch/timing only; no recording samples are mixed or loaded by the generated synths",
+    "referenceRecord": "AudioSource/D58/town-references.json",
+    "redistributionScope": "The 50 staged original rendered WAVs are the intended game-audio content. This record does not assign a new CC0 license or distribute third-party recordings.",
+    "excludedFromGamePayload": [
+      "Portable SuperCollider executable/class/plugin runtime",
+      "Downloaded reference recordings",
+      "Review MP3s/scenes/logs/authoring toolchain"
+    ],
+    "publication": "Owner's integrated test build and user testing precede the separately authorized repository/release workflow; this chat publishes nothing"
+  },
+  "preservedSourceLevels": {
+    "assetVolume": 1.0,
+    "assetPitch": 1.0,
+    "gainPolicy": "Source static gain is already baked into PCM; do not apply recorded authoring normalization a second time",
+    "allPerAssetMeasurements": "AudioSource/D58/Unreal/Manifest.json assets[].integratedLUFS and truePeakDBTP",
+    "rain": {
+      "Rain-Light": {
+        "package": "/Game/CitySim/Audio/D58/Ambience/Weather/SW_Rain_Light",
+        "integratedLUFS": -39.0,
+        "assetVolume": 1.0
+      },
+      "Rain-Moderate": {
+        "package": "/Game/CitySim/Audio/D58/Ambience/Weather/SW_Rain_Moderate",
+        "integratedLUFS": -36.0,
+        "assetVolume": 1.0
+      },
+      "Rain-Heavy": {
+        "package": "/Game/CitySim/Audio/D58/Ambience/Weather/SW_Rain_Heavy",
+        "integratedLUFS": -33.0,
+        "assetVolume": 1.0
+      },
+      "Rain-Downpour": {
+        "package": "/Game/CitySim/Audio/D58/Ambience/Weather/SW_Rain_Downpour",
+        "integratedLUFS": -30.0,
+        "assetVolume": 1.0
+      }
+    },
+    "rainPolicy": "Keep the -39/-36/-33/-30 LUFS intensity differences; choose/crossfade by current rainfall, not equal-loudness normalization",
+    "sirenLoopAuthoringTargetLUFS": -24.0,
+    "reviewScenePolicy": "Offline scene weights/times are examples, not actual event timers or an implemented runtime mix"
+  },
+  "sirenPhases": {
+    "Police": {
+      "selectedIdentity": "Police-A",
+      "assets": {
+        "Intro": {
+          "id": "Police-Intro",
+          "package": "/Game/CitySim/Audio/D58/Sirens/SW_Police_Intro",
+          "seconds": 0.8,
+          "loop": false
+        },
+        "Loop": {
+          "id": "Police-Loop",
+          "package": "/Game/CitySim/Audio/D58/Sirens/SW_Police_Loop",
+          "seconds": 4.0,
+          "loop": true
+        },
+        "Outro": {
+          "id": "Police-Outro",
+          "package": "/Game/CitySim/Audio/D58/Sirens/SW_Police_Outro",
+          "seconds": 0.8,
+          "loop": false
+        }
+      }
+    },
+    "Fire": {
+      "selectedIdentity": "Fire-A",
+      "assets": {
+        "Intro": {
+          "id": "Fire-Intro",
+          "package": "/Game/CitySim/Audio/D58/Sirens/SW_Fire_Intro",
+          "seconds": 2.0,
+          "loop": false
+        },
+        "Loop": {
+          "id": "Fire-Loop",
+          "package": "/Game/CitySim/Audio/D58/Sirens/SW_Fire_Loop",
+          "seconds": 50.0,
+          "loop": true
+        },
+        "Outro": {
+          "id": "Fire-Outro",
+          "package": "/Game/CitySim/Audio/D58/Sirens/SW_Fire_Outro",
+          "seconds": 2.0,
+          "loop": false
+        }
+      }
+    },
+    "Ambulance": {
+      "selectedIdentity": "Ambulance-A",
+      "assets": {
+        "Intro": {
+          "id": "Ambulance-Intro",
+          "package": "/Game/CitySim/Audio/D58/Sirens/SW_Ambulance_Intro",
+          "seconds": 1.0,
+          "loop": false
+        },
+        "Loop": {
+          "id": "Ambulance-Loop",
+          "package": "/Game/CitySim/Audio/D58/Sirens/SW_Ambulance_Loop",
+          "seconds": 2.0,
+          "loop": true
+        },
+        "Outro": {
+          "id": "Ambulance-Outro",
+          "package": "/Game/CitySim/Audio/D58/Sirens/SW_Ambulance_Outro",
+          "seconds": 1.0,
+          "loop": false
+        }
+      }
+    },
+    "Town": {
+      "selectedIdentity": "Town-G",
+      "assets": {
+        "Intro": {
+          "id": "Town-Intro",
+          "package": "/Game/CitySim/Audio/D58/Sirens/SW_Town_Intro",
+          "seconds": 4.0,
+          "loop": false
+        },
+        "Loop": {
+          "id": "Town-Loop",
+          "package": "/Game/CitySim/Audio/D58/Sirens/SW_Town_Loop",
+          "seconds": 20.0,
+          "loop": true
+        },
+        "Outro": {
+          "id": "Town-Outro",
+          "package": "/Game/CitySim/Audio/D58/Sirens/SW_Town_Outro",
+          "seconds": 5.0,
+          "loop": false
+        }
+      }
+    }
+  },
+  "accents": {
+    "Police-Alternate": {
+      "package": "/Game/CitySim/Audio/D58/Sirens/SW_Police_Alternate",
+      "seconds": 1.5,
+      "loop": false
+    },
+    "Fire-Horn": {
+      "package": "/Game/CitySim/Audio/D58/Sirens/SW_Fire_Horn",
+      "seconds": 0.55,
+      "loop": false
+    }
+  },
+  "phaseAndVoiceContract": {
+    "status": "Authoring/export contract only; no Unreal implementation or device acceptance yet",
+    "timing": "Audio uses wall-clock seconds, independent of 1x/3x/5x simulation speed",
+    "phases": "Intro once, whole-file loop while currently eligible. Town normal warning end may use its coast-down outro. Vehicle outro can be scheduled only while response remains active; arrival/inactive eligibility loss cancels within 100 ms instead of lingering through a long ending. Blend phase changes over 40 ms with complementary linear gains.",
+    "interruption": "Mute, pause, menu, city switch/load, suspend or destruction cancel eligibility and fade active components within 100 ms. Do not play the long town coast-down on interrupted or stale events. Restoring an eligible existing response/warning fades directly into Loop without replaying Intro or an onset notification.",
+    "town": "One city warning voice. Start/stop from actual current warning eligibility; preserve D57 once-per-event guards when replacing its presentation. Normal warning end can coast down; interruption stops promptly.",
+    "vehicles": "Only actively responding crews. Parked/inactive crews stay silent. Use a bounded pooled set of city-relative spatial components; no ticking audio actor per vehicle/building/citizen.",
+    "voiceBudget": {
+      "vehiclePrimaries": 6,
+      "townPrimary": 1,
+      "accents": 2,
+      "steadyTotal": 9,
+      "hardTotalIncludingPhaseTransitions": 16
+    },
+    "accentEligibility": "Only relevant passing/traffic/proximity encounters during actual response. Randomize eligible encounters with cooldown and no immediate retrigger. No free-running random sirens.",
+    "accentCooldownSeconds": {
+      "Police": 6,
+      "Fire": 8
+    },
+    "accentMix": "Police alternate replaces/crossfades the current police cadence rather than layering two full sirens. Fire horn may overlay with primary gain reduced to 0.5 during the accent, with 40 ms attack and 150 ms recovery. Global accent voices capped at two.",
+    "spatial": "Dry mono source assets. Game owns location, attenuation, board transforms, listener/focus and mixing. Do not bake Doppler/reverb/distance into exports.",
+    "controls": "Apply saved effects volume/mute after source gain and phase/duck envelopes. Ambience/music mixing is separate future scope.",
+    "integrationChecks": "Import PCM16 runtime copies; verify exact duration/rate/mono, whole-wave loops, phase switching and cancellation in Unreal. Test active/inactive crews, eligibility/cooldown, 1x/3x/5x, load/switch/menu/pause/suspend, saved controls, dense simultaneous responses and Desktop/PCVR/Quest localization/fatigue/cost."
+  },
+  "metaSoundIntegrationNotes": {
+    "status": "Proposed runtime graph/control contract, not implemented or native-tested",
+    "wavePlayerLoops": {
+      "Loop": true,
+      "Loop Start": 0.0,
+      "Loop Duration": -1.0,
+      "scope": "Loop waves only. Intro/outro/accents/notification/other one-shots use Loop=false. SoundWave asset looping flag alone is not proof of MetaSound looping."
+    },
+    "wavePlayerStop": "Installed node defines On Finished for both natural completion and Stop; gate transitions so an interruption does not trigger an Outro or next phase",
+    "localPrimaryEvidence": [
+      "C:/Program Files/Epic Games/UE_5.7/Engine/Plugins/Runtime/Metasound/Source/MetasoundEngine/Private/MetasoundWavePlayerNode.cpp",
+      "C:/Program Files/Epic Games/UE_5.7/Engine/Source/Runtime/Engine/Classes/Sound/SoundWave.h"
+    ],
+    "requiredLogicalControls": [
+      "Selected source/role",
+      "Start newly eligible response",
+      "Restore existing eligibility directly to Loop",
+      "End warning normally",
+      "Interrupt/cancel",
+      "Eligible traffic accent",
+      "Effects gain",
+      "Ambience gain",
+      "Area/focus/activity/weather/day-night weights"
+    ],
+    "ownership": "C++ owns authoritative eligibility, event identity/session deduplication, transforms, pools and saved controls; MetaSounds own waveform/phase/gain presentation",
+    "timing": "Wall-clock audio at unchanged sample/playback rate for 1x/3x/5x simulation speed",
+    "loopIdentity": "Preserve exact full-wave frame bounds/durations; notably Fire-Loop is 50 seconds, Town-Loop 20, Police-Loop 4 and Ambulance-Loop 2"
+  },
+  "eventAndSpatialPolicy": {
+    "sirens": "Use actual active police/fire/ambulance response identities/positions; parked/inactive crews stay quiet. Town uses actual current warning eligibility/onset/end.",
+    "trafficAccents": "Only relevant passing civilian vehicle/bystander encounters while responding, with the phase contract's bounded voices/cooldowns; no arbitrary global random sirens",
+    "trafficPasses": "Car-Pass/Truck-Pass follow relevant vehicle passages near the listener/focus, with bounded scheduling; offline scene timestamps are not runtime triggers",
+    "activity": "Fire-Crackle, Earthquake-Rumble, Construction-Tap, Demolition-Impact and Industry-Clank follow actual appropriate activity/events; no continuously ticking building sound Actors",
+    "ambience": "Area envelopes and zoom/focus drive selected local beds; broad distant mix remains quieter. Weather/day-night/season/location and actual city activity gate suitability. No ticking actor per building/citizen.",
+    "wildlife": "Schedule a small bounded pool of varied bird one-shots and suitable night-insect beds. Use natural timing variation at wall-clock speed, not simulation-speed replay.",
+    "weather": "Weather intensity, location/climate/season/day-night suitability choose wind/rain/roar/wildlife; thunder is a bounded storm event, not a repeated onset on every state poll",
+    "notifications": "New actionable transitions only, deduplicated across load/resume and rate-limited/coalesced at high simulation speed. Routine confirmation cues should be optional. Audio supplements visible state.",
+    "transforms": "Maintain emitters in city-relative coordinates and transform with board position/rotation/scale/current dimensions; define Desktop and VR listener/focus explicitly",
+    "rendering": "Dry mono assets; game owns spatialization/attenuation/listener policy. No source-baked pan/reverb/distance/Doppler. Use a small bounded pooled set, not Actors per building/citizen.",
+    "ambienceBudget": "Specific layer/voice budget remains an integration decision and measurement gate; only siren budgets have concrete proposed numbers in phaseAndVoiceContract"
+  },
+  "illustrativeSceneMixesOnly": {
+    "Scene-Park-Day": {
+      "description": "Leafy breeze, fountain and varied synthesized daytime bird phrases.",
+      "frames": 960000,
+      "beds": [
+        [
+          "Park-Foliage",
+          0.8
+        ],
+        [
+          "Park-Fountain",
+          0.6
+        ]
+      ],
+      "events": [
+        [
+          "Bird-Chirp-A",
+          2,
+          0.65
+        ],
+        [
+          "Bird-Chirp-B",
+          7,
+          0.5
+        ],
+        [
+          "Bird-Chirp-C",
+          13,
+          0.65
+        ]
+      ],
+      "staticAttenuation": 1
+    },
+    "Scene-Park-Night": {
+      "description": "Quiet foliage with rougher, irregular night-insect phrases.",
+      "frames": 960000,
+      "beds": [
+        [
+          "Park-Foliage",
+          0.65
+        ],
+        [
+          "Night-Crickets-Light",
+          0.8
+        ]
+      ],
+      "events": [],
+      "staticAttenuation": 1
+    },
+    "Scene-Industry": {
+      "description": "Accepted idle hum, intermittent tool/rattle bed and distinct occasional metal clanks.",
+      "frames": 960000,
+      "beds": [
+        [
+          "Industry-Idle",
+          0.6
+        ],
+        [
+          "Industry-Working",
+          0.65
+        ],
+        [
+          "City-Distant",
+          0.2
+        ]
+      ],
+      "events": [
+        [
+          "Industry-Clank",
+          3,
+          0.6
+        ],
+        [
+          "Industry-Clank",
+          10,
+          0.45
+        ],
+        [
+          "Industry-Clank",
+          16,
+          0.55
+        ]
+      ],
+      "staticAttenuation": 1
+    },
+    "Scene-Weather": {
+      "description": "Moderate rain under gusts, with reduced continuous noise and the original thunder events.",
+      "frames": 960000,
+      "beds": [
+        [
+          "Wind-Gusts",
+          0.45
+        ],
+        [
+          "Rain-Moderate",
+          0.65
+        ],
+        [
+          "Storm-Roar",
+          0.15
+        ]
+      ],
+      "events": [
+        [
+          "Thunder-Distant",
+          3,
+          0.7
+        ],
+        [
+          "Thunder-Near",
+          12,
+          0.7
+        ]
+      ],
+      "staticAttenuation": 1
+    },
+    "Scene-City": {
+      "description": "Restrained city/market bed without a wandering bass tone; engine/tire passes rise and fall smoothly.",
+      "frames": 960000,
+      "beds": [
+        [
+          "City-Distant",
+          0.8
+        ],
+        [
+          "Market-Murmur",
+          0.5
+        ]
+      ],
+      "events": [
+        [
+          "Car-Pass",
+          2,
+          0.5
+        ],
+        [
+          "Truck-Pass",
+          7,
+          0.5
+        ],
+        [
+          "Car-Pass",
+          14,
+          0.4
+        ]
+      ],
+      "staticAttenuation": 1
+    },
+    "Scene-Activity": {
+      "description": "Quiet crackling fire with separate example construction, impact and quake events.",
+      "frames": 960000,
+      "beds": [
+        [
+          "Fire-Crackle",
+          0.6
+        ]
+      ],
+      "events": [
+        [
+          "Construction-Tap",
+          2,
+          0.5
+        ],
+        [
+          "Demolition-Impact",
+          6,
+          0.5
+        ],
+        [
+          "Earthquake-Rumble",
+          12,
+          0.65
+        ]
+      ],
+      "staticAttenuation": 1
+    }
+  },
+  "alreadyImplemented": {
+    "D58SourceOnly": [
+      "Accepted generated source library and siren phases/accents",
+      "PCM24 masters and staged PCM16 WAVs",
+      "Per-source level/hash/loop contracts and review previews",
+      "Staging validator and deferred guarded importer scripts"
+    ],
+    "D57ExistingRuntime": [
+      "/Game/CitySim/Audio/MS_CityDisasterAlarm existing procedural one-shot MetaSound",
+      "One nonspatial board AudioComponent",
+      "Current disaster onset/session cursor and blocked/restored-event suppression",
+      "Saved AlarmVolume effects preference with 0.75 default and 0 as mute",
+      "Pause/menu/city-session/background/EndPlay cancellation and user preview"
+    ],
+    "baselineCode": [
+      "CitySimVR/Source/CitySimVR/Public/Presentation/CityDisasterAlarm.h",
+      "CitySimVR/Source/CitySimVR/Public/Presentation/CityAudioSettings.h",
+      "CitySimVR/Source/CitySimVR/Private/Presentation/CityBoardActor.cpp"
+    ],
+    "migrationCaution": "Preserve existing saved AlarmVolume, preview and onset deduplication; do not reset preferences or reuse the onset-only cursor as the complete persistent-loop eligibility policy"
+  },
+  "stillPending": [
+    "50 native SoundWave imports/API/property/codec validation",
+    "MetaSound source/phase/loop/accent presentation graphs",
+    "Persistent response/warning eligibility and pooled spatial routing",
+    "Ambience/zoom/area/weather/day-night gating and mix",
+    "Actionable notification gating/rate limiting",
+    "Shared saved effects/ambience controls and robust lifecycle",
+    "Cook references/inclusion and Desktop/PCVR/Quest test builds",
+    "Physical localization/comfort/fatigue and measured concurrent voices/memory/CPU"
+  ],
+  "deferredImporter": {
+    "validateCommand": "./Tools/Import-CityAudioSources.ps1",
+    "importCommand": "./Tools/Import-CityAudioSources.ps1 -Import",
+    "requires": "Explicit D83 release, no competing native process, and the delegated integration owner recording **Native window OWNED BY D58 ... in DEVELOPMENT_TASKS.md. The guard uses task ID, not chat ID.",
+    "report": "Artifacts/D58/UnrealImport/ImportReport.json",
+    "scope": "Create/verify D58 SoundWaves only; no graphs, world/event hooks or cook references",
+    "knownUntested": "Unreal Python/API execution, reflected setting access and native playback are not run; importer is syntax/source-checked and D83 refusal was actually tested",
+    "retry": "Preserve existing native import report for inspection; existing unowned/differently sourced targets are refused, owned matching assets/settings are verified"
+  },
+  "focusedIntegrationChecks": [
+    "Compare native channels/imported 48kHz rate/durations/21 loop flags/29 non-looping flags to the staged manifest",
+    "Render native compressed repeated loops and phase/accent transitions; preserve source gain/rain intensity; inspect clicks/decoder gaps and latency",
+    "New response/warning gets Intro once; load/resume existing eligibility goes directly to Loop; no stale onsets/notifications replay",
+    "Arrival/inactive response/mute/pause/menu/load/switch/suspend cancellation within100ms; town normal end uses coast-down without interruption tails",
+    "Exercise accent eligibility, 6/8s police/fire cooldowns, police replacement/fire duck, voice stealing and 9 steady/16 hard siren budgets",
+    "Pan/zoom/rotate/scale board, blend area/zoom/day-night/weather boundaries and compare Desktop versus VR localization",
+    "1x/3x/5x leaves pitch/cadence/notification rate stable; repeated load/resume/city switching does not duplicate players",
+    "Preserve saved effects volume/mute; add independent ambience control; leave D82 music separate",
+    "Verify Windows Desktop/PCVR and Quest cook references/audio playback, lifecycle and integrated asset regression checks",
+    "Measure dense/storm simultaneous voice/memory/audio/game-thread cost; physical listening/rendering remains pending for the user"
+  ],
+  "knownLimitations": [
+    "Source checks do not establish native compressed loop seams or runtime spatial/cancellation behavior",
+    "50-second fire loop needs platform loading/stream/cache assessment; 45,659,800 input bytes are not resident-memory measurement",
+    "Wildlife/market textures are synthesized, not species/field/real-voice recordings",
+    "Random overlap/retrigger and loop joins can interrupt individual bed cricket pairs",
+    "Offline scene timelines are only demonstrations and are not simulation-driven event schedules",
+    "No D82 music, optional traffic/service/construction additions, repository cleanup or publication is done by this source handoff"
+  ],
+  "rainRefinement20261012": {
+    "scope": "Four continuous/rounded rain beds replace the reviewed crackly runtime texture; other46 WAVs preserved",
+    "library": "Artifacts/D58/Library-20261012-v8",
+    "assetManifestSha256": "cdd96b3f3f773c77ecf0f6ef87b335ddd27eb0155872a48a61e604ea7d04c37e",
+    "acceptedSelectionsSha256": "169a17a8b08f5d78afaf13aad11c421ac5edaf26cfe64eadfbb8aa9f772ffc4a",
+    "physicalListening": "Pending",
+    "sourceChanges": [
+      {
+        "id": "Rain-Light",
+        "package": "/Game/CitySim/Audio/D58/Ambience/Weather/SW_Rain_Light",
+        "old_sha256": "5b3050b3d87e7bd6126685108a5f0be4bcf4b17a67f95ca32b54030bb3a35d03",
+        "new_sha256": "903c1041e13163656e94cc3b7a8fe4153089efb92ae7af80296456782c1cf3cf"
+      },
+      {
+        "id": "Rain-Heavy",
+        "package": "/Game/CitySim/Audio/D58/Ambience/Weather/SW_Rain_Heavy",
+        "old_sha256": "8fe2e6dc51f0fd05b07cbc4e8aa888e6194916c83de42c07af27330fbeb7c6fa",
+        "new_sha256": "f99171a2047bf07ea3bff8c3cf5f9a74e9cf17472a8f15b5902f9140aad4e789"
+      },
+      {
+        "id": "Rain-Moderate",
+        "package": "/Game/CitySim/Audio/D58/Ambience/Weather/SW_Rain_Moderate",
+        "old_sha256": "2f734a164b6bdfc7df6db0f3c305d25aadf90773662df3cfaebd83d57f1d401f",
+        "new_sha256": "f145e528df868130305a237a4a0882876ad1292ab52fcc532e3971c4ce625e4d"
+      },
+      {
+        "id": "Rain-Downpour",
+        "package": "/Game/CitySim/Audio/D58/Ambience/Weather/SW_Rain_Downpour",
+        "old_sha256": "c1e3cb1c827ecda64724642f06f26a0b4b7fd58c307e8aa46980893c4b7ceabd",
+        "new_sha256": "82a97aca66bde37c9f6154cf1392ca4fbce8a950888b2683dab493c8a2173bf6"
+      }
+    ],
+    "nativeVerification": "Artifacts/D58/RainSirenRefinement/Verification.json",
+    "candidate": "integration-2026.10.12.1"
+  },
+  "trafficAlarmRefinement20261012": {
+    "sourcePack": "Artifacts/D58/Traffic-20261012-v1",
+    "sourceCount": 54,
+    "preservedSources": 50,
+    "newSteadyLoops": [
+      "Car-Idle",
+      "Car-Driving",
+      "Truck-Idle",
+      "Truck-Driving"
+    ],
+    "physicalListening": "Pending",
+    "policy": "Two actual vehicle emitters; Unreal smoothed Doppler and spatialization; no prerecorded pass"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "family": "wastedepot",
+  "stage": "medium",
+  "stage_index": 1,
+  "existing_stages": [
+    "base",
+    "medium"
+  ],
+  "existing_upgrade_count": 1,
+  "source_site_m": [
+    48,
+    40
+  ],
+  "current_native_footprint": [
+    4,
+    3
+  ],
+  "gameplay_changes": false,
+  "occupied_bounds": {
+    "min": [
+      -20.219999313354492,
+      -9.300000190734863,
+      0.0
+    ],
+    "max": [
+      23.0,
+      17.020000457763672,
+      15.199999809265137
+    ]
+  },
+  "progression": "Retained admin, first bay and two process groups; two receiving bays, two furnace flues and two front-readable dumpsters. No new tier."
+}

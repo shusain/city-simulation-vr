@@ -1,0 +1,220 @@
+{
+  "task": "D108/D110 beach integration closeout",
+  "date": "2026-10-17",
+  "status": "COMPLETE / USER-ACCEPTED / NORMALLY MERGED; no required beach integration work remains",
+  "accepted": "df3d17db84404ddfa5947c474f2327546806817b",
+  "candidate": 158,
+  "gameRevision": "dev-3714124068bf033a0c3a",
+  "schema": 72,
+  "acceptance": "https://git.shaun-husain.com/CitySimVR/citysim/issues/53#issuecomment-2279",
+  "acceptanceReceipt": "docs/evidence/D108-beach-acceptance.json",
+  "pr": "https://git.shaun-husain.com/CitySimVR/citysim/pulls/145",
+  "documentationHead": "24c7f4dc39f17ac4d966a4d8826c01c83117efee",
+  "merge": "50d07b01fcd3b262b5390a2367b784b5ebd0c501",
+  "tree": {
+    "tree": "c4fc0ac16127492481818ba9885a884d499043d0",
+    "status": "passed",
+    "expectedTree": "c4fc0ac16127492481818ba9885a884d499043d0",
+    "merge": "50d07b01fcd3b262b5390a2367b784b5ebd0c501",
+    "acceptedProductionAndToolsIdentical": true
+  },
+  "currentHeadCheck": {
+    "build": 159,
+    "status": "passed",
+    "submittedCommit": "24c7f4dc39f17ac4d966a4d8826c01c83117efee",
+    "testedCommit": "24c7f4dc39f17ac4d966a4d8826c01c83117efee",
+    "editorSeconds": 125.08,
+    "tests": [
+      "CitySim.Presentation.BeachPlacement",
+      "CitySim.Presentation.BeachAssetsAndLifecycle",
+      "CitySim.Presentation.AtmosphereSceneryAndLifecycle",
+      "CitySim.Presentation.TerrainScenerySuitability",
+      "CitySim.Dimensions.LegacySceneryDigest",
+      "CitySim.Dimensions.BoardPresentation",
+      "CitySim.Placement.Transactions",
+      "CitySim.Terrain.DeterminismAndFixtures",
+      "CitySim.Desktop.CameraBoundsAndReset"
+    ],
+    "output": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\CI\\Builds\\159-24c7f4dc39f1-Check-bb28df57",
+    "url": "https://drone.shaun-husain.com/CitySimVR/citysim/159",
+    "verifiedUtc": "2026-10-18T02:52:11.1112810Z"
+  },
+  "mergedMainCheck": {
+    "build": 160,
+    "status": "passed",
+    "submittedCommit": "50d07b01fcd3b262b5390a2367b784b5ebd0c501",
+    "testedCommit": "50d07b01fcd3b262b5390a2367b784b5ebd0c501",
+    "editorSeconds": 108.72,
+    "tests": [
+      "CitySim.Presentation.BeachPlacement",
+      "CitySim.Presentation.BeachAssetsAndLifecycle",
+      "CitySim.Presentation.AtmosphereSceneryAndLifecycle",
+      "CitySim.Presentation.TerrainScenerySuitability",
+      "CitySim.Dimensions.LegacySceneryDigest",
+      "CitySim.Dimensions.BoardPresentation",
+      "CitySim.Placement.Transactions",
+      "CitySim.Terrain.DeterminismAndFixtures",
+      "CitySim.Desktop.CameraBoundsAndReset"
+    ],
+    "output": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\CI\\Builds\\160-50d07b01fcd3-Check-7c03fc8c",
+    "url": "https://drone.shaun-husain.com/CitySimVR/citysim/160",
+    "verifiedUtc": "2026-10-18T02:56:24.3744017Z"
+  },
+  "review": {
+    "status": "passed",
+    "accepted": "df3d17db84404ddfa5947c474f2327546806817b",
+    "base": "80af3c201be84712a2ccdb92f4fc7490ad34a4a1",
+    "scope": "Accepted production/Tools/Config/source/native content identical; closeout is six docs/evidence files only",
+    "nativeLfsFiles": [
+      {
+        "path": "CitySimVR/Content/CitySim/Art/Beach/Meshes/SM_Scenery_FanShell_A.uasset",
+        "sha256": "09cbef20dc6bc59f8c1861e517fde0de577a3058d7a95f603fdd468f8b0f947a"
+      },
+      {
+        "path": "CitySimVR/Content/CitySim/Art/Beach/Materials/MI_BeachFanShell.uasset",
+        "sha256": "7469687d2abb908551cf6def9404cf244b648586805399bea7e2c5310070d326"
+      },
+      {
+        "path": "CitySimVR/Content/CitySim/Art/Beach/Meshes/SM_Scenery_SpiralShell_A.uasset",
+        "sha256": "f0b1b586cc225aeab913174fa0ab8c76f06e29130e76442309439830aa99688b"
+      },
+      {
+        "path": "CitySimVR/Content/CitySim/Art/Beach/Materials/MI_BeachSpiralShell.uasset",
+        "sha256": "ddce8dfe845ffd954ce5428723a654e2251eb057618d086665b9179025a4e60b"
+      },
+      {
+        "path": "CitySimVR/Content/CitySim/Art/Beach/Meshes/SM_Scenery_Starfish_A.uasset",
+        "sha256": "290e8f6950b1887904b1f859dff2b0c9113f210ec24325911493e1f93b573c69"
+      },
+      {
+        "path": "CitySimVR/Content/CitySim/Art/Beach/Materials/MI_BeachStarfish.uasset",
+        "sha256": "3fa5f732040c5260a2bb5538c32473d81e30cf822d5eaeac0fb2c49f7dfea9a2"
+      },
+      {
+        "path": "CitySimVR/Content/CitySim/Art/Beach/Meshes/SM_Scenery_Driftwood_A.uasset",
+        "sha256": "62c5d502ebbbbc73c6e689598df8ccb08f26eeab2fae297796729332fb0d7e69"
+      },
+      {
+        "path": "CitySimVR/Content/CitySim/Art/Beach/Materials/MI_BeachDriftwood.uasset",
+        "sha256": "7a03bfe37395c33edefa58786f6146d6d72f623549fc5ad8abc90e803e5b99ba"
+      },
+      {
+        "path": "CitySimVR/Content/CitySim/Art/Beach/Meshes/SM_Scenery_DuneGrass_A.uasset",
+        "sha256": "fa53238228fcd466839045d173b13f043f680608a5431cc879491a921d011bb1"
+      },
+      {
+        "path": "CitySimVR/Content/CitySim/Art/Beach/Materials/MI_BeachDuneGrass.uasset",
+        "sha256": "f20da0b2a609e83df00d092917c840d60e52a63893dd667916183b5651048e6a"
+      }
+    ],
+    "gitLfsFsck": "passed",
+    "review": "Complete production scope reviewed: pinned imports/materials/source scale, deterministic tile bands and fixed cap, grounding/development clearance, pooled lifecycle/menu/reload, desktop bounds/focus/per-view clipping, affected exact CI manifests and diagnostic views. No blocking findings.",
+    "requiredReviewers": 0,
+    "branchProtection": "Unprotected; normal merge only with expected current head and passing statuses",
+    "followup": "D130/#146 schedules separate shoreline contour presentation; no implementation changed",
+    "primaryGuardFiles": 1192,
+    "packageRepeat": false
+  },
+  "issues": [
+    {
+      "id": 136,
+      "url": "https://git.shaun-husain.com/CitySimVR/citysim/issues/136",
+      "state": "closed",
+      "title": "Integrate approved blender asset #130 v2 into Unreal"
+    },
+    {
+      "id": 138,
+      "url": "https://git.shaun-husain.com/CitySimVR/citysim/issues/138",
+      "state": "closed",
+      "title": "Integrate approved blender asset #131 v2 into Unreal"
+    },
+    {
+      "id": 140,
+      "url": "https://git.shaun-husain.com/CitySimVR/citysim/issues/140",
+      "state": "closed",
+      "title": "Integrate approved blender asset #132 v1 into Unreal"
+    },
+    {
+      "id": 142,
+      "url": "https://git.shaun-husain.com/CitySimVR/citysim/issues/142",
+      "state": "closed",
+      "title": "Integrate approved blender asset #133 v1 into Unreal"
+    },
+    {
+      "id": 144,
+      "url": "https://git.shaun-husain.com/CitySimVR/citysim/issues/144",
+      "state": "closed",
+      "title": "Integrate approved blender asset #134 v1 into Unreal"
+    },
+    {
+      "id": 53,
+      "url": "https://git.shaun-husain.com/CitySimVR/citysim/issues/53",
+      "state": "closed",
+      "title": "D110: Coordinate integration of one reviewed visual batch"
+    },
+    {
+      "id": 37,
+      "url": "https://git.shaun-husain.com/CitySimVR/citysim/issues/37",
+      "state": "closed",
+      "title": "D122.A5: Stylized wet-gravel shoreline surface study - ComfyUI review"
+    },
+    {
+      "id": 32,
+      "url": "https://git.shaun-husain.com/CitySimVR/citysim/issues/32",
+      "state": "closed",
+      "title": "D122: ComfyUI visual-source previews for human issue review"
+    },
+    {
+      "id": 51,
+      "url": "https://git.shaun-husain.com/CitySimVR/citysim/issues/51",
+      "state": "open",
+      "title": "D108: Review freight accents and shore or weather source art"
+    },
+    {
+      "id": 49,
+      "url": "https://git.shaun-husain.com/CitySimVR/citysim/issues/49",
+      "state": "open",
+      "title": "D114: Record scoped outstanding physical headset observations"
+    },
+    {
+      "id": 146,
+      "url": "https://git.shaun-husain.com/CitySimVR/citysim/issues/146",
+      "state": "open",
+      "title": "D130: Smooth shoreline contours across tile boundaries"
+    }
+  ],
+  "runtimeChangedAfterAcceptance": false,
+  "packageRepeat": false,
+  "delivery": "https://git.shaun-husain.com/attachments/9e9282c3-4f90-4fcb-882c-8b9e6f4305d3",
+  "followup": {
+    "task": "D130",
+    "issue": 146,
+    "url": "https://git.shaun-husain.com/CitySimVR/citysim/issues/146",
+    "status": "Planned/open; no shoreline implementation started",
+    "scope": "Smoother terrain-following shore coverage across angled tile boundaries, preserving logical water/buildability rules"
+  },
+  "headset": "Named physical PCVR/Quest observations remain unconfirmed under D114/#49; accepted integration stays closed",
+  "protectedPrimaryFiles": 1192,
+  "primaryHead": "5dd807d175e0507e23657cc3883568272ced6641",
+  "preserved": "Primary source/Content/catalog/head, maintained packages/default launchers, real player cities and devices",
+  "next": "Separately selected D130 contour implementation or other dependency-ready work; no current approval/design question",
+  "nativeWindow": {
+    "status": "D108 participation complete; shared CI window retained for D129",
+    "ownBuilds": [
+      159,
+      160
+    ],
+    "ownQueuedOrRunning": 0,
+    "ownNativeWork": "finished",
+    "sharedClaimReleased": false,
+    "reason": "D129 explicitly appended a shared CI handoff; its current PR147/build162 is running. Preserve its owner/queued job/processes.",
+    "remainingOwner": "D129",
+    "remainingPlan": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\D129\\PlotReview\\StudyPlan.json",
+    "remainingBuild": 162,
+    "remainingRevision": "fd40a1a253b9954e5b4a7c3ad0fbadfcfee50d20",
+    "worker": "Existing single runner enabled/running; no stop/hold/new daemon",
+    "primaryGuardFiles": 1192,
+    "primaryGuard": "Verified unchanged at final closeout",
+    "next": "D129 completes its own check/study and releases remaining shared CI claim; no required D108 action"
+  }
+}

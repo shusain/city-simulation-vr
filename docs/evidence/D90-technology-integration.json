@@ -1,0 +1,547 @@
+{
+  "task": "D90 approved technology building integration",
+  "date": "2026-10-17",
+  "status": "Ready for human packaged playtest",
+  "revision": "4cd1207b7f0d86b24a8fbc01a0f317664e92532b",
+  "gameRevision": "dev-2a262f3bc0a8b2e56378",
+  "schema": 72,
+  "readableMaintainedSchemas": [
+    68,
+    69,
+    70
+  ],
+  "unsupportedOlderUnmergedPilotSchema": 71,
+  "approval": "User explicitly approved DigitalExchange v5 and the four other current building previews in this chat on2026-10-17",
+  "approvedSources": [
+    {
+      "issue": 101,
+      "version": 5,
+      "sourcePR": 113,
+      "sourceHead": "f356975ec3766e4485dd324feb3f5b75b140f95a",
+      "approvalSha256": "aa979a88756a31a2e1b9c04d616e88b65ce7209d2454d89f09e5ceff23d946b7",
+      "handoffSha256": "08922ad934a4a44d670ec404bb17e7de53ce3f3795163525408b8554573200e0",
+      "exportSha256": "6e6925320440f88736e5b1db9f75482b7f5c88881507500df63f839f992d22b8",
+      "sourceBlendSha256": "0dbf56834a0ef66b3acf380774dcbb4dc4d55d5a97a5471c43c1dfc3e2737a51"
+    },
+    {
+      "issue": 102,
+      "version": 4,
+      "sourcePR": 115,
+      "sourceHead": "287b464939fdf89e735a6894a988bae748c13fd4",
+      "approvalSha256": "1a63f41dab214cc29f57eca89b3c42f44b9865a79071076664911803d98b4740",
+      "handoffSha256": "8df22650a663b6d2f3ea86b552c2196da9c549127bec009870bdaaea7feab60c",
+      "exportSha256": "571b1bf7f09f95f541f65c5d6312019882b3c1ca4862b36f29977da60d64ae91",
+      "sourceBlendSha256": "35a132170ecc259cedc8476cbb9b776a3a37e9d394ce82a2b84db9c870905610"
+    },
+    {
+      "issue": 103,
+      "version": 3,
+      "sourcePR": 117,
+      "sourceHead": "f0c05d68228d046ec1acf825fcdf3b209fa06ffd",
+      "approvalSha256": "ec19cc1ba05064c58f5b59bafd242f1569c8a3ed80db97e4c99c6e101f523348",
+      "handoffSha256": "85991ba556354c67414d9b985fc74f0b5b6e84b291aa46a51f0c0d76f4ceac84",
+      "exportSha256": "e707e79bbfd43909e4938c3e59777595cda52ad9356d7a17d9519a06648d29a8",
+      "sourceBlendSha256": "6fc47d49c8e1f5eaf3499e12db8ef515957f89f14dd34b82136af12d5faf7cb6"
+    },
+    {
+      "issue": 104,
+      "version": 3,
+      "sourcePR": 119,
+      "sourceHead": "8d49f4d139f4680b95266f265d6d5f43f36527d4",
+      "approvalSha256": "4be407fd91ec74afba9080d4c70c2f1ab1ba148aef0d06b8f36ce1829869597b",
+      "handoffSha256": "d844a581a3204184ffa97eb8fcdc4d4b53fd311223500f4f4be7efcf4ff81145",
+      "exportSha256": "b662c8f8795468ce43c492a2624c4e9299947640995c771b4bfaea750cd91e58",
+      "sourceBlendSha256": "18aa241d4ce5ddf5252784246572d3ed993c1f500e4b974e5c8eb3bd3b359e06"
+    },
+    {
+      "issue": 105,
+      "version": 4,
+      "sourcePR": 121,
+      "sourceHead": "6c0fafde70b656a844dc51c1972c2135cec01d47",
+      "approvalSha256": "ed6389e8a3890029e5a444d355e8ca73f228abf3b01500cf41183337ffaaa951",
+      "handoffSha256": "aaff4cbfaffe72e254a244d8bf2e2045d3a7bbbf4a64a5c30c65b13f8fb2d2a8",
+      "exportSha256": "f4c5b6f85db804a122e39782053e4a4be582000c0dc3e69da0a27ae049f5c2e9",
+      "sourceBlendSha256": "1658f0608a9a78f3c2e78c33ea545d1af31392328bed835f3eafdbec87ddba1e"
+    }
+  ],
+  "nativeAssets": [
+    {
+      "definition": "DigitalExchange",
+      "mesh": "/Game/CitySim/Art/Technology/Meshes/SM_DigitalExchange",
+      "triangles": 1224,
+      "sections": 5,
+      "uv_channels": 1,
+      "full_precision_uvs": true,
+      "dimensions_cm": [
+        2000.0001220703125,
+        2050.0000610351562,
+        727.5
+      ],
+      "slots": [
+        "OpaqueFacade_SourceTexture_MetricRepair",
+        "RoofService_SourceTexture_MetricRepair",
+        "LightMetal_MetricRepair",
+        "TechGlass_MetricRepair",
+        "DoorAccent_MetricRepair"
+      ],
+      "materials": [
+        "/Game/CitySim/Art/Technology/Materials/MI_DigitalExchange_OpaqueFacade.MI_DigitalExchange_OpaqueFacade",
+        "/Game/CitySim/Art/Technology/Materials/MI_DigitalExchange_RoofService.MI_DigitalExchange_RoofService",
+        "/Game/CitySim/Art/Technology/Materials/MI_DigitalExchange_LightMetal.MI_DigitalExchange_LightMetal",
+        "/Game/CitySim/Art/Technology/Materials/MI_DigitalExchange_TechGlass.MI_DigitalExchange_TechGlass",
+        "/Game/CitySim/Art/Technology/Materials/MI_DigitalExchange_DoorAccent.MI_DigitalExchange_DoorAccent"
+      ]
+    },
+    {
+      "definition": "ComputingCenter",
+      "mesh": "/Game/CitySim/Art/Technology/Meshes/SM_ComputingCenter",
+      "triangles": 3256,
+      "sections": 5,
+      "uv_channels": 1,
+      "full_precision_uvs": true,
+      "dimensions_cm": [
+        1440.0001220703125,
+        1445.0000610351562,
+        779.75
+      ],
+      "slots": [
+        "OpaqueFacade",
+        "RoofService",
+        "LightMetal",
+        "TechGlass",
+        "DoorAccent"
+      ],
+      "materials": [
+        "/Game/CitySim/Art/Technology/Materials/MI_ComputingCenter_OpaqueFacade.MI_ComputingCenter_OpaqueFacade",
+        "/Game/CitySim/Art/Technology/Materials/MI_ComputingCenter_RoofService.MI_ComputingCenter_RoofService",
+        "/Game/CitySim/Art/Technology/Materials/MI_ComputingCenter_LightMetal.MI_ComputingCenter_LightMetal",
+        "/Game/CitySim/Art/Technology/Materials/MI_ComputingCenter_TechGlass.MI_ComputingCenter_TechGlass",
+        "/Game/CitySim/Art/Technology/Materials/MI_ComputingCenter_DoorAccent.MI_ComputingCenter_DoorAccent"
+      ]
+    },
+    {
+      "definition": "ResearchCampus",
+      "mesh": "/Game/CitySim/Art/Technology/Meshes/SM_ResearchCampus",
+      "triangles": 3432,
+      "sections": 5,
+      "uv_channels": 1,
+      "full_precision_uvs": true,
+      "dimensions_cm": [
+        2360.000244140625,
+        2360.000244140625,
+        774.0
+      ],
+      "slots": [
+        "OpaqueFacade_v3",
+        "RoofService_v3",
+        "TechGlass_v3",
+        "LightMetal_v3",
+        "DoorAccent_v3"
+      ],
+      "materials": [
+        "/Game/CitySim/Art/Technology/Materials/MI_ResearchCampus_OpaqueFacade.MI_ResearchCampus_OpaqueFacade",
+        "/Game/CitySim/Art/Technology/Materials/MI_ResearchCampus_RoofService.MI_ResearchCampus_RoofService",
+        "/Game/CitySim/Art/Technology/Materials/MI_ResearchCampus_TechGlass.MI_ResearchCampus_TechGlass",
+        "/Game/CitySim/Art/Technology/Materials/MI_ResearchCampus_LightMetal.MI_ResearchCampus_LightMetal",
+        "/Game/CitySim/Art/Technology/Materials/MI_ResearchCampus_DoorAccent.MI_ResearchCampus_DoorAccent"
+      ]
+    },
+    {
+      "definition": "AIInstitute",
+      "mesh": "/Game/CitySim/Art/Technology/Meshes/SM_AIInstitute",
+      "triangles": 3596,
+      "sections": 5,
+      "uv_channels": 1,
+      "full_precision_uvs": true,
+      "dimensions_cm": [
+        2062.000244140625,
+        2103.5000610351562,
+        931.0000606775284
+      ],
+      "slots": [
+        "RoofService",
+        "OpaqueFacade",
+        "LightMetal",
+        "TechGlass",
+        "DoorAccent"
+      ],
+      "materials": [
+        "/Game/CitySim/Art/Technology/Materials/MI_AIInstitute_RoofService.MI_AIInstitute_RoofService",
+        "/Game/CitySim/Art/Technology/Materials/MI_AIInstitute_OpaqueFacade.MI_AIInstitute_OpaqueFacade",
+        "/Game/CitySim/Art/Technology/Materials/MI_AIInstitute_LightMetal.MI_AIInstitute_LightMetal",
+        "/Game/CitySim/Art/Technology/Materials/MI_AIInstitute_TechGlass.MI_AIInstitute_TechGlass",
+        "/Game/CitySim/Art/Technology/Materials/MI_AIInstitute_DoorAccent.MI_AIInstitute_DoorAccent"
+      ]
+    },
+    {
+      "definition": "EnterpriseAICenter",
+      "mesh": "/Game/CitySim/Art/Technology/Meshes/SM_EnterpriseAICenter",
+      "triangles": 1284,
+      "sections": 5,
+      "uv_channels": 1,
+      "full_precision_uvs": true,
+      "dimensions_cm": [
+        2000.0001220703125,
+        1995.0000610351562,
+        793.0
+      ],
+      "slots": [
+        "OpaqueFacade_CivicReuse",
+        "RoofService_CivicReuse",
+        "LightMetal",
+        "TechGlass",
+        "DoorAccent"
+      ],
+      "materials": [
+        "/Game/CitySim/Art/Technology/Materials/MI_EnterpriseAICenter_OpaqueFacade.MI_EnterpriseAICenter_OpaqueFacade",
+        "/Game/CitySim/Art/Technology/Materials/MI_EnterpriseAICenter_RoofService.MI_EnterpriseAICenter_RoofService",
+        "/Game/CitySim/Art/Technology/Materials/MI_EnterpriseAICenter_LightMetal.MI_EnterpriseAICenter_LightMetal",
+        "/Game/CitySim/Art/Technology/Materials/MI_EnterpriseAICenter_TechGlass.MI_EnterpriseAICenter_TechGlass",
+        "/Game/CitySim/Art/Technology/Materials/MI_EnterpriseAICenter_DoorAccent.MI_EnterpriseAICenter_DoorAccent"
+      ]
+    }
+  ],
+  "nativeImportStatus": "passed",
+  "editor": {
+    "build": 131,
+    "mode": "Check",
+    "status": "passed",
+    "submittedCommit": "4cd1207b7f0d86b24a8fbc01a0f317664e92532b",
+    "testedCommit": "4cd1207b7f0d86b24a8fbc01a0f317664e92532b",
+    "editorSeconds": 108.03,
+    "tests": [
+      "CitySim.AI.FundingAndBounds",
+      "CitySim.AI.StaffingAndOutages",
+      "CitySim.AI.QualifiedHiringAndSaveValidation",
+      "CitySim.AI.LiveSettlementReloadAndReview",
+      "CitySim.Technology.SharedNavigation",
+      "CitySim.Technology.OperatingPrerequisites",
+      "CitySim.Education.QualifiedRolesAndCashLimitedPayroll",
+      "CitySim.Persistence.CurrentFormatAndPantryUpgrade",
+      "CitySim.Placement.Transactions",
+      "CitySim.Shopping.LocksQuotaRoutesAndArrival",
+      "CitySim.Shopping.MiddaySubsystemAndReportedCity",
+      "CitySim.Supplies.WeeklyBulkGraceAndReload",
+      "CitySim.Supplies.BeforeAndAfterWorkStops",
+      "CitySim.Supplies.OptionalComfortAndFiniteFunding",
+      "CitySim.Supplies.StartupAndActualStockoutIndicators",
+      "CitySim.Indicators.PurchaseCausesUseCurrentEvidence",
+      "CitySim.Outpatients.IndependentBedsAndVisitCapacity",
+      "CitySim.Outpatients.BlockedReturnAndDispensedMedicine",
+      "CitySim.Outpatients.CurrentCityTravelHomeAndReload",
+      "CitySim.HealthService.ReportedCityContinuation",
+      "CitySim.Waste.DoubledRangeBoundaryAndArrival",
+      "CitySim.Flow.SideBySideAndPassing",
+      "CitySim.Flow.OccupiedShopDeparture",
+      "CitySim.Flow.RollingYieldAndRejoin",
+      "CitySim.Flow.HighwayLaneYield",
+      "CitySim.Flow.ResponseAtQueuedMultiLaneExit",
+      "CitySim.Persistence.LiveCreationRevisionAndRejection",
+      "CitySim.Calendar.FullDayRoutine",
+      "CitySim.Calendar.DailySettlementAndPause",
+      "CitySim.Citizens.NativeWalk",
+      "CitySim.Desktop.FocusRestoresEntryMenu",
+      "CitySim.Desktop.SharedContentAndActions",
+      "CitySim.Presentation.ContextualZoneVisibility",
+      "CitySim.Technology.ApprovedBuildingAssets"
+    ],
+    "output": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\CI\\Builds\\131-4cd1207b7f0d-Check-2b629cf9",
+    "url": "https://drone.shaun-husain.com/CitySimVR/citysim/131",
+    "verifiedUtc": "2026-10-17T20:52:05.6166094Z"
+  },
+  "windows": {
+    "build": 132,
+    "mode": "WindowsCandidate",
+    "status": "passed",
+    "submittedCommit": "4cd1207b7f0d86b24a8fbc01a0f317664e92532b",
+    "testedCommit": "4cd1207b7f0d86b24a8fbc01a0f317664e92532b",
+    "editorSeconds": 111.65,
+    "tests": [
+      "CitySim.AI.FundingAndBounds",
+      "CitySim.AI.StaffingAndOutages",
+      "CitySim.AI.QualifiedHiringAndSaveValidation",
+      "CitySim.AI.LiveSettlementReloadAndReview",
+      "CitySim.Technology.SharedNavigation",
+      "CitySim.Technology.OperatingPrerequisites",
+      "CitySim.Education.QualifiedRolesAndCashLimitedPayroll",
+      "CitySim.Persistence.CurrentFormatAndPantryUpgrade",
+      "CitySim.Placement.Transactions",
+      "CitySim.Shopping.LocksQuotaRoutesAndArrival",
+      "CitySim.Shopping.MiddaySubsystemAndReportedCity",
+      "CitySim.Supplies.WeeklyBulkGraceAndReload",
+      "CitySim.Supplies.BeforeAndAfterWorkStops",
+      "CitySim.Supplies.OptionalComfortAndFiniteFunding",
+      "CitySim.Supplies.StartupAndActualStockoutIndicators",
+      "CitySim.Indicators.PurchaseCausesUseCurrentEvidence",
+      "CitySim.Outpatients.IndependentBedsAndVisitCapacity",
+      "CitySim.Outpatients.BlockedReturnAndDispensedMedicine",
+      "CitySim.Outpatients.CurrentCityTravelHomeAndReload",
+      "CitySim.HealthService.ReportedCityContinuation",
+      "CitySim.Waste.DoubledRangeBoundaryAndArrival",
+      "CitySim.Flow.SideBySideAndPassing",
+      "CitySim.Flow.OccupiedShopDeparture",
+      "CitySim.Flow.RollingYieldAndRejoin",
+      "CitySim.Flow.HighwayLaneYield",
+      "CitySim.Flow.ResponseAtQueuedMultiLaneExit",
+      "CitySim.Persistence.LiveCreationRevisionAndRejection",
+      "CitySim.Calendar.FullDayRoutine",
+      "CitySim.Calendar.DailySettlementAndPause",
+      "CitySim.Citizens.NativeWalk",
+      "CitySim.Desktop.FocusRestoresEntryMenu",
+      "CitySim.Desktop.SharedContentAndActions",
+      "CitySim.Presentation.ContextualZoneVisibility",
+      "CitySim.Technology.ApprovedBuildingAssets"
+    ],
+    "output": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\CI\\Builds\\132-4cd1207b7f0d-WindowsCandidate-b46ed842",
+    "url": "https://drone.shaun-husain.com/CitySimVR/citysim/132",
+    "verifiedUtc": "2026-10-17T21:02:19.7859228Z",
+    "package": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\CI\\Builds\\132-4cd1207b7f0d-WindowsCandidate-b46ed842\\CitySimVR-Windows.zip",
+    "packageSha256": "b8bf19588c903c06cbdba4affce95ba9c5b02f6ef059cdfee330ee832d2858c6",
+    "clientTests": [
+      "CitySim.Desktop.CommercialAiPilot",
+      "CitySim.Shopping.LocksQuotaRoutesAndArrival",
+      "CitySim.Shopping.MiddaySubsystemAndReportedCity",
+      "CitySim.Supplies.WeeklyBulkGraceAndReload",
+      "CitySim.Supplies.BeforeAndAfterWorkStops",
+      "CitySim.Supplies.OptionalComfortAndFiniteFunding",
+      "CitySim.Supplies.StartupAndActualStockoutIndicators",
+      "CitySim.Outpatients.IndependentBedsAndVisitCapacity",
+      "CitySim.Outpatients.BlockedReturnAndDispensedMedicine",
+      "CitySim.Outpatients.CurrentCityTravelHomeAndReload",
+      "CitySim.HealthService.ReportedCityContinuation",
+      "CitySim.Waste.DoubledRangeBoundaryAndArrival",
+      "CitySim.Flow.ResponseAtQueuedMultiLaneExit",
+      "CitySim.Desktop.HomeInspectionCharts",
+      "CitySim.Desktop.OutpatientHealthVisual",
+      "CitySim.Desktop.FocusRestoresEntryMenu",
+      "CitySim.Presentation.ContextualZoneVisibility",
+      "CitySim.Desktop.ContextualZoneVisibility",
+      "CitySim.Desktop.TechnologyBuildingAssets",
+      "CitySim.Desktop.TechnologyFoundation"
+    ],
+    "visualReview": "passed",
+    "extracted": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\D90\\TechnologyIntegration\\Extracted-Build132",
+    "executable": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\D90\\TechnologyIntegration\\Extracted-Build132\\CitySimVR\\Binaries\\Win64\\CitySimVR.exe",
+    "runtimeFiles": 53,
+    "profile": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\D90\\TechnologyIntegration\\Play-Build132-IsolatedProfile",
+    "fixtureSource": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\CI\\Builds\\132-4cd1207b7f0d-WindowsCandidate-b46ed842\\D124-D125-Client-1280-User\\Saved\\Automation\\D90-AiPlaytest.json",
+    "fixtureSha256": "aaca6295f0979f7e95a572b2d7cbba5111be18b35f4b94eb8bd3a77b95ce6120",
+    "fixtureCityName": "Untitled City",
+    "fixtureSchema": 72,
+    "gameRevision": "dev-2a262f3bc0a8b2e56378",
+    "visualInventory": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\D90\\TechnologyIntegration\\Visual-Inventory.json"
+  },
+  "quest": {
+    "build": 132,
+    "mode": "QuestCandidate",
+    "status": "passed",
+    "submittedCommit": "4cd1207b7f0d86b24a8fbc01a0f317664e92532b",
+    "testedCommit": "4cd1207b7f0d86b24a8fbc01a0f317664e92532b",
+    "editorSeconds": 124.23,
+    "tests": [
+      "CitySim.AI.FundingAndBounds",
+      "CitySim.AI.StaffingAndOutages",
+      "CitySim.AI.QualifiedHiringAndSaveValidation",
+      "CitySim.AI.LiveSettlementReloadAndReview",
+      "CitySim.Technology.SharedNavigation",
+      "CitySim.Technology.OperatingPrerequisites",
+      "CitySim.Education.QualifiedRolesAndCashLimitedPayroll",
+      "CitySim.Persistence.CurrentFormatAndPantryUpgrade",
+      "CitySim.Placement.Transactions",
+      "CitySim.Shopping.LocksQuotaRoutesAndArrival",
+      "CitySim.Shopping.MiddaySubsystemAndReportedCity",
+      "CitySim.Supplies.WeeklyBulkGraceAndReload",
+      "CitySim.Supplies.BeforeAndAfterWorkStops",
+      "CitySim.Supplies.OptionalComfortAndFiniteFunding",
+      "CitySim.Supplies.StartupAndActualStockoutIndicators",
+      "CitySim.Indicators.PurchaseCausesUseCurrentEvidence",
+      "CitySim.Outpatients.IndependentBedsAndVisitCapacity",
+      "CitySim.Outpatients.BlockedReturnAndDispensedMedicine",
+      "CitySim.Outpatients.CurrentCityTravelHomeAndReload",
+      "CitySim.HealthService.ReportedCityContinuation",
+      "CitySim.Waste.DoubledRangeBoundaryAndArrival",
+      "CitySim.Flow.SideBySideAndPassing",
+      "CitySim.Flow.OccupiedShopDeparture",
+      "CitySim.Flow.RollingYieldAndRejoin",
+      "CitySim.Flow.HighwayLaneYield",
+      "CitySim.Flow.ResponseAtQueuedMultiLaneExit",
+      "CitySim.Persistence.LiveCreationRevisionAndRejection",
+      "CitySim.Calendar.FullDayRoutine",
+      "CitySim.Calendar.DailySettlementAndPause",
+      "CitySim.Citizens.NativeWalk",
+      "CitySim.Desktop.FocusRestoresEntryMenu",
+      "CitySim.Desktop.SharedContentAndActions",
+      "CitySim.Presentation.ContextualZoneVisibility",
+      "CitySim.Technology.ApprovedBuildingAssets"
+    ],
+    "output": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\CI\\Builds\\132-4cd1207b7f0d-QuestCandidate-1c2c87c4",
+    "url": "https://drone.shaun-husain.com/CitySimVR/citysim/132",
+    "verifiedUtc": "2026-10-17T21:07:45.8575749Z",
+    "apk": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\CI\\Builds\\132-4cd1207b7f0d-QuestCandidate-1c2c87c4\\QuestCandidate\\Android_ASTC\\CitySimVR-arm64.apk",
+    "apkSha256": "ae501d5117004858624dd0a2bf481e30dfbe439a9b03472fae0789b1fbce6494",
+    "quest": {
+      "status": "passed",
+      "apkSha256": "ae501d5117004858624dd0a2bf481e30dfbe439a9b03472fae0789b1fbce6494",
+      "package": "com.shaun.citysimvr.smoketest",
+      "abi": "arm64-v8a",
+      "minSdk": 32,
+      "targetSdk": 35,
+      "signed": true,
+      "signerSha256": "fb8ac4ce5f1998deb6bf2c1a61b303bef91e0b69750f5cdfd9df77d1773a5352",
+      "stagedPayloads": [
+        {
+          "name": "CitySimVR-Android_ASTC.pak",
+          "bytes": 10482036,
+          "sha256": "87380cd14592130e58662ec77395defe0d210447b5da0fa2727c4085e700ec6a"
+        },
+        {
+          "name": "CitySimVR-Android_ASTC.ucas",
+          "bytes": 106277440,
+          "sha256": "eb663e1125acde94bc94fa6dc0c796d39b1014359dc189b4827648b6fc30f631"
+        },
+        {
+          "name": "CitySimVR-Android_ASTC.utoc",
+          "bytes": 256661,
+          "sha256": "c111d47820a9cb23a7b33197bb8d96f90ffae271a6a3a2ec86ac1c57cfa264fd"
+        },
+        {
+          "name": "global.ucas",
+          "bytes": 2804848,
+          "sha256": "a95951880ed6249850ae35aa51d8ecf93ee65fb5973c3ddc37fa69d28925493f"
+        },
+        {
+          "name": "global.utoc",
+          "bytes": 710,
+          "sha256": "0475a3cd35f0e69d3171d578f8cf488621e0d4d8c00b4134370b77e33b356a12"
+        }
+      ],
+      "headset": "unconfirmed-not-installed",
+      "verifiedUtc": "2026-10-17T21:07:37.6107806Z"
+    },
+    "headset": "unconfirmed-not-installed",
+    "technologyCook": {
+      "status": "passed",
+      "meshes": 5,
+      "meshFiles": [
+        {
+          "path": "Content\\CitySim\\Art\\Technology\\Meshes\\SM_DigitalExchange.uasset",
+          "bytes": 2638,
+          "sha256": "251dc9a0d6caf8b7bb25bc4de455cc16fe0cd07f7c35f608b188c1264a1126f9"
+        },
+        {
+          "path": "Content\\CitySim\\Art\\Technology\\Meshes\\SM_DigitalExchange.uexp",
+          "bytes": 152968,
+          "sha256": "bec6d2097b5a6b661573161f195da25ddab0a8aa92a159e062852f0aa745e6da"
+        },
+        {
+          "path": "Content\\CitySim\\Art\\Technology\\Meshes\\SM_DigitalExchange.ubulk",
+          "bytes": 4,
+          "sha256": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119"
+        },
+        {
+          "path": "Content\\CitySim\\Art\\Technology\\Meshes\\SM_ComputingCenter.uasset",
+          "bytes": 2545,
+          "sha256": "ca21b75de0cbb0fe4e3d6d79b025f150d2f223e9d961e1f8fab81f0acd79a0b9"
+        },
+        {
+          "path": "Content\\CitySim\\Art\\Technology\\Meshes\\SM_ComputingCenter.uexp",
+          "bytes": 383172,
+          "sha256": "3b620a57b16df3e511afb01012f4b9c66a155698137b19e12321ad491817e46a"
+        },
+        {
+          "path": "Content\\CitySim\\Art\\Technology\\Meshes\\SM_ComputingCenter.ubulk",
+          "bytes": 4,
+          "sha256": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119"
+        },
+        {
+          "path": "Content\\CitySim\\Art\\Technology\\Meshes\\SM_ResearchCampus.uasset",
+          "bytes": 2547,
+          "sha256": "7a04d0013485980dd928e6778c9b5e895c7bf8aa81a89cc8c0011a8ac1bff73e"
+        },
+        {
+          "path": "Content\\CitySim\\Art\\Technology\\Meshes\\SM_ResearchCampus.uexp",
+          "bytes": 412148,
+          "sha256": "11d0407bfc89f150a458e8b2b0183127c7bd94fe0b1b8b62b2bf0d11b5c0edad"
+        },
+        {
+          "path": "Content\\CitySim\\Art\\Technology\\Meshes\\SM_ResearchCampus.ubulk",
+          "bytes": 4,
+          "sha256": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119"
+        },
+        {
+          "path": "Content\\CitySim\\Art\\Technology\\Meshes\\SM_AIInstitute.uasset",
+          "bytes": 2493,
+          "sha256": "fb50ea93d6c528e19febc605e3515ac1dfcd9891bf72bce881f64f15f09783a9"
+        },
+        {
+          "path": "Content\\CitySim\\Art\\Technology\\Meshes\\SM_AIInstitute.uexp",
+          "bytes": 447420,
+          "sha256": "f57c60905d5e9756c8f06a71b8f97e416486a67fdfc3a604581c519f9a632726"
+        },
+        {
+          "path": "Content\\CitySim\\Art\\Technology\\Meshes\\SM_AIInstitute.ubulk",
+          "bytes": 4,
+          "sha256": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119"
+        },
+        {
+          "path": "Content\\CitySim\\Art\\Technology\\Meshes\\SM_EnterpriseAICenter.uasset",
+          "bytes": 2606,
+          "sha256": "cd234a502c66c4df4332ef0ceec2008071c388f5e411d14972ee4d9031612a46"
+        },
+        {
+          "path": "Content\\CitySim\\Art\\Technology\\Meshes\\SM_EnterpriseAICenter.uexp",
+          "bytes": 155408,
+          "sha256": "a9b9dfd0622dae6967ead1bc4d4d51ef78399a47a97424243e5dc3c520aecda7"
+        },
+        {
+          "path": "Content\\CitySim\\Art\\Technology\\Meshes\\SM_EnterpriseAICenter.ubulk",
+          "bytes": 4,
+          "sha256": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119"
+        }
+      ],
+      "materialInstances": 25,
+      "masters": 2,
+      "registry": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\CI\\Builds\\132-4cd1207b7f0d-QuestCandidate-1c2c87c4\\Cooked\\Android_ASTC\\CitySimVR\\AssetRegistry.bin",
+      "registrySha256": "16d79177ef7363e4478438c974bdfa29ddd7f3aa0ea5e23aa4abb39d69233f98",
+      "scope": "Actual Android cook files/registry present; APK embedded cook payload verification separately passes; physical headset appearance unconfirmed"
+    }
+  },
+  "extractedStartup": {
+    "executable": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\D90\\TechnologyIntegration\\Extracted-Build132\\CitySimVR\\Binaries\\Win64\\CitySimVR.exe",
+    "log": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\D90\\TechnologyIntegration\\ExtractedStartup.log",
+    "status": "passed",
+    "exitCode": 0
+  },
+  "visualReview": {
+    "status": "passed",
+    "nativeCaptures": 12,
+    "uiCaptures": 34,
+    "inventory": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\D90\\TechnologyIntegration\\Visual-Inventory.json",
+    "gallery": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\D90\\TechnologyIntegration\\Review.html",
+    "observation": "Inspected actual packaged renders at both window sizes; Digital Exchange metric brick mapping and corrected framing retained. Five dedicated meshes/materials visible. Physical headset appearance remains unconfirmed."
+  },
+  "supersededEvidence": {
+    "windows128": "Failed3 packaged cases due shared-world test fixture leakage; native art and AI/technology cases passed",
+    "quest128": "Passed signed ARM64/API/cook checks; superseded by matching replacement pair",
+    "editor129": "Own superseded queued check canceled before native execution"
+  },
+  "validationRepair": "Test-only scoped cleanup restores original tuning, terrain/catalog and empty city; zoning starts empty. Supplied funded city uses authored150-step day and actual reload assertion with ordinary game tuning. No production retuning.",
+  "gameplayPR": "https://git.shaun-husain.com/CitySimVR/citysim/pulls/63",
+  "pending": [
+    "User acceptance of this exact packaged revision",
+    "Physical Windows input/focus and headset appearance under D114"
+  ],
+  "notIncluded": [
+    "Unapproved room-image106/109/110/111",
+    "D90.2 robotics gameplay",
+    "Maintained-package replacement",
+    "Device install",
+    "Public release"
+  ],
+  "protectedInputs": {
+    "primaryFiles": 440,
+    "playerFiles": 98,
+    "status": "Original hashes match; primary head retained"
+  },
+  "completedUtc": "2026-10-17T21:07:47.264884+00:00"
+}

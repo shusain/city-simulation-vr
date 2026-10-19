@@ -1,0 +1,17 @@
+{
+  "task": "D127",
+  "bug": "B008",
+  "date": "2026-10-16",
+  "status": "D127 complete; B008 closed by explicit user acceptance",
+  "revision": "dev-ce1899475e36f6286419",
+  "schema": 70,
+  "quote": "Okay I tested this and the ambulances and waste collection seem to be working better now. Please mark D127 complete, close B008, and commit these changes.",
+  "acceptedInputsMatchDelivery": true,
+  "delivery": "docs/evidence/D127-waste-range-health-traffic.json",
+  "commitScope": "docs/evidence/D127-commit-scope.json",
+  "validation": "Existing warnings-as-errors Editor build,28 focused Editor/ten packaged cases, current-city450-update and150-update reload evidence, startup and signed Quest verification retained. No repeated build for acceptance/commit-only closeout.",
+  "scope": "Local scoped commit of the ten D127 code/tool/catalog inputs and its records; no implementation/runtime/package/player change. Unrelated walk, CI, workflow instruction and B007 work preserved. Future implementation uses the new Drone workflow; no retrospective build/publication performed for this already tested closeout.",
+  "physicalHeadsetObservations": "Remain unconfirmed under D114; user did not identify a physical device/runtime.",
+  "remaining": "No required D127/B008 work remains. Existing finite two-ambulance throughput and deferred historical hospital test-fixture maintenance remain documented limitations, not unresolved B008 acceptance.",
+  "next": "B007 remains queued; refresh ownership/source/process guards before separate implementation."
+}

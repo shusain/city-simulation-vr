@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-12",
+  "task": "D82",
+  "status": "user auditioned; useful trial but beat needs improvement; hybrid sample/composition direction",
+  "workflow": "generate_song",
+  "checkpoint": "ace_step_v1_3.5b.safetensors",
+  "checkpoint_source": "https://huggingface.co/Comfy-Org/ACE-Step_ComfyUI_repackaged/tree/main/all_in_one",
+  "checkpoint_expected_sha256": "f07cad74c4adce52ca14ca1bdf74cf3c14cbafb0823b95eca4459467fa369f40",
+  "brief": "Short instrumental audition, separate from native game assets. No artist imitation or source audio supplied.",
+  "user_feedback_2026_10_12": "Worked okay but needs a more solid beat; prefer generated samples with final composition in SuperCollider and/or MetaSounds. Not final-track approval.",
+  "request": {
+    "seconds": 30,
+    "tags": "instrumental, dreamy ambient electronic, mellow lo-fi beats, 88 BPM, warm electric piano, soft rounded synth plucks, lush atmospheric pads, gentle syncopated drums, deep smooth bass, hopeful evening city mood, clear melodic motif, restrained treble, no vocals",
+    "lyrics": "[instrumental]",
+    "seed": 821012,
+    "steps": 27,
+    "cfg": 4,
+    "lyrics_strength": 0
+  },
+  "output": {
+    "prompt_id": "88592871-bcd2-4dd5-8405-7a8fd85612fe",
+    "asset_url": "http://192.168.0.127:8188/view?filename=ComfyUI_00001_.mp3&subfolder=audio&type=output",
+    "server_path": "/home/shaun/Development/comfyui/output/audio/ComfyUI_00001_.mp3",
+    "sha256": "64d846dc74f7018b6d58067a951a8b04295fb146d24831b31eb58dddb13ce234",
+    "evidence": "Artifacts/D82/ACE-StepSample/Evidence.json"
+  },
+  "checks": "Published checkpoint SHA256 matches. Live inventory recognizes ACE-Step. ComfyUI execution success with all requested parameters; MP3 decode passes, stereo44.1kHz29.907seconds, -17.41LUFS and -2.66dBTP. Prompted tempo/instruments/no-vocals are intent, not confirmed perception. User reports the sample worked okay but needs a stronger beat; native game unchanged."
+}

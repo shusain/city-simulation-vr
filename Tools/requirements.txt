@@ -1,0 +1,2 @@
+# Offline tooling and preview composition. Unreal/Blender provide their own Python.
+Pillow>=12.3,<13

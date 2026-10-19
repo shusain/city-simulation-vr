@@ -1,0 +1,48 @@
+{
+  "anchors": [
+    {
+      "role": "maintenance",
+      "target": "Door_Flush_Panel",
+      "xyz_m": [
+        0,
+        -1.14,
+        0
+      ],
+      "outward": [
+        0,
+        -1,
+        0
+      ],
+      "width_m": 1.2,
+      "grade_m": 0,
+      "boundary_connector": {
+        "xyz_m": [
+          0,
+          -12,
+          0
+        ],
+        "outward": [
+          0,
+          -1,
+          0
+        ],
+        "width_m": 1.2,
+        "grade_m": 0
+      },
+      "reserved_free_corridor": {
+        "min": [
+          -0.6,
+          -12,
+          0
+        ],
+        "max": [
+          0.6,
+          -1.14,
+          2.2
+        ]
+      }
+    }
+  ],
+  "all_component_aabb_intersections": [],
+  "approach": "Future service pedestrian connection reaches the actual mast door from south boundary; no path geometry is authored."
+}

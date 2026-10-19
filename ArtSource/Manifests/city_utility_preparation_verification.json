@@ -1,0 +1,2279 @@
+{
+  "parent_issue": 157,
+  "source_manifest": "ArtSource/Manifests/city_utility_integration.json",
+  "source_manifest_sha256": "ee3b1272d3266199480262c05e45c6d0b07173174521b407c56ba808cc0c77df",
+  "assets": [
+    {
+      "issue": 158,
+      "version": 4,
+      "prepared_source": "ArtSource/Blender/UtilityIntegration/CityUtility_coal_v4.blend",
+      "lod_triangles": [
+        5796,
+        5484,
+        5160
+      ],
+      "approved_lod0_geometry_uv_materials_unchanged": true,
+      "all_retained_lod_faces_match_source": true,
+      "all_support_contours_and_lod_contacts_pass": true,
+      "support_regions": [
+        {
+          "component": "Worker_Control_Wing",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Turbine_Generator_Hall",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Tall_Boiler_Block",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Personnel_Door_Leaf",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Personnel_Jamb",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Personnel_Jamb.001",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Service_Shutter",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Service_Bay_Jamb",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Service_Bay_Jamb.001",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Turbine_East_Pilaster",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Turbine_East_Pilaster.001",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Turbine_East_Pilaster.002",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Turbine_East_Pilaster.003",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Turbine_East_Pilaster.004",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Boiler_Front_Rib",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Boiler_Front_Rib.001",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Boiler_Front_Rib.002",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Boiler_Front_Rib.003",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Boiler_West_Rib",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Boiler_West_Rib.001",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Boiler_West_Rib.002",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "West_Exhaust_Stack",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 24
+        },
+        {
+          "component": "East_Exhaust_Stack",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 24
+        },
+        {
+          "component": "Filter_Leg",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Filter_Leg.001",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Filter_Leg.002",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Filter_Leg.003",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Hopper_Support",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Hopper_Support.001",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Hopper_Support.002",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Hopper_Support.003",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Conveyor_Trestle",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Conveyor_Trestle.001",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Conveyor_Trestle.002",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Conveyor_Trestle.003",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Conveyor_Trestle.004",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Conveyor_Trestle.005",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Transformer_Tank",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Transformer_Tank.001",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Switchgear_Cabinet",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Switchgear_Cabinet.001",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Switchgear_Cabinet.002",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Coal_Bin_Back_Wall",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Coal_Bin_Side_Wall",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Coal_Bin_Side_Wall.001",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        }
+      ],
+      "all_saved_mesh_portal_lanes_clear": true,
+      "fbx_roundtrip_checks": [
+        {
+          "fbx": "ArtSource/Generated/blender/issue-158/v4/asset.fbx",
+          "triangles": 5796,
+          "corners_checked": 11328,
+          "max_position_error_m": 1.719260808386025e-06,
+          "all_uv_layers_and_material_corners_match": true
+        },
+        {
+          "fbx": "ArtSource/Exports/UtilityIntegration/coal/SM_Utility_coal_v4_LOD1.fbx",
+          "triangles": 5484,
+          "corners_checked": 10752,
+          "max_position_error_m": 1.719260808386025e-06,
+          "all_uv_layers_and_material_corners_match": true
+        },
+        {
+          "fbx": "ArtSource/Exports/UtilityIntegration/coal/SM_Utility_coal_v4_LOD2.fbx",
+          "triangles": 5160,
+          "corners_checked": 10152,
+          "max_position_error_m": 1.719260808386025e-06,
+          "all_uv_layers_and_material_corners_match": true
+        }
+      ],
+      "wind_split_reassembly_pass": false,
+      "solar_all12_group_pivots_retained": false
+    },
+    {
+      "issue": 159,
+      "version": 3,
+      "prepared_source": "ArtSource/Blender/UtilityIntegration/CityUtility_oil_v3.blend",
+      "lod_triangles": [
+        5868,
+        5520,
+        5160
+      ],
+      "approved_lod0_geometry_uv_materials_unchanged": true,
+      "all_retained_lod_faces_match_source": true,
+      "all_support_contours_and_lod_contacts_pass": true,
+      "support_regions": [
+        {
+          "component": "Generation hall",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Hall structural pilaster",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Hall structural pilaster.001",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Hall structural pilaster.002",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Hall structural pilaster.003",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Hall structural pilaster.004",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Hall structural pilaster.005",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Hall structural pilaster.006",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Hall structural pilaster.007",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Hall structural pilaster.008",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Hall structural pilaster.009",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Hall structural pilaster.010",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Hall structural pilaster.011",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Worker control building",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Personnel door leaf",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Personnel jamb",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Personnel jamb.001",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Service shutter",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Service bay jamb",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Service bay jamb.001",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Fuel tank A",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 28
+        },
+        {
+          "component": "Fuel tank B",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 28
+        },
+        {
+          "component": "Pump frame foot",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Pump frame foot.001",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Pump frame foot.002",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Pump frame foot.003",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Cooling support leg",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Cooling support leg.001",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Cooling support leg.002",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Cooling support leg.003",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Switchgear cabinet",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Switchgear cabinet.001",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Switchgear cabinet.002",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        }
+      ],
+      "all_saved_mesh_portal_lanes_clear": true,
+      "fbx_roundtrip_checks": [
+        {
+          "fbx": "ArtSource/Generated/blender/issue-159/v3/asset.fbx",
+          "triangles": 5868,
+          "corners_checked": 10704,
+          "max_position_error_m": 1.719260808386025e-06,
+          "all_uv_layers_and_material_corners_match": true
+        },
+        {
+          "fbx": "ArtSource/Exports/UtilityIntegration/oil/SM_Utility_oil_v3_LOD1.fbx",
+          "triangles": 5520,
+          "corners_checked": 10032,
+          "max_position_error_m": 1.719260808386025e-06,
+          "all_uv_layers_and_material_corners_match": true
+        },
+        {
+          "fbx": "ArtSource/Exports/UtilityIntegration/oil/SM_Utility_oil_v3_LOD2.fbx",
+          "triangles": 5160,
+          "corners_checked": 9336,
+          "max_position_error_m": 1.719260808386025e-06,
+          "all_uv_layers_and_material_corners_match": true
+        }
+      ],
+      "wind_split_reassembly_pass": false,
+      "solar_all12_group_pivots_retained": false
+    },
+    {
+      "issue": 160,
+      "version": 2,
+      "prepared_source": "ArtSource/Blender/UtilityIntegration/CityUtility_power_base_v2.blend",
+      "lod_triangles": [
+        2576,
+        2200,
+        1812
+      ],
+      "approved_lod0_geometry_uv_materials_unchanged": true,
+      "all_retained_lod_faces_match_source": true,
+      "all_support_contours_and_lod_contacts_pass": true,
+      "support_regions": [
+        {
+          "component": "Generator_engine_hall",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Staffed_control_service_wing",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Concrete_structural_column",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Concrete_structural_column.001",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Concrete_structural_column.002",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Concrete_structural_column.003",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Concrete_structural_column.004",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Concrete_structural_column.005",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Concrete_structural_column.006",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Personnel_door_leaf",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Personnel_portal_jamb",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Personnel_portal_jamb.001",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Vehicle_service_shutter",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Vehicle_portal_side",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Vehicle_portal_side.001",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Transformer_equipment_leg",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Transformer_equipment_leg.001",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Transformer_equipment_leg.002",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Transformer_equipment_leg.003",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Switchgear_leg",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Switchgear_leg.001",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        }
+      ],
+      "all_saved_mesh_portal_lanes_clear": true,
+      "fbx_roundtrip_checks": [
+        {
+          "fbx": "ArtSource/Generated/blender/issue-160/v2/asset.fbx",
+          "triangles": 2576,
+          "corners_checked": 4728,
+          "max_position_error_m": 9.5367431640625e-07,
+          "all_uv_layers_and_material_corners_match": true
+        },
+        {
+          "fbx": "ArtSource/Exports/UtilityIntegration/power_base/SM_Utility_power_base_v2_LOD1.fbx",
+          "triangles": 2200,
+          "corners_checked": 4008,
+          "max_position_error_m": 9.5367431640625e-07,
+          "all_uv_layers_and_material_corners_match": true
+        },
+        {
+          "fbx": "ArtSource/Exports/UtilityIntegration/power_base/SM_Utility_power_base_v2_LOD2.fbx",
+          "triangles": 1812,
+          "corners_checked": 3264,
+          "max_position_error_m": 9.5367431640625e-07,
+          "all_uv_layers_and_material_corners_match": true
+        }
+      ],
+      "wind_split_reassembly_pass": false,
+      "solar_all12_group_pivots_retained": false
+    },
+    {
+      "issue": 161,
+      "version": 2,
+      "prepared_source": "ArtSource/Blender/UtilityIntegration/CityUtility_water_base_v2.blend",
+      "lod_triangles": [
+        4848,
+        4560,
+        4212
+      ],
+      "approved_lod0_geometry_uv_materials_unchanged": true,
+      "all_retained_lod_faces_match_source": true,
+      "all_support_contours_and_lod_contacts_pass": true,
+      "support_regions": [
+        {
+          "component": "Clarifier_1_structural_vessel",
+          "loops": 2,
+          "holes": 1,
+          "vertices": 96
+        },
+        {
+          "component": "Clarifier_2_structural_vessel",
+          "loops": 2,
+          "holes": 1,
+          "vertices": 96
+        },
+        {
+          "component": "Worker_control_two_storey_block",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Filter_pump_hall",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Personnel_door_leaf",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Service_vehicle_shutter",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Bay_jamb_5.43",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Bay_jamb_9.57",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Pipe_0_foot_-1.2",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Pipe_0_foot_1.8",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Pipe_1_foot_-1.2",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Pipe_1_foot_1.8",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Pipe_2_foot_-1.2",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Pipe_2_foot_1.8",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Vessel_leg_-1.1-0.4",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Vessel_leg_-1.10.4",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Vessel_leg_1.1-0.4",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Vessel_leg_1.10.4",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        }
+      ],
+      "all_saved_mesh_portal_lanes_clear": true,
+      "fbx_roundtrip_checks": [
+        {
+          "fbx": "ArtSource/Generated/blender/issue-161/v2/asset.fbx",
+          "triangles": 4848,
+          "corners_checked": 8928,
+          "max_position_error_m": 1.3486991292666062e-06,
+          "all_uv_layers_and_material_corners_match": true
+        },
+        {
+          "fbx": "ArtSource/Exports/UtilityIntegration/water_base/SM_Utility_water_base_v2_LOD1.fbx",
+          "triangles": 4560,
+          "corners_checked": 8448,
+          "max_position_error_m": 1.3486991292666062e-06,
+          "all_uv_layers_and_material_corners_match": true
+        },
+        {
+          "fbx": "ArtSource/Exports/UtilityIntegration/water_base/SM_Utility_water_base_v2_LOD2.fbx",
+          "triangles": 4212,
+          "corners_checked": 7872,
+          "max_position_error_m": 1.3486991292666062e-06,
+          "all_uv_layers_and_material_corners_match": true
+        }
+      ],
+      "wind_split_reassembly_pass": false,
+      "solar_all12_group_pivots_retained": false
+    },
+    {
+      "issue": 163,
+      "version": 3,
+      "prepared_source": "ArtSource/Blender/UtilityIntegration/CityUtility_power_medium_v3.blend",
+      "lod_triangles": [
+        4340,
+        3780,
+        3208
+      ],
+      "approved_lod0_geometry_uv_materials_unchanged": true,
+      "all_retained_lod_faces_match_source": true,
+      "all_support_contours_and_lod_contacts_pass": true,
+      "support_regions": [
+        {
+          "component": "Generator_engine_hall",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Staffed_control_service_wing",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Concrete_structural_column",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Concrete_structural_column.001",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Concrete_structural_column.002",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Concrete_structural_column.003",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Concrete_structural_column.004",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Concrete_structural_column.005",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Concrete_structural_column.006",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Personnel_door_leaf",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Personnel_portal_jamb",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Personnel_portal_jamb.001",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Vehicle_service_shutter",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Vehicle_portal_side",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Vehicle_portal_side.001",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Transformer_equipment_leg",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Transformer_equipment_leg.001",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Transformer_equipment_leg.002",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Transformer_equipment_leg.003",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Switchgear_leg",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Switchgear_leg.001",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Rear_generator_hall",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Rear_structural_column",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Rear_structural_column.001",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Rear_structural_column.002",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Rear_structural_column.003",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Second_Transformer_equipment_leg",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Second_Transformer_equipment_leg.001",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Second_Transformer_equipment_leg.002",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Second_Transformer_equipment_leg.003",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Second_Switchgear_leg",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Second_Switchgear_leg.001",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Interhall_service_link",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        }
+      ],
+      "all_saved_mesh_portal_lanes_clear": true,
+      "fbx_roundtrip_checks": [
+        {
+          "fbx": "ArtSource/Generated/blender/issue-163/v3/asset.fbx",
+          "triangles": 4340,
+          "corners_checked": 7848,
+          "max_position_error_m": 1.719260808386025e-06,
+          "all_uv_layers_and_material_corners_match": true
+        },
+        {
+          "fbx": "ArtSource/Exports/UtilityIntegration/power_medium/SM_Utility_power_medium_v3_LOD1.fbx",
+          "triangles": 3780,
+          "corners_checked": 6792,
+          "max_position_error_m": 1.719260808386025e-06,
+          "all_uv_layers_and_material_corners_match": true
+        },
+        {
+          "fbx": "ArtSource/Exports/UtilityIntegration/power_medium/SM_Utility_power_medium_v3_LOD2.fbx",
+          "triangles": 3208,
+          "corners_checked": 5712,
+          "max_position_error_m": 1.719260808386025e-06,
+          "all_uv_layers_and_material_corners_match": true
+        }
+      ],
+      "wind_split_reassembly_pass": false,
+      "solar_all12_group_pivots_retained": false
+    },
+    {
+      "issue": 164,
+      "version": 3,
+      "prepared_source": "ArtSource/Blender/UtilityIntegration/CityUtility_power_high_v3.blend",
+      "lod_triangles": [
+        4768,
+        3916,
+        3064
+      ],
+      "approved_lod0_geometry_uv_materials_unchanged": true,
+      "all_retained_lod_faces_match_source": true,
+      "all_support_contours_and_lod_contacts_pass": true,
+      "support_regions": [
+        {
+          "component": "Generator_engine_hall",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Staffed_control_service_wing",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Concrete_structural_column",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Concrete_structural_column.001",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Concrete_structural_column.002",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Concrete_structural_column.003",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Concrete_structural_column.004",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Concrete_structural_column.005",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Concrete_structural_column.006",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Personnel_door_leaf",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Personnel_portal_jamb",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Personnel_portal_jamb.001",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Vehicle_service_shutter",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Vehicle_portal_side",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Vehicle_portal_side.001",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Rear_right_generator_hall",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Rear_left_generator_hall",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Unit2_structural_column",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Unit2_structural_column.001",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Unit2_structural_column.002",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Unit2_structural_column.003",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Unit3_structural_column",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Unit3_structural_column.001",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Unit3_structural_column.002",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Unit3_structural_column.003",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Transformer_support_foot",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Transformer_support_foot.001",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Transformer_support_foot.002",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Transformer_support_foot.003",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Transformer_support_foot.004",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Transformer_support_foot.005",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Transformer_support_foot.006",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Transformer_support_foot.007",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Switchgear_cabinet",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Switchgear_cabinet.001",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Switchgear_cabinet.002",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Switchgear_cabinet.003",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Switchgear_cabinet.004",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Header_support_leg",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Header_support_leg.001",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Header_support_leg.002",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Header_support_leg.003",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        }
+      ],
+      "all_saved_mesh_portal_lanes_clear": true,
+      "fbx_roundtrip_checks": [
+        {
+          "fbx": "ArtSource/Generated/blender/issue-164/v3/asset.fbx",
+          "triangles": 4768,
+          "corners_checked": 8904,
+          "max_position_error_m": 1.719260808386025e-06,
+          "all_uv_layers_and_material_corners_match": true
+        },
+        {
+          "fbx": "ArtSource/Exports/UtilityIntegration/power_high/SM_Utility_power_high_v3_LOD1.fbx",
+          "triangles": 3916,
+          "corners_checked": 7296,
+          "max_position_error_m": 1.719260808386025e-06,
+          "all_uv_layers_and_material_corners_match": true
+        },
+        {
+          "fbx": "ArtSource/Exports/UtilityIntegration/power_high/SM_Utility_power_high_v3_LOD2.fbx",
+          "triangles": 3064,
+          "corners_checked": 5688,
+          "max_position_error_m": 1.719260808386025e-06,
+          "all_uv_layers_and_material_corners_match": true
+        }
+      ],
+      "wind_split_reassembly_pass": false,
+      "solar_all12_group_pivots_retained": false
+    },
+    {
+      "issue": 165,
+      "version": 2,
+      "prepared_source": "ArtSource/Blender/UtilityIntegration/CityUtility_water_medium_v2.blend",
+      "lod_triangles": [
+        6364,
+        6076,
+        5728
+      ],
+      "approved_lod0_geometry_uv_materials_unchanged": true,
+      "all_retained_lod_faces_match_source": true,
+      "all_support_contours_and_lod_contacts_pass": true,
+      "support_regions": [
+        {
+          "component": "Clarifier_1_structural_vessel",
+          "loops": 2,
+          "holes": 1,
+          "vertices": 64
+        },
+        {
+          "component": "Clarifier_2_structural_vessel",
+          "loops": 2,
+          "holes": 1,
+          "vertices": 64
+        },
+        {
+          "component": "Clarifier_3_structural_vessel",
+          "loops": 2,
+          "holes": 1,
+          "vertices": 64
+        },
+        {
+          "component": "Worker_control_two_storey_block",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Filter_pump_hall",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Personnel_door_leaf",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Service_vehicle_shutter",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Bay_jamb_5.43",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Bay_jamb_9.57",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Attached_filter_service_wing",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Pipe_0_foot_-1.2",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Pipe_0_foot_1.8",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Pipe_1_foot_-1.2",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Pipe_1_foot_1.8",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Pipe_2_foot_-1.2",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Pipe_2_foot_1.8",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Vessel_leg_0_-0.4",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Vessel_leg_0_0.4",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Vessel_leg_1_-0.4",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Vessel_leg_1_0.4",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Vessel_leg_2_-0.4",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Vessel_leg_2_0.4",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Vessel_leg_3_-0.4",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Vessel_leg_3_0.4",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        }
+      ],
+      "all_saved_mesh_portal_lanes_clear": true,
+      "fbx_roundtrip_checks": [
+        {
+          "fbx": "ArtSource/Generated/blender/issue-165/v2/asset.fbx",
+          "triangles": 6364,
+          "corners_checked": 11568,
+          "max_position_error_m": 1.9073486328125e-06,
+          "all_uv_layers_and_material_corners_match": true
+        },
+        {
+          "fbx": "ArtSource/Exports/UtilityIntegration/water_medium/SM_Utility_water_medium_v2_LOD1.fbx",
+          "triangles": 6076,
+          "corners_checked": 11088,
+          "max_position_error_m": 1.9073486328125e-06,
+          "all_uv_layers_and_material_corners_match": true
+        },
+        {
+          "fbx": "ArtSource/Exports/UtilityIntegration/water_medium/SM_Utility_water_medium_v2_LOD2.fbx",
+          "triangles": 5728,
+          "corners_checked": 10512,
+          "max_position_error_m": 1.9073486328125e-06,
+          "all_uv_layers_and_material_corners_match": true
+        }
+      ],
+      "wind_split_reassembly_pass": false,
+      "solar_all12_group_pivots_retained": false
+    },
+    {
+      "issue": 166,
+      "version": 2,
+      "prepared_source": "ArtSource/Blender/UtilityIntegration/CityUtility_water_high_v2.blend",
+      "lod_triangles": [
+        8484,
+        8196,
+        7848
+      ],
+      "approved_lod0_geometry_uv_materials_unchanged": true,
+      "all_retained_lod_faces_match_source": true,
+      "all_support_contours_and_lod_contacts_pass": true,
+      "support_regions": [
+        {
+          "component": "Clarifier_1_structural_vessel",
+          "loops": 2,
+          "holes": 1,
+          "vertices": 64
+        },
+        {
+          "component": "Clarifier_2_structural_vessel",
+          "loops": 2,
+          "holes": 1,
+          "vertices": 64
+        },
+        {
+          "component": "Clarifier_3_structural_vessel",
+          "loops": 2,
+          "holes": 1,
+          "vertices": 64
+        },
+        {
+          "component": "Clarifier_4_structural_vessel",
+          "loops": 2,
+          "holes": 1,
+          "vertices": 64
+        },
+        {
+          "component": "Worker_control_two_storey_block",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Filter_pump_hall",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Personnel_door_leaf",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Service_vehicle_shutter",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Bay_jamb_5.43",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Bay_jamb_9.57",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Pipe_0_foot_-1.2",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Pipe_0_foot_1.8",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Pipe_1_foot_-1.2",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Pipe_1_foot_1.8",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Pipe_2_foot_-1.2",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Pipe_2_foot_1.8",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Vessel_leg_-1.1_-4.1-0.4",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Vessel_leg_-1.1_-4.10.4",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Vessel_leg_1.1_-4.1-0.4",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Vessel_leg_1.1_-4.10.4",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Vessel_leg_-1.1_-7-0.4",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Vessel_leg_-1.1_-70.4",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Vessel_leg_1.1_-7-0.4",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Vessel_leg_1.1_-70.4",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Vessel_leg_-1.1_-9.9-0.4",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Vessel_leg_-1.1_-9.90.4",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Vessel_leg_1.1_-9.9-0.4",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Vessel_leg_1.1_-9.90.4",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Additional_filter_pump_hall",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Expanded_control_wing",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Header_saddle_0",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Header_saddle_1",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Header_saddle_2",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Header_saddle_3",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        }
+      ],
+      "all_saved_mesh_portal_lanes_clear": true,
+      "fbx_roundtrip_checks": [
+        {
+          "fbx": "ArtSource/Generated/blender/issue-166/v2/asset.fbx",
+          "triangles": 8484,
+          "corners_checked": 15616,
+          "max_position_error_m": 2.6973982585332124e-06,
+          "all_uv_layers_and_material_corners_match": true
+        },
+        {
+          "fbx": "ArtSource/Exports/UtilityIntegration/water_high/SM_Utility_water_high_v2_LOD1.fbx",
+          "triangles": 8196,
+          "corners_checked": 15136,
+          "max_position_error_m": 2.6973982585332124e-06,
+          "all_uv_layers_and_material_corners_match": true
+        },
+        {
+          "fbx": "ArtSource/Exports/UtilityIntegration/water_high/SM_Utility_water_high_v2_LOD2.fbx",
+          "triangles": 7848,
+          "corners_checked": 14560,
+          "max_position_error_m": 2.6973982585332124e-06,
+          "all_uv_layers_and_material_corners_match": true
+        }
+      ],
+      "wind_split_reassembly_pass": false,
+      "solar_all12_group_pivots_retained": false
+    },
+    {
+      "issue": 167,
+      "version": 3,
+      "prepared_source": "ArtSource/Blender/UtilityIntegration/CityUtility_water_tower_v3.blend",
+      "lod_triangles": [
+        4224,
+        3536,
+        2544
+      ],
+      "approved_lod0_geometry_uv_materials_unchanged": true,
+      "all_retained_lod_faces_match_source": true,
+      "all_support_contours_and_lod_contacts_pass": true,
+      "support_regions": [
+        {
+          "component": "Leg_1",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Steel_foot_1",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Leg_2",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Steel_foot_2",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Leg_3",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Steel_foot_3",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Leg_4",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Steel_foot_4",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Central_riser",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 12
+        },
+        {
+          "component": "Front_ladder_rail_-0.4",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Front_ladder_rail_0.4",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        }
+      ],
+      "all_saved_mesh_portal_lanes_clear": true,
+      "fbx_roundtrip_checks": [
+        {
+          "fbx": "ArtSource/Generated/blender/issue-167/v3/asset.fbx",
+          "triangles": 4224,
+          "corners_checked": 7960,
+          "max_position_error_m": 4.628673195838928e-07,
+          "all_uv_layers_and_material_corners_match": true
+        },
+        {
+          "fbx": "ArtSource/Exports/UtilityIntegration/water_tower/SM_Utility_water_tower_v3_LOD1.fbx",
+          "triangles": 3536,
+          "corners_checked": 6664,
+          "max_position_error_m": 4.628673195838928e-07,
+          "all_uv_layers_and_material_corners_match": true
+        },
+        {
+          "fbx": "ArtSource/Exports/UtilityIntegration/water_tower/SM_Utility_water_tower_v3_LOD2.fbx",
+          "triangles": 2544,
+          "corners_checked": 4840,
+          "max_position_error_m": 4.628673195838928e-07,
+          "all_uv_layers_and_material_corners_match": true
+        }
+      ],
+      "wind_split_reassembly_pass": false,
+      "solar_all12_group_pivots_retained": false
+    },
+    {
+      "issue": 168,
+      "version": 1,
+      "prepared_source": "ArtSource/Blender/UtilityIntegration/CityUtility_wind_turbine_v1.blend",
+      "lod_triangles": [
+        2320,
+        2148,
+        1816
+      ],
+      "approved_lod0_geometry_uv_materials_unchanged": true,
+      "all_retained_lod_faces_match_source": true,
+      "all_support_contours_and_lod_contacts_pass": true,
+      "support_regions": [
+        {
+          "component": "Mast_Tapered_Shell",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 32
+        }
+      ],
+      "all_saved_mesh_portal_lanes_clear": true,
+      "fbx_roundtrip_checks": [
+        {
+          "fbx": "ArtSource/Generated/blender/issue-168/v1/asset.fbx",
+          "triangles": 2320,
+          "corners_checked": 4088,
+          "max_position_error_m": 8.596304041930125e-07,
+          "all_uv_layers_and_material_corners_match": true
+        },
+        {
+          "fbx": "ArtSource/Exports/UtilityIntegration/wind_turbine/SM_Utility_wind_turbine_v1_LOD1.fbx",
+          "triangles": 2148,
+          "corners_checked": 3800,
+          "max_position_error_m": 8.596304041930125e-07,
+          "all_uv_layers_and_material_corners_match": true
+        },
+        {
+          "fbx": "ArtSource/Exports/UtilityIntegration/wind_turbine/SM_Utility_wind_turbine_v1_LOD2.fbx",
+          "triangles": 1816,
+          "corners_checked": 3272,
+          "max_position_error_m": 8.596304041930125e-07,
+          "all_uv_layers_and_material_corners_match": true
+        },
+        {
+          "fbx": "ArtSource/Exports/UtilityIntegration/wind_turbine/SM_Utility_wind_turbine_v1_Body_LOD0.fbx",
+          "triangles": 1404,
+          "corners_checked": 2384,
+          "max_position_error_m": 2.682209014892578e-07,
+          "all_uv_layers_and_material_corners_match": true
+        },
+        {
+          "fbx": "ArtSource/Exports/UtilityIntegration/wind_turbine/SM_Utility_wind_turbine_v1_Rotor_LOD0.fbx",
+          "triangles": 916,
+          "corners_checked": 1704,
+          "max_position_error_m": 6.878405542920518e-07,
+          "all_uv_layers_and_material_corners_match": true
+        },
+        {
+          "fbx": "ArtSource/Exports/UtilityIntegration/wind_turbine/SM_Utility_wind_turbine_v1_Body_LOD1.fbx",
+          "triangles": 1232,
+          "corners_checked": 2096,
+          "max_position_error_m": 2.682209014892578e-07,
+          "all_uv_layers_and_material_corners_match": true
+        },
+        {
+          "fbx": "ArtSource/Exports/UtilityIntegration/wind_turbine/SM_Utility_wind_turbine_v1_Rotor_LOD1.fbx",
+          "triangles": 916,
+          "corners_checked": 1704,
+          "max_position_error_m": 6.878405542920518e-07,
+          "all_uv_layers_and_material_corners_match": true
+        },
+        {
+          "fbx": "ArtSource/Exports/UtilityIntegration/wind_turbine/SM_Utility_wind_turbine_v1_Body_LOD2.fbx",
+          "triangles": 900,
+          "corners_checked": 1568,
+          "max_position_error_m": 2.682209014892578e-07,
+          "all_uv_layers_and_material_corners_match": true
+        },
+        {
+          "fbx": "ArtSource/Exports/UtilityIntegration/wind_turbine/SM_Utility_wind_turbine_v1_Rotor_LOD2.fbx",
+          "triangles": 916,
+          "corners_checked": 1704,
+          "max_position_error_m": 6.878405542920518e-07,
+          "all_uv_layers_and_material_corners_match": true
+        }
+      ],
+      "wind_split_reassembly_pass": true,
+      "solar_all12_group_pivots_retained": false
+    },
+    {
+      "issue": 169,
+      "version": 3,
+      "prepared_source": "ArtSource/Blender/UtilityIntegration/CityUtility_solar_farm_v3.blend",
+      "lod_triangles": [
+        6360,
+        6024,
+        5688
+      ],
+      "approved_lod0_geometry_uv_materials_unchanged": true,
+      "all_retained_lod_faces_match_source": true,
+      "all_support_contours_and_lod_contacts_pass": true,
+      "support_regions": [
+        {
+          "component": "R1T1_SteelFoot",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "R1T1_MastCableRiser",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "R1T2_SteelFoot",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "R1T2_MastCableRiser",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "R1T3_SteelFoot",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "R1T3_MastCableRiser",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "R1T4_SteelFoot",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "R1T4_MastCableRiser",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "R2T1_SteelFoot",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "R2T1_MastCableRiser",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "R2T2_SteelFoot",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "R2T2_MastCableRiser",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "R2T3_SteelFoot",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "R2T3_MastCableRiser",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "R2T4_SteelFoot",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "R2T4_MastCableRiser",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "R3T1_SteelFoot",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "R3T1_MastCableRiser",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "R3T2_SteelFoot",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "R3T2_MastCableRiser",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "R3T3_SteelFoot",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "R3T3_MastCableRiser",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "R3T4_SteelFoot",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "R3T4_MastCableRiser",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "GroundRowDuct0",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "GroundRowDuct1",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "GroundRowDuct2",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "EastGroundDuct",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "CabinetGroundFeed",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Inverter0_Foot0",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Inverter0_Foot1",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Inverter1_Foot0",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        },
+        {
+          "component": "Inverter1_Foot1",
+          "loops": 1,
+          "holes": 0,
+          "vertices": 4
+        }
+      ],
+      "all_saved_mesh_portal_lanes_clear": true,
+      "fbx_roundtrip_checks": [
+        {
+          "fbx": "ArtSource/Generated/blender/issue-169/v3/asset.fbx",
+          "triangles": 6360,
+          "corners_checked": 12144,
+          "max_position_error_m": 1.719260808386025e-06,
+          "all_uv_layers_and_material_corners_match": true
+        },
+        {
+          "fbx": "ArtSource/Exports/UtilityIntegration/solar_farm/SM_Utility_solar_farm_v3_LOD1.fbx",
+          "triangles": 6024,
+          "corners_checked": 11472,
+          "max_position_error_m": 1.719260808386025e-06,
+          "all_uv_layers_and_material_corners_match": true
+        },
+        {
+          "fbx": "ArtSource/Exports/UtilityIntegration/solar_farm/SM_Utility_solar_farm_v3_LOD2.fbx",
+          "triangles": 5688,
+          "corners_checked": 10800,
+          "max_position_error_m": 1.719260808386025e-06,
+          "all_uv_layers_and_material_corners_match": true
+        }
+      ],
+      "wind_split_reassembly_pass": false,
+      "solar_all12_group_pivots_retained": true
+    }
+  ],
+  "asset_count": 11,
+  "unchanged_original_blend_fbx_files": 22,
+  "verified_original_artifacts": 191,
+  "fbx_readbacks": 39,
+  "support_regions": 295,
+  "portals": 19,
+  "all_checks_pass": true,
+  "native_import_run": false,
+  "notes": "FBX readbacks are Blender checks. Native handedness/contact/material/LOD/runtime acceptance remains #125. No render, build or CI run."
+}

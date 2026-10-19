@@ -1,0 +1,150 @@
+{
+  "regions": {
+    "OpaqueFacade": {
+      "source_material": "OpaqueFacade",
+      "preserved_nodes": true,
+      "maps": [
+        {
+          "node": "Image Texture",
+          "image": "CityBrick_BaseColor.png",
+          "file": "CityBrick_BaseColor.png"
+        },
+        {
+          "node": "Image Texture.001",
+          "image": "CityBrick_Normal.png",
+          "file": "CityBrick_Normal.png"
+        },
+        {
+          "node": "Image Texture.002",
+          "image": "CityBrick_ORM.png",
+          "file": "CityBrick_ORM.png"
+        }
+      ],
+      "uv_density": "Preserved v3 UV0, 1 repeat per 2m; clipped rail UV interpolated metrically",
+      "native_binding": "existing civic brick family",
+      "native_channels": "Existing BaseColor, tangent Normal, ORM G roughness/B metallic; AO native multiply pending"
+    },
+    "RoofService": {
+      "source_material": "RoofService",
+      "preserved_nodes": true,
+      "maps": [
+        {
+          "node": "Image Texture",
+          "image": "CivicAsphalt_BaseColor.png",
+          "file": "CivicAsphalt_BaseColor.png"
+        },
+        {
+          "node": "Image Texture.001",
+          "image": "CivicAsphalt_Normal.png",
+          "file": "CivicAsphalt_Normal.png"
+        },
+        {
+          "node": "Image Texture.002",
+          "image": "CivicAsphalt_ORM.png",
+          "file": "CivicAsphalt_ORM.png"
+        }
+      ],
+      "uv_density": "Preserved v3 UV0, 1 repeat per 2m; clipped rail UV interpolated metrically",
+      "native_binding": "MI_CivicAsphaltRoof",
+      "native_channels": "Existing BaseColor, tangent Normal, ORM G roughness/B metallic; AO native multiply pending"
+    },
+    "LightMetal": {
+      "source_material": "LightMetal",
+      "preserved_nodes": true,
+      "maps": [],
+      "uv_density": "Preserved v3 UV0, 1 repeat per 2m; clipped rail UV interpolated metrically",
+      "native_binding": "explicit reusable opaque PBR; native binding pending",
+      "native_channels": "Preserved explicit PBR values; no generated maps"
+    },
+    "TechGlass": {
+      "source_material": "TechGlass",
+      "preserved_nodes": true,
+      "maps": [],
+      "uv_density": "Preserved v3 UV0, 1 repeat per 2m; clipped rail UV interpolated metrically",
+      "native_binding": "explicit reusable opaque PBR; native binding pending",
+      "native_channels": "Preserved explicit PBR values; no generated maps"
+    },
+    "DoorAccent": {
+      "source_material": "DoorAccent",
+      "preserved_nodes": true,
+      "maps": [],
+      "uv_density": "Preserved v3 UV0, 1 repeat per 2m; clipped rail UV interpolated metrically",
+      "native_binding": "explicit reusable opaque PBR; native binding pending",
+      "native_channels": "Preserved explicit PBR values; no generated maps"
+    }
+  },
+  "textures": [
+    {
+      "image": "CityBrick_BaseColor.png",
+      "file": "CityBrick_BaseColor.png",
+      "sha256": "e4c1ad7446563e3209191ca862fc4c3e065c491debd989765bc843405a5fbbfe",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "sRGB",
+      "provenance": "unchanged packed v3 image bytes",
+      "newly_baked": false
+    },
+    {
+      "image": "CityBrick_Normal.png",
+      "file": "CityBrick_Normal.png",
+      "sha256": "cf71dc7902b7c3a99d9fd1e966760af9a7b428de42b22ade5fb810965866d2cc",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "Non-Color",
+      "provenance": "unchanged packed v3 image bytes",
+      "newly_baked": false
+    },
+    {
+      "image": "CityBrick_ORM.png",
+      "file": "CityBrick_ORM.png",
+      "sha256": "39f2f1df859b4052afe98dcb632054398957455d58b205b13702210467a0c6e8",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "color_space": "Non-Color",
+      "provenance": "unchanged packed v3 image bytes",
+      "newly_baked": false
+    },
+    {
+      "image": "CivicAsphalt_BaseColor.png",
+      "file": "CivicAsphalt_BaseColor.png",
+      "sha256": "85e2cfe619a74da7fe74ad0c6439141f4edb63e5085208c4cfd620c5e1d988fa",
+      "dimensions": [
+        512,
+        512
+      ],
+      "color_space": "sRGB",
+      "provenance": "unchanged packed v3 image bytes",
+      "newly_baked": false
+    },
+    {
+      "image": "CivicAsphalt_Normal.png",
+      "file": "CivicAsphalt_Normal.png",
+      "sha256": "e6f9e8f0257ddbc33b012b72f9446a2c8a3679153488b4bbc67ca6e50be153fd",
+      "dimensions": [
+        512,
+        512
+      ],
+      "color_space": "Non-Color",
+      "provenance": "unchanged packed v3 image bytes",
+      "newly_baked": false
+    },
+    {
+      "image": "CivicAsphalt_ORM.png",
+      "file": "CivicAsphalt_ORM.png",
+      "sha256": "6b06b777944f76046d0f51131cdec7cca658efac60560c95ab1e854c37189ab4",
+      "dimensions": [
+        512,
+        512
+      ],
+      "color_space": "Non-Color",
+      "provenance": "unchanged packed v3 image bytes",
+      "newly_baked": false
+    }
+  ]
+}

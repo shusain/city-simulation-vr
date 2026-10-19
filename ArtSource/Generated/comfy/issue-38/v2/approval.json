@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "kind": "comfy",
+  "repository": "CitySimVR/citysim",
+  "issue": 38,
+  "version": 2,
+  "by": "shaun",
+  "comment_id": 522,
+  "request_url": "https://git.shaun-husain.com/CitySimVR/citysim/issues/38#issuecomment-522",
+  "approved_at": "2026-10-16T06:34:48.082Z",
+  "job_id": "cb41feb7-5d2d-466f-b1fc-e797f39bb9c3",
+  "source_sha": "f482eff94e62fbc62692b8270dcfcdca5269d5cc",
+  "artifacts": [
+    {
+      "name": "asset.png",
+      "bytes": 565703,
+      "sha256": "a475c564ebafbc3c8da8199a16133cc2df2f7fc6d9ede90f1782d78f4a650d78"
+    },
+    {
+      "name": "workflow.json",
+      "bytes": 3093,
+      "sha256": "560e01dbc99c94d26eab29ab146de942abc76da9b7d7f64d9a3e1b91179981fe"
+    },
+    {
+      "name": "provenance.json",
+      "bytes": 1452,
+      "sha256": "8c9abdc53ef71e52ff48faaef3a08d93b1aee717dbd1818e4ff2081a185ce5b5"
+    },
+    {
+      "name": "README.md",
+      "bytes": 378,
+      "sha256": "f68a82a9fe195e1dc55c2d49a6d1af61ef7f782014336ba35f5da0e5a15be3aa"
+    }
+  ],
+  "workflow": "generate_image_zimage",
+  "workflow_sha256": "3dd3ba595b1e5d79b5d53d739334957f754ce9ec98cb6a703319c92cb159a9ea",
+  "seed": 38,
+  "prompt": "A clean concept comparison sheet featuring three distinct compact buildings for a stylized low-poly tabletop city-building game. Left: AI research institute with a readable courtyard and simple distinctive glass/roof. Center: municipal compute building with a civic entrance and modest server/cooling volumes made of chrome and glass. Right: enterprise compute building with a compact office/service frontage using chrome and glass materials. All buildings share warm brick, pale concrete, dark gray roofs, and restrained teal accents. Consistent three-quarter view from above on a 768x768 canvas with generous spacing. Warm light-gray background. No text, logos, or political elements. Stylized low-poly aesthetic with comparable small civic-industrial scale.",
+  "archive": {
+    "url": "https://git.shaun-husain.com/attachments/3b9e8159-de7a-4b88-977a-c01bcf0668d4",
+    "sha256": "bb35a38d1eb5e2e4edf57bb2c0a833fcec227946cc5d49562ceb4daa30ab93d9"
+  },
+  "review_url": "https://git.shaun-husain.com/CitySimVR/citysim/issues/38#issuecomment-494"
+}

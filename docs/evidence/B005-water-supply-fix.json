@@ -1,0 +1,153 @@
+{
+  "task": "B005",
+  "additionalFix": "B006",
+  "date": "2026-10-15",
+  "revision": "dev-69ded6cd3232eb02d695",
+  "schema": 67,
+  "status": "Fix delivered; B005 user playtest pending; B006 verified closed",
+  "sourceChanges": [
+    {
+      "path": "CitySimVR/Source/CitySimVR/Private/Simulation/CityPopulationSimulation.cpp",
+      "sha256": "7f7ccede27becef9c5309d1d91d71b45ac12fd9967f06a6223085cde464942d8"
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Private/Simulation/CityWaterSimulation.cpp",
+      "sha256": "6b5d254420af996da27a42b9292373f2a54facac1974f1f233f2c48c45302052"
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Private/Tests/CityWaterSupplyRefreshTests.cpp",
+      "sha256": "3094dbc108c0dac6eb45c86a8a1bba6f8cc7f5c1bbe1b48998b331783d05705d"
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Private/Tests/CityWaterTests.cpp",
+      "sha256": "012891f5bc53320b1493b7c9ac9b299c7a0e7194eef30d8849f8be2d9e7dfbe0"
+    }
+  ],
+  "diagnosis": {
+    "city": "City 490338",
+    "cityId": "16063446419341aa42113fb344f74892",
+    "step": 1088,
+    "month": 43,
+    "originalSha256": "035e32d6e7c417d7bf2067784a45ad3e710492f7ba4f253e413fbc4f16fb5e6e",
+    "school": 63,
+    "addedTreatment": 80,
+    "before": {
+      "delivered": 10,
+      "demand": 11,
+      "pipePressure": 98,
+      "totalUsed": 1002,
+      "capacity": 1366,
+      "localSourceUsed": 172,
+      "localSourceCapacity": 172
+    },
+    "after": {
+      "delivered": 11,
+      "demand": 11,
+      "pipePressure": 98,
+      "totalUsed": 1003,
+      "capacity": 1366,
+      "localSourceUsed": 55,
+      "localSourceCapacity": 172
+    },
+    "cause": "Raw pressure sorting spent the new local source on earlier consumers despite full flow from older sources. Full-delivery head now ties by source ID in prepared/reference paths; physical pressure and finite budgets remain unchanged.",
+    "remaining": "School has no current staff on initial load; water warning correctly clears and NoStaff is truthful."
+  },
+  "loadFix": {
+    "before": "Invalid emergency trip: station35 legitimately has two fire response trips602/610 to incidents9/10",
+    "after": "Untouched original loads and copied save/reload preserves all transit trips; obsolete one-trip-per-station validation removed; dispatch and malformed-record validation retained."
+  },
+  "tests": {
+    "FinalEditor": [
+      "FleetPersistence",
+      "StaffedFleetAndCoverage",
+      "AddedLocalSupply",
+      "MultipleSourcesLoopsAndConservation",
+      "PreparedQueryEquivalence",
+      "PressureThresholdAndDetours",
+      "QualifiedPayrollPowerAndUpgradeGates",
+      "ReportedSchoolSupply",
+      "SourceGatesCriticalPriorityAndLegacy"
+    ],
+    "FinalPackaged": [
+      "FleetPersistence",
+      "AddedLocalSupply",
+      "ReportedSchoolSupply"
+    ]
+  },
+  "nativeInputs": 1087,
+  "windows": {
+    "path": "Artifacts/PCVRSandbox/Windows/CitySimVR/Binaries/Win64/CitySimVR.exe",
+    "sha256": "5c88c6efb4e04841fa3d389b11075f2d8568295b56ecd5a06b28df7b8d7683e0"
+  },
+  "quest": {
+    "path": "Artifacts/B005/QuestPackage/Android_ASTC/CitySimVR-arm64.apk",
+    "sha256": "ce137211e9874396189e48fc6f79ba103ec85e51a2555833cd651f02989a164e",
+    "installed": false
+  },
+  "startup": {
+    "path": "Artifacts/B005/Startup-D68-Automation/Saved/Automation/Desktop/Entry.png",
+    "sha256": "ae9f8b6ed957d326b57386c777aba36531dd52c4a2d64711c8357661cbd25bdf"
+  },
+  "preservation": {
+    "unchangedInputs": 1795,
+    "previousWindowsFiles": 53,
+    "originalPlayerCityUnchanged": true,
+    "unrelatedD120ChangesPreserved": true,
+    "launcherChanges": false,
+    "publicReleaseChanged": false
+  },
+  "limitations": [
+    "B005 physical user playtest pending; PCVR/Quest device behavior unconfirmed.",
+    "Actual insufficient source capacity, low pressure, power/staffing/construction constraints still apply.",
+    "No schema change, source push, public publication, device installation, full suite or profiling."
+  ],
+  "iterations": [
+    "Original save load failure retained in Tests-Probe.log.",
+    "Both new water regression cases failed before correction in Tests-BeforeWaterFix.log.",
+    "Initial corrected run exposed an existing conservation test comparing one request with two; assertion now compares identical requests. All nine final cases pass."
+  ],
+  "logs": [
+    {
+      "path": "Artifacts/B005/EditorBuild-Final.log",
+      "sha256": "8ec821bd079c81574d4f9ab698456bce00d1da674e5748764a2421c894a4bdbc"
+    },
+    {
+      "path": "Artifacts/B005/Tests-FinalEditor.log",
+      "sha256": "9e6e9dd4dc18616223648eee3a370bfaac7bc012465e576a002ecbd02df44564"
+    },
+    {
+      "path": "Artifacts/B005/WindowsBuild.log",
+      "sha256": "053501a307230adb8e2316307ca4a71cc0fc0b971bdfbaf675acd1c058ee4a04"
+    },
+    {
+      "path": "Artifacts/B005/Tests-FinalPackaged.log",
+      "sha256": "88c4fe4c9e51156f41ee2dc4fe503d49a859ff956101a3422c91035209f2ca04"
+    },
+    {
+      "path": "Artifacts/B005/QuestBuild.log",
+      "sha256": "580787db80df782c03d482f1bc1a1665ecb581735ec0ba1cc9a2ab97710901c9"
+    },
+    {
+      "path": "Artifacts/B005/QuestVerification.txt",
+      "sha256": "2c3af06fe3616874ff9603a5bbc679e1d50ca88c2f9b92abbad498ce291ae1de"
+    },
+    {
+      "path": "Artifacts/B005/Startup.log",
+      "sha256": "2a7c98cd02fd1d498ec62f5db53361295c85e822272a8c2e246a234e86656e8d"
+    },
+    {
+      "path": "Artifacts/B005/Report-ProbeLoadFixed.txt",
+      "sha256": "13d4422882cedeadb5b2219d1e2acfff46dec3cbe5bcfca605ed18bc0b899ee6"
+    },
+    {
+      "path": "Artifacts/B005/Report-FinalEditor.txt",
+      "sha256": "b383f90066842461dd188e33f313775251cb5b586a44fa3e71f52301bfc17301"
+    },
+    {
+      "path": "Artifacts/B005/Report-FinalPackaged.txt",
+      "sha256": "b383f90066842461dd188e33f313775251cb5b586a44fa3e71f52301bfc17301"
+    }
+  ],
+  "nativeWindowReleased": true,
+  "next": "User reviews B005 through existing Desktop/PCVR launchers; D90.1/#23 is next feature."
+}

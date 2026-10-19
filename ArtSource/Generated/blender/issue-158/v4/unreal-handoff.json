@@ -1,0 +1,97 @@
+{
+  "schema": 1,
+  "kind": "blender",
+  "repository": "CitySimVR/citysim",
+  "asset_issue": 158,
+  "approved_version": 4,
+  "approval_manifest": "approval.json",
+  "approval_sha256": "2fe9572ef56fce52da98506b553b997a72fbce49036db0a10458b41f59ef0afe",
+  "source_context_sha": "328d0b43668bdf2c3f15683aa72861e022cdee20",
+  "artifacts": [
+    {
+      "name": "asset.blend",
+      "bytes": 1465467,
+      "sha256": "823afab44558ac2c09bdd043b86be558312a6a029c95c6d953dcaceda19dd863"
+    },
+    {
+      "name": "asset.fbx",
+      "bytes": 120732,
+      "sha256": "70831d3d798970d8a0d0f3512b6401b5593f64e11ff606eae952ccac2a34c655"
+    },
+    {
+      "name": "entrance-anchors.json",
+      "bytes": 5231,
+      "sha256": "9ff2a988698dea7f63194e1f6851ca52b7855679f043391bf80b92d83fbf1e1d"
+    },
+    {
+      "name": "material-manifest.json",
+      "bytes": 6225,
+      "sha256": "03d391d89cb4a4a9ba5253dd9c907cf2d6f2ccac99120345dc955db0e0cccd66"
+    },
+    {
+      "name": "preview.png",
+      "bytes": 297831,
+      "sha256": "3772de99d1a0e1845f0edea77c1e60978627283a2fde3a1f3d5e9e83dd6e575e"
+    },
+    {
+      "name": "provenance.json",
+      "bytes": 680,
+      "sha256": "a514cf5aee4e4710307c5defb4fa5d7c78eb4ddbac34b136611be4b2a83b5f4f"
+    },
+    {
+      "name": "textures/CityMechanical_BaseColor.png",
+      "bytes": 151204,
+      "sha256": "ea75f9ab4911ad7ecf6a5e0ff5688fdc2c07ed52c3cad007ac58e8d06fe4e5ae"
+    },
+    {
+      "name": "textures/CityMechanical_Normal.png",
+      "bytes": 131466,
+      "sha256": "7a456d3f708d3ee42a7dfb830ac87f95ce27aeeea0e56ac444daca5da510231e"
+    },
+    {
+      "name": "textures/CityMechanical_ORM.png",
+      "bytes": 150038,
+      "sha256": "0e08a253e6c30a15e3675921cab4958c0cdcf088f23f05b5fcc1eb3f87dbec98"
+    },
+    {
+      "name": "textures/CivicAsphalt_BaseColor.png",
+      "bytes": 202880,
+      "sha256": "85e2cfe619a74da7fe74ad0c6439141f4edb63e5085208c4cfd620c5e1d988fa"
+    },
+    {
+      "name": "textures/CivicAsphalt_Normal.png",
+      "bytes": 439354,
+      "sha256": "e6f9e8f0257ddbc33b012b72f9446a2c8a3679153488b4bbc67ca6e50be153fd"
+    },
+    {
+      "name": "textures/CivicAsphalt_ORM.png",
+      "bytes": 214379,
+      "sha256": "6b06b777944f76046d0f51131cdec7cca658efac60560c95ab1e854c37189ab4"
+    },
+    {
+      "name": "validation.json",
+      "bytes": 185174,
+      "sha256": "f2195503b649a31ae176100cdbc05865abb70558ee59f0346dd8cc010f86c3c8"
+    },
+    {
+      "name": "window-mounts.json",
+      "bytes": 100657,
+      "sha256": "599324d9eb0826a0491aac4126ec59476df96b64c6227b9d43cf54c704f1fab4"
+    },
+    {
+      "name": "source-bundle.zip",
+      "bytes": 6275684,
+      "sha256": "c83d0d7c0870a4f7a33ada397e9a8e5c4270f198893da90277a6e23c2f38201f"
+    },
+    {
+      "name": "approval.json",
+      "bytes": 3110,
+      "sha256": "2fe9572ef56fce52da98506b553b997a72fbce49036db0a10458b41f59ef0afe"
+    }
+  ],
+  "unreal": {
+    "status": "not_imported",
+    "destination": "choose in the separate integration issue",
+    "role": "Blender source and exports; validate importer contract"
+  }
+}

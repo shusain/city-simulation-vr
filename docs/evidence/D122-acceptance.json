@@ -1,0 +1,43 @@
+{
+  "task": "D122",
+  "date": "2026-10-17",
+  "source": "Explicit human message in this Codex chat",
+  "quote": "I checked candidate 92 in game and the window blend looks good. Go ahead and merge PR73 and close out the completed storefront and newspaper work.",
+  "candidate": 92,
+  "commit": "c8fe7059990dbda39dcfca6a84ff3a46e9c8c818",
+  "gameRevision": "dev-22dbca8cbcac477ebe2f",
+  "saveSchema": 68,
+  "pullRequest": "https://git.shaun-husain.com/CitySimVR/citysim/pulls/73",
+  "decision": "Accept candidate92, normally merge PR73, close completed newspaper/storefront sources and integrations",
+  "completedSourceIssues": [
+    33,
+    34,
+    35,
+    36,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84
+  ],
+  "completedIntegrationIssues": [
+    65,
+    67,
+    69,
+    71,
+    86,
+    88,
+    90,
+    92,
+    94,
+    96,
+    98,
+    100
+  ],
+  "optionalStudy74": "Retire unselected geometry alternative as superseded; no source approval/export/native integration claimed",
+  "parent32": "Keep open for shore37 v2 review and approved compute38 v2/D90 handoff",
+  "headset": "Unconfirmed under D114; no device install or maintained promotion requested"
+}

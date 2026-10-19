@@ -1,0 +1,183 @@
+{
+  "issue": 125,
+  "branch": "codex/issue-125-utility-batch",
+  "source_heads": [
+    "33c7f223c59a8f7af7c9419df458e160a26e42f0",
+    "3bfb7e74d38dae2fb5b6b60a401946db9b99eba8",
+    "74064ee4a41e9f82709f4fbbde23b332b05404b1"
+  ],
+  "nuclear_prerequisite": {
+    "pr": 218,
+    "head": "3cfa50862a662120d6d6d99d267527c5d6182f37",
+    "windows": 335,
+    "acceptance": "human gameplay review pending; this branch keeps that tested baseline"
+  },
+  "approved_assets": [
+    {
+      "key": "coal",
+      "issue": 158,
+      "version": 4,
+      "source_head": "90fcb9a9894632bc6b269aa4974f28020648d423",
+      "approval_sha256": "2fe9572ef56fce52da98506b553b997a72fbce49036db0a10458b41f59ef0afe"
+    },
+    {
+      "key": "oil",
+      "issue": 159,
+      "version": 3,
+      "source_head": "1d1177b1ae40cbf4038d3ba7dbf62088c99d90a3",
+      "approval_sha256": "45abb473f7320cb30c4b44248b90bf952e94d765ccf61665f55adcc70936ce5e"
+    },
+    {
+      "key": "power_base",
+      "issue": 160,
+      "version": 2,
+      "source_head": "b66350db94d6822f9c3626f04ed1067b4ae546a7",
+      "approval_sha256": "7cd6e65cb57e02ba4428ece8ef9803f5fc3fa3f8f912422bee2f8f572c634941"
+    },
+    {
+      "key": "water_base",
+      "issue": 161,
+      "version": 2,
+      "source_head": "5edde83700611977a300c9253232608ab4f8359a",
+      "approval_sha256": "9fc8531e0e21b9429cea2255ed751809a9f67689b7d9e536173ba1bf3a243502"
+    },
+    {
+      "key": "power_medium",
+      "issue": 163,
+      "version": 3,
+      "source_head": "c3d0a644eecdd63390d85b070e0a0abb8a6231c6",
+      "approval_sha256": "167af48fe7ea9fb6bb9b590b643753dc069cd437854b1dffbc13a83ab3f2eb8f"
+    },
+    {
+      "key": "power_high",
+      "issue": 164,
+      "version": 3,
+      "source_head": "dc8ee8118d24ffb1c97aa0f9622beddacac9c299",
+      "approval_sha256": "6858c855d47090dd8d65549485a66bb6d6a4fda2ada9f479af6904da6a66f129"
+    },
+    {
+      "key": "water_medium",
+      "issue": 165,
+      "version": 2,
+      "source_head": "a53beae57686dea49d2a64dc35bf4f8f1bc41e44",
+      "approval_sha256": "495187ed68a65aa75a630da1cd287844c3db759232b0845191a6fa425e1fc805"
+    },
+    {
+      "key": "water_high",
+      "issue": 166,
+      "version": 2,
+      "source_head": "80d197e2e6af15c5678a38b693abd25e446cb87f",
+      "approval_sha256": "c2dc99f6726dddc2ec93723c63e3fa0cb6c41af5b12bf6101c866fdb4a6dfead"
+    },
+    {
+      "key": "water_tower",
+      "issue": 167,
+      "version": 3,
+      "source_head": "474d623683174b9a96d3379f66491bb13a57ae3f",
+      "approval_sha256": "07e042e255661e7bf6cd048b45d5a14ff90582dcf9544030ffbfc920204196aa"
+    },
+    {
+      "key": "wind_turbine",
+      "issue": 168,
+      "version": 1,
+      "source_head": "13384e71672619d3410b2fa7fa8ec9ec57315e49",
+      "approval_sha256": "7c0ed83a2ff992e9a12d1c81c8a2fbe4f2fddc63e7cc62ea741f0bdbc8fda65b"
+    },
+    {
+      "key": "solar_farm",
+      "issue": 169,
+      "version": 3,
+      "source_head": "3bffe2e6e93f8916585ad038e8b7a57c7c9fb154",
+      "approval_sha256": "7d2d03d5103f7eea8bff210296d71325cdcd6e16f72d3698bbd01ebe37fdc230"
+    }
+  ],
+  "native_expected": {
+    "material_parents": 3,
+    "source_material_regions": 51,
+    "material_packages": 105,
+    "mesh_packages": 37,
+    "catalog_packages": 1,
+    "total_packages": 143,
+    "source_lods": 54,
+    "foundation_groups": 12,
+    "solar_physical_feet": 16,
+    "solar_excluded_contacts": 17
+  },
+  "wrappers": [
+    "Tools/Import-CityApprovedUtilityMaterials.py",
+    "Tools/Import-CityApprovedUtilityMeshes.py",
+    "Tools/Finalize-CityApprovedUtilityCatalog.py"
+  ],
+  "checks": [
+    "CitySim.Presentation.UtilityGroundCooked",
+    "CitySim.Terrain.UtilityGroundVariants",
+    "CitySim.Assets.RuntimeOrganization",
+    "CitySim.Dimensions.BoardPresentation"
+  ],
+  "offline_checks": {
+    "strict_original_preflight": "pass",
+    "three_template_51_graphs_705_PV_probes": "pass",
+    "solar_one_changed_record_16_feet_17_exclusions": "pass",
+    "scoped_Python_AST_and_diff": "pass"
+  },
+  "native_status": "Drone338 passed exact4b8d890;143 products retained after full hash/provenance/87LOD/5470surface-probe audit. Integrated runtime/windows/human acceptance pending.",
+  "runtime_scope": "Local uncompiled work in same isolated worktree; excluded from native preparation commit. Final integrated batch needs Editor/terrain/save/wind checks and Windows playtest.",
+  "old_save_limit": "Changed Power/Service/alternative utility footprints reject old reservations. Preserve player files; current-version new city save/load validation required.",
+  "material_limit": "Source concrete procedural noise/bump explicitly omitted initially; structural foundations reuse existing textured M_Concrete. Native lighting/normal/UV appearance unconfirmed.",
+  "deferred": [
+    "steep vehicle grades #197",
+    "headset rendering/input observations"
+  ],
+  "no_local_unreal": true,
+  "submission": {
+    "pr": 272,
+    "submitted": "24a3ddee2df655bc014afcbd9cfddaf159113169",
+    "drone": 337,
+    "status": "running; not a pass",
+    "url": "https://drone.shaun-husain.com/CitySimVR/citysim/337"
+  },
+  "development_failures": [
+    {
+      "build": 336,
+      "submitted": "2537ef8521806a564b4096accc31ce0fbb6570d7",
+      "status": "failed",
+      "editor_seconds": 146.05,
+      "cause": "Texture guard used SourceFile instead of actual UE5.7 AssetImportData tag",
+      "fix": "24a3ddee2df655bc014afcbd9cfddaf159113169",
+      "native_products_accepted": false
+    }
+  ],
+  "native_build_338": {
+    "head": "4b8d890ee38f244562feefe014f80cf312ba08c8",
+    "status": "passed",
+    "editor_seconds": 115.29,
+    "material_packages": 105,
+    "mesh_packages": 37,
+    "catalog_packages": 1,
+    "retained_packages": 143,
+    "native_lod_checks": 87,
+    "native_surface_probes": 5470,
+    "focused_checks": 4,
+    "url": "https://drone.shaun-husain.com/CitySimVR/citysim/338",
+    "runtime_acceptance": "pending integrated revision"
+  },
+  "frontage_rule": {
+    "user_direction": "2026-10-18",
+    "full_frontage_definitions": [
+      "CoalPower",
+      "OilPower",
+      "Power",
+      "Service",
+      "NuclearPower"
+    ],
+    "operation_requires_connected_frontage": true,
+    "partial_approach_fallback": false,
+    "current_saves_after_road_removal": "loadable and repairable",
+    "narrow_entrances": [
+      "WaterTower",
+      "WindPower",
+      "SolarPower"
+    ]
+  },
+  "next": "Publish integrated runtime,17 affected Editor checks and25 native visual cases, then Windows-only candidate and human review"
+}

@@ -1,0 +1,277 @@
+{
+  "windows": [
+    {
+      "pane": "Control_front_-6.9_1.65_pane",
+      "frame_parts": [
+        "Control_front_-6.9_1.65_jamb_-1",
+        "Control_front_-6.9_1.65_jamb_1",
+        "Control_front_-6.9_1.65_horizontal_-1",
+        "Control_front_-6.9_1.65_horizontal_1"
+      ],
+      "backing": "Worker_control_two_storey_block",
+      "axis": 1,
+      "sign": -1,
+      "wall_normal": [
+        0,
+        -1,
+        0
+      ]
+    },
+    {
+      "pane": "Control_front_-4.5_1.65_pane",
+      "frame_parts": [
+        "Control_front_-4.5_1.65_jamb_-1",
+        "Control_front_-4.5_1.65_jamb_1",
+        "Control_front_-4.5_1.65_horizontal_-1",
+        "Control_front_-4.5_1.65_horizontal_1"
+      ],
+      "backing": "Worker_control_two_storey_block",
+      "axis": 1,
+      "sign": -1,
+      "wall_normal": [
+        0,
+        -1,
+        0
+      ]
+    },
+    {
+      "pane": "Control_front_-6.9_4.65_pane",
+      "frame_parts": [
+        "Control_front_-6.9_4.65_jamb_-1",
+        "Control_front_-6.9_4.65_jamb_1",
+        "Control_front_-6.9_4.65_horizontal_-1",
+        "Control_front_-6.9_4.65_horizontal_1"
+      ],
+      "backing": "Worker_control_two_storey_block",
+      "axis": 1,
+      "sign": -1,
+      "wall_normal": [
+        0,
+        -1,
+        0
+      ]
+    },
+    {
+      "pane": "Control_front_-4.5_4.65_pane",
+      "frame_parts": [
+        "Control_front_-4.5_4.65_jamb_-1",
+        "Control_front_-4.5_4.65_jamb_1",
+        "Control_front_-4.5_4.65_horizontal_-1",
+        "Control_front_-4.5_4.65_horizontal_1"
+      ],
+      "backing": "Worker_control_two_storey_block",
+      "axis": 1,
+      "sign": -1,
+      "wall_normal": [
+        0,
+        -1,
+        0
+      ]
+    },
+    {
+      "pane": "Control_side_-8.9_1.65_pane",
+      "frame_parts": [
+        "Control_side_-8.9_1.65_jamb_-1",
+        "Control_side_-8.9_1.65_jamb_1",
+        "Control_side_-8.9_1.65_horizontal_-1",
+        "Control_side_-8.9_1.65_horizontal_1"
+      ],
+      "backing": "Worker_control_two_storey_block",
+      "axis": 0,
+      "sign": -1,
+      "wall_normal": [
+        -1,
+        0,
+        0
+      ]
+    },
+    {
+      "pane": "Control_side_-8.9_4.65_pane",
+      "frame_parts": [
+        "Control_side_-8.9_4.65_jamb_-1",
+        "Control_side_-8.9_4.65_jamb_1",
+        "Control_side_-8.9_4.65_horizontal_-1",
+        "Control_side_-8.9_4.65_horizontal_1"
+      ],
+      "backing": "Worker_control_two_storey_block",
+      "axis": 0,
+      "sign": -1,
+      "wall_normal": [
+        -1,
+        0,
+        0
+      ]
+    },
+    {
+      "pane": "Control_side_-6.5_1.65_pane",
+      "frame_parts": [
+        "Control_side_-6.5_1.65_jamb_-1",
+        "Control_side_-6.5_1.65_jamb_1",
+        "Control_side_-6.5_1.65_horizontal_-1",
+        "Control_side_-6.5_1.65_horizontal_1"
+      ],
+      "backing": "Worker_control_two_storey_block",
+      "axis": 0,
+      "sign": -1,
+      "wall_normal": [
+        -1,
+        0,
+        0
+      ]
+    },
+    {
+      "pane": "Control_side_-6.5_4.65_pane",
+      "frame_parts": [
+        "Control_side_-6.5_4.65_jamb_-1",
+        "Control_side_-6.5_4.65_jamb_1",
+        "Control_side_-6.5_4.65_horizontal_-1",
+        "Control_side_-6.5_4.65_horizontal_1"
+      ],
+      "backing": "Worker_control_two_storey_block",
+      "axis": 0,
+      "sign": -1,
+      "wall_normal": [
+        -1,
+        0,
+        0
+      ]
+    },
+    {
+      "pane": "Control_side_-4.52_1.65_pane",
+      "frame_parts": [
+        "Control_side_-4.52_1.65_jamb_-1",
+        "Control_side_-4.52_1.65_jamb_1",
+        "Control_side_-4.52_1.65_horizontal_-1",
+        "Control_side_-4.52_1.65_horizontal_1"
+      ],
+      "backing": "Worker_control_two_storey_block",
+      "axis": 0,
+      "sign": -1,
+      "wall_normal": [
+        -1,
+        0,
+        0
+      ]
+    },
+    {
+      "pane": "Control_side_-4.52_4.65_pane",
+      "frame_parts": [
+        "Control_side_-4.52_4.65_jamb_-1",
+        "Control_side_-4.52_4.65_jamb_1",
+        "Control_side_-4.52_4.65_horizontal_-1",
+        "Control_side_-4.52_4.65_horizontal_1"
+      ],
+      "backing": "Worker_control_two_storey_block",
+      "axis": 0,
+      "sign": -1,
+      "wall_normal": [
+        -1,
+        0,
+        0
+      ]
+    },
+    {
+      "pane": "Hall_window_2.8_pane",
+      "frame_parts": [
+        "Hall_window_2.8_jamb_-1",
+        "Hall_window_2.8_jamb_1",
+        "Hall_window_2.8_horizontal_-1",
+        "Hall_window_2.8_horizontal_1"
+      ],
+      "backing": "Filter_pump_hall",
+      "axis": 1,
+      "sign": -1,
+      "wall_normal": [
+        0,
+        -1,
+        0
+      ]
+    },
+    {
+      "pane": "Hall_window_4.5_pane",
+      "frame_parts": [
+        "Hall_window_4.5_jamb_-1",
+        "Hall_window_4.5_jamb_1",
+        "Hall_window_4.5_horizontal_-1",
+        "Hall_window_4.5_horizontal_1"
+      ],
+      "backing": "Filter_pump_hall",
+      "axis": 1,
+      "sign": -1,
+      "wall_normal": [
+        0,
+        -1,
+        0
+      ]
+    },
+    {
+      "pane": "Personnel_door_glass",
+      "frame_parts": [
+        "Personnel_glazing_rim_jamb_-1",
+        "Personnel_glazing_rim_jamb_1",
+        "Personnel_glazing_rim_horizontal_-1",
+        "Personnel_glazing_rim_horizontal_1"
+      ],
+      "backing": "Worker_control_two_storey_block",
+      "axis": 1,
+      "sign": -1,
+      "wall_normal": [
+        0,
+        -1,
+        0
+      ]
+    },
+    {
+      "pane": "Wing_window_12.7_pane",
+      "frame_parts": [
+        "Wing_window_12.7_jamb_-1",
+        "Wing_window_12.7_jamb_1",
+        "Wing_window_12.7_horizontal_-1",
+        "Wing_window_12.7_horizontal_1"
+      ],
+      "backing": "Attached_filter_service_wing",
+      "axis": 1,
+      "sign": -1,
+      "wall_normal": [
+        0,
+        -1,
+        0
+      ]
+    },
+    {
+      "pane": "Wing_window_14.5_pane",
+      "frame_parts": [
+        "Wing_window_14.5_jamb_-1",
+        "Wing_window_14.5_jamb_1",
+        "Wing_window_14.5_horizontal_-1",
+        "Wing_window_14.5_horizontal_1"
+      ],
+      "backing": "Attached_filter_service_wing",
+      "axis": 1,
+      "sign": -1,
+      "wall_normal": [
+        0,
+        -1,
+        0
+      ]
+    },
+    {
+      "pane": "Wing_window_16.3_pane",
+      "frame_parts": [
+        "Wing_window_16.3_jamb_-1",
+        "Wing_window_16.3_jamb_1",
+        "Wing_window_16.3_horizontal_-1",
+        "Wing_window_16.3_horizontal_1"
+      ],
+      "backing": "Attached_filter_service_wing",
+      "axis": 1,
+      "sign": -1,
+      "wall_normal": [
+        0,
+        -1,
+        0
+      ]
+    }
+  ],
+  "measured_contact_containment_pass": true
+}

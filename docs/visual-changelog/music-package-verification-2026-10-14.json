@@ -1,0 +1,89 @@
+{
+  "date": "2026-10-14",
+  "windowsExecutableSha256": "a8a9f36c221facc63c8db2724de08b7e0ab3af8b9a2a3447dced498eca4ec2b6",
+  "questApkSha256": "f40f426ebaa951967d510ff499aaaa7fdf1630d69e236efb9723c038ce088e15",
+  "tracks": [
+    {
+      "id": "Afterglow",
+      "windowsHeader": "e50862035c5e9bafa0beab455bb1d1d02b4fd0d9",
+      "windowsAudioBulk": "c9643a6c534306c27b40750fc93069ccfeaf311d",
+      "questHeader": "e50862035c5e9bafa0beab455bb1d1d02b4fd0d9",
+      "nativeSha256": "8e5a1287d8aeabdfba2454c307c730c238c8790f1b4460f963a0a3463598d44a",
+      "master": "Artifacts/D82/Soundtrack2/Work/Afterglow/Masters/Afterglow-Hybrid.wav",
+      "masterSha256": "e898a2f2c847bf8bcf4b0e8a1730f3376821735994ade48830812f972bff0763"
+    },
+    {
+      "id": "GlassCanal",
+      "windowsHeader": "284eb1a89127a27f212cbb4cc2505bc9d6e75d1c",
+      "windowsAudioBulk": "11b4d79fe0cf76b027da7af0adfe5500dd7de3c5",
+      "questHeader": "284eb1a89127a27f212cbb4cc2505bc9d6e75d1c",
+      "nativeSha256": "e5fab481350413ad66e10dc99a5e2c025342f5aa7dc4f7f3d93b7f03aa483e71",
+      "master": "Artifacts/D82/Soundtrack1/Work/GlassCanal/Masters/GlassCanal-Hybrid.wav",
+      "masterSha256": "c67aeb67a4678cc8a59be791c90e84586222b95e7a4c2cac4d26c4e4de9615ea"
+    },
+    {
+      "id": "NeonCourtyard",
+      "windowsHeader": "a1612ca715e6131043f3590d3d5e586f72d21eda",
+      "windowsAudioBulk": "9b2d1f649b744f49b1bbc614f1c6b4d9154c6669",
+      "questHeader": "a1612ca715e6131043f3590d3d5e586f72d21eda",
+      "nativeSha256": "e5e747abe7df18f64d9cecec4c7e0166ad780f177653c7a5c895101dce6763f7",
+      "master": "Artifacts/D82/Audition7/Masters/NeonCourtyard-Hybrid.wav",
+      "masterSha256": "16dbf4d228b670a858e01da88d0517b7ca566f26015cd8a1013f01b2a09f5333"
+    },
+    {
+      "id": "LanternWalk",
+      "windowsHeader": "2522b5ed75494b06b33fc49e85b9a86dcb1a1f1e",
+      "windowsAudioBulk": "3867137fb6bcc1e528f21051935a1879a2822dbb",
+      "questHeader": "2522b5ed75494b06b33fc49e85b9a86dcb1a1f1e",
+      "nativeSha256": "83625d4bf9d9522359ca4b839d9a620bb3831100fe4f332a9f0d9af3cc7afcf3",
+      "master": "Artifacts/D82/Soundtrack3/Work/LanternWalk/Masters/LanternWalk-Hybrid.wav",
+      "masterSha256": "fc950f2782dec1ad1cc657f56f9b85e7f463c86beef1d26b155bbb5a17e25b92"
+    },
+    {
+      "id": "NightTransit",
+      "windowsHeader": "65629b91ee5c23021f4951444a6a3e0dd6a6b902",
+      "windowsAudioBulk": "1fd7034546ac8c7800840919913aca3d6c779918",
+      "questHeader": "65629b91ee5c23021f4951444a6a3e0dd6a6b902",
+      "nativeSha256": "5ba1dc47d8d09d685e80445bdaa29a7a0ba48f3329af3c363df702c4089bd35c",
+      "master": "Artifacts/D82/Soundtrack1/Work/NightTransit/Masters/NightTransit-Hybrid.wav",
+      "masterSha256": "e15e9449e27eb8b23fba93f75a08929594fe9c7d74e97b638825cafb59cfe5dc"
+    },
+    {
+      "id": "RooftopRain",
+      "windowsHeader": "408316847de5ec207bb62408d618c143e1897cbf",
+      "windowsAudioBulk": "5a594394f6eed72192178584ff4db6a4a69f1b1e",
+      "questHeader": "408316847de5ec207bb62408d618c143e1897cbf",
+      "nativeSha256": "1768bf1862902adead14582c988b087d1007d01532976a1c0d3ac8b20e854e95",
+      "master": "Artifacts/D82/Soundtrack1/Work/RooftopRain/Masters/RooftopRain-Hybrid.wav",
+      "masterSha256": "b82310deae31dc1ee641409fe811d498067ad8c48315794bfce2b733c1b7031d"
+    },
+    {
+      "id": "PaperLanterns",
+      "windowsHeader": "02b617ab76b93936cf0602b4b4b069e523741afb",
+      "windowsAudioBulk": "e47063f25e220e357c0716c87d03d4115747f4f3",
+      "questHeader": "02b617ab76b93936cf0602b4b4b069e523741afb",
+      "nativeSha256": "b8a46feecc2e5f85af0cdaef01eac0055467358b95297d9a7ca33cb4692310f8",
+      "master": "Artifacts/D82/Soundtrack1/Work/PaperLanterns/Masters/PaperLanterns-Hybrid.wav",
+      "masterSha256": "b20836788c3d4f439f892d73b0c0132eb1479ea574fe1196471ea67e8db3856e"
+    },
+    {
+      "id": "TidalCircuit",
+      "windowsHeader": "e9026766a0b1b7179b4c4af08187f01b7c75aac6",
+      "windowsAudioBulk": "ca3f89a0af69e8ead1a20168ad2afc0c2b8754d6",
+      "questHeader": "e9026766a0b1b7179b4c4af08187f01b7c75aac6",
+      "nativeSha256": "df88bd2e6d060399bad43845a2ac00847ed024ec41c8693e1b0b6f4a8c2e496a",
+      "master": "Artifacts/D82/Soundtrack1/Work/TidalCircuit/Masters/TidalCircuit-Hybrid.wav",
+      "masterSha256": "a6c34aa39f4d19e5dc6cd7eb957076921e22c21143cb76a48e221e6803b4cf2b"
+    },
+    {
+      "id": "BlueHour",
+      "windowsHeader": "0e7cef1d4e6acef51409b8aeb982e8f932204b09",
+      "windowsAudioBulk": "ea7e9fe4806e95f76a6b4a0060f02792359eb545",
+      "questHeader": "0e7cef1d4e6acef51409b8aeb982e8f932204b09",
+      "nativeSha256": "8758cf3c0525e6cfcf0f10d889a245545dda623e8390625f5a6820db64b7fad2",
+      "master": "Artifacts/D82/Soundtrack1/Work/BlueHour/Masters/BlueHour-Hybrid.wav",
+      "masterSha256": "38083e18b180721c8e41a4ba7a7f4b84aa876a607d716e558057605d2520edc8"
+    }
+  ],
+  "scope": "Fresh maintained Windows container header and audio-bulk hashes match approved D82; latest Quest receipt headers and exact APK identity match. No new playback/device observation."
+}

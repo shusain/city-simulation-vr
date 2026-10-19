@@ -1,0 +1,315 @@
+{
+  "task": "Accepted B003/D107/D120/D123/D124/D125/D127 reconciliation",
+  "date": "2026-10-17",
+  "status": "User accepted integrated candidate113 on2026-10-17; PR112 normal merge closeout authorized",
+  "pr": "https://git.shaun-husain.com/CitySimVR/citysim/pulls/112",
+  "base": "ff72823b651ed9b7f92155fd452712a3f78a2aa1",
+  "runtimeCommit": "fa7443e4775f1e24b33d46e07570a316c38fccd1",
+  "acceptedLocalCommits": [
+    "4ad3908",
+    "dd5b802",
+    "f685b31",
+    "5f8bfd8",
+    "5dd807d"
+  ],
+  "gameRevision": "dev-38f1700e1710ea5e04c8",
+  "schema": 70,
+  "preservedMain": [
+    "D121 skeletal walk",
+    "D122 newspaper/storefronts and source assets",
+    "B007 Technology navigation",
+    "D128 context zoning",
+    "B001 menu/focus",
+    "current Drone/Quest/firewall workflow"
+  ],
+  "behavior": [
+    "bounded real-arrival shopping allocation and finite stock/cash holds",
+    "weekly essential baskets, starter grace, commute stops and optional comfort",
+    "concise home supplies and health charts",
+    "mild walk/drive clinic visits and home recovery; severe-only ambulances/beds",
+    "queued multi-lane exit response and64-cell waste/recycling coverage"
+  ],
+  "conflicts": "Accepted shopping/health/schema70 hunks retained; main skeletal-walk test/friend and all newer art retained. Only binary delta is accepted four-range catalog3487b81c. D107/D120 main foundations are not duplicated.",
+  "check": {
+    "build": 112,
+    "mode": "Check",
+    "status": "passed",
+    "submittedCommit": "fa7443e4775f1e24b33d46e07570a316c38fccd1",
+    "testedCommit": "fa7443e4775f1e24b33d46e07570a316c38fccd1",
+    "editorSeconds": 88.29,
+    "tests": [
+      "CitySim.Placement.Transactions",
+      "CitySim.Shopping.LocksQuotaRoutesAndArrival",
+      "CitySim.Shopping.MiddaySubsystemAndReportedCity",
+      "CitySim.Supplies.WeeklyBulkGraceAndReload",
+      "CitySim.Supplies.BeforeAndAfterWorkStops",
+      "CitySim.Supplies.OptionalComfortAndFiniteFunding",
+      "CitySim.Supplies.StartupAndActualStockoutIndicators",
+      "CitySim.Indicators.PurchaseCausesUseCurrentEvidence",
+      "CitySim.Outpatients.IndependentBedsAndVisitCapacity",
+      "CitySim.Outpatients.BlockedReturnAndDispensedMedicine",
+      "CitySim.Outpatients.CurrentCityTravelHomeAndReload",
+      "CitySim.HealthService.ReportedCityContinuation",
+      "CitySim.Waste.DoubledRangeBoundaryAndArrival",
+      "CitySim.Flow.SideBySideAndPassing",
+      "CitySim.Flow.OccupiedShopDeparture",
+      "CitySim.Flow.RollingYieldAndRejoin",
+      "CitySim.Flow.HighwayLaneYield",
+      "CitySim.Flow.ResponseAtQueuedMultiLaneExit",
+      "CitySim.Persistence.CurrentFormatAndPantryUpgrade",
+      "CitySim.Persistence.LiveCreationRevisionAndRejection",
+      "CitySim.Calendar.FullDayRoutine",
+      "CitySim.Calendar.DailySettlementAndPause",
+      "CitySim.Citizens.NativeWalk",
+      "CitySim.Technology.SharedNavigation",
+      "CitySim.Desktop.FocusRestoresEntryMenu",
+      "CitySim.Desktop.SharedContentAndActions",
+      "CitySim.Presentation.ContextualZoneVisibility"
+    ],
+    "output": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\CI\\Builds\\112-fa7443e4775f-Check-7b59df51",
+    "url": "https://drone.shaun-husain.com/CitySimVR/citysim/112",
+    "verifiedUtc": "2026-10-17T19:01:32.9961918Z"
+  },
+  "windows": {
+    "build": 113,
+    "mode": "WindowsCandidate",
+    "status": "passed",
+    "submittedCommit": "fa7443e4775f1e24b33d46e07570a316c38fccd1",
+    "testedCommit": "fa7443e4775f1e24b33d46e07570a316c38fccd1",
+    "editorSeconds": 90.26,
+    "tests": [
+      "CitySim.Placement.Transactions",
+      "CitySim.Shopping.LocksQuotaRoutesAndArrival",
+      "CitySim.Shopping.MiddaySubsystemAndReportedCity",
+      "CitySim.Supplies.WeeklyBulkGraceAndReload",
+      "CitySim.Supplies.BeforeAndAfterWorkStops",
+      "CitySim.Supplies.OptionalComfortAndFiniteFunding",
+      "CitySim.Supplies.StartupAndActualStockoutIndicators",
+      "CitySim.Indicators.PurchaseCausesUseCurrentEvidence",
+      "CitySim.Outpatients.IndependentBedsAndVisitCapacity",
+      "CitySim.Outpatients.BlockedReturnAndDispensedMedicine",
+      "CitySim.Outpatients.CurrentCityTravelHomeAndReload",
+      "CitySim.HealthService.ReportedCityContinuation",
+      "CitySim.Waste.DoubledRangeBoundaryAndArrival",
+      "CitySim.Flow.SideBySideAndPassing",
+      "CitySim.Flow.OccupiedShopDeparture",
+      "CitySim.Flow.RollingYieldAndRejoin",
+      "CitySim.Flow.HighwayLaneYield",
+      "CitySim.Flow.ResponseAtQueuedMultiLaneExit",
+      "CitySim.Persistence.CurrentFormatAndPantryUpgrade",
+      "CitySim.Persistence.LiveCreationRevisionAndRejection",
+      "CitySim.Calendar.FullDayRoutine",
+      "CitySim.Calendar.DailySettlementAndPause",
+      "CitySim.Citizens.NativeWalk",
+      "CitySim.Technology.SharedNavigation",
+      "CitySim.Desktop.FocusRestoresEntryMenu",
+      "CitySim.Desktop.SharedContentAndActions",
+      "CitySim.Presentation.ContextualZoneVisibility"
+    ],
+    "output": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\CI\\Builds\\113-fa7443e4775f-WindowsCandidate-e6113206",
+    "url": "https://drone.shaun-husain.com/CitySimVR/citysim/113",
+    "verifiedUtc": "2026-10-17T19:10:00.5065644Z",
+    "package": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\CI\\Builds\\113-fa7443e4775f-WindowsCandidate-e6113206\\CitySimVR-Windows.zip",
+    "packageSha256": "2a2e31cc9e1cc8e1f745e1efc0302515707254747badba215766ddd7e87d27a4",
+    "clientTests": [
+      "CitySim.Shopping.LocksQuotaRoutesAndArrival",
+      "CitySim.Shopping.MiddaySubsystemAndReportedCity",
+      "CitySim.Supplies.WeeklyBulkGraceAndReload",
+      "CitySim.Supplies.BeforeAndAfterWorkStops",
+      "CitySim.Supplies.OptionalComfortAndFiniteFunding",
+      "CitySim.Supplies.StartupAndActualStockoutIndicators",
+      "CitySim.Outpatients.IndependentBedsAndVisitCapacity",
+      "CitySim.Outpatients.BlockedReturnAndDispensedMedicine",
+      "CitySim.Outpatients.CurrentCityTravelHomeAndReload",
+      "CitySim.HealthService.ReportedCityContinuation",
+      "CitySim.Waste.DoubledRangeBoundaryAndArrival",
+      "CitySim.Flow.ResponseAtQueuedMultiLaneExit",
+      "CitySim.Desktop.HomeInspectionCharts",
+      "CitySim.Desktop.OutpatientHealthVisual",
+      "CitySim.Desktop.FocusRestoresEntryMenu",
+      "CitySim.Presentation.ContextualZoneVisibility",
+      "CitySim.Desktop.ContextualZoneVisibility"
+    ],
+    "visualReview": "passed",
+    "extracted": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\AcceptedGameplayReconciliation\\Extracted-Build113",
+    "executable": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\AcceptedGameplayReconciliation\\Extracted-Build113\\CitySimVR\\Binaries\\Win64\\CitySimVR.exe",
+    "runtimeFiles": 53,
+    "profile": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\AcceptedGameplayReconciliation\\Play-Build113-IsolatedProfile",
+    "fixtureSource": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\CI\\Builds\\113-fa7443e4775f-WindowsCandidate-e6113206\\Client-1280-HealthService\\City-0.json",
+    "fixtureCityName": "City 837230",
+    "fixtureSchema": 70,
+    "gameRevision": "dev-38f1700e1710ea5e04c8",
+    "visualCaptures": 37,
+    "visualNotes": [
+      "All18 home/health captures and12 zoning captures inspected in overview; representative1280 cash/hospital and1024 illness views inspected at full size.",
+      "Home supplies show four bars with only concise cash/stock blocker when exhausted; home health shows four bars without illness prose.",
+      "Hospital separates occupied beds, held beds and outpatient visits.",
+      "D128 all-zone visibility/hide/reload retained at both sizes.",
+      "Seven menu/focus/new-city/load/tax views inspected; physical input/headset acceptance is not claimed."
+    ]
+  },
+  "quest": {
+    "build": 113,
+    "mode": "QuestCandidate",
+    "status": "passed",
+    "submittedCommit": "fa7443e4775f1e24b33d46e07570a316c38fccd1",
+    "testedCommit": "fa7443e4775f1e24b33d46e07570a316c38fccd1",
+    "editorSeconds": 96.83,
+    "tests": [
+      "CitySim.Placement.Transactions",
+      "CitySim.Shopping.LocksQuotaRoutesAndArrival",
+      "CitySim.Shopping.MiddaySubsystemAndReportedCity",
+      "CitySim.Supplies.WeeklyBulkGraceAndReload",
+      "CitySim.Supplies.BeforeAndAfterWorkStops",
+      "CitySim.Supplies.OptionalComfortAndFiniteFunding",
+      "CitySim.Supplies.StartupAndActualStockoutIndicators",
+      "CitySim.Indicators.PurchaseCausesUseCurrentEvidence",
+      "CitySim.Outpatients.IndependentBedsAndVisitCapacity",
+      "CitySim.Outpatients.BlockedReturnAndDispensedMedicine",
+      "CitySim.Outpatients.CurrentCityTravelHomeAndReload",
+      "CitySim.HealthService.ReportedCityContinuation",
+      "CitySim.Waste.DoubledRangeBoundaryAndArrival",
+      "CitySim.Flow.SideBySideAndPassing",
+      "CitySim.Flow.OccupiedShopDeparture",
+      "CitySim.Flow.RollingYieldAndRejoin",
+      "CitySim.Flow.HighwayLaneYield",
+      "CitySim.Flow.ResponseAtQueuedMultiLaneExit",
+      "CitySim.Persistence.CurrentFormatAndPantryUpgrade",
+      "CitySim.Persistence.LiveCreationRevisionAndRejection",
+      "CitySim.Calendar.FullDayRoutine",
+      "CitySim.Calendar.DailySettlementAndPause",
+      "CitySim.Citizens.NativeWalk",
+      "CitySim.Technology.SharedNavigation",
+      "CitySim.Desktop.FocusRestoresEntryMenu",
+      "CitySim.Desktop.SharedContentAndActions",
+      "CitySim.Presentation.ContextualZoneVisibility"
+    ],
+    "output": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\CI\\Builds\\113-fa7443e4775f-QuestCandidate-162c416c",
+    "url": "https://drone.shaun-husain.com/CitySimVR/citysim/113",
+    "verifiedUtc": "2026-10-17T19:14:27.4816361Z",
+    "apk": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\CI\\Builds\\113-fa7443e4775f-QuestCandidate-162c416c\\QuestCandidate\\Android_ASTC\\CitySimVR-arm64.apk",
+    "apkSha256": "ae05667218afb4d1ce39d52c06b060e3126404cb6a6f2e47a2f369873a2216c2",
+    "quest": {
+      "status": "passed",
+      "apkSha256": "ae05667218afb4d1ce39d52c06b060e3126404cb6a6f2e47a2f369873a2216c2",
+      "package": "com.shaun.citysimvr.smoketest",
+      "abi": "arm64-v8a",
+      "minSdk": 32,
+      "targetSdk": 35,
+      "signed": true,
+      "signerSha256": "fb8ac4ce5f1998deb6bf2c1a61b303bef91e0b69750f5cdfd9df77d1773a5352",
+      "stagedPayloads": [
+        {
+          "name": "CitySimVR-Android_ASTC.pak",
+          "bytes": 10482593,
+          "sha256": "1bf41706d2fed2285c6a60a5e49df4f378c133775b9743f43f7470e565c29b2d"
+        },
+        {
+          "name": "CitySimVR-Android_ASTC.ucas",
+          "bytes": 105751376,
+          "sha256": "899995621daed3e094effe9c4d71cd681a5ab8a6b4465de1acf97bef86880a78"
+        },
+        {
+          "name": "CitySimVR-Android_ASTC.utoc",
+          "bytes": 252165,
+          "sha256": "140119fb0b0178b1dac43add2211e1b8c74ac73bf09d01415d89050e55bce392"
+        },
+        {
+          "name": "global.ucas",
+          "bytes": 2804800,
+          "sha256": "8b00d3abf4b227fe1f29460d0797a6d71917a8e36c89edf3be47a8955c49add5"
+        },
+        {
+          "name": "global.utoc",
+          "bytes": 710,
+          "sha256": "942f97a65e4b89ec4307d2fc9d11c82e34f9bc8e45c608fef4ddb1b59f218962"
+        }
+      ],
+      "headset": "unconfirmed-not-installed",
+      "verifiedUtc": "2026-10-17T19:13:48.163064Z"
+    },
+    "headset": "unconfirmed-not-installed"
+  },
+  "questNativeRevision": {
+    "status": "passed",
+    "revision": "dev-38f1700e1710ea5e04c8",
+    "member": "lib/arm64-v8a/libUnreal.so",
+    "nativeBytes": 222670936,
+    "foundEncoding": [
+      "utf-16-le"
+    ],
+    "scannedBytes": 4194304,
+    "apkSha256": "ae05667218afb4d1ce39d52c06b060e3126404cb6a6f2e47a2f369873a2216c2"
+  },
+  "extractedStartup": {
+    "status": "passed",
+    "log": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\AcceptedGameplayReconciliation\\ExtractedStartup.log",
+    "executable": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\AcceptedGameplayReconciliation\\Extracted-Build113\\CitySimVR\\Binaries\\Win64\\CitySimVR.exe",
+    "exitCode": 0,
+    "visualReview": "passed",
+    "capture": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\AcceptedGameplayReconciliation\\ExtractedStartup-D68-Automation\\Saved\\Automation\\Desktop\\Entry.png",
+    "captureSha256": "5656b43ab93034e547eef8ef3b8390a301d9da68ae890d9f5cff415bb6aa48ac"
+  },
+  "fixtures": [
+    {
+      "name": "shopping",
+      "path": "Artifacts/B003/D107Followup/ReportedCity.json",
+      "sha256": "72c2d4a0909a23135251a25953c8f1203eb297adadc39ac2126e46753481b64f"
+    },
+    {
+      "name": "health",
+      "path": "Artifacts/D127/ReportedCity.json",
+      "sha256": "276727c3a77e63654c7fc0e1fa67bed1e8214980e38ee37724049a45d1e77e27"
+    }
+  ],
+  "preservation": {
+    "primaryHead": "5dd807d175e0507e23657cc3883568272ced6641",
+    "protectedFiles": 1377,
+    "allMatch": true,
+    "bothCapturedOriginalsMatch": true,
+    "maintainedPackageChanged": false,
+    "playerFilesChanged": false
+  },
+  "iterations": [
+    {
+      "build": 107,
+      "status": "failed before Unreal",
+      "cause": "PS5 array enumeration in new fixture loader; fixed and PS5 hashes verified"
+    },
+    {
+      "build": 108,
+      "status": "passed27 cases; preceding same gameplay"
+    },
+    {
+      "build": 109,
+      "status": "passed27 cases; preceding same gameplay"
+    },
+    {
+      "build": 110,
+      "status": "canceled, never delivered",
+      "cause": "old chart fixture inherited zoning mode; only owned job/client canceled, Quest skipped"
+    },
+    {
+      "build": 111,
+      "status": "compile failed",
+      "cause": "private test helper call; replaced with public board API"
+    },
+    {
+      "build": 112,
+      "status": "passed Editor88.29s/27 exact cases"
+    },
+    {
+      "build": 113,
+      "status": "both candidate stages passed"
+    }
+  ],
+  "remaining": [
+    "physical PCVR/Quest input/rendering/comfort under D114",
+    "historical obsolete hospital fixture upkeep and broad balance remain deferred"
+  ],
+  "localUnrealBuilds": 0,
+  "deviceInstalled": false,
+  "publicRelease": false,
+  "next": "Normal expected-head PR112 merge/check readback on PR and live queue; no further implementation or integrated playtest required. D114 device coverage stays separate.",
+  "acceptance": "accepted-gameplay-acceptance.json"
+}

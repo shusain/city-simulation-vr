@@ -1,0 +1,105 @@
+{
+  "issue": 125,
+  "integration_issue": 192,
+  "phase": "bootstrap",
+  "build": 331,
+  "submitted": "2077f5fd46436665e8114b49225824172ccef848",
+  "tested": "780ef1e6757c84a4c05ac6d761b3eb792623e08d",
+  "url": "https://drone.shaun-husain.com/CitySimVR/citysim/331",
+  "status": "native preparation and seven checks verified; overall job failed optional visual manifest",
+  "files": [
+    {
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/Nuclear/SM_NuclearFacility_v6.uasset",
+      "sha256": "3dc4fe1fcf777ca884a60be07b2575d21c6a044661b5fb115d7a8a2ef7b8c619",
+      "bytes": 246923
+    },
+    {
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/Nuclear/Materials/MI_Nuclear_BuildingFacade.uasset",
+      "sha256": "0fa70340f9ae42fad2e7430c30692cb7ac63f4e70aa9738356cf767415f40379",
+      "bytes": 4477
+    },
+    {
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/Nuclear/Materials/MI_Nuclear_Concrete.uasset",
+      "sha256": "42bf87eb3e8a2c05cec8dc6dd92ec99b7531132ec665217f42ca85a0b4b6cee9",
+      "bytes": 4447
+    },
+    {
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/Nuclear/Materials/MI_Nuclear_RoofService.uasset",
+      "sha256": "6179ee4f134495bee5259f79677b834c55d0e80da6e857bea3769547a69c3ab8",
+      "bytes": 5651
+    },
+    {
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/Nuclear/Materials/MI_Nuclear_EquipmentMetal.uasset",
+      "sha256": "df4192b9438492f9408f9bd858b48e89db91f30b32783a400ff73c6f297da1c7",
+      "bytes": 5678
+    },
+    {
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/Nuclear/Materials/MI_Nuclear_WindowAccent.uasset",
+      "sha256": "de4ae100fb801da545a8c582dac0eb4d7c62f6d81ba4a65906e050bde3165d2a",
+      "bytes": 4467
+    },
+    {
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/Nuclear/Materials/M_UtilitySolid.uasset",
+      "sha256": "d0139d156ce1cbe620329ca28b5ae85063c2f3c4e5ab47a71a26353743a2cfb2",
+      "bytes": 6297
+    },
+    {
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/Nuclear/Materials/M_UtilityPBR.uasset",
+      "sha256": "6234538012854720e61b70abfbc49805ba393edbc604f4e128c766b2bcc81f09",
+      "bytes": 12760
+    },
+    {
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/Nuclear/SM_NuclearFacility_v6_Damaged.uasset",
+      "sha256": "bf08012f0488da5bebb80f95a3a303ea8642272db415f024a9911ba4d7f20ad3",
+      "bytes": 247115
+    },
+    {
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/Nuclear/Materials/MI_Nuclear_BuildingFacade_Damaged.uasset",
+      "sha256": "92b5bcbfb68ddbd1a5dd23ee33e2082156998c8770f735f8c14ab9e360c6928f",
+      "bytes": 4517
+    },
+    {
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/Nuclear/Materials/MI_Nuclear_Concrete_Damaged.uasset",
+      "sha256": "b97e163d89079b65e43d3d7ae12c43a22f6867e2016abccc0051b363ab57e788",
+      "bytes": 4487
+    },
+    {
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/Nuclear/Materials/MI_Nuclear_RoofService_Damaged.uasset",
+      "sha256": "e0c417562cb9b01353dc564ce2f731820a3141022338659c36123cd4396e74f9",
+      "bytes": 6169
+    },
+    {
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/Nuclear/Materials/MI_Nuclear_EquipmentMetal_Damaged.uasset",
+      "sha256": "8e45c372ed7d4f8839fc6d8b57ebe78f686078f5221fa69a83a22ba06d547318",
+      "bytes": 6196
+    },
+    {
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/Nuclear/Materials/MI_Nuclear_WindowAccent_Damaged.uasset",
+      "sha256": "ff7c117df749e2396704f24e58231006d0763cc53bf0a00b72b60ea20bdf8681",
+      "bytes": 4507
+    },
+    {
+      "file": "CitySimVR/Content/CitySim/Data/DA_CityBuildingCatalog.uasset",
+      "sha256": "a38602392458be768424b120fe57330576bf203cb3d1265da43662e874f04ca5",
+      "bytes": 74237
+    }
+  ],
+  "job_status": "failed",
+  "job_error": "EditorVisualTests.txt must contain unique exact test paths.",
+  "native_preparation_status": "passed",
+  "source_approval_sha256": "db7dd8baf2c4844f95bf850b6d9b8114e187f764dfd0d394f106646a40e3f0b5",
+  "lod_triangles": [
+    4616,
+    3592,
+    2240
+  ],
+  "bindings": {
+    "BuildingFacade": "/Game/CitySim/Art/Utilities/Nuclear/Materials/MI_Nuclear_BuildingFacade",
+    "Concrete": "/Game/CitySim/Art/Utilities/Nuclear/Materials/MI_Nuclear_Concrete",
+    "RoofService": "/Game/CitySim/Art/Utilities/Nuclear/Materials/MI_Nuclear_RoofService",
+    "EquipmentMetal": "/Game/CitySim/Art/Utilities/Nuclear/Materials/MI_Nuclear_EquipmentMetal",
+    "WindowAccent": "/Game/CitySim/Art/Utilities/Nuclear/Materials/MI_Nuclear_WindowAccent"
+  },
+  "original_receipt": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\CI\\Builds\\331-780ef1e6757c-Check-492f91ef\\AssetPreparationReceipts\\NuclearFacility.json",
+  "headset_appearance": "unconfirmed"
+}

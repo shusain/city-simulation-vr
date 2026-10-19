@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "kind": "blender",
+  "repository": "CitySimVR/citysim",
+  "asset_issue": 167,
+  "approved_version": 3,
+  "approval_manifest": "approval.json",
+  "approval_sha256": "07e042e255661e7bf6cd048b45d5a14ff90582dcf9544030ffbfc920204196aa",
+  "source_context_sha": "1fbe7d830aab87b750dab716d5ff17ea9cba22b0",
+  "artifacts": [
+    {
+      "name": "asset.blend",
+      "bytes": 592476,
+      "sha256": "93b5922f96fbc512f905b76421a761885d344de4537143fa436fba29e658511b"
+    },
+    {
+      "name": "asset.fbx",
+      "bytes": 91740,
+      "sha256": "441d8fdcd3876a89128f761d580561eb212e73a1a2550deb02761ca5621a7031"
+    },
+    {
+      "name": "entrance-anchors.json",
+      "bytes": 853,
+      "sha256": "cdb827dd2f514916800d55d89238af792d7dec9e0c52c4960eabf0cf98c05844"
+    },
+    {
+      "name": "landmark-contract.json",
+      "bytes": 56994,
+      "sha256": "1af1b60c584c5bbfe815a5fc000e024e20abde56647eabd9a336bca05a940ddd"
+    },
+    {
+      "name": "material-manifest.json",
+      "bytes": 1612,
+      "sha256": "3b803eba168564a7a788e295c0b2dc65e463cbc5adac47a05d6badda625d58bd"
+    },
+    {
+      "name": "preview.png",
+      "bytes": 277666,
+      "sha256": "530bc5111d5f62ff2dcabd211d5eaac43502996c1d5f72d12b6e71464b4fd825"
+    },
+    {
+      "name": "textures/CityMechanical_BaseColor.png",
+      "bytes": 151204,
+      "sha256": "ea75f9ab4911ad7ecf6a5e0ff5688fdc2c07ed52c3cad007ac58e8d06fe4e5ae"
+    },
+    {
+      "name": "textures/CityMechanical_Normal.png",
+      "bytes": 131466,
+      "sha256": "7a456d3f708d3ee42a7dfb830ac87f95ce27aeeea0e56ac444daca5da510231e"
+    },
+    {
+      "name": "textures/CityMechanical_ORM.png",
+      "bytes": 150038,
+      "sha256": "0e08a253e6c30a15e3675921cab4958c0cdcf088f23f05b5fcc1eb3f87dbec98"
+    },
+    {
+      "name": "validation.json",
+      "bytes": 52385,
+      "sha256": "c7ac59f062fbac3b3b147051b688fd03811dd81ad2c8bc0db4809c155a5ea495"
+    },
+    {
+      "name": "source-bundle.zip",
+      "bytes": 1393743,
+      "sha256": "feab02dba816ea03de525a2469db82f978c6dbcc78ee8e0f6d9c5b5de3394a8a"
+    },
+    {
+      "name": "approval.json",
+      "bytes": 2453,
+      "sha256": "07e042e255661e7bf6cd048b45d5a14ff90582dcf9544030ffbfc920204196aa"
+    }
+  ],
+  "unreal": {
+    "status": "not_imported",
+    "destination": "choose in the separate integration issue",
+    "role": "Blender source and exports; validate importer contract"
+  }
+}

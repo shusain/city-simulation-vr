@@ -1,0 +1,24 @@
+{
+  "issue": 150,
+  "pullRequest": 152,
+  "approvedHead": "3434f5761b841b34a92d6febeaa0189915b0b1ec",
+  "mergeCommit": "2f300bc8996ba41e672ea5356893c563ed3bd9d7",
+  "approvedAndMergedTree": "ddd04f748f5d4a3840d6649517e43bc07ef98b87",
+  "merged": true,
+  "userApproved": true,
+  "reviewedValidation": {
+    "droneBuild": 179,
+    "status": "success",
+    "offlineChecks": 31,
+    "pythonCases": 27,
+    "editorSeconds": 144.84,
+    "exactNativeCases": 5
+  },
+  "mergedMainValidation": {
+    "droneBuild": 183,
+    "status": "pending"
+  },
+  "nativeCaptureRerun": false,
+  "packageRerun": false,
+  "remainingIssueScope": true
+}

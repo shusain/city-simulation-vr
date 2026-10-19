@@ -1,0 +1,39 @@
+{
+  "bays": [
+    {
+      "id": "bay01",
+      "target": "Bay01_closed_sectional_leaf",
+      "xyz_m": [
+        -1,
+        -5.2,
+        0
+      ],
+      "outward": [
+        0,
+        -1,
+        0
+      ],
+      "width_m": 4.5,
+      "height_m": 3.65,
+      "boundary_connector": {
+        "xyz_m": [
+          -1,
+          -16,
+          0
+        ]
+      },
+      "reserved_free_corridor": {
+        "min": [
+          -3.25,
+          -16,
+          0
+        ],
+        "max": [
+          1.25,
+          -5.2,
+          3.6
+        ]
+      }
+    }
+  ]
+}

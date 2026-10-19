@@ -1,0 +1,15 @@
+{
+  "task": "D125",
+  "date": "2026-10-15",
+  "status": "Complete; explicitly user-accepted.",
+  "revision": "dev-1dec2c0ba4c9bf250bf9",
+  "schema": 70,
+  "quote": "Okay I tested D125 and the health travel and outpatient treatment changes look good. Please mark it complete and commit those changes.",
+  "acceptedSourceMatchesDelivery": true,
+  "delivery": "docs/evidence/D125-health-outpatients.json",
+  "commitScope": "docs/evidence/D125-commit-scope.json",
+  "scope": "Local D125 source and scoped records only. Accepted source unchanged; existing walk/assets, CI work and unrelated changes preserved. No push/PR/merge/release/device install.",
+  "checks": "Existing warnings-as-errors Editor,21 focused Editor/nine packaged cases,15 charts/startup and signed Quest evidence retained. No rebuild for acceptance/commit-only closeout.",
+  "physicalHeadsetObservations": "Remain unconfirmed under D114; the user did not identify a physical device/runtime.",
+  "next": "No required D125 work remains. D126 owns the separate native build window; B007 remains queued after refreshed guards."
+}

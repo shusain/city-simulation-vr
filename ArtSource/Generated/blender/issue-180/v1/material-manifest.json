@@ -1,0 +1,159 @@
+{
+  "regions": [
+    "CivicBrick",
+    "LightStone",
+    "RoofMembrane",
+    "EquipmentMetal",
+    "WindowGlass",
+    "ServiceAccent"
+  ],
+  "textures": [
+    {
+      "path": "textures/CityBrick_BaseColor.png",
+      "sha256": "e4c1ad7446563e3209191ca862fc4c3e065c491debd989765bc843405a5fbbfe",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "colorspace": "sRGB"
+    },
+    {
+      "path": "textures/CityBrick_Normal.png",
+      "sha256": "cf71dc7902b7c3a99d9fd1e966760af9a7b428de42b22ade5fb810965866d2cc",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "colorspace": "Non-Color"
+    },
+    {
+      "path": "textures/CityBrick_ORM.png",
+      "sha256": "39f2f1df859b4052afe98dcb632054398957455d58b205b13702210467a0c6e8",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "colorspace": "Non-Color"
+    },
+    {
+      "path": "textures/CityMechanical_BaseColor.png",
+      "sha256": "ea75f9ab4911ad7ecf6a5e0ff5688fdc2c07ed52c3cad007ac58e8d06fe4e5ae",
+      "dimensions": [
+        512,
+        512
+      ],
+      "colorspace": "sRGB"
+    },
+    {
+      "path": "textures/CityMechanical_Normal.png",
+      "sha256": "7a456d3f708d3ee42a7dfb830ac87f95ce27aeeea0e56ac444daca5da510231e",
+      "dimensions": [
+        512,
+        512
+      ],
+      "colorspace": "Non-Color"
+    },
+    {
+      "path": "textures/CityMechanical_ORM.png",
+      "sha256": "0e08a253e6c30a15e3675921cab4958c0cdcf088f23f05b5fcc1eb3f87dbec98",
+      "dimensions": [
+        512,
+        512
+      ],
+      "colorspace": "Non-Color"
+    },
+    {
+      "path": "textures/RoofMembrane_BaseColor.png",
+      "sha256": "e70b663d843cb50ab4479ac5e582173464e05f510f60ce2b986837259981a587",
+      "dimensions": [
+        512,
+        512
+      ],
+      "colorspace": "sRGB"
+    },
+    {
+      "path": "textures/RoofMembrane_Normal.png",
+      "sha256": "0b29f7ad8fe50e859386b08d541ea37294c825d2c3a73210d3c3b15764bc19ce",
+      "dimensions": [
+        512,
+        512
+      ],
+      "colorspace": "Non-Color"
+    },
+    {
+      "path": "textures/RoofMembrane_ORM.png",
+      "sha256": "a7ade624eb4477684f7101dd6b5c0fbe80b595c1b357ebf35715dfa91e54ec63",
+      "dimensions": [
+        512,
+        512
+      ],
+      "colorspace": "Non-Color"
+    }
+  ],
+  "constants": {
+    "CivicBrick": [
+      0.48,
+      0.22,
+      0.14,
+      1
+    ],
+    "LightStone": [
+      0.74,
+      0.69,
+      0.55,
+      1
+    ],
+    "RoofMembrane": [
+      0.12,
+      0.15,
+      0.18,
+      1
+    ],
+    "EquipmentMetal": [
+      0.26,
+      0.29,
+      0.3,
+      1
+    ],
+    "WindowGlass": [
+      0.12,
+      0.23,
+      0.3,
+      1
+    ],
+    "ServiceAccent": [
+      0.48,
+      0.045,
+      0.035,
+      1
+    ]
+  },
+  "tints": {
+    "CivicBrick": [
+      0.62,
+      0.32,
+      0.21,
+      1
+    ],
+    "EquipmentMetal": [
+      0.48,
+      0.5,
+      0.52,
+      1
+    ],
+    "RoofMembrane": [
+      0.14,
+      0.18,
+      0.23,
+      1
+    ]
+  },
+  "channels": {
+    "R": "AO multiplied before tint",
+    "G": "roughness",
+    "B": "metallic"
+  },
+  "normal_strength": 0.25,
+  "uv_recipe": "UV0 planar per face, metres divided by 2; repeat",
+  "glass": "opaque bluegrey, transmission 0"
+}

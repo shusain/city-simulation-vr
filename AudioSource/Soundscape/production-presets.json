@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "task": "D58",
+  "sampleRate": 48000,
+  "loopTargetLUFS": -24.0,
+  "truePeakCeilingDBTP": -6.0,
+  "seamBlendMilliseconds": 20,
+  "transitionBlendMilliseconds": 40,
+  "voices": [
+    {"id": "Police", "presetFile": "presets.json", "candidate": "Police-A", "introSeconds": 0.8, "loopSeconds": 4, "outroSeconds": 0.8, "previewLoops": 4},
+    {"id": "Fire", "presetFile": "presets.json", "candidate": "Fire-A", "introSeconds": 2, "loopSeconds": 50, "outroSeconds": 2, "previewLoops": 2},
+    {"id": "Ambulance", "presetFile": "presets.json", "candidate": "Ambulance-A", "introSeconds": 1, "loopSeconds": 2, "outroSeconds": 1, "previewLoops": 5},
+    {"id": "Town", "presetFile": "town-pitch-presets.json", "candidate": "Town-G", "introSeconds": 4, "loopSeconds": 20, "outroSeconds": 5, "previewLoops": 2}
+  ],
+  "accents": [
+    {"id": "Police-Alternate", "presetFile": "presets.json", "candidate": "Police-B", "durationSeconds": 1.5, "attackSeconds": 0.035, "releaseSeconds": 0.12, "targetLUFS": -24.0},
+    {"id": "Fire-Horn", "durationSeconds": 0.55, "attackSeconds": 0.03, "releaseSeconds": 0.10, "targetLUFS": -24.0,
+      "parameters": {"centerHz": 165, "depthHz": 0, "sweepHz": 0.5, "shape": 0, "second": 0.4, "third": 0.2, "fifth": 0, "cutoffHz": 3500}}
+  ],
+  "runtimeContract": {
+    "status": "Authoring/export contract only; no Unreal implementation or device acceptance yet",
+    "timing": "Audio uses wall-clock seconds, independent of 1x/3x/5x simulation speed",
+    "phases": "Intro once, whole-file loop while currently eligible. Town normal warning end may use its coast-down outro. Vehicle outro can be scheduled only while response remains active; arrival/inactive eligibility loss cancels within 100 ms instead of lingering through a long ending. Blend phase changes over 40 ms with complementary linear gains.",
+    "interruption": "Mute, pause, menu, city switch/load, suspend or destruction cancel eligibility and fade active components within 100 ms. Do not play the long town coast-down on interrupted or stale events. Restoring an eligible existing response/warning fades directly into Loop without replaying Intro or an onset notification.",
+    "town": "One city warning voice. Start/stop from actual current warning eligibility; preserve D57 once-per-event guards when replacing its presentation. Normal warning end can coast down; interruption stops promptly.",
+    "vehicles": "Only actively responding crews. Parked/inactive crews stay silent. Use a bounded pooled set of city-relative spatial components; no ticking audio actor per vehicle/building/citizen.",
+    "voiceBudget": {"vehiclePrimaries": 6, "townPrimary": 1, "accents": 2, "steadyTotal": 9, "hardTotalIncludingPhaseTransitions": 16},
+    "accentEligibility": "Only relevant passing/traffic/proximity encounters during actual response. Randomize eligible encounters with cooldown and no immediate retrigger. No free-running random sirens.",
+    "accentCooldownSeconds": {"Police": 6, "Fire": 8},
+    "accentMix": "Police alternate replaces/crossfades the current police cadence rather than layering two full sirens. Fire horn may overlay with primary gain reduced to 0.5 during the accent, with 40 ms attack and 150 ms recovery. Global accent voices capped at two.",
+    "spatial": "Dry mono source assets. Game owns location, attenuation, board transforms, listener/focus and mixing. Do not bake Doppler/reverb/distance into exports.",
+    "controls": "Apply saved effects volume/mute after source gain and phase/duck envelopes. Ambience/music mixing is separate future scope.",
+    "integrationChecks": "Import PCM16 runtime copies; verify exact duration/rate/mono, whole-wave loops, phase switching and cancellation in Unreal. Test active/inactive crews, eligibility/cooldown, 1x/3x/5x, load/switch/menu/pause/suspend, saved controls, dense simultaneous responses and Desktop/PCVR/Quest localization/fatigue/cost."
+  }
+}

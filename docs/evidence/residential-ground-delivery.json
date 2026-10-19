@@ -1,0 +1,206 @@
+{
+  "build": 225,
+  "mode": "WindowsCandidate",
+  "status": "ready for Windows playtest",
+  "submittedCommit": "8b854509bcf7f3b731d9142e2c32a491ab019c7f",
+  "testedCommit": "8b854509bcf7f3b731d9142e2c32a491ab019c7f",
+  "output": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\CI\\Builds\\225-8b854509bcf7-WindowsCandidate-9bd0e698",
+  "url": "https://drone.shaun-husain.com/CitySimVR/citysim/225",
+  "gameRevision": "dev-a734b2209848f867c156",
+  "schema": 72,
+  "editorTests": [
+    "CitySim.Placement.Transactions",
+    "CitySim.Terrain.DeterminismAndFixtures",
+    "CitySim.Simulation.CitizenArrivalSchedules",
+    "CitySim.Art.ImportedKit",
+    "CitySim.Art.CivicLightEmission",
+    "CitySim.Art.StorefrontAssets",
+    "CitySim.Art.DamagedVariantsParticles",
+    "CitySim.Art.LowDensityVariants",
+    "CitySim.Presentation.LowDensityLifecycle",
+    "CitySim.Terrain.ResidentialGroundVariants",
+    "CitySim.Presentation.ResidentialGroundCooked",
+    "CitySim.Terrain.CompactHomeWalk",
+    "CitySim.Terrain.ResidentialFoundationFineSamplesAndEntrances",
+    "CitySim.Terrain.BuildingSupportMeasurements",
+    "CitySim.Presentation.SeasonalDecorationsHomePorchAndDoorWreaths",
+    "CitySim.Dimensions.BoardPresentation",
+    "CitySim.Roads.SampledGroundPaving"
+  ],
+  "editorSeconds": 141.93,
+  "nativeReviewBuild": 222,
+  "nativeCaptureCount": 24,
+  "nativeStructuralMeasurementCount": 108,
+  "nativeResidentialContractCount": 8,
+  "cookedPilotAssets": [
+    {
+      "file": "M_Concrete.uasset",
+      "folder": "HomeGroundPilot",
+      "bytes": 953,
+      "sha256": "e447d224b7ffd90841be129f0746216da1eca6058cf1467f59026ed7a1071e70"
+    },
+    {
+      "file": "M_Concrete.uexp",
+      "folder": "HomeGroundPilot",
+      "bytes": 20646,
+      "sha256": "112cb8215aa91782658c62ae0b8af5d87b4e52259f2db6d045eb13e3d0e63fbc"
+    },
+    {
+      "file": "SM_CompactHome_GroundPilot.uasset",
+      "folder": "HomeGroundPilot",
+      "bytes": 2213,
+      "sha256": "dae9bb0a65f23ca2663a28007d2726ec06fe84dadbcafa40557b9a4660c1676f"
+    },
+    {
+      "file": "SM_CompactHome_GroundPilot.uexp",
+      "folder": "HomeGroundPilot",
+      "bytes": 90398,
+      "sha256": "53b92054e250e02ce87c124b640f93de0952396b7078e1053b29b023d6002fc0"
+    },
+    {
+      "file": "T_Concrete.uasset",
+      "folder": "HomeGroundPilot",
+      "bytes": 1186,
+      "sha256": "5f12f6bc6690c2b1c2afb55dcd9cf81ee96aade5561fbbada6b3890c90524cce"
+    },
+    {
+      "file": "T_Concrete.ubulk",
+      "folder": "HomeGroundPilot",
+      "bytes": 172032,
+      "sha256": "13d077279f8e6f41e9d42eaf62f48fc8da8d05b34979eedea4a429e12a3114a2"
+    },
+    {
+      "file": "T_Concrete.uexp",
+      "folder": "HomeGroundPilot",
+      "bytes": 3026,
+      "sha256": "7d38765feceda5eef7c0d501f8d5c3760ed4b7ff5a088adbc9d48a176d95414c"
+    },
+    {
+      "file": "SM_ResidentialGround_Home_A_Damaged.uasset",
+      "folder": "ResidentialGround",
+      "bytes": 2075,
+      "sha256": "dffe4637ccbfe818f04b6ccbd2ae1931f82b9d7e64e59d1f9f3e4d9377cd344f"
+    },
+    {
+      "file": "SM_ResidentialGround_Home_A_Damaged.uexp",
+      "folder": "ResidentialGround",
+      "bytes": 85174,
+      "sha256": "d9805b86d43380584fd83e2d7d0c916880f9523eaa7237f0f846e141979881d1"
+    },
+    {
+      "file": "SM_ResidentialGround_Home_B.uasset",
+      "folder": "ResidentialGround",
+      "bytes": 2219,
+      "sha256": "b690f4b5e277d0cbb1d119529278b76d1b9ba05d5bcd70c04345c5b15d08687e"
+    },
+    {
+      "file": "SM_ResidentialGround_Home_B.uexp",
+      "folder": "ResidentialGround",
+      "bytes": 80928,
+      "sha256": "74bbf50a87a826724a26942823b6282640ecc465d6b60be2b4b5c7a9c5232f57"
+    },
+    {
+      "file": "SM_ResidentialGround_Home_B_Damaged.uasset",
+      "folder": "ResidentialGround",
+      "bytes": 2075,
+      "sha256": "90cb67e8bea3c108002fac4fa082cead024946cbf711a2e220c02177818fe858"
+    },
+    {
+      "file": "SM_ResidentialGround_Home_B_Damaged.uexp",
+      "folder": "ResidentialGround",
+      "bytes": 76508,
+      "sha256": "e811e85aba59489da809a12c812ece4aa92cab38dcbb64fae2a84c1dbab1907e"
+    },
+    {
+      "file": "SM_ResidentialGround_Home_C.uasset",
+      "folder": "ResidentialGround",
+      "bytes": 2225,
+      "sha256": "176102d51d7e299f985dfd37cef0626c39864797fa0c6f743135a466bf4d76f1"
+    },
+    {
+      "file": "SM_ResidentialGround_Home_C.uexp",
+      "folder": "ResidentialGround",
+      "bytes": 81056,
+      "sha256": "f02405730386aae26fc9c8a6aab23a8cbda7db8aa76d0473d700fe3e5b865f8b"
+    },
+    {
+      "file": "SM_ResidentialGround_Home_C_Damaged.uasset",
+      "folder": "ResidentialGround",
+      "bytes": 2075,
+      "sha256": "a535393acddbd0d06abebccdd2cfde0dd1495e542dfa3a6c6b8e6fb9fdf5c7cf"
+    },
+    {
+      "file": "SM_ResidentialGround_Home_C_Damaged.uexp",
+      "folder": "ResidentialGround",
+      "bytes": 76450,
+      "sha256": "f70dbba1531212c0f4d55ee133e73bf2a98b9455accccd9a1904a22f32aa4055"
+    },
+    {
+      "file": "SM_ResidentialGround_Home_D.uasset",
+      "folder": "ResidentialGround",
+      "bytes": 2227,
+      "sha256": "27bd16ef10dea6f565ec57f7b93bf58ad0c934a9d75545109d00deac8e8710d2"
+    },
+    {
+      "file": "SM_ResidentialGround_Home_D.uexp",
+      "folder": "ResidentialGround",
+      "bytes": 84912,
+      "sha256": "4af2b8386e9af9d03a42624d728b95ccebc7001d031e22d12b85534586aa71e6"
+    },
+    {
+      "file": "SM_ResidentialGround_Home_D_Damaged.uasset",
+      "folder": "ResidentialGround",
+      "bytes": 2075,
+      "sha256": "e0f135f509e369953f995313e37742284dfe8313fd7d0ce85248fc246ececce3"
+    },
+    {
+      "file": "SM_ResidentialGround_Home_D_Damaged.uexp",
+      "folder": "ResidentialGround",
+      "bytes": 80388,
+      "sha256": "a1f5be3575153c6414b23cdc3f47ec79d971a6c929f75eeef25bcccfe0fb1c7f"
+    },
+    {
+      "file": "SM_ResidentialGround_Home_Legacy_Damaged.uasset",
+      "folder": "ResidentialGround",
+      "bytes": 2063,
+      "sha256": "1f49fc5f36721ce0ee123dab4a75bcd5c96835eef306eebdcf2de05675679e11"
+    },
+    {
+      "file": "SM_ResidentialGround_Home_Legacy_Damaged.uexp",
+      "folder": "ResidentialGround",
+      "bytes": 85047,
+      "sha256": "02b6dcdf5b485d29916b78524af5c634ea442eb99dcdcd07c19f28c91bc896b9"
+    }
+  ],
+  "executable": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\ResidentialGround\\Extracted-Build225\\CitySimVR\\Binaries\\Win64\\CitySimVR.exe",
+  "extracted": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\ResidentialGround\\Extracted-Build225",
+  "profile": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\ResidentialGround\\Play-Build225-IsolatedProfile",
+  "runtimeFiles": 53,
+  "package": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\CI\\Builds\\225-8b854509bcf7-WindowsCandidate-9bd0e698\\CitySimVR-Windows.zip",
+  "packageSha256": "9ef23721ab88d6100ebc07e92d7aa161b39c90cea864b14cc4ce9aa4445b13f7",
+  "clientTests": [
+    "CitySim.Desktop.BeachScenery",
+    "CitySim.Desktop.FocusRestoresEntryMenu",
+    "CitySim.Presentation.ResidentialGroundCooked"
+  ],
+  "fixtureSource": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\ResidentialGround\\Native\\Residential-Hilly-Playtest.json",
+  "fixtureSha256": "c012e07a5e83b02b05af381dc780a5fe866069ad69818b8431d7545b4e29f01d",
+  "fixtureCopy": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\ResidentialGround\\Play-Build225-IsolatedProfile\\Saved\\SaveGames\\Cities\\00000000000000000000000000000170.json",
+  "manualLoading": "pending user observation",
+  "startupSmokeMarker": "CITYSIM_DESKTOP_PACKAGED_SMOKE_COMPLETE MenusOnly=1 SyntheticButtons=1 PhysicalInputPending=1",
+  "executedRuntimeFiles": 53,
+  "task": "D129/#125 low-rise residential ground treatment",
+  "launcher": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\ResidentialGround\\Play-Candidate.cmd",
+  "gallery": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\ResidentialGround\\Review.html",
+  "packagedCaptureCount": 27,
+  "packagedVisualReview": "inspected all27 menu/entry/viewport captures",
+  "nativeReceipt": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\ResidentialGround\\NativeReview.json",
+  "nativeReceiptSha256": "c515061a612a56c6968ce54c8ea1282bce378a2efac59cb01e857425ea5fdaff",
+  "humanAcceptance": "pending user Windows playtest",
+  "headset": "unconfirmed; no Quest candidate requested",
+  "preparedUtc": "2026-10-18T08:20:14.911196+00:00",
+  "next": "medium/high and construction residential fitting before commercial; then industrial/specialized; utilities deferred",
+  "nativeContacts": "https://git.shaun-husain.com/attachments/1ae29dbc-e8ce-4dd6-94aa-e9170d9fd11c",
+  "nativeOverviews": "https://git.shaun-husain.com/attachments/631df689-d13a-4cc1-a145-47e7c96b5bc2",
+  "nativeEvidence": "https://git.shaun-husain.com/attachments/a0627d01-8108-4357-a3ba-15725f76b6a2"
+}

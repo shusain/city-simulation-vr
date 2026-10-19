@@ -1,0 +1,153 @@
+{
+  "1": {
+    "class_type": "CheckpointLoaderSimple",
+    "inputs": {
+      "ckpt_name": "ace_step_v1_3.5b.safetensors"
+    }
+  },
+  "2": {
+    "class_type": "TextEncodeAceStepAudio",
+    "inputs": {
+      "clip": [
+        "1",
+        1
+      ],
+      "tags": "instrumental, solo soft digital keys, preserve the input melody and note timing, warm evolving stereo shimmer, subtle filtered echoes, spacious ambient electronic texture, no drums, no bass, no vocals",
+      "lyrics": "[instrumental]",
+      "lyrics_strength": 0
+    }
+  },
+  "3": {
+    "class_type": "ConditioningZeroOut",
+    "inputs": {
+      "conditioning": [
+        "2",
+        0
+      ]
+    }
+  },
+  "4": {
+    "class_type": "ModelSamplingSD3",
+    "inputs": {
+      "model": [
+        "1",
+        0
+      ],
+      "shift": 5
+    }
+  },
+  "5": {
+    "class_type": "LatentOperationTonemapReinhard",
+    "inputs": {
+      "multiplier": 1
+    }
+  },
+  "6": {
+    "class_type": "LatentApplyOperationCFG",
+    "inputs": {
+      "model": [
+        "4",
+        0
+      ],
+      "operation": [
+        "5",
+        0
+      ]
+    }
+  },
+  "7": {
+    "class_type": "VAEEncodeAudio",
+    "inputs": {
+      "audio": [
+        "12",
+        0
+      ],
+      "vae": [
+        "1",
+        2
+      ]
+    }
+  },
+  "8": {
+    "class_type": "KSampler",
+    "inputs": {
+      "model": [
+        "6",
+        0
+      ],
+      "positive": [
+        "2",
+        0
+      ],
+      "negative": [
+        "3",
+        0
+      ],
+      "latent_image": [
+        "7",
+        0
+      ],
+      "seed": 821016,
+      "steps": 27,
+      "cfg": 4,
+      "sampler_name": "euler",
+      "scheduler": "simple",
+      "denoise": 0.18
+    }
+  },
+  "9": {
+    "class_type": "VAEDecodeAudio",
+    "inputs": {
+      "samples": [
+        "8",
+        0
+      ],
+      "vae": [
+        "1",
+        2
+      ]
+    }
+  },
+  "10": {
+    "class_type": "SaveAudio",
+    "inputs": {
+      "audio": [
+        "9",
+        0
+      ],
+      "filename_prefix": "audio/D82-Neon-Full-A2A"
+    }
+  },
+  "11": {
+    "class_type": "AudioEqualizer3Band",
+    "inputs": {
+      "audio": [
+        "12",
+        0
+      ],
+      "low_gain_dB": -1,
+      "low_freq": 180,
+      "mid_gain_dB": -0.5,
+      "mid_freq": 1200,
+      "mid_q": 0.7,
+      "high_gain_dB": -3,
+      "high_freq": 3000
+    }
+  },
+  "12": {
+    "class_type": "LoadAudio",
+    "inputs": {
+      "audio": "d82-full/NeonCourtyard-Melody-Input.wav"
+    }
+  },
+  "13": {
+    "class_type": "SaveAudio",
+    "inputs": {
+      "audio": [
+        "11",
+        0
+      ],
+      "filename_prefix": "audio/D82-Neon-Full-EQ"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "stage": "BASE",
+  "asset": "building.service.a",
+  "capacity_reference_percent": 100,
+  "actual_counts": {
+    "clarifiers": 2,
+    "upright_process_vessels": 2,
+    "worker_control_blocks": 1,
+    "filter_pump_halls": 1
+  },
+  "source_triangles": 4848,
+  "semantic_regions": 5,
+  "family_reserved_site_m": [
+    48,
+    32
+  ],
+  "front_boundary_y_m": -16,
+  "source_planning_only": true,
+  "gameplay_changes": false,
+  "lod_plan": "Future only: preserve silhouettes, doors, pipes and process identity; reduce circular segments, tiny flanges, handles, louvers and rails. No VR measurement or additional LOD export."
+}

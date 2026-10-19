@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "kind": "comfy",
+  "repository": "CitySimVR/citysim",
+  "issue": 35,
+  "version": 1,
+  "by": "shaun",
+  "comment_id": 641,
+  "request_url": "https://git.shaun-husain.com/CitySimVR/citysim/issues/35#issuecomment-641",
+  "approved_at": "2026-10-16T18:17:36.642Z",
+  "job_id": "9c19b01e-d72b-442f-93c9-eb22aaae41a4",
+  "source_sha": "f482eff94e62fbc62692b8270dcfcdca5269d5cc",
+  "artifacts": [
+    {
+      "name": "asset.png",
+      "bytes": 877423,
+      "sha256": "16dc08a60b0cc729b2ae9161222c961026fd3cc7915ba521a3f0b69e62318144"
+    },
+    {
+      "name": "workflow.json",
+      "bytes": 2855,
+      "sha256": "4d256df54ef1513ace6d7500f6e7f4274f03b6b07de07da3d80371cfb7b8a16f"
+    },
+    {
+      "name": "provenance.json",
+      "bytes": 1131,
+      "sha256": "616cbd68e8dd97fc4b0fe37c9a7ed7b1461a6520d3fc9b75235f8982f53f1efa"
+    },
+    {
+      "name": "README.md",
+      "bytes": 378,
+      "sha256": "f68a82a9fe195e1dc55c2d49a6d1af61ef7f782014336ba35f5da0e5a15be3aa"
+    }
+  ],
+  "workflow": "generate_image_zimage",
+  "workflow_sha256": "da95e56ebb916d7dd762a209a7e9df07b30a9d521c2d41e3dfbbf5dca8a055f0",
+  "seed": 35,
+  "prompt": "A believable articulated industrial robot arm over a simple workbench with a human technician beside it, depicted in a black-ink woodcut style with restrained cross-hatching, bold readable silhouettes, warm ivory paper ground, and generous clear outer margins. Landscape composition contained within a square768px image, matching a classic serif city newspaper aesthetic. No text, logos, color ink, or photorealism—only a balanced depiction of ordinary industrial work with connected equipment and plausible human scale.",
+  "archive": {
+    "url": "https://git.shaun-husain.com/attachments/1f09a2fa-75ab-4490-a95c-55fe482a186a",
+    "sha256": "9daf72e7e0734f1182d5f245578ca753ec254ac777628b8e7d9a085012ad8989"
+  },
+  "review_url": "https://git.shaun-husain.com/CitySimVR/citysim/issues/35#issuecomment-468"
+}

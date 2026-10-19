@@ -1,0 +1,113 @@
+{
+  "regions": [
+    {
+      "region": "OpaqueFacade",
+      "material": "OpaqueFacade_SourceTexture_MetricRepair",
+      "original_source_material": "CivicBrick_Trim",
+      "source_graph_reused": true,
+      "uv": "UV0; explicit one repeat/metre; source mapping nodes bypassed for image coordinates",
+      "native_binding": "MI_CivicBrick school-family / MI_CivicAsphaltRoof",
+      "native_pending": "Original normal/ORM and color space hookup, tint and tangent basis require later native verification; shader graph is not FBX handoff.",
+      "images": [
+        "CityBrick_BaseColor.png.001",
+        "CityBrick_Normal.png.001",
+        "CityBrick_ORM.png.001"
+      ]
+    },
+    {
+      "region": "RoofService",
+      "material": "RoofService_SourceTexture_MetricRepair",
+      "original_source_material": "CivicAsphaltRoof",
+      "source_graph_reused": true,
+      "uv": "UV0; explicit one repeat/metre; source mapping nodes bypassed for image coordinates",
+      "native_binding": "MI_CivicBrick school-family / MI_CivicAsphaltRoof",
+      "native_pending": "Original normal/ORM and color space hookup, tint and tangent basis require later native verification; shader graph is not FBX handoff.",
+      "images": [
+        "CivicAsphalt_BaseColor.png.001",
+        "CivicAsphalt_Normal.png.001",
+        "CivicAsphalt_ORM.png.001"
+      ]
+    },
+    {
+      "region": "LightMetal",
+      "material": "LightMetal_MetricRepair",
+      "original_source_material": null,
+      "source_graph_reused": false,
+      "uv": "UV0; explicit one repeat/metre; source mapping nodes bypassed for image coordinates",
+      "native_binding": "LightMetal constant PBR",
+      "native_pending": "Original normal/ORM and color space hookup, tint and tangent basis require later native verification; shader graph is not FBX handoff.",
+      "images": []
+    },
+    {
+      "region": "TechGlass",
+      "material": "TechGlass_MetricRepair",
+      "original_source_material": null,
+      "source_graph_reused": false,
+      "uv": "UV0; explicit one repeat/metre; source mapping nodes bypassed for image coordinates",
+      "native_binding": "TechGlass constant PBR",
+      "native_pending": "Original normal/ORM and color space hookup, tint and tangent basis require later native verification; shader graph is not FBX handoff.",
+      "images": []
+    },
+    {
+      "region": "DoorAccent",
+      "material": "DoorAccent_MetricRepair",
+      "original_source_material": null,
+      "source_graph_reused": false,
+      "uv": "UV0; explicit one repeat/metre; source mapping nodes bypassed for image coordinates",
+      "native_binding": "DoorAccent constant PBR",
+      "native_pending": "Original normal/ORM and color space hookup, tint and tangent basis require later native verification; shader graph is not FBX handoff.",
+      "images": []
+    }
+  ],
+  "images": [
+    {
+      "source_material": "CivicBrick_Trim",
+      "image": "CityBrick_BaseColor.png.001",
+      "filename": "CityBrick_BaseColor.png",
+      "sha256": "e4c1ad7446563e3209191ca862fc4c3e065c491debd989765bc843405a5fbbfe",
+      "bytes": 1136304,
+      "reused_original": true
+    },
+    {
+      "source_material": "CivicBrick_Trim",
+      "image": "CityBrick_Normal.png.001",
+      "filename": "CityBrick_Normal.png",
+      "sha256": "cf71dc7902b7c3a99d9fd1e966760af9a7b428de42b22ade5fb810965866d2cc",
+      "bytes": 672697,
+      "reused_original": true
+    },
+    {
+      "source_material": "CivicBrick_Trim",
+      "image": "CityBrick_ORM.png.001",
+      "filename": "CityBrick_ORM.png",
+      "sha256": "39f2f1df859b4052afe98dcb632054398957455d58b205b13702210467a0c6e8",
+      "bytes": 662455,
+      "reused_original": true
+    },
+    {
+      "source_material": "CivicAsphaltRoof",
+      "image": "CivicAsphalt_BaseColor.png.001",
+      "filename": "CivicAsphalt_BaseColor.png",
+      "sha256": "85e2cfe619a74da7fe74ad0c6439141f4edb63e5085208c4cfd620c5e1d988fa",
+      "bytes": 202880,
+      "reused_original": true
+    },
+    {
+      "source_material": "CivicAsphaltRoof",
+      "image": "CivicAsphalt_Normal.png.001",
+      "filename": "CivicAsphalt_Normal.png",
+      "sha256": "e6f9e8f0257ddbc33b012b72f9446a2c8a3679153488b4bbc67ca6e50be153fd",
+      "bytes": 439354,
+      "reused_original": true
+    },
+    {
+      "source_material": "CivicAsphaltRoof",
+      "image": "CivicAsphalt_ORM.png.001",
+      "filename": "CivicAsphalt_ORM.png",
+      "sha256": "6b06b777944f76046d0f51131cdec7cca658efac60560c95ab1e854c37189ab4",
+      "bytes": 214379,
+      "reused_original": true
+    }
+  ],
+  "new_maps": false
+}

@@ -1,0 +1,17 @@
+{
+  "asset_id": "building.power.medium.a",
+  "stage": "medium",
+  "capacity_percent_reference": 200,
+  "module_counts": {
+    "generating_halls": 2,
+    "exhaust_units": 2,
+    "electrical_groups": 2
+  },
+  "occupied_envelope_m": [
+    18.229999542236328,
+    19.624999523162842,
+    8.120000839233398
+  ],
+  "base_identity": "160v1 complete geometry vocabulary",
+  "lower_LOD_plan": "Preserve masses/portals/major pipes; reduce secondary rings/frames/fixtures later; no device result"
+}

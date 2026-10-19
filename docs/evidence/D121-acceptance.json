@@ -1,0 +1,16 @@
+{
+  "task": "D121",
+  "date": "2026-10-15",
+  "status": "COMPLETE \u2014 user accepted in-game walk cycle",
+  "user_confirmation": "I've tested it in game and the walk cycle looks good. Let's mark D121 complete. and get the changes committed/pushed",
+  "attribution": "Direct user message in the D121 chat",
+  "delivered_revision": "dev-27bb30632e82c9f1af04",
+  "revision_basis": "Identified D121 delivery offered for playtest; user did not restate revision or name a headset/runtime.",
+  "schema": 68,
+  "integration_receipt": "docs/evidence/D121-integration.json",
+  "approved_source_sha256": "1cf0a3d40f92d23c80b2a84fa4e5cf2026617748a5940ebb318107e1a82940bb",
+  "physical_observations": "Named physical PCVR/Quest appearance, cadence and comfort remain unconfirmed under D114.",
+  "next": "No required D121 work; preserve frozen source. B003 retains the active native window; D114 retains physical observations.",
+  "validation": "No gameplay changes or repeated build for this docs/Git closeout; source/native/package evidence remains in integration receipt.",
+  "publication_authorization": "User explicitly requested commit/push; newer B003 work excluded."
+}

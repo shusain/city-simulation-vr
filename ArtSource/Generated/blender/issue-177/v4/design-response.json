@@ -1,0 +1,456 @@
+{
+  "mount_spacer": {
+    "name": "BadgeMountSpacer",
+    "min": [
+      -11.90000057220459,
+      -5.059999942779541,
+      3.5999999046325684
+    ],
+    "max": [
+      -11.699999809265137,
+      -4.990000247955322,
+      4.0
+    ]
+  },
+  "revision": "civic177-badge-window-clearance-v3",
+  "delta_m": [
+    -1.7999999523162842,
+    0.0,
+    0.11999999731779099
+  ],
+  "corrected_components": [
+    {
+      "name": "AttachedCivicShield",
+      "min": [
+        -12.360000610351562,
+        -5.159999847412109,
+        3.18999981880188
+      ],
+      "max": [
+        -11.239999771118164,
+        -5.039999961853027,
+        4.25
+      ]
+    },
+    {
+      "name": "ShieldCentralRelief",
+      "min": [
+        -11.920000076293945,
+        -5.190000057220459,
+        3.609999895095825
+      ],
+      "max": [
+        -11.680000305175781,
+        -5.150000095367432,
+        4.03000020980835
+      ]
+    }
+  ],
+  "unchanged_connected_parts": 215,
+  "geometry_preservation_checked": true,
+  "wall_contact": "Original shield rear has 0.04m gap; concealed BadgeMountSpacer bridges wall and shield with embedded contacts",
+  "positive_projected_separations": [
+    {
+      "badge": "ShieldCentralRelief",
+      "window_part": "BayClerestory14Pane",
+      "projected_axis_separation_m": 24.280000686645508
+    },
+    {
+      "badge": "ShieldCentralRelief",
+      "window_part": "BayClerestory14JambL",
+      "projected_axis_separation_m": 24.170000076293945
+    },
+    {
+      "badge": "ShieldCentralRelief",
+      "window_part": "BayClerestory14JambR",
+      "projected_axis_separation_m": 27.079999923706055
+    },
+    {
+      "badge": "ShieldCentralRelief",
+      "window_part": "BayClerestory14Head",
+      "projected_axis_separation_m": 24.2810001373291
+    },
+    {
+      "badge": "ShieldCentralRelief",
+      "window_part": "BayClerestory14Sill",
+      "projected_axis_separation_m": 24.2810001373291
+    },
+    {
+      "badge": "ShieldCentralRelief",
+      "window_part": "BayClerestory2Pane",
+      "projected_axis_separation_m": 12.28000032901764
+    },
+    {
+      "badge": "ShieldCentralRelief",
+      "window_part": "BayClerestory2JambL",
+      "projected_axis_separation_m": 12.170000314712524
+    },
+    {
+      "badge": "ShieldCentralRelief",
+      "window_part": "BayClerestory2JambR",
+      "projected_axis_separation_m": 15.080000162124634
+    },
+    {
+      "badge": "ShieldCentralRelief",
+      "window_part": "BayClerestory2Head",
+      "projected_axis_separation_m": 12.281000256538391
+    },
+    {
+      "badge": "ShieldCentralRelief",
+      "window_part": "BayClerestory2Sill",
+      "projected_axis_separation_m": 12.281000256538391
+    },
+    {
+      "badge": "ShieldCentralRelief",
+      "window_part": "BayClerestory8Pane",
+      "projected_axis_separation_m": 18.28000020980835
+    },
+    {
+      "badge": "ShieldCentralRelief",
+      "window_part": "BayClerestory8JambL",
+      "projected_axis_separation_m": 18.170000553131104
+    },
+    {
+      "badge": "ShieldCentralRelief",
+      "window_part": "BayClerestory8JambR",
+      "projected_axis_separation_m": 21.079999923706055
+    },
+    {
+      "badge": "ShieldCentralRelief",
+      "window_part": "BayClerestory8Head",
+      "projected_axis_separation_m": 18.2810001373291
+    },
+    {
+      "badge": "ShieldCentralRelief",
+      "window_part": "BayClerestory8Sill",
+      "projected_axis_separation_m": 18.2810001373291
+    },
+    {
+      "badge": "ShieldCentralRelief",
+      "window_part": "OfficeFront-10Pane",
+      "projected_axis_separation_m": 0.8550004959106445
+    },
+    {
+      "badge": "ShieldCentralRelief",
+      "window_part": "OfficeFront-10JambL",
+      "projected_axis_separation_m": 0.744999885559082
+    },
+    {
+      "badge": "ShieldCentralRelief",
+      "window_part": "OfficeFront-10JambR",
+      "projected_axis_separation_m": 2.505000114440918
+    },
+    {
+      "badge": "ShieldCentralRelief",
+      "window_part": "OfficeFront-10Head",
+      "projected_axis_separation_m": 1.6700000762939453
+    },
+    {
+      "badge": "ShieldCentralRelief",
+      "window_part": "OfficeFront-10Sill",
+      "projected_axis_separation_m": 0.8559999465942383
+    },
+    {
+      "badge": "ShieldCentralRelief",
+      "window_part": "OfficeFront-13.6Pane",
+      "projected_axis_separation_m": 0.8550004959106445
+    },
+    {
+      "badge": "ShieldCentralRelief",
+      "window_part": "OfficeFront-13.6JambL",
+      "projected_axis_separation_m": 2.5049991607666016
+    },
+    {
+      "badge": "ShieldCentralRelief",
+      "window_part": "OfficeFront-13.6JambR",
+      "projected_axis_separation_m": 0.744999885559082
+    },
+    {
+      "badge": "ShieldCentralRelief",
+      "window_part": "OfficeFront-13.6Head",
+      "projected_axis_separation_m": 1.6700000762939453
+    },
+    {
+      "badge": "ShieldCentralRelief",
+      "window_part": "OfficeFront-13.6Sill",
+      "projected_axis_separation_m": 0.8559999465942383
+    },
+    {
+      "badge": "ShieldCentralRelief",
+      "window_part": "OfficeFront-6.4Pane",
+      "projected_axis_separation_m": 4.455000400543213
+    },
+    {
+      "badge": "ShieldCentralRelief",
+      "window_part": "OfficeFront-6.4JambL",
+      "projected_axis_separation_m": 4.345000267028809
+    },
+    {
+      "badge": "ShieldCentralRelief",
+      "window_part": "OfficeFront-6.4JambR",
+      "projected_axis_separation_m": 6.1050004959106445
+    },
+    {
+      "badge": "ShieldCentralRelief",
+      "window_part": "OfficeFront-6.4Head",
+      "projected_axis_separation_m": 4.456000328063965
+    },
+    {
+      "badge": "ShieldCentralRelief",
+      "window_part": "OfficeFront-6.4Sill",
+      "projected_axis_separation_m": 4.456000328063965
+    },
+    {
+      "badge": "ShieldCentralRelief",
+      "window_part": "Reception-13.6Pane",
+      "projected_axis_separation_m": 1.059999704360962
+    },
+    {
+      "badge": "ShieldCentralRelief",
+      "window_part": "Reception-13.6JambL",
+      "projected_axis_separation_m": 2.429999351501465
+    },
+    {
+      "badge": "ShieldCentralRelief",
+      "window_part": "Reception-13.6JambR",
+      "projected_axis_separation_m": 0.9499998092651367
+    },
+    {
+      "badge": "ShieldCentralRelief",
+      "window_part": "Reception-13.6Head",
+      "projected_axis_separation_m": 0.9499998092651367
+    },
+    {
+      "badge": "ShieldCentralRelief",
+      "window_part": "Reception-13.6Sill",
+      "projected_axis_separation_m": 2.7599998712539673
+    },
+    {
+      "badge": "ShieldCentralRelief",
+      "window_part": "Reception-6.4Pane",
+      "projected_axis_separation_m": 4.53000020980835
+    },
+    {
+      "badge": "ShieldCentralRelief",
+      "window_part": "Reception-6.4JambL",
+      "projected_axis_separation_m": 4.4200005531311035
+    },
+    {
+      "badge": "ShieldCentralRelief",
+      "window_part": "Reception-6.4JambR",
+      "projected_axis_separation_m": 6.030000686645508
+    },
+    {
+      "badge": "ShieldCentralRelief",
+      "window_part": "Reception-6.4Head",
+      "projected_axis_separation_m": 4.531000137329102
+    },
+    {
+      "badge": "ShieldCentralRelief",
+      "window_part": "Reception-6.4Sill",
+      "projected_axis_separation_m": 4.531000137329102
+    },
+    {
+      "badge": "AttachedCivicShield",
+      "window_part": "BayClerestory14Pane",
+      "projected_axis_separation_m": 23.84000015258789
+    },
+    {
+      "badge": "AttachedCivicShield",
+      "window_part": "BayClerestory14JambL",
+      "projected_axis_separation_m": 23.729999542236328
+    },
+    {
+      "badge": "AttachedCivicShield",
+      "window_part": "BayClerestory14JambR",
+      "projected_axis_separation_m": 26.639999389648438
+    },
+    {
+      "badge": "AttachedCivicShield",
+      "window_part": "BayClerestory14Head",
+      "projected_axis_separation_m": 23.840999603271484
+    },
+    {
+      "badge": "AttachedCivicShield",
+      "window_part": "BayClerestory14Sill",
+      "projected_axis_separation_m": 23.840999603271484
+    },
+    {
+      "badge": "AttachedCivicShield",
+      "window_part": "BayClerestory2Pane",
+      "projected_axis_separation_m": 11.839999794960022
+    },
+    {
+      "badge": "AttachedCivicShield",
+      "window_part": "BayClerestory2JambL",
+      "projected_axis_separation_m": 11.729999780654907
+    },
+    {
+      "badge": "AttachedCivicShield",
+      "window_part": "BayClerestory2JambR",
+      "projected_axis_separation_m": 14.639999628067017
+    },
+    {
+      "badge": "AttachedCivicShield",
+      "window_part": "BayClerestory2Head",
+      "projected_axis_separation_m": 11.840999722480774
+    },
+    {
+      "badge": "AttachedCivicShield",
+      "window_part": "BayClerestory2Sill",
+      "projected_axis_separation_m": 11.840999722480774
+    },
+    {
+      "badge": "AttachedCivicShield",
+      "window_part": "BayClerestory8Pane",
+      "projected_axis_separation_m": 17.839999675750732
+    },
+    {
+      "badge": "AttachedCivicShield",
+      "window_part": "BayClerestory8JambL",
+      "projected_axis_separation_m": 17.730000019073486
+    },
+    {
+      "badge": "AttachedCivicShield",
+      "window_part": "BayClerestory8JambR",
+      "projected_axis_separation_m": 20.639999389648438
+    },
+    {
+      "badge": "AttachedCivicShield",
+      "window_part": "BayClerestory8Head",
+      "projected_axis_separation_m": 17.840999603271484
+    },
+    {
+      "badge": "AttachedCivicShield",
+      "window_part": "BayClerestory8Sill",
+      "projected_axis_separation_m": 17.840999603271484
+    },
+    {
+      "badge": "AttachedCivicShield",
+      "window_part": "OfficeFront-10Pane",
+      "projected_axis_separation_m": 0.41499996185302734
+    },
+    {
+      "badge": "AttachedCivicShield",
+      "window_part": "OfficeFront-10JambL",
+      "projected_axis_separation_m": 0.30499935150146484
+    },
+    {
+      "badge": "AttachedCivicShield",
+      "window_part": "OfficeFront-10JambR",
+      "projected_axis_separation_m": 2.064999580383301
+    },
+    {
+      "badge": "AttachedCivicShield",
+      "window_part": "OfficeFront-10Head",
+      "projected_axis_separation_m": 1.450000286102295
+    },
+    {
+      "badge": "AttachedCivicShield",
+      "window_part": "OfficeFront-10Sill",
+      "projected_axis_separation_m": 0.4159994125366211
+    },
+    {
+      "badge": "AttachedCivicShield",
+      "window_part": "OfficeFront-13.6Pane",
+      "projected_axis_separation_m": 0.41499996185302734
+    },
+    {
+      "badge": "AttachedCivicShield",
+      "window_part": "OfficeFront-13.6JambL",
+      "projected_axis_separation_m": 2.0649986267089844
+    },
+    {
+      "badge": "AttachedCivicShield",
+      "window_part": "OfficeFront-13.6JambR",
+      "projected_axis_separation_m": 0.30499935150146484
+    },
+    {
+      "badge": "AttachedCivicShield",
+      "window_part": "OfficeFront-13.6Head",
+      "projected_axis_separation_m": 1.450000286102295
+    },
+    {
+      "badge": "AttachedCivicShield",
+      "window_part": "OfficeFront-13.6Sill",
+      "projected_axis_separation_m": 0.4159994125366211
+    },
+    {
+      "badge": "AttachedCivicShield",
+      "window_part": "OfficeFront-6.4Pane",
+      "projected_axis_separation_m": 4.014999866485596
+    },
+    {
+      "badge": "AttachedCivicShield",
+      "window_part": "OfficeFront-6.4JambL",
+      "projected_axis_separation_m": 3.9049997329711914
+    },
+    {
+      "badge": "AttachedCivicShield",
+      "window_part": "OfficeFront-6.4JambR",
+      "projected_axis_separation_m": 5.664999961853027
+    },
+    {
+      "badge": "AttachedCivicShield",
+      "window_part": "OfficeFront-6.4Head",
+      "projected_axis_separation_m": 4.015999794006348
+    },
+    {
+      "badge": "AttachedCivicShield",
+      "window_part": "OfficeFront-6.4Sill",
+      "projected_axis_separation_m": 4.015999794006348
+    },
+    {
+      "badge": "AttachedCivicShield",
+      "window_part": "Reception-13.6Pane",
+      "projected_axis_separation_m": 0.6399996280670166
+    },
+    {
+      "badge": "AttachedCivicShield",
+      "window_part": "Reception-13.6JambL",
+      "projected_axis_separation_m": 1.9899988174438477
+    },
+    {
+      "badge": "AttachedCivicShield",
+      "window_part": "Reception-13.6JambR",
+      "projected_axis_separation_m": 0.5299997329711914
+    },
+    {
+      "badge": "AttachedCivicShield",
+      "window_part": "Reception-13.6Head",
+      "projected_axis_separation_m": 0.5299997329711914
+    },
+    {
+      "badge": "AttachedCivicShield",
+      "window_part": "Reception-13.6Sill",
+      "projected_axis_separation_m": 2.339999794960022
+    },
+    {
+      "badge": "AttachedCivicShield",
+      "window_part": "Reception-6.4Pane",
+      "projected_axis_separation_m": 4.089999675750732
+    },
+    {
+      "badge": "AttachedCivicShield",
+      "window_part": "Reception-6.4JambL",
+      "projected_axis_separation_m": 3.9800000190734863
+    },
+    {
+      "badge": "AttachedCivicShield",
+      "window_part": "Reception-6.4JambR",
+      "projected_axis_separation_m": 5.590000152587891
+    },
+    {
+      "badge": "AttachedCivicShield",
+      "window_part": "Reception-6.4Head",
+      "projected_axis_separation_m": 4.090999603271484
+    },
+    {
+      "badge": "AttachedCivicShield",
+      "window_part": "Reception-6.4Sill",
+      "projected_axis_separation_m": 4.090999603271484
+    }
+  ],
+  "canopy_vertical_gap_m": 0.06999969482421875,
+  "integration": "HELD"
+}

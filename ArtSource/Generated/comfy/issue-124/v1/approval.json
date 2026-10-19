@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "kind": "comfy",
+  "repository": "CitySimVR/citysim",
+  "issue": 124,
+  "version": 1,
+  "by": "shaun",
+  "comment_id": 1792,
+  "request_url": "https://git.shaun-husain.com/CitySimVR/citysim/issues/124#issuecomment-1792",
+  "approved_at": "2026-10-17T23:08:44.656Z",
+  "job_id": "84efff1d-1e71-4944-a95d-f8a84bb0e879",
+  "source_sha": "12863ff34032e0e460febd8215012363c7a7fd49",
+  "artifacts": [
+    {
+      "name": "asset.png",
+      "bytes": 518438,
+      "sha256": "1ddcd5e5043988801680dcf070607df1f7411050c21d0d463f985b64b071f1ee"
+    },
+    {
+      "name": "workflow.json",
+      "bytes": 3021,
+      "sha256": "2d681dfe333517defb4b9d3b23b08b147d2412461890359e546e78b273bac273"
+    },
+    {
+      "name": "provenance.json",
+      "bytes": 1298,
+      "sha256": "c9297c171dbf4dee9cd464698677e4987f573073be5d7f4e09d458361daa3e2b"
+    },
+    {
+      "name": "README.md",
+      "bytes": 378,
+      "sha256": "f68a82a9fe195e1dc55c2d49a6d1af61ef7f782014336ba35f5da0e5a15be3aa"
+    }
+  ],
+  "workflow": "generate_image_zimage",
+  "workflow_sha256": "4b2b8f3fed8b0234ebd9a522a8a5d8c881977bd37e9670d3268ac642a92784a9",
+  "seed": 124,
+  "prompt": "A stylized low-poly tabletop city view from an elevated oblique camera angle, showing a gentle curving sandy shore with muted blue-green water in the foreground. A narrow grass verge and a small road with two or three simplified low-rise buildings in the background. Subdued warm gray-beige damp sand, simple faceted dark city rocks, pale ivory seashells, muted sandy ochre starfish, short weathered driftwood, and sparse gray-green dune-grass tufts. Three small clusters of beach props along the shore, with broad stretches of empty sand. Soft diffuse daylight, simple water edge. 768x768, low-poly forms, flat materials, no people, vehicles, or details. City Sim VR beach-prop concept.",
+  "archive": {
+    "url": "https://git.shaun-husain.com/attachments/26640055-38de-4549-8e07-0c49affe1041",
+    "sha256": "cbc2c4097cd9537243589a69d48ed8d144a676b9d484c36b316da109479df911"
+  },
+  "review_url": "https://git.shaun-husain.com/CitySimVR/citysim/issues/124#issuecomment-1779"
+}

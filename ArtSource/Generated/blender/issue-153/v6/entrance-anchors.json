@@ -1,0 +1,268 @@
+{
+  "units": "metres",
+  "source_front": "-Y",
+  "pivot": [
+    0,
+    0,
+    0
+  ],
+  "native_yaw_mapping": "Deferred to issue #125",
+  "anchors": [
+    {
+      "role": "pedestrian",
+      "xyz_m": [
+        -9,
+        -11.76,
+        0
+      ],
+      "outward": [
+        0,
+        -1,
+        0
+      ],
+      "usable_width_m": 1.2,
+      "sill_m": 0,
+      "nominal_grade_m": 0,
+      "target": "Control wing / Pedestrian door",
+      "boundary_connector": {
+        "role": "pedestrian_plot_boundary",
+        "xyz_m": [
+          -9,
+          -16,
+          0
+        ],
+        "outward": [
+          0,
+          -1,
+          0
+        ],
+        "usable_width_m": 1.8,
+        "nominal_grade_m": 0
+      },
+      "reserved_free_corridor": {
+        "min": [
+          -9.9,
+          -16,
+          0
+        ],
+        "max": [
+          -8.1,
+          -11.870000381469726,
+          2.4
+        ],
+        "width_m": 1.8,
+        "height_m": 2.4,
+        "strict_all_components_aabb_pass": true
+      },
+      "portal_components": [
+        {
+          "name": "Pedestrian door",
+          "min": [
+            -9.600000381469727,
+            -11.760000228881836,
+            0.0
+          ],
+          "max": [
+            -8.399999618530273,
+            -11.65999984741211,
+            2.200000047683716
+          ]
+        },
+        {
+          "name": "Door glass",
+          "min": [
+            -9.380000114440918,
+            -11.802499771118164,
+            0.9800000190734863
+          ],
+          "max": [
+            -8.619999885559082,
+            -11.757499694824219,
+            1.9800000190734863
+          ]
+        },
+        {
+          "name": "Door handle",
+          "min": [
+            -8.579999923706055,
+            -11.850000381469727,
+            0.8799999356269836
+          ],
+          "max": [
+            -8.520000457763672,
+            -11.75,
+            1.21999990940094
+          ]
+        }
+      ],
+      "measured_portal_min_y": -11.850000381469727,
+      "anchor_to_free_corridor_segment": {
+        "start": [
+          -9,
+          -11.76,
+          0
+        ],
+        "end": [
+          -9,
+          -11.870000381469726,
+          0
+        ],
+        "note": "Intrinsic portal fixtures occupy this short transition; not represented as empty approach."
+      }
+    },
+    {
+      "role": "vehicle_service",
+      "xyz_m": [
+        8,
+        -8.8,
+        0
+      ],
+      "outward": [
+        0,
+        -1,
+        0
+      ],
+      "usable_width_m": 4.5,
+      "sill_m": 0,
+      "nominal_grade_m": 0,
+      "target": "Turbine hall / Vehicle bay shutter",
+      "boundary_connector": {
+        "role": "vehicle_service_plot_boundary",
+        "xyz_m": [
+          8,
+          -16,
+          0
+        ],
+        "outward": [
+          0,
+          -1,
+          0
+        ],
+        "usable_width_m": 4.5,
+        "nominal_grade_m": 0
+      },
+      "reserved_free_corridor": {
+        "min": [
+          5.75,
+          -16,
+          0
+        ],
+        "max": [
+          10.25,
+          -8.849999923706054,
+          3.8
+        ],
+        "width_m": 4.5,
+        "height_m": 3.8,
+        "strict_all_components_aabb_pass": true
+      },
+      "portal_components": [
+        {
+          "name": "Vehicle bay shutter",
+          "min": [
+            5.75,
+            -8.800000190734863,
+            0.0
+          ],
+          "max": [
+            10.25,
+            -8.679999351501465,
+            4.050000190734863
+          ]
+        },
+        {
+          "name": "Shutter seam",
+          "min": [
+            5.775000095367432,
+            -8.829999923706055,
+            0.5825000405311584
+          ],
+          "max": [
+            10.225000381469727,
+            -8.799999237060547,
+            0.6175000071525574
+          ]
+        },
+        {
+          "name": "Shutter seam.001",
+          "min": [
+            5.775000095367432,
+            -8.829999923706055,
+            1.1825000047683716
+          ],
+          "max": [
+            10.225000381469727,
+            -8.799999237060547,
+            1.21750009059906
+          ]
+        },
+        {
+          "name": "Shutter seam.002",
+          "min": [
+            5.775000095367432,
+            -8.829999923706055,
+            1.78249990940094
+          ],
+          "max": [
+            10.225000381469727,
+            -8.799999237060547,
+            1.8174999952316284
+          ]
+        },
+        {
+          "name": "Shutter seam.003",
+          "min": [
+            5.775000095367432,
+            -8.829999923706055,
+            2.382500171661377
+          ],
+          "max": [
+            10.225000381469727,
+            -8.799999237060547,
+            2.4175000190734863
+          ]
+        },
+        {
+          "name": "Shutter seam.004",
+          "min": [
+            5.775000095367432,
+            -8.829999923706055,
+            2.9825000762939453
+          ],
+          "max": [
+            10.225000381469727,
+            -8.799999237060547,
+            3.0174999237060547
+          ]
+        },
+        {
+          "name": "Shutter seam.005",
+          "min": [
+            5.775000095367432,
+            -8.829999923706055,
+            3.5824999809265137
+          ],
+          "max": [
+            10.225000381469727,
+            -8.799999237060547,
+            3.617499828338623
+          ]
+        }
+      ],
+      "measured_portal_min_y": -8.829999923706055,
+      "anchor_to_free_corridor_segment": {
+        "start": [
+          8,
+          -8.8,
+          0
+        ],
+        "end": [
+          8,
+          -8.849999923706054,
+          0
+        ],
+        "note": "Intrinsic portal fixtures occupy this short transition; not represented as empty approach."
+      }
+    }
+  ]
+}

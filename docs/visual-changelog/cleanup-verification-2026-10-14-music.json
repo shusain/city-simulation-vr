@@ -1,0 +1,42 @@
+{
+  "task": "D118",
+  "date": "2026-10-14",
+  "status": "Pass",
+  "removedFiles": 603,
+  "removedLogicalBytes": 17701359568,
+  "removedGiB": 16.486,
+  "otherInventoriedArtifactsPreserved": 51813,
+  "protectedHashesMatched": 6266,
+  "inventoryErrors": [
+    {
+      "path": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\Playtests\\QA\\playtest-2026.10.08.1-ee39041308d14f5e8320187fe37d50c1\\Extracted Game\\CitySimVR-playtest-2026.10.08.1-Windows\\Windows\\CitySimVR\\Plugins\\MetaXR\\Source\\ThirdParty\\EngineTelemetry\\Lib\\Win64\\EngineTelemetry.dll",
+      "error": "[WinError 3] The system cannot find the path specified: 'C:\\\\Users\\\\shaun\\\\Development\\\\city-sim-builder\\\\Artifacts\\\\Playtests\\\\QA\\\\playtest-2026.10.08.1-ee39041308d14f5e8320187fe37d50c1\\\\Extracted Game\\\\CitySimVR-playtest-2026.10.08.1-Windows\\\\Windows\\\\CitySimVR\\\\Plugins\\\\MetaXR\\\\Source\\\\ThirdParty\\\\EngineTelemetry\\\\Lib\\\\Win64\\\\EngineTelemetry.dll'"
+    },
+    {
+      "path": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\Playtests\\QA\\playtest-2026.10.08.1-ee39041308d14f5e8320187fe37d50c1\\Extracted Game\\CitySimVR-playtest-2026.10.08.1-Windows\\Windows\\Engine\\Binaries\\ThirdParty\\NVIDIA\\NVaftermath\\Win64\\GFSDK_Aftermath_Lib.x64.dll",
+      "error": "[WinError 3] The system cannot find the path specified: 'C:\\\\Users\\\\shaun\\\\Development\\\\city-sim-builder\\\\Artifacts\\\\Playtests\\\\QA\\\\playtest-2026.10.08.1-ee39041308d14f5e8320187fe37d50c1\\\\Extracted Game\\\\CitySimVR-playtest-2026.10.08.1-Windows\\\\Windows\\\\Engine\\\\Binaries\\\\ThirdParty\\\\NVIDIA\\\\NVaftermath\\\\Win64\\\\GFSDK_Aftermath_Lib.x64.dll'"
+    },
+    {
+      "path": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\Playtests\\QA\\playtest-2026.10.08.1-ee39041308d14f5e8320187fe37d50c1\\Extracted Game\\CitySimVR-playtest-2026.10.08.1-Windows\\Windows\\Engine\\Binaries\\ThirdParty\\Vulkan\\Win64\\VkLayer_khronos_synchronization2.dll",
+      "error": "[WinError 3] The system cannot find the path specified: 'C:\\\\Users\\\\shaun\\\\Development\\\\city-sim-builder\\\\Artifacts\\\\Playtests\\\\QA\\\\playtest-2026.10.08.1-ee39041308d14f5e8320187fe37d50c1\\\\Extracted Game\\\\CitySimVR-playtest-2026.10.08.1-Windows\\\\Windows\\\\Engine\\\\Binaries\\\\ThirdParty\\\\Vulkan\\\\Win64\\\\VkLayer_khronos_synchronization2.dll'"
+    },
+    {
+      "path": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\Playtests\\QA\\playtest-2026.10.08.1-ee39041308d14f5e8320187fe37d50c1\\Extracted Game\\CitySimVR-playtest-2026.10.08.1-Windows\\Windows\\Engine\\Binaries\\ThirdParty\\Vulkan\\Win64\\VkLayer_khronos_synchronization2.json",
+      "error": "[WinError 3] The system cannot find the path specified: 'C:\\\\Users\\\\shaun\\\\Development\\\\city-sim-builder\\\\Artifacts\\\\Playtests\\\\QA\\\\playtest-2026.10.08.1-ee39041308d14f5e8320187fe37d50c1\\\\Extracted Game\\\\CitySimVR-playtest-2026.10.08.1-Windows\\\\Windows\\\\Engine\\\\Binaries\\\\ThirdParty\\\\Vulkan\\\\Win64\\\\VkLayer_khronos_synchronization2.json'"
+    },
+    {
+      "path": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\Playtests\\QA\\playtest-2026.10.08.1-ee39041308d14f5e8320187fe37d50c1\\Extracted Game\\CitySimVR-playtest-2026.10.08.1-Windows\\Windows\\Engine\\Binaries\\ThirdParty\\Windows\\WinPixEventRuntime\\x64\\WinPixEventRuntime.dll",
+      "error": "[WinError 3] The system cannot find the path specified: 'C:\\\\Users\\\\shaun\\\\Development\\\\city-sim-builder\\\\Artifacts\\\\Playtests\\\\QA\\\\playtest-2026.10.08.1-ee39041308d14f5e8320187fe37d50c1\\\\Extracted Game\\\\CitySimVR-playtest-2026.10.08.1-Windows\\\\Windows\\\\Engine\\\\Binaries\\\\ThirdParty\\\\Windows\\\\WinPixEventRuntime\\\\x64\\\\WinPixEventRuntime.dll'"
+    },
+    {
+      "path": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\Playtests\\QA\\playtest-2026.10.08.1-ee39041308d14f5e8320187fe37d50c1\\Extracted Game\\CitySimVR-playtest-2026.10.08.1-Windows\\Windows\\Engine\\Plugins\\NNE\\NNERuntimeORT\\Binaries\\ThirdParty\\Onnxruntime\\Win64\\onnxruntime.dll",
+      "error": "[WinError 3] The system cannot find the path specified: 'C:\\\\Users\\\\shaun\\\\Development\\\\city-sim-builder\\\\Artifacts\\\\Playtests\\\\QA\\\\playtest-2026.10.08.1-ee39041308d14f5e8320187fe37d50c1\\\\Extracted Game\\\\CitySimVR-playtest-2026.10.08.1-Windows\\\\Windows\\\\Engine\\\\Plugins\\\\NNE\\\\NNERuntimeORT\\\\Binaries\\\\ThirdParty\\\\Onnxruntime\\\\Win64\\\\onnxruntime.dll'"
+    }
+  ],
+  "unexpectedMissingFiles": 0,
+  "changedProtectedFiles": 0,
+  "trackedFilesDeleted": 0,
+  "gitStatusPorcelain": "",
+  "packageVerification": "MusicVerification.json",
+  "limitations": "Logical file bytes, not measured free-space recovery. Existing music/native/package evidence reused; no new playback, build, device installation or physical listening."
+}

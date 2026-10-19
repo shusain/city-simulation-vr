@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "kind": "comfy",
+  "repository": "CitySimVR/citysim",
+  "issue": 84,
+  "version": 1,
+  "source_sha": "86fe0c28603e8eeec5a969193d8e2a11e2111e39",
+  "workflow": "generate_image_zimage",
+  "workflow_sha256": "89272e6831e108d988f05fb969a09f6123e46ded06a5d2e407529b0941a1164a",
+  "model": "ollama/citysim-spec:qwen3-14b",
+  "seed": 84,
+  "prompt": "Full-bleed ROOM INTERIOR BACKGROUND IMAGE, a cropped first-person view from inside a neighborhood computer and electronics shop, straight forward at eye level. The camera is inside a real room; there is NO outside of the room visible anywhere. Cream room surfaces continue past EVERY edge of the picture. Two long dusty-teal shelves run horizontally across the back wall and extend BEYOND the left and right image edges. Shelves have visible TOP surfaces and side thickness with gentle contact shadows to communicate depth. One simple desktop monitor with a blank dark screen, compact computer tower and keyboard on a low counter; a pair of headphones and a few plain gadget boxes on shelves. Broad recognizable electronics silhouettes, restrained blue-gray accents. No screen icons, brands, letters or glowing advertisements. Keep ALL important merchandise centered in the MIDDLE HALF of the image with comfortable space around it; outer shelf ends and room side surfaces are unimportant crop continuation. A narrow strip of cream ceiling at the very top and cream floor at the bottom, room back corners near the left and right edges. Restrained centered one-point perspective, level camera, upright verticals. Stylized low-poly game art with broad simple matte shapes, warm cream and dusty teal palette, soft uniform diffuse illumination, readable moderate contrast, mild baked ambient occlusion, clean sparse layout. Crop closely INTO the room: no surrounding background, no external edges, no outer box, no cabinet enclosure, no display case, no diorama or freestanding model, no window opening or window frame, no front wall, no glazing, no mullions, no sill, no border, no glare or reflections. No outside facade, no door or shop sign, no people, words, letters, numbers, labels, prices, logos or watermark. Single room image, no atlas, collage or multiple panels.",
+  "prompt_id": "5cab0ec2-9467-4df4-b55a-09c3d018a485",
+  "dimensions": {
+    "width": 768,
+    "height": 768
+  },
+  "png_sha256": "aa16e4a87f0295c4529b104d731b54e5c034c889a3c38a79aac46c0c71444dec",
+  "created_at": "2026-10-16T22:06:53.852Z"
+}

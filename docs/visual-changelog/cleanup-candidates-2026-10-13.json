@@ -1,0 +1,2331 @@
+{
+  "task": "D101",
+  "date": "2026-10-13",
+  "status": "verified-complete",
+  "source_backup_commit": "841b6af015d4423df4ef4a45ebf92d3ee6e1eaf6",
+  "total_files": 375,
+  "total_bytes": 8008099066,
+  "categories": {
+    "superseded-review-launcher": 4,
+    "superseded-windows-package": 371
+  },
+  "groups": [
+    {
+      "path": "Artifacts/D89/WindowsPackage",
+      "files": 53,
+      "bytes": 1144079111
+    },
+    {
+      "path": "Artifacts/D89-Feedback/WindowsPackage",
+      "files": 53,
+      "bytes": 1145082251
+    },
+    {
+      "path": "Artifacts/D89-Migration/WindowsPackage",
+      "files": 53,
+      "bytes": 1144696047
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage",
+      "files": 53,
+      "bytes": 1144934283
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage-Final",
+      "files": 53,
+      "bytes": 1144936331
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage-Review",
+      "files": 53,
+      "bytes": 1144995723
+    },
+    {
+      "path": "Artifacts/DefaultWindows-20261013/PreviousDefaultWindows",
+      "files": 53,
+      "bytes": 1139370170
+    }
+  ],
+  "supersession_evidence": [
+    "CHANGELOG 2026-10-13 merged Windows playtest: D89/D92 reported implementation accepted",
+    "DEVELOPMENT_TASKS current usable baseline: maintained PCVRSandbox via standard launchers",
+    "Artifacts/DefaultWindows-20261013/Delivery.json verified maintained merged delivery",
+    "Artifacts/D94/ToolFollowup/Delivery.json records subsequent maintained default delivery"
+  ],
+  "checks": [
+    "All exact targets untracked, under Artifacts and outside gallery sources",
+    "No target contains player Saved/SaveGames/Cities/User directories",
+    "No target is a reparse point or below a reparse ancestor",
+    "No maintained Tools script refers to these package roots",
+    "SHA256 recorded for every exact candidate file; no files removed"
+  ],
+  "retained": [
+    "All saved-city/profile files and backups",
+    "D89/D92/default delivery JSON, primary logs, captures and authoring receipts",
+    "Current/public/Quest/smoke packages; QA-D73, Playtests, Toolchain, ThirdPartySources",
+    "Active D94, audio D82 and running D88/Scale/ReviewPackage",
+    "Profiling and named D72/D79/D71/D83 evidence; all gallery sources",
+    "D91 package used by maintained verification helper",
+    "Blender D93-D100 sources/previews/comparison receipts"
+  ],
+  "limitations": [
+    "Six long Windows paths under Playtests/QA were skipped by size inventory; none are candidates",
+    "Historical ENVIRONMENT/changelog commands may reference retired archives; annotate if removal approved",
+    "Gross logical byte sizes; actual disk space released can differ"
+  ],
+  "deletion_candidates": [
+    {
+      "path": "Artifacts/D89-Feedback/Play-D89-Feedback-Desktop.ps1",
+      "bytes": 1987,
+      "sha256": "ec98d983c0d79068085fdf585d9ebb92ece57ddb45904f7b3a88bc7cbba6a955",
+      "category": "superseded-review-launcher"
+    },
+    {
+      "path": "Artifacts/D89-Feedback/WindowsPackage/CitySimVR.exe",
+      "bytes": 164864,
+      "sha256": "fd64fdb84e55608a84bece0fcddcb938948a754472f508b508c7ae7e80ba1c3b",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89-Feedback/WindowsPackage/CitySimVR/Binaries/Win64/CitySimVR.exe",
+      "bytes": 303093760,
+      "sha256": "6d7a24e3fdd36cba83c20636b11cf948f4c67e0baef1d62f4ae4119cf1c30501",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89-Feedback/WindowsPackage/CitySimVR/Binaries/Win64/CitySimVR.pdb",
+      "bytes": 400568320,
+      "sha256": "83d5bb82e0c839127d35daa4ff2699dbbcde092cd2906454dc7d60ff87330e3d",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89-Feedback/WindowsPackage/CitySimVR/Binaries/Win64/D3D12/x64/D3D12Core.dll",
+      "bytes": 4544000,
+      "sha256": "fb197903fea91aaf352d2322f342b1cec8db36ff0292a49f24173577e08f26cf",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89-Feedback/WindowsPackage/CitySimVR/Binaries/Win64/D3D12/x64/d3d12SDKLayers.dll",
+      "bytes": 5104632,
+      "sha256": "a817223446f53b3da894edb1ee7a92b94573690e689a9470b87bf42866115f91",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89-Feedback/WindowsPackage/CitySimVR/Binaries/Win64/DML/x64/DirectML.dll",
+      "bytes": 18537968,
+      "sha256": "664255a3d9a6b976e2d0e2440403537d9d0dd91b1fad866768638b4e73a2c33a",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89-Feedback/WindowsPackage/CitySimVR/Binaries/Win64/tbb12.dll",
+      "bytes": 331704,
+      "sha256": "645b681e3581c04d57f468bd85c17648172decf873653ab00382211b96cc98fb",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89-Feedback/WindowsPackage/CitySimVR/Binaries/Win64/tbbmalloc.dll",
+      "bytes": 117688,
+      "sha256": "f81a11f2e6e93036bab4e51a1daab9940fb8a9a5ec0f508c4cb76d398e27c100",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89-Feedback/WindowsPackage/CitySimVR/Content/Paks/CitySimVR-Windows.pak",
+      "bytes": 10746776,
+      "sha256": "0c5d6c4a0f0bde47bd106e68e03ec51a75ed89351b9592044942508c053679db",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89-Feedback/WindowsPackage/CitySimVR/Content/Paks/CitySimVR-Windows.ucas",
+      "bytes": 266194480,
+      "sha256": "674edec976537aa267b3c2f2cdcf289fb3d1fbb02ae1aca22457779ac8e98b83",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89-Feedback/WindowsPackage/CitySimVR/Content/Paks/CitySimVR-Windows.utoc",
+      "bytes": 286971,
+      "sha256": "31d56a37cf9ea8aae1cd42e8d8e12dd7090ce48543c7063f60c71bd27d4df60d",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89-Feedback/WindowsPackage/CitySimVR/Content/Paks/global.ucas",
+      "bytes": 2803008,
+      "sha256": "a01c2333cf3426177c5aad4bd919e8ab3a7ceb5175d5cbe34373880c5645f8bd",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89-Feedback/WindowsPackage/CitySimVR/Content/Paks/global.utoc",
+      "bytes": 710,
+      "sha256": "1a578d92e13dac652c9cd9ed2cb5996d71beccf960220aa9cfb6fd6d13d78fa0",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89-Feedback/WindowsPackage/CitySimVR/Plugins/MetaXR/Source/ThirdParty/EngineTelemetry/Lib/Win64/EngineTelemetry.dll",
+      "bytes": 7698432,
+      "sha256": "5a11843665954186ba3621f33aef3331d4f82f1a737f8e02beaab0c7a605530c",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89-Feedback/WindowsPackage/CitySimVR/Plugins/MetaXR/Source/ThirdParty/MRUtilityKitShared/Lib/Win64/mrutilitykitshared.dll",
+      "bytes": 4327936,
+      "sha256": "31692707f6f4af4ef8e7ba02a234900b405f795b73f312954481a099fcc89aae",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89-Feedback/WindowsPackage/CitySimVR/Plugins/MetaXR/Source/ThirdParty/OVRPlugin/OVRPlugin/Lib/Win64/OpenXR/OVRPlugin.dll",
+      "bytes": 8014072,
+      "sha256": "5ce1fa4b7d315c44d0a472cd81c2096b5346f4b76195e4b115fd93d82e847e60",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89-Feedback/WindowsPackage/Engine/Binaries/ThirdParty/DbgHelp/dbghelp.dll",
+      "bytes": 2232688,
+      "sha256": "d65dff2ebe90bf79fba62f3bb1f105a7ce8efaefaa8349379a886bb893a4ef45",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89-Feedback/WindowsPackage/Engine/Binaries/ThirdParty/MsQuic/v220/win64/msquic.dll",
+      "bytes": 2547080,
+      "sha256": "832f4ae560b1623aa4d8f87b982e9c9414312723fbc905ddab93fd80d7f1cea2",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89-Feedback/WindowsPackage/Engine/Binaries/ThirdParty/NVIDIA/NVaftermath/Win64/GFSDK_Aftermath_Lib.x64.dll",
+      "bytes": 5442592,
+      "sha256": "f2f1a88185345b28d05673e11111ee21845f3ebe65919cf6b3085bee7d09e30a",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89-Feedback/WindowsPackage/Engine/Binaries/ThirdParty/Ogg/Win64/VS2015/libogg_64.dll",
+      "bytes": 59832,
+      "sha256": "1e2fe8a3dfe9616edcb3cd3a5a958c791f690d5b604eb1658b0f844cef156eee",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89-Feedback/WindowsPackage/Engine/Binaries/ThirdParty/OpenXR/win64/openxr_loader.dll",
+      "bytes": 1971640,
+      "sha256": "36020b5170c5a653132468e7b297c5e06eaff5ba4d26d5478d723f88f699f8b5",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89-Feedback/WindowsPackage/Engine/Binaries/ThirdParty/Vorbis/Win64/VS2015/libvorbis_64.dll",
+      "bytes": 1724856,
+      "sha256": "676bbdc5838755d7a881c847f84ca79997b525882594b66160ab800676cab9c0",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89-Feedback/WindowsPackage/Engine/Binaries/ThirdParty/Vorbis/Win64/VS2015/libvorbisfile_64.dll",
+      "bytes": 48568,
+      "sha256": "ceb067771c03ae1a7afc125c15c85dbab027aaec72575dc101c618eba2bafea0",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89-Feedback/WindowsPackage/Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_api_dump.dll",
+      "bytes": 11001064,
+      "sha256": "84429d4ee54a717f33c176eff9c4738d7bd2ab30ba5c0928e8698f7c12c70551",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89-Feedback/WindowsPackage/Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_api_dump.json",
+      "bytes": 12828,
+      "sha256": "281669fdf39baf7e49e0507387645997451187be2f7d444b0c169ef078004e46",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89-Feedback/WindowsPackage/Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_crash_diagnostic.dll",
+      "bytes": 2029288,
+      "sha256": "ad1d992bfcc0744c9f914a5cb24cd1a2ec9df2ef48538695c0788d13dd3c0d75",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89-Feedback/WindowsPackage/Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_crash_diagnostic.json",
+      "bytes": 9527,
+      "sha256": "3601109840469aea0b9008512157e043c89500705cb346270fb019d7ed6f724e",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89-Feedback/WindowsPackage/Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_gfxreconstruct.dll",
+      "bytes": 5603048,
+      "sha256": "2bb443f869596c64194e73541a61b252a74db2beb467bbd6d7bfe8a9aa227758",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89-Feedback/WindowsPackage/Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_gfxreconstruct.json",
+      "bytes": 27234,
+      "sha256": "a6c78d253715f260a0fe7c8e1b0ce3e153aa8a802a2ba89b0dd46561e686b636",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89-Feedback/WindowsPackage/Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_khronos_profiles.dll",
+      "bytes": 1776360,
+      "sha256": "35240f401e2b220c7bafd2a91480ff6ada203c7af6ceb04c08421dcf2e35881d",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89-Feedback/WindowsPackage/Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_khronos_profiles.json",
+      "bytes": 70320,
+      "sha256": "8c9d6e4bf6d38c2cf223b598aaf86a08242a1a07d62b24236cca3e64e0daf91c",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89-Feedback/WindowsPackage/Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_khronos_shader_object.dll",
+      "bytes": 371432,
+      "sha256": "a4a1635578f92f529cd29e463b90823458cfc0ea6d0cb5ab1f57bd6814f2e73d",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89-Feedback/WindowsPackage/Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_khronos_shader_object.json",
+      "bytes": 4455,
+      "sha256": "98b9a12a5723665abab2eadfcab700a5785172adad22e5ca1364ab466268185f",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89-Feedback/WindowsPackage/Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_khronos_synchronization2.dll",
+      "bytes": 341736,
+      "sha256": "4ba97ee2194ba4f8aeb8cf92d0351c163a3c25e121d304851a16508cc47b8ad8",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89-Feedback/WindowsPackage/Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_khronos_synchronization2.json",
+      "bytes": 1910,
+      "sha256": "80a014d0b4337ea6ab05b8295fe6d1ba7f4cc0cf6bfe918873a0d30960973696",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89-Feedback/WindowsPackage/Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_khronos_validation.dll",
+      "bytes": 17958120,
+      "sha256": "2d86828d287b75c366b475b1db2125c334ddee3dfa993c42be79016addd7057c",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89-Feedback/WindowsPackage/Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_khronos_validation.json",
+      "bytes": 82965,
+      "sha256": "be1722a7a84efca54cd0bd1625f37016b556dd696586620f81ff5fa1c155a198",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89-Feedback/WindowsPackage/Engine/Binaries/ThirdParty/Windows/WinPixEventRuntime/x64/WinPixEventRuntime.dll",
+      "bytes": 69056,
+      "sha256": "fdbab7782b213852c6eaa38ab9343f7db3f788f43e032fb5db3bade192d6d5a0",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89-Feedback/WindowsPackage/Engine/Binaries/ThirdParty/Windows/XAudio2_9/x64/xaudio2_9redist.dll",
+      "bytes": 858144,
+      "sha256": "013984e33e884bd0b823734ab86a599a8dceffed675039ff293d15ffcf7f2be9",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89-Feedback/WindowsPackage/Engine/Config/StagedBuild_CitySimVR.ini",
+      "bytes": 3,
+      "sha256": "f1945cd6c19e56b3c1c78943ef5ec18116907a4ca1efc40a57d48ab1db7adfc5",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89-Feedback/WindowsPackage/Engine/Content/Renderer/TessellationTable.bin",
+      "bytes": 259568,
+      "sha256": "edc4f3b628a139c5e185bbaeca661c95c1f427368d3b92892c5cff36c56dd941",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89-Feedback/WindowsPackage/Engine/Content/Slate/Cursor/invisible.cur",
+      "bytes": 326,
+      "sha256": "fef3980fa567e9c45d5d8dcaa432a2c1a3f3bb17fe67d7ab198164f56c142aa1",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89-Feedback/WindowsPackage/Engine/Content/SlateDebug/Fonts/LastResort.tps",
+      "bytes": 930,
+      "sha256": "0f775fa99d05e21d43d2d06d55982b23dcdccdb512a9a5a07aff674f212c41b8",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89-Feedback/WindowsPackage/Engine/Content/SlateDebug/Fonts/LastResort.ttf",
+      "bytes": 5395052,
+      "sha256": "fff0f8de0b868b964950fe97c9b60f893e9bc85a4f90b3629c5693db058b97b9",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89-Feedback/WindowsPackage/Engine/Extras/GPUDumpViewer/GPUDumpViewer.html",
+      "bytes": 187194,
+      "sha256": "15966544a010b56930a7389b5e9cbeee7a9ae545d132906e983ac954a839df67",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89-Feedback/WindowsPackage/Engine/Extras/GPUDumpViewer/OpenGPUDumpViewer.bat",
+      "bytes": 879,
+      "sha256": "e8f7ef9c88697041bd87902b76e52558979ca866c7450b1da108a94a027f441b",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89-Feedback/WindowsPackage/Engine/Extras/GPUDumpViewer/OpenGPUDumpViewer.sh",
+      "bytes": 2165,
+      "sha256": "1b222b5d5aad6dd9b5b9f0a1c72d38635149540f2c7a368600ec76c1d304390a",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89-Feedback/WindowsPackage/Engine/Extras/Redist/en-us/vc_redist.arm64.exe",
+      "bytes": 11733048,
+      "sha256": "07698e7186563f0f9c78c37b2acb58136813fd5cfb068d41a339be2ee5b49cef",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89-Feedback/WindowsPackage/Engine/Extras/Redist/en-us/vc_redist.x64.exe",
+      "bytes": 25646472,
+      "sha256": "d027d8eb8edbef6c8740683b41d00442f4108351c034b9e0cb36fff27349b5be",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89-Feedback/WindowsPackage/Engine/Plugins/NNE/NNERuntimeORT/Binaries/ThirdParty/Onnxruntime/Win64/onnxruntime.dll",
+      "bytes": 14692872,
+      "sha256": "381497f383b457180aba6e5bf56a2eb18cefd6735cfd47257539f6d87fbc8584",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89-Feedback/WindowsPackage/Manifest_DebugFiles_Win64.txt",
+      "bytes": 435,
+      "sha256": "3bf6aa432f0901e1705440446bd6611b3a8ebda22ccf2777b0998dab6796d67e",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89-Feedback/WindowsPackage/Manifest_NonUFSFiles_Win64.txt",
+      "bytes": 3439,
+      "sha256": "a2cfa1368ba9a97eb84ee7dcc84b9d1bb305ef230b5f8216e8169d0d08662ad9",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89-Feedback/WindowsPackage/Manifest_UFSFiles_Win64.txt",
+      "bytes": 379804,
+      "sha256": "580fab2c6b1aff1e03f8605da15e79bfde5d581295247729855f5b9f9465a456",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89-Migration/Play-D89-Migration-Desktop.ps1",
+      "bytes": 1112,
+      "sha256": "678154ba29a4228f076e44e4066ff7ab329f682c4a9f568d3944ac23466d1ff7",
+      "category": "superseded-review-launcher"
+    },
+    {
+      "path": "Artifacts/D89-Migration/WindowsPackage/CitySimVR.exe",
+      "bytes": 164864,
+      "sha256": "fd64fdb84e55608a84bece0fcddcb938948a754472f508b508c7ae7e80ba1c3b",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89-Migration/WindowsPackage/CitySimVR/Binaries/Win64/CitySimVR.exe",
+      "bytes": 303025152,
+      "sha256": "632483b53af15dbf588edf9e618664fc949c8ea28ba169337077f9715997395f",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89-Migration/WindowsPackage/CitySimVR/Binaries/Win64/CitySimVR.pdb",
+      "bytes": 400248832,
+      "sha256": "adf379d7d43e4292721d8508907b8b2830ab497fadbae6f7c686a0fd95b90104",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89-Migration/WindowsPackage/CitySimVR/Binaries/Win64/D3D12/x64/D3D12Core.dll",
+      "bytes": 4544000,
+      "sha256": "fb197903fea91aaf352d2322f342b1cec8db36ff0292a49f24173577e08f26cf",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89-Migration/WindowsPackage/CitySimVR/Binaries/Win64/D3D12/x64/d3d12SDKLayers.dll",
+      "bytes": 5104632,
+      "sha256": "a817223446f53b3da894edb1ee7a92b94573690e689a9470b87bf42866115f91",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89-Migration/WindowsPackage/CitySimVR/Binaries/Win64/DML/x64/DirectML.dll",
+      "bytes": 18537968,
+      "sha256": "664255a3d9a6b976e2d0e2440403537d9d0dd91b1fad866768638b4e73a2c33a",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89-Migration/WindowsPackage/CitySimVR/Binaries/Win64/tbb12.dll",
+      "bytes": 331704,
+      "sha256": "645b681e3581c04d57f468bd85c17648172decf873653ab00382211b96cc98fb",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89-Migration/WindowsPackage/CitySimVR/Binaries/Win64/tbbmalloc.dll",
+      "bytes": 117688,
+      "sha256": "f81a11f2e6e93036bab4e51a1daab9940fb8a9a5ec0f508c4cb76d398e27c100",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89-Migration/WindowsPackage/CitySimVR/Content/Paks/CitySimVR-Windows.pak",
+      "bytes": 10746776,
+      "sha256": "b689689b40ee10e86413f0f9e8b1962eca27a22dc0ebfe8dc74e51f66c89dfd8",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89-Migration/WindowsPackage/CitySimVR/Content/Paks/CitySimVR-Windows.ucas",
+      "bytes": 266196528,
+      "sha256": "62a04ab5a00e1667341acfd0123d38242b4d0386c7fabb583795edcd55483e20",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89-Migration/WindowsPackage/CitySimVR/Content/Paks/CitySimVR-Windows.utoc",
+      "bytes": 286959,
+      "sha256": "522dc73c251306f873cd58957a3fc8ad56e08f78f8737a29bb4e9616e9232e4b",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89-Migration/WindowsPackage/CitySimVR/Content/Paks/global.ucas",
+      "bytes": 2802864,
+      "sha256": "ad2b9578270a1733ffafebe45075227650bdf4d3582c6e59556d165c1e0569f2",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89-Migration/WindowsPackage/CitySimVR/Content/Paks/global.utoc",
+      "bytes": 710,
+      "sha256": "279a073145f49e17cbc51c718e7c843f55cfc51fd24b390453e0f944577f0caa",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89-Migration/WindowsPackage/CitySimVR/Plugins/MetaXR/Source/ThirdParty/EngineTelemetry/Lib/Win64/EngineTelemetry.dll",
+      "bytes": 7698432,
+      "sha256": "5a11843665954186ba3621f33aef3331d4f82f1a737f8e02beaab0c7a605530c",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89-Migration/WindowsPackage/CitySimVR/Plugins/MetaXR/Source/ThirdParty/MRUtilityKitShared/Lib/Win64/mrutilitykitshared.dll",
+      "bytes": 4327936,
+      "sha256": "31692707f6f4af4ef8e7ba02a234900b405f795b73f312954481a099fcc89aae",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89-Migration/WindowsPackage/CitySimVR/Plugins/MetaXR/Source/ThirdParty/OVRPlugin/OVRPlugin/Lib/Win64/OpenXR/OVRPlugin.dll",
+      "bytes": 8014072,
+      "sha256": "5ce1fa4b7d315c44d0a472cd81c2096b5346f4b76195e4b115fd93d82e847e60",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89-Migration/WindowsPackage/Engine/Binaries/ThirdParty/DbgHelp/dbghelp.dll",
+      "bytes": 2232688,
+      "sha256": "d65dff2ebe90bf79fba62f3bb1f105a7ce8efaefaa8349379a886bb893a4ef45",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89-Migration/WindowsPackage/Engine/Binaries/ThirdParty/MsQuic/v220/win64/msquic.dll",
+      "bytes": 2547080,
+      "sha256": "832f4ae560b1623aa4d8f87b982e9c9414312723fbc905ddab93fd80d7f1cea2",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89-Migration/WindowsPackage/Engine/Binaries/ThirdParty/NVIDIA/NVaftermath/Win64/GFSDK_Aftermath_Lib.x64.dll",
+      "bytes": 5442592,
+      "sha256": "f2f1a88185345b28d05673e11111ee21845f3ebe65919cf6b3085bee7d09e30a",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89-Migration/WindowsPackage/Engine/Binaries/ThirdParty/Ogg/Win64/VS2015/libogg_64.dll",
+      "bytes": 59832,
+      "sha256": "1e2fe8a3dfe9616edcb3cd3a5a958c791f690d5b604eb1658b0f844cef156eee",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89-Migration/WindowsPackage/Engine/Binaries/ThirdParty/OpenXR/win64/openxr_loader.dll",
+      "bytes": 1971640,
+      "sha256": "36020b5170c5a653132468e7b297c5e06eaff5ba4d26d5478d723f88f699f8b5",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89-Migration/WindowsPackage/Engine/Binaries/ThirdParty/Vorbis/Win64/VS2015/libvorbis_64.dll",
+      "bytes": 1724856,
+      "sha256": "676bbdc5838755d7a881c847f84ca79997b525882594b66160ab800676cab9c0",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89-Migration/WindowsPackage/Engine/Binaries/ThirdParty/Vorbis/Win64/VS2015/libvorbisfile_64.dll",
+      "bytes": 48568,
+      "sha256": "ceb067771c03ae1a7afc125c15c85dbab027aaec72575dc101c618eba2bafea0",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89-Migration/WindowsPackage/Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_api_dump.dll",
+      "bytes": 11001064,
+      "sha256": "84429d4ee54a717f33c176eff9c4738d7bd2ab30ba5c0928e8698f7c12c70551",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89-Migration/WindowsPackage/Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_api_dump.json",
+      "bytes": 12828,
+      "sha256": "281669fdf39baf7e49e0507387645997451187be2f7d444b0c169ef078004e46",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89-Migration/WindowsPackage/Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_crash_diagnostic.dll",
+      "bytes": 2029288,
+      "sha256": "ad1d992bfcc0744c9f914a5cb24cd1a2ec9df2ef48538695c0788d13dd3c0d75",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89-Migration/WindowsPackage/Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_crash_diagnostic.json",
+      "bytes": 9527,
+      "sha256": "3601109840469aea0b9008512157e043c89500705cb346270fb019d7ed6f724e",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89-Migration/WindowsPackage/Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_gfxreconstruct.dll",
+      "bytes": 5603048,
+      "sha256": "2bb443f869596c64194e73541a61b252a74db2beb467bbd6d7bfe8a9aa227758",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89-Migration/WindowsPackage/Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_gfxreconstruct.json",
+      "bytes": 27234,
+      "sha256": "a6c78d253715f260a0fe7c8e1b0ce3e153aa8a802a2ba89b0dd46561e686b636",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89-Migration/WindowsPackage/Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_khronos_profiles.dll",
+      "bytes": 1776360,
+      "sha256": "35240f401e2b220c7bafd2a91480ff6ada203c7af6ceb04c08421dcf2e35881d",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89-Migration/WindowsPackage/Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_khronos_profiles.json",
+      "bytes": 70320,
+      "sha256": "8c9d6e4bf6d38c2cf223b598aaf86a08242a1a07d62b24236cca3e64e0daf91c",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89-Migration/WindowsPackage/Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_khronos_shader_object.dll",
+      "bytes": 371432,
+      "sha256": "a4a1635578f92f529cd29e463b90823458cfc0ea6d0cb5ab1f57bd6814f2e73d",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89-Migration/WindowsPackage/Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_khronos_shader_object.json",
+      "bytes": 4455,
+      "sha256": "98b9a12a5723665abab2eadfcab700a5785172adad22e5ca1364ab466268185f",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89-Migration/WindowsPackage/Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_khronos_synchronization2.dll",
+      "bytes": 341736,
+      "sha256": "4ba97ee2194ba4f8aeb8cf92d0351c163a3c25e121d304851a16508cc47b8ad8",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89-Migration/WindowsPackage/Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_khronos_synchronization2.json",
+      "bytes": 1910,
+      "sha256": "80a014d0b4337ea6ab05b8295fe6d1ba7f4cc0cf6bfe918873a0d30960973696",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89-Migration/WindowsPackage/Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_khronos_validation.dll",
+      "bytes": 17958120,
+      "sha256": "2d86828d287b75c366b475b1db2125c334ddee3dfa993c42be79016addd7057c",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89-Migration/WindowsPackage/Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_khronos_validation.json",
+      "bytes": 82965,
+      "sha256": "be1722a7a84efca54cd0bd1625f37016b556dd696586620f81ff5fa1c155a198",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89-Migration/WindowsPackage/Engine/Binaries/ThirdParty/Windows/WinPixEventRuntime/x64/WinPixEventRuntime.dll",
+      "bytes": 69056,
+      "sha256": "fdbab7782b213852c6eaa38ab9343f7db3f788f43e032fb5db3bade192d6d5a0",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89-Migration/WindowsPackage/Engine/Binaries/ThirdParty/Windows/XAudio2_9/x64/xaudio2_9redist.dll",
+      "bytes": 858144,
+      "sha256": "013984e33e884bd0b823734ab86a599a8dceffed675039ff293d15ffcf7f2be9",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89-Migration/WindowsPackage/Engine/Config/StagedBuild_CitySimVR.ini",
+      "bytes": 3,
+      "sha256": "f1945cd6c19e56b3c1c78943ef5ec18116907a4ca1efc40a57d48ab1db7adfc5",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89-Migration/WindowsPackage/Engine/Content/Renderer/TessellationTable.bin",
+      "bytes": 259568,
+      "sha256": "edc4f3b628a139c5e185bbaeca661c95c1f427368d3b92892c5cff36c56dd941",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89-Migration/WindowsPackage/Engine/Content/Slate/Cursor/invisible.cur",
+      "bytes": 326,
+      "sha256": "fef3980fa567e9c45d5d8dcaa432a2c1a3f3bb17fe67d7ab198164f56c142aa1",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89-Migration/WindowsPackage/Engine/Content/SlateDebug/Fonts/LastResort.tps",
+      "bytes": 930,
+      "sha256": "0f775fa99d05e21d43d2d06d55982b23dcdccdb512a9a5a07aff674f212c41b8",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89-Migration/WindowsPackage/Engine/Content/SlateDebug/Fonts/LastResort.ttf",
+      "bytes": 5395052,
+      "sha256": "fff0f8de0b868b964950fe97c9b60f893e9bc85a4f90b3629c5693db058b97b9",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89-Migration/WindowsPackage/Engine/Extras/GPUDumpViewer/GPUDumpViewer.html",
+      "bytes": 187194,
+      "sha256": "15966544a010b56930a7389b5e9cbeee7a9ae545d132906e983ac954a839df67",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89-Migration/WindowsPackage/Engine/Extras/GPUDumpViewer/OpenGPUDumpViewer.bat",
+      "bytes": 879,
+      "sha256": "e8f7ef9c88697041bd87902b76e52558979ca866c7450b1da108a94a027f441b",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89-Migration/WindowsPackage/Engine/Extras/GPUDumpViewer/OpenGPUDumpViewer.sh",
+      "bytes": 2165,
+      "sha256": "1b222b5d5aad6dd9b5b9f0a1c72d38635149540f2c7a368600ec76c1d304390a",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89-Migration/WindowsPackage/Engine/Extras/Redist/en-us/vc_redist.arm64.exe",
+      "bytes": 11733048,
+      "sha256": "07698e7186563f0f9c78c37b2acb58136813fd5cfb068d41a339be2ee5b49cef",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89-Migration/WindowsPackage/Engine/Extras/Redist/en-us/vc_redist.x64.exe",
+      "bytes": 25646472,
+      "sha256": "d027d8eb8edbef6c8740683b41d00442f4108351c034b9e0cb36fff27349b5be",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89-Migration/WindowsPackage/Engine/Plugins/NNE/NNERuntimeORT/Binaries/ThirdParty/Onnxruntime/Win64/onnxruntime.dll",
+      "bytes": 14692872,
+      "sha256": "381497f383b457180aba6e5bf56a2eb18cefd6735cfd47257539f6d87fbc8584",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89-Migration/WindowsPackage/Manifest_DebugFiles_Win64.txt",
+      "bytes": 435,
+      "sha256": "7a2589f1a0815fb1ff29a16d7aa133590d7527ad968a3a9df61e32d6a8905fc6",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89-Migration/WindowsPackage/Manifest_NonUFSFiles_Win64.txt",
+      "bytes": 3439,
+      "sha256": "74c0581559aba6577b8b9016bebdb64372254e9ac63fcabecec541dfb4ea8bb0",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89-Migration/WindowsPackage/Manifest_UFSFiles_Win64.txt",
+      "bytes": 379804,
+      "sha256": "c5c9037f4542e96ccc2259b306d2c36ebd9d812266e19c80a524a191d7ff29fc",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89/Play-D89-Desktop.ps1",
+      "bytes": 993,
+      "sha256": "089be28bff1b836e10dac225b3b4575eca43d8600673b7b7b7a432ff13760ff7",
+      "category": "superseded-review-launcher"
+    },
+    {
+      "path": "Artifacts/D89/WindowsPackage/CitySimVR.exe",
+      "bytes": 164864,
+      "sha256": "fd64fdb84e55608a84bece0fcddcb938948a754472f508b508c7ae7e80ba1c3b",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89/WindowsPackage/CitySimVR/Binaries/Win64/CitySimVR.exe",
+      "bytes": 302975488,
+      "sha256": "cc394b169b6c0fd9f84c4db8021ff47b4f50cfc646f278c4e3c7774caee09a86",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89/WindowsPackage/CitySimVR/Binaries/Win64/CitySimVR.pdb",
+      "bytes": 399642624,
+      "sha256": "8953bd318408f4ba32515f614221048a9f2fe1405ebddb4b171b1264681c252b",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89/WindowsPackage/CitySimVR/Binaries/Win64/D3D12/x64/D3D12Core.dll",
+      "bytes": 4544000,
+      "sha256": "fb197903fea91aaf352d2322f342b1cec8db36ff0292a49f24173577e08f26cf",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89/WindowsPackage/CitySimVR/Binaries/Win64/D3D12/x64/d3d12SDKLayers.dll",
+      "bytes": 5104632,
+      "sha256": "a817223446f53b3da894edb1ee7a92b94573690e689a9470b87bf42866115f91",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89/WindowsPackage/CitySimVR/Binaries/Win64/DML/x64/DirectML.dll",
+      "bytes": 18537968,
+      "sha256": "664255a3d9a6b976e2d0e2440403537d9d0dd91b1fad866768638b4e73a2c33a",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89/WindowsPackage/CitySimVR/Binaries/Win64/tbb12.dll",
+      "bytes": 331704,
+      "sha256": "645b681e3581c04d57f468bd85c17648172decf873653ab00382211b96cc98fb",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89/WindowsPackage/CitySimVR/Binaries/Win64/tbbmalloc.dll",
+      "bytes": 117688,
+      "sha256": "f81a11f2e6e93036bab4e51a1daab9940fb8a9a5ec0f508c4cb76d398e27c100",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89/WindowsPackage/CitySimVR/Content/Paks/CitySimVR-Windows.pak",
+      "bytes": 10746776,
+      "sha256": "20e3543e267d73c0a1ab8629938e1846da6c545278ab5c79057726a11fd490fe",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89/WindowsPackage/CitySimVR/Content/Paks/CitySimVR-Windows.ucas",
+      "bytes": 266235440,
+      "sha256": "30cf89762f0e6c3aec62643fad1c57fd55e88be022508772bc3e22eae4ca939f",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89/WindowsPackage/CitySimVR/Content/Paks/CitySimVR-Windows.utoc",
+      "bytes": 286983,
+      "sha256": "343b62a3b074dbe9767acaa64e98fc1af59ee76520912416bcd86501f5d32b20",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89/WindowsPackage/CitySimVR/Content/Paks/global.ucas",
+      "bytes": 2802864,
+      "sha256": "ad2b9578270a1733ffafebe45075227650bdf4d3582c6e59556d165c1e0569f2",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89/WindowsPackage/CitySimVR/Content/Paks/global.utoc",
+      "bytes": 710,
+      "sha256": "279a073145f49e17cbc51c718e7c843f55cfc51fd24b390453e0f944577f0caa",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89/WindowsPackage/CitySimVR/Plugins/MetaXR/Source/ThirdParty/EngineTelemetry/Lib/Win64/EngineTelemetry.dll",
+      "bytes": 7698432,
+      "sha256": "5a11843665954186ba3621f33aef3331d4f82f1a737f8e02beaab0c7a605530c",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89/WindowsPackage/CitySimVR/Plugins/MetaXR/Source/ThirdParty/MRUtilityKitShared/Lib/Win64/mrutilitykitshared.dll",
+      "bytes": 4327936,
+      "sha256": "31692707f6f4af4ef8e7ba02a234900b405f795b73f312954481a099fcc89aae",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89/WindowsPackage/CitySimVR/Plugins/MetaXR/Source/ThirdParty/OVRPlugin/OVRPlugin/Lib/Win64/OpenXR/OVRPlugin.dll",
+      "bytes": 8014072,
+      "sha256": "5ce1fa4b7d315c44d0a472cd81c2096b5346f4b76195e4b115fd93d82e847e60",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89/WindowsPackage/Engine/Binaries/ThirdParty/DbgHelp/dbghelp.dll",
+      "bytes": 2232688,
+      "sha256": "d65dff2ebe90bf79fba62f3bb1f105a7ce8efaefaa8349379a886bb893a4ef45",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89/WindowsPackage/Engine/Binaries/ThirdParty/MsQuic/v220/win64/msquic.dll",
+      "bytes": 2547080,
+      "sha256": "832f4ae560b1623aa4d8f87b982e9c9414312723fbc905ddab93fd80d7f1cea2",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89/WindowsPackage/Engine/Binaries/ThirdParty/NVIDIA/NVaftermath/Win64/GFSDK_Aftermath_Lib.x64.dll",
+      "bytes": 5442592,
+      "sha256": "f2f1a88185345b28d05673e11111ee21845f3ebe65919cf6b3085bee7d09e30a",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89/WindowsPackage/Engine/Binaries/ThirdParty/Ogg/Win64/VS2015/libogg_64.dll",
+      "bytes": 59832,
+      "sha256": "1e2fe8a3dfe9616edcb3cd3a5a958c791f690d5b604eb1658b0f844cef156eee",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89/WindowsPackage/Engine/Binaries/ThirdParty/OpenXR/win64/openxr_loader.dll",
+      "bytes": 1971640,
+      "sha256": "36020b5170c5a653132468e7b297c5e06eaff5ba4d26d5478d723f88f699f8b5",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89/WindowsPackage/Engine/Binaries/ThirdParty/Vorbis/Win64/VS2015/libvorbis_64.dll",
+      "bytes": 1724856,
+      "sha256": "676bbdc5838755d7a881c847f84ca79997b525882594b66160ab800676cab9c0",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89/WindowsPackage/Engine/Binaries/ThirdParty/Vorbis/Win64/VS2015/libvorbisfile_64.dll",
+      "bytes": 48568,
+      "sha256": "ceb067771c03ae1a7afc125c15c85dbab027aaec72575dc101c618eba2bafea0",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89/WindowsPackage/Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_api_dump.dll",
+      "bytes": 11001064,
+      "sha256": "84429d4ee54a717f33c176eff9c4738d7bd2ab30ba5c0928e8698f7c12c70551",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89/WindowsPackage/Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_api_dump.json",
+      "bytes": 12828,
+      "sha256": "281669fdf39baf7e49e0507387645997451187be2f7d444b0c169ef078004e46",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89/WindowsPackage/Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_crash_diagnostic.dll",
+      "bytes": 2029288,
+      "sha256": "ad1d992bfcc0744c9f914a5cb24cd1a2ec9df2ef48538695c0788d13dd3c0d75",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89/WindowsPackage/Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_crash_diagnostic.json",
+      "bytes": 9527,
+      "sha256": "3601109840469aea0b9008512157e043c89500705cb346270fb019d7ed6f724e",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89/WindowsPackage/Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_gfxreconstruct.dll",
+      "bytes": 5603048,
+      "sha256": "2bb443f869596c64194e73541a61b252a74db2beb467bbd6d7bfe8a9aa227758",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89/WindowsPackage/Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_gfxreconstruct.json",
+      "bytes": 27234,
+      "sha256": "a6c78d253715f260a0fe7c8e1b0ce3e153aa8a802a2ba89b0dd46561e686b636",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89/WindowsPackage/Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_khronos_profiles.dll",
+      "bytes": 1776360,
+      "sha256": "35240f401e2b220c7bafd2a91480ff6ada203c7af6ceb04c08421dcf2e35881d",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89/WindowsPackage/Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_khronos_profiles.json",
+      "bytes": 70320,
+      "sha256": "8c9d6e4bf6d38c2cf223b598aaf86a08242a1a07d62b24236cca3e64e0daf91c",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89/WindowsPackage/Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_khronos_shader_object.dll",
+      "bytes": 371432,
+      "sha256": "a4a1635578f92f529cd29e463b90823458cfc0ea6d0cb5ab1f57bd6814f2e73d",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89/WindowsPackage/Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_khronos_shader_object.json",
+      "bytes": 4455,
+      "sha256": "98b9a12a5723665abab2eadfcab700a5785172adad22e5ca1364ab466268185f",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89/WindowsPackage/Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_khronos_synchronization2.dll",
+      "bytes": 341736,
+      "sha256": "4ba97ee2194ba4f8aeb8cf92d0351c163a3c25e121d304851a16508cc47b8ad8",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89/WindowsPackage/Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_khronos_synchronization2.json",
+      "bytes": 1910,
+      "sha256": "80a014d0b4337ea6ab05b8295fe6d1ba7f4cc0cf6bfe918873a0d30960973696",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89/WindowsPackage/Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_khronos_validation.dll",
+      "bytes": 17958120,
+      "sha256": "2d86828d287b75c366b475b1db2125c334ddee3dfa993c42be79016addd7057c",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89/WindowsPackage/Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_khronos_validation.json",
+      "bytes": 82965,
+      "sha256": "be1722a7a84efca54cd0bd1625f37016b556dd696586620f81ff5fa1c155a198",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89/WindowsPackage/Engine/Binaries/ThirdParty/Windows/WinPixEventRuntime/x64/WinPixEventRuntime.dll",
+      "bytes": 69056,
+      "sha256": "fdbab7782b213852c6eaa38ab9343f7db3f788f43e032fb5db3bade192d6d5a0",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89/WindowsPackage/Engine/Binaries/ThirdParty/Windows/XAudio2_9/x64/xaudio2_9redist.dll",
+      "bytes": 858144,
+      "sha256": "013984e33e884bd0b823734ab86a599a8dceffed675039ff293d15ffcf7f2be9",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89/WindowsPackage/Engine/Config/StagedBuild_CitySimVR.ini",
+      "bytes": 3,
+      "sha256": "f1945cd6c19e56b3c1c78943ef5ec18116907a4ca1efc40a57d48ab1db7adfc5",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89/WindowsPackage/Engine/Content/Renderer/TessellationTable.bin",
+      "bytes": 259568,
+      "sha256": "edc4f3b628a139c5e185bbaeca661c95c1f427368d3b92892c5cff36c56dd941",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89/WindowsPackage/Engine/Content/Slate/Cursor/invisible.cur",
+      "bytes": 326,
+      "sha256": "fef3980fa567e9c45d5d8dcaa432a2c1a3f3bb17fe67d7ab198164f56c142aa1",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89/WindowsPackage/Engine/Content/SlateDebug/Fonts/LastResort.tps",
+      "bytes": 930,
+      "sha256": "0f775fa99d05e21d43d2d06d55982b23dcdccdb512a9a5a07aff674f212c41b8",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89/WindowsPackage/Engine/Content/SlateDebug/Fonts/LastResort.ttf",
+      "bytes": 5395052,
+      "sha256": "fff0f8de0b868b964950fe97c9b60f893e9bc85a4f90b3629c5693db058b97b9",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89/WindowsPackage/Engine/Extras/GPUDumpViewer/GPUDumpViewer.html",
+      "bytes": 187194,
+      "sha256": "15966544a010b56930a7389b5e9cbeee7a9ae545d132906e983ac954a839df67",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89/WindowsPackage/Engine/Extras/GPUDumpViewer/OpenGPUDumpViewer.bat",
+      "bytes": 879,
+      "sha256": "e8f7ef9c88697041bd87902b76e52558979ca866c7450b1da108a94a027f441b",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89/WindowsPackage/Engine/Extras/GPUDumpViewer/OpenGPUDumpViewer.sh",
+      "bytes": 2165,
+      "sha256": "1b222b5d5aad6dd9b5b9f0a1c72d38635149540f2c7a368600ec76c1d304390a",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89/WindowsPackage/Engine/Extras/Redist/en-us/vc_redist.arm64.exe",
+      "bytes": 11733048,
+      "sha256": "07698e7186563f0f9c78c37b2acb58136813fd5cfb068d41a339be2ee5b49cef",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89/WindowsPackage/Engine/Extras/Redist/en-us/vc_redist.x64.exe",
+      "bytes": 25646472,
+      "sha256": "d027d8eb8edbef6c8740683b41d00442f4108351c034b9e0cb36fff27349b5be",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89/WindowsPackage/Engine/Plugins/NNE/NNERuntimeORT/Binaries/ThirdParty/Onnxruntime/Win64/onnxruntime.dll",
+      "bytes": 14692872,
+      "sha256": "381497f383b457180aba6e5bf56a2eb18cefd6735cfd47257539f6d87fbc8584",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89/WindowsPackage/Manifest_DebugFiles_Win64.txt",
+      "bytes": 435,
+      "sha256": "fef2a2d8f2df40f43f19252094c5ea044ff9cd147c7d5f8887c72a8fac7e14c0",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89/WindowsPackage/Manifest_NonUFSFiles_Win64.txt",
+      "bytes": 3439,
+      "sha256": "39f5dcb75bf812e93fca4813402d12e7593791e7f9d3fc8a9d608939a8a1dcb7",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D89/WindowsPackage/Manifest_UFSFiles_Win64.txt",
+      "bytes": 379804,
+      "sha256": "a32efae53213cbcf3cc89d9474d40f9cd58ba6ff6e08b1b6e662dbc5b806b17f",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/Play-D92-Desktop.ps1",
+      "bytes": 1058,
+      "sha256": "ef18ba9d5509a4c96680dc1a38f7d81a0c8cd49e48044e72208cf0fc91412682",
+      "category": "superseded-review-launcher"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage-Final/CitySimVR.exe",
+      "bytes": 164864,
+      "sha256": "fd64fdb84e55608a84bece0fcddcb938948a754472f508b508c7ae7e80ba1c3b",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage-Final/CitySimVR/Binaries/Win64/CitySimVR.exe",
+      "bytes": 303054336,
+      "sha256": "16fc20bea41f72300d2b34e33d04e64e741a70fce05b91c328a7208148498460",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage-Final/CitySimVR/Binaries/Win64/CitySimVR.pdb",
+      "bytes": 400453632,
+      "sha256": "0f07056168820760f54544ad610c33545c555c016d7cb8e4455e38bbc22d14e1",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage-Final/CitySimVR/Binaries/Win64/D3D12/x64/D3D12Core.dll",
+      "bytes": 4544000,
+      "sha256": "fb197903fea91aaf352d2322f342b1cec8db36ff0292a49f24173577e08f26cf",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage-Final/CitySimVR/Binaries/Win64/D3D12/x64/d3d12SDKLayers.dll",
+      "bytes": 5104632,
+      "sha256": "a817223446f53b3da894edb1ee7a92b94573690e689a9470b87bf42866115f91",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage-Final/CitySimVR/Binaries/Win64/DML/x64/DirectML.dll",
+      "bytes": 18537968,
+      "sha256": "664255a3d9a6b976e2d0e2440403537d9d0dd91b1fad866768638b4e73a2c33a",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage-Final/CitySimVR/Binaries/Win64/tbb12.dll",
+      "bytes": 331704,
+      "sha256": "645b681e3581c04d57f468bd85c17648172decf873653ab00382211b96cc98fb",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage-Final/CitySimVR/Binaries/Win64/tbbmalloc.dll",
+      "bytes": 117688,
+      "sha256": "f81a11f2e6e93036bab4e51a1daab9940fb8a9a5ec0f508c4cb76d398e27c100",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage-Final/CitySimVR/Content/Paks/CitySimVR-Windows.pak",
+      "bytes": 10746776,
+      "sha256": "9cd0f59c34954521fe5000886e25e6589cd589861af2596296fccfa52cadd704",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage-Final/CitySimVR/Content/Paks/CitySimVR-Windows.ucas",
+      "bytes": 266202672,
+      "sha256": "6ff22dc04921d7616137b444be30616ca605dd8e8f8117b91cfcb1066af152cd",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage-Final/CitySimVR/Content/Paks/CitySimVR-Windows.utoc",
+      "bytes": 286971,
+      "sha256": "a1b4e207667178255160bfbda2c7b0b06790054626e2044f6df1199a2ae51d83",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage-Final/CitySimVR/Content/Paks/global.ucas",
+      "bytes": 2803008,
+      "sha256": "a01c2333cf3426177c5aad4bd919e8ab3a7ceb5175d5cbe34373880c5645f8bd",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage-Final/CitySimVR/Content/Paks/global.utoc",
+      "bytes": 710,
+      "sha256": "1a578d92e13dac652c9cd9ed2cb5996d71beccf960220aa9cfb6fd6d13d78fa0",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage-Final/CitySimVR/Plugins/MetaXR/Source/ThirdParty/EngineTelemetry/Lib/Win64/EngineTelemetry.dll",
+      "bytes": 7698432,
+      "sha256": "5a11843665954186ba3621f33aef3331d4f82f1a737f8e02beaab0c7a605530c",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage-Final/CitySimVR/Plugins/MetaXR/Source/ThirdParty/MRUtilityKitShared/Lib/Win64/mrutilitykitshared.dll",
+      "bytes": 4327936,
+      "sha256": "31692707f6f4af4ef8e7ba02a234900b405f795b73f312954481a099fcc89aae",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage-Final/CitySimVR/Plugins/MetaXR/Source/ThirdParty/OVRPlugin/OVRPlugin/Lib/Win64/OpenXR/OVRPlugin.dll",
+      "bytes": 8014072,
+      "sha256": "5ce1fa4b7d315c44d0a472cd81c2096b5346f4b76195e4b115fd93d82e847e60",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage-Final/Engine/Binaries/ThirdParty/DbgHelp/dbghelp.dll",
+      "bytes": 2232688,
+      "sha256": "d65dff2ebe90bf79fba62f3bb1f105a7ce8efaefaa8349379a886bb893a4ef45",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage-Final/Engine/Binaries/ThirdParty/MsQuic/v220/win64/msquic.dll",
+      "bytes": 2547080,
+      "sha256": "832f4ae560b1623aa4d8f87b982e9c9414312723fbc905ddab93fd80d7f1cea2",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage-Final/Engine/Binaries/ThirdParty/NVIDIA/NVaftermath/Win64/GFSDK_Aftermath_Lib.x64.dll",
+      "bytes": 5442592,
+      "sha256": "f2f1a88185345b28d05673e11111ee21845f3ebe65919cf6b3085bee7d09e30a",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage-Final/Engine/Binaries/ThirdParty/Ogg/Win64/VS2015/libogg_64.dll",
+      "bytes": 59832,
+      "sha256": "1e2fe8a3dfe9616edcb3cd3a5a958c791f690d5b604eb1658b0f844cef156eee",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage-Final/Engine/Binaries/ThirdParty/OpenXR/win64/openxr_loader.dll",
+      "bytes": 1971640,
+      "sha256": "36020b5170c5a653132468e7b297c5e06eaff5ba4d26d5478d723f88f699f8b5",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage-Final/Engine/Binaries/ThirdParty/Vorbis/Win64/VS2015/libvorbis_64.dll",
+      "bytes": 1724856,
+      "sha256": "676bbdc5838755d7a881c847f84ca79997b525882594b66160ab800676cab9c0",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage-Final/Engine/Binaries/ThirdParty/Vorbis/Win64/VS2015/libvorbisfile_64.dll",
+      "bytes": 48568,
+      "sha256": "ceb067771c03ae1a7afc125c15c85dbab027aaec72575dc101c618eba2bafea0",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage-Final/Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_api_dump.dll",
+      "bytes": 11001064,
+      "sha256": "84429d4ee54a717f33c176eff9c4738d7bd2ab30ba5c0928e8698f7c12c70551",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage-Final/Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_api_dump.json",
+      "bytes": 12828,
+      "sha256": "281669fdf39baf7e49e0507387645997451187be2f7d444b0c169ef078004e46",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage-Final/Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_crash_diagnostic.dll",
+      "bytes": 2029288,
+      "sha256": "ad1d992bfcc0744c9f914a5cb24cd1a2ec9df2ef48538695c0788d13dd3c0d75",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage-Final/Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_crash_diagnostic.json",
+      "bytes": 9527,
+      "sha256": "3601109840469aea0b9008512157e043c89500705cb346270fb019d7ed6f724e",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage-Final/Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_gfxreconstruct.dll",
+      "bytes": 5603048,
+      "sha256": "2bb443f869596c64194e73541a61b252a74db2beb467bbd6d7bfe8a9aa227758",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage-Final/Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_gfxreconstruct.json",
+      "bytes": 27234,
+      "sha256": "a6c78d253715f260a0fe7c8e1b0ce3e153aa8a802a2ba89b0dd46561e686b636",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage-Final/Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_khronos_profiles.dll",
+      "bytes": 1776360,
+      "sha256": "35240f401e2b220c7bafd2a91480ff6ada203c7af6ceb04c08421dcf2e35881d",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage-Final/Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_khronos_profiles.json",
+      "bytes": 70320,
+      "sha256": "8c9d6e4bf6d38c2cf223b598aaf86a08242a1a07d62b24236cca3e64e0daf91c",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage-Final/Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_khronos_shader_object.dll",
+      "bytes": 371432,
+      "sha256": "a4a1635578f92f529cd29e463b90823458cfc0ea6d0cb5ab1f57bd6814f2e73d",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage-Final/Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_khronos_shader_object.json",
+      "bytes": 4455,
+      "sha256": "98b9a12a5723665abab2eadfcab700a5785172adad22e5ca1364ab466268185f",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage-Final/Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_khronos_synchronization2.dll",
+      "bytes": 341736,
+      "sha256": "4ba97ee2194ba4f8aeb8cf92d0351c163a3c25e121d304851a16508cc47b8ad8",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage-Final/Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_khronos_synchronization2.json",
+      "bytes": 1910,
+      "sha256": "80a014d0b4337ea6ab05b8295fe6d1ba7f4cc0cf6bfe918873a0d30960973696",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage-Final/Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_khronos_validation.dll",
+      "bytes": 17958120,
+      "sha256": "2d86828d287b75c366b475b1db2125c334ddee3dfa993c42be79016addd7057c",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage-Final/Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_khronos_validation.json",
+      "bytes": 82965,
+      "sha256": "be1722a7a84efca54cd0bd1625f37016b556dd696586620f81ff5fa1c155a198",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage-Final/Engine/Binaries/ThirdParty/Windows/WinPixEventRuntime/x64/WinPixEventRuntime.dll",
+      "bytes": 69056,
+      "sha256": "fdbab7782b213852c6eaa38ab9343f7db3f788f43e032fb5db3bade192d6d5a0",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage-Final/Engine/Binaries/ThirdParty/Windows/XAudio2_9/x64/xaudio2_9redist.dll",
+      "bytes": 858144,
+      "sha256": "013984e33e884bd0b823734ab86a599a8dceffed675039ff293d15ffcf7f2be9",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage-Final/Engine/Config/StagedBuild_CitySimVR.ini",
+      "bytes": 3,
+      "sha256": "f1945cd6c19e56b3c1c78943ef5ec18116907a4ca1efc40a57d48ab1db7adfc5",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage-Final/Engine/Content/Renderer/TessellationTable.bin",
+      "bytes": 259568,
+      "sha256": "edc4f3b628a139c5e185bbaeca661c95c1f427368d3b92892c5cff36c56dd941",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage-Final/Engine/Content/Slate/Cursor/invisible.cur",
+      "bytes": 326,
+      "sha256": "fef3980fa567e9c45d5d8dcaa432a2c1a3f3bb17fe67d7ab198164f56c142aa1",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage-Final/Engine/Content/SlateDebug/Fonts/LastResort.tps",
+      "bytes": 930,
+      "sha256": "0f775fa99d05e21d43d2d06d55982b23dcdccdb512a9a5a07aff674f212c41b8",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage-Final/Engine/Content/SlateDebug/Fonts/LastResort.ttf",
+      "bytes": 5395052,
+      "sha256": "fff0f8de0b868b964950fe97c9b60f893e9bc85a4f90b3629c5693db058b97b9",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage-Final/Engine/Extras/GPUDumpViewer/GPUDumpViewer.html",
+      "bytes": 187194,
+      "sha256": "15966544a010b56930a7389b5e9cbeee7a9ae545d132906e983ac954a839df67",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage-Final/Engine/Extras/GPUDumpViewer/OpenGPUDumpViewer.bat",
+      "bytes": 879,
+      "sha256": "e8f7ef9c88697041bd87902b76e52558979ca866c7450b1da108a94a027f441b",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage-Final/Engine/Extras/GPUDumpViewer/OpenGPUDumpViewer.sh",
+      "bytes": 2165,
+      "sha256": "1b222b5d5aad6dd9b5b9f0a1c72d38635149540f2c7a368600ec76c1d304390a",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage-Final/Engine/Extras/Redist/en-us/vc_redist.arm64.exe",
+      "bytes": 11733048,
+      "sha256": "07698e7186563f0f9c78c37b2acb58136813fd5cfb068d41a339be2ee5b49cef",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage-Final/Engine/Extras/Redist/en-us/vc_redist.x64.exe",
+      "bytes": 25646472,
+      "sha256": "d027d8eb8edbef6c8740683b41d00442f4108351c034b9e0cb36fff27349b5be",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage-Final/Engine/Plugins/NNE/NNERuntimeORT/Binaries/ThirdParty/Onnxruntime/Win64/onnxruntime.dll",
+      "bytes": 14692872,
+      "sha256": "381497f383b457180aba6e5bf56a2eb18cefd6735cfd47257539f6d87fbc8584",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage-Final/Manifest_DebugFiles_Win64.txt",
+      "bytes": 435,
+      "sha256": "4981828e1c8c1a750c94ca2fe28782e952346d903709b2d7d046a8c6c0cd2a29",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage-Final/Manifest_NonUFSFiles_Win64.txt",
+      "bytes": 3439,
+      "sha256": "bd893f83b6ac1ad35eaaf35835dfe367bb6783ab196cba5d1c45b545c5b1d989",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage-Final/Manifest_UFSFiles_Win64.txt",
+      "bytes": 379804,
+      "sha256": "19dbe87f42ac12431c20020859427ad75172d92085b5046a67d3694b198c7c53",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage-Review/CitySimVR.exe",
+      "bytes": 164864,
+      "sha256": "fd64fdb84e55608a84bece0fcddcb938948a754472f508b508c7ae7e80ba1c3b",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage-Review/CitySimVR/Binaries/Win64/CitySimVR.exe",
+      "bytes": 303056384,
+      "sha256": "ca9234978eac4aaf446692fedabf0b5ff57ecaa6f76c10e7f361845799668c69",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage-Review/CitySimVR/Binaries/Win64/CitySimVR.pdb",
+      "bytes": 400510976,
+      "sha256": "c2ef16ec8e8c8bb0df2f4b07b0b6b877a4012aefbc1b70268c64fbbf3afb014f",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage-Review/CitySimVR/Binaries/Win64/D3D12/x64/D3D12Core.dll",
+      "bytes": 4544000,
+      "sha256": "fb197903fea91aaf352d2322f342b1cec8db36ff0292a49f24173577e08f26cf",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage-Review/CitySimVR/Binaries/Win64/D3D12/x64/d3d12SDKLayers.dll",
+      "bytes": 5104632,
+      "sha256": "a817223446f53b3da894edb1ee7a92b94573690e689a9470b87bf42866115f91",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage-Review/CitySimVR/Binaries/Win64/DML/x64/DirectML.dll",
+      "bytes": 18537968,
+      "sha256": "664255a3d9a6b976e2d0e2440403537d9d0dd91b1fad866768638b4e73a2c33a",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage-Review/CitySimVR/Binaries/Win64/tbb12.dll",
+      "bytes": 331704,
+      "sha256": "645b681e3581c04d57f468bd85c17648172decf873653ab00382211b96cc98fb",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage-Review/CitySimVR/Binaries/Win64/tbbmalloc.dll",
+      "bytes": 117688,
+      "sha256": "f81a11f2e6e93036bab4e51a1daab9940fb8a9a5ec0f508c4cb76d398e27c100",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage-Review/CitySimVR/Content/Paks/CitySimVR-Windows.pak",
+      "bytes": 10746776,
+      "sha256": "947153b0ed73592333c25b53e2fb8bf2f3c3a3f1d95a5094277a27bc2821cb10",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage-Review/CitySimVR/Content/Paks/CitySimVR-Windows.ucas",
+      "bytes": 266202672,
+      "sha256": "88e8f25d12fb1f48b5b533949b9deb81ae138961cbde41ac751ed1b0392c4b79",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage-Review/CitySimVR/Content/Paks/CitySimVR-Windows.utoc",
+      "bytes": 286971,
+      "sha256": "d2b030b694d97fce87d764a8e8d26cee34521195a3d1a7ca833a75bb931f8397",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage-Review/CitySimVR/Content/Paks/global.ucas",
+      "bytes": 2803008,
+      "sha256": "a01c2333cf3426177c5aad4bd919e8ab3a7ceb5175d5cbe34373880c5645f8bd",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage-Review/CitySimVR/Content/Paks/global.utoc",
+      "bytes": 710,
+      "sha256": "1a578d92e13dac652c9cd9ed2cb5996d71beccf960220aa9cfb6fd6d13d78fa0",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage-Review/CitySimVR/Plugins/MetaXR/Source/ThirdParty/EngineTelemetry/Lib/Win64/EngineTelemetry.dll",
+      "bytes": 7698432,
+      "sha256": "5a11843665954186ba3621f33aef3331d4f82f1a737f8e02beaab0c7a605530c",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage-Review/CitySimVR/Plugins/MetaXR/Source/ThirdParty/MRUtilityKitShared/Lib/Win64/mrutilitykitshared.dll",
+      "bytes": 4327936,
+      "sha256": "31692707f6f4af4ef8e7ba02a234900b405f795b73f312954481a099fcc89aae",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage-Review/CitySimVR/Plugins/MetaXR/Source/ThirdParty/OVRPlugin/OVRPlugin/Lib/Win64/OpenXR/OVRPlugin.dll",
+      "bytes": 8014072,
+      "sha256": "5ce1fa4b7d315c44d0a472cd81c2096b5346f4b76195e4b115fd93d82e847e60",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage-Review/Engine/Binaries/ThirdParty/DbgHelp/dbghelp.dll",
+      "bytes": 2232688,
+      "sha256": "d65dff2ebe90bf79fba62f3bb1f105a7ce8efaefaa8349379a886bb893a4ef45",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage-Review/Engine/Binaries/ThirdParty/MsQuic/v220/win64/msquic.dll",
+      "bytes": 2547080,
+      "sha256": "832f4ae560b1623aa4d8f87b982e9c9414312723fbc905ddab93fd80d7f1cea2",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage-Review/Engine/Binaries/ThirdParty/NVIDIA/NVaftermath/Win64/GFSDK_Aftermath_Lib.x64.dll",
+      "bytes": 5442592,
+      "sha256": "f2f1a88185345b28d05673e11111ee21845f3ebe65919cf6b3085bee7d09e30a",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage-Review/Engine/Binaries/ThirdParty/Ogg/Win64/VS2015/libogg_64.dll",
+      "bytes": 59832,
+      "sha256": "1e2fe8a3dfe9616edcb3cd3a5a958c791f690d5b604eb1658b0f844cef156eee",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage-Review/Engine/Binaries/ThirdParty/OpenXR/win64/openxr_loader.dll",
+      "bytes": 1971640,
+      "sha256": "36020b5170c5a653132468e7b297c5e06eaff5ba4d26d5478d723f88f699f8b5",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage-Review/Engine/Binaries/ThirdParty/Vorbis/Win64/VS2015/libvorbis_64.dll",
+      "bytes": 1724856,
+      "sha256": "676bbdc5838755d7a881c847f84ca79997b525882594b66160ab800676cab9c0",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage-Review/Engine/Binaries/ThirdParty/Vorbis/Win64/VS2015/libvorbisfile_64.dll",
+      "bytes": 48568,
+      "sha256": "ceb067771c03ae1a7afc125c15c85dbab027aaec72575dc101c618eba2bafea0",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage-Review/Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_api_dump.dll",
+      "bytes": 11001064,
+      "sha256": "84429d4ee54a717f33c176eff9c4738d7bd2ab30ba5c0928e8698f7c12c70551",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage-Review/Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_api_dump.json",
+      "bytes": 12828,
+      "sha256": "281669fdf39baf7e49e0507387645997451187be2f7d444b0c169ef078004e46",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage-Review/Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_crash_diagnostic.dll",
+      "bytes": 2029288,
+      "sha256": "ad1d992bfcc0744c9f914a5cb24cd1a2ec9df2ef48538695c0788d13dd3c0d75",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage-Review/Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_crash_diagnostic.json",
+      "bytes": 9527,
+      "sha256": "3601109840469aea0b9008512157e043c89500705cb346270fb019d7ed6f724e",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage-Review/Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_gfxreconstruct.dll",
+      "bytes": 5603048,
+      "sha256": "2bb443f869596c64194e73541a61b252a74db2beb467bbd6d7bfe8a9aa227758",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage-Review/Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_gfxreconstruct.json",
+      "bytes": 27234,
+      "sha256": "a6c78d253715f260a0fe7c8e1b0ce3e153aa8a802a2ba89b0dd46561e686b636",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage-Review/Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_khronos_profiles.dll",
+      "bytes": 1776360,
+      "sha256": "35240f401e2b220c7bafd2a91480ff6ada203c7af6ceb04c08421dcf2e35881d",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage-Review/Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_khronos_profiles.json",
+      "bytes": 70320,
+      "sha256": "8c9d6e4bf6d38c2cf223b598aaf86a08242a1a07d62b24236cca3e64e0daf91c",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage-Review/Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_khronos_shader_object.dll",
+      "bytes": 371432,
+      "sha256": "a4a1635578f92f529cd29e463b90823458cfc0ea6d0cb5ab1f57bd6814f2e73d",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage-Review/Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_khronos_shader_object.json",
+      "bytes": 4455,
+      "sha256": "98b9a12a5723665abab2eadfcab700a5785172adad22e5ca1364ab466268185f",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage-Review/Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_khronos_synchronization2.dll",
+      "bytes": 341736,
+      "sha256": "4ba97ee2194ba4f8aeb8cf92d0351c163a3c25e121d304851a16508cc47b8ad8",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage-Review/Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_khronos_synchronization2.json",
+      "bytes": 1910,
+      "sha256": "80a014d0b4337ea6ab05b8295fe6d1ba7f4cc0cf6bfe918873a0d30960973696",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage-Review/Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_khronos_validation.dll",
+      "bytes": 17958120,
+      "sha256": "2d86828d287b75c366b475b1db2125c334ddee3dfa993c42be79016addd7057c",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage-Review/Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_khronos_validation.json",
+      "bytes": 82965,
+      "sha256": "be1722a7a84efca54cd0bd1625f37016b556dd696586620f81ff5fa1c155a198",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage-Review/Engine/Binaries/ThirdParty/Windows/WinPixEventRuntime/x64/WinPixEventRuntime.dll",
+      "bytes": 69056,
+      "sha256": "fdbab7782b213852c6eaa38ab9343f7db3f788f43e032fb5db3bade192d6d5a0",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage-Review/Engine/Binaries/ThirdParty/Windows/XAudio2_9/x64/xaudio2_9redist.dll",
+      "bytes": 858144,
+      "sha256": "013984e33e884bd0b823734ab86a599a8dceffed675039ff293d15ffcf7f2be9",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage-Review/Engine/Config/StagedBuild_CitySimVR.ini",
+      "bytes": 3,
+      "sha256": "f1945cd6c19e56b3c1c78943ef5ec18116907a4ca1efc40a57d48ab1db7adfc5",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage-Review/Engine/Content/Renderer/TessellationTable.bin",
+      "bytes": 259568,
+      "sha256": "edc4f3b628a139c5e185bbaeca661c95c1f427368d3b92892c5cff36c56dd941",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage-Review/Engine/Content/Slate/Cursor/invisible.cur",
+      "bytes": 326,
+      "sha256": "fef3980fa567e9c45d5d8dcaa432a2c1a3f3bb17fe67d7ab198164f56c142aa1",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage-Review/Engine/Content/SlateDebug/Fonts/LastResort.tps",
+      "bytes": 930,
+      "sha256": "0f775fa99d05e21d43d2d06d55982b23dcdccdb512a9a5a07aff674f212c41b8",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage-Review/Engine/Content/SlateDebug/Fonts/LastResort.ttf",
+      "bytes": 5395052,
+      "sha256": "fff0f8de0b868b964950fe97c9b60f893e9bc85a4f90b3629c5693db058b97b9",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage-Review/Engine/Extras/GPUDumpViewer/GPUDumpViewer.html",
+      "bytes": 187194,
+      "sha256": "15966544a010b56930a7389b5e9cbeee7a9ae545d132906e983ac954a839df67",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage-Review/Engine/Extras/GPUDumpViewer/OpenGPUDumpViewer.bat",
+      "bytes": 879,
+      "sha256": "e8f7ef9c88697041bd87902b76e52558979ca866c7450b1da108a94a027f441b",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage-Review/Engine/Extras/GPUDumpViewer/OpenGPUDumpViewer.sh",
+      "bytes": 2165,
+      "sha256": "1b222b5d5aad6dd9b5b9f0a1c72d38635149540f2c7a368600ec76c1d304390a",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage-Review/Engine/Extras/Redist/en-us/vc_redist.arm64.exe",
+      "bytes": 11733048,
+      "sha256": "07698e7186563f0f9c78c37b2acb58136813fd5cfb068d41a339be2ee5b49cef",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage-Review/Engine/Extras/Redist/en-us/vc_redist.x64.exe",
+      "bytes": 25646472,
+      "sha256": "d027d8eb8edbef6c8740683b41d00442f4108351c034b9e0cb36fff27349b5be",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage-Review/Engine/Plugins/NNE/NNERuntimeORT/Binaries/ThirdParty/Onnxruntime/Win64/onnxruntime.dll",
+      "bytes": 14692872,
+      "sha256": "381497f383b457180aba6e5bf56a2eb18cefd6735cfd47257539f6d87fbc8584",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage-Review/Manifest_DebugFiles_Win64.txt",
+      "bytes": 435,
+      "sha256": "6c8b7b9786e78e3929f8e70d5eaf0edbc24d799ec5d19735c482e20ed55f7e00",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage-Review/Manifest_NonUFSFiles_Win64.txt",
+      "bytes": 3439,
+      "sha256": "7824bbfc92fcd9751f1a83d2b59a344f4d8033b8055150c592a036392f26b779",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage-Review/Manifest_UFSFiles_Win64.txt",
+      "bytes": 379804,
+      "sha256": "a524431d1737a3a38163d59eaaef6b8f171aab1b0be848324bba8f6448254e01",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage/CitySimVR.exe",
+      "bytes": 164864,
+      "sha256": "fd64fdb84e55608a84bece0fcddcb938948a754472f508b508c7ae7e80ba1c3b",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage/CitySimVR/Binaries/Win64/CitySimVR.exe",
+      "bytes": 303054336,
+      "sha256": "b9c3c87b237e66e615704b23c07e05096a5ded7d021648823064dc8484a17e3f",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage/CitySimVR/Binaries/Win64/CitySimVR.pdb",
+      "bytes": 400453632,
+      "sha256": "f9f2db19d6efaf7dc49143694d72f0cc2bae92a1102eba019383fc696179a81c",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage/CitySimVR/Binaries/Win64/D3D12/x64/D3D12Core.dll",
+      "bytes": 4544000,
+      "sha256": "fb197903fea91aaf352d2322f342b1cec8db36ff0292a49f24173577e08f26cf",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage/CitySimVR/Binaries/Win64/D3D12/x64/d3d12SDKLayers.dll",
+      "bytes": 5104632,
+      "sha256": "a817223446f53b3da894edb1ee7a92b94573690e689a9470b87bf42866115f91",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage/CitySimVR/Binaries/Win64/DML/x64/DirectML.dll",
+      "bytes": 18537968,
+      "sha256": "664255a3d9a6b976e2d0e2440403537d9d0dd91b1fad866768638b4e73a2c33a",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage/CitySimVR/Binaries/Win64/tbb12.dll",
+      "bytes": 331704,
+      "sha256": "645b681e3581c04d57f468bd85c17648172decf873653ab00382211b96cc98fb",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage/CitySimVR/Binaries/Win64/tbbmalloc.dll",
+      "bytes": 117688,
+      "sha256": "f81a11f2e6e93036bab4e51a1daab9940fb8a9a5ec0f508c4cb76d398e27c100",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage/CitySimVR/Content/Paks/CitySimVR-Windows.pak",
+      "bytes": 10746776,
+      "sha256": "b39a5d0bbe80b26f93c6098780c65fdb1ac4385629c7940a8e1a4fb29885f973",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage/CitySimVR/Content/Paks/CitySimVR-Windows.ucas",
+      "bytes": 266200624,
+      "sha256": "a306b9f57ccb21277db91f325ec5a331829214a8071942f67a96a02b4fde20e8",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage/CitySimVR/Content/Paks/CitySimVR-Windows.utoc",
+      "bytes": 286971,
+      "sha256": "4fb789e1db400913e53c21e21841ecb67e5a56cf21add01fa036f628f97adaaf",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage/CitySimVR/Content/Paks/global.ucas",
+      "bytes": 2803008,
+      "sha256": "a01c2333cf3426177c5aad4bd919e8ab3a7ceb5175d5cbe34373880c5645f8bd",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage/CitySimVR/Content/Paks/global.utoc",
+      "bytes": 710,
+      "sha256": "1a578d92e13dac652c9cd9ed2cb5996d71beccf960220aa9cfb6fd6d13d78fa0",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage/CitySimVR/Plugins/MetaXR/Source/ThirdParty/EngineTelemetry/Lib/Win64/EngineTelemetry.dll",
+      "bytes": 7698432,
+      "sha256": "5a11843665954186ba3621f33aef3331d4f82f1a737f8e02beaab0c7a605530c",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage/CitySimVR/Plugins/MetaXR/Source/ThirdParty/MRUtilityKitShared/Lib/Win64/mrutilitykitshared.dll",
+      "bytes": 4327936,
+      "sha256": "31692707f6f4af4ef8e7ba02a234900b405f795b73f312954481a099fcc89aae",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage/CitySimVR/Plugins/MetaXR/Source/ThirdParty/OVRPlugin/OVRPlugin/Lib/Win64/OpenXR/OVRPlugin.dll",
+      "bytes": 8014072,
+      "sha256": "5ce1fa4b7d315c44d0a472cd81c2096b5346f4b76195e4b115fd93d82e847e60",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage/Engine/Binaries/ThirdParty/DbgHelp/dbghelp.dll",
+      "bytes": 2232688,
+      "sha256": "d65dff2ebe90bf79fba62f3bb1f105a7ce8efaefaa8349379a886bb893a4ef45",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage/Engine/Binaries/ThirdParty/MsQuic/v220/win64/msquic.dll",
+      "bytes": 2547080,
+      "sha256": "832f4ae560b1623aa4d8f87b982e9c9414312723fbc905ddab93fd80d7f1cea2",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage/Engine/Binaries/ThirdParty/NVIDIA/NVaftermath/Win64/GFSDK_Aftermath_Lib.x64.dll",
+      "bytes": 5442592,
+      "sha256": "f2f1a88185345b28d05673e11111ee21845f3ebe65919cf6b3085bee7d09e30a",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage/Engine/Binaries/ThirdParty/Ogg/Win64/VS2015/libogg_64.dll",
+      "bytes": 59832,
+      "sha256": "1e2fe8a3dfe9616edcb3cd3a5a958c791f690d5b604eb1658b0f844cef156eee",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage/Engine/Binaries/ThirdParty/OpenXR/win64/openxr_loader.dll",
+      "bytes": 1971640,
+      "sha256": "36020b5170c5a653132468e7b297c5e06eaff5ba4d26d5478d723f88f699f8b5",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage/Engine/Binaries/ThirdParty/Vorbis/Win64/VS2015/libvorbis_64.dll",
+      "bytes": 1724856,
+      "sha256": "676bbdc5838755d7a881c847f84ca79997b525882594b66160ab800676cab9c0",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage/Engine/Binaries/ThirdParty/Vorbis/Win64/VS2015/libvorbisfile_64.dll",
+      "bytes": 48568,
+      "sha256": "ceb067771c03ae1a7afc125c15c85dbab027aaec72575dc101c618eba2bafea0",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage/Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_api_dump.dll",
+      "bytes": 11001064,
+      "sha256": "84429d4ee54a717f33c176eff9c4738d7bd2ab30ba5c0928e8698f7c12c70551",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage/Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_api_dump.json",
+      "bytes": 12828,
+      "sha256": "281669fdf39baf7e49e0507387645997451187be2f7d444b0c169ef078004e46",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage/Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_crash_diagnostic.dll",
+      "bytes": 2029288,
+      "sha256": "ad1d992bfcc0744c9f914a5cb24cd1a2ec9df2ef48538695c0788d13dd3c0d75",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage/Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_crash_diagnostic.json",
+      "bytes": 9527,
+      "sha256": "3601109840469aea0b9008512157e043c89500705cb346270fb019d7ed6f724e",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage/Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_gfxreconstruct.dll",
+      "bytes": 5603048,
+      "sha256": "2bb443f869596c64194e73541a61b252a74db2beb467bbd6d7bfe8a9aa227758",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage/Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_gfxreconstruct.json",
+      "bytes": 27234,
+      "sha256": "a6c78d253715f260a0fe7c8e1b0ce3e153aa8a802a2ba89b0dd46561e686b636",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage/Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_khronos_profiles.dll",
+      "bytes": 1776360,
+      "sha256": "35240f401e2b220c7bafd2a91480ff6ada203c7af6ceb04c08421dcf2e35881d",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage/Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_khronos_profiles.json",
+      "bytes": 70320,
+      "sha256": "8c9d6e4bf6d38c2cf223b598aaf86a08242a1a07d62b24236cca3e64e0daf91c",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage/Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_khronos_shader_object.dll",
+      "bytes": 371432,
+      "sha256": "a4a1635578f92f529cd29e463b90823458cfc0ea6d0cb5ab1f57bd6814f2e73d",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage/Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_khronos_shader_object.json",
+      "bytes": 4455,
+      "sha256": "98b9a12a5723665abab2eadfcab700a5785172adad22e5ca1364ab466268185f",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage/Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_khronos_synchronization2.dll",
+      "bytes": 341736,
+      "sha256": "4ba97ee2194ba4f8aeb8cf92d0351c163a3c25e121d304851a16508cc47b8ad8",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage/Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_khronos_synchronization2.json",
+      "bytes": 1910,
+      "sha256": "80a014d0b4337ea6ab05b8295fe6d1ba7f4cc0cf6bfe918873a0d30960973696",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage/Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_khronos_validation.dll",
+      "bytes": 17958120,
+      "sha256": "2d86828d287b75c366b475b1db2125c334ddee3dfa993c42be79016addd7057c",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage/Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_khronos_validation.json",
+      "bytes": 82965,
+      "sha256": "be1722a7a84efca54cd0bd1625f37016b556dd696586620f81ff5fa1c155a198",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage/Engine/Binaries/ThirdParty/Windows/WinPixEventRuntime/x64/WinPixEventRuntime.dll",
+      "bytes": 69056,
+      "sha256": "fdbab7782b213852c6eaa38ab9343f7db3f788f43e032fb5db3bade192d6d5a0",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage/Engine/Binaries/ThirdParty/Windows/XAudio2_9/x64/xaudio2_9redist.dll",
+      "bytes": 858144,
+      "sha256": "013984e33e884bd0b823734ab86a599a8dceffed675039ff293d15ffcf7f2be9",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage/Engine/Config/StagedBuild_CitySimVR.ini",
+      "bytes": 3,
+      "sha256": "f1945cd6c19e56b3c1c78943ef5ec18116907a4ca1efc40a57d48ab1db7adfc5",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage/Engine/Content/Renderer/TessellationTable.bin",
+      "bytes": 259568,
+      "sha256": "edc4f3b628a139c5e185bbaeca661c95c1f427368d3b92892c5cff36c56dd941",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage/Engine/Content/Slate/Cursor/invisible.cur",
+      "bytes": 326,
+      "sha256": "fef3980fa567e9c45d5d8dcaa432a2c1a3f3bb17fe67d7ab198164f56c142aa1",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage/Engine/Content/SlateDebug/Fonts/LastResort.tps",
+      "bytes": 930,
+      "sha256": "0f775fa99d05e21d43d2d06d55982b23dcdccdb512a9a5a07aff674f212c41b8",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage/Engine/Content/SlateDebug/Fonts/LastResort.ttf",
+      "bytes": 5395052,
+      "sha256": "fff0f8de0b868b964950fe97c9b60f893e9bc85a4f90b3629c5693db058b97b9",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage/Engine/Extras/GPUDumpViewer/GPUDumpViewer.html",
+      "bytes": 187194,
+      "sha256": "15966544a010b56930a7389b5e9cbeee7a9ae545d132906e983ac954a839df67",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage/Engine/Extras/GPUDumpViewer/OpenGPUDumpViewer.bat",
+      "bytes": 879,
+      "sha256": "e8f7ef9c88697041bd87902b76e52558979ca866c7450b1da108a94a027f441b",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage/Engine/Extras/GPUDumpViewer/OpenGPUDumpViewer.sh",
+      "bytes": 2165,
+      "sha256": "1b222b5d5aad6dd9b5b9f0a1c72d38635149540f2c7a368600ec76c1d304390a",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage/Engine/Extras/Redist/en-us/vc_redist.arm64.exe",
+      "bytes": 11733048,
+      "sha256": "07698e7186563f0f9c78c37b2acb58136813fd5cfb068d41a339be2ee5b49cef",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage/Engine/Extras/Redist/en-us/vc_redist.x64.exe",
+      "bytes": 25646472,
+      "sha256": "d027d8eb8edbef6c8740683b41d00442f4108351c034b9e0cb36fff27349b5be",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage/Engine/Plugins/NNE/NNERuntimeORT/Binaries/ThirdParty/Onnxruntime/Win64/onnxruntime.dll",
+      "bytes": 14692872,
+      "sha256": "381497f383b457180aba6e5bf56a2eb18cefd6735cfd47257539f6d87fbc8584",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage/Manifest_DebugFiles_Win64.txt",
+      "bytes": 435,
+      "sha256": "05f1ba71fa80fccd1e1988c309aadbefd3e11c37d673c520157bf8c652984a97",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage/Manifest_NonUFSFiles_Win64.txt",
+      "bytes": 3439,
+      "sha256": "e8617bc5d596c794554056c36c538fc3570835472350e99e99734d5805917a14",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/D92/WindowsPackage/Manifest_UFSFiles_Win64.txt",
+      "bytes": 379804,
+      "sha256": "ad3340daa15065e74e746d20f19cad323e8903288f8b46a216c37595ca159594",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/DefaultWindows-20261013/PreviousDefaultWindows/CitySimVR.exe",
+      "bytes": 164864,
+      "sha256": "fd64fdb84e55608a84bece0fcddcb938948a754472f508b508c7ae7e80ba1c3b",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/DefaultWindows-20261013/PreviousDefaultWindows/CitySimVR/Binaries/Win64/CitySimVR.exe",
+      "bytes": 302870016,
+      "sha256": "d33bf17c9e24dc36759264a9078d064a4cf242501b84f563a7ce74634a44de83",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/DefaultWindows-20261013/PreviousDefaultWindows/CitySimVR/Binaries/Win64/CitySimVR.pdb",
+      "bytes": 398430208,
+      "sha256": "1ed239911b5d1d98c1b9b57a670a09a7f25ef110af7ccee7c3e783df13feeba8",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/DefaultWindows-20261013/PreviousDefaultWindows/CitySimVR/Binaries/Win64/D3D12/x64/D3D12Core.dll",
+      "bytes": 4544000,
+      "sha256": "fb197903fea91aaf352d2322f342b1cec8db36ff0292a49f24173577e08f26cf",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/DefaultWindows-20261013/PreviousDefaultWindows/CitySimVR/Binaries/Win64/D3D12/x64/d3d12SDKLayers.dll",
+      "bytes": 5104632,
+      "sha256": "a817223446f53b3da894edb1ee7a92b94573690e689a9470b87bf42866115f91",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/DefaultWindows-20261013/PreviousDefaultWindows/CitySimVR/Binaries/Win64/DML/x64/DirectML.dll",
+      "bytes": 18537968,
+      "sha256": "664255a3d9a6b976e2d0e2440403537d9d0dd91b1fad866768638b4e73a2c33a",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/DefaultWindows-20261013/PreviousDefaultWindows/CitySimVR/Binaries/Win64/tbb12.dll",
+      "bytes": 331704,
+      "sha256": "645b681e3581c04d57f468bd85c17648172decf873653ab00382211b96cc98fb",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/DefaultWindows-20261013/PreviousDefaultWindows/CitySimVR/Binaries/Win64/tbbmalloc.dll",
+      "bytes": 117688,
+      "sha256": "f81a11f2e6e93036bab4e51a1daab9940fb8a9a5ec0f508c4cb76d398e27c100",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/DefaultWindows-20261013/PreviousDefaultWindows/CitySimVR/Content/Paks/CitySimVR-Windows.pak",
+      "bytes": 10746776,
+      "sha256": "d8782bbb773b297c0180026f243879aad20d180a7d049a9e7855d101c9717f35",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/DefaultWindows-20261013/PreviousDefaultWindows/CitySimVR/Content/Paks/CitySimVR-Windows.ucas",
+      "bytes": 262847952,
+      "sha256": "938455cb86541b09ff0bf2307fbff2cfba7c47a965536115f044c5777761ab78",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/DefaultWindows-20261013/PreviousDefaultWindows/CitySimVR/Content/Paks/CitySimVR-Windows.utoc",
+      "bytes": 285690,
+      "sha256": "2001b507096d622d75d9d8d004c3bdc0b5f7ca6070683531b9729b96f2395ede",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/DefaultWindows-20261013/PreviousDefaultWindows/CitySimVR/Content/Paks/global.ucas",
+      "bytes": 2801408,
+      "sha256": "35ee2d913019935903a0b48e3a13b3eb3b298223f580c0d40098598c228214b8",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/DefaultWindows-20261013/PreviousDefaultWindows/CitySimVR/Content/Paks/global.utoc",
+      "bytes": 710,
+      "sha256": "9eedbc54bfa3c2c9576edcd324dc565de38c03bfbb7a76638ab944d16798311a",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/DefaultWindows-20261013/PreviousDefaultWindows/CitySimVR/Plugins/MetaXR/Source/ThirdParty/EngineTelemetry/Lib/Win64/EngineTelemetry.dll",
+      "bytes": 7698432,
+      "sha256": "5a11843665954186ba3621f33aef3331d4f82f1a737f8e02beaab0c7a605530c",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/DefaultWindows-20261013/PreviousDefaultWindows/CitySimVR/Plugins/MetaXR/Source/ThirdParty/MRUtilityKitShared/Lib/Win64/mrutilitykitshared.dll",
+      "bytes": 4327936,
+      "sha256": "31692707f6f4af4ef8e7ba02a234900b405f795b73f312954481a099fcc89aae",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/DefaultWindows-20261013/PreviousDefaultWindows/CitySimVR/Plugins/MetaXR/Source/ThirdParty/OVRPlugin/OVRPlugin/Lib/Win64/OpenXR/OVRPlugin.dll",
+      "bytes": 8014072,
+      "sha256": "5ce1fa4b7d315c44d0a472cd81c2096b5346f4b76195e4b115fd93d82e847e60",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/DefaultWindows-20261013/PreviousDefaultWindows/Engine/Binaries/ThirdParty/DbgHelp/dbghelp.dll",
+      "bytes": 2232688,
+      "sha256": "d65dff2ebe90bf79fba62f3bb1f105a7ce8efaefaa8349379a886bb893a4ef45",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/DefaultWindows-20261013/PreviousDefaultWindows/Engine/Binaries/ThirdParty/MsQuic/v220/win64/msquic.dll",
+      "bytes": 2547080,
+      "sha256": "832f4ae560b1623aa4d8f87b982e9c9414312723fbc905ddab93fd80d7f1cea2",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/DefaultWindows-20261013/PreviousDefaultWindows/Engine/Binaries/ThirdParty/NVIDIA/NVaftermath/Win64/GFSDK_Aftermath_Lib.x64.dll",
+      "bytes": 5442592,
+      "sha256": "f2f1a88185345b28d05673e11111ee21845f3ebe65919cf6b3085bee7d09e30a",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/DefaultWindows-20261013/PreviousDefaultWindows/Engine/Binaries/ThirdParty/Ogg/Win64/VS2015/libogg_64.dll",
+      "bytes": 59832,
+      "sha256": "1e2fe8a3dfe9616edcb3cd3a5a958c791f690d5b604eb1658b0f844cef156eee",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/DefaultWindows-20261013/PreviousDefaultWindows/Engine/Binaries/ThirdParty/OpenXR/win64/openxr_loader.dll",
+      "bytes": 1971640,
+      "sha256": "36020b5170c5a653132468e7b297c5e06eaff5ba4d26d5478d723f88f699f8b5",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/DefaultWindows-20261013/PreviousDefaultWindows/Engine/Binaries/ThirdParty/Vorbis/Win64/VS2015/libvorbis_64.dll",
+      "bytes": 1724856,
+      "sha256": "676bbdc5838755d7a881c847f84ca79997b525882594b66160ab800676cab9c0",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/DefaultWindows-20261013/PreviousDefaultWindows/Engine/Binaries/ThirdParty/Vorbis/Win64/VS2015/libvorbisfile_64.dll",
+      "bytes": 48568,
+      "sha256": "ceb067771c03ae1a7afc125c15c85dbab027aaec72575dc101c618eba2bafea0",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/DefaultWindows-20261013/PreviousDefaultWindows/Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_api_dump.dll",
+      "bytes": 11001064,
+      "sha256": "84429d4ee54a717f33c176eff9c4738d7bd2ab30ba5c0928e8698f7c12c70551",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/DefaultWindows-20261013/PreviousDefaultWindows/Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_api_dump.json",
+      "bytes": 12828,
+      "sha256": "281669fdf39baf7e49e0507387645997451187be2f7d444b0c169ef078004e46",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/DefaultWindows-20261013/PreviousDefaultWindows/Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_crash_diagnostic.dll",
+      "bytes": 2029288,
+      "sha256": "ad1d992bfcc0744c9f914a5cb24cd1a2ec9df2ef48538695c0788d13dd3c0d75",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/DefaultWindows-20261013/PreviousDefaultWindows/Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_crash_diagnostic.json",
+      "bytes": 9527,
+      "sha256": "3601109840469aea0b9008512157e043c89500705cb346270fb019d7ed6f724e",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/DefaultWindows-20261013/PreviousDefaultWindows/Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_gfxreconstruct.dll",
+      "bytes": 5603048,
+      "sha256": "2bb443f869596c64194e73541a61b252a74db2beb467bbd6d7bfe8a9aa227758",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/DefaultWindows-20261013/PreviousDefaultWindows/Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_gfxreconstruct.json",
+      "bytes": 27234,
+      "sha256": "a6c78d253715f260a0fe7c8e1b0ce3e153aa8a802a2ba89b0dd46561e686b636",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/DefaultWindows-20261013/PreviousDefaultWindows/Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_khronos_profiles.dll",
+      "bytes": 1776360,
+      "sha256": "35240f401e2b220c7bafd2a91480ff6ada203c7af6ceb04c08421dcf2e35881d",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/DefaultWindows-20261013/PreviousDefaultWindows/Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_khronos_profiles.json",
+      "bytes": 70320,
+      "sha256": "8c9d6e4bf6d38c2cf223b598aaf86a08242a1a07d62b24236cca3e64e0daf91c",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/DefaultWindows-20261013/PreviousDefaultWindows/Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_khronos_shader_object.dll",
+      "bytes": 371432,
+      "sha256": "a4a1635578f92f529cd29e463b90823458cfc0ea6d0cb5ab1f57bd6814f2e73d",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/DefaultWindows-20261013/PreviousDefaultWindows/Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_khronos_shader_object.json",
+      "bytes": 4455,
+      "sha256": "98b9a12a5723665abab2eadfcab700a5785172adad22e5ca1364ab466268185f",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/DefaultWindows-20261013/PreviousDefaultWindows/Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_khronos_synchronization2.dll",
+      "bytes": 341736,
+      "sha256": "4ba97ee2194ba4f8aeb8cf92d0351c163a3c25e121d304851a16508cc47b8ad8",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/DefaultWindows-20261013/PreviousDefaultWindows/Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_khronos_synchronization2.json",
+      "bytes": 1910,
+      "sha256": "80a014d0b4337ea6ab05b8295fe6d1ba7f4cc0cf6bfe918873a0d30960973696",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/DefaultWindows-20261013/PreviousDefaultWindows/Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_khronos_validation.dll",
+      "bytes": 17958120,
+      "sha256": "2d86828d287b75c366b475b1db2125c334ddee3dfa993c42be79016addd7057c",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/DefaultWindows-20261013/PreviousDefaultWindows/Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_khronos_validation.json",
+      "bytes": 82965,
+      "sha256": "be1722a7a84efca54cd0bd1625f37016b556dd696586620f81ff5fa1c155a198",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/DefaultWindows-20261013/PreviousDefaultWindows/Engine/Binaries/ThirdParty/Windows/WinPixEventRuntime/x64/WinPixEventRuntime.dll",
+      "bytes": 69056,
+      "sha256": "fdbab7782b213852c6eaa38ab9343f7db3f788f43e032fb5db3bade192d6d5a0",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/DefaultWindows-20261013/PreviousDefaultWindows/Engine/Binaries/ThirdParty/Windows/XAudio2_9/x64/xaudio2_9redist.dll",
+      "bytes": 858144,
+      "sha256": "013984e33e884bd0b823734ab86a599a8dceffed675039ff293d15ffcf7f2be9",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/DefaultWindows-20261013/PreviousDefaultWindows/Engine/Config/StagedBuild_CitySimVR.ini",
+      "bytes": 3,
+      "sha256": "f1945cd6c19e56b3c1c78943ef5ec18116907a4ca1efc40a57d48ab1db7adfc5",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/DefaultWindows-20261013/PreviousDefaultWindows/Engine/Content/Renderer/TessellationTable.bin",
+      "bytes": 259568,
+      "sha256": "edc4f3b628a139c5e185bbaeca661c95c1f427368d3b92892c5cff36c56dd941",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/DefaultWindows-20261013/PreviousDefaultWindows/Engine/Content/Slate/Cursor/invisible.cur",
+      "bytes": 326,
+      "sha256": "fef3980fa567e9c45d5d8dcaa432a2c1a3f3bb17fe67d7ab198164f56c142aa1",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/DefaultWindows-20261013/PreviousDefaultWindows/Engine/Content/SlateDebug/Fonts/LastResort.tps",
+      "bytes": 930,
+      "sha256": "0f775fa99d05e21d43d2d06d55982b23dcdccdb512a9a5a07aff674f212c41b8",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/DefaultWindows-20261013/PreviousDefaultWindows/Engine/Content/SlateDebug/Fonts/LastResort.ttf",
+      "bytes": 5395052,
+      "sha256": "fff0f8de0b868b964950fe97c9b60f893e9bc85a4f90b3629c5693db058b97b9",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/DefaultWindows-20261013/PreviousDefaultWindows/Engine/Extras/GPUDumpViewer/GPUDumpViewer.html",
+      "bytes": 187194,
+      "sha256": "15966544a010b56930a7389b5e9cbeee7a9ae545d132906e983ac954a839df67",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/DefaultWindows-20261013/PreviousDefaultWindows/Engine/Extras/GPUDumpViewer/OpenGPUDumpViewer.bat",
+      "bytes": 879,
+      "sha256": "e8f7ef9c88697041bd87902b76e52558979ca866c7450b1da108a94a027f441b",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/DefaultWindows-20261013/PreviousDefaultWindows/Engine/Extras/GPUDumpViewer/OpenGPUDumpViewer.sh",
+      "bytes": 2165,
+      "sha256": "1b222b5d5aad6dd9b5b9f0a1c72d38635149540f2c7a368600ec76c1d304390a",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/DefaultWindows-20261013/PreviousDefaultWindows/Engine/Extras/Redist/en-us/vc_redist.arm64.exe",
+      "bytes": 11733048,
+      "sha256": "07698e7186563f0f9c78c37b2acb58136813fd5cfb068d41a339be2ee5b49cef",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/DefaultWindows-20261013/PreviousDefaultWindows/Engine/Extras/Redist/en-us/vc_redist.x64.exe",
+      "bytes": 25646472,
+      "sha256": "d027d8eb8edbef6c8740683b41d00442f4108351c034b9e0cb36fff27349b5be",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/DefaultWindows-20261013/PreviousDefaultWindows/Engine/Plugins/NNE/NNERuntimeORT/Binaries/ThirdParty/Onnxruntime/Win64/onnxruntime.dll",
+      "bytes": 14692872,
+      "sha256": "381497f383b457180aba6e5bf56a2eb18cefd6735cfd47257539f6d87fbc8584",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/DefaultWindows-20261013/PreviousDefaultWindows/Manifest_DebugFiles_Win64.txt",
+      "bytes": 435,
+      "sha256": "0953b1942300962564968c2fe4a32861ff960e12d321af888c7fdca416113d7d",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/DefaultWindows-20261013/PreviousDefaultWindows/Manifest_NonUFSFiles_Win64.txt",
+      "bytes": 3439,
+      "sha256": "6e104e5f31f094f5c98f134c22d91cdae44e0f17e953d51e3df238950681c4ca",
+      "category": "superseded-windows-package"
+    },
+    {
+      "path": "Artifacts/DefaultWindows-20261013/PreviousDefaultWindows/Manifest_UFSFiles_Win64.txt",
+      "bytes": 378988,
+      "sha256": "e5432370d41ed6641e1312dbe6c2932eb02cd7a3aaedc07b48c1a395b0d6c8df",
+      "category": "superseded-windows-package"
+    }
+  ],
+  "user_approved": "User approved the exact375-file deletion in this chat on2026-10-13",
+  "removed_files": 375,
+  "removed_bytes": 8008099066
+}

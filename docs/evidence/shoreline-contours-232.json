@@ -1,0 +1,548 @@
+{
+  "issue": 146,
+  "pr": "https://git.shaun-husain.com/CitySimVR/citysim/pulls/171",
+  "status": "ready_for_human_bank_playtest",
+  "baseline": "1fbe7d830aab87b750dab716d5ff17ea9cba22b0",
+  "submittedCommit": "e89deec3b606a945999a2d3a269d9ce306ab65bd",
+  "testedCommit": "e89deec3b606a945999a2d3a269d9ce306ab65bd",
+  "gameRevision": "dev-34e4457a79d51478d394",
+  "editor": {
+    "build": 230,
+    "status": "passed",
+    "seconds": 140.57,
+    "tests": [
+      "CitySim.Placement.Transactions",
+      "CitySim.Terrain.DeterminismAndFixtures",
+      "CitySim.Presentation.WaterFacetIntersection",
+      "CitySim.Presentation.WaterTerrainContours",
+      "CitySim.Terrain.PresentationContinuity",
+      "CitySim.Dimensions.BoardPresentation",
+      "CitySim.Presentation.BeachPlacement",
+      "CitySim.Presentation.BeachAssetsAndLifecycle",
+      "CitySim.Presentation.TerrainMeshInvalidation",
+      "CitySim.Presentation.BankRefinement",
+      "CitySim.Roads.SampledGroundPaving",
+      "CitySim.Terrain.CompactHomeWalk"
+    ],
+    "nativeCaptures": 40,
+    "nativeReview": "all40 inspected and usable; concave opposite corrected; actual default steep river added",
+    "inventory": "Artifacts/Issue146/BankRefinement/Native230/CaptureInventory.json"
+  },
+  "windows": {
+    "issue": 146,
+    "pr": "https://git.shaun-husain.com/CitySimVR/citysim/pulls/171",
+    "status": "passed",
+    "featureStatus": "ready_for_human_bank_playtest",
+    "visualReview": "passed",
+    "humanAcceptance": "pending",
+    "build": 232,
+    "parent": 230,
+    "submittedCommit": "e89deec3b606a945999a2d3a269d9ce306ab65bd",
+    "testedCommit": "e89deec3b606a945999a2d3a269d9ce306ab65bd",
+    "gameRevision": "dev-34e4457a79d51478d394",
+    "fixtureSchema": 72,
+    "fixtures": [
+      {
+        "id": "00000000000000000000000000000140",
+        "name": "Shoreline DiagonalLake",
+        "seed": 7429,
+        "gameRevision": "dev-34e4457a79d51478d394",
+        "sha256": "7d5dd0d93bce46d048a89a9f737776d44cd34a5910dc9c532c780c820ebcf047"
+      },
+      {
+        "id": "00000000000000000000000000000141",
+        "name": "Shoreline ConcaveLake",
+        "seed": 1,
+        "gameRevision": "dev-34e4457a79d51478d394",
+        "sha256": "ddda60949238329834b3589bf0ff9962d5ead9d24f05dc3bc7e5c7b950efabf0"
+      },
+      {
+        "id": "00000000000000000000000000000142",
+        "name": "Shoreline NarrowRiver",
+        "seed": 5,
+        "gameRevision": "dev-34e4457a79d51478d394",
+        "sha256": "211403e44ff5f7931075343d2e35352ddf2967e44fedd8e699fdbd1d2d91de6b"
+      },
+      {
+        "id": "00000000000000000000000000000143",
+        "name": "Shoreline SteepRiver",
+        "seed": 7429,
+        "gameRevision": "dev-34e4457a79d51478d394",
+        "sha256": "fe385eb31ac399f7d626ba495c9e6b917cb0102777c66451cd3b79f31730f528"
+      }
+    ],
+    "profile": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\Issue146\\Play-Build232-IsolatedProfile",
+    "executable": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\Issue146\\Extracted-Build232\\CitySimVR\\Binaries\\Win64\\CitySimVR.exe",
+    "executableSha256": "31b9c439d71fc56d099d85b967c81a0051fb5c072ade4e003699db1feed39763",
+    "packageSha256": "5fd9174c166cf6235fd1716ef9b574002ba00b540390638e526173afb1f66942",
+    "zipPath": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\CI\\Builds\\232-e89deec3b606-WindowsCandidate-6b492b34\\CitySimVR-Windows.zip",
+    "fileCount": 53,
+    "editorTests": [
+      "CitySim.Placement.Transactions",
+      "CitySim.Terrain.DeterminismAndFixtures",
+      "CitySim.Presentation.WaterFacetIntersection",
+      "CitySim.Presentation.WaterTerrainContours",
+      "CitySim.Terrain.PresentationContinuity",
+      "CitySim.Dimensions.BoardPresentation",
+      "CitySim.Presentation.BeachPlacement",
+      "CitySim.Presentation.BeachAssetsAndLifecycle",
+      "CitySim.Presentation.TerrainMeshInvalidation",
+      "CitySim.Presentation.BankRefinement",
+      "CitySim.Roads.SampledGroundPaving",
+      "CitySim.Terrain.CompactHomeWalk"
+    ],
+    "editorBuildSeconds": 128.83,
+    "nativeViews": 40,
+    "packagedViews": 100,
+    "packagedCases": [
+      "CitySim.Desktop.ShorelineContours",
+      "CitySim.Desktop.BeachScenery"
+    ],
+    "resolutions": [
+      "1280x800",
+      "1024x720"
+    ],
+    "startup": "CI menu/startup and both-size Client executions passed; extracted bytes match all files in executed-copy receipt; no extra local native replay",
+    "quest": "deferred PC-first; no device install",
+    "headsetAppearance": "unconfirmed (#49)",
+    "candidateUrl": "https://drone.shaun-husain.com/CitySimVR/citysim/232",
+    "finishedUtc": "2026-10-18T09:01:09.8042760Z",
+    "bankFollowUp": "bank geometry refinement; before is217 coarse bank and clipped water"
+  },
+  "visualReview": {
+    "build": 232,
+    "source": "e89deec3b606a945999a2d3a269d9ce306ab65bd",
+    "status": "passed",
+    "nativeReviewed": 40,
+    "packagedReviewed": 100,
+    "resolutions": [
+      "1280x800",
+      "1024x720"
+    ],
+    "findings": [
+      "Lake rim and default steep river diagonal ridges soften into rounded transitions",
+      "All four fixtures have usable matched close/medium/far/opposite/night views",
+      "Continuous water contact; no new cracks, dry-bank sheets or holes observed",
+      "Beach32 instance check and ten prop/day/night/reload views at each width remain grounded"
+    ],
+    "inventories": [
+      "Native230/CaptureInventory.json",
+      "Windows232-1280/AllCaptureInventory.json",
+      "Windows232-1024/AllCaptureInventory.json"
+    ],
+    "drone": "232 success, parent230, windows-playtest, stage exit0",
+    "humanAcceptance": "pending",
+    "headsetAppearance": "unconfirmed; Quest deferred PC-first"
+  },
+  "geometry": {
+    "coarseStepCm": 400,
+    "bankStepCm": 100,
+    "maxSubdivisionsPerSampleQuad": 16,
+    "maxWaterTrianglesPerLogicalCell": 256,
+    "defaultRefinedQuads": 278,
+    "defaultCoarseQuads": 16106,
+    "authorityUnchanged": true,
+    "sharedSurface": "FCityTerrainSurface used by terrain, water and ground-aware paving/walks"
+  },
+  "attempts": [
+    {
+      "build": 224,
+      "status": "failed compile C4456; corrected loop indices"
+    },
+    {
+      "build": 227,
+      "status": "Editor161.73s/11 cases pass; exact shared attributes failed, corrected without loosening equality"
+    },
+    {
+      "build": 229,
+      "status": "Editor132.95s/all12/native30 pass; all30 reviewed,28 usable and one obstructed camera pair corrected in230"
+    }
+  ],
+  "nativeUploads": [
+    {
+      "Issue": 146,
+      "Name": "evidence-issue146-bank230-DiagonalLake-Comparison-73732df9afb955d0.jpg",
+      "LocalPath": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\Issue146\\BankRefinement\\Native230\\DiagonalLake-Comparison.jpg",
+      "Bytes": 556775,
+      "Sha256": "73732df9afb955d0e9244d9a6686301cac82edceedd591996e03868bb526b292",
+      "Url": "https://git.shaun-husain.com/attachments/dbfdec90-c13d-46f4-ba46-1f3ffbc32b44",
+      "AttachmentId": "dbfdec90-c13d-46f4-ba46-1f3ffbc32b44",
+      "Reused": false
+    },
+    {
+      "Issue": 146,
+      "Name": "evidence-issue146-bank230-ConcaveLake-Comparison-579604dc801267cf.jpg",
+      "LocalPath": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\Issue146\\BankRefinement\\Native230\\ConcaveLake-Comparison.jpg",
+      "Bytes": 587069,
+      "Sha256": "579604dc801267cff4a08b935e736af29557d3436ed65379287159a46cf74d17",
+      "Url": "https://git.shaun-husain.com/attachments/802c9cf2-51e6-4f73-aab3-991eaab4bc63",
+      "AttachmentId": "802c9cf2-51e6-4f73-aab3-991eaab4bc63",
+      "Reused": false
+    },
+    {
+      "Issue": 146,
+      "Name": "evidence-issue146-bank230-NarrowRiver-Comparison-90d8caafcea8fe22.jpg",
+      "LocalPath": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\Issue146\\BankRefinement\\Native230\\NarrowRiver-Comparison.jpg",
+      "Bytes": 597396,
+      "Sha256": "90d8caafcea8fe2258f9e0f35842dfd9bff20894ab74a34f0ecc76adda81290f",
+      "Url": "https://git.shaun-husain.com/attachments/42e66890-55a5-4ec4-b6eb-fcb4bb7bc5bb",
+      "AttachmentId": "42e66890-55a5-4ec4-b6eb-fcb4bb7bc5bb",
+      "Reused": false
+    },
+    {
+      "Issue": 146,
+      "Name": "evidence-issue146-bank230-SteepRiver-Comparison-46873b835178796f.jpg",
+      "LocalPath": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\Issue146\\BankRefinement\\Native230\\SteepRiver-Comparison.jpg",
+      "Bytes": 613166,
+      "Sha256": "46873b835178796f62d16b667cbe018e9db018ed081ee93600cc5a628222a5f9",
+      "Url": "https://git.shaun-husain.com/attachments/57fc917c-2910-43a9-8520-60f48b48248c",
+      "AttachmentId": "57fc917c-2910-43a9-8520-60f48b48248c",
+      "Reused": false
+    },
+    {
+      "Issue": 146,
+      "Name": "evidence-issue146-bank230-Result-cd72838ecabcf38d.json",
+      "LocalPath": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\CI\\Builds\\230-e89deec3b606-Check-6e120ca6\\Result.json",
+      "Bytes": 1886,
+      "Sha256": "cd72838ecabcf38de06dbcbb13f33cbb157edf18e2435d41814e47165b347033",
+      "Url": "https://git.shaun-husain.com/attachments/8a865cb6-3bb1-4514-9c8a-f60dcd529a88",
+      "AttachmentId": "8a865cb6-3bb1-4514-9c8a-f60dcd529a88",
+      "Reused": false
+    }
+  ],
+  "windowsUploads": [
+    {
+      "Issue": 146,
+      "Name": "evidence-issue146-windows232-Windows232-BankBeforeAfter-250e7ef88e2b4d20.jpg",
+      "LocalPath": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\Issue146\\BankRefinement\\Windows232-BankBeforeAfter.jpg",
+      "Bytes": 101481,
+      "Sha256": "250e7ef88e2b4d2006e4003be48dd7e6faa77123f0d4e4ccfc6356a82e063341",
+      "Url": "https://git.shaun-husain.com/attachments/9c93e6a3-51d7-471a-bd8c-e0ee64f0c5f5",
+      "AttachmentId": "9c93e6a3-51d7-471a-bd8c-e0ee64f0c5f5",
+      "Reused": false
+    },
+    {
+      "Issue": 146,
+      "Name": "evidence-issue146-windows232-SteepRiver-Comparison-9ab592c0e6b1ce54.jpg",
+      "LocalPath": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\Issue146\\BankRefinement\\Windows232-1280\\SteepRiver-Comparison.jpg",
+      "Bytes": 540259,
+      "Sha256": "9ab592c0e6b1ce5411809e471507cbf004c9b8897a91e0d68e2b17d010ddfc12",
+      "Url": "https://git.shaun-husain.com/attachments/e68b3feb-1616-471e-b378-c124ab97a275",
+      "AttachmentId": "e68b3feb-1616-471e-b378-c124ab97a275",
+      "Reused": false
+    },
+    {
+      "Issue": 146,
+      "Name": "evidence-issue146-windows232-ConcaveLake-Comparison-6c1e3c4fe63bf9a9.jpg",
+      "LocalPath": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\Issue146\\BankRefinement\\Windows232-1024\\ConcaveLake-Comparison.jpg",
+      "Bytes": 557551,
+      "Sha256": "6c1e3c4fe63bf9a9448bd6fa34bc03adbff651255bb7f8ba3e4d4a96e08de7e4",
+      "Url": "https://git.shaun-husain.com/attachments/8d86ce18-7783-4a62-b628-f4fbd4dbb927",
+      "AttachmentId": "8d86ce18-7783-4a62-b628-f4fbd4dbb927",
+      "Reused": false
+    },
+    {
+      "Issue": 146,
+      "Name": "evidence-issue146-windows232-Beach-Regression-d22a0a2cf58ff071.jpg",
+      "LocalPath": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\Issue146\\BankRefinement\\Windows232-1024\\Beach-Regression.jpg",
+      "Bytes": 536885,
+      "Sha256": "d22a0a2cf58ff07189a846de990cfd41d433678c12c9d0642bc99767af480079",
+      "Url": "https://git.shaun-husain.com/attachments/60c9fab1-c243-4fe2-a942-9313654b88fa",
+      "AttachmentId": "60c9fab1-c243-4fe2-a942-9313654b88fa",
+      "Reused": false
+    },
+    {
+      "Issue": 146,
+      "Name": "evidence-issue146-windows232-Delivery-d1df48cc56319016.json",
+      "LocalPath": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\Issue146\\Delivery.json",
+      "Bytes": 3442,
+      "Sha256": "d1df48cc56319016918b7ddabd062da0211360b93f2483880992b0ff7dbaa48c",
+      "Url": "https://git.shaun-husain.com/attachments/d542f38c-8a59-4251-9374-f805ae68cc12",
+      "AttachmentId": "d542f38c-8a59-4251-9374-f805ae68cc12",
+      "Reused": false
+    },
+    {
+      "Issue": 146,
+      "Name": "evidence-issue146-windows232-Issue146-Extraction-d2a20a74fb4c82a7.json",
+      "LocalPath": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\CI\\Builds\\232-e89deec3b606-WindowsCandidate-6b492b34\\Issue146-Extraction.json",
+      "Bytes": 11295,
+      "Sha256": "d2a20a74fb4c82a7fdbfc4207a23d7e02badb9c7b603876d88f77291b1bdadb3",
+      "Url": "https://git.shaun-husain.com/attachments/1721ba79-879a-45f9-ba3d-3d8f9c715c32",
+      "AttachmentId": "1721ba79-879a-45f9-ba3d-3d8f9c715c32",
+      "Reused": false
+    },
+    {
+      "Issue": 146,
+      "Name": "evidence-issue146-windows232-FinalReview-712a7fe8b8754803.json",
+      "LocalPath": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\Issue146\\BankRefinement\\FinalReview.json",
+      "Bytes": 918,
+      "Sha256": "712a7fe8b87548036cf67bdeb3dbd1f43b13fa7f6dcc36cf8144c8ce78051f96",
+      "Url": "https://git.shaun-husain.com/attachments/d7a1a0c1-2097-4c8b-9790-3bc31e2aff9a",
+      "AttachmentId": "d7a1a0c1-2097-4c8b-9790-3bc31e2aff9a",
+      "Reused": false
+    },
+    {
+      "Issue": 146,
+      "Name": "evidence-issue146-windows232-Result-db7b761ba88f5cb7.json",
+      "LocalPath": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\CI\\Builds\\232-e89deec3b606-WindowsCandidate-6b492b34\\Result.json",
+      "Bytes": 2400,
+      "Sha256": "db7b761ba88f5cb7b5fec89c80a416696fb573a05d9722b12a1ce6262c616b57",
+      "Url": "https://git.shaun-husain.com/attachments/1b9309a4-9d66-4071-9b24-f48ef37d3a49",
+      "AttachmentId": "1b9309a4-9d66-4071-9b24-f48ef37d3a49",
+      "Reused": false
+    }
+  ],
+  "quest": "deferred PC-first; no concrete mobile-specific need; no device deployment",
+  "physicalHeadset": "unconfirmed (#49)",
+  "humanAcceptance": "pending",
+  "handoff": "https://git.shaun-husain.com/CitySimVR/citysim/issues/146#issuecomment-2999",
+  "preserved": [
+    "Windows217 and profile",
+    "primary unrelated changes",
+    "maintained/player/default files",
+    "150 shared native ownership and enabled worker"
+  ],
+  "next": "Human playtest of232 bank refinement, then normal accepted-head PR/merge closeout and CHANGELOG. Do not merge before acceptance.",
+  "priorWaterDelivery": {
+    "issue": 146,
+    "pr": "https://git.shaun-husain.com/CitySimVR/citysim/pulls/171",
+    "status": "ready_for_human_playtest",
+    "baseline": "1fbe7d830aab87b750dab716d5ff17ea9cba22b0",
+    "submittedCommit": "4893f27f6390d7129fde5867c2db2d574024ac94",
+    "testedCommit": "4893f27f6390d7129fde5867c2db2d574024ac94",
+    "editor": {
+      "build": 214,
+      "status": "passed",
+      "seconds": 151.36,
+      "tests": [
+        "CitySim.Placement.Transactions",
+        "CitySim.Terrain.DeterminismAndFixtures",
+        "CitySim.Presentation.WaterFacetIntersection",
+        "CitySim.Presentation.WaterTerrainContours",
+        "CitySim.Terrain.PresentationContinuity",
+        "CitySim.Dimensions.BoardPresentation",
+        "CitySim.Presentation.BeachPlacement",
+        "CitySim.Presentation.BeachAssetsAndLifecycle",
+        "CitySim.Presentation.TerrainMeshInvalidation"
+      ],
+      "fixtureMetrics": [
+        {
+          "seed": 7429,
+          "vertices": 4761,
+          "crossings": 701,
+          "shoreVertices": 1000,
+          "areaCm2": 104458956
+        },
+        {
+          "seed": 1,
+          "vertices": 9636,
+          "crossings": 1365,
+          "shoreVertices": 1293,
+          "areaCm2": 205828002
+        },
+        {
+          "seed": 5,
+          "vertices": 4365,
+          "crossings": 1106,
+          "shoreVertices": 430,
+          "areaCm2": 75494046
+        },
+        {
+          "seed": 6,
+          "vertices": 3699,
+          "crossings": 926,
+          "shoreVertices": 500,
+          "areaCm2": 64078180
+        }
+      ]
+    },
+    "visual": {
+      "test": [
+        "CitySim.Desktop.ShorelineContours"
+      ],
+      "captures": 30,
+      "review": "passed",
+      "fixtures": {
+        "DiagonalLake": 7429,
+        "ConcaveLake": 1,
+        "NarrowRiver": 5
+      },
+      "views": [
+        "close",
+        "medium",
+        "far",
+        "opposite",
+        "night"
+      ],
+      "evidenceComment": "https://git.shaun-husain.com/CitySimVR/citysim/issues/146#issuecomment-2775",
+      "attachments": [
+        {
+          "Issue": 146,
+          "Name": "evidence-issue146-native214-DiagonalLake-Comparison-a02905dcf4f27c5e.jpg",
+          "LocalPath": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\Issue146\\EditorReview214\\DiagonalLake-Comparison.jpg",
+          "Bytes": 560942,
+          "Sha256": "a02905dcf4f27c5e7b64b4f8897b8ab435d95d96d9202249b24cd4566585581f",
+          "Url": "https://git.shaun-husain.com/attachments/a599641a-59e6-40f4-abae-a26abe0cd07f",
+          "AttachmentId": "a599641a-59e6-40f4-abae-a26abe0cd07f",
+          "Reused": false
+        },
+        {
+          "Issue": 146,
+          "Name": "evidence-issue146-native214-ConcaveLake-Comparison-0550c5a696730110.jpg",
+          "LocalPath": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\Issue146\\EditorReview214\\ConcaveLake-Comparison.jpg",
+          "Bytes": 566925,
+          "Sha256": "0550c5a696730110cdff2b0d6230fc2e87f10499e001804dbc55fc030d9d50f5",
+          "Url": "https://git.shaun-husain.com/attachments/b4ab91f8-f385-4f5e-8932-0c1bb91e6f8e",
+          "AttachmentId": "b4ab91f8-f385-4f5e-8932-0c1bb91e6f8e",
+          "Reused": false
+        },
+        {
+          "Issue": 146,
+          "Name": "evidence-issue146-native214-NarrowRiver-Comparison-9f6fa8382d8598ec.jpg",
+          "LocalPath": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\Issue146\\EditorReview214\\NarrowRiver-Comparison.jpg",
+          "Bytes": 598010,
+          "Sha256": "9f6fa8382d8598ec72c0e781b0dfef0bd87bf75452185546393e984eb6c0d9ba",
+          "Url": "https://git.shaun-husain.com/attachments/4b4a5cd5-7406-4caa-831a-dbd91d5d31e5",
+          "AttachmentId": "4b4a5cd5-7406-4caa-831a-dbd91d5d31e5",
+          "Reused": false
+        },
+        {
+          "Issue": 146,
+          "Name": "evidence-issue146-native214-Result-b22328521ec8db91.json",
+          "LocalPath": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\CI\\Builds\\214-4893f27f6390-Check-10451e94\\Result.json",
+          "Bytes": 1718,
+          "Sha256": "b22328521ec8db91abd2470df944698f7fef7b19aa04c888967b464df8340deb",
+          "Url": "https://git.shaun-husain.com/attachments/be9f1827-2d38-4f00-9b16-2ed70c88297e",
+          "AttachmentId": "be9f1827-2d38-4f00-9b16-2ed70c88297e",
+          "Reused": false
+        }
+      ]
+    },
+    "windows": {
+      "build": 217,
+      "parent": 214,
+      "status": "passed",
+      "url": "https://drone.shaun-husain.com/CitySimVR/citysim/217",
+      "artifactRoot": "C:/Users/shaun/Development/city-sim-builder/Artifacts/CI/Builds/217-4893f27f6390-WindowsCandidate-0646c1f3",
+      "editorSeconds": 142.67,
+      "packageSha256": "15acd5a60ffb8ebbcdbd88932ab8b0f72a95aa505a680b234ac9d21345193846",
+      "fileCount": 53,
+      "packagedViewsReviewed": 80,
+      "resolutions": [
+        "1280x800",
+        "1024x720"
+      ],
+      "clientTests": [
+        "CitySim.Desktop.ShorelineContours",
+        "CitySim.Desktop.BeachScenery"
+      ],
+      "startup": "CI menu smoke and both-size Client processes; all53 extracted bytes match the receipt for the executed CI copy; no separate extracted launch repeated",
+      "profile": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\Issue146\\Play-Build217-IsolatedProfile",
+      "executable": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\Issue146\\Extracted-Build217\\CitySimVR\\Binaries\\Win64\\CitySimVR.exe",
+      "fixtures": [
+        {
+          "id": "00000000000000000000000000000140",
+          "name": "Shoreline DiagonalLake",
+          "seed": 7429,
+          "gameRevision": "dev-b747f306a2f4eb289d4c",
+          "sha256": "5e4b76bf7d74c80de6333d3814bebbc9dc64de8971efdeea4ff25964c45cd6f1"
+        },
+        {
+          "id": "00000000000000000000000000000141",
+          "name": "Shoreline ConcaveLake",
+          "seed": 1,
+          "gameRevision": "dev-b747f306a2f4eb289d4c",
+          "sha256": "fb48b7ee3a87d6a13e6e1b5cdf90013d3a25d40b051fbfdf4599c1fd951697bd"
+        },
+        {
+          "id": "00000000000000000000000000000142",
+          "name": "Shoreline NarrowRiver",
+          "seed": 5,
+          "gameRevision": "dev-b747f306a2f4eb289d4c",
+          "sha256": "cd3d4338820e9585dc6cdbbd01cf72f592ddd73e41b4b973b37a6a6ff6ec6985"
+        }
+      ],
+      "attachments": [
+        {
+          "Issue": 146,
+          "Name": "evidence-issue146-windows217-Windows217-BeforeAfter-0f41422660794d47.jpg",
+          "LocalPath": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\Issue146\\Windows217-BeforeAfter.jpg",
+          "Bytes": 116655,
+          "Sha256": "0f41422660794d4731b748e22ddfed3d7292a4bf9c5721de8bbcf1c52a1cc34f",
+          "Url": "https://git.shaun-husain.com/attachments/54aed7c1-b732-45cd-b750-f0592d056162",
+          "AttachmentId": "54aed7c1-b732-45cd-b750-f0592d056162",
+          "Reused": false
+        },
+        {
+          "Issue": 146,
+          "Name": "evidence-issue146-windows217-ConcaveLake-Comparison-5c00362e73b34c2e.jpg",
+          "LocalPath": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\Issue146\\Windows217-1280\\ConcaveLake-Comparison.jpg",
+          "Bytes": 507340,
+          "Sha256": "5c00362e73b34c2e46d0832f4099fd4c474d638b2bb1c2aa4c0ef3829266e05f",
+          "Url": "https://git.shaun-husain.com/attachments/be78205a-6c51-48cf-85bf-185b9aab20c2",
+          "AttachmentId": "be78205a-6c51-48cf-85bf-185b9aab20c2",
+          "Reused": false
+        },
+        {
+          "Issue": 146,
+          "Name": "evidence-issue146-windows217-NarrowRiver-Comparison-4a45f6da4ea81bce.jpg",
+          "LocalPath": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\Issue146\\Windows217-1024\\NarrowRiver-Comparison.jpg",
+          "Bytes": 588480,
+          "Sha256": "4a45f6da4ea81bce306f8965ea61a362a9273563d8b942270275a833f1691f91",
+          "Url": "https://git.shaun-husain.com/attachments/303e9395-c7e7-48ac-b9f2-be75f2f0b5b8",
+          "AttachmentId": "303e9395-c7e7-48ac-b9f2-be75f2f0b5b8",
+          "Reused": false
+        },
+        {
+          "Issue": 146,
+          "Name": "evidence-issue146-windows217-Beach-Regression-a9a980bc5a69c5be.jpg",
+          "LocalPath": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\Issue146\\Windows217-1280\\Beach-Regression.jpg",
+          "Bytes": 501610,
+          "Sha256": "a9a980bc5a69c5be924dad0bbacea6c6b0b10f59a4a60cfa621965661dbfbbe2",
+          "Url": "https://git.shaun-husain.com/attachments/8409b9e0-8c55-4548-b26a-b02b2fcc013e",
+          "AttachmentId": "8409b9e0-8c55-4548-b26a-b02b2fcc013e",
+          "Reused": false
+        },
+        {
+          "Issue": 146,
+          "Name": "evidence-issue146-windows217-Delivery-348b29c44a14dd4d.json",
+          "LocalPath": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\Issue146\\Delivery.json",
+          "Bytes": 2967,
+          "Sha256": "348b29c44a14dd4df6de29dbf7eb1e7c6c3a125a1cdb7c40bf6fff3e70b0279f",
+          "Url": "https://git.shaun-husain.com/attachments/7bd45ecf-e30a-4fe5-9202-6c0b9c9f21cd",
+          "AttachmentId": "7bd45ecf-e30a-4fe5-9202-6c0b9c9f21cd",
+          "Reused": false
+        },
+        {
+          "Issue": 146,
+          "Name": "evidence-issue146-windows217-Issue146-Extraction-5d81bc753636802c.json",
+          "LocalPath": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\CI\\Builds\\217-4893f27f6390-WindowsCandidate-0646c1f3\\Issue146-Extraction.json",
+          "Bytes": 11295,
+          "Sha256": "5d81bc753636802c7c8a34c4f370187bf10b3362c29b0cdc1bd5fa809517e562",
+          "Url": "https://git.shaun-husain.com/attachments/550a6a92-4fd0-428d-aaa7-1b300c198846",
+          "AttachmentId": "550a6a92-4fd0-428d-aaa7-1b300c198846",
+          "Reused": false
+        }
+      ]
+    },
+    "quest": "deferred per PC-first2026-10-18; no demonstrated mobile-specific risk",
+    "physicalHeadset": "unconfirmed (#49)",
+    "humanAcceptance": "pending",
+    "knownAttempts": {
+      "208": "failed missing capture-test friends; corrected",
+      "209": "duplicate canceled while pending",
+      "211": "passed142.17s/nine tests/30 captures; camera-only refresh fixes one occluded view"
+    },
+    "preserved": [
+      "simulation/placement/picking/flooding authority",
+      "schema72 and terrain regeneration",
+      "approved source art and native content",
+      "beach props/scatter/zoom",
+      "maintained game and player profiles",
+      "shared #150 CI claim and enabled single worker"
+    ],
+    "gameRevision": "dev-b747f306a2f4eb289d4c",
+    "handoff": "https://git.shaun-husain.com/CitySimVR/citysim/issues/146#issuecomment-2800",
+    "next": "Human playtest/explicit acceptance of217; then normal protected PR171 closeout, remove temporary native visual selection and record completion in CHANGELOG. No code/package replay solely for docs."
+  }
+}

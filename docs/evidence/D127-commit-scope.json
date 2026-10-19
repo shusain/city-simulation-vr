@@ -1,0 +1,65 @@
+{
+  "task": "D127",
+  "bug": "B008",
+  "date": "2026-10-16",
+  "parent": "5f8bfd8b749ad42fa43e2bfde2d4548405d8d255",
+  "acceptedRevision": "dev-ce1899475e36f6286419",
+  "schema": 70,
+  "inputs": [
+    {
+      "path": "CitySimVR/Source/CitySimVR/Private/Simulation/CityTrafficSimulation.cpp",
+      "acceptedSha256": "42e094e71a39e69b572b78cdff13e728532a0dcfadad6f4d6e6113d746bd4345",
+      "newFile": false
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Private/Simulation/CityWasteSimulation.cpp",
+      "acceptedSha256": "e371c334d34dafc5bebdca98c556f37f6472e560bbffeb3e9452959cb0793874",
+      "newFile": false
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Private/Tests/CityFlowRefinementTests.cpp",
+      "acceptedSha256": "f83d95877727eaaf0255b1af1ba3d59edfb9d5d684d245d3c167b6917c9347ad",
+      "newFile": false
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Private/Tests/CityWasteTests.cpp",
+      "acceptedSha256": "28cb25da73d611ca5a95990e5b830ab0a33adabbdcc4e8d04a93f1d03f19624c",
+      "newFile": false
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Public/Simulation/CityWasteSimulation.h",
+      "acceptedSha256": "69e620b71860a77689310adae19bf160b4d1d9fa9707662611c49547da5a265d",
+      "newFile": false
+    },
+    {
+      "path": "CitySimVR/Content/CitySim/Data/DA_CityBuildingCatalog.uasset",
+      "acceptedSha256": "3487b81c7162b66341e33e5aa510d966e158bf941dfd2a3192f925f766716f74",
+      "newFile": false
+    },
+    {
+      "path": "Tools/Update-CityWasteCatalog.py",
+      "acceptedSha256": "41242ca899431f95786b52cd559f3c3f54e33a9600bfdf177e64729105617d81",
+      "newFile": false
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Private/Tests/CityHealthServiceTests.cpp",
+      "acceptedSha256": "2ac9ba25d39532fae13b8c1b653e4f7d2709be72aa3da8373e23b6f14092bf1b",
+      "newFile": true
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Private/Tests/CityWasteRangeTests.cpp",
+      "acceptedSha256": "01c53998744a8ca914708d1bd4fe6f4012a34b00e220fed0d79656a821e4e30b",
+      "newFile": true
+    },
+    {
+      "path": "Tools/Update-CityWasteRange.py",
+      "acceptedSha256": "e06d2581971d6336ed0d09f97365b1578dbaa115c414c868690d97b434c26a93",
+      "newFile": true
+    }
+  ],
+  "catalogLfsPointer": "version https://git-lfs.github.com/spec/v1\noid sha256:3487b81c7162b66341e33e5aa510d966e158bf941dfd2a3192f925f766716f74\nsize 71658\n",
+  "allTenAcceptedInputsUnchanged": true,
+  "excluded": "Preexisting D121 walk integration/assets/tools/tests, D126 CI/workflow instructions, B007 and unrelated docs. Shared documents staged from HEAD plus only the D127 delivery/acceptance/closure sections.",
+  "validation": "Existing accepted delivery evidence retained; acceptance/commit-only closeout adds no implementation/build/package/player mutation.",
+  "pushed": false
+}

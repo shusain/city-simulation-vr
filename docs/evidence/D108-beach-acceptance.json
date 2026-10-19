@@ -1,0 +1,23 @@
+{
+  "task": "D108/D110 beach integration acceptance",
+  "date": "2026-10-17",
+  "status": "User accepted candidate158; normal PR145 merge explicitly authorized",
+  "humanStatement": "I checked candidate 158 in game and the zoom and beach scattering look good. Go ahead and merge PR145 and close out the completed beach integration work.",
+  "source": "Direct user message in this chat; faithfully recorded in linked Gitea comment",
+  "comment": "https://git.shaun-husain.com/CitySimVR/citysim/issues/53#issuecomment-2279",
+  "candidate": 158,
+  "submitted": "df3d17db84404ddfa5947c474f2327546806817b",
+  "gameRevision": "dev-3714124068bf033a0c3a",
+  "schema": 72,
+  "acceptedScope": "Five approved beach props, source-sized ISM placement, within-tile wet/inland scattering and closer desktop zoom",
+  "delivery": "https://git.shaun-husain.com/attachments/9e9282c3-4f90-4fcb-882c-8b9e6f4305d3",
+  "followup": {
+    "task": "D130",
+    "issue": 146,
+    "url": "https://git.shaun-husain.com/CitySimVR/citysim/issues/146",
+    "scope": "Smoother terrain-following shoreline crossing tiles at angles; separate planned presentation enhancement",
+    "blocksAcceptedIntegration": false
+  },
+  "headset": "Unconfirmed under D114; user in-game confirmation does not establish named physical PCVR/Quest observations",
+  "closeoutScope": "Documentation/evidence/task bookkeeping only; runtime and packages remain accepted158"
+}

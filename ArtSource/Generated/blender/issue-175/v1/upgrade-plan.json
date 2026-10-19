@@ -1,0 +1,43 @@
+{
+  "family": "police",
+  "stage": "base",
+  "stage_index": 0,
+  "existing_stages": [
+    "base",
+    "medium",
+    "high"
+  ],
+  "existing_upgrade_count": 2,
+  "gameplay_changes": false,
+  "source_site_m": [
+    40,
+    32
+  ],
+  "current_native_footprint": [
+    3,
+    2
+  ],
+  "retained_entrance_centres": [
+    [
+      -10,
+      -5
+    ],
+    [
+      2,
+      -5
+    ]
+  ],
+  "progression": "Base stage: two-floor reception/admin, single response garage, enclosed connector. Existing medium/high remain separate future source reviews; no invented stages.",
+  "occupied_bounds": {
+    "min": [
+      -16.139999389648438,
+      -6.25,
+      0.0
+    ],
+    "max": [
+      6.139999866485596,
+      8.100000381469727,
+      9.449999809265137
+    ]
+  }
+}

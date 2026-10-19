@@ -1,0 +1,10 @@
+{
+  "design": "Pathless municipal treatment plant; two recessed 8.7 m clarifiers, staffed two-storey controls and filter hall",
+  "units": "metres Z up, front -Y",
+  "plot_proposal_cells": [
+    4,
+    4
+  ],
+  "catalog_modified": false,
+  "lod_plan": "Future simplification preserves basin/roof silhouettes, entrances and major routing. Reduce radial segments; remove handles, flanges, tiny ventilation and rails; merge secondary machines. LOD0 only, no measured platform performance claim."
+}

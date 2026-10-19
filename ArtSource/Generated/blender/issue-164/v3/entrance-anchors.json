@@ -1,0 +1,114 @@
+{
+  "anchors": [
+    {
+      "role": "pedestrian",
+      "target": "Personnel_door_leaf",
+      "xyz_m": [
+        -5.6,
+        -5.074999809265137,
+        0
+      ],
+      "outward": [
+        0,
+        -1,
+        0
+      ],
+      "width_m": 1.2,
+      "grade_m": 0,
+      "boundary_connector": {
+        "xyz_m": [
+          -5.6,
+          -16,
+          0
+        ],
+        "outward": [
+          0,
+          -1,
+          0
+        ],
+        "width_m": 1.8,
+        "grade_m": 0
+      },
+      "reserved_free_corridor": {
+        "min": [
+          -6.5,
+          -16,
+          0
+        ],
+        "max": [
+          -4.699999999999999,
+          -5.299999732971191,
+          2.4
+        ]
+      },
+      "portal_fixtures": [
+        "Personnel_door_leaf",
+        "Personnel_door_glass",
+        "Personnel_door_handle",
+        "Personnel_portal_jamb",
+        "Personnel_portal_jamb.001",
+        "Personnel_portal_head"
+      ]
+    },
+    {
+      "role": "vehicle_service",
+      "target": "Vehicle_service_shutter",
+      "xyz_m": [
+        3,
+        -4.099999904632568,
+        0
+      ],
+      "outward": [
+        0,
+        -1,
+        0
+      ],
+      "width_m": 4,
+      "grade_m": 0,
+      "boundary_connector": {
+        "xyz_m": [
+          3,
+          -16,
+          0
+        ],
+        "outward": [
+          0,
+          -1,
+          0
+        ],
+        "width_m": 4,
+        "grade_m": 0
+      },
+      "reserved_free_corridor": {
+        "min": [
+          1.0,
+          -16,
+          0
+        ],
+        "max": [
+          5.0,
+          -4.230000038146972,
+          3.5
+        ]
+      },
+      "portal_fixtures": [
+        "Vehicle_service_shutter",
+        "Shutter_horizontal_seam",
+        "Shutter_horizontal_seam.001",
+        "Shutter_horizontal_seam.002",
+        "Shutter_horizontal_seam.003",
+        "Shutter_horizontal_seam.004",
+        "Shutter_horizontal_seam.005",
+        "Shutter_horizontal_seam.006",
+        "Shutter_horizontal_seam.007",
+        "Shutter_horizontal_seam.008",
+        "Shutter_horizontal_seam.009",
+        "Shutter_horizontal_seam.010",
+        "Shutter_horizontal_seam.011",
+        "Vehicle_portal_side",
+        "Vehicle_portal_side.001",
+        "Vehicle_portal_header"
+      ]
+    }
+  ]
+}

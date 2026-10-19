@@ -1,0 +1,25 @@
+{
+  "issue": 150,
+  "pullRequest": 151,
+  "approval": "Shaun: Looks good, merge PR #151 and continue with the next tooling cleanup slice under #150.",
+  "approvedHead": "f215543e4cbd0d22ec6c4da743b9315e8d44949b",
+  "mergeCommit": "876b453c6f5dbbbace667d05473c0a22b82c1d97",
+  "treeEqualsApprovedHead": true,
+  "prBuild": {
+    "build": 177,
+    "status": "passed",
+    "editorSeconds": 150.68,
+    "offlineChecks": 30,
+    "nativeExactTests": 5
+  },
+  "mainBuild": {
+    "build": 178,
+    "status": "passed",
+    "editorSeconds": 161.24,
+    "offlineChecks": 30,
+    "nativeExactTests": 5
+  },
+  "sourceApprovalAssetPlayerDefaultChanges": false,
+  "issueRemainsOpen": true,
+  "next": "Capture session and functional tool locations under the same issue."
+}

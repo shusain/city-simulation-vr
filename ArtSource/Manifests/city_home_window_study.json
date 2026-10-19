@@ -1,0 +1,188 @@
+{
+  "task": "D91",
+  "prototype_only": true,
+  "source": "ArtSource/Blender/CityResidentialSurface.blend",
+  "source_sha256": "c644f1cb418c104ffe73347e4cdb2087fa3f2c00f547241c6b264fcd815ec3e9",
+  "assets": [
+    {
+      "name": "SM_HomeWindows_Before",
+      "export": "ArtSource/Exports/HomeWindowStudy/SM_HomeWindows_Before.fbx",
+      "sha256": "94eb7067cf7a6f68bb5a2f4604b73a44dbccdaf67918abe5a196261100a4b8e3",
+      "triangles": 90,
+      "sections": 3,
+      "slots": [
+        "ResidentialBrick",
+        "Roof",
+        "RoofShingles"
+      ],
+      "dimensions_m": [
+        14.079999923706055,
+        15.039999008178711,
+        9.199999809265137
+      ],
+      "roundtrip_pass": true
+    },
+    {
+      "name": "SM_HomeWindows_Opaque",
+      "export": "ArtSource/Exports/HomeWindowStudy/SM_HomeWindows_Opaque.fbx",
+      "sha256": "b479d5c16c8a93b5b40398d7c8727cc95c1b58fa113dbc554ed68227c5c78fa9",
+      "triangles": 442,
+      "sections": 4,
+      "slots": [
+        "ResidentialBrick",
+        "Roof",
+        "RoofShingles",
+        "HomeWindowOpaque"
+      ],
+      "dimensions_m": [
+        14.079999923706055,
+        15.039999008178711,
+        9.199999809265137
+      ],
+      "roundtrip_pass": true
+    },
+    {
+      "name": "SM_HomeWindows_Translucent",
+      "export": "ArtSource/Exports/HomeWindowStudy/SM_HomeWindows_Translucent.fbx",
+      "sha256": "d20ef17bdb4ed89d52bb864df2af3acd913f8e57e10c6b40c003778cd4ba92d3",
+      "triangles": 442,
+      "sections": 4,
+      "slots": [
+        "ResidentialBrick",
+        "Roof",
+        "RoofShingles",
+        "HomeWindowTranslucent"
+      ],
+      "dimensions_m": [
+        14.079999923706055,
+        15.039999008178711,
+        9.199999809265137
+      ],
+      "roundtrip_pass": true
+    }
+  ],
+  "window_count": 11,
+  "frames": [
+    {
+      "polygon": 29,
+      "width_m": 1.9360001203678818,
+      "height_m": 1.8000001907348633,
+      "normal": [
+        0.0,
+        -1.0,
+        0.0
+      ]
+    },
+    {
+      "polygon": 30,
+      "width_m": 1.9360001203678818,
+      "height_m": 1.8000001907348633,
+      "normal": [
+        0.0,
+        -1.0,
+        0.0
+      ]
+    },
+    {
+      "polygon": 31,
+      "width_m": 1.9360001203678818,
+      "height_m": 1.8000001907348633,
+      "normal": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "polygon": 32,
+      "width_m": 1.935999997217793,
+      "height_m": 1.8000001907348633,
+      "normal": [
+        0.9999999403953552,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "polygon": 33,
+      "width_m": 1.9360001203678818,
+      "height_m": 1.8000001907348633,
+      "normal": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "polygon": 34,
+      "width_m": 1.9360001203678818,
+      "height_m": 1.8000001907348633,
+      "normal": [
+        0.0,
+        1.0,
+        -0.0
+      ]
+    },
+    {
+      "polygon": 35,
+      "width_m": 1.935999997217793,
+      "height_m": 1.8000001907348633,
+      "normal": [
+        0.0,
+        0.9999999403953552,
+        -0.0
+      ]
+    },
+    {
+      "polygon": 36,
+      "width_m": 1.9360001203678818,
+      "height_m": 1.8000001907348633,
+      "normal": [
+        0.0,
+        1.0,
+        -0.0
+      ]
+    },
+    {
+      "polygon": 37,
+      "width_m": 1.9360001203678818,
+      "height_m": 1.8000001907348633,
+      "normal": [
+        -1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "polygon": 38,
+      "width_m": 1.935999997217793,
+      "height_m": 1.8000001907348633,
+      "normal": [
+        -0.9999999403953552,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "polygon": 39,
+      "width_m": 1.9360001203678818,
+      "height_m": 1.8000001907348633,
+      "normal": [
+        -1.0,
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "views": [
+    "Artifacts/D91/Blender/SM_HomeWindows_Before-Whole.png",
+    "Artifacts/D91/Blender/SM_HomeWindows_Before-Window.png",
+    "Artifacts/D91/Blender/SM_HomeWindows_Opaque-Whole.png",
+    "Artifacts/D91/Blender/SM_HomeWindows_Opaque-Window.png",
+    "Artifacts/D91/Blender/SM_HomeWindows_Translucent-Whole.png",
+    "Artifacts/D91/Blender/SM_HomeWindows_Translucent-Window.png"
+  ],
+  "texture": "ArtSource/Textures/HomeWindowStudy/HomeGlass.png",
+  "original_triangles": 90,
+  "notes": "Original solid walls, porch, door, roof, walk, bounds and night pane masks retained. New four-pane surrounds/sills. Translucency35% experiment; opaque illustrated glass candidate."
+}

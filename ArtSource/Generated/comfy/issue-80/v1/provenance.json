@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "kind": "comfy",
+  "repository": "CitySimVR/citysim",
+  "issue": 80,
+  "version": 1,
+  "source_sha": "d28931af5987d1b91f32499811c06d6c7c215213",
+  "workflow": "generate_image_zimage",
+  "workflow_sha256": "746397ca90b23da0f9d3d2b033323696978f508def491900a48421320714f537",
+  "model": "ollama/citysim-spec:qwen3-14b",
+  "seed": 80,
+  "prompt": "Full-bleed ROOM INTERIOR BACKGROUND IMAGE, a cropped first-person view from inside a neighborhood coffee cafe, straight forward at eye level. The camera is inside a real room; there is NO outside of the room visible anywhere. Cream room surfaces continue past EVERY edge of the picture. Two long dusty-teal shelves run horizontally across the back wall and extend BEYOND the left and right image edges. Shelves have visible TOP surfaces and side thickness with gentle contact shadows to communicate depth. A compact simple espresso machine and coffee grinder on a low counter; a few ceramic cups and mugs, two plain coffee jars and a small plate of pastries on shelves. Broad readable coffee equipment, restrained warm brown accents, no people or seating clutter. Keep ALL important merchandise centered in the MIDDLE HALF of the image with comfortable space around it; outer shelf ends and room side surfaces are unimportant crop continuation. A narrow strip of cream ceiling at the very top and cream floor at the bottom, room back corners near the left and right edges. Restrained centered one-point perspective, level camera, upright verticals. Stylized low-poly game art with broad simple matte shapes, warm cream and dusty teal palette, soft uniform diffuse illumination, readable moderate contrast, mild baked ambient occlusion, clean sparse layout. Crop closely INTO the room: no surrounding background, no external edges, no outer box, no cabinet enclosure, no display case, no diorama or freestanding model, no window opening or window frame, no front wall, no glazing, no mullions, no sill, no border, no glare or reflections. No outside facade, no door or shop sign, no people, words, letters, numbers, labels, prices, logos or watermark. Single room image, no atlas, collage or multiple panels.",
+  "prompt_id": "fef09dc7-aa35-40fc-83da-ce6c5f027bd3",
+  "dimensions": {
+    "width": 768,
+    "height": 768
+  },
+  "png_sha256": "f36a05a9fda1fbd7f180d14bcdafa4a569e7a0eef55d52e5025aff6ee482eaad",
+  "created_at": "2026-10-16T22:01:47.862Z"
+}

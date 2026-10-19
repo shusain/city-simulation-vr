@@ -1,0 +1,124 @@
+{
+  "task": "D126",
+  "clientDate": "2026-10-15",
+  "recordedUtc": "2026-10-16T03:41:15.2628268Z",
+  "worker": "citysim-JARVIS",
+  "platform": "windows/amd64",
+  "label": "citysim:ue57",
+  "capacity": 1,
+  "connection": "HTTPS ping succeeded and worker polling",
+  "scheduledTask": "CitySimVR-DroneRunner",
+  "listener": "127.0.0.1:3000",
+  "lifecycle": "direct task stop verified no orphan; restarted successfully",
+  "diagnosis": "old shell-owned daemon processes retained old RPC configuration",
+  "serverSecretEqualityVerified": true,
+  "serverAndClusterChanges": "none",
+  "validation": {
+    "task": "D126",
+    "recordedUtc": "2026-10-16T03:38:56.481056Z",
+    "runnerVersion": "v1.0.0-beta.10",
+    "runnerArchiveSha256": "9d096c0f72fdf5c252cfa28f678357163d02e6dea33365f28850ca6cc05c7772",
+    "runnerBinarySha256": "1da9aeb6d863b27c5919c1b6ca2c91d402f8a5ab80457894821ed05b4077d60b",
+    "officialArchiveSha1Matched": true,
+    "yamlCompilation": [
+      "windows-checks",
+      "windows-playtest",
+      "pull-request-clone-inspected"
+    ],
+    "powerShellSyntax": "passed",
+    "preflight": [
+      "Check",
+      "WindowsCandidate",
+      "WindowsPowerShell5"
+    ],
+    "logValidation": [
+      "existing-Unreal-success",
+      "reject-zero-tests",
+      "reject-wrong-test",
+      "reject-failed-test",
+      "reject-nonzero-exit",
+      "reject-fatal-after-pass",
+      "reject-prefix-only"
+    ],
+    "configGitIgnored": true,
+    "configAclInheritanceDisabled": true,
+    "scheduledTask": "CitySimVR-DroneRunner",
+    "connection": "HTTPS-authenticated-and-polling",
+    "workerState": "running-direct-scheduled-task",
+    "unrealBuildRun": false,
+    "sourcePushed": false,
+    "lifecycleCheck": "direct-task-stop-terminates-daemon-no-orphan-then-restarted",
+    "serverChanges": "none; live-Kubernetes-secret-and-running-env-match; HTTPS-RPC-ping-200",
+    "sourceFiles": [
+      {
+        "path": ".drone.yml",
+        "sha256": "2368df16f17c1c700ff47e0d9fd1333674854f413eec94a85d773982c4882a91"
+      },
+      {
+        "path": "Tools/CI/Invoke-CityCI.ps1",
+        "sha256": "9cd9635e172f49b7980fed02b8b1ca8b36b40ba68c2255cfd53c354365a6dc22"
+      },
+      {
+        "path": "Tools/CI/Set-CityDroneRunner.ps1",
+        "sha256": "690ca22bf13a85a12093069c0a47963e28fcc67114dadbbf2d5f323b8b0a811c"
+      },
+      {
+        "path": "Tools/CI/Test-CityAutomationLog.ps1",
+        "sha256": "acdb75ef8671afec73a09a603ca9d83c5a74a0c407377d857cca514b822bc681"
+      },
+      {
+        "path": "Tools/CI/Tests.txt",
+        "sha256": "fcba7980806a8de76c7765f04008372f489bfeba1ea9ac8c70183793f1d6678d"
+      },
+      {
+        "path": "docs/DRONE_CI.md",
+        "sha256": "f3b0ae2ac8e2633fc9faad62d6e0e8d879743263c43c4070e18ee0793e946315"
+      }
+    ]
+  },
+  "pending": [
+    "explicit D125 native window release",
+    "authorized CI-only branch push and draft PR",
+    "first real queued Unreal job",
+    "artifact hosting",
+    "Quest CI"
+  ],
+  "sourceFiles": [
+    {
+      "path": ".drone.yml",
+      "sha256": "2368df16f17c1c700ff47e0d9fd1333674854f413eec94a85d773982c4882a91"
+    },
+    {
+      "path": "Tools/CI/Invoke-CityCI.ps1",
+      "sha256": "9cd9635e172f49b7980fed02b8b1ca8b36b40ba68c2255cfd53c354365a6dc22"
+    },
+    {
+      "path": "Tools/CI/Set-CityDroneRunner.ps1",
+      "sha256": "690ca22bf13a85a12093069c0a47963e28fcc67114dadbbf2d5f323b8b0a811c"
+    },
+    {
+      "path": "Tools/CI/Test-CityAutomationLog.ps1",
+      "sha256": "acdb75ef8671afec73a09a603ca9d83c5a74a0c407377d857cca514b822bc681"
+    },
+    {
+      "path": "Tools/CI/Tests.txt",
+      "sha256": "fcba7980806a8de76c7765f04008372f489bfeba1ea9ac8c70183793f1d6678d"
+    },
+    {
+      "path": "docs/DRONE_CI.md",
+      "sha256": "f3b0ae2ac8e2633fc9faad62d6e0e8d879743263c43c4070e18ee0793e946315"
+    }
+  ],
+  "nativeOwnershipGuard": "current D125 CLAIMED header detected; released headers and prose ignored; no native build started",
+  "publicationAuthorization": "User explicitly authorized CI-only push, draft PR and first build after D125 release; same-thread heartbeat publish-citysim-ci-after-d125 active every10min.",
+  "firstQueuedJob": {
+    "pullRequest": "https://git.shaun-husain.com/CitySimVR/citysim/pulls/41",
+    "build": 1,
+    "status": "failure",
+    "stage": "clone",
+    "unrealRan": false,
+    "cause": "Gitea public clone requires authentication; Drone public repo omitted credentials",
+    "fix": "live deployment DRONE_GIT_ALWAYS_AUTH=true; rollout succeeded",
+    "sourceManifestSync": "NAS write denied; nonsecret patch retained in Artifacts/CI/ServerAlwaysAuth.patch"
+  }
+}

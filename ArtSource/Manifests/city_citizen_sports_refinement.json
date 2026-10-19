@@ -1,0 +1,111 @@
+{
+  "task": "D88",
+  "source": "ArtSource/Blender/CityCitizenSportsRefinement.blend",
+  "source_sha256": "9f5bf91ce358c5b78f312568e4eca6befa41b5b90bde7bb118ad95bc51e935f0",
+  "protected_inputs": {
+    "ArtSource/Blender/CityCitizenControlRig.blend": "20036a3a5d42525a517b2358cf4f0bbe979d5cbb8621d2ea53a00f76a6800f27",
+    "ArtSource/Blender/CityCitizenRigPrototype.blend": "7b4a3ec93e56a89af850970d00b96eb892a6174857b56896bc39e595e0eff01b",
+    "ArtSource/Blender/CityParkAnimationPreview.blend": "c3fb331d409e62b4b96b84dbe53c6aad0d903eefafaf7d26dc8d466fa8f3165e",
+    "ArtSource/Exports/ParkRefinement/SK_Citizen_Rig_Casual.fbx": "d00db8428ef32a9213a3b9d5e09623ff1394fde0ce7a8a9acf17e3df0b28d565",
+    "ArtSource/Exports/ParkRefinement/SK_Citizen_Rig_Casual_LOD1.fbx": "47c2fe1e2d42ecb6f7652c47f54807a0d37f674380b2e651b678e14379df9136",
+    "ArtSource/Exports/ParkRefinement/SK_Citizen_Rig_Office.fbx": "f937fa6a1bf2b63713478189cb6645bed1ee56a8d8d8565bdeebd5714f3f93c0",
+    "ArtSource/Exports/ParkRefinement/SK_Citizen_Rig_Office_LOD1.fbx": "5d6e4a42c6238ac42a12b2f3d7e0dcc319aebebefeaee4fb0b5177abd612cf2d",
+    "ArtSource/Exports/ParkRefinement/SK_Citizen_Rig_Worker.fbx": "dbbf43ccc3b3a3eab5b2dafcc188fa41c55699f30fd3cfe879e1e3bd6689aaf4",
+    "ArtSource/Exports/ParkRefinement/SK_Citizen_Rig_Worker_LOD1.fbx": "7bc8ceeb745dcd9b823278ac15b470c94e834f98604d1076b3d6c7bfe5533b25",
+    "ArtSource/Exports/SM_Building_BaseballPark_A.fbx": "64caba342264a0d93462ba4cb5e7fa54045307e2373d03162ef0d151a7892c58",
+    "ArtSource/Exports/SM_Building_SoccerPark_A.fbx": "5da21621ada3f17021da91e56ab3738e22324d2bc8224f0fdbcf4eb530b55573"
+  },
+  "scenes": [
+    {
+      "scene": "D88_BaseballPitch",
+      "clip": "BaseballPitch",
+      "sport": "Baseball",
+      "period": 72,
+      "citizen": "D88_BaseballPitch_Citizen",
+      "rig": "D88_BaseballPitch_Rig",
+      "control_action": "D88_BaseballPitch_Controls",
+      "props": [
+        "D88_BaseballPitch_Ball"
+      ],
+      "ball": "D88_BaseballPitch_Ball",
+      "playback": "loop",
+      "release_frame": 36
+    },
+    {
+      "scene": "D88_BaseballSwing",
+      "clip": "BaseballSwing",
+      "sport": "Baseball",
+      "period": 72,
+      "citizen": "D88_BaseballSwing_Citizen",
+      "rig": "D88_BaseballSwing_Rig",
+      "control_action": "D88_BaseballSwing_Controls",
+      "props": [
+        "D88_BaseballSwing_Ball",
+        "D88_BaseballSwing_Bat"
+      ],
+      "ball": "D88_BaseballSwing_Ball",
+      "playback": "loop",
+      "bat": "D88_BaseballSwing_Bat",
+      "impact_frame": 49
+    },
+    {
+      "scene": "D88_SoccerKick",
+      "clip": "SoccerKick",
+      "sport": "Soccer",
+      "period": 48,
+      "citizen": "D88_SoccerKick_Citizen",
+      "rig": "D88_SoccerKick_Rig",
+      "control_action": "D88_SoccerKick_Controls",
+      "props": [
+        "D88_SoccerKick_Ball"
+      ],
+      "ball": "D88_SoccerKick_Ball",
+      "playback": "loop",
+      "impact_frame": 25,
+      "contact_point": [
+        0.4184247851371765,
+        -0.09732053428888321,
+        0.33000001311302185
+      ]
+    },
+    {
+      "scene": "D88_SoccerRun",
+      "clip": "SoccerRun",
+      "sport": "Soccer",
+      "period": 48,
+      "citizen": "D88_SoccerRun_Citizen",
+      "rig": "D88_SoccerRun_Rig",
+      "control_action": "D88_SoccerRun_Controls",
+      "props": [
+        "D88_SoccerRun_Ball"
+      ],
+      "ball": "D88_SoccerRun_Ball",
+      "playback": "loop"
+    },
+    {
+      "scene": "D88_GoalkeeperSave",
+      "clip": "GoalkeeperSave",
+      "sport": "Soccer",
+      "period": 48,
+      "citizen": "D88_GoalkeeperSave_Citizen",
+      "rig": "D88_GoalkeeperSave_Rig",
+      "control_action": "D88_GoalkeeperSave_Controls",
+      "props": [
+        "D88_GoalkeeperSave_Ball"
+      ],
+      "ball": "D88_GoalkeeperSave_Ball",
+      "playback": "loop",
+      "catch_frame": 25,
+      "hold_end_frame": 40
+    }
+  ],
+  "baseball_pair_scene": "D88_BaseballPair",
+  "baseball_release_frame": 36,
+  "baseball_impact_frame": 49,
+  "native_selected": false,
+  "notes": [
+    "Five newly authored control actions; original D83 actions remain recovery sources",
+    "Baseball swing period changes48 to72 to synchronize the paired pitch",
+    "Body/prop presentation loops remain cosmetic; no sports gameplay state"
+  ]
+}

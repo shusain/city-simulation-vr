@@ -1,0 +1,2139 @@
+{
+  "schema": 1,
+  "issue": 150,
+  "native": [
+    {
+      "old": "/Game/CitySim/Art/Citizens/AS_Citizen_Walk_D121",
+      "new": "/Game/CitySim/Art/Citizens/AS_Citizen_Walk",
+      "sha256": "f688fd2c7071b35dd848a010b8aff1e1a7ff172e4c96106c275d4e3cde5e9ff3"
+    },
+    {
+      "old": "/Game/CitySim/Art/Citizens/BS_Citizen_StreetWalk_D121",
+      "new": "/Game/CitySim/Art/Citizens/BS_Citizen_StreetWalk",
+      "sha256": "a763b487181e6b92743d9aa5cece43ff64d9b5b30753774143f117910d1ccf3b"
+    },
+    {
+      "old": "/Game/CitySim/Art/Materials/M_D122RepairWindows",
+      "new": "/Game/CitySim/Art/Materials/M_RepairDisplayWindows",
+      "sha256": "f2ebd7a1f9ae09921cb79971e9b6394b3a2f47616f349f78abd9a28297ca3254"
+    },
+    {
+      "old": "/Game/CitySim/Art/Materials/M_D122ShopWindows",
+      "new": "/Game/CitySim/Art/Materials/M_StorefrontRoomWindows",
+      "sha256": "fdc39fbfbf0735ddc0c9936c02ccf1c95299468a3ee69d82441f7624f1a2d0f1"
+    },
+    {
+      "old": "/Game/CitySim/Art/Materials/MI_D122Room_bakery",
+      "new": "/Game/CitySim/Art/Materials/MI_StorefrontRoom_bakery",
+      "sha256": "4dc21193d11e8e9607b25bc9954dab9bb466bfc37481578c2784699e440eb38c"
+    },
+    {
+      "old": "/Game/CitySim/Art/Materials/MI_D122Room_books",
+      "new": "/Game/CitySim/Art/Materials/MI_StorefrontRoom_books",
+      "sha256": "7382e46b87b98bcf0672f266318d97b9c357633463ca17942792d9afe57e84d9"
+    },
+    {
+      "old": "/Game/CitySim/Art/Materials/MI_D122Room_cafe",
+      "new": "/Game/CitySim/Art/Materials/MI_StorefrontRoom_cafe",
+      "sha256": "319ae69856ae994557445d59c7dc06eab3e058e434a341e84668cf4c5c88ba5f"
+    },
+    {
+      "old": "/Game/CitySim/Art/Materials/MI_D122Room_market",
+      "new": "/Game/CitySim/Art/Materials/MI_StorefrontRoom_market",
+      "sha256": "444fca269a8829bc531a7514ab01e6259dd6b58e6959d7a2be03aea5777c6654"
+    },
+    {
+      "old": "/Game/CitySim/Art/Materials/MI_D122Room_outfitters",
+      "new": "/Game/CitySim/Art/Materials/MI_StorefrontRoom_outfitters",
+      "sha256": "5ffed776543216b2e3562976fb5598fac7f244a0f0f9231f1ac56201508a088c"
+    },
+    {
+      "old": "/Game/CitySim/Art/Materials/MI_D122Room_pharmacy",
+      "new": "/Game/CitySim/Art/Materials/MI_StorefrontRoom_pharmacy",
+      "sha256": "eeac741a70625ff5495ba5e5602f2355c1a5811129cc0231a280e0ce79a900cd"
+    },
+    {
+      "old": "/Game/CitySim/Art/Materials/MI_D122Room_repairs",
+      "new": "/Game/CitySim/Art/Materials/MI_StorefrontRoom_repairs",
+      "sha256": "38484adb24e9385d96b15aaf7b0c728e89f55f3f1aad374b64e0af197cadff57"
+    },
+    {
+      "old": "/Game/CitySim/Art/Materials/MI_D122Room_tech",
+      "new": "/Game/CitySim/Art/Materials/MI_StorefrontRoom_tech",
+      "sha256": "368f8fe3316d22a44ee70e0e5337ff0c09838b157f030453cf8599dfa19aa641"
+    },
+    {
+      "old": "/Game/CitySim/Art/Parks/Animations/AS_Park_BaseballPitch_D83",
+      "new": "/Game/CitySim/Art/Parks/Animations/AS_Park_BaseballPitch",
+      "sha256": "6f5d412f264c89961a3bd0e58e34ac72fd60e9fd2d95b5ffef50d217c80061c3"
+    },
+    {
+      "old": "/Game/CitySim/Art/Parks/Animations/AS_Park_BaseballSwing_D83",
+      "new": "/Game/CitySim/Art/Parks/Animations/AS_Park_BaseballSwing",
+      "sha256": "98626f5da7d248cb03a631dedc209c446147f82247cde9b1fd6c27ecf5344ea5"
+    },
+    {
+      "old": "/Game/CitySim/Art/Parks/Animations/AS_Park_BasketballDribble_D83",
+      "new": "/Game/CitySim/Art/Parks/Animations/AS_Park_BasketballDribble",
+      "sha256": "e1d6a710ce901a9f46cf3e9ddb83c3babfc95946c3f218f4adf1f03b18aa1340"
+    },
+    {
+      "old": "/Game/CitySim/Art/Parks/Animations/AS_Park_BasketballShot_D83",
+      "new": "/Game/CitySim/Art/Parks/Animations/AS_Park_BasketballShot",
+      "sha256": "804a644096e81805c04eba033d1531833d7c069a2a09606075c02ef0690547f3"
+    },
+    {
+      "old": "/Game/CitySim/Art/Parks/Animations/AS_Park_GoalkeeperSave_D83",
+      "new": "/Game/CitySim/Art/Parks/Animations/AS_Park_GoalkeeperSave",
+      "sha256": "f3a1318155e6616eacc64ae24b765256cd81ec54d4c627e4936364fa3fcc89e9"
+    },
+    {
+      "old": "/Game/CitySim/Art/Parks/Animations/AS_Park_Idle_D83",
+      "new": "/Game/CitySim/Art/Parks/Animations/AS_Park_Idle",
+      "sha256": "94e9b8a725cec6ebbbf8a12ff9197c74712d8f8881c7c18f7c7484000b255ca9"
+    },
+    {
+      "old": "/Game/CitySim/Art/Parks/Animations/AS_Park_Skate180_D83",
+      "new": "/Game/CitySim/Art/Parks/Animations/AS_Park_Skate180",
+      "sha256": "64a70d4072f30c9104c4752674149a59679370564c4593b11395ff14c36256ad"
+    },
+    {
+      "old": "/Game/CitySim/Art/Parks/Animations/AS_Park_SkateCarve_D83",
+      "new": "/Game/CitySim/Art/Parks/Animations/AS_Park_SkateCarve",
+      "sha256": "e737c6e6fa6d435e1eec25406834d675e1faa0e634b6d559f4fee20fa0e3ea83"
+    },
+    {
+      "old": "/Game/CitySim/Art/Parks/Animations/AS_Park_SkateKickflip_D83",
+      "new": "/Game/CitySim/Art/Parks/Animations/AS_Park_SkateKickflip",
+      "sha256": "4f95034fd52f39b6aee053667df5d32ed1a67eca5c1ca4ca0e7598b8ae609696"
+    },
+    {
+      "old": "/Game/CitySim/Art/Parks/Animations/AS_Park_SkateLipStall_D83",
+      "new": "/Game/CitySim/Art/Parks/Animations/AS_Park_SkateLipStall",
+      "sha256": "6bb9a860a42872e83ad4b0b688f7e5b49617b6cac3abff15ba59cb97f7a22725"
+    },
+    {
+      "old": "/Game/CitySim/Art/Parks/Animations/AS_Park_SkatePush_D83",
+      "new": "/Game/CitySim/Art/Parks/Animations/AS_Park_SkatePush",
+      "sha256": "2eded67db6d2844e38a11a8aa14478541ada1af59ba34ce5915acc4bbb047d2a"
+    },
+    {
+      "old": "/Game/CitySim/Art/Parks/Animations/AS_Park_SoccerKick_D83",
+      "new": "/Game/CitySim/Art/Parks/Animations/AS_Park_SoccerKick",
+      "sha256": "08e2b1f8de8ee9fc9e0ff378d314c703e53dd0a5abd2a5bb20bcfe215e69e589"
+    },
+    {
+      "old": "/Game/CitySim/Art/Parks/Animations/AS_Park_SoccerRun_D83",
+      "new": "/Game/CitySim/Art/Parks/Animations/AS_Park_SoccerRun",
+      "sha256": "b746441fd921d3934957f9548d58d8547a27ff620ab4e8568cc9b3cce93a783c"
+    },
+    {
+      "old": "/Game/CitySim/Art/Parks/Animations/AS_Park_Walk_D83",
+      "new": "/Game/CitySim/Art/Parks/Animations/AS_Park_Walk",
+      "sha256": "7cb322663994663158234133494163743f9f0be32d4dafe0791fae7c5e37e216"
+    },
+    {
+      "old": "/Game/CitySim/Art/Prototypes/D79/Materials/M_CityBrick",
+      "new": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/M_CityBrick",
+      "sha256": "e908ad9afbbe228116ea29442dd8d6df3e7986056c9b9ce3ad1edfb12591216b"
+    },
+    {
+      "old": "/Game/CitySim/Art/Prototypes/D79/Materials/M_CityMechanical",
+      "new": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/M_CityMechanical",
+      "sha256": "68f9120b820c55679d2da725741a5d082dd5a64432a792e20174f497ed36fd93"
+    },
+    {
+      "old": "/Game/CitySim/Art/Prototypes/D79/Materials/M_CityRoof",
+      "new": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/M_CityRoof",
+      "sha256": "abf4fbb8558d3d1cb281bd76ab04fe0e5e79cb19f6e8996a3d9a29e92d104c3d"
+    },
+    {
+      "old": "/Game/CitySim/Art/Prototypes/D79/Materials/M_StoreSigns",
+      "new": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/M_StoreSigns",
+      "sha256": "5f3b02c1b02c2304b8c7ce002d3e984c31ba02251ea9a5465b7c845d19bacf65"
+    },
+    {
+      "old": "/Game/CitySim/Art/Prototypes/D79/Materials/MI_CharredBrick",
+      "new": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredBrick",
+      "sha256": "627c71e1281e022fa183277442fa1b255e80a0cc8205aca5dc5d67195b07d68c"
+    },
+    {
+      "old": "/Game/CitySim/Art/Prototypes/D79/Materials/MI_CharredMechanical",
+      "new": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredMechanical",
+      "sha256": "a196ccb103abe804bf4016d14fb88e2466e7b52da7f2a036a99ce3a4b5ce6694"
+    },
+    {
+      "old": "/Game/CitySim/Art/Prototypes/D79/Materials/MI_CharredRoofMembrane",
+      "new": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredRoofMembrane",
+      "sha256": "83626a46c8a2cf230fdd2858b897d2a9cb986a98d016c5384caa0660340bd359"
+    },
+    {
+      "old": "/Game/CitySim/Art/Prototypes/D79/Materials/MI_CharredRoofMetal",
+      "new": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredRoofMetal",
+      "sha256": "4f46ab5074e4a86f0d45211ebafd12e7ef834d7e3421a0290912b621caa26b2f"
+    },
+    {
+      "old": "/Game/CitySim/Art/Prototypes/D79/Materials/MI_CharredRoofShingles",
+      "new": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredRoofShingles",
+      "sha256": "401a664039a90fa5bd9d03fd4eaed3ae1dec952192fb11c2a460c4b59b9bce4e"
+    },
+    {
+      "old": "/Game/CitySim/Art/Prototypes/D79/Materials/MI_CharredTrim",
+      "new": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CharredTrim",
+      "sha256": "4d6097ac66600d1df784be9608fce1e9e63b090d136f8294bbcbea4de3cc5c97"
+    },
+    {
+      "old": "/Game/CitySim/Art/Prototypes/D79/Materials/MI_CommercialBrick",
+      "new": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_CommercialBrick",
+      "sha256": "97e66518610339639de51fce1b4be49e72b3795bd3da7cbf42d981fc34244892"
+    },
+    {
+      "old": "/Game/CitySim/Art/Prototypes/D79/Materials/MI_IndustrialBrick",
+      "new": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_IndustrialBrick",
+      "sha256": "87437a71efda4d25306b8f274aee6e7d08dcad0a7c9817a3e935bf3151073842"
+    },
+    {
+      "old": "/Game/CitySim/Art/Prototypes/D79/Materials/MI_IndustrialMechanical",
+      "new": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_IndustrialMechanical",
+      "sha256": "1c5918ed86ab86ce05398510213a6a80d677e0d2990d28bd72524e841b624cfd"
+    },
+    {
+      "old": "/Game/CitySim/Art/Prototypes/D79/Materials/MI_Mechanical",
+      "new": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_Mechanical",
+      "sha256": "c93bbc4e8bf89564c67456fb33f26235d19079096be75702705149153762ea5e"
+    },
+    {
+      "old": "/Game/CitySim/Art/Prototypes/D79/Materials/MI_ResidentialBrick",
+      "new": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_ResidentialBrick",
+      "sha256": "54ee436d263366c118cd6fab561430c1b4f0f4c1f7228ba73c09d3e1118ef5a5"
+    },
+    {
+      "old": "/Game/CitySim/Art/Prototypes/D79/Materials/MI_Roof",
+      "new": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_Roof",
+      "sha256": "94863171e741c91bfdb9ecd13e5cb5fcef3ca4273560c11c3522c3ab46b3ae25"
+    },
+    {
+      "old": "/Game/CitySim/Art/Prototypes/D79/Materials/MI_RoofMembrane",
+      "new": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_RoofMembrane",
+      "sha256": "968dcbb2c488c1a7ea78438eba55f7cb9a95c74bac7e56b9d8b9f9f22d519d5e"
+    },
+    {
+      "old": "/Game/CitySim/Art/Prototypes/D79/Materials/MI_RoofMetal",
+      "new": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_RoofMetal",
+      "sha256": "bc22d1915f4fe9d3a33073037de44fd44deca70d90801170705308261a01ff25"
+    },
+    {
+      "old": "/Game/CitySim/Art/Prototypes/D79/Materials/MI_RoofShingles",
+      "new": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_RoofShingles",
+      "sha256": "df715618c941ab830ae8b5a709a6d677df37dcbb66bc3c69b8862ec29f5bbe45"
+    },
+    {
+      "old": "/Game/CitySim/Art/Prototypes/D79/Materials/MI_StoreSignTall",
+      "new": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_StoreSignTall",
+      "sha256": "61ee443627e41ba2e403514a53f63064b67011f69b324d9695dd461ea7760c61"
+    },
+    {
+      "old": "/Game/CitySim/Art/Prototypes/D79/Materials/MI_StoreSignWide",
+      "new": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Materials/MI_StoreSignWide",
+      "sha256": "9a2962cbf0aadf7d453714440ff7f44022eea641eea17073157d7928c306b52f"
+    },
+    {
+      "old": "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_StoreBakery",
+      "new": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_CommercialHigh_StoreBakery",
+      "sha256": "7f93001b514cbce2c52fb3fbc8e38a943afdae584ab6d31aa9d0de157e6e225f"
+    },
+    {
+      "old": "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_StoreBakery_Damaged",
+      "new": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_CommercialHigh_StoreBakery_Damaged",
+      "sha256": "e6fef3cb9301e62d79861a2e6cf0cc664452e1cc7bb32de89c517aff28264bf2"
+    },
+    {
+      "old": "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_StoreBooks",
+      "new": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_CommercialHigh_StoreBooks",
+      "sha256": "169966a246ac9eb93cd565a4a0acb38e2bc1544f7b53c9f1788398096252a4b4"
+    },
+    {
+      "old": "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_StoreBooks_Damaged",
+      "new": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_CommercialHigh_StoreBooks_Damaged",
+      "sha256": "5d6eaf49c19a859a4c523b71af9c1e50dda2f1b783de66ccc7689d0c1b9ad9bd"
+    },
+    {
+      "old": "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_StoreCafe",
+      "new": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_CommercialHigh_StoreCafe",
+      "sha256": "aab8eb00fff0cada07e7c2cc254c366cc548e71bb5e6314257a1ac537315443c"
+    },
+    {
+      "old": "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_StoreCafe_Damaged",
+      "new": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_CommercialHigh_StoreCafe_Damaged",
+      "sha256": "520efbefd8560314628479f4fcae0336ac48d204a4f6cac56dac887f95caacbb"
+    },
+    {
+      "old": "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_StoreMarket",
+      "new": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_CommercialHigh_StoreMarket",
+      "sha256": "04ebfb11aa15e5f93ac64bb9ab286ecfbbd6c10b1da1763b22092839a4963769"
+    },
+    {
+      "old": "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_StoreMarket_Damaged",
+      "new": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_CommercialHigh_StoreMarket_Damaged",
+      "sha256": "b04041f65489c8e265b00d96561b9b7a9d15891ee9cfc877549acbeb37fd4c1c"
+    },
+    {
+      "old": "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_StoreOutfitters",
+      "new": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_CommercialHigh_StoreOutfitters",
+      "sha256": "3b90b44997857cf53051b3a3ff55a23cc7a2197d53454609f88cc15e31e5b234"
+    },
+    {
+      "old": "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_StoreOutfitters_Damaged",
+      "new": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_CommercialHigh_StoreOutfitters_Damaged",
+      "sha256": "11a8450b682f923991012562f32f01ec378c417451d3dbf33a281eda523f24a2"
+    },
+    {
+      "old": "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_StorePharmacy",
+      "new": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_CommercialHigh_StorePharmacy",
+      "sha256": "fa8db12b0608bf971004f972b78ff171b117c8c65093f35a66fa78ef7da2641e"
+    },
+    {
+      "old": "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_StorePharmacy_Damaged",
+      "new": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_CommercialHigh_StorePharmacy_Damaged",
+      "sha256": "27a3ff428c7f04ea9f7e6c476df6652b645733062b951d03a18dda5145aa0e56"
+    },
+    {
+      "old": "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_StoreRepairs",
+      "new": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_CommercialHigh_StoreRepairs",
+      "sha256": "10a51b877988cb5a5961610bca99925ca140760e14a69e279e316796dacf4303"
+    },
+    {
+      "old": "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_StoreRepairs_Damaged",
+      "new": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_CommercialHigh_StoreRepairs_Damaged",
+      "sha256": "ee3a33ede40eb952fd538309d294b9effa9bf6807e3b1087804d17e062d2f45a"
+    },
+    {
+      "old": "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_StoreTech",
+      "new": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_CommercialHigh_StoreTech",
+      "sha256": "169cd7d28c708f2f0c467ccd2f80bd5503fb8839fbc26713d1ad53e874316f90"
+    },
+    {
+      "old": "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_StoreTech_Damaged",
+      "new": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_CommercialHigh_StoreTech_Damaged",
+      "sha256": "ae937d211f7721d928dfcb55d061d639fa05478b025d31aa9d9d55357b0e010e"
+    },
+    {
+      "old": "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_SurfacePrototype",
+      "new": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_CommercialHigh_SurfacePrototype",
+      "sha256": "1b5549eeea6aefa48df81afe491e38809da81d6644578b23b7287028514fa63b"
+    },
+    {
+      "old": "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialHigh_SurfacePrototype_Damaged",
+      "new": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_CommercialHigh_SurfacePrototype_Damaged",
+      "sha256": "dd7027b432e95f9edd8fe0e9923b4144419a2fbf55c9ea550cf58d25e0aa5900"
+    },
+    {
+      "old": "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_StoreBakery",
+      "new": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_CommercialLow_StoreBakery",
+      "sha256": "eccc496029cbfc27be4cf4984003a43d70d7d1e3522048c2a819a3a3804f5aa6"
+    },
+    {
+      "old": "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_StoreBakery_Damaged",
+      "new": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_CommercialLow_StoreBakery_Damaged",
+      "sha256": "6431f18a1d9020288fd778f05299ac709ccf17bf8e81990a722be1258fe9ca8e"
+    },
+    {
+      "old": "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_StoreBooks",
+      "new": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_CommercialLow_StoreBooks",
+      "sha256": "c5f07044263e26e3f315c691efa08872d5a3dd911d438377848757e87f21a6c5"
+    },
+    {
+      "old": "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_StoreBooks_Damaged",
+      "new": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_CommercialLow_StoreBooks_Damaged",
+      "sha256": "0e910d6dc5eda4fef0acc38c3da2efa341981d6325bc111888dd46b454ee63b7"
+    },
+    {
+      "old": "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_StoreCafe",
+      "new": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_CommercialLow_StoreCafe",
+      "sha256": "630fb5f703dc94a3ee98d424067626247d658d738e24cd842b54f21e1d327eb6"
+    },
+    {
+      "old": "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_StoreCafe_Damaged",
+      "new": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_CommercialLow_StoreCafe_Damaged",
+      "sha256": "a9057d8c1764bf78746f296122ef043a0e12e560a0129237e4e018bfc438b6cc"
+    },
+    {
+      "old": "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_StoreMarket",
+      "new": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_CommercialLow_StoreMarket",
+      "sha256": "6839cd88427b7565affb985ca962993ed794a5c52fffbbc1285059524880e2c8"
+    },
+    {
+      "old": "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_StoreMarket_Damaged",
+      "new": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_CommercialLow_StoreMarket_Damaged",
+      "sha256": "bf6f54221d4ff73a5a0ff53ab7025e9929d39d1d19ecdbc89ba0737d48f50eef"
+    },
+    {
+      "old": "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_StoreOutfitters",
+      "new": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_CommercialLow_StoreOutfitters",
+      "sha256": "910ec2032e7ad457d8324be65cd6deab1bc1ba3d91b767ebae733e210ad288c9"
+    },
+    {
+      "old": "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_StoreOutfitters_Damaged",
+      "new": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_CommercialLow_StoreOutfitters_Damaged",
+      "sha256": "635dcf504c82040f2b6fa2d66e9c4bddcdc8b0904bcfe5850f793cddf8bfd573"
+    },
+    {
+      "old": "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_StorePharmacy",
+      "new": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_CommercialLow_StorePharmacy",
+      "sha256": "86a5055951699526aaec1163f224e047f5a6d960dfb3ca229e373453e6f7e21a"
+    },
+    {
+      "old": "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_StorePharmacy_Damaged",
+      "new": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_CommercialLow_StorePharmacy_Damaged",
+      "sha256": "6dc09088df82ecd33a553fdf71443879686dc7e35fd629f84db4664deb7e20e2"
+    },
+    {
+      "old": "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_StoreRepairs",
+      "new": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_CommercialLow_StoreRepairs",
+      "sha256": "85ca683b29d14ed01c84fb5b202fd496d9a126650a06614e88f566001f3a91ca"
+    },
+    {
+      "old": "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_StoreRepairs_Damaged",
+      "new": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_CommercialLow_StoreRepairs_Damaged",
+      "sha256": "f467581114dbad37d27974a30bde57ce77a0650e7543a97bdedae76c2b9bfc7a"
+    },
+    {
+      "old": "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_StoreTech",
+      "new": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_CommercialLow_StoreTech",
+      "sha256": "198b7b4f80283869c7487d33766c4faae67a6824608ecd021d20821bade0be9c"
+    },
+    {
+      "old": "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_StoreTech_Damaged",
+      "new": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_CommercialLow_StoreTech_Damaged",
+      "sha256": "9f14c87926a40e9d16ed663c9402a5b81e12ef3b4a73dee424c0c90864958635"
+    },
+    {
+      "old": "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_SurfacePrototype",
+      "new": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_CommercialLow_SurfacePrototype",
+      "sha256": "f46031decfbdcf8442a93e5971e326de0ecfe18db8b840e80f1d0fa4feadc1dd"
+    },
+    {
+      "old": "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialLow_SurfacePrototype_Damaged",
+      "new": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_CommercialLow_SurfacePrototype_Damaged",
+      "sha256": "3efca229fcb7f939d29ba344f0ad1956f465da72aa0407eec0b08c4d598dea56"
+    },
+    {
+      "old": "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_StoreBakery",
+      "new": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_CommercialMedium_StoreBakery",
+      "sha256": "6cd907d252cfa6ff8b3fdb4ebea7dc063dcec38cdab98783401d066ad1d99355"
+    },
+    {
+      "old": "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_StoreBakery_Damaged",
+      "new": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_CommercialMedium_StoreBakery_Damaged",
+      "sha256": "17a6bfaea18ffe3ee962676072136538dd3011f77968e26bf93a918d48917ed7"
+    },
+    {
+      "old": "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_StoreBooks",
+      "new": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_CommercialMedium_StoreBooks",
+      "sha256": "00b2768bef1ca3717b8f145f84ade3cd6fb8ea000f6ca9d1d72fe7a4aca83fc8"
+    },
+    {
+      "old": "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_StoreBooks_Damaged",
+      "new": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_CommercialMedium_StoreBooks_Damaged",
+      "sha256": "4bee5e6a771767a71def91c516199b9023f8ee30364c15d98f7ed861acd8b56d"
+    },
+    {
+      "old": "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_StoreCafe",
+      "new": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_CommercialMedium_StoreCafe",
+      "sha256": "f2c6df7c203a932b8b708e710e75d81754696101aef077b81d9620026c3376b9"
+    },
+    {
+      "old": "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_StoreCafe_Damaged",
+      "new": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_CommercialMedium_StoreCafe_Damaged",
+      "sha256": "eed12a06a9639bfb17ef0fc4c723bf3b1acb4bbd7c08a42a9b50a0405a055e4c"
+    },
+    {
+      "old": "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_StoreMarket",
+      "new": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_CommercialMedium_StoreMarket",
+      "sha256": "b86438e1e7eeddb7c9769b2b2bdc2d5bfb91f598eddfcd001d599983a40c427b"
+    },
+    {
+      "old": "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_StoreMarket_Damaged",
+      "new": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_CommercialMedium_StoreMarket_Damaged",
+      "sha256": "930be296285aa175ecf2d35bbc3e8195133ea8a16028eaee408587aa69c508c2"
+    },
+    {
+      "old": "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_StoreOutfitters",
+      "new": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_CommercialMedium_StoreOutfitters",
+      "sha256": "f799fc1c88ef485401125af6b754d13ae2d35e2343002c60746eec2ffc3ac9e2"
+    },
+    {
+      "old": "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_StoreOutfitters_Damaged",
+      "new": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_CommercialMedium_StoreOutfitters_Damaged",
+      "sha256": "8aa7525e57e1e3298f119032bc1fb7e4683f81f63b4209b7146a79e8aea4a4e7"
+    },
+    {
+      "old": "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_StorePharmacy",
+      "new": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_CommercialMedium_StorePharmacy",
+      "sha256": "0d8c324cbd9996184ba21834563fb7a2f81abd052bb822b28678b9233ae8f433"
+    },
+    {
+      "old": "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_StorePharmacy_Damaged",
+      "new": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_CommercialMedium_StorePharmacy_Damaged",
+      "sha256": "612c031c44e387330662760e345210962fed4dbbe37dd09f220ab3aa85057c04"
+    },
+    {
+      "old": "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_StoreRepairs",
+      "new": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_CommercialMedium_StoreRepairs",
+      "sha256": "0a26a279427e921ca28ed4ae3bad8936bc19305ddfbb20a955b4146cc1ec2dc3"
+    },
+    {
+      "old": "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_StoreRepairs_Damaged",
+      "new": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_CommercialMedium_StoreRepairs_Damaged",
+      "sha256": "2ef48f3f4e8a41bcab89d486bc78512f8145649702793c2f1e5aae405f7171a0"
+    },
+    {
+      "old": "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_StoreTech",
+      "new": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_CommercialMedium_StoreTech",
+      "sha256": "93304ce933fe2c9456591642cdb00cb7a922cc6a96b2f5800d81a45c88c0ecef"
+    },
+    {
+      "old": "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_StoreTech_Damaged",
+      "new": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_CommercialMedium_StoreTech_Damaged",
+      "sha256": "93de4e85a15e92a76f44ef5ab8299aa7f824b0bdc21d42a09cc64a3c8e66ac85"
+    },
+    {
+      "old": "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_SurfacePrototype",
+      "new": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_CommercialMedium_SurfacePrototype",
+      "sha256": "c90aa799bac1962d711fb87f1c8a3862d1a5a693a3eb415c1539c5716250ed4b"
+    },
+    {
+      "old": "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_CommercialMedium_SurfacePrototype_Damaged",
+      "new": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_CommercialMedium_SurfacePrototype_Damaged",
+      "sha256": "4555b43586215b76b8506367a782ef8c918dc4468bbc1e9f8a503c5d6ab140f8"
+    },
+    {
+      "old": "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_IndustrialHigh_SurfacePrototype",
+      "new": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_IndustrialHigh_SurfacePrototype",
+      "sha256": "a80dadf28aae95f438f9c7a8f5053d826fd43aa60615c4d7eb3f79ef4eb50451"
+    },
+    {
+      "old": "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_IndustrialHigh_SurfacePrototype_Damaged",
+      "new": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_IndustrialHigh_SurfacePrototype_Damaged",
+      "sha256": "1dba8b0e9a836d6b6f2b90933b881f673316154a7f4ef28a79eecdd75cde57dc"
+    },
+    {
+      "old": "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_IndustrialLow_SurfacePrototype",
+      "new": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_IndustrialLow_SurfacePrototype",
+      "sha256": "2f2a5f33ac527111fe3ac252bd53c46387923c15a0a3d78a9d0b5068d3ad7920"
+    },
+    {
+      "old": "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_IndustrialLow_SurfacePrototype_Damaged",
+      "new": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_IndustrialLow_SurfacePrototype_Damaged",
+      "sha256": "bbf21838fd768d2c9c0d2e5a955b3f9b8c07a3c17167ba4440a03d3ab8237700"
+    },
+    {
+      "old": "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_IndustrialMedium_SurfacePrototype",
+      "new": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_IndustrialMedium_SurfacePrototype",
+      "sha256": "30538031d3d5c10c3de306d7e8a840cdff89a728f13166f8a49759c30459d3f3"
+    },
+    {
+      "old": "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_IndustrialMedium_SurfacePrototype_Damaged",
+      "new": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_IndustrialMedium_SurfacePrototype_Damaged",
+      "sha256": "5ac1fd33a51c25dc2076b1f4876cf4cc02a0a5ffa4ca83489b7669149ff5c851"
+    },
+    {
+      "old": "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_ResidentialHigh_SurfacePrototype",
+      "new": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_ResidentialHigh_SurfacePrototype",
+      "sha256": "7a8b941db17dd115a3d56aba69c814d32d53a75d94fd83c21c91492b4a342d21"
+    },
+    {
+      "old": "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_ResidentialHigh_SurfacePrototype_Damaged",
+      "new": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_ResidentialHigh_SurfacePrototype_Damaged",
+      "sha256": "eae18f4c9ff5de405a877564258035283b5cf3376631b5d100514587d05722e2"
+    },
+    {
+      "old": "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_ResidentialLow_SurfacePrototype",
+      "new": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_ResidentialLow_SurfacePrototype",
+      "sha256": "717d018c03ffe8ce6eeb02bbe9dd77e36a9cebffa2d410142c6d808bf54350d7"
+    },
+    {
+      "old": "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_ResidentialLow_SurfacePrototype_Damaged",
+      "new": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_ResidentialLow_SurfacePrototype_Damaged",
+      "sha256": "34bf586b9769368b8f5add9f3c52a5ae4e47f1c77cfc03bce7ba4d565d622824"
+    },
+    {
+      "old": "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_ResidentialMedium_SurfacePrototype",
+      "new": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_ResidentialMedium_SurfacePrototype",
+      "sha256": "2344100797f179fae1d05a1ff16a6df131634c263a2bce3917a41ae56773f4ca"
+    },
+    {
+      "old": "/Game/CitySim/Art/Prototypes/D79/Meshes/SM_ResidentialMedium_SurfacePrototype_Damaged",
+      "new": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Meshes/SM_ResidentialMedium_SurfacePrototype_Damaged",
+      "sha256": "b2307289cc9686da9b9846617b2723a012a13811a650be5f79b54f60f6b7bb9e"
+    },
+    {
+      "old": "/Game/CitySim/Art/Prototypes/D79/Textures/T_CityBrick_BaseColor",
+      "new": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Textures/T_CityBrick_BaseColor",
+      "sha256": "3a7ba35e9662ff8eee846bdbe183e4082f612ee5226fbd0b5904fc257170bdc8"
+    },
+    {
+      "old": "/Game/CitySim/Art/Prototypes/D79/Textures/T_CityBrick_Normal",
+      "new": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Textures/T_CityBrick_Normal",
+      "sha256": "eefea900c9beed671141264405de50200e5923c69f0a0aefa9cf6b10dc7576e6"
+    },
+    {
+      "old": "/Game/CitySim/Art/Prototypes/D79/Textures/T_CityBrick_ORM",
+      "new": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Textures/T_CityBrick_ORM",
+      "sha256": "102d9a0a6d3bb4a120d91ecb245f3ab0bb349aa9666a6f7337b208ba4b08ec33"
+    },
+    {
+      "old": "/Game/CitySim/Art/Prototypes/D79/Textures/T_CityMechanical_BaseColor",
+      "new": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Textures/T_CityMechanical_BaseColor",
+      "sha256": "36ee80f77a2a2c541c39a8c5ec7f39670c536a9d0b3a96f346d570a2f3a97e34"
+    },
+    {
+      "old": "/Game/CitySim/Art/Prototypes/D79/Textures/T_CityMechanical_Normal",
+      "new": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Textures/T_CityMechanical_Normal",
+      "sha256": "fa1b456feb8f46a168f186c192b6b13782120d5e3f0b56a9cdc5c31a01b63ce4"
+    },
+    {
+      "old": "/Game/CitySim/Art/Prototypes/D79/Textures/T_CityMechanical_ORM",
+      "new": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Textures/T_CityMechanical_ORM",
+      "sha256": "0c3099d3f086afa35da4cb087f0c9e889bb3ea773ba407713bb34030f429d47e"
+    },
+    {
+      "old": "/Game/CitySim/Art/Prototypes/D79/Textures/T_RoofMembrane_BaseColor",
+      "new": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Textures/T_RoofMembrane_BaseColor",
+      "sha256": "99f6c28c185b71668512d23647ce45a371201279218c03ba9d0cb3122de9ec81"
+    },
+    {
+      "old": "/Game/CitySim/Art/Prototypes/D79/Textures/T_RoofMembrane_Normal",
+      "new": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Textures/T_RoofMembrane_Normal",
+      "sha256": "a97d09a5781d7417c2763508c5680a54f09d80b9451320888e7296e82d1a835d"
+    },
+    {
+      "old": "/Game/CitySim/Art/Prototypes/D79/Textures/T_RoofMembrane_ORM",
+      "new": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Textures/T_RoofMembrane_ORM",
+      "sha256": "f55273b393bc90aa174721f1163d16426c0b789eea0916f27ec1b577c4ab7144"
+    },
+    {
+      "old": "/Game/CitySim/Art/Prototypes/D79/Textures/T_RoofMetal_BaseColor",
+      "new": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Textures/T_RoofMetal_BaseColor",
+      "sha256": "3e5c0ecd48aaa314df52f5725b2ba86bfa303f34bf04640dce7d736c7f0ffa7d"
+    },
+    {
+      "old": "/Game/CitySim/Art/Prototypes/D79/Textures/T_RoofMetal_Normal",
+      "new": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Textures/T_RoofMetal_Normal",
+      "sha256": "0b5921175b8017ddb0cc521d2042c7c8f38b2ad5eaf7f8a9bdab726c95531fc2"
+    },
+    {
+      "old": "/Game/CitySim/Art/Prototypes/D79/Textures/T_RoofMetal_ORM",
+      "new": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Textures/T_RoofMetal_ORM",
+      "sha256": "7e54911c2b6045dc3fad774dc00d3b12d83902751cc9535051df7d64c8eb309c"
+    },
+    {
+      "old": "/Game/CitySim/Art/Prototypes/D79/Textures/T_RoofShingles_BaseColor",
+      "new": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Textures/T_RoofShingles_BaseColor",
+      "sha256": "b49d1909c20296c37bc8fda217b86db044ddd064adbfb623209faa517830a765"
+    },
+    {
+      "old": "/Game/CitySim/Art/Prototypes/D79/Textures/T_RoofShingles_Normal",
+      "new": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Textures/T_RoofShingles_Normal",
+      "sha256": "337b20bb94f8687fdeaff347c97be85d59f6abf4eb3abb5c20087b1146bf7df0"
+    },
+    {
+      "old": "/Game/CitySim/Art/Prototypes/D79/Textures/T_RoofShingles_ORM",
+      "new": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Textures/T_RoofShingles_ORM",
+      "sha256": "a5b801ea28e0fba805ad2ff8afbfe302f6591561cee5cff8f49507c6aa66a534"
+    },
+    {
+      "old": "/Game/CitySim/Art/Prototypes/D79/Textures/T_StoreSigns_Tall_BaseColor",
+      "new": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Textures/T_StoreSigns_Tall_BaseColor",
+      "sha256": "895013af68c27b377918ff1e2dce7482a6c8374726c4e97685e69f8150b564a0"
+    },
+    {
+      "old": "/Game/CitySim/Art/Prototypes/D79/Textures/T_StoreSigns_Wide_BaseColor",
+      "new": "/Game/CitySim/Art/Prototypes/BuildingSurfaces/Textures/T_StoreSigns_Wide_BaseColor",
+      "sha256": "260169279b42e697981d5858c3f424171ac447ce02cc17fc40d5343dc474a7a7"
+    },
+    {
+      "old": "/Game/CitySim/Art/Textures/T_D122RepairDisplays",
+      "new": "/Game/CitySim/Art/Textures/T_RepairDisplays",
+      "sha256": "8b41d4a11f98accf2b3844e5757692db527f2e70a2953136c45d744d34010f32"
+    },
+    {
+      "old": "/Game/CitySim/Art/Textures/T_D122Room_bakery",
+      "new": "/Game/CitySim/Art/Textures/T_StorefrontRoom_bakery",
+      "sha256": "fe15c62a0b357a7d792cb736c450f753548044f79622dcbb478e0411daadb56d"
+    },
+    {
+      "old": "/Game/CitySim/Art/Textures/T_D122Room_books",
+      "new": "/Game/CitySim/Art/Textures/T_StorefrontRoom_books",
+      "sha256": "1e780325c31ffb24dee7c8dde8cd63a7bdd2f4e935ad7e6e99d4e5b22264d1dc"
+    },
+    {
+      "old": "/Game/CitySim/Art/Textures/T_D122Room_cafe",
+      "new": "/Game/CitySim/Art/Textures/T_StorefrontRoom_cafe",
+      "sha256": "a0640d79ed977b16d2d6914b35e82b062082c9155d103f43b72b09c6b5cbcc29"
+    },
+    {
+      "old": "/Game/CitySim/Art/Textures/T_D122Room_market",
+      "new": "/Game/CitySim/Art/Textures/T_StorefrontRoom_market",
+      "sha256": "9797d7e40860a3bd67f5bd4035e423e782dbfb8a4b4135e367608d8d7e4078e0"
+    },
+    {
+      "old": "/Game/CitySim/Art/Textures/T_D122Room_outfitters",
+      "new": "/Game/CitySim/Art/Textures/T_StorefrontRoom_outfitters",
+      "sha256": "6916eadbb61ac1bdb3bcc0e8abf0606bb56a1667337766be2216d732ef19d97c"
+    },
+    {
+      "old": "/Game/CitySim/Art/Textures/T_D122Room_pharmacy",
+      "new": "/Game/CitySim/Art/Textures/T_StorefrontRoom_pharmacy",
+      "sha256": "b97aa81fda4a1f5a1ecfbc4fca8fc4d151b6513dd410ae65be353c8154350cdb"
+    },
+    {
+      "old": "/Game/CitySim/Art/Textures/T_D122Room_repairs",
+      "new": "/Game/CitySim/Art/Textures/T_StorefrontRoom_repairs",
+      "sha256": "43af735fcd98fe8e65164ba5a52fbf4c72c94b2f974fbef16cfd483245dc57ce"
+    },
+    {
+      "old": "/Game/CitySim/Art/Textures/T_D122Room_tech",
+      "new": "/Game/CitySim/Art/Textures/T_StorefrontRoom_tech",
+      "sha256": "a34d4c827c0e723c43d426cad4f8c12c6eaddf1d970e0c67c7bc9f4507b3af8b"
+    },
+    {
+      "old": "/Game/CitySim/Audio/D58/Ambience/City/SW_Car_Driving",
+      "new": "/Game/CitySim/Audio/Soundscape/Ambience/City/SW_Car_Driving",
+      "sha256": "0fc50b6a103a0fe91a4fd978b0d582ae1f72476cd58498dc7a595a082c544c34"
+    },
+    {
+      "old": "/Game/CitySim/Audio/D58/Ambience/City/SW_Car_Idle",
+      "new": "/Game/CitySim/Audio/Soundscape/Ambience/City/SW_Car_Idle",
+      "sha256": "23ca7f772ee5e41c8044ee2752820984a1a8038d07bdab54801c1adeacc86b83"
+    },
+    {
+      "old": "/Game/CitySim/Audio/D58/Ambience/City/SW_Car_Pass",
+      "new": "/Game/CitySim/Audio/Soundscape/Ambience/City/SW_Car_Pass",
+      "sha256": "5d9211d82c7157755286e359823daedb9d00b4459484845518939e2a9e6ec5c5"
+    },
+    {
+      "old": "/Game/CitySim/Audio/D58/Ambience/City/SW_City_Distant",
+      "new": "/Game/CitySim/Audio/Soundscape/Ambience/City/SW_City_Distant",
+      "sha256": "c3a70af13c351ca53e774cbe632927f3077cc6a7a6bd0f62a5e0acc7283d3e02"
+    },
+    {
+      "old": "/Game/CitySim/Audio/D58/Ambience/City/SW_Market_Murmur",
+      "new": "/Game/CitySim/Audio/Soundscape/Ambience/City/SW_Market_Murmur",
+      "sha256": "13469d969e729b6e7ca046879a9b1cd03fc026e5bbc6f943c45b6272d96d19d9"
+    },
+    {
+      "old": "/Game/CitySim/Audio/D58/Ambience/City/SW_Truck_Driving",
+      "new": "/Game/CitySim/Audio/Soundscape/Ambience/City/SW_Truck_Driving",
+      "sha256": "522a7cb546e68f86de21836b775d86d6dabb9c460d3248f2532a82702e8c8bb6"
+    },
+    {
+      "old": "/Game/CitySim/Audio/D58/Ambience/City/SW_Truck_Idle",
+      "new": "/Game/CitySim/Audio/Soundscape/Ambience/City/SW_Truck_Idle",
+      "sha256": "466995012264991ae98849e79cbad4f47e22c37f20aa0dcbcd628f93662c98d8"
+    },
+    {
+      "old": "/Game/CitySim/Audio/D58/Ambience/City/SW_Truck_Pass",
+      "new": "/Game/CitySim/Audio/Soundscape/Ambience/City/SW_Truck_Pass",
+      "sha256": "67338b06259ee63d336eb18d0341f1caf31254e9abd38ed591fb520021d0d6ca"
+    },
+    {
+      "old": "/Game/CitySim/Audio/D58/Ambience/Industry/SW_Industry_Clank",
+      "new": "/Game/CitySim/Audio/Soundscape/Ambience/Industry/SW_Industry_Clank",
+      "sha256": "19e407d666b71a78e147797377a1b5b237b58d5fdc97e75d6be2e41b968757d6"
+    },
+    {
+      "old": "/Game/CitySim/Audio/D58/Ambience/Industry/SW_Industry_Idle",
+      "new": "/Game/CitySim/Audio/Soundscape/Ambience/Industry/SW_Industry_Idle",
+      "sha256": "3456472a6e4e2fde90f275ea6d614adae2a07fec39ffcf445cad85be49763927"
+    },
+    {
+      "old": "/Game/CitySim/Audio/D58/Ambience/Industry/SW_Industry_Working",
+      "new": "/Game/CitySim/Audio/Soundscape/Ambience/Industry/SW_Industry_Working",
+      "sha256": "358051b3de8850b6d11b9cd8a71898d0ed83cc2159e5dcde8bcf9a878caea4b9"
+    },
+    {
+      "old": "/Game/CitySim/Audio/D58/Ambience/Park/SW_Park_Foliage",
+      "new": "/Game/CitySim/Audio/Soundscape/Ambience/Park/SW_Park_Foliage",
+      "sha256": "d8f573adeccc32da4459b7f601526405d4185a6eb1f6eafc6a303da7c0c3d5fd"
+    },
+    {
+      "old": "/Game/CitySim/Audio/D58/Ambience/Park/SW_Park_Fountain",
+      "new": "/Game/CitySim/Audio/Soundscape/Ambience/Park/SW_Park_Fountain",
+      "sha256": "1c71ee6e373653c5bb84e9ffed2b442c0e1f19a123659abd3ee44599066398b4"
+    },
+    {
+      "old": "/Game/CitySim/Audio/D58/Ambience/Park/SW_Water_Shore",
+      "new": "/Game/CitySim/Audio/Soundscape/Ambience/Park/SW_Water_Shore",
+      "sha256": "485a7c020a7b65c1194b7cc5e3fef21600ceb66f18622c0f07a52430ae79a3c0"
+    },
+    {
+      "old": "/Game/CitySim/Audio/D58/Ambience/Weather/SW_Rain_Downpour",
+      "new": "/Game/CitySim/Audio/Soundscape/Ambience/Weather/SW_Rain_Downpour",
+      "sha256": "6cd2196fd0f4714ececf607d04a200232ea12ca7d5d672cf80f4f3a396aaa03d"
+    },
+    {
+      "old": "/Game/CitySim/Audio/D58/Ambience/Weather/SW_Rain_Heavy",
+      "new": "/Game/CitySim/Audio/Soundscape/Ambience/Weather/SW_Rain_Heavy",
+      "sha256": "268cbecb0567ed94135010e2c00c5b5060b8c9bde52c17542d7ef123b8400e95"
+    },
+    {
+      "old": "/Game/CitySim/Audio/D58/Ambience/Weather/SW_Rain_Light",
+      "new": "/Game/CitySim/Audio/Soundscape/Ambience/Weather/SW_Rain_Light",
+      "sha256": "24b57df8763e5b6ee99a96157d05996d5ddbe21540cb9bb64a8d39accfa6a746"
+    },
+    {
+      "old": "/Game/CitySim/Audio/D58/Ambience/Weather/SW_Rain_Moderate",
+      "new": "/Game/CitySim/Audio/Soundscape/Ambience/Weather/SW_Rain_Moderate",
+      "sha256": "6d36b431922bf4077494e77243e29770c09bb412cb186e5fe9c2c950bd6e2e04"
+    },
+    {
+      "old": "/Game/CitySim/Audio/D58/Ambience/Weather/SW_Storm_Roar",
+      "new": "/Game/CitySim/Audio/Soundscape/Ambience/Weather/SW_Storm_Roar",
+      "sha256": "3b0bddebb52f4f3bac134503e119815359197d243edd78da76f30b23426775bf"
+    },
+    {
+      "old": "/Game/CitySim/Audio/D58/Ambience/Weather/SW_Thunder_Distant",
+      "new": "/Game/CitySim/Audio/Soundscape/Ambience/Weather/SW_Thunder_Distant",
+      "sha256": "4f1c0208f329cd1b5b6bf4a64a76b73284a4dbcf29d9955c3b9354d7099b6462"
+    },
+    {
+      "old": "/Game/CitySim/Audio/D58/Ambience/Weather/SW_Thunder_Near",
+      "new": "/Game/CitySim/Audio/Soundscape/Ambience/Weather/SW_Thunder_Near",
+      "sha256": "c66c6998337959eac18699f404a530408a7aaba94cdd86455b6df352008f0b70"
+    },
+    {
+      "old": "/Game/CitySim/Audio/D58/Ambience/Weather/SW_Wind_Gusts",
+      "new": "/Game/CitySim/Audio/Soundscape/Ambience/Weather/SW_Wind_Gusts",
+      "sha256": "36f52ba2a56e9965d3fd4aec5082e3d3a7a7b59d2ec146278a2b8dbe45068c34"
+    },
+    {
+      "old": "/Game/CitySim/Audio/D58/Ambience/Weather/SW_Wind_Light",
+      "new": "/Game/CitySim/Audio/Soundscape/Ambience/Weather/SW_Wind_Light",
+      "sha256": "1b29c3acd420cd698c1c48dd575c3d04d6172c827ac570e5ebd7ddcea75ef840"
+    },
+    {
+      "old": "/Game/CitySim/Audio/D58/Ambience/Wildlife/SW_Bird_Chirp_A",
+      "new": "/Game/CitySim/Audio/Soundscape/Ambience/Wildlife/SW_Bird_Chirp_A",
+      "sha256": "97ad1bcc213a45c0013ba742a566ca6351bf4394c5a45cfb2c9db97667786497"
+    },
+    {
+      "old": "/Game/CitySim/Audio/D58/Ambience/Wildlife/SW_Bird_Chirp_B",
+      "new": "/Game/CitySim/Audio/Soundscape/Ambience/Wildlife/SW_Bird_Chirp_B",
+      "sha256": "65a707a582df1b374f60182a6b6ee67436f54f99185ad549f9c57ab33c0b0b9c"
+    },
+    {
+      "old": "/Game/CitySim/Audio/D58/Ambience/Wildlife/SW_Bird_Chirp_C",
+      "new": "/Game/CitySim/Audio/Soundscape/Ambience/Wildlife/SW_Bird_Chirp_C",
+      "sha256": "4f3e1d186c2702680dd233e87d2a08683d48767644ab997591f00ae46138c994"
+    },
+    {
+      "old": "/Game/CitySim/Audio/D58/Ambience/Wildlife/SW_Cricket_Chirp_Pair",
+      "new": "/Game/CitySim/Audio/Soundscape/Ambience/Wildlife/SW_Cricket_Chirp_Pair",
+      "sha256": "f2001860adf92edf529ab573c8531bc4db491e8cc6f3408d753a9d0374464f77"
+    },
+    {
+      "old": "/Game/CitySim/Audio/D58/Ambience/Wildlife/SW_Night_Crickets_Dense",
+      "new": "/Game/CitySim/Audio/Soundscape/Ambience/Wildlife/SW_Night_Crickets_Dense",
+      "sha256": "7471b41f8e49f30d1c7fb0074fbaeda37d68c7535a15d3572970e19c7d8e61ed"
+    },
+    {
+      "old": "/Game/CitySim/Audio/D58/Ambience/Wildlife/SW_Night_Crickets_Light",
+      "new": "/Game/CitySim/Audio/Soundscape/Ambience/Wildlife/SW_Night_Crickets_Light",
+      "sha256": "afc620b7c1455cfa839f173e2de5d4d2ff608a011c426752ef531a2bab6a87ed"
+    },
+    {
+      "old": "/Game/CitySim/Audio/D58/Effects/Activity/SW_Construction_Tap",
+      "new": "/Game/CitySim/Audio/Soundscape/Effects/Activity/SW_Construction_Tap",
+      "sha256": "11697766412565baa2345feb2a5f7c459634d99b0e73c7c5c69c9205e0787430"
+    },
+    {
+      "old": "/Game/CitySim/Audio/D58/Effects/Activity/SW_Demolition_Impact",
+      "new": "/Game/CitySim/Audio/Soundscape/Effects/Activity/SW_Demolition_Impact",
+      "sha256": "01a0ae7b0795d4768d30635713a599cd0ef1f3dc6f9f246240823c1cfab2a900"
+    },
+    {
+      "old": "/Game/CitySim/Audio/D58/Effects/Activity/SW_Earthquake_Rumble",
+      "new": "/Game/CitySim/Audio/Soundscape/Effects/Activity/SW_Earthquake_Rumble",
+      "sha256": "4e147b470b7ace5472f4ddb4d32b5000b90bea4a14e123e27a5afe9a3be1868f"
+    },
+    {
+      "old": "/Game/CitySim/Audio/D58/Effects/Activity/SW_Fire_Crackle",
+      "new": "/Game/CitySim/Audio/Soundscape/Effects/Activity/SW_Fire_Crackle",
+      "sha256": "457c81be52a8313cbb50ba1558df15c48e0772aad0c4d528dfff658da9c67d63"
+    },
+    {
+      "old": "/Game/CitySim/Audio/D58/Graphs/MS_Action_Confirm",
+      "new": "/Game/CitySim/Audio/Soundscape/Graphs/MS_Action_Confirm",
+      "sha256": "883a41a85e0023787090b191b3090deaa08a5936c9c218079a22e4ffef481863"
+    },
+    {
+      "old": "/Game/CitySim/Audio/D58/Graphs/MS_Action_Denied",
+      "new": "/Game/CitySim/Audio/Soundscape/Graphs/MS_Action_Denied",
+      "sha256": "f07daa1e5fb411044012ad9c942f5aa36fd175edddf3b47eaa83dbaa156ccae6"
+    },
+    {
+      "old": "/Game/CitySim/Audio/D58/Graphs/MS_Ambulance_Intro",
+      "new": "/Game/CitySim/Audio/Soundscape/Graphs/MS_Ambulance_Intro",
+      "sha256": "d20405d8715854566d74b09b86ddb62e16eae5e1c3914e3f2cf59190d681d95d"
+    },
+    {
+      "old": "/Game/CitySim/Audio/D58/Graphs/MS_Ambulance_Loop",
+      "new": "/Game/CitySim/Audio/Soundscape/Graphs/MS_Ambulance_Loop",
+      "sha256": "6f7de6db529eb361ca4371e8030c1cd21f2d49440d9b779afda6fc5748def624"
+    },
+    {
+      "old": "/Game/CitySim/Audio/D58/Graphs/MS_Ambulance_Outro",
+      "new": "/Game/CitySim/Audio/Soundscape/Graphs/MS_Ambulance_Outro",
+      "sha256": "d9a1e58206d0d978225cd17f6fc3c128c666c833ddea64aece0bb5d25fc6917c"
+    },
+    {
+      "old": "/Game/CitySim/Audio/D58/Graphs/MS_Bird_Chirp_A",
+      "new": "/Game/CitySim/Audio/Soundscape/Graphs/MS_Bird_Chirp_A",
+      "sha256": "9b80af6080259305d40638e79bda4fff655856f02a5bbc3857dafd3f9d254102"
+    },
+    {
+      "old": "/Game/CitySim/Audio/D58/Graphs/MS_Bird_Chirp_B",
+      "new": "/Game/CitySim/Audio/Soundscape/Graphs/MS_Bird_Chirp_B",
+      "sha256": "1d999270d07e9d1ef3a58724706f99500027a6e88b69a530e994cc6949ba31a8"
+    },
+    {
+      "old": "/Game/CitySim/Audio/D58/Graphs/MS_Bird_Chirp_C",
+      "new": "/Game/CitySim/Audio/Soundscape/Graphs/MS_Bird_Chirp_C",
+      "sha256": "1b88cc2dacd19ff7bb6ac79bc1ffa458210fa6a421eea0ef8e5acdd34989392c"
+    },
+    {
+      "old": "/Game/CitySim/Audio/D58/Graphs/MS_Car_Pass",
+      "new": "/Game/CitySim/Audio/Soundscape/Graphs/MS_Car_Pass",
+      "sha256": "a44affb866ebf71ff1b32f7fa74ab4054ccacb5dc5c22c31f7198af8e033cbe8"
+    },
+    {
+      "old": "/Game/CitySim/Audio/D58/Graphs/MS_City_Distant",
+      "new": "/Game/CitySim/Audio/Soundscape/Graphs/MS_City_Distant",
+      "sha256": "f405b1e34b7b9dabb4310480ee4f51623d657efc707b3b2d3c299c7a86bf5368"
+    },
+    {
+      "old": "/Game/CitySim/Audio/D58/Graphs/MS_Construction_Tap",
+      "new": "/Game/CitySim/Audio/Soundscape/Graphs/MS_Construction_Tap",
+      "sha256": "4ba2d1291de49ae6df50632bfd0381d20170e4511d2420f3869d3bed4a190c98"
+    },
+    {
+      "old": "/Game/CitySim/Audio/D58/Graphs/MS_Cricket_Chirp_Pair",
+      "new": "/Game/CitySim/Audio/Soundscape/Graphs/MS_Cricket_Chirp_Pair",
+      "sha256": "9efac880f24ec8b57405047d7e09b5f81c39a4a2bf4988860a2edb2b6dd10544"
+    },
+    {
+      "old": "/Game/CitySim/Audio/D58/Graphs/MS_Demolition_Impact",
+      "new": "/Game/CitySim/Audio/Soundscape/Graphs/MS_Demolition_Impact",
+      "sha256": "603e600783c627f9efa0bc9f7dc01e21ffb914c09f736a78d9f74a4e90844fe4"
+    },
+    {
+      "old": "/Game/CitySim/Audio/D58/Graphs/MS_Earthquake_Rumble",
+      "new": "/Game/CitySim/Audio/Soundscape/Graphs/MS_Earthquake_Rumble",
+      "sha256": "c244bca4caf336f255cf5116d5e64b396476156bad8a93953b1afe10fe5938b7"
+    },
+    {
+      "old": "/Game/CitySim/Audio/D58/Graphs/MS_Fire_Crackle",
+      "new": "/Game/CitySim/Audio/Soundscape/Graphs/MS_Fire_Crackle",
+      "sha256": "d68dc2be3e27be96f279a7fbcf0ade97752fc99d38f595f2dada01858a28696d"
+    },
+    {
+      "old": "/Game/CitySim/Audio/D58/Graphs/MS_Fire_Horn",
+      "new": "/Game/CitySim/Audio/Soundscape/Graphs/MS_Fire_Horn",
+      "sha256": "9e4ca91ec98744c109610bc5436488931dbb1fbae91c337b1d70a44177feb393"
+    },
+    {
+      "old": "/Game/CitySim/Audio/D58/Graphs/MS_Fire_Intro",
+      "new": "/Game/CitySim/Audio/Soundscape/Graphs/MS_Fire_Intro",
+      "sha256": "701af074bd3997b3bf1dd077c05e1a33ec3b145a83ce13e52c4934d27a0df92c"
+    },
+    {
+      "old": "/Game/CitySim/Audio/D58/Graphs/MS_Fire_Loop",
+      "new": "/Game/CitySim/Audio/Soundscape/Graphs/MS_Fire_Loop",
+      "sha256": "1954769e98a91ff328dded6af24018ab9b49ad0095d863d259a2190d63f19912"
+    },
+    {
+      "old": "/Game/CitySim/Audio/D58/Graphs/MS_Fire_Outro",
+      "new": "/Game/CitySim/Audio/Soundscape/Graphs/MS_Fire_Outro",
+      "sha256": "61dcf5b86840420ed2a0865b3eb5ccfadeab14cf28ceda277b1d0d0a8a2118a3"
+    },
+    {
+      "old": "/Game/CitySim/Audio/D58/Graphs/MS_Incident_Notice",
+      "new": "/Game/CitySim/Audio/Soundscape/Graphs/MS_Incident_Notice",
+      "sha256": "0dc46c06eecebceb05c12eb6d645b2a37546361b96e6b0d2442305468249aa26"
+    },
+    {
+      "old": "/Game/CitySim/Audio/D58/Graphs/MS_Industry_Clank",
+      "new": "/Game/CitySim/Audio/Soundscape/Graphs/MS_Industry_Clank",
+      "sha256": "af0efdcb34a264bc38a13dc6bb87fddf2f954e4d464d1b5176f81162556158df"
+    },
+    {
+      "old": "/Game/CitySim/Audio/D58/Graphs/MS_Industry_Idle",
+      "new": "/Game/CitySim/Audio/Soundscape/Graphs/MS_Industry_Idle",
+      "sha256": "5cd3ab6c59f868951027ade41f420bfbc12e749a256f737c84c5db9acbff5b50"
+    },
+    {
+      "old": "/Game/CitySim/Audio/D58/Graphs/MS_Industry_Working",
+      "new": "/Game/CitySim/Audio/Soundscape/Graphs/MS_Industry_Working",
+      "sha256": "9d53aceaa892577b1f0f9a4f7455c6e5520bcee82bbfcfc5d0c844c76b441686"
+    },
+    {
+      "old": "/Game/CitySim/Audio/D58/Graphs/MS_Market_Murmur",
+      "new": "/Game/CitySim/Audio/Soundscape/Graphs/MS_Market_Murmur",
+      "sha256": "62d8c712504fda6332a10c7c1b4262a7fe89c0d1a8dc1b379c4ad539e3f9750c"
+    },
+    {
+      "old": "/Game/CitySim/Audio/D58/Graphs/MS_Milestone_Reached",
+      "new": "/Game/CitySim/Audio/Soundscape/Graphs/MS_Milestone_Reached",
+      "sha256": "e2d8e9f5e4be258919f0b50fec9859d4814f098a40f44d17e709b2b152918075"
+    },
+    {
+      "old": "/Game/CitySim/Audio/D58/Graphs/MS_Night_Crickets_Dense",
+      "new": "/Game/CitySim/Audio/Soundscape/Graphs/MS_Night_Crickets_Dense",
+      "sha256": "54218721f0208c88883c805e931166dc497a5a41f733958eb107230231a83d20"
+    },
+    {
+      "old": "/Game/CitySim/Audio/D58/Graphs/MS_Night_Crickets_Light",
+      "new": "/Game/CitySim/Audio/Soundscape/Graphs/MS_Night_Crickets_Light",
+      "sha256": "85291b668c12c8ea95419630f37667baff3e569301c2aee51791207fb696e081"
+    },
+    {
+      "old": "/Game/CitySim/Audio/D58/Graphs/MS_Objective_Complete",
+      "new": "/Game/CitySim/Audio/Soundscape/Graphs/MS_Objective_Complete",
+      "sha256": "1a1ef9e4ff2bcd6550b972d34653ceb2ee8f30e79e2116c5ffca18d40dd2dee1"
+    },
+    {
+      "old": "/Game/CitySim/Audio/D58/Graphs/MS_Park_Foliage",
+      "new": "/Game/CitySim/Audio/Soundscape/Graphs/MS_Park_Foliage",
+      "sha256": "4e290ef7b5aad88e22a62dd00887447012b1e6305f15e7dd29d50d7d1a5993d9"
+    },
+    {
+      "old": "/Game/CitySim/Audio/D58/Graphs/MS_Park_Fountain",
+      "new": "/Game/CitySim/Audio/Soundscape/Graphs/MS_Park_Fountain",
+      "sha256": "0a5e7dfe7e43e90df58909f84fcb18102defe075431c25fe5df05c40acf905bb"
+    },
+    {
+      "old": "/Game/CitySim/Audio/D58/Graphs/MS_Police_Alternate",
+      "new": "/Game/CitySim/Audio/Soundscape/Graphs/MS_Police_Alternate",
+      "sha256": "066a70725c15be6d603fac8ad16dfe5b90b900ffed5a358fb6e8fd3fd35abf6f"
+    },
+    {
+      "old": "/Game/CitySim/Audio/D58/Graphs/MS_Police_Intro",
+      "new": "/Game/CitySim/Audio/Soundscape/Graphs/MS_Police_Intro",
+      "sha256": "9e812ba18bb7a9fe656dc467efd641e742cfc114872c48602b22ef8dac9d216c"
+    },
+    {
+      "old": "/Game/CitySim/Audio/D58/Graphs/MS_Police_Loop",
+      "new": "/Game/CitySim/Audio/Soundscape/Graphs/MS_Police_Loop",
+      "sha256": "aaf890bc1631fc96bd65c0dc32007abff1236425a2fb1af37a48f60b3b53d889"
+    },
+    {
+      "old": "/Game/CitySim/Audio/D58/Graphs/MS_Police_Outro",
+      "new": "/Game/CitySim/Audio/Soundscape/Graphs/MS_Police_Outro",
+      "sha256": "4c210c97877773273bf8d9f6587ed96187bbc255ccba3794db1265abe311d756"
+    },
+    {
+      "old": "/Game/CitySim/Audio/D58/Graphs/MS_Rain_Downpour",
+      "new": "/Game/CitySim/Audio/Soundscape/Graphs/MS_Rain_Downpour",
+      "sha256": "67b32dff09e3c4f7a3cddc8ba108c418fddea8ed5800c0d19f8957b9ff4ebacc"
+    },
+    {
+      "old": "/Game/CitySim/Audio/D58/Graphs/MS_Rain_Heavy",
+      "new": "/Game/CitySim/Audio/Soundscape/Graphs/MS_Rain_Heavy",
+      "sha256": "7e871c826faeba4e58a9506dd32e57a0867410f79cb615bd76cd692b8f2cb272"
+    },
+    {
+      "old": "/Game/CitySim/Audio/D58/Graphs/MS_Rain_Light",
+      "new": "/Game/CitySim/Audio/Soundscape/Graphs/MS_Rain_Light",
+      "sha256": "df38e027b9fef6f2d0b4c1bd921c3fd9685b325dd8b2ec880034085b355c6a77"
+    },
+    {
+      "old": "/Game/CitySim/Audio/D58/Graphs/MS_Rain_Moderate",
+      "new": "/Game/CitySim/Audio/Soundscape/Graphs/MS_Rain_Moderate",
+      "sha256": "6debd86bdeae49834d31ca30dd428be1daee8384677463ac3d62c139e48f181c"
+    },
+    {
+      "old": "/Game/CitySim/Audio/D58/Graphs/MS_Service_Attention",
+      "new": "/Game/CitySim/Audio/Soundscape/Graphs/MS_Service_Attention",
+      "sha256": "ed9b2836ec44541c5b6abf2ce8b15905863274b8ae0bceaf1bfa06e4830f2ad1"
+    },
+    {
+      "old": "/Game/CitySim/Audio/D58/Graphs/MS_Service_Recovered",
+      "new": "/Game/CitySim/Audio/Soundscape/Graphs/MS_Service_Recovered",
+      "sha256": "aa89488fdbfae94de8f5240cdbb6ed588f8ae2bf69b3c193467338a8b9229dc7"
+    },
+    {
+      "old": "/Game/CitySim/Audio/D58/Graphs/MS_Storm_Roar",
+      "new": "/Game/CitySim/Audio/Soundscape/Graphs/MS_Storm_Roar",
+      "sha256": "d9600259820f30334881befb9e364a3e2c3372d728af7f9d89b6b9e2f7143bee"
+    },
+    {
+      "old": "/Game/CitySim/Audio/D58/Graphs/MS_Thunder_Distant",
+      "new": "/Game/CitySim/Audio/Soundscape/Graphs/MS_Thunder_Distant",
+      "sha256": "99e29633fbb649070f8dd6ede1b4c78983371c802eb26c9d87f741c74350644a"
+    },
+    {
+      "old": "/Game/CitySim/Audio/D58/Graphs/MS_Thunder_Near",
+      "new": "/Game/CitySim/Audio/Soundscape/Graphs/MS_Thunder_Near",
+      "sha256": "71856cb6e995a483cf1ea9f158b2cc7cf044ddacc76a5f87e2e66c84a45af356"
+    },
+    {
+      "old": "/Game/CitySim/Audio/D58/Graphs/MS_Town_Intro",
+      "new": "/Game/CitySim/Audio/Soundscape/Graphs/MS_Town_Intro",
+      "sha256": "42de2535dc24cced5d28ea83a16edb8d44fd9540081095f889985a6224ded11c"
+    },
+    {
+      "old": "/Game/CitySim/Audio/D58/Graphs/MS_Town_Loop",
+      "new": "/Game/CitySim/Audio/Soundscape/Graphs/MS_Town_Loop",
+      "sha256": "5dae3f27c74f753c3454d777ee048ba957cd468f2cecf1337770bce359ec1f6d"
+    },
+    {
+      "old": "/Game/CitySim/Audio/D58/Graphs/MS_Town_Outro",
+      "new": "/Game/CitySim/Audio/Soundscape/Graphs/MS_Town_Outro",
+      "sha256": "1357ac78649cb8d90d1d12da6214295590badf17c49172883fc7c020f95d7d02"
+    },
+    {
+      "old": "/Game/CitySim/Audio/D58/Graphs/MS_Truck_Pass",
+      "new": "/Game/CitySim/Audio/Soundscape/Graphs/MS_Truck_Pass",
+      "sha256": "2c772bfa74ecc541f334b3cc41cb7f142e7ab881b0d3c62e1418e61651827ba4"
+    },
+    {
+      "old": "/Game/CitySim/Audio/D58/Graphs/MS_Water_Shore",
+      "new": "/Game/CitySim/Audio/Soundscape/Graphs/MS_Water_Shore",
+      "sha256": "824cfad9921e980af49628ce6da2fc543c4cbe122a95e31d76aa8f68af04b5bd"
+    },
+    {
+      "old": "/Game/CitySim/Audio/D58/Graphs/MS_Wind_Gusts",
+      "new": "/Game/CitySim/Audio/Soundscape/Graphs/MS_Wind_Gusts",
+      "sha256": "3634a15648e3c9415ef3c738c62e588aca77113c1d821e17a954f3aa478a295a"
+    },
+    {
+      "old": "/Game/CitySim/Audio/D58/Graphs/MS_Wind_Light",
+      "new": "/Game/CitySim/Audio/Soundscape/Graphs/MS_Wind_Light",
+      "sha256": "a4c25228a71b733469f5d99feb795eb33b2d13467374956076cef239023ef806"
+    },
+    {
+      "old": "/Game/CitySim/Audio/D58/Graphs/SC_Car_Driving",
+      "new": "/Game/CitySim/Audio/Soundscape/Graphs/SC_Car_Driving",
+      "sha256": "c23d77d11a2df2843731191fb653061654403eb3f45e9c1b512f7cf858c4790f"
+    },
+    {
+      "old": "/Game/CitySim/Audio/D58/Graphs/SC_Car_Idle",
+      "new": "/Game/CitySim/Audio/Soundscape/Graphs/SC_Car_Idle",
+      "sha256": "66861d9e9da657f17d32b0408c23d10c56a8c29aae7bc7c4a97873b5becdcf9a"
+    },
+    {
+      "old": "/Game/CitySim/Audio/D58/Graphs/SC_Truck_Driving",
+      "new": "/Game/CitySim/Audio/Soundscape/Graphs/SC_Truck_Driving",
+      "sha256": "d122ce646cafb6d1aa56587f405fbb7250c912e6fb854238cdcc3bbfaf2b3abf"
+    },
+    {
+      "old": "/Game/CitySim/Audio/D58/Graphs/SC_Truck_Idle",
+      "new": "/Game/CitySim/Audio/Soundscape/Graphs/SC_Truck_Idle",
+      "sha256": "927d5e81fe72794fb75b1fab5d89ff4bc0ff2a278b40935af7305e1a0c74dcaf"
+    },
+    {
+      "old": "/Game/CitySim/Audio/D58/Sirens/SW_Ambulance_Intro",
+      "new": "/Game/CitySim/Audio/Soundscape/Sirens/SW_Ambulance_Intro",
+      "sha256": "73216ce42fa8c4edbd7b1426e4544849c9dd8a45d52881c972f385617a0e87f0"
+    },
+    {
+      "old": "/Game/CitySim/Audio/D58/Sirens/SW_Ambulance_Loop",
+      "new": "/Game/CitySim/Audio/Soundscape/Sirens/SW_Ambulance_Loop",
+      "sha256": "eaf88503193d7bc03d6db6b6a788bee7c70f706bf00722ea0595391f5f68903e"
+    },
+    {
+      "old": "/Game/CitySim/Audio/D58/Sirens/SW_Ambulance_Outro",
+      "new": "/Game/CitySim/Audio/Soundscape/Sirens/SW_Ambulance_Outro",
+      "sha256": "edb1c519d420a1e8753696db221cdc47d15d555b48a221560beea3b883a6b560"
+    },
+    {
+      "old": "/Game/CitySim/Audio/D58/Sirens/SW_Fire_Horn",
+      "new": "/Game/CitySim/Audio/Soundscape/Sirens/SW_Fire_Horn",
+      "sha256": "75110d7b96518789d497755f8020174d0202c1201184ab0301f04a796e963ec6"
+    },
+    {
+      "old": "/Game/CitySim/Audio/D58/Sirens/SW_Fire_Intro",
+      "new": "/Game/CitySim/Audio/Soundscape/Sirens/SW_Fire_Intro",
+      "sha256": "f1e496d68d4532e80c7daad34b89c7c36a1ab2edb2ef3b2a5030147b919d8e3a"
+    },
+    {
+      "old": "/Game/CitySim/Audio/D58/Sirens/SW_Fire_Loop",
+      "new": "/Game/CitySim/Audio/Soundscape/Sirens/SW_Fire_Loop",
+      "sha256": "3a4d3015dee01cfdb04071d7104cd132b599e866c0c4e4e0348cfa74af241ce4"
+    },
+    {
+      "old": "/Game/CitySim/Audio/D58/Sirens/SW_Fire_Outro",
+      "new": "/Game/CitySim/Audio/Soundscape/Sirens/SW_Fire_Outro",
+      "sha256": "61da783d301defe98c86f4ff03f43cb33942cdc3168a2ba2c1263603bddaa6ab"
+    },
+    {
+      "old": "/Game/CitySim/Audio/D58/Sirens/SW_Police_Alternate",
+      "new": "/Game/CitySim/Audio/Soundscape/Sirens/SW_Police_Alternate",
+      "sha256": "5ee53b3db6824c8d9140bd701caa3edad407ef100b63e124ce196e880fb96fa6"
+    },
+    {
+      "old": "/Game/CitySim/Audio/D58/Sirens/SW_Police_Intro",
+      "new": "/Game/CitySim/Audio/Soundscape/Sirens/SW_Police_Intro",
+      "sha256": "b903ff942e9e9eba2d7a3cc40b33acd5cf18efbeef201a3afde6fef89d699afa"
+    },
+    {
+      "old": "/Game/CitySim/Audio/D58/Sirens/SW_Police_Loop",
+      "new": "/Game/CitySim/Audio/Soundscape/Sirens/SW_Police_Loop",
+      "sha256": "6778b010cc1a771bb80d0b5273c3b07cffe6499352fb0d7b0ced69446c58ecc1"
+    },
+    {
+      "old": "/Game/CitySim/Audio/D58/Sirens/SW_Police_Outro",
+      "new": "/Game/CitySim/Audio/Soundscape/Sirens/SW_Police_Outro",
+      "sha256": "947acf67f5526345c16524a58e0d57b47a7b46867df3e184c7c6b8a160ce2866"
+    },
+    {
+      "old": "/Game/CitySim/Audio/D58/Sirens/SW_Town_Intro",
+      "new": "/Game/CitySim/Audio/Soundscape/Sirens/SW_Town_Intro",
+      "sha256": "8e1ce1a1b28e777667b6e951bef98d1ab3b88786a79f5e68403bfa31ea0479ac"
+    },
+    {
+      "old": "/Game/CitySim/Audio/D58/Sirens/SW_Town_Loop",
+      "new": "/Game/CitySim/Audio/Soundscape/Sirens/SW_Town_Loop",
+      "sha256": "2e0470da16666f728ecf742da41f0abfd416572e009c3a76d0472def861e85eb"
+    },
+    {
+      "old": "/Game/CitySim/Audio/D58/Sirens/SW_Town_Outro",
+      "new": "/Game/CitySim/Audio/Soundscape/Sirens/SW_Town_Outro",
+      "sha256": "ae457dc93465b224aa858267d78d3daf96eaf6012a5252b94952850f35fdbc36"
+    },
+    {
+      "old": "/Game/CitySim/Audio/D58/UI/SW_Action_Confirm",
+      "new": "/Game/CitySim/Audio/Soundscape/UI/SW_Action_Confirm",
+      "sha256": "4851777fd618f88e259f9b4962a6244dd91f1896aec6ab4d5eb0b3b7ca290bd2"
+    },
+    {
+      "old": "/Game/CitySim/Audio/D58/UI/SW_Action_Denied",
+      "new": "/Game/CitySim/Audio/Soundscape/UI/SW_Action_Denied",
+      "sha256": "89d910b868ff328df68e61da2e05c2d6a3a4e792281aad9135e77296fa1e13f9"
+    },
+    {
+      "old": "/Game/CitySim/Audio/D58/UI/SW_Incident_Notice",
+      "new": "/Game/CitySim/Audio/Soundscape/UI/SW_Incident_Notice",
+      "sha256": "6e2e03675c16902a871699256b09321b9bac722e0bae9c02659491e86bd96bae"
+    },
+    {
+      "old": "/Game/CitySim/Audio/D58/UI/SW_Milestone_Reached",
+      "new": "/Game/CitySim/Audio/Soundscape/UI/SW_Milestone_Reached",
+      "sha256": "7fe9d063b55e79e292db5b37d9a835bdd272fab38fa5e1cf0ff7ff3368ef12cb"
+    },
+    {
+      "old": "/Game/CitySim/Audio/D58/UI/SW_Objective_Complete",
+      "new": "/Game/CitySim/Audio/Soundscape/UI/SW_Objective_Complete",
+      "sha256": "15e2a07c5a9b2ee66a742136fbdf0b76780cc2396153a3939186ca3f45222e71"
+    },
+    {
+      "old": "/Game/CitySim/Audio/D58/UI/SW_Service_Attention",
+      "new": "/Game/CitySim/Audio/Soundscape/UI/SW_Service_Attention",
+      "sha256": "49277c9e64ef915b0db56aac82ca6305f83b8093b68260f52f35405de510e8e2"
+    },
+    {
+      "old": "/Game/CitySim/Audio/D58/UI/SW_Service_Recovered",
+      "new": "/Game/CitySim/Audio/Soundscape/UI/SW_Service_Recovered",
+      "sha256": "124828fbcdeefc98e3c65c3737a2c66a0e9c31390b65ae07ae9b5f76bcf61a43"
+    }
+  ],
+  "sources": [
+    {
+      "old": "AudioSource/D58/EmergencyCues.scd",
+      "new": "AudioSource/Soundscape/EmergencyCues.scd",
+      "sha256": "305e010c1b647ee092a80b5be977fe4116f94c75168c0656a36108cf3a2a8ec7"
+    },
+    {
+      "old": "AudioSource/D58/library-presets.json",
+      "new": "AudioSource/Soundscape/library-presets.json",
+      "sha256": "a9478295297bb906c907a4e1ca66fbae7af55e8e348875617f8beb12be5da03a"
+    },
+    {
+      "old": "AudioSource/D58/presets.json",
+      "new": "AudioSource/Soundscape/presets.json",
+      "sha256": "37e041bed7a9786b944dc4c1f13d1eac77157235e298d2a4a044e6190aeea7c7"
+    },
+    {
+      "old": "AudioSource/D58/production-presets.json",
+      "new": "AudioSource/Soundscape/production-presets.json",
+      "sha256": "b4cbfa17e5f580a100dfa0df80a523d54dbb75825ffb9f7b345022b4b5be4db2"
+    },
+    {
+      "old": "AudioSource/D58/SampleLibrary.scd",
+      "new": "AudioSource/Soundscape/SampleLibrary.scd",
+      "sha256": "142cc5ceb42fe5b2d99ae27729bc452444d854a11c4b8bbdb6162276f2520de3"
+    },
+    {
+      "old": "AudioSource/D58/selections.json",
+      "new": "AudioSource/Soundscape/selections.json",
+      "sha256": "bd7beb5a675a1b31df21a0f2e5e50212243ac33000cb062730fd0ad6f1eb8571"
+    },
+    {
+      "old": "AudioSource/D58/town-pitch-presets.json",
+      "new": "AudioSource/Soundscape/town-pitch-presets.json",
+      "sha256": "fdf86d6a3b6c4abf63dd520f9033cd280c0901b070854a42faacbc3091f135fc"
+    },
+    {
+      "old": "AudioSource/D58/town-presets.json",
+      "new": "AudioSource/Soundscape/town-presets.json",
+      "sha256": "58a7f69a0a591eb33e08649d6ed3b703823c4fe0a26a187a98890893189f01f3"
+    },
+    {
+      "old": "AudioSource/D58/town-references.json",
+      "new": "AudioSource/Soundscape/town-references.json",
+      "sha256": "f411e9c8af02ab19ee5e6cd8b8e0bd49f0be0b7ebf3554b40fdcaf7cc840d066"
+    },
+    {
+      "old": "AudioSource/D58/TownWarning.scd",
+      "new": "AudioSource/Soundscape/TownWarning.scd",
+      "sha256": "65f6c4d065453dc09e417bbe5d4805e140b84b4859f7587005caf558d237aa17"
+    },
+    {
+      "old": "AudioSource/D58/traffic-presets.json",
+      "new": "AudioSource/Soundscape/traffic-presets.json",
+      "sha256": "bfbf14e5c7c1af6863f92fd9ddd01940904611598249f48ed5d8039b8279fe71"
+    },
+    {
+      "old": "AudioSource/D58/TrafficLoops.scd",
+      "new": "AudioSource/Soundscape/TrafficLoops.scd",
+      "sha256": "e01e65f2078b1fbee22381740ba0186aad5633af800b3ee8a5902c77b0d48fab"
+    },
+    {
+      "old": "AudioSource/D58/Unreal/.gitattributes",
+      "new": "AudioSource/Soundscape/Unreal/.gitattributes",
+      "sha256": "7920e18fc378d10181d66cb524ee6eb31f58ebeb1468d1097d1e414ea07bfa86"
+    },
+    {
+      "old": "AudioSource/D58/Unreal/Acceptance/library-presets.json",
+      "new": "AudioSource/Soundscape/Unreal/Acceptance/library-presets.json",
+      "sha256": "f0262fb71b5629b3b7a5782b36ab91e5ac3034720f6f314b9dcd49a04a373e96",
+      "original_git_sha256": "a9478295297bb906c907a4e1ca66fbae7af55e8e348875617f8beb12be5da03a",
+      "byte_repair": "Restore exact newline bytes already pinned by accepted bank manifest; JSON content unchanged"
+    },
+    {
+      "old": "AudioSource/D58/Unreal/Acceptance/production-presets.json",
+      "new": "AudioSource/Soundscape/Unreal/Acceptance/production-presets.json",
+      "sha256": "b4cbfa17e5f580a100dfa0df80a523d54dbb75825ffb9f7b345022b4b5be4db2"
+    },
+    {
+      "old": "AudioSource/D58/Unreal/Acceptance/selections.json",
+      "new": "AudioSource/Soundscape/Unreal/Acceptance/selections.json",
+      "sha256": "169a17a8b08f5d78afaf13aad11c421ac5edaf26cfe64eadfbb8aa9f772ffc4a",
+      "original_git_sha256": "bd7beb5a675a1b31df21a0f2e5e50212243ac33000cb062730fd0ad6f1eb8571",
+      "byte_repair": "Restore exact newline bytes already pinned by accepted bank manifest; JSON content unchanged"
+    },
+    {
+      "old": "AudioSource/D58/Unreal/Acceptance/traffic-presets.json",
+      "new": "AudioSource/Soundscape/Unreal/Acceptance/traffic-presets.json",
+      "sha256": "bfbf14e5c7c1af6863f92fd9ddd01940904611598249f48ed5d8039b8279fe71"
+    },
+    {
+      "old": "AudioSource/D58/Unreal/Handoff.json",
+      "new": "AudioSource/Soundscape/Unreal/Handoff.json",
+      "sha256": "eb6b4564f69e7d3c531b0724c9c2bfdaff243dd90672b0b3815c97024787f676"
+    },
+    {
+      "old": "AudioSource/D58/Unreal/IntegrationReceipt.json",
+      "new": "AudioSource/Soundscape/Unreal/IntegrationReceipt.json",
+      "sha256": "403a1863ae40d5ec7356926566772d826272a219632b13105ee7352af833f0f5"
+    },
+    {
+      "old": "AudioSource/D58/Unreal/Manifest.json",
+      "new": "AudioSource/Soundscape/Unreal/Manifest.json",
+      "sha256": "479be3b2c3849eb1baffdfd50b95d69e73871d2d50154c10e40ec70e571050de"
+    },
+    {
+      "old": "AudioSource/D58/Unreal/Waves/Ambience/City/SW_Car_Driving.wav",
+      "new": "AudioSource/Soundscape/Unreal/Waves/Ambience/City/SW_Car_Driving.wav",
+      "sha256": "bba338ae75417eafa4d070eebb92be405702404883f0f4b4c8ba31d13d8930c3"
+    },
+    {
+      "old": "AudioSource/D58/Unreal/Waves/Ambience/City/SW_Car_Idle.wav",
+      "new": "AudioSource/Soundscape/Unreal/Waves/Ambience/City/SW_Car_Idle.wav",
+      "sha256": "bfddc7ea0d59bbdc991f9017614db4d7f5b9cffbf855eff98eb67061811bf24c"
+    },
+    {
+      "old": "AudioSource/D58/Unreal/Waves/Ambience/City/SW_Car_Pass.wav",
+      "new": "AudioSource/Soundscape/Unreal/Waves/Ambience/City/SW_Car_Pass.wav",
+      "sha256": "227db3a7e016f4cf7b2c250b00428b0de0390578a54a0024c2fb1fccd86af7e2"
+    },
+    {
+      "old": "AudioSource/D58/Unreal/Waves/Ambience/City/SW_City_Distant.wav",
+      "new": "AudioSource/Soundscape/Unreal/Waves/Ambience/City/SW_City_Distant.wav",
+      "sha256": "9b28ebeaef1cd1e12d469827752de694b788f1babc6c82572583a3459b5c4450"
+    },
+    {
+      "old": "AudioSource/D58/Unreal/Waves/Ambience/City/SW_Market_Murmur.wav",
+      "new": "AudioSource/Soundscape/Unreal/Waves/Ambience/City/SW_Market_Murmur.wav",
+      "sha256": "eeebadf44ae6f38892c7e5f9eceae929d3750b73e8c16a2eb6f872a56625db6e"
+    },
+    {
+      "old": "AudioSource/D58/Unreal/Waves/Ambience/City/SW_Truck_Driving.wav",
+      "new": "AudioSource/Soundscape/Unreal/Waves/Ambience/City/SW_Truck_Driving.wav",
+      "sha256": "4626d686d2446c8dbccb652119ed24df6fc4f8b8bfb8a4fd9a1bd4ec5359e756"
+    },
+    {
+      "old": "AudioSource/D58/Unreal/Waves/Ambience/City/SW_Truck_Idle.wav",
+      "new": "AudioSource/Soundscape/Unreal/Waves/Ambience/City/SW_Truck_Idle.wav",
+      "sha256": "0088fb5a1d90b2d140c8a786b65496a66bd385dcb86a93676ca5d8db7ecc3937"
+    },
+    {
+      "old": "AudioSource/D58/Unreal/Waves/Ambience/City/SW_Truck_Pass.wav",
+      "new": "AudioSource/Soundscape/Unreal/Waves/Ambience/City/SW_Truck_Pass.wav",
+      "sha256": "28eb7acfb7401db3531c981fc26955a49b60468daed08fda0b67d1ddc4ed6828"
+    },
+    {
+      "old": "AudioSource/D58/Unreal/Waves/Ambience/Industry/SW_Industry_Clank.wav",
+      "new": "AudioSource/Soundscape/Unreal/Waves/Ambience/Industry/SW_Industry_Clank.wav",
+      "sha256": "22789cb72a6a65449cafd2eb026d097eda7b990e4d093ac7283dc0ff572650a5"
+    },
+    {
+      "old": "AudioSource/D58/Unreal/Waves/Ambience/Industry/SW_Industry_Idle.wav",
+      "new": "AudioSource/Soundscape/Unreal/Waves/Ambience/Industry/SW_Industry_Idle.wav",
+      "sha256": "8d11ebaebea6e8f9940dc8e0d5bab757ea0d138afd5aaca8547bf04332d0fe96"
+    },
+    {
+      "old": "AudioSource/D58/Unreal/Waves/Ambience/Industry/SW_Industry_Working.wav",
+      "new": "AudioSource/Soundscape/Unreal/Waves/Ambience/Industry/SW_Industry_Working.wav",
+      "sha256": "ecee15a4ae9134811c510c35c29270efc0e99f29e651e7a5cac04e93f152d6d9"
+    },
+    {
+      "old": "AudioSource/D58/Unreal/Waves/Ambience/Park/SW_Park_Foliage.wav",
+      "new": "AudioSource/Soundscape/Unreal/Waves/Ambience/Park/SW_Park_Foliage.wav",
+      "sha256": "a35d15c1f719785f14de53d85d1b741de6e2f2b0cccb702e04291fa4036c634d"
+    },
+    {
+      "old": "AudioSource/D58/Unreal/Waves/Ambience/Park/SW_Park_Fountain.wav",
+      "new": "AudioSource/Soundscape/Unreal/Waves/Ambience/Park/SW_Park_Fountain.wav",
+      "sha256": "f2f663982d0636fa8eb3af6a23af00a8602a0f7e01c41239f2782a192fe2e15c"
+    },
+    {
+      "old": "AudioSource/D58/Unreal/Waves/Ambience/Park/SW_Water_Shore.wav",
+      "new": "AudioSource/Soundscape/Unreal/Waves/Ambience/Park/SW_Water_Shore.wav",
+      "sha256": "15570246328f41d0b410fa4303c514ac8d75add063d6472bec629516c4b13198"
+    },
+    {
+      "old": "AudioSource/D58/Unreal/Waves/Ambience/Weather/SW_Rain_Downpour.wav",
+      "new": "AudioSource/Soundscape/Unreal/Waves/Ambience/Weather/SW_Rain_Downpour.wav",
+      "sha256": "82a97aca66bde37c9f6154cf1392ca4fbce8a950888b2683dab493c8a2173bf6"
+    },
+    {
+      "old": "AudioSource/D58/Unreal/Waves/Ambience/Weather/SW_Rain_Heavy.wav",
+      "new": "AudioSource/Soundscape/Unreal/Waves/Ambience/Weather/SW_Rain_Heavy.wav",
+      "sha256": "f99171a2047bf07ea3bff8c3cf5f9a74e9cf17472a8f15b5902f9140aad4e789"
+    },
+    {
+      "old": "AudioSource/D58/Unreal/Waves/Ambience/Weather/SW_Rain_Light.wav",
+      "new": "AudioSource/Soundscape/Unreal/Waves/Ambience/Weather/SW_Rain_Light.wav",
+      "sha256": "903c1041e13163656e94cc3b7a8fe4153089efb92ae7af80296456782c1cf3cf"
+    },
+    {
+      "old": "AudioSource/D58/Unreal/Waves/Ambience/Weather/SW_Rain_Moderate.wav",
+      "new": "AudioSource/Soundscape/Unreal/Waves/Ambience/Weather/SW_Rain_Moderate.wav",
+      "sha256": "f145e528df868130305a237a4a0882876ad1292ab52fcc532e3971c4ce625e4d"
+    },
+    {
+      "old": "AudioSource/D58/Unreal/Waves/Ambience/Weather/SW_Storm_Roar.wav",
+      "new": "AudioSource/Soundscape/Unreal/Waves/Ambience/Weather/SW_Storm_Roar.wav",
+      "sha256": "3c09b7535be9799994a9f0b9790ac814b836d3992b7d36fe8a51af4fd845615f"
+    },
+    {
+      "old": "AudioSource/D58/Unreal/Waves/Ambience/Weather/SW_Thunder_Distant.wav",
+      "new": "AudioSource/Soundscape/Unreal/Waves/Ambience/Weather/SW_Thunder_Distant.wav",
+      "sha256": "51ae13d453948a9943183be273de78d82076c7446c967cd629bbc7e9d4df8294"
+    },
+    {
+      "old": "AudioSource/D58/Unreal/Waves/Ambience/Weather/SW_Thunder_Near.wav",
+      "new": "AudioSource/Soundscape/Unreal/Waves/Ambience/Weather/SW_Thunder_Near.wav",
+      "sha256": "e967fee92c24894e23d61a15be72ede20d3431662e33c0b3360bac9438e51a3d"
+    },
+    {
+      "old": "AudioSource/D58/Unreal/Waves/Ambience/Weather/SW_Wind_Gusts.wav",
+      "new": "AudioSource/Soundscape/Unreal/Waves/Ambience/Weather/SW_Wind_Gusts.wav",
+      "sha256": "28feaeceed4b8ece8d947dd70569609c9d16a90b6cdc7e12473f8ebf3b5deb15"
+    },
+    {
+      "old": "AudioSource/D58/Unreal/Waves/Ambience/Weather/SW_Wind_Light.wav",
+      "new": "AudioSource/Soundscape/Unreal/Waves/Ambience/Weather/SW_Wind_Light.wav",
+      "sha256": "6b4e8854e8d9e476fc20c128b81b7d8751ee8e9477a9aa34630b7406b0dcec40"
+    },
+    {
+      "old": "AudioSource/D58/Unreal/Waves/Ambience/Wildlife/SW_Bird_Chirp_A.wav",
+      "new": "AudioSource/Soundscape/Unreal/Waves/Ambience/Wildlife/SW_Bird_Chirp_A.wav",
+      "sha256": "fe032d4cd7ace689c2b12e0e01f2237b8791863014620665ad869f53b31b603a"
+    },
+    {
+      "old": "AudioSource/D58/Unreal/Waves/Ambience/Wildlife/SW_Bird_Chirp_B.wav",
+      "new": "AudioSource/Soundscape/Unreal/Waves/Ambience/Wildlife/SW_Bird_Chirp_B.wav",
+      "sha256": "036451d9d0b69cc208936c4004fba86c1b90b6d0489d61ec8cb599f684fcccf0"
+    },
+    {
+      "old": "AudioSource/D58/Unreal/Waves/Ambience/Wildlife/SW_Bird_Chirp_C.wav",
+      "new": "AudioSource/Soundscape/Unreal/Waves/Ambience/Wildlife/SW_Bird_Chirp_C.wav",
+      "sha256": "cb029af3ae1c4a62f920448156f2ec11af15d51615848a8bac7674373fb90bc8"
+    },
+    {
+      "old": "AudioSource/D58/Unreal/Waves/Ambience/Wildlife/SW_Cricket_Chirp_Pair.wav",
+      "new": "AudioSource/Soundscape/Unreal/Waves/Ambience/Wildlife/SW_Cricket_Chirp_Pair.wav",
+      "sha256": "484b6a13614adad1139fb6270c25d4a55ed73c6b0e3188b05bbc7cd1c7e972af"
+    },
+    {
+      "old": "AudioSource/D58/Unreal/Waves/Ambience/Wildlife/SW_Night_Crickets_Dense.wav",
+      "new": "AudioSource/Soundscape/Unreal/Waves/Ambience/Wildlife/SW_Night_Crickets_Dense.wav",
+      "sha256": "58049d95c5789c4a7fbfaf9d4b6ffd6ec9d196662b6e3fa36a17cd95c4ca479c"
+    },
+    {
+      "old": "AudioSource/D58/Unreal/Waves/Ambience/Wildlife/SW_Night_Crickets_Light.wav",
+      "new": "AudioSource/Soundscape/Unreal/Waves/Ambience/Wildlife/SW_Night_Crickets_Light.wav",
+      "sha256": "d7a05a7b8ff268d83b753c763b5edb43da7d8e83c6c90cd7080f6e281bc61089"
+    },
+    {
+      "old": "AudioSource/D58/Unreal/Waves/Effects/Activity/SW_Construction_Tap.wav",
+      "new": "AudioSource/Soundscape/Unreal/Waves/Effects/Activity/SW_Construction_Tap.wav",
+      "sha256": "d8f0f2758b34560bc27f8574176d05244e483eb2b065ff7af7bb5bcbbb3c2ebe"
+    },
+    {
+      "old": "AudioSource/D58/Unreal/Waves/Effects/Activity/SW_Demolition_Impact.wav",
+      "new": "AudioSource/Soundscape/Unreal/Waves/Effects/Activity/SW_Demolition_Impact.wav",
+      "sha256": "e6d6bcdd6864e7fe24b524b70d9694f63748b1938b44dc37dce00623b3b3d773"
+    },
+    {
+      "old": "AudioSource/D58/Unreal/Waves/Effects/Activity/SW_Earthquake_Rumble.wav",
+      "new": "AudioSource/Soundscape/Unreal/Waves/Effects/Activity/SW_Earthquake_Rumble.wav",
+      "sha256": "4715c93beae5fde8dd002220a0b08a15ac336edd0630a0c7c22a8fe27369c1f7"
+    },
+    {
+      "old": "AudioSource/D58/Unreal/Waves/Effects/Activity/SW_Fire_Crackle.wav",
+      "new": "AudioSource/Soundscape/Unreal/Waves/Effects/Activity/SW_Fire_Crackle.wav",
+      "sha256": "94fbcf7a36c622f4647cae2edb5620d3fa6f0b54d7ab9adf9bfabf05322a3ee0"
+    },
+    {
+      "old": "AudioSource/D58/Unreal/Waves/Sirens/SW_Ambulance_Intro.wav",
+      "new": "AudioSource/Soundscape/Unreal/Waves/Sirens/SW_Ambulance_Intro.wav",
+      "sha256": "69eb5e9d40f8a89fee2f0dc5641f934e90f358d9201b669bc9e6ef5867022e52"
+    },
+    {
+      "old": "AudioSource/D58/Unreal/Waves/Sirens/SW_Ambulance_Loop.wav",
+      "new": "AudioSource/Soundscape/Unreal/Waves/Sirens/SW_Ambulance_Loop.wav",
+      "sha256": "096ae47dc5aef77356bf57386ab798d4653a8d8e4a02bcb6b0996b2e56103601"
+    },
+    {
+      "old": "AudioSource/D58/Unreal/Waves/Sirens/SW_Ambulance_Outro.wav",
+      "new": "AudioSource/Soundscape/Unreal/Waves/Sirens/SW_Ambulance_Outro.wav",
+      "sha256": "54516995689e0b7cd5a6484da823baf3877912ae35e82e4b531d08cf61d84d03"
+    },
+    {
+      "old": "AudioSource/D58/Unreal/Waves/Sirens/SW_Fire_Horn.wav",
+      "new": "AudioSource/Soundscape/Unreal/Waves/Sirens/SW_Fire_Horn.wav",
+      "sha256": "aecd4f3cfcf093170ed190af0816cae7d2e3bf744dc20d9c1c50a792fbb65221"
+    },
+    {
+      "old": "AudioSource/D58/Unreal/Waves/Sirens/SW_Fire_Intro.wav",
+      "new": "AudioSource/Soundscape/Unreal/Waves/Sirens/SW_Fire_Intro.wav",
+      "sha256": "2617f0d82358cadd3000c3ce3bff0ce1c104d0a90167c655a2d88dbf3f6d3835"
+    },
+    {
+      "old": "AudioSource/D58/Unreal/Waves/Sirens/SW_Fire_Loop.wav",
+      "new": "AudioSource/Soundscape/Unreal/Waves/Sirens/SW_Fire_Loop.wav",
+      "sha256": "934820eb2e7e525867a24f1bb74b17a68e8493626e68b7a720ee9682e550fbf5"
+    },
+    {
+      "old": "AudioSource/D58/Unreal/Waves/Sirens/SW_Fire_Outro.wav",
+      "new": "AudioSource/Soundscape/Unreal/Waves/Sirens/SW_Fire_Outro.wav",
+      "sha256": "fbcc40120f7f51d293d8c989284d71639c225aecc5a4d2e7324fb7773a90e2c6"
+    },
+    {
+      "old": "AudioSource/D58/Unreal/Waves/Sirens/SW_Police_Alternate.wav",
+      "new": "AudioSource/Soundscape/Unreal/Waves/Sirens/SW_Police_Alternate.wav",
+      "sha256": "9da791e1ea6be95ff69d4517c74f378978c2c85a3e914991efff88ec12c663a7"
+    },
+    {
+      "old": "AudioSource/D58/Unreal/Waves/Sirens/SW_Police_Intro.wav",
+      "new": "AudioSource/Soundscape/Unreal/Waves/Sirens/SW_Police_Intro.wav",
+      "sha256": "0f6ba8c001e6a85533311e4ea76072e1550fdc7d9e1990740869185ad9b61685"
+    },
+    {
+      "old": "AudioSource/D58/Unreal/Waves/Sirens/SW_Police_Loop.wav",
+      "new": "AudioSource/Soundscape/Unreal/Waves/Sirens/SW_Police_Loop.wav",
+      "sha256": "929e8cf9d7482e7c91d88627ebe8fc3de0daab83ebfc3dfc483fbd0841dde40f"
+    },
+    {
+      "old": "AudioSource/D58/Unreal/Waves/Sirens/SW_Police_Outro.wav",
+      "new": "AudioSource/Soundscape/Unreal/Waves/Sirens/SW_Police_Outro.wav",
+      "sha256": "411a6d82961cbcfe47adc4ac82c6afb683d5b793bc461be50b51d3d944065630"
+    },
+    {
+      "old": "AudioSource/D58/Unreal/Waves/Sirens/SW_Town_Intro.wav",
+      "new": "AudioSource/Soundscape/Unreal/Waves/Sirens/SW_Town_Intro.wav",
+      "sha256": "42a89da2d65b2852d3400aae11d47475e9b453123c22cd7359876b4045b06a74"
+    },
+    {
+      "old": "AudioSource/D58/Unreal/Waves/Sirens/SW_Town_Loop.wav",
+      "new": "AudioSource/Soundscape/Unreal/Waves/Sirens/SW_Town_Loop.wav",
+      "sha256": "1937b5d46e79aae483cc10598e58ad164661a880978239e9b9fe569adffedbaa"
+    },
+    {
+      "old": "AudioSource/D58/Unreal/Waves/Sirens/SW_Town_Outro.wav",
+      "new": "AudioSource/Soundscape/Unreal/Waves/Sirens/SW_Town_Outro.wav",
+      "sha256": "1ed7001e0798abb1c7fd3992e5e9ef62a74f40f2ebc30a1eb089b60c223160b2"
+    },
+    {
+      "old": "AudioSource/D58/Unreal/Waves/UI/SW_Action_Confirm.wav",
+      "new": "AudioSource/Soundscape/Unreal/Waves/UI/SW_Action_Confirm.wav",
+      "sha256": "0948f87ec1ced25abf19600570794b7080561bb6e900fef4e528b5a5025a9931"
+    },
+    {
+      "old": "AudioSource/D58/Unreal/Waves/UI/SW_Action_Denied.wav",
+      "new": "AudioSource/Soundscape/Unreal/Waves/UI/SW_Action_Denied.wav",
+      "sha256": "9fadc0d8b0e53d7e4195d4f48d403577fbcc4d22b2766f5fb3eb09a413ad8e31"
+    },
+    {
+      "old": "AudioSource/D58/Unreal/Waves/UI/SW_Incident_Notice.wav",
+      "new": "AudioSource/Soundscape/Unreal/Waves/UI/SW_Incident_Notice.wav",
+      "sha256": "02ed54554e91579856e9323224a68f9a98c9d9fbd66094e7a0dec081391f7b87"
+    },
+    {
+      "old": "AudioSource/D58/Unreal/Waves/UI/SW_Milestone_Reached.wav",
+      "new": "AudioSource/Soundscape/Unreal/Waves/UI/SW_Milestone_Reached.wav",
+      "sha256": "ac6b7bab5d37d2d93976006b1764e0f0ca5840e388f959eb9fd3fed4361a8899"
+    },
+    {
+      "old": "AudioSource/D58/Unreal/Waves/UI/SW_Objective_Complete.wav",
+      "new": "AudioSource/Soundscape/Unreal/Waves/UI/SW_Objective_Complete.wav",
+      "sha256": "8327e744951e94c5ffba85a7a728695897edcef60facb191eef901f56f350415"
+    },
+    {
+      "old": "AudioSource/D58/Unreal/Waves/UI/SW_Service_Attention.wav",
+      "new": "AudioSource/Soundscape/Unreal/Waves/UI/SW_Service_Attention.wav",
+      "sha256": "03ebfea1eb9d31483c777f1eb972a8d7fd416974c66458692c25da1362f26449"
+    },
+    {
+      "old": "AudioSource/D58/Unreal/Waves/UI/SW_Service_Recovered.wav",
+      "new": "AudioSource/Soundscape/Unreal/Waves/UI/SW_Service_Recovered.wav",
+      "sha256": "0c3cd0fa5680e85abd3a423bfd6b4748ffe2e1dcd0b7b3774ed08d07ad60fdfa"
+    },
+    {
+      "old": "AudioSource/D82/ACE-StepSample.json",
+      "new": "AudioSource/Music/CitySoundtrack/ACE-StepSample.json",
+      "sha256": "1b349f6bda0cfdddac16f98f01c5c43529734f01b675d2a2ba2ee9cfcf037466"
+    },
+    {
+      "old": "AudioSource/D82/ApprovedProvenance.json",
+      "new": "AudioSource/Music/CitySoundtrack/ApprovedProvenance.json",
+      "sha256": "0a855ab5ae6e2e579f75cc4a4f4a8f50f3fa4f0624bf41f2999dfc302dff94f1"
+    },
+    {
+      "old": "AudioSource/D82/DreamSynths.scd",
+      "new": "AudioSource/Music/CitySoundtrack/DreamSynths.scd",
+      "sha256": "56487ecc819b30b56e0536f285ddfa631846ad3016d50f5e42f592bc178f3eae"
+    },
+    {
+      "old": "AudioSource/D82/Hybrid5/Composition.json",
+      "new": "AudioSource/Music/CitySoundtrack/Hybrid5/Composition.json",
+      "sha256": "1f604cb0997a6c423ea15eb30f4146264db541e9e24212f565e3c168efa70a17"
+    },
+    {
+      "old": "AudioSource/D82/Hybrid5/GeneratedSource.json",
+      "new": "AudioSource/Music/CitySoundtrack/Hybrid5/GeneratedSource.json",
+      "sha256": "77850a3466bb1950178e40a8bf66446ab40886014f5139f1a2f2c1d6215fa419"
+    },
+    {
+      "old": "AudioSource/D82/Hybrid5/GeneratedTexture.mp3",
+      "new": "AudioSource/Music/CitySoundtrack/Hybrid5/GeneratedTexture.mp3",
+      "sha256": "4b08aa95e424bacb97dbbab8eb72716c8c2802ed8a14b9a081f3dcc261b88a13"
+    },
+    {
+      "old": "AudioSource/D82/Hybrid5/HybridSynths.scd",
+      "new": "AudioSource/Music/CitySoundtrack/Hybrid5/HybridSynths.scd",
+      "sha256": "919c893e4e3f30f560eff9ddd34b20c7d28e9b52612a81053870e19ef252d64a"
+    },
+    {
+      "old": "AudioSource/D82/Hybrid6/AudioProcessingResearch.json",
+      "new": "AudioSource/Music/CitySoundtrack/Hybrid6/AudioProcessingResearch.json",
+      "sha256": "e02868003bde79436a8bda8a8d11ca57b472d601543a10ce5ac9fc7c7a333a30"
+    },
+    {
+      "old": "AudioSource/D82/Hybrid6/AudioToAudioWorkflow.json",
+      "new": "AudioSource/Music/CitySoundtrack/Hybrid6/AudioToAudioWorkflow.json",
+      "sha256": "daedf785a2fd17ac482b6285bf573b2f1899e6a423ed612287182e958f9c63bf"
+    },
+    {
+      "old": "AudioSource/D82/Hybrid6/Composition.json",
+      "new": "AudioSource/Music/CitySoundtrack/Hybrid6/Composition.json",
+      "sha256": "c5a1b65dc0717ffab8e8807881b3048f114243eacf4c4260ba4ee4bffe86427d"
+    },
+    {
+      "old": "AudioSource/D82/Hybrid6/FullSynths.scd",
+      "new": "AudioSource/Music/CitySoundtrack/Hybrid6/FullSynths.scd",
+      "sha256": "2fbd71816317b9cf8ede932aa4380252738b444e34b19b16a6df6943d2e72e05"
+    },
+    {
+      "old": "AudioSource/D82/Hybrid7/Composition.json",
+      "new": "AudioSource/Music/CitySoundtrack/Hybrid7/Composition.json",
+      "sha256": "e25de4247646d8ba439c5d1b401abd5735fdcf4acd991dfdae441a3ee19fd89f"
+    },
+    {
+      "old": "AudioSource/D82/Hybrid7/RhythmicSynths.scd",
+      "new": "AudioSource/Music/CitySoundtrack/Hybrid7/RhythmicSynths.scd",
+      "sha256": "80b0addd194c9296183bbfe024a44e18c69828df4b8e833599825f96f01ac39e"
+    },
+    {
+      "old": "AudioSource/D82/Presets.json",
+      "new": "AudioSource/Music/CitySoundtrack/Presets.json",
+      "sha256": "e4d010d681631c2d8e5ce8cdb716182efc953eec56db3fd38cbd032322013b14"
+    },
+    {
+      "old": "AudioSource/D82/README.md",
+      "new": "AudioSource/Music/CitySoundtrack/README.md",
+      "sha256": "e4dd8efbf3babe4756dba1cefc5a01c1333572845e29b8fd8e410a676dfd9377"
+    },
+    {
+      "old": "AudioSource/D82/Refinement2.json",
+      "new": "AudioSource/Music/CitySoundtrack/Refinement2.json",
+      "sha256": "a3eb4b020d42a4374bc8cf1448a35e0a5c695af807dd8f1753bb96fe9a1333f1"
+    },
+    {
+      "old": "AudioSource/D82/SoftLead4.json",
+      "new": "AudioSource/Music/CitySoundtrack/SoftLead4.json",
+      "sha256": "031bf947a07d17a72fb75b2c2c231d94a71e82589d22b71df63b191f2cea9d08"
+    },
+    {
+      "old": "AudioSource/D82/SoftLeadSynths.scd",
+      "new": "AudioSource/Music/CitySoundtrack/SoftLeadSynths.scd",
+      "sha256": "abe89847ebfc9a2e62af304da15199eba85e0a94d2bb6c442783eadeac9ca5ff"
+    },
+    {
+      "old": "AudioSource/D82/Soundtrack1/Afterglow.json",
+      "new": "AudioSource/Music/CitySoundtrack/Soundtrack1/Afterglow.json",
+      "sha256": "cfa600431100e2ee252a5e5223f73c8550238a48fdbe91fe70e560025a3403c3"
+    },
+    {
+      "old": "AudioSource/D82/Soundtrack1/Album.json",
+      "new": "AudioSource/Music/CitySoundtrack/Soundtrack1/Album.json",
+      "sha256": "5883e2bbbf6040471852ea23ab2aef87897fdff6c75ecb3512df7d3957a589bc"
+    },
+    {
+      "old": "AudioSource/D82/Soundtrack1/AlbumSynths.scd",
+      "new": "AudioSource/Music/CitySoundtrack/Soundtrack1/AlbumSynths.scd",
+      "sha256": "a44f7c8a2a6ff6943d218711b952c26aca748ff3a37cd75e7db49a5475d6a5d9"
+    },
+    {
+      "old": "AudioSource/D82/Soundtrack1/BlueHour.json",
+      "new": "AudioSource/Music/CitySoundtrack/Soundtrack1/BlueHour.json",
+      "sha256": "bcac4beac0c66ecf14ee63a9b76f5ec10742677ca9eef60ab6ce46fe2a0c10a3"
+    },
+    {
+      "old": "AudioSource/D82/Soundtrack1/GlassCanal.json",
+      "new": "AudioSource/Music/CitySoundtrack/Soundtrack1/GlassCanal.json",
+      "sha256": "ebaf21bc6db4ec82ec94e153d0aadd6a721c380480225da4b766b6be649afb8c"
+    },
+    {
+      "old": "AudioSource/D82/Soundtrack1/LanternWalk.json",
+      "new": "AudioSource/Music/CitySoundtrack/Soundtrack1/LanternWalk.json",
+      "sha256": "a5f2ae3d1d6740344dc6a1967b50e462bad789b1bf3f9939c4b43acf6dcb7bc3"
+    },
+    {
+      "old": "AudioSource/D82/Soundtrack1/ListeningDirection-20261013.json",
+      "new": "AudioSource/Music/CitySoundtrack/Soundtrack1/ListeningDirection-20261013.json",
+      "sha256": "e0c8f81e4eafd668dd62fa737e3e6363de22131a6f2426bec0700105518587a9"
+    },
+    {
+      "old": "AudioSource/D82/Soundtrack1/NightTransit.json",
+      "new": "AudioSource/Music/CitySoundtrack/Soundtrack1/NightTransit.json",
+      "sha256": "001185c7304199b0fd64ef947d6e30b566b06688822723c5d8c10e1a303da38e"
+    },
+    {
+      "old": "AudioSource/D82/Soundtrack1/PaperLanterns.json",
+      "new": "AudioSource/Music/CitySoundtrack/Soundtrack1/PaperLanterns.json",
+      "sha256": "8ca42d1844f3ebebaad38fd9c340e3deb0098f679c58bad3a27e5b8590f713b9"
+    },
+    {
+      "old": "AudioSource/D82/Soundtrack1/RooftopRain.json",
+      "new": "AudioSource/Music/CitySoundtrack/Soundtrack1/RooftopRain.json",
+      "sha256": "767911348c584a5f5a1518c91c715c63754b070a0c8dfbcfae55d0735d6ffad7"
+    },
+    {
+      "old": "AudioSource/D82/Soundtrack1/TidalCircuit.json",
+      "new": "AudioSource/Music/CitySoundtrack/Soundtrack1/TidalCircuit.json",
+      "sha256": "852275f7a92bd1a7758cb791808edcd7b0b500745ce421214c918cb00acb836b"
+    },
+    {
+      "old": "AudioSource/D82/Soundtrack2/Afterglow.json",
+      "new": "AudioSource/Music/CitySoundtrack/Soundtrack2/Afterglow.json",
+      "sha256": "3753e728ef8d0314bec7e253fad3d2f393ee516182b864bcbcd507a09de73e4d"
+    },
+    {
+      "old": "AudioSource/D82/Soundtrack2/Album.json",
+      "new": "AudioSource/Music/CitySoundtrack/Soundtrack2/Album.json",
+      "sha256": "9931aea3c2bea8fb41ae9de6fb4e4d161f863ec024d4727e69b86d7a06e71d30"
+    },
+    {
+      "old": "AudioSource/D82/Soundtrack2/LanternWalk.json",
+      "new": "AudioSource/Music/CitySoundtrack/Soundtrack2/LanternWalk.json",
+      "sha256": "b4d1cb6a7fbd618e81c769cd18715e64f5dc3427450a6e3064d93397447b3b44"
+    },
+    {
+      "old": "AudioSource/D82/Soundtrack2/RevisionSynths.scd",
+      "new": "AudioSource/Music/CitySoundtrack/Soundtrack2/RevisionSynths.scd",
+      "sha256": "19641c346b53714e63d2235ef4594b74a89e72b1431c1fb898cae32eb810a6ce"
+    },
+    {
+      "old": "AudioSource/D82/Soundtrack3/Album.json",
+      "new": "AudioSource/Music/CitySoundtrack/Soundtrack3/Album.json",
+      "sha256": "fb5bd8c68ab6930865e5b234d227f603fe11d199018d7b5caf5c13989b6ef122"
+    },
+    {
+      "old": "AudioSource/D82/Soundtrack3/LanternWalk.json",
+      "new": "AudioSource/Music/CitySoundtrack/Soundtrack3/LanternWalk.json",
+      "sha256": "670b01e92ec50f3729e7fcf340d35c8067b5936e5341caa94f293678d24aa721"
+    },
+    {
+      "old": "AudioSource/D82/Soundtrack3/SteelPanSynths.scd",
+      "new": "AudioSource/Music/CitySoundtrack/Soundtrack3/SteelPanSynths.scd",
+      "sha256": "1d34ce6686beb560748b3e333343aaa6dc2cd7c32711c4db6030ce4e9992be82"
+    },
+    {
+      "old": "AudioSource/D82/Unreal/Manifest.json",
+      "new": "AudioSource/Music/CitySoundtrack/Unreal/Manifest.json",
+      "sha256": "239a40e50de8ea2b81ea994f4ecb52efad804ec1c113fb516742be085b6d6322"
+    },
+    {
+      "old": "AudioSource/D82/UnrealApproved/Afterglow.wav",
+      "new": "AudioSource/Music/CitySoundtrack/UnrealApproved/Afterglow.wav",
+      "sha256": "5204ef2b824fb41a4bbc6dfd4ae75fc4a786d9ef5c823a3f6ba172a5eccb0687"
+    },
+    {
+      "old": "AudioSource/D82/UnrealApproved/BlueHour.wav",
+      "new": "AudioSource/Music/CitySoundtrack/UnrealApproved/BlueHour.wav",
+      "sha256": "cce490728fd7d32adeb790a1218c1375f38928899acb42e2d58bd1f5428797a4"
+    },
+    {
+      "old": "AudioSource/D82/UnrealApproved/GlassCanal.wav",
+      "new": "AudioSource/Music/CitySoundtrack/UnrealApproved/GlassCanal.wav",
+      "sha256": "77694d270a4f2aae3ee850498e1a8b05c4ae8f651dcf6469af06bd1c8856c714"
+    },
+    {
+      "old": "AudioSource/D82/UnrealApproved/LanternWalk.wav",
+      "new": "AudioSource/Music/CitySoundtrack/UnrealApproved/LanternWalk.wav",
+      "sha256": "670f6f4b8f36aacd44dbfba39b285d0d9752baa5b7b914ad48a08fdcccec515d"
+    },
+    {
+      "old": "AudioSource/D82/UnrealApproved/Manifest.json",
+      "new": "AudioSource/Music/CitySoundtrack/UnrealApproved/Manifest.json",
+      "sha256": "2e7c25d2021d3e274eeb4e5bfa1abbe631a0d5e1987a472783aa5fff831456c5"
+    },
+    {
+      "old": "AudioSource/D82/UnrealApproved/NeonCourtyard.wav",
+      "new": "AudioSource/Music/CitySoundtrack/UnrealApproved/NeonCourtyard.wav",
+      "sha256": "40be0e60558f40654ddddac1e10f997bbb23957835f0954ed1509ee3b2684fdf"
+    },
+    {
+      "old": "AudioSource/D82/UnrealApproved/NightTransit.wav",
+      "new": "AudioSource/Music/CitySoundtrack/UnrealApproved/NightTransit.wav",
+      "sha256": "1dd6bdfbd17b95db7f2b458bbdc4fbd97467c8673b8a3c0aa80805da8025cb0e"
+    },
+    {
+      "old": "AudioSource/D82/UnrealApproved/PaperLanterns.wav",
+      "new": "AudioSource/Music/CitySoundtrack/UnrealApproved/PaperLanterns.wav",
+      "sha256": "17eb4afde0bcb031a0d252173fbde992e2a1965253770cb0c9225a5d63533d04"
+    },
+    {
+      "old": "AudioSource/D82/UnrealApproved/RooftopRain.wav",
+      "new": "AudioSource/Music/CitySoundtrack/UnrealApproved/RooftopRain.wav",
+      "sha256": "93ae65acfbe004eae6492e24526c24bc7870e4e9357aeef49e43537598162f0c"
+    },
+    {
+      "old": "AudioSource/D82/UnrealApproved/TidalCircuit.wav",
+      "new": "AudioSource/Music/CitySoundtrack/UnrealApproved/TidalCircuit.wav",
+      "sha256": "524ca72ade8cb1ce5f289a1e6aba9717e4efb47795dd2dc4cdcb377386fbf793"
+    },
+    {
+      "old": "AudioSource/D82/Variety3.json",
+      "new": "AudioSource/Music/CitySoundtrack/Variety3.json",
+      "sha256": "55cd8b6ddb91bf696cb6db1c38f7a4021f44fa6039d08b7ea8029a33f0a4f7b8"
+    },
+    {
+      "old": "AudioSource/D82/VarietySynths.scd",
+      "new": "AudioSource/Music/CitySoundtrack/VarietySynths.scd",
+      "sha256": "2429aff78a6362782d9854b46fbb64b6fe786b9ce55b0bea762d3ad01945e062"
+    },
+    {
+      "old": "ArtSource/Derived/D122Rooms/bakery.png",
+      "new": "ArtSource/Derived/StorefrontRooms/bakery.png",
+      "sha256": "a0ada97a74b5b19966123b6576e9e1eb742464e3e76ff86acea6897cbfad71f4"
+    },
+    {
+      "old": "ArtSource/Derived/D122Rooms/books.png",
+      "new": "ArtSource/Derived/StorefrontRooms/books.png",
+      "sha256": "47d87ea5e7d30157fbb626f3109a4ba1ba22d41717326206f213577e66d1560d"
+    },
+    {
+      "old": "ArtSource/Derived/D122Rooms/cafe.png",
+      "new": "ArtSource/Derived/StorefrontRooms/cafe.png",
+      "sha256": "6757d9832af8b051fb2f65316045fbd0c13db654d84f551d433ca0e43b3b9883"
+    },
+    {
+      "old": "ArtSource/Derived/D122Rooms/manifest.json",
+      "new": "ArtSource/Derived/StorefrontRooms/manifest.json",
+      "sha256": "48826fce86c8b2479bad0592f3eb95450eac9dc0d87bcd44e589ae0a1890b39d"
+    },
+    {
+      "old": "ArtSource/Derived/D122Rooms/market.png",
+      "new": "ArtSource/Derived/StorefrontRooms/market.png",
+      "sha256": "b981bfa56a55303c299f14e7bc096e83c8ebc9057d899ca3b3d2a13d7c902355"
+    },
+    {
+      "old": "ArtSource/Derived/D122Rooms/outfitters.png",
+      "new": "ArtSource/Derived/StorefrontRooms/outfitters.png",
+      "sha256": "4d83a82c82b27770059ed0c8ff3721da9eec6961caeb000cf18e66af3d8193eb"
+    },
+    {
+      "old": "ArtSource/Derived/D122Rooms/pharmacy.png",
+      "new": "ArtSource/Derived/StorefrontRooms/pharmacy.png",
+      "sha256": "bb3d6be272efe11a8440e0f3f5818d88edba399db658d5d39996eee1e6861d49"
+    },
+    {
+      "old": "ArtSource/Derived/D122Rooms/repairs.png",
+      "new": "ArtSource/Derived/StorefrontRooms/repairs.png",
+      "sha256": "abc3d4817222823a2a732e1bb7d9741ef1308c381157940e72816625232d05bc"
+    },
+    {
+      "old": "ArtSource/Derived/D122Rooms/tech.png",
+      "new": "ArtSource/Derived/StorefrontRooms/tech.png",
+      "sha256": "695f2da0c6e59cac393a862f2ce281ccc148b9cd8208cc54d875ae154a772324"
+    },
+    {
+      "old": "ArtSource/Derived/D122/manifest.json",
+      "new": "ArtSource/Derived/EditorialArt/manifest.json",
+      "sha256": "aab646720edbe8fa48eb4f5a5a7943e3c7381c362eb920804fd9d3acd706eec7"
+    },
+    {
+      "old": "ArtSource/Derived/D122/NewspaperAutomation.png",
+      "new": "ArtSource/Derived/EditorialArt/NewspaperAutomation.png",
+      "sha256": "17c1f37fb83c2eaa1a887b9dc3b4f69b5a15ea3baf471784bbdb9303fc6ea1f0"
+    },
+    {
+      "old": "ArtSource/Derived/D122/NewspaperCommerce.png",
+      "new": "ArtSource/Derived/EditorialArt/NewspaperCommerce.png",
+      "sha256": "7530049482fabbb64d4995339be88999a1b6812f7b72534fa66f570555017fa7"
+    },
+    {
+      "old": "ArtSource/Derived/D122/NewspaperHousing.png",
+      "new": "ArtSource/Derived/EditorialArt/NewspaperHousing.png",
+      "sha256": "3d8226205198c1995746b5e17767de1efbae287dbaa32c9b318941c34b05f6f1"
+    },
+    {
+      "old": "ArtSource/Derived/D122/RepairDisplays.png",
+      "new": "ArtSource/Derived/EditorialArt/RepairDisplays.png",
+      "sha256": "8a41e0803a6ee8b880ef7e1375f3523aea1d70890490b8b56a35462c01509944"
+    },
+    {
+      "old": "ArtSource/Blender/Studies/CityBuildingMaterials-D104.blend",
+      "new": "ArtSource/Blender/Studies/CityBuildingMaterials.blend",
+      "sha256": "3ca407df40242fdfc40fd06b489054d17f1f89b786969867c873c5d16bf8f7e2"
+    },
+    {
+      "old": "ArtSource/Exports/CitizenSportsRefinement/AS_Park_BaseballPitch_D88.fbx",
+      "new": "ArtSource/Exports/CitizenSportsRefinement/AS_Park_BaseballPitch.fbx",
+      "sha256": "5055ccbbbb790da806c29e45974c7ddbe35516c3caeb54c45fee9c61007b95ae"
+    },
+    {
+      "old": "ArtSource/Exports/CitizenSportsRefinement/AS_Park_BaseballSwing_D88.fbx",
+      "new": "ArtSource/Exports/CitizenSportsRefinement/AS_Park_BaseballSwing.fbx",
+      "sha256": "341e4b823ffae2bb3376f1aebd30d738773322685e02f00835f622a8fa0c31a9"
+    },
+    {
+      "old": "ArtSource/Exports/CitizenSportsRefinement/AS_Park_GoalkeeperSave_D88.fbx",
+      "new": "ArtSource/Exports/CitizenSportsRefinement/AS_Park_GoalkeeperSave.fbx",
+      "sha256": "6c9afee65967d8a394a762d7ddae8da6df9258435bdddd49677e6f03ddfdd647"
+    },
+    {
+      "old": "ArtSource/Exports/CitizenSportsRefinement/AS_Park_SoccerKick_D88.fbx",
+      "new": "ArtSource/Exports/CitizenSportsRefinement/AS_Park_SoccerKick.fbx",
+      "sha256": "a9fd70fdfc22cb1df7c2d5933c783158e99cc2d79b43bb9a4f0b96c7db5ab1a8"
+    },
+    {
+      "old": "ArtSource/Exports/CitizenSportsRefinement/AS_Park_SoccerRun_D88.fbx",
+      "new": "ArtSource/Exports/CitizenSportsRefinement/AS_Park_SoccerRun.fbx",
+      "sha256": "b412657a19f7ec7b7a536e3778e1824949ff4192ce24de2cea39863946540acc"
+    },
+    {
+      "old": "ArtSource/Exports/CitizenSportsRefinement/SK_Park_Field_Casual_D88.fbx",
+      "new": "ArtSource/Exports/CitizenSportsRefinement/SK_Park_Field_Casual.fbx",
+      "sha256": "5b285affb7fcd11773890be054a09fe48de42f1babcfb3194ee98a65f823042a"
+    },
+    {
+      "old": "ArtSource/Exports/CitizenSportsRefinement/SK_Park_Field_Casual_LOD1_D88.fbx",
+      "new": "ArtSource/Exports/CitizenSportsRefinement/SK_Park_Field_Casual_LOD1.fbx",
+      "sha256": "3caab577b4e1f7e4ed161b76d9d0fb5f31e4933b700f5f10679d2277a601811b"
+    },
+    {
+      "old": "ArtSource/Exports/CitizenSportsRefinement/SK_Park_Field_Office_D88.fbx",
+      "new": "ArtSource/Exports/CitizenSportsRefinement/SK_Park_Field_Office.fbx",
+      "sha256": "8b6e2c9e531c15010d01823adbf3c294dd384a770e7217e228aecc53dd9f8578"
+    },
+    {
+      "old": "ArtSource/Exports/CitizenSportsRefinement/SK_Park_Field_Office_LOD1_D88.fbx",
+      "new": "ArtSource/Exports/CitizenSportsRefinement/SK_Park_Field_Office_LOD1.fbx",
+      "sha256": "75ea0750ba2b3e9d14b4b01adf0798e3e9899aa8cf5aef73a69f0d446483065e"
+    },
+    {
+      "old": "ArtSource/Exports/CitizenSportsRefinement/SK_Park_Field_Worker_D88.fbx",
+      "new": "ArtSource/Exports/CitizenSportsRefinement/SK_Park_Field_Worker.fbx",
+      "sha256": "852b95f7154a85ffde35a847bb2fc36cd4368734dec8b4dc9d85af02fc19fcc7"
+    },
+    {
+      "old": "ArtSource/Exports/CitizenSportsRefinement/SK_Park_Field_Worker_LOD1_D88.fbx",
+      "new": "ArtSource/Exports/CitizenSportsRefinement/SK_Park_Field_Worker_LOD1.fbx",
+      "sha256": "1f9d13010e6de2a1fc9afecfeef7e3c96fff14344258597d873dd7c52f751c55"
+    },
+    {
+      "old": "ArtSource/Exports/CitizenSportsRefinement/SM_Park_Field_Casual_D88.fbx",
+      "new": "ArtSource/Exports/CitizenSportsRefinement/SM_Park_Field_Casual.fbx",
+      "sha256": "aa8f9a56c18e59433faa1632304c8e2af0098b88f3ecf7fbf8fb6420a24ce4b2"
+    },
+    {
+      "old": "ArtSource/Exports/CitizenSportsRefinement/SM_Park_Field_Casual_LOD1_D88.fbx",
+      "new": "ArtSource/Exports/CitizenSportsRefinement/SM_Park_Field_Casual_LOD1.fbx",
+      "sha256": "94ad1504ede0d8dacc4b59f69871e25c744004382b53bd256faccbe00c66f31b"
+    },
+    {
+      "old": "ArtSource/Exports/CitizenSportsRefinement/SM_Park_Field_Office_D88.fbx",
+      "new": "ArtSource/Exports/CitizenSportsRefinement/SM_Park_Field_Office.fbx",
+      "sha256": "d05912088bf7e70660a4489a731a5a4b834df176a2fe701a4ddaddd60359950f"
+    },
+    {
+      "old": "ArtSource/Exports/CitizenSportsRefinement/SM_Park_Field_Office_LOD1_D88.fbx",
+      "new": "ArtSource/Exports/CitizenSportsRefinement/SM_Park_Field_Office_LOD1.fbx",
+      "sha256": "6974164d431781f7654b797974f3002233c4c812c5513382b9efe3446fe8f762"
+    },
+    {
+      "old": "ArtSource/Exports/CitizenSportsRefinement/SM_Park_Field_Worker_D88.fbx",
+      "new": "ArtSource/Exports/CitizenSportsRefinement/SM_Park_Field_Worker.fbx",
+      "sha256": "2f434527b8e12deb1581fb598e03c919d3d9c4ec375e3caaf3716a5c5a2beeda"
+    },
+    {
+      "old": "ArtSource/Exports/CitizenSportsRefinement/SM_Park_Field_Worker_LOD1_D88.fbx",
+      "new": "ArtSource/Exports/CitizenSportsRefinement/SM_Park_Field_Worker_LOD1.fbx",
+      "sha256": "3654d789ab64b0b8e0fd772a763bc6ae9b33b93f346f95110254c9bdf0d5cac8"
+    },
+    {
+      "old": "ArtSource/Exports/CitizenWalk/AS_Citizen_Walk_D121.fbx",
+      "new": "ArtSource/Exports/CitizenWalk/AS_Citizen_Walk.fbx",
+      "sha256": "d746b2a930a17b4ab143c57361149011caa8ddadd54e4e9ce1d338c4c9347f70"
+    },
+    {
+      "old": "ArtSource/Exports/ParkRefinement/SM_Building_CityPark_D83_A.fbx",
+      "new": "ArtSource/Exports/ParkRefinement/SM_Building_CityPark_A.fbx",
+      "sha256": "252ec24f96888d7e513bac0f09f26c623dc5701c4cf1e91aadf722ea59915998"
+    },
+    {
+      "old": "ArtSource/Exports/ParkRefinement/SM_Building_NeighborhoodPark_D83_A.fbx",
+      "new": "ArtSource/Exports/ParkRefinement/SM_Building_NeighborhoodPark_A.fbx",
+      "sha256": "29c877c84b15ce229b4421b411f71210419fe2afbed89285cbc7bafd8b987364"
+    },
+    {
+      "old": "ArtSource/Exports/ParkRefinement/SM_Building_Park_D83_A.fbx",
+      "new": "ArtSource/Exports/ParkRefinement/SM_Building_Park_A.fbx",
+      "sha256": "c50eec382e1addd7fb741b096aac2d3b4701596224d90d246df00318f74c82f3"
+    },
+    {
+      "old": "ArtSource/Exports/ParkRefinement/SM_Building_Service_D83_A.fbx",
+      "new": "ArtSource/Exports/ParkRefinement/SM_Building_Service_A.fbx",
+      "sha256": "0cd7370629c4149584e5119e7b302d89667661b34ae8656b06d6fc5d45aab22e"
+    },
+    {
+      "old": "ArtSource/Exports/ParkRefinement/SM_Building_Service_High_D83_A.fbx",
+      "new": "ArtSource/Exports/ParkRefinement/SM_Building_Service_High_A.fbx",
+      "sha256": "4b8c841e396b6a77913c7cc4d281e54284c38fa5197da4b0ff51322d12a5a9fc"
+    },
+    {
+      "old": "ArtSource/Exports/ParkRefinement/SM_Building_Service_Medium_D83_A.fbx",
+      "new": "ArtSource/Exports/ParkRefinement/SM_Building_Service_Medium_A.fbx",
+      "sha256": "6b01762af5c354cdf664baa3085d7a9a59169f7a271c01c3425bad9d1da90d8f"
+    },
+    {
+      "old": "ArtSource/Exports/ParkRefinement/SM_Building_SkatePark_D83_A.fbx",
+      "new": "ArtSource/Exports/ParkRefinement/SM_Building_SkatePark_A.fbx",
+      "sha256": "fe26f1b17df8e934062e4490033f5107c413fa54f8c48beafa5a1d5f1d96adb1"
+    },
+    {
+      "old": "ArtSource/Exports/ParkRefinement/SM_Building_WaterTower_D83_A.fbx",
+      "new": "ArtSource/Exports/ParkRefinement/SM_Building_WaterTower_A.fbx",
+      "sha256": "d5cea52c1726b7c7fc171b6cb2332aad96723219e610db1ef992a07f6438801b"
+    }
+  ],
+  "replacements": {
+    "/Game/CitySim/Audio/D58": "/Game/CitySim/Audio/Soundscape",
+    "/Game/CitySim/Art/Prototypes/D79": "/Game/CitySim/Art/Prototypes/BuildingSurfaces",
+    "M_D122RepairWindows": "M_RepairDisplayWindows",
+    "M_D122ShopWindows": "M_StorefrontRoomWindows",
+    "MI_D122Room_": "MI_StorefrontRoom_",
+    "T_D122Room_": "T_StorefrontRoom_",
+    "T_D122RepairDisplays": "T_RepairDisplays",
+    "AudioSource/D58": "AudioSource/Soundscape",
+    "AudioSource/D82": "AudioSource/Music/CitySoundtrack",
+    "ArtSource/Derived/D122Rooms": "ArtSource/Derived/StorefrontRooms",
+    "ArtSource/Derived/D122": "ArtSource/Derived/EditorialArt",
+    "CityBuildingMaterials-D104.blend": "CityBuildingMaterials.blend",
+    "SM_Building_Service_D83_A": "SM_Building_Service_A",
+    "SM_Building_Park_D83_A": "SM_Building_Park_A",
+    "AS_Park_SkateKickflip_D83": "AS_Park_SkateKickflip",
+    "AS_Park_BasketballShot_D83": "AS_Park_BasketballShot",
+    "AS_Park_SoccerKick_D83": "AS_Park_SoccerKick",
+    "SM_Building_NeighborhoodPark_D83_A": "SM_Building_NeighborhoodPark_A",
+    "AS_Park_SoccerRun_D83": "AS_Park_SoccerRun",
+    "AS_Park_BaseballPitch_D83": "AS_Park_BaseballPitch",
+    "AS_Park_Idle_D83": "AS_Park_Idle",
+    "AS_Park_SkateLipStall_D83": "AS_Park_SkateLipStall",
+    "AS_Park_Walk_D83": "AS_Park_Walk",
+    "SM_Building_Service_High_D83_A": "SM_Building_Service_High_A",
+    "SM_Building_WaterTower_D83_A": "SM_Building_WaterTower_A",
+    "SM_Building_CityPark_D83_A": "SM_Building_CityPark_A",
+    "AS_Park_SkatePush_D83": "AS_Park_SkatePush",
+    "AS_Park_BaseballSwing_D83": "AS_Park_BaseballSwing",
+    "AS_Park_GoalkeeperSave_D83": "AS_Park_GoalkeeperSave",
+    "AS_Park_BasketballDribble_D83": "AS_Park_BasketballDribble",
+    "SM_Building_SkatePark_D83_A": "SM_Building_SkatePark_A",
+    "AS_Park_Skate180_D83": "AS_Park_Skate180",
+    "AS_Park_SkateCarve_D83": "AS_Park_SkateCarve",
+    "SM_Building_Service_Medium_D83_A": "SM_Building_Service_Medium_A",
+    "AS_Park_BaseballSwing_D88": "AS_Park_BaseballSwing",
+    "AS_Park_SoccerKick_D88": "AS_Park_SoccerKick",
+    "SK_Park_Field_Casual_D88": "SK_Park_Field_Casual",
+    "SM_Park_Field_Casual_D88": "SM_Park_Field_Casual",
+    "SM_Park_Field_Office_LOD1_D88": "SM_Park_Field_Office_LOD1",
+    "SM_Park_Field_Office_D88": "SM_Park_Field_Office",
+    "SK_Park_Field_Casual_LOD1_D88": "SK_Park_Field_Casual_LOD1",
+    "SK_Park_Field_Office_LOD1_D88": "SK_Park_Field_Office_LOD1",
+    "SM_Park_Field_Casual_LOD1_D88": "SM_Park_Field_Casual_LOD1",
+    "AS_Park_BaseballPitch_D88": "AS_Park_BaseballPitch",
+    "SK_Park_Field_Worker_LOD1_D88": "SK_Park_Field_Worker_LOD1",
+    "SM_Park_Field_Worker_LOD1_D88": "SM_Park_Field_Worker_LOD1",
+    "AS_Park_GoalkeeperSave_D88": "AS_Park_GoalkeeperSave",
+    "SM_Park_Field_Worker_D88": "SM_Park_Field_Worker",
+    "SK_Park_Field_Worker_D88": "SK_Park_Field_Worker",
+    "AS_Park_SoccerRun_D88": "AS_Park_SoccerRun",
+    "SK_Park_Field_Office_D88": "SK_Park_Field_Office",
+    "BS_Citizen_StreetWalk_D121": "BS_Citizen_StreetWalk",
+    "AS_Citizen_Walk_D121": "AS_Citizen_Walk"
+  },
+  "tools": {
+    "Prepare-CityD122Art.py": "Assets/Textures/Prepare-CityEditorialArt.py",
+    "Import-CityD122Art.py": "Assets/Unreal/Import-CityEditorialArt.py",
+    "Prepare-CityD122Rooms.py": "Assets/Textures/Prepare-CityStorefrontRooms.py",
+    "Import-CityD122Rooms.py": "Assets/Unreal/Import-CityStorefrontRooms.py",
+    "Revise-CityD122Repairs.py": "Assets/Unreal/Revise-CityRepairDisplays.py",
+    "Revise-CityD122Glass.py": "Assets/Unreal/Revise-CityStorefrontGlass.py",
+    "Stage-CityAudioSources.py": "Audio/Soundscape/Stage-CityAudioSources.py",
+    "Import-CityAudioSources.py": "Audio/Soundscape/Import-CityAudioSources.py"
+  },
+  "provenance_exceptions": [
+    "ArtSource/Generated/** issue/version exports and approval hashes",
+    "Immutable acceptance/approval snapshots and historical Artifacts/docs/evidence",
+    "Existing source-internal object/take names; no reauthoring/re-export",
+    "CI native-owner D126 parser token and old command forwarders"
+  ],
+  "source_payloads": "All relocated WAV/FBX/BLEND/PNG/SCD bytes retained; only active text references updated"
+}

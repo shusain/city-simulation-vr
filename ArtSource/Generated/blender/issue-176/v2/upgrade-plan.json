@@ -1,0 +1,44 @@
+{
+  "family": "police",
+  "stage": "medium",
+  "stage_index": 1,
+  "existing_stages": [
+    "base",
+    "medium",
+    "high"
+  ],
+  "existing_upgrade_count": 2,
+  "gameplay_changes": false,
+  "source_site_m": [
+    40,
+    32
+  ],
+  "current_native_footprint": [
+    3,
+    2
+  ],
+  "retained_entrance_centres": [
+    [
+      -10,
+      -5
+    ],
+    [
+      2,
+      -5
+    ]
+  ],
+  "progression": "Second apparatus bay and useful side offices; two storey public reception/admin, enclosed connector.",
+  "occupied_bounds": {
+    "min": [
+      -16.200000762939453,
+      -6.599999904632568,
+      0.0
+    ],
+    "max": [
+      12.199999809265137,
+      8.199999809265137,
+      8.550000190734863
+    ]
+  },
+  "LOD_policy": "Future LOD1/LOD2 simplify rims, emblem and roof gear; no production adoption."
+}

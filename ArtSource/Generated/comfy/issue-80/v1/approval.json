@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "kind": "comfy",
+  "repository": "CitySimVR/citysim",
+  "issue": 80,
+  "version": 1,
+  "by": "shaun",
+  "comment_id": 1007,
+  "request_url": "https://git.shaun-husain.com/CitySimVR/citysim/issues/80#issuecomment-1007",
+  "approved_at": "2026-10-17T00:56:10.690Z",
+  "job_id": "fef09dc7-aa35-40fc-83da-ce6c5f027bd3",
+  "source_sha": "d28931af5987d1b91f32499811c06d6c7c215213",
+  "artifacts": [
+    {
+      "name": "asset.png",
+      "bytes": 475722,
+      "sha256": "f36a05a9fda1fbd7f180d14bcdafa4a569e7a0eef55d52e5025aff6ee482eaad"
+    },
+    {
+      "name": "workflow.json",
+      "bytes": 4140,
+      "sha256": "a42764c00db0ee2e7f213f238054d2bc022a7fc0e741c48ff4b43812244a16b2"
+    },
+    {
+      "name": "provenance.json",
+      "bytes": 2416,
+      "sha256": "e904cf3ea9721268bbeade5bc89b237a96e74316a3704319624920a743d19062"
+    },
+    {
+      "name": "README.md",
+      "bytes": 378,
+      "sha256": "f68a82a9fe195e1dc55c2d49a6d1af61ef7f782014336ba35f5da0e5a15be3aa"
+    }
+  ],
+  "workflow": "generate_image_zimage",
+  "workflow_sha256": "746397ca90b23da0f9d3d2b033323696978f508def491900a48421320714f537",
+  "seed": 80,
+  "prompt": "Full-bleed ROOM INTERIOR BACKGROUND IMAGE, a cropped first-person view from inside a neighborhood coffee cafe, straight forward at eye level. The camera is inside a real room; there is NO outside of the room visible anywhere. Cream room surfaces continue past EVERY edge of the picture. Two long dusty-teal shelves run horizontally across the back wall and extend BEYOND the left and right image edges. Shelves have visible TOP surfaces and side thickness with gentle contact shadows to communicate depth. A compact simple espresso machine and coffee grinder on a low counter; a few ceramic cups and mugs, two plain coffee jars and a small plate of pastries on shelves. Broad readable coffee equipment, restrained warm brown accents, no people or seating clutter. Keep ALL important merchandise centered in the MIDDLE HALF of the image with comfortable space around it; outer shelf ends and room side surfaces are unimportant crop continuation. A narrow strip of cream ceiling at the very top and cream floor at the bottom, room back corners near the left and right edges. Restrained centered one-point perspective, level camera, upright verticals. Stylized low-poly game art with broad simple matte shapes, warm cream and dusty teal palette, soft uniform diffuse illumination, readable moderate contrast, mild baked ambient occlusion, clean sparse layout. Crop closely INTO the room: no surrounding background, no external edges, no outer box, no cabinet enclosure, no display case, no diorama or freestanding model, no window opening or window frame, no front wall, no glazing, no mullions, no sill, no border, no glare or reflections. No outside facade, no door or shop sign, no people, words, letters, numbers, labels, prices, logos or watermark. Single room image, no atlas, collage or multiple panels.",
+  "archive": {
+    "url": "https://git.shaun-husain.com/attachments/2febaac9-4da4-43b7-83ab-fc75cadd0ebc",
+    "sha256": "7f395d33fd79b725cfa2b2f0c85c161aff002afafc0ec1312dc2b9b04e20d1fb"
+  },
+  "review_url": "https://git.shaun-husain.com/CitySimVR/citysim/issues/80#issuecomment-922"
+}

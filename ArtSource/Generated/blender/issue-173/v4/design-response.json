@@ -1,0 +1,56 @@
+{
+  "source_id": "building.secondaryschool.a",
+  "revision": "material-only friendly light terracotta",
+  "geometry_hash_before": "6ce9c033338c5dd65c944712e706c62e35da07dae71bd2c8b39ca05bf523e07a",
+  "geometry_hash_after": "6ce9c033338c5dd65c944712e706c62e35da07dae71bd2c8b39ca05bf523e07a",
+  "hash_fields": "vertices, polygons, material assignments, UVs, vertex group memberships",
+  "components_retained": 296,
+  "panes_retained": 50,
+  "triangles": 3552,
+  "changes": [
+    {
+      "material": "AcademicBrick",
+      "multiply_node": "AcademicBrick_WarmTint_MULTIPLY",
+      "source_node": "Image Texture",
+      "source_socket": "Color",
+      "factor": 1,
+      "tint_linear_rgba": [
+        0.65,
+        0.28,
+        0.15,
+        1
+      ],
+      "destination": "Principled BSDF.Base Color",
+      "normal_strengths": [
+        0.15000000596046448
+      ]
+    },
+    {
+      "material": "RoofMembrane",
+      "multiply_node": "RoofMembrane_WarmTint_MULTIPLY",
+      "source_node": "Image Texture",
+      "source_socket": "Color",
+      "factor": 1,
+      "tint_linear_rgba": [
+        0.22,
+        0.27,
+        0.31,
+        1
+      ],
+      "destination": "Principled BSDF.Base Color",
+      "normal_strengths": [
+        0.25
+      ]
+    }
+  ],
+  "cream_trim_linear_rgba": [
+    0.86,
+    0.78,
+    0.6,
+    1
+  ],
+  "unchanged": "EquipmentMetal, WindowGlass, ORM/roughness, tangent normals except brick strength, all mesh geometry and assignments, entrances and future reservation",
+  "original_external_receipts_not_staged": [],
+  "lod_plan": "Keep original low-poly sources; future LOD1 simplify four-part frames and roof hardware, LOD2 remove small facade detail while retaining academic/assembly/library silhouette. No LOD geometry generated.",
+  "integration": "HELD"
+}

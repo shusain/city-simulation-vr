@@ -1,0 +1,260 @@
+{
+  "textures": [
+    {
+      "source": "ArtSource/Textures/CivicSurfaces/CivicAsphalt_BaseColor.png",
+      "copy": "/output/textures/CivicAsphalt_BaseColor.png",
+      "sha256": "85e2cfe619a74da7fe74ad0c6439141f4edb63e5085208c4cfd620c5e1d988fa",
+      "dimensions": [
+        512,
+        512
+      ],
+      "channels": 4,
+      "colorspace": "sRGB",
+      "region": "RoofService"
+    },
+    {
+      "source": "ArtSource/Textures/CivicSurfaces/CivicAsphalt_Normal.png",
+      "copy": "/output/textures/CivicAsphalt_Normal.png",
+      "sha256": "e6f9e8f0257ddbc33b012b72f9446a2c8a3679153488b4bbc67ca6e50be153fd",
+      "dimensions": [
+        512,
+        512
+      ],
+      "channels": 4,
+      "colorspace": "Non-Color",
+      "region": "RoofService"
+    },
+    {
+      "source": "ArtSource/Textures/CivicSurfaces/CivicAsphalt_ORM.png",
+      "copy": "/output/textures/CivicAsphalt_ORM.png",
+      "sha256": "6b06b777944f76046d0f51131cdec7cca658efac60560c95ab1e854c37189ab4",
+      "dimensions": [
+        512,
+        512
+      ],
+      "channels": 4,
+      "colorspace": "Non-Color",
+      "region": "RoofService"
+    },
+    {
+      "source": "ArtSource/Textures/BuildingSurfaces/CityMechanical_BaseColor.png",
+      "copy": "/output/textures/CityMechanical_BaseColor.png",
+      "sha256": "ea75f9ab4911ad7ecf6a5e0ff5688fdc2c07ed52c3cad007ac58e8d06fe4e5ae",
+      "dimensions": [
+        512,
+        512
+      ],
+      "channels": 4,
+      "colorspace": "sRGB",
+      "region": "EquipmentMetal"
+    },
+    {
+      "source": "ArtSource/Textures/BuildingSurfaces/CityMechanical_Normal.png",
+      "copy": "/output/textures/CityMechanical_Normal.png",
+      "sha256": "7a456d3f708d3ee42a7dfb830ac87f95ce27aeeea0e56ac444daca5da510231e",
+      "dimensions": [
+        512,
+        512
+      ],
+      "channels": 4,
+      "colorspace": "Non-Color",
+      "region": "EquipmentMetal"
+    },
+    {
+      "source": "ArtSource/Textures/BuildingSurfaces/CityMechanical_ORM.png",
+      "copy": "/output/textures/CityMechanical_ORM.png",
+      "sha256": "0e08a253e6c30a15e3675921cab4958c0cdcf088f23f05b5fcc1eb3f87dbec98",
+      "dimensions": [
+        512,
+        512
+      ],
+      "channels": 4,
+      "colorspace": "Non-Color",
+      "region": "EquipmentMetal"
+    }
+  ],
+  "semantic_regions": [
+    "Concrete",
+    "BuildingFacade",
+    "RoofService",
+    "EquipmentMetal",
+    "WindowAccent"
+  ],
+  "graphs": {
+    "Concrete": [
+      {
+        "from_node": "Principled BSDF",
+        "from_socket": "BSDF",
+        "to_node": "Material Output",
+        "to_socket": "Surface"
+      },
+      {
+        "from_node": "Noise Texture",
+        "from_socket": "Factor",
+        "to_node": "Bump",
+        "to_socket": "Height"
+      },
+      {
+        "from_node": "Bump",
+        "from_socket": "Normal",
+        "to_node": "Principled BSDF",
+        "to_socket": "Normal"
+      }
+    ],
+    "BuildingFacade": [
+      {
+        "from_node": "Principled BSDF",
+        "from_socket": "BSDF",
+        "to_node": "Material Output",
+        "to_socket": "Surface"
+      }
+    ],
+    "RoofService": [
+      {
+        "from_node": "Principled BSDF",
+        "from_socket": "BSDF",
+        "to_node": "Material Output",
+        "to_socket": "Surface"
+      },
+      {
+        "from_node": "Texture Coordinate",
+        "from_socket": "UV",
+        "to_node": "Vector Math",
+        "to_socket": "Vector"
+      },
+      {
+        "from_node": "Vector Math",
+        "from_socket": "Vector",
+        "to_node": "Image Texture",
+        "to_socket": "Vector"
+      },
+      {
+        "from_node": "Image Texture",
+        "from_socket": "Color",
+        "to_node": "Principled BSDF",
+        "to_socket": "Base Color"
+      },
+      {
+        "from_node": "Vector Math",
+        "from_socket": "Vector",
+        "to_node": "Image Texture.001",
+        "to_socket": "Vector"
+      },
+      {
+        "from_node": "Image Texture.001",
+        "from_socket": "Color",
+        "to_node": "Normal Map",
+        "to_socket": "Color"
+      },
+      {
+        "from_node": "Normal Map",
+        "from_socket": "Normal",
+        "to_node": "Principled BSDF",
+        "to_socket": "Normal"
+      },
+      {
+        "from_node": "Vector Math",
+        "from_socket": "Vector",
+        "to_node": "Image Texture.002",
+        "to_socket": "Vector"
+      },
+      {
+        "from_node": "Image Texture.002",
+        "from_socket": "Color",
+        "to_node": "Separate Color",
+        "to_socket": "Color"
+      },
+      {
+        "from_node": "Separate Color",
+        "from_socket": "Green",
+        "to_node": "Principled BSDF",
+        "to_socket": "Roughness"
+      },
+      {
+        "from_node": "Separate Color",
+        "from_socket": "Blue",
+        "to_node": "Principled BSDF",
+        "to_socket": "Metallic"
+      }
+    ],
+    "EquipmentMetal": [
+      {
+        "from_node": "Principled BSDF",
+        "from_socket": "BSDF",
+        "to_node": "Material Output",
+        "to_socket": "Surface"
+      },
+      {
+        "from_node": "Texture Coordinate",
+        "from_socket": "UV",
+        "to_node": "Vector Math",
+        "to_socket": "Vector"
+      },
+      {
+        "from_node": "Vector Math",
+        "from_socket": "Vector",
+        "to_node": "Image Texture",
+        "to_socket": "Vector"
+      },
+      {
+        "from_node": "Image Texture",
+        "from_socket": "Color",
+        "to_node": "Principled BSDF",
+        "to_socket": "Base Color"
+      },
+      {
+        "from_node": "Vector Math",
+        "from_socket": "Vector",
+        "to_node": "Image Texture.001",
+        "to_socket": "Vector"
+      },
+      {
+        "from_node": "Image Texture.001",
+        "from_socket": "Color",
+        "to_node": "Normal Map",
+        "to_socket": "Color"
+      },
+      {
+        "from_node": "Normal Map",
+        "from_socket": "Normal",
+        "to_node": "Principled BSDF",
+        "to_socket": "Normal"
+      },
+      {
+        "from_node": "Vector Math",
+        "from_socket": "Vector",
+        "to_node": "Image Texture.002",
+        "to_socket": "Vector"
+      },
+      {
+        "from_node": "Image Texture.002",
+        "from_socket": "Color",
+        "to_node": "Separate Color",
+        "to_socket": "Color"
+      },
+      {
+        "from_node": "Separate Color",
+        "from_socket": "Green",
+        "to_node": "Principled BSDF",
+        "to_socket": "Roughness"
+      },
+      {
+        "from_node": "Separate Color",
+        "from_socket": "Blue",
+        "to_node": "Principled BSDF",
+        "to_socket": "Metallic"
+      }
+    ],
+    "WindowAccent": [
+      {
+        "from_node": "Principled BSDF",
+        "from_socket": "BSDF",
+        "to_node": "Material Output",
+        "to_socket": "Surface"
+      }
+    ]
+  },
+  "ORM": "R AO retained in source image; G roughness -> Principled Roughness; B metallic -> Principled Metallic. AO not multiplied into base color.",
+  "UV": "dominant-axis world metre projection; shader scale 0.5",
+  "native_reconstruction": "FBX does not preserve shader graphs; deferred"
+}

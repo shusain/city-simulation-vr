@@ -1,0 +1,45 @@
+{
+  "family": "fire",
+  "stage": "high",
+  "stage_index": 2,
+  "existing_stages": [
+    "base",
+    "medium",
+    "high"
+  ],
+  "existing_upgrade_count": 2,
+  "gameplay_changes": false,
+  "source_site_m": [
+    40,
+    32
+  ],
+  "current_native_footprint": [
+    3,
+    2
+  ],
+  "retained_entrance_centres": {
+    "pedestrian": [
+      -12,
+      -5
+    ],
+    "service": [
+      -1,
+      -5
+    ]
+  },
+  "progression": "Third apparatus bay plus compact crew/training upper floor; same family entrance centres and architectural module",
+  "occupied_bounds": {
+    "min": [
+      -17.1299991607666,
+      -6.099999904632568,
+      0.0
+    ],
+    "max": [
+      17.1299991607666,
+      8.0,
+      11.120000839233398
+    ]
+  },
+  "integration": "HELD",
+  "future_LODs": "LOD1 simplify rims, flame and roof louvres; LOD2 collapse roof equipment and minor trim; original lowpoly sources retained"
+}

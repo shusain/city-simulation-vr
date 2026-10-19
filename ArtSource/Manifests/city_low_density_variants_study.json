@@ -1,0 +1,859 @@
+{
+  "schema_version": 1,
+  "task": "D103",
+  "revision": 3,
+  "source": "ArtSource/Blender/Studies/CityLowDensityVariants-Revision3.blend",
+  "source_sha256": "66c6fdf5cb067af1f04d1f01940e974e3939cb9e7e35c21cdb16a6b3bd941209",
+  "assets": [
+    {
+      "name": "Home_A_Current",
+      "category": "Home",
+      "variant": "A current",
+      "reference_asset_id": "building.residential.a",
+      "dimensions_m": [
+        10.559999465942383,
+        13.279997825622559,
+        5.799999713897705
+      ],
+      "bounds_min_m": [
+        -5.279999732971191,
+        -7.999998092651367,
+        -0.19999980926513672
+      ],
+      "bounds_max_m": [
+        5.279999732971191,
+        5.279999732971191,
+        5.599999904632568
+      ],
+      "triangles": 668,
+      "sections": 4,
+      "slots": [
+        "ResidentialBrick",
+        "HomeSolidDetails",
+        "RoofShingles",
+        "HomeWindowOpaque"
+      ],
+      "glazed_faces": 11,
+      "saved_geometry_signature": "01d29ad8cc51c1a7acc00128c227826adf504f7c773ca1ac88a0bc6cb7820a5f",
+      "entrance": null,
+      "roof_penetrations": []
+    },
+    {
+      "name": "Home_B_HipPorch",
+      "category": "Home",
+      "variant": "B",
+      "reference_asset_id": "building.residential.a",
+      "dimensions_m": [
+        10.5600004196167,
+        13.279998779296875,
+        4.799999713897705
+      ],
+      "bounds_min_m": [
+        -5.28000020980835,
+        -7.999998092651367,
+        -0.20000000298023224
+      ],
+      "bounds_max_m": [
+        5.28000020980835,
+        5.28000020980835,
+        4.599999904632568
+      ],
+      "triangles": 596,
+      "sections": 4,
+      "slots": [
+        "ResidentialBrick",
+        "HomeSolidDetails",
+        "RoofShingles",
+        "HomeWindowOpaque"
+      ],
+      "glazed_faces": 11,
+      "saved_geometry_signature": "cac7494bccc25f700589c5848e978a9eeb235dfbc309ab1fe7f51db8690b0fd0",
+      "entrance": null,
+      "roof_penetrations": []
+    },
+    {
+      "name": "Home_C_CrossGable",
+      "category": "Home",
+      "variant": "C",
+      "reference_asset_id": "building.residential.a",
+      "dimensions_m": [
+        10.5600004196167,
+        13.279998779296875,
+        4.799999713897705
+      ],
+      "bounds_min_m": [
+        -5.28000020980835,
+        -7.999998092651367,
+        -0.20000000298023224
+      ],
+      "bounds_max_m": [
+        5.28000020980835,
+        5.28000020980835,
+        4.599999904632568
+      ],
+      "triangles": 596,
+      "sections": 4,
+      "slots": [
+        "ResidentialBrick",
+        "HomeSolidDetails",
+        "RoofShingles",
+        "HomeWindowOpaque"
+      ],
+      "glazed_faces": 11,
+      "saved_geometry_signature": "d2f32fc124a6c08f76e436c6d4b54595b8478972a917166b5f21c615488e4f5f",
+      "entrance": null,
+      "roof_penetrations": []
+    },
+    {
+      "name": "Home_D_Veranda",
+      "category": "Home",
+      "variant": "D",
+      "reference_asset_id": "building.residential.a",
+      "dimensions_m": [
+        10.5600004196167,
+        13.279998779296875,
+        4.799999713897705
+      ],
+      "bounds_min_m": [
+        -5.28000020980835,
+        -7.999998092651367,
+        -0.20000000298023224
+      ],
+      "bounds_max_m": [
+        5.28000020980835,
+        5.28000020980835,
+        4.599999904632568
+      ],
+      "triangles": 626,
+      "sections": 4,
+      "slots": [
+        "ResidentialBrick",
+        "HomeSolidDetails",
+        "RoofShingles",
+        "HomeWindowOpaque"
+      ],
+      "glazed_faces": 11,
+      "saved_geometry_signature": "46074394e79eb17a3bb42865a6df08b4d53e4ca628020dac047e274ee21ef0cd",
+      "entrance": null,
+      "roof_penetrations": []
+    },
+    {
+      "name": "Shop_A_Current",
+      "category": "Shop",
+      "variant": "A current",
+      "reference_asset_id": "building.shop.a",
+      "dimensions_m": [
+        15.429999351501465,
+        17.614999771118164,
+        12.699999809265137
+      ],
+      "bounds_min_m": [
+        -7.714999675750732,
+        -10.399999618530273,
+        0.0
+      ],
+      "bounds_max_m": [
+        7.714999675750732,
+        7.214999675750732,
+        12.699999809265137
+      ],
+      "triangles": 704,
+      "sections": 5,
+      "slots": [
+        "CommercialBrick",
+        "Roof",
+        "RoofMembrane",
+        "StoreSignTall",
+        "BuildingWindowOpaque"
+      ],
+      "glazed_faces": 14,
+      "saved_geometry_signature": "024a754d93e26f029098fd40568a31a02026c3dd5002ef77e22c99929338766f",
+      "entrance": {
+        "style": "double glass with transom",
+        "door_leaf_count": 2,
+        "personnel_clear_width_m": 2.3,
+        "door_height_m": 2.35,
+        "floor_m": 0.16,
+        "door_front_y_m": -7.16,
+        "detail_bounds_m": [
+          [
+            -1.5299999999999998,
+            -7.42,
+            0
+          ],
+          [
+            1.5299999999999998,
+            -7.0,
+            3.4
+          ]
+        ]
+      },
+      "roof_penetrations": []
+    },
+    {
+      "name": "Shop_B_MarketAwnings",
+      "category": "Shop",
+      "variant": "B",
+      "reference_asset_id": "building.shop.a",
+      "dimensions_m": [
+        15.429999351501465,
+        17.614999771118164,
+        12.0
+      ],
+      "bounds_min_m": [
+        -7.714999675750732,
+        -10.399999618530273,
+        0.0
+      ],
+      "bounds_max_m": [
+        7.714999675750732,
+        7.214999675750732,
+        12.0
+      ],
+      "triangles": 874,
+      "sections": 5,
+      "slots": [
+        "CommercialBrick",
+        "Roof",
+        "RoofMembrane",
+        "StoreSignTall",
+        "BuildingWindowOpaque"
+      ],
+      "glazed_faces": 15,
+      "saved_geometry_signature": "7acf5af4f7e859b415de5c23b3048412d98482e5b39b5e5416e892ac3429ea29",
+      "entrance": {
+        "style": "double glass with sidelights/kickplates",
+        "door_leaf_count": 2,
+        "personnel_clear_width_m": 2.3,
+        "door_height_m": 2.35,
+        "floor_m": 0.16,
+        "door_front_y_m": -7.16,
+        "detail_bounds_m": [
+          [
+            -2.0,
+            -7.42,
+            0
+          ],
+          [
+            2.0,
+            -7.0,
+            3.4
+          ]
+        ]
+      },
+      "roof_penetrations": []
+    },
+    {
+      "name": "Shop_C_SteppedFront",
+      "category": "Shop",
+      "variant": "C",
+      "reference_asset_id": "building.shop.a",
+      "dimensions_m": [
+        15.429999351501465,
+        17.614999771118164,
+        11.600000381469727
+      ],
+      "bounds_min_m": [
+        -7.714999675750732,
+        -10.399999618530273,
+        0.0
+      ],
+      "bounds_max_m": [
+        7.714999675750732,
+        7.214999675750732,
+        11.600000381469727
+      ],
+      "triangles": 742,
+      "sections": 5,
+      "slots": [
+        "CommercialBrick",
+        "Roof",
+        "RoofMembrane",
+        "StoreSignTall",
+        "BuildingWindowOpaque"
+      ],
+      "glazed_faces": 15,
+      "saved_geometry_signature": "31aafb25e59864f489ae95e8c63ba11dd60a32c018b3963f7cafc485cdea4e04",
+      "entrance": {
+        "style": "automatic sliding pair",
+        "door_leaf_count": 2,
+        "personnel_clear_width_m": 2.4,
+        "door_height_m": 2.35,
+        "floor_m": 0.16,
+        "door_front_y_m": -7.16,
+        "detail_bounds_m": [
+          [
+            -2.4,
+            -7.42,
+            0
+          ],
+          [
+            2.4,
+            -7.0,
+            3.4
+          ]
+        ]
+      },
+      "roof_penetrations": []
+    },
+    {
+      "name": "Shop_D_Canopy",
+      "category": "Shop",
+      "variant": "D",
+      "reference_asset_id": "building.shop.a",
+      "dimensions_m": [
+        15.429999351501465,
+        17.614999771118164,
+        12.0
+      ],
+      "bounds_min_m": [
+        -7.714999675750732,
+        -10.399999618530273,
+        0.0
+      ],
+      "bounds_max_m": [
+        7.714999675750732,
+        7.214999675750732,
+        12.0
+      ],
+      "triangles": 794,
+      "sections": 5,
+      "slots": [
+        "CommercialBrick",
+        "Roof",
+        "RoofMembrane",
+        "StoreSignTall",
+        "BuildingWindowOpaque"
+      ],
+      "glazed_faces": 15,
+      "saved_geometry_signature": "ab7902c424ef0bcfc260dae5cc4860a14663070a3a17ef9eb97070d48a9c5c90",
+      "entrance": {
+        "style": "glazed double-door vestibule",
+        "door_leaf_count": 2,
+        "personnel_clear_width_m": 2.3,
+        "door_height_m": 2.35,
+        "floor_m": 0.16,
+        "door_front_y_m": -7.84,
+        "detail_bounds_m": [
+          [
+            -1.625,
+            -8.1,
+            0
+          ],
+          [
+            1.625,
+            -7.0,
+            3.4
+          ]
+        ]
+      },
+      "roof_penetrations": []
+    },
+    {
+      "name": "Factory_A_Current",
+      "category": "Factory",
+      "variant": "A current",
+      "reference_asset_id": "building.factory.a",
+      "dimensions_m": [
+        16.0,
+        17.899999618530273,
+        17.0
+      ],
+      "bounds_min_m": [
+        -8.0,
+        -10.399999618530273,
+        0.0
+      ],
+      "bounds_max_m": [
+        8.0,
+        7.5,
+        17.0
+      ],
+      "triangles": 1058,
+      "sections": 5,
+      "slots": [
+        "IndustrialBrick",
+        "Roof",
+        "IndustrialMechanical",
+        "RoofMetal",
+        "BuildingWindowOpaque"
+      ],
+      "glazed_faces": 17,
+      "saved_geometry_signature": "1aeb4e2683e5806102f88c3d9241ac7eaeb2dd77c8126f189009fbb218d5c968",
+      "entrance": {
+        "style": "glazed sectional garage",
+        "personnel": {
+          "center_x_m": 5.2,
+          "front_y_m": -7.15,
+          "width_m": 1.1,
+          "height_m": 2.05,
+          "floor_m": 0.16,
+          "path_bounds_m": [
+            [
+              4.4750000000000005,
+              -10.4,
+              0
+            ],
+            [
+              5.925,
+              -7.06,
+              0.16
+            ]
+          ]
+        },
+        "freight": [
+          {
+            "center_x_m": 0,
+            "width_m": 5.65,
+            "height_m": 4.55,
+            "floor_m": 0.08,
+            "front_y_m": -7.17,
+            "style": "glazed sectional"
+          }
+        ],
+        "dock": null,
+        "detail_bounds_m": [
+          [
+            -5.35,
+            -10.55,
+            0
+          ],
+          [
+            6.0,
+            -6.9,
+            5.3
+          ]
+        ]
+      },
+      "roof_penetrations": []
+    },
+    {
+      "name": "Factory_B_Sawtooth",
+      "category": "Factory",
+      "variant": "B",
+      "reference_asset_id": "building.factory.a",
+      "dimensions_m": [
+        16.0,
+        18.0,
+        16.100000381469727
+      ],
+      "bounds_min_m": [
+        -8.0,
+        -10.399999618530273,
+        0.0
+      ],
+      "bounds_max_m": [
+        8.0,
+        7.599999904632568,
+        16.100000381469727
+      ],
+      "triangles": 1416,
+      "sections": 5,
+      "slots": [
+        "IndustrialBrick",
+        "Roof",
+        "IndustrialMechanical",
+        "RoofMetal",
+        "BuildingWindowOpaque"
+      ],
+      "glazed_faces": 21,
+      "saved_geometry_signature": "81c2ecb6657dfe350290105ecd68d6874e8aadd4d595e5da711335513bf6500a",
+      "entrance": {
+        "style": "warehouse roller shutter",
+        "personnel": {
+          "center_x_m": 5.2,
+          "front_y_m": -7.15,
+          "width_m": 1.1,
+          "height_m": 2.05,
+          "floor_m": 0.16,
+          "path_bounds_m": [
+            [
+              4.4750000000000005,
+              -10.4,
+              0
+            ],
+            [
+              5.925,
+              -7.06,
+              0.16
+            ]
+          ]
+        },
+        "freight": [
+          {
+            "center_x_m": 0,
+            "width_m": 5.65,
+            "height_m": 4.55,
+            "floor_m": 0.08,
+            "front_y_m": -7.17,
+            "style": "roller shutter"
+          }
+        ],
+        "dock": null,
+        "detail_bounds_m": [
+          [
+            -5.35,
+            -10.55,
+            0
+          ],
+          [
+            6.0,
+            -6.9,
+            5.3
+          ]
+        ]
+      },
+      "roof_penetrations": [
+        {
+          "center_m": [
+            -5.0,
+            -4.3
+          ],
+          "radius_m": 0.86,
+          "roof_z_m": 8.056000000000001,
+          "top_m": 16.1,
+          "style": "boiler",
+          "roof_panel_clearance_m": 0.25,
+          "roof": "sawtooth-front"
+        }
+      ]
+    },
+    {
+      "name": "Factory_C_TwinGable",
+      "category": "Factory",
+      "variant": "C",
+      "reference_asset_id": "building.factory.a",
+      "dimensions_m": [
+        16.0,
+        17.899999618530273,
+        14.760000228881836
+      ],
+      "bounds_min_m": [
+        -8.0,
+        -10.399999618530273,
+        0.0
+      ],
+      "bounds_max_m": [
+        8.0,
+        7.5,
+        14.760000228881836
+      ],
+      "triangles": 1266,
+      "sections": 5,
+      "slots": [
+        "IndustrialBrick",
+        "Roof",
+        "IndustrialMechanical",
+        "RoofMetal",
+        "BuildingWindowOpaque"
+      ],
+      "glazed_faces": 13,
+      "saved_geometry_signature": "94f4c77b3278236fd52642764995114eb957bdcdf5ccbeaca21e3078a6c2236a",
+      "entrance": {
+        "style": "raised loading dock",
+        "personnel": {
+          "center_x_m": 5.2,
+          "front_y_m": -7.15,
+          "width_m": 1.1,
+          "height_m": 2.05,
+          "floor_m": 0.16,
+          "path_bounds_m": [
+            [
+              4.4750000000000005,
+              -10.4,
+              0
+            ],
+            [
+              5.925,
+              -7.06,
+              0.16
+            ]
+          ]
+        },
+        "freight": [
+          {
+            "center_x_m": 0,
+            "width_m": 5.65,
+            "height_m": 3.65,
+            "floor_m": 1.05,
+            "front_y_m": -7.17,
+            "style": "roller shutter"
+          }
+        ],
+        "dock": {
+          "platform_top_m": 1.05,
+          "platform_bounds_m": [
+            [
+              -3.2,
+              -9.47,
+              0
+            ],
+            [
+              3.2,
+              -7.05,
+              1.05
+            ]
+          ],
+          "step_count": 5,
+          "step_rise_m": 0.21
+        },
+        "detail_bounds_m": [
+          [
+            -5.35,
+            -10.55,
+            0
+          ],
+          [
+            6.0,
+            -6.9,
+            5.3
+          ]
+        ]
+      },
+      "roof_penetrations": [
+        {
+          "center_m": [
+            -4,
+            1.5
+          ],
+          "radius_m": 0.6,
+          "roof_z_m": 9.25,
+          "top_m": 14.4,
+          "style": "capped",
+          "roof_panel_clearance_m": 0.25,
+          "roof": "twin-gable-left"
+        },
+        {
+          "center_m": [
+            4,
+            3.5
+          ],
+          "radius_m": 0.6,
+          "roof_z_m": 9.25,
+          "top_m": 12.6,
+          "style": "capped",
+          "roof_panel_clearance_m": 0.25,
+          "roof": "twin-gable-right"
+        }
+      ]
+    },
+    {
+      "name": "Factory_D_Clerestory",
+      "category": "Factory",
+      "variant": "D",
+      "reference_asset_id": "building.factory.a",
+      "dimensions_m": [
+        16.0,
+        17.899999618530273,
+        12.5
+      ],
+      "bounds_min_m": [
+        -8.0,
+        -10.399999618530273,
+        0.0
+      ],
+      "bounds_max_m": [
+        8.0,
+        7.5,
+        12.5
+      ],
+      "triangles": 1638,
+      "sections": 5,
+      "slots": [
+        "IndustrialBrick",
+        "Roof",
+        "IndustrialMechanical",
+        "RoofMetal",
+        "BuildingWindowOpaque"
+      ],
+      "glazed_faces": 23,
+      "saved_geometry_signature": "741bafc68afc8c9c898a6521caa7a5bf413f3b4ba8cccbb3ac8dc5e22fe103c4",
+      "entrance": {
+        "style": "two workshop sectional bays",
+        "personnel": {
+          "center_x_m": 5.2,
+          "front_y_m": -7.15,
+          "width_m": 1.1,
+          "height_m": 2.05,
+          "floor_m": 0.16,
+          "path_bounds_m": [
+            [
+              4.4750000000000005,
+              -10.4,
+              0
+            ],
+            [
+              5.925,
+              -7.06,
+              0.16
+            ]
+          ]
+        },
+        "freight": [
+          {
+            "center_x_m": -1.47,
+            "width_m": 2.6,
+            "height_m": 4.45,
+            "floor_m": 0.08,
+            "front_y_m": -7.17,
+            "style": "glazed sectional"
+          },
+          {
+            "center_x_m": 1.47,
+            "width_m": 2.6,
+            "height_m": 4.45,
+            "floor_m": 0.08,
+            "front_y_m": -7.17,
+            "style": "glazed sectional"
+          }
+        ],
+        "dock": null,
+        "detail_bounds_m": [
+          [
+            -5.35,
+            -10.55,
+            0
+          ],
+          [
+            6.0,
+            -6.9,
+            5.3
+          ]
+        ]
+      },
+      "roof_penetrations": [
+        {
+          "center_m": [
+            5.25,
+            -3.4
+          ],
+          "radius_m": 0.38,
+          "roof_z_m": 7.6,
+          "top_m": 11.3,
+          "style": "plain",
+          "roof_panel_clearance_m": 0.25,
+          "roof": "clerestory-flat-right"
+        },
+        {
+          "center_m": [
+            5.25,
+            0
+          ],
+          "radius_m": 0.46,
+          "roof_z_m": 7.6,
+          "top_m": 12.5,
+          "style": "plain",
+          "roof_panel_clearance_m": 0.25,
+          "roof": "clerestory-flat-right"
+        },
+        {
+          "center_m": [
+            5.25,
+            3.4
+          ],
+          "radius_m": 0.38,
+          "roof_z_m": 7.6,
+          "top_m": 10.8,
+          "style": "plain",
+          "roof_panel_clearance_m": 0.25,
+          "roof": "clerestory-flat-right"
+        }
+      ]
+    }
+  ],
+  "citizen_height_m": 1.43175,
+  "scale_contract": "Accepted body/window scale, roof and entrance direction retained; revised store/personnel/freight doors at citizen scale. All use existing 16m logical lot.",
+  "material_contracts": {
+    "Home": {
+      "ResidentialBrick": "/Game/CitySim/Art/Materials/MI_ResidentialBrick",
+      "HomeSolidDetails": "/Game/CitySim/Art/Materials/M_HomeSolidDetails",
+      "RoofShingles": "/Game/CitySim/Art/Materials/MI_RoofShingles",
+      "HomeWindowOpaque": "/Game/CitySim/Art/Materials/M_HomeWindowOpaque"
+    },
+    "Shop": {
+      "CommercialBrick": "/Game/CitySim/Art/Materials/MI_CommercialBrick",
+      "Roof": "/Game/CitySim/Art/Materials/MI_Roof",
+      "RoofMembrane": "/Game/CitySim/Art/Materials/MI_RoofMembrane",
+      "StoreSignTall": "/Game/CitySim/Art/Materials/MI_StoreSignTall",
+      "BuildingWindowOpaque": "/Game/CitySim/Art/Materials/M_BuildingWindowOpaque"
+    },
+    "Factory": {
+      "IndustrialBrick": "/Game/CitySim/Art/Materials/MI_IndustrialBrick",
+      "Roof": "/Game/CitySim/Art/Materials/MI_Roof",
+      "IndustrialMechanical": "/Game/CitySim/Art/Materials/MI_IndustrialMechanical",
+      "RoofMetal": "/Game/CitySim/Art/Materials/MI_RoofMetal",
+      "BuildingWindowOpaque": "/Game/CitySim/Art/Materials/M_BuildingWindowOpaque"
+    }
+  },
+  "previous_sources": {
+    "CityLowDensityVariants-Revision2.blend": "3a2084c9240aebd099c06af21b32117108cc613af960c249c2c91f1281675d89",
+    "CityLowDensityVariants-Revision3.blend": "66c6fdf5cb067af1f04d1f01940e974e3939cb9e7e35c21cdb16a6b3bd941209",
+    "CityLowDensityVariants.blend": "fa35201af82d3b4580bb909a7fdc355fa7988d997f2c83b29c1f5d27ad2668e0"
+  },
+  "source_inputs": {
+    "CitySimVR/Content/CitySim/Art/Meshes/SM_Building_Factory_A.uasset": "173e318d02da91a0aa22c12635878c17c2056b08c6fdd7f1ab34675c2cf05a7e",
+    "ArtSource/Exports/BuildingWindowStudy/SM_Building_Residential_A.fbx": "c17df28d71744a17c7b3251e4b93dad4cde870ce424866c077e3cf76c9ad367d",
+    "CitySimVR/Content/CitySim/Art/Meshes/SM_Building_Residential_A.uasset": "9a6e2ad79ed3f942b94fd17b010367a06c79efd5e8b907ac1731422bc59f9311",
+    "ArtSource/Blender/CityBuildingWindows.blend": "0d46923a35e9e23a1c6276e94eec4f03a2752a997bcdd813c6a7980a4429c2ab",
+    "ArtSource/Blender/CityResidentialScale.blend": "b4c60861826385fa9aa0f1eed06e717d9683cd777bfc8b20629a1192922d6c54",
+    "ArtSource/Exports/BuildingWindowStudy/SM_Building_Shop_A.fbx": "d5923accb7dc06b6d50f09a4f64c32bbc530ce33fd802fc4a261d35bfd8193af",
+    "ArtSource/Manifests/city_starter_kit.json": "55e9803d46ef6b9883658a34190a648ddd6f2ca8bfb2b5e394481bfef60e1622",
+    "CitySimVR/Content/CitySim/Art/Meshes/SM_Building_Shop_A.uasset": "fe3125a0f3cc668235e118dea30ed9b8b63667181eb83b13387bfbe59f6c7600",
+    "ArtSource/Exports/BuildingWindowStudy/SM_Building_Factory_A.fbx": "51762b1fd66047c6a1bb29b5b2ae7ba287edf43d7c5db9836d6433433efa5af8"
+  },
+  "exports_authored": false,
+  "production_imported": false,
+  "status": "User-approved Blender authoring complete",
+  "approved": true,
+  "approved_date": "2026-10-13",
+  "production_export_deferred": true,
+  "production_integration_deferred": true,
+  "in_game_tests_deferred": true,
+  "review_receipt": {
+    "renders_verified": 44,
+    "source_verification_sha256": "f55e4908f62becddf4600e65d80ce7524937eace29a2170b81b0305c446147c7",
+    "sheets": {
+      "iso": {
+        "sheet": "Artifacts\\D103\\Revision3\\Preview\\iso\\PreviewSheet-01.png",
+        "sheet_sha256": "d00b22140530212b457de3759160aa6a12d8bed915a5da3ce08577fc14e8481a",
+        "references": "Artifacts\\D103\\Revision3\\Preview\\iso\\PreviewSheets.json",
+        "manifest_sha256": "4eed54c24a15a35e7115a6e7f4345bb35781846da903b0933897c6bcf2c548ab"
+      },
+      "front": {
+        "sheet": "Artifacts\\D103\\Revision3\\Preview\\front\\PreviewSheet-01.png",
+        "sheet_sha256": "01aba2c6dca9735b454e17eb6d9172ea91d3d1e889d19833a4a15c3738c8797d",
+        "references": "Artifacts\\D103\\Revision3\\Preview\\front\\PreviewSheets.json",
+        "manifest_sha256": "00c28ab50b61cddfda69ec2fd710187e39eeea3ccd5615bd269805c0fbf9d475"
+      },
+      "back": {
+        "sheet": "Artifacts\\D103\\Revision3\\Preview\\back\\PreviewSheet-01.png",
+        "sheet_sha256": "98672f1480a9e549c86f379db54a8210a341a4affd418a921e97d1c489b496fd",
+        "references": "Artifacts\\D103\\Revision3\\Preview\\back\\PreviewSheets.json",
+        "manifest_sha256": "caaa4094194ea975973c47ef4acfb6f274d213247369e5d2f380f6ef16e47bf9"
+      },
+      "entrance": {
+        "sheet": "Artifacts\\D103\\Revision3\\Preview\\entrance\\PreviewSheet-01.png",
+        "sheet_sha256": "e6a1d25a6f6ccc552e3e3762050322dc9121dc2f512b9b21f4321375585b986e",
+        "references": "Artifacts\\D103\\Revision3\\Preview\\entrance\\PreviewSheets.json",
+        "manifest_sha256": "d59b5561d03b9b67d3692b78af63e65c758299354dffc98afc3da14b0d0dc430"
+      }
+    },
+    "gallery": "Artifacts/D103/Revision3/Review.html",
+    "gallery_sha256": "6819bc66212a29fe539da43a59b74a7764ed45e24d0068491098436fa415ddfe",
+    "first_review_preserved": true,
+    "earlier_reviews_preserved": {
+      "Revision2": true
+    }
+  },
+  "detailed_evidence": "Artifacts/D103/Revision3/{Study,SourceVerification,Delivery}.json",
+  "context_handoff": {
+    "completed_task": "D103",
+    "next_task": "D104",
+    "next_focus": "Separate focused building materials and Unreal rendering; choose concrete targets next.",
+    "preserve": "Approved geometry/scale, all three saved blends, prior reviews, unrelated runtime/audio/player files.",
+    "boundary": "No export, production integration or in-game testing yet.",
+    "session_entry": "docs/DEVELOPMENT_TASKS.md",
+    "commands": "docs/ENVIRONMENT.md",
+    "evidence": "Artifacts/D103/Revision3/Delivery.json"
+  }
+}

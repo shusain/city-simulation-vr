@@ -1,0 +1,69 @@
+{
+  "task": "D79",
+  "provenance": "Original deterministic project-generated textures; no external assets",
+  "brick_tile_m": [
+    1.2,
+    1.2
+  ],
+  "mechanical_tile_m": [
+    0.5,
+    0.5
+  ],
+  "normal_convention": "DirectX (+green in Unreal); preview flips green for Blender",
+  "textures": [
+    {
+      "file": "ArtSource/Textures/BuildingSurfaces/CityBrick_BaseColor.png",
+      "role": "sRGB base color; tintable neutral masonry",
+      "width": 1024,
+      "height": 1024,
+      "sha256": "e4c1ad7446563e3209191ca862fc4c3e065c491debd989765bc843405a5fbbfe",
+      "wrap_mean_step": 0.005573,
+      "interior_mean_step": 0.018614
+    },
+    {
+      "file": "ArtSource/Textures/BuildingSurfaces/CityBrick_Normal.png",
+      "role": "linear DirectX tangent normal",
+      "width": 1024,
+      "height": 1024,
+      "sha256": "cf71dc7902b7c3a99d9fd1e966760af9a7b428de42b22ade5fb810965866d2cc",
+      "wrap_mean_step": 0.000763,
+      "interior_mean_step": 0.011688
+    },
+    {
+      "file": "ArtSource/Textures/BuildingSurfaces/CityBrick_ORM.png",
+      "role": "linear R=AO G=roughness B=metallic(0)",
+      "width": 1024,
+      "height": 1024,
+      "sha256": "39f2f1df859b4052afe98dcb632054398957455d58b205b13702210467a0c6e8",
+      "wrap_mean_step": 0.001911,
+      "interior_mean_step": 0.006074
+    },
+    {
+      "file": "ArtSource/Textures/BuildingSurfaces/CityMechanical_BaseColor.png",
+      "role": "sRGB neutral painted/exposed steel",
+      "width": 512,
+      "height": 512,
+      "sha256": "ea75f9ab4911ad7ecf6a5e0ff5688fdc2c07ed52c3cad007ac58e8d06fe4e5ae",
+      "wrap_mean_step": 0.011703,
+      "interior_mean_step": 0.009424
+    },
+    {
+      "file": "ArtSource/Textures/BuildingSurfaces/CityMechanical_Normal.png",
+      "role": "linear DirectX tangent normal",
+      "width": 512,
+      "height": 512,
+      "sha256": "7a456d3f708d3ee42a7dfb830ac87f95ce27aeeea0e56ac444daca5da510231e",
+      "wrap_mean_step": 0.001154,
+      "interior_mean_step": 0.001216
+    },
+    {
+      "file": "ArtSource/Textures/BuildingSurfaces/CityMechanical_ORM.png",
+      "role": "linear R=AO G=bare-metal roughness B=metallic(1); vertex R selects paint/metal",
+      "width": 512,
+      "height": 512,
+      "sha256": "0e08a253e6c30a15e3675921cab4958c0cdcf088f23f05b5fcc1eb3f87dbec98",
+      "wrap_mean_step": 0.003891,
+      "interior_mean_step": 0.003141
+    }
+  ]
+}

@@ -1,0 +1,136 @@
+{
+  "issue": 278,
+  "status": "published and anonymously verified",
+  "authorization": "Shaun in current chat2026-10-19: Okay can you cut an updated tester distribution and push it to GitHub?",
+  "publication": {
+    "repository": "shusain/city-simulation-vr",
+    "buildId": "playtest-2026.10.19.1",
+    "commit": "0200ac40b4ac75deb08bcd8a7d675f20bbaa4d12",
+    "releaseId": 417454056,
+    "url": "https://github.com/shusain/city-simulation-vr/releases/tag/playtest-2026.10.19.1",
+    "draft": false,
+    "anonymousDownloadsVerified": true,
+    "assets": [
+      {
+        "name": "CitySimVR-playtest-2026.10.19.1-Windows.zip",
+        "size": 509912056,
+        "digest": "sha256:632f2e143cf1d0ebe16ac6ec17aaafe6da45eab94e2975f5537d85d2e130962b",
+        "browser_download_url": "https://github.com/shusain/city-simulation-vr/releases/download/playtest-2026.10.19.1/CitySimVR-playtest-2026.10.19.1-Windows.zip"
+      },
+      {
+        "name": "release-manifest.json",
+        "size": 381,
+        "digest": "sha256:ba418062b09a8fe374f26daf872d45492e277f5a04d9190239c6ceeca856de3f",
+        "browser_download_url": "https://github.com/shusain/city-simulation-vr/releases/download/playtest-2026.10.19.1/release-manifest.json"
+      },
+      {
+        "name": "SHA256SUMS.txt",
+        "size": 111,
+        "digest": "sha256:d993e663beab093af7a50374d423b2299f34213b5b96e1d978084e33602c0956",
+        "browser_download_url": "https://github.com/shusain/city-simulation-vr/releases/download/playtest-2026.10.19.1/SHA256SUMS.txt"
+      }
+    ]
+  },
+  "game_revision": "dev-9553954bf7e67bf990a5",
+  "schema": 72,
+  "candidate": 362,
+  "native_checks": [
+    361,
+    363
+  ],
+  "implementation_tested_sha": "56394c0b493c227ed83aff4a47f5f1561dbe7330",
+  "implementation_merge": "6232ec24242dfbe485a99d2a183b7bae2bc749db",
+  "all44_exported_runtime_bytes_equal_candidate": true,
+  "distribution_qa": {
+    "build": "playtest-2026.10.19.1",
+    "status": "passed focused distribution checks",
+    "profile": "Artifacts\\QA-D73\\26c7ef4f",
+    "source": 362,
+    "archive_and_payload_policy": "passed",
+    "negative_checks": [
+      "tampered hash rejected",
+      "source stage rejected",
+      "missing runtime stops launcher before game"
+    ],
+    "startup": "passed using actual extracted named launcher",
+    "relaunch": "passed using same isolated launcher profile; menus scope",
+    "capture_dimensions": "1280x800",
+    "captures": [
+      {
+        "name": "Entry",
+        "sha256": "7eb99bbd8779046e36e4957062e3a24ebe4940a0983493b97c9b054abba27cb6"
+      },
+      {
+        "name": "NewCitySetup",
+        "sha256": "a7626af71c8091c9285d4b9d3a11b3524a7bef1219ecde07065f16569d35541f"
+      },
+      {
+        "name": "NewCity80",
+        "sha256": "526748674fd975ff6c8f1f9a8a8ad2920db9472c36134e5a48239b2d4f74e741"
+      },
+      {
+        "name": "NewCityReview",
+        "sha256": "af88eb572b2bedb42d8b94600a6bf3b8a51177a46f5074a2285f0c3132b505bb"
+      },
+      {
+        "name": "Taxes",
+        "sha256": "4746e8e6afdcd028420d0e7a9489f010d6c679483177b19ebc640927da50cbf5"
+      },
+      {
+        "name": "LoadPreview",
+        "sha256": "4200baaa92f4ef1e259d42ed42f04e55e852c4e3267dfab3b2fcc5de41697ef8"
+      }
+    ],
+    "full_smoke": "FAILED; retained cd81e0e0 automation report fixture defect #279, no full report/save claim",
+    "qa_checker_note": "26c7ef4f shell completed both native runs successfully then expected old capture names; separate correct six menu-capture validation passes; artifact checker list corrected for future use",
+    "physical_input": "unconfirmed; user building gameplay accepted separately",
+    "headset": "unconfirmed",
+    "screenshots_reviewed": "six focused menu captures manually reviewed; coherent new-city/load/tax UI"
+  },
+  "evidence": [
+    {
+      "Issue": 278,
+      "Name": "evidence-TesterPublication278-release-result-461bec0d4fcc3c01.json",
+      "LocalPath": "C:\\Users\\shaun\\Development\\city-sim-builder\\TesterDistribution\\packages\\playtest-2026.10.19.1\\release-result.json",
+      "Bytes": 1307,
+      "Sha256": "461bec0d4fcc3c019d9c4f6bcb7d5816ba3ea283b70d57cf119a68be965e965d",
+      "Url": "https://git.shaun-husain.com/attachments/6b0c527c-9d1f-4b5c-8d68-16aa899bf0ea",
+      "AttachmentId": "6b0c527c-9d1f-4b5c-8d68-16aa899bf0ea",
+      "Reused": false
+    },
+    {
+      "Issue": 278,
+      "Name": "evidence-TesterPublication278-RuntimeIdentity-d9b0618f90ee52a5.json",
+      "LocalPath": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\Publication-20261019\\RuntimeIdentity.json",
+      "Bytes": 9468,
+      "Sha256": "d9b0618f90ee52a591795ce9a91363215b8f753719e1075ec3f5943e3ebe1326",
+      "Url": "https://git.shaun-husain.com/attachments/9ce7afbf-4a7b-4c02-9c3e-7f0ff2d82303",
+      "AttachmentId": "9ce7afbf-4a7b-4c02-9c3e-7f0ff2d82303",
+      "Reused": false
+    },
+    {
+      "Issue": 278,
+      "Name": "evidence-TesterPublication278-DistributionQA-9763c62daa6b4f72.json",
+      "LocalPath": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\Publication-20261019\\DistributionQA.json",
+      "Bytes": 1837,
+      "Sha256": "9763c62daa6b4f7256451bb8515ae620f9960cc0cf174cd9b1c8c99576b75824",
+      "Url": "https://git.shaun-husain.com/attachments/4cc3af98-261a-46b1-8698-3fc221973a4f",
+      "AttachmentId": "4cc3af98-261a-46b1-8698-3fc221973a4f",
+      "Reused": false
+    },
+    {
+      "Issue": 278,
+      "Name": "evidence-TesterPublication278-FocusedMenus-0abcdc22fa05776e.jpg",
+      "LocalPath": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\Publication-20261019\\FocusedMenus.jpg",
+      "Bytes": 66907,
+      "Sha256": "0abcdc22fa05776e4d1f3e5eb6c52a29888fd7c85e85e286bd205b380bd45f3f",
+      "Url": "https://git.shaun-husain.com/attachments/63a3844d-bea6-4f83-8503-21626c201d98",
+      "AttachmentId": "63a3844d-bea6-4f83-8503-21626c201d98",
+      "Reused": false
+    }
+  ],
+  "quest": "not included; Windows-only release",
+  "maintained_package_and_player_profiles": "unchanged",
+  "worker": "same scheduled worker resumed; fresh server ping; native claim released",
+  "next": "#279 fix legacy full-smoke fixture; #197 grade review and #49 headset checks remain separate"
+}

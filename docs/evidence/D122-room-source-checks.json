@@ -1,0 +1,255 @@
+[
+  {
+    "source": {
+      "key": "repairs",
+      "issue": 77,
+      "version": 1,
+      "pr": 85,
+      "commit": "180a7dc5cbf243839eaaccf41ab013ae77224595",
+      "approval_sha256": "7122038aab1547921ef3892d05b38ad72b8bc54d333c9454af018606a181808e",
+      "png_sha256": "61166a6c64ce9cf57e080e24fb99d5628e32793e3267f7fed719365662020811",
+      "bundle_sha256": "0c22de42b125049b92be054ddf2a28fcb7aef4738071ff7a269fdb8f8c75f22e",
+      "directory": "ArtSource/Generated/comfy/issue-77/v1",
+      "source_context_sha": "d28931af5987d1b91f32499811c06d6c7c215213",
+      "all_artifacts_verified": true
+    },
+    "check": {
+      "pr": 85,
+      "issue": 77,
+      "tests": [
+        "CitySim.Presentation.ContextualZoneVisibility",
+        "CitySim.Presentation.ContinuousHeatMaps",
+        "CitySim.Desktop.SharedContentAndActions",
+        "CitySim.Placement.Transactions"
+      ],
+      "url": "https://drone.shaun-husain.com/CitySimVR/citysim/69",
+      "sha": "180a7dc5cbf243839eaaccf41ab013ae77224595",
+      "exactSourceFilesVerified": 8,
+      "editorSeconds": "113.96",
+      "build": "69",
+      "status": "passed"
+    }
+  },
+  {
+    "source": {
+      "key": "market",
+      "issue": 78,
+      "version": 1,
+      "pr": 87,
+      "commit": "94633be1d549218bf0d927b26950bab17dc2c0a0",
+      "approval_sha256": "fd6821821e08edeea19abbe6f84748ed87483eb1e45c6ebf828ffd7b69faea06",
+      "png_sha256": "477a79928600a3d5bad3651fb64a7d5c24803ca4b980307521f1bf124d5c4398",
+      "bundle_sha256": "8ec29972b1b4bc2628e3f2fada3b980e548b06959a44dc832997573bbfc29e7a",
+      "directory": "ArtSource/Generated/comfy/issue-78/v1",
+      "source_context_sha": "d28931af5987d1b91f32499811c06d6c7c215213",
+      "all_artifacts_verified": true
+    },
+    "check": {
+      "pr": 87,
+      "issue": 78,
+      "tests": [
+        "CitySim.Presentation.ContextualZoneVisibility",
+        "CitySim.Presentation.ContinuousHeatMaps",
+        "CitySim.Desktop.SharedContentAndActions",
+        "CitySim.Placement.Transactions"
+      ],
+      "url": "https://drone.shaun-husain.com/CitySimVR/citysim/70",
+      "sha": "94633be1d549218bf0d927b26950bab17dc2c0a0",
+      "exactSourceFilesVerified": 8,
+      "editorSeconds": "87.92",
+      "build": "70",
+      "status": "passed"
+    }
+  },
+  {
+    "source": {
+      "key": "bakery",
+      "issue": 79,
+      "version": 1,
+      "pr": 89,
+      "commit": "60664d3965ff0fad6d479e7250d3700ccea64227",
+      "approval_sha256": "96f1be88df8caad75259fe112bf09664b3a9dcd22ee827dcfcda3ad00bfc84ae",
+      "png_sha256": "b21fd4307983fe8e7a7e455f3fab0bd46785e057809404334c18045dc0dd6ee1",
+      "bundle_sha256": "c8ee00913beddf6fd10ac2ad80177b62ee803e66a6ed2519421ee5964e8f70dd",
+      "directory": "ArtSource/Generated/comfy/issue-79/v1",
+      "source_context_sha": "d28931af5987d1b91f32499811c06d6c7c215213",
+      "all_artifacts_verified": true
+    },
+    "check": {
+      "pr": 89,
+      "issue": 79,
+      "build": "71",
+      "editorSeconds": "147.14",
+      "sha": "60664d3965ff0fad6d479e7250d3700ccea64227",
+      "tests": [
+        "CitySim.Presentation.ContextualZoneVisibility",
+        "CitySim.Presentation.ContinuousHeatMaps",
+        "CitySim.Desktop.SharedContentAndActions",
+        "CitySim.Placement.Transactions"
+      ],
+      "exactSourceFilesVerified": 8,
+      "status": "passed",
+      "url": "https://drone.shaun-husain.com/CitySimVR/citysim/71"
+    }
+  },
+  {
+    "source": {
+      "key": "cafe",
+      "issue": 80,
+      "version": 1,
+      "pr": 91,
+      "commit": "897d8b85130f102f714d0ac9063fcd4440875c08",
+      "approval_sha256": "38dd9eddef0238b9c53b7da51e3beb4015e957cf9f193b3aee1ac0fde754bc2b",
+      "png_sha256": "f36a05a9fda1fbd7f180d14bcdafa4a569e7a0eef55d52e5025aff6ee482eaad",
+      "bundle_sha256": "7f395d33fd79b725cfa2b2f0c85c161aff002afafc0ec1312dc2b9b04e20d1fb",
+      "directory": "ArtSource/Generated/comfy/issue-80/v1",
+      "source_context_sha": "d28931af5987d1b91f32499811c06d6c7c215213",
+      "all_artifacts_verified": true
+    },
+    "check": {
+      "build": "72",
+      "pr": 91,
+      "status": "passed",
+      "issue": 80,
+      "sha": "897d8b85130f102f714d0ac9063fcd4440875c08",
+      "url": "https://drone.shaun-husain.com/CitySimVR/citysim/72",
+      "testedMergeSha": "4581e29ebbf3d7273eb058e965758eda54e09a91",
+      "exactSourceFilesVerified": 8,
+      "editorSeconds": "96.55",
+      "tests": [
+        "CitySim.Presentation.ContextualZoneVisibility",
+        "CitySim.Presentation.ContinuousHeatMaps",
+        "CitySim.Desktop.SharedContentAndActions",
+        "CitySim.Placement.Transactions"
+      ]
+    }
+  },
+  {
+    "source": {
+      "key": "books",
+      "issue": 81,
+      "version": 1,
+      "pr": 93,
+      "commit": "6ab67ffb3d53f0e6c7d41dab6fac06b97a8768fd",
+      "approval_sha256": "476d15eb56c8bf2df4183fe8cb3a1a48609634d1deb1fc46384e87d86602c628",
+      "png_sha256": "c93711c4318cd9f11d1780154ccca0ab3ecf07a327150dc373f9f299b53075a2",
+      "bundle_sha256": "3d78c1fb6b1abaf71387ed434848e4d53dd89e41304b5d36d4644bf44470ba39",
+      "directory": "ArtSource/Generated/comfy/issue-81/v1",
+      "source_context_sha": "d28931af5987d1b91f32499811c06d6c7c215213",
+      "all_artifacts_verified": true
+    },
+    "check": {
+      "sha": "6ab67ffb3d53f0e6c7d41dab6fac06b97a8768fd",
+      "editorSeconds": "94.41",
+      "pr": 93,
+      "build": "73",
+      "tests": [
+        "CitySim.Presentation.ContextualZoneVisibility",
+        "CitySim.Presentation.ContinuousHeatMaps",
+        "CitySim.Desktop.SharedContentAndActions",
+        "CitySim.Placement.Transactions"
+      ],
+      "issue": 81,
+      "status": "passed",
+      "url": "https://drone.shaun-husain.com/CitySimVR/citysim/73",
+      "testedMergeSha": "6ffcfff0deb9298cf922f9bcf8d107b366376f62",
+      "exactSourceFilesVerified": 8
+    }
+  },
+  {
+    "source": {
+      "key": "pharmacy",
+      "issue": 82,
+      "version": 1,
+      "pr": 95,
+      "commit": "ae64cd6d7c1815892318b320d89494b7cb32ac64",
+      "approval_sha256": "3f1cbe12d5444d0092e4aaa8256db92d36f2e7c36f96c25b6fa85ab75c53b932",
+      "png_sha256": "ad274ed9876347425862c972054f6c1273f523cbd8d60635b4c5ab948078d0ea",
+      "bundle_sha256": "b44bc7fa512432afc7db1178911f068c427bcc6b17c66d64276d6a8e1fba77bc",
+      "directory": "ArtSource/Generated/comfy/issue-82/v1",
+      "source_context_sha": "86fe0c28603e8eeec5a969193d8e2a11e2111e39",
+      "all_artifacts_verified": true
+    },
+    "check": {
+      "url": "https://drone.shaun-husain.com/CitySimVR/citysim/74",
+      "pr": 95,
+      "tests": [
+        "CitySim.Presentation.ContextualZoneVisibility",
+        "CitySim.Presentation.ContinuousHeatMaps",
+        "CitySim.Desktop.SharedContentAndActions",
+        "CitySim.Placement.Transactions"
+      ],
+      "issue": 82,
+      "testedMergeSha": "abcb67a176a1e8f3d5ca98a52a198e6e2a9120d4",
+      "exactSourceFilesVerified": 8,
+      "build": "74",
+      "editorSeconds": "94.49",
+      "status": "passed",
+      "sha": "ae64cd6d7c1815892318b320d89494b7cb32ac64"
+    }
+  },
+  {
+    "source": {
+      "key": "outfitters",
+      "issue": 83,
+      "version": 1,
+      "pr": 97,
+      "commit": "77985407feb452c661f1e70d0b4c549ac4be7c17",
+      "approval_sha256": "db64069481cd0f8870c9d8ce1cf0eeda4721399d021354e82bdf8cb7f4ca8733",
+      "png_sha256": "7e438f4cd7854894024f29667a59c8e5d3652cf5da0d4f8743ba9dfa3b557682",
+      "bundle_sha256": "613dacdd225ae0b2326ac21159770ef5038566588ea09ad683ca36fecd1ef008",
+      "directory": "ArtSource/Generated/comfy/issue-83/v1",
+      "source_context_sha": "86fe0c28603e8eeec5a969193d8e2a11e2111e39",
+      "all_artifacts_verified": true
+    },
+    "check": {
+      "url": "https://drone.shaun-husain.com/CitySimVR/citysim/75",
+      "build": "75",
+      "sha": "77985407feb452c661f1e70d0b4c549ac4be7c17",
+      "editorSeconds": "95.83",
+      "pr": 97,
+      "issue": 83,
+      "exactSourceFilesVerified": 8,
+      "tests": [
+        "CitySim.Presentation.ContextualZoneVisibility",
+        "CitySim.Presentation.ContinuousHeatMaps",
+        "CitySim.Desktop.SharedContentAndActions",
+        "CitySim.Placement.Transactions"
+      ],
+      "testedMergeSha": "8751cff501cf2825cd2e40a2bbb17903f17766b5",
+      "status": "passed"
+    }
+  },
+  {
+    "source": {
+      "key": "tech",
+      "issue": 84,
+      "version": 1,
+      "pr": 99,
+      "commit": "b7523013caba34d5f2bb7d03fd12a2a673ec2e7b",
+      "approval_sha256": "6f2ae130fe1a43e11b419e4bf2dbded7b36f1a46c9b3ab31c4850993afd69585",
+      "png_sha256": "aa16e4a87f0295c4529b104d731b54e5c034c889a3c38a79aac46c0c71444dec",
+      "bundle_sha256": "f26cb55b24278127d69d64b8ba1d20b6c7148f6503426c2e32913ace3c6229ea",
+      "directory": "ArtSource/Generated/comfy/issue-84/v1",
+      "source_context_sha": "86fe0c28603e8eeec5a969193d8e2a11e2111e39",
+      "all_artifacts_verified": true
+    },
+    "check": {
+      "sha": "b7523013caba34d5f2bb7d03fd12a2a673ec2e7b",
+      "status": "passed",
+      "build": "76",
+      "testedMergeSha": "2e61135bc465c6f707ed7c165190e7475c74a7dc",
+      "tests": [
+        "CitySim.Presentation.ContextualZoneVisibility",
+        "CitySim.Presentation.ContinuousHeatMaps",
+        "CitySim.Desktop.SharedContentAndActions",
+        "CitySim.Placement.Transactions"
+      ],
+      "pr": 99,
+      "exactSourceFilesVerified": 8,
+      "url": "https://drone.shaun-husain.com/CitySimVR/citysim/76",
+      "editorSeconds": "89.98",
+      "issue": 84
+    }
+  }
+]

@@ -1,0 +1,660 @@
+{
+  "removed": [
+    "Admin_Belt_0.22",
+    "Admin_Belt_3.2",
+    "Admin_Belt_6.28",
+    "Hall_ParapetSide_-8",
+    "Hall_ParapetSide_18",
+    "Hall_ParapetEnd_-8",
+    "Hall_ParapetEnd_10"
+  ],
+  "strips": {
+    "TrimR2_Lower_F": [
+      [
+        -20.059999465942383,
+        -8.059999465942383,
+        0.1599999964237213
+      ],
+      [
+        -9.940000534057617,
+        -7.989999771118164,
+        0.2800000011920929
+      ]
+    ],
+    "TrimR2_Lower_B": [
+      [
+        -20.059999465942383,
+        4.990000247955322,
+        0.1599999964237213
+      ],
+      [
+        -9.940000534057617,
+        5.059999942779541,
+        0.2800000011920929
+      ]
+    ],
+    "TrimR2_Lower_W": [
+      [
+        -20.059999465942383,
+        -7.989999771118164,
+        0.1599999964237213
+      ],
+      [
+        -19.989999771118164,
+        4.989999771118164,
+        0.2800000011920929
+      ]
+    ],
+    "TrimR2_Lower_E": [
+      [
+        -10.010000228881836,
+        -7.989999771118164,
+        0.1599999964237213
+      ],
+      [
+        -9.940000534057617,
+        0.9899997711181641,
+        0.2800000011920929
+      ]
+    ],
+    "TrimR2_Middle_F": [
+      [
+        -20.059999465942383,
+        -8.059999465942383,
+        3.140000104904175
+      ],
+      [
+        -9.940000534057617,
+        -7.989999771118164,
+        3.259999990463257
+      ]
+    ],
+    "TrimR2_Middle_B": [
+      [
+        -20.059999465942383,
+        4.990000247955322,
+        3.140000104904175
+      ],
+      [
+        -9.940000534057617,
+        5.059999942779541,
+        3.259999990463257
+      ]
+    ],
+    "TrimR2_Middle_W": [
+      [
+        -20.059999465942383,
+        -7.989999771118164,
+        3.140000104904175
+      ],
+      [
+        -19.989999771118164,
+        4.989999771118164,
+        3.259999990463257
+      ]
+    ],
+    "TrimR2_Middle_E": [
+      [
+        -10.010000228881836,
+        -7.989999771118164,
+        3.140000104904175
+      ],
+      [
+        -9.940000534057617,
+        0.9899997711181641,
+        3.259999990463257
+      ]
+    ],
+    "TrimR2_Upper_F": [
+      [
+        -20.059999465942383,
+        -8.059999465942383,
+        6.240000247955322
+      ],
+      [
+        -9.940000534057617,
+        -7.989999771118164,
+        6.360000133514404
+      ]
+    ],
+    "TrimR2_Upper_B": [
+      [
+        -20.059999465942383,
+        4.990000247955322,
+        6.240000247955322
+      ],
+      [
+        -9.940000534057617,
+        5.059999942779541,
+        6.360000133514404
+      ]
+    ],
+    "TrimR2_Upper_W": [
+      [
+        -20.059999465942383,
+        -7.989999771118164,
+        6.240000247955322
+      ],
+      [
+        -19.989999771118164,
+        4.989999771118164,
+        6.360000133514404
+      ]
+    ],
+    "TrimR2_Upper_E": [
+      [
+        -10.010000228881836,
+        -7.989999771118164,
+        6.240000247955322
+      ],
+      [
+        -9.940000534057617,
+        4.989999771118164,
+        6.360000133514404
+      ]
+    ],
+    "ParapetR2_W": [
+      [
+        -8.0,
+        -8.0,
+        8.15000057220459
+      ],
+      [
+        -7.779999732971191,
+        10.0,
+        8.529999732971191
+      ]
+    ],
+    "ParapetR2_E": [
+      [
+        17.779998779296875,
+        -8.0,
+        8.15000057220459
+      ],
+      [
+        18.0,
+        10.0,
+        8.529999732971191
+      ]
+    ],
+    "ParapetR2_F": [
+      [
+        -7.779999732971191,
+        -8.0,
+        8.15000057220459
+      ],
+      [
+        17.779998779296875,
+        -7.779999732971191,
+        8.529999732971191
+      ]
+    ],
+    "ParapetR2_B": [
+      [
+        -7.779999732971191,
+        9.780000686645508,
+        8.15000057220459
+      ],
+      [
+        17.779998779296875,
+        10.0,
+        8.529999732971191
+      ]
+    ]
+  },
+  "joints": [
+    {
+      "a": "TrimR2_Lower_F",
+      "b": "TrimR2_Lower_W",
+      "contact_planes": [
+        {
+          "axis": 1,
+          "coordinate": -7.989999771118164
+        }
+      ],
+      "gaps": [
+        0,
+        0.0,
+        0
+      ]
+    },
+    {
+      "a": "TrimR2_Lower_F",
+      "b": "TrimR2_Lower_E",
+      "contact_planes": [
+        {
+          "axis": 1,
+          "coordinate": -7.989999771118164
+        }
+      ],
+      "gaps": [
+        0,
+        0.0,
+        0
+      ]
+    },
+    {
+      "a": "TrimR2_Lower_B",
+      "b": "TrimR2_Lower_W",
+      "contact_planes": [
+        {
+          "axis": 1,
+          "coordinate": 4.990000009536743
+        }
+      ],
+      "gaps": [
+        0,
+        4.76837158203125e-07,
+        0
+      ]
+    },
+    {
+      "a": "TrimR2_Middle_F",
+      "b": "TrimR2_Middle_W",
+      "contact_planes": [
+        {
+          "axis": 1,
+          "coordinate": -7.989999771118164
+        }
+      ],
+      "gaps": [
+        0,
+        0.0,
+        0
+      ]
+    },
+    {
+      "a": "TrimR2_Middle_F",
+      "b": "TrimR2_Middle_E",
+      "contact_planes": [
+        {
+          "axis": 1,
+          "coordinate": -7.989999771118164
+        }
+      ],
+      "gaps": [
+        0,
+        0.0,
+        0
+      ]
+    },
+    {
+      "a": "TrimR2_Middle_B",
+      "b": "TrimR2_Middle_W",
+      "contact_planes": [
+        {
+          "axis": 1,
+          "coordinate": 4.990000009536743
+        }
+      ],
+      "gaps": [
+        0,
+        4.76837158203125e-07,
+        0
+      ]
+    },
+    {
+      "a": "TrimR2_Upper_F",
+      "b": "TrimR2_Upper_W",
+      "contact_planes": [
+        {
+          "axis": 1,
+          "coordinate": -7.989999771118164
+        }
+      ],
+      "gaps": [
+        0,
+        0.0,
+        0
+      ]
+    },
+    {
+      "a": "TrimR2_Upper_F",
+      "b": "TrimR2_Upper_E",
+      "contact_planes": [
+        {
+          "axis": 1,
+          "coordinate": -7.989999771118164
+        }
+      ],
+      "gaps": [
+        0,
+        0.0,
+        0
+      ]
+    },
+    {
+      "a": "TrimR2_Upper_B",
+      "b": "TrimR2_Upper_W",
+      "contact_planes": [
+        {
+          "axis": 1,
+          "coordinate": 4.990000009536743
+        }
+      ],
+      "gaps": [
+        0,
+        4.76837158203125e-07,
+        0
+      ]
+    },
+    {
+      "a": "TrimR2_Upper_B",
+      "b": "TrimR2_Upper_E",
+      "contact_planes": [
+        {
+          "axis": 1,
+          "coordinate": 4.990000009536743
+        }
+      ],
+      "gaps": [
+        0,
+        4.76837158203125e-07,
+        0
+      ]
+    },
+    {
+      "a": "ParapetR2_F",
+      "b": "ParapetR2_W",
+      "contact_planes": [
+        {
+          "axis": 0,
+          "coordinate": -7.779999732971191
+        }
+      ],
+      "gaps": [
+        0.0,
+        0,
+        0
+      ]
+    },
+    {
+      "a": "ParapetR2_F",
+      "b": "ParapetR2_E",
+      "contact_planes": [
+        {
+          "axis": 0,
+          "coordinate": 17.779998779296875
+        }
+      ],
+      "gaps": [
+        0.0,
+        0,
+        0
+      ]
+    },
+    {
+      "a": "ParapetR2_B",
+      "b": "ParapetR2_W",
+      "contact_planes": [
+        {
+          "axis": 0,
+          "coordinate": -7.779999732971191
+        }
+      ],
+      "gaps": [
+        0.0,
+        0,
+        0
+      ]
+    },
+    {
+      "a": "ParapetR2_B",
+      "b": "ParapetR2_E",
+      "contact_planes": [
+        {
+          "axis": 0,
+          "coordinate": 17.779998779296875
+        }
+      ],
+      "gaps": [
+        0.0,
+        0,
+        0
+      ]
+    }
+  ],
+  "required_joint_count": 14,
+  "roof_top_m": 8.15999984741211,
+  "preserved_components": [
+    "Admin_Wall",
+    "SortingHall_Wall",
+    "EnclosedConnector",
+    "Admin_SlateRoof",
+    "Hall_SlateRoof",
+    "Front_Pilaster_-7.7",
+    "Front_Pilaster_4",
+    "Front_Pilaster_17.7",
+    "ReceivingDoor_-2",
+    "BayJamb_-2_-2.55",
+    "BayJamb_-2_2.55",
+    "BayHeader_-2",
+    "Section_-2_0.65",
+    "Section_-2_1.3",
+    "Section_-2_1.95",
+    "Section_-2_2.6",
+    "Section_-2_3.25",
+    "Section_-2_3.9",
+    "BayCanopy_-2",
+    "ReceivingDoor_10",
+    "BayJamb_10_-2.55",
+    "BayJamb_10_2.55",
+    "BayHeader_10",
+    "Section_10_0.65",
+    "Section_10_1.3",
+    "Section_10_1.95",
+    "Section_10_2.6",
+    "Section_10_3.25",
+    "Section_10_3.9",
+    "BayCanopy_10",
+    "PublicDoor_-15.51",
+    "PublicDoor_-14.49",
+    "EntryJamb_-16.15",
+    "EntryJamb_-13.85",
+    "EntryHeader",
+    "PublicShelter",
+    "PublicSignPanel",
+    "OfficeFront_-18.4_1.8",
+    "OfficeFront_-18.4_1.8_Jamb-1",
+    "OfficeFront_-18.4_1.8_Rail-1",
+    "OfficeFront_-18.4_1.8_Jamb1",
+    "OfficeFront_-18.4_1.8_Rail1",
+    "OfficeFront_-11.6_1.8",
+    "OfficeFront_-11.6_1.8_Jamb-1",
+    "OfficeFront_-11.6_1.8_Rail-1",
+    "OfficeFront_-11.6_1.8_Jamb1",
+    "OfficeFront_-11.6_1.8_Rail1",
+    "OfficeWest_-5.8_1.8",
+    "OfficeWest_-5.8_1.8_Jamb-1",
+    "OfficeWest_-5.8_1.8_Rail-1",
+    "OfficeWest_-5.8_1.8_Jamb1",
+    "OfficeWest_-5.8_1.8_Rail1",
+    "OfficeWest_-2.4_1.8",
+    "OfficeWest_-2.4_1.8_Jamb-1",
+    "OfficeWest_-2.4_1.8_Rail-1",
+    "OfficeWest_-2.4_1.8_Jamb1",
+    "OfficeWest_-2.4_1.8_Rail1",
+    "OfficeWest_1_1.8",
+    "OfficeWest_1_1.8_Jamb-1",
+    "OfficeWest_1_1.8_Rail-1",
+    "OfficeWest_1_1.8_Jamb1",
+    "OfficeWest_1_1.8_Rail1",
+    "OfficeWest_3.4_1.8",
+    "OfficeWest_3.4_1.8_Jamb-1",
+    "OfficeWest_3.4_1.8_Rail-1",
+    "OfficeWest_3.4_1.8_Jamb1",
+    "OfficeWest_3.4_1.8_Rail1",
+    "OfficeRear_-18_1.8",
+    "OfficeRear_-18_1.8_Jamb-1",
+    "OfficeRear_-18_1.8_Rail-1",
+    "OfficeRear_-18_1.8_Jamb1",
+    "OfficeRear_-18_1.8_Rail1",
+    "OfficeRear_-15_1.8",
+    "OfficeRear_-15_1.8_Jamb-1",
+    "OfficeRear_-15_1.8_Rail-1",
+    "OfficeRear_-15_1.8_Jamb1",
+    "OfficeRear_-15_1.8_Rail1",
+    "OfficeRear_-12_1.8",
+    "OfficeRear_-12_1.8_Jamb-1",
+    "OfficeRear_-12_1.8_Rail-1",
+    "OfficeRear_-12_1.8_Jamb1",
+    "OfficeRear_-12_1.8_Rail1",
+    "OfficeFront_-18.4_4.85",
+    "OfficeFront_-18.4_4.85_Jamb-1",
+    "OfficeFront_-18.4_4.85_Rail-1",
+    "OfficeFront_-18.4_4.85_Jamb1",
+    "OfficeFront_-18.4_4.85_Rail1",
+    "OfficeFront_-11.6_4.85",
+    "OfficeFront_-11.6_4.85_Jamb-1",
+    "OfficeFront_-11.6_4.85_Rail-1",
+    "OfficeFront_-11.6_4.85_Jamb1",
+    "OfficeFront_-11.6_4.85_Rail1",
+    "OfficeWest_-5.8_4.85",
+    "OfficeWest_-5.8_4.85_Jamb-1",
+    "OfficeWest_-5.8_4.85_Rail-1",
+    "OfficeWest_-5.8_4.85_Jamb1",
+    "OfficeWest_-5.8_4.85_Rail1",
+    "OfficeWest_-2.4_4.85",
+    "OfficeWest_-2.4_4.85_Jamb-1",
+    "OfficeWest_-2.4_4.85_Rail-1",
+    "OfficeWest_-2.4_4.85_Jamb1",
+    "OfficeWest_-2.4_4.85_Rail1",
+    "OfficeWest_1_4.85",
+    "OfficeWest_1_4.85_Jamb-1",
+    "OfficeWest_1_4.85_Rail-1",
+    "OfficeWest_1_4.85_Jamb1",
+    "OfficeWest_1_4.85_Rail1",
+    "OfficeWest_3.4_4.85",
+    "OfficeWest_3.4_4.85_Jamb-1",
+    "OfficeWest_3.4_4.85_Rail-1",
+    "OfficeWest_3.4_4.85_Jamb1",
+    "OfficeWest_3.4_4.85_Rail1",
+    "OfficeRear_-18_4.85",
+    "OfficeRear_-18_4.85_Jamb-1",
+    "OfficeRear_-18_4.85_Rail-1",
+    "OfficeRear_-18_4.85_Jamb1",
+    "OfficeRear_-18_4.85_Rail1",
+    "OfficeRear_-15_4.85",
+    "OfficeRear_-15_4.85_Jamb-1",
+    "OfficeRear_-15_4.85_Rail-1",
+    "OfficeRear_-15_4.85_Jamb1",
+    "OfficeRear_-15_4.85_Rail1",
+    "OfficeRear_-12_4.85",
+    "OfficeRear_-12_4.85_Jamb-1",
+    "OfficeRear_-12_4.85_Rail-1",
+    "OfficeRear_-12_4.85_Jamb1",
+    "OfficeRear_-12_4.85_Rail1",
+    "HallFrontClerestory_-4",
+    "HallFrontClerestory_-4_Jamb-1",
+    "HallFrontClerestory_-4_Rail-1",
+    "HallFrontClerestory_-4_Jamb1",
+    "HallFrontClerestory_-4_Rail1",
+    "HallFrontClerestory_1",
+    "HallFrontClerestory_1_Jamb-1",
+    "HallFrontClerestory_1_Rail-1",
+    "HallFrontClerestory_1_Jamb1",
+    "HallFrontClerestory_1_Rail1",
+    "HallFrontClerestory_7",
+    "HallFrontClerestory_7_Jamb-1",
+    "HallFrontClerestory_7_Rail-1",
+    "HallFrontClerestory_7_Jamb1",
+    "HallFrontClerestory_7_Rail1",
+    "HallFrontClerestory_13",
+    "HallFrontClerestory_13_Jamb-1",
+    "HallFrontClerestory_13_Rail-1",
+    "HallFrontClerestory_13_Jamb1",
+    "HallFrontClerestory_13_Rail1",
+    "HallEastClerestory_-4",
+    "HallEastClerestory_-4_Jamb-1",
+    "HallEastClerestory_-4_Rail-1",
+    "HallEastClerestory_-4_Jamb1",
+    "HallEastClerestory_-4_Rail1",
+    "HallEastClerestory_1",
+    "HallEastClerestory_1_Jamb-1",
+    "HallEastClerestory_1_Rail-1",
+    "HallEastClerestory_1_Jamb1",
+    "HallEastClerestory_1_Rail1",
+    "HallEastClerestory_6",
+    "HallEastClerestory_6_Jamb-1",
+    "HallEastClerestory_6_Rail-1",
+    "HallEastClerestory_6_Jamb1",
+    "HallEastClerestory_6_Rail1",
+    "RoofVentCurb_-3",
+    "RoofVentCap_-3",
+    "RoofVentCurb_6",
+    "RoofVentCap_6",
+    "RoofVentCurb_14",
+    "RoofVentCap_14",
+    "CycleArrow_0",
+    "CycleArrow_1",
+    "CycleArrow_2",
+    "PressHousing_0",
+    "PressRam_0",
+    "PressTop_0",
+    "Bale_0_0",
+    "BaleStrap_0_0_-0.46",
+    "BaleStrap_0_0_0.46",
+    "Bale_0_1",
+    "BaleStrap_0_1_-0.46",
+    "BaleStrap_0_1_0.46",
+    "Bale_0_2",
+    "BaleStrap_0_2_-0.46",
+    "BaleStrap_0_2_0.46",
+    "PressHousing_1",
+    "PressRam_1",
+    "PressTop_1",
+    "Bale_1_0",
+    "BaleStrap_1_0_-0.46",
+    "BaleStrap_1_0_0.46",
+    "Bale_1_1",
+    "BaleStrap_1_1_-0.46",
+    "BaleStrap_1_1_0.46",
+    "Bale_1_2",
+    "BaleStrap_1_2_-0.46",
+    "BaleStrap_1_2_0.46",
+    "MaterialBinBottom_0",
+    "MaterialBinSide_0_-1.02",
+    "MaterialBinSide_0_1.02",
+    "MaterialBinEnd_0_-0.99",
+    "MaterialBinEnd_0_0.99",
+    "ContainedMaterial_0_0",
+    "ContainedMaterial_0_1",
+    "ContainedMaterial_0_2",
+    "MaterialBinBottom_1",
+    "MaterialBinSide_1_-1.02",
+    "MaterialBinSide_1_1.02",
+    "MaterialBinEnd_1_-0.99",
+    "MaterialBinEnd_1_0.99",
+    "ContainedMaterial_1_0",
+    "ContainedMaterial_1_1",
+    "ContainedMaterial_1_2",
+    "MaterialBinBottom_2",
+    "MaterialBinSide_2_-1.02",
+    "MaterialBinSide_2_1.02",
+    "MaterialBinEnd_2_-0.99",
+    "MaterialBinEnd_2_0.99",
+    "ContainedMaterial_2_0",
+    "ContainedMaterial_2_1",
+    "ContainedMaterial_2_2",
+    "ConveyorBelt_0",
+    "ConveyorHousing_0_-0.85",
+    "ConveyorHousing_0_0.85",
+    "ConveyorCover_0",
+    "ConveyorLeg_0_11.4_-0.82",
+    "ConveyorLeg_0_11.4_0.82",
+    "ConveyorLeg_0_15.4_-0.82",
+    "ConveyorLeg_0_15.4_0.82",
+    "SortingHopper_0",
+    "ConveyorBelt_1",
+    "ConveyorHousing_1_-0.85",
+    "ConveyorHousing_1_0.85",
+    "ConveyorCover_1",
+    "ConveyorLeg_1_11.4_-0.82",
+    "ConveyorLeg_1_11.4_0.82",
+    "ConveyorLeg_1_15.4_-0.82",
+    "ConveyorLeg_1_15.4_0.82",
+    "SortingHopper_1",
+    "CycleMount"
+  ],
+  "all_unchanged_component_snapshots_pass": true
+}

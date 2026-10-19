@@ -1,0 +1,147 @@
+{
+  "task": "D120",
+  "bugs": [
+    "B003",
+    "B004"
+  ],
+  "date": "2026-10-15",
+  "status": "Historical pre-delivery snapshot, superseded by D120-flow-delivery.json",
+  "sourceChanges": [
+    {
+      "path": "CitySimVR\\Source\\CitySimVR\\Private\\Persistence\\CityPersistence.cpp",
+      "sha256": "fd99ff58723cb5bbe9429b8b7ee972c08a7464d169ba1ff9f3426667e2e4ca45"
+    },
+    {
+      "path": "CitySimVR\\Source\\CitySimVR\\Private\\Presentation\\CityBoardActor.cpp",
+      "sha256": "304455539135060a87567758970a554fce66c2896696c509bc7ae76eb74440e3"
+    },
+    {
+      "path": "CitySimVR\\Source\\CitySimVR\\Private\\Simulation\\CityRoadNetwork.cpp",
+      "sha256": "bb73a049278a6379022118d3a7d2d912a06a6500a7454855007a2144056d154f"
+    },
+    {
+      "path": "CitySimVR\\Source\\CitySimVR\\Private\\Simulation\\CityTrafficSimulation.cpp",
+      "sha256": "e266347beebfa8787a0b17914d001ef26ca74de84ea357a397656bd1c4cd91d8"
+    },
+    {
+      "path": "CitySimVR\\Source\\CitySimVR\\Private\\Simulation\\CityTrafficTrips.cpp",
+      "sha256": "1acf11cbb9af807a72bd5e7a687f9a3b828a8e2df80943f8ea09f259773da8a0"
+    },
+    {
+      "path": "CitySimVR\\Source\\CitySimVR\\Private\\Tests\\CityDepartureTests.cpp",
+      "sha256": "f1ca9f3df14d2a429bdb0e00175f15e978d77bd766a10ce71330785c1677f6e3"
+    },
+    {
+      "path": "CitySimVR\\Source\\CitySimVR\\Private\\Tests\\CityShoppingDepartureTests.cpp",
+      "sha256": "0590516d871c90a3d63e6b0ee3c83830aff70929ea86885c1482c2e6107c9cdf"
+    },
+    {
+      "path": "CitySimVR\\Source\\CitySimVR\\Private\\Tests\\CityTrafficSimulationTests.cpp",
+      "sha256": "5559c00fd53d80af703f282a433df42226058b331a065b5571e63bda19bc1a48"
+    },
+    {
+      "path": "CitySimVR\\Source\\CitySimVR\\Private\\Tests\\CityVisibleTrafficTests.cpp",
+      "sha256": "4e51397ea4acf5be8c8c8234a7d7e8e3532f8f484f05659d77f9e2ed4aad2f76"
+    },
+    {
+      "path": "CitySimVR\\Source\\CitySimVR\\Public\\Presentation\\CityBoardActor.h",
+      "sha256": "b6c516f92365b3a1724b9504bd0f0545f5144cb6890981bcc0e04af8e7727f52"
+    },
+    {
+      "path": "CitySimVR\\Source\\CitySimVR\\Public\\Presentation\\CityRoadPresentation.h",
+      "sha256": "d1a036975c88aeaf169ec18073842719c14a83d087fe9bcc49d813ef418b481c"
+    },
+    {
+      "path": "CitySimVR\\Source\\CitySimVR\\Public\\Simulation\\CitySimulationSubsystem.h",
+      "sha256": "cdbc4fd2d1ba9a8818620d3c85276bdb8e13d4b75ce467dbe2b0de49083f2294"
+    },
+    {
+      "path": "CitySimVR\\Source\\CitySimVR\\Public\\Simulation\\CityTrafficSimulation.h",
+      "sha256": "c818aac67f6ed53ddd8d79c980c3c34f23ff9b2f1eaa45f6313043eaf86e599c"
+    }
+  ],
+  "newSources": [
+    {
+      "path": "CitySimVR\\Source\\CitySimVR\\Private\\Tests\\CityFlowRefinementTests.cpp",
+      "sha256": "7cd51d0d4bf0429dbb752c8e7a1437be80e9d81ac14b9bcf1e455ec33a843394"
+    },
+    {
+      "path": "CitySimVR\\Source\\CitySimVR\\Private\\Tests\\CityFlowVisualTests.cpp",
+      "sha256": "eb03d5e8d2197ed0b6edb63475a7071786a18754b237528792f74f3a84e85cd5"
+    }
+  ],
+  "editorCases": [
+    "HighwayLaneYield",
+    "OccupiedShopDeparture",
+    "RollingYieldAndRejoin",
+    "SideBySideAndPassing",
+    "Definitions",
+    "DeterministicGraphTopology",
+    "FreightCargo",
+    "PurchaseArrivalSettlement",
+    "EmergencyIntersectionPriority",
+    "EmergencyYieldAndResume",
+    "FairPortalDepartures",
+    "IntersectionConnectorQueue",
+    "LiveTripLifecycle",
+    "OccupiedResponseCurb",
+    "OpposingResponseYield",
+    "PortalMergeAtConnector",
+    "ReportedShoppingCity",
+    "RestoreAndCatchUp",
+    "SharedLaneAcrossRoutes",
+    "SpeedLimitsAndFollowing",
+    "VisiblePool"
+  ],
+  "editorBuild": "Artifacts/D120/EditorBuild-Eighth.log",
+  "functionalLog": "Artifacts/D120/Tests-Fourth.log",
+  "behavior": [
+    "Origin-only departure admission verified against an occupied shop and blocked origin; stock/funding reservations remain authoritative.",
+    "Two saved pedestrian tracks with pedestrian-scale gaps, passing, interpolated lateral offsets; avenue sidewalk space widened inside its existing cell.",
+    "Local ordinary vehicles roll forward during pull-over and rejoin immediately when safe; headings follow a smooth lateral curve.",
+    "Declared motor lanes now have real routes/connectors, highway responders use the inner lane, ordinary traffic safely moves right without stopping, opposing carriageway continues.",
+    "A fast responder retains clearance behind a merging car for the visible transition step; occupied outer lanes prevent unsafe merges.",
+    "Current67 saves retain optional pedestrianTrack and waiting routes; extra derived lane connectors preserve existing physical network fingerprints."
+  ],
+  "copiedCity": {
+    "originalInputsUnchanged": true,
+    "departureDay": 9,
+    "arrivalDay": 54,
+    "continuationDays": 400,
+    "reloadedDay": 4,
+    "initialPurchases": 388,
+    "finalPurchases": 729
+  },
+  "preserved": {
+    "unchangedInputs": 1263,
+    "intentionalExistingSourceChanges": 13,
+    "previousWindowsDirectory": "Artifacts/D120/PreviousDefaultWindows",
+    "maintainedPackageStill": "dev-879a3534e3c183deda12",
+    "publicDistributionUnchanged": true
+  },
+  "visual": {
+    "initial15Frames": "Artifacts/D120/Visual-Editor-D120/Saved/Automation/Flow",
+    "initialDefect": "Close pedestrian frames were black because the tabletop camera was inside the default near plane. Source now overrides it to0.1cm and validates nonblack pixels/pool counts; final render not verified.",
+    "correctedAttempts": [
+      "Visual-EditorNear.log",
+      "Visual-FinalEditor.log",
+      "Visual-FinalEditor2.log"
+    ],
+    "stopReason": "Zen PUT cache writes return HTTP507 Insufficient Storage; owned attempts were stopped, not accepted as passes."
+  },
+  "storage": {
+    "approximateFreeGiB": 1.7,
+    "ownedTaskRegistryCachesRetiredManifest": "Artifacts/D120/RetiredTaskRegistryCaches.json",
+    "proposedOlderCacheFiles": 240,
+    "proposedOlderCacheBytes": 8596886227,
+    "proposedManifest": "Artifacts/D120/ProposedOlderRegistryCacheCleanup.json",
+    "approval": "Pending user choice; no older manifest entry deleted"
+  },
+  "next": "Obtain cleanup choice/free sufficient space, run one corrected Editor visual fixture and inspect pedestrians/pull-over/rejoin/highway frames; then existing maintained Windows build, packaged Flow/ReportedShoppingCity and FlowVisual checks, shared Quest build/signature/identity, protected-input/config restoration, delivery receipt/docs and user playtest.",
+  "limitations": [
+    "No new maintained Windows or Quest package yet; launchers still run prior B003 revision.",
+    "Final corrected visual movement evidence and physical playtest remain unconfirmed.",
+    "No source push, PR/merge, release, device install, full suite or performance program."
+  ],
+  "supersededBy": "docs/evidence/D120-flow-delivery.json"
+}

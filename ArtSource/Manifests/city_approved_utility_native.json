@@ -1,0 +1,3283 @@
+{
+  "issue": 125,
+  "pr": 272,
+  "build": 338,
+  "submitted": "4b8d890ee38f244562feefe014f80cf312ba08c8",
+  "tested": "4b8d890ee38f244562feefe014f80cf312ba08c8",
+  "status": "Native338 base retained; four wind geometry packages superseded by the explicitly linked #273 native receipt. Integrated Windows acceptance pending.",
+  "url": "https://drone.shaun-husain.com/CitySimVR/citysim/338",
+  "job": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\CI\\Builds\\338-4b8d890ee38f-Check-8f88facf",
+  "files": [
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Materials/M_Template_Solid",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Materials/M_Template_Solid.uasset",
+      "sha256": "6001f98a2d1599ec5fb77ece7b4ab97ddbb4589ff3f8a7b010c95fe0732f58ae",
+      "bytes": 10271
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_coal_BuildingFacade",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_coal_BuildingFacade.uasset",
+      "sha256": "246fc173306f0243eaed6b2091129e8683fa7267b28d08161d060829f88007c4",
+      "bytes": 6059
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_coal_BuildingFacade_Damaged",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_coal_BuildingFacade_Damaged.uasset",
+      "sha256": "b0a7e59a73e12f11558f131d593d36ee31294366c77daa2487ad51b47ed24581",
+      "bytes": 6099
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Materials/M_Template_PBR",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Materials/M_Template_PBR.uasset",
+      "sha256": "51a00c5bf93e052d147cd9912a42ee80cbe7e3a60af5dcae4fcf5a1790a1a90d",
+      "bytes": 32320
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_coal_RoofService",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_coal_RoofService.uasset",
+      "sha256": "f139e3347afcebab98a3d12c73626e20f462eb2469013a0ae06407c16ee4b294",
+      "bytes": 10386
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_coal_RoofService_Damaged",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_coal_RoofService_Damaged.uasset",
+      "sha256": "655daffde5825f0984076e4aea1ed614b4bf2d923a4f002b9551295c9d4288eb",
+      "bytes": 10426
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_coal_Concrete",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_coal_Concrete.uasset",
+      "sha256": "04ea9a10e9633e14ddcd4319e14b7ab0785e4abbfffe6fb9640ae00f90139dd2",
+      "bytes": 6029
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_coal_Concrete_Damaged",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_coal_Concrete_Damaged.uasset",
+      "sha256": "d1a14cee197597c7ba44abd0479493016b8cdad44cd2d0c93de078a7252c6aeb",
+      "bytes": 6069
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_coal_EquipmentMetal",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_coal_EquipmentMetal.uasset",
+      "sha256": "9ed398715fb9b4633b78b089cdecdd82f86f6ec28e12ba4f4ff10190371cba3c",
+      "bytes": 10413
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_coal_EquipmentMetal_Damaged",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_coal_EquipmentMetal_Damaged.uasset",
+      "sha256": "180d1095f73468ee00207a935e0b6787e2fdb09b067047c2a722a5216d547573",
+      "bytes": 10453
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_coal_WindowAccent",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_coal_WindowAccent.uasset",
+      "sha256": "994bc5ac771e5dfc6002ff70f95c87fcf3300bbb695255f6ab98daf5e575b3d3",
+      "bytes": 6049
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_coal_WindowAccent_Damaged",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_coal_WindowAccent_Damaged.uasset",
+      "sha256": "faee396f01caeac561464beebb029f66b3194ca387eb7c7940d01fe775677d4b",
+      "bytes": 6089
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_coal_CoalFuel",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_coal_CoalFuel.uasset",
+      "sha256": "1ff9edbe4ff3e0c0c4381bb769c85fbca8c6e458c8465a40aa0817594927f81d",
+      "bytes": 6029
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_coal_CoalFuel_Damaged",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_coal_CoalFuel_Damaged.uasset",
+      "sha256": "51b05ec2ea02536e6a52d1e7ec0c58a02559fbf6d6447bb31e83add29c5ac9bf",
+      "bytes": 6069
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_oil_Concrete",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_oil_Concrete.uasset",
+      "sha256": "683cf4f547eecfb53a41e755791446a5744ffa5f42b48945193a6c67782955e1",
+      "bytes": 6024
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_oil_Concrete_Damaged",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_oil_Concrete_Damaged.uasset",
+      "sha256": "cf53b1ffc171914930ab6b0c7766ead0cef4a619167496cdef154becbde225be",
+      "bytes": 6064
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_oil_RoofService",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_oil_RoofService.uasset",
+      "sha256": "fdb8767343a6e8333e7396c5e3e636c4626d20b7dd102c411fb9b1aacb8be55e",
+      "bytes": 10381
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_oil_RoofService_Damaged",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_oil_RoofService_Damaged.uasset",
+      "sha256": "2b277b7dbc1bc8989ad0e8e81a1919199e9cdd1072648687499d7204f9a5743a",
+      "bytes": 10421
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_oil_BuildingFacade",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_oil_BuildingFacade.uasset",
+      "sha256": "7709ec38ae574cceff1c2ca20d6ba5269b17c93daf5fb983e3d5873e11df71c7",
+      "bytes": 6054
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_oil_BuildingFacade_Damaged",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_oil_BuildingFacade_Damaged.uasset",
+      "sha256": "98937981b99e5e7a89a1e4b273c86fc1b288662ee3e11725f38dff280feebfcd",
+      "bytes": 6094
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_oil_WindowAccent",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_oil_WindowAccent.uasset",
+      "sha256": "b00bc5cefca5d4f46007656349cc3f297788454ff6a97dc7244448c7308f8a6b",
+      "bytes": 6044
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_oil_WindowAccent_Damaged",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_oil_WindowAccent_Damaged.uasset",
+      "sha256": "24e7e6f31b66df63f9e7f0afcbd067e338f64f925695f5221a0267a599c6e58e",
+      "bytes": 6084
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_oil_EquipmentMetal",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_oil_EquipmentMetal.uasset",
+      "sha256": "846ae2338f923face453afdf343527b5b8b832d695249fe934bdf11b13003235",
+      "bytes": 10408
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_oil_EquipmentMetal_Damaged",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_oil_EquipmentMetal_Damaged.uasset",
+      "sha256": "f4e8ffdfe7d737a0d5005099a302bd544292e06a367b9f7299d04a8195badee5",
+      "bytes": 10448
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_power_base_BuildingFacade",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_power_base_BuildingFacade.uasset",
+      "sha256": "1b761bd4365b1832759441c1a791f6ce4117ae8b8bf536572a03da7847851041",
+      "bytes": 6089
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_power_base_BuildingFacade_Damaged",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_power_base_BuildingFacade_Damaged.uasset",
+      "sha256": "1d0e5b912bd984666a279e278226441ffffe20633b219daef90ef74b37ff104b",
+      "bytes": 6129
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_power_base_RoofService",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_power_base_RoofService.uasset",
+      "sha256": "33d09ff5db49c1707c715ba16fe85d916cfbb38cc38d680ab8a5025d6b3c29bf",
+      "bytes": 10416
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_power_base_RoofService_Damaged",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_power_base_RoofService_Damaged.uasset",
+      "sha256": "721a82af107f6b230fa672f3592ae196ecb042c9502eb0929345cbdc3ffff457",
+      "bytes": 10456
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_power_base_Concrete",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_power_base_Concrete.uasset",
+      "sha256": "1f0ab7994dca01b30f37c2319d2db16404b71d9f3bd9a1a12f21bfe1ab3e486e",
+      "bytes": 6059
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_power_base_Concrete_Damaged",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_power_base_Concrete_Damaged.uasset",
+      "sha256": "be0472a2e3cd799be670f991960c67ccb8ca1018d3e54a9cee40bd56c86a89c0",
+      "bytes": 6099
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_power_base_EquipmentMetal",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_power_base_EquipmentMetal.uasset",
+      "sha256": "579a3f7e2412c4c9572aa7c57254d5309807074d83c93e58ae7924385cf636bb",
+      "bytes": 10443
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_power_base_EquipmentMetal_Damaged",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_power_base_EquipmentMetal_Damaged.uasset",
+      "sha256": "08de50333274bd56aafc86b2c2fdf2a6f67d4e8ad34b6a8438e33a124b5d8f70",
+      "bytes": 10483
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_power_base_WindowAccent",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_power_base_WindowAccent.uasset",
+      "sha256": "e2b271ba1e3b2f658dcb97996402240ed4ebdcc539be0093c1c226f54df2e0de",
+      "bytes": 6079
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_power_base_WindowAccent_Damaged",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_power_base_WindowAccent_Damaged.uasset",
+      "sha256": "2c12679e10c0afb3fb13daaa1fa4f489c01d6a19680b164f8bb5f34e923202c9",
+      "bytes": 6119
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_water_base_Concrete",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_water_base_Concrete.uasset",
+      "sha256": "061d1539d08dc6fc6289b85c85d4bf041f5fa16c38346a32980e72d192ce4636",
+      "bytes": 6059
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_water_base_Concrete_Damaged",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_water_base_Concrete_Damaged.uasset",
+      "sha256": "25f91db68c366f747e60aba5f3b1a41e13fb473f494a2251871c76b5c68d4d21",
+      "bytes": 6099
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_water_base_WindowAccent",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_water_base_WindowAccent.uasset",
+      "sha256": "469fd7b34e396c29740ca7166a2924a8e6db382918be8dc69ee89aff7705908a",
+      "bytes": 6079
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_water_base_WindowAccent_Damaged",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_water_base_WindowAccent_Damaged.uasset",
+      "sha256": "8a9573bd23ce066dc2d221ee091e5b5424ae4a48530d47949a67b8d3c9ad3b07",
+      "bytes": 6119
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_water_base_EquipmentMetal",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_water_base_EquipmentMetal.uasset",
+      "sha256": "f6b59bf5b0175b8c3ee4dd47b92ea00cbb3d150b6d4014f3ff65c6ceac5b4a8c",
+      "bytes": 10443
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_water_base_EquipmentMetal_Damaged",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_water_base_EquipmentMetal_Damaged.uasset",
+      "sha256": "41a07df0792f1a2e74691f3da4cc78dbd683aceaacf2e5cb07c609fea81d331a",
+      "bytes": 10483
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_water_base_BuildingFacade",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_water_base_BuildingFacade.uasset",
+      "sha256": "48bc46102888b2ed98edafba961b5350caac3f0740ff8807c5c448d1edc26613",
+      "bytes": 6089
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_water_base_BuildingFacade_Damaged",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_water_base_BuildingFacade_Damaged.uasset",
+      "sha256": "e779611247a1c38a42ed81d966b32a1948eed92bc3ab5c1979bcbb5adb049ecc",
+      "bytes": 6129
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_water_base_RoofService",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_water_base_RoofService.uasset",
+      "sha256": "d1860c7812b1c80c7fe0c02408b33bdcd36418521ec378b381d1beab0acca242",
+      "bytes": 10416
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_water_base_RoofService_Damaged",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_water_base_RoofService_Damaged.uasset",
+      "sha256": "8d7c9b003c0f6735375c9b601611d64085dcfd4aef23ab9d478b9a4002e3501d",
+      "bytes": 10456
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_power_medium_BuildingFacade",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_power_medium_BuildingFacade.uasset",
+      "sha256": "4c67137d5b30f4945d00da98b1c2b30d5ecca1f8b4e39075b899ee08a5b894dc",
+      "bytes": 6099
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_power_medium_BuildingFacade_Damaged",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_power_medium_BuildingFacade_Damaged.uasset",
+      "sha256": "205a9817bfc011ab7c6202e8660d6449190e68b9aee70983d4bd135c3010ec35",
+      "bytes": 6139
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_power_medium_RoofService",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_power_medium_RoofService.uasset",
+      "sha256": "7867975d83ba4d392d54736f3f4c772529fccede2c44866161c468aacc45ec54",
+      "bytes": 10426
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_power_medium_RoofService_Damaged",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_power_medium_RoofService_Damaged.uasset",
+      "sha256": "3d93042dd684e079c598173c880174605a42f79152d74e739b34d88437e92984",
+      "bytes": 10466
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_power_medium_Concrete",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_power_medium_Concrete.uasset",
+      "sha256": "516df8e017c2b7a3950784bc4245162613679dc505ab52d8a127d9a1ac224480",
+      "bytes": 6069
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_power_medium_Concrete_Damaged",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_power_medium_Concrete_Damaged.uasset",
+      "sha256": "787531b07dc5e35bf36f0ffe8e994940ebf1a5157d018163abd9542bca1fc020",
+      "bytes": 6109
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_power_medium_EquipmentMetal",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_power_medium_EquipmentMetal.uasset",
+      "sha256": "9bcc548f1c9ae8c4d49a149817dd9ded807a01888b66a654f66be8f1025b77bd",
+      "bytes": 10453
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_power_medium_EquipmentMetal_Damaged",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_power_medium_EquipmentMetal_Damaged.uasset",
+      "sha256": "ab1b9c8c21c42d4a9cd141724c7b6d8004694e60291922b66de5bab3aed2aee1",
+      "bytes": 10493
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_power_medium_WindowAccent",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_power_medium_WindowAccent.uasset",
+      "sha256": "e1ffd55a53506daf5d7c87b401842ec57c6809bdc3ac3cdf5d42ab8e251a5477",
+      "bytes": 6089
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_power_medium_WindowAccent_Damaged",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_power_medium_WindowAccent_Damaged.uasset",
+      "sha256": "5724f307eeb3857d08cdc9a615082f09f31c612ac10c1df474e8a13493397f2f",
+      "bytes": 6129
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_power_high_BuildingFacade",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_power_high_BuildingFacade.uasset",
+      "sha256": "873fb708dbf2fbad8e9e822a57295f97b36cec2115bcc3cfc74a5270394c8bd5",
+      "bytes": 6089
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_power_high_BuildingFacade_Damaged",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_power_high_BuildingFacade_Damaged.uasset",
+      "sha256": "164125674e1529641fddb40cfc73785404350f4f9e388652af4036f6c0346677",
+      "bytes": 6129
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_power_high_RoofService",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_power_high_RoofService.uasset",
+      "sha256": "f89db6a47bad2b98fb2ec0a3686d70655546376e1595762f37cf9d98de80e936",
+      "bytes": 10416
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_power_high_RoofService_Damaged",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_power_high_RoofService_Damaged.uasset",
+      "sha256": "2d825fbbf2e927fd1d44fe3dcaeac42daa3e52d1c56afeedb99d0463b1965e26",
+      "bytes": 10456
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_power_high_Concrete",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_power_high_Concrete.uasset",
+      "sha256": "d3ef1f90e295e0df482d1aea9fe1e8e2efac3b045d57db27cf9bf4bacf5f3b86",
+      "bytes": 6059
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_power_high_Concrete_Damaged",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_power_high_Concrete_Damaged.uasset",
+      "sha256": "14828ba8272bf53a2f00b60b4f88bb82f7166f7305719161ff0b12e4f35f0930",
+      "bytes": 6099
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_power_high_EquipmentMetal",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_power_high_EquipmentMetal.uasset",
+      "sha256": "aebc6af1d34bc8173c08d509c7c6447a1c3fc8b7b2b1a186b1066f03b5153352",
+      "bytes": 10443
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_power_high_EquipmentMetal_Damaged",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_power_high_EquipmentMetal_Damaged.uasset",
+      "sha256": "8e6636bd0f1aa32e1e1deb009b4bca0108a8ddc87fcda707c0bad9ab49d8bed0",
+      "bytes": 10483
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_power_high_WindowAccent",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_power_high_WindowAccent.uasset",
+      "sha256": "8470cf96097c8ecc043f654ce0eccc0c0483bebd573418a8d1df18cbb5e3984f",
+      "bytes": 6079
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_power_high_WindowAccent_Damaged",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_power_high_WindowAccent_Damaged.uasset",
+      "sha256": "f0e580f60793d086998f03096f936648c34522e6652a4dcf4c83a2ea6e96b230",
+      "bytes": 6119
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_water_medium_Concrete",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_water_medium_Concrete.uasset",
+      "sha256": "52ec58276a354d189479ee1a8ab8819e5165d690f95b4aba45964e23e74dee12",
+      "bytes": 6069
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_water_medium_Concrete_Damaged",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_water_medium_Concrete_Damaged.uasset",
+      "sha256": "1278c63f8e0246ca2c99d5b2c5818d0bf6ba7d77ec4ef7fbd30df1acc6d93f4a",
+      "bytes": 6109
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_water_medium_WindowAccent",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_water_medium_WindowAccent.uasset",
+      "sha256": "a3383611d5e9fe2aab9081e2527013163fbca5ed3b38b109f03c54a7c4087545",
+      "bytes": 6089
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_water_medium_WindowAccent_Damaged",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_water_medium_WindowAccent_Damaged.uasset",
+      "sha256": "7381272cd6e32ad31ae5a7b7b35322307e2aca700f5a27837db8c9befbc63d51",
+      "bytes": 6129
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_water_medium_EquipmentMetal",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_water_medium_EquipmentMetal.uasset",
+      "sha256": "c09ca4849b67120ddd41c3eef35e2e855abd777cacb83574544585a0d87e5208",
+      "bytes": 10453
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_water_medium_EquipmentMetal_Damaged",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_water_medium_EquipmentMetal_Damaged.uasset",
+      "sha256": "a8ee3fe5604f7d0014f0d7f6bce3d6f21df8fb0593f69a1828dce781301e4853",
+      "bytes": 10493
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_water_medium_BuildingFacade",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_water_medium_BuildingFacade.uasset",
+      "sha256": "4734c289407c122baac5fa41ba51d8d2ffffce6e9d24667f26c97bfece07b945",
+      "bytes": 6099
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_water_medium_BuildingFacade_Damaged",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_water_medium_BuildingFacade_Damaged.uasset",
+      "sha256": "36607cfd1dbc4184160c9758807f950110404b6944a857c317ea357a5bb4d7c1",
+      "bytes": 6139
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_water_medium_RoofService",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_water_medium_RoofService.uasset",
+      "sha256": "7500f6dc78a76f2fdac910945fdc8a4ca1443e63b9c6f878de91725043a1cf94",
+      "bytes": 10426
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_water_medium_RoofService_Damaged",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_water_medium_RoofService_Damaged.uasset",
+      "sha256": "af73bc561023cb6b2b67ef5fa843e7d046371e30153e778b06b4a86e16f4e6f6",
+      "bytes": 10466
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_water_high_Concrete",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_water_high_Concrete.uasset",
+      "sha256": "519470004b23248fe855edd07513b7d3de2e4ba101e7bff5ef41e2a3a0517b08",
+      "bytes": 6059
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_water_high_Concrete_Damaged",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_water_high_Concrete_Damaged.uasset",
+      "sha256": "6aeef54d515c40b9382c4e5a03163b496f3cfbcac210588ee00e8559763d5849",
+      "bytes": 6099
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_water_high_WindowAccent",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_water_high_WindowAccent.uasset",
+      "sha256": "331f754cdac2c0a3007878095d52a9252fe3355d7bdf1eba89de2955e67da6e7",
+      "bytes": 6079
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_water_high_WindowAccent_Damaged",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_water_high_WindowAccent_Damaged.uasset",
+      "sha256": "0baee8e01c486daeed23a33e49990ddbd861210c0a8fd6db8183a06cb9745778",
+      "bytes": 6119
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_water_high_EquipmentMetal",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_water_high_EquipmentMetal.uasset",
+      "sha256": "766450a5e9455d1b70c5959c5422a7f655a89ec37eb70c60d7e1371a843838e0",
+      "bytes": 10443
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_water_high_EquipmentMetal_Damaged",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_water_high_EquipmentMetal_Damaged.uasset",
+      "sha256": "973fafc28fb9e517ce62b5b230f8350454b11b2f0439b229b034b5ad69afb14c",
+      "bytes": 10483
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_water_high_BuildingFacade",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_water_high_BuildingFacade.uasset",
+      "sha256": "ff86b5ea27262cc0b2048d7b8fd409d2324a3af862e2164b7daa33384d3ac134",
+      "bytes": 6089
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_water_high_BuildingFacade_Damaged",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_water_high_BuildingFacade_Damaged.uasset",
+      "sha256": "10ce0207747ddb3638220022f072fa6ddceb359652f15e4cb6411e8335527856",
+      "bytes": 6129
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_water_high_RoofService",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_water_high_RoofService.uasset",
+      "sha256": "3a2f88697c45fd5199e3709fbbead66968ce6d408259814557a6fc7028f36246",
+      "bytes": 10416
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_water_high_RoofService_Damaged",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_water_high_RoofService_Damaged.uasset",
+      "sha256": "3b31494a5644629a2cd45014ada15b18dc5cdf48b8a67f6c02e03ddf7e5fc057",
+      "bytes": 10456
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_water_tower_Paint_BlueGrey",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_water_tower_Paint_BlueGrey.uasset",
+      "sha256": "de7c9067f171622de799c4117bb435c5a1af5203ea73f1301f2d9026d0d6b5d0",
+      "bytes": 6094
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_water_tower_Paint_BlueGrey_Damaged",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_water_tower_Paint_BlueGrey_Damaged.uasset",
+      "sha256": "1f05d126b514a7d5213c9fb6e09bcb7b4bffd69970c81ffd60b4a71c41aba66c",
+      "bytes": 6134
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_water_tower_Paint_LightGrey",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_water_tower_Paint_LightGrey.uasset",
+      "sha256": "7158c7e4e00971131bfd61eb53db77b185f4ea31a76528dc7d50c60fedfe0c73",
+      "bytes": 6099
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_water_tower_Paint_LightGrey_Damaged",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_water_tower_Paint_LightGrey_Damaged.uasset",
+      "sha256": "8f8b3fdf112dae1618f512edbb783b534b03454e046260f2a50bcac3b03a16aa",
+      "bytes": 6139
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_water_tower_Mechanical",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_water_tower_Mechanical.uasset",
+      "sha256": "00a97ffcded18ca7c466214f85574cd9fa601facb01689311636bbf58aec37df",
+      "bytes": 10428
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_water_tower_Mechanical_Damaged",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_water_tower_Mechanical_Damaged.uasset",
+      "sha256": "8555d24262f10b1b59fe462fc5b947cd3393d2586d7b788f0bc91dd4fb0fdc71",
+      "bytes": 10468
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_wind_turbine_OffWhite_PaintedSteel",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_wind_turbine_OffWhite_PaintedSteel.uasset",
+      "sha256": "8bbe0b34b47e85288cd7e07c568332573179abd542842a7c4a60f06afb7e8aa8",
+      "bytes": 6134
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_wind_turbine_OffWhite_PaintedSteel_Damaged",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_wind_turbine_OffWhite_PaintedSteel_Damaged.uasset",
+      "sha256": "6a64310f7c0c42218c6475f29516887674dca5cc2ddc06aaafba741e6cb761dc",
+      "bytes": 6174
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_wind_turbine_BlueGrey_Machinery",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_wind_turbine_BlueGrey_Machinery.uasset",
+      "sha256": "e267088ebb3029bf7d79116681c50becfcf5c236d29f29aeadf613e0aee381ac",
+      "bytes": 6119
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_wind_turbine_BlueGrey_Machinery_Damaged",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_wind_turbine_BlueGrey_Machinery_Damaged.uasset",
+      "sha256": "62f934762f69c9c066807ab764ccda4809b19e5c2d2f585a082593c68c1b38fa",
+      "bytes": 6159
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_wind_turbine_Mechanical_Mapped",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_wind_turbine_Mechanical_Mapped.uasset",
+      "sha256": "894849ed0fdd64fd2e386cc62d6ac7565604cdbce3f81e7c7bb7fe022b1c2cf0",
+      "bytes": 10468
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_wind_turbine_Mechanical_Mapped_Damaged",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_wind_turbine_Mechanical_Mapped_Damaged.uasset",
+      "sha256": "54104d2f1ba84edea96e16c62f942a1901ab8903b0b2258755978c66a0e2091f",
+      "bytes": 10508
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_solar_farm_Mechanical_shared_3maps",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_solar_farm_Mechanical_shared_3maps.uasset",
+      "sha256": "4db903fd4921d88f420ecc717f2c04988bdc93995f394af8ff940f125f2c857d",
+      "bytes": 10488
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_solar_farm_Mechanical_shared_3maps_Damaged",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_solar_farm_Mechanical_shared_3maps_Damaged.uasset",
+      "sha256": "3c74b367d9775da5019957729c9af4b06a983c030d0ed91a07b7995935b29a4f",
+      "bytes": 10528
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_solar_farm_Dark_mechanical",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_solar_farm_Dark_mechanical.uasset",
+      "sha256": "0f13ef31bcc41f04d96a134592f9dc88746c694b7a7cdd93ec7017cd932fa501",
+      "bytes": 6094
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_solar_farm_Dark_mechanical_Damaged",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_solar_farm_Dark_mechanical_Damaged.uasset",
+      "sha256": "57a34b40163f4990f67eb4972e6bd44be61c1dbc2ec99df4de8c61c44983b63d",
+      "bytes": 6134
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Materials/M_Template_PV",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Materials/M_Template_PV.uasset",
+      "sha256": "44cd02cac2b2aba61932d85635f5fe3f4b9583296db8af156cd0f71aff04e800",
+      "bytes": 21967
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_solar_farm_Deep_blue_PV_with_subtle_cells",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_solar_farm_Deep_blue_PV_with_subtle_cells.uasset",
+      "sha256": "c541e23c32e077813047a92e12b5d3abbfd44d8f203247eaa7dd33f53e34b908",
+      "bytes": 8234
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_solar_farm_Deep_blue_PV_with_subtle_cells_Damaged",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_solar_farm_Deep_blue_PV_with_subtle_cells_Damaged.uasset",
+      "sha256": "a83092893c80fbe98f589a217a1deaa6737ebac4cb99b7a1ec8d8476986cbfa4",
+      "bytes": 8274
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_solar_farm_Neutral_cabinet_paint",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_solar_farm_Neutral_cabinet_paint.uasset",
+      "sha256": "28ebd341ee4ca33591eda1676764190c6cc8bf9027dd37e74e6bd47cf94f6fe4",
+      "bytes": 6124
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_solar_farm_Neutral_cabinet_paint_Damaged",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Materials/MI_solar_farm_Neutral_cabinet_paint_Damaged.uasset",
+      "sha256": "f55e157303105555c842905e1afce90dbb3e8cd98bb4b0f87ef20186e20db92d",
+      "bytes": 6164
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Meshes/SM_coal_v4",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Meshes/SM_coal_v4.uasset",
+      "sha256": "2d1a48d41fd4f648cf41379c116984330db7cb68cc00325e48eee28b1f0cd178",
+      "bytes": 374593
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Meshes/SM_coal_v4_Damaged",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Meshes/SM_coal_v4_Damaged.uasset",
+      "sha256": "91e8b58eb89e83d1667adc6a1b7f6347011b1878270fbab20cfb9bb46c55ebec",
+      "bytes": 374817
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Meshes/SM_oil_v3",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Meshes/SM_oil_v3.uasset",
+      "sha256": "0b22202b491edbfd72cb054d68c1fb0abbc84c92d2a20ae3f09a761510df7ac2",
+      "bytes": 340317
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Meshes/SM_oil_v3_Damaged",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Meshes/SM_oil_v3_Damaged.uasset",
+      "sha256": "5c42599858ee1bdcedd4cebe3e5a221d7a85416004111896a074b94b6cbaa4a5",
+      "bytes": 340509
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Meshes/SM_power_base_v2",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Meshes/SM_power_base_v2.uasset",
+      "sha256": "a66239a8015c46aec5242159165eb434d6eb025f78baf86008b2612448237ce3",
+      "bytes": 156260
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Meshes/SM_power_base_v2_Damaged",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Meshes/SM_power_base_v2_Damaged.uasset",
+      "sha256": "002a4c98c1dc47200e885a182d3eb5630b3fe36fc321d8c35ae2db98ed1b32a5",
+      "bytes": 156452
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Meshes/SM_water_base_v2",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Meshes/SM_water_base_v2.uasset",
+      "sha256": "5bb65b75803d6daf5fd6de3d7d804a333999d3582468f2cdc4196106183a92d6",
+      "bytes": 329868
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Meshes/SM_water_base_v2_Damaged",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Meshes/SM_water_base_v2_Damaged.uasset",
+      "sha256": "2d9279f5b2c62f9d12f96047299f8d3d0de555459544ea657d1632a5370a52b2",
+      "bytes": 330060
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Meshes/SM_power_medium_v3",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Meshes/SM_power_medium_v3.uasset",
+      "sha256": "a1d1518bcd4f3f821990ac72f7e635397cc3c8732c76d9716e7c510ff60f375a",
+      "bytes": 251904
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Meshes/SM_power_medium_v3_Damaged",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Meshes/SM_power_medium_v3_Damaged.uasset",
+      "sha256": "5042a2e504a8fc742055e3cfc52366db06f9f4bb6846ad42438513aa29f46a66",
+      "bytes": 252096
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Meshes/SM_power_high_v3",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Meshes/SM_power_high_v3.uasset",
+      "sha256": "cd7e5760cd125257d6c9c28438b8643374c52970232e78d59c5469f63f641c35",
+      "bytes": 272864
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Meshes/SM_power_high_v3_Damaged",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Meshes/SM_power_high_v3_Damaged.uasset",
+      "sha256": "59fa4c7d202599232085994987da4271f254986b37ed4e8595a36572e76637f9",
+      "bytes": 273056
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Meshes/SM_water_medium_v2",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Meshes/SM_water_medium_v2.uasset",
+      "sha256": "17bdb20d207f248d25976d5a5f0a2191d8200a8c8a59cdbe98dd32f1e245a8b7",
+      "bytes": 396007
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Meshes/SM_water_medium_v2_Damaged",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Meshes/SM_water_medium_v2_Damaged.uasset",
+      "sha256": "4a47928cfe11fbe1159fecbe34eba9e47e0e7a7e1f32e305bb9daa58eb5cb951",
+      "bytes": 396199
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Meshes/SM_water_high_v2",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Meshes/SM_water_high_v2.uasset",
+      "sha256": "5420dda7776dcfef359c5e76e734049f478a8642d7af65ddfecfc9d68e66d4af",
+      "bytes": 470838
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Meshes/SM_water_high_v2_Damaged",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Meshes/SM_water_high_v2_Damaged.uasset",
+      "sha256": "3b5462f742ffdb298652e1bc53124b086d33ddf48c77ce0e7d258bdcf2204ae0",
+      "bytes": 471030
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Meshes/SM_water_tower_v3",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Meshes/SM_water_tower_v3.uasset",
+      "sha256": "c3efa9c035a3bb425e099bba63ece4b91b5054b9837982c277cc0f215aa152a3",
+      "bytes": 273139
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Meshes/SM_water_tower_v3_Damaged",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Meshes/SM_water_tower_v3_Damaged.uasset",
+      "sha256": "282cdd3adbeac3676d23d9983dcba33252d011b87f227bf9d670b7749e5e85d1",
+      "bytes": 273267
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Meshes/SM_wind_turbine_v1",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Meshes/SM_wind_turbine_v1.uasset",
+      "sha256": "89e5b5e42618a3d51fa18a1d0b44f36484d228120930d85bce21c7356d30c448",
+      "bytes": 219211
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Meshes/SM_wind_turbine_v1_Damaged",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Meshes/SM_wind_turbine_v1_Damaged.uasset",
+      "sha256": "b3b47280728ef9b9039bacf0d56ba51ab73a4f26446393454ff517976679dc21",
+      "bytes": 219339
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Meshes/SM_solar_farm_v3",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Meshes/SM_solar_farm_v3.uasset",
+      "sha256": "e192557f3f0addd979f3dec68b93807b9c3497f87f92d9392388e9c8e61a1bd0",
+      "bytes": 332475
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Meshes/SM_solar_farm_v3_Damaged",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Meshes/SM_solar_farm_v3_Damaged.uasset",
+      "sha256": "4ce1509ac5925dda74f05be63426daa263896f8101f93bad63199df864bf2791",
+      "bytes": 332635
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Wind/SM_Wind_Stationary_v1",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Wind/SM_Wind_Stationary_v1.uasset",
+      "sha256": "3eb257ade4e7c169802c5715a2634ca7de1cbd600041baf91d1d71dd06bb5fee",
+      "bytes": 76178
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Wind/SM_Wind_YawNacelle_v1",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Wind/SM_Wind_YawNacelle_v1.uasset",
+      "sha256": "52c20598f8464d0f99535dc19feeee3417d00bb2504d9bad6a1a4771ae273f64",
+      "bytes": 66332
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Wind/SM_Wind_SpinRotor_v1",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Wind/SM_Wind_SpinRotor_v1.uasset",
+      "sha256": "fd726cd1528bdbffbf25df5971af8e7c84eead78e59433641dc1868a82bb6a72",
+      "bytes": 47726
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Foundations/SM_Utility_coal_v4_Foundation_Z0",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Foundations/SM_Utility_coal_v4_Foundation_Z0.uasset",
+      "sha256": "601e7c0a0e35c733b0e5da31e653347d227ae00dbb8f7fe686c2e08f87f48341",
+      "bytes": 27175
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Foundations/SM_Utility_coal_v4_Foundation_Z0p25",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Foundations/SM_Utility_coal_v4_Foundation_Z0p25.uasset",
+      "sha256": "faabc8b5b4f3bea68491e374462f151fae0caddcef684af37783131f2a025abf",
+      "bytes": 12703
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Foundations/SM_Utility_oil_v3_Foundation_Z0",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Foundations/SM_Utility_oil_v3_Foundation_Z0.uasset",
+      "sha256": "38b5ba1a0d946745c0413f19c7fa1dcfb32065d7281fa398c2ef4e778cfade2d",
+      "bytes": 25308
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Foundations/SM_Utility_power_base_v2_Foundation_Z0",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Foundations/SM_Utility_power_base_v2_Foundation_Z0.uasset",
+      "sha256": "d7b641638259985cbeba0e622b9abf979ae5199bd7f847b9e676db9ddeeebea1",
+      "bytes": 17966
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Foundations/SM_Utility_water_base_v2_Foundation_Z0",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Foundations/SM_Utility_water_base_v2_Foundation_Z0.uasset",
+      "sha256": "d15d6cccdffb2af5f2f11b8b2e6adbd7013a3b72b26cc350491e81297d847646",
+      "bytes": 33555
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Foundations/SM_Utility_power_medium_v3_Foundation_Z0",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Foundations/SM_Utility_power_medium_v3_Foundation_Z0.uasset",
+      "sha256": "a52639f6bdccbffbfdd30997d634adb35de170082f1d348e674149bbfef535e2",
+      "bytes": 21014
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Foundations/SM_Utility_power_high_v3_Foundation_Z0",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Foundations/SM_Utility_power_high_v3_Foundation_Z0.uasset",
+      "sha256": "3c0f45674b0475a23add783013625a2cdfcc316900da8a89c2f0fb5544674e7c",
+      "bytes": 22982
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Foundations/SM_Utility_water_medium_v2_Foundation_Z0",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Foundations/SM_Utility_water_medium_v2_Foundation_Z0.uasset",
+      "sha256": "7dc71224d1b302e3d96fd4ca5abe5364df1638b2810912c21a1e397040a199ce",
+      "bytes": 35001
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Foundations/SM_Utility_water_high_v2_Foundation_Z0",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Foundations/SM_Utility_water_high_v2_Foundation_Z0.uasset",
+      "sha256": "d3ccb74358aae5fdc4656b7649cfd73c4399969e7fdfb88121ba93b6cf246a3a",
+      "bytes": 42822
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Foundations/SM_Utility_water_tower_v3_Foundation_Z0",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Foundations/SM_Utility_water_tower_v3_Foundation_Z0.uasset",
+      "sha256": "474a673dbe8c8309d08b97169fc55328c55939ce2783ca34bd83348c50bae605",
+      "bytes": 15569
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Foundations/SM_Utility_wind_turbine_v1_Foundation_Z0",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Foundations/SM_Utility_wind_turbine_v1_Foundation_Z0.uasset",
+      "sha256": "e34d29cba7dccc9487578b0dbdb86e37d1acb78da1bf5ce7a8441f1290489a3e",
+      "bytes": 14752
+    },
+    {
+      "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Foundations/SM_Utility_solar_farm_v3_Foundation_Z0",
+      "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Foundations/SM_Utility_solar_farm_v3_Foundation_Z0.uasset",
+      "sha256": "a8489f021c2b8d8b3e41ed4a8f8b572b779411b406b383c35a69b2da3d6f9d06",
+      "bytes": 16115
+    },
+    {
+      "file": "CitySimVR/Content/CitySim/Data/DA_CityBuildingCatalog.uasset",
+      "sha256": "cc31fa56626d9430a7ef8a8f1c4b58d7a3ccb008646113d46f283354730da364",
+      "bytes": 74237
+    }
+  ],
+  "material_parents": 3,
+  "source_material_regions": 51,
+  "native_lod_checks": 87,
+  "native_surface_probes": 5470,
+  "material_receipt": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\CI\\Builds\\338-4b8d890ee38f-Check-8f88facf\\AssetPreparationReceipts\\ApprovedUtilityMaterials.json",
+  "mesh_receipt": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\CI\\Builds\\338-4b8d890ee38f-Check-8f88facf\\AssetPreparationReceipts\\ApprovedUtilityMeshes.json",
+  "catalog_receipt": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\CI\\Builds\\338-4b8d890ee38f-Check-8f88facf\\AssetPreparationReceipts\\ApprovedUtilityCatalog.json",
+  "native_import_overrides": [
+    {
+      "kind": "solar_structural_feet",
+      "manifest": "ArtSource/Manifests/city_solar_structural_foundation_override.json",
+      "manifest_sha256": "9539de559145bf5290e18e50ed2ba02ccce33e58c354e174a85ba7059b5fc633",
+      "proof": "ArtSource/Manifests/city_solar_structural_foundation_verification.json",
+      "proof_sha256": "2889e546d42598779d18482adc9717cfe8788803c42949bccce667763da4e2f9",
+      "original_plan_sha256": "8765c24b51df26308d838c12da1a7af867b0903e4ecc14b5a6e0aecbbb764b78",
+      "key": "SM_Utility_solar_farm_v3_Foundation_Z0",
+      "target": "/Game/CitySim/Art/Utilities/ApprovedBatch/Foundations/SM_Utility_solar_farm_v3_Foundation_Z0",
+      "original_export": "ArtSource/Exports/UtilityIntegration/Foundations/SM_Utility_solar_farm_v3_Foundation_Z0.fbx",
+      "original_export_sha256": "c1f1b07bfa647bda76559788ec69ed77df5a12a0b79b7b5aebd3a85016014f15",
+      "effective_export": "ArtSource/Exports/UtilityIntegration/Foundations/SM_Utility_solar_farm_v3_StructuralFeet_Z0.fbx",
+      "effective_export_sha256": "b3f39918ab425420d64f4ab3561a501a367f7e86a9d1ad5fc04283e5cf7374fe",
+      "retained_foot_names": [
+        "Inverter0_Foot0",
+        "Inverter0_Foot1",
+        "Inverter1_Foot0",
+        "Inverter1_Foot1",
+        "R1T1_SteelFoot",
+        "R1T2_SteelFoot",
+        "R1T3_SteelFoot",
+        "R1T4_SteelFoot",
+        "R2T1_SteelFoot",
+        "R2T2_SteelFoot",
+        "R2T3_SteelFoot",
+        "R2T4_SteelFoot",
+        "R3T1_SteelFoot",
+        "R3T2_SteelFoot",
+        "R3T3_SteelFoot",
+        "R3T4_SteelFoot"
+      ],
+      "excluded_contacts": [
+        {
+          "component": "R1T1_MastCableRiser",
+          "source_kind": "cable_ground_contact",
+          "source_contact_sha256": "fe6fe0285bfc7267da506c1b9a88c802b27581172383ea71cf134c2633d769d3",
+          "source_bounds_m": {
+            "min": [
+              -11.72249984741211,
+              -8.007499694824219,
+              0.0
+            ],
+            "max": [
+              -11.677499771118164,
+              -7.962500095367432,
+              2.3499999046325684
+            ]
+          },
+          "source_contact": {
+            "method": "horizontal_mesh_faces",
+            "plane_z_m": 0.0,
+            "loops": [
+              {
+                "vertices_m": [
+                  [
+                    -11.72249984741211,
+                    -8.007499694824219,
+                    0.0
+                  ],
+                  [
+                    -11.72249984741211,
+                    -7.962500095367432,
+                    0.0
+                  ],
+                  [
+                    -11.677499771118164,
+                    -7.962500095367432,
+                    0.0
+                  ],
+                  [
+                    -11.677499771118164,
+                    -8.007499694824219,
+                    0.0
+                  ]
+                ],
+                "predicted_native_vertices_cm": [
+                  [
+                    -1172.249984741211,
+                    800.7499694824219,
+                    0.0
+                  ],
+                  [
+                    -1172.249984741211,
+                    796.2500095367432,
+                    0.0
+                  ],
+                  [
+                    -1167.7499771118164,
+                    796.2500095367432,
+                    0.0
+                  ],
+                  [
+                    -1167.7499771118164,
+                    800.7499694824219,
+                    0.0
+                  ]
+                ],
+                "nesting_depth": 0,
+                "hole": false,
+                "area_m2": 0.0020249854087524
+              }
+            ],
+            "horizontal_face_triangles_m": [
+              [
+                [
+                  -11.72249984741211,
+                  -7.962500095367432,
+                  0.0
+                ],
+                [
+                  -11.677499771118164,
+                  -7.962500095367432,
+                  0.0
+                ],
+                [
+                  -11.677499771118164,
+                  -8.007499694824219,
+                  0.0
+                ]
+              ],
+              [
+                [
+                  -11.72249984741211,
+                  -7.962500095367432,
+                  0.0
+                ],
+                [
+                  -11.677499771118164,
+                  -8.007499694824219,
+                  0.0
+                ],
+                [
+                  -11.72249984741211,
+                  -8.007499694824219,
+                  0.0
+                ]
+              ]
+            ],
+            "contact_area_m2": 0.0020249854087524,
+            "contact_vertices_m": [
+              [
+                -11.72249984741211,
+                -8.007499694824219,
+                0.0
+              ],
+              [
+                -11.72249984741211,
+                -7.962500095367432,
+                0.0
+              ],
+              [
+                -11.677499771118164,
+                -8.007499694824219,
+                0.0
+              ],
+              [
+                -11.677499771118164,
+                -7.962500095367432,
+                0.0
+              ]
+            ],
+            "policy": "Retain actual loops and holes; never replace curved or hollow contacts with a filled AABB."
+          },
+          "exclusion_reason": "cable_ground_contact source kind"
+        },
+        {
+          "component": "R1T2_MastCableRiser",
+          "source_kind": "cable_ground_contact",
+          "source_contact_sha256": "db40e26f8f31d85e56d351e8f0593647b803efe5277141d2982da404f480421d",
+          "source_bounds_m": {
+            "min": [
+              -3.9225001335144043,
+              -8.007499694824219,
+              0.0
+            ],
+            "max": [
+              -3.877500057220459,
+              -7.962500095367432,
+              2.3499999046325684
+            ]
+          },
+          "source_contact": {
+            "method": "horizontal_mesh_faces",
+            "plane_z_m": 0.0,
+            "loops": [
+              {
+                "vertices_m": [
+                  [
+                    -3.9225001335144043,
+                    -8.007499694824219,
+                    0.0
+                  ],
+                  [
+                    -3.9225001335144043,
+                    -7.962500095367432,
+                    0.0
+                  ],
+                  [
+                    -3.877500057220459,
+                    -7.962500095367432,
+                    0.0
+                  ],
+                  [
+                    -3.877500057220459,
+                    -8.007499694824219,
+                    0.0
+                  ]
+                ],
+                "predicted_native_vertices_cm": [
+                  [
+                    -392.25001335144043,
+                    800.7499694824219,
+                    0.0
+                  ],
+                  [
+                    -392.25001335144043,
+                    796.2500095367432,
+                    0.0
+                  ],
+                  [
+                    -387.7500057220459,
+                    796.2500095367432,
+                    0.0
+                  ],
+                  [
+                    -387.7500057220459,
+                    800.7499694824219,
+                    0.0
+                  ]
+                ],
+                "nesting_depth": 0,
+                "hole": false,
+                "area_m2": 0.0020249854087524
+              }
+            ],
+            "horizontal_face_triangles_m": [
+              [
+                [
+                  -3.9225001335144043,
+                  -7.962500095367432,
+                  0.0
+                ],
+                [
+                  -3.877500057220459,
+                  -7.962500095367432,
+                  0.0
+                ],
+                [
+                  -3.877500057220459,
+                  -8.007499694824219,
+                  0.0
+                ]
+              ],
+              [
+                [
+                  -3.9225001335144043,
+                  -7.962500095367432,
+                  0.0
+                ],
+                [
+                  -3.877500057220459,
+                  -8.007499694824219,
+                  0.0
+                ],
+                [
+                  -3.9225001335144043,
+                  -8.007499694824219,
+                  0.0
+                ]
+              ]
+            ],
+            "contact_area_m2": 0.0020249854087524,
+            "contact_vertices_m": [
+              [
+                -3.9225001335144043,
+                -8.007499694824219,
+                0.0
+              ],
+              [
+                -3.9225001335144043,
+                -7.962500095367432,
+                0.0
+              ],
+              [
+                -3.877500057220459,
+                -8.007499694824219,
+                0.0
+              ],
+              [
+                -3.877500057220459,
+                -7.962500095367432,
+                0.0
+              ]
+            ],
+            "policy": "Retain actual loops and holes; never replace curved or hollow contacts with a filled AABB."
+          },
+          "exclusion_reason": "cable_ground_contact source kind"
+        },
+        {
+          "component": "R1T3_MastCableRiser",
+          "source_kind": "cable_ground_contact",
+          "source_contact_sha256": "590eee67f9a97011fab81b8467c5ee2059790b74586f5f80ad49a43f82b7f368",
+          "source_bounds_m": {
+            "min": [
+              3.877500057220459,
+              -8.007499694824219,
+              0.0
+            ],
+            "max": [
+              3.9225001335144043,
+              -7.962500095367432,
+              2.3499999046325684
+            ]
+          },
+          "source_contact": {
+            "method": "horizontal_mesh_faces",
+            "plane_z_m": 0.0,
+            "loops": [
+              {
+                "vertices_m": [
+                  [
+                    3.877500057220459,
+                    -8.007499694824219,
+                    0.0
+                  ],
+                  [
+                    3.877500057220459,
+                    -7.962500095367432,
+                    0.0
+                  ],
+                  [
+                    3.9225001335144043,
+                    -7.962500095367432,
+                    0.0
+                  ],
+                  [
+                    3.9225001335144043,
+                    -8.007499694824219,
+                    0.0
+                  ]
+                ],
+                "predicted_native_vertices_cm": [
+                  [
+                    387.7500057220459,
+                    800.7499694824219,
+                    0.0
+                  ],
+                  [
+                    387.7500057220459,
+                    796.2500095367432,
+                    0.0
+                  ],
+                  [
+                    392.25001335144043,
+                    796.2500095367432,
+                    0.0
+                  ],
+                  [
+                    392.25001335144043,
+                    800.7499694824219,
+                    0.0
+                  ]
+                ],
+                "nesting_depth": 0,
+                "hole": false,
+                "area_m2": 0.0020249854087524
+              }
+            ],
+            "horizontal_face_triangles_m": [
+              [
+                [
+                  3.877500057220459,
+                  -7.962500095367432,
+                  0.0
+                ],
+                [
+                  3.9225001335144043,
+                  -7.962500095367432,
+                  0.0
+                ],
+                [
+                  3.9225001335144043,
+                  -8.007499694824219,
+                  0.0
+                ]
+              ],
+              [
+                [
+                  3.877500057220459,
+                  -7.962500095367432,
+                  0.0
+                ],
+                [
+                  3.9225001335144043,
+                  -8.007499694824219,
+                  0.0
+                ],
+                [
+                  3.877500057220459,
+                  -8.007499694824219,
+                  0.0
+                ]
+              ]
+            ],
+            "contact_area_m2": 0.0020249854087524,
+            "contact_vertices_m": [
+              [
+                3.877500057220459,
+                -8.007499694824219,
+                0.0
+              ],
+              [
+                3.877500057220459,
+                -7.962500095367432,
+                0.0
+              ],
+              [
+                3.9225001335144043,
+                -8.007499694824219,
+                0.0
+              ],
+              [
+                3.9225001335144043,
+                -7.962500095367432,
+                0.0
+              ]
+            ],
+            "policy": "Retain actual loops and holes; never replace curved or hollow contacts with a filled AABB."
+          },
+          "exclusion_reason": "cable_ground_contact source kind"
+        },
+        {
+          "component": "R1T4_MastCableRiser",
+          "source_kind": "cable_ground_contact",
+          "source_contact_sha256": "9dccaaf88e9c682d4a80744b6514ee8b43050431553a97e98223e4a8128a9c44",
+          "source_bounds_m": {
+            "min": [
+              11.677499771118164,
+              -8.007499694824219,
+              0.0
+            ],
+            "max": [
+              11.72249984741211,
+              -7.962500095367432,
+              2.3499999046325684
+            ]
+          },
+          "source_contact": {
+            "method": "horizontal_mesh_faces",
+            "plane_z_m": 0.0,
+            "loops": [
+              {
+                "vertices_m": [
+                  [
+                    11.677499771118164,
+                    -8.007499694824219,
+                    0.0
+                  ],
+                  [
+                    11.677499771118164,
+                    -7.962500095367432,
+                    0.0
+                  ],
+                  [
+                    11.72249984741211,
+                    -7.962500095367432,
+                    0.0
+                  ],
+                  [
+                    11.72249984741211,
+                    -8.007499694824219,
+                    0.0
+                  ]
+                ],
+                "predicted_native_vertices_cm": [
+                  [
+                    1167.7499771118164,
+                    800.7499694824219,
+                    0.0
+                  ],
+                  [
+                    1167.7499771118164,
+                    796.2500095367432,
+                    0.0
+                  ],
+                  [
+                    1172.249984741211,
+                    796.2500095367432,
+                    0.0
+                  ],
+                  [
+                    1172.249984741211,
+                    800.7499694824219,
+                    0.0
+                  ]
+                ],
+                "nesting_depth": 0,
+                "hole": false,
+                "area_m2": 0.0020249854087524
+              }
+            ],
+            "horizontal_face_triangles_m": [
+              [
+                [
+                  11.677499771118164,
+                  -7.962500095367432,
+                  0.0
+                ],
+                [
+                  11.72249984741211,
+                  -7.962500095367432,
+                  0.0
+                ],
+                [
+                  11.72249984741211,
+                  -8.007499694824219,
+                  0.0
+                ]
+              ],
+              [
+                [
+                  11.677499771118164,
+                  -7.962500095367432,
+                  0.0
+                ],
+                [
+                  11.72249984741211,
+                  -8.007499694824219,
+                  0.0
+                ],
+                [
+                  11.677499771118164,
+                  -8.007499694824219,
+                  0.0
+                ]
+              ]
+            ],
+            "contact_area_m2": 0.0020249854087524,
+            "contact_vertices_m": [
+              [
+                11.677499771118164,
+                -8.007499694824219,
+                0.0
+              ],
+              [
+                11.677499771118164,
+                -7.962500095367432,
+                0.0
+              ],
+              [
+                11.72249984741211,
+                -8.007499694824219,
+                0.0
+              ],
+              [
+                11.72249984741211,
+                -7.962500095367432,
+                0.0
+              ]
+            ],
+            "policy": "Retain actual loops and holes; never replace curved or hollow contacts with a filled AABB."
+          },
+          "exclusion_reason": "cable_ground_contact source kind"
+        },
+        {
+          "component": "R2T1_MastCableRiser",
+          "source_kind": "cable_ground_contact",
+          "source_contact_sha256": "52fc63297bc0d5a17b07903ee8bf4c32536948c143545697d4de68a912e80794",
+          "source_bounds_m": {
+            "min": [
+              -11.72249984741211,
+              -0.20750001072883606,
+              0.0
+            ],
+            "max": [
+              -11.677499771118164,
+              -0.16249999403953552,
+              2.3499999046325684
+            ]
+          },
+          "source_contact": {
+            "method": "horizontal_mesh_faces",
+            "plane_z_m": 0.0,
+            "loops": [
+              {
+                "vertices_m": [
+                  [
+                    -11.72249984741211,
+                    -0.20750001072883606,
+                    0.0
+                  ],
+                  [
+                    -11.72249984741211,
+                    -0.16249999403953552,
+                    0.0
+                  ],
+                  [
+                    -11.677499771118164,
+                    -0.16249999403953552,
+                    0.0
+                  ],
+                  [
+                    -11.677499771118164,
+                    -0.20750001072883606,
+                    0.0
+                  ]
+                ],
+                "predicted_native_vertices_cm": [
+                  [
+                    -1172.249984741211,
+                    20.750001072883606,
+                    0.0
+                  ],
+                  [
+                    -1172.249984741211,
+                    16.249999403953552,
+                    0.0
+                  ],
+                  [
+                    -1167.7499771118164,
+                    16.249999403953552,
+                    0.0
+                  ],
+                  [
+                    -1167.7499771118164,
+                    20.750001072883606,
+                    0.0
+                  ]
+                ],
+                "nesting_depth": 0,
+                "hole": false,
+                "area_m2": 0.0020250041842473365
+              }
+            ],
+            "horizontal_face_triangles_m": [
+              [
+                [
+                  -11.72249984741211,
+                  -0.16249999403953552,
+                  0.0
+                ],
+                [
+                  -11.677499771118164,
+                  -0.16249999403953552,
+                  0.0
+                ],
+                [
+                  -11.677499771118164,
+                  -0.20750001072883606,
+                  0.0
+                ]
+              ],
+              [
+                [
+                  -11.72249984741211,
+                  -0.16249999403953552,
+                  0.0
+                ],
+                [
+                  -11.677499771118164,
+                  -0.20750001072883606,
+                  0.0
+                ],
+                [
+                  -11.72249984741211,
+                  -0.20750001072883606,
+                  0.0
+                ]
+              ]
+            ],
+            "contact_area_m2": 0.0020250041842473365,
+            "contact_vertices_m": [
+              [
+                -11.72249984741211,
+                -0.20750001072883606,
+                0.0
+              ],
+              [
+                -11.72249984741211,
+                -0.16249999403953552,
+                0.0
+              ],
+              [
+                -11.677499771118164,
+                -0.20750001072883606,
+                0.0
+              ],
+              [
+                -11.677499771118164,
+                -0.16249999403953552,
+                0.0
+              ]
+            ],
+            "policy": "Retain actual loops and holes; never replace curved or hollow contacts with a filled AABB."
+          },
+          "exclusion_reason": "cable_ground_contact source kind"
+        },
+        {
+          "component": "R2T2_MastCableRiser",
+          "source_kind": "cable_ground_contact",
+          "source_contact_sha256": "2c3d83e4ac4d91ac38d4123b6c385a624b4d2d68e1a7b1915cbdcc8b4deaf659",
+          "source_bounds_m": {
+            "min": [
+              -3.9225001335144043,
+              -0.20750001072883606,
+              0.0
+            ],
+            "max": [
+              -3.877500057220459,
+              -0.16249999403953552,
+              2.3499999046325684
+            ]
+          },
+          "source_contact": {
+            "method": "horizontal_mesh_faces",
+            "plane_z_m": 0.0,
+            "loops": [
+              {
+                "vertices_m": [
+                  [
+                    -3.9225001335144043,
+                    -0.20750001072883606,
+                    0.0
+                  ],
+                  [
+                    -3.9225001335144043,
+                    -0.16249999403953552,
+                    0.0
+                  ],
+                  [
+                    -3.877500057220459,
+                    -0.16249999403953552,
+                    0.0
+                  ],
+                  [
+                    -3.877500057220459,
+                    -0.20750001072883606,
+                    0.0
+                  ]
+                ],
+                "predicted_native_vertices_cm": [
+                  [
+                    -392.25001335144043,
+                    20.750001072883606,
+                    0.0
+                  ],
+                  [
+                    -392.25001335144043,
+                    16.249999403953552,
+                    0.0
+                  ],
+                  [
+                    -387.7500057220459,
+                    16.249999403953552,
+                    0.0
+                  ],
+                  [
+                    -387.7500057220459,
+                    20.750001072883606,
+                    0.0
+                  ]
+                ],
+                "nesting_depth": 0,
+                "hole": false,
+                "area_m2": 0.0020250041842473365
+              }
+            ],
+            "horizontal_face_triangles_m": [
+              [
+                [
+                  -3.9225001335144043,
+                  -0.16249999403953552,
+                  0.0
+                ],
+                [
+                  -3.877500057220459,
+                  -0.16249999403953552,
+                  0.0
+                ],
+                [
+                  -3.877500057220459,
+                  -0.20750001072883606,
+                  0.0
+                ]
+              ],
+              [
+                [
+                  -3.9225001335144043,
+                  -0.16249999403953552,
+                  0.0
+                ],
+                [
+                  -3.877500057220459,
+                  -0.20750001072883606,
+                  0.0
+                ],
+                [
+                  -3.9225001335144043,
+                  -0.20750001072883606,
+                  0.0
+                ]
+              ]
+            ],
+            "contact_area_m2": 0.0020250041842473365,
+            "contact_vertices_m": [
+              [
+                -3.9225001335144043,
+                -0.20750001072883606,
+                0.0
+              ],
+              [
+                -3.9225001335144043,
+                -0.16249999403953552,
+                0.0
+              ],
+              [
+                -3.877500057220459,
+                -0.20750001072883606,
+                0.0
+              ],
+              [
+                -3.877500057220459,
+                -0.16249999403953552,
+                0.0
+              ]
+            ],
+            "policy": "Retain actual loops and holes; never replace curved or hollow contacts with a filled AABB."
+          },
+          "exclusion_reason": "cable_ground_contact source kind"
+        },
+        {
+          "component": "R2T3_MastCableRiser",
+          "source_kind": "cable_ground_contact",
+          "source_contact_sha256": "9761ff7713f7bb2dfdc6f177ac77e081b45aa35e212bbd7f60ffb4f2f8f38f32",
+          "source_bounds_m": {
+            "min": [
+              3.877500057220459,
+              -0.20750001072883606,
+              0.0
+            ],
+            "max": [
+              3.9225001335144043,
+              -0.16249999403953552,
+              2.3499999046325684
+            ]
+          },
+          "source_contact": {
+            "method": "horizontal_mesh_faces",
+            "plane_z_m": 0.0,
+            "loops": [
+              {
+                "vertices_m": [
+                  [
+                    3.877500057220459,
+                    -0.20750001072883606,
+                    0.0
+                  ],
+                  [
+                    3.877500057220459,
+                    -0.16249999403953552,
+                    0.0
+                  ],
+                  [
+                    3.9225001335144043,
+                    -0.16249999403953552,
+                    0.0
+                  ],
+                  [
+                    3.9225001335144043,
+                    -0.20750001072883606,
+                    0.0
+                  ]
+                ],
+                "predicted_native_vertices_cm": [
+                  [
+                    387.7500057220459,
+                    20.750001072883606,
+                    0.0
+                  ],
+                  [
+                    387.7500057220459,
+                    16.249999403953552,
+                    0.0
+                  ],
+                  [
+                    392.25001335144043,
+                    16.249999403953552,
+                    0.0
+                  ],
+                  [
+                    392.25001335144043,
+                    20.750001072883606,
+                    0.0
+                  ]
+                ],
+                "nesting_depth": 0,
+                "hole": false,
+                "area_m2": 0.0020250041842473365
+              }
+            ],
+            "horizontal_face_triangles_m": [
+              [
+                [
+                  3.877500057220459,
+                  -0.16249999403953552,
+                  0.0
+                ],
+                [
+                  3.9225001335144043,
+                  -0.16249999403953552,
+                  0.0
+                ],
+                [
+                  3.9225001335144043,
+                  -0.20750001072883606,
+                  0.0
+                ]
+              ],
+              [
+                [
+                  3.877500057220459,
+                  -0.16249999403953552,
+                  0.0
+                ],
+                [
+                  3.9225001335144043,
+                  -0.20750001072883606,
+                  0.0
+                ],
+                [
+                  3.877500057220459,
+                  -0.20750001072883606,
+                  0.0
+                ]
+              ]
+            ],
+            "contact_area_m2": 0.0020250041842473365,
+            "contact_vertices_m": [
+              [
+                3.877500057220459,
+                -0.20750001072883606,
+                0.0
+              ],
+              [
+                3.877500057220459,
+                -0.16249999403953552,
+                0.0
+              ],
+              [
+                3.9225001335144043,
+                -0.20750001072883606,
+                0.0
+              ],
+              [
+                3.9225001335144043,
+                -0.16249999403953552,
+                0.0
+              ]
+            ],
+            "policy": "Retain actual loops and holes; never replace curved or hollow contacts with a filled AABB."
+          },
+          "exclusion_reason": "cable_ground_contact source kind"
+        },
+        {
+          "component": "R2T4_MastCableRiser",
+          "source_kind": "cable_ground_contact",
+          "source_contact_sha256": "852732d874a7f49f14e2a4e83ad0fea292b970c42edfa0197b503e7bc838c12e",
+          "source_bounds_m": {
+            "min": [
+              11.677499771118164,
+              -0.20750001072883606,
+              0.0
+            ],
+            "max": [
+              11.72249984741211,
+              -0.16249999403953552,
+              2.3499999046325684
+            ]
+          },
+          "source_contact": {
+            "method": "horizontal_mesh_faces",
+            "plane_z_m": 0.0,
+            "loops": [
+              {
+                "vertices_m": [
+                  [
+                    11.677499771118164,
+                    -0.20750001072883606,
+                    0.0
+                  ],
+                  [
+                    11.677499771118164,
+                    -0.16249999403953552,
+                    0.0
+                  ],
+                  [
+                    11.72249984741211,
+                    -0.16249999403953552,
+                    0.0
+                  ],
+                  [
+                    11.72249984741211,
+                    -0.20750001072883606,
+                    0.0
+                  ]
+                ],
+                "predicted_native_vertices_cm": [
+                  [
+                    1167.7499771118164,
+                    20.750001072883606,
+                    0.0
+                  ],
+                  [
+                    1167.7499771118164,
+                    16.249999403953552,
+                    0.0
+                  ],
+                  [
+                    1172.249984741211,
+                    16.249999403953552,
+                    0.0
+                  ],
+                  [
+                    1172.249984741211,
+                    20.750001072883606,
+                    0.0
+                  ]
+                ],
+                "nesting_depth": 0,
+                "hole": false,
+                "area_m2": 0.0020250041842473365
+              }
+            ],
+            "horizontal_face_triangles_m": [
+              [
+                [
+                  11.677499771118164,
+                  -0.16249999403953552,
+                  0.0
+                ],
+                [
+                  11.72249984741211,
+                  -0.16249999403953552,
+                  0.0
+                ],
+                [
+                  11.72249984741211,
+                  -0.20750001072883606,
+                  0.0
+                ]
+              ],
+              [
+                [
+                  11.677499771118164,
+                  -0.16249999403953552,
+                  0.0
+                ],
+                [
+                  11.72249984741211,
+                  -0.20750001072883606,
+                  0.0
+                ],
+                [
+                  11.677499771118164,
+                  -0.20750001072883606,
+                  0.0
+                ]
+              ]
+            ],
+            "contact_area_m2": 0.0020250041842473365,
+            "contact_vertices_m": [
+              [
+                11.677499771118164,
+                -0.20750001072883606,
+                0.0
+              ],
+              [
+                11.677499771118164,
+                -0.16249999403953552,
+                0.0
+              ],
+              [
+                11.72249984741211,
+                -0.20750001072883606,
+                0.0
+              ],
+              [
+                11.72249984741211,
+                -0.16249999403953552,
+                0.0
+              ]
+            ],
+            "policy": "Retain actual loops and holes; never replace curved or hollow contacts with a filled AABB."
+          },
+          "exclusion_reason": "cable_ground_contact source kind"
+        },
+        {
+          "component": "R3T1_MastCableRiser",
+          "source_kind": "cable_ground_contact",
+          "source_contact_sha256": "d0c15815e271a96cf05b4ff7722b7a8a2139c4431f45f2cb1dbd4cdaf0b87e8d",
+          "source_bounds_m": {
+            "min": [
+              -11.72249984741211,
+              7.592499732971191,
+              0.0
+            ],
+            "max": [
+              -11.677499771118164,
+              7.637499809265137,
+              2.3499999046325684
+            ]
+          },
+          "source_contact": {
+            "method": "horizontal_mesh_faces",
+            "plane_z_m": 0.0,
+            "loops": [
+              {
+                "vertices_m": [
+                  [
+                    -11.72249984741211,
+                    7.592499732971191,
+                    0.0
+                  ],
+                  [
+                    -11.72249984741211,
+                    7.637499809265137,
+                    0.0
+                  ],
+                  [
+                    -11.677499771118164,
+                    7.637499809265137,
+                    0.0
+                  ],
+                  [
+                    -11.677499771118164,
+                    7.592499732971191,
+                    0.0
+                  ]
+                ],
+                "predicted_native_vertices_cm": [
+                  [
+                    -1172.249984741211,
+                    -759.2499732971191,
+                    0.0
+                  ],
+                  [
+                    -1172.249984741211,
+                    -763.7499809265137,
+                    0.0
+                  ],
+                  [
+                    -1167.7499771118164,
+                    -763.7499809265137,
+                    0.0
+                  ],
+                  [
+                    -1167.7499771118164,
+                    -759.2499732971191,
+                    0.0
+                  ]
+                ],
+                "nesting_depth": 0,
+                "hole": false,
+                "area_m2": 0.002025006866460899
+              }
+            ],
+            "horizontal_face_triangles_m": [
+              [
+                [
+                  -11.72249984741211,
+                  7.637499809265137,
+                  0.0
+                ],
+                [
+                  -11.677499771118164,
+                  7.637499809265137,
+                  0.0
+                ],
+                [
+                  -11.677499771118164,
+                  7.592499732971191,
+                  0.0
+                ]
+              ],
+              [
+                [
+                  -11.72249984741211,
+                  7.637499809265137,
+                  0.0
+                ],
+                [
+                  -11.677499771118164,
+                  7.592499732971191,
+                  0.0
+                ],
+                [
+                  -11.72249984741211,
+                  7.592499732971191,
+                  0.0
+                ]
+              ]
+            ],
+            "contact_area_m2": 0.002025006866460899,
+            "contact_vertices_m": [
+              [
+                -11.72249984741211,
+                7.592499732971191,
+                0.0
+              ],
+              [
+                -11.72249984741211,
+                7.637499809265137,
+                0.0
+              ],
+              [
+                -11.677499771118164,
+                7.592499732971191,
+                0.0
+              ],
+              [
+                -11.677499771118164,
+                7.637499809265137,
+                0.0
+              ]
+            ],
+            "policy": "Retain actual loops and holes; never replace curved or hollow contacts with a filled AABB."
+          },
+          "exclusion_reason": "cable_ground_contact source kind"
+        },
+        {
+          "component": "R3T2_MastCableRiser",
+          "source_kind": "cable_ground_contact",
+          "source_contact_sha256": "c5167a830adcc83902eb3777519b4011d1c01e9424faa64fc11471311eb3037c",
+          "source_bounds_m": {
+            "min": [
+              -3.9225001335144043,
+              7.592499732971191,
+              0.0
+            ],
+            "max": [
+              -3.877500057220459,
+              7.637499809265137,
+              2.3499999046325684
+            ]
+          },
+          "source_contact": {
+            "method": "horizontal_mesh_faces",
+            "plane_z_m": 0.0,
+            "loops": [
+              {
+                "vertices_m": [
+                  [
+                    -3.9225001335144043,
+                    7.592499732971191,
+                    0.0
+                  ],
+                  [
+                    -3.9225001335144043,
+                    7.637499809265137,
+                    0.0
+                  ],
+                  [
+                    -3.877500057220459,
+                    7.637499809265137,
+                    0.0
+                  ],
+                  [
+                    -3.877500057220459,
+                    7.592499732971191,
+                    0.0
+                  ]
+                ],
+                "predicted_native_vertices_cm": [
+                  [
+                    -392.25001335144043,
+                    -759.2499732971191,
+                    0.0
+                  ],
+                  [
+                    -392.25001335144043,
+                    -763.7499809265137,
+                    0.0
+                  ],
+                  [
+                    -387.7500057220459,
+                    -763.7499809265137,
+                    0.0
+                  ],
+                  [
+                    -387.7500057220459,
+                    -759.2499732971191,
+                    0.0
+                  ]
+                ],
+                "nesting_depth": 0,
+                "hole": false,
+                "area_m2": 0.002025006866460899
+              }
+            ],
+            "horizontal_face_triangles_m": [
+              [
+                [
+                  -3.9225001335144043,
+                  7.637499809265137,
+                  0.0
+                ],
+                [
+                  -3.877500057220459,
+                  7.637499809265137,
+                  0.0
+                ],
+                [
+                  -3.877500057220459,
+                  7.592499732971191,
+                  0.0
+                ]
+              ],
+              [
+                [
+                  -3.9225001335144043,
+                  7.637499809265137,
+                  0.0
+                ],
+                [
+                  -3.877500057220459,
+                  7.592499732971191,
+                  0.0
+                ],
+                [
+                  -3.9225001335144043,
+                  7.592499732971191,
+                  0.0
+                ]
+              ]
+            ],
+            "contact_area_m2": 0.002025006866460899,
+            "contact_vertices_m": [
+              [
+                -3.9225001335144043,
+                7.592499732971191,
+                0.0
+              ],
+              [
+                -3.9225001335144043,
+                7.637499809265137,
+                0.0
+              ],
+              [
+                -3.877500057220459,
+                7.592499732971191,
+                0.0
+              ],
+              [
+                -3.877500057220459,
+                7.637499809265137,
+                0.0
+              ]
+            ],
+            "policy": "Retain actual loops and holes; never replace curved or hollow contacts with a filled AABB."
+          },
+          "exclusion_reason": "cable_ground_contact source kind"
+        },
+        {
+          "component": "R3T3_MastCableRiser",
+          "source_kind": "cable_ground_contact",
+          "source_contact_sha256": "098ded191c14dce781f9375689ab86637c69116152f7d40ae0961c04a5306087",
+          "source_bounds_m": {
+            "min": [
+              3.877500057220459,
+              7.592499732971191,
+              0.0
+            ],
+            "max": [
+              3.9225001335144043,
+              7.637499809265137,
+              2.3499999046325684
+            ]
+          },
+          "source_contact": {
+            "method": "horizontal_mesh_faces",
+            "plane_z_m": 0.0,
+            "loops": [
+              {
+                "vertices_m": [
+                  [
+                    3.877500057220459,
+                    7.592499732971191,
+                    0.0
+                  ],
+                  [
+                    3.877500057220459,
+                    7.637499809265137,
+                    0.0
+                  ],
+                  [
+                    3.9225001335144043,
+                    7.637499809265137,
+                    0.0
+                  ],
+                  [
+                    3.9225001335144043,
+                    7.592499732971191,
+                    0.0
+                  ]
+                ],
+                "predicted_native_vertices_cm": [
+                  [
+                    387.7500057220459,
+                    -759.2499732971191,
+                    0.0
+                  ],
+                  [
+                    387.7500057220459,
+                    -763.7499809265137,
+                    0.0
+                  ],
+                  [
+                    392.25001335144043,
+                    -763.7499809265137,
+                    0.0
+                  ],
+                  [
+                    392.25001335144043,
+                    -759.2499732971191,
+                    0.0
+                  ]
+                ],
+                "nesting_depth": 0,
+                "hole": false,
+                "area_m2": 0.002025006866460899
+              }
+            ],
+            "horizontal_face_triangles_m": [
+              [
+                [
+                  3.877500057220459,
+                  7.637499809265137,
+                  0.0
+                ],
+                [
+                  3.9225001335144043,
+                  7.637499809265137,
+                  0.0
+                ],
+                [
+                  3.9225001335144043,
+                  7.592499732971191,
+                  0.0
+                ]
+              ],
+              [
+                [
+                  3.877500057220459,
+                  7.637499809265137,
+                  0.0
+                ],
+                [
+                  3.9225001335144043,
+                  7.592499732971191,
+                  0.0
+                ],
+                [
+                  3.877500057220459,
+                  7.592499732971191,
+                  0.0
+                ]
+              ]
+            ],
+            "contact_area_m2": 0.002025006866460899,
+            "contact_vertices_m": [
+              [
+                3.877500057220459,
+                7.592499732971191,
+                0.0
+              ],
+              [
+                3.877500057220459,
+                7.637499809265137,
+                0.0
+              ],
+              [
+                3.9225001335144043,
+                7.592499732971191,
+                0.0
+              ],
+              [
+                3.9225001335144043,
+                7.637499809265137,
+                0.0
+              ]
+            ],
+            "policy": "Retain actual loops and holes; never replace curved or hollow contacts with a filled AABB."
+          },
+          "exclusion_reason": "cable_ground_contact source kind"
+        },
+        {
+          "component": "R3T4_MastCableRiser",
+          "source_kind": "cable_ground_contact",
+          "source_contact_sha256": "a80fe0d89044278572ff0b6b7f9e08678e3f03c93273ffd466a7e452498b12da",
+          "source_bounds_m": {
+            "min": [
+              11.677499771118164,
+              7.592499732971191,
+              0.0
+            ],
+            "max": [
+              11.72249984741211,
+              7.637499809265137,
+              2.3499999046325684
+            ]
+          },
+          "source_contact": {
+            "method": "horizontal_mesh_faces",
+            "plane_z_m": 0.0,
+            "loops": [
+              {
+                "vertices_m": [
+                  [
+                    11.677499771118164,
+                    7.592499732971191,
+                    0.0
+                  ],
+                  [
+                    11.677499771118164,
+                    7.637499809265137,
+                    0.0
+                  ],
+                  [
+                    11.72249984741211,
+                    7.637499809265137,
+                    0.0
+                  ],
+                  [
+                    11.72249984741211,
+                    7.592499732971191,
+                    0.0
+                  ]
+                ],
+                "predicted_native_vertices_cm": [
+                  [
+                    1167.7499771118164,
+                    -759.2499732971191,
+                    0.0
+                  ],
+                  [
+                    1167.7499771118164,
+                    -763.7499809265137,
+                    0.0
+                  ],
+                  [
+                    1172.249984741211,
+                    -763.7499809265137,
+                    0.0
+                  ],
+                  [
+                    1172.249984741211,
+                    -759.2499732971191,
+                    0.0
+                  ]
+                ],
+                "nesting_depth": 0,
+                "hole": false,
+                "area_m2": 0.002025006866460899
+              }
+            ],
+            "horizontal_face_triangles_m": [
+              [
+                [
+                  11.677499771118164,
+                  7.637499809265137,
+                  0.0
+                ],
+                [
+                  11.72249984741211,
+                  7.637499809265137,
+                  0.0
+                ],
+                [
+                  11.72249984741211,
+                  7.592499732971191,
+                  0.0
+                ]
+              ],
+              [
+                [
+                  11.677499771118164,
+                  7.637499809265137,
+                  0.0
+                ],
+                [
+                  11.72249984741211,
+                  7.592499732971191,
+                  0.0
+                ],
+                [
+                  11.677499771118164,
+                  7.592499732971191,
+                  0.0
+                ]
+              ]
+            ],
+            "contact_area_m2": 0.002025006866460899,
+            "contact_vertices_m": [
+              [
+                11.677499771118164,
+                7.592499732971191,
+                0.0
+              ],
+              [
+                11.677499771118164,
+                7.637499809265137,
+                0.0
+              ],
+              [
+                11.72249984741211,
+                7.592499732971191,
+                0.0
+              ],
+              [
+                11.72249984741211,
+                7.637499809265137,
+                0.0
+              ]
+            ],
+            "policy": "Retain actual loops and holes; never replace curved or hollow contacts with a filled AABB."
+          },
+          "exclusion_reason": "cable_ground_contact source kind"
+        },
+        {
+          "component": "GroundRowDuct0",
+          "source_kind": "structural_ground_contact",
+          "source_contact_sha256": "3155905ae76ef23b5f87a514ea9bb8f7dbe633f7d9387abf2fe7b4ed55600076",
+          "source_bounds_m": {
+            "min": [
+              -11.800000190734863,
+              -7.850000381469727,
+              0.0
+            ],
+            "max": [
+              15.40000057220459,
+              -7.75,
+              0.10000000149011612
+            ]
+          },
+          "source_contact": {
+            "method": "horizontal_mesh_faces",
+            "plane_z_m": 0.0,
+            "loops": [
+              {
+                "vertices_m": [
+                  [
+                    -11.800000190734863,
+                    -7.850000381469727,
+                    0.0
+                  ],
+                  [
+                    -11.800000190734863,
+                    -7.75,
+                    0.0
+                  ],
+                  [
+                    15.40000057220459,
+                    -7.75,
+                    0.0
+                  ],
+                  [
+                    15.40000057220459,
+                    -7.850000381469727,
+                    0.0
+                  ]
+                ],
+                "predicted_native_vertices_cm": [
+                  [
+                    -1180.0000190734863,
+                    785.0000381469727,
+                    0.0
+                  ],
+                  [
+                    -1180.0000190734863,
+                    775.0,
+                    0.0
+                  ],
+                  [
+                    1540.000057220459,
+                    775.0,
+                    0.0
+                  ],
+                  [
+                    1540.000057220459,
+                    785.0000381469727,
+                    0.0
+                  ]
+                ],
+                "nesting_depth": 0,
+                "hole": false,
+                "area_m2": 2.720010452270799
+              }
+            ],
+            "horizontal_face_triangles_m": [
+              [
+                [
+                  -11.800000190734863,
+                  -7.75,
+                  0.0
+                ],
+                [
+                  15.40000057220459,
+                  -7.75,
+                  0.0
+                ],
+                [
+                  15.40000057220459,
+                  -7.850000381469727,
+                  0.0
+                ]
+              ],
+              [
+                [
+                  -11.800000190734863,
+                  -7.75,
+                  0.0
+                ],
+                [
+                  15.40000057220459,
+                  -7.850000381469727,
+                  0.0
+                ],
+                [
+                  -11.800000190734863,
+                  -7.850000381469727,
+                  0.0
+                ]
+              ]
+            ],
+            "contact_area_m2": 2.720010452270799,
+            "contact_vertices_m": [
+              [
+                -11.800000190734863,
+                -7.850000381469727,
+                0.0
+              ],
+              [
+                -11.800000190734863,
+                -7.75,
+                0.0
+              ],
+              [
+                15.40000057220459,
+                -7.850000381469727,
+                0.0
+              ],
+              [
+                15.40000057220459,
+                -7.75,
+                0.0
+              ]
+            ],
+            "policy": "Retain actual loops and holes; never replace curved or hollow contacts with a filled AABB."
+          },
+          "exclusion_reason": "explicit semantic/name-based duct exclusion; frozen kind remains structural_ground_contact"
+        },
+        {
+          "component": "GroundRowDuct1",
+          "source_kind": "structural_ground_contact",
+          "source_contact_sha256": "8ab346ea7dd737aab3e75f7eed551fc85d96d401fab8878d5e474ea242d5b659",
+          "source_bounds_m": {
+            "min": [
+              -11.800000190734863,
+              -0.05000000074505806,
+              0.0
+            ],
+            "max": [
+              15.40000057220459,
+              0.05000000074505806,
+              0.10000000149011612
+            ]
+          },
+          "source_contact": {
+            "method": "horizontal_mesh_faces",
+            "plane_z_m": 0.0,
+            "loops": [
+              {
+                "vertices_m": [
+                  [
+                    -11.800000190734863,
+                    -0.05000000074505806,
+                    0.0
+                  ],
+                  [
+                    -11.800000190734863,
+                    0.05000000074505806,
+                    0.0
+                  ],
+                  [
+                    15.40000057220459,
+                    0.05000000074505806,
+                    0.0
+                  ],
+                  [
+                    15.40000057220459,
+                    -0.05000000074505806,
+                    0.0
+                  ]
+                ],
+                "predicted_native_vertices_cm": [
+                  [
+                    -1180.0000190734863,
+                    5.000000074505806,
+                    0.0
+                  ],
+                  [
+                    -1180.0000190734863,
+                    -5.000000074505806,
+                    0.0
+                  ],
+                  [
+                    1540.000057220459,
+                    -5.000000074505806,
+                    0.0
+                  ],
+                  [
+                    1540.000057220459,
+                    5.000000074505806,
+                    0.0
+                  ]
+                ],
+                "nesting_depth": 0,
+                "hole": false,
+                "area_m2": 2.720000116825105
+              }
+            ],
+            "horizontal_face_triangles_m": [
+              [
+                [
+                  -11.800000190734863,
+                  0.05000000074505806,
+                  0.0
+                ],
+                [
+                  15.40000057220459,
+                  0.05000000074505806,
+                  0.0
+                ],
+                [
+                  15.40000057220459,
+                  -0.05000000074505806,
+                  0.0
+                ]
+              ],
+              [
+                [
+                  -11.800000190734863,
+                  0.05000000074505806,
+                  0.0
+                ],
+                [
+                  15.40000057220459,
+                  -0.05000000074505806,
+                  0.0
+                ],
+                [
+                  -11.800000190734863,
+                  -0.05000000074505806,
+                  0.0
+                ]
+              ]
+            ],
+            "contact_area_m2": 2.720000116825105,
+            "contact_vertices_m": [
+              [
+                -11.800000190734863,
+                -0.05000000074505806,
+                0.0
+              ],
+              [
+                -11.800000190734863,
+                0.05000000074505806,
+                0.0
+              ],
+              [
+                15.40000057220459,
+                -0.05000000074505806,
+                0.0
+              ],
+              [
+                15.40000057220459,
+                0.05000000074505806,
+                0.0
+              ]
+            ],
+            "policy": "Retain actual loops and holes; never replace curved or hollow contacts with a filled AABB."
+          },
+          "exclusion_reason": "explicit semantic/name-based duct exclusion; frozen kind remains structural_ground_contact"
+        },
+        {
+          "component": "GroundRowDuct2",
+          "source_kind": "structural_ground_contact",
+          "source_contact_sha256": "166c4f6b2f01fa75dd6f661f1e7e2f9272167f4c9fd2a223695daed0d6e36f16",
+          "source_bounds_m": {
+            "min": [
+              -11.800000190734863,
+              7.75,
+              0.0
+            ],
+            "max": [
+              15.40000057220459,
+              7.850000381469727,
+              0.10000000149011612
+            ]
+          },
+          "source_contact": {
+            "method": "horizontal_mesh_faces",
+            "plane_z_m": 0.0,
+            "loops": [
+              {
+                "vertices_m": [
+                  [
+                    -11.800000190734863,
+                    7.75,
+                    0.0
+                  ],
+                  [
+                    -11.800000190734863,
+                    7.850000381469727,
+                    0.0
+                  ],
+                  [
+                    15.40000057220459,
+                    7.850000381469727,
+                    0.0
+                  ],
+                  [
+                    15.40000057220459,
+                    7.75,
+                    0.0
+                  ]
+                ],
+                "predicted_native_vertices_cm": [
+                  [
+                    -1180.0000190734863,
+                    -775.0,
+                    0.0
+                  ],
+                  [
+                    -1180.0000190734863,
+                    -785.0000381469727,
+                    0.0
+                  ],
+                  [
+                    1540.000057220459,
+                    -785.0000381469727,
+                    0.0
+                  ],
+                  [
+                    1540.000057220459,
+                    -775.0,
+                    0.0
+                  ]
+                ],
+                "nesting_depth": 0,
+                "hole": false,
+                "area_m2": 2.720010452270799
+              }
+            ],
+            "horizontal_face_triangles_m": [
+              [
+                [
+                  -11.800000190734863,
+                  7.850000381469727,
+                  0.0
+                ],
+                [
+                  15.40000057220459,
+                  7.850000381469727,
+                  0.0
+                ],
+                [
+                  15.40000057220459,
+                  7.75,
+                  0.0
+                ]
+              ],
+              [
+                [
+                  -11.800000190734863,
+                  7.850000381469727,
+                  0.0
+                ],
+                [
+                  15.40000057220459,
+                  7.75,
+                  0.0
+                ],
+                [
+                  -11.800000190734863,
+                  7.75,
+                  0.0
+                ]
+              ]
+            ],
+            "contact_area_m2": 2.720010452270799,
+            "contact_vertices_m": [
+              [
+                -11.800000190734863,
+                7.75,
+                0.0
+              ],
+              [
+                -11.800000190734863,
+                7.850000381469727,
+                0.0
+              ],
+              [
+                15.40000057220459,
+                7.75,
+                0.0
+              ],
+              [
+                15.40000057220459,
+                7.850000381469727,
+                0.0
+              ]
+            ],
+            "policy": "Retain actual loops and holes; never replace curved or hollow contacts with a filled AABB."
+          },
+          "exclusion_reason": "explicit semantic/name-based duct exclusion; frozen kind remains structural_ground_contact"
+        },
+        {
+          "component": "EastGroundDuct",
+          "source_kind": "cable_ground_contact",
+          "source_contact_sha256": "782082a31aeb6e8011268dd024e6b61ec135b81ce1d677c775fe0c807d38ef7f",
+          "source_bounds_m": {
+            "min": [
+              15.339999198913574,
+              -13.199999809265137,
+              0.0
+            ],
+            "max": [
+              15.460000038146973,
+              7.800000190734863,
+              0.10000000149011612
+            ]
+          },
+          "source_contact": {
+            "method": "horizontal_mesh_faces",
+            "plane_z_m": 0.0,
+            "loops": [
+              {
+                "vertices_m": [
+                  [
+                    15.339999198913574,
+                    -13.199999809265137,
+                    0.0
+                  ],
+                  [
+                    15.339999198913574,
+                    7.800000190734863,
+                    0.0
+                  ],
+                  [
+                    15.460000038146973,
+                    7.800000190734863,
+                    0.0
+                  ],
+                  [
+                    15.460000038146973,
+                    -13.199999809265137,
+                    0.0
+                  ]
+                ],
+                "predicted_native_vertices_cm": [
+                  [
+                    1533.9999198913574,
+                    1319.9999809265137,
+                    0.0
+                  ],
+                  [
+                    1533.9999198913574,
+                    -780.0000190734863,
+                    0.0
+                  ],
+                  [
+                    1546.0000038146973,
+                    -780.0000190734863,
+                    0.0
+                  ],
+                  [
+                    1546.0000038146973,
+                    1319.9999809265137,
+                    0.0
+                  ]
+                ],
+                "nesting_depth": 0,
+                "hole": false,
+                "area_m2": 2.520017623901367
+              }
+            ],
+            "horizontal_face_triangles_m": [
+              [
+                [
+                  15.339999198913574,
+                  7.800000190734863,
+                  0.0
+                ],
+                [
+                  15.460000038146973,
+                  7.800000190734863,
+                  0.0
+                ],
+                [
+                  15.460000038146973,
+                  -13.199999809265137,
+                  0.0
+                ]
+              ],
+              [
+                [
+                  15.339999198913574,
+                  7.800000190734863,
+                  0.0
+                ],
+                [
+                  15.460000038146973,
+                  -13.199999809265137,
+                  0.0
+                ],
+                [
+                  15.339999198913574,
+                  -13.199999809265137,
+                  0.0
+                ]
+              ]
+            ],
+            "contact_area_m2": 2.520017623901367,
+            "contact_vertices_m": [
+              [
+                15.339999198913574,
+                -13.199999809265137,
+                0.0
+              ],
+              [
+                15.339999198913574,
+                7.800000190734863,
+                0.0
+              ],
+              [
+                15.460000038146973,
+                -13.199999809265137,
+                0.0
+              ],
+              [
+                15.460000038146973,
+                7.800000190734863,
+                0.0
+              ]
+            ],
+            "policy": "Retain actual loops and holes; never replace curved or hollow contacts with a filled AABB."
+          },
+          "exclusion_reason": "cable_ground_contact source kind"
+        },
+        {
+          "component": "CabinetGroundFeed",
+          "source_kind": "cable_ground_contact",
+          "source_contact_sha256": "0db85a9fa6cd8354aef616e8e47122062380f563f8feab391a765e97648c4f46",
+          "source_bounds_m": {
+            "min": [
+              10.149999618530273,
+              -13.260000228881836,
+              0.0
+            ],
+            "max": [
+              15.450000762939453,
+              -13.139999389648438,
+              0.10000000149011612
+            ]
+          },
+          "source_contact": {
+            "method": "horizontal_mesh_faces",
+            "plane_z_m": 0.0,
+            "loops": [
+              {
+                "vertices_m": [
+                  [
+                    10.149999618530273,
+                    -13.260000228881836,
+                    0.0
+                  ],
+                  [
+                    10.149999618530273,
+                    -13.139999389648438,
+                    0.0
+                  ],
+                  [
+                    15.450000762939453,
+                    -13.139999389648438,
+                    0.0
+                  ],
+                  [
+                    15.450000762939453,
+                    -13.260000228881836,
+                    0.0
+                  ]
+                ],
+                "predicted_native_vertices_cm": [
+                  [
+                    1014.9999618530273,
+                    1326.0000228881836,
+                    0.0
+                  ],
+                  [
+                    1014.9999618530273,
+                    1313.9999389648438,
+                    0.0
+                  ],
+                  [
+                    1545.0000762939453,
+                    1313.9999389648438,
+                    0.0
+                  ],
+                  [
+                    1545.0000762939453,
+                    1326.0000228881836,
+                    0.0
+                  ]
+                ],
+                "nesting_depth": 0,
+                "hole": false,
+                "area_m2": 0.6360045852670737
+              }
+            ],
+            "horizontal_face_triangles_m": [
+              [
+                [
+                  10.149999618530273,
+                  -13.139999389648438,
+                  0.0
+                ],
+                [
+                  15.450000762939453,
+                  -13.139999389648438,
+                  0.0
+                ],
+                [
+                  15.450000762939453,
+                  -13.260000228881836,
+                  0.0
+                ]
+              ],
+              [
+                [
+                  10.149999618530273,
+                  -13.139999389648438,
+                  0.0
+                ],
+                [
+                  15.450000762939453,
+                  -13.260000228881836,
+                  0.0
+                ],
+                [
+                  10.149999618530273,
+                  -13.260000228881836,
+                  0.0
+                ]
+              ]
+            ],
+            "contact_area_m2": 0.6360045852670737,
+            "contact_vertices_m": [
+              [
+                10.149999618530273,
+                -13.260000228881836,
+                0.0
+              ],
+              [
+                10.149999618530273,
+                -13.139999389648438,
+                0.0
+              ],
+              [
+                15.450000762939453,
+                -13.260000228881836,
+                0.0
+              ],
+              [
+                15.450000762939453,
+                -13.139999389648438,
+                0.0
+              ]
+            ],
+            "policy": "Retain actual loops and holes; never replace curved or hollow contacts with a filled AABB."
+          },
+          "exclusion_reason": "cable_ground_contact source kind"
+        }
+      ],
+      "retained_count": 16,
+      "excluded_count": 17,
+      "source_cable_kind_exclusions": 14,
+      "semantic_duct_exclusions": 3,
+      "source_kind_tags_preserved": true,
+      "other11_foundation_groups_unchanged": true
+    },
+    {
+      "kind": "water_tower_exact_zero_area_render_expectation",
+      "key": "water_tower",
+      "source_proof": "ArtSource/Manifests/city_water_tower_render_surface_proof.json",
+      "source_proof_sha256": "a98d18b2282e46beaf99b1258fcd141ba33791ef3c36fcc66f74fa54de588197",
+      "native_buffer_proof": "ArtSource/Manifests/city_utility_native_render_buffer_verification.json",
+      "native_buffer_proof_sha256": "21340283929fcbdf6af745d8f720e39458a4bd390fd6c89004be2970730abb4c",
+      "raw_source_triangles": [
+        4224,
+        3536,
+        2544
+      ],
+      "expected_native_triangles": [
+        4170,
+        3482,
+        2490
+      ],
+      "exact_zero_triangles_per_lod": 54,
+      "only_affected_material": "Paint_BlueGrey",
+      "retained_original_renderable_probes": 143,
+      "excluded_probe": {
+        "lod": 2,
+        "material": "Paint_BlueGrey",
+        "source_sample_index": 15,
+        "reason": "Exclusively zero-area cap201; no renderable source or native indexed-face corner"
+      },
+      "source_exports_and_frozen_raw_plan_unchanged": true,
+      "tolerances_unchanged": true
+    },
+    {
+      "kind": "wind_SpinRotor_only_globally_unused_slot",
+      "key": "wind_SpinRotor",
+      "source_proof": "ArtSource/Manifests/city_wind_rotor_empty_slot_proof.json",
+      "source_proof_sha256": "9c0ac10c14f574943d4618756a9b2279f7f1f1690deab952c64a93540783a99c",
+      "native_buffer_proof": "ArtSource/Manifests/city_utility_native_render_buffer_verification.json",
+      "native_buffer_proof_sha256": "21340283929fcbdf6af745d8f720e39458a4bd390fd6c89004be2970730abb4c",
+      "source_declared_slots": [
+        "OffWhite_PaintedSteel",
+        "BlueGrey_Machinery",
+        "Mechanical_Mapped"
+      ],
+      "effective_native_slots": [
+        "OffWhite_PaintedSteel",
+        "BlueGrey_Machinery"
+      ],
+      "removed_only_empty_slot": "Mechanical_Mapped",
+      "all3lods_used_triangles": 0,
+      "all3lods_probe_count": 0,
+      "geometry_counts_bounds_uvs_normals_probes_and_source_graphs_unchanged": true
+    }
+  ],
+  "material_policy": {
+    "version": 2,
+    "parent_policy": "Three structural templates; all source values/textures assigned through instances",
+    "concrete_source_noise_bump": "omitted_for_first_native_pass",
+    "foundation_concrete": "/Game/CitySim/Art/HomeGroundPilot/M_Concrete",
+    "superseded_frozen_plan_note": "Stock UE3D gradient noise/derivative surface-gradient bump approximates Blender fBM/bump. Scale/detail/distance/strength and generated bounds are retained; noise kernels/filtering are not pixel-equivalent. Native review required, especially nonuniform scale/mobile derivatives.",
+    "proposed_visual_limitations": [
+      "First native pass explicitly OMITS source concrete 3D noise and derivative bump, matching nuclear solid policy. Foundation units still bind existing textured M_Concrete. Not source visual parity.",
+      "Opaque UE default-lit replaces Blender Principled BRDF; source base/roughness/metallic/normal/tint/PV math links are translated, but specular lobe/lighting differences remain for native review.",
+      "Texture tangent normal strength is reconstructed with decoded XY weighting and normalization; shared texture flip-green=False follows existing project policy and still needs native light-direction review.",
+      "ORM.R receives no extra ambient-darkening where source leaves it disconnected; existing source AO tint links are retained.",
+      "Initial screen sizes [1,.12,.025] mirror nuclear only as a proposal; no Android minimum/performance or headset acceptance.",
+      "Damage retains exact body geometry/LODs: detailed base/PV uses SurfaceTint(.16,.13,.11); solid surfaces use char(.065,.055,.045),roughness.95,matching nuclear policy. No fracture/collapse derivative."
+    ]
+  },
+  "headset": "unconfirmed",
+  "retained_native_supersessions": [
+    {
+      "issue": 273,
+      "manifest": "ArtSource/Manifests/city_wind_winding273_native.json",
+      "sha256": "7704a7452058d198860db0f49e7139d2f713e881316e5a4154f866b924452222",
+      "build": 349,
+      "files": [
+        {
+          "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Meshes/SM_wind_turbine_v1",
+          "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Meshes/SM_wind_turbine_v1.uasset",
+          "sha256": "89e5b5e42618a3d51fa18a1d0b44f36484d228120930d85bce21c7356d30c448",
+          "bytes": 219211,
+          "supersedes_sha256": "4e942586ba69233fe08f1c4d222c9ee46a3996ac5e5ff75e55ac531be057e261"
+        },
+        {
+          "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Meshes/SM_wind_turbine_v1_Damaged",
+          "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Meshes/SM_wind_turbine_v1_Damaged.uasset",
+          "sha256": "b3b47280728ef9b9039bacf0d56ba51ab73a4f26446393454ff517976679dc21",
+          "bytes": 219339,
+          "supersedes_sha256": "63abbc48efe119cccc4c47fe52b41bde0d7281379dafdadcf3f1c84a362071f7"
+        },
+        {
+          "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Wind/SM_Wind_YawNacelle_v1",
+          "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Wind/SM_Wind_YawNacelle_v1.uasset",
+          "sha256": "52c20598f8464d0f99535dc19feeee3417d00bb2504d9bad6a1a4771ae273f64",
+          "bytes": 66332,
+          "supersedes_sha256": "e0b6d11dd4f60c50fee2876b47b5f02b904baeb2e6b84d423874cb7ca76a2855"
+        },
+        {
+          "path": "/Game/CitySim/Art/Utilities/ApprovedBatch/Wind/SM_Wind_SpinRotor_v1",
+          "file": "CitySimVR/Content/CitySim/Art/Utilities/ApprovedBatch/Wind/SM_Wind_SpinRotor_v1.uasset",
+          "sha256": "fd726cd1528bdbffbf25df5971af8e7c84eead78e59433641dc1868a82bb6a72",
+          "bytes": 47726,
+          "supersedes_sha256": "f788aa2e042b44056694c2d626a4ff64945fd768687df1e9078d210818387958"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,207 @@
+{
+  "task": "D124 home inspection charts",
+  "date": "2026-10-15",
+  "status": "Maintained Windows ready for user playtest",
+  "revision": "dev-835e1068a8861a578c74",
+  "schema": 69,
+  "behavior": [
+    "Residence supply/shopping prose removed from the always-open summary; Shopping & supplies contains four bars and only one brief blocker when actual essentials are exhausted.",
+    "Stored days, held essential units and actual goods purchases today/yesterday are charted against a seven-day basket; purchases remain distinct from available stored supplies.",
+    "Illness/severe/receiving-care/awaiting-care counts appear as four bars inside Health, without illness prose above the accordions or rows/help inside Health.",
+    "Existing six authored accordions retained; work and finance metrics move to Work & wellbeing. Other service/safety/repair concerns remain."
+  ],
+  "unchanged": "No simulation, pantry consumption/prices, D107 clock, D121 walk/assets, health triage/travel/ambulance/bed rule or schema change. D125 separately owns health behavior.",
+  "windows": {
+    "path": "Artifacts/PCVRSandbox/Windows/CitySimVR/Binaries/Win64/CitySimVR.exe",
+    "sha256": "92916e6a2099d3c9c860a52b17aa8a66469250f329b2b683bddee7213ae7d5b8",
+    "default_replaced": true,
+    "previous_files": 53
+  },
+  "quest": {
+    "packaged": false,
+    "reason": "Desktop-only inspection composition; VR inspection and health/simulation behavior unchanged. Proportional validation packages the affected Windows target only.",
+    "previousArchive": "Artifacts/D123/QuestPackage/Android_ASTC/CitySimVR-arm64.apk",
+    "previousRevision": "dev-d7105a4eb7ba5a725b97",
+    "physicalObservations": "Unconfirmed under D114; no install."
+  },
+  "tests": {
+    "Checks-EditorDelivery.log": [
+      "PurchaseCausesUseCurrentEvidence",
+      "BeforeAndAfterWorkStops",
+      "OptionalComfortAndFiniteFunding",
+      "StartupAndActualStockoutIndicators",
+      "WeeklyBulkGraceAndReload"
+    ],
+    "Visual-EditorDelivery1280.log": [
+      "HomeInspectionCharts"
+    ],
+    "Visual-EditorDelivery1024.log": [
+      "HomeInspectionCharts"
+    ],
+    "Visual-Packaged1280.log": [
+      "HomeInspectionCharts"
+    ],
+    "Visual-Packaged1024.log": [
+      "HomeInspectionCharts"
+    ],
+    "Startup.log": [
+      "PackagedSmoke"
+    ]
+  },
+  "screenshots": [
+    {
+      "path": "Artifacts/D124/D124-Visual-Packaged1280-User/Saved/Automation/D124Inspection/Inspect-0.png",
+      "sha256": "15ea3d9d8a1d41f98e37e21f4a39ebb344a9380e90eb93da6fcb9cc3d2b95692",
+      "size": [
+        1280,
+        800
+      ]
+    },
+    {
+      "path": "Artifacts/D124/D124-Visual-Packaged1280-User/Saved/Automation/D124Inspection/Inspect-1.png",
+      "sha256": "405f76371a5faab7b0e3ab457a6ac78f353cf6b7f7e3ca739455b517035d7096",
+      "size": [
+        1280,
+        800
+      ]
+    },
+    {
+      "path": "Artifacts/D124/D124-Visual-Packaged1280-User/Saved/Automation/D124Inspection/Inspect-2.png",
+      "sha256": "1fbbbbf3b468b420847b39ff684f25886d6dadd722ce9af03f5bc7cf2cbb10e8",
+      "size": [
+        1280,
+        800
+      ]
+    },
+    {
+      "path": "Artifacts/D124/D124-Visual-Packaged1280-User/Saved/Automation/D124Inspection/Inspect-3.png",
+      "sha256": "295bfdb315b4b4b6206d1c63bbdc29ef4a3797244e0c13bc5de7df3e930f83c2",
+      "size": [
+        1280,
+        800
+      ]
+    },
+    {
+      "path": "Artifacts/D124/D124-Visual-Packaged1024-User/Saved/Automation/D124Inspection/Inspect-0.png",
+      "sha256": "aacb09c126b80418415d21ad7e141b7c581b80e0412666c53e8314967c26d53c",
+      "size": [
+        1024,
+        720
+      ]
+    },
+    {
+      "path": "Artifacts/D124/D124-Visual-Packaged1024-User/Saved/Automation/D124Inspection/Inspect-1.png",
+      "sha256": "9bcf5def48367c740e448dcf7356eb85fca7a395bff3ef3198788a208d93172a",
+      "size": [
+        1024,
+        720
+      ]
+    },
+    {
+      "path": "Artifacts/D124/D124-Visual-Packaged1024-User/Saved/Automation/D124Inspection/Inspect-2.png",
+      "sha256": "85d94c4d53951dddcbb917f9b939477f0f824f3e06661711f53dbdf050df999c",
+      "size": [
+        1024,
+        720
+      ]
+    },
+    {
+      "path": "Artifacts/D124/D124-Visual-Packaged1024-User/Saved/Automation/D124Inspection/Inspect-3.png",
+      "sha256": "26e7d27f872ad0c931c5d9abb43ed9018dd5fa24db98e6b8ef05e7e426356dd6",
+      "size": [
+        1024,
+        720
+      ]
+    }
+  ],
+  "visualReview": "All eight final packaged1280x800/1024x720 views reviewed: supplied pantry, empty cash, unavailable stock, mild+severe illness; labels/bars/short causes readable. Ordinary startup reviewed.",
+  "source_changes": [
+    {
+      "path": "CitySimVR/Source/CitySimVR/Private/Interaction/CityDesktopInteraction.cpp",
+      "before_sha256": "b457ea68ac1f92bb996a853dfef500f8c92c91380fadd375b579fba9f8acb18a",
+      "after_sha256": "55faa1d87fbc5e92c8db4a2a7e7a3a3ae3be7f9998b81ec8a59d18f4bcf2bd15",
+      "diff": "--- CitySimVR/Source/CitySimVR/Private/Interaction/CityDesktopInteraction.cpp (before D124)\n+++ CitySimVR/Source/CitySimVR/Private/Interaction/CityDesktopInteraction.cpp\n@@ -346,9 +346,12 @@\n \t{\n \t\tCityUiContent::InspectionDetails(*InspectionSim, InspectedEntityId, Data);\n \t\tCityUiContent::InspectionOverview(*InspectionSim, InspectedEntityId, Data);\n-\t\tconst FString Cause = FCityConditionIndicators::Explain(*InspectionSim, InspectedEntityId);\n-\t\tif (!Cause.IsEmpty())\n-\t\t\tData.InspectionSummary = FText::FromString(Cause);\n+\t\tif (!InspectionSim->GetPopulationSnapshot().Households.ContainsByPredicate(\n+\t\t        [&](const auto& H) { return H.HomeEntityId == InspectedEntityId; }))\n+\t\t{\n+\t\t\tconst FString Cause = FCityConditionIndicators::Explain(*InspectionSim, InspectedEntityId);\n+\t\t\tif (!Cause.IsEmpty()) Data.InspectionSummary = FText::FromString(Cause);\n+\t\t}\n \t}\n \tData.Upgrade = SharedUpgradeLabel;\n \tData.bUpgradeAvailable = bInspectorUpgradeAvailable;\n"
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Private/Presentation/CityInspectionContent.cpp",
+      "before_sha256": "dbb2cb99d4355b5769649f1c4801e835ecf7639e815a7a56ac9e7cfa4b157b03",
+      "after_sha256": "08d2e3264b6c4b2854342ae9d7337304bdfd01c8ae04d96b0e3db12c4bd0e373",
+      "diff": "--- CitySimVR/Source/CitySimVR/Private/Presentation/CityInspectionContent.cpp (before D124)\n+++ CitySimVR/Source/CitySimVR/Private/Presentation/CityInspectionContent.cpp\n@@ -3,6 +3,7 @@\n #include \"Simulation/CityBuildingDefinition.h\"\n #include \"Simulation/CityTechnology.h\"\n #include \"Simulation/CityHappinessSimulation.h\"\n+#include \"Presentation/CityConditionIndicators.h\"\n \n namespace\n {\n@@ -141,23 +142,11 @@\n \tconst auto* Public = People.PublicEmployers.FindByPredicate([&](const auto& V) { return V.EntityId == Id; });\n \tif (Household)\n \t{\n-\t\tif (Household->bUsesStoredSupplies)\n-\t\t{\n-\t\t\tWork.Gauges.RemoveAll([](const auto& G) { return G.Label.ToString() == TEXT(\"Buys / need\") || G.Label.ToString() == TEXT(\"Yesterday / need\"); });\n-\t\t\tRow(Work, TEXT(\"Supply at home\"), FString::Printf(TEXT(\"%d goods | %.1f days\"), Household->SupplyUnits, Household->ConsumptionOrders > 0 ? double(Household->SupplyUnits) / Household->ConsumptionOrders : 0.));\n-\t\t\tRow(Work, TEXT(\"Essential shopping\"), TEXT(\"Weekly bulk / smaller top-ups if needed\"));\n-\t\t}\n \t\tGauge(Work, TEXT(\"Employed / people\"), Employed, Residents, false);\n \t\tRow(Work, TEXT(\"Savings\"), Money(Household->Balance));\n \t\tint64 Grants=0;for(const auto& C:People.Citizens) if(C.HomeEntityId==Id && C.LastPolicyGrantMonth==Sim.GetEconomySnapshot().Policies.LastSettledMonth) Grants+=C.LastPolicyGrant;\n \t\tRow(Work,TEXT(\"Last policy grants\"),Sim.GetEconomySnapshot().Policies.LastSettledMonth>0 ? Money(Grants) : TEXT(\"Not recorded\"));\n-\t\tint64 Held = 0; int32 HeldOrders = 0;\n-\t\tfor (const auto& O : People.PurchaseReservations)\n-\t\t\tif (O.HouseholdId == Household->Id) { Held += O.Price; ++HeldOrders; }\n-\t\tRow(Work, TEXT(\"Purchases today\"), Household->bUsesStoredSupplies ? FString::Printf(TEXT(\"%d goods\"), Household->PurchasesThisMonth) : FString::Printf(TEXT(\"%d / %d\"), Household->PurchasesThisMonth, Household->ConsumptionOrders));\n-\t\tRow(Work, TEXT(\"Orders reserved\"), FString::FromInt(HeldOrders));\n-\t\tRow(Work, TEXT(\"Cash reserved\"), Money(Held));\n-\t\tRow(Work, TEXT(\"Cash available\"), Money(FMath::Max<int64>(0, Household->Balance - Held)));\n+\n \t}\n \tif (Business)\n \t{\n@@ -238,20 +227,55 @@\n \t\tRow(Wellbeing, TEXT(\"Discontented\"), FString::Printf(TEXT(\"%d / %d\"), Mood.Discontented, Residents));\n \t\tif (!Mood.Concerns) Row(Wellbeing, TEXT(\"Concerns\"), TEXT(\"None recorded\"));\n \t\tconst TCHAR* Concerns[] = {TEXT(\"Housing\"), TEXT(\"Utilities\"), TEXT(\"Shopping\"), TEXT(\"Savings\"), TEXT(\"Pollution\"), TEXT(\"Safety\"), TEXT(\"Health\"), TEXT(\"Waste\"), TEXT(\"Taxes\")};\n-\t\tfor (int32 I = 0; I < 9; ++I) if (Mood.Concerns & (1 << I)) Row(Wellbeing, Concerns[I], TEXT(\"Concern\"));\n+\t\tfor (int32 I = 0; I < 9; ++I) if (I != 2 && I != 6 && (Mood.Concerns & (1 << I))) Row(Wellbeing, Concerns[I], TEXT(\"Concern\"));\n \t\tint32 Ill = 0, Severe = 0, Care = 0, Waiting = 0;\n \t\tfor (const auto& P : Sim.GetHealthSnapshot().Patients)\n \t\t\tif (People.Citizens.ContainsByPredicate([&](const auto& C) { return C.Id == P.CitizenId && C.HomeEntityId == Id; }))\n \t\t\t{ ++Ill; Severe += P.Illness == ECityIllness::Severe; Care += P.Care == ECityHealthCare::Hospital || P.Care == ECityHealthCare::Remote; Waiting += P.Care == ECityHealthCare::WalkIn || P.Care == ECityHealthCare::AwaitingAmbulance; }\n-\t\tGauge(Health, TEXT(\"Ill / residents\"), Ill, Residents, false);\n-\t\tRow(Health, TEXT(\"Severe illness\"), FString::FromInt(Severe)); Row(Health, TEXT(\"Receiving care\"), FString::FromInt(Care)); Row(Health, TEXT(\"Awaiting arrival\"), FString::FromInt(Waiting));\n-\t\tif (Ill > Care + Waiting) Health.Detail = FText::FromString(TEXT(\"Care short: check hospital access, places, staff and utilities.\"));\n+\t\tHealth.Gauges.Reset(); Health.Rows.Reset();\n+\t\tHealth.Detail = Health.Help = FText::GetEmpty();\n+\t\tGauge(Health, TEXT(\"Ill residents\"), Ill, Residents, false);\n+\t\tGauge(Health, TEXT(\"Severe\"), Severe, Residents, false);\n+\t\tGauge(Health, TEXT(\"Receiving care\"), Care, Residents, false);\n+\t\tGauge(Health, TEXT(\"Awaiting care\"), Waiting, Residents, false);\n \t}\n \telse\n \t{\n \t\tWellbeing.Gauges.Reset(); Wellbeing.Rows.Reset();\n \t\tif (Entity->DefinitionId == TEXT(\"Home\")) Gauge(Wellbeing, TEXT(\"Residents / beds\"), 0, Level ? Level->ResidentsProvided : 0, false);\n \t\tif (!FCityBuildingDefinition::IsSchoolFacility(Entity->DefinitionId)) Study.Gauges.Reset();\n+\t}\n+\tif (Household)\n+\t{\n+\t\t// Reuse the authored six-accordion layout; isolate supplies from work/finance prose.\n+\t\tWellbeing.Title = FText::FromString(TEXT(\"Work & wellbeing\"));\n+\t\tfor (const auto& G : Work.Gauges)\n+\t\t\tif (G.Label.ToString() != TEXT(\"Buys / need\") && G.Label.ToString() != TEXT(\"Yesterday / need\")) Wellbeing.Gauges.Add(G);\n+\t\tWellbeing.Rows.Append(Work.Rows);\n+\t\tWork.Title = FText::FromString(TEXT(\"Shopping & supplies\"));\n+\t\tWork.Gauges.Reset(); Work.Rows.Reset(); Work.Help = FText::GetEmpty();\n+\t\tWork.Detail = FText::FromString(FCityConditionIndicators::ShoppingBlocker(Sim, Id));\n+\t\tconst int32 Need = FMath::Max(1, Household->ConsumptionOrders);\n+\t\tconst int32 Weekly = Need * 7;\n+\t\tint32 HeldGoods = 0;\n+\t\tfor (const auto& O : People.PurchaseReservations) if (O.HouseholdId == Household->Id && !O.ComfortTier) HeldGoods += O.Quantity;\n+\t\tGauge(Work, TEXT(\"Supplies\"), Household->bUsesStoredSupplies ? Household->SupplyUnits : 0, Weekly, false);\n+\t\tWork.Gauges.Last().Value = FText::FromString(FString::Printf(TEXT(\"%.1f days\"), Household->bUsesStoredSupplies ? double(Household->SupplyUnits) / Need : 0.));\n+\t\tWork.Gauges.Last().Color = Household->SupplyUnits <= 0 ? FLinearColor(1.f, .55f, .25f) : FLinearColor(.3f, .76f, .65f);\n+\t\tGauge(Work, TEXT(\"On order\"), HeldGoods, Weekly, false);\n+\t\tGauge(Work, TEXT(\"Bought today\"), Household->PurchasesThisMonth, Weekly, false);\n+\t\tGauge(Work, TEXT(\"Yesterday\"), Household->CompletedPurchases, Weekly, false);\n+\t\t// Illness and supplies belong in their accordions, not the always-open summary.\n+\t\tOut.InspectionSummary = FText::GetEmpty();\n+\t\tauto Conditions = FCityConditionIndicators::Build(City, Sim.GetFireSnapshot(), Sim.GetCrimeSnapshot(),\n+\t\t    Sim.GetEconomyTuning().FireRepairSteps, nullptr, &People, 0, &Sim.GetWasteSnapshot(), &Services, MAX_int32, 0);\n+\t\tif (auto* Cause = Conditions.FindByPredicate([&](const auto& V) { return V.EntityId == Id; }))\n+\t\t{\n+\t\t\tCause->bSupplyEmpty = false;\n+\t\t\tCause->IllResidents = Cause->PatientsInCare = 0;\n+\t\t\tCause->SettledConcerns &= ~(static_cast<int32>(ECityHappinessConcern::Purchases) | static_cast<int32>(ECityHappinessConcern::Health));\n+\t\t\tif (Cause->CauseCount()) Out.InspectionSummary = FText::FromString(Cause->Title(Sim.GetRepairCost(Id)) + TEXT(\" | \") + Cause->Detail(Sim.GetEconomyTuning().FixedStepsPerMonth));\n+\t\t}\n \t}\n \tif (FCityBuildingDefinition::IsSchoolFacility(Entity->DefinitionId))\n \t{\n"
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Private/Tests/CityConditionCauseTests.cpp",
+      "before_sha256": "c6de8cf6c98549e940d603569a7ba91ccfb20e382ac931a4d1183603d256d345",
+      "after_sha256": "cdbee24428bff59c79dd57a9c0ae1b171cd716253e7fa4c5a347520db4dcab23",
+      "diff": "--- CitySimVR/Source/CitySimVR/Private/Tests/CityConditionCauseTests.cpp (before D124)\n+++ CitySimVR/Source/CitySimVR/Private/Tests/CityConditionCauseTests.cpp\n@@ -80,6 +80,7 @@\n \tconst uint64 Revision = City.GetRevision();\n \tTestTrue(TEXT(\"Known current cash limit is distinguished\"),\n \t         FCityConditionIndicators::Explain(*Sim, Home).Contains(TEXT(\"unreserved cash\")));\n+\tTestEqual(TEXT(\"Supply accordion gives a concise cash blocker\"), FCityConditionIndicators::ShoppingBlocker(*Sim, Home), FString(TEXT(\"Insufficient available cash\")));\n \tPeople.Citizens[0].AvailableMoney = People.Households[0].Balance = 50;\n \tif (!Restore())\n \t{\n@@ -88,6 +89,7 @@\n \t}\n \tTestTrue(TEXT(\"Known stock limit is distinguished\"),\n \t         FCityConditionIndicators::Explain(*Sim, Home).Contains(TEXT(\"no unreserved stock\")));\n+\tTestEqual(TEXT(\"Supply accordion gives a concise stock blocker\"), FCityConditionIndicators::ShoppingBlocker(*Sim, Home), FString(TEXT(\"No available shop stock\")));\n \tPeople.Businesses[0].Inventory = 1;\n \tPeople.Businesses[0].PendingOrders = 0;\n \tif (!Restore())\n@@ -97,6 +99,7 @@\n \t}\n \tTestTrue(TEXT(\"Known retail slot limit is distinguished\"),\n \t         FCityConditionIndicators::Explain(*Sim, Home).Contains(TEXT(\"no free purchase slots\")));\n+\tTestEqual(TEXT(\"Supply accordion gives a concise capacity blocker\"), FCityConditionIndicators::ShoppingBlocker(*Sim, Home), FString(TEXT(\"No available shop capacity\")));\n \tPeople.Businesses[0].PendingOrders = 1;\n \tif (!Restore())\n \t{\n@@ -130,6 +133,7 @@\n \tif (!Restore()) { W->DestroyWorld(false); return false; }\n \tTestTrue(TEXT(\"Work dwell is not mislabeled as departure wait\"),\n \t         FCityConditionIndicators::Explain(*Sim, Home).Contains(TEXT(\"Buyer at work until\")));\n+\tTestEqual(TEXT(\"Supply accordion distinguishes work\"), FCityConditionIndicators::ShoppingBlocker(*Sim, Home), FString(TEXT(\"Buyer at work\")));\n \tPeople.Citizens[0].Schedule = ECityCitizenSchedule::ToWork;\n \tPeople.Citizens[0].CurrentLocationEntityId = Home;\n \tPeople.Citizens[0].TripPurpose = ECityTripPurpose::Commute;\n@@ -137,10 +141,12 @@\n \tif (!Restore()) { W->DestroyWorld(false); return false; }\n \tTestTrue(TEXT(\"Commute before shopping is explicit\"),\n \t         FCityConditionIndicators::Explain(*Sim, Home).Contains(TEXT(\"Buyer commuting to work\")));\n+\tTestEqual(TEXT(\"Supply accordion distinguishes commute\"), FCityConditionIndicators::ShoppingBlocker(*Sim, Home), FString(TEXT(\"Buyer commuting\")));\n \tPeople.Citizens[0].Schedule = ECityCitizenSchedule::Home;\n \tPeople.Citizens[0].Activity = ECityCitizenActivity::Home;\n \tPeople.Citizens[0].TripPurpose = ECityTripPurpose::None;\n \tPeople.Citizens[0].TripDestinationEntityId = 0;\n+\tif (!Restore()) { W->DestroyWorld(false); return false; }\n \tFString Label;\n \tTestEqual(TEXT(\"Provider shortcut identifies actual reserved shop\"),\n \t          FCityConditionIndicators::RelatedLot(*Sim, Home, Label), Shop);\n@@ -148,6 +154,7 @@\n \tFCityRoadNetworkBuilder::Build(City, FCityRoadDefinition::Local(), Sim->RoadNetworkSnapshot);\n \tTestTrue(TEXT(\"Broken route uses actual traffic eligibility\"),\n \t         FCityConditionIndicators::Explain(*Sim, Home).Contains(TEXT(\"no valid walk route\")));\n+\tTestEqual(TEXT(\"Supply accordion distinguishes an actual route break\"), FCityConditionIndicators::ShoppingBlocker(*Sim, Home), FString(TEXT(\"No shopping route\")));\n \tTestEqual(TEXT(\"Only explicit road removal changed authority\"), City.GetRevision(), Revision + 1);\n \tTestTrue(TEXT(\"Explanations never charge funds\"), City.GetFunds() >= Cash);\n \tPeople.Citizens[0].HappinessConcerns = 0;\n"
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Private/Tests/CityHouseholdSupplyVisualTests.cpp",
+      "before_sha256": "4cdc83bc5bd2d32bcbaa306cda6feef09a6c9b4d711ea56c3c7fffc108187504",
+      "after_sha256": "658580f03f79fbf894ad221c40b66a2b71ff43548b573077624ca1a2b6fe1ff2",
+      "diff": "--- CitySimVR/Source/CitySimVR/Private/Tests/CityHouseholdSupplyVisualTests.cpp (before D124)\n+++ CitySimVR/Source/CitySimVR/Private/Tests/CityHouseholdSupplyVisualTests.cpp\n@@ -58,7 +58,8 @@\n   {\n    const FString Summary=UI->GetUiSnapshot().InspectionSummary.ToString();\n    const TCHAR* Expected[]={TEXT(\"Starter supplies\"),TEXT(\"SUPPLIES EXHAUSTED\"),TEXT(\"Opening delivery pending\"),TEXT(\"OUT OF STOCK\"),TEXT(\"high-density\")};\n-   Test->TestTrue(TEXT(\"supply/comfort status uses actual selected state: \")+Summary,Summary.Contains(Expected[Index]));\n+   if(Index==2 || Index==3) Test->TestTrue(TEXT(\"business supply status remains explicit: \")+Summary,Summary.Contains(Expected[Index]));\n+   else {const auto View=UI->GetUiSnapshot();Test->TestEqual(TEXT(\"supplies now live in their accordion\"),View.InspectionSections[1].Title.ToString(),FString(TEXT(\"Shopping & supplies\")));Test->TestFalse(TEXT(\"home has no supply explanation above accordions\"),Summary.Contains(TEXT(\"Essentials stored\")));}\n    const auto Rows=FCityConditionIndicators::Build(Sim->GetPlacementModel(),Sim->GetFireSnapshot(),Sim->GetCrimeSnapshot(),Sim->GetEconomyTuning().FireRepairSteps,nullptr,&Sim->GetPopulationSnapshot(),0,nullptr,&Sim->GetServiceSnapshot(),100,0);\n    if(Index==0 || Index==4)Test->TestFalse(TEXT(\"stored supplies do not create a shopping warning\"),Rows.ContainsByPredicate([](const auto& R){return R.EntityId==26 && (R.bSupplyEmpty || R.SettledConcerns);}));\n    if(Index==2)Test->TestFalse(TEXT(\"first opening shipment grace has no warning badge\"),Rows.ContainsByPredicate([](const auto& R){return R.EntityId==6;}));\n"
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Private/Tests/CityShoppingStatusVisualTests.cpp",
+      "before_sha256": "c518a951c8423c3abd5e0e0e296c16bd8073c49adc5a8735f0e49f07140898cc",
+      "after_sha256": "7185180729c628d224bfc0265240c89cf2ac57d5b6e3e4485d29ae42efb6ee0b",
+      "diff": "--- CitySimVR/Source/CitySimVR/Private/Tests/CityShoppingStatusVisualTests.cpp (before D124)\n+++ CitySimVR/Source/CitySimVR/Private/Tests/CityShoppingStatusVisualTests.cpp\n@@ -54,12 +54,9 @@\n   }\n   else if(Phase==1 || Phase==3 || Phase==5)\n   {\n-   const auto View=UI->GetUiSnapshot();const FString Summary=View.InspectionSummary.ToString();\n-   Test->TestTrue(TEXT(\"inspection separates yesterday/today\"),Summary.Contains(TEXT(\"yesterday:\"),ESearchCase::IgnoreCase) && Summary.Contains(TEXT(\"Today:\")));\n-   Test->TestTrue(TEXT(\"phase-specific cause visible\"),Summary.Contains(Phase==1?TEXT(\"Buyer at work\"):Phase==3?TEXT(\"Shopper travelling\"):TEXT(\"unreserved cash\")) || (Phase==5 && Summary.Contains(TEXT(\"Essentials covered\"))));\n-   bool Purchases=false,Orders=false,Cash=false;\n-   for(const auto& Section:View.InspectionSections)for(const auto& Row:Section.Rows){const auto Label=Row.Label.ToString();Purchases|=Label==TEXT(\"Purchases today\");Orders|=Label==TEXT(\"Orders reserved\");Cash|=Label==TEXT(\"Cash available\");}\n-   Test->TestTrue(TEXT(\"inspection rows contain real purchases, orders and free cash\"),Purchases && Orders && Cash);\n+   const auto View=UI->GetUiSnapshot();const FString Summary=FCityConditionIndicators::Explain(*Sim,26);\n+   const auto& Supplies=View.InspectionSections[1];\n+   Test->TestTrue(TEXT(\"shopping status is inside concise charts\"),Supplies.Gauges.Num()==4 && Supplies.Rows.IsEmpty() && Supplies.Help.IsEmpty());\n    IFileManager::Get().MakeDirectory(*Directory,true);\n    FScreenshotRequest::RequestScreenshot(Directory/FString::Printf(TEXT(\"Shopping-%d.png\"),Phase/2),true,false);\n    Test->AddInfo(TEXT(\"B003_SHOPPING_UI \")+Summary);\n"
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Public/Presentation/CityConditionIndicators.h",
+      "before_sha256": "4d059b167f3efb01aae0995cf60e1de3b8ebd0a6d3b3ff84e960baca9f739efe",
+      "after_sha256": "65beee8e7350740a05ca18dc4d25d71b3ebfd7fe4f912f4d36dc15d4ab0f26d5",
+      "diff": "--- CitySimVR/Source/CitySimVR/Public/Presentation/CityConditionIndicators.h (before D124)\n+++ CitySimVR/Source/CitySimVR/Public/Presentation/CityConditionIndicators.h\n@@ -63,5 +63,7 @@\n \t    int32* OutAffectedLots = nullptr);\n \tstatic bool Hit(const FTransform& Pose, const FVector& Origin, const FVector& Direction, double& Distance);\n \tstatic FString Explain(const UCitySimulationSubsystem& Sim, uint64 EntityId);\n+\t// One current blocker, shown only for an exhausted household in its supplies accordion.\n+\tstatic FString ShoppingBlocker(const UCitySimulationSubsystem& Sim, uint64 EntityId);\n \tstatic uint64 RelatedLot(const UCitySimulationSubsystem& Sim, uint64 EntityId, FString& Label);\n };\n"
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Private/Presentation/CityShoppingInspection.cpp",
+      "before_sha256": null,
+      "after_sha256": "87bcf2faaeb8f47838e704ade85c59b0ca30da8b2db3fa9fb4f9d0fb781fd733",
+      "diff": "#include \"Presentation/CityConditionIndicators.h\"\n#include \"Simulation/CitySimulationSubsystem.h\"\n#include \"Simulation/CityTrafficSimulation.h\"\n\nFString FCityConditionIndicators::ShoppingBlocker(const UCitySimulationSubsystem& Sim, uint64 Id)\n{\n\tconst auto& People = Sim.GetPopulationSnapshot();\n\tconst auto* Home = People.Households.FindByPredicate([&](const auto& H) { return H.HomeEntityId == Id; });\n\tif (!Home || (Home->bUsesStoredSupplies ? Home->SupplyUnits > 0 : Home->CompletedPurchases >= Home->ConsumptionOrders))\n\t\treturn {};\n\tconst auto& City = Sim.GetPlacementModel();\n\tconst auto& Traffic = Sim.GetTrafficSnapshot();\n\tconst FCityPurchaseReservation* Order = nullptr;\n\tTMap<uint64, int32> Held;\n\tint64 Funds = 0;\n\tfor (const auto& C : People.Citizens) if (C.HouseholdId == Home->Id) Funds += C.AvailableMoney;\n\tfor (const auto& O : People.PurchaseReservations)\n\t{\n\t\tHeld.FindOrAdd(O.ShopId) += O.Quantity;\n\t\tif (O.HouseholdId == Home->Id)\n\t\t{\n\t\t\tFunds -= O.Price;\n\t\t\tif (!O.ComfortTier && (!Order || O.BuyerId < Order->BuyerId)) Order = &O;\n\t\t}\n\t}\n\tif (Order)\n\t{\n\t\tconst auto* Buyer = People.Citizens.FindByPredicate([&](const auto& C) { return C.Id == Order->BuyerId; });\n\t\tif (!Buyer) return TEXT(\"Buyer unavailable\");\n\t\tif (Buyer->Schedule == ECityCitizenSchedule::Work) return TEXT(\"Buyer at work\");\n\t\tif (Buyer->Schedule == ECityCitizenSchedule::ToWork) return TEXT(\"Buyer commuting\");\n\t\tif (Buyer->Schedule == ECityCitizenSchedule::ToHome) return TEXT(\"Buyer returning home\");\n\t\tconst auto Matches = [&](const auto& V) { return !V.bTransitTrip && V.SourceId == Buyer->Id && V.DestinationEntityId == Order->ShopId; };\n\t\tif (Traffic.WaitingDepartures.ContainsByPredicate(Matches)) return TEXT(\"Departure blocked by traffic\");\n\t\tif (Traffic.Vehicles.ContainsByPredicate(Matches)) return TEXT(\"Shopping travel\");\n\t\tFCityCellCoord Start, End;\n\t\tTMap<FCityCellCoord, int32> Distances;\n\t\tconst uint64 Origin = Buyer->CurrentLocationEntityId ? Buyer->CurrentLocationEntityId : Id;\n\t\tif (!FCityTrafficSimulation::FindPortal(City, Sim.GetBuildingCatalog(), Origin, Start) ||\n\t\t    !FCityTrafficSimulation::FindPortal(City, Sim.GetBuildingCatalog(), Order->ShopId, End)) return TEXT(\"No shopping route\");\n\t\tSim.GetRoadNetworkSnapshot().FindWalkingDistances(Start, Distances);\n\t\tif (!Distances.Contains(End)) return TEXT(\"No shopping route\");\n\t\treturn TEXT(\"Departure pending\");\n\t}\n\tif (Funds < FMath::Max<int64>(0, Sim.GetEconomyTuning().HouseholdIncomePerGoodsPurchase)) return TEXT(\"Insufficient available cash\");\n\tbool Stock = false, Slots = false, Eligible = false, Reachable = false;\n\tFCityCellCoord Start;\n\tTMap<FCityCellCoord, int32> Distances;\n\tif (FCityTrafficSimulation::FindPortal(City, Sim.GetBuildingCatalog(), Id, Start)) Sim.GetRoadNetworkSnapshot().FindWalkingDistances(Start, Distances);\n\tfor (const auto& B : People.Businesses)\n\t{\n\t\tif (B.bIndustrial) continue;\n\t\tStock |= B.Inventory > Held.FindRef(B.EntityId);\n\t\tSlots |= B.PendingOrders - B.SalesThisMonth > Held.FindRef(B.EntityId);\n\t\tif (!FCityPopulationSimulation::CanReserveShop(B, Held.FindRef(B.EntityId))) continue;\n\t\tEligible = true;\n\t\tFCityCellCoord End;\n\t\tReachable |= FCityTrafficSimulation::FindPortal(City, Sim.GetBuildingCatalog(), B.EntityId, End) && Distances.Contains(End);\n\t}\n\tif (!Stock) return TEXT(\"No available shop stock\");\n\tif (!Slots || !Eligible) return TEXT(\"No available shop capacity\");\n\treturn Reachable ? TEXT(\"Allocation pending\") : TEXT(\"No shopping route\");\n}\n"
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Private/Tests/CityHomeInspectionVisualTests.cpp",
+      "before_sha256": null,
+      "after_sha256": "c6770a6b5c8d6893a51a10346b821a5acb8873ee80ffbfedcd9886746757a89d",
+      "diff": "#if WITH_DEV_AUTOMATION_TESTS\n#include \"Misc/AutomationTest.h\"\n#include \"Misc/CommandLine.h\"\n#include \"Misc/Parse.h\"\n#include \"Misc/FileHelper.h\"\n#include \"Misc/Paths.h\"\n#include \"HAL/FileManager.h\"\n#include \"Engine/Engine.h\"\n#include \"Engine/GameViewportClient.h\"\n#include \"Engine/World.h\"\n#include \"EngineUtils.h\"\n#include \"Interaction/CityVRToolController.h\"\n#include \"Presentation/CityBoardActor.h\"\n#include \"Presentation/CityConditionIndicators.h\"\n#include \"Persistence/CityPersistence.h\"\n#include \"Simulation/CitySimulationSubsystem.h\"\n#include \"UnrealClient.h\"\n#include \"Presentation/CityDesktopHud.h\"\n#include \"UObject/UObjectIterator.h\"\n\nclass FCityHomeInspectionVisualCommand : public IAutomationLatentCommand\n{\npublic:\n explicit FCityHomeInspectionVisualCommand(FAutomationTestBase* In):Test(In){}\n bool Update() override\n {\n  if(FPlatformTime::Seconds()<Next)return false;\n  auto* W=GEngine && GEngine->GameViewport ? GEngine->GameViewport->GetWorld() : nullptr;if(!W)return false;\n  ACityVRToolController* UI=nullptr;ACityBoardActor* Board=nullptr;\n  for(TActorIterator<ACityVRToolController> It(W);It;++It){UI=*It;break;}\n  for(TActorIterator<ACityBoardActor> It(W);It;++It){Board=*It;break;}\n  if(!UI || !Board)return false;\n  auto* Sim=W->GetSubsystem<UCitySimulationSubsystem>();\n  const FString Directory=FPaths::ProjectSavedDir()/TEXT(\"Automation/D124Inspection\");\n  IFileManager::Get().MakeDirectory(*Directory,true);\n  if(Phase>=8){Test->AddInfo(TEXT(\"D124_INSPECTION_VISUAL_COMPLETE Captures=4 PhysicalInputPending=1\"));return true;}\n  const int32 Index=Phase/2;\n  if(Phase%2==0)\n  {\n   FString Path,Json,Error;FParse::Value(FCommandLine::Get(),TEXT(\"B003AllocationSave=\"),Path);\n   FCitySaveDocument D;\n   if(!FFileHelper::LoadFileToString(Json,*Path)||!FCityPersistence::Deserialize(Json,D,Error)){Test->AddError(Error);return true;}\n   D.bSimulationPaused=true;\n   D.Population.PurchaseReservations.RemoveAll([&](const auto& O){const bool Remove=O.HouseholdId==26 || O.ShopId==6;if(Remove)for(auto& C:D.Population.Citizens)if(C.Id==O.BuyerId)C.PendingShopEntityId=0;return Remove;});\n   auto* H=D.Population.Households.FindByPredicate([](const auto& V){return V.Id==26;});\n   auto* B=D.Population.Businesses.FindByPredicate([](const auto& V){return V.EntityId==6;});\n   if(!H || !B){Test->AddError(TEXT(\"Expected City837230 fixture IDs\"));return true;}\n   H->bUsesStoredSupplies=true;H->SupplyUnits=Index==1 || Index==2 ? 0 : H->ConsumptionOrders*3;\n   H->SupplyDay=D.Economy.LastBilledMonthId;H->LastEssentialPurchaseDay=H->SupplyDay;\n   if(Index==1){H->Balance=0;for(auto& C:D.Population.Citizens)if(C.HouseholdId==26)C.AvailableMoney=0;}\n   if(Index==2){for(auto& Shop:D.Population.Businesses)if(!Shop.bIndustrial){Shop.Inventory=0;for(const auto& O:D.Population.PurchaseReservations)if(O.ShopId==Shop.EntityId)Shop.Inventory+=O.Quantity;}}\n   if(Index==3)\n   {\n    D.Health.Patients.Reset();int32 Patient=0;\n    for(auto& C:D.Population.Citizens)if(C.HouseholdId==26 && Patient<2)\n    {\n     FCityHealthPatient P;P.CitizenId=C.Id;P.Illness=Patient++ ? ECityIllness::Severe : ECityIllness::Mild;\n     C.bOnMedicalLeave=P.Illness==ECityIllness::Severe;D.Health.Patients.Add(P);\n    }\n   }\n   const FString Fixture=Directory/TEXT(\"Fixture.json\");\n   if(!FCityPersistence::Serialize(D,Json,Error)||!FFileHelper::SaveStringToFile(Json,*Fixture)||!Sim->LoadCityFromPath(Fixture,Error,false)){Test->AddError(Error);return true;}\n   UI->ReturnToCity();Sim->SetSimulationPaused(true);UI->SetObjectivesVisible(false);UI->SetCitySummaryVisible(false);Board->PrepareCityView();UI->InspectBuilding(26);\n   for(TObjectIterator<UCityDesktopHud> It;It;++It)if(It->GetWorld()==W && It->IsInViewport())\n   {for(int32 Section=0;Section<6;++Section)if(It->IsInspectionSectionOpen(Section))It->ToggleInspectionSection(Section);It->ToggleInspectionSection(Index==3?3:1);}\n  }\n  else\n  {\n   // The first presentation tick resets accordion state for a new selection.\n   bool Opening=false;\n   for(TObjectIterator<UCityDesktopHud> It;It;++It)if(It->GetWorld()==W && It->IsInViewport() && !It->IsInspectionSectionOpen(Index==3?3:1))\n   {It->ToggleInspectionSection(Index==3?3:1);Opening=true;}\n   if(Opening){Next=FPlatformTime::Seconds()+1.;return false;}\n   const auto View=UI->GetUiSnapshot();const FString Summary=View.InspectionSummary.ToString();\n   Test->TestFalse(TEXT(\"no supply or illness prose above accordions\"),Summary.Contains(TEXT(\"suppl\"),ESearchCase::IgnoreCase)||Summary.Contains(TEXT(\"ILL \"))||Summary.Contains(TEXT(\"shopping\"),ESearchCase::IgnoreCase));\n   const auto& Supplies=View.InspectionSections[1];const auto& Health=View.InspectionSections[3];\n   Test->TestEqual(TEXT(\"dedicated supplies accordion\"),Supplies.Title.ToString(),FString(TEXT(\"Shopping & supplies\")));\n   Test->TestEqual(TEXT(\"four supplies bars\"),Supplies.Gauges.Num(),4);\n   Test->TestTrue(TEXT(\"no supply prose rows/help\"),Supplies.Rows.IsEmpty() && Supplies.Help.IsEmpty());\n   Test->TestEqual(TEXT(\"only actual concise supply blocker\"),Supplies.Detail.ToString(),FString(Index==1?TEXT(\"Insufficient available cash\"):Index==2?TEXT(\"No available shop stock\"):TEXT(\"\")));\n   Test->TestTrue(TEXT(\"health represented only by charts\"),Health.Rows.IsEmpty() && Health.Detail.IsEmpty() && Health.Help.IsEmpty() && Health.Gauges.Num()==4);\n   if(Index==3){Test->TestTrue(TEXT(\"ill count in chart\"),Health.Gauges[0].Value.ToString().StartsWith(TEXT(\"2 / \")));Test->TestTrue(TEXT(\"severe count in chart\"),Health.Gauges[1].Value.ToString().StartsWith(TEXT(\"1 / \")));}\n   Test->TestEqual(TEXT(\"UI preserves authoritative illness state\"),Sim->GetHealthSnapshot().Patients.Num(),Index==3?2:0);\n   FScreenshotRequest::RequestScreenshot(Directory/FString::Printf(TEXT(\"Inspect-%d.png\"),Index),true,false);Test->AddInfo(TEXT(\"D124_UI \")+Supplies.Detail.ToString());\n  }\n  ++Phase;Next=FPlatformTime::Seconds()+1.;return false;\n }\nprivate:\n FAutomationTestBase* Test;int32 Phase=0;double Next=0;\n};\nIMPLEMENT_SIMPLE_AUTOMATION_TEST(FCityHomeInspectionVisualTest,\"CitySim.Desktop.HomeInspectionCharts\",\n EAutomationTestFlags::ClientContext|EAutomationTestFlags::EngineFilter)\nbool FCityHomeInspectionVisualTest::RunTest(const FString&)\n{\n FString User;if(!FParse::Value(FCommandLine::Get(),TEXT(\"UserDir=\"),User)||!User.Contains(TEXT(\"D124\"))){AddError(TEXT(\"Requires isolated D124 profile\"));return false;}\n ADD_LATENT_AUTOMATION_COMMAND(FCityHomeInspectionVisualCommand(this));return true;\n}\n#endif\n"
+    }
+  ],
+  "preservation": {
+    "non_owned_inputs": 1556,
+    "all_match": true,
+    "playerFilesUnchanged": true,
+    "assetsAndApprovedWalkUnchanged": true,
+    "launchersUnchanged": true,
+    "previous53filesPreserved": true,
+    "restored_generated_config": [
+      "CitySimVR/Saved/Config/WindowsEditor/EditorPerProjectUserSettings.ini",
+      "CitySimVR/Saved/Config/CrashReportClient/UECC-Windows-262A082D48440EC5D3BEBEA3DD363FE6/CrashReportClient.ini",
+      "CitySimVR/Saved/Config/CrashReportClient/UECC-Windows-3AD2F5264714AB2A8902249A2FC98201/CrashReportClient.ini",
+      "CitySimVR/Saved/Config/CrashReportClient/UECC-Windows-421A8286498FF9D3FA3361A54CA82670/CrashReportClient.ini",
+      "CitySimVR/Saved/Config/CrashReportClient/UECC-Windows-A71DCC49440355CAA74F9F882B1CDB6A/CrashReportClient.ini",
+      "CitySimVR/Saved/Config/CrashReportClient/UECC-Windows-BA46873D4FE7CE0CB16CB895E61BB5EC/CrashReportClient.ini",
+      "CitySimVR/Saved/Config/CrashReportClient/UECC-Windows-BC385B234DE791A66E5647B090C7DD9E/CrashReportClient.ini",
+      "CitySimVR/Saved/Config/CrashReportClient/UECC-Windows-FDA7628D418F96DEA0A002B8AA48A579/CrashReportClient.ini"
+    ]
+  },
+  "d123Closeout": {
+    "status": "D123 complete/B003 closed by explicit current-city user acceptance",
+    "acceptedRevision": "dev-d7105a4eb7ba5a725b97",
+    "implementationCommit": "dd5b802c9b8b2fed97d19cc68b383a48fe98a64e",
+    "prerequisiteCommit": "4ad3908dd617a5927a3d178d43903df0d81428e1",
+    "accepted24SourceFilesMatchCommit": true,
+    "pushed": false,
+    "walkAndUnrelatedWorkExcluded": true
+  },
+  "iteration_notes": [
+    "Constrained-stock fixture now retains other households reserved stock.",
+    "Route diagnostic fixture restores its home schedule before asserting a broken route.",
+    "First-selection capture waits for the presentation-owned accordion reset before taking an open-chart screenshot."
+  ],
+  "limitations": [
+    "User playtest of the new D124 inspection presentation remains pending.",
+    "D125 outpatient/self-travel/severe-bed changes are queued, not implemented or measured.",
+    "No push, PR/merge, public release, device installation, full suite, performance program or Quest repackage for this Desktop-only slice."
+  ],
+  "nativeWindowReleased": true,
+  "next": "User D124 playtest through normal launcher; refreshed native guards before B007 or another queued implementation. D125 remains separate."
+}

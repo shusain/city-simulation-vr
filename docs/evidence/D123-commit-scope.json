@@ -1,0 +1,106 @@
+{
+  "task": "D123 accepted local commit",
+  "acceptedRevision": "dev-d7105a4eb7ba5a725b97",
+  "schema": 69,
+  "prerequisiteCommit": "4ad3908dd617a5927a3d178d43903df0d81428e1",
+  "files": [
+    {
+      "path": "CitySimVR/Source/CitySimVR/Private/Persistence/CityPersistence.cpp",
+      "accepted_raw_sha256": "794fddc506656cff68237eca98c49dd1af430e7cf639de14ab4eb151042d9fe4"
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Private/Persistence/CitySaveLibrary.cpp",
+      "accepted_raw_sha256": "fd4635c7bd49022dd96d8b5cf44f525b4b9b91ef6267ddcfacbaaf9db48a33cb"
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Private/Presentation/CityConditionCauses.cpp",
+      "accepted_raw_sha256": "cea6292901a8c4d46fc84eff75c14ae666dc35ad12e768f93391711042ad0fa5"
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Private/Presentation/CityConditionIndicators.cpp",
+      "accepted_raw_sha256": "c8f628573baab3472f1eabefd830fa4bcacb44798f1a7d8bcb10134b81b1ec76"
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Private/Presentation/CityInspectionContent.cpp",
+      "accepted_raw_sha256": "dbb2cb99d4355b5769649f1c4801e835ecf7639e815a7a56ac9e7cfa4b157b03"
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Private/Presentation/CityUiContent.cpp",
+      "accepted_raw_sha256": "1379db68a58c989b89e8027c81956ecd6ee5ae266a7af18c839190bf20e3cf0d"
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Private/Simulation/CityCitizenSchedules.cpp",
+      "accepted_raw_sha256": "68394ab93053b3dc1aa375b826dcd0cfea95b67d4811245da3c74f77f767a733"
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Private/Simulation/CityEconomySimulation.cpp",
+      "accepted_raw_sha256": "4019d0da55df3db01ca9896e469cb75382399a36c4014a0485a48fe9741ba275"
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Private/Simulation/CityHappinessSimulation.cpp",
+      "accepted_raw_sha256": "0b30dc0f1059d82a745897bd33401f03ec732645b4591bf29f5f96b6de43369f"
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Private/Simulation/CityNeedsSimulation.cpp",
+      "accepted_raw_sha256": "394385b5ce19b66a3b0bc3c65aaab61df1cbe0ec48dc2f10294a3b13bd7a13b3"
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Private/Simulation/CityPopulationSimulation.cpp",
+      "accepted_raw_sha256": "463e65db8489b62dfe152b5f9012467c28a4df0d442e7ffe86777219d2c42390"
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Private/Simulation/CityPurchaseReservations.cpp",
+      "accepted_raw_sha256": "a6aa52c36fac6107c588d7be67354aefbaa49f87d34e97fafc137a0f5566e138"
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Private/Simulation/CitySimulationSubsystem.cpp",
+      "accepted_raw_sha256": "d82cc59ba48eccfcb510968d90ca593ac2b03de786df3714407092549848e17f"
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Private/Tests/CityCurrentSaveTests.cpp",
+      "accepted_raw_sha256": "4727ecb9a4ac624d496c1fb7721f5c95dc557114037fe66c11b059fcccee7c4e"
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Private/Tests/CityDesktopSaveRevisionTests.cpp",
+      "accepted_raw_sha256": "e9745e27c3884ca32089e21295f30c0cd635c884d56d1fc744873aa3aae3e870"
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Private/Tests/CityShoppingAllocationTests.cpp",
+      "accepted_raw_sha256": "8cdf09383c95c99fc6f2fec2aeedf22cc9ae98561e46a6047f735544ea091b9f"
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Private/Tests/CityShoppingStatusVisualTests.cpp",
+      "accepted_raw_sha256": "c518a951c8423c3abd5e0e0e296c16bd8073c49adc5a8735f0e49f07140898cc"
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Public/Persistence/CityPersistence.h",
+      "accepted_raw_sha256": "7c9f23939d04c715d01f12248e349da45df1e70edc5e4b71da8b1cc25dcadbf2"
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Public/Presentation/CityConditionIndicators.h",
+      "accepted_raw_sha256": "4d059b167f3efb01aae0995cf60e1de3b8ebd0a6d3b3ff84e960baca9f739efe"
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Public/Simulation/CityNeedsSimulation.h",
+      "accepted_raw_sha256": "e26341e044ce25aebf891881138bab8c75a055a1b1e37cf9994eca7f0e8b23ae"
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Public/Simulation/CityPopulationSimulation.h",
+      "accepted_raw_sha256": "e013f39702149229879e23dc1dd8b73163b1f0cb2359c0e042253540c795581f"
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Private/Simulation/CityHouseholdSupplies.cpp",
+      "accepted_raw_sha256": "35254c030e609e33ef3b8b6a77dd0efa627f058dfc3c7642fa0f06bcf495d5c8"
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Private/Tests/CityHouseholdSupplyTests.cpp",
+      "accepted_raw_sha256": "f0110d82d0e93b91d86296884d8ab283187edbc9227ecac94e187ab3223c4a81"
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Private/Tests/CityHouseholdSupplyVisualTests.cpp",
+      "accepted_raw_sha256": "4cdc83bc5bd2d32bcbaa306cda6feef09a6c9b4d711ea56c3c7fffc108187504"
+    }
+  ],
+  "excluded": "D121 walk source/assets, D124 UI follow-up and unrelated working files; no working source/asset/player bytes modified by commit staging.",
+  "validation": "Matches the accepted source receipt; existing21 Editor/13 packaged checks and user current-city acceptance, no repeated build for docs-only closeout."
+}

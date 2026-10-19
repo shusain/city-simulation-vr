@@ -1,0 +1,497 @@
+{
+  "windows": [
+    {
+      "pane": "Control_front_window_opaque_pane",
+      "frame_parts": [
+        "Control_front_window_left_jamb",
+        "Control_front_window_right_jamb",
+        "Control_front_window_sill",
+        "Control_front_window_head"
+      ],
+      "backing": "Staffed_control_service_wing",
+      "axis": 1,
+      "sign": -1,
+      "wall_normal": [
+        0,
+        -1,
+        0
+      ],
+      "pane_bounds": {
+        "name": "Control_front_window_opaque_pane",
+        "min": [
+          -4.125,
+          -5.074999809265137,
+          1.3250000476837158
+        ],
+        "max": [
+          -2.7750000953674316,
+          -4.994999885559082,
+          2.575000047683716
+        ],
+        "triangles": 12,
+        "material": "WindowAccent"
+      },
+      "frame_bounds": [
+        {
+          "name": "Control_front_window_left_jamb",
+          "min": [
+            -4.215000152587891,
+            -5.119999885559082,
+            1.2350001335144043
+          ],
+          "max": [
+            -4.125,
+            -4.989999771118164,
+            2.6649999618530273
+          ],
+          "triangles": 12,
+          "material": "Concrete"
+        },
+        {
+          "name": "Control_front_window_right_jamb",
+          "min": [
+            -2.7750000953674316,
+            -5.119999885559082,
+            1.2350001335144043
+          ],
+          "max": [
+            -2.684999942779541,
+            -4.989999771118164,
+            2.6649999618530273
+          ],
+          "triangles": 12,
+          "material": "Concrete"
+        },
+        {
+          "name": "Control_front_window_sill",
+          "min": [
+            -4.125,
+            -5.119999885559082,
+            1.2350000143051147
+          ],
+          "max": [
+            -2.7750000953674316,
+            -4.989999771118164,
+            1.3249999284744263
+          ],
+          "triangles": 12,
+          "material": "Concrete"
+        },
+        {
+          "name": "Control_front_window_head",
+          "min": [
+            -4.125,
+            -5.119999885559082,
+            2.5749998092651367
+          ],
+          "max": [
+            -2.7750000953674316,
+            -4.989999771118164,
+            2.6649999618530273
+          ],
+          "triangles": 12,
+          "material": "Concrete"
+        }
+      ],
+      "wall_bounds": {
+        "name": "Staffed_control_service_wing",
+        "min": [
+          -8.0,
+          -5.0,
+          0.0
+        ],
+        "max": [
+          -2.0,
+          2.0,
+          4.099999904632568
+        ],
+        "triangles": 12,
+        "material": "BuildingFacade"
+      },
+      "wall_edge_margins_m": {
+        "0": [
+          3.7849998474121094,
+          0.684999942779541
+        ],
+        "2": [
+          1.2350000143051147,
+          1.434999942779541
+        ]
+      },
+      "wall_contact_pass": true,
+      "open_rim_pass": true,
+      "frame_fit_pass": true,
+      "corner_disjoint_pass": true
+    },
+    {
+      "pane": "Control_side_window_1_opaque_pane",
+      "frame_parts": [
+        "Control_side_window_1_left_jamb",
+        "Control_side_window_1_right_jamb",
+        "Control_side_window_1_sill",
+        "Control_side_window_1_head"
+      ],
+      "backing": "Staffed_control_service_wing",
+      "axis": 0,
+      "sign": -1,
+      "wall_normal": [
+        -1,
+        0,
+        0
+      ],
+      "pane_bounds": {
+        "name": "Control_side_window_1_opaque_pane",
+        "min": [
+          -8.074999809265137,
+          -3.4749999046325684,
+          1.4249999523162842
+        ],
+        "max": [
+          -7.994999885559082,
+          -2.125,
+          2.674999952316284
+        ],
+        "triangles": 12,
+        "material": "WindowAccent"
+      },
+      "frame_bounds": [
+        {
+          "name": "Control_side_window_1_left_jamb",
+          "min": [
+            -8.119999885559082,
+            -3.565000057220459,
+            1.3350000381469727
+          ],
+          "max": [
+            -7.990000247955322,
+            -3.4749999046325684,
+            2.7649998664855957
+          ],
+          "triangles": 12,
+          "material": "Concrete"
+        },
+        {
+          "name": "Control_side_window_1_right_jamb",
+          "min": [
+            -8.119999885559082,
+            -2.125,
+            1.3350000381469727
+          ],
+          "max": [
+            -7.990000247955322,
+            -2.0349998474121094,
+            2.7649998664855957
+          ],
+          "triangles": 12,
+          "material": "Concrete"
+        },
+        {
+          "name": "Control_side_window_1_sill",
+          "min": [
+            -8.119999885559082,
+            -3.4749999046325684,
+            1.3350000381469727
+          ],
+          "max": [
+            -7.990000247955322,
+            -2.125,
+            1.4249999523162842
+          ],
+          "triangles": 12,
+          "material": "Concrete"
+        },
+        {
+          "name": "Control_side_window_1_head",
+          "min": [
+            -8.119999885559082,
+            -3.4749999046325684,
+            2.674999952316284
+          ],
+          "max": [
+            -7.990000247955322,
+            -2.125,
+            2.765000104904175
+          ],
+          "triangles": 12,
+          "material": "Concrete"
+        }
+      ],
+      "wall_bounds": {
+        "name": "Staffed_control_service_wing",
+        "min": [
+          -8.0,
+          -5.0,
+          0.0
+        ],
+        "max": [
+          -2.0,
+          2.0,
+          4.099999904632568
+        ],
+        "triangles": 12,
+        "material": "BuildingFacade"
+      },
+      "wall_edge_margins_m": {
+        "1": [
+          1.434999942779541,
+          4.034999847412109
+        ],
+        "2": [
+          1.3350000381469727,
+          1.3349997997283936
+        ]
+      },
+      "wall_contact_pass": true,
+      "open_rim_pass": true,
+      "frame_fit_pass": true,
+      "corner_disjoint_pass": true
+    },
+    {
+      "pane": "Control_side_window_2_opaque_pane",
+      "frame_parts": [
+        "Control_side_window_2_left_jamb",
+        "Control_side_window_2_right_jamb",
+        "Control_side_window_2_sill",
+        "Control_side_window_2_head"
+      ],
+      "backing": "Staffed_control_service_wing",
+      "axis": 0,
+      "sign": -1,
+      "wall_normal": [
+        -1,
+        0,
+        0
+      ],
+      "pane_bounds": {
+        "name": "Control_side_window_2_opaque_pane",
+        "min": [
+          -8.074999809265137,
+          -1.1749999523162842,
+          1.4249999523162842
+        ],
+        "max": [
+          -7.994999885559082,
+          0.17500001192092896,
+          2.674999952316284
+        ],
+        "triangles": 12,
+        "material": "WindowAccent"
+      },
+      "frame_bounds": [
+        {
+          "name": "Control_side_window_2_left_jamb",
+          "min": [
+            -8.119999885559082,
+            -1.2649999856948853,
+            1.3350000381469727
+          ],
+          "max": [
+            -7.990000247955322,
+            -1.1750000715255737,
+            2.7649998664855957
+          ],
+          "triangles": 12,
+          "material": "Concrete"
+        },
+        {
+          "name": "Control_side_window_2_right_jamb",
+          "min": [
+            -8.119999885559082,
+            0.17499999701976776,
+            1.3350000381469727
+          ],
+          "max": [
+            -7.990000247955322,
+            0.26499998569488525,
+            2.7649998664855957
+          ],
+          "triangles": 12,
+          "material": "Concrete"
+        },
+        {
+          "name": "Control_side_window_2_sill",
+          "min": [
+            -8.119999885559082,
+            -1.1749999523162842,
+            1.3350000381469727
+          ],
+          "max": [
+            -7.990000247955322,
+            0.17500001192092896,
+            1.4249999523162842
+          ],
+          "triangles": 12,
+          "material": "Concrete"
+        },
+        {
+          "name": "Control_side_window_2_head",
+          "min": [
+            -8.119999885559082,
+            -1.1749999523162842,
+            2.674999952316284
+          ],
+          "max": [
+            -7.990000247955322,
+            0.17500001192092896,
+            2.765000104904175
+          ],
+          "triangles": 12,
+          "material": "Concrete"
+        }
+      ],
+      "wall_bounds": {
+        "name": "Staffed_control_service_wing",
+        "min": [
+          -8.0,
+          -5.0,
+          0.0
+        ],
+        "max": [
+          -2.0,
+          2.0,
+          4.099999904632568
+        ],
+        "triangles": 12,
+        "material": "BuildingFacade"
+      },
+      "wall_edge_margins_m": {
+        "1": [
+          3.7350000143051147,
+          1.7350000143051147
+        ],
+        "2": [
+          1.3350000381469727,
+          1.3349997997283936
+        ]
+      },
+      "wall_contact_pass": true,
+      "open_rim_pass": true,
+      "frame_fit_pass": true,
+      "corner_disjoint_pass": true
+    },
+    {
+      "pane": "Control_side_window_3_opaque_pane",
+      "frame_parts": [
+        "Control_side_window_3_left_jamb",
+        "Control_side_window_3_right_jamb",
+        "Control_side_window_3_sill",
+        "Control_side_window_3_head"
+      ],
+      "backing": "Staffed_control_service_wing",
+      "axis": 0,
+      "sign": -1,
+      "wall_normal": [
+        -1,
+        0,
+        0
+      ],
+      "pane_bounds": {
+        "name": "Control_side_window_3_opaque_pane",
+        "min": [
+          -8.074999809265137,
+          0.32499998807907104,
+          1.4249999523162842
+        ],
+        "max": [
+          -7.994999885559082,
+          1.6749999523162842,
+          2.674999952316284
+        ],
+        "triangles": 12,
+        "material": "WindowAccent"
+      },
+      "frame_bounds": [
+        {
+          "name": "Control_side_window_3_left_jamb",
+          "min": [
+            -8.119999885559082,
+            0.23499999940395355,
+            1.3350000381469727
+          ],
+          "max": [
+            -7.990000247955322,
+            0.32499998807907104,
+            2.7649998664855957
+          ],
+          "triangles": 12,
+          "material": "Concrete"
+        },
+        {
+          "name": "Control_side_window_3_right_jamb",
+          "min": [
+            -8.119999885559082,
+            1.6750000715255737,
+            1.3350000381469727
+          ],
+          "max": [
+            -7.990000247955322,
+            1.7649999856948853,
+            2.7649998664855957
+          ],
+          "triangles": 12,
+          "material": "Concrete"
+        },
+        {
+          "name": "Control_side_window_3_sill",
+          "min": [
+            -8.119999885559082,
+            0.32499998807907104,
+            1.3350000381469727
+          ],
+          "max": [
+            -7.990000247955322,
+            1.6749999523162842,
+            1.4249999523162842
+          ],
+          "triangles": 12,
+          "material": "Concrete"
+        },
+        {
+          "name": "Control_side_window_3_head",
+          "min": [
+            -8.119999885559082,
+            0.32499998807907104,
+            2.674999952316284
+          ],
+          "max": [
+            -7.990000247955322,
+            1.6749999523162842,
+            2.765000104904175
+          ],
+          "triangles": 12,
+          "material": "Concrete"
+        }
+      ],
+      "wall_bounds": {
+        "name": "Staffed_control_service_wing",
+        "min": [
+          -8.0,
+          -5.0,
+          0.0
+        ],
+        "max": [
+          -2.0,
+          2.0,
+          4.099999904632568
+        ],
+        "triangles": 12,
+        "material": "BuildingFacade"
+      },
+      "wall_edge_margins_m": {
+        "1": [
+          5.2349999994039536,
+          0.23500001430511475
+        ],
+        "2": [
+          1.3350000381469727,
+          1.3349997997283936
+        ]
+      },
+      "wall_contact_pass": true,
+      "open_rim_pass": true,
+      "frame_fit_pass": true,
+      "corner_disjoint_pass": true
+    }
+  ],
+  "door_glazing": "Personnel_door_glass retained unchanged; audited separately as portal fixture"
+}

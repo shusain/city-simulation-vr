@@ -1,0 +1,68 @@
+{
+  "annex": {
+    "name": "FurnaceR2_annex",
+    "min": [
+      -19.0,
+      8.0,
+      0.0
+    ],
+    "max": [
+      -10.5,
+      16.0,
+      5.5
+    ]
+  },
+  "roof": {
+    "name": "FurnaceR2_roof",
+    "min": [
+      -19.0,
+      8.0,
+      5.5
+    ],
+    "max": [
+      -10.5,
+      16.0,
+      5.699999809265137
+    ]
+  },
+  "duct": {
+    "name": "FurnaceR2_feed_duct",
+    "min": [
+      -10.5,
+      8.5,
+      2.5999999046325684
+    ],
+    "max": [
+      -7.949999809265137,
+      9.699999809265137,
+      3.5999999046325684
+    ]
+  },
+  "flues": [
+    {
+      "group": "FurnaceR2_open_flue_1",
+      "centre": [
+        -17,
+        12
+      ],
+      "outer_radius": 0.7,
+      "inner_radius": 0.56,
+      "root_z": 5.7,
+      "top_z": 15.2,
+      "air_opening": true
+    },
+    {
+      "group": "FurnaceR2_open_flue_2",
+      "centre": [
+        -13,
+        12
+      ],
+      "outer_radius": 0.7,
+      "inner_radius": 0.56,
+      "root_z": 5.7,
+      "top_z": 15.2,
+      "air_opening": true
+    }
+  ],
+  "no_throat_cap": true
+}

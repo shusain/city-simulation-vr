@@ -1,0 +1,104 @@
+{
+  "schema": 1,
+  "task": "D58",
+  "receivedUTC": "2026-10-12T04:42:31.165811+00:00",
+  "candidate": "integration-2026.10.11.1",
+  "integrationOwner": "List pending headset validations",
+  "verificationReport": "Artifacts/D58/Integration/Verification.json",
+  "verificationReportSha256": "07e4cc984790c3c3a22207d8787fa946f192dfe6f78785c7b99db5c4fc0dba76",
+  "checklist": "Artifacts/D58/Integration/TESTING.md",
+  "coordinatorLocalIntegrationComplete": true,
+  "sourceChatChecks": {
+    "sourceWAVHashesUnchanged": 50,
+    "releaseFileHashesVerified": [
+      {
+        "path": "TesterDistribution/packages/integration-2026.10.11.1/CitySimVR-integration-2026.10.11.1-Windows.zip",
+        "sha256": "7C64A7624D5FAFF9E06C4BE7B618B0097DA7E1402959C458E054BAE12CC84A61",
+        "bytes": 454361896
+      },
+      {
+        "path": "TesterDistribution/packages/integration-2026.10.11.1/CitySimVR-integration-2026.10.11.1-Quest.apk",
+        "sha256": "1DDC10744CCE5AD0115A1ED877A919FBFCFF954B2FE15CCD3B898019B6594F6E",
+        "bytes": 196738950
+      }
+    ],
+    "nativeWorkExecuted": false
+  },
+  "coordinatorReportedChecks": {
+    "focusedAudio": 5,
+    "renderedRegressions": 256,
+    "nativeRecordings": 56,
+    "nativeLifecycleCases": 14,
+    "cookedBanks": [
+      {
+        "waves": 50,
+        "graphs": 50,
+        "platform": "Windows"
+      },
+      {
+        "waves": 50,
+        "graphs": 50,
+        "platform": "Android_ASTC"
+      }
+    ]
+  },
+  "nativeWindowRelease": {
+    "bundle": "integration-2026.10.11.1",
+    "task": "D58 integrated D83/audio test bundle",
+    "installed": false,
+    "nativeProcesses": 0,
+    "published": false,
+    "released": "2026-10-11 23:38:04 -05:00"
+  },
+  "remaining": [
+    "User Desktop/PCVR/Quest listening/localization/mix/lifecycle/comfort/rendering checks",
+    "D23 dense/storm voice/memory/audio CPU/device cost",
+    "Auxiliary sound event/mix authoring where needed",
+    "D82 separate music task"
+  ],
+  "publication": false,
+  "handoffRecordPolicy": "Handoff.json and acceptance snapshots remain historical source-preparation evidence; this receipt records the subsequent integrated candidate",
+  "rainSirenRefinement20261012": {
+    "candidate": "integration-2026.10.12.1",
+    "verification": "Artifacts/D58/RainSirenRefinement/Verification.json",
+    "packages": [
+      {
+        "path": "TesterDistribution/packages/integration-2026.10.12.1/CitySimVR-integration-2026.10.12.1-Quest.apk",
+        "sha256": "9aead3b3fa10ff3ecfe76dc00cbaf806f40383bc1c483d4b0526313dd2d1530e",
+        "bytes": 196708414
+      },
+      {
+        "path": "TesterDistribution/packages/integration-2026.10.12.1/CitySimVR-integration-2026.10.12.1-Windows.zip",
+        "sha256": "ed3d2fbfe9cfed5e9d31ca276d6de3e08addc9c442432457cce208a7938e4cce",
+        "bytes": 454349822
+      }
+    ],
+    "physicalListening": "Pending",
+    "published": false,
+    "installed": false
+  },
+  "trafficAlarmRefinement20261012": {
+    "scope": "No fire IncidentNotice; half earthquake town-warning window; actual regular traffic uses steady idle/driving loops and native smoothed Doppler",
+    "sourcePack": "Artifacts/D58/Traffic-20261012-v1",
+    "stagedSourceCount": 54,
+    "newSources": 4,
+    "preservedSources": 50,
+    "nativeMetaSoundCount": 50,
+    "newNativeSoundCueCount": 4,
+    "voiceComponents": 32,
+    "regularTrafficSteady": 2,
+    "regularTrafficTransition": 1,
+    "focusedAudioChecks": 6,
+    "fullRenderedChecks": 257,
+    "nativeTrafficAlarmChecks": 7,
+    "nativeDecodedRecordings": 8,
+    "loopRepeats": 4,
+    "nativeLifecycleChecks": 14,
+    "evidence": "Artifacts/D58/TrafficAlarmRefinement",
+    "physicalNewListening": "Pending",
+    "userPCVRAcceptance": "Rain and siren isolation sound better on integration-2026.10.12.1",
+    "savedCityAndArtPolicy": "Preserve accepted D83/D71/D72 and player files; isolated native probe copies",
+    "candidate": "integration-2026.10.12.2",
+    "sourceBackup": "Prior dd787a6 checkpoint retained; this follow-up is not committed or pushed"
+  }
+}

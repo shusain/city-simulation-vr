@@ -1,0 +1,194 @@
+{
+  "task": "D79",
+  "provenance": "Original procedural roof maps and fictional shop graphics",
+  "normal_convention": "DirectX; Blender flips green",
+  "roof_tiles_m": {
+    "RoofShingles": 4.8,
+    "RoofMembrane": 8,
+    "RoofMetal": 4.8
+  },
+  "sign_grid": [
+    4,
+    2
+  ],
+  "signs": [
+    {
+      "id": "market",
+      "label": "MARKET",
+      "icon": "fruit",
+      "color": [
+        30,
+        104,
+        73
+      ],
+      "atlas_index": 0
+    },
+    {
+      "id": "bakery",
+      "label": "BAKERY",
+      "icon": "bread",
+      "color": [
+        157,
+        66,
+        35
+      ],
+      "atlas_index": 1
+    },
+    {
+      "id": "cafe",
+      "label": "CAFE",
+      "icon": "cup",
+      "color": [
+        103,
+        66,
+        48
+      ],
+      "atlas_index": 2
+    },
+    {
+      "id": "books",
+      "label": "BOOKS",
+      "icon": "book",
+      "color": [
+        42,
+        73,
+        139
+      ],
+      "atlas_index": 3
+    },
+    {
+      "id": "pharmacy",
+      "label": "PHARMACY",
+      "icon": "cross",
+      "color": [
+        22,
+        111,
+        119
+      ],
+      "atlas_index": 4
+    },
+    {
+      "id": "repairs",
+      "label": "REPAIRS",
+      "icon": "wrench",
+      "color": [
+        175,
+        106,
+        30
+      ],
+      "atlas_index": 5
+    },
+    {
+      "id": "outfitters",
+      "label": "OUTFITTERS",
+      "icon": "shirt",
+      "color": [
+        98,
+        66,
+        136
+      ],
+      "atlas_index": 6
+    },
+    {
+      "id": "tech",
+      "label": "TECH",
+      "icon": "chip",
+      "color": [
+        36,
+        80,
+        104
+      ],
+      "atlas_index": 7
+    }
+  ],
+  "textures": [
+    {
+      "file": "ArtSource/Textures/RoofsSigns/RoofShingles_BaseColor.png",
+      "role": "sRGB neutral roof surface",
+      "width": 1024,
+      "height": 1024,
+      "wrap": true,
+      "sha256": "21211215c6e105114294bae3ae1faa38d2129b3eb2ebdb0254529d0c764c6d54"
+    },
+    {
+      "file": "ArtSource/Textures/RoofsSigns/RoofShingles_Normal.png",
+      "role": "linear DirectX tangent normal",
+      "width": 1024,
+      "height": 1024,
+      "wrap": true,
+      "sha256": "fd32c54487faecda72557a8c6dae194b098016ba958ee9603d71217de6c5c587"
+    },
+    {
+      "file": "ArtSource/Textures/RoofsSigns/RoofShingles_ORM.png",
+      "role": "linear R=AO G=roughness B=metallic(0); painted roof",
+      "width": 1024,
+      "height": 1024,
+      "wrap": true,
+      "sha256": "8d7259c3f07598c3b4256a98a38841eda21cca82254c42fac23df536d03c89ac"
+    },
+    {
+      "file": "ArtSource/Textures/RoofsSigns/RoofMembrane_BaseColor.png",
+      "role": "sRGB neutral roof surface",
+      "width": 512,
+      "height": 512,
+      "wrap": true,
+      "sha256": "e70b663d843cb50ab4479ac5e582173464e05f510f60ce2b986837259981a587"
+    },
+    {
+      "file": "ArtSource/Textures/RoofsSigns/RoofMembrane_Normal.png",
+      "role": "linear DirectX tangent normal",
+      "width": 512,
+      "height": 512,
+      "wrap": true,
+      "sha256": "0b29f7ad8fe50e859386b08d541ea37294c825d2c3a73210d3c3b15764bc19ce"
+    },
+    {
+      "file": "ArtSource/Textures/RoofsSigns/RoofMembrane_ORM.png",
+      "role": "linear R=AO G=roughness B=metallic(0); painted roof",
+      "width": 512,
+      "height": 512,
+      "wrap": true,
+      "sha256": "a7ade624eb4477684f7101dd6b5c0fbe80b595c1b357ebf35715dfa91e54ec63"
+    },
+    {
+      "file": "ArtSource/Textures/RoofsSigns/RoofMetal_BaseColor.png",
+      "role": "sRGB neutral roof surface",
+      "width": 512,
+      "height": 512,
+      "wrap": true,
+      "sha256": "5e289ba6442f6d8a1c0f7a0d252f0508f0bc90e6a3e2febef4c322618331497d"
+    },
+    {
+      "file": "ArtSource/Textures/RoofsSigns/RoofMetal_Normal.png",
+      "role": "linear DirectX tangent normal",
+      "width": 512,
+      "height": 512,
+      "wrap": true,
+      "sha256": "b91971e0e5577d92032c5793ce229a38c4b0dc69c9cc7cc36ea5140f3b932bef"
+    },
+    {
+      "file": "ArtSource/Textures/RoofsSigns/RoofMetal_ORM.png",
+      "role": "linear R=AO G=roughness B=metallic(0); painted roof",
+      "width": 512,
+      "height": 512,
+      "wrap": true,
+      "sha256": "c9dc53995651485fef24a94d3de1696970ffad27a4723d2014cd3fc135567f22"
+    },
+    {
+      "file": "ArtSource/Textures/RoofsSigns/StoreSigns_Wide_BaseColor.png",
+      "role": "sRGB opaque shop sign atlas",
+      "width": 2048,
+      "height": 512,
+      "wrap": false,
+      "sha256": "b785b51d67b64d85cc57ebfa294d1ac71fd68daf9c8dd86cbc5721a3812dd28f"
+    },
+    {
+      "file": "ArtSource/Textures/RoofsSigns/StoreSigns_Tall_BaseColor.png",
+      "role": "sRGB opaque shop sign atlas",
+      "width": 2048,
+      "height": 1024,
+      "wrap": false,
+      "sha256": "33e1cf7d75e82e5bad5292167c1895a82fdf012726f4ecef4eae36d41b9946ab"
+    }
+  ]
+}

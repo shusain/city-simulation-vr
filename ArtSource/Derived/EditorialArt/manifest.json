@@ -1,0 +1,189 @@
+{
+  "task": "D122",
+  "recipe": "soft ink cutoff218 black40; frame-free repairs uniformly contained in220x300cm pane ratio",
+  "source_acceptance": "Shaun accepts composite/repairs v2; requests entrance exclusion and preserved aspect in chat2026-10-16",
+  "assets": [
+    {
+      "issue": 33,
+      "version": 1,
+      "approval_sha256": "3c376285ecda9e828116b56f8e9ce1af56d098212a0f6424ef2298443960c5b7",
+      "source": "ArtSource/Generated/comfy/issue-33/v1/asset.png",
+      "source_sha256": "0388834b782f58a6d544df3f597f9a5f407b6eb8c3df4acbf92be3857d51b7a4",
+      "file": "ArtSource/Derived/EditorialArt/NewspaperHousing.png",
+      "sha256": "3d8226205198c1995746b5e17767de1efbae287dbaa32c9b318941c34b05f6f1",
+      "crop": [
+        41,
+        249,
+        727,
+        628
+      ],
+      "size": [
+        686,
+        379
+      ],
+      "native": "/Game/CitySim/UI/Newspaper/T_Housing",
+      "role": "white RGB soft ink alpha; UI; clamp; no mipmaps",
+      "key": "housing",
+      "usage": "newspaper_illustration"
+    },
+    {
+      "issue": 34,
+      "version": 1,
+      "approval_sha256": "076f0bce24f36b90dd6d1d270e5ac1953c59f970827ea3cc253187ab4868d0e9",
+      "source": "ArtSource/Generated/comfy/issue-34/v1/asset.png",
+      "source_sha256": "eca19ecd840ff8dd89222318e152b2f30d157b246bb38cb225ba7c3dae163b17",
+      "file": "ArtSource/Derived/EditorialArt/NewspaperCommerce.png",
+      "sha256": "7530049482fabbb64d4995339be88999a1b6812f7b72534fa66f570555017fa7",
+      "crop": [
+        98,
+        221,
+        670,
+        617
+      ],
+      "size": [
+        572,
+        396
+      ],
+      "native": "/Game/CitySim/UI/Newspaper/T_Commerce",
+      "role": "white RGB soft ink alpha; UI; clamp; no mipmaps",
+      "key": "commerce",
+      "usage": "newspaper_illustration"
+    },
+    {
+      "issue": 35,
+      "version": 1,
+      "approval_sha256": "12beb2f621b47ab721355300395deeb336f8127150ac950b0df8791a6870bdfe",
+      "source": "ArtSource/Generated/comfy/issue-35/v1/asset.png",
+      "source_sha256": "16dc08a60b0cc729b2ae9161222c961026fd3cc7915ba521a3f0b69e62318144",
+      "file": "ArtSource/Derived/EditorialArt/NewspaperAutomation.png",
+      "sha256": "17c1f37fb83c2eaa1a887b9dc3b4f69b5a15ea3baf471784bbdb9303fc6ea1f0",
+      "crop": [
+        42,
+        41,
+        726,
+        727
+      ],
+      "size": [
+        684,
+        686
+      ],
+      "native": "/Game/CitySim/UI/Newspaper/T_Automation",
+      "role": "white RGB soft ink alpha; UI; clamp; no mipmaps",
+      "key": "automation",
+      "usage": "newspaper_illustration"
+    },
+    {
+      "issue": 36,
+      "version": 2,
+      "approval_sha256": "46e554ee2cfeefa2388779ce4ed24406f7b533ec53b02a9a949acbd76f59b4fa",
+      "source": "ArtSource/Generated/comfy/issue-36/v2/asset.png",
+      "source_sha256": "d5e0e286e5391fa36c0c4f1d4c2a998eafd1eed06235b4e26ce79a6ffbcd8478",
+      "file": "ArtSource/Derived/EditorialArt/RepairDisplays.png",
+      "sha256": "8a41e0803a6ee8b880ef7e1375f3523aea1d70890490b8b56a35462c01509944",
+      "panel_crops": [
+        [
+          78,
+          188,
+          375,
+          372
+        ],
+        [
+          408,
+          188,
+          702,
+          372
+        ],
+        [
+          78,
+          402,
+          375,
+          592
+        ],
+        [
+          411,
+          402,
+          702,
+          592
+        ]
+      ],
+      "size": [
+        512,
+        1024
+      ],
+      "tile_size": [
+        256,
+        512
+      ],
+      "inner_size": [
+        242,
+        330
+      ],
+      "inner_offset": [
+        7,
+        91
+      ],
+      "pane_cm": [
+        220,
+        300
+      ],
+      "fits": [
+        {
+          "panel": 0,
+          "uniform_scale": 0.8148148148148148,
+          "translation": [
+            0.0,
+            90.03703703703704
+          ],
+          "draw_size": [
+            242.0,
+            149.92592592592592
+          ],
+          "physical_cm_per_pixel": 0.9090909090909091
+        },
+        {
+          "panel": 1,
+          "uniform_scale": 0.8231292517006803,
+          "translation": [
+            0.0,
+            89.27210884353741
+          ],
+          "draw_size": [
+            242.0,
+            151.45578231292518
+          ],
+          "physical_cm_per_pixel": 0.9090909090909091
+        },
+        {
+          "panel": 2,
+          "uniform_scale": 0.8148148148148148,
+          "translation": [
+            0.0,
+            87.5925925925926
+          ],
+          "draw_size": [
+            242.0,
+            154.8148148148148
+          ],
+          "physical_cm_per_pixel": 0.9090909090909091
+        },
+        {
+          "panel": 3,
+          "uniform_scale": 0.8316151202749141,
+          "translation": [
+            0.0,
+            85.99656357388315
+          ],
+          "draw_size": [
+            242.0,
+            158.0068728522337
+          ],
+          "physical_cm_per_pixel": 0.9090909090909091
+        }
+      ],
+      "native": "/Game/CitySim/Art/Textures/T_RepairDisplays",
+      "role": "sRGB RGBA; uniform contain fit; transparent unused glass; not stock/inventory",
+      "key": "repairs",
+      "usage": "repair_display"
+    }
+  ]
+}

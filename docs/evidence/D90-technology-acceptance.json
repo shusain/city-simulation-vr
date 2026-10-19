@@ -1,0 +1,42 @@
+{
+  "task": "D90 approved technology building acceptance and merge closeout",
+  "date": "2026-10-17",
+  "acceptedRevision": "4cd1207b7f0d86b24a8fbc01a0f317664e92532b",
+  "gameRevision": "dev-2a262f3bc0a8b2e56378",
+  "candidate": 132,
+  "schema": 72,
+  "user": "Shaun",
+  "source": "Direct user message in this Codex chat following delivery of Windows/Quest132",
+  "statement": "In game the assets look good, I think we might want to give them more tiles for the \"build area\" but I want to review that more broadly/separately so I think you can get these merged/integrated as is for now and then we can further review the \"ground plot\" issue in general.",
+  "scope": "User confirms the five assets look good in game and explicitly authorizes as-is integration/merge. Existing logical footprints are retained. Broader city-wide ground-plot review is a separate deferred task.",
+  "sourceVersions": {
+    "101": 5,
+    "102": 4,
+    "103": 3,
+    "104": 3,
+    "105": 4
+  },
+  "integrationIssues": [
+    114,
+    116,
+    118,
+    120,
+    122
+  ],
+  "gameplayPR": 63,
+  "validation": {
+    "editor": 131,
+    "bothPlaytest": 132,
+    "editorTests": 34,
+    "clientTestsPerWidth": 20,
+    "widths": [
+      1280,
+      1024
+    ],
+    "captures": 46,
+    "extractedStartup": "passed",
+    "quest": "Signed ARM64/min32/target35/known-signer/embedded-cook and five technology meshes verified"
+  },
+  "acceptanceLimits": "Visual building acceptance and explicit as-is merge authorization; no claim of manual paid/shortage/outage pilot or headset observations. Issue23 retains its remaining player gameplay confirmation; parent22 and D114 remain open.",
+  "runtimeChangesAfterAcceptance": false
+}

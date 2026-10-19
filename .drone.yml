@@ -1,0 +1,82 @@
+---
+kind: pipeline
+type: exec
+name: windows-checks
+
+platform:
+  os: windows
+  arch: amd64
+
+node:
+  citysim: ue57
+
+steps:
+  - name: offline-tool-contracts
+    commands:
+      - powershell.exe -NoProfile -ExecutionPolicy Bypass -File Tools/CI/Test-CityTooling.ps1
+
+  - name: editor-and-focused-tests
+    commands:
+      - powershell.exe -NoProfile -ExecutionPolicy Bypass -File Tools/CI/Invoke-CityCI.ps1 -Mode Check
+
+trigger:
+  repo:
+    - CitySimVR/citysim
+  event:
+    - push
+    - pull_request
+  branch:
+    - main
+    - ci/**
+
+---
+kind: pipeline
+type: exec
+name: windows-playtest
+
+platform:
+  os: windows
+  arch: amd64
+
+node:
+  citysim: ue57
+
+steps:
+  - name: build-and-check-candidate
+    commands:
+      - powershell.exe -NoProfile -ExecutionPolicy Bypass -File Tools/CI/Invoke-CityCI.ps1 -Mode WindowsCandidate
+
+trigger:
+  repo:
+    - CitySimVR/citysim
+  event:
+    - promote
+  target:
+    - windows-playtest
+    - both-playtest
+
+---
+kind: pipeline
+type: exec
+name: quest-playtest
+
+platform:
+  os: windows
+  arch: amd64
+
+node:
+  citysim: ue57
+
+steps:
+  - name: build-and-verify-quest-candidate
+    commands:
+      - powershell.exe -NoProfile -ExecutionPolicy Bypass -File Tools/CI/Invoke-CityCI.ps1 -Mode QuestCandidate
+
+trigger:
+  repo:
+    - CitySimVR/citysim
+  event:
+    - promote
+  target:
+    - quest-playtest
+    - both-playtest

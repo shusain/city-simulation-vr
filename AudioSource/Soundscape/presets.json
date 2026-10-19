@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "task": "D58",
+  "sampleRate": 48000,
+  "targetLUFS": -24.0,
+  "truePeakCeilingDBTP": -6.0,
+  "provenance": {
+    "description": "Original project-authored synthetic emergency sound candidates. No recordings, sound libraries, external UGens, Quarks or musical material.",
+    "tool": "SuperCollider 3.14.1 official portable Windows distribution",
+    "runtime": "Authoring only; generated WAV files are the integration boundary. SuperCollider is not bundled with the game.",
+    "rights": "No third-party sample attribution or sample-library redistribution restriction applies. Source and generated audio follow the project's ownership/release policy; SuperCollider's own software license remains with the authoring tool.",
+    "status": "Offline auditions; current human preferences are recorded in selections.json. Not imported into Unreal. These are designed game identities, not regional emergency-signal standards."
+  },
+  "candidates": [
+    {
+      "id": "Police-A", "group": "Police", "label": "A · brisk rounded yelp",
+      "intent": "Quick, clear upward/downward sweeps with restrained upper harmonics.",
+      "parameters": {"duration": 10, "centerHz": 800, "depthHz": 260, "sweepHz": 2.5, "shape": 0, "second": 0.22, "third": 0.10, "fifth": 0.03, "cutoffHz": 4200}
+    },
+    {
+      "id": "Police-B", "group": "Police", "label": "B · sharper rising yelp",
+      "intent": "More urgent rising sweeps with a softened reset and brighter harmonic bite.",
+      "parameters": {"duration": 10, "centerHz": 820, "depthHz": 280, "sweepHz": 2, "shape": 2, "second": 0.32, "third": 0.18, "fifth": 0.05, "cutoffHz": 4300}
+    },
+    {
+      "id": "Fire-A", "group": "Fire", "label": "A · broad engine wail",
+      "intent": "Slower, lower, weightier sweeping siren, distinct from the police yelp.",
+      "parameters": {"duration": 12, "centerHz": 590, "depthHz": 230, "sweepHz": 0.5, "shape": 0, "second": 0.30, "third": 0.16, "fifth": 0.03, "detune": 0.004, "cutoffHz": 3400}
+    },
+    {
+      "id": "Fire-B", "group": "Fire", "label": "B · wail with intermittent horn",
+      "intent": "Broad sweeping siren with a short low air-horn-like accent; review whether the accent is too distracting.",
+      "parameters": {"duration": 12, "centerHz": 560, "depthHz": 220, "sweepHz": 0.5, "shape": 0, "second": 0.38, "third": 0.20, "fifth": 0.06, "hornHz": 165, "hornGain": 1.1, "hornEvery": 4, "hornDuty": 0.12, "cutoffHz": 3500}
+    },
+    {
+      "id": "Ambulance-A", "group": "Ambulance", "label": "A · rounded two-tone",
+      "intent": "Alternating held notes with smooth transitions and a less abrasive timbre.",
+      "parameters": {"duration": 10, "centerHz": 690, "depthHz": 130, "sweepHz": 1, "shape": 1, "second": 0.14, "third": 0.05, "fifth": 0, "cutoffHz": 3000}
+    },
+    {
+      "id": "Ambulance-B", "group": "Ambulance", "label": "B · quicker bright two-tone",
+      "intent": "Faster held-note alternation with more definition; compare recognizability and fatigue with A.",
+      "parameters": {"duration": 10, "centerHz": 760, "depthHz": 160, "sweepHz": 1.5, "shape": 1, "second": 0.26, "third": 0.12, "fifth": 0.02, "cutoffHz": 3600}
+    },
+    {
+      "id": "Town-A", "group": "Town", "label": "A · low mechanical warning",
+      "intent": "Slow low sweep, beating harmonics and rotor modulation to move away from D57's vehicle-like alarm.",
+      "parameters": {"duration": 16, "centerHz": 340, "depthHz": 120, "sweepHz": 0.125, "shape": 0, "second": 0.55, "third": 0.28, "fifth": 0.09, "detune": 0.006, "rotorHz": 27, "rotorDepth": 0.26, "cutoffHz": 2400, "attack": 0.8, "release": 1.2}
+    },
+    {
+      "id": "Town-B", "group": "Town", "label": "B · heavier civil-warning rise",
+      "intent": "Lower, darker rising cycle with stronger rotor texture; compare the cycle reset with A's continuous wail.",
+      "parameters": {"duration": 16, "centerHz": 300, "depthHz": 100, "sweepHz": 0.125, "shape": 2, "second": 0.70, "third": 0.38, "fifth": 0.12, "detune": 0.009, "rotorHz": 31, "rotorDepth": 0.4, "cutoffHz": 2100, "attack": 1, "release": 1.4}
+    }
+  ]
+}

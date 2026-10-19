@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "kind": "comfy",
+  "repository": "CitySimVR/citysim",
+  "issue": 124,
+  "version": 1,
+  "source_sha": "12863ff34032e0e460febd8215012363c7a7fd49",
+  "workflow": "generate_image_zimage",
+  "workflow_sha256": "4b2b8f3fed8b0234ebd9a522a8a5d8c881977bd37e9670d3268ac642a92784a9",
+  "model": "ollama/citysim-spec:qwen3-14b",
+  "seed": 124,
+  "prompt": "A stylized low-poly tabletop city view from an elevated oblique camera angle, showing a gentle curving sandy shore with muted blue-green water in the foreground. A narrow grass verge and a small road with two or three simplified low-rise buildings in the background. Subdued warm gray-beige damp sand, simple faceted dark city rocks, pale ivory seashells, muted sandy ochre starfish, short weathered driftwood, and sparse gray-green dune-grass tufts. Three small clusters of beach props along the shore, with broad stretches of empty sand. Soft diffuse daylight, simple water edge. 768x768, low-poly forms, flat materials, no people, vehicles, or details. City Sim VR beach-prop concept.",
+  "prompt_id": "84efff1d-1e71-4944-a95d-f8a84bb0e879",
+  "dimensions": {
+    "width": 768,
+    "height": 768
+  },
+  "png_sha256": "1ddcd5e5043988801680dcf070607df1f7411050c21d0d463f985b64b071f1ee",
+  "created_at": "2026-10-17T23:01:11.767Z"
+}

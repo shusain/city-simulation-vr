@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "kind": "comfy",
+  "repository": "CitySimVR/citysim",
+  "issue": 33,
+  "version": 1,
+  "source_sha": "f482eff94e62fbc62692b8270dcfcdca5269d5cc",
+  "workflow": "generate_image_zimage",
+  "workflow_sha256": "8e643c69f29a4a5bbf0eecbecfd9e4ffa3eae019809c1877ba74fa25e1f6b0f1",
+  "model": "ollama/citysim-spec:qwen3-14b",
+  "seed": 33,
+  "prompt": "A compact neighborhood of modest homes with one scaffolded house and a few human-scale residents, rendered as a black-ink woodcut/linocut newspaper vignette. Restraint cross-hatching, bold readable silhouettes, warm ivory paper ground, generous clear outer margins. Broad landscape composition contained in the central portion of a square 768px image. Early industrial/civic illustration style, classic serif city newspaper typography. No text, headlines, captions, or color ink. Legible at 256px. Generic editorial illustration, not a screenshot.",
+  "prompt_id": "67585c77-0a22-4178-a432-94a51c733518",
+  "dimensions": {
+    "width": 768,
+    "height": 768
+  },
+  "png_sha256": "0388834b782f58a6d544df3f597f9a5f407b6eb8c3df4acbf92be3857d51b7a4",
+  "created_at": "2026-10-15T22:53:53.646Z"
+}

@@ -1,0 +1,167 @@
+{
+  "schema_version": 1,
+  "task": "D71",
+  "runtime_selected": false,
+  "assets": [
+    {
+      "name": "SM_Citizen_PC_Casual",
+      "source": "ArtSource/Blender/CityCitizenPrototype.blend",
+      "export": "ArtSource/Exports/CitizenPrototypes/SM_Citizen_PC_Casual.fbx",
+      "triangles": 754,
+      "material_slots": [
+        "CitizenVertexPalette"
+      ],
+      "color_attribute": "CitizenPalette",
+      "bounds_min_m": [
+        -0.13300000131130219,
+        -0.30300000309944153,
+        0.0
+      ],
+      "bounds_max_m": [
+        0.24300000071525574,
+        0.30300000309944153,
+        1.7649999856948853
+      ],
+      "forward_axis": "+X",
+      "pivot_policy": "feet at z=0; centered local origin",
+      "collision_policy": "none; presentation prototype",
+      "prototype_only": true,
+      "lod_role": "LOD0",
+      "provenance": "Original project lofted geometry; Tools/Create-CityCitizenPrototype.py"
+    },
+    {
+      "name": "SM_Citizen_PC_Casual_LOD1",
+      "source": "ArtSource/Blender/CityCitizenPrototype.blend",
+      "export": "ArtSource/Exports/CitizenPrototypes/SM_Citizen_PC_Casual_LOD1.fbx",
+      "triangles": 420,
+      "material_slots": [
+        "CitizenVertexPalette"
+      ],
+      "color_attribute": "CitizenPalette",
+      "bounds_min_m": [
+        -0.11719099432229996,
+        -0.30300000309944153,
+        0.0
+      ],
+      "bounds_max_m": [
+        0.2271910011768341,
+        0.30300000309944153,
+        1.7649999856948853
+      ],
+      "forward_axis": "+X",
+      "pivot_policy": "feet at z=0; centered local origin",
+      "collision_policy": "none; presentation prototype",
+      "prototype_only": true,
+      "lod_role": "LOD1 candidate (not automatically selected)",
+      "provenance": "Original project lofted geometry; Tools/Create-CityCitizenPrototype.py"
+    },
+    {
+      "name": "SM_Citizen_PC_Office",
+      "source": "ArtSource/Blender/CityCitizenPrototype.blend",
+      "export": "ArtSource/Exports/CitizenPrototypes/SM_Citizen_PC_Office.fbx",
+      "triangles": 754,
+      "material_slots": [
+        "CitizenVertexPalette"
+      ],
+      "color_attribute": "CitizenPalette",
+      "bounds_min_m": [
+        -0.13300000131130219,
+        -0.30300000309944153,
+        0.0
+      ],
+      "bounds_max_m": [
+        0.24300000071525574,
+        0.30300000309944153,
+        1.7649999856948853
+      ],
+      "forward_axis": "+X",
+      "pivot_policy": "feet at z=0; centered local origin",
+      "collision_policy": "none; presentation prototype",
+      "prototype_only": true,
+      "lod_role": "LOD0",
+      "provenance": "Original project lofted geometry; Tools/Create-CityCitizenPrototype.py"
+    },
+    {
+      "name": "SM_Citizen_PC_Office_LOD1",
+      "source": "ArtSource/Blender/CityCitizenPrototype.blend",
+      "export": "ArtSource/Exports/CitizenPrototypes/SM_Citizen_PC_Office_LOD1.fbx",
+      "triangles": 420,
+      "material_slots": [
+        "CitizenVertexPalette"
+      ],
+      "color_attribute": "CitizenPalette",
+      "bounds_min_m": [
+        -0.11719099432229996,
+        -0.30300000309944153,
+        0.0
+      ],
+      "bounds_max_m": [
+        0.2271910011768341,
+        0.30300000309944153,
+        1.7649999856948853
+      ],
+      "forward_axis": "+X",
+      "pivot_policy": "feet at z=0; centered local origin",
+      "collision_policy": "none; presentation prototype",
+      "prototype_only": true,
+      "lod_role": "LOD1 candidate (not automatically selected)",
+      "provenance": "Original project lofted geometry; Tools/Create-CityCitizenPrototype.py"
+    },
+    {
+      "name": "SM_Citizen_PC_Worker",
+      "source": "ArtSource/Blender/CityCitizenPrototype.blend",
+      "export": "ArtSource/Exports/CitizenPrototypes/SM_Citizen_PC_Worker.fbx",
+      "triangles": 754,
+      "material_slots": [
+        "CitizenVertexPalette"
+      ],
+      "color_attribute": "CitizenPalette",
+      "bounds_min_m": [
+        -0.13300000131130219,
+        -0.30300000309944153,
+        0.0
+      ],
+      "bounds_max_m": [
+        0.24300000071525574,
+        0.30300000309944153,
+        1.7649999856948853
+      ],
+      "forward_axis": "+X",
+      "pivot_policy": "feet at z=0; centered local origin",
+      "collision_policy": "none; presentation prototype",
+      "prototype_only": true,
+      "lod_role": "LOD0",
+      "provenance": "Original project lofted geometry; Tools/Create-CityCitizenPrototype.py"
+    },
+    {
+      "name": "SM_Citizen_PC_Worker_LOD1",
+      "source": "ArtSource/Blender/CityCitizenPrototype.blend",
+      "export": "ArtSource/Exports/CitizenPrototypes/SM_Citizen_PC_Worker_LOD1.fbx",
+      "triangles": 420,
+      "material_slots": [
+        "CitizenVertexPalette"
+      ],
+      "color_attribute": "CitizenPalette",
+      "bounds_min_m": [
+        -0.11719099432229996,
+        -0.30300000309944153,
+        0.0
+      ],
+      "bounds_max_m": [
+        0.2271910011768341,
+        0.30300000309944153,
+        1.7649999856948853
+      ],
+      "forward_axis": "+X",
+      "pivot_policy": "feet at z=0; centered local origin",
+      "collision_policy": "none; presentation prototype",
+      "prototype_only": true,
+      "lod_role": "LOD1 candidate (not automatically selected)",
+      "provenance": "Original project lofted geometry; Tools/Create-CityCitizenPrototype.py"
+    }
+  ],
+  "material_integration": "Requires a shared vertex-color base-color material; no new texture or custom shader",
+  "scale_integration": "Normalize to current walker world-height for comparison; do not apply the 1.76m source at the old 0.72 scale without review",
+  "animation": "Static relaxed stride only; existing pool movement can translate it. No gait animation.",
+  "source_license": "Original project assets; no third-party dependencies"
+}

@@ -1,0 +1,1263 @@
+{
+  "date": "2026-10-11",
+  "milestones": [
+    {
+      "task": "D38",
+      "title": "The first city art kit",
+      "status": "Accepted foundation; further art deferred",
+      "description": "Authored building silhouettes, density families, utilities and construction established the tabletop identity.",
+      "images": [
+        {
+          "source": "Artifacts/ArtPreview/D38/contact-sheet.png",
+          "caption": "Blender starter-kit contact sheet"
+        }
+      ]
+    },
+    {
+      "task": "D40",
+      "title": "Roads over and under terrain",
+      "status": "Construction flow accepted; D23 residual checks",
+      "description": "Terrain-conforming roads, elevated spans and independent underpass levels became buildable and inspectable.",
+      "images": [
+        {
+          "source": "Artifacts/Preview/D40-GroundRoads.png",
+          "caption": "Ground roads"
+        },
+        {
+          "source": "Artifacts/Preview/D40-ElevatedRoads.png",
+          "caption": "Elevated spans"
+        },
+        {
+          "source": "Artifacts/Preview/D40-UnderpassLowView.png",
+          "caption": "Underpass clearance"
+        }
+      ]
+    },
+    {
+      "task": "D42",
+      "title": "A readable city history",
+      "status": "Appearance accepted; persistence/performance checks remain",
+      "description": "Monthly and annual Reports replace a text-only history with selectable charts and exact values. These captures use a synthetic layout fixture.",
+      "images": [
+        {
+          "source": "Artifacts/Preview/D42-ReportsMonthly.png",
+          "caption": "Monthly Reports"
+        },
+        {
+          "source": "Artifacts/Preview/D42-ReportsAnnual.png",
+          "caption": "Annual Reports"
+        }
+      ]
+    },
+    {
+      "task": "D45",
+      "title": "Fire response and visible damage",
+      "status": "Gameplay accepted; shared D23 gate remains",
+      "description": "Authored fire vehicles, response beacons and damaged building roofs make emergencies visible on the board.",
+      "images": [
+        {
+          "source": "Artifacts/Preview/D45-DamagedRoofs-Front.png",
+          "caption": "Damaged roof families"
+        },
+        {
+          "source": "Artifacts/Preview/D45-BeaconPair-CrossA.png",
+          "caption": "Active response lights"
+        },
+        {
+          "source": "Artifacts/Preview/D45-BeaconPair-Parked.png",
+          "caption": "Parked lights"
+        }
+      ]
+    },
+    {
+      "task": "D46 / D53",
+      "title": "Schools and qualifications",
+      "status": "Menus/staff summary accepted; learning checks pending",
+      "description": "Distinct school silhouettes support primary, secondary and higher education. Qualification, capacity and wage progression still have targeted checks.",
+      "images": [
+        {
+          "source": "Artifacts/Preview/D46-Schools-Front.png",
+          "caption": "School family: front"
+        },
+        {
+          "source": "Artifacts/Preview/D46-Schools-Back.png",
+          "caption": "School family: back"
+        }
+      ]
+    },
+    {
+      "task": "D47",
+      "title": "Parks with activities",
+      "status": "Overall appearance accepted; D39/D23 checks remain",
+      "description": "Parks gained sports facilities, bounded visitor activity and terrain clearance.",
+      "images": [
+        {
+          "source": "Artifacts/Preview/D47-Parks-Front.png",
+          "caption": "Park family"
+        },
+        {
+          "source": "Artifacts/Preview/D47-ParkTerrainActivity-FieldsDay.png",
+          "caption": "Sports on terrain"
+        },
+        {
+          "source": "Artifacts/Preview/D47-ParkTerrainActivity-Night.png",
+          "caption": "Night activity"
+        }
+      ]
+    },
+    {
+      "task": "D48",
+      "title": "Clearer civic stations",
+      "status": "Accepted",
+      "description": "Refined police/fire stations and Inspect presentation make expansion and operation easier to read.",
+      "images": [
+        {
+          "source": "Artifacts/Preview/D48-Stations-Front.png",
+          "caption": "Station silhouettes"
+        },
+        {
+          "source": "Artifacts/Preview/D48-StationInspection-FireDay.png",
+          "caption": "Fire station Inspect"
+        }
+      ]
+    },
+    {
+      "task": "D49 / D50",
+      "title": "Entering and organizing cities",
+      "status": "Entry/library flow accepted",
+      "description": "A menu environment, terrain previews and recoverable city archive/restore support creation and save browsing.",
+      "images": [
+        {
+          "source": "Artifacts/Preview/D49-EntryMenu-MainDay.png",
+          "caption": "Earlier entry menu"
+        },
+        {
+          "source": "Artifacts/Preview/D49-EntryScene-Main.png",
+          "caption": "Refined entry scene"
+        },
+        {
+          "source": "Artifacts/Preview/D50-NewTerrain.png",
+          "caption": "Chosen terrain preview"
+        },
+        {
+          "source": "Artifacts/Preview/D50-LoadPreview.png",
+          "caption": "Saved city preview"
+        }
+      ]
+    },
+    {
+      "task": "D51",
+      "title": "Disasters and custody",
+      "status": "Arson/jail accepted; targeted scenarios pending",
+      "description": "Earthquake/tornado effects, per-city disaster policy and jail occupancy add visible consequences and recovery scenarios.",
+      "images": [
+        {
+          "source": "Artifacts/Preview/D51-OnsetQuake.png",
+          "caption": "Earthquake onset"
+        },
+        {
+          "source": "Artifacts/Preview/D51-OnsetTornado.png",
+          "caption": "Tornado onset"
+        },
+        {
+          "source": "Artifacts/Preview/D51-JailInspection-PoliceDay.png",
+          "caption": "Custody Inspect"
+        }
+      ]
+    },
+    {
+      "task": "D52 / D55",
+      "title": "Condition and selection cues",
+      "status": "Accepted",
+      "description": "Condition indicators and inspect/demolition highlighting improve target readability in daytime and darkness.",
+      "images": [
+        {
+          "source": "Artifacts/Preview/D52-Indicators-Day.png",
+          "caption": "Condition indicators"
+        },
+        {
+          "source": "Artifacts/Preview/D55-SelectionDay.png",
+          "caption": "Selection highlights"
+        },
+        {
+          "source": "Artifacts/Preview/D55-DemolishNight.png",
+          "caption": "Night demolition preview"
+        }
+      ]
+    },
+    {
+      "task": "D56",
+      "title": "Utilities with distinctive silhouettes",
+      "status": "Presentation accepted; damage/save checks pending",
+      "description": "Alternative generation and water facilities gained authored geometry, damaged states and operational inspection.",
+      "images": [
+        {
+          "source": "Artifacts/Preview/D56-Facilities-Blender.png",
+          "caption": "Utility family"
+        },
+        {
+          "source": "Artifacts/Preview/D56-Facilities-Damaged.png",
+          "caption": "Damaged variants"
+        },
+        {
+          "source": "Artifacts/Preview/D56-UtilityInspection-PowerDay.png",
+          "caption": "Output and expansion Inspect"
+        }
+      ]
+    },
+    {
+      "task": "D59",
+      "title": "HUD clarity and objectives",
+      "status": "Closed; residual gameplay checks in D39/D23",
+      "description": "Successive HUD rounds improved objectives, placement costs and insufficient-funds feedback. Earlier intermediate captures are consolidated here.",
+      "images": [
+        {
+          "source": "Artifacts/Preview/D59-CityDay.png",
+          "caption": "Earlier HUD"
+        },
+        {
+          "source": "Artifacts/Preview/D59-Readability-OverviewDay-PIE.png",
+          "caption": "Readability round"
+        },
+        {
+          "source": "Artifacts/Preview/D59-ObjectiveIcon-OverviewDay-PIE.png",
+          "caption": "Accepted objectives round"
+        },
+        {
+          "source": "Artifacts/Preview/D59-ObjectiveIcon-BuildingNoFunds-PIE.png",
+          "caption": "Unaffordable placement"
+        }
+      ]
+    },
+    {
+      "task": "D60",
+      "title": "Health care and crowded markers",
+      "status": "Basic gameplay/markers accepted; clinical checks pending",
+      "description": "Hospitals, ambulance lights and bounded illness markers expose treatment and recovery without one Actor per citizen.",
+      "images": [
+        {
+          "source": "Artifacts/Preview/D60-Hospitals-Front.png",
+          "caption": "Hospital silhouettes"
+        },
+        {
+          "source": "Artifacts/Preview/D60-Hospital-Inspect-Responding.png",
+          "caption": "Ambulance response"
+        },
+        {
+          "source": "Artifacts/Preview/D60-Clusters-Dense.png",
+          "caption": "Crowded illness markers"
+        }
+      ]
+    },
+    {
+      "task": "D61",
+      "title": "Waste collection",
+      "status": "Development accepted; residual D39/D23 checks",
+      "description": "Collection/recycling facilities, truck colors and service inspection make the waste loop visible.",
+      "images": [
+        {
+          "source": "Artifacts/Preview/D61-Waste-Front.png",
+          "caption": "Waste facility family"
+        },
+        {
+          "source": "Artifacts/Preview/D61-TruckColors-Day.png",
+          "caption": "Collection vehicle colors"
+        },
+        {
+          "source": "Artifacts/Preview/D61-Waste-Inspect-Recycling.png",
+          "caption": "Recycling Inspect"
+        }
+      ]
+    },
+    {
+      "task": "D62",
+      "title": "Varied maps and weather",
+      "status": "Rain/snow appearance accepted; transitions pending",
+      "description": "Dry, river, lake and mountain terrain plus rain/snow establish climate variety. These native captures predate the accepted faster rain tuning.",
+      "images": [
+        {
+          "source": "Artifacts/Preview/D62-Dry-PIE.png",
+          "caption": "Dry terrain"
+        },
+        {
+          "source": "Artifacts/Preview/D62-Mountains-PIE.png",
+          "caption": "Mountain terrain"
+        },
+        {
+          "source": "Artifacts/Preview/D62-Rain-PIE.png",
+          "caption": "Rain presentation"
+        },
+        {
+          "source": "Artifacts/Preview/D62-Snow-PIE.png",
+          "caption": "Snow presentation"
+        }
+      ]
+    },
+    {
+      "task": "D63",
+      "title": "Water supply you can diagnose",
+      "status": "Closed; residual D39/D23 checks",
+      "description": "Water rules distinguish source capacity and pressure, with placement guidance and operational overlays.",
+      "images": [
+        {
+          "source": "Artifacts/Preview/D63-Water-Full-PIE.png",
+          "caption": "Supplied city"
+        },
+        {
+          "source": "Artifacts/Preview/D63-Water-LowPressure-PIE.png",
+          "caption": "Pressure loss"
+        },
+        {
+          "source": "Artifacts/Preview/D63-Placement-Day-PIE.png",
+          "caption": "Source placement guidance"
+        }
+      ]
+    },
+    {
+      "task": "D64 / D65",
+      "title": "Scenery and spatial coverage",
+      "status": "Overall scenery/snow accepted; targeted checks pending",
+      "description": "Climate-appropriate palms/pines/rocks and progressive wet/snow coverage vary across the board.",
+      "images": [
+        {
+          "source": "Artifacts/Preview/D64-WarmCoast-PIE.png",
+          "caption": "Warm coast"
+        },
+        {
+          "source": "Artifacts/Preview/D64-CoolCoast-PIE.png",
+          "caption": "Cool coast"
+        },
+        {
+          "source": "Artifacts/Preview/D65-SnowPartial-Day-PIE.png",
+          "caption": "Partial snow coverage"
+        },
+        {
+          "source": "Artifacts/Preview/D65-SnowFull-Day-PIE.png",
+          "caption": "Full snow coverage"
+        }
+      ]
+    },
+    {
+      "task": "D66",
+      "title": "Seasons and grounded lots",
+      "status": "Appearance accepted; lifecycle transitions pending",
+      "description": "Seasonal trees, park/porch decorations and terrain-clearing lawn/concrete foundations enrich the city calendar.",
+      "images": [
+        {
+          "source": "Artifacts/Preview/D66-Refinement-Autumn-PIE.png",
+          "caption": "Autumn trees"
+        },
+        {
+          "source": "Artifacts/Preview/D66-Refinement-FinalTreeParks-PIE.png",
+          "caption": "December park dressing"
+        },
+        {
+          "source": "Artifacts/ArtPreview/D66-ResidentialGround-Home-Blender.png",
+          "caption": "Home foundation study"
+        }
+      ]
+    },
+    {
+      "task": "D68",
+      "title": "Desktop controls and city panels",
+      "status": "Integrated; physical/laptop/flow checks pending",
+      "description": "Shared actions and information gained keyboard/mouse presentation and resolution-aware desktop panels. Captures show native layout QA.",
+      "images": [
+        {
+          "source": "Artifacts/D68-ColorPerf-Desktop-1920-1080-Final/Overview.png",
+          "caption": "Desktop overview"
+        },
+        {
+          "source": "Artifacts/D68-UiReview-Captures/1920-1080/Reports.png",
+          "caption": "Desktop Reports"
+        },
+        {
+          "source": "Artifacts/D68-ColorPerf-Desktop-1920-1080-Final/Build.png",
+          "caption": "Build controls"
+        }
+      ]
+    },
+    {
+      "task": "D71",
+      "title": "More detailed PC citizens",
+      "status": "Three static PC variants integrated; device checks pending",
+      "description": "Casual, office and worker palettes retain the established height/feet/facing contracts. Quest keeps the baseline; gait and fleet detail remain future work.",
+      "images": [
+        {
+          "source": "Artifacts/ArtPreview/D71/Citizen-Comparison-Labeled.png",
+          "caption": "Labeled baseline/refined citizen comparison"
+        }
+      ]
+    },
+    {
+      "task": "D75 / D76 / D77 / D78",
+      "title": "Private development and resumed growth",
+      "status": "Integrated; physical pacing/balance checks pending",
+      "description": "Private-funded zoning, faster construction, density-specific demand and saved-city growth continuation are in maintained packages. These UI fixtures show presentation, not a real-budget playtest.",
+      "images": [
+        {
+          "source": "Artifacts/D75-Desktop/D68-Automation-3840-2160/Saved/Automation/Desktop/Build.png",
+          "caption": "Native packaged build controls"
+        },
+        {
+          "source": "Artifacts/D78-Desktop-4K-Final/D68-Automation-3840-2160/Saved/Automation/Desktop/CityInfo.png",
+          "caption": "Refined City Info charts"
+        }
+      ]
+    },
+    {
+      "task": "D79",
+      "title": "Buildings, roofs and shop identity",
+      "status": "Integrated; physical/GPU checks pending",
+      "description": "Refined geometry, window shades, surface textures and storefront variants build on the accepted art pipeline. Rooftop metal/reflection repair is integrated.",
+      "images": [
+        {
+          "source": "Artifacts/ArtPreview/D79/Building-Comparison.png",
+          "caption": "Building geometry comparison"
+        },
+        {
+          "source": "Artifacts/ArtPreview/D79/Surfaces/Building-Surfaces-Preview.png",
+          "caption": "Authored surfaces"
+        },
+        {
+          "source": "Artifacts/ArtPreview/D79/Surfaces/Roof-Textures-Preview.png",
+          "caption": "Roof texture families"
+        },
+        {
+          "source": "Artifacts/ArtPreview/D79/Surfaces/Store-Signs-Preview.png",
+          "caption": "Storefront variation"
+        }
+      ]
+    },
+    {
+      "task": "D83",
+      "title": "Park and animation prototypes",
+      "status": "Active Blender work; runtime integration pending",
+      "description": "Smoother utilities/parks and rigged sports/skate clips are isolated prototypes. This is a dated source-preview snapshot; current originals stay protected.",
+      "images": [
+        {
+          "source": "Artifacts/ArtPreview/D83/Water-Comparison.png",
+          "caption": "Water facility prototype"
+        },
+        {
+          "source": "Artifacts/ArtPreview/D83/Tree-Design-Labeled.png",
+          "caption": "Flat tree crowns"
+        },
+        {
+          "source": "Artifacts/ArtPreview/D83/Skateboard-Size-Comparison.png",
+          "caption": "Smaller skateboard"
+        },
+        {
+          "source": "Artifacts/ArtPreview/D83/Skate-Tricks-Keyframes.png",
+          "caption": "Trick keyframes: authoring only"
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "source": "Artifacts/ArtPreview/D38/contact-sheet.png",
+      "caption": "Blender starter-kit contact sheet",
+      "source_sha256": "73cdf3aa50daa0f472eaa6cbd98a29504c8c12bdbd3755ffe1e157b34798b215",
+      "source_bytes": 859455,
+      "source_dimensions": [
+        1536,
+        1620
+      ],
+      "output": "images/01-1-contact-sheet.jpg",
+      "output_sha256": "51c9993339b8d117f108cbed61f3de8d7ad703de65decd3cd163db5ff71e0c52"
+    },
+    {
+      "source": "Artifacts/Preview/D40-GroundRoads.png",
+      "caption": "Ground roads",
+      "source_sha256": "e7fffa2246844e26c186c6592af752d390fa20be33be26eb14b277a7ba4a72c3",
+      "source_bytes": 2920199,
+      "source_dimensions": [
+        1800,
+        1400
+      ],
+      "output": "images/02-1-D40-GroundRoads.jpg",
+      "output_sha256": "873a48a56d2ba754373084fa7155018b618825df38fb3f5dc4d6b736293afb6f"
+    },
+    {
+      "source": "Artifacts/Preview/D40-ElevatedRoads.png",
+      "caption": "Elevated spans",
+      "source_sha256": "cf449287e9f6c175fbf8abb72761235f324374aa41feb0cc7714a7806c8a2a3c",
+      "source_bytes": 3073875,
+      "source_dimensions": [
+        1800,
+        1400
+      ],
+      "output": "images/02-2-D40-ElevatedRoads.jpg",
+      "output_sha256": "5ca5c0ec8162fbd1e2685379f1cd45f8d745d731e6e4f5942e8ebded4831246b"
+    },
+    {
+      "source": "Artifacts/Preview/D40-UnderpassLowView.png",
+      "caption": "Underpass clearance",
+      "source_sha256": "8c16a530a5d83b695c2b261547070da8b05bcfce41e4ee95c02925858caad7a8",
+      "source_bytes": 1719417,
+      "source_dimensions": [
+        1800,
+        1400
+      ],
+      "output": "images/02-3-D40-UnderpassLowView.jpg",
+      "output_sha256": "9cd083cdb030afa4cc4c26bd39e72c803d50c2042c3b512bc22d7e18f777561b"
+    },
+    {
+      "source": "Artifacts/Preview/D42-ReportsMonthly.png",
+      "caption": "Monthly Reports",
+      "source_sha256": "5d06f2d3385bf8e1d22bbbda3e0824fec0cd0734f7e8c6e016e88502f71a912e",
+      "source_bytes": 1483239,
+      "source_dimensions": [
+        1800,
+        1400
+      ],
+      "output": "images/03-1-D42-ReportsMonthly.jpg",
+      "output_sha256": "503e2109342921229cdedb8768f35196e18f519cc618fb947019edf4b4289113"
+    },
+    {
+      "source": "Artifacts/Preview/D42-ReportsAnnual.png",
+      "caption": "Annual Reports",
+      "source_sha256": "9c0cfde70bf772d906b70eb89f4601f4b6f0bb4157193675beb6961fc89653e9",
+      "source_bytes": 1468827,
+      "source_dimensions": [
+        1800,
+        1400
+      ],
+      "output": "images/03-2-D42-ReportsAnnual.jpg",
+      "output_sha256": "b76cdf44776c15416bd0481e2d23a514189cd8543d4ca07ac9b9f27e5159699e"
+    },
+    {
+      "source": "Artifacts/Preview/D45-DamagedRoofs-Front.png",
+      "caption": "Damaged roof families",
+      "source_sha256": "77b0f58f72d76534947e0a5b7acd39107584748258191c0f63fa5bb7cc957966",
+      "source_bytes": 632611,
+      "source_dimensions": [
+        1600,
+        1200
+      ],
+      "output": "images/04-1-D45-DamagedRoofs-Front.jpg",
+      "output_sha256": "222721a0869a7d58805e109b4d3d14c37b1a90e0792835a395f30271da4b3518"
+    },
+    {
+      "source": "Artifacts/Preview/D45-BeaconPair-CrossA.png",
+      "caption": "Active response lights",
+      "source_sha256": "0a48909ef21a6fd8215911ea02d0f974be71ad3ddf8d11820c19da7e8c25ac6f",
+      "source_bytes": 135902,
+      "source_dimensions": [
+        1280,
+        960
+      ],
+      "output": "images/04-2-D45-BeaconPair-CrossA.jpg",
+      "output_sha256": "98e5234ba5449484cbf87560071d3e033aa89bfe7b0fd4ea2f0bac171c4643e4"
+    },
+    {
+      "source": "Artifacts/Preview/D45-BeaconPair-Parked.png",
+      "caption": "Parked lights",
+      "source_sha256": "65623d7892ff1f0693f2e08a1b0d3340312258122ca212eed115b49fd18bca7e",
+      "source_bytes": 129299,
+      "source_dimensions": [
+        1280,
+        960
+      ],
+      "output": "images/04-3-D45-BeaconPair-Parked.jpg",
+      "output_sha256": "f136765421180f9f37864d4828034d919db553fc350e2a79f8759f3735618687"
+    },
+    {
+      "source": "Artifacts/Preview/D46-Schools-Front.png",
+      "caption": "School family: front",
+      "source_sha256": "f028f98b9f2b00795e87c3ec08f7273d594c9a96cd2188ef81e6cb3e042d2ad2",
+      "source_bytes": 498626,
+      "source_dimensions": [
+        1600,
+        1200
+      ],
+      "output": "images/05-1-D46-Schools-Front.jpg",
+      "output_sha256": "9b05c515fde2b33bfff9ea6d493881c4de92bdeff9f2bef1567dcf5f68a3e87e"
+    },
+    {
+      "source": "Artifacts/Preview/D46-Schools-Back.png",
+      "caption": "School family: back",
+      "source_sha256": "7e21464a62359b9f7c1b4a9649eb796ab341f59b1791e5379beab038a92b30af",
+      "source_bytes": 503885,
+      "source_dimensions": [
+        1600,
+        1200
+      ],
+      "output": "images/05-2-D46-Schools-Back.jpg",
+      "output_sha256": "6157f189fffc953adc31317d4fd8fe13cdf12fceb10d700d8c8c1b3c5b948b7f"
+    },
+    {
+      "source": "Artifacts/Preview/D47-Parks-Front.png",
+      "caption": "Park family",
+      "source_sha256": "9530d0607feec1692ce843cfd889f1a0cd0218c1f1114dd596e9f39b628a8871",
+      "source_bytes": 812318,
+      "source_dimensions": [
+        1600,
+        1200
+      ],
+      "output": "images/06-1-D47-Parks-Front.jpg",
+      "output_sha256": "79332388c1bf3e3060c9809a03fc060d7f319b187749f5739bc765e2e54e68c4"
+    },
+    {
+      "source": "Artifacts/Preview/D47-ParkTerrainActivity-FieldsDay.png",
+      "caption": "Sports on terrain",
+      "source_sha256": "48977ba31fc569e41b0000863eee96deda40b9372f0b49e73b1bfeceb5a63ccd",
+      "source_bytes": 2706544,
+      "source_dimensions": [
+        1800,
+        1400
+      ],
+      "output": "images/06-2-D47-ParkTerrainActivity-FieldsDay.jpg",
+      "output_sha256": "a369c6db1cd5863dfd4232c40d2d854356be966bdfecc2d6cd053d286e44e028"
+    },
+    {
+      "source": "Artifacts/Preview/D47-ParkTerrainActivity-Night.png",
+      "caption": "Night activity",
+      "source_sha256": "c2d7c3aa33860a02b8350ee5c476e73486025a21551a398b5e41f764d328c4fd",
+      "source_bytes": 2801766,
+      "source_dimensions": [
+        1800,
+        1400
+      ],
+      "output": "images/06-3-D47-ParkTerrainActivity-Night.jpg",
+      "output_sha256": "cb22a27679d1a73c5daabc6f2b17485138e3e844a378dd9b831d6f27621013f9"
+    },
+    {
+      "source": "Artifacts/Preview/D48-Stations-Front.png",
+      "caption": "Station silhouettes",
+      "source_sha256": "8d1e4aa6265a09c68599e42bbd449b0cc0d00d549bc18d54705a1368fe295be2",
+      "source_bytes": 759967,
+      "source_dimensions": [
+        1600,
+        1200
+      ],
+      "output": "images/07-1-D48-Stations-Front.jpg",
+      "output_sha256": "86a3737e280c6518cd2209c5b8d5fdea259f5a2863ee970fceb4be3f42f6b68c"
+    },
+    {
+      "source": "Artifacts/Preview/D48-StationInspection-FireDay.png",
+      "caption": "Fire station Inspect",
+      "source_sha256": "d6beef90b13120fcf3765994901e577ccda7bfafd0da1ee3540f8bd3ff620f31",
+      "source_bytes": 2075048,
+      "source_dimensions": [
+        1800,
+        1400
+      ],
+      "output": "images/07-2-D48-StationInspection-FireDay.jpg",
+      "output_sha256": "b14990281510a7158614b5f49b6053e26a0eca789dd388b5915633b29366d575"
+    },
+    {
+      "source": "Artifacts/Preview/D49-EntryMenu-MainDay.png",
+      "caption": "Earlier entry menu",
+      "source_sha256": "4a61a75f6b165349658b83746d2b755ab55f354408f8b392cf139105376a4318",
+      "source_bytes": 1621968,
+      "source_dimensions": [
+        1800,
+        1400
+      ],
+      "output": "images/08-1-D49-EntryMenu-MainDay.jpg",
+      "output_sha256": "8e9a324def36823f7dcb666b2bd5ccea447e15f43949f73a122e959ecb457ac4"
+    },
+    {
+      "source": "Artifacts/Preview/D49-EntryScene-Main.png",
+      "caption": "Refined entry scene",
+      "source_sha256": "eb410b3237aa9f8821fb483e612e86b791d519907405cacf2c412513b113afa1",
+      "source_bytes": 1228117,
+      "source_dimensions": [
+        1800,
+        1400
+      ],
+      "output": "images/08-2-D49-EntryScene-Main.jpg",
+      "output_sha256": "2e3f03e739569427a63dd1c37b554778ff2dd13290dcea2ffc818bc904ca33da"
+    },
+    {
+      "source": "Artifacts/Preview/D50-NewTerrain.png",
+      "caption": "Chosen terrain preview",
+      "source_sha256": "230693355c14b4e678d76ed1d95b5518c2fd635a41d8c0c908090ec904d78dfa",
+      "source_bytes": 1289907,
+      "source_dimensions": [
+        1800,
+        1400
+      ],
+      "output": "images/08-3-D50-NewTerrain.jpg",
+      "output_sha256": "7a5236a37002ac7ee4b949bbabe0afdb19b34154deac4e7980baa5ff84424b3a"
+    },
+    {
+      "source": "Artifacts/Preview/D50-LoadPreview.png",
+      "caption": "Saved city preview",
+      "source_sha256": "e6d3fbc3645fd678321f0ac28a3897ca34ffa9c128af20f1f59eee44fe9b002d",
+      "source_bytes": 1294350,
+      "source_dimensions": [
+        1800,
+        1400
+      ],
+      "output": "images/08-4-D50-LoadPreview.jpg",
+      "output_sha256": "a03a659781cebbd6816aed0f1214d7683c3f465b3a0b956834d5546e2ba13057"
+    },
+    {
+      "source": "Artifacts/Preview/D51-OnsetQuake.png",
+      "caption": "Earthquake onset",
+      "source_sha256": "9874b283b87a3a39776d13ede31bcd39ac5acc55c9473a956cc881ec1d69db20",
+      "source_bytes": 2513316,
+      "source_dimensions": [
+        1800,
+        1400
+      ],
+      "output": "images/09-1-D51-OnsetQuake.jpg",
+      "output_sha256": "183b4e47bf49397c05f02f515e67f6275a42a5cdbb941178e2160ebb9f6a6003"
+    },
+    {
+      "source": "Artifacts/Preview/D51-OnsetTornado.png",
+      "caption": "Tornado onset",
+      "source_sha256": "d15266ebc6e3da9a7cbfe9352fb41bfdf965e7fa1634687732c4aba1ea733114",
+      "source_bytes": 2507580,
+      "source_dimensions": [
+        1800,
+        1400
+      ],
+      "output": "images/09-2-D51-OnsetTornado.jpg",
+      "output_sha256": "09805a5d291d68b168dc5d4177716d95bddc3a6bb186bb776784b432b06ba67c"
+    },
+    {
+      "source": "Artifacts/Preview/D51-JailInspection-PoliceDay.png",
+      "caption": "Custody Inspect",
+      "source_sha256": "4021159ab285f4084205bbd2c2107267fb22d1126d493b9a57c505a2072ed8de",
+      "source_bytes": 1973375,
+      "source_dimensions": [
+        1800,
+        1400
+      ],
+      "output": "images/09-3-D51-JailInspection-PoliceDay.jpg",
+      "output_sha256": "4df6198010ad0a0e9ff0d7633a8cb0cafb85eea84d17556be2ca09d6e1212b83"
+    },
+    {
+      "source": "Artifacts/Preview/D52-Indicators-Day.png",
+      "caption": "Condition indicators",
+      "source_sha256": "ba61956b23220243f093f947fe5a9d034f9ef7c7cc08a1284b4d6b535a60d574",
+      "source_bytes": 3099712,
+      "source_dimensions": [
+        1800,
+        1400
+      ],
+      "output": "images/10-1-D52-Indicators-Day.jpg",
+      "output_sha256": "964689e6b9cacad7c903d10ebd6a687729ea148c3364a0fe6d4256ec609e39a6"
+    },
+    {
+      "source": "Artifacts/Preview/D55-SelectionDay.png",
+      "caption": "Selection highlights",
+      "source_sha256": "ed464b574b5e9a6ffb26f5fa087f403f80bec9fb75de08023335e71d69771935",
+      "source_bytes": 3206151,
+      "source_dimensions": [
+        1800,
+        1400
+      ],
+      "output": "images/10-2-D55-SelectionDay.jpg",
+      "output_sha256": "3835847853784e5852e0280fafa91e03376e6b8cce6d70fa410b18999954fe43"
+    },
+    {
+      "source": "Artifacts/Preview/D55-DemolishNight.png",
+      "caption": "Night demolition preview",
+      "source_sha256": "66fce75238f3ec85f55ddecf0fe48306b7b659cdec5fdbac2c76ecc18381f380",
+      "source_bytes": 3003323,
+      "source_dimensions": [
+        1800,
+        1400
+      ],
+      "output": "images/10-3-D55-DemolishNight.jpg",
+      "output_sha256": "d0999f0fc8c412c257617cb369cc5a7b8c95679c67b5d424b5d5a54172a50023"
+    },
+    {
+      "source": "Artifacts/Preview/D56-Facilities-Blender.png",
+      "caption": "Utility family",
+      "source_sha256": "6fe6f3b05f4d9f9fd3dedf1732ddcac3fc78538c836d60199583724e83bec90b",
+      "source_bytes": 1076820,
+      "source_dimensions": [
+        1500,
+        1000
+      ],
+      "output": "images/11-1-D56-Facilities-Blender.jpg",
+      "output_sha256": "4f6f16b1aee87bf8f2b55ab30c1494b7ba0c6877a373b49096ea8627c2b3cf95"
+    },
+    {
+      "source": "Artifacts/Preview/D56-Facilities-Damaged.png",
+      "caption": "Damaged variants",
+      "source_sha256": "14680a5fa4d4c6b1bf20741f236acf64c65e253281e74c837d4c09ea348dcdbe",
+      "source_bytes": 1032417,
+      "source_dimensions": [
+        1500,
+        1000
+      ],
+      "output": "images/11-2-D56-Facilities-Damaged.jpg",
+      "output_sha256": "b8c4e0aa1d522ea80b96568dfd943cba96f96fa0e31723a5c3d36f82620333db"
+    },
+    {
+      "source": "Artifacts/Preview/D56-UtilityInspection-PowerDay.png",
+      "caption": "Output and expansion Inspect",
+      "source_sha256": "fe66b0aee6458fc81511fda68bd82e9dd72764bd35a383192d4b32a1e96aeb59",
+      "source_bytes": 1949421,
+      "source_dimensions": [
+        1800,
+        1400
+      ],
+      "output": "images/11-3-D56-UtilityInspection-PowerDay.jpg",
+      "output_sha256": "a77ddacf3c8a6a87d0e4c1455ea84d04ef79a8c847c21d6fa36474c212f8cfb2"
+    },
+    {
+      "source": "Artifacts/Preview/D59-CityDay.png",
+      "caption": "Earlier HUD",
+      "source_sha256": "2b82b34bcebbc250c4f12301687cdfc2dd071ec62b47960fd908c6d986e1c59e",
+      "source_bytes": 1732764,
+      "source_dimensions": [
+        1800,
+        1400
+      ],
+      "output": "images/12-1-D59-CityDay.jpg",
+      "output_sha256": "8a4c051483e0f31b32be8a5dbafb460bea62cec1131b0dd88341e386f7184b96"
+    },
+    {
+      "source": "Artifacts/Preview/D59-Readability-OverviewDay-PIE.png",
+      "caption": "Readability round",
+      "source_sha256": "fba1171ce7ff31c4e8e4f265c59af1c6cd99c23abc21742ef388bf65cc4148a7",
+      "source_bytes": 1779291,
+      "source_dimensions": [
+        1800,
+        1400
+      ],
+      "output": "images/12-2-D59-Readability-OverviewDay-PIE.jpg",
+      "output_sha256": "8f1fba21ec200dd3f2faba00be41506b667fa6a659aa5dde021ff01f818d2ed5"
+    },
+    {
+      "source": "Artifacts/Preview/D59-ObjectiveIcon-OverviewDay-PIE.png",
+      "caption": "Accepted objectives round",
+      "source_sha256": "2f27326b639853f159b27b8d5231e74fa2f3d774b9374c29b6749d9ed546e980",
+      "source_bytes": 1775558,
+      "source_dimensions": [
+        1800,
+        1400
+      ],
+      "output": "images/12-3-D59-ObjectiveIcon-OverviewDay-PIE.jpg",
+      "output_sha256": "17dc1bcec59d80bc366734d6f355c54044a55ffd09b7cccdb0604f257543417c"
+    },
+    {
+      "source": "Artifacts/Preview/D59-ObjectiveIcon-BuildingNoFunds-PIE.png",
+      "caption": "Unaffordable placement",
+      "source_sha256": "c17e12b8c8beba44815b2692f2f1fd7a5b37ebf791e993757a30b630e3c90794",
+      "source_bytes": 1935503,
+      "source_dimensions": [
+        1800,
+        1400
+      ],
+      "output": "images/12-4-D59-ObjectiveIcon-BuildingNoFunds-PIE.jpg",
+      "output_sha256": "db8b47d8b3411a6124557800cb6ee5d8c55b9c5d2c3263a10f5e58cd87f93175"
+    },
+    {
+      "source": "Artifacts/Preview/D60-Hospitals-Front.png",
+      "caption": "Hospital silhouettes",
+      "source_sha256": "57eeb6ce564f3410196463f61c54d90ed16ce6386a1c6a639b70c8410be4f3dd",
+      "source_bytes": 638726,
+      "source_dimensions": [
+        1600,
+        1200
+      ],
+      "output": "images/13-1-D60-Hospitals-Front.jpg",
+      "output_sha256": "3ed3679689786505ed125cd431215e520e668263a75368cc0239328e0433bf7e"
+    },
+    {
+      "source": "Artifacts/Preview/D60-Hospital-Inspect-Responding.png",
+      "caption": "Ambulance response",
+      "source_sha256": "6ce655931f0510db9a8be38547e38e692ae53ce978ec7c1b4452975bc1a5393c",
+      "source_bytes": 1691272,
+      "source_dimensions": [
+        1800,
+        1400
+      ],
+      "output": "images/13-2-D60-Hospital-Inspect-Responding.jpg",
+      "output_sha256": "2424f52b982afcf653c1f8a530f7fe15e91f41b7deee56cb088d6dc014d4fba2"
+    },
+    {
+      "source": "Artifacts/Preview/D60-Clusters-Dense.png",
+      "caption": "Crowded illness markers",
+      "source_sha256": "ae5741f7e74370bb39e3c777509dbccd3a2ab527cb2493374527c4ba43ce5f78",
+      "source_bytes": 2839233,
+      "source_dimensions": [
+        1800,
+        1400
+      ],
+      "output": "images/13-3-D60-Clusters-Dense.jpg",
+      "output_sha256": "a8cc40fb3ddd953894ecad681c1dc77f7b66d95218aaaa055b6ecb7bba11e2b5"
+    },
+    {
+      "source": "Artifacts/Preview/D61-Waste-Front.png",
+      "caption": "Waste facility family",
+      "source_sha256": "b4490a8cd0d4ef7c96b19f12b10617950e13f2392d945d7ecec81270549b181e",
+      "source_bytes": 853727,
+      "source_dimensions": [
+        1600,
+        1200
+      ],
+      "output": "images/14-1-D61-Waste-Front.jpg",
+      "output_sha256": "bb3de52ad4759e4cb7ade5255b350118457198c177dae63c64fa8fe15cc19edf"
+    },
+    {
+      "source": "Artifacts/Preview/D61-TruckColors-Day.png",
+      "caption": "Collection vehicle colors",
+      "source_sha256": "26f5d3d7c7ec7679021f13569e484efeb471dfab6fee7facf475f70055e12ebe",
+      "source_bytes": 189583,
+      "source_dimensions": [
+        1400,
+        1000
+      ],
+      "output": "images/14-2-D61-TruckColors-Day.jpg",
+      "output_sha256": "7f0cf619e80e0ae647d608cf1b57025aa764db56fa2ec14dd1eaae8ab443c145"
+    },
+    {
+      "source": "Artifacts/Preview/D61-Waste-Inspect-Recycling.png",
+      "caption": "Recycling Inspect",
+      "source_sha256": "4f90d2522fe057dadf773e2ecee47284e57f3d988f5d999c23a9a01a1738bb99",
+      "source_bytes": 1773315,
+      "source_dimensions": [
+        1800,
+        1400
+      ],
+      "output": "images/14-3-D61-Waste-Inspect-Recycling.jpg",
+      "output_sha256": "6737a81349216e7917ac3ccdba3d88bff6f4c67691075633de1dd61047c29fb9"
+    },
+    {
+      "source": "Artifacts/Preview/D62-Dry-PIE.png",
+      "caption": "Dry terrain",
+      "source_sha256": "2c0c9f3784968b28706c758259c1ab58e1cc05f92455f00cad331c4644f47689",
+      "source_bytes": 1384113,
+      "source_dimensions": [
+        1600,
+        1200
+      ],
+      "output": "images/15-1-D62-Dry-PIE.jpg",
+      "output_sha256": "b71d8c0d6162ecf04b2a655aa93a5cb967c084a27a02998274fd4461096c6e67"
+    },
+    {
+      "source": "Artifacts/Preview/D62-Mountains-PIE.png",
+      "caption": "Mountain terrain",
+      "source_sha256": "7ecdb9710955878deb5d4741662b005c1ed8a5712be6ae7ca208fde116f9a487",
+      "source_bytes": 1483108,
+      "source_dimensions": [
+        1600,
+        1200
+      ],
+      "output": "images/15-2-D62-Mountains-PIE.jpg",
+      "output_sha256": "dabbb9d3cb507f0d1279750c846bfdb47ed673d5f4eb69ad049db2fa91a5c5b4"
+    },
+    {
+      "source": "Artifacts/Preview/D62-Rain-PIE.png",
+      "caption": "Rain presentation",
+      "source_sha256": "ba8a72dfda9c39256424a14d2bb54fbff11ad5dcc5751a2c13f6f557d14082cd",
+      "source_bytes": 1477494,
+      "source_dimensions": [
+        1600,
+        1200
+      ],
+      "output": "images/15-3-D62-Rain-PIE.jpg",
+      "output_sha256": "9e20d6e624db14195c31f27f695af2c833401d754be05094b76c799791439a9f"
+    },
+    {
+      "source": "Artifacts/Preview/D62-Snow-PIE.png",
+      "caption": "Snow presentation",
+      "source_sha256": "cdf8d670e47218b5887cb7f90e244c285fdddf067eeeb6f57ce3bd74daf87c0a",
+      "source_bytes": 1375362,
+      "source_dimensions": [
+        1600,
+        1200
+      ],
+      "output": "images/15-4-D62-Snow-PIE.jpg",
+      "output_sha256": "687b39b2ad9c4d7abc1ecce20ee3283836a8ed59fdf53d02e478126453dd7463"
+    },
+    {
+      "source": "Artifacts/Preview/D63-Water-Full-PIE.png",
+      "caption": "Supplied city",
+      "source_sha256": "1eb501dcde3b1b17ef041012989ea747255901753482200b9e0811f8d437c36e",
+      "source_bytes": 1776179,
+      "source_dimensions": [
+        1800,
+        1400
+      ],
+      "output": "images/16-1-D63-Water-Full-PIE.jpg",
+      "output_sha256": "0fce6c0e43b34e82e7c244d481fbb7077f0e39e28312ae45836a058a8933c39a"
+    },
+    {
+      "source": "Artifacts/Preview/D63-Water-LowPressure-PIE.png",
+      "caption": "Pressure loss",
+      "source_sha256": "17a7c048ecf5a5daa8d334d537c405562fe88f2f78a356374a92bc8feb9e86b8",
+      "source_bytes": 1726025,
+      "source_dimensions": [
+        1800,
+        1400
+      ],
+      "output": "images/16-2-D63-Water-LowPressure-PIE.jpg",
+      "output_sha256": "05d913cdce114cb2780ac32a336270d78c0fe2bb1893ec58b5a16301afa7ed74"
+    },
+    {
+      "source": "Artifacts/Preview/D63-Placement-Day-PIE.png",
+      "caption": "Source placement guidance",
+      "source_sha256": "4748a329a551f54c4dcaf62412a42712d38de366e488a5e7002ad470b74a8252",
+      "source_bytes": 1556935,
+      "source_dimensions": [
+        1800,
+        1400
+      ],
+      "output": "images/16-3-D63-Placement-Day-PIE.jpg",
+      "output_sha256": "6a0f5f0e3d81797747072fb04a782532cd72ec2d113de347d5b123bcd7ed896d"
+    },
+    {
+      "source": "Artifacts/Preview/D64-WarmCoast-PIE.png",
+      "caption": "Warm coast",
+      "source_sha256": "1def973c0946ec4d1549d7e5542eaff5ace19c045ec2a442cd6f9980734ef2b9",
+      "source_bytes": 1436251,
+      "source_dimensions": [
+        1600,
+        1200
+      ],
+      "output": "images/17-1-D64-WarmCoast-PIE.jpg",
+      "output_sha256": "137e06f82fb3f264825fd90d0703148fcd037728d20e212f2132d1f68b9f9a7f"
+    },
+    {
+      "source": "Artifacts/Preview/D64-CoolCoast-PIE.png",
+      "caption": "Cool coast",
+      "source_sha256": "467dfcf3c284e5f2dff6b83a14822c47a9d7bc29c51dac5f3e7ce39afebd8800",
+      "source_bytes": 1458747,
+      "source_dimensions": [
+        1600,
+        1200
+      ],
+      "output": "images/17-2-D64-CoolCoast-PIE.jpg",
+      "output_sha256": "f817d6d512323ae892105b94ff6f8996a34e39bbca1b1ef851329d0641123bf9"
+    },
+    {
+      "source": "Artifacts/Preview/D65-SnowPartial-Day-PIE.png",
+      "caption": "Partial snow coverage",
+      "source_sha256": "0db3c9ce7a4110d264f245cf520c7ab6dbf3359076e03964fb560e0d8697cbbe",
+      "source_bytes": 1503946,
+      "source_dimensions": [
+        1600,
+        1200
+      ],
+      "output": "images/17-3-D65-SnowPartial-Day-PIE.jpg",
+      "output_sha256": "74ac1f77520ba529b0bf7d798280fb4580feeabcabb9d0601b524f6b1fad8df7"
+    },
+    {
+      "source": "Artifacts/Preview/D65-SnowFull-Day-PIE.png",
+      "caption": "Full snow coverage",
+      "source_sha256": "a0dc8a7049e0b0e0fc4332d8c0937446e89f3c30216676867402fe48ae652829",
+      "source_bytes": 1458244,
+      "source_dimensions": [
+        1600,
+        1200
+      ],
+      "output": "images/17-4-D65-SnowFull-Day-PIE.jpg",
+      "output_sha256": "52d8bbfc950f5cd10ecd1722aa1725fe8f58ced7053e0d257580d907a0904ab4"
+    },
+    {
+      "source": "Artifacts/Preview/D66-Refinement-Autumn-PIE.png",
+      "caption": "Autumn trees",
+      "source_sha256": "d8b66ed032aba4391326dd2ea1b187cf1fe3a7f8aeea512a77481b1072ad393e",
+      "source_bytes": 1644986,
+      "source_dimensions": [
+        1800,
+        1400
+      ],
+      "output": "images/18-1-D66-Refinement-Autumn-PIE.jpg",
+      "output_sha256": "42bbe010da7dd89d4b5fcc0bf6c51838c393de01f971735852b5894e1b110583"
+    },
+    {
+      "source": "Artifacts/Preview/D66-Refinement-FinalTreeParks-PIE.png",
+      "caption": "December park dressing",
+      "source_sha256": "b420418528974b11b85bf0f815b63bebc5fbdd4de95069224023ad80f86b6a62",
+      "source_bytes": 2145916,
+      "source_dimensions": [
+        1800,
+        1400
+      ],
+      "output": "images/18-2-D66-Refinement-FinalTreeParks-PIE.jpg",
+      "output_sha256": "59651b27dba2beb838a32129a5c2c76c0dfafc263d7fffafb4e28c77a180ca84"
+    },
+    {
+      "source": "Artifacts/ArtPreview/D66-ResidentialGround-Home-Blender.png",
+      "caption": "Home foundation study",
+      "source_sha256": "904bc5f2f9b9479bb10bb61c75eabc2b2053148acf7d2c6f3b96540a0074cc4a",
+      "source_bytes": 1714704,
+      "source_dimensions": [
+        1600,
+        1000
+      ],
+      "output": "images/18-3-D66-ResidentialGround-Home-Blender.jpg",
+      "output_sha256": "dcb6b9c1027c21bc0aac7d532e45740c6167ba1dd55bbe34f6d6d41c3e25e39a"
+    },
+    {
+      "source": "Artifacts/D68-ColorPerf-Desktop-1920-1080-Final/Overview.png",
+      "caption": "Desktop overview",
+      "source_sha256": "45264eb7fd17bb490ceac0e268416575af0a0d7c4d5b4e1ce72915e16a85ccda",
+      "source_bytes": 1111536,
+      "source_dimensions": [
+        1920,
+        1080
+      ],
+      "output": "images/19-1-Overview.jpg",
+      "output_sha256": "68556a5bcb91caec736efd7dde273ec6606e3b8b8fbfd0bc0b13e4694e935743"
+    },
+    {
+      "source": "Artifacts/D68-UiReview-Captures/1920-1080/Reports.png",
+      "caption": "Desktop Reports",
+      "source_sha256": "9e034b0e43a571ab8ecdc78eb4804efa85d9a229f628c269a61baaad3d05d831",
+      "source_bytes": 575821,
+      "source_dimensions": [
+        1920,
+        1080
+      ],
+      "output": "images/19-2-Reports.jpg",
+      "output_sha256": "c7c65f5d92732b707a84ca3e5b29890fb49bff733ecda09bfd5193013fcee6b5"
+    },
+    {
+      "source": "Artifacts/D68-ColorPerf-Desktop-1920-1080-Final/Build.png",
+      "caption": "Build controls",
+      "source_sha256": "85f8a13d3f8e0556166d498af10e4192dca30618d7aaf1ad5b215cd1738443f5",
+      "source_bytes": 622911,
+      "source_dimensions": [
+        1920,
+        1080
+      ],
+      "output": "images/19-3-Build.jpg",
+      "output_sha256": "df815d76f8e16916bddd939b964d1f676e5dc900acc8f70677ce935cbb403c3a"
+    },
+    {
+      "source": "Artifacts/ArtPreview/D71/Citizen-Comparison-Labeled.png",
+      "caption": "Labeled baseline/refined citizen comparison",
+      "source_sha256": "13c228a6be7bcc408aaa33ff30dacf777954604a7b619b4e2a384818dd6c1d1a",
+      "source_bytes": 866958,
+      "source_dimensions": [
+        1600,
+        850
+      ],
+      "output": "images/20-1-Citizen-Comparison-Labeled.jpg",
+      "output_sha256": "d9e9f848f1d92d90cdf18cf0a969c1fb984b225d2d771042007305bfb040ac50"
+    },
+    {
+      "source": "Artifacts/D75-Desktop/D68-Automation-3840-2160/Saved/Automation/Desktop/Build.png",
+      "caption": "Native packaged build controls",
+      "source_sha256": "3129f45a44027e8022591e6ec6362b90f1dc97c3f0888890d532e05da2a62512",
+      "source_bytes": 3705312,
+      "source_dimensions": [
+        3840,
+        2160
+      ],
+      "output": "images/21-1-Build.jpg",
+      "output_sha256": "9a7faacd5244bf6459d8655ba1841c12d1f8d2965fffb3754a4bc6f50e1853f1"
+    },
+    {
+      "source": "Artifacts/D78-Desktop-4K-Final/D68-Automation-3840-2160/Saved/Automation/Desktop/CityInfo.png",
+      "caption": "Refined City Info charts",
+      "source_sha256": "72819e9d471edbb799f158f42cc96ee2cbd0f76d16df77623ae3c5cbdefe3c09",
+      "source_bytes": 3612345,
+      "source_dimensions": [
+        3840,
+        2160
+      ],
+      "output": "images/21-2-CityInfo.jpg",
+      "output_sha256": "5e2e8043e1df7f0e802707036550512298af0ee3971eb41fbbbf06a7f7b63306"
+    },
+    {
+      "source": "Artifacts/ArtPreview/D79/Building-Comparison.png",
+      "caption": "Building geometry comparison",
+      "source_sha256": "9055ff68988b4cd2ca077ab62f4efcf96e1057e0bf0c1ce6de8403409b174440",
+      "source_bytes": 756279,
+      "source_dimensions": [
+        1500,
+        1120
+      ],
+      "output": "images/22-1-Building-Comparison.jpg",
+      "output_sha256": "e28e10e74b6a8e4a604429ab747092dc46df18c2e546645fbc88c5aa10fa49de"
+    },
+    {
+      "source": "Artifacts/ArtPreview/D79/Surfaces/Building-Surfaces-Preview.png",
+      "caption": "Authored surfaces",
+      "source_sha256": "6cdd0851d8a5f18e85f649598bbf2647df3c8867ba159f1596c7f0b9c0bf8a9b",
+      "source_bytes": 673643,
+      "source_dimensions": [
+        1500,
+        580
+      ],
+      "output": "images/22-2-Building-Surfaces-Preview.jpg",
+      "output_sha256": "7caed1c48e55766379016f59fe31a754db89c1b3efdcb2ae9bab999304411e03"
+    },
+    {
+      "source": "Artifacts/ArtPreview/D79/Surfaces/Roof-Textures-Preview.png",
+      "caption": "Roof texture families",
+      "source_sha256": "e3aaf537605fd14199dbdc0c38a32921a080936786e1ceea52536999082b79a6",
+      "source_bytes": 676817,
+      "source_dimensions": [
+        1500,
+        610
+      ],
+      "output": "images/22-3-Roof-Textures-Preview.jpg",
+      "output_sha256": "32aacf833416d99ff1aeb39b921f1b5ecc03515d862eafeb41f4f986f29fa64e"
+    },
+    {
+      "source": "Artifacts/ArtPreview/D79/Surfaces/Store-Signs-Preview.png",
+      "caption": "Storefront variation",
+      "source_sha256": "056917b11754e2e5dc19be9730e25a002eaab8dcd44138a4a0d573a78e7d5397",
+      "source_bytes": 596577,
+      "source_dimensions": [
+        1600,
+        930
+      ],
+      "output": "images/22-4-Store-Signs-Preview.jpg",
+      "output_sha256": "755c9c8643bfeefa7ba0603874b2cd4d4f1456e30196f0ac6eefe112854cdfab"
+    },
+    {
+      "source": "Artifacts/ArtPreview/D83/Water-Comparison.png",
+      "caption": "Water facility prototype",
+      "source_sha256": "e9f8ceb6263ba98dea9c90447c2faab4ae406842cb7ff5999e38713a02ce70c6",
+      "source_bytes": 626543,
+      "source_dimensions": [
+        1000,
+        1870
+      ],
+      "output": "images/23-1-Water-Comparison.jpg",
+      "output_sha256": "81509672cb21581f2039e71868525cb3fc1e74a34d12a8e7f443324c2613d866"
+    },
+    {
+      "source": "Artifacts/ArtPreview/D83/Tree-Design-Labeled.png",
+      "caption": "Flat tree crowns",
+      "source_sha256": "6704ee30b64249e7cce309bd935ccd66f873e05ec6aa1af6664efabe2c1f63d2",
+      "source_bytes": 425801,
+      "source_dimensions": [
+        1000,
+        710
+      ],
+      "output": "images/23-2-Tree-Design-Labeled.jpg",
+      "output_sha256": "4b3d5b07d4e2228f883c255b29a067ecad115bec29324c99ea012c842c7b679f"
+    },
+    {
+      "source": "Artifacts/ArtPreview/D83/Skateboard-Size-Comparison.png",
+      "caption": "Smaller skateboard",
+      "source_sha256": "c87c67bcabbce0839507d639bd6dd0686836eba8850674af0e76c1c908e5400f",
+      "source_bytes": 316942,
+      "source_dimensions": [
+        1000,
+        560
+      ],
+      "output": "images/23-3-Skateboard-Size-Comparison.jpg",
+      "output_sha256": "98193ba330009e11efd1436ac72a50593f2abbbf5969d1a02ba7bdb565294628"
+    },
+    {
+      "source": "Artifacts/ArtPreview/D83/Skate-Tricks-Keyframes.png",
+      "caption": "Trick keyframes: authoring only",
+      "source_sha256": "667c06f9a3ecb8f21a3de21f7bea106b28745c376528682893922b5524ca034a",
+      "source_bytes": 626159,
+      "source_dimensions": [
+        1280,
+        1120
+      ],
+      "output": "images/23-4-Skate-Tricks-Keyframes.jpg",
+      "output_sha256": "eebf2ed2a064b1d82f145cbffe008a78f596619577096150d44ffc60213cc672"
+    }
+  ]
+}

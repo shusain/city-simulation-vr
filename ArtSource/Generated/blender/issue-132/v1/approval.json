@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "kind": "blender",
+  "repository": "CitySimVR/citysim",
+  "issue": 132,
+  "version": 1,
+  "by": "shaun",
+  "comment_id": 2066,
+  "request_url": "https://git.shaun-husain.com/CitySimVR/citysim/issues/132#issuecomment-2066",
+  "approved_at": "2026-10-18T00:12:18.095Z",
+  "job_id": "db55243dc3155b5f4c6dc8068400a256",
+  "source_sha": "e5425d699e1a4f80b2303c4f7eff5e31fb3bf009",
+  "script_sha256": "e4258a5b0fd38be96573818b04707848bdf8b8968dfc250cd78103fca7bdfeba",
+  "helper_sha256": "43c8849ba2f0c229525e693537d3b948f91afd1fa15cc57dde1fdbe5e3cb952c",
+  "artifacts": [
+    {
+      "name": "asset.blend",
+      "bytes": 100157,
+      "sha256": "69517afb43aa23da7912f63d1372f1f3bbc35a802c77be6e4f2482a6d1ad534f"
+    },
+    {
+      "name": "asset.fbx",
+      "bytes": 17788,
+      "sha256": "294ef9728de531ba459f3b9f212b27c437fa760617e3796f8405ff8b28184624"
+    },
+    {
+      "name": "preview.png",
+      "bytes": 94453,
+      "sha256": "8656dffdb7c76d00892351a76ea1403d62eecc9823fe6db9050614cacda76d51"
+    },
+    {
+      "name": "preview_top.png",
+      "bytes": 94096,
+      "sha256": "e98b9acd027b15ab1acd06aeb39ec641e41732c5d5f4c1e5fd90a72303a93150"
+    },
+    {
+      "name": "provenance.json",
+      "bytes": 1569,
+      "sha256": "4adaa3eb95ebe2d3bf5ffc6c2bf95332b50d0cf2cbd4276d080566376772960a"
+    },
+    {
+      "name": "validation.json",
+      "bytes": 2956,
+      "sha256": "987e56cb50485800c01a18a46c2a4bd7ebdf4dc6f77293b7cc9fbbaa07cc15b5"
+    }
+  ],
+  "archive": {
+    "url": "https://git.shaun-husain.com/attachments/df7b3572-6a54-4f76-95b0-38f2a8761c6a",
+    "sha256": "2ff0331d003a767affddb62f610ed9a599b3fcfa34cceddbcac4d14c93aaba2b"
+  },
+  "review_url": "https://git.shaun-husain.com/CitySimVR/citysim/issues/132#issuecomment-1955"
+}

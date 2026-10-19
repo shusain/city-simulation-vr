@@ -1,0 +1,43 @@
+{
+  "family": "recycling",
+  "stage": "base",
+  "stage_index": 0,
+  "existing_stages": [
+    "base",
+    "medium"
+  ],
+  "existing_upgrade_count": 1,
+  "gameplay_changes": false,
+  "source_site_m": [
+    48,
+    40
+  ],
+  "current_native_footprint": [
+    4,
+    3
+  ],
+  "occupied_bounds": {
+    "min": [
+      -20.299999237060547,
+      -9.399999618530273,
+      0.0
+    ],
+    "max": [
+      17.950000762939453,
+      17.0,
+      8.779999732971191
+    ]
+  },
+  "retained_entrance_centres": [
+    [
+      -15,
+      -8
+    ],
+    [
+      -2,
+      -8
+    ]
+  ],
+  "progression": "Medium adds second receiving bay and longer sorting line; no new tier.",
+  "technical_fit_note": "Base only: exactly 15 original door assembly solids adjusted; remaining 220 solids preserved; no design or gameplay changes."
+}

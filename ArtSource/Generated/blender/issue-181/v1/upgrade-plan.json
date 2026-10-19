@@ -1,0 +1,43 @@
+{
+  "family": "hospital",
+  "stage": "base",
+  "stage_index": 0,
+  "existing_stages": [
+    "base",
+    "medium"
+  ],
+  "existing_upgrade_count": 1,
+  "gameplay_changes": false,
+  "source_site_m": [
+    48,
+    40
+  ],
+  "current_native_footprint": [
+    4,
+    3
+  ],
+  "retained_entrance_centres": [
+    [
+      -7,
+      -7
+    ],
+    [
+      11.5,
+      -7
+    ]
+  ],
+  "progression": "Base: two occupied ward floors, distinct lower emergency wing and enclosed link. Medium remains separate existing stage, not authored here.",
+  "occupied_bounds": {
+    "min": [
+      -17,
+      -7,
+      0
+    ],
+    "max": [
+      18,
+      8,
+      6.8
+    ]
+  },
+  "LOD_notes": "Future LOD1/LOD2 simplify window rims, H relief and roof louvers; approved old lowpoly sources untouched."
+}

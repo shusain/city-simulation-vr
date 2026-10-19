@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "assets": [
+    {
+      "name": "SM_Scenery_Broadleaf_A",
+      "export": "ArtSource/Exports/SM_Scenery_Broadleaf_A.fbx",
+      "triangles": 64,
+      "material_slots": [
+        "Bark",
+        "Canopy"
+      ],
+      "provenance": "Original project Blender primitives",
+      "collision": "none"
+    },
+    {
+      "name": "SM_Scenery_Conifer_A",
+      "export": "ArtSource/Exports/SM_Scenery_Conifer_A.fbx",
+      "triangles": 60,
+      "material_slots": [
+        "Bark",
+        "Canopy"
+      ],
+      "provenance": "Original project Blender primitives",
+      "collision": "none"
+    },
+    {
+      "name": "SM_Scenery_Rock_A",
+      "export": "ArtSource/Exports/SM_Scenery_Rock_A.fbx",
+      "triangles": 20,
+      "material_slots": [
+        "Rock"
+      ],
+      "provenance": "Original project Blender primitives",
+      "collision": "none"
+    },
+    {
+      "name": "SM_Weather_Rain_A",
+      "export": "ArtSource/Exports/SM_Weather_Rain_A.fbx",
+      "triangles": 24,
+      "material_slots": [
+        "Rain"
+      ],
+      "provenance": "Original project Blender primitives",
+      "collision": "none"
+    },
+    {
+      "name": "SM_Weather_Snow_A",
+      "export": "ArtSource/Exports/SM_Weather_Snow_A.fbx",
+      "triangles": 20,
+      "material_slots": [
+        "Snow"
+      ],
+      "provenance": "Original project Blender primitives",
+      "collision": "none"
+    },
+    {
+      "name": "SM_Weather_Splash_A",
+      "export": "ArtSource/Exports/SM_Weather_Splash_A.fbx",
+      "triangles": 16,
+      "material_slots": [
+        "Rain"
+      ],
+      "provenance": "Original project Blender primitives",
+      "collision": "none"
+    },
+    {
+      "name": "SM_Scenery_Palm_A",
+      "export": "ArtSource/Exports/SM_Scenery_Palm_A.fbx",
+      "triangles": 360,
+      "material_slots": [
+        "Bark",
+        "Canopy"
+      ],
+      "provenance": "Original project Blender primitives",
+      "collision": "none"
+    }
+  ]
+}

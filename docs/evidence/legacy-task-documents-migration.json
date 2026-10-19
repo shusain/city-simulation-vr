@@ -1,0 +1,956 @@
+{
+  "issue": 189,
+  "date": "2026-10-18",
+  "scope": "Documentation migration; historical originals remain evidence, not current process or acceptance instructions",
+  "documents": [
+    {
+      "retired_path": "docs/B001_DESKTOP_FOCUS.md",
+      "source_sha256": "fba317938cd9675b564f2b3b36019c24005773fdc134f44789603b0d8e9a86fc",
+      "bytes": 5933,
+      "tracked_on_main": true,
+      "owner": 62,
+      "canonical_record": "https://git.shaun-husain.com/CitySimVR/citysim/issues/62#issuecomment-3122",
+      "original_attachment": "https://git.shaun-husain.com/attachments/706faa6e-f95b-43d7-b746-bb2e770dd302",
+      "receipts": [
+        {
+          "original_path": "docs/evidence/B001-acceptance.json",
+          "sha256": "53b6af01871d705f30dc74581a40319c11944ee3c6d956b242db16f32f4abb88",
+          "bytes": 2039,
+          "url": "https://git.shaun-husain.com/attachments/d43eb9f5-b323-4350-9a0a-e87be9e5de4b"
+        },
+        {
+          "original_path": "docs/evidence/B001-closeout.json",
+          "sha256": "e8a4874310fdc728f37c269a2767e3bfd802378ceae7c05dbf77ae2ac9323aeb",
+          "bytes": 2879,
+          "url": "https://git.shaun-husain.com/attachments/ffd7350c-c88c-4b6a-8ad1-7feeaac6340f"
+        },
+        {
+          "original_path": "docs/evidence/B001-focus-return-candidate.json",
+          "sha256": "1c2822e38485a54522872e1a6a69fcbd9785c6e81d68a016ea2f29f1bfc8f79f",
+          "bytes": 5940,
+          "url": "https://git.shaun-husain.com/attachments/7a65405f-3da2-44fb-9600-d88ee163293b"
+        }
+      ]
+    },
+    {
+      "retired_path": "docs/B007_TECHNOLOGY_NAVIGATION.md",
+      "source_sha256": "587a66da3c253fd6e88b5d1553f2589731f565a9bc76f5955fe704643bed6ac2",
+      "bytes": 2893,
+      "tracked_on_main": true,
+      "owner": 45,
+      "canonical_record": "https://git.shaun-husain.com/CitySimVR/citysim/pulls/45#issuecomment-3117",
+      "original_attachment": "https://git.shaun-husain.com/attachments/158dc21f-3cc5-42f9-8d2c-8d2643065289",
+      "receipts": [
+        {
+          "original_path": "docs/evidence/B007-acceptance.json",
+          "sha256": "d913ab24d673e9c1cfbc20717c92e3ace0cac78dd426a912d88b2dd7586c28fa",
+          "bytes": 1646,
+          "url": "https://git.shaun-husain.com/attachments/9f7796a0-1f89-4198-a50a-ac29579c1728"
+        },
+        {
+          "original_path": "docs/evidence/B007-closeout.json",
+          "sha256": "6672cc88b6de2718ffb6061610a1e2313897a7ec8a0a1c79b9e0844859502ba1",
+          "bytes": 3409,
+          "url": "https://git.shaun-husain.com/attachments/a4d5fac3-2271-4ba3-90bf-b0d291937869"
+        },
+        {
+          "original_path": "docs/evidence/B007-technology-navigation.json",
+          "sha256": "ee46d41091e78d459a2d0c5078969bcca082fb4071c19aab7a7a0b6070052e39",
+          "bytes": 7233,
+          "url": "https://git.shaun-husain.com/attachments/50e2d153-938b-43b7-9f46-aa2cda0b1ce6"
+        }
+      ]
+    },
+    {
+      "retired_path": "docs/D108_BEACH_INTEGRATION.md",
+      "source_sha256": "8da6e01592905326556c329b4f0aedaea6e4babcca9c2f40b00e6a20ebbc888d",
+      "bytes": 3196,
+      "tracked_on_main": true,
+      "owner": 53,
+      "canonical_record": "https://git.shaun-husain.com/CitySimVR/citysim/issues/53#issuecomment-3119",
+      "original_attachment": "https://git.shaun-husain.com/attachments/78aeee2f-8cbe-4122-9c8a-9172ee6c7d20",
+      "receipts": [
+        {
+          "original_path": "docs/evidence/D108-beach-closeout.json",
+          "sha256": "210145b893d38877732f786792148ea1e79e33b15654bb3ea937728719339cfa",
+          "bytes": 10018,
+          "url": "https://git.shaun-husain.com/attachments/2c266bc0-78fd-4cf2-a922-920c8a7f05e9"
+        },
+        {
+          "original_path": "docs/evidence/D108-beach-integration.json",
+          "sha256": "c4ea46bc66915d02250bb814768eaf662294b4656787fbee789e3df8a28314a0",
+          "bytes": 25768,
+          "url": "https://git.shaun-husain.com/attachments/229df6c6-7155-4b84-ac90-d1c3c926cd01"
+        }
+      ]
+    },
+    {
+      "retired_path": "docs/D121_CITIZEN_WALK_PLAN.md",
+      "source_sha256": "46adfd124a4d8786f40e6f5cb9ea028799725070f54933b705f671e6db127d61",
+      "bytes": 13484,
+      "tracked_on_main": true,
+      "owner": 49,
+      "canonical_record": "https://git.shaun-husain.com/CitySimVR/citysim/issues/49#issuecomment-3118",
+      "original_attachment": "https://git.shaun-husain.com/attachments/49e90673-2aee-442f-852a-ffddc4c02000",
+      "receipts": [
+        {
+          "original_path": "docs/evidence/D121-walk-preview-v2.json",
+          "sha256": "0ced905d86f9d8918076ff1834bc8db0e1b6edd55529b7d5f63d66df8c3aaa3d",
+          "bytes": 7901,
+          "url": "https://git.shaun-husain.com/attachments/3e3a87e9-a9d8-4484-9823-5f5a3dbecce8"
+        },
+        {
+          "original_path": "docs/evidence/D121-acceptance.json",
+          "sha256": "00894a59c784ff0d9c34331cd446d51ceab53054b3cee199641ff73c9a41eee5",
+          "bytes": 1165,
+          "url": "https://git.shaun-husain.com/attachments/95af0f8f-35ca-4784-a8bf-e965c12a4b00"
+        },
+        {
+          "original_path": "docs/evidence/D121-integration.json",
+          "sha256": "c2b65bbf451069a76c03ab2b956e45eff9c2c67f6c8e80fb70e25f178f108d49",
+          "bytes": 32049,
+          "url": "https://git.shaun-husain.com/attachments/f66b05a0-32b4-4e82-b4dc-472ea2063ab0"
+        },
+        {
+          "original_path": "docs/evidence/D121-v2-approval.json",
+          "sha256": "5ab66d775d61c5275fcc16bf28446c5ea264852980e89e3cd81ca9df284ff706",
+          "bytes": 1522,
+          "url": "https://git.shaun-husain.com/attachments/43faa9ed-f415-4af7-8db7-62675ab03031"
+        }
+      ]
+    },
+    {
+      "retired_path": "docs/D122_COMFY_ROOMS.md",
+      "source_sha256": "4a055778e218d2fe4ad27e0a7e6add2d13daee7d5bf9ff99cab310a12369c482",
+      "bytes": 14590,
+      "tracked_on_main": false,
+      "owner": 32,
+      "canonical_record": "https://git.shaun-husain.com/CitySimVR/citysim/issues/32#issuecomment-3115",
+      "original_attachment": "https://git.shaun-husain.com/attachments/5b448e27-638d-477a-8117-0ca8d1b880e2",
+      "receipts": [
+        {
+          "original_path": "docs/evidence/D108-beach-assets.json",
+          "sha256": "58ce58dfa2bc27b88f6c77cca0b0e2039e33abc527549f8f5b17aa6b6718af78",
+          "bytes": 41244,
+          "url": "https://git.shaun-husain.com/attachments/0ce534f7-998e-4c52-b17c-7902099c38ab"
+        },
+        {
+          "original_path": "docs/evidence/D122-beach-concepts.json",
+          "sha256": "55e1b93fb9e9f419d4b8abb7e3b3e4d3d8e17f5cd8d7e7eb3679f50d6a1ba73c",
+          "bytes": 9073,
+          "url": "https://git.shaun-husain.com/attachments/c4364bce-5b5b-4ede-b38a-f7373fae0bf0"
+        },
+        {
+          "original_path": "docs/evidence/D122-closeout.json",
+          "sha256": "7795f054ff57e392f58a2f47136746315c15b97ddf58401189277649a78b6efa",
+          "bytes": 13216,
+          "url": "https://git.shaun-husain.com/attachments/7677608a-f666-4fad-970e-0430b9740f5c"
+        },
+        {
+          "original_path": "docs/evidence/D122-comfy-room-review.json",
+          "sha256": "8fe89a97963fb64432b1ad380589aeb125d8deb16cd3f6fbf2a3bb973c1e6b4e",
+          "bytes": 9710,
+          "url": "https://git.shaun-husain.com/attachments/7b723e05-5b24-44e2-8b04-4b255e5dffdc"
+        },
+        {
+          "original_path": "docs/evidence/D122-eight-store-rooms.json",
+          "sha256": "3b36072a2d5c572c28687f3bcedd8020a1817d0f8da3f16fd1545b4235727ba5",
+          "bytes": 37185,
+          "url": "https://git.shaun-husain.com/attachments/fc3754c1-e890-49a2-b321-e6de05538b28"
+        },
+        {
+          "original_path": "docs/evidence/D122-status-audit.json",
+          "sha256": "e047ee51341a2b4b559bdca82bed97cf6046f0661fecfd28f9ee97820c84297f",
+          "bytes": 4583,
+          "url": "https://git.shaun-husain.com/attachments/fdcb7562-5e0a-41ee-9a42-026a38d6e567"
+        },
+        {
+          "original_path": "docs/evidence/D122-storefront-closeups.json",
+          "sha256": "4cf8c89c9e06015e27cf156c86a9a11537663a7e1f1480298ee32f0089a75697",
+          "bytes": 19544,
+          "url": "https://git.shaun-husain.com/attachments/98a0fa81-686f-4caa-83f5-04448c0dd637"
+        }
+      ]
+    },
+    {
+      "retired_path": "docs/D122_COMFYUI_PREVIEWS.md",
+      "source_sha256": "2487d5a4e9cca17b73cac923014d1eaaad9608a73c020996a64da2b548fb7462",
+      "bytes": 18086,
+      "tracked_on_main": false,
+      "owner": 32,
+      "canonical_record": "https://git.shaun-husain.com/CitySimVR/citysim/issues/32#issuecomment-3115",
+      "original_attachment": "https://git.shaun-husain.com/attachments/19e4b6ed-a3f0-4095-a121-5b9af22a958b",
+      "receipts": [
+        {
+          "original_path": "docs/evidence/D108-beach-assets.json",
+          "sha256": "58ce58dfa2bc27b88f6c77cca0b0e2039e33abc527549f8f5b17aa6b6718af78",
+          "bytes": 41244,
+          "url": "https://git.shaun-husain.com/attachments/0ce534f7-998e-4c52-b17c-7902099c38ab"
+        },
+        {
+          "original_path": "docs/evidence/D122-beach-concepts.json",
+          "sha256": "55e1b93fb9e9f419d4b8abb7e3b3e4d3d8e17f5cd8d7e7eb3679f50d6a1ba73c",
+          "bytes": 9073,
+          "url": "https://git.shaun-husain.com/attachments/c4364bce-5b5b-4ede-b38a-f7373fae0bf0"
+        },
+        {
+          "original_path": "docs/evidence/D122-closeout.json",
+          "sha256": "7795f054ff57e392f58a2f47136746315c15b97ddf58401189277649a78b6efa",
+          "bytes": 13216,
+          "url": "https://git.shaun-husain.com/attachments/7677608a-f666-4fad-970e-0430b9740f5c"
+        },
+        {
+          "original_path": "docs/evidence/D122-comfyui-previews.json",
+          "sha256": "dc1a518f01c40b0e2ae883519530ae99d932e793abbba268cea2adddaf529eca",
+          "bytes": 10760,
+          "url": "https://git.shaun-husain.com/attachments/5cb840ef-cb6b-4762-8781-1d6550a29662"
+        },
+        {
+          "original_path": "docs/evidence/D122-display-revision.json",
+          "sha256": "9107361bff63770a59279745b44b6caf13244b4a6e4f6d2317d6c04905317cfa",
+          "bytes": 20463,
+          "url": "https://git.shaun-husain.com/attachments/c8439062-4532-423d-893e-453adf86bf05"
+        },
+        {
+          "original_path": "docs/evidence/D122-newspaper-repairs-integration.json",
+          "sha256": "a055a25ab1798530cfec61e6a0185a422c897c5eae0a7671c2ce02ef288c559b",
+          "bytes": 9810,
+          "url": "https://git.shaun-husain.com/attachments/e099f811-1e8a-4521-946b-f2088b9b6764"
+        },
+        {
+          "original_path": "docs/evidence/D122-status-audit.json",
+          "sha256": "e047ee51341a2b4b559bdca82bed97cf6046f0661fecfd28f9ee97820c84297f",
+          "bytes": 4583,
+          "url": "https://git.shaun-husain.com/attachments/fdcb7562-5e0a-41ee-9a42-026a38d6e567"
+        },
+        {
+          "original_path": "docs/evidence/D122-window-depth.json",
+          "sha256": "35c0c9457ac7489c3673cc893330841ee1eacf5d7567b6667ef5e9279b439520",
+          "bytes": 5892,
+          "url": "https://git.shaun-husain.com/attachments/76e669ab-3af1-43b9-92e2-564129c86d48"
+        }
+      ]
+    },
+    {
+      "retired_path": "docs/D122_NEWSPAPER_REPAIR_INTEGRATION.md",
+      "source_sha256": "03b3bdf1a54f5505d5eee6cf8ccd73b5132f3d2bd14ca62ba7bd59a023a0ad8f",
+      "bytes": 2983,
+      "tracked_on_main": true,
+      "owner": 32,
+      "canonical_record": "https://git.shaun-husain.com/CitySimVR/citysim/issues/32#issuecomment-3115",
+      "original_attachment": "https://git.shaun-husain.com/attachments/452c78ae-bb78-4bbe-9c48-b4847e62d225",
+      "receipts": [
+        {
+          "original_path": "docs/evidence/D122-acceptance.json",
+          "sha256": "054357fd15fe79f0707ba28c90ce1cc93cc3e003073fefca38788ba2b18e51a7",
+          "bytes": 1217,
+          "url": "https://git.shaun-husain.com/attachments/b2ceb678-4987-4dc5-9edb-a3d8d171050f"
+        },
+        {
+          "original_path": "docs/evidence/D122-approved-exports.json",
+          "sha256": "4778bc0a31cbb0ea09d7d54a6acf4496b5a405040da045d78465720846066ba5",
+          "bytes": 1527,
+          "url": "https://git.shaun-husain.com/attachments/eb98a283-82b5-405d-a612-8467212b9fc6"
+        },
+        {
+          "original_path": "docs/evidence/D122-beach-concepts.json",
+          "sha256": "55e1b93fb9e9f419d4b8abb7e3b3e4d3d8e17f5cd8d7e7eb3679f50d6a1ba73c",
+          "bytes": 9073,
+          "url": "https://git.shaun-husain.com/attachments/c4364bce-5b5b-4ede-b38a-f7373fae0bf0"
+        },
+        {
+          "original_path": "docs/evidence/D122-closeout.json",
+          "sha256": "7795f054ff57e392f58a2f47136746315c15b97ddf58401189277649a78b6efa",
+          "bytes": 13216,
+          "url": "https://git.shaun-husain.com/attachments/7677608a-f666-4fad-970e-0430b9740f5c"
+        },
+        {
+          "original_path": "docs/evidence/D122-glass-blend.json",
+          "sha256": "abb7230ca14c97ba4e41688cba10a51a732d8d11c57bc3dccea1f49ce52d652b",
+          "bytes": 31114,
+          "url": "https://git.shaun-husain.com/attachments/ea6f4d48-3e9b-4193-a0d8-75813ddd2bb0"
+        },
+        {
+          "original_path": "docs/evidence/D122-native-import.json",
+          "sha256": "f84e702fdcfbcdd8c73ab17df4d41342ce4b64ea03345df560d4095467b09ddb",
+          "bytes": 13520,
+          "url": "https://git.shaun-husain.com/attachments/f2f1eb59-e595-4b15-9b26-4268f0bfc81d"
+        },
+        {
+          "original_path": "docs/evidence/D122-status-audit.json",
+          "sha256": "e047ee51341a2b4b559bdca82bed97cf6046f0661fecfd28f9ee97820c84297f",
+          "bytes": 4583,
+          "url": "https://git.shaun-husain.com/attachments/fdcb7562-5e0a-41ee-9a42-026a38d6e567"
+        }
+      ]
+    },
+    {
+      "retired_path": "docs/D122_SHOP_ROOMS.md",
+      "source_sha256": "18b3025697747d185b0ce965462da079cd903d3094148ef748f423b82e70b2df",
+      "bytes": 4172,
+      "tracked_on_main": true,
+      "owner": 32,
+      "canonical_record": "https://git.shaun-husain.com/CitySimVR/citysim/issues/32#issuecomment-3115",
+      "original_attachment": "https://git.shaun-husain.com/attachments/48931c19-f6b6-482d-beca-beb9501fba34",
+      "receipts": [
+        {
+          "original_path": "docs/evidence/D122-acceptance.json",
+          "sha256": "054357fd15fe79f0707ba28c90ce1cc93cc3e003073fefca38788ba2b18e51a7",
+          "bytes": 1217,
+          "url": "https://git.shaun-husain.com/attachments/b2ceb678-4987-4dc5-9edb-a3d8d171050f"
+        },
+        {
+          "original_path": "docs/evidence/D122-beach-concepts.json",
+          "sha256": "55e1b93fb9e9f419d4b8abb7e3b3e4d3d8e17f5cd8d7e7eb3679f50d6a1ba73c",
+          "bytes": 9073,
+          "url": "https://git.shaun-husain.com/attachments/c4364bce-5b5b-4ede-b38a-f7373fae0bf0"
+        },
+        {
+          "original_path": "docs/evidence/D122-closeout.json",
+          "sha256": "7795f054ff57e392f58a2f47136746315c15b97ddf58401189277649a78b6efa",
+          "bytes": 13216,
+          "url": "https://git.shaun-husain.com/attachments/7677608a-f666-4fad-970e-0430b9740f5c"
+        },
+        {
+          "original_path": "docs/evidence/D122-glass-blend.json",
+          "sha256": "abb7230ca14c97ba4e41688cba10a51a732d8d11c57bc3dccea1f49ce52d652b",
+          "bytes": 31114,
+          "url": "https://git.shaun-husain.com/attachments/ea6f4d48-3e9b-4193-a0d8-75813ddd2bb0"
+        },
+        {
+          "original_path": "docs/evidence/D122-room-exports.json",
+          "sha256": "b4869e186625470c425b833481c48f83f24d0d9d0a8984572774c0ce4d810fd4",
+          "bytes": 4639,
+          "url": "https://git.shaun-husain.com/attachments/d50dd57b-6b77-442d-be1d-671af6210511"
+        },
+        {
+          "original_path": "docs/evidence/D122-status-audit.json",
+          "sha256": "e047ee51341a2b4b559bdca82bed97cf6046f0661fecfd28f9ee97820c84297f",
+          "bytes": 4583,
+          "url": "https://git.shaun-husain.com/attachments/fdcb7562-5e0a-41ee-9a42-026a38d6e567"
+        }
+      ]
+    },
+    {
+      "retired_path": "docs/D122_SOURCE_REVIEW.md",
+      "source_sha256": "096d3f33a2ff579da0d58e94b55db037b720c41aeabd2549f4a0efd2b49f670e",
+      "bytes": 19518,
+      "tracked_on_main": false,
+      "owner": 32,
+      "canonical_record": "https://git.shaun-husain.com/CitySimVR/citysim/issues/32#issuecomment-3115",
+      "original_attachment": "https://git.shaun-husain.com/attachments/09c735b2-843a-4112-a3d8-eb1fb815f88e",
+      "receipts": [
+        {
+          "original_path": "docs/evidence/D108-beach-assets.json",
+          "sha256": "58ce58dfa2bc27b88f6c77cca0b0e2039e33abc527549f8f5b17aa6b6718af78",
+          "bytes": 41244,
+          "url": "https://git.shaun-husain.com/attachments/0ce534f7-998e-4c52-b17c-7902099c38ab"
+        },
+        {
+          "original_path": "docs/evidence/D122-beach-concepts.json",
+          "sha256": "55e1b93fb9e9f419d4b8abb7e3b3e4d3d8e17f5cd8d7e7eb3679f50d6a1ba73c",
+          "bytes": 9073,
+          "url": "https://git.shaun-husain.com/attachments/c4364bce-5b5b-4ede-b38a-f7373fae0bf0"
+        },
+        {
+          "original_path": "docs/evidence/D122-closeout.json",
+          "sha256": "7795f054ff57e392f58a2f47136746315c15b97ddf58401189277649a78b6efa",
+          "bytes": 13216,
+          "url": "https://git.shaun-husain.com/attachments/7677608a-f666-4fad-970e-0430b9740f5c"
+        },
+        {
+          "original_path": "docs/evidence/D122-display-revision.json",
+          "sha256": "9107361bff63770a59279745b44b6caf13244b4a6e4f6d2317d6c04905317cfa",
+          "bytes": 20463,
+          "url": "https://git.shaun-husain.com/attachments/c8439062-4532-423d-893e-453adf86bf05"
+        },
+        {
+          "original_path": "docs/evidence/D122-eight-store-rooms.json",
+          "sha256": "3b36072a2d5c572c28687f3bcedd8020a1817d0f8da3f16fd1545b4235727ba5",
+          "bytes": 37185,
+          "url": "https://git.shaun-husain.com/attachments/fc3754c1-e890-49a2-b321-e6de05538b28"
+        },
+        {
+          "original_path": "docs/evidence/D122-newspaper-composites.json",
+          "sha256": "76e7de72f8b29654f8159c70b3727fc560a2a20f341b5114096f97b3bee2289d",
+          "bytes": 3285,
+          "url": "https://git.shaun-husain.com/attachments/657b8013-d075-4f77-a615-92e63869ef54"
+        },
+        {
+          "original_path": "docs/evidence/D122-newspaper-repairs-integration.json",
+          "sha256": "a055a25ab1798530cfec61e6a0185a422c897c5eae0a7671c2ce02ef288c559b",
+          "bytes": 9810,
+          "url": "https://git.shaun-husain.com/attachments/e099f811-1e8a-4521-946b-f2088b9b6764"
+        },
+        {
+          "original_path": "docs/evidence/D122-source-review.json",
+          "sha256": "ce1f3c750c6f9e8bafc08951beed91b6342ac92505e0aea84a0648a9f630cfe7",
+          "bytes": 3537,
+          "url": "https://git.shaun-husain.com/attachments/2591c8ad-cae8-4838-9b5d-c98b1db12c20"
+        },
+        {
+          "original_path": "docs/evidence/D122-status-audit.json",
+          "sha256": "e047ee51341a2b4b559bdca82bed97cf6046f0661fecfd28f9ee97820c84297f",
+          "bytes": 4583,
+          "url": "https://git.shaun-husain.com/attachments/fdcb7562-5e0a-41ee-9a42-026a38d6e567"
+        },
+        {
+          "original_path": "docs/evidence/D122-window-depth.json",
+          "sha256": "35c0c9457ac7489c3673cc893330841ee1eacf5d7567b6667ef5e9279b439520",
+          "bytes": 5892,
+          "url": "https://git.shaun-husain.com/attachments/76e669ab-3af1-43b9-92e2-564129c86d48"
+        },
+        {
+          "original_path": "docs/evidence/D90-technology-previews.json",
+          "sha256": "06aa0d914d0204a29289409c5b0d3c97ae803855c9c74873954d58911d5297da",
+          "bytes": 33624,
+          "url": "https://git.shaun-husain.com/attachments/90b5d7dc-52a6-4aef-b467-403101671519"
+        }
+      ]
+    },
+    {
+      "retired_path": "docs/D122_STOREFRONT_DEPTH.md",
+      "source_sha256": "53cfa9a6708d42b0147bf60540a23b792f437956a36ffda2251ab2a2431f380c",
+      "bytes": 8593,
+      "tracked_on_main": false,
+      "owner": 74,
+      "canonical_record": "https://git.shaun-husain.com/CitySimVR/citysim/issues/74#issuecomment-3123",
+      "original_attachment": "https://git.shaun-husain.com/attachments/9225e33e-6d6e-4c91-8761-9a4a6ef97c0b",
+      "receipts": [
+        {
+          "original_path": "docs/evidence/D122-baked-window-context.json",
+          "sha256": "8a3cabe918056515c367cc6a37232da7b2f20c184c650d88a980fe6ecfd9f58f",
+          "bytes": 3935,
+          "url": "https://git.shaun-husain.com/attachments/d5418017-8160-42e9-be21-f099c119f87b"
+        },
+        {
+          "original_path": "docs/evidence/D122-window-depth.json",
+          "sha256": "35c0c9457ac7489c3673cc893330841ee1eacf5d7567b6667ef5e9279b439520",
+          "bytes": 5892,
+          "url": "https://git.shaun-husain.com/attachments/76e669ab-3af1-43b9-92e2-564129c86d48"
+        }
+      ]
+    },
+    {
+      "retired_path": "docs/D123_HOUSEHOLD_SUPPLIES.md",
+      "source_sha256": "0404937c5c401aacd6572663a3a10b73786f9f3e401f193fc6f496c72945c8c3",
+      "bytes": 3383,
+      "tracked_on_main": true,
+      "owner": 112,
+      "canonical_record": "https://git.shaun-husain.com/CitySimVR/citysim/pulls/112#issuecomment-3109",
+      "original_attachment": "https://git.shaun-husain.com/attachments/3b44da6d-14f1-4f3d-983d-9d84481066b6",
+      "receipts": [
+        {
+          "original_path": "docs/evidence/D123-acceptance.json",
+          "sha256": "a643b2dad46f6060dec766aae1a31e1929a32a874594cb68d5b317033c700dab",
+          "bytes": 1384,
+          "url": "https://git.shaun-husain.com/attachments/2d4f59e9-8b5d-47bc-b647-940162be6573"
+        },
+        {
+          "original_path": "docs/evidence/D123-household-supplies.json",
+          "sha256": "fa35dc2bc1ffb3499dea5f4836f88036d3590e2337bf4d412d773da29210259a",
+          "bytes": 115167,
+          "url": "https://git.shaun-husain.com/attachments/51b580f6-4292-4b25-bfe4-f91f7b398e6a"
+        }
+      ]
+    },
+    {
+      "retired_path": "docs/D124_HOME_INSPECTION.md",
+      "source_sha256": "d6093fa62d9ea7721af4810076933e4c94a28e8475f6490b4ef2d082ab7607c9",
+      "bytes": 1626,
+      "tracked_on_main": true,
+      "owner": 112,
+      "canonical_record": "https://git.shaun-husain.com/CitySimVR/citysim/pulls/112#issuecomment-3109",
+      "original_attachment": "https://git.shaun-husain.com/attachments/71efcb47-d1f8-467f-a40d-7f35b7caed0b",
+      "receipts": [
+        {
+          "original_path": "docs/evidence/D124-acceptance.json",
+          "sha256": "2f304e14e1f067c054e7f823eb825e2f9be1a05936faf64efc361f20420d88e4",
+          "bytes": 760,
+          "url": "https://git.shaun-husain.com/attachments/fb0c04d6-ab07-4d98-bf3b-653097504b65"
+        },
+        {
+          "original_path": "docs/evidence/D124-home-inspection.json",
+          "sha256": "dfd7d9ba1108a6f3b3b5eef7610b69bac0ecbe5b6ff201297c1fc29c0ab410e1",
+          "bytes": 35787,
+          "url": "https://git.shaun-husain.com/attachments/8a755d72-34b3-4aa0-9363-7197d2375a54"
+        }
+      ]
+    },
+    {
+      "retired_path": "docs/D125_HEALTH_OUTPATIENTS.md",
+      "source_sha256": "ba09c801d3ba177eb52db311aef1d7dd1df0981a8f00fb4c9cc1cc6c207e3283",
+      "bytes": 6283,
+      "tracked_on_main": true,
+      "owner": 112,
+      "canonical_record": "https://git.shaun-husain.com/CitySimVR/citysim/pulls/112#issuecomment-3109",
+      "original_attachment": "https://git.shaun-husain.com/attachments/875953f0-5bfa-45a0-8e2b-1357b62e29e0",
+      "receipts": [
+        {
+          "original_path": "docs/evidence/D125-acceptance.json",
+          "sha256": "41360dee09079c3edfb885ec88d92fcb668d8b96911767ae10ab399ac5020719",
+          "bytes": 1106,
+          "url": "https://git.shaun-husain.com/attachments/4685b671-506b-4bd6-aef1-0d10feac1fd5"
+        },
+        {
+          "original_path": "docs/evidence/D125-commit-scope.json",
+          "sha256": "60894858c9304ddf44735818df0ff0734a2bc739c1e7c4681a9d8c40b93c08ce",
+          "bytes": 8577,
+          "url": "https://git.shaun-husain.com/attachments/3fec89d9-f731-4a9a-8590-3a3d10efd2c6"
+        },
+        {
+          "original_path": "docs/evidence/D125-health-outpatients.json",
+          "sha256": "f74965e1653305b03a206e2fe028765e705d06577cf8261ac93d9570416ae638",
+          "bytes": 98801,
+          "url": "https://git.shaun-husain.com/attachments/da775703-310f-41f8-8d69-e8f07af5b638"
+        }
+      ]
+    },
+    {
+      "retired_path": "docs/D127_WASTE_RANGE_HEALTH_FLOW.md",
+      "source_sha256": "0db73aee72ead197387b1ce6c3df3e70ba9ef877b34f0906e613357c742a4ae3",
+      "bytes": 6397,
+      "tracked_on_main": true,
+      "owner": 112,
+      "canonical_record": "https://git.shaun-husain.com/CitySimVR/citysim/pulls/112#issuecomment-3109",
+      "original_attachment": "https://git.shaun-husain.com/attachments/37104830-e6e6-446a-890d-cd6b92713fd1",
+      "receipts": [
+        {
+          "original_path": "docs/evidence/D127-acceptance.json",
+          "sha256": "62545215fb50213c1ebdf81382d785d5ccbb58970e2233724ddd4bf866abc8c4",
+          "bytes": 1570,
+          "url": "https://git.shaun-husain.com/attachments/e873045a-a9a0-4790-a57f-91c58bdab203"
+        },
+        {
+          "original_path": "docs/evidence/D127-commit-scope.json",
+          "sha256": "6d2a765c5dba1541d2c9a3fce4c2bab4368528c7d0fe1d539146c7259ac4489c",
+          "bytes": 2899,
+          "url": "https://git.shaun-husain.com/attachments/c75c5247-13eb-455b-992e-601a1d7e3751"
+        },
+        {
+          "original_path": "docs/evidence/D127-waste-range-health-traffic.json",
+          "sha256": "7aa22838364f565cc8e51aa719cafc427b5a383d26fdf5231ce7e84e08ce0cef",
+          "bytes": 35954,
+          "url": "https://git.shaun-husain.com/attachments/3a12d438-9fc6-4943-9473-57c61ccd02b2"
+        }
+      ]
+    },
+    {
+      "retired_path": "docs/D128_ZONE_VISIBILITY.md",
+      "source_sha256": "46732e1d5ac9c953fa19ee138cb70748d288683830e4f7cf11547f588bfc0469",
+      "bytes": 3824,
+      "tracked_on_main": true,
+      "owner": 75,
+      "canonical_record": "https://git.shaun-husain.com/CitySimVR/citysim/issues/75#issuecomment-3125",
+      "original_attachment": "https://git.shaun-husain.com/attachments/68576de7-37f1-4524-84a1-df0605374e16",
+      "receipts": [
+        {
+          "original_path": "docs/evidence/D128-acceptance.json",
+          "sha256": "fa12116ce9aa19fe567a7a2f93814f993ce2170acb599377530b246a25dfa8c3",
+          "bytes": 1111,
+          "url": "https://git.shaun-husain.com/attachments/5face3bb-e1c3-4dc5-93bb-34c782865673"
+        },
+        {
+          "original_path": "docs/evidence/D128-zone-visibility.json",
+          "sha256": "11445c72f06dbfacd6bb83c9185a7f671b349fe1d7eef4ac9a272a0811290851",
+          "bytes": 6536,
+          "url": "https://git.shaun-husain.com/attachments/af99e95c-917e-4d57-9cef-befb8c90b202"
+        }
+      ]
+    },
+    {
+      "retired_path": "docs/D129_ENTRANCE_STUDY.md",
+      "source_sha256": "19557122efbb4d817abc770dbd1be45cf18779b8a24e47a2accf70e9997d45ea",
+      "bytes": 19214,
+      "tracked_on_main": true,
+      "owner": 125,
+      "canonical_record": "https://git.shaun-husain.com/CitySimVR/citysim/issues/125#issuecomment-3110",
+      "original_attachment": "https://git.shaun-husain.com/attachments/a587c13f-ff0a-4858-b044-3a1acd2b8935",
+      "receipts": [
+        {
+          "original_path": "docs/evidence/D129-building-foundations.json",
+          "sha256": "fcceedfec53e3de9bfc8d5044a2c799696f5c163653d5e4d70caa5ebc081b21f",
+          "bytes": 10897,
+          "url": "https://git.shaun-husain.com/attachments/972dd183-fabd-4571-9f47-4832007ddd97"
+        },
+        {
+          "original_path": "docs/evidence/home-road-rails-delivery.json",
+          "sha256": "682d3841e5228e43aa5ea77b07e40acd0525dbbd8a236c3f19b3d0e24493ed8f",
+          "bytes": 13429,
+          "url": "https://git.shaun-husain.com/attachments/7dac9ffd-6132-407d-8390-99228800e769"
+        },
+        {
+          "original_path": "docs/evidence/home-ground-pilot-delivery.json",
+          "sha256": "584e7cc8e40392911358c3efe5424632a026d7474b44d2587fd9c099ca2d1365",
+          "bytes": 11436,
+          "url": "https://git.shaun-husain.com/attachments/4937d460-a407-4e07-8dcb-b1d2908334ef"
+        }
+      ]
+    },
+    {
+      "retired_path": "docs/D129_GROUND_PLOT_REVIEW.md",
+      "source_sha256": "b954dbda09f4605dda458758cb14f5e9f24f68f9f38314a713349a30b614d716",
+      "bytes": 14735,
+      "tracked_on_main": false,
+      "owner": 125,
+      "canonical_record": "https://git.shaun-husain.com/CitySimVR/citysim/issues/125#issuecomment-3110",
+      "original_attachment": "https://git.shaun-husain.com/attachments/7c48d7b0-db81-4781-aa67-47cd0d220d78",
+      "receipts": []
+    },
+    {
+      "retired_path": "docs/D90_COMMERCIAL_AI.md",
+      "source_sha256": "ca4b95ad05c9baa772eae644e05528c25ea3c1a98851719c05a944d42afeccb4",
+      "bytes": 6785,
+      "tracked_on_main": true,
+      "owner": 23,
+      "canonical_record": "https://git.shaun-husain.com/CitySimVR/citysim/issues/23#issuecomment-3114",
+      "original_attachment": "https://git.shaun-husain.com/attachments/48514bd9-2113-4c48-9cf5-d186b9613065",
+      "receipts": [
+        {
+          "original_path": "docs/evidence/D90-commercial-ai.json",
+          "sha256": "876ecf77568f4cc30c93ed502b26794782815ed5c53625cf57fec16fc10095f3",
+          "bytes": 13657,
+          "url": "https://git.shaun-husain.com/attachments/07864633-4b3f-4dde-a4de-269c2b032566"
+        },
+        {
+          "original_path": "docs/evidence/D90-technology-acceptance.json",
+          "sha256": "11fae67022a645561c6bd6562365a79e13caf8af79fdf944992d90977d835c87",
+          "bytes": 1734,
+          "url": "https://git.shaun-husain.com/attachments/1fd927b5-7852-4213-be52-f9c8e37e6235"
+        },
+        {
+          "original_path": "docs/evidence/D90-technology-closeout.json",
+          "sha256": "ea250e2f8e8ac0533ed1c8857dbb00042236d2caac1e1e253938b1ec90ad1201",
+          "bytes": 9597,
+          "url": "https://git.shaun-husain.com/attachments/e476c4c9-27ac-4123-b6c1-eb5a7aa5dda8"
+        },
+        {
+          "original_path": "docs/evidence/D90-technology-integration.json",
+          "sha256": "eb5179a42c8a75ebadc22e03cb5afcdd00278669a07a2c8999fead6ac42ff1be",
+          "bytes": 25880,
+          "url": "https://git.shaun-husain.com/attachments/95df35e6-33ad-43b3-98d1-7a4bd8ed709d"
+        }
+      ]
+    },
+    {
+      "retired_path": "docs/D90_IMPLEMENTATION_PLAN.md",
+      "source_sha256": "8be9ac0d592db7fc5038455c13e8dea5816b49a0c821adb5b8f76a8cd941c0d7",
+      "bytes": 22687,
+      "tracked_on_main": true,
+      "owner": 22,
+      "canonical_record": "https://git.shaun-husain.com/CitySimVR/citysim/issues/22#issuecomment-3111",
+      "original_attachment": "https://git.shaun-husain.com/attachments/b2f845ea-4540-41b3-8029-2392f64d8b1b",
+      "receipts": [
+        {
+          "original_path": "docs/evidence/D90-approved-source-review.json",
+          "sha256": "8ce7604a157c237c330c63c18b3c0043e62b045de5123f9420fe9db0d6e8c7a7",
+          "bytes": 3890,
+          "url": "https://git.shaun-husain.com/attachments/7cf9a295-d4d2-4cfb-8bb8-027bb5814e0a"
+        },
+        {
+          "original_path": "docs/evidence/D90-commercial-ai.json",
+          "sha256": "876ecf77568f4cc30c93ed502b26794782815ed5c53625cf57fec16fc10095f3",
+          "bytes": 13657,
+          "url": "https://git.shaun-husain.com/attachments/07864633-4b3f-4dde-a4de-269c2b032566"
+        },
+        {
+          "original_path": "docs/evidence/D90-technology-acceptance.json",
+          "sha256": "11fae67022a645561c6bd6562365a79e13caf8af79fdf944992d90977d835c87",
+          "bytes": 1734,
+          "url": "https://git.shaun-husain.com/attachments/1fd927b5-7852-4213-be52-f9c8e37e6235"
+        },
+        {
+          "original_path": "docs/evidence/D90-technology-closeout.json",
+          "sha256": "ea250e2f8e8ac0533ed1c8857dbb00042236d2caac1e1e253938b1ec90ad1201",
+          "bytes": 9597,
+          "url": "https://git.shaun-husain.com/attachments/e476c4c9-27ac-4123-b6c1-eb5a7aa5dda8"
+        },
+        {
+          "original_path": "docs/evidence/D90-technology-integration.json",
+          "sha256": "eb5179a42c8a75ebadc22e03cb5afcdd00278669a07a2c8999fead6ac42ff1be",
+          "bytes": 25880,
+          "url": "https://git.shaun-husain.com/attachments/95df35e6-33ad-43b3-98d1-7a4bd8ed709d"
+        }
+      ]
+    },
+    {
+      "retired_path": "docs/D90_TECHNOLOGY_ASSETS.md",
+      "source_sha256": "3e7bace2f57d48c3f3cbb9debabf69da8391f204062179f6b3d3ad2f1413bcda",
+      "bytes": 6758,
+      "tracked_on_main": true,
+      "owner": 22,
+      "canonical_record": "https://git.shaun-husain.com/CitySimVR/citysim/issues/22#issuecomment-3111",
+      "original_attachment": "https://git.shaun-husain.com/attachments/cac9dd3d-9dfb-404e-86cc-fdb1920d3ccd",
+      "receipts": [
+        {
+          "original_path": "docs/evidence/D90-technology-integration.json",
+          "sha256": "eb5179a42c8a75ebadc22e03cb5afcdd00278669a07a2c8999fead6ac42ff1be",
+          "bytes": 25880,
+          "url": "https://git.shaun-husain.com/attachments/95df35e6-33ad-43b3-98d1-7a4bd8ed709d"
+        },
+        {
+          "original_path": "docs/evidence/D90-technology-acceptance.json",
+          "sha256": "11fae67022a645561c6bd6562365a79e13caf8af79fdf944992d90977d835c87",
+          "bytes": 1734,
+          "url": "https://git.shaun-husain.com/attachments/1fd927b5-7852-4213-be52-f9c8e37e6235"
+        },
+        {
+          "original_path": "docs/evidence/D90-technology-closeout.json",
+          "sha256": "ea250e2f8e8ac0533ed1c8857dbb00042236d2caac1e1e253938b1ec90ad1201",
+          "bytes": 9597,
+          "url": "https://git.shaun-husain.com/attachments/e476c4c9-27ac-4123-b6c1-eb5a7aa5dda8"
+        },
+        {
+          "original_path": "docs/evidence/D90-technology-integration.json",
+          "sha256": "eb5179a42c8a75ebadc22e03cb5afcdd00278669a07a2c8999fead6ac42ff1be",
+          "bytes": 25880,
+          "url": "https://git.shaun-husain.com/attachments/95df35e6-33ad-43b3-98d1-7a4bd8ed709d"
+        }
+      ]
+    }
+  ],
+  "document_count": 20,
+  "receipt_count": 52,
+  "download_verified_unique_files": 72,
+  "issue_supplements": [
+    {
+      "owner": 112,
+      "url": "https://git.shaun-husain.com/CitySimVR/citysim/pulls/112#issuecomment-3109",
+      "id": 3109,
+      "readback": true,
+      "metadata_preserved": true
+    },
+    {
+      "owner": 125,
+      "url": "https://git.shaun-husain.com/CitySimVR/citysim/issues/125#issuecomment-3110",
+      "id": 3110,
+      "readback": true,
+      "metadata_preserved": true
+    },
+    {
+      "owner": 22,
+      "url": "https://git.shaun-husain.com/CitySimVR/citysim/issues/22#issuecomment-3111",
+      "id": 3111,
+      "readback": true,
+      "metadata_preserved": true
+    },
+    {
+      "owner": 23,
+      "url": "https://git.shaun-husain.com/CitySimVR/citysim/issues/23#issuecomment-3114",
+      "id": 3114,
+      "readback": true,
+      "metadata_preserved": true
+    },
+    {
+      "owner": 32,
+      "url": "https://git.shaun-husain.com/CitySimVR/citysim/issues/32#issuecomment-3115",
+      "id": 3115,
+      "readback": true,
+      "metadata_preserved": true
+    },
+    {
+      "owner": 45,
+      "url": "https://git.shaun-husain.com/CitySimVR/citysim/pulls/45#issuecomment-3117",
+      "id": 3117,
+      "readback": true,
+      "metadata_preserved": true
+    },
+    {
+      "owner": 49,
+      "url": "https://git.shaun-husain.com/CitySimVR/citysim/issues/49#issuecomment-3118",
+      "id": 3118,
+      "readback": true,
+      "metadata_preserved": true
+    },
+    {
+      "owner": 53,
+      "url": "https://git.shaun-husain.com/CitySimVR/citysim/issues/53#issuecomment-3119",
+      "id": 3119,
+      "readback": true,
+      "metadata_preserved": true
+    },
+    {
+      "owner": 62,
+      "url": "https://git.shaun-husain.com/CitySimVR/citysim/issues/62#issuecomment-3122",
+      "id": 3122,
+      "readback": true,
+      "metadata_preserved": true
+    },
+    {
+      "owner": 74,
+      "url": "https://git.shaun-husain.com/CitySimVR/citysim/issues/74#issuecomment-3123",
+      "id": 3123,
+      "readback": true,
+      "metadata_preserved": true
+    },
+    {
+      "owner": 75,
+      "url": "https://git.shaun-husain.com/CitySimVR/citysim/issues/75#issuecomment-3125",
+      "id": 3125,
+      "readback": true,
+      "metadata_preserved": true
+    }
+  ],
+  "reference_body_updates": [
+    {
+      "issue": 125,
+      "readback": true,
+      "metadata_preserved": true
+    },
+    {
+      "issue": 111,
+      "readback": true,
+      "metadata_preserved": true
+    },
+    {
+      "issue": 110,
+      "readback": true,
+      "metadata_preserved": true
+    },
+    {
+      "issue": 109,
+      "readback": true,
+      "metadata_preserved": true
+    },
+    {
+      "issue": 105,
+      "readback": true,
+      "metadata_preserved": true
+    },
+    {
+      "issue": 104,
+      "readback": true,
+      "metadata_preserved": true
+    },
+    {
+      "issue": 103,
+      "readback": true,
+      "metadata_preserved": true
+    },
+    {
+      "issue": 102,
+      "readback": true,
+      "metadata_preserved": true
+    },
+    {
+      "issue": 101,
+      "readback": true,
+      "metadata_preserved": true
+    },
+    {
+      "issue": 76,
+      "readback": true,
+      "metadata_preserved": true
+    },
+    {
+      "issue": 73,
+      "readback": true,
+      "metadata_preserved": true
+    },
+    {
+      "issue": 72,
+      "readback": true,
+      "metadata_preserved": true
+    },
+    {
+      "issue": 45,
+      "readback": true,
+      "metadata_preserved": true
+    },
+    {
+      "issue": 38,
+      "readback": true,
+      "metadata_preserved": true
+    },
+    {
+      "issue": 37,
+      "readback": true,
+      "metadata_preserved": true
+    },
+    {
+      "issue": 36,
+      "readback": true,
+      "metadata_preserved": true
+    },
+    {
+      "issue": 35,
+      "readback": true,
+      "metadata_preserved": true
+    },
+    {
+      "issue": 34,
+      "readback": true,
+      "metadata_preserved": true
+    },
+    {
+      "issue": 33,
+      "readback": true,
+      "metadata_preserved": true
+    },
+    {
+      "issue": 32,
+      "readback": true,
+      "metadata_preserved": true
+    },
+    {
+      "issue": 31,
+      "readback": true,
+      "metadata_preserved": true
+    },
+    {
+      "issue": 30,
+      "readback": true,
+      "metadata_preserved": true
+    },
+    {
+      "issue": 29,
+      "readback": true,
+      "metadata_preserved": true
+    },
+    {
+      "issue": 28,
+      "readback": true,
+      "metadata_preserved": true
+    },
+    {
+      "issue": 27,
+      "readback": true,
+      "metadata_preserved": true
+    },
+    {
+      "issue": 26,
+      "readback": true,
+      "metadata_preserved": true
+    },
+    {
+      "issue": 25,
+      "readback": true,
+      "metadata_preserved": true
+    },
+    {
+      "issue": 24,
+      "readback": true,
+      "metadata_preserved": true
+    },
+    {
+      "issue": 23,
+      "readback": true,
+      "metadata_preserved": true
+    },
+    {
+      "issue": 22,
+      "readback": true,
+      "metadata_preserved": true
+    }
+  ],
+  "recovered_evidence": [
+    {
+      "path": "docs/evidence/D122-approved-exports.json",
+      "source_commit": "815985d"
+    },
+    {
+      "path": "docs/evidence/D122-native-import.json",
+      "source_commit": "81f60cb"
+    }
+  ]
+}

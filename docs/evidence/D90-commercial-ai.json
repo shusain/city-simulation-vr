@@ -1,0 +1,267 @@
+{
+  "task": "D90.1",
+  "issue": "https://git.shaun-husain.com/CitySimVR/citysim/issues/23",
+  "status": "ready-for-human-playtest-not-accepted",
+  "pullRequest": "https://git.shaun-husain.com/CitySimVR/citysim/pulls/63",
+  "branch": "codex/issue-23-commercial-ai",
+  "submittedCommit": "e5d02b73decc027e21bd65a6c8292392ae5baf9d",
+  "base": "73b995cb28769094cd25ae415499dcadc8601194",
+  "changedFiles": [
+    "CitySimVR/Content/CitySim/Data/DA_CityBuildingCatalog.uasset",
+    "CitySimVR/Source/CitySimVR/Private/Interaction/CityDesktopInteraction.cpp",
+    "CitySimVR/Source/CitySimVR/Private/Interaction/CityPaletteModel.cpp",
+    "CitySimVR/Source/CitySimVR/Private/Interaction/CityVRToolController.cpp",
+    "CitySimVR/Source/CitySimVR/Private/Persistence/CityPersistence.cpp",
+    "CitySimVR/Source/CitySimVR/Private/Presentation/CityBoardActor.cpp",
+    "CitySimVR/Source/CitySimVR/Private/Presentation/CityDesktopIcon.cpp",
+    "CitySimVR/Source/CitySimVR/Private/Presentation/CityDiagnosticOverlay.cpp",
+    "CitySimVR/Source/CitySimVR/Private/Presentation/CityInspectionContent.cpp",
+    "CitySimVR/Source/CitySimVR/Private/Simulation/CityCommercialAi.cpp",
+    "CitySimVR/Source/CitySimVR/Private/Simulation/CityPopulationSimulation.cpp",
+    "CitySimVR/Source/CitySimVR/Private/Simulation/CitySimulationSubsystem.cpp",
+    "CitySimVR/Source/CitySimVR/Private/Simulation/CityTechnology.cpp",
+    "CitySimVR/Source/CitySimVR/Private/Tests/CityCommercialAiTests.cpp",
+    "CitySimVR/Source/CitySimVR/Private/Tests/CityDesktopAiTests.cpp",
+    "CitySimVR/Source/CitySimVR/Private/Tests/CityEducationTests.cpp",
+    "CitySimVR/Source/CitySimVR/Private/Tests/CityTechnologyFixture.h",
+    "CitySimVR/Source/CitySimVR/Private/Tests/CityTechnologyTests.cpp",
+    "CitySimVR/Source/CitySimVR/Public/Interaction/CityPaletteModel.h",
+    "CitySimVR/Source/CitySimVR/Public/Interaction/CityVRToolController.h",
+    "CitySimVR/Source/CitySimVR/Public/Persistence/CityPersistence.h",
+    "CitySimVR/Source/CitySimVR/Public/Presentation/CityBoardActor.h",
+    "CitySimVR/Source/CitySimVR/Public/Presentation/CityDiagnosticOverlay.h",
+    "CitySimVR/Source/CitySimVR/Public/Simulation/CityCommercialAi.h",
+    "CitySimVR/Source/CitySimVR/Public/Simulation/CityGrowthSimulation.h",
+    "CitySimVR/Source/CitySimVR/Public/Simulation/CityPopulationSimulation.h",
+    "CitySimVR/Source/CitySimVR/Public/Simulation/CitySimulationSubsystem.h",
+    "Tools/CI/ClientTests.txt",
+    "Tools/CI/Tests.txt",
+    "Tools/Update-CityAiCatalog.py",
+    "docs/D90_COMMERCIAL_AI.md",
+    "docs/DEVELOPMENT_TASKS.md"
+  ],
+  "check": {
+    "task": "D90.1",
+    "wholeBuildStatus": "success",
+    "build": 36,
+    "mode": "Check",
+    "status": "passed",
+    "submittedCommit": "e5d02b73decc027e21bd65a6c8292392ae5baf9d",
+    "testedCommit": "e5d02b73decc027e21bd65a6c8292392ae5baf9d",
+    "editorSeconds": 156.53,
+    "tests": [
+      "CitySim.AI.FundingAndBounds",
+      "CitySim.AI.StaffingAndOutages",
+      "CitySim.AI.QualifiedHiringAndSaveValidation",
+      "CitySim.AI.LiveSettlementReloadAndReview",
+      "CitySim.Technology.SharedNavigation",
+      "CitySim.Technology.OperatingPrerequisites",
+      "CitySim.Education.QualifiedRolesAndCashLimitedPayroll",
+      "CitySim.Persistence.CurrentFormatOnly",
+      "CitySim.Placement.Transactions"
+    ],
+    "output": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\CI\\Builds\\36-e5d02b73decc-Check-8e132638",
+    "url": "https://drone.shaun-husain.com/CitySimVR/citysim/36",
+    "verifiedUtc": "2026-10-16T18:15:55.4033441Z"
+  },
+  "windows": {
+    "task": "D90.1",
+    "wholeBuildStatus": "success",
+    "build": 37,
+    "mode": "WindowsCandidate",
+    "status": "passed",
+    "submittedCommit": "e5d02b73decc027e21bd65a6c8292392ae5baf9d",
+    "testedCommit": "e5d02b73decc027e21bd65a6c8292392ae5baf9d",
+    "editorSeconds": 114.72,
+    "tests": [
+      "CitySim.AI.FundingAndBounds",
+      "CitySim.AI.StaffingAndOutages",
+      "CitySim.AI.QualifiedHiringAndSaveValidation",
+      "CitySim.AI.LiveSettlementReloadAndReview",
+      "CitySim.Technology.SharedNavigation",
+      "CitySim.Technology.OperatingPrerequisites",
+      "CitySim.Education.QualifiedRolesAndCashLimitedPayroll",
+      "CitySim.Persistence.CurrentFormatOnly",
+      "CitySim.Placement.Transactions"
+    ],
+    "output": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\CI\\Builds\\37-e5d02b73decc-WindowsCandidate-1fc0d6b7",
+    "url": "https://drone.shaun-husain.com/CitySimVR/citysim/37",
+    "verifiedUtc": "2026-10-16T18:22:20.4927713Z",
+    "package": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\CI\\Builds\\37-e5d02b73decc-WindowsCandidate-1fc0d6b7\\CitySimVR-Windows.zip",
+    "packageSha256": "2a0b6aeaba0dce04bd57483b863e02c56d9adf9708291b7b440d5ae4c08cc563",
+    "visualReview": "passed",
+    "startupLog": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\CI\\Builds\\37-e5d02b73decc-WindowsCandidate-1fc0d6b7\\PackagedSmoke\\D68-Packaged-1280-800.log",
+    "startupCapture": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\CI\\Builds\\37-e5d02b73decc-WindowsCandidate-1fc0d6b7\\PackagedSmoke\\D68-Automation-1280-800\\Saved\\Automation\\Desktop\\Entry.png",
+    "menuCaptures": 6,
+    "extracted": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\D90\\CommercialPilot\\Extracted-Build37",
+    "executable": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\D90\\CommercialPilot\\Extracted-Build37\\CitySimVR\\Binaries\\Win64\\CitySimVR.exe",
+    "runtimeFiles": 53,
+    "profile": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\D90\\CommercialPilot\\Play-Build37-IsolatedProfile",
+    "fixtureCityName": "Untitled City",
+    "fixtureSchema": 71,
+    "fixtureSource": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\CI\\Builds\\37-e5d02b73decc-WindowsCandidate-1fc0d6b7\\Client-1280-User\\Saved\\Automation\\D90-AiPlaytest.json",
+    "gameRevision": "dev-9da4e6aeab3088cc7311",
+    "featureCaptures": 16,
+    "visualNotes": "Both sizes: styled direct facility picker, facility review, default-off pilot, two actually paid/qualified/staffed shops and one excluded shop, distinct payroll-shortage/provider-outage/pause states, green pooled overlay, readable controls and visible startup menu. Synthetic UI only; physical input pending."
+  },
+  "quest": {
+    "task": "D90.1",
+    "wholeBuildStatus": "success",
+    "build": 33,
+    "mode": "QuestCandidate",
+    "status": "passed",
+    "submittedCommit": "6f3a1911469b0605a4ca4590a0b12d08520ffff2",
+    "testedCommit": "6f3a1911469b0605a4ca4590a0b12d08520ffff2",
+    "editorSeconds": 122.93,
+    "tests": [
+      "CitySim.AI.FundingAndBounds",
+      "CitySim.AI.StaffingAndOutages",
+      "CitySim.AI.QualifiedHiringAndSaveValidation",
+      "CitySim.AI.LiveSettlementReloadAndReview",
+      "CitySim.Technology.SharedNavigation",
+      "CitySim.Technology.OperatingPrerequisites",
+      "CitySim.Education.QualifiedRolesAndCashLimitedPayroll",
+      "CitySim.Persistence.CurrentFormatOnly",
+      "CitySim.Placement.Transactions"
+    ],
+    "output": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\CI\\Builds\\33-6f3a1911469b-QuestCandidate-0ead38dc",
+    "url": "https://drone.shaun-husain.com/CitySimVR/citysim/33",
+    "verifiedUtc": "2026-10-16T18:00:21.8613932Z",
+    "apk": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\CI\\Builds\\33-6f3a1911469b-QuestCandidate-0ead38dc\\QuestCandidate\\Android_ASTC\\CitySimVR-arm64.apk",
+    "apkSha256": "50558ebfcf517c43677c33cb0249d1c8bb2eeef3bfe225824b48fa92e9b29402",
+    "quest": {
+      "status": "passed",
+      "apkSha256": "50558ebfcf517c43677c33cb0249d1c8bb2eeef3bfe225824b48fa92e9b29402",
+      "package": "com.shaun.citysimvr.smoketest",
+      "abi": "arm64-v8a",
+      "minSdk": 32,
+      "targetSdk": 35,
+      "signed": true,
+      "signerSha256": "fb8ac4ce5f1998deb6bf2c1a61b303bef91e0b69750f5cdfd9df77d1773a5352",
+      "stagedPayloads": [
+        {
+          "name": "CitySimVR-Android_ASTC.pak",
+          "bytes": 10481230,
+          "sha256": "39af09c1261126bfc70b20f2b212de463d61fedc4d9bd6401cddc959081efc77"
+        },
+        {
+          "name": "CitySimVR-Android_ASTC.ucas",
+          "bytes": 103997920,
+          "sha256": "bcf2ab885855f9df63f13dd8812166fd8547eea573a384a440d8db73ae6a7d37"
+        },
+        {
+          "name": "CitySimVR-Android_ASTC.utoc",
+          "bytes": 248191,
+          "sha256": "4a0a375ecb29545639f722552d57c01fafeda5cfb977bec22fa586d57c5da99c"
+        },
+        {
+          "name": "global.ucas",
+          "bytes": 2804848,
+          "sha256": "a95951880ed6249850ae35aa51d8ecf93ee65fb5973c3ddc37fa69d28925493f"
+        },
+        {
+          "name": "global.utoc",
+          "bytes": 710,
+          "sha256": "0475a3cd35f0e69d3171d578f8cf488621e0d4d8c00b4134370b77e33b356a12"
+        }
+      ],
+      "headset": "unconfirmed-not-installed",
+      "verifiedUtc": "2026-10-16T17:58:54.9994917Z"
+    },
+    "headset": "unconfirmed-not-installed"
+  },
+  "questReuseProof": {
+    "fromCommit": "6f3a1911469b0605a4ca4590a0b12d08520ffff2",
+    "toCommit": "e5d02b73decc027e21bd65a6c8292392ae5baf9d",
+    "onlyChangedFiles": [
+      "CitySimVR/Source/CitySimVR/Private/Tests/CityCommercialAiTests.cpp",
+      "CitySimVR/Source/CitySimVR/Private/Tests/CityDesktopAiTests.cpp",
+      "CitySimVR/Source/CitySimVR/Private/Tests/CityTechnologyFixture.h"
+    ],
+    "unchanged": "All production C++/catalog/assets/UI/Quest wrappers and schema71; build revision stamp differs because source fingerprint includes tests",
+    "reason": "Only synthetic Higher workforce/positive demonstration and assertions change; native payment/operation/cook code identical"
+  },
+  "protectedPrimaryInputs": 384,
+  "primarySourceAndCatalogHashes": "match",
+  "maintainedGame": "not-promoted; newer primary pantry/health/schema70 remains separate",
+  "isolatedCandidateSchema": 71,
+  "localNativeException": "Catalog-only derivation from existing compiled Editor in isolated worktree; no local build/tests/package; primary catalog unchanged; worker held idle then resumed",
+  "unconfirmed": [
+    "Human Desktop input/acceptance",
+    "Physical PCVR and Quest rendering/input/comfort under D114",
+    "Broader balance under D39"
+  ],
+  "next": "Human playtest of this candidate, then normal review/authorized merge; D90.2 is next gameplay slice",
+  "retainedFailedOrObsoleteJobs": [
+    {
+      "number": 26,
+      "reason": "Compile108.62s passed; three AI cases passed; stale live fixture revision; old education fixture indexed failed read and crashed."
+    },
+    {
+      "number": 27,
+      "reason": "Compile106.33s passed; seven exact cases passed; stale live road revision and old full-document fixture clocks failed."
+    },
+    {
+      "number": 28,
+      "reason": "Compile passed; all four AI cases including live funding/save/reload/rebuild passed; education full-document fixture disaster clock differs from economy. Fixed fixture clock in next head."
+    },
+    {
+      "number": 35,
+      "reason": "Windows compile/package/menu smoke pass; packaged driver stops at first payment before normal Higher-role hiring reconciliation. Changed driver to settle the following day; production unchanged."
+    },
+    {
+      "number": 30,
+      "status": "killed/Quest skipped",
+      "reason": "Own both-platform promotion canceled before handoff after settlement-order audit; native processes exited, Quest skipped. Receipt retained. Requires new candidates for changed production."
+    }
+  ],
+  "nativeHandoff": {
+    "task": "D90.1",
+    "ownJobsComplete": true,
+    "sharedQueueRetained": true,
+    "workerEnabled": true,
+    "active": [
+      {
+        "number": 42,
+        "status": "pending",
+        "after": "ac5825db35611e77bcb713c8b24d83d8e4cce62f",
+        "ref": "refs/pull/72/head",
+        "title": "WIP: Restore Desktop entry menu when window focus returns (B001)",
+        "link": "https://git.shaun-husain.com/CitySimVR/citysim/pulls/72"
+      },
+      {
+        "number": 41,
+        "status": "pending",
+        "after": "c5b7076e02037a0129cf6a5e1d88ce5dc9886387",
+        "ref": "refs/pull/70/head",
+        "title": "Approved comfy asset #36 v2",
+        "link": "https://git.shaun-husain.com/CitySimVR/citysim/pulls/70"
+      },
+      {
+        "number": 40,
+        "status": "pending",
+        "after": "047796a002cdc2283499cd5d1c2efd7f1dfc0e17",
+        "ref": "refs/pull/68/head",
+        "title": "Approved comfy asset #35 v1",
+        "link": "https://git.shaun-husain.com/CitySimVR/citysim/pulls/68"
+      },
+      {
+        "number": 39,
+        "status": "pending",
+        "after": "387693aa690b25ff85649da20f7b2c11afd20101",
+        "ref": "refs/pull/66/head",
+        "title": "Approved comfy asset #34 v1",
+        "link": "https://git.shaun-husain.com/CitySimVR/citysim/pulls/66"
+      },
+      {
+        "number": 38,
+        "status": "running",
+        "after": "3f6a5b89a5eba8a13fda7b7e9b1ae51ba25bee27",
+        "ref": "refs/pull/64/head",
+        "title": "Approved comfy asset #33 v1",
+        "link": "https://git.shaun-husain.com/CitySimVR/citysim/pulls/64"
+      }
+    ],
+    "note": "D90 job37 complete. Next shared jobs38-42 own the worker/lock; preserve shared D126 claim and enabled worker; no stopping, duplicate builds or local native work."
+  }
+}

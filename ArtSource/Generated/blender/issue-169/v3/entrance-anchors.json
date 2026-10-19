@@ -1,0 +1,49 @@
+{
+  "anchors": [
+    {
+      "role": "maintenance",
+      "target": "Inverter0_FlushDoor",
+      "xyz_m": [
+        10.2,
+        -13.86,
+        0
+      ],
+      "outward": [
+        0,
+        -1,
+        0
+      ],
+      "width_m": 1.2,
+      "grade_m": 0,
+      "boundary_connector": {
+        "xyz_m": [
+          10.2,
+          -16,
+          0
+        ],
+        "outward": [
+          0,
+          -1,
+          0
+        ],
+        "width_m": 1.2,
+        "grade_m": 0
+      },
+      "reserved_free_corridor": {
+        "min": [
+          9.6,
+          -16,
+          0
+        ],
+        "max": [
+          10.8,
+          -13.86,
+          2.2
+        ]
+      }
+    }
+  ],
+  "all_component_nonintersection": true,
+  "intersection_names": [],
+  "future_access": "External service access from south boundary to actual inverter front; no intrinsic pavement."
+}

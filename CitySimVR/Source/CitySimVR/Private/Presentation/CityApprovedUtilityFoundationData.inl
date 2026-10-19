@@ -1,0 +1,13 @@
+// Generated from pinned closed contour units; source XY retained.
+    {TEXT("coal_Support"),TEXT("/Game/CitySim/Art/Utilities/ApprovedBatch/Foundations/SM_Utility_coal_v4_Foundation_Z0"),0.000000,FVector2D(-1350.000000,-1355.000019),FVector2D(1218.999958,1389.999962)},
+    {TEXT("coal_Support"),TEXT("/Game/CitySim/Art/Utilities/ApprovedBatch/Foundations/SM_Utility_coal_v4_Foundation_Z0p25"),25.000000,FVector2D(-279.999995,290.000010),FVector2D(-100.000000,680.000019)},
+    {TEXT("oil_Support"),TEXT("/Game/CitySim/Art/Utilities/ApprovedBatch/Foundations/SM_Utility_oil_v3_Foundation_Z0"),0.000000,FVector2D(-1350.000000,-1250.000000),FVector2D(1515.000057,1173.499966)},
+    {TEXT("power_base_Support"),TEXT("/Game/CitySim/Art/Utilities/ApprovedBatch/Foundations/SM_Utility_power_base_v2_Foundation_Z0"),0.000000,FVector2D(-810.999966,-611.000013),FVector2D(969.000053,518.000031)},
+    {TEXT("water_base_Support"),TEXT("/Game/CitySim/Art/Utilities/ApprovedBatch/Foundations/SM_Utility_water_base_v2_Foundation_Z0"),0.000000,FVector2D(-1200.000000,-1155.000019),FVector2D(1150.000000,1062.000084)},
+    {TEXT("power_medium_Support"),TEXT("/Game/CitySim/Art/Utilities/ApprovedBatch/Foundations/SM_Utility_power_medium_v3_Foundation_Z0"),0.000000,FVector2D(-810.999966,-1360.999966),FVector2D(969.000053,518.000031)},
+    {TEXT("power_high_Support"),TEXT("/Game/CitySim/Art/Utilities/ApprovedBatch/Foundations/SM_Utility_power_high_v3_Foundation_Z0"),0.000000,FVector2D(-1260.999966,-1360.999966),FVector2D(1402.499962,518.000031)},
+    {TEXT("water_medium_Support"),TEXT("/Game/CitySim/Art/Utilities/ApprovedBatch/Foundations/SM_Utility_water_medium_v2_Foundation_Z0"),0.000000,FVector2D(-1514.999962,-1235.000038),FVector2D(1750.000000,1062.000084)},
+    {TEXT("water_high_Support"),TEXT("/Game/CitySim/Art/Utilities/ApprovedBatch/Foundations/SM_Utility_water_high_v2_Foundation_Z0"),0.000000,FVector2D(-2054.999924,-1235.000038),FVector2D(2120.000076,1239.999962)},
+    {TEXT("water_tower_Support"),TEXT("/Game/CitySim/Art/Utilities/ApprovedBatch/Foundations/SM_Utility_water_tower_v3_Foundation_Z0"),0.000000,FVector2D(-280.999994,-280.999994),FVector2D(280.999994,466.249990)},
+    {TEXT("wind_turbine_Support"),TEXT("/Game/CitySim/Art/Utilities/ApprovedBatch/Foundations/SM_Utility_wind_turbine_v1_Foundation_Z0"),0.000000,FVector2D(-104.999995,-104.999995),FVector2D(104.999995,104.999995)},
+    {TEXT("solar_farm_Support"),TEXT("/Game/CitySim/Art/Utilities/ApprovedBatch/Foundations/SM_Utility_solar_farm_v3_Foundation_Z0"),0.000000,FVector2D(-1205.999947,-815.999985),FVector2D(1205.999947,1352.499962)},

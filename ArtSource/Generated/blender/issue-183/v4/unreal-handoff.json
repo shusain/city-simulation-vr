@@ -1,0 +1,137 @@
+{
+  "schema": 1,
+  "kind": "blender",
+  "repository": "CitySimVR/citysim",
+  "asset_issue": 183,
+  "approved_version": 4,
+  "approval_manifest": "approval.json",
+  "approval_sha256": "916cae20a57a205699ab42e493e825620dbc713771683b8dceca79cc503d408e",
+  "source_context_sha": "1fbe7d830aab87b750dab716d5ff17ea9cba22b0",
+  "artifacts": [
+    {
+      "name": "asset.blend",
+      "bytes": 3454371,
+      "sha256": "4a63ca2daceeb511f85f603ab5da4dc8a0631df2545637e106da8bb37a42942b"
+    },
+    {
+      "name": "asset.fbx",
+      "bytes": 83212,
+      "sha256": "50c9e6b17e684380bca80e39cd422c9b6d53fd8f1f5e0624f80e3b8a19ea362c"
+    },
+    {
+      "name": "corner-contract.json",
+      "bytes": 6096,
+      "sha256": "8c68c34e00230696039196396be02dbc3b5e7670fbd91a1021fdf254a4303974"
+    },
+    {
+      "name": "dumpster-contract.json",
+      "bytes": 5277,
+      "sha256": "1ffd1ab8baf975dfee480cf58e8e419f531f4bf306b1215acae1373526790962"
+    },
+    {
+      "name": "entrance-anchors.json",
+      "bytes": 1331,
+      "sha256": "72d4d6b5d20d2c43ec6785d26391e1fc465a93323866a51da52101c4464c3a6c"
+    },
+    {
+      "name": "incinerator-contract.json",
+      "bytes": 1370,
+      "sha256": "75db21f21edfed4bded3aa4412f00ebb71b8151aa3258433299fafd922602eb2"
+    },
+    {
+      "name": "material-manifest.json",
+      "bytes": 5541,
+      "sha256": "9f557fff177e9f0cb7c54f609b92bb6a41a73715e90918c83cd033fda27df794"
+    },
+    {
+      "name": "preview.png",
+      "bytes": 290866,
+      "sha256": "a050557c1a888769b75fbe916c405961a29de5079319007c1bad6e47c16a0739"
+    },
+    {
+      "name": "textures/CityBrick_BaseColor.png",
+      "bytes": 1136304,
+      "sha256": "e4c1ad7446563e3209191ca862fc4c3e065c491debd989765bc843405a5fbbfe"
+    },
+    {
+      "name": "textures/CityBrick_Normal.png",
+      "bytes": 672697,
+      "sha256": "cf71dc7902b7c3a99d9fd1e966760af9a7b428de42b22ade5fb810965866d2cc"
+    },
+    {
+      "name": "textures/CityBrick_ORM.png",
+      "bytes": 662455,
+      "sha256": "39f2f1df859b4052afe98dcb632054398957455d58b205b13702210467a0c6e8"
+    },
+    {
+      "name": "textures/CityMechanical_BaseColor.png",
+      "bytes": 151204,
+      "sha256": "ea75f9ab4911ad7ecf6a5e0ff5688fdc2c07ed52c3cad007ac58e8d06fe4e5ae"
+    },
+    {
+      "name": "textures/CityMechanical_Normal.png",
+      "bytes": 131466,
+      "sha256": "7a456d3f708d3ee42a7dfb830ac87f95ce27aeeea0e56ac444daca5da510231e"
+    },
+    {
+      "name": "textures/CityMechanical_ORM.png",
+      "bytes": 150038,
+      "sha256": "0e08a253e6c30a15e3675921cab4958c0cdcf088f23f05b5fcc1eb3f87dbec98"
+    },
+    {
+      "name": "textures/RoofMembrane_BaseColor.png",
+      "bytes": 220563,
+      "sha256": "e70b663d843cb50ab4479ac5e582173464e05f510f60ce2b986837259981a587"
+    },
+    {
+      "name": "textures/RoofMembrane_Normal.png",
+      "bytes": 140890,
+      "sha256": "0b29f7ad8fe50e859386b08d541ea37294c825d2c3a73210d3c3b15764bc19ce"
+    },
+    {
+      "name": "textures/RoofMembrane_ORM.png",
+      "bytes": 30071,
+      "sha256": "a7ade624eb4477684f7101dd6b5c0fbe80b595c1b357ebf35715dfa91e54ec63"
+    },
+    {
+      "name": "upgrade-plan.json",
+      "bytes": 898,
+      "sha256": "947eeb34f5e7e4fdd06b1c8f70c84ee5e01d87b26ec9f09f61fe69cf4d352d7d"
+    },
+    {
+      "name": "validation.json",
+      "bytes": 65437,
+      "sha256": "c281447af0374c2406e674e0a3798d5531aae1fee70b3af3e774087549738bd9"
+    },
+    {
+      "name": "vehicle-bays.json",
+      "bytes": 693,
+      "sha256": "c5f7b108f007eaf8eebcac46f51af89d1dd40496560ab6182960ac7694261c2a"
+    },
+    {
+      "name": "waste-contract.json",
+      "bytes": 7695,
+      "sha256": "177a85db46071b3dc5e3be13c3d24af81edfd3ff6e95ce9537ea382458ca482b"
+    },
+    {
+      "name": "window-mounts.json",
+      "bytes": 49420,
+      "sha256": "d08ed87edd954b0a3691d6dfc69a397194819bda232278756fb429994c592c94"
+    },
+    {
+      "name": "source-bundle.zip",
+      "bytes": 14208507,
+      "sha256": "0adb1cbebbaecd8c7439242a706a4e3992e8d818d5ca41325b1600aab1f0fa0d"
+    },
+    {
+      "name": "approval.json",
+      "bytes": 4384,
+      "sha256": "916cae20a57a205699ab42e493e825620dbc713771683b8dceca79cc503d408e"
+    }
+  ],
+  "unreal": {
+    "status": "not_imported",
+    "destination": "choose in the separate integration issue",
+    "role": "Blender source and exports; validate importer contract"
+  }
+}

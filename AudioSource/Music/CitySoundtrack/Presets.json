@@ -1,0 +1,17 @@
+{
+  "schema": 1,
+  "sampleRate": 48000,
+  "targetLUFS": -24,
+  "truePeakCeilingDBTP": -6,
+  "tracks": [
+    {"id": "CloudDistrict", "title": "Cloud District", "bpm": 80, "bars": 32, "seed": 82101,
+     "chords": [[50,57,60,64,69],[46,53,57,60,65],[53,60,64,67,72],[48,55,59,62,67]],
+     "melody": [76,72,69,72,74,69,67,69], "intent": "Warm suspended pads and a gently swinging electric-key motif."},
+    {"id": "GlassCanal", "title": "Glass Canal", "bpm": 88, "bars": 32, "seed": 82102,
+     "chords": [[48,55,58,62,67],[44,51,55,58,63],[51,58,62,65,70],[46,53,57,60,65]],
+     "melody": [74,70,67,65,67,70,72,67], "intent": "Airy bell-like keys, a rounded bass line and light electronic percussion."},
+    {"id": "Afterglow", "title": "Afterglow", "bpm": 76, "bars": 32, "seed": 82103,
+     "chords": [[45,52,55,59,64],[41,48,52,55,60],[48,55,59,62,67],[43,50,54,57,62]],
+     "melody": [71,67,64,62,64,67,69,64], "intent": "Slower evening harmonies with sparse phrases and a quiet halftime groove."}
+  ]
+}

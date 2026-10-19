@@ -1,0 +1,13 @@
+{
+  "task": "D101",
+  "date": "2026-10-13",
+  "removed_files": 375,
+  "removed_bytes": 8008099066,
+  "noncandidate_paths_checked": 42980,
+  "protected_hashes_checked": 2604,
+  "remaining_targets": [],
+  "missing_unplanned_files": [],
+  "changed_protected_files": [],
+  "passed": true,
+  "limitation": "Gross logical bytes; six preexisting long paths excluded from initial inventory"
+}

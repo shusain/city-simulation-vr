@@ -1,0 +1,421 @@
+{
+  "task": "D107",
+  "bug": "B003",
+  "date": "2026-10-15",
+  "status": "Delivered; fresh-city user playtest pending",
+  "revision": "dev-37ce4a77025fce6607e4",
+  "schema": 68,
+  "behavior": {
+    "realSecondsPerDay": {
+      "1x": 360,
+      "3x": 120,
+      "5x": 72
+    },
+    "fineUpdatesPerDay": 150,
+    "realSecondsPerFineUpdateAt1x": 2.4,
+    "calendarDaysPerMonth": 25,
+    "routines": "06:00-07:00 morning departures; six game hours at work; half-hour shopping; home overnight. Actual traffic arrivals and funded stock reservations remain authoritative.",
+    "economy": "Daily settlement, payroll, production, education and needs. Former per-settlement quantities now mean per day; no 25-day wait or 1/25 dilution. Ordinary fine-step construction/growth retain responsive timing; station deadlines use actual half-days.",
+    "reports": "Persist daily facts; monthly cashflows sum daily observations while stocks use the closing observation; annual/quarterly outputs use calendar months and disclose partial coverage.",
+    "lighting": "Calendar phase directly drives day/night, including paused loads; noon is day, midnight is night. Pause freezes authoritative time.",
+    "internalNames": "Legacy Month identifiers remain settlement-day counters; report Months stores daily facts. Public calendar/report outputs convert explicitly."
+  },
+  "routineEvidence": {
+    "atAllSpeeds": true,
+    "workArrival": "07:22",
+    "shoppingArrival": "14:34",
+    "homeArrival": "17:36",
+    "steps": [
+      46,
+      91,
+      110
+    ],
+    "actualPurchases": 1,
+    "midTripReloadMatches": true
+  },
+  "sourceChanges": {
+    "changes": [
+      {
+        "path": "C:\\Users\\shaun\\Development\\city-sim-builder\\CitySimVR\\Source\\CitySimVR\\Private\\Interaction\\CityPaletteModel.cpp",
+        "before": "95ee03efd00f36ce117fe60ed3354ade790ff51ca47a7675373366ce96a74615",
+        "after": "6ccd0be5a2e0e954dbbea93862a1349911468c7e96f683637116856131808ef3"
+      },
+      {
+        "path": "C:\\Users\\shaun\\Development\\city-sim-builder\\CitySimVR\\Source\\CitySimVR\\Private\\Interaction\\CityVRToolController.cpp",
+        "before": "e10860f0755f0c90ed20c663d9a36a1aafcd4d864bcf03feb81e2015b70e6232",
+        "after": "5ae684252773dba78aa4b44cc6d9136a6d2574be22d884192a444331fcd5567c"
+      },
+      {
+        "path": "C:\\Users\\shaun\\Development\\city-sim-builder\\CitySimVR\\Source\\CitySimVR\\Private\\Persistence\\CitySaveLibrary.cpp",
+        "before": "1adc312c73fa4a4cdd644d39c96abff3f273d4d838ed64468df45737ec405de6",
+        "after": "3eaad0e43ec360002999cbe7e1a00d2f921c63ed670663ba2708c0341978b0eb"
+      },
+      {
+        "path": "C:\\Users\\shaun\\Development\\city-sim-builder\\CitySimVR\\Source\\CitySimVR\\Private\\Presentation\\CityBoardActor.cpp",
+        "before": "304455539135060a87567758970a554fce66c2896696c509bc7ae76eb74440e3",
+        "after": "10c277c9aa88411eae14da4d82e9e573d9282f213b4e1d049ba5249122841a46"
+      },
+      {
+        "path": "C:\\Users\\shaun\\Development\\city-sim-builder\\CitySimVR\\Source\\CitySimVR\\Private\\Presentation\\CityConditionCauses.cpp",
+        "before": "2f85a5aa0b9d5328069a0fdce8c6bc0c4c0c04cec8cc2ac3bf170d8b387fcd0f",
+        "after": "b1fb9dcd3886038797e394fa69aaf90ec76c9e0cb854bd006a0ab199a325e1b9"
+      },
+      {
+        "path": "C:\\Users\\shaun\\Development\\city-sim-builder\\CitySimVR\\Source\\CitySimVR\\Private\\Presentation\\CityConditionIndicators.cpp",
+        "before": "f39c5d863406a9a3dbd0233da0309c592b0eb71801ecff1eff8ac239e11db011",
+        "after": "8314b67c5221a309980465606b379132746e10e173f481ced8f8711b91c7e7d9"
+      },
+      {
+        "path": "C:\\Users\\shaun\\Development\\city-sim-builder\\CitySimVR\\Source\\CitySimVR\\Private\\Presentation\\CityDiagnosticOverlay.cpp",
+        "before": "c0a7126a2b3b7b921cb91abddbb5d6d5fb8b924a63dcef81af003c07a1ce9146",
+        "after": "f8ce917f95cbc0cddaaeff08a82a93d6dcd281be52662d6ec3f2617b3eb96d05"
+      },
+      {
+        "path": "C:\\Users\\shaun\\Development\\city-sim-builder\\CitySimVR\\Source\\CitySimVR\\Private\\Presentation\\CityInspectionContent.cpp",
+        "before": "61061da0be718e8cce985c21887b02d11cf5ca866d7e4a3b5efb46260ce41e7a",
+        "after": "4569be227e89a71cb9f63d60b25508cb8e6b6bf309535d286ec49a0a28f27b65"
+      },
+      {
+        "path": "C:\\Users\\shaun\\Development\\city-sim-builder\\CitySimVR\\Source\\CitySimVR\\Private\\Presentation\\CityNewCitySetup.cpp",
+        "before": "294d800c7e57178d8aef202000bac38fec9022bbb9eb42fc5039942274d92374",
+        "after": "0ce7a4f13238935159fde97b963814b4edfd0e09e9bca699eef8cb1fa912646a"
+      },
+      {
+        "path": "C:\\Users\\shaun\\Development\\city-sim-builder\\CitySimVR\\Source\\CitySimVR\\Private\\Presentation\\CitySeasonalPresentation.cpp",
+        "before": "7ae192b6a328c07dfca0da91eb649607c6c22b2f6e7e95c9153406809b08d413",
+        "after": "225022bafd8a3874aa538f3783ca29b9c66257ae41512bd454138ad1917010eb"
+      },
+      {
+        "path": "C:\\Users\\shaun\\Development\\city-sim-builder\\CitySimVR\\Source\\CitySimVR\\Private\\Presentation\\CityServiceGuidance.cpp",
+        "before": "a55237220aa6346ff8a5d3f21c9817caa00f72f784059677049a350ea35fc52c",
+        "after": "edf066cb4e8ca9a5a77a272c8230a3264dfe793d169a70ed787bf56ac2300a50"
+      },
+      {
+        "path": "C:\\Users\\shaun\\Development\\city-sim-builder\\CitySimVR\\Source\\CitySimVR\\Private\\Presentation\\CityUiContent.cpp",
+        "before": "636bb96a3672d715925c31a8d31b5c2e0435d03ca7e4a90e03f577b9f1de3c16",
+        "after": "6618a3b678c36db24dd801ea2cdc70252a17bfd50b131a428f3e0c697e545ce6"
+      },
+      {
+        "path": "C:\\Users\\shaun\\Development\\city-sim-builder\\CitySimVR\\Source\\CitySimVR\\Private\\Sandbox\\CitySandboxEnvironment.cpp",
+        "before": "ca6337850dcb24d5f7cbfb19823165f770c30b81632e5d9c9b66b86b1339e1c4",
+        "after": "b6521ba64b08746074341d955570bae18b5c2629cfa51cf8df42ca24e233f0fe"
+      },
+      {
+        "path": "C:\\Users\\shaun\\Development\\city-sim-builder\\CitySimVR\\Source\\CitySimVR\\Private\\Simulation\\CityCitizenSchedules.cpp",
+        "before": "b3b0c1c33703acc14c46ce756150a7c6e52f153bec5409fa9ec05ada15770b72",
+        "after": "b231796f3a832b6ff4022f7d93ac6ce6b1db80f3a5477a3104d0bcaa2ce4d33c"
+      },
+      {
+        "path": "C:\\Users\\shaun\\Development\\city-sim-builder\\CitySimVR\\Source\\CitySimVR\\Private\\Simulation\\CityDevelopmentSimulation.cpp",
+        "before": "7e272c0d37e5d2e79dd42cda7a98b3bbad785ff8be3db952cd486bd9a28bf4e9",
+        "after": "ab10194580eb0311b5e04add571ebdf738ee35628f3cd8b40cec34ccb4f2a5d5"
+      },
+      {
+        "path": "C:\\Users\\shaun\\Development\\city-sim-builder\\CitySimVR\\Source\\CitySimVR\\Private\\Simulation\\CityEnvironmentSimulation.cpp",
+        "before": "426dcb37962670746402ae058771608d8f44f5c799d15ab0d854d2359d09ca33",
+        "after": "1d9d401daeb3c01df9b2aeefd58c2c641674ee84da63f687cd49ea1fc32e6e99"
+      },
+      {
+        "path": "C:\\Users\\shaun\\Development\\city-sim-builder\\CitySimVR\\Source\\CitySimVR\\Private\\Simulation\\CityLoans.cpp",
+        "before": "a7c0b80f0deb2a5a7ae3dadd0770bb8b7d002f25b7e025836cc1abe83923aeda",
+        "after": "ec50c26e84775e36dedb369c1c294bbf9d93bf5a6edcd28cf6e99e5546dcf734"
+      },
+      {
+        "path": "C:\\Users\\shaun\\Development\\city-sim-builder\\CitySimVR\\Source\\CitySimVR\\Private\\Simulation\\CityPolicies.cpp",
+        "before": "ca8f8c4e74b3c265c20fb67d16891548a1ef1f7aacb1ccce025f7ccd9d31c03d",
+        "after": "4581521e8405c661a7da4203251059574c0a27c5d277c407a84513a1b9888240"
+      },
+      {
+        "path": "C:\\Users\\shaun\\Development\\city-sim-builder\\CitySimVR\\Source\\CitySimVR\\Private\\Simulation\\CityPopulationSimulation.cpp",
+        "before": "7f7ccede27becef9c5309d1d91d71b45ac12fd9967f06a6223085cde464942d8",
+        "after": "33ae81f389ef35c324eab11d395533e3f74f8037cb862d2d4001696518a37db1"
+      },
+      {
+        "path": "C:\\Users\\shaun\\Development\\city-sim-builder\\CitySimVR\\Source\\CitySimVR\\Private\\Simulation\\CityQuarterlyNews.cpp",
+        "before": "c179152ea7bbcb96f4f8186c22a25c9c4d6b92743e53698b5b86b622a8ebf10b",
+        "after": "6274833129004cc28a21811f0d3524c6494c5710e8a428bd88ef13555e5689b1"
+      },
+      {
+        "path": "C:\\Users\\shaun\\Development\\city-sim-builder\\CitySimVR\\Source\\CitySimVR\\Private\\Simulation\\CityReportHistory.cpp",
+        "before": "7747408e0c2ea402a08327f4cef1cc980aec7d8d510bbf6baadaaa8ceb89f9f0",
+        "after": "3cefcf55a7bd94e5c60986ffdf65d344389ff50d6ab1694f0bf307a9aeb3b268"
+      },
+      {
+        "path": "C:\\Users\\shaun\\Development\\city-sim-builder\\CitySimVR\\Source\\CitySimVR\\Private\\Simulation\\CitySimulationSubsystem.cpp",
+        "before": "73dee2a22b24969a83c05e5636d796863015e50776e0172d11ba302223ab19ee",
+        "after": "7261f07c395457e3941b985fb3f5676d4563cc6d6812a1101844a6941e957166"
+      },
+      {
+        "path": "C:\\Users\\shaun\\Development\\city-sim-builder\\CitySimVR\\Source\\CitySimVR\\Private\\Simulation\\CityStationUpgrades.cpp",
+        "before": "afea9d9be9319ee1144573714aeaf13730895a10721cf5f33c99eda1894f2bdb",
+        "after": "23e969f697bc416a1ced5ce50be68b3bb7361750673b87d31f4ac7eab2f7c510"
+      },
+      {
+        "path": "C:\\Users\\shaun\\Development\\city-sim-builder\\CitySimVR\\Source\\CitySimVR\\Private\\Tests\\CityCitizenScheduleTests.cpp",
+        "before": "7e5c6e97caaa54f8a42b5915cb82400b6f53883dd0c800081b8a2af5bf840aec",
+        "after": "b5f8897fe311a08797bf302944789036a07fdf843e48d6e5323fc7535f101265"
+      },
+      {
+        "path": "C:\\Users\\shaun\\Development\\city-sim-builder\\CitySimVR\\Source\\CitySimVR\\Private\\Tests\\CityConditionCauseTests.cpp",
+        "before": "ec6f6df3ab216b45c6a28018f400cb0ab3d59c98a749b20524358c09ba6cb2a1",
+        "after": "7fbbf01150a5cc16aca48b5f171bc133af0a598ad79ae568ac4ee2411b4f748d"
+      },
+      {
+        "path": "C:\\Users\\shaun\\Development\\city-sim-builder\\CitySimVR\\Source\\CitySimVR\\Private\\Tests\\CityEnvironmentTests.cpp",
+        "before": "de9687e8b19187f16c606510b92276247b4302f9781e948c152bcac8ad35a50a",
+        "after": "d864185d56df60c2133a367445c5f0814c00ad1b49cddb538fadc93f1e38bc57"
+      },
+      {
+        "path": "C:\\Users\\shaun\\Development\\city-sim-builder\\CitySimVR\\Source\\CitySimVR\\Private\\Tests\\CityQuarterlyNewsTests.cpp",
+        "before": "a9a82b2b76d3f231800240743e8489e489850d6cdf363707b26facb7bc715170",
+        "after": "c4597d7efda538a2213dd20f9059b7522eb361530edb4c759507240a9df62228"
+      },
+      {
+        "path": "C:\\Users\\shaun\\Development\\city-sim-builder\\CitySimVR\\Source\\CitySimVR\\Private\\Tests\\CityReportHistoryTests.cpp",
+        "before": "41f3011c6715d725502947e3dd2234545f96f621e65330a5c808721901654457",
+        "after": "c4c5103824bd1e162ded070a9077ddb05631a1114fedb4dcd6b8546721d609f8"
+      },
+      {
+        "path": "C:\\Users\\shaun\\Development\\city-sim-builder\\CitySimVR\\Source\\CitySimVR\\Public\\Persistence\\CityPersistence.h",
+        "before": "2cc97c50328f1fbcde2cb86cb9e18f3eed4fb340ea98d1a5d913eb83ebec3c67",
+        "after": "fce9b724f1fd854bad73bef658f18a764adb4bc502b6e5404335267a40add0ab"
+      },
+      {
+        "path": "C:\\Users\\shaun\\Development\\city-sim-builder\\CitySimVR\\Source\\CitySimVR\\Public\\Presentation\\CityConditionIndicators.h",
+        "before": "29d8b8c007230a34374db9dc5309815b20685ba317a8387705eb697e78f48aa6",
+        "after": "f6d43554289886fb4c0b7358771869358e42988b33033a62eca2c875b840f209"
+      },
+      {
+        "path": "C:\\Users\\shaun\\Development\\city-sim-builder\\CitySimVR\\Source\\CitySimVR\\Public\\Simulation\\CityDevelopmentSimulation.h",
+        "before": "12278cae421a9d69ad8db39915b202c703a4aea858694eaab026e44596e37fd9",
+        "after": "f1d3ddc38dd640dbc2bb4520fe6349ec416bc53deebd1fefde6115ae16ce4458"
+      },
+      {
+        "path": "C:\\Users\\shaun\\Development\\city-sim-builder\\CitySimVR\\Source\\CitySimVR\\Public\\Simulation\\CityEconomySimulation.h",
+        "before": "8975c2451ff8bef3202a5d40439d0ddd0714010df6907dc9c0a971b0a1f43948",
+        "after": "3d71c693a646c340ce3781617dbe7b8b34d0ff3be4ff4e75b8b4a4687efd2a34"
+      },
+      {
+        "path": "C:\\Users\\shaun\\Development\\city-sim-builder\\CitySimVR\\Source\\CitySimVR\\Public\\Simulation\\CityPopulationSimulation.h",
+        "before": "aa4f5c128e5922ea729880febebf85031d57d96340f2f77dca46e896242e4eef",
+        "after": "bbd905877688fc6f2c07b982ec846c191cef12d8b822c5df016348031024dee0"
+      },
+      {
+        "path": "C:\\Users\\shaun\\Development\\city-sim-builder\\CitySimVR\\Source\\CitySimVR\\Public\\Simulation\\CityQuarterlyNews.h",
+        "before": "2140987dc9f50dc45369965811990f24d7a30fa79686dd65400e7daf61041112",
+        "after": "e928298b1c54e4b1a93f0dac7317eca0c52b64fabccc572c4b6ca40d2840d6a4"
+      },
+      {
+        "path": "C:\\Users\\shaun\\Development\\city-sim-builder\\CitySimVR\\Source\\CitySimVR\\Public\\Simulation\\CityReportHistory.h",
+        "before": "0d6d08dec88606d3940c74753a07fabe797158a6e44b0367542612c3b3a7f9a6",
+        "after": "57b5db6c1c3837308795eb42d41c114660252cec4fa3077f56f00be7cf268411"
+      },
+      {
+        "path": "C:\\Users\\shaun\\Development\\city-sim-builder\\CitySimVR\\Source\\CitySimVR\\Public\\Simulation\\CitySimulationSubsystem.h",
+        "before": "cdbc4fd2d1ba9a8818620d3c85276bdb8e13d4b75ce467dbe2b0de49083f2294",
+        "after": "983dc1549f23ca6f2b40520996854fbc474fb2c310eca3751d1a562ecb8887cb"
+      }
+    ],
+    "new": [
+      {
+        "path": "CitySimVR/Source/CitySimVR/Private/Tests/CityCalendarVisualTests.cpp",
+        "sha256": "6379f96dcb6ba3df68e1527ed8a44abaa6157ff2b57ba8d0873ac6954fc9ea20"
+      },
+      {
+        "path": "CitySimVR/Source/CitySimVR/Private/Tests/CityDailyClockTests.cpp",
+        "sha256": "80db21484e86f087f8409a5adba8740e019b2b2b630d051ddc3bde00470e0795"
+      },
+      {
+        "path": "CitySimVR/Source/CitySimVR/Public/Simulation/CityCalendar.h",
+        "sha256": "92cb7ba8c51c5764c9b04fd71c184d4ef707d355b86b308da99eed9d8bce29c9"
+      }
+    ],
+    "otherChangesBeforePackaging": [
+      {
+        "path": "C:\\Users\\shaun\\Development\\city-sim-builder\\CitySimVR\\Saved\\Config\\WindowsEditor\\EditorPerProjectUserSettings.ini",
+        "before": "abb12338e6d591ebae18b5ce4662d25ae7adb4412d71719faf609f37c37d9ef5",
+        "after": "be0b3bab455fc5e1256e0bc0adcaae24bec4b30e5e1a9c735f33be953f69e81e"
+      }
+    ]
+  },
+  "windows": {
+    "path": "Artifacts/PCVRSandbox/Windows/CitySimVR/Binaries/Win64/CitySimVR.exe",
+    "sha256": "0e65244751af8a45a47618462196d672c7e3b1815f99ba7613c054ceecc46467"
+  },
+  "quest": {
+    "path": "Artifacts/D107/QuestPackage/Android_ASTC/CitySimVR-arm64.apk",
+    "sha256": "2b541ab84de8626e4ca043cb08d314e0784bee552a6eeaa47336913b219d900c",
+    "installed": false
+  },
+  "tests": {
+    "Final": [
+      "DailySettlementAndPause",
+      "DaylightAlignment",
+      "FullDayRoutine",
+      "MonthlyReportRollup",
+      "StationHalfDay",
+      "HighwayLaneYield",
+      "OccupiedShopDeparture",
+      "RollingYieldAndRejoin",
+      "SideBySideAndPassing",
+      "ClusterLeadersSelectionAndCleanup",
+      "ClusterTotalsTypesAndRegions",
+      "ConditionsBoundsAndRay",
+      "PooledPresentationAndLifecycle",
+      "PriorityOverflowAndRecovery",
+      "PurchaseCausesUseCurrentEvidence",
+      "NewspaperEditorialFacts",
+      "QuarterCoverageAndFacts",
+      "SentimentCaptureAndPersistence",
+      "LightingCycle",
+      "Panel",
+      "SettledHistory",
+      "CitizenArrivalSchedules",
+      "FreightCargo",
+      "PurchaseArrivalSettlement",
+      "FleetPersistence",
+      "PurchaseCompletionAndGates",
+      "AddedLocalSupply"
+    ],
+    "Packaged": [
+      "DailySettlementAndPause",
+      "DaylightAlignment",
+      "FullDayRoutine",
+      "MonthlyReportRollup",
+      "StationHalfDay",
+      "HighwayLaneYield",
+      "OccupiedShopDeparture",
+      "RollingYieldAndRejoin",
+      "SideBySideAndPassing",
+      "FleetPersistence",
+      "AddedLocalSupply"
+    ]
+  },
+  "screenshots": [
+    {
+      "path": "Artifacts/D107/Visual-ThirdEditor-D107/Saved/Automation/Calendar/Calendar-0.png",
+      "sha256": "42a32d73e160f8f1827b21a3b01a0ea77221eaa91e09d2a71f6ddf67fbce344a"
+    },
+    {
+      "path": "Artifacts/D107/Visual-ThirdEditor-D107/Saved/Automation/Calendar/Calendar-1.png",
+      "sha256": "c84140aaee114bab41968f0bfc0c6a809b14e97adeda38f00c9f7f35757d913d"
+    },
+    {
+      "path": "Artifacts/D107/Visual-ThirdEditor-D107/Saved/Automation/Calendar/Calendar-2.png",
+      "sha256": "56b192b44073dccc5479d43495c1e76f83d4abdff8dd0778492554f7a7a4701a"
+    },
+    {
+      "path": "Artifacts/D107/Visual-ThirdEditor-D107/Saved/Automation/Calendar/Calendar-3.png",
+      "sha256": "03d9c075d06305604fb0ee8fc57118615f7c15879c6d1a2deeab927a0e7592ea"
+    },
+    {
+      "path": "Artifacts/D107/Visual-ThirdEditor-D107/Saved/Automation/Calendar/Calendar-4.png",
+      "sha256": "069842258636661420ba2dd5b681e3bb097e9327446ba8751e93d8238c486c96"
+    },
+    {
+      "path": "Artifacts/D107/Visual-Packaged-D107/Saved/Automation/Calendar/Calendar-0.png",
+      "sha256": "1b4551a424d4d6d0a0e8ed4f2c3464eb10ac44e0f07ea0881fe877adcb1304f4"
+    },
+    {
+      "path": "Artifacts/D107/Visual-Packaged-D107/Saved/Automation/Calendar/Calendar-1.png",
+      "sha256": "b7990f3cf06e696d66fb112098b396bf3632c5ea8248f7bb392263b20203c289"
+    },
+    {
+      "path": "Artifacts/D107/Visual-Packaged-D107/Saved/Automation/Calendar/Calendar-2.png",
+      "sha256": "6a2acb4e6be4461b8614313970ace8cff128b2f298a37787a0cb0ef6cdbd37c9"
+    },
+    {
+      "path": "Artifacts/D107/Visual-Packaged-D107/Saved/Automation/Calendar/Calendar-3.png",
+      "sha256": "482336c82ce71aaf8358b2fd41dc9d1d6d9230ada96ce38bb704662ea4993ea6"
+    },
+    {
+      "path": "Artifacts/D107/Visual-Packaged-D107/Saved/Automation/Calendar/Calendar-4.png",
+      "sha256": "4acfe771106d67663a208d56d43bb66920f216f0dbd4e706039251be5f3c7a0d"
+    }
+  ],
+  "visualReview": "Packaged midnight, morning, noon, evening and next-midnight views inspected: HH:MM/day agree with light, windows glow at night, daylight and shadows return at noon, top HUD fits1280x720. Ordinary startup menu inspected. Synthetic fixture input only; physical input/headsets unconfirmed.",
+  "logs": [
+    {
+      "path": "Artifacts/D107/EditorBuild-Final.log",
+      "sha256": "e560471e066d46c6f1be8a847212113884964d8bd1084d23203eb06a63cae0a5"
+    },
+    {
+      "path": "Artifacts/D107/Tests-Final.log",
+      "sha256": "0c8e980a183e441874a37ad3322885e54c8c1bb82eb90f1cdc447e46d3d0fc4e"
+    },
+    {
+      "path": "Artifacts/D107/WindowsPackage-Delivered.log",
+      "sha256": "2da9279cee044a22fd41de9a48c0ceedfb4aaed402ff3b8cbccec2881ff62827"
+    },
+    {
+      "path": "Artifacts/D107/Tests-Packaged.log",
+      "sha256": "7f7bfb1f09973361d099134aff0f04aa4c343a3a9d135b3f937f336299e85fde"
+    },
+    {
+      "path": "Artifacts/D107/Visual-ThirdEditor.log",
+      "sha256": "9d841d8b8dfb6441ffbe50fd4feea2a4b8605d2ff916ef9ac464dcda4b2768ab"
+    },
+    {
+      "path": "Artifacts/D107/Visual-Packaged.log",
+      "sha256": "0778434f1259e0a6ad056b3e8a53a6c14ffc2ca9f5833de87e713744237f9f5c"
+    },
+    {
+      "path": "Artifacts/D107/Startup.log",
+      "sha256": "9171a1dfa9b676b1f33478783140f20e2b419d1337d9a68e7b7464153e8d5c64"
+    },
+    {
+      "path": "Artifacts/D107/QuestPackage.log",
+      "sha256": "b7232efcc0c03499733488f5ac205d58e0980fcc155e91e3f094cedc4ab7bcdd"
+    },
+    {
+      "path": "Artifacts/D107/QuestVerification.txt",
+      "sha256": "638fb4e28ff17c395c251af137429b7882208aaf30a71752146251416f518a03"
+    }
+  ],
+  "startup": {
+    "path": "Artifacts/D107/Startup-D68-Automation/Saved/Automation/Desktop/Entry.png",
+    "sha256": "ae9f8b6ed957d326b57386c777aba36531dd52c4a2d64711c8357661cbd25bdf"
+  },
+  "preserved": {
+    "protectedInputs": 964,
+    "unchangedProtectedInputs": 962,
+    "liveUserIndexChanges": [
+      {
+        "path": "Artifacts/DesktopUser/Saved/SaveGames/Cities/LibraryIndex.json",
+        "before": "0d38f01ec6f840136f26fa26f3d9b5f750f93931dd38331b0851c9c27a13f792",
+        "after": "50d7ac66e40640040b2eeda616b99b710ccee276118ef3cb507b1b650f6c884f",
+        "cause": "User reopened maintained game in the normal DesktopUser profile; observed live process retained."
+      },
+      {
+        "path": "Artifacts/DesktopUser/Saved/SaveGames/Cities/LibraryIndex.json.bak",
+        "before": "84d63502fb8354e33607d37a76458bb818f7dc57767b429aceee14a3331f9291",
+        "after": "8fa0fab590bb27b0187dadf3115b43f339dcc26ffd7b679c7ecada77ee1768a7",
+        "cause": "User reopened maintained game in the normal DesktopUser profile; observed live process retained."
+      }
+    ],
+    "liveUserSession": {
+      "ProcessId": 35004,
+      "Name": "CitySimVR.exe",
+      "ExecutablePath": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\PCVRSandbox\\Windows\\CitySimVR\\Binaries\\Win64\\CitySimVR.exe",
+      "CommandLine": "\"C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\PCVRSandbox\\Windows\\CitySimVR\\Binaries\\Win64\\CitySimVR.exe\" -CityDesktop -nohmd -d3d11 -UserDir=\"C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\DesktopUser\" -abslog=\"C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\DesktopLogs\\Play-20261015-172623.log\" ",
+      "CreationDate": "2026-10-15T17:26:23.594463-05:00"
+    },
+    "previousWindowsFiles": 53,
+    "previousBuild": "dev-69ded6cd3232eb02d695 / format67",
+    "previousPackage": "Artifacts/D107/PreviousDefaultWindows",
+    "originalNamedCityFilesUnchanged": true,
+    "generatedEditorSettingsRestored": [
+      "CitySimVR/Saved/Config/WindowsEditor/EditorPerProjectUserSettings.ini"
+    ],
+    "publicReleaseUnchanged": true
+  },
+  "limitations": [
+    "Format68 requires a fresh city; original format67 cities remain on disk and the previous package is retained. No migration was added.",
+    "Long routes, congestion, funds, stock and retail capacity can still prevent same-day completion; no teleport or invented purchase.",
+    "Broader city-growth/economic balance and physical PCVR/Quest observations remain unconfirmed. Quest archive was not installed.",
+    "No source push, PR/merge, public release, full suite or profiling."
+  ],
+  "iterations": "Earlier failed compile/fixture logs are retained. Final source review corrected raw diagnostic calculations; the final27 Editor cases and11 packaged cases pass. Editor phase captures predate that diagnostic-only correction; packaged captures verify the final revision.",
+  "next": "Fresh-city user playtest via existing Desktop/PCVR launchers; B003 remains open pending that review.",
+  "nativeWindowReleased": true
+}

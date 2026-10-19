@@ -1,0 +1,515 @@
+{
+  "task": "D87",
+  "source": "ArtSource/Blender/CityCitizenControlRig.blend",
+  "source_sha256": "20036a3a5d42525a517b2358cf4f0bbe979d5cbb8621d2ea53a00f76a6800f27",
+  "input_source": "ArtSource/Blender/CityCitizenRigPrototype.blend",
+  "protected_inputs": {
+    "ArtSource/Blender/CityCitizenRigPrototype.blend": "7b4a3ec93e56a89af850970d00b96eb892a6174857b56896bc39e595e0eff01b",
+    "ArtSource/Blender/CityCitizenPrototype.blend": "453c3ecf7799aa9d969d7136241e7f7e1cb02f6210b6f362f5033da98afcd3d0",
+    "ArtSource/Blender/CityParkAnimationPreview.blend": "c3fb331d409e62b4b96b84dbe53c6aad0d903eefafaf7d26dc8d466fa8f3165e",
+    "ArtSource/Manifests/city_park_refinement.json": "0441e01371c72269db57702ffb96346cbcdf130424d017f43ab0bf45c37ed68b",
+    "ArtSource/Manifests/city_park_integration.json": "ef63f72c6681e455a06372d3230bef84aac59157f6f1e323894f713e16e13b58",
+    "ArtSource/Exports/ParkRefinement/SK_Citizen_Rig_Casual.fbx": "d00db8428ef32a9213a3b9d5e09623ff1394fde0ce7a8a9acf17e3df0b28d565",
+    "ArtSource/Exports/ParkRefinement/SK_Citizen_Rig_Casual_LOD1.fbx": "47c2fe1e2d42ecb6f7652c47f54807a0d37f674380b2e651b678e14379df9136",
+    "ArtSource/Exports/ParkRefinement/SK_Citizen_Rig_Office.fbx": "f937fa6a1bf2b63713478189cb6645bed1ee56a8d8d8565bdeebd5714f3f93c0",
+    "ArtSource/Exports/ParkRefinement/SK_Citizen_Rig_Office_LOD1.fbx": "5d6e4a42c6238ac42a12b2f3d7e0dcc319aebebefeaee4fb0b5177abd612cf2d",
+    "ArtSource/Exports/ParkRefinement/SK_Citizen_Rig_Worker.fbx": "dbbf43ccc3b3a3eab5b2dafcc188fa41c55699f30fd3cfe879e1e3bd6689aaf4",
+    "ArtSource/Exports/ParkRefinement/SK_Citizen_Rig_Worker_LOD1.fbx": "7bc8ceeb745dcd9b823278ac15b470c94e834f98604d1076b3d6c7bfe5533b25"
+  },
+  "original_bones": [
+    "root",
+    "pelvis",
+    "spine",
+    "chest",
+    "neck",
+    "head",
+    "clavicle.L",
+    "upper_arm.L",
+    "forearm.L",
+    "hand.L",
+    "thigh.L",
+    "shin.L",
+    "foot.L",
+    "clavicle.R",
+    "upper_arm.R",
+    "forearm.R",
+    "hand.R",
+    "thigh.R",
+    "shin.R",
+    "foot.R"
+  ],
+  "control_count": 8,
+  "records": [
+    {
+      "mesh": "SK_Citizen_Rig_Casual",
+      "rig": "SK_Citizen_Rig_Casual_Rig",
+      "controls": [
+        "CTRL_hand.L",
+        "CTRL_foot.L",
+        "CTRL_elbow_pole.L",
+        "CTRL_knee_pole.L",
+        "CTRL_hand.R",
+        "CTRL_foot.R",
+        "CTRL_elbow_pole.R",
+        "CTRL_knee_pole.R"
+      ],
+      "original_bones": [
+        "root",
+        "pelvis",
+        "spine",
+        "chest",
+        "neck",
+        "head",
+        "clavicle.L",
+        "upper_arm.L",
+        "forearm.L",
+        "hand.L",
+        "clavicle.R",
+        "upper_arm.R",
+        "forearm.R",
+        "hand.R",
+        "thigh.L",
+        "shin.L",
+        "foot.L",
+        "thigh.R",
+        "shin.R",
+        "foot.R"
+      ],
+      "bone_count": 28,
+      "calibration": [
+        {
+          "limb": "hand.L",
+          "pole_angle_degrees": 179.999991348578
+        },
+        {
+          "limb": "foot.L",
+          "pole_angle_degrees": 0.0
+        },
+        {
+          "limb": "hand.R",
+          "pole_angle_degrees": -180.00000500895632
+        },
+        {
+          "limb": "foot.R",
+          "pole_angle_degrees": 0.0
+        }
+      ]
+    },
+    {
+      "mesh": "SK_Citizen_Rig_Casual_LOD1",
+      "rig": "SK_Citizen_Rig_Casual_LOD1_Rig",
+      "controls": [
+        "CTRL_hand.L",
+        "CTRL_foot.L",
+        "CTRL_elbow_pole.L",
+        "CTRL_knee_pole.L",
+        "CTRL_hand.R",
+        "CTRL_foot.R",
+        "CTRL_elbow_pole.R",
+        "CTRL_knee_pole.R"
+      ],
+      "original_bones": [
+        "root",
+        "pelvis",
+        "spine",
+        "chest",
+        "neck",
+        "head",
+        "clavicle.L",
+        "upper_arm.L",
+        "forearm.L",
+        "hand.L",
+        "clavicle.R",
+        "upper_arm.R",
+        "forearm.R",
+        "hand.R",
+        "thigh.L",
+        "shin.L",
+        "foot.L",
+        "thigh.R",
+        "shin.R",
+        "foot.R"
+      ],
+      "bone_count": 28,
+      "calibration": [
+        {
+          "limb": "hand.L",
+          "pole_angle_degrees": -180.00000500895632
+        },
+        {
+          "limb": "foot.L",
+          "pole_angle_degrees": 0.0
+        },
+        {
+          "limb": "hand.R",
+          "pole_angle_degrees": -180.00000500895632
+        },
+        {
+          "limb": "foot.R",
+          "pole_angle_degrees": 0.0
+        }
+      ]
+    },
+    {
+      "mesh": "SK_Citizen_Rig_Office",
+      "rig": "SK_Citizen_Rig_Office_Rig",
+      "controls": [
+        "CTRL_hand.L",
+        "CTRL_foot.L",
+        "CTRL_elbow_pole.L",
+        "CTRL_knee_pole.L",
+        "CTRL_hand.R",
+        "CTRL_foot.R",
+        "CTRL_elbow_pole.R",
+        "CTRL_knee_pole.R"
+      ],
+      "original_bones": [
+        "root",
+        "pelvis",
+        "spine",
+        "chest",
+        "neck",
+        "head",
+        "clavicle.L",
+        "upper_arm.L",
+        "forearm.L",
+        "hand.L",
+        "clavicle.R",
+        "upper_arm.R",
+        "forearm.R",
+        "hand.R",
+        "thigh.L",
+        "shin.L",
+        "foot.L",
+        "thigh.R",
+        "shin.R",
+        "foot.R"
+      ],
+      "bone_count": 28,
+      "calibration": [
+        {
+          "limb": "hand.L",
+          "pole_angle_degrees": 179.999991348578
+        },
+        {
+          "limb": "foot.L",
+          "pole_angle_degrees": 0.0
+        },
+        {
+          "limb": "hand.R",
+          "pole_angle_degrees": -180.00000500895632
+        },
+        {
+          "limb": "foot.R",
+          "pole_angle_degrees": 0.0
+        }
+      ]
+    },
+    {
+      "mesh": "SK_Citizen_Rig_Office_LOD1",
+      "rig": "SK_Citizen_Rig_Office_LOD1_Rig",
+      "controls": [
+        "CTRL_hand.L",
+        "CTRL_foot.L",
+        "CTRL_elbow_pole.L",
+        "CTRL_knee_pole.L",
+        "CTRL_hand.R",
+        "CTRL_foot.R",
+        "CTRL_elbow_pole.R",
+        "CTRL_knee_pole.R"
+      ],
+      "original_bones": [
+        "root",
+        "pelvis",
+        "spine",
+        "chest",
+        "neck",
+        "head",
+        "clavicle.L",
+        "upper_arm.L",
+        "forearm.L",
+        "hand.L",
+        "clavicle.R",
+        "upper_arm.R",
+        "forearm.R",
+        "hand.R",
+        "thigh.L",
+        "shin.L",
+        "foot.L",
+        "thigh.R",
+        "shin.R",
+        "foot.R"
+      ],
+      "bone_count": 28,
+      "calibration": [
+        {
+          "limb": "hand.L",
+          "pole_angle_degrees": -180.00000500895632
+        },
+        {
+          "limb": "foot.L",
+          "pole_angle_degrees": 0.0
+        },
+        {
+          "limb": "hand.R",
+          "pole_angle_degrees": -180.00000500895632
+        },
+        {
+          "limb": "foot.R",
+          "pole_angle_degrees": 0.0
+        }
+      ]
+    },
+    {
+      "mesh": "SK_Citizen_Rig_Worker",
+      "rig": "SK_Citizen_Rig_Worker_Rig",
+      "controls": [
+        "CTRL_hand.L",
+        "CTRL_foot.L",
+        "CTRL_elbow_pole.L",
+        "CTRL_knee_pole.L",
+        "CTRL_hand.R",
+        "CTRL_foot.R",
+        "CTRL_elbow_pole.R",
+        "CTRL_knee_pole.R"
+      ],
+      "original_bones": [
+        "root",
+        "pelvis",
+        "spine",
+        "chest",
+        "neck",
+        "head",
+        "clavicle.L",
+        "upper_arm.L",
+        "forearm.L",
+        "hand.L",
+        "clavicle.R",
+        "upper_arm.R",
+        "forearm.R",
+        "hand.R",
+        "thigh.L",
+        "shin.L",
+        "foot.L",
+        "thigh.R",
+        "shin.R",
+        "foot.R"
+      ],
+      "bone_count": 28,
+      "calibration": [
+        {
+          "limb": "hand.L",
+          "pole_angle_degrees": -180.00000500895632
+        },
+        {
+          "limb": "foot.L",
+          "pole_angle_degrees": 0.0
+        },
+        {
+          "limb": "hand.R",
+          "pole_angle_degrees": -180.00000500895632
+        },
+        {
+          "limb": "foot.R",
+          "pole_angle_degrees": 0.0
+        }
+      ]
+    },
+    {
+      "mesh": "SK_Citizen_Rig_Worker_LOD1",
+      "rig": "SK_Citizen_Rig_Worker_LOD1_Rig",
+      "controls": [
+        "CTRL_hand.L",
+        "CTRL_foot.L",
+        "CTRL_elbow_pole.L",
+        "CTRL_knee_pole.L",
+        "CTRL_hand.R",
+        "CTRL_foot.R",
+        "CTRL_elbow_pole.R",
+        "CTRL_knee_pole.R"
+      ],
+      "original_bones": [
+        "root",
+        "pelvis",
+        "spine",
+        "chest",
+        "neck",
+        "head",
+        "clavicle.L",
+        "upper_arm.L",
+        "forearm.L",
+        "hand.L",
+        "clavicle.R",
+        "upper_arm.R",
+        "forearm.R",
+        "hand.R",
+        "thigh.L",
+        "shin.L",
+        "foot.L",
+        "thigh.R",
+        "shin.R",
+        "foot.R"
+      ],
+      "bone_count": 28,
+      "calibration": [
+        {
+          "limb": "hand.L",
+          "pole_angle_degrees": -180.00000500895632
+        },
+        {
+          "limb": "foot.L",
+          "pole_angle_degrees": 0.0
+        },
+        {
+          "limb": "hand.R",
+          "pole_angle_degrees": 179.999991348578
+        },
+        {
+          "limb": "foot.R",
+          "pole_angle_degrees": 0.0
+        }
+      ]
+    }
+  ],
+  "body_local_xyz_limits_degrees": {
+    "pelvis": [
+      [
+        -35,
+        35
+      ],
+      [
+        -50,
+        50
+      ],
+      [
+        -35,
+        35
+      ]
+    ],
+    "spine": [
+      [
+        -25,
+        25
+      ],
+      [
+        -35,
+        35
+      ],
+      [
+        -35,
+        35
+      ]
+    ],
+    "chest": [
+      [
+        -35,
+        35
+      ],
+      [
+        -60,
+        60
+      ],
+      [
+        -45,
+        45
+      ]
+    ],
+    "neck": [
+      [
+        -25,
+        25
+      ],
+      [
+        -45,
+        45
+      ],
+      [
+        -35,
+        35
+      ]
+    ],
+    "head": [
+      [
+        -35,
+        35
+      ],
+      [
+        -65,
+        65
+      ],
+      [
+        -40,
+        40
+      ]
+    ],
+    "clavicle": [
+      [
+        -30,
+        30
+      ],
+      [
+        -30,
+        30
+      ],
+      [
+        -30,
+        30
+      ]
+    ],
+    "hand": [
+      [
+        -40,
+        40
+      ],
+      [
+        -60,
+        60
+      ],
+      [
+        -70,
+        70
+      ]
+    ],
+    "foot": [
+      [
+        -45,
+        45
+      ],
+      [
+        -45,
+        45
+      ],
+      [
+        -75,
+        75
+      ]
+    ]
+  },
+  "hinge_local_z_limits_degrees": {
+    "forearm.L": [
+      -145,
+      5
+    ],
+    "forearm.R": [
+      -145,
+      5
+    ],
+    "shin.L": [
+      -5,
+      150
+    ],
+    "shin.R": [
+      -5,
+      150
+    ]
+  },
+  "native_selected": false,
+  "notes": [
+    "Source-only; native assets and accepted D83 clips unchanged",
+    "Body rotation limits are practical authoring defaults, not a medical model",
+    "IK hinge limits are on the solver; pole targets steer upper limb rotation",
+    "Original reference actions require baking/retargeting before constrained editing",
+    "Authoring limb rolls aligned; original joint positions/lengths retained; bake restores original20-bone bind matrices",
+    "Authoring derivative uses rigid shoe weights; original accepted weights unchanged"
+  ]
+}

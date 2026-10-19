@@ -1,0 +1,86 @@
+{
+  "task": "D116.A1",
+  "version": "v1",
+  "approval": "User: Approve all 13 v1 pictograms",
+  "approved_manifest_sha256": "0aeb92d0f6cd97298ec42fd5390bd2c7ef8cb6139dda75d45d42dc5b34bba057",
+  "artifacts": [
+    {
+      "id": "account_balance_wallet",
+      "source_sha256": "1599c44260986a7cc7a2bf6f42c302ae3f79a26987cc511bbdf248c5875792f8",
+      "png_sha256": "1c6fb9803799dfa70d32afe8624e6d818e099312211870d32306d71a183c872d",
+      "png_bytes": 2820
+    },
+    {
+      "id": "bolt",
+      "source_sha256": "484d6ad4e780a1969775d75e2c2107d6429a2a51ee1ec2a0fb91a4099c60fb7b",
+      "png_sha256": "2623ba9edaf9532517da0d7265ce99d69321a7e2bb2344b41766a3d019c2fdfd",
+      "png_bytes": 4153
+    },
+    {
+      "id": "delete",
+      "source_sha256": "b1d2e5107cc3ff59a26f970b0acf7dd0881f7862fece228b5992e08c714ee29a",
+      "png_sha256": "24b654f7228e8fb90431250a6b65799ff80bd8e55b5468d6b6ba4de140b8310b",
+      "png_bytes": 1383
+    },
+    {
+      "id": "groups",
+      "source_sha256": "2f2daf9c7c4eda8d6e4f0f05644aa9bc18692ac9f031fef480499393c086eea3",
+      "png_sha256": "ebe047aaa37b31b74bef285b34e4e1f84ea0cd683b8914a5c74a963860d45ff1",
+      "png_bytes": 4833
+    },
+    {
+      "id": "home",
+      "source_sha256": "8fcae4be0fdf48ebf7ceb9612f7fd63033b8165d3c2ef5b0228e1b240bec495f",
+      "png_sha256": "e5f721239a26b4fb0406b19e340e87973940604c4ec130d300c61d18a672136b",
+      "png_bytes": 1772
+    },
+    {
+      "id": "local_fire_department",
+      "source_sha256": "028e90884bd2fad6acf409ec3ce4b1ee30b7add7335f0e6eb07ca0ff2aa23b84",
+      "png_sha256": "01aa3cd0d8268b33f7427a7650a00f75e12059f91f1aec27bee213194d9ccf81",
+      "png_bytes": 7062
+    },
+    {
+      "id": "medical_services",
+      "source_sha256": "fc26a50aa85c9c2c1c6be86ba386ae8241583ba61b2c7193192c6b6d494f138a",
+      "png_sha256": "53458be5188c42d5cd1c09daa647bf9922d556ab988d36bd3f396b0b8933177f",
+      "png_bytes": 2019
+    },
+    {
+      "id": "package_2",
+      "source_sha256": "89bdfe427537377b356b451fd323549b272688d36994896eff651e7e84541f6f",
+      "png_sha256": "9b0b17e084e5c9010b7701a3436fa84a9d6e880476a9853da455bb27a80f6927",
+      "png_bytes": 6686
+    },
+    {
+      "id": "pause_circle",
+      "source_sha256": "7e9d69cdba48381c672a191bf5343111fffe87acd56fd895eaaf154aaf6bb072",
+      "png_sha256": "93f16a9a771c3473fb1819b70270547624f193a3beb89a39bb9c83f40536eb7a",
+      "png_bytes": 6553
+    },
+    {
+      "id": "school",
+      "source_sha256": "1be914ee07999a7fc838e60d9a48febd59718ecf6bb0dfa50aaf06937f1fe4ff",
+      "png_sha256": "d98533ae239b91238b9ef2eb1e6d9d9b67d3428f4d1d8e2fba4ead2a847b82aa",
+      "png_bytes": 6715
+    },
+    {
+      "id": "sentiment_dissatisfied",
+      "source_sha256": "522fb5a331944ba23a16470be99510e95cb1e3959c45b44fb1032879ccd0ad45",
+      "png_sha256": "3cc7bffa1904968cc50b7f5cf6e456f06d8eab5f417d3c75a9f5a8b792b21d1b",
+      "png_bytes": 8434
+    },
+    {
+      "id": "shopping_basket",
+      "source_sha256": "1e647be97dc7f2ba6916524d80713d0199b4b449caccd47f6680ff3b175f3f22",
+      "png_sha256": "7896126eea92adc76a8fa9962a7215d7c28eb34dcb29faae1456f9c4b0c26779",
+      "png_bytes": 5284
+    },
+    {
+      "id": "water_drop",
+      "source_sha256": "9595f261854db35ddfd3f565ae5bb1b1b516d7b7072af48887b5803eb3eb5fe6",
+      "png_sha256": "7f935f0d84bac459a7483ac1e8019c56a2024f430e88445987125e8dddef9e56",
+      "png_bytes": 7058
+    }
+  ]
+}

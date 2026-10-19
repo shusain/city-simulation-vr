@@ -1,0 +1,5546 @@
+{
+  "assets": [
+    {
+      "mesh": "/Game/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Factory_A",
+      "definition": "Factory",
+      "regions_cm": [
+        {
+          "x0": -750.0000610351562,
+          "y0": -699.9999389648438,
+          "x1": 750.0000610351562,
+          "y1": 700.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        },
+        {
+          "x0": -282.49993896484375,
+          "y0": 703.4999389648438,
+          "x1": 282.50006103515625,
+          "y1": 719.5000610351562,
+          "bottom_z": 8,
+          "fallback": false
+        },
+        {
+          "x0": -300.49993896484375,
+          "y0": 709.5,
+          "x1": -282.49993896484375,
+          "y1": 732.5,
+          "bottom_z": 5.5,
+          "fallback": false
+        },
+        {
+          "x0": 282.50006103515625,
+          "y0": 709.4999389648438,
+          "x1": 300.50006103515625,
+          "y1": 732.4999389648438,
+          "bottom_z": 5.5,
+          "fallback": false
+        }
+      ],
+      "selected_parts_cm": [
+        {
+          "width": 1500.0001220703125,
+          "depth": 1400.0001220703125,
+          "height": 700,
+          "bottom": 0
+        },
+        {
+          "width": 565,
+          "depth": 16.0001220703125,
+          "height": 455,
+          "bottom": 8
+        },
+        {
+          "width": 18,
+          "depth": 23,
+          "height": 460.0000305175781,
+          "bottom": 5.5
+        },
+        {
+          "width": 18,
+          "depth": 23,
+          "height": 460.0000305175781,
+          "bottom": 5.5
+        }
+      ],
+      "vertices": 2108
+    },
+    {
+      "mesh": "/Game/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Factory_B",
+      "definition": "Factory",
+      "regions_cm": [
+        {
+          "x0": -750.0000610351562,
+          "y0": -699.9999389648438,
+          "x1": 750.0000610351562,
+          "y1": 700.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        },
+        {
+          "x0": -282.49993896484375,
+          "y0": 703.4999389648438,
+          "x1": 282.50006103515625,
+          "y1": 719.5000610351562,
+          "bottom_z": 8,
+          "fallback": false
+        },
+        {
+          "x0": -300.49993896484375,
+          "y0": 709.5,
+          "x1": -282.49993896484375,
+          "y1": 732.5,
+          "bottom_z": 5.5,
+          "fallback": false
+        },
+        {
+          "x0": 282.50006103515625,
+          "y0": 709.4999389648438,
+          "x1": 300.50006103515625,
+          "y1": 732.4999389648438,
+          "bottom_z": 5.5,
+          "fallback": false
+        }
+      ],
+      "selected_parts_cm": [
+        {
+          "width": 1500.0001220703125,
+          "depth": 1400.0001220703125,
+          "height": 700,
+          "bottom": 0
+        },
+        {
+          "width": 565,
+          "depth": 16.0001220703125,
+          "height": 455,
+          "bottom": 8
+        },
+        {
+          "width": 18,
+          "depth": 23,
+          "height": 460.0000305175781,
+          "bottom": 5.5
+        },
+        {
+          "width": 18,
+          "depth": 23,
+          "height": 460.0000305175781,
+          "bottom": 5.5
+        }
+      ],
+      "vertices": 2562
+    },
+    {
+      "mesh": "/Game/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Factory_C",
+      "definition": "Factory",
+      "regions_cm": [
+        {
+          "x0": -750.0000610351562,
+          "y0": -699.9999389648438,
+          "x1": 750.0000610351562,
+          "y1": 700.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        }
+      ],
+      "selected_parts_cm": [
+        {
+          "width": 1500.0001220703125,
+          "depth": 1400.0001220703125,
+          "height": 700,
+          "bottom": 0
+        }
+      ],
+      "vertices": 2388
+    },
+    {
+      "mesh": "/Game/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Factory_D",
+      "definition": "Factory",
+      "regions_cm": [
+        {
+          "x0": -750.0000610351562,
+          "y0": -699.9999389648438,
+          "x1": 750.0000610351562,
+          "y1": 700.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        },
+        {
+          "x0": -9.9999361038208,
+          "y0": 711,
+          "x1": 10.0000638961792,
+          "y1": 733,
+          "bottom_z": 8,
+          "fallback": false
+        },
+        {
+          "x0": -276.99993896484375,
+          "y0": 703.5,
+          "x1": -16.99993896484375,
+          "y1": 719.5000610351562,
+          "bottom_z": 8,
+          "fallback": false
+        },
+        {
+          "x0": -294.99993896484375,
+          "y0": 709.5,
+          "x1": -276.99993896484375,
+          "y1": 732.5,
+          "bottom_z": 5.5,
+          "fallback": false
+        },
+        {
+          "x0": -16.999937057495117,
+          "y0": 709.5,
+          "x1": 1.0000640153884888,
+          "y1": 732.5,
+          "bottom_z": 5.5,
+          "fallback": false
+        },
+        {
+          "x0": 17.00006103515625,
+          "y0": 703.4999389648438,
+          "x1": 277.00006103515625,
+          "y1": 719.5,
+          "bottom_z": 8,
+          "fallback": false
+        },
+        {
+          "x0": -0.9999359250068665,
+          "y0": 709.5,
+          "x1": 17.000064849853516,
+          "y1": 732.5,
+          "bottom_z": 5.5,
+          "fallback": false
+        },
+        {
+          "x0": 277.00006103515625,
+          "y0": 709.4999389648438,
+          "x1": 295.00006103515625,
+          "y1": 732.4999389648438,
+          "bottom_z": 5.5,
+          "fallback": false
+        }
+      ],
+      "selected_parts_cm": [
+        {
+          "width": 1500.0001220703125,
+          "depth": 1400.0001220703125,
+          "height": 700,
+          "bottom": 0
+        },
+        {
+          "width": 20.000001907348633,
+          "depth": 22,
+          "height": 450,
+          "bottom": 8
+        },
+        {
+          "width": 260.00000190734863,
+          "depth": 16.00006103515625,
+          "height": 445.0000305175781,
+          "bottom": 8
+        },
+        {
+          "width": 18,
+          "depth": 23,
+          "height": 449.9999694824219,
+          "bottom": 5.5
+        },
+        {
+          "width": 18.00000298023224,
+          "depth": 23,
+          "height": 449.9999694824219,
+          "bottom": 5.5
+        },
+        {
+          "width": 260,
+          "depth": 16.00006103515625,
+          "height": 445.0000305175781,
+          "bottom": 8
+        },
+        {
+          "width": 18.000002801418304,
+          "depth": 23,
+          "height": 449.9999694824219,
+          "bottom": 5.5
+        },
+        {
+          "width": 18,
+          "depth": 23,
+          "height": 449.9999694824219,
+          "bottom": 5.5
+        }
+      ],
+      "vertices": 2990
+    },
+    {
+      "mesh": "/Game/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Home_A",
+      "definition": "Home",
+      "regions_cm": [
+        {
+          "x0": -462.0000305175781,
+          "y0": -461.99993896484375,
+          "x1": 462.0000305175781,
+          "y1": 462.0000305175781,
+          "bottom_z": 0,
+          "fallback": false
+        },
+        {
+          "x0": -54.99995422363281,
+          "y0": 462,
+          "x1": 55.000038146972656,
+          "y1": 472.0000305175781,
+          "bottom_z": 0,
+          "fallback": false
+        },
+        {
+          "x0": -59.166622161865234,
+          "y0": 471.2803039550781,
+          "x1": -52.49995422363281,
+          "y1": 476.9621276855469,
+          "bottom_z": 0,
+          "fallback": false
+        },
+        {
+          "x0": 52.500038146972656,
+          "y0": 471.2802734375,
+          "x1": 59.16670608520508,
+          "y1": 476.9621276855469,
+          "bottom_z": 0,
+          "fallback": false
+        }
+      ],
+      "selected_parts_cm": [
+        {
+          "width": 924.0000610351562,
+          "depth": 924.0000610351562,
+          "height": 300,
+          "bottom": 0
+        },
+        {
+          "width": 109.99999237060547,
+          "depth": 10.00006103515625,
+          "height": 185,
+          "bottom": 0
+        },
+        {
+          "width": 118.33332824707031,
+          "depth": 5.681854248046875,
+          "height": 191.47499084472656,
+          "bottom": 0
+        }
+      ],
+      "vertices": 1322
+    },
+    {
+      "mesh": "/Game/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Home_B",
+      "definition": "Home",
+      "regions_cm": [
+        {
+          "x0": -462.0000305175781,
+          "y0": -461.99993896484375,
+          "x1": 462.0000305175781,
+          "y1": 462.0000305175781,
+          "bottom_z": 0,
+          "fallback": false
+        },
+        {
+          "x0": -54.99995422363281,
+          "y0": 462,
+          "x1": 55.000038146972656,
+          "y1": 472.0000305175781,
+          "bottom_z": 0,
+          "fallback": false
+        },
+        {
+          "x0": -59.166622161865234,
+          "y0": 471.2803039550781,
+          "x1": -52.49995422363281,
+          "y1": 476.9621276855469,
+          "bottom_z": 0,
+          "fallback": false
+        },
+        {
+          "x0": 52.500038146972656,
+          "y0": 471.2802734375,
+          "x1": 59.16670608520508,
+          "y1": 476.9621276855469,
+          "bottom_z": 0,
+          "fallback": false
+        },
+        {
+          "x0": -179.99993896484375,
+          "y0": 594,
+          "x1": -163.99993896484375,
+          "y1": 610,
+          "bottom_z": 0,
+          "fallback": false
+        },
+        {
+          "x0": 164.0000457763672,
+          "y0": 594,
+          "x1": 180.0000457763672,
+          "y1": 610,
+          "bottom_z": 0,
+          "fallback": false
+        }
+      ],
+      "selected_parts_cm": [
+        {
+          "width": 924.0000610351562,
+          "depth": 924.0000610351562,
+          "height": 300,
+          "bottom": 0
+        },
+        {
+          "width": 109.99999237060547,
+          "depth": 10.00006103515625,
+          "height": 185,
+          "bottom": 0
+        },
+        {
+          "width": 118.33332824707031,
+          "depth": 5.681854248046875,
+          "height": 191.47499084472656,
+          "bottom": 0
+        },
+        {
+          "width": 16,
+          "depth": 16,
+          "height": 228,
+          "bottom": 0
+        },
+        {
+          "width": 16,
+          "depth": 16,
+          "height": 228,
+          "bottom": 0
+        }
+      ],
+      "vertices": 1184
+    },
+    {
+      "mesh": "/Game/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Home_C",
+      "definition": "Home",
+      "regions_cm": [
+        {
+          "x0": -462.0000305175781,
+          "y0": -461.99993896484375,
+          "x1": 462.0000305175781,
+          "y1": 462.0000305175781,
+          "bottom_z": 0,
+          "fallback": false
+        },
+        {
+          "x0": -54.99995422363281,
+          "y0": 462,
+          "x1": 55.000038146972656,
+          "y1": 472.0000305175781,
+          "bottom_z": 0,
+          "fallback": false
+        },
+        {
+          "x0": -59.166622161865234,
+          "y0": 471.2803039550781,
+          "x1": -52.49995422363281,
+          "y1": 476.9621276855469,
+          "bottom_z": 0,
+          "fallback": false
+        },
+        {
+          "x0": 52.500038146972656,
+          "y0": 471.2802734375,
+          "x1": 59.16670608520508,
+          "y1": 476.9621276855469,
+          "bottom_z": 0,
+          "fallback": false
+        },
+        {
+          "x0": -183.9999542236328,
+          "y0": 589,
+          "x1": -165.99993896484375,
+          "y1": 607.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        },
+        {
+          "x0": 166.0000457763672,
+          "y0": 589,
+          "x1": 184.00006103515625,
+          "y1": 607,
+          "bottom_z": 0,
+          "fallback": false
+        }
+      ],
+      "selected_parts_cm": [
+        {
+          "width": 924.0000610351562,
+          "depth": 924.0000610351562,
+          "height": 300,
+          "bottom": 0
+        },
+        {
+          "width": 109.99999237060547,
+          "depth": 10.00006103515625,
+          "height": 185,
+          "bottom": 0
+        },
+        {
+          "width": 118.33332824707031,
+          "depth": 5.681854248046875,
+          "height": 191.47499084472656,
+          "bottom": 0
+        },
+        {
+          "width": 18.000015258789062,
+          "depth": 18.00006103515625,
+          "height": 246,
+          "bottom": 0
+        },
+        {
+          "width": 18.000015258789062,
+          "depth": 18,
+          "height": 246,
+          "bottom": 0
+        }
+      ],
+      "vertices": 1184
+    },
+    {
+      "mesh": "/Game/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Home_D",
+      "definition": "Home",
+      "regions_cm": [
+        {
+          "x0": -462.0000305175781,
+          "y0": -461.99993896484375,
+          "x1": 462.0000305175781,
+          "y1": 462.0000305175781,
+          "bottom_z": 0,
+          "fallback": false
+        },
+        {
+          "x0": -54.99995422363281,
+          "y0": 462,
+          "x1": 55.000038146972656,
+          "y1": 472.0000305175781,
+          "bottom_z": 0,
+          "fallback": false
+        },
+        {
+          "x0": -59.166622161865234,
+          "y0": 471.2803039550781,
+          "x1": -52.49995422363281,
+          "y1": 476.9621276855469,
+          "bottom_z": 0,
+          "fallback": false
+        },
+        {
+          "x0": 52.500038146972656,
+          "y0": 471.2802734375,
+          "x1": 59.16670608520508,
+          "y1": 476.9621276855469,
+          "bottom_z": 0,
+          "fallback": false
+        },
+        {
+          "x0": -447.49993896484375,
+          "y0": 614.5000610351562,
+          "x1": -432.49993896484375,
+          "y1": 629.5000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        },
+        {
+          "x0": -177.49993896484375,
+          "y0": 614.5,
+          "x1": -162.49993896484375,
+          "y1": 629.5,
+          "bottom_z": 0,
+          "fallback": false
+        },
+        {
+          "x0": 162.50006103515625,
+          "y0": 614.5,
+          "x1": 177.5000457763672,
+          "y1": 629.5,
+          "bottom_z": 0,
+          "fallback": false
+        },
+        {
+          "x0": 432.5000305175781,
+          "y0": 614.4999389648438,
+          "x1": 447.5000305175781,
+          "y1": 629.5,
+          "bottom_z": 0,
+          "fallback": false
+        }
+      ],
+      "selected_parts_cm": [
+        {
+          "width": 924.0000610351562,
+          "depth": 924.0000610351562,
+          "height": 300,
+          "bottom": 0
+        },
+        {
+          "width": 109.99999237060547,
+          "depth": 10.00006103515625,
+          "height": 185,
+          "bottom": 0
+        },
+        {
+          "width": 118.33332824707031,
+          "depth": 5.681854248046875,
+          "height": 191.47499084472656,
+          "bottom": 0
+        },
+        {
+          "width": 15,
+          "depth": 15,
+          "height": 218,
+          "bottom": 0
+        },
+        {
+          "width": 15,
+          "depth": 15,
+          "height": 218,
+          "bottom": 0
+        },
+        {
+          "width": 14.999984741210938,
+          "depth": 15,
+          "height": 218,
+          "bottom": 0
+        },
+        {
+          "width": 15,
+          "depth": 15.00006103515625,
+          "height": 218,
+          "bottom": 0
+        }
+      ],
+      "vertices": 1242
+    },
+    {
+      "mesh": "/Game/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Shop_A",
+      "definition": "Shop",
+      "regions_cm": [
+        {
+          "x0": -750.0000610351562,
+          "y0": -699.9999389648438,
+          "x1": 750.0000610351562,
+          "y1": 700.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        }
+      ],
+      "selected_parts_cm": [
+        {
+          "width": 1500.0001220703125,
+          "depth": 1400.0001220703125,
+          "height": 800,
+          "bottom": 0
+        }
+      ],
+      "vertices": 1336
+    },
+    {
+      "mesh": "/Game/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Shop_A_bakery",
+      "definition": "Shop",
+      "regions_cm": [
+        {
+          "x0": -750.0000610351562,
+          "y0": -699.9999389648438,
+          "x1": 750.0000610351562,
+          "y1": 700.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        }
+      ],
+      "selected_parts_cm": [
+        {
+          "width": 1500.0001220703125,
+          "depth": 1400.0001220703125,
+          "height": 800,
+          "bottom": 0
+        }
+      ],
+      "vertices": 1336
+    },
+    {
+      "mesh": "/Game/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Shop_A_books",
+      "definition": "Shop",
+      "regions_cm": [
+        {
+          "x0": -750.0000610351562,
+          "y0": -699.9999389648438,
+          "x1": 750.0000610351562,
+          "y1": 700.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        }
+      ],
+      "selected_parts_cm": [
+        {
+          "width": 1500.0001220703125,
+          "depth": 1400.0001220703125,
+          "height": 800,
+          "bottom": 0
+        }
+      ],
+      "vertices": 1336
+    },
+    {
+      "mesh": "/Game/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Shop_A_cafe",
+      "definition": "Shop",
+      "regions_cm": [
+        {
+          "x0": -750.0000610351562,
+          "y0": -699.9999389648438,
+          "x1": 750.0000610351562,
+          "y1": 700.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        }
+      ],
+      "selected_parts_cm": [
+        {
+          "width": 1500.0001220703125,
+          "depth": 1400.0001220703125,
+          "height": 800,
+          "bottom": 0
+        }
+      ],
+      "vertices": 1336
+    },
+    {
+      "mesh": "/Game/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Shop_A_outfitters",
+      "definition": "Shop",
+      "regions_cm": [
+        {
+          "x0": -750.0000610351562,
+          "y0": -699.9999389648438,
+          "x1": 750.0000610351562,
+          "y1": 700.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        }
+      ],
+      "selected_parts_cm": [
+        {
+          "width": 1500.0001220703125,
+          "depth": 1400.0001220703125,
+          "height": 800,
+          "bottom": 0
+        }
+      ],
+      "vertices": 1336
+    },
+    {
+      "mesh": "/Game/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Shop_A_pharmacy",
+      "definition": "Shop",
+      "regions_cm": [
+        {
+          "x0": -750.0000610351562,
+          "y0": -699.9999389648438,
+          "x1": 750.0000610351562,
+          "y1": 700.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        }
+      ],
+      "selected_parts_cm": [
+        {
+          "width": 1500.0001220703125,
+          "depth": 1400.0001220703125,
+          "height": 800,
+          "bottom": 0
+        }
+      ],
+      "vertices": 1336
+    },
+    {
+      "mesh": "/Game/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Shop_A_repairs",
+      "definition": "Shop",
+      "regions_cm": [
+        {
+          "x0": -750.0000610351562,
+          "y0": -699.9999389648438,
+          "x1": 750.0000610351562,
+          "y1": 700.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        }
+      ],
+      "selected_parts_cm": [
+        {
+          "width": 1500.0001220703125,
+          "depth": 1400.0001220703125,
+          "height": 800,
+          "bottom": 0
+        }
+      ],
+      "vertices": 1336
+    },
+    {
+      "mesh": "/Game/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Shop_A_tech",
+      "definition": "Shop",
+      "regions_cm": [
+        {
+          "x0": -750.0000610351562,
+          "y0": -699.9999389648438,
+          "x1": 750.0000610351562,
+          "y1": 700.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        }
+      ],
+      "selected_parts_cm": [
+        {
+          "width": 1500.0001220703125,
+          "depth": 1400.0001220703125,
+          "height": 800,
+          "bottom": 0
+        }
+      ],
+      "vertices": 1336
+    },
+    {
+      "mesh": "/Game/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Shop_B",
+      "definition": "Shop",
+      "regions_cm": [
+        {
+          "x0": -750.0000610351562,
+          "y0": -699.9999389648438,
+          "x1": 750.0000610351562,
+          "y1": 700.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        },
+        {
+          "x0": -728.9999389648438,
+          "y0": 694.0000610351562,
+          "x1": -700.9999389648438,
+          "y1": 726.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        },
+        {
+          "x0": -213.9999542236328,
+          "y0": 694,
+          "x1": -185.99993896484375,
+          "y1": 726.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        },
+        {
+          "x0": 186.00006103515625,
+          "y0": 694,
+          "x1": 214.0000762939453,
+          "y1": 726,
+          "bottom_z": 0,
+          "fallback": false
+        },
+        {
+          "x0": 701.0000610351562,
+          "y0": 693.9999389648438,
+          "x1": 729.0000610351562,
+          "y1": 725.9999389648438,
+          "bottom_z": 0,
+          "fallback": false
+        }
+      ],
+      "selected_parts_cm": [
+        {
+          "width": 1500.0001220703125,
+          "depth": 1400.0001220703125,
+          "height": 800,
+          "bottom": 0
+        },
+        {
+          "width": 28,
+          "depth": 32,
+          "height": 780,
+          "bottom": 0
+        },
+        {
+          "width": 28.000015258789062,
+          "depth": 32.00006103515625,
+          "height": 780,
+          "bottom": 0
+        },
+        {
+          "width": 28.000015258789062,
+          "depth": 32,
+          "height": 780,
+          "bottom": 0
+        },
+        {
+          "width": 28,
+          "depth": 32,
+          "height": 780,
+          "bottom": 0
+        }
+      ],
+      "vertices": 1620
+    },
+    {
+      "mesh": "/Game/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Shop_B_bakery",
+      "definition": "Shop",
+      "regions_cm": [
+        {
+          "x0": -750.0000610351562,
+          "y0": -699.9999389648438,
+          "x1": 750.0000610351562,
+          "y1": 700.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        },
+        {
+          "x0": -728.9999389648438,
+          "y0": 694.0000610351562,
+          "x1": -700.9999389648438,
+          "y1": 726.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        },
+        {
+          "x0": -213.9999542236328,
+          "y0": 694,
+          "x1": -185.99993896484375,
+          "y1": 726.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        },
+        {
+          "x0": 186.00006103515625,
+          "y0": 694,
+          "x1": 214.0000762939453,
+          "y1": 726,
+          "bottom_z": 0,
+          "fallback": false
+        },
+        {
+          "x0": 701.0000610351562,
+          "y0": 693.9999389648438,
+          "x1": 729.0000610351562,
+          "y1": 725.9999389648438,
+          "bottom_z": 0,
+          "fallback": false
+        }
+      ],
+      "selected_parts_cm": [
+        {
+          "width": 1500.0001220703125,
+          "depth": 1400.0001220703125,
+          "height": 800,
+          "bottom": 0
+        },
+        {
+          "width": 28,
+          "depth": 32,
+          "height": 780,
+          "bottom": 0
+        },
+        {
+          "width": 28.000015258789062,
+          "depth": 32.00006103515625,
+          "height": 780,
+          "bottom": 0
+        },
+        {
+          "width": 28.000015258789062,
+          "depth": 32,
+          "height": 780,
+          "bottom": 0
+        },
+        {
+          "width": 28,
+          "depth": 32,
+          "height": 780,
+          "bottom": 0
+        }
+      ],
+      "vertices": 1620
+    },
+    {
+      "mesh": "/Game/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Shop_B_books",
+      "definition": "Shop",
+      "regions_cm": [
+        {
+          "x0": -750.0000610351562,
+          "y0": -699.9999389648438,
+          "x1": 750.0000610351562,
+          "y1": 700.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        },
+        {
+          "x0": -728.9999389648438,
+          "y0": 694.0000610351562,
+          "x1": -700.9999389648438,
+          "y1": 726.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        },
+        {
+          "x0": -213.9999542236328,
+          "y0": 694,
+          "x1": -185.99993896484375,
+          "y1": 726.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        },
+        {
+          "x0": 186.00006103515625,
+          "y0": 694,
+          "x1": 214.0000762939453,
+          "y1": 726,
+          "bottom_z": 0,
+          "fallback": false
+        },
+        {
+          "x0": 701.0000610351562,
+          "y0": 693.9999389648438,
+          "x1": 729.0000610351562,
+          "y1": 725.9999389648438,
+          "bottom_z": 0,
+          "fallback": false
+        }
+      ],
+      "selected_parts_cm": [
+        {
+          "width": 1500.0001220703125,
+          "depth": 1400.0001220703125,
+          "height": 800,
+          "bottom": 0
+        },
+        {
+          "width": 28,
+          "depth": 32,
+          "height": 780,
+          "bottom": 0
+        },
+        {
+          "width": 28.000015258789062,
+          "depth": 32.00006103515625,
+          "height": 780,
+          "bottom": 0
+        },
+        {
+          "width": 28.000015258789062,
+          "depth": 32,
+          "height": 780,
+          "bottom": 0
+        },
+        {
+          "width": 28,
+          "depth": 32,
+          "height": 780,
+          "bottom": 0
+        }
+      ],
+      "vertices": 1620
+    },
+    {
+      "mesh": "/Game/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Shop_B_cafe",
+      "definition": "Shop",
+      "regions_cm": [
+        {
+          "x0": -750.0000610351562,
+          "y0": -699.9999389648438,
+          "x1": 750.0000610351562,
+          "y1": 700.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        },
+        {
+          "x0": -728.9999389648438,
+          "y0": 694.0000610351562,
+          "x1": -700.9999389648438,
+          "y1": 726.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        },
+        {
+          "x0": -213.9999542236328,
+          "y0": 694,
+          "x1": -185.99993896484375,
+          "y1": 726.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        },
+        {
+          "x0": 186.00006103515625,
+          "y0": 694,
+          "x1": 214.0000762939453,
+          "y1": 726,
+          "bottom_z": 0,
+          "fallback": false
+        },
+        {
+          "x0": 701.0000610351562,
+          "y0": 693.9999389648438,
+          "x1": 729.0000610351562,
+          "y1": 725.9999389648438,
+          "bottom_z": 0,
+          "fallback": false
+        }
+      ],
+      "selected_parts_cm": [
+        {
+          "width": 1500.0001220703125,
+          "depth": 1400.0001220703125,
+          "height": 800,
+          "bottom": 0
+        },
+        {
+          "width": 28,
+          "depth": 32,
+          "height": 780,
+          "bottom": 0
+        },
+        {
+          "width": 28.000015258789062,
+          "depth": 32.00006103515625,
+          "height": 780,
+          "bottom": 0
+        },
+        {
+          "width": 28.000015258789062,
+          "depth": 32,
+          "height": 780,
+          "bottom": 0
+        },
+        {
+          "width": 28,
+          "depth": 32,
+          "height": 780,
+          "bottom": 0
+        }
+      ],
+      "vertices": 1620
+    },
+    {
+      "mesh": "/Game/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Shop_B_outfitters",
+      "definition": "Shop",
+      "regions_cm": [
+        {
+          "x0": -750.0000610351562,
+          "y0": -699.9999389648438,
+          "x1": 750.0000610351562,
+          "y1": 700.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        },
+        {
+          "x0": -728.9999389648438,
+          "y0": 694.0000610351562,
+          "x1": -700.9999389648438,
+          "y1": 726.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        },
+        {
+          "x0": -213.9999542236328,
+          "y0": 694,
+          "x1": -185.99993896484375,
+          "y1": 726.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        },
+        {
+          "x0": 186.00006103515625,
+          "y0": 694,
+          "x1": 214.0000762939453,
+          "y1": 726,
+          "bottom_z": 0,
+          "fallback": false
+        },
+        {
+          "x0": 701.0000610351562,
+          "y0": 693.9999389648438,
+          "x1": 729.0000610351562,
+          "y1": 725.9999389648438,
+          "bottom_z": 0,
+          "fallback": false
+        }
+      ],
+      "selected_parts_cm": [
+        {
+          "width": 1500.0001220703125,
+          "depth": 1400.0001220703125,
+          "height": 800,
+          "bottom": 0
+        },
+        {
+          "width": 28,
+          "depth": 32,
+          "height": 780,
+          "bottom": 0
+        },
+        {
+          "width": 28.000015258789062,
+          "depth": 32.00006103515625,
+          "height": 780,
+          "bottom": 0
+        },
+        {
+          "width": 28.000015258789062,
+          "depth": 32,
+          "height": 780,
+          "bottom": 0
+        },
+        {
+          "width": 28,
+          "depth": 32,
+          "height": 780,
+          "bottom": 0
+        }
+      ],
+      "vertices": 1620
+    },
+    {
+      "mesh": "/Game/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Shop_B_pharmacy",
+      "definition": "Shop",
+      "regions_cm": [
+        {
+          "x0": -750.0000610351562,
+          "y0": -699.9999389648438,
+          "x1": 750.0000610351562,
+          "y1": 700.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        },
+        {
+          "x0": -728.9999389648438,
+          "y0": 694.0000610351562,
+          "x1": -700.9999389648438,
+          "y1": 726.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        },
+        {
+          "x0": -213.9999542236328,
+          "y0": 694,
+          "x1": -185.99993896484375,
+          "y1": 726.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        },
+        {
+          "x0": 186.00006103515625,
+          "y0": 694,
+          "x1": 214.0000762939453,
+          "y1": 726,
+          "bottom_z": 0,
+          "fallback": false
+        },
+        {
+          "x0": 701.0000610351562,
+          "y0": 693.9999389648438,
+          "x1": 729.0000610351562,
+          "y1": 725.9999389648438,
+          "bottom_z": 0,
+          "fallback": false
+        }
+      ],
+      "selected_parts_cm": [
+        {
+          "width": 1500.0001220703125,
+          "depth": 1400.0001220703125,
+          "height": 800,
+          "bottom": 0
+        },
+        {
+          "width": 28,
+          "depth": 32,
+          "height": 780,
+          "bottom": 0
+        },
+        {
+          "width": 28.000015258789062,
+          "depth": 32.00006103515625,
+          "height": 780,
+          "bottom": 0
+        },
+        {
+          "width": 28.000015258789062,
+          "depth": 32,
+          "height": 780,
+          "bottom": 0
+        },
+        {
+          "width": 28,
+          "depth": 32,
+          "height": 780,
+          "bottom": 0
+        }
+      ],
+      "vertices": 1620
+    },
+    {
+      "mesh": "/Game/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Shop_B_repairs",
+      "definition": "Shop",
+      "regions_cm": [
+        {
+          "x0": -750.0000610351562,
+          "y0": -699.9999389648438,
+          "x1": 750.0000610351562,
+          "y1": 700.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        },
+        {
+          "x0": -728.9999389648438,
+          "y0": 694.0000610351562,
+          "x1": -700.9999389648438,
+          "y1": 726.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        },
+        {
+          "x0": -213.9999542236328,
+          "y0": 694,
+          "x1": -185.99993896484375,
+          "y1": 726.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        },
+        {
+          "x0": 186.00006103515625,
+          "y0": 694,
+          "x1": 214.0000762939453,
+          "y1": 726,
+          "bottom_z": 0,
+          "fallback": false
+        },
+        {
+          "x0": 701.0000610351562,
+          "y0": 693.9999389648438,
+          "x1": 729.0000610351562,
+          "y1": 725.9999389648438,
+          "bottom_z": 0,
+          "fallback": false
+        }
+      ],
+      "selected_parts_cm": [
+        {
+          "width": 1500.0001220703125,
+          "depth": 1400.0001220703125,
+          "height": 800,
+          "bottom": 0
+        },
+        {
+          "width": 28,
+          "depth": 32,
+          "height": 780,
+          "bottom": 0
+        },
+        {
+          "width": 28.000015258789062,
+          "depth": 32.00006103515625,
+          "height": 780,
+          "bottom": 0
+        },
+        {
+          "width": 28.000015258789062,
+          "depth": 32,
+          "height": 780,
+          "bottom": 0
+        },
+        {
+          "width": 28,
+          "depth": 32,
+          "height": 780,
+          "bottom": 0
+        }
+      ],
+      "vertices": 1620
+    },
+    {
+      "mesh": "/Game/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Shop_B_tech",
+      "definition": "Shop",
+      "regions_cm": [
+        {
+          "x0": -750.0000610351562,
+          "y0": -699.9999389648438,
+          "x1": 750.0000610351562,
+          "y1": 700.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        },
+        {
+          "x0": -728.9999389648438,
+          "y0": 694.0000610351562,
+          "x1": -700.9999389648438,
+          "y1": 726.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        },
+        {
+          "x0": -213.9999542236328,
+          "y0": 694,
+          "x1": -185.99993896484375,
+          "y1": 726.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        },
+        {
+          "x0": 186.00006103515625,
+          "y0": 694,
+          "x1": 214.0000762939453,
+          "y1": 726,
+          "bottom_z": 0,
+          "fallback": false
+        },
+        {
+          "x0": 701.0000610351562,
+          "y0": 693.9999389648438,
+          "x1": 729.0000610351562,
+          "y1": 725.9999389648438,
+          "bottom_z": 0,
+          "fallback": false
+        }
+      ],
+      "selected_parts_cm": [
+        {
+          "width": 1500.0001220703125,
+          "depth": 1400.0001220703125,
+          "height": 800,
+          "bottom": 0
+        },
+        {
+          "width": 28,
+          "depth": 32,
+          "height": 780,
+          "bottom": 0
+        },
+        {
+          "width": 28.000015258789062,
+          "depth": 32.00006103515625,
+          "height": 780,
+          "bottom": 0
+        },
+        {
+          "width": 28.000015258789062,
+          "depth": 32,
+          "height": 780,
+          "bottom": 0
+        },
+        {
+          "width": 28,
+          "depth": 32,
+          "height": 780,
+          "bottom": 0
+        }
+      ],
+      "vertices": 1620
+    },
+    {
+      "mesh": "/Game/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Shop_C",
+      "definition": "Shop",
+      "regions_cm": [
+        {
+          "x0": -750.0000610351562,
+          "y0": -699.9999389648438,
+          "x1": 750.0000610351562,
+          "y1": 700.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        }
+      ],
+      "selected_parts_cm": [
+        {
+          "width": 1500.0001220703125,
+          "depth": 1400.0001220703125,
+          "height": 800,
+          "bottom": 0
+        }
+      ],
+      "vertices": 1356
+    },
+    {
+      "mesh": "/Game/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Shop_C_bakery",
+      "definition": "Shop",
+      "regions_cm": [
+        {
+          "x0": -750.0000610351562,
+          "y0": -699.9999389648438,
+          "x1": 750.0000610351562,
+          "y1": 700.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        }
+      ],
+      "selected_parts_cm": [
+        {
+          "width": 1500.0001220703125,
+          "depth": 1400.0001220703125,
+          "height": 800,
+          "bottom": 0
+        }
+      ],
+      "vertices": 1356
+    },
+    {
+      "mesh": "/Game/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Shop_C_books",
+      "definition": "Shop",
+      "regions_cm": [
+        {
+          "x0": -750.0000610351562,
+          "y0": -699.9999389648438,
+          "x1": 750.0000610351562,
+          "y1": 700.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        }
+      ],
+      "selected_parts_cm": [
+        {
+          "width": 1500.0001220703125,
+          "depth": 1400.0001220703125,
+          "height": 800,
+          "bottom": 0
+        }
+      ],
+      "vertices": 1356
+    },
+    {
+      "mesh": "/Game/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Shop_C_cafe",
+      "definition": "Shop",
+      "regions_cm": [
+        {
+          "x0": -750.0000610351562,
+          "y0": -699.9999389648438,
+          "x1": 750.0000610351562,
+          "y1": 700.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        }
+      ],
+      "selected_parts_cm": [
+        {
+          "width": 1500.0001220703125,
+          "depth": 1400.0001220703125,
+          "height": 800,
+          "bottom": 0
+        }
+      ],
+      "vertices": 1356
+    },
+    {
+      "mesh": "/Game/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Shop_C_outfitters",
+      "definition": "Shop",
+      "regions_cm": [
+        {
+          "x0": -750.0000610351562,
+          "y0": -699.9999389648438,
+          "x1": 750.0000610351562,
+          "y1": 700.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        }
+      ],
+      "selected_parts_cm": [
+        {
+          "width": 1500.0001220703125,
+          "depth": 1400.0001220703125,
+          "height": 800,
+          "bottom": 0
+        }
+      ],
+      "vertices": 1356
+    },
+    {
+      "mesh": "/Game/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Shop_C_pharmacy",
+      "definition": "Shop",
+      "regions_cm": [
+        {
+          "x0": -750.0000610351562,
+          "y0": -699.9999389648438,
+          "x1": 750.0000610351562,
+          "y1": 700.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        }
+      ],
+      "selected_parts_cm": [
+        {
+          "width": 1500.0001220703125,
+          "depth": 1400.0001220703125,
+          "height": 800,
+          "bottom": 0
+        }
+      ],
+      "vertices": 1356
+    },
+    {
+      "mesh": "/Game/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Shop_C_repairs",
+      "definition": "Shop",
+      "regions_cm": [
+        {
+          "x0": -750.0000610351562,
+          "y0": -699.9999389648438,
+          "x1": 750.0000610351562,
+          "y1": 700.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        }
+      ],
+      "selected_parts_cm": [
+        {
+          "width": 1500.0001220703125,
+          "depth": 1400.0001220703125,
+          "height": 800,
+          "bottom": 0
+        }
+      ],
+      "vertices": 1356
+    },
+    {
+      "mesh": "/Game/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Shop_C_tech",
+      "definition": "Shop",
+      "regions_cm": [
+        {
+          "x0": -750.0000610351562,
+          "y0": -699.9999389648438,
+          "x1": 750.0000610351562,
+          "y1": 700.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        }
+      ],
+      "selected_parts_cm": [
+        {
+          "width": 1500.0001220703125,
+          "depth": 1400.0001220703125,
+          "height": 800,
+          "bottom": 0
+        }
+      ],
+      "vertices": 1356
+    },
+    {
+      "mesh": "/Game/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Shop_D",
+      "definition": "Shop",
+      "regions_cm": [
+        {
+          "x0": -750.0000610351562,
+          "y0": -699.9999389648438,
+          "x1": 750.0000610351562,
+          "y1": 700.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        },
+        {
+          "x0": -736.4998779296875,
+          "y0": 818.5001220703125,
+          "x1": -713.4999389648438,
+          "y1": 841.5000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        },
+        {
+          "x0": 713.5001220703125,
+          "y0": 818.5,
+          "x1": 736.5000610351562,
+          "y1": 841.4999389648438,
+          "bottom_z": 0,
+          "fallback": false
+        }
+      ],
+      "selected_parts_cm": [
+        {
+          "width": 1500.0001220703125,
+          "depth": 1400.0001220703125,
+          "height": 800,
+          "bottom": 0
+        },
+        {
+          "width": 22.99993896484375,
+          "depth": 22.99993896484375,
+          "height": 471.9999694824219,
+          "bottom": 0
+        },
+        {
+          "width": 22.99993896484375,
+          "depth": 22.99993896484375,
+          "height": 471.9999694824219,
+          "bottom": 0
+        }
+      ],
+      "vertices": 1542
+    },
+    {
+      "mesh": "/Game/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Shop_D_bakery",
+      "definition": "Shop",
+      "regions_cm": [
+        {
+          "x0": -750.0000610351562,
+          "y0": -699.9999389648438,
+          "x1": 750.0000610351562,
+          "y1": 700.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        },
+        {
+          "x0": -736.4998779296875,
+          "y0": 818.5001220703125,
+          "x1": -713.4999389648438,
+          "y1": 841.5000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        },
+        {
+          "x0": 713.5001220703125,
+          "y0": 818.5,
+          "x1": 736.5000610351562,
+          "y1": 841.4999389648438,
+          "bottom_z": 0,
+          "fallback": false
+        }
+      ],
+      "selected_parts_cm": [
+        {
+          "width": 1500.0001220703125,
+          "depth": 1400.0001220703125,
+          "height": 800,
+          "bottom": 0
+        },
+        {
+          "width": 22.99993896484375,
+          "depth": 22.99993896484375,
+          "height": 471.9999694824219,
+          "bottom": 0
+        },
+        {
+          "width": 22.99993896484375,
+          "depth": 22.99993896484375,
+          "height": 471.9999694824219,
+          "bottom": 0
+        }
+      ],
+      "vertices": 1542
+    },
+    {
+      "mesh": "/Game/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Shop_D_books",
+      "definition": "Shop",
+      "regions_cm": [
+        {
+          "x0": -750.0000610351562,
+          "y0": -699.9999389648438,
+          "x1": 750.0000610351562,
+          "y1": 700.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        },
+        {
+          "x0": -736.4998779296875,
+          "y0": 818.5001220703125,
+          "x1": -713.4999389648438,
+          "y1": 841.5000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        },
+        {
+          "x0": 713.5001220703125,
+          "y0": 818.5,
+          "x1": 736.5000610351562,
+          "y1": 841.4999389648438,
+          "bottom_z": 0,
+          "fallback": false
+        }
+      ],
+      "selected_parts_cm": [
+        {
+          "width": 1500.0001220703125,
+          "depth": 1400.0001220703125,
+          "height": 800,
+          "bottom": 0
+        },
+        {
+          "width": 22.99993896484375,
+          "depth": 22.99993896484375,
+          "height": 471.9999694824219,
+          "bottom": 0
+        },
+        {
+          "width": 22.99993896484375,
+          "depth": 22.99993896484375,
+          "height": 471.9999694824219,
+          "bottom": 0
+        }
+      ],
+      "vertices": 1542
+    },
+    {
+      "mesh": "/Game/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Shop_D_cafe",
+      "definition": "Shop",
+      "regions_cm": [
+        {
+          "x0": -750.0000610351562,
+          "y0": -699.9999389648438,
+          "x1": 750.0000610351562,
+          "y1": 700.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        },
+        {
+          "x0": -736.4998779296875,
+          "y0": 818.5001220703125,
+          "x1": -713.4999389648438,
+          "y1": 841.5000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        },
+        {
+          "x0": 713.5001220703125,
+          "y0": 818.5,
+          "x1": 736.5000610351562,
+          "y1": 841.4999389648438,
+          "bottom_z": 0,
+          "fallback": false
+        }
+      ],
+      "selected_parts_cm": [
+        {
+          "width": 1500.0001220703125,
+          "depth": 1400.0001220703125,
+          "height": 800,
+          "bottom": 0
+        },
+        {
+          "width": 22.99993896484375,
+          "depth": 22.99993896484375,
+          "height": 471.9999694824219,
+          "bottom": 0
+        },
+        {
+          "width": 22.99993896484375,
+          "depth": 22.99993896484375,
+          "height": 471.9999694824219,
+          "bottom": 0
+        }
+      ],
+      "vertices": 1542
+    },
+    {
+      "mesh": "/Game/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Shop_D_outfitters",
+      "definition": "Shop",
+      "regions_cm": [
+        {
+          "x0": -750.0000610351562,
+          "y0": -699.9999389648438,
+          "x1": 750.0000610351562,
+          "y1": 700.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        },
+        {
+          "x0": -736.4998779296875,
+          "y0": 818.5001220703125,
+          "x1": -713.4999389648438,
+          "y1": 841.5000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        },
+        {
+          "x0": 713.5001220703125,
+          "y0": 818.5,
+          "x1": 736.5000610351562,
+          "y1": 841.4999389648438,
+          "bottom_z": 0,
+          "fallback": false
+        }
+      ],
+      "selected_parts_cm": [
+        {
+          "width": 1500.0001220703125,
+          "depth": 1400.0001220703125,
+          "height": 800,
+          "bottom": 0
+        },
+        {
+          "width": 22.99993896484375,
+          "depth": 22.99993896484375,
+          "height": 471.9999694824219,
+          "bottom": 0
+        },
+        {
+          "width": 22.99993896484375,
+          "depth": 22.99993896484375,
+          "height": 471.9999694824219,
+          "bottom": 0
+        }
+      ],
+      "vertices": 1542
+    },
+    {
+      "mesh": "/Game/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Shop_D_pharmacy",
+      "definition": "Shop",
+      "regions_cm": [
+        {
+          "x0": -750.0000610351562,
+          "y0": -699.9999389648438,
+          "x1": 750.0000610351562,
+          "y1": 700.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        },
+        {
+          "x0": -736.4998779296875,
+          "y0": 818.5001220703125,
+          "x1": -713.4999389648438,
+          "y1": 841.5000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        },
+        {
+          "x0": 713.5001220703125,
+          "y0": 818.5,
+          "x1": 736.5000610351562,
+          "y1": 841.4999389648438,
+          "bottom_z": 0,
+          "fallback": false
+        }
+      ],
+      "selected_parts_cm": [
+        {
+          "width": 1500.0001220703125,
+          "depth": 1400.0001220703125,
+          "height": 800,
+          "bottom": 0
+        },
+        {
+          "width": 22.99993896484375,
+          "depth": 22.99993896484375,
+          "height": 471.9999694824219,
+          "bottom": 0
+        },
+        {
+          "width": 22.99993896484375,
+          "depth": 22.99993896484375,
+          "height": 471.9999694824219,
+          "bottom": 0
+        }
+      ],
+      "vertices": 1542
+    },
+    {
+      "mesh": "/Game/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Shop_D_repairs",
+      "definition": "Shop",
+      "regions_cm": [
+        {
+          "x0": -750.0000610351562,
+          "y0": -699.9999389648438,
+          "x1": 750.0000610351562,
+          "y1": 700.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        },
+        {
+          "x0": -736.4998779296875,
+          "y0": 818.5001220703125,
+          "x1": -713.4999389648438,
+          "y1": 841.5000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        },
+        {
+          "x0": 713.5001220703125,
+          "y0": 818.5,
+          "x1": 736.5000610351562,
+          "y1": 841.4999389648438,
+          "bottom_z": 0,
+          "fallback": false
+        }
+      ],
+      "selected_parts_cm": [
+        {
+          "width": 1500.0001220703125,
+          "depth": 1400.0001220703125,
+          "height": 800,
+          "bottom": 0
+        },
+        {
+          "width": 22.99993896484375,
+          "depth": 22.99993896484375,
+          "height": 471.9999694824219,
+          "bottom": 0
+        },
+        {
+          "width": 22.99993896484375,
+          "depth": 22.99993896484375,
+          "height": 471.9999694824219,
+          "bottom": 0
+        }
+      ],
+      "vertices": 1542
+    },
+    {
+      "mesh": "/Game/CitySim/Art/LowDensity/Meshes/SM_LowDensity_Shop_D_tech",
+      "definition": "Shop",
+      "regions_cm": [
+        {
+          "x0": -750.0000610351562,
+          "y0": -699.9999389648438,
+          "x1": 750.0000610351562,
+          "y1": 700.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        },
+        {
+          "x0": -736.4998779296875,
+          "y0": 818.5001220703125,
+          "x1": -713.4999389648438,
+          "y1": 841.5000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        },
+        {
+          "x0": 713.5001220703125,
+          "y0": 818.5,
+          "x1": 736.5000610351562,
+          "y1": 841.4999389648438,
+          "bottom_z": 0,
+          "fallback": false
+        }
+      ],
+      "selected_parts_cm": [
+        {
+          "width": 1500.0001220703125,
+          "depth": 1400.0001220703125,
+          "height": 800,
+          "bottom": 0
+        },
+        {
+          "width": 22.99993896484375,
+          "depth": 22.99993896484375,
+          "height": 471.9999694824219,
+          "bottom": 0
+        },
+        {
+          "width": 22.99993896484375,
+          "depth": 22.99993896484375,
+          "height": 471.9999694824219,
+          "bottom": 0
+        }
+      ],
+      "vertices": 1542
+    },
+    {
+      "mesh": "/Game/CitySim/Art/Meshes/SM_Building_CoalPower_A",
+      "definition": "CoalPower",
+      "regions_cm": [
+        {
+          "x0": -650.0000610351562,
+          "y0": -599.9999389648438,
+          "x1": 250.0000457763672,
+          "y1": 600.0000610351562,
+          "bottom_z": 29.99998664855957,
+          "fallback": false
+        },
+        {
+          "x0": 400.0000305175781,
+          "y0": 214.99996948242188,
+          "x1": 473.6121826171875,
+          "y1": 257.4999694824219,
+          "bottom_z": 30.000009536743164,
+          "fallback": false
+        },
+        {
+          "x0": 400.0000305175781,
+          "y0": 214.99996948242188,
+          "x1": 485.0000305175781,
+          "y1": 299.9999694824219,
+          "bottom_z": 30.000009536743164,
+          "fallback": false
+        },
+        {
+          "x0": 326.3878479003906,
+          "y0": 214.99996948242188,
+          "x1": 400.0000305175781,
+          "y1": 257.4999694824219,
+          "bottom_z": 30.000009536743164,
+          "fallback": false
+        },
+        {
+          "x0": 315.0000305175781,
+          "y0": 214.99996948242188,
+          "x1": 400.0000305175781,
+          "y1": 299.9999694824219,
+          "bottom_z": 30.000009536743164,
+          "fallback": false
+        },
+        {
+          "x0": 400.0000305175781,
+          "y0": 214.99996948242188,
+          "x1": 485.0000305175781,
+          "y1": 384.9999694824219,
+          "bottom_z": 30.000009536743164,
+          "fallback": false
+        },
+        {
+          "x0": 315.0000305175781,
+          "y0": 214.99996948242188,
+          "x1": 400.0000305175781,
+          "y1": 384.9999694824219,
+          "bottom_z": 30.000009536743164,
+          "fallback": false
+        },
+        {
+          "x0": 400.0000305175781,
+          "y0": 299.9999694824219,
+          "x1": 485.0000305175781,
+          "y1": 384.9999694824219,
+          "bottom_z": 30.000009536743164,
+          "fallback": false
+        },
+        {
+          "x0": 400.0000305175781,
+          "y0": 342.49993896484375,
+          "x1": 473.6121826171875,
+          "y1": 384.9999694824219,
+          "bottom_z": 30.000009536743164,
+          "fallback": false
+        },
+        {
+          "x0": 315.0000305175781,
+          "y0": 299.9999694824219,
+          "x1": 400.0000305175781,
+          "y1": 384.9999694824219,
+          "bottom_z": 30.000009536743164,
+          "fallback": false
+        },
+        {
+          "x0": 326.38787841796875,
+          "y0": 342.4999694824219,
+          "x1": 400.0000305175781,
+          "y1": 384.9999694824219,
+          "bottom_z": 30.000009536743164,
+          "fallback": false
+        },
+        {
+          "x0": 399.9999694824219,
+          "y0": -385.0000305175781,
+          "x1": 473.61212158203125,
+          "y1": -342.5000305175781,
+          "bottom_z": 30.000009536743164,
+          "fallback": false
+        },
+        {
+          "x0": 399.9999694824219,
+          "y0": -385.0000305175781,
+          "x1": 484.9999694824219,
+          "y1": -300.0000305175781,
+          "bottom_z": 30.000009536743164,
+          "fallback": false
+        },
+        {
+          "x0": 326.3878173828125,
+          "y0": -385.0000305175781,
+          "x1": 399.9999694824219,
+          "y1": -342.5000305175781,
+          "bottom_z": 30.000009536743164,
+          "fallback": false
+        },
+        {
+          "x0": 314.9999694824219,
+          "y0": -385.0000305175781,
+          "x1": 399.9999694824219,
+          "y1": -300.0000305175781,
+          "bottom_z": 30.000009536743164,
+          "fallback": false
+        },
+        {
+          "x0": 399.9999694824219,
+          "y0": -385.0000305175781,
+          "x1": 484.9999694824219,
+          "y1": -215.0000457763672,
+          "bottom_z": 30.000009536743164,
+          "fallback": false
+        },
+        {
+          "x0": 314.9999694824219,
+          "y0": -385.0000305175781,
+          "x1": 399.9999694824219,
+          "y1": -215.0000457763672,
+          "bottom_z": 30.000009536743164,
+          "fallback": false
+        },
+        {
+          "x0": 399.9999694824219,
+          "y0": -300.0000305175781,
+          "x1": 484.9999694824219,
+          "y1": -215.0000457763672,
+          "bottom_z": 30.000009536743164,
+          "fallback": false
+        },
+        {
+          "x0": 399.9999694824219,
+          "y0": -257.50006103515625,
+          "x1": 473.6121520996094,
+          "y1": -215.0000457763672,
+          "bottom_z": 30.000009536743164,
+          "fallback": false
+        },
+        {
+          "x0": 314.9999694824219,
+          "y0": -300.0000305175781,
+          "x1": 399.9999694824219,
+          "y1": -215.0000457763672,
+          "bottom_z": 30.000009536743164,
+          "fallback": false
+        },
+        {
+          "x0": 326.3878173828125,
+          "y0": -257.5000305175781,
+          "x1": 399.9999694824219,
+          "y1": -215.0000457763672,
+          "bottom_z": 30.000009536743164,
+          "fallback": false
+        }
+      ],
+      "selected_parts_cm": [
+        {
+          "width": 900.0001068115234,
+          "depth": 1200.0000610351562,
+          "height": 600.0000133514404,
+          "bottom": 29.99998664855957
+        },
+        {
+          "width": 170,
+          "depth": 170,
+          "height": 1199.9998683929443,
+          "bottom": 30.000009536743164
+        },
+        {
+          "width": 170,
+          "depth": 169.99998474121094,
+          "height": 1199.9998683929443,
+          "bottom": 30.000009536743164
+        }
+      ],
+      "vertices": 360
+    },
+    {
+      "mesh": "/Game/CitySim/Art/Meshes/SM_Building_College_A",
+      "definition": "College",
+      "regions_cm": [
+        {
+          "x0": -900.0000610351562,
+          "y0": -749.9999389648438,
+          "x1": 900,
+          "y1": 150.0000762939453,
+          "bottom_z": 30.000009536743164,
+          "fallback": false
+        },
+        {
+          "x0": -1050,
+          "y0": 9.179391781799495e-05,
+          "x1": -549.9999389648438,
+          "y1": 1000.0001220703125,
+          "bottom_z": 29.99998664855957,
+          "fallback": false
+        },
+        {
+          "x0": 550,
+          "y0": -4.808252924703993e-05,
+          "x1": 1050.0001220703125,
+          "y1": 999.9999389648438,
+          "bottom_z": 29.99998664855957,
+          "fallback": false
+        },
+        {
+          "x0": -329.9999694824219,
+          "y0": 220.00003051757812,
+          "x1": -269.9999694824219,
+          "y1": 280.0000305175781,
+          "bottom_z": 29.99998664855957,
+          "fallback": false
+        },
+        {
+          "x0": -29.999982833862305,
+          "y0": 220,
+          "x1": 30.000024795532227,
+          "y1": 280,
+          "bottom_z": 29.99998664855957,
+          "fallback": false
+        },
+        {
+          "x0": 270.0000305175781,
+          "y0": 219.99998474121094,
+          "x1": 330.0000305175781,
+          "y1": 279.9999694824219,
+          "bottom_z": 29.99998664855957,
+          "fallback": false
+        },
+        {
+          "x0": -99.99998474121094,
+          "y0": 145.00001525878906,
+          "x1": 100.00001525878906,
+          "y1": 175.00001525878906,
+          "bottom_z": 49.99999237060547,
+          "fallback": false
+        }
+      ],
+      "selected_parts_cm": [
+        {
+          "width": 1800.0000610351562,
+          "depth": 900.0001373291016,
+          "height": 799.9999294281006,
+          "bottom": 30.000009536743164
+        },
+        {
+          "width": 500.00006103515625,
+          "depth": 1000.0000739877833,
+          "height": 500.00001335144043,
+          "bottom": 29.99998664855957
+        },
+        {
+          "width": 500.0001220703125,
+          "depth": 1000.0000307587616,
+          "height": 500.00001335144043,
+          "bottom": 29.99998664855957
+        },
+        {
+          "width": 60,
+          "depth": 60,
+          "height": 500.00001335144043,
+          "bottom": 29.99998664855957
+        },
+        {
+          "width": 60.00000762939453,
+          "depth": 60,
+          "height": 500.00001335144043,
+          "bottom": 29.99998664855957
+        },
+        {
+          "width": 60,
+          "depth": 60,
+          "height": 500.00001335144043,
+          "bottom": 29.99998664855957
+        },
+        {
+          "width": 200,
+          "depth": 30.000015258789062,
+          "height": 400.00000762939453,
+          "bottom": 49.99999237060547
+        }
+      ],
+      "vertices": 728
+    },
+    {
+      "mesh": "/Game/CitySim/Art/Meshes/SM_Building_Factory_A",
+      "definition": "Factory",
+      "regions_cm": [
+        {
+          "x0": -750.0000610351562,
+          "y0": -699.9999389648438,
+          "x1": 750.0000610351562,
+          "y1": 700.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        },
+        {
+          "x0": -299.99993896484375,
+          "y0": 650,
+          "x1": 300.00006103515625,
+          "y1": 750,
+          "bottom_z": 0,
+          "fallback": false
+        },
+        {
+          "x0": -149.99993896484375,
+          "y0": 700,
+          "x1": 150.00006103515625,
+          "y1": 730.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        }
+      ],
+      "selected_parts_cm": [
+        {
+          "width": 1500.0001220703125,
+          "depth": 1400.0001220703125,
+          "height": 700,
+          "bottom": 0
+        },
+        {
+          "width": 600,
+          "depth": 100,
+          "height": 500,
+          "bottom": 0
+        },
+        {
+          "width": 300.0000305175781,
+          "depth": 340,
+          "height": 400,
+          "bottom": 0
+        }
+      ],
+      "vertices": 1200
+    },
+    {
+      "mesh": "/Game/CitySim/Art/Meshes/SM_Building_Factory_High_A",
+      "definition": "Factory",
+      "regions_cm": [
+        {
+          "x0": -750.0000610351562,
+          "y0": -699.9999389648438,
+          "x1": 750.0000610351562,
+          "y1": 700.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        },
+        {
+          "x0": -399.99993896484375,
+          "y0": 650.0000610351562,
+          "x1": 400.00006103515625,
+          "y1": 750.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        },
+        {
+          "x0": -149.99993896484375,
+          "y0": 700,
+          "x1": 150.00006103515625,
+          "y1": 730.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        }
+      ],
+      "selected_parts_cm": [
+        {
+          "width": 1500.0001220703125,
+          "depth": 1400.0001220703125,
+          "height": 1700,
+          "bottom": 0
+        },
+        {
+          "width": 800,
+          "depth": 100.0001220703125,
+          "height": 700,
+          "bottom": 0
+        },
+        {
+          "width": 300.0000305175781,
+          "depth": 340,
+          "height": 400,
+          "bottom": 0
+        }
+      ],
+      "vertices": 4520
+    },
+    {
+      "mesh": "/Game/CitySim/Art/Meshes/SM_Building_Factory_Medium_A",
+      "definition": "Factory",
+      "regions_cm": [
+        {
+          "x0": -750.0000610351562,
+          "y0": -699.9999389648438,
+          "x1": 750.0000610351562,
+          "y1": 700.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        },
+        {
+          "x0": -349.99993896484375,
+          "y0": 650.0000610351562,
+          "x1": 350.00006103515625,
+          "y1": 750.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        },
+        {
+          "x0": -149.99993896484375,
+          "y0": 700,
+          "x1": 150.00006103515625,
+          "y1": 730.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        }
+      ],
+      "selected_parts_cm": [
+        {
+          "width": 1500.0001220703125,
+          "depth": 1400.0001220703125,
+          "height": 1200,
+          "bottom": 0
+        },
+        {
+          "width": 700,
+          "depth": 100.0001220703125,
+          "height": 600,
+          "bottom": 0
+        },
+        {
+          "width": 300.0000305175781,
+          "depth": 340,
+          "height": 400,
+          "bottom": 0
+        }
+      ],
+      "vertices": 3700
+    },
+    {
+      "mesh": "/Game/CitySim/Art/Meshes/SM_Building_Fire_A",
+      "definition": "Fire",
+      "regions_cm": [
+        {
+          "x0": -249.99996948242188,
+          "y0": 401,
+          "x1": 250.00003051757812,
+          "y1": 419.0000305175781,
+          "bottom_z": 6.705522537231445e-06,
+          "fallback": false
+        },
+        {
+          "x0": -1100,
+          "y0": -599.9998779296875,
+          "x1": 300.0000305175781,
+          "y1": 400.0000915527344,
+          "bottom_z": 6.705522537231445e-06,
+          "fallback": false
+        },
+        {
+          "x0": -950.0000610351562,
+          "y0": -549.9999389648438,
+          "x1": -650,
+          "y1": -249.9999237060547,
+          "bottom_z": -1.7136335372924805e-05,
+          "fallback": false
+        }
+      ],
+      "selected_parts_cm": [
+        {
+          "width": 500,
+          "depth": 18.000091552734375,
+          "height": 430.0000543296337,
+          "bottom": 6.705522537231445e-06
+        },
+        {
+          "width": 1400.0000305175781,
+          "depth": 1000.0000915527344,
+          "height": 600.0000543296337,
+          "bottom": 6.705522537231445e-06
+        },
+        {
+          "width": 300.00006103515625,
+          "depth": 300.00001525878906,
+          "height": 900.0000171363354,
+          "bottom": -1.7136335372924805e-05
+        }
+      ],
+      "vertices": 1480
+    },
+    {
+      "mesh": "/Game/CitySim/Art/Meshes/SM_Building_Fire_High_A",
+      "definition": "Fire",
+      "regions_cm": [
+        {
+          "x0": -149.99996948242188,
+          "y0": 402,
+          "x1": 150.00003051757812,
+          "y1": 416.0000305175781,
+          "bottom_z": 18.00001335144043,
+          "fallback": false
+        },
+        {
+          "x0": 400.0000305175781,
+          "y0": 401.9999694824219,
+          "x1": 700.0000610351562,
+          "y1": 416,
+          "bottom_z": 18.00001335144043,
+          "fallback": false
+        },
+        {
+          "x0": 750.0000610351562,
+          "y0": 401.99993896484375,
+          "x1": 1050,
+          "y1": 415.9999694824219,
+          "bottom_z": 18.00001335144043,
+          "fallback": false
+        },
+        {
+          "x0": -1100,
+          "y0": -599.9998779296875,
+          "x1": 300.0000305175781,
+          "y1": 400.0000915527344,
+          "bottom_z": 6.705522537231445e-06,
+          "fallback": false
+        },
+        {
+          "x0": 349.9999084472656,
+          "y0": -600.0000610351562,
+          "x1": 1090,
+          "y1": 399.9999694824219,
+          "bottom_z": 14.000016212463379,
+          "fallback": false
+        },
+        {
+          "x0": -950.0000610351562,
+          "y0": -549.9999389648438,
+          "x1": -650,
+          "y1": -249.9999237060547,
+          "bottom_z": -1.7136335372924805e-05,
+          "fallback": false
+        }
+      ],
+      "selected_parts_cm": [
+        {
+          "width": 300,
+          "depth": 14.000030517578125,
+          "height": 400.0000171661377,
+          "bottom": 18.00001335144043
+        },
+        {
+          "width": 300.0000305175781,
+          "depth": 14.00006103515625,
+          "height": 400.0000171661377,
+          "bottom": 18.00001335144043
+        },
+        {
+          "width": 299.99993896484375,
+          "depth": 14.00006103515625,
+          "height": 400.0000171661377,
+          "bottom": 18.00001335144043
+        },
+        {
+          "width": 1400.0000305175781,
+          "depth": 1000.0000915527344,
+          "height": 600.0000543296337,
+          "bottom": 6.705522537231445e-06
+        },
+        {
+          "width": 740.0000915527344,
+          "depth": 1000.0000915527344,
+          "height": 509.9999837875366,
+          "bottom": 14.000016212463379
+        },
+        {
+          "width": 300.00006103515625,
+          "depth": 300.00001525878906,
+          "height": 900.0000171363354,
+          "bottom": -1.7136335372924805e-05
+        }
+      ],
+      "vertices": 3016
+    },
+    {
+      "mesh": "/Game/CitySim/Art/Meshes/SM_Building_Fire_Medium_A",
+      "definition": "Fire",
+      "regions_cm": [
+        {
+          "x0": -149.99996948242188,
+          "y0": 402,
+          "x1": 150.00003051757812,
+          "y1": 416.0000305175781,
+          "bottom_z": 18.00001335144043,
+          "fallback": false
+        },
+        {
+          "x0": 400.0000305175781,
+          "y0": 401.9999694824219,
+          "x1": 700.0000610351562,
+          "y1": 416,
+          "bottom_z": 18.00001335144043,
+          "fallback": false
+        },
+        {
+          "x0": 750.0000610351562,
+          "y0": 401.99993896484375,
+          "x1": 1050,
+          "y1": 415.9999694824219,
+          "bottom_z": 18.00001335144043,
+          "fallback": false
+        },
+        {
+          "x0": -1100,
+          "y0": -599.9998779296875,
+          "x1": 300.0000305175781,
+          "y1": 400.0000915527344,
+          "bottom_z": 6.705522537231445e-06,
+          "fallback": false
+        },
+        {
+          "x0": 349.9999084472656,
+          "y0": -600.0000610351562,
+          "x1": 1090,
+          "y1": 399.9999694824219,
+          "bottom_z": 14.000016212463379,
+          "fallback": false
+        },
+        {
+          "x0": -950.0000610351562,
+          "y0": -549.9999389648438,
+          "x1": -650,
+          "y1": -249.9999237060547,
+          "bottom_z": -1.7136335372924805e-05,
+          "fallback": false
+        }
+      ],
+      "selected_parts_cm": [
+        {
+          "width": 300,
+          "depth": 14.000030517578125,
+          "height": 400.0000171661377,
+          "bottom": 18.00001335144043
+        },
+        {
+          "width": 300.0000305175781,
+          "depth": 14.00006103515625,
+          "height": 400.0000171661377,
+          "bottom": 18.00001335144043
+        },
+        {
+          "width": 299.99993896484375,
+          "depth": 14.00006103515625,
+          "height": 400.0000171661377,
+          "bottom": 18.00001335144043
+        },
+        {
+          "width": 1400.0000305175781,
+          "depth": 1000.0000915527344,
+          "height": 600.0000543296337,
+          "bottom": 6.705522537231445e-06
+        },
+        {
+          "width": 740.0000915527344,
+          "depth": 1000.0000915527344,
+          "height": 509.9999837875366,
+          "bottom": 14.000016212463379
+        },
+        {
+          "width": 300.00006103515625,
+          "depth": 300.00001525878906,
+          "height": 900.0000171363354,
+          "bottom": -1.7136335372924805e-05
+        }
+      ],
+      "vertices": 2152
+    },
+    {
+      "mesh": "/Game/CitySim/Art/Meshes/SM_Building_Hospital_A",
+      "definition": "Hospital",
+      "regions_cm": [
+        {
+          "x0": -1400.0001220703125,
+          "y0": -899.9998779296875,
+          "x1": 400.0000305175781,
+          "y1": 300.0001220703125,
+          "bottom_z": 22.00001335144043,
+          "fallback": false
+        }
+      ],
+      "selected_parts_cm": [
+        {
+          "width": 1800.0001525878906,
+          "depth": 1200.0001831054688,
+          "height": 699.9999866485596,
+          "bottom": 22.00001335144043
+        }
+      ],
+      "vertices": 1592
+    },
+    {
+      "mesh": "/Game/CitySim/Art/Meshes/SM_Building_Hospital_Medium_A",
+      "definition": "Hospital",
+      "regions_cm": [
+        {
+          "x0": -1400.0001220703125,
+          "y0": -899.9998779296875,
+          "x1": 400.0000305175781,
+          "y1": 300.0001220703125,
+          "bottom_z": 22.00001335144043,
+          "fallback": false
+        },
+        {
+          "x0": 499.9999084472656,
+          "y0": -900.0000610351562,
+          "x1": 1300,
+          "y1": 299.9999694824219,
+          "bottom_z": 21.99996566772461,
+          "fallback": false
+        }
+      ],
+      "selected_parts_cm": [
+        {
+          "width": 1800.0001525878906,
+          "depth": 1200.0001831054688,
+          "height": 699.9999866485596,
+          "bottom": 22.00001335144043
+        },
+        {
+          "width": 800.0000915527344,
+          "depth": 1200.0000915527344,
+          "height": 999.9999732971191,
+          "bottom": 21.99996566772461
+        }
+      ],
+      "vertices": 1992
+    },
+    {
+      "mesh": "/Game/CitySim/Art/Meshes/SM_Building_NuclearPower_A",
+      "definition": "NuclearPower",
+      "regions_cm": [
+        {
+          "x0": -449.9999694824219,
+          "y0": 250.0000457763672,
+          "x1": 450.0000915527344,
+          "y1": 950.0000610351562,
+          "bottom_z": 29.99998664855957,
+          "fallback": false
+        },
+        {
+          "x0": -600,
+          "y0": -99.9999771118164,
+          "x1": -253.58985900878906,
+          "y1": 100.00005340576172,
+          "bottom_z": 30.000001907348633,
+          "fallback": false
+        },
+        {
+          "x0": -800,
+          "y0": -99.9999771118164,
+          "x1": -253.58985900878906,
+          "y1": 100.00005340576172,
+          "bottom_z": 30.000001907348633,
+          "fallback": false
+        },
+        {
+          "x0": -1000,
+          "y0": -299.9999084472656,
+          "x1": -800,
+          "y1": 46.41023254394531,
+          "bottom_z": 30.000001907348633,
+          "fallback": false
+        },
+        {
+          "x0": -1000,
+          "y0": -299.9999084472656,
+          "x1": -253.58985900878906,
+          "y1": 46.41023254394531,
+          "bottom_z": 30.000001907348633,
+          "fallback": false
+        },
+        {
+          "x0": -253.5898895263672,
+          "y0": -499.9999694824219,
+          "x1": -200.00003051757812,
+          "y1": -99.9999771118164,
+          "bottom_z": 30.000001907348633,
+          "fallback": false
+        },
+        {
+          "x0": -1000,
+          "y0": -499.9999694824219,
+          "x1": -253.58985900878906,
+          "y1": -99.9999771118164,
+          "bottom_z": 30.000001907348633,
+          "fallback": false
+        },
+        {
+          "x0": -600.0000610351562,
+          "y0": -699.9999389648438,
+          "x1": -253.5898895263672,
+          "y1": -499.9999694824219,
+          "bottom_z": 30.000001907348633,
+          "fallback": false
+        },
+        {
+          "x0": -1000,
+          "y0": -699.9999389648438,
+          "x1": -253.5898895263672,
+          "y1": -299.9999084472656,
+          "bottom_z": 30.000001907348633,
+          "fallback": false
+        },
+        {
+          "x0": -1000,
+          "y0": -699.9999389648438,
+          "x1": -600.0000610351562,
+          "y1": -299.9999084472656,
+          "bottom_z": 30.000001907348633,
+          "fallback": false
+        },
+        {
+          "x0": -1000,
+          "y0": -646.4100952148438,
+          "x1": -800.0000610351562,
+          "y1": -299.9999084472656,
+          "bottom_z": 30.000001907348633,
+          "fallback": false
+        },
+        {
+          "x0": 599.9999389648438,
+          "y0": -700.0000610351562,
+          "x1": 946.41015625,
+          "y1": -500.0000915527344,
+          "bottom_z": 30.000001907348633,
+          "fallback": false
+        },
+        {
+          "x0": 599.9999389648438,
+          "y0": -700.0000610351562,
+          "x1": 1000,
+          "y1": -300.0000915527344,
+          "bottom_z": 30.000001907348633,
+          "fallback": false
+        },
+        {
+          "x0": 253.5897979736328,
+          "y0": -700.0000610351562,
+          "x1": 599.9999389648438,
+          "y1": -500.0000305175781,
+          "bottom_z": 30.000001907348633,
+          "fallback": false
+        },
+        {
+          "x0": 253.5897979736328,
+          "y0": -700.0000610351562,
+          "x1": 1000,
+          "y1": -300.0000915527344,
+          "bottom_z": 30.000001907348633,
+          "fallback": false
+        },
+        {
+          "x0": 800,
+          "y0": -300.0000915527344,
+          "x1": 1000,
+          "y1": 46.410091400146484,
+          "bottom_z": 30.000001907348633,
+          "fallback": false
+        },
+        {
+          "x0": 253.5897979736328,
+          "y0": -500.0000305175781,
+          "x1": 1000,
+          "y1": -100.0000228881836,
+          "bottom_z": 30.000001907348633,
+          "fallback": false
+        },
+        {
+          "x0": 253.58982849121094,
+          "y0": -300.0000915527344,
+          "x1": 1000,
+          "y1": 46.410091400146484,
+          "bottom_z": 30.000001907348633,
+          "fallback": false
+        },
+        {
+          "x0": 199.99996948242188,
+          "y0": -500.0000305175781,
+          "x1": 253.58982849121094,
+          "y1": -100.0000228881836,
+          "bottom_z": 30.000001907348633,
+          "fallback": false
+        },
+        {
+          "x0": 253.58982849121094,
+          "y0": -100.0000228881836,
+          "x1": 800,
+          "y1": 99.99994659423828,
+          "bottom_z": 30.000001907348633,
+          "fallback": false
+        },
+        {
+          "x0": 253.58982849121094,
+          "y0": -100.0000228881836,
+          "x1": 600,
+          "y1": 99.99994659423828,
+          "bottom_z": 30.000001907348633,
+          "fallback": false
+        }
+      ],
+      "selected_parts_cm": [
+        {
+          "width": 900.0000610351562,
+          "depth": 700.0001068115234,
+          "height": 700.0000133514404,
+          "bottom": 29.99998664855957
+        },
+        {
+          "width": 799.9999694824219,
+          "depth": 799.9999923706055,
+          "height": 999.9999980926514,
+          "bottom": 30.000001907348633
+        },
+        {
+          "width": 800.0000305175781,
+          "depth": 800.0000076293945,
+          "height": 999.9999980926514,
+          "bottom": 30.000001907348633
+        }
+      ],
+      "vertices": 600
+    },
+    {
+      "mesh": "/Game/CitySim/Art/Meshes/SM_Building_OilPower_A",
+      "definition": "OilPower",
+      "regions_cm": [
+        {
+          "x0": -650.0000610351562,
+          "y0": -599.9999389648438,
+          "x1": 250.0000457763672,
+          "y1": 600.0000610351562,
+          "bottom_z": 29.99998664855957,
+          "fallback": false
+        },
+        {
+          "x0": 290.0000305175781,
+          "y0": 79.99996185302734,
+          "x1": 510,
+          "y1": 109.47438049316406,
+          "bottom_z": 29.99998664855957,
+          "fallback": false
+        },
+        {
+          "x0": 290.0000305175781,
+          "y0": 109.474365234375,
+          "x1": 620,
+          "y1": 299.99993896484375,
+          "bottom_z": 29.99998664855957,
+          "fallback": false
+        },
+        {
+          "x0": 510,
+          "y0": 109.474365234375,
+          "x1": 620,
+          "y1": 299.99993896484375,
+          "bottom_z": 29.99998664855957,
+          "fallback": false
+        },
+        {
+          "x0": 209.4744415283203,
+          "y0": 109.47438049316406,
+          "x1": 620,
+          "y1": 299.99993896484375,
+          "bottom_z": 29.99998664855957,
+          "fallback": false
+        },
+        {
+          "x0": 510.0000305175781,
+          "y0": 299.99993896484375,
+          "x1": 620,
+          "y1": 490.5255432128906,
+          "bottom_z": 29.99998664855957,
+          "fallback": false
+        },
+        {
+          "x0": 400.0000305175781,
+          "y0": 299.99993896484375,
+          "x1": 620,
+          "y1": 519.9999389648438,
+          "bottom_z": 29.99998664855957,
+          "fallback": false
+        },
+        {
+          "x0": 209.4744415283203,
+          "y0": 189.99998474121094,
+          "x1": 620,
+          "y1": 409.9999694824219,
+          "bottom_z": 29.99998664855957,
+          "fallback": false
+        },
+        {
+          "x0": 209.47445678710938,
+          "y0": 299.99993896484375,
+          "x1": 620,
+          "y1": 519.9999389648438,
+          "bottom_z": 29.99998664855957,
+          "fallback": false
+        },
+        {
+          "x0": 180.00001525878906,
+          "y0": 189.99998474121094,
+          "x1": 209.47445678710938,
+          "y1": 409.9999694824219,
+          "bottom_z": 29.99998664855957,
+          "fallback": false
+        },
+        {
+          "x0": 209.47445678710938,
+          "y0": 409.9999694824219,
+          "x1": 400.0000305175781,
+          "y1": 519.9999389648438,
+          "bottom_z": 29.99998664855957,
+          "fallback": false
+        },
+        {
+          "x0": 399.9999694824219,
+          "y0": -520,
+          "x1": 590.5255737304688,
+          "y1": -410.0000305175781,
+          "bottom_z": 29.99998664855957,
+          "fallback": false
+        },
+        {
+          "x0": 399.9999694824219,
+          "y0": -520,
+          "x1": 619.9999389648438,
+          "y1": -300.00006103515625,
+          "bottom_z": 29.99998664855957,
+          "fallback": false
+        },
+        {
+          "x0": 209.47438049316406,
+          "y0": -520,
+          "x1": 399.9999694824219,
+          "y1": -410,
+          "bottom_z": 29.99998664855957,
+          "fallback": false
+        },
+        {
+          "x0": 209.47438049316406,
+          "y0": -520,
+          "x1": 619.9999389648438,
+          "y1": -300.00006103515625,
+          "bottom_z": 29.99998664855957,
+          "fallback": false
+        },
+        {
+          "x0": 179.99996948242188,
+          "y0": -410,
+          "x1": 209.4744110107422,
+          "y1": -190.00001525878906,
+          "bottom_z": 29.99998664855957,
+          "fallback": false
+        },
+        {
+          "x0": 209.47438049316406,
+          "y0": -410,
+          "x1": 619.9999389648438,
+          "y1": -190.00001525878906,
+          "bottom_z": 29.99998664855957,
+          "fallback": false
+        },
+        {
+          "x0": 209.4744110107422,
+          "y0": -300.00006103515625,
+          "x1": 619.9999389648438,
+          "y1": -109.47443389892578,
+          "bottom_z": 29.99998664855957,
+          "fallback": false
+        },
+        {
+          "x0": 290,
+          "y0": -300.00006103515625,
+          "x1": 619.9999389648438,
+          "y1": -109.47443389892578,
+          "bottom_z": 29.99998664855957,
+          "fallback": false
+        },
+        {
+          "x0": 290,
+          "y0": -109.47445678710938,
+          "x1": 509.9999694824219,
+          "y1": -80.00003051757812,
+          "bottom_z": 29.99998664855957,
+          "fallback": false
+        },
+        {
+          "x0": 509.9999694824219,
+          "y0": -300.00006103515625,
+          "x1": 619.9999389648438,
+          "y1": -109.47445678710938,
+          "bottom_z": 29.99998664855957,
+          "fallback": false
+        }
+      ],
+      "selected_parts_cm": [
+        {
+          "width": 900.0001068115234,
+          "depth": 1200.0000610351562,
+          "height": 600.0000133514404,
+          "bottom": 29.99998664855957
+        },
+        {
+          "width": 439.99998474121094,
+          "depth": 439.9999771118164,
+          "height": 500.00001335144043,
+          "bottom": 29.99998664855957
+        },
+        {
+          "width": 439.9999694824219,
+          "depth": 439.9999694824219,
+          "height": 500.00001335144043,
+          "bottom": 29.99998664855957
+        }
+      ],
+      "vertices": 432
+    },
+    {
+      "mesh": "/Game/CitySim/Art/Meshes/SM_Building_Police_A",
+      "definition": "Police",
+      "regions_cm": [
+        {
+          "x0": -249.99996948242188,
+          "y0": 401,
+          "x1": 250.00003051757812,
+          "y1": 419.0000305175781,
+          "bottom_z": 6.705522537231445e-06,
+          "fallback": false
+        },
+        {
+          "x0": -1100,
+          "y0": -599.9998779296875,
+          "x1": 300.0000305175781,
+          "y1": 400.0000915527344,
+          "bottom_z": 6.705522537231445e-06,
+          "fallback": false
+        }
+      ],
+      "selected_parts_cm": [
+        {
+          "width": 500,
+          "depth": 18.000091552734375,
+          "height": 430.0000543296337,
+          "bottom": 6.705522537231445e-06
+        },
+        {
+          "width": 1400.0000305175781,
+          "depth": 1000.0000915527344,
+          "height": 600.0000543296337,
+          "bottom": 6.705522537231445e-06
+        }
+      ],
+      "vertices": 1264
+    },
+    {
+      "mesh": "/Game/CitySim/Art/Meshes/SM_Building_Police_High_A",
+      "definition": "Police",
+      "regions_cm": [
+        {
+          "x0": -149.99996948242188,
+          "y0": 402,
+          "x1": 150.00003051757812,
+          "y1": 416.0000305175781,
+          "bottom_z": 18.00001335144043,
+          "fallback": false
+        },
+        {
+          "x0": 400.0000305175781,
+          "y0": 401.9999694824219,
+          "x1": 700.0000610351562,
+          "y1": 416,
+          "bottom_z": 18.00001335144043,
+          "fallback": false
+        },
+        {
+          "x0": 750.0000610351562,
+          "y0": 401.99993896484375,
+          "x1": 1050,
+          "y1": 415.9999694824219,
+          "bottom_z": 18.00001335144043,
+          "fallback": false
+        },
+        {
+          "x0": -1100,
+          "y0": -599.9998779296875,
+          "x1": 300.0000305175781,
+          "y1": 400.0000915527344,
+          "bottom_z": 6.705522537231445e-06,
+          "fallback": false
+        },
+        {
+          "x0": 349.9999084472656,
+          "y0": -600.0000610351562,
+          "x1": 1090,
+          "y1": 399.9999694824219,
+          "bottom_z": 14.000016212463379,
+          "fallback": false
+        }
+      ],
+      "selected_parts_cm": [
+        {
+          "width": 300,
+          "depth": 14.000030517578125,
+          "height": 400.0000171661377,
+          "bottom": 18.00001335144043
+        },
+        {
+          "width": 300.0000305175781,
+          "depth": 14.00006103515625,
+          "height": 400.0000171661377,
+          "bottom": 18.00001335144043
+        },
+        {
+          "width": 299.99993896484375,
+          "depth": 14.00006103515625,
+          "height": 400.0000171661377,
+          "bottom": 18.00001335144043
+        },
+        {
+          "width": 1400.0000305175781,
+          "depth": 1000.0000915527344,
+          "height": 600.0000543296337,
+          "bottom": 6.705522537231445e-06
+        },
+        {
+          "width": 740.0000915527344,
+          "depth": 1000.0000915527344,
+          "height": 509.9999837875366,
+          "bottom": 14.000016212463379
+        }
+      ],
+      "vertices": 2752
+    },
+    {
+      "mesh": "/Game/CitySim/Art/Meshes/SM_Building_Police_Medium_A",
+      "definition": "Police",
+      "regions_cm": [
+        {
+          "x0": -149.99996948242188,
+          "y0": 402,
+          "x1": 150.00003051757812,
+          "y1": 416.0000305175781,
+          "bottom_z": 18.00001335144043,
+          "fallback": false
+        },
+        {
+          "x0": 400.0000305175781,
+          "y0": 401.9999694824219,
+          "x1": 700.0000610351562,
+          "y1": 416,
+          "bottom_z": 18.00001335144043,
+          "fallback": false
+        },
+        {
+          "x0": 750.0000610351562,
+          "y0": 401.99993896484375,
+          "x1": 1050,
+          "y1": 415.9999694824219,
+          "bottom_z": 18.00001335144043,
+          "fallback": false
+        },
+        {
+          "x0": -1100,
+          "y0": -599.9998779296875,
+          "x1": 300.0000305175781,
+          "y1": 400.0000915527344,
+          "bottom_z": 6.705522537231445e-06,
+          "fallback": false
+        },
+        {
+          "x0": 349.9999084472656,
+          "y0": -600.0000610351562,
+          "x1": 1090,
+          "y1": 399.9999694824219,
+          "bottom_z": 14.000016212463379,
+          "fallback": false
+        }
+      ],
+      "selected_parts_cm": [
+        {
+          "width": 300,
+          "depth": 14.000030517578125,
+          "height": 400.0000171661377,
+          "bottom": 18.00001335144043
+        },
+        {
+          "width": 300.0000305175781,
+          "depth": 14.00006103515625,
+          "height": 400.0000171661377,
+          "bottom": 18.00001335144043
+        },
+        {
+          "width": 299.99993896484375,
+          "depth": 14.00006103515625,
+          "height": 400.0000171661377,
+          "bottom": 18.00001335144043
+        },
+        {
+          "width": 1400.0000305175781,
+          "depth": 1000.0000915527344,
+          "height": 600.0000543296337,
+          "bottom": 6.705522537231445e-06
+        },
+        {
+          "width": 740.0000915527344,
+          "depth": 1000.0000915527344,
+          "height": 509.9999837875366,
+          "bottom": 14.000016212463379
+        }
+      ],
+      "vertices": 1984
+    },
+    {
+      "mesh": "/Game/CitySim/Art/Meshes/SM_Building_Power_A",
+      "definition": "Power",
+      "regions_cm": [
+        {
+          "x0": -800.0000610351562,
+          "y0": -799.9999389648438,
+          "x1": 800.0000610351562,
+          "y1": 800.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        },
+        {
+          "x0": -149.9999237060547,
+          "y0": 799.9999389648438,
+          "x1": 150.0000762939453,
+          "y1": 829.9999389648438,
+          "bottom_z": 0,
+          "fallback": false
+        }
+      ],
+      "selected_parts_cm": [
+        {
+          "width": 1600.0001220703125,
+          "depth": 1600.0001220703125,
+          "height": 500,
+          "bottom": 0
+        },
+        {
+          "width": 300.00001525878906,
+          "depth": 240.00006103515625,
+          "height": 400,
+          "bottom": 0
+        }
+      ],
+      "vertices": 1032
+    },
+    {
+      "mesh": "/Game/CitySim/Art/Meshes/SM_Building_Power_High_A",
+      "definition": "Power",
+      "regions_cm": [
+        {
+          "x0": -800.0000610351562,
+          "y0": -799.9999389648438,
+          "x1": 800.0000610351562,
+          "y1": 800.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        },
+        {
+          "x0": -149.9999237060547,
+          "y0": 799.9999389648438,
+          "x1": 150.0000762939453,
+          "y1": 829.9999389648438,
+          "bottom_z": 0,
+          "fallback": false
+        }
+      ],
+      "selected_parts_cm": [
+        {
+          "width": 1600.0001220703125,
+          "depth": 1600.0001220703125,
+          "height": 500,
+          "bottom": 0
+        },
+        {
+          "width": 300.00001525878906,
+          "depth": 240.00006103515625,
+          "height": 400,
+          "bottom": 0
+        }
+      ],
+      "vertices": 1320
+    },
+    {
+      "mesh": "/Game/CitySim/Art/Meshes/SM_Building_Power_Medium_A",
+      "definition": "Power",
+      "regions_cm": [
+        {
+          "x0": -800.0000610351562,
+          "y0": -799.9999389648438,
+          "x1": 800.0000610351562,
+          "y1": 800.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        },
+        {
+          "x0": -149.9999237060547,
+          "y0": 799.9999389648438,
+          "x1": 150.0000762939453,
+          "y1": 829.9999389648438,
+          "bottom_z": 0,
+          "fallback": false
+        }
+      ],
+      "selected_parts_cm": [
+        {
+          "width": 1600.0001220703125,
+          "depth": 1600.0001220703125,
+          "height": 500,
+          "bottom": 0
+        },
+        {
+          "width": 300.00001525878906,
+          "depth": 240.00006103515625,
+          "height": 400,
+          "bottom": 0
+        }
+      ],
+      "vertices": 1128
+    },
+    {
+      "mesh": "/Game/CitySim/Art/Meshes/SM_Building_PrimarySchool_A",
+      "definition": "PrimarySchool",
+      "regions_cm": [
+        {
+          "x0": -585.0000610351562,
+          "y0": -567.9999389648438,
+          "x1": 585,
+          "y1": 368.0000305175781,
+          "bottom_z": 29.99998664855957,
+          "fallback": false
+        }
+      ],
+      "selected_parts_cm": [
+        {
+          "width": 1170.0000610351562,
+          "depth": 936.0000915527344,
+          "height": 449.9999828338623,
+          "bottom": 29.99998664855957
+        }
+      ],
+      "vertices": 544
+    },
+    {
+      "mesh": "/Game/CitySim/Art/Meshes/SM_Building_Recycling_A",
+      "definition": "Recycling",
+      "regions_cm": [
+        {
+          "x0": -449.9999694824219,
+          "y0": 301.0000305175781,
+          "x1": 50.00002670288086,
+          "y1": 315.0000305175781,
+          "bottom_z": 24.00001335144043,
+          "fallback": false
+        },
+        {
+          "x0": -1450.0001220703125,
+          "y0": -899.9998779296875,
+          "x1": 250.00003051757812,
+          "y1": 300.0001220703125,
+          "bottom_z": 24.00001335144043,
+          "fallback": false
+        }
+      ],
+      "selected_parts_cm": [
+        {
+          "width": 499.99999618530273,
+          "depth": 14.000030517578125,
+          "height": 399.99995613098145,
+          "bottom": 24.00001335144043
+        },
+        {
+          "width": 1700.0001525878906,
+          "depth": 1200.0001220703125,
+          "height": 619.9999256134033,
+          "bottom": 24.00001335144043
+        }
+      ],
+      "vertices": 1408
+    },
+    {
+      "mesh": "/Game/CitySim/Art/Meshes/SM_Building_Recycling_Medium_A",
+      "definition": "Recycling",
+      "regions_cm": [
+        {
+          "x0": -449.9999694824219,
+          "y0": 301.0000305175781,
+          "x1": 50.00002670288086,
+          "y1": 315.0000305175781,
+          "bottom_z": 24.00001335144043,
+          "fallback": false
+        },
+        {
+          "x0": -1450.0001220703125,
+          "y0": -899.9998779296875,
+          "x1": 250.00003051757812,
+          "y1": 300.0001220703125,
+          "bottom_z": 24.00001335144043,
+          "fallback": false
+        },
+        {
+          "x0": 649.9999389648438,
+          "y0": -800.0000610351562,
+          "x1": 1350,
+          "y1": 199.99993896484375,
+          "bottom_z": 23.999988555908203,
+          "fallback": false
+        }
+      ],
+      "selected_parts_cm": [
+        {
+          "width": 499.99999618530273,
+          "depth": 14.000030517578125,
+          "height": 399.99995613098145,
+          "bottom": 24.00001335144043
+        },
+        {
+          "width": 1700.0001525878906,
+          "depth": 1200.0001220703125,
+          "height": 619.9999256134033,
+          "bottom": 24.00001335144043
+        },
+        {
+          "width": 700.0000610351562,
+          "depth": 1000.0000610351562,
+          "height": 900.0000114440918,
+          "bottom": 23.999988555908203
+        }
+      ],
+      "vertices": 1432
+    },
+    {
+      "mesh": "/Game/CitySim/Art/Meshes/SM_Building_Residential_A",
+      "definition": "Home",
+      "regions_cm": [
+        {
+          "x0": -462.0000305175781,
+          "y0": -461.99993896484375,
+          "x1": 462.0000305175781,
+          "y1": 462.0000305175781,
+          "bottom_z": 0,
+          "fallback": false
+        },
+        {
+          "x0": -54.99995422363281,
+          "y0": 462,
+          "x1": 55.000038146972656,
+          "y1": 472.0000305175781,
+          "bottom_z": 0,
+          "fallback": false
+        },
+        {
+          "x0": -59.166622161865234,
+          "y0": 471.2803039550781,
+          "x1": -52.49995422363281,
+          "y1": 476.9621276855469,
+          "bottom_z": 0,
+          "fallback": false
+        },
+        {
+          "x0": 52.500038146972656,
+          "y0": 471.2802734375,
+          "x1": 59.16670608520508,
+          "y1": 476.9621276855469,
+          "bottom_z": 0,
+          "fallback": false
+        }
+      ],
+      "selected_parts_cm": [
+        {
+          "width": 924.0000610351562,
+          "depth": 924.0000610351562,
+          "height": 300,
+          "bottom": 0
+        },
+        {
+          "width": 109.99999237060547,
+          "depth": 10.00006103515625,
+          "height": 185,
+          "bottom": 0
+        },
+        {
+          "width": 118.33332824707031,
+          "depth": 5.681854248046875,
+          "height": 191.47499084472656,
+          "bottom": 0
+        }
+      ],
+      "vertices": 1330
+    },
+    {
+      "mesh": "/Game/CitySim/Art/Meshes/SM_Building_Residential_High_A",
+      "definition": "Home",
+      "regions_cm": [
+        {
+          "x0": -650.0000610351562,
+          "y0": -649.9999389648438,
+          "x1": 650.0000610351562,
+          "y1": 650.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        },
+        {
+          "x0": -149.99993896484375,
+          "y0": 650,
+          "x1": 150.00006103515625,
+          "y1": 680.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        }
+      ],
+      "selected_parts_cm": [
+        {
+          "width": 1300.0001220703125,
+          "depth": 1300.0001220703125,
+          "height": 3400,
+          "bottom": 0
+        },
+        {
+          "width": 300.0000305175781,
+          "depth": 390,
+          "height": 400,
+          "bottom": 0
+        }
+      ],
+      "vertices": 7612
+    },
+    {
+      "mesh": "/Game/CitySim/Art/Meshes/SM_Building_Residential_Medium_A",
+      "definition": "Home",
+      "regions_cm": [
+        {
+          "x0": -700.0000610351562,
+          "y0": -699.9999389648438,
+          "x1": 700.0000610351562,
+          "y1": 700.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        },
+        {
+          "x0": -149.99993896484375,
+          "y0": 700,
+          "x1": 150.00006103515625,
+          "y1": 730.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        }
+      ],
+      "selected_parts_cm": [
+        {
+          "width": 1400.0001220703125,
+          "depth": 1400.0001220703125,
+          "height": 1400,
+          "bottom": 0
+        },
+        {
+          "width": 300.0000305175781,
+          "depth": 340,
+          "height": 400,
+          "bottom": 0
+        }
+      ],
+      "vertices": 4276
+    },
+    {
+      "mesh": "/Game/CitySim/Art/Meshes/SM_Building_Residential_SeasonalSpace_A",
+      "definition": "Home",
+      "regions_cm": [
+        {
+          "x0": -462.0000305175781,
+          "y0": -461.99993896484375,
+          "x1": 462.0000305175781,
+          "y1": 462.0000305175781,
+          "bottom_z": 0,
+          "fallback": false
+        },
+        {
+          "x0": -54.99995422363281,
+          "y0": 462,
+          "x1": 55.000038146972656,
+          "y1": 472.0000305175781,
+          "bottom_z": 0,
+          "fallback": false
+        },
+        {
+          "x0": -59.166622161865234,
+          "y0": 471.2803039550781,
+          "x1": -52.49995422363281,
+          "y1": 476.9621276855469,
+          "bottom_z": 0,
+          "fallback": false
+        },
+        {
+          "x0": 52.500038146972656,
+          "y0": 471.2802734375,
+          "x1": 59.16670608520508,
+          "y1": 476.9621276855469,
+          "bottom_z": 0,
+          "fallback": false
+        }
+      ],
+      "selected_parts_cm": [
+        {
+          "width": 924.0000610351562,
+          "depth": 924.0000610351562,
+          "height": 300,
+          "bottom": 0
+        },
+        {
+          "width": 109.99999237060547,
+          "depth": 10.00006103515625,
+          "height": 185,
+          "bottom": 0
+        },
+        {
+          "width": 118.33332824707031,
+          "depth": 5.681854248046875,
+          "height": 191.47499084472656,
+          "bottom": 0
+        }
+      ],
+      "vertices": 1330
+    },
+    {
+      "mesh": "/Game/CitySim/Art/Meshes/SM_Building_School_A",
+      "definition": "School",
+      "regions_cm": [
+        {
+          "x0": -900.0000610351562,
+          "y0": -599.9999389648438,
+          "x1": 900.0000610351562,
+          "y1": 400.0000915527344,
+          "bottom_z": 13.999992370605469,
+          "fallback": false
+        }
+      ],
+      "selected_parts_cm": [
+        {
+          "width": 1800.0001220703125,
+          "depth": 1000.0001525878906,
+          "height": 580.0000076293945,
+          "bottom": 13.999992370605469
+        }
+      ],
+      "vertices": 968
+    },
+    {
+      "mesh": "/Game/CitySim/Art/Meshes/SM_Building_SecondarySchool_A",
+      "definition": "SecondarySchool",
+      "regions_cm": [
+        {
+          "x0": -885.0001220703125,
+          "y0": -807.9999389648438,
+          "x1": 885.0000610351562,
+          "y1": 608.0000610351562,
+          "bottom_z": 29.99998664855957,
+          "fallback": false
+        },
+        {
+          "x0": 408,
+          "y0": 121.99994659423828,
+          "x1": 1008.0000610351562,
+          "y1": 821.9998779296875,
+          "bottom_z": 29.99998664855957,
+          "fallback": false
+        }
+      ],
+      "selected_parts_cm": [
+        {
+          "width": 1770.0001831054688,
+          "depth": 1416.0001220703125,
+          "height": 700.0000133514404,
+          "bottom": 29.99998664855957
+        },
+        {
+          "width": 600.0000610351562,
+          "depth": 699.9999847412109,
+          "height": 399.9999828338623,
+          "bottom": 29.99998664855957
+        }
+      ],
+      "vertices": 872
+    },
+    {
+      "mesh": "/Game/CitySim/Art/Meshes/SM_Building_Service_A",
+      "definition": "Service",
+      "regions_cm": [
+        {
+          "x0": -800.0000610351562,
+          "y0": -699.9999389648438,
+          "x1": 800.0000610351562,
+          "y1": 700.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        },
+        {
+          "x0": -149.99993896484375,
+          "y0": 700,
+          "x1": 150.00006103515625,
+          "y1": 730.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        }
+      ],
+      "selected_parts_cm": [
+        {
+          "width": 1600.0001220703125,
+          "depth": 1400.0001220703125,
+          "height": 400,
+          "bottom": 0
+        },
+        {
+          "width": 300.0000305175781,
+          "depth": 340,
+          "height": 400,
+          "bottom": 0
+        }
+      ],
+      "vertices": 2520
+    },
+    {
+      "mesh": "/Game/CitySim/Art/Meshes/SM_Building_Service_High_A",
+      "definition": "Service",
+      "regions_cm": [
+        {
+          "x0": -800.0000610351562,
+          "y0": -699.9999389648438,
+          "x1": 800.0000610351562,
+          "y1": 700.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        },
+        {
+          "x0": -149.99993896484375,
+          "y0": 700,
+          "x1": 150.00006103515625,
+          "y1": 730.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        }
+      ],
+      "selected_parts_cm": [
+        {
+          "width": 1600.0001220703125,
+          "depth": 1400.0001220703125,
+          "height": 400,
+          "bottom": 0
+        },
+        {
+          "width": 300.0000305175781,
+          "depth": 340,
+          "height": 400,
+          "bottom": 0
+        }
+      ],
+      "vertices": 3768
+    },
+    {
+      "mesh": "/Game/CitySim/Art/Meshes/SM_Building_Service_Medium_A",
+      "definition": "Service",
+      "regions_cm": [
+        {
+          "x0": -800.0000610351562,
+          "y0": -699.9999389648438,
+          "x1": 800.0000610351562,
+          "y1": 700.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        },
+        {
+          "x0": -149.99993896484375,
+          "y0": 700,
+          "x1": 150.00006103515625,
+          "y1": 730.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        }
+      ],
+      "selected_parts_cm": [
+        {
+          "width": 1600.0001220703125,
+          "depth": 1400.0001220703125,
+          "height": 400,
+          "bottom": 0
+        },
+        {
+          "width": 300.0000305175781,
+          "depth": 340,
+          "height": 400,
+          "bottom": 0
+        }
+      ],
+      "vertices": 3336
+    },
+    {
+      "mesh": "/Game/CitySim/Art/Meshes/SM_Building_Shop_A",
+      "definition": "Shop",
+      "regions_cm": [
+        {
+          "x0": -750.0000610351562,
+          "y0": -699.9999389648438,
+          "x1": 750.0000610351562,
+          "y1": 700.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        },
+        {
+          "x0": -149.99993896484375,
+          "y0": 700,
+          "x1": 150.00006103515625,
+          "y1": 730.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        }
+      ],
+      "selected_parts_cm": [
+        {
+          "width": 1500.0001220703125,
+          "depth": 1400.0001220703125,
+          "height": 800,
+          "bottom": 0
+        },
+        {
+          "width": 300.0000305175781,
+          "depth": 340,
+          "height": 400,
+          "bottom": 0
+        }
+      ],
+      "vertices": 940
+    },
+    {
+      "mesh": "/Game/CitySim/Art/Meshes/SM_Building_Shop_High_A",
+      "definition": "Shop",
+      "regions_cm": [
+        {
+          "x0": -750.0000610351562,
+          "y0": -699.9999389648438,
+          "x1": 750.0000610351562,
+          "y1": 700.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        },
+        {
+          "x0": -149.99993896484375,
+          "y0": 700,
+          "x1": 150.00006103515625,
+          "y1": 730.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        }
+      ],
+      "selected_parts_cm": [
+        {
+          "width": 1500.0001220703125,
+          "depth": 1400.0001220703125,
+          "height": 900,
+          "bottom": 0
+        },
+        {
+          "width": 300.0000305175781,
+          "depth": 340,
+          "height": 400,
+          "bottom": 0
+        }
+      ],
+      "vertices": 5812
+    },
+    {
+      "mesh": "/Game/CitySim/Art/Meshes/SM_Building_Shop_Medium_A",
+      "definition": "Shop",
+      "regions_cm": [
+        {
+          "x0": -750.0000610351562,
+          "y0": -699.9999389648438,
+          "x1": 750.0000610351562,
+          "y1": 700.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        },
+        {
+          "x0": -149.99993896484375,
+          "y0": 700,
+          "x1": 150.00006103515625,
+          "y1": 730.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        }
+      ],
+      "selected_parts_cm": [
+        {
+          "width": 1500.0001220703125,
+          "depth": 1400.0001220703125,
+          "height": 1000,
+          "bottom": 0
+        },
+        {
+          "width": 300.0000305175781,
+          "depth": 340,
+          "height": 400,
+          "bottom": 0
+        }
+      ],
+      "vertices": 3364
+    },
+    {
+      "mesh": "/Game/CitySim/Art/Meshes/SM_Building_SolarPower_A",
+      "definition": "SolarPower",
+      "regions_cm": [
+        {
+          "x0": -824.9999389648438,
+          "y0": 675.0000610351562,
+          "x1": -774.9999389648438,
+          "y1": 725.0000610351562,
+          "bottom_z": 30.000009536743164,
+          "fallback": false
+        },
+        {
+          "x0": -825,
+          "y0": -24.999927520751953,
+          "x1": -775,
+          "y1": 25.000072479248047,
+          "bottom_z": 30.000009536743164,
+          "fallback": false
+        },
+        {
+          "x0": -825.0000610351562,
+          "y0": -724.9999389648438,
+          "x1": -775.0000610351562,
+          "y1": -674.9999389648438,
+          "bottom_z": 30.000009536743164,
+          "fallback": false
+        },
+        {
+          "x0": -324.99993896484375,
+          "y0": 675,
+          "x1": -274.99993896484375,
+          "y1": 725,
+          "bottom_z": 30.000009536743164,
+          "fallback": false
+        },
+        {
+          "x0": -325,
+          "y0": -24.999971389770508,
+          "x1": -275,
+          "y1": 25.000028610229492,
+          "bottom_z": 30.000009536743164,
+          "fallback": false
+        },
+        {
+          "x0": -325.00006103515625,
+          "y0": -725,
+          "x1": -275.00006103515625,
+          "y1": -675,
+          "bottom_z": 30.000009536743164,
+          "fallback": false
+        },
+        {
+          "x0": 175.00006103515625,
+          "y0": 675,
+          "x1": 225.00006103515625,
+          "y1": 725,
+          "bottom_z": 30.000009536743164,
+          "fallback": false
+        },
+        {
+          "x0": 175,
+          "y0": -25.000015258789062,
+          "x1": 225,
+          "y1": 24.999984741210938,
+          "bottom_z": 30.000009536743164,
+          "fallback": false
+        },
+        {
+          "x0": 174.99993896484375,
+          "y0": -725,
+          "x1": 224.99993896484375,
+          "y1": -675,
+          "bottom_z": 30.000009536743164,
+          "fallback": false
+        },
+        {
+          "x0": 675.0000610351562,
+          "y0": 674.9999389648438,
+          "x1": 725.0000610351562,
+          "y1": 724.9999389648438,
+          "bottom_z": 30.000009536743164,
+          "fallback": false
+        },
+        {
+          "x0": 675,
+          "y0": -25.000059127807617,
+          "x1": 725,
+          "y1": 24.999940872192383,
+          "bottom_z": 30.000009536743164,
+          "fallback": false
+        },
+        {
+          "x0": 674.9999389648438,
+          "y0": -725.0000610351562,
+          "x1": 724.9999389648438,
+          "y1": -675.0000610351562,
+          "bottom_z": 30.000009536743164,
+          "fallback": false
+        }
+      ],
+      "selected_parts_cm": [
+        {
+          "width": 50,
+          "depth": 50,
+          "height": 180.0000057220459,
+          "bottom": 30.000009536743164
+        },
+        {
+          "width": 50,
+          "depth": 50.000003814697266,
+          "height": 180.0000057220459,
+          "bottom": 30.000009536743164
+        },
+        {
+          "width": 50,
+          "depth": 50,
+          "height": 180.0000057220459,
+          "bottom": 30.000009536743164
+        },
+        {
+          "width": 50,
+          "depth": 50,
+          "height": 180.0000057220459,
+          "bottom": 30.000009536743164
+        },
+        {
+          "width": 50,
+          "depth": 50.000003814697266,
+          "height": 180.0000057220459,
+          "bottom": 30.000009536743164
+        },
+        {
+          "width": 50,
+          "depth": 50,
+          "height": 180.0000057220459,
+          "bottom": 30.000009536743164
+        },
+        {
+          "width": 50,
+          "depth": 50,
+          "height": 180.0000057220459,
+          "bottom": 30.000009536743164
+        },
+        {
+          "width": 50,
+          "depth": 50.000003814697266,
+          "height": 180.0000057220459,
+          "bottom": 30.000009536743164
+        },
+        {
+          "width": 50,
+          "depth": 50,
+          "height": 180.0000057220459,
+          "bottom": 30.000009536743164
+        },
+        {
+          "width": 50,
+          "depth": 50,
+          "height": 180.0000057220459,
+          "bottom": 30.000009536743164
+        },
+        {
+          "width": 50,
+          "depth": 50.000003814697266,
+          "height": 180.0000057220459,
+          "bottom": 30.000009536743164
+        },
+        {
+          "width": 50,
+          "depth": 50,
+          "height": 180.0000057220459,
+          "bottom": 30.000009536743164
+        }
+      ],
+      "vertices": 600
+    },
+    {
+      "mesh": "/Game/CitySim/Art/Meshes/SM_Building_WasteDepot_A",
+      "definition": "WasteDepot",
+      "regions_cm": [
+        {
+          "x0": -449.9999694824219,
+          "y0": 301.0000305175781,
+          "x1": 50.00002670288086,
+          "y1": 315.0000305175781,
+          "bottom_z": 24.00001335144043,
+          "fallback": false
+        },
+        {
+          "x0": -1450.0001220703125,
+          "y0": -899.9998779296875,
+          "x1": 250.00003051757812,
+          "y1": 300.0001220703125,
+          "bottom_z": 24.00001335144043,
+          "fallback": false
+        }
+      ],
+      "selected_parts_cm": [
+        {
+          "width": 499.99999618530273,
+          "depth": 14.000030517578125,
+          "height": 399.99995613098145,
+          "bottom": 24.00001335144043
+        },
+        {
+          "width": 1700.0001525878906,
+          "depth": 1200.0001220703125,
+          "height": 619.9999256134033,
+          "bottom": 24.00001335144043
+        }
+      ],
+      "vertices": 1192
+    },
+    {
+      "mesh": "/Game/CitySim/Art/Meshes/SM_Building_WasteDepot_Medium_A",
+      "definition": "WasteDepot",
+      "regions_cm": [
+        {
+          "x0": -449.9999694824219,
+          "y0": 301.0000305175781,
+          "x1": 50.00002670288086,
+          "y1": 315.0000305175781,
+          "bottom_z": 24.00001335144043,
+          "fallback": false
+        },
+        {
+          "x0": -1450.0001220703125,
+          "y0": -899.9998779296875,
+          "x1": 250.00003051757812,
+          "y1": 300.0001220703125,
+          "bottom_z": 24.00001335144043,
+          "fallback": false
+        },
+        {
+          "x0": 649.9999389648438,
+          "y0": -800.0000610351562,
+          "x1": 1350,
+          "y1": 199.99993896484375,
+          "bottom_z": 23.999988555908203,
+          "fallback": false
+        }
+      ],
+      "selected_parts_cm": [
+        {
+          "width": 499.99999618530273,
+          "depth": 14.000030517578125,
+          "height": 399.99995613098145,
+          "bottom": 24.00001335144043
+        },
+        {
+          "width": 1700.0001525878906,
+          "depth": 1200.0001220703125,
+          "height": 619.9999256134033,
+          "bottom": 24.00001335144043
+        },
+        {
+          "width": 700.0000610351562,
+          "depth": 1000.0000610351562,
+          "height": 900.0000114440918,
+          "bottom": 23.999988555908203
+        }
+      ],
+      "vertices": 1216
+    },
+    {
+      "mesh": "/Game/CitySim/Art/Meshes/SM_Building_WaterTower_A",
+      "definition": "WaterTower",
+      "regions_cm": [
+        {
+          "x0": -20.000024795532227,
+          "y0": -270,
+          "x1": 19.999980926513672,
+          "y1": -230,
+          "bottom_z": 30.000009536743164,
+          "fallback": false
+        },
+        {
+          "x0": -224.99998474121094,
+          "y0": 175.00001525878906,
+          "x1": -174.99998474121094,
+          "y1": 225.00001525878906,
+          "bottom_z": 30.000009536743164,
+          "fallback": false
+        },
+        {
+          "x0": -225.00001525878906,
+          "y0": -224.99998474121094,
+          "x1": -175.00001525878906,
+          "y1": -174.99998474121094,
+          "bottom_z": 30.000009536743164,
+          "fallback": false
+        },
+        {
+          "x0": 175.00001525878906,
+          "y0": 174.99998474121094,
+          "x1": 225.00001525878906,
+          "y1": 224.99998474121094,
+          "bottom_z": 30.000009536743164,
+          "fallback": false
+        },
+        {
+          "x0": 174.99998474121094,
+          "y0": -225.00001525878906,
+          "x1": 224.99998474121094,
+          "y1": -175.00001525878906,
+          "bottom_z": 30.000009536743164,
+          "fallback": false
+        }
+      ],
+      "selected_parts_cm": [
+        {
+          "width": 40.0000057220459,
+          "depth": 40,
+          "height": 899.9999294281006,
+          "bottom": 30.000009536743164
+        },
+        {
+          "width": 50,
+          "depth": 50,
+          "height": 799.9999294281006,
+          "bottom": 30.000009536743164
+        },
+        {
+          "width": 50,
+          "depth": 50,
+          "height": 799.9999294281006,
+          "bottom": 30.000009536743164
+        },
+        {
+          "width": 50,
+          "depth": 50,
+          "height": 799.9999294281006,
+          "bottom": 30.000009536743164
+        },
+        {
+          "width": 50,
+          "depth": 50,
+          "height": 799.9999294281006,
+          "bottom": 30.000009536743164
+        }
+      ],
+      "vertices": 528
+    },
+    {
+      "mesh": "/Game/CitySim/Art/Meshes/SM_Building_WindPower_A",
+      "definition": "WindPower",
+      "regions_cm": [
+        {
+          "x0": 56.29164123535156,
+          "y0": -32.500003814697266,
+          "x1": 65,
+          "y1": 32.49999237060547,
+          "bottom_z": 30.000057220458984,
+          "fallback": false
+        },
+        {
+          "x0": 32.500003814697266,
+          "y0": -32.500003814697266,
+          "x1": 56.291648864746094,
+          "y1": 56.29164123535156,
+          "bottom_z": 30.000057220458984,
+          "fallback": false
+        },
+        {
+          "x0": 32.49999237060547,
+          "y0": -56.291648864746094,
+          "x1": 56.29164123535156,
+          "y1": 56.29164123535156,
+          "bottom_z": 30.000057220458984,
+          "fallback": false
+        },
+        {
+          "x0": -32.500003814697266,
+          "y0": -65,
+          "x1": 32.49999237060547,
+          "y1": -56.29164123535156,
+          "bottom_z": 30.000057220458984,
+          "fallback": false
+        },
+        {
+          "x0": -56.291648864746094,
+          "y0": -56.291648864746094,
+          "x1": 32.49999237060547,
+          "y1": -32.49999237060547,
+          "bottom_z": 30.000057220458984,
+          "fallback": false
+        },
+        {
+          "x0": -56.291648864746094,
+          "y0": -56.291648864746094,
+          "x1": 32.500003814697266,
+          "y1": 56.29164123535156,
+          "bottom_z": 30.000057220458984,
+          "fallback": false
+        },
+        {
+          "x0": -32.49999237060547,
+          "y0": 56.29164123535156,
+          "x1": 32.500003814697266,
+          "y1": 65,
+          "bottom_z": 30.000057220458984,
+          "fallback": false
+        },
+        {
+          "x0": -56.291648864746094,
+          "y0": -32.49999237060547,
+          "x1": 32.500003814697266,
+          "y1": 56.291648864746094,
+          "bottom_z": 30.000057220458984,
+          "fallback": false
+        },
+        {
+          "x0": -56.291648864746094,
+          "y0": -32.49999237060547,
+          "x1": -32.49999237060547,
+          "y1": 56.291648864746094,
+          "bottom_z": 30.000057220458984,
+          "fallback": false
+        },
+        {
+          "x0": -65,
+          "y0": -32.49999237060547,
+          "x1": -56.29164123535156,
+          "y1": 32.500003814697266,
+          "bottom_z": 30.000057220458984,
+          "fallback": false
+        }
+      ],
+      "selected_parts_cm": [
+        {
+          "width": 130,
+          "depth": 130,
+          "height": 1700.0000648498535,
+          "bottom": 30.000057220458984
+        }
+      ],
+      "vertices": 216
+    },
+    {
+      "mesh": "/Game/CitySim/Art/Meshes/SM_CommercialHigh_StoreBakery",
+      "definition": "Shop",
+      "regions_cm": [
+        {
+          "x0": -750.0000610351562,
+          "y0": -699.9999389648438,
+          "x1": 750.0000610351562,
+          "y1": 700.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        },
+        {
+          "x0": -149.99993896484375,
+          "y0": 700,
+          "x1": 150.00006103515625,
+          "y1": 730.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        }
+      ],
+      "selected_parts_cm": [
+        {
+          "width": 1500.0001220703125,
+          "depth": 1400.0001220703125,
+          "height": 900,
+          "bottom": 0
+        },
+        {
+          "width": 300.0000305175781,
+          "depth": 340,
+          "height": 400,
+          "bottom": 0
+        }
+      ],
+      "vertices": 5812
+    },
+    {
+      "mesh": "/Game/CitySim/Art/Meshes/SM_CommercialHigh_StoreBooks",
+      "definition": "Shop",
+      "regions_cm": [
+        {
+          "x0": -750.0000610351562,
+          "y0": -699.9999389648438,
+          "x1": 750.0000610351562,
+          "y1": 700.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        },
+        {
+          "x0": -149.99993896484375,
+          "y0": 700,
+          "x1": 150.00006103515625,
+          "y1": 730.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        }
+      ],
+      "selected_parts_cm": [
+        {
+          "width": 1500.0001220703125,
+          "depth": 1400.0001220703125,
+          "height": 900,
+          "bottom": 0
+        },
+        {
+          "width": 300.0000305175781,
+          "depth": 340,
+          "height": 400,
+          "bottom": 0
+        }
+      ],
+      "vertices": 5812
+    },
+    {
+      "mesh": "/Game/CitySim/Art/Meshes/SM_CommercialHigh_StoreCafe",
+      "definition": "Shop",
+      "regions_cm": [
+        {
+          "x0": -750.0000610351562,
+          "y0": -699.9999389648438,
+          "x1": 750.0000610351562,
+          "y1": 700.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        },
+        {
+          "x0": -149.99993896484375,
+          "y0": 700,
+          "x1": 150.00006103515625,
+          "y1": 730.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        }
+      ],
+      "selected_parts_cm": [
+        {
+          "width": 1500.0001220703125,
+          "depth": 1400.0001220703125,
+          "height": 900,
+          "bottom": 0
+        },
+        {
+          "width": 300.0000305175781,
+          "depth": 340,
+          "height": 400,
+          "bottom": 0
+        }
+      ],
+      "vertices": 5812
+    },
+    {
+      "mesh": "/Game/CitySim/Art/Meshes/SM_CommercialHigh_StoreMarket",
+      "definition": "Shop",
+      "regions_cm": [
+        {
+          "x0": -750.0000610351562,
+          "y0": -699.9999389648438,
+          "x1": 750.0000610351562,
+          "y1": 700.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        },
+        {
+          "x0": -149.99993896484375,
+          "y0": 700,
+          "x1": 150.00006103515625,
+          "y1": 730.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        }
+      ],
+      "selected_parts_cm": [
+        {
+          "width": 1500.0001220703125,
+          "depth": 1400.0001220703125,
+          "height": 900,
+          "bottom": 0
+        },
+        {
+          "width": 300.0000305175781,
+          "depth": 340,
+          "height": 400,
+          "bottom": 0
+        }
+      ],
+      "vertices": 5812
+    },
+    {
+      "mesh": "/Game/CitySim/Art/Meshes/SM_CommercialHigh_StoreOutfitters",
+      "definition": "Shop",
+      "regions_cm": [
+        {
+          "x0": -750.0000610351562,
+          "y0": -699.9999389648438,
+          "x1": 750.0000610351562,
+          "y1": 700.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        },
+        {
+          "x0": -149.99993896484375,
+          "y0": 700,
+          "x1": 150.00006103515625,
+          "y1": 730.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        }
+      ],
+      "selected_parts_cm": [
+        {
+          "width": 1500.0001220703125,
+          "depth": 1400.0001220703125,
+          "height": 900,
+          "bottom": 0
+        },
+        {
+          "width": 300.0000305175781,
+          "depth": 340,
+          "height": 400,
+          "bottom": 0
+        }
+      ],
+      "vertices": 5812
+    },
+    {
+      "mesh": "/Game/CitySim/Art/Meshes/SM_CommercialHigh_StorePharmacy",
+      "definition": "Shop",
+      "regions_cm": [
+        {
+          "x0": -750.0000610351562,
+          "y0": -699.9999389648438,
+          "x1": 750.0000610351562,
+          "y1": 700.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        },
+        {
+          "x0": -149.99993896484375,
+          "y0": 700,
+          "x1": 150.00006103515625,
+          "y1": 730.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        }
+      ],
+      "selected_parts_cm": [
+        {
+          "width": 1500.0001220703125,
+          "depth": 1400.0001220703125,
+          "height": 900,
+          "bottom": 0
+        },
+        {
+          "width": 300.0000305175781,
+          "depth": 340,
+          "height": 400,
+          "bottom": 0
+        }
+      ],
+      "vertices": 5812
+    },
+    {
+      "mesh": "/Game/CitySim/Art/Meshes/SM_CommercialHigh_StoreRepairs",
+      "definition": "Shop",
+      "regions_cm": [
+        {
+          "x0": -750.0000610351562,
+          "y0": -699.9999389648438,
+          "x1": 750.0000610351562,
+          "y1": 700.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        },
+        {
+          "x0": -149.99993896484375,
+          "y0": 700,
+          "x1": 150.00006103515625,
+          "y1": 730.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        }
+      ],
+      "selected_parts_cm": [
+        {
+          "width": 1500.0001220703125,
+          "depth": 1400.0001220703125,
+          "height": 900,
+          "bottom": 0
+        },
+        {
+          "width": 300.0000305175781,
+          "depth": 340,
+          "height": 400,
+          "bottom": 0
+        }
+      ],
+      "vertices": 5812
+    },
+    {
+      "mesh": "/Game/CitySim/Art/Meshes/SM_CommercialHigh_StoreTech",
+      "definition": "Shop",
+      "regions_cm": [
+        {
+          "x0": -750.0000610351562,
+          "y0": -699.9999389648438,
+          "x1": 750.0000610351562,
+          "y1": 700.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        },
+        {
+          "x0": -149.99993896484375,
+          "y0": 700,
+          "x1": 150.00006103515625,
+          "y1": 730.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        }
+      ],
+      "selected_parts_cm": [
+        {
+          "width": 1500.0001220703125,
+          "depth": 1400.0001220703125,
+          "height": 900,
+          "bottom": 0
+        },
+        {
+          "width": 300.0000305175781,
+          "depth": 340,
+          "height": 400,
+          "bottom": 0
+        }
+      ],
+      "vertices": 5812
+    },
+    {
+      "mesh": "/Game/CitySim/Art/Meshes/SM_CommercialLow_StoreBakery",
+      "definition": "Shop",
+      "regions_cm": [
+        {
+          "x0": -750.0000610351562,
+          "y0": -699.9999389648438,
+          "x1": 750.0000610351562,
+          "y1": 700.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        },
+        {
+          "x0": -149.99993896484375,
+          "y0": 700,
+          "x1": 150.00006103515625,
+          "y1": 730.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        }
+      ],
+      "selected_parts_cm": [
+        {
+          "width": 1500.0001220703125,
+          "depth": 1400.0001220703125,
+          "height": 800,
+          "bottom": 0
+        },
+        {
+          "width": 300.0000305175781,
+          "depth": 340,
+          "height": 400,
+          "bottom": 0
+        }
+      ],
+      "vertices": 940
+    },
+    {
+      "mesh": "/Game/CitySim/Art/Meshes/SM_CommercialLow_StoreBooks",
+      "definition": "Shop",
+      "regions_cm": [
+        {
+          "x0": -750.0000610351562,
+          "y0": -699.9999389648438,
+          "x1": 750.0000610351562,
+          "y1": 700.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        },
+        {
+          "x0": -149.99993896484375,
+          "y0": 700,
+          "x1": 150.00006103515625,
+          "y1": 730.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        }
+      ],
+      "selected_parts_cm": [
+        {
+          "width": 1500.0001220703125,
+          "depth": 1400.0001220703125,
+          "height": 800,
+          "bottom": 0
+        },
+        {
+          "width": 300.0000305175781,
+          "depth": 340,
+          "height": 400,
+          "bottom": 0
+        }
+      ],
+      "vertices": 940
+    },
+    {
+      "mesh": "/Game/CitySim/Art/Meshes/SM_CommercialLow_StoreCafe",
+      "definition": "Shop",
+      "regions_cm": [
+        {
+          "x0": -750.0000610351562,
+          "y0": -699.9999389648438,
+          "x1": 750.0000610351562,
+          "y1": 700.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        },
+        {
+          "x0": -149.99993896484375,
+          "y0": 700,
+          "x1": 150.00006103515625,
+          "y1": 730.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        }
+      ],
+      "selected_parts_cm": [
+        {
+          "width": 1500.0001220703125,
+          "depth": 1400.0001220703125,
+          "height": 800,
+          "bottom": 0
+        },
+        {
+          "width": 300.0000305175781,
+          "depth": 340,
+          "height": 400,
+          "bottom": 0
+        }
+      ],
+      "vertices": 940
+    },
+    {
+      "mesh": "/Game/CitySim/Art/Meshes/SM_CommercialLow_StoreMarket",
+      "definition": "Shop",
+      "regions_cm": [
+        {
+          "x0": -750.0000610351562,
+          "y0": -699.9999389648438,
+          "x1": 750.0000610351562,
+          "y1": 700.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        },
+        {
+          "x0": -149.99993896484375,
+          "y0": 700,
+          "x1": 150.00006103515625,
+          "y1": 730.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        }
+      ],
+      "selected_parts_cm": [
+        {
+          "width": 1500.0001220703125,
+          "depth": 1400.0001220703125,
+          "height": 800,
+          "bottom": 0
+        },
+        {
+          "width": 300.0000305175781,
+          "depth": 340,
+          "height": 400,
+          "bottom": 0
+        }
+      ],
+      "vertices": 940
+    },
+    {
+      "mesh": "/Game/CitySim/Art/Meshes/SM_CommercialLow_StoreOutfitters",
+      "definition": "Shop",
+      "regions_cm": [
+        {
+          "x0": -750.0000610351562,
+          "y0": -699.9999389648438,
+          "x1": 750.0000610351562,
+          "y1": 700.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        },
+        {
+          "x0": -149.99993896484375,
+          "y0": 700,
+          "x1": 150.00006103515625,
+          "y1": 730.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        }
+      ],
+      "selected_parts_cm": [
+        {
+          "width": 1500.0001220703125,
+          "depth": 1400.0001220703125,
+          "height": 800,
+          "bottom": 0
+        },
+        {
+          "width": 300.0000305175781,
+          "depth": 340,
+          "height": 400,
+          "bottom": 0
+        }
+      ],
+      "vertices": 940
+    },
+    {
+      "mesh": "/Game/CitySim/Art/Meshes/SM_CommercialLow_StorePharmacy",
+      "definition": "Shop",
+      "regions_cm": [
+        {
+          "x0": -750.0000610351562,
+          "y0": -699.9999389648438,
+          "x1": 750.0000610351562,
+          "y1": 700.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        },
+        {
+          "x0": -149.99993896484375,
+          "y0": 700,
+          "x1": 150.00006103515625,
+          "y1": 730.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        }
+      ],
+      "selected_parts_cm": [
+        {
+          "width": 1500.0001220703125,
+          "depth": 1400.0001220703125,
+          "height": 800,
+          "bottom": 0
+        },
+        {
+          "width": 300.0000305175781,
+          "depth": 340,
+          "height": 400,
+          "bottom": 0
+        }
+      ],
+      "vertices": 940
+    },
+    {
+      "mesh": "/Game/CitySim/Art/Meshes/SM_CommercialLow_StoreRepairs",
+      "definition": "Shop",
+      "regions_cm": [
+        {
+          "x0": -750.0000610351562,
+          "y0": -699.9999389648438,
+          "x1": 750.0000610351562,
+          "y1": 700.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        },
+        {
+          "x0": -149.99993896484375,
+          "y0": 700,
+          "x1": 150.00006103515625,
+          "y1": 730.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        }
+      ],
+      "selected_parts_cm": [
+        {
+          "width": 1500.0001220703125,
+          "depth": 1400.0001220703125,
+          "height": 800,
+          "bottom": 0
+        },
+        {
+          "width": 300.0000305175781,
+          "depth": 340,
+          "height": 400,
+          "bottom": 0
+        }
+      ],
+      "vertices": 940
+    },
+    {
+      "mesh": "/Game/CitySim/Art/Meshes/SM_CommercialLow_StoreTech",
+      "definition": "Shop",
+      "regions_cm": [
+        {
+          "x0": -750.0000610351562,
+          "y0": -699.9999389648438,
+          "x1": 750.0000610351562,
+          "y1": 700.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        },
+        {
+          "x0": -149.99993896484375,
+          "y0": 700,
+          "x1": 150.00006103515625,
+          "y1": 730.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        }
+      ],
+      "selected_parts_cm": [
+        {
+          "width": 1500.0001220703125,
+          "depth": 1400.0001220703125,
+          "height": 800,
+          "bottom": 0
+        },
+        {
+          "width": 300.0000305175781,
+          "depth": 340,
+          "height": 400,
+          "bottom": 0
+        }
+      ],
+      "vertices": 940
+    },
+    {
+      "mesh": "/Game/CitySim/Art/Meshes/SM_CommercialMedium_StoreBakery",
+      "definition": "Shop",
+      "regions_cm": [
+        {
+          "x0": -750.0000610351562,
+          "y0": -699.9999389648438,
+          "x1": 750.0000610351562,
+          "y1": 700.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        },
+        {
+          "x0": -149.99993896484375,
+          "y0": 700,
+          "x1": 150.00006103515625,
+          "y1": 730.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        }
+      ],
+      "selected_parts_cm": [
+        {
+          "width": 1500.0001220703125,
+          "depth": 1400.0001220703125,
+          "height": 1000,
+          "bottom": 0
+        },
+        {
+          "width": 300.0000305175781,
+          "depth": 340,
+          "height": 400,
+          "bottom": 0
+        }
+      ],
+      "vertices": 3364
+    },
+    {
+      "mesh": "/Game/CitySim/Art/Meshes/SM_CommercialMedium_StoreBooks",
+      "definition": "Shop",
+      "regions_cm": [
+        {
+          "x0": -750.0000610351562,
+          "y0": -699.9999389648438,
+          "x1": 750.0000610351562,
+          "y1": 700.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        },
+        {
+          "x0": -149.99993896484375,
+          "y0": 700,
+          "x1": 150.00006103515625,
+          "y1": 730.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        }
+      ],
+      "selected_parts_cm": [
+        {
+          "width": 1500.0001220703125,
+          "depth": 1400.0001220703125,
+          "height": 1000,
+          "bottom": 0
+        },
+        {
+          "width": 300.0000305175781,
+          "depth": 340,
+          "height": 400,
+          "bottom": 0
+        }
+      ],
+      "vertices": 3364
+    },
+    {
+      "mesh": "/Game/CitySim/Art/Meshes/SM_CommercialMedium_StoreCafe",
+      "definition": "Shop",
+      "regions_cm": [
+        {
+          "x0": -750.0000610351562,
+          "y0": -699.9999389648438,
+          "x1": 750.0000610351562,
+          "y1": 700.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        },
+        {
+          "x0": -149.99993896484375,
+          "y0": 700,
+          "x1": 150.00006103515625,
+          "y1": 730.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        }
+      ],
+      "selected_parts_cm": [
+        {
+          "width": 1500.0001220703125,
+          "depth": 1400.0001220703125,
+          "height": 1000,
+          "bottom": 0
+        },
+        {
+          "width": 300.0000305175781,
+          "depth": 340,
+          "height": 400,
+          "bottom": 0
+        }
+      ],
+      "vertices": 3364
+    },
+    {
+      "mesh": "/Game/CitySim/Art/Meshes/SM_CommercialMedium_StoreMarket",
+      "definition": "Shop",
+      "regions_cm": [
+        {
+          "x0": -750.0000610351562,
+          "y0": -699.9999389648438,
+          "x1": 750.0000610351562,
+          "y1": 700.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        },
+        {
+          "x0": -149.99993896484375,
+          "y0": 700,
+          "x1": 150.00006103515625,
+          "y1": 730.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        }
+      ],
+      "selected_parts_cm": [
+        {
+          "width": 1500.0001220703125,
+          "depth": 1400.0001220703125,
+          "height": 1000,
+          "bottom": 0
+        },
+        {
+          "width": 300.0000305175781,
+          "depth": 340,
+          "height": 400,
+          "bottom": 0
+        }
+      ],
+      "vertices": 3364
+    },
+    {
+      "mesh": "/Game/CitySim/Art/Meshes/SM_CommercialMedium_StoreOutfitters",
+      "definition": "Shop",
+      "regions_cm": [
+        {
+          "x0": -750.0000610351562,
+          "y0": -699.9999389648438,
+          "x1": 750.0000610351562,
+          "y1": 700.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        },
+        {
+          "x0": -149.99993896484375,
+          "y0": 700,
+          "x1": 150.00006103515625,
+          "y1": 730.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        }
+      ],
+      "selected_parts_cm": [
+        {
+          "width": 1500.0001220703125,
+          "depth": 1400.0001220703125,
+          "height": 1000,
+          "bottom": 0
+        },
+        {
+          "width": 300.0000305175781,
+          "depth": 340,
+          "height": 400,
+          "bottom": 0
+        }
+      ],
+      "vertices": 3364
+    },
+    {
+      "mesh": "/Game/CitySim/Art/Meshes/SM_CommercialMedium_StorePharmacy",
+      "definition": "Shop",
+      "regions_cm": [
+        {
+          "x0": -750.0000610351562,
+          "y0": -699.9999389648438,
+          "x1": 750.0000610351562,
+          "y1": 700.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        },
+        {
+          "x0": -149.99993896484375,
+          "y0": 700,
+          "x1": 150.00006103515625,
+          "y1": 730.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        }
+      ],
+      "selected_parts_cm": [
+        {
+          "width": 1500.0001220703125,
+          "depth": 1400.0001220703125,
+          "height": 1000,
+          "bottom": 0
+        },
+        {
+          "width": 300.0000305175781,
+          "depth": 340,
+          "height": 400,
+          "bottom": 0
+        }
+      ],
+      "vertices": 3364
+    },
+    {
+      "mesh": "/Game/CitySim/Art/Meshes/SM_CommercialMedium_StoreRepairs",
+      "definition": "Shop",
+      "regions_cm": [
+        {
+          "x0": -750.0000610351562,
+          "y0": -699.9999389648438,
+          "x1": 750.0000610351562,
+          "y1": 700.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        },
+        {
+          "x0": -149.99993896484375,
+          "y0": 700,
+          "x1": 150.00006103515625,
+          "y1": 730.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        }
+      ],
+      "selected_parts_cm": [
+        {
+          "width": 1500.0001220703125,
+          "depth": 1400.0001220703125,
+          "height": 1000,
+          "bottom": 0
+        },
+        {
+          "width": 300.0000305175781,
+          "depth": 340,
+          "height": 400,
+          "bottom": 0
+        }
+      ],
+      "vertices": 3364
+    },
+    {
+      "mesh": "/Game/CitySim/Art/Meshes/SM_CommercialMedium_StoreTech",
+      "definition": "Shop",
+      "regions_cm": [
+        {
+          "x0": -750.0000610351562,
+          "y0": -699.9999389648438,
+          "x1": 750.0000610351562,
+          "y1": 700.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        },
+        {
+          "x0": -149.99993896484375,
+          "y0": 700,
+          "x1": 150.00006103515625,
+          "y1": 730.0000610351562,
+          "bottom_z": 0,
+          "fallback": false
+        }
+      ],
+      "selected_parts_cm": [
+        {
+          "width": 1500.0001220703125,
+          "depth": 1400.0001220703125,
+          "height": 1000,
+          "bottom": 0
+        },
+        {
+          "width": 300.0000305175781,
+          "depth": 340,
+          "height": 400,
+          "bottom": 0
+        }
+      ],
+      "vertices": 3364
+    },
+    {
+      "mesh": "/Game/CitySim/Art/Technology/Meshes/SM_AIInstitute",
+      "definition": "AIInstitute",
+      "regions_cm": [
+        {
+          "x0": -1000.0000610351562,
+          "y0": -899.9999389648438,
+          "x1": 1000.0000610351562,
+          "y1": 900.0000610351562,
+          "bottom_z": 30.000011444091797,
+          "fallback": false
+        }
+      ],
+      "selected_parts_cm": [
+        {
+          "width": 2000.0001220703125,
+          "depth": 1800.0001220703125,
+          "height": 519.9999885559082,
+          "bottom": 30.000011444091797
+        }
+      ],
+      "vertices": 7194
+    },
+    {
+      "mesh": "/Game/CitySim/Art/Technology/Meshes/SM_ComputingCenter",
+      "definition": "ComputingCenter",
+      "regions_cm": [
+        {
+          "x0": -660.0000610351562,
+          "y0": -599.9999389648438,
+          "x1": 660,
+          "y1": 240.0000457763672,
+          "bottom_z": 24.00001335144043,
+          "fallback": false
+        }
+      ],
+      "selected_parts_cm": [
+        {
+          "width": 1320.0000610351562,
+          "depth": 840.0001068115234,
+          "height": 590.0000476837158,
+          "bottom": 24.00001335144043
+        }
+      ],
+      "vertices": 5878
+    },
+    {
+      "mesh": "/Game/CitySim/Art/Technology/Meshes/SM_DigitalExchange",
+      "definition": "DigitalExchange",
+      "regions_cm": [
+        {
+          "x0": -900.0000610351562,
+          "y0": -749.9999389648438,
+          "x1": 900.0000610351562,
+          "y1": 550.0000610351562,
+          "bottom_z": 24.00001335144043,
+          "fallback": false
+        }
+      ],
+      "selected_parts_cm": [
+        {
+          "width": 1800.0001220703125,
+          "depth": 1300.0001220703125,
+          "height": 449.99995613098145,
+          "bottom": 24.00001335144043
+        }
+      ],
+      "vertices": 2424
+    },
+    {
+      "mesh": "/Game/CitySim/Art/Technology/Meshes/SM_EnterpriseAICenter",
+      "definition": "EnterpriseAICenter",
+      "regions_cm": [
+        {
+          "x0": -6.119594763731584e-05,
+          "y0": -700,
+          "x1": 900.0000610351562,
+          "y1": 500,
+          "bottom_z": 11.999994277954102,
+          "fallback": false
+        },
+        {
+          "x0": -900.0000610351562,
+          "y0": -399.9999084472656,
+          "x1": 5.245366628514603e-05,
+          "y1": 600.0000610351562,
+          "bottom_z": 12.000006675720215,
+          "fallback": false
+        }
+      ],
+      "selected_parts_cm": [
+        {
+          "width": 900.0001222311039,
+          "depth": 1200.0000610351562,
+          "height": 650.0000057220459,
+          "bottom": 11.999994277954102
+        },
+        {
+          "width": 900.0001134888225,
+          "depth": 1000.0000610351562,
+          "height": 364.9999933242798,
+          "bottom": 12.000006675720215
+        }
+      ],
+      "vertices": 2421
+    },
+    {
+      "mesh": "/Game/CitySim/Art/Technology/Meshes/SM_ResearchCampus",
+      "definition": "ResearchCampus",
+      "regions_cm": [
+        {
+          "x0": -1040,
+          "y0": -899.9999389648438,
+          "x1": -399.9999084472656,
+          "y1": 700.0000610351562,
+          "bottom_z": 11.999994277954102,
+          "fallback": false
+        },
+        {
+          "x0": -400.0000915527344,
+          "y0": -899.9999389648438,
+          "x1": 399.9999694824219,
+          "y1": -479.9999694824219,
+          "bottom_z": 11.999994277954102,
+          "fallback": false
+        },
+        {
+          "x0": 399.9999084472656,
+          "y0": -900.0000610351562,
+          "x1": 1040,
+          "y1": 699.9999389648438,
+          "bottom_z": 11.999994277954102,
+          "fallback": false
+        }
+      ],
+      "selected_parts_cm": [
+        {
+          "width": 2080,
+          "depth": 1600.0001220703125,
+          "height": 630.0000057220459,
+          "bottom": 11.999994277954102
+        }
+      ],
+      "vertices": 6306
+    }
+  ],
+  "units": "native mesh-local cm; grounded structural islands only, flat pads/paths excluded",
+  "provenance": {
+    "native_measurement_build": 172,
+    "submitted_commit": "5c7a61cf0711f2cfc3337de0f10716ce51f52a82",
+    "home_native_comparison": "passed all native imported Home floors",
+    "legacy_walk_refinement": "Excluded measured300cm-wide private walks extending to native Y1040cm, welded to door islands. Next native comparison requires tall geometry above each retained floor triangle; no whole-island fallback after low floor rejection."
+  }
+}

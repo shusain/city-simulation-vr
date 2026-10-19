@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "kind": "comfy",
+  "repository": "CitySimVR/citysim",
+  "issue": 36,
+  "version": 2,
+  "by": "shaun",
+  "comment_id": 642,
+  "request_url": "https://git.shaun-husain.com/CitySimVR/citysim/issues/36#issuecomment-642",
+  "approved_at": "2026-10-16T18:17:36.965Z",
+  "job_id": "51044374-b4cf-4d1a-a628-adab85a6edf6",
+  "source_sha": "f482eff94e62fbc62692b8270dcfcdca5269d5cc",
+  "artifacts": [
+    {
+      "name": "asset.png",
+      "bytes": 357313,
+      "sha256": "d5e0e286e5391fa36c0c4f1d4c2a998eafd1eed06235b4e26ce79a6ffbcd8478"
+    },
+    {
+      "name": "workflow.json",
+      "bytes": 2990,
+      "sha256": "8a383f149f076450a324d0a0f7df7e616293a84a5c97b3788fefbb6ea28e29f1"
+    },
+    {
+      "name": "provenance.json",
+      "bytes": 1349,
+      "sha256": "9f3060c2e84045391e7e7bddb9db6ea2deb94c60064442368e9dd9fac2d49c85"
+    },
+    {
+      "name": "README.md",
+      "bytes": 378,
+      "sha256": "f68a82a9fe195e1dc55c2d49a6d1af61ef7f782014336ba35f5da0e5a15be3aa"
+    }
+  ],
+  "workflow": "generate_image_zimage",
+  "workflow_sha256": "12bc2fc5e7c5537cc7303a976d57d2fd7baefe9ab465e16aaa2e9943afa29dde",
+  "seed": 36,
+  "prompt": "A flat front-facing concept sheet featuring four equal rectangular storefront window display panels arranged in a precise 2x2 grid with narrow neutral gutters. Each panel shows simple shelving with recognizable broad silhouettes of hand tools: wrenches/spanners, hammers, screwdrivers, pliers, tidy toolboxes, and a few small hardware bins. Muted teal, warm cream, gray, and restrained warm accents. Even diffuse neutral lighting, broad shapes, no glass glare, reflections, perspective convergence, cast shadows, window frames, lettering, numbers, price tags, brands, logos, watermarks, or people. The background is neutral, and the image is 768x768 pixels.",
+  "archive": {
+    "url": "https://git.shaun-husain.com/attachments/da1678f4-f8ed-40f7-9a28-a75bd07075d9",
+    "sha256": "ef0ee06855471a0c5203356061e5e694d334be450d925a356753660a5e1e4ab7"
+  },
+  "review_url": "https://git.shaun-husain.com/CitySimVR/citysim/issues/36#issuecomment-625"
+}

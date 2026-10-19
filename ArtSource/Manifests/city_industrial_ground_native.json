@@ -1,0 +1,393 @@
+{
+  "issue": 125,
+  "files": [
+    {
+      "target": "/Game/CitySim/Art/IndustrialGround/SM_IndustrialGround_LowDensity_Factory_A",
+      "file": "CitySimVR/Content/CitySim/Art/IndustrialGround/SM_IndustrialGround_LowDensity_Factory_A.uasset",
+      "sha256": "cca1171f795393bf8df7fb4f7262715666ea2ff4bb409ff5093909650cba7ffa",
+      "bytes": 43139,
+      "triangles": 1142,
+      "slots": [
+        "IndustrialBrick",
+        "Roof",
+        "IndustrialMechanical",
+        "RoofMetal",
+        "BuildingWindowOpaque",
+        "IndustrialDoorMetal"
+      ],
+      "dimensions_cm": [
+        1600.0001220703125,
+        1264.0001220703125,
+        1700.0
+      ],
+      "entry_native_cm": [
+        520,
+        444,
+        20
+      ],
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "source_sha256": "2f92ca0818f6f71666c8f8e16c0b045039149e6014920eb89ad74e4b54078fa7"
+    },
+    {
+      "target": "/Game/CitySim/Art/IndustrialGround/SM_IndustrialGround_LowDensity_Factory_A_Damaged",
+      "file": "CitySimVR/Content/CitySim/Art/IndustrialGround/SM_IndustrialGround_LowDensity_Factory_A_Damaged.uasset",
+      "sha256": "f0c8dedfd8ecfdb3f06700565ca6053e32978a77b7791746296ed9f4cfcb574e",
+      "bytes": 45072,
+      "triangles": 1142,
+      "slots": [
+        "IndustrialBrick",
+        "Roof",
+        "IndustrialMechanical",
+        "RoofMetal",
+        "BuildingWindowOpaque",
+        "IndustrialDoorMetal"
+      ],
+      "dimensions_cm": [
+        1600.0001220703125,
+        1264.0001220703125,
+        1447.760498046875
+      ],
+      "entry_native_cm": [
+        520,
+        444,
+        20
+      ],
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "source_sha256": "dc3c07b01123eb51529f5032043b39765493a046233f5fea9355f68ab1f136ec"
+    },
+    {
+      "target": "/Game/CitySim/Art/IndustrialGround/SM_IndustrialGround_LowDensity_Factory_B",
+      "file": "CitySimVR/Content/CitySim/Art/IndustrialGround/SM_IndustrialGround_LowDensity_Factory_B.uasset",
+      "sha256": "b43ab5f0f982045db1dde16b20d5d70eadd4d48985c9c7168e15a280235fe702",
+      "bytes": 52349,
+      "triangles": 1404,
+      "slots": [
+        "IndustrialBrick",
+        "Roof",
+        "IndustrialMechanical",
+        "RoofMetal",
+        "BuildingWindowOpaque",
+        "IndustrialDoorMetal"
+      ],
+      "dimensions_cm": [
+        1600.0001220703125,
+        1274.0001220703125,
+        1610.0
+      ],
+      "entry_native_cm": [
+        520,
+        444,
+        20
+      ],
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "source_sha256": "abb02e88a225aeba3393f59e445d9967618f888fe9c0abebfcaba205c6ffab19"
+    },
+    {
+      "target": "/Game/CitySim/Art/IndustrialGround/SM_IndustrialGround_LowDensity_Factory_B_Damaged",
+      "file": "CitySimVR/Content/CitySim/Art/IndustrialGround/SM_IndustrialGround_LowDensity_Factory_B_Damaged.uasset",
+      "sha256": "0ed3cd0672a43edca85e92e05c69718359383750f2f0530b7f1df43caa3108cf",
+      "bytes": 56453,
+      "triangles": 1404,
+      "slots": [
+        "IndustrialBrick",
+        "Roof",
+        "IndustrialMechanical",
+        "RoofMetal",
+        "BuildingWindowOpaque",
+        "IndustrialDoorMetal"
+      ],
+      "dimensions_cm": [
+        1600.0001220703125,
+        1274.0001220703125,
+        1020.1366577148438
+      ],
+      "entry_native_cm": [
+        520,
+        444,
+        20
+      ],
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "source_sha256": "03a931e3810dc67cad46b55d40e3e8aaab80a8495479f7f65e9f323826946e7b"
+    },
+    {
+      "target": "/Game/CitySim/Art/IndustrialGround/SM_IndustrialGround_LowDensity_Factory_C",
+      "file": "CitySimVR/Content/CitySim/Art/IndustrialGround/SM_IndustrialGround_LowDensity_Factory_C.uasset",
+      "sha256": "31f50f18eeeddab69619fef3e9450764ccd4a7ded78fd42b06629a21c5ec079b",
+      "bytes": 48634,
+      "triangles": 1194,
+      "slots": [
+        "IndustrialBrick",
+        "Roof",
+        "IndustrialMechanical",
+        "RoofMetal",
+        "BuildingWindowOpaque",
+        "IndustrialDoorMetal"
+      ],
+      "dimensions_cm": [
+        1600.0001220703125,
+        1276.0000610351562,
+        1476.0
+      ],
+      "entry_native_cm": [
+        520,
+        444,
+        20
+      ],
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "source_sha256": "4ae9677d92154fa642448212c7b6aea09ef0d43bd9318f65bad4a15c82103d76"
+    },
+    {
+      "target": "/Game/CitySim/Art/IndustrialGround/SM_IndustrialGround_LowDensity_Factory_C_Damaged",
+      "file": "CitySimVR/Content/CitySim/Art/IndustrialGround/SM_IndustrialGround_LowDensity_Factory_C_Damaged.uasset",
+      "sha256": "17caac409eca6eb0ff175f82efe5283152177b9b3476783e10328b69445278f9",
+      "bytes": 52040,
+      "triangles": 1194,
+      "slots": [
+        "IndustrialBrick",
+        "Roof",
+        "IndustrialMechanical",
+        "RoofMetal",
+        "BuildingWindowOpaque",
+        "IndustrialDoorMetal"
+      ],
+      "dimensions_cm": [
+        1600.0001220703125,
+        1276.0000610351562,
+        1266.2618408203125
+      ],
+      "entry_native_cm": [
+        520,
+        444,
+        20
+      ],
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "source_sha256": "3755031f97ffe912e2be0b42d77206e8f0e519f7b069ed446408333e08b40828"
+    },
+    {
+      "target": "/Game/CitySim/Art/IndustrialGround/SM_IndustrialGround_LowDensity_Factory_D",
+      "file": "CitySimVR/Content/CitySim/Art/IndustrialGround/SM_IndustrialGround_LowDensity_Factory_D.uasset",
+      "sha256": "47ed16f37996de34f741f0372ce25647db7c07bf060028733982ccbc3985144f",
+      "bytes": 56493,
+      "triangles": 1626,
+      "slots": [
+        "IndustrialBrick",
+        "Roof",
+        "IndustrialMechanical",
+        "RoofMetal",
+        "BuildingWindowOpaque",
+        "IndustrialDoorMetal"
+      ],
+      "dimensions_cm": [
+        1600.0001220703125,
+        1264.0001220703125,
+        1250.0
+      ],
+      "entry_native_cm": [
+        520,
+        444,
+        20
+      ],
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "source_sha256": "4eaa6194093b0d4869c04d597eebc2c21c1ee446f608037ccfb5c31f02e112a9"
+    },
+    {
+      "target": "/Game/CitySim/Art/IndustrialGround/SM_IndustrialGround_LowDensity_Factory_D_Damaged",
+      "file": "CitySimVR/Content/CitySim/Art/IndustrialGround/SM_IndustrialGround_LowDensity_Factory_D_Damaged.uasset",
+      "sha256": "213774f991156b3381f52ac57d129a00872e3bad14277e4dbe7be4dc8a859548",
+      "bytes": 63563,
+      "triangles": 1626,
+      "slots": [
+        "IndustrialBrick",
+        "Roof",
+        "IndustrialMechanical",
+        "RoofMetal",
+        "BuildingWindowOpaque",
+        "IndustrialDoorMetal"
+      ],
+      "dimensions_cm": [
+        1600.0001220703125,
+        1264.0001220703125,
+        1074.9990234375
+      ],
+      "entry_native_cm": [
+        520,
+        444,
+        20
+      ],
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "source_sha256": "751a21309850b5cfff162f87486abcc12e3f5f69a76d88a3c3e1e60dfc7e194f"
+    },
+    {
+      "target": "/Game/CitySim/Art/IndustrialGround/SM_IndustrialGround_Building_Factory_A",
+      "file": "CitySimVR/Content/CitySim/Art/IndustrialGround/SM_IndustrialGround_Building_Factory_A.uasset",
+      "sha256": "2818ca296832b70931c41d71498642b520b4959d3f507998d12f10643e7230f3",
+      "bytes": 40192,
+      "triangles": 928,
+      "slots": [
+        "IndustrialBrick",
+        "Roof",
+        "IndustrialMechanical",
+        "RoofMetal",
+        "BuildingWindowOpaque"
+      ],
+      "dimensions_cm": [
+        1600.0001220703125,
+        1200.0001220703125,
+        1700.0
+      ],
+      "entry_native_cm": [
+        520,
+        444,
+        20
+      ],
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "source_sha256": "fe825105d8a446a6d9a7e34c1182f0203b125b10dd2de0a9fa1a3ea977e822bf"
+    },
+    {
+      "target": "/Game/CitySim/Art/IndustrialGround/SM_IndustrialGround_Building_Factory_Medium_A",
+      "file": "CitySimVR/Content/CitySim/Art/IndustrialGround/SM_IndustrialGround_Building_Factory_Medium_A.uasset",
+      "sha256": "e1e338674b2e9130ae0bcf24024503cd2bd8cbebb28a05daf64652de3bf14f94",
+      "bytes": 67043,
+      "triangles": 2226,
+      "slots": [
+        "IndustrialBrick",
+        "Roof",
+        "IndustrialMechanical",
+        "RoofMetal",
+        "BuildingWindowOpaque"
+      ],
+      "dimensions_cm": [
+        1600.0001220703125,
+        1229.7542724609375,
+        2800.0
+      ],
+      "entry_native_cm": [
+        520,
+        444,
+        20
+      ],
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "source_sha256": "3a77637300db571a3e63572df0ad3a666df12603fddd12d742d7e7a883a6e4e2"
+    },
+    {
+      "target": "/Game/CitySim/Art/IndustrialGround/SM_IndustrialGround_Building_Factory_High_A",
+      "file": "CitySimVR/Content/CitySim/Art/IndustrialGround/SM_IndustrialGround_Building_Factory_High_A.uasset",
+      "sha256": "dc11feb15da938d69b87c913a818a48adde31cc68738a1c9b024aad5e240f49d",
+      "bytes": 81923,
+      "triangles": 2644,
+      "slots": [
+        "IndustrialBrick",
+        "Roof",
+        "IndustrialMechanical",
+        "RoofMetal",
+        "BuildingWindowOpaque"
+      ],
+      "dimensions_cm": [
+        1600.0001220703125,
+        1229.7542724609375,
+        4100.0
+      ],
+      "entry_native_cm": [
+        520,
+        444,
+        20
+      ],
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "source_sha256": "f991d3ed9d41227c797fcd19138de401bb159b2d53998b3f0d6b63f730d2c313"
+    },
+    {
+      "target": "/Game/CitySim/Art/IndustrialGround/SM_IndustrialGround_Building_Factory_A_Damaged",
+      "file": "CitySimVR/Content/CitySim/Art/IndustrialGround/SM_IndustrialGround_Building_Factory_A_Damaged.uasset",
+      "sha256": "49f1018784289b9d39e970572cf79531c885b0d8923f3cda17b551237d08eefe",
+      "bytes": 29629,
+      "triangles": 544,
+      "slots": [
+        "CharredBrick",
+        "CharredTrim",
+        "CharredMechanical",
+        "CharredRoofMetal"
+      ],
+      "dimensions_cm": [
+        1600.0001220703125,
+        1200.0001220703125,
+        1276.6651611328125
+      ],
+      "entry_native_cm": [
+        520,
+        444,
+        20
+      ],
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "source_sha256": "8b63ba54a5284f3f86939a0905ae3220b581fba9c612b1bda99ba6461b010694"
+    },
+    {
+      "target": "/Game/CitySim/Art/IndustrialGround/SM_IndustrialGround_Building_Factory_Medium_A_Damaged",
+      "file": "CitySimVR/Content/CitySim/Art/IndustrialGround/SM_IndustrialGround_Building_Factory_Medium_A_Damaged.uasset",
+      "sha256": "4f4edc91b86b494a0567617928e7a15f334a69d20e7c4445b70b384268143a7c",
+      "bytes": 34137,
+      "triangles": 722,
+      "slots": [
+        "CharredBrick",
+        "CharredTrim",
+        "CharredMechanical",
+        "CharredRoofMetal"
+      ],
+      "dimensions_cm": [
+        1600.0001220703125,
+        1200.0001220703125,
+        2392.891845703125
+      ],
+      "entry_native_cm": [
+        520,
+        444,
+        20
+      ],
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "source_sha256": "fb2bf44c95fe7f43b06a7837e432571165c9a1d6650b20366d4a3dad4865ff2f"
+    },
+    {
+      "target": "/Game/CitySim/Art/IndustrialGround/SM_IndustrialGround_Building_Factory_High_A_Damaged",
+      "file": "CitySimVR/Content/CitySim/Art/IndustrialGround/SM_IndustrialGround_Building_Factory_High_A_Damaged.uasset",
+      "sha256": "1adbcf3f6eb37548a8e731c74d268a6ba44d73f92268182568fb6f9f65c50cdb",
+      "bytes": 36094,
+      "triangles": 788,
+      "slots": [
+        "CharredBrick",
+        "CharredTrim",
+        "CharredMechanical",
+        "CharredRoofMetal"
+      ],
+      "dimensions_cm": [
+        1600.0001220703125,
+        1200.0001220703125,
+        3525.999755859375
+      ],
+      "entry_native_cm": [
+        520,
+        444,
+        20
+      ],
+      "landing_cm": 10,
+      "ground_reserve_cm": 60,
+      "source_sha256": "8c5a6e419b6051b3fc2afe9bfcb27f03630eb240ea5449304fec30eea5b2e10e"
+    }
+  ],
+  "build": 273,
+  "submitted": "4deba5149c70214871ae4983ee9af0872036f69d",
+  "tested": "4deba5149c70214871ae4983ee9af0872036f69d",
+  "url": "https://drone.shaun-husain.com/CitySimVR/citysim/273",
+  "status": "passed"
+}

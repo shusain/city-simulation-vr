@@ -1,0 +1,106 @@
+{
+  "parent": "primary172v6; incorrect book/glass/roof corrected to original request",
+  "preserved_school_parts": 191,
+  "book_parts": [
+    {
+      "name": "Book_Pediment",
+      "min": [
+        -2.8499999046325684,
+        -11.949999809265137,
+        3.1500000953674316
+      ],
+      "max": [
+        0.8500000238418579,
+        -11.720000267028809,
+        5.0
+      ]
+    },
+    {
+      "name": "Book_Backplate",
+      "min": [
+        -2.75,
+        -11.984999656677246,
+        3.2699999809265137
+      ],
+      "max": [
+        0.75,
+        -11.90999984741211,
+        4.940000057220459
+      ]
+    },
+    {
+      "name": "Book_LeftPages",
+      "min": [
+        -2.549999952316284,
+        -12.149999618530273,
+        3.390000104904175
+      ],
+      "max": [
+        -1.0399999618530273,
+        -11.979999542236328,
+        4.800000190734863
+      ]
+    },
+    {
+      "name": "Book_RightPages",
+      "min": [
+        -0.9599999785423279,
+        -12.149999618530273,
+        3.390000104904175
+      ],
+      "max": [
+        0.550000011920929,
+        -11.979999542236328,
+        4.800000190734863
+      ]
+    }
+  ],
+  "page_dimensions_m": [
+    3.1,
+    0.17,
+    1.41
+  ],
+  "material_changes": {
+    "AcademicBrick": {
+      "node": "AcademicBrick_WarmFinalTint",
+      "linear_rgba": [
+        0.78,
+        0.46,
+        0.23,
+        1
+      ],
+      "operation": "MULTIPLY",
+      "source": "Mix (Legacy)",
+      "target": "Principled Base Color"
+    },
+    "RoofMembrane": {
+      "node": "RoofMembrane_WarmFinalTint",
+      "linear_rgba": [
+        0.22,
+        0.27,
+        0.31,
+        1
+      ],
+      "operation": "MULTIPLY",
+      "source": "Mix (Legacy)",
+      "target": "Principled Base Color"
+    },
+    "LightStone": [
+      0.86,
+      0.78,
+      0.6,
+      1
+    ],
+    "WindowGlass_restored": [
+      0.16,
+      0.27,
+      0.33,
+      1
+    ],
+    "brick_normal_strength": 0.15
+  },
+  "wall_and_support_contact": true,
+  "fascia_joint_embed_m": 0.04,
+  "full_window_and_door_projection_clear": true,
+  "integration": "HELD"
+}

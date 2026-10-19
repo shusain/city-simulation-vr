@@ -1,0 +1,482 @@
+{
+  "task": "D108/D110 beach scatter and detail zoom",
+  "status": "Candidate158 accepted; PR145 normally merged; completed integration issues closed",
+  "pr": "https://git.shaun-husain.com/CitySimVR/citysim/pulls/145",
+  "submitted": "df3d17db84404ddfa5947c474f2327546806817b",
+  "gameRevision": "dev-3714124068bf033a0c3a",
+  "schema": 72,
+  "behavior": {
+    "desktopZoom": "Minimum .005 board widths / 2.56m equivalent on default512m city; terrain-following focus, distance-scaled pan and original Home overview",
+    "clip": "Distance-dependent desktop view near plane; global/VR plane unchanged",
+    "scatter": "Seeded jittered tile-wide strata; up to8 props per selected8m tile, max32 patches/160 props",
+    "bands": "Starfish3-70cm above local water, shells3-140cm, driftwood70-260cm, grass140-300cm; submerged/steep points excluded",
+    "authority": "Cosmetic ISM only; source geometry/scale unchanged; no per-prop Actors/ticks/collision/shadows/navigation; terrain/placement/simulation/save authority unchanged"
+  },
+  "sources": {
+    "versions": "130v2/131v2/132-134v1",
+    "triangles": 428,
+    "nativeAssetsUnchangedSince155": true,
+    "sourceCloseout": "https://git.shaun-husain.com/attachments/ac4c1deb-070c-464a-bd98-f89f2c51f995",
+    "manifest": "ArtSource/Manifests/city_beach_integration.json"
+  },
+  "editor": {
+    "build": 157,
+    "mode": "Check",
+    "status": "passed",
+    "submittedCommit": "df3d17db84404ddfa5947c474f2327546806817b",
+    "testedCommit": "df3d17db84404ddfa5947c474f2327546806817b",
+    "editorSeconds": 89.73,
+    "tests": [
+      "CitySim.Presentation.BeachPlacement",
+      "CitySim.Presentation.BeachAssetsAndLifecycle",
+      "CitySim.Presentation.AtmosphereSceneryAndLifecycle",
+      "CitySim.Presentation.TerrainScenerySuitability",
+      "CitySim.Dimensions.LegacySceneryDigest",
+      "CitySim.Dimensions.BoardPresentation",
+      "CitySim.Placement.Transactions",
+      "CitySim.Terrain.DeterminismAndFixtures",
+      "CitySim.Desktop.CameraBoundsAndReset"
+    ],
+    "output": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\CI\\Builds\\157-df3d17db8440-Check-48179ccb",
+    "url": "https://drone.shaun-husain.com/CitySimVR/citysim/157",
+    "verifiedUtc": "2026-10-18T02:13:40.9733487Z"
+  },
+  "windows": {
+    "build": 158,
+    "mode": "WindowsCandidate",
+    "status": "passed",
+    "submittedCommit": "df3d17db84404ddfa5947c474f2327546806817b",
+    "testedCommit": "df3d17db84404ddfa5947c474f2327546806817b",
+    "editorSeconds": 107.14,
+    "tests": [
+      "CitySim.Presentation.BeachPlacement",
+      "CitySim.Presentation.BeachAssetsAndLifecycle",
+      "CitySim.Presentation.AtmosphereSceneryAndLifecycle",
+      "CitySim.Presentation.TerrainScenerySuitability",
+      "CitySim.Dimensions.LegacySceneryDigest",
+      "CitySim.Dimensions.BoardPresentation",
+      "CitySim.Placement.Transactions",
+      "CitySim.Terrain.DeterminismAndFixtures",
+      "CitySim.Desktop.CameraBoundsAndReset"
+    ],
+    "output": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\CI\\Builds\\158-df3d17db8440-WindowsCandidate-749d3198",
+    "url": "https://drone.shaun-husain.com/CitySimVR/citysim/158",
+    "verifiedUtc": "2026-10-18T02:20:50.1138194Z",
+    "package": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\CI\\Builds\\158-df3d17db8440-WindowsCandidate-749d3198\\CitySimVR-Windows.zip",
+    "packageSha256": "d979966ac07d96c88fac7c008b4511d643524a288fa48f63b2f765bb87e61ea5",
+    "clientTests": [
+      "CitySim.Desktop.BeachScenery",
+      "CitySim.Desktop.FocusRestoresEntryMenu"
+    ],
+    "visualReview": "passed",
+    "visualReviewScope": "All10 1280x800 views plus1024x720 CloseDay/Opposite/DuneGrass inspected. Regular2.56m close zoom shows shells, tile context spreads shells across metres, separate inland grass sprouts, native grounded sizes/day-night/reload. Macro kind shots are closer diagnostic framing, not the playable clamp.",
+    "reviewedViews": [
+      {
+        "path": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\CI\\Builds\\158-df3d17db8440-WindowsCandidate-749d3198\\D124-D125-Client-1280-User\\Saved\\Automation\\D108-Beach\\AfterReload.png",
+        "sha256": "a56f17cfef781fa6cbdaccbd7696efb848beff0f0527400a1b8da8a53fdceed0",
+        "reviewed": true
+      },
+      {
+        "path": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\CI\\Builds\\158-df3d17db8440-WindowsCandidate-749d3198\\D124-D125-Client-1280-User\\Saved\\Automation\\D108-Beach\\CloseDay.png",
+        "sha256": "1df1fd0b9b0fee56258bb43ce859bf27e0aef54ee99f18e8d81921c80976e4f3",
+        "reviewed": true
+      },
+      {
+        "path": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\CI\\Builds\\158-df3d17db8440-WindowsCandidate-749d3198\\D124-D125-Client-1280-User\\Saved\\Automation\\D108-Beach\\CloseNight.png",
+        "sha256": "39aa0034c41bd326818dea630d3f8119321f763c8d6d96efa50fd60b5ec02a5d",
+        "reviewed": true
+      },
+      {
+        "path": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\CI\\Builds\\158-df3d17db8440-WindowsCandidate-749d3198\\D124-D125-Client-1280-User\\Saved\\Automation\\D108-Beach\\Driftwood.png",
+        "sha256": "9189f2f5e9c66754b835991ead2a456d820abcf71c65ef4969c4fc3ce65f946d",
+        "reviewed": true
+      },
+      {
+        "path": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\CI\\Builds\\158-df3d17db8440-WindowsCandidate-749d3198\\D124-D125-Client-1280-User\\Saved\\Automation\\D108-Beach\\DuneGrass.png",
+        "sha256": "127127fb78acaafab9e24c305e919bfd94123824c55733af33feeb7679fd8b35",
+        "reviewed": true
+      },
+      {
+        "path": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\CI\\Builds\\158-df3d17db8440-WindowsCandidate-749d3198\\D124-D125-Client-1280-User\\Saved\\Automation\\D108-Beach\\FanShell.png",
+        "sha256": "0b90961b0e86b5364eb4730a7aedd0b41c5675f166d83305fc089f9345afba67",
+        "reviewed": true
+      },
+      {
+        "path": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\CI\\Builds\\158-df3d17db8440-WindowsCandidate-749d3198\\D124-D125-Client-1280-User\\Saved\\Automation\\D108-Beach\\Opposite.png",
+        "sha256": "7175c333afebc4d18bf3c8e6800db7931d408a2aff81887f5ca31e2ae856aacd",
+        "reviewed": true
+      },
+      {
+        "path": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\CI\\Builds\\158-df3d17db8440-WindowsCandidate-749d3198\\D124-D125-Client-1280-User\\Saved\\Automation\\D108-Beach\\ShoreContext.png",
+        "sha256": "52c29dfb8c457883ac651f37c974fda860a5c6dd70c05b4993dc5b85aaecc3ac",
+        "reviewed": true
+      },
+      {
+        "path": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\CI\\Builds\\158-df3d17db8440-WindowsCandidate-749d3198\\D124-D125-Client-1280-User\\Saved\\Automation\\D108-Beach\\SpiralShell.png",
+        "sha256": "0477ec856cab9319fc685ec14f5e6e19cb6097b0f452844dd1d57ea37aa08a52",
+        "reviewed": true
+      },
+      {
+        "path": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\CI\\Builds\\158-df3d17db8440-WindowsCandidate-749d3198\\D124-D125-Client-1280-User\\Saved\\Automation\\D108-Beach\\Starfish.png",
+        "sha256": "fc1c4673f97f4e37855a8e43b89e38052552c4c2da2557a7b448a9ac5a0d00cb",
+        "reviewed": true
+      }
+    ],
+    "reviewCity": {
+      "seed": 5,
+      "props": 32,
+      "fanShell": 6,
+      "spiralShell": 7,
+      "starfish": 5,
+      "driftwood": 7,
+      "duneGrass": 7
+    },
+    "extracted": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\D108\\BeachScatterZoom\\Extracted-Build158",
+    "executable": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\D108\\BeachScatterZoom\\Extracted-Build158\\CitySimVR\\Binaries\\Win64\\CitySimVR.exe",
+    "runtimeFiles": 53,
+    "profile": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\D108\\BeachScatterZoom\\Play-Build158-IsolatedProfile",
+    "fixtureSource": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\CI\\Builds\\158-df3d17db8440-WindowsCandidate-749d3198\\D124-D125-Client-1280-User\\Saved\\Automation\\D108-Beach\\BeachReview.json",
+    "fixtureSha256": "0466da2375ea468bd3098c4ab4a4d280a53ea9d7f97e7e4a011033861a93502c",
+    "fixtureCityName": "D108 Beach Review",
+    "fixtureSchema": 72,
+    "gameRevision": "dev-3714124068bf033a0c3a"
+  },
+  "quest": {
+    "build": 158,
+    "mode": "QuestCandidate",
+    "status": "passed",
+    "submittedCommit": "df3d17db84404ddfa5947c474f2327546806817b",
+    "testedCommit": "df3d17db84404ddfa5947c474f2327546806817b",
+    "editorSeconds": 122.54,
+    "tests": [
+      "CitySim.Presentation.BeachPlacement",
+      "CitySim.Presentation.BeachAssetsAndLifecycle",
+      "CitySim.Presentation.AtmosphereSceneryAndLifecycle",
+      "CitySim.Presentation.TerrainScenerySuitability",
+      "CitySim.Dimensions.LegacySceneryDigest",
+      "CitySim.Dimensions.BoardPresentation",
+      "CitySim.Placement.Transactions",
+      "CitySim.Terrain.DeterminismAndFixtures",
+      "CitySim.Desktop.CameraBoundsAndReset"
+    ],
+    "output": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\CI\\Builds\\158-df3d17db8440-QuestCandidate-60a00cca",
+    "url": "https://drone.shaun-husain.com/CitySimVR/citysim/158",
+    "verifiedUtc": "2026-10-18T02:25:43.8422336Z",
+    "apk": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\CI\\Builds\\158-df3d17db8440-QuestCandidate-60a00cca\\QuestCandidate\\Android_ASTC\\CitySimVR-arm64.apk",
+    "apkSha256": "9f7f31d1ff3f17b489b29e07b39354f6327fc687bf54848c83c16a08621107e8",
+    "quest": {
+      "status": "passed",
+      "apkSha256": "9f7f31d1ff3f17b489b29e07b39354f6327fc687bf54848c83c16a08621107e8",
+      "package": "com.shaun.citysimvr.smoketest",
+      "abi": "arm64-v8a",
+      "minSdk": 32,
+      "targetSdk": 35,
+      "signed": true,
+      "signerSha256": "fb8ac4ce5f1998deb6bf2c1a61b303bef91e0b69750f5cdfd9df77d1773a5352",
+      "stagedPayloads": [
+        {
+          "name": "CitySimVR-Android_ASTC.pak",
+          "bytes": 10482735,
+          "sha256": "2e8b544bf33aeda1a8409966e931fcf4f519210900175993981ffb56c76fb272"
+        },
+        {
+          "name": "CitySimVR-Android_ASTC.ucas",
+          "bytes": 106308048,
+          "sha256": "58ac029c4cfa406413e4d3a61430a0a32f6eefdf639a95853c4c7872191322ca"
+        },
+        {
+          "name": "CitySimVR-Android_ASTC.utoc",
+          "bytes": 258281,
+          "sha256": "6a6503136729d87d56964ae73aae1a7f76267da17055a6ecbe5074d0c095dc03"
+        },
+        {
+          "name": "global.ucas",
+          "bytes": 2804848,
+          "sha256": "a95951880ed6249850ae35aa51d8ecf93ee65fb5973c3ddc37fa69d28925493f"
+        },
+        {
+          "name": "global.utoc",
+          "bytes": 710,
+          "sha256": "0475a3cd35f0e69d3171d578f8cf488621e0d4d8c00b4134370b77e33b356a12"
+        }
+      ],
+      "headset": "unconfirmed-not-installed",
+      "verifiedUtc": "2026-10-18T02:25:12.1281008Z"
+    },
+    "headset": "unconfirmed-not-installed",
+    "beachCook": {
+      "status": "passed",
+      "meshes": 5,
+      "meshFiles": [
+        {
+          "path": "Content\\CitySim\\Art\\Beach\\Meshes\\SM_Scenery_FanShell_A.uasset",
+          "bytes": 1694,
+          "sha256": "c8b56d09aee5da8b879a4bbb46cd2c9d0167fe7568cdc3b7fa7038e5b6361476"
+        },
+        {
+          "path": "Content\\CitySim\\Art\\Beach\\Meshes\\SM_Scenery_FanShell_A.uexp",
+          "bytes": 12404,
+          "sha256": "a6dd30f43da454f3eb3e75cf2a67b303afd2c9c464c68d31671863317769f522"
+        },
+        {
+          "path": "Content\\CitySim\\Art\\Beach\\Meshes\\SM_Scenery_FanShell_A.ubulk",
+          "bytes": 4,
+          "sha256": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119"
+        },
+        {
+          "path": "Content\\CitySim\\Art\\Beach\\Meshes\\SM_Scenery_SpiralShell_A.uasset",
+          "bytes": 1709,
+          "sha256": "b4459c219eeefa03cc248e761ff875aa59c20492e34e45f5c19d46824b8be6bf"
+        },
+        {
+          "path": "Content\\CitySim\\Art\\Beach\\Meshes\\SM_Scenery_SpiralShell_A.uexp",
+          "bytes": 15296,
+          "sha256": "ea30f39a85db68064e780f60ded1d8ecbc9fc6bf4857fab3e308bc90f41631af"
+        },
+        {
+          "path": "Content\\CitySim\\Art\\Beach\\Meshes\\SM_Scenery_SpiralShell_A.ubulk",
+          "bytes": 4,
+          "sha256": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119"
+        },
+        {
+          "path": "Content\\CitySim\\Art\\Beach\\Meshes\\SM_Scenery_Starfish_A.uasset",
+          "bytes": 1697,
+          "sha256": "b36bc306df5172d4e29c879da88fd72049d5e65e7e9d9fc864a8bdf814cf5256"
+        },
+        {
+          "path": "Content\\CitySim\\Art\\Beach\\Meshes\\SM_Scenery_Starfish_A.uexp",
+          "bytes": 10312,
+          "sha256": "e3d2715419808f00024de716371cc20eaf6f32c4e41bfa81d7b85ce19da2f661"
+        },
+        {
+          "path": "Content\\CitySim\\Art\\Beach\\Meshes\\SM_Scenery_Starfish_A.ubulk",
+          "bytes": 4,
+          "sha256": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119"
+        },
+        {
+          "path": "Content\\CitySim\\Art\\Beach\\Meshes\\SM_Scenery_Driftwood_A.uasset",
+          "bytes": 1703,
+          "sha256": "4d967158772a51e782f012d12e679123c46cae39812452e389dc6a3172ea1722"
+        },
+        {
+          "path": "Content\\CitySim\\Art\\Beach\\Meshes\\SM_Scenery_Driftwood_A.uexp",
+          "bytes": 11976,
+          "sha256": "7fb3329156f0e0b8ae0b7cbd06ee13cc4e2e280f8e962d742f11e544aedf8fe2"
+        },
+        {
+          "path": "Content\\CitySim\\Art\\Beach\\Meshes\\SM_Scenery_Driftwood_A.ubulk",
+          "bytes": 4,
+          "sha256": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119"
+        },
+        {
+          "path": "Content\\CitySim\\Art\\Beach\\Meshes\\SM_Scenery_DuneGrass_A.uasset",
+          "bytes": 1703,
+          "sha256": "c759dc0a3254175c50d6ecd5193d949e79947750697e5c83a312791444df317e"
+        },
+        {
+          "path": "Content\\CitySim\\Art\\Beach\\Meshes\\SM_Scenery_DuneGrass_A.uexp",
+          "bytes": 10612,
+          "sha256": "3a2bcddf4d99401a7f8932acf2a69cb92a41e7e4fa43c539c26db990881e8d6d"
+        },
+        {
+          "path": "Content\\CitySim\\Art\\Beach\\Meshes\\SM_Scenery_DuneGrass_A.ubulk",
+          "bytes": 4,
+          "sha256": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119"
+        }
+      ],
+      "materialInstances": 5,
+      "reusedOpaqueMaster": 1,
+      "registry": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\CI\\Builds\\158-df3d17db8440-QuestCandidate-60a00cca\\Cooked\\Android_ASTC\\CitySimVR\\AssetRegistry.bin",
+      "registrySha256": "50e69391bfecad919eb2434027355ace96bdc47531836520cd2550290229adcf",
+      "scope": "Actual Android cook files/registry present; signed APK embedded-payload byte verification separately passed; physical rendering unconfirmed"
+    }
+  },
+  "startup": {
+    "status": "passed",
+    "mode": "Existing actual CI packaged startup plus byte-identical extracted runtime",
+    "build": 158,
+    "submitted": "df3d17db84404ddfa5947c474f2327546806817b",
+    "ciStartupLog": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\CI\\Builds\\158-df3d17db8440-WindowsCandidate-749d3198\\PackagedSmoke\\D68-Packaged-1280-800.log",
+    "ciStartupLogSha256": "31af1aabe211e1b518984b5c9fe18437c20518eb8f2d25ae9f59ce69c310f115",
+    "executable": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\D108\\BeachScatterZoom\\Extracted-Build158\\CitySimVR\\Binaries\\Win64\\CitySimVR.exe",
+    "executableSha256": "a0c2e139e5407d0ca59cb93f638900b5c175a3413c13941356428657db864164",
+    "runtimeFilesVerified": 53,
+    "directExtractedExecutionRepeated": false,
+    "reason": "CI already executed menu/render startup and both-width gameplay cases; ZIP/extraction bytes equal that executed runtime. No duplicate local native test was necessary.",
+    "physicalInput": "Unconfirmed until user playtest; CI startup is automated"
+  },
+  "staticScope": {
+    "status": "passed",
+    "head": "df3d17db84404ddfa5947c474f2327546806817b",
+    "base": "80af3c201be84712a2ccdb92f4fc7490ad34a4a1",
+    "approvedSourcesNativeAndConfigUnchangedSince155": true,
+    "globalNearClipUntouchedByCapture": true,
+    "editorExactPaths": [
+      "CitySim.Presentation.BeachPlacement",
+      "CitySim.Presentation.BeachAssetsAndLifecycle",
+      "CitySim.Presentation.AtmosphereSceneryAndLifecycle",
+      "CitySim.Presentation.TerrainScenerySuitability",
+      "CitySim.Dimensions.LegacySceneryDigest",
+      "CitySim.Dimensions.BoardPresentation",
+      "CitySim.Placement.Transactions",
+      "CitySim.Terrain.DeterminismAndFixtures",
+      "CitySim.Desktop.CameraBoundsAndReset"
+    ],
+    "clientExactPaths": [
+      "CitySim.Desktop.BeachScenery",
+      "CitySim.Desktop.FocusRestoresEntryMenu"
+    ],
+    "diffFiles": [
+      "ArtSource/Manifests/city_beach_integration.json",
+      "CitySimVR/Config/DefaultGame.ini",
+      "CitySimVR/Content/CitySim/Art/Beach/Materials/MI_BeachDriftwood.uasset",
+      "CitySimVR/Content/CitySim/Art/Beach/Materials/MI_BeachDuneGrass.uasset",
+      "CitySimVR/Content/CitySim/Art/Beach/Materials/MI_BeachFanShell.uasset",
+      "CitySimVR/Content/CitySim/Art/Beach/Materials/MI_BeachSpiralShell.uasset",
+      "CitySimVR/Content/CitySim/Art/Beach/Materials/MI_BeachStarfish.uasset",
+      "CitySimVR/Content/CitySim/Art/Beach/Meshes/SM_Scenery_Driftwood_A.uasset",
+      "CitySimVR/Content/CitySim/Art/Beach/Meshes/SM_Scenery_DuneGrass_A.uasset",
+      "CitySimVR/Content/CitySim/Art/Beach/Meshes/SM_Scenery_FanShell_A.uasset",
+      "CitySimVR/Content/CitySim/Art/Beach/Meshes/SM_Scenery_SpiralShell_A.uasset",
+      "CitySimVR/Content/CitySim/Art/Beach/Meshes/SM_Scenery_Starfish_A.uasset",
+      "CitySimVR/Source/CitySimVR/Private/Presentation/CityAtmosphereComponent.cpp",
+      "CitySimVR/Source/CitySimVR/Private/Presentation/CityBeachScenery.cpp",
+      "CitySimVR/Source/CitySimVR/Private/Sandbox/CityDesktopCamera.cpp",
+      "CitySimVR/Source/CitySimVR/Private/Sandbox/CitySandboxDesktopPawn.cpp",
+      "CitySimVR/Source/CitySimVR/Private/Tests/CityBeachSceneryTests.cpp",
+      "CitySimVR/Source/CitySimVR/Private/Tests/CityBeachVisualTests.cpp",
+      "CitySimVR/Source/CitySimVR/Private/Tests/CityDesktopUiTests.cpp",
+      "CitySimVR/Source/CitySimVR/Public/Interaction/CityVRToolController.h",
+      "CitySimVR/Source/CitySimVR/Public/Presentation/CityAtmosphereComponent.h",
+      "CitySimVR/Source/CitySimVR/Public/Presentation/CityBeachScenery.h",
+      "CitySimVR/Source/CitySimVR/Public/Sandbox/CityDesktopCamera.h",
+      "CitySimVR/Source/CitySimVR/Public/Sandbox/CitySandboxDesktopPawn.h",
+      "Tools/CI/ClientTests.txt",
+      "Tools/CI/Tests.txt",
+      "Tools/Import-CityBeachIntegration.py",
+      "docs/CHANGELOG.md",
+      "docs/D108_BEACH_INTEGRATION.md",
+      "docs/DEVELOPMENT_TASKS.md",
+      "docs/evidence/D108-beach-integration.json"
+    ],
+    "gitLfsFsck": "passed",
+    "whitespaceCheck": "passed",
+    "nativeCI": "pending157;156 retained compile-overload failure"
+  },
+  "baseline": "Windows155/2fff756 retained under Artifacts/D108/BeachIntegration; earlier evidence is historical",
+  "launcher": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\D108\\BeachScatterZoom\\Play-Candidate.ps1",
+  "humanAcceptance": "https://git.shaun-husain.com/CitySimVR/citysim/issues/53#issuecomment-2279",
+  "headset": "Unconfirmed; signed package/cook validation only, no device installation",
+  "protectedPrimaryFiles": 1192,
+  "remaining": "No required beach integration work; physical observations remain under D114 and D130 separately plans shoreline contours",
+  "unchanged": "Primary source/assets/catalog/head, maintained packages/default launchers, real player cities and devices",
+  "views": [
+    {
+      "Issue": 53,
+      "Name": "evidence-D110-AfterReload-a56f17cfef781fa6.png",
+      "LocalPath": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\D108\\BeachScatterZoom\\Views\\AfterReload.png",
+      "Bytes": 1008561,
+      "Sha256": "a56f17cfef781fa6cbdaccbd7696efb848beff0f0527400a1b8da8a53fdceed0",
+      "Url": "https://git.shaun-husain.com/attachments/2f9b63fc-80f7-425c-b38b-532c4f1d3fd2",
+      "AttachmentId": "2f9b63fc-80f7-425c-b38b-532c4f1d3fd2",
+      "Reused": false
+    },
+    {
+      "Issue": 53,
+      "Name": "evidence-D110-CloseDay-1df1fd0b9b0fee56.png",
+      "LocalPath": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\D108\\BeachScatterZoom\\Views\\CloseDay.png",
+      "Bytes": 1007682,
+      "Sha256": "1df1fd0b9b0fee56258bb43ce859bf27e0aef54ee99f18e8d81921c80976e4f3",
+      "Url": "https://git.shaun-husain.com/attachments/6cb4bcad-58e3-4e00-8c31-103828024d09",
+      "AttachmentId": "6cb4bcad-58e3-4e00-8c31-103828024d09",
+      "Reused": false
+    },
+    {
+      "Issue": 53,
+      "Name": "evidence-D110-CloseNight-39aa0034c41bd326.png",
+      "LocalPath": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\D108\\BeachScatterZoom\\Views\\CloseNight.png",
+      "Bytes": 830727,
+      "Sha256": "39aa0034c41bd326818dea630d3f8119321f763c8d6d96efa50fd60b5ec02a5d",
+      "Url": "https://git.shaun-husain.com/attachments/c7c34f59-51ca-4dd5-bc2d-cad1f458d697",
+      "AttachmentId": "c7c34f59-51ca-4dd5-bc2d-cad1f458d697",
+      "Reused": false
+    },
+    {
+      "Issue": 53,
+      "Name": "evidence-D110-Driftwood-9189f2f5e9c66754.png",
+      "LocalPath": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\D108\\BeachScatterZoom\\Views\\Driftwood.png",
+      "Bytes": 1065416,
+      "Sha256": "9189f2f5e9c66754b835991ead2a456d820abcf71c65ef4969c4fc3ce65f946d",
+      "Url": "https://git.shaun-husain.com/attachments/57be9ef7-061f-46c1-8313-8a87b5f5b45f",
+      "AttachmentId": "57be9ef7-061f-46c1-8313-8a87b5f5b45f",
+      "Reused": false
+    },
+    {
+      "Issue": 53,
+      "Name": "evidence-D110-DuneGrass-127127fb78acaafa.png",
+      "LocalPath": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\D108\\BeachScatterZoom\\Views\\DuneGrass.png",
+      "Bytes": 983800,
+      "Sha256": "127127fb78acaafab9e24c305e919bfd94123824c55733af33feeb7679fd8b35",
+      "Url": "https://git.shaun-husain.com/attachments/040e952f-0b73-435e-9387-a6fbdab3cc9a",
+      "AttachmentId": "040e952f-0b73-435e-9387-a6fbdab3cc9a",
+      "Reused": false
+    },
+    {
+      "Issue": 53,
+      "Name": "evidence-D110-FanShell-0b90961b0e86b536.png",
+      "LocalPath": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\D108\\BeachScatterZoom\\Views\\FanShell.png",
+      "Bytes": 847027,
+      "Sha256": "0b90961b0e86b5364eb4730a7aedd0b41c5675f166d83305fc089f9345afba67",
+      "Url": "https://git.shaun-husain.com/attachments/c20d993b-8b5c-44d3-a480-7cec15c89090",
+      "AttachmentId": "c20d993b-8b5c-44d3-a480-7cec15c89090",
+      "Reused": false
+    },
+    {
+      "Issue": 53,
+      "Name": "evidence-D110-Opposite-7175c333afebc4d1.png",
+      "LocalPath": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\D108\\BeachScatterZoom\\Views\\Opposite.png",
+      "Bytes": 1174590,
+      "Sha256": "7175c333afebc4d18bf3c8e6800db7931d408a2aff81887f5ca31e2ae856aacd",
+      "Url": "https://git.shaun-husain.com/attachments/7d06a63e-b326-4f16-a214-4e24d85f8aea",
+      "AttachmentId": "7d06a63e-b326-4f16-a214-4e24d85f8aea",
+      "Reused": false
+    },
+    {
+      "Issue": 53,
+      "Name": "evidence-D110-ShoreContext-52c29dfb8c457883.png",
+      "LocalPath": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\D108\\BeachScatterZoom\\Views\\ShoreContext.png",
+      "Bytes": 1350750,
+      "Sha256": "52c29dfb8c457883ac651f37c974fda860a5c6dd70c05b4993dc5b85aaecc3ac",
+      "Url": "https://git.shaun-husain.com/attachments/2c0ba68d-9d7c-491f-9b2b-5e9c5ff02661",
+      "AttachmentId": "2c0ba68d-9d7c-491f-9b2b-5e9c5ff02661",
+      "Reused": false
+    },
+    {
+      "Issue": 53,
+      "Name": "evidence-D110-SpiralShell-0477ec856cab9319.png",
+      "LocalPath": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\D108\\BeachScatterZoom\\Views\\SpiralShell.png",
+      "Bytes": 779851,
+      "Sha256": "0477ec856cab9319fc685ec14f5e6e19cb6097b0f452844dd1d57ea37aa08a52",
+      "Url": "https://git.shaun-husain.com/attachments/548d0c4b-9b1d-4caf-91b0-723d7e783136",
+      "AttachmentId": "548d0c4b-9b1d-4caf-91b0-723d7e783136",
+      "Reused": false
+    },
+    {
+      "Issue": 53,
+      "Name": "evidence-D110-Starfish-fc1c4673f97f4e37.png",
+      "LocalPath": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\D108\\BeachScatterZoom\\Views\\Starfish.png",
+      "Bytes": 903491,
+      "Sha256": "fc1c4673f97f4e37855a8e43b89e38052552c4c2da2557a7b448a9ac5a0d00cb",
+      "Url": "https://git.shaun-husain.com/attachments/4c7aa466-a2ef-4f80-a047-2f6b68bdcd02",
+      "AttachmentId": "4c7aa466-a2ef-4f80-a047-2f6b68bdcd02",
+      "Reused": false
+    }
+  ],
+  "initialFailure": {
+    "build": 156,
+    "cause": "Atan2(int,int) ambiguous math overload; fixed explicit double arguments; compile116.34s, no tests ran"
+  },
+  "followup": "https://git.shaun-husain.com/CitySimVR/citysim/issues/146",
+  "merge": "50d07b01fcd3b262b5390a2367b784b5ebd0c501",
+  "closeout": "docs/evidence/D108-beach-closeout.json"
+}

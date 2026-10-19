@@ -1,0 +1,362 @@
+{
+  "task": "D127 doubled waste coverage / B008 emergency traffic stall",
+  "date": "2026-10-16",
+  "revision": "dev-ce1899475e36f6286419",
+  "schema": 70,
+  "status": "Maintained Windows ready for user playtest",
+  "behavior": [
+    "Garbage and recycling service catchments64 freight-accessible road cells from facility frontage, for both starter/expanded levels. Finite fleet/cargo/storage/staff/processing and real arrival collection remain.",
+    "Inner-lane cars whose right-lane merge is blocked continue following safe normal lane/connector gaps until a safe merge is possible.",
+    "Curb queues in a single-lane exit ahead of a multi-lane responder creep at the existing bounded curb speed. This drains approach lanes rather than locking ordinary cars and the ambulance behind them.",
+    "No teleport/despawn/phantom arrivals, free treatment, emergency fleet/bed increase, hospital distance cap or accepted D107/D125 rate change. Existing single-lane yielding/opposing response and highway lane-change safety remain."
+  ],
+  "diagnosis": {
+    "city": "City 837230",
+    "source": {
+      "path": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\DesktopUser\\Saved\\SaveGames\\Cities\\7f75dad74ef63da3998d4ba133cc6ea1.json",
+      "sha256": "276727c3a77e63654c7fc0e1fa67bed1e8214980e38ee37724049a45d1e77e27"
+    },
+    "copy": "Artifacts/D127/ReportedCity.json",
+    "originalUnchanged": true,
+    "initialResidents": 930,
+    "initialPatients": 193,
+    "initialSevereWaiting": 90,
+    "staffPercent": 100,
+    "operatingBeds": 48,
+    "ambulances": 2,
+    "baseline": "Diagnosis3: both ambulances stop at fixed positions for over375 updates while hospital stays100% staffed/capacity48. After450 updates, recoveries311-to396,0inpatients,117severe waiting,48outpatient visits stuck.",
+    "fixed": "Both original ambulance journeys complete; copied-city continuations recover311-to481 after450 updates with hospital still100% staffed/capacity48.95severe cases still await finite ambulances amid continuing new illness; this is not proof every queue clears or capacity balancing is complete."
+  },
+  "windows": {
+    "path": "Artifacts/PCVRSandbox/Windows/CitySimVR/Binaries/Win64/CitySimVR.exe",
+    "sha256": "0ec71d3d22bc123fc03e0710ae704b8fbb9f3586602ea2c917e6daf4b41a95c7",
+    "default_replaced": true,
+    "previousFiles": 53
+  },
+  "quest": {
+    "path": "Artifacts/D127/QuestPackage/Android_ASTC/CitySimVR-arm64.apk",
+    "sha256": "13d68e331c57d34570331c970e340b4576d762ab5588a0c8db8c6b5b6257ac72",
+    "signed": true,
+    "architecture": "ARM64",
+    "minSdk": 32,
+    "targetSdk": 35,
+    "embeddedPayload": [
+      {
+        "file": "CitySimVR-Android_ASTC.pak",
+        "bytes": 10481033,
+        "sha256": "87a5462dc4df2414b3a0e456d3f8950b3e10e21f72e425c097e4715143b846de"
+      },
+      {
+        "file": "CitySimVR-Android_ASTC.utoc",
+        "bytes": 248191,
+        "sha256": "e6207d575fffca1a6c1102551c2c6c39cc2347078c3fc24498324a578e981d6e"
+      },
+      {
+        "file": "CitySimVR-Android_ASTC.ucas",
+        "bytes": 103997808,
+        "sha256": "1c5391dc5c21adf05e663f8d33c1cd8830e5720530444d596afed4afff5de788"
+      }
+    ],
+    "installed": false
+  },
+  "tests": {
+    "Checks-EditorFocused.log": [
+      "HighwayLaneYield",
+      "OccupiedShopDeparture",
+      "ResponseAtQueuedMultiLaneExit",
+      "RollingYieldAndRejoin",
+      "SideBySideAndPassing",
+      "ActualRoutesPickupAdmissionAndRecovery",
+      "CapacityArrivalRecoveryAndSave",
+      "IntroductionGraceAndCatchup",
+      "TransportOutageRouteLossAndRetry",
+      "ReportedCityContinuation",
+      "BlockedReturnAndDispensedMedicine",
+      "CurrentCityTravelHomeAndReload",
+      "IndependentBedsAndVisitCapacity",
+      "EmergencyIntersectionPriority",
+      "EmergencyYieldAndResume",
+      "FairPortalDepartures",
+      "IntersectionConnectorQueue",
+      "LiveTripLifecycle",
+      "OccupiedResponseCurb",
+      "OpposingResponseYield",
+      "PortalMergeAtConnector",
+      "ReportedShoppingCity",
+      "RestoreAndCatchUp",
+      "SharedLaneAcrossRoutes",
+      "SpeedLimitsAndFollowing",
+      "VisiblePool",
+      "DoubledRangeBoundaryAndArrival",
+      "PlannedRoutesRatesConservationAndOrdinaryTraffic"
+    ],
+    "Checks-PackagedFinal.log": [
+      "HighwayLaneYield",
+      "OccupiedShopDeparture",
+      "ResponseAtQueuedMultiLaneExit",
+      "RollingYieldAndRejoin",
+      "SideBySideAndPassing",
+      "ReportedCityContinuation",
+      "BlockedReturnAndDispensedMedicine",
+      "CurrentCityTravelHomeAndReload",
+      "IndependentBedsAndVisitCapacity",
+      "DoubledRangeBoundaryAndArrival"
+    ],
+    "Startup.log": [
+      "PackagedSmoke"
+    ]
+  },
+  "continuations": {
+    "EditorFocused": {
+      "outputs": [
+        {
+          "update": 0,
+          "path": "Artifacts/D127/EditorFocused-ReportedCity/City-0.json",
+          "sha256": "63a5545c9c8ce00f1ad76867ee3b505c33682d96871cbaa4c21f0fde9dbd9fa4",
+          "patients": 193,
+          "totalRecovered": 311
+        },
+        {
+          "update": 75,
+          "path": "Artifacts/D127/EditorFocused-ReportedCity/City-75.json",
+          "sha256": "f877a3faf99b5a58d02dd33aabcce3c72d315b78924d9674d5ca7f4e9a3284ae",
+          "patients": 166,
+          "totalRecovered": 338
+        },
+        {
+          "update": 150,
+          "path": "Artifacts/D127/EditorFocused-ReportedCity/City-150.json",
+          "sha256": "04d40bb3d56038b6a6d0cf948451719f07a45973c1e71d730ad0d251fbac76eb",
+          "patients": 205,
+          "totalRecovered": 368
+        },
+        {
+          "update": 225,
+          "path": "Artifacts/D127/EditorFocused-ReportedCity/City-225.json",
+          "sha256": "e544180e6e68021cd009ef40a7c45a000b2bebb69f27db85437206aa9168386d",
+          "patients": 187,
+          "totalRecovered": 386
+        },
+        {
+          "update": 300,
+          "path": "Artifacts/D127/EditorFocused-ReportedCity/City-300.json",
+          "sha256": "08f34952a3b9cb45750e313d540ccabc4a878df4e9788eb87e9fe515b477164d",
+          "patients": 239,
+          "totalRecovered": 411
+        },
+        {
+          "update": 375,
+          "path": "Artifacts/D127/EditorFocused-ReportedCity/City-375.json",
+          "sha256": "4ba872f2728f0602a5dc4ccd85b069aa10d8ee1f0bdf4a70f6c4f2c1115a3f69",
+          "patients": 211,
+          "totalRecovered": 439
+        },
+        {
+          "update": 450,
+          "path": "Artifacts/D127/EditorFocused-ReportedCity/City-450.json",
+          "sha256": "6d2f58da770f97deff5b7f8fc3dcc6705d3f3e25c10059cdaf5c9208e8cab366",
+          "patients": 235,
+          "totalRecovered": 481
+        }
+      ],
+      "updates": 450,
+      "recoveriesDuringRun": 170,
+      "originalAmbulanceTripsFinish": true,
+      "midQueueReloadAt": 150,
+      "populationTrafficHealthEqualAt": [
+        225,
+        300,
+        375,
+        450
+      ],
+      "finalSevereWaiting": 95
+    },
+    "PackagedFinal": {
+      "outputs": [
+        {
+          "update": 0,
+          "path": "Artifacts/D127/PackagedFinal-ReportedCity/City-0.json",
+          "sha256": "d1da8d36f93fd3db45ce4645eb19c0a94319989b12db14047ea65e081a560b31",
+          "patients": 193,
+          "totalRecovered": 311
+        },
+        {
+          "update": 75,
+          "path": "Artifacts/D127/PackagedFinal-ReportedCity/City-75.json",
+          "sha256": "561987f4221e2dbcf8a54ea2f52420407e61de2d304e892b749bbbafe75b656d",
+          "patients": 166,
+          "totalRecovered": 338
+        },
+        {
+          "update": 150,
+          "path": "Artifacts/D127/PackagedFinal-ReportedCity/City-150.json",
+          "sha256": "c95f72a43cedcd7bf670cf76c291303c5f79199c680423058cea3f72a4104550",
+          "patients": 205,
+          "totalRecovered": 368
+        },
+        {
+          "update": 225,
+          "path": "Artifacts/D127/PackagedFinal-ReportedCity/City-225.json",
+          "sha256": "5a6b2c54edfc4c11b81247b64065eae8e22d195043c91938fb4eddbf0075dc9d",
+          "patients": 187,
+          "totalRecovered": 386
+        },
+        {
+          "update": 300,
+          "path": "Artifacts/D127/PackagedFinal-ReportedCity/City-300.json",
+          "sha256": "ff4b58b48fe8133b87a33e94abbaf5e4615bfcd5b3cf65a35cbce32958033511",
+          "patients": 239,
+          "totalRecovered": 411
+        },
+        {
+          "update": 375,
+          "path": "Artifacts/D127/PackagedFinal-ReportedCity/City-375.json",
+          "sha256": "8fc9d500253d414daedb8255fc45cb65f99a8796b69750bbd94ee2893be13863",
+          "patients": 211,
+          "totalRecovered": 439
+        },
+        {
+          "update": 450,
+          "path": "Artifacts/D127/PackagedFinal-ReportedCity/City-450.json",
+          "sha256": "df0fa03fc44ab61079ec1dfa1b9632a945bedcd74cf2148dbbeb7d72aeef65c9",
+          "patients": 235,
+          "totalRecovered": 481
+        }
+      ],
+      "updates": 450,
+      "recoveriesDuringRun": 170,
+      "originalAmbulanceTripsFinish": true,
+      "midQueueReloadAt": 150,
+      "populationTrafficHealthEqualAt": [
+        225,
+        300,
+        375,
+        450
+      ],
+      "finalSevereWaiting": 95
+    }
+  },
+  "rangeImport": {
+    "task": "D127",
+    "changes": [
+      {
+        "definition": "WasteDepot",
+        "level": "<CityDensityLevel.LOW: 0>",
+        "before": 32,
+        "after": 64
+      },
+      {
+        "definition": "WasteDepot",
+        "level": "<CityDensityLevel.MEDIUM: 1>",
+        "before": 32,
+        "after": 64
+      },
+      {
+        "definition": "Recycling",
+        "level": "<CityDensityLevel.LOW: 0>",
+        "before": 32,
+        "after": 64
+      },
+      {
+        "definition": "Recycling",
+        "level": "<CityDensityLevel.MEDIUM: 1>",
+        "before": 32,
+        "after": 64
+      }
+    ],
+    "otherAssetsSaved": false
+  },
+  "startup": {
+    "path": "Artifacts/D127/D127-Startup-D68-Automation/Saved/Automation/Desktop/Entry.png",
+    "sha256": "ae9f8b6ed957d326b57386c777aba36531dd52c4a2d64711c8357661cbd25bdf",
+    "reviewed": true
+  },
+  "source_changes": [
+    {
+      "path": "CitySimVR/Source/CitySimVR/Private/Simulation/CityTrafficSimulation.cpp",
+      "before_sha256": "e266347beebfa8787a0b17914d001ef26ca74de84ea357a397656bd1c4cd91d8",
+      "after_sha256": "42e094e71a39e69b572b78cdff13e728532a0dcfadad6f4d6e6113d746bd4345",
+      "diff": "--- CitySimVR/Source/CitySimVR/Private/Simulation/CityTrafficSimulation.cpp (before D127)\n+++ CitySimVR/Source/CitySimVR/Private/Simulation/CityTrafficSimulation.cpp\n@@ -394,6 +394,7 @@\n \t// Only emergency journeys participate in the look-ahead scan (at most16\n \t// in normal gameplay). Read one immutable snapshot for order independence.\n \tTSet<uint64> YieldIds;\n+\tTSet<uint64> CurbClearanceIds;\n \tTSet<int32> EmergencyNodes;\n \tfor (const auto& Emergency : Previous)\n \t{\n@@ -435,7 +436,16 @@\n \t\t\t\tconst int32 Separation = Ahead + Position;\n \t\t\t\tif (Position <= Length + Emergency.LengthUnits + SafeFollowingGapUnits &&\n \t\t\t\t    Separation >= -Emergency.LengthUnits - SafeFollowingGapUnits && Separation <= LookAhead)\n+\t\t\t\t{\n \t\t\t\t\tYieldIds.Add(Candidate.Id);\n+\t\t\t\t\t// Drain the curb queue beyond a multi-lane exit. Stopping it\n+\t\t\t\t\t// would trap the ordinary cars ahead of the responder in both\n+\t\t\t\t\t// approach lanes, preventing the responder reaching that exit.\n+\t\t\t\t\tif (I > Emergency.RouteLegIndex && !Candidate.bEmergencyResponding &&\n+\t\t\t\t\t    CandidateLeg.bReverse == RouteLeg.bReverse && !HasPassingLanes(RouteEdge) &&\n+\t\t\t\t\t    HasPassingLanes(Network.Edges[Emergency.Route[Emergency.RouteLegIndex].EdgeId]))\n+\t\t\t\t\t\tCurbClearanceIds.Add(Candidate.Id);\n+\t\t\t\t}\n \t\t\t}\n \t\t\tif (I == Emergency.RouteLegIndex && I + 1 < Emergency.Route.Num() &&\n \t\t\t    Length - Emergency.DistanceUnits <=\n@@ -447,7 +457,7 @@\n \t// A responder must have a free curb slot before yielding. If an ordinary\n \t// curb queue occupies it, hold the responder in the center and let that queue\n \t// crawl forward on its separate track until there is room to pull aside.\n-\tTSet<uint64> DeferredYieldIds, CurbClearanceIds;\n+\tTSet<uint64> DeferredYieldIds;\n \tfor (const auto& Emergency : Previous)\n \t{\n \t\tif (!Emergency.bEmergencyResponding || Emergency.bCompleted || !YieldIds.Contains(Emergency.Id) ||\n@@ -508,11 +518,12 @@\n \t\t        ? Vehicle.EndDistanceUnits\n \t\t        : GetEdgeLengthUnits(Edge);\n \t\tconst bool bWasYielding = Vehicle.bYielding;\n-\t\t// No space in the outer highway lane: wait safely in the inner lane;\n-\t\t// do not cross an occupied lane into a fictitious clear shoulder.\n-\t\tif (HasPassingLanes(Edge) && !Vehicle.bEmergencyResponding && YieldIds.Contains(Vehicle.Id))\n-\t\t{ Vehicle.bYielding = false; Vehicle.SpeedUnitsPerStep = 0; continue; }\n-\t\tbool bHold = YieldIds.Contains(Vehicle.Id);\n+\t\t// A blocked outer-lane merge must keep its inner queue moving. Stopping\n+\t\t// here can lock both lanes and every responder behind them forever.\n+\t\t// Continue with normal leader/connector gaps until a safe merge opens;\n+\t\t// the responder follows this lane rather than passing through it.\n+\t\tbool bHold = YieldIds.Contains(Vehicle.Id) &&\n+\t\t             (Vehicle.bEmergencyResponding || !HasPassingLanes(Edge));\n \t\tif (DeferredYieldIds.Contains(Vehicle.Id))\n \t\t{\n \t\t\tVehicle.bYielding = false;\n"
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Private/Simulation/CityWasteSimulation.cpp",
+      "before_sha256": "ac108021e31f66fb4d58ce47e7c463314a6ce988a13ad0276ad27ffe964d3443",
+      "after_sha256": "e371c334d34dafc5bebdca98c556f37f6472e560bbffeb3e9452959cb0793874",
+      "diff": "--- CitySimVR/Source/CitySimVR/Private/Simulation/CityWasteSimulation.cpp (before D127)\n+++ CitySimVR/Source/CitySimVR/Private/Simulation/CityWasteSimulation.cpp\n@@ -48,7 +48,7 @@\n \tconst auto* L = D ? D->FindDensityLevel(S ? S->DensityLevel : ECityDensityLevel::Low) : nullptr;\n \tP.bRecycling = E && E->DefinitionId == TEXT(\"Recycling\");\n \tconst bool Expanded = S && S->DensityLevel != ECityDensityLevel::Low;\n-\tP.Range = L ? L->CivicRoadRange : 32;\n+\tP.Range = L ? L->CivicRoadRange : 64;\n \tP.Storage = Expanded ? 4800 : 2400;\n \tP.ProcessingPerStep = Expanded ? 160 : 80;\n \tP.StaffPercent = E && IsFacility(E->DefinitionId) && !Unpaid && Development.IsOperational(Id) &&\n"
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Private/Tests/CityFlowRefinementTests.cpp",
+      "before_sha256": "7cd51d0d4bf0429dbb752c8e7a1437be80e9d81ac14b9bcf1e455ec33a843394",
+      "after_sha256": "f83d95877727eaaf0255b1af1ba3d59edfb9d5d684d245d3c167b6917c9347ad",
+      "diff": "--- CitySimVR/Source/CitySimVR/Private/Tests/CityFlowRefinementTests.cpp (before D127)\n+++ CitySimVR/Source/CitySimVR/Private/Tests/CityFlowRefinementTests.cpp\n@@ -134,6 +134,7 @@\n \tBlocked.AddVehicle(Car,N);Blocked.AddVehicle(Right,N);Blocked.AddVehicle(Engine,N);Blocked.AdvanceOneStep(N,1);\n \tTestEqual(TEXT(\"occupied right lane prevents unsafe merge\"),Blocked.GetSnapshot().Vehicles[0].Route[0].LaneIndex,0);\n \tTestFalse(TEXT(\"blocked inner lane does not invent shoulder clearance\"),Blocked.GetSnapshot().Vehicles[0].bYielding);\n+\tTestTrue(TEXT(\"blocked merge keeps the inner queue moving\"),Blocked.GetSnapshot().Vehicles[0].DistanceUnits>Car.DistanceUnits);\n \tFString Error;FCityTrafficSimulation Check;\n \tTestTrue(TEXT(\"blocked highway merge is safe to reload\"),Check.RestoreState(Blocked.GetSnapshot(),N,1,Error));\n \tauto Avenue=N;Avenue.Edges[0].RoadClass=ECityRoadClass::Avenue;\n@@ -155,4 +156,28 @@\n \t}\n \treturn true;\n }\n+IMPLEMENT_SIMPLE_AUTOMATION_TEST(FCityMultiLaneExitTest,\"CitySim.Flow.ResponseAtQueuedMultiLaneExit\",\n+\tEAutomationTestFlags::EditorContext|EAutomationTestFlags::ClientContext|EAutomationTestFlags::EngineFilter)\n+bool FCityMultiLaneExitTest::RunTest(const FString&)\n+{\n+\tauto N=FlowNetwork(true);N.Nodes={{0,{0,0},0},{1,{1,0},0},{2,{2,0},0}};\n+\tN.Edges[0].EndNodeId=1;N.Edges[0].Cells={{0,0},{1,0}};\n+\tauto Local=N.Edges[0];Local.Id=1;Local.StartNodeId=1;Local.EndNodeId=2;\n+\tLocal.Cells={{1,0},{2,0}};Local.ForwardLanes=Local.ReverseLanes=1;Local.RoadClass=ECityRoadClass::Local;\n+\tN.Edges.Add(Local);N.Connectors={{0,1,0,1,0,0,ECityRoadTurn::Straight},{1,1,0,1,1,0,ECityRoadTurn::Straight}};\n+\tauto Inner=FlowVehicle(1,900);Inner.Route.Add({1,false,0});\n+\tauto Outer=Inner;Outer.Id=2;Outer.Route[0].LaneIndex=1;\n+\tauto Rear=FlowVehicle(3,50);Rear.Route[0].EdgeId=1;Rear.bYielding=true;\n+\tauto Front=Rear;Front.Id=4;Front.DistanceUnits=900;\n+\tauto Ambulance=FlowVehicle(5,50);Ambulance.LengthUnits=350;Ambulance.VehicleType=ECityTripVehicleType::Ambulance;Ambulance.bEmergencyResponding=true;Ambulance.Route.Add({1,false,0});\n+\tFCityTrafficSimulation T;FString Error;\n+\tfor(const auto& V:{Inner,Outer,Rear,Front,Ambulance})if(!TestTrue(TEXT(\"legal queued exit fixture\"),T.AddVehicle(V,N,&Error))){AddError(Error);return false;}\n+\tfor(int64 Step=1;Step<=20;++Step)\n+\t{\n+\t\tT.AdvanceOneStep(N,Step);FCityTrafficSimulation Reload;\n+\t\tif(!TestTrue(TEXT(\"every draining-queue step keeps safe restorable gaps\"),Reload.RestoreState(T.GetSnapshot(),N,Step,Error))){AddError(Error);return false;}\n+\t}\n+\tfor(const auto& V:T.GetSnapshot().Vehicles)TestTrue(TEXT(\"ordinary and emergency traffic all clear the exit\"),V.bCompleted);\n+\treturn true;\n+}\n #endif\n"
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Private/Tests/CityWasteTests.cpp",
+      "before_sha256": "436e7957af160865e18b97d77b1be33f55664d30d5294e8eea8ae8317694381f",
+      "after_sha256": "28cb25da73d611ca5a95990e5b830ab0a33adabbdcc4e8d04a93f1d03f19624c",
+      "diff": "--- CitySimVR/Source/CitySimVR/Private/Tests/CityWasteTests.cpp (before D127)\n+++ CitySimVR/Source/CitySimVR/Private/Tests/CityWasteTests.cpp\n@@ -32,6 +32,8 @@\n \tauto Road = City.BeginRoadPreview(FCityPlacementModel::EntranceCell);\n \tCity.UpdateRoadPreviewEnd(Road, {63, 8});\n \tCity.CommitRoad(Road);\n+\tRoad=City.BeginRoadPreview({63,8});City.UpdateRoadPreviewEnd(Road,{63,22});City.CommitRoad(Road);\n+\tRoad=City.BeginRoadPreview({63,22});City.UpdateRoadPreviewEnd(Road,{45,22});City.CommitRoad(Road);\n \tauto Place = [&](FName Name, FCityCellCoord Cell) {\n \t\tconst auto* D = Catalog->FindDefinition(Name);\n \t\tauto Preview = City.BeginPreview(*D, Cell);\n@@ -39,7 +41,7 @@\n \t};\n \tconst uint64 Depot = Place(TEXT(\"WasteDepot\"), {1, 9}), Home = Place(TEXT(\"Home\"), {8, 9}),\n \t             Shop = Place(TEXT(\"Shop\"), {12, 9}), Industry = Place(TEXT(\"Factory\"), {16, 9}),\n-\t             Far = Place(TEXT(\"Factory\"), {48, 9});\n+\t             Far = Place(TEXT(\"Factory\"), {48, 23});\n \tif (!TestTrue(TEXT(\"Fixture lots placed\"), Depot && Home && Shop && Industry && Far))\n \t\treturn false;\n \tFCityRoadNetworkSnapshot Network;\n"
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Public/Simulation/CityWasteSimulation.h",
+      "before_sha256": "675147137318dd11605da3c0d5ef683bff6f358791d7679a9f8fa6dfdd269731",
+      "after_sha256": "69e620b71860a77689310adae19bf160b4d1d9fa9707662611c49547da5a265d",
+      "diff": "--- CitySimVR/Source/CitySimVR/Public/Simulation/CityWasteSimulation.h (before D127)\n+++ CitySimVR/Source/CitySimVR/Public/Simulation/CityWasteSimulation.h\n@@ -49,7 +49,7 @@\n };\n struct CITYSIMVR_API FCityWasteFacilityPolicy\n {\n-\tint32 Range = 32, Fleet = 0, Storage = 2400, ProcessingPerStep = 80, StaffPercent = 0;\n+\tint32 Range = 64, Fleet = 0, Storage = 2400, ProcessingPerStep = 80, StaffPercent = 0;\n \tbool bRecycling = false;\n };\n struct FCityWasteTuning\n"
+    },
+    {
+      "path": "CitySimVR/Content/CitySim/Data/DA_CityBuildingCatalog.uasset",
+      "before_sha256": "c37a8c9dae95a07ea110564ef917feecb5f599f65d7bfff68b09a3e196943883",
+      "after_sha256": "3487b81c7162b66341e33e5aa510d966e158bf941dfd2a3192f925f766716f74",
+      "assetChange": "Only four waste/recycling density-level CivicRoadRange fields change32-to64; selective Unreal importer receipt retained. Existing meshes/materials/assets otherwise unchanged."
+    },
+    {
+      "path": "Tools/Update-CityWasteCatalog.py",
+      "before_sha256": "cca23a0d6b26b08eee7828d1a03d0fa6c513a12ee6c33c06391d018611a287c7",
+      "after_sha256": "41242ca899431f95786b52cd559f3c3f54e33a9600bfdf177e64729105617d81",
+      "diff": "--- Tools/Update-CityWasteCatalog.py (before D127)\n+++ Tools/Update-CityWasteCatalog.py\n@@ -32,7 +32,7 @@\n                                jobs_provided=(4, 6)[index], monthly_upkeep=(upkeep, upkeep + 30)[index],\n                                power_demand=(12, 18)[index], water_demand=(8, 12)[index],\n                                upgrade_cost=(0, expansion)[index], civic_construction_steps=(0, 5)[index],\n-                               civic_road_range=32, civic_protection_capacity=(2400, 4800)[index],\n+                               civic_road_range=64, civic_protection_capacity=(2400, 4800)[index],\n                                civic_response_vehicles=(2, 3)[index]).items():\n             level.set_editor_property(key, value)\n         levels.append(level)\n"
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Private/Tests/CityHealthServiceTests.cpp",
+      "before_sha256": null,
+      "after_sha256": "2ac9ba25d39532fae13b8c1b653e4f7d2709be72aa3da8373e23b6f14092bf1b",
+      "diff": "#if WITH_DEV_AUTOMATION_TESTS\n#include \"Misc/AutomationTest.h\"\n#include \"Misc/CommandLine.h\"\n#include \"Misc/Parse.h\"\n#include \"Misc/Paths.h\"\n#include \"Misc/FileHelper.h\"\n#include \"HAL/FileManager.h\"\n#include \"Engine/World.h\"\n#include \"Simulation/CitySimulationSubsystem.h\"\n#include \"Simulation/CityBuildingDefinition.h\"\n#include \"Simulation/CityGrowthSimulation.h\"\n#include \"Persistence/CityPersistence.h\"\n\nIMPLEMENT_SIMPLE_AUTOMATION_TEST(FCityHealthServiceCityTest,\"CitySim.HealthService.ReportedCityContinuation\",\n EAutomationTestFlags::EditorContext|EAutomationTestFlags::ClientContext|EAutomationTestFlags::EngineFilter)\nbool FCityHealthServiceCityTest::RunTest(const FString&)\n{\n FString Path,Output,Original,Error;\n if(!FParse::Value(FCommandLine::Get(),TEXT(\"HealthServiceSave=\"),Path)||!FParse::Value(FCommandLine::Get(),TEXT(\"HealthServiceOutput=\"),Output)||!FFileHelper::LoadFileToString(Original,*Path)){AddError(TEXT(\"Requires captured current city and isolated output\"));return false;}\n IFileManager::Get().MakeDirectory(*Output,true);\n const auto Init=UWorld::InitializationValues().AllowAudioPlayback(false).CreatePhysicsScene(false).CreateNavigation(false).CreateAISystem(false).ShouldSimulatePhysics(false);\n auto* W=UWorld::CreateWorld(EWorldType::Game,false,TEXT(\"HealthServiceCity\"),nullptr,true,ERHIFeatureLevel::Num,&Init);\n auto* WR=UWorld::CreateWorld(EWorldType::Game,false,TEXT(\"HealthServiceReload\"),nullptr,true,ERHIFeatureLevel::Num,&Init);\n auto* S=W->GetSubsystem<UCitySimulationSubsystem>();\n auto* R=WR->GetSubsystem<UCitySimulationSubsystem>();bool Reloaded=false;\n auto Cleanup=[&](){WR->DestroyWorld(false);W->DestroyWorld(false);};\n auto* Catalog=LoadObject<UCityBuildingCatalog>(nullptr,TEXT(\"/Game/CitySim/Data/DA_CityBuildingCatalog.DA_CityBuildingCatalog\"));\n if(!TestNotNull(TEXT(\"catalog\"),Catalog)){Cleanup();return false;}S->RegisterBuildingCatalog(Catalog);R->RegisterBuildingCatalog(Catalog);\n if(!TestTrue(TEXT(\"captured city loads: \")+Error,S->LoadCityFromPath(Path,Error,false))){Cleanup();return false;}\n S->SetSimulationPaused(false);S->SetSimulationSpeed(1);\n TArray<uint64> OriginalAmbulanceTrips;\n for(const auto& Trip:S->GetPopulationSnapshot().TransitTrips)if(Trip.IsHealthJourney()&&Trip.VehicleType==ECityTripVehicleType::Ambulance)OriginalAmbulanceTrips.Add(Trip.Id);\n auto Record=[&](int32 Update)\n {\n  const auto& H=S->GetHealthSnapshot();int32 MildWaiting=0,SevereWaiting=0,Beds=0,Visits=0,Inbound=0,Home=0;\n  for(const auto& P:H.Patients){MildWaiting+=P.Illness==ECityIllness::Mild&&P.Care==ECityHealthCare::None;SevereWaiting+=P.Illness==ECityIllness::Severe&&P.Care==ECityHealthCare::None;Beds+=P.Care==ECityHealthCare::Hospital;Visits+=P.UsesOutpatientPlace();Inbound+=P.Care==ECityHealthCare::AwaitingAmbulance;Home+=P.Care==ECityHealthCare::HomeRecovery;}\n  AddInfo(FString::Printf(TEXT(\"B008_CITY Update=%d Step=%lld Patients=%d MildWaiting=%d SevereWaiting=%d Inpatient=%d Visits=%d AmbulanceInbound=%d Home=%d Recovered=%lld\"),Update,H.LastStep,H.Patients.Num(),MildWaiting,SevereWaiting,Beds,Visits,Inbound,Home,H.TotalRecovered));\n  for(const auto& E:S->GetPlacementModel().GetEntities())if(E.Value.DefinitionId==TEXT(\"Hospital\"))\n  {\n   const auto& Services=S->GetServiceSnapshot();AddInfo(FString::Printf(TEXT(\"B008_HOSPITAL Id=%llu Capacity=%d Fleet=%d Staff=%d Failure=%d\"),E.Key,Services.HospitalCapacities.FindRef(E.Key),Services.HospitalFleetCapacities.FindRef(E.Key),Services.PublicStaffPercent.FindRef(E.Key),static_cast<int32>(Services.GetFailure(E.Key))));\n  }\n  TestTrue(TEXT(\"copied continuation saves: \")+Error,S->SaveCityToPath(Output/FString::Printf(TEXT(\"City-%d.json\"),Update),Error));\n  if(Reloaded)\n  {\n   FString Json,A,B;FCitySaveDocument DA;\n   FFileHelper::LoadFileToString(Json,*(Output/FString::Printf(TEXT(\"City-%d.json\"),Update)));\n   if(TestTrue(TEXT(\"continuation document reads: \")+Error,FCityPersistence::Deserialize(Json,DA,Error)))\n   {\n    auto DB=DA;DB.Population=R->GetPopulationSnapshot();DB.Health=R->GetHealthSnapshot();DB.Traffic=R->GetTrafficSnapshot();\n    TestTrue(TEXT(\"reloaded state serializes\"),FCityPersistence::Serialize(DA,A,Error)&&FCityPersistence::Serialize(DB,B,Error));\n    TestEqual(TEXT(\"population,health and traffic continuation match reload\"),A,B);\n   }\n  }\n };\n Record(0);for(int32 I=1;I<=450;++I)\n {\n  S->Tick(2.4f);if(Reloaded)R->Tick(2.4f);if(I%75==0)Record(I);\n  if(I==150){Reloaded=TestTrue(TEXT(\"actual current-city traffic/health reload: \")+Error,R->LoadCityFromPath(Output/TEXT(\"City-150.json\"),Error,false));if(Reloaded){R->SetSimulationPaused(false);R->SetSimulationSpeed(1);}}\n }\n TestTrue(TEXT(\"mid-queue reload exercised\"),Reloaded);\n for(uint64 Id:OriginalAmbulanceTrips)TestFalse(TEXT(\"original ambulance finishes instead of permanently blocking its fleet slot\"),S->GetPopulationSnapshot().TransitTrips.ContainsByPredicate([&](const auto& Trip){return Trip.Id==Id;}));\n FString After;FFileHelper::LoadFileToString(After,*Path);TestEqual(TEXT(\"captured original unchanged\"),After,Original);\n Cleanup();return true;\n}\n#endif\n"
+    },
+    {
+      "path": "CitySimVR/Source/CitySimVR/Private/Tests/CityWasteRangeTests.cpp",
+      "before_sha256": null,
+      "after_sha256": "01c53998744a8ca914708d1bd4fe6f4012a34b00e220fed0d79656a821e4e30b",
+      "diff": "#if WITH_DEV_AUTOMATION_TESTS\n#include \"Misc/AutomationTest.h\"\n#include \"Simulation/CityWasteSimulation.h\"\n#include \"Simulation/CityBuildingDefinition.h\"\n#include \"Simulation/CityGrowthSimulation.h\"\n#include \"Simulation/CityDevelopmentSimulation.h\"\n#include \"Simulation/CityTrafficSimulation.h\"\n#include \"Commands/CityPlacementModel.h\"\n#include \"Persistence/CityWastePersistence.h\"\n\nIMPLEMENT_SIMPLE_AUTOMATION_TEST(FCityWasteRangeTest,\"CitySim.Waste.DoubledRangeBoundaryAndArrival\",\n EAutomationTestFlags::EditorContext|EAutomationTestFlags::ClientContext|EAutomationTestFlags::EngineFilter)\nbool FCityWasteRangeTest::RunTest(const FString&)\n{\n const auto* Authored=LoadObject<UCityBuildingCatalog>(nullptr,TEXT(\"/Game/CitySim/Data/DA_CityBuildingCatalog.DA_CityBuildingCatalog\"));\n if(!TestNotNull(TEXT(\"authored catalog\"),Authored))return false;\n for(FName Facility:{FName(TEXT(\"WasteDepot\")),FName(TEXT(\"Recycling\"))})for(auto Level:{ECityDensityLevel::Low,ECityDensityLevel::Medium})\n {\n  const auto* Definition=Authored->FindDefinition(Facility);if(!TestNotNull(TEXT(\"facility level\"),Definition?Definition->FindDensityLevel(Level):nullptr))return false;\n  TestEqual(TEXT(\"both actual catalog levels use64\"),Definition->FindDensityLevel(Level)->CivicRoadRange,64);\n  auto* Catalog=NewObject<UCityBuildingCatalog>();Catalog->Definitions=Authored->Definitions;\n  for(auto& D:Catalog->Definitions){D.Footprint={1,1};D.EntranceSides=15;}\n  FCityPlacementModel City(100000,FCityGridDimensions(80,80));auto Road=City.BeginRoadPreview(City.GetEntranceCell());City.UpdateRoadPreviewEnd(Road,{75,8});\n  if(!TestTrue(TEXT(\"long connected route\"),City.CommitRoad(Road).IsSuccess()))return false;\n  auto Place=[&](FName Name,int32 X){const auto* D=Catalog->FindDefinition(Name);auto P=City.BeginPreview(*D,{X,9});return City.CommitPlacement(P,*D).EntityId;};\n  const uint64 Depot=Place(Facility,1),Inside=Place(TEXT(\"Home\"),65),Outside=Place(TEXT(\"Home\"),66);\n  if(!TestTrue(TEXT(\"boundary lots placed\"),Depot&&Inside&&Outside))return false;\n  FCityRoadNetworkSnapshot Network;FCityRoadNetworkBuilder::Build(City,FCityRoadDefinition::Local(),Network);\n  FCityDevelopmentSnapshot Development;for(uint64 Id:{Depot,Inside,Outside}){auto& D=Development.States.Add(Id);D.EntityId=Id;D.DensityLevel=Id==Depot?Level:ECityDensityLevel::Low;}\n  FCityServiceSnapshot Services;Services.PublicStaffPercent.Add(Depot,100);Services.HospitalCapacities.Add(999,24);\n  TestEqual(TEXT(\"effective runtime range64\"),FCityWasteSimulation::Policy(Depot,City,Catalog,Development,Services,false).Range,64);\n  FCityCellCoord A,B;TArray<FCityCellCoord> Cells;FCityTrafficSimulation::FindPortal(City,Catalog,Depot,A);FCityTrafficSimulation::FindPortal(City,Catalog,Inside,B);\n  TestTrue(TEXT(\"boundary path exists\"),Network.FindRoute(A,B,ECityRoadAccess::Freight,Cells));TestEqual(TEXT(\"inside is exactly64 route cells\"),Cells.Num()-1,64);\n  FCityPopulationSnapshot People;FCityWasteSimulation Waste;FCityWasteTuning T;T.PopulationThreshold=0;\n  auto Update=[&](int64 Step){Waste.Update(Step,150,City,Catalog,Network,Services,Development,People,false,T);};\n  Update(0);Waste.AddTestPile(Inside);Waste.AddTestPile(Outside);Update(1);\n  bool PlannedInside=false,PlannedOutside=false;for(const auto& Truck:Waste.GetSnapshot().Trucks){PlannedInside|=Truck.Stops.Contains(Inside);PlannedOutside|=Truck.Stops.Contains(Outside);}\n  TestTrue(TEXT(\"64-cell site reserved\"),PlannedInside);TestFalse(TEXT(\"65-cell site excluded\"),PlannedOutside);TestEqual(TEXT(\"reservation never collects\"),Waste.GetSnapshot().Collected,int64(0));\n  FCityTrafficSimulation Traffic;FString Error;Traffic.AdvanceToStep(Network,1,Error);\n  for(int64 Step=2;Step<=100;++Step)\n  {\n   Update(Step);Traffic.UpdateTrips(City,Catalog,People,Network,Step);Traffic.AdvanceOneStep(Network,Step);\n   for(const auto& V:Traffic.GetSnapshot().Vehicles)if(V.bCompleted)for(auto& Trip:People.TransitTrips)if(Trip.Id==V.SourceId){Trip.bCompleted=true;Trip.ArrivalStep=Step;}\n   Update(Step);Traffic.UpdateTrips(City,Catalog,People,Network,Step);\n  }\n  TestTrue(TEXT(\"real distant arrival collects\"),Waste.GetSnapshot().Collected>0);TestEqual(TEXT(\"outside pile untouched\"),Waste.GetSnapshot().Find(Outside)->Units,60);\n  TestTrue(TEXT(\"extended-range conservation\"),FCityWasteSimulation::ValidateState(Waste.GetSnapshot(),100,Error));\n  FCityWasteSnapshot Copy;TestTrue(TEXT(\"extended route/cargo saves\"),FCityWastePersistence::Read(FCityWastePersistence::Write(Waste.GetSnapshot()),Copy,100,Error));\n  TestEqual(TEXT(\"saved collected mass\"),Copy.Collected,Waste.GetSnapshot().Collected);\n }\n return true;\n}\n#endif\n"
+    },
+    {
+      "path": "Tools/Update-CityWasteRange.py",
+      "before_sha256": null,
+      "after_sha256": "e06d2581971d6336ed0d09f97365b1578dbaa115c414c868690d97b434c26a93",
+      "diff": "\"\"\"D127: change only both waste facility levels' road coverage, retaining all other assets/policies.\"\"\"\nfrom pathlib import Path\nimport json,unreal\nroot=Path(__file__).resolve().parents[1]\nassert '**D127 waste range / B008 hospital service investigation \u2014 native/source/build window CLAIMED' in (root/'docs/DEVELOPMENT_TASKS.md').read_text(encoding='utf-8-sig')\ncatalog=unreal.load_asset('/Game/CitySim/Data/DA_CityBuildingCatalog');assert catalog\ndefinitions=list(catalog.get_editor_property('definitions'));changes=[]\nfor index,definition in enumerate(definitions):\n identity=str(definition.get_editor_property('definition_id'))\n if identity not in ['WasteDepot','Recycling']:continue\n levels=list(definition.get_editor_property('density_levels'))\n for i,level in enumerate(levels):\n  old=level.get_editor_property('civic_road_range');assert old==32,(identity,old)\n  level.set_editor_property('civic_road_range',64);levels[i]=level\n  changes.append(dict(definition=identity,level=str(level.get_editor_property('level')),before=old,after=64))\n definition.set_editor_property('density_levels',levels);definitions[index]=definition\nassert len(changes)==4\ncatalog.set_editor_property('definitions',definitions)\nassert unreal.EditorAssetLibrary.save_loaded_asset(catalog)\n(root/'Artifacts/D127/RangeImport.json').write_text(json.dumps(dict(task='D127',changes=changes,otherAssetsSaved=False),indent=2)+'\\n')\nunreal.log('CITYSIM_D127_WASTE_RANGE_PASS four levels32-to64; catalog only')\n"
+    }
+  ],
+  "preservation": {
+    "non_owned_inputs": 1573,
+    "all_match": true,
+    "playerFilesUnchanged": true,
+    "acceptedD125HealthSourceUnchanged": true,
+    "approvedWalkAndOtherAssetsUnchanged": true,
+    "launchersUnchanged": true,
+    "previous53FilesPreserved": true,
+    "restored_generated_config": [
+      "CitySimVR/Saved/Config/WindowsEditor/EditorPerProjectUserSettings.ini"
+    ]
+  },
+  "iteration_notes": [
+    "New diagnostic initially omitted catalog registration, then used an incompatible const pointer; fixed before final evidence. New boundary fixture needed an explicit dimension constructor and development header.",
+    "Allowing a blocked inner lane to move alone did not fix the reproduced exit deadlock. Final curb-queue draining is covered by an isolated five-vehicle exit regression and the latest full-city replay.",
+    "An overly broad Health namespace run accidentally selected historical pre-clock/inspection hospital fixtures. HospitalNativeConstructionInspectRepairAndReplay has obsolete timing/text/capacity expectations; HospitalStaffingUtilitiesUpgradeAndSave dereferences an absent loaded development record without guarding it. The run failed/crashed and is not a pass. Final explicit current health cases plus real city/reload are used; legacy fixture maintenance remains deferred, not a measured pass."
+  ],
+  "limitations": [
+    "User D127/B008 playtest and physical PCVR/Quest observations remain pending. Automated startup/offscreen/city replay is not physical input/comfort acceptance.",
+    "The current city still has95severe waiting after three simulated days; one expanded hospital has only two ambulance crews. Fixing the permanent traffic stall does not guarantee immediate service or clear ongoing demand.",
+    "No general healthcare risk/severity/fleet/bed/economy retune, save schema change, source push, PR/merge, public release, device install, full suite or performance program. Historical hospital fixtures noted above remain unmaintained."
+  ],
+  "nativeWindowReleased": true,
+  "next": "User retries latest city through ordinary launcher; D127/B008 awaiting playtest. D126 queued CI/B007 refreshes guards and claims separately.",
+  "nativeAtRelease": [],
+  "releaseRecordedAt": "2026-10-16T00:09:34.517135-05:00"
+}

@@ -1,0 +1,37 @@
+{
+  "task": "D116",
+  "date": "2026-10-15",
+  "accepted_revision": "dev-4b67421e51447720f574",
+  "save_format": 67,
+  "confirmation": "User in this task: \"I tested out the new indicators go ahead and get that work PRed and close up the gitea issues\"",
+  "scope": "Delivered indicator feature accepted; user requests implementation PR and issue closeout.",
+  "remaining": "Physical PCVR/Quest direction, roof association, readability, selection and comfort are unconfirmed; retained under D114, not counted as observed.",
+  "source_content_fingerprint": "4b67421e51447720f574c3acf6d37fca737da6634db6d05b7d57ae3d2b0eb22c",
+  "attachments": [
+    {
+      "Name": "evidence-D116-Implementation-341beecaf8f9dde3.json",
+      "Bytes": 25349,
+      "Sha256": "341beecaf8f9dde3e2b9756f973644cfb240be6a2c763ee396a96267c49e1ff5",
+      "Url": "https://git.shaun-husain.com/attachments/cd0edf3b-57f3-4557-b5da-ccda84610ad7"
+    },
+    {
+      "Name": "evidence-D116-Ordinary-5a7dc42982e7829a.png",
+      "Bytes": 431601,
+      "Sha256": "5a7dc42982e7829ac01790c963a57923da6a7e3bbaf2892e96fc18cb34fe5e2c",
+      "Url": "https://git.shaun-husain.com/attachments/89486f8c-ee8b-4dcf-926e-de30214c5c08"
+    },
+    {
+      "Name": "evidence-D116-Selected-f0084653c568a194.png",
+      "Bytes": 447181,
+      "Sha256": "f0084653c568a194518262950b8865013d53db6bcac99a3b7c6831c41d4e364c",
+      "Url": "https://git.shaun-husain.com/attachments/3cf28e27-1720-4447-a64b-388c4e1b042f"
+    },
+    {
+      "Name": "evidence-D116-Repairing-0f9b733f786f94f2.png",
+      "Bytes": 390744,
+      "Sha256": "0f9b733f786f94f257d4b8362f7c9d708350ae64634f5a1b1200f329d9024803",
+      "Url": "https://git.shaun-husain.com/attachments/b1b41761-6586-4aee-9e02-b7eed9ce6c8a"
+    }
+  ],
+  "validation": "Prior Editor warnings-as-errors, 12 native cases, both packaged Desktop layouts and shared Quest package checks retained. No gameplay changes or redundant rebuild at closeout."
+}

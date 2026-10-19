@@ -1,0 +1,37 @@
+Artifacts/
+# Generated editor-only study imports; authoritative sources/evidence live in Artifacts.
+/CitySimVR/Content/CityStudies/
+# Superseded D82 draft bank; preserve locally, track the approved bank instead.
+/AudioSource/D82/Unreal/*.wav
+/CitySimVR/Content/CitySim/Audio/Music/SW_Music_Afterglow.uasset
+/CitySimVR/Content/CitySim/Audio/Music/SW_Music_CloudDistrict.uasset
+/CitySimVR/Content/CitySim/Audio/Music/SW_Music_GlassCanal.uasset
+# Independent binary-distribution repository; never part of source history.
+/TesterDistribution/
+**/Binaries/
+**/Intermediate/
+**/Saved/
+**/DerivedDataCache/
+CitySimVR/Build/Android/src/
+CitySimVR/Build/Android_ASTC/
+.vs/
+*.sln
+*.suo
+*.blend1
+# Generated Python bytecode and Windows cooker ordering logs.
+__pycache__/
+*.py[cod]
+CitySimVR/Build/Windows/FileOpenOrder/
+# Vendor plugin is restored from the official 203.0 archive.
+CitySimVR/Plugins/MetaXR/
+# Machine-local Python/configuration and credentials; never source inputs.
+/.venv/
+/.env
+/.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+*.keystore
+/CitySimVR/Config/UserEngine.ini

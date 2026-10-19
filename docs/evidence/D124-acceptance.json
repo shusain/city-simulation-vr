@@ -1,0 +1,13 @@
+{
+  "task": "D124",
+  "date": "2026-10-15",
+  "revision": "dev-835e1068a8861a578c74",
+  "schema": 69,
+  "status": "Complete; explicitly user-accepted.",
+  "quote": "Okay the inspect panel looks good now. Please mark D124 complete, commit those changes, and move on to D125 for the health travel and outpatient treatment changes.",
+  "acceptedSourceMatchesDelivery": true,
+  "delivery": "docs/evidence/D124-home-inspection.json",
+  "scope": "Local scoped D124 commit only; walk/assets, CI work and unrelated changes preserved. No push/PR/merge/release/device install.",
+  "next": "User selected D125 health self-travel/outpatient behavior; separate native claim and validation.",
+  "physicalHeadsetObservations": "Remain unconfirmed under D114."
+}

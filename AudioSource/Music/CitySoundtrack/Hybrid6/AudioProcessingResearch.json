@@ -1,0 +1,78 @@
+{
+  "date": "2026-10-12",
+  "task": "D82",
+  "question": "ComfyUI audio-to-audio for depth/digital filtering",
+  "currentServer": {
+    "url": "http://192.168.0.127:8188",
+    "installedCheckpoint": "ace_step_v1_3.5b.safetensors",
+    "sha256": "f07cad74c4adce52ca14ca1bdf74cf3c14cbafb0823b95eca4459467fa369f40",
+    "registeredSavedWorkflows": [
+      "basic_api_test",
+      "generate_image",
+      "generate_image_zimage",
+      "generate_song"
+    ],
+    "liveNodesConfirmed": [
+      "LoadAudio",
+      "VAEEncodeAudio",
+      "VAEDecodeAudio",
+      "AudioEqualizer3Band",
+      "SaveAudio",
+      "PreviewAudio"
+    ]
+  },
+  "tested": [
+    {
+      "option": "ACE-Step v1 audio-to-audio",
+      "status": "Actual core-node workflow execution succeeded",
+      "workflow": "AudioToAudioWorkflow.json",
+      "history": "Artifacts/D82/AudioToAudio2/History.json",
+      "report": "Artifacts/D82/AudioToAudio2/Report.json",
+      "denoise": 0.18,
+      "steps": 27,
+      "cfg": 4,
+      "seed": 821016,
+      "input": "Level-matched10.667-second isolated authored melody, not drums/full mix",
+      "observations": {
+        "inputSeconds": 10.666667,
+        "outputSeconds": 10.588299,
+        "comparisonTailPaddingSeconds": 0.078354,
+        "envelopeCorrelation": 0.716561
+      },
+      "meaning": "Resynthesis can alter envelopes/duration; correlation is numeric similarity, not a quality or note-preservation judgment.",
+      "rights": "Existing verified Apache-2.0 checkpoint; no new weights, cloud provider, fee or guarantee of exclusive copyright.",
+      "source": "https://docs.comfy.org/tutorials/audio/ace-step/ace-step-v1"
+    },
+    {
+      "option": "Native ComfyUI 3-band EQ",
+      "status": "Actual core-node workflow execution succeeded",
+      "observations": {
+        "durationUnchanged": true,
+        "envelopeCorrelation": 0.999952
+      },
+      "meaning": "Deterministic tonal filtering; no musical regeneration model. Stereo depth still needs delay/chorus/reverb.",
+      "rights": "No additional model/output provider contract introduced",
+      "source": "Live object_info and successful saved workflow/history"
+    }
+  ],
+  "researched": [
+    {
+      "option": "Stable Audio audio-to-audio",
+      "status": "Primary documentation confirms; not installed/called/tested here",
+      "meaning": "Candidate timbre/style transfer from seed audio with noise-strength control. Current backend also exposes partner API nodes; local weights are absent.",
+      "rights": "Hosted/API and self-hosted terms differ. Stable Audio commercial-use guidance allows game embedding subject to terms; self-hosted Core Models require commercial registration and separate licensing above$1m aggregate annual revenue. Recheck chosen model/service before use.",
+      "sources": [
+        "https://stability.ai/guides/stable-audio-3-prompt-guide",
+        "https://kb.stability.ai/knowledge-base/stable-audio-commerical-and-usage-licensing",
+        "https://docs.comfy.org/tutorials/audio/stable-audio/stable-audio-3"
+      ]
+    }
+  ],
+  "recommendation": "Use controlled SuperCollider DSP for primary depth/filtering and preserve the authored beat. Audition low-strength ACE-Step on isolated stems as optional color; do not adopt automatically. Stable Audio is a later comparison requiring model/service choice and rights review, not a D82 acceptance dependency.",
+  "limitations": [
+    "No assistant perceptual listening or paid audio-review API.",
+    "Tests are not proof of improved quality or exact preservation of notes.",
+    "No processed A2A/EQ output is mixed into the full Neon Courtyard delivery.",
+    "No new plugin/model install, cloud call, key access or purchase."
+  ]
+}

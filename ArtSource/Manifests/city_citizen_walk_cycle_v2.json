@@ -1,0 +1,82 @@
+{
+  "task": "D121",
+  "version": 2,
+  "status": "approved",
+  "source": "ArtSource/Blender/CityCitizenWalkCycle-v2.blend",
+  "source_sha256": "1cf0a3d40f92d23c80b2a84fa4e5cf2026617748a5940ebb318107e1a82940bb",
+  "protected_inputs": {
+    "ArtSource/Blender/CityCitizenControlRig.blend": "20036a3a5d42525a517b2358cf4f0bbe979d5cbb8621d2ea53a00f76a6800f27",
+    "ArtSource/Manifests/city_citizen_control_rig.json": "b547d20e465413d7507ec3b9b6778e508e78f18b6a55128bb90c1d0c4cf2eb75",
+    "ArtSource/Blender/CityCitizenSportsScale.blend": "988dffe1f2b8849f30f4e5ad551f213e9a0441da9e1c5ab1dadc6dfc1e25ebdc",
+    "ArtSource/Blender/CityCitizenWalkCycle.blend": "c0298ddb637a6d19193851633e73796523ca2577b4406fbf657554ba10a72e0c",
+    "ArtSource/Manifests/city_citizen_walk_cycle.json": "386bc899c2ce2ed14b29a7ee02536c7c1f93b578b3ec9eb738f27e95eca696d0",
+    "Tools/CityCitizenRigControls.py": "f7e883112ec481cd309a4e6193f1112307032d352cb7835b1f90abf3d1a4f02f",
+    "Tools/CityCitizenSportsMotion.py": "8c70b4aa799e04150b7ae883f48975db171837ad1cc433cb2de729a96092dccb"
+  },
+  "period_frames": 28,
+  "fps": 24,
+  "duplicate_endpoint": 29,
+  "stance_fraction": 0.62,
+  "forward_axis": "+X",
+  "units": "metres",
+  "rig_scale": 0.811,
+  "stride_authoring_m": 0.903225806451613,
+  "stride_preview_m": 0.7325161290322582,
+  "nominal_preview_speed_m_s": 0.6278709677419355,
+  "root_motion": "In-place; no accumulated translation or rotation",
+  "records": [
+    {
+      "style": "Casual",
+      "lod": 0,
+      "mesh": "SK_Citizen_Rig_Casual",
+      "rig": "SK_Citizen_Rig_Casual_Rig",
+      "action": "D121_Walk_Casual_Controls"
+    },
+    {
+      "style": "Casual",
+      "lod": 1,
+      "mesh": "SK_Citizen_Rig_Casual_LOD1",
+      "rig": "SK_Citizen_Rig_Casual_LOD1_Rig",
+      "action": "D121_Walk_Casual_LOD1_Controls"
+    },
+    {
+      "style": "Office",
+      "lod": 0,
+      "mesh": "SK_Citizen_Rig_Office",
+      "rig": "SK_Citizen_Rig_Office_Rig",
+      "action": "D121_Walk_Office_Controls"
+    },
+    {
+      "style": "Office",
+      "lod": 1,
+      "mesh": "SK_Citizen_Rig_Office_LOD1",
+      "rig": "SK_Citizen_Rig_Office_LOD1_Rig",
+      "action": "D121_Walk_Office_LOD1_Controls"
+    },
+    {
+      "style": "Worker",
+      "lod": 0,
+      "mesh": "SK_Citizen_Rig_Worker",
+      "rig": "SK_Citizen_Rig_Worker_Rig",
+      "action": "D121_Walk_Worker_Controls"
+    },
+    {
+      "style": "Worker",
+      "lod": 1,
+      "mesh": "SK_Citizen_Rig_Worker_LOD1",
+      "rig": "SK_Citizen_Rig_Worker_LOD1_Rig",
+      "action": "D121_Walk_Worker_LOD1_Controls"
+    }
+  ],
+  "provenance": "OpenAI Codex-authored control curves; existing original project D87 meshes/rigs",
+  "revision_notes": "Hands follow solved forearms; visible shoulder/pelvis counter-twist and 6.5-degree forward torso lean; original v1 stride retained",
+  "previous_source": "ArtSource/Blender/CityCitizenWalkCycle.blend",
+  "native_status": "Not imported; review source before integration",
+  "approval": {
+    "date": "2026-10-15",
+    "kind": "explicit human source approval",
+    "receipt": "docs/evidence/D121-v2-approval.json",
+    "approved_source_sha256": "1cf0a3d40f92d23c80b2a84fa4e5cf2026617748a5940ebb318107e1a82940bb",
+    "integration_authorized_after": "D107 native/source/build-window release"
+  }
+}

@@ -1,0 +1,658 @@
+{
+  "schema": 1,
+  "id": "GlassCanal",
+  "title": "Glass Canal",
+  "bpm": 94,
+  "bars": 64,
+  "seed": 82802,
+  "synthSource": "AlbumSynths.scd",
+  "synthDependencies": [
+    "../../../Tools/CitySoundtrackScore.py"
+  ],
+  "sample": {
+    "mode": "synthBed"
+  },
+  "targetLUFS": -24,
+  "truePeakCeilingDBTP": -6,
+  "progressions": {
+    "main": [
+      [
+        48,
+        55,
+        58,
+        62,
+        67
+      ],
+      [
+        44,
+        51,
+        55,
+        58,
+        63
+      ],
+      [
+        51,
+        58,
+        62,
+        65,
+        70
+      ],
+      [
+        46,
+        53,
+        57,
+        60,
+        65
+      ]
+    ],
+    "contrast": [
+      [
+        51,
+        58,
+        62,
+        65,
+        70
+      ],
+      [
+        48,
+        55,
+        58,
+        62,
+        67
+      ],
+      [
+        46,
+        53,
+        57,
+        60,
+        65
+      ],
+      [
+        44,
+        51,
+        55,
+        58,
+        63
+      ]
+    ]
+  },
+  "melodies": {
+    "main": [
+      [
+        [
+          0,
+          67,
+          1.5
+        ],
+        [
+          2.65,
+          65,
+          1
+        ],
+        [
+          4,
+          67,
+          1.5
+        ],
+        [
+          6.65,
+          70,
+          1
+        ]
+      ],
+      [
+        [
+          0,
+          67,
+          1.5
+        ],
+        [
+          2.65,
+          70,
+          1
+        ],
+        [
+          4,
+          72,
+          1.5
+        ],
+        [
+          6.65,
+          67,
+          1
+        ]
+      ],
+      [
+        [
+          0,
+          72,
+          1.5
+        ],
+        [
+          2.65,
+          67,
+          1
+        ],
+        [
+          4,
+          74,
+          1.5
+        ],
+        [
+          6.65,
+          70,
+          1
+        ]
+      ],
+      [
+        [
+          0,
+          74,
+          1.5
+        ],
+        [
+          2.65,
+          70,
+          1
+        ],
+        [
+          4,
+          67,
+          1.5
+        ],
+        [
+          6.65,
+          65,
+          1
+        ]
+      ]
+    ],
+    "contrast": [
+      [
+        [
+          0,
+          74,
+          0.5
+        ],
+        [
+          0.75,
+          70,
+          0.5
+        ],
+        [
+          1.5,
+          77,
+          0.75
+        ],
+        [
+          2.75,
+          63,
+          0.25
+        ],
+        [
+          3.5,
+          82,
+          0.5
+        ],
+        [
+          4.5,
+          74,
+          1
+        ],
+        [
+          6,
+          70,
+          0.5
+        ],
+        [
+          7.25,
+          63,
+          0.25
+        ]
+      ],
+      [
+        [
+          0,
+          70,
+          0.5
+        ],
+        [
+          0.75,
+          67,
+          0.5
+        ],
+        [
+          1.5,
+          74,
+          0.75
+        ],
+        [
+          2.75,
+          72,
+          0.25
+        ],
+        [
+          3.5,
+          79,
+          0.5
+        ],
+        [
+          4.5,
+          70,
+          1
+        ],
+        [
+          6,
+          67,
+          0.5
+        ],
+        [
+          7.25,
+          72,
+          0.25
+        ]
+      ],
+      [
+        [
+          0,
+          69,
+          0.5
+        ],
+        [
+          0.75,
+          65,
+          0.5
+        ],
+        [
+          1.5,
+          72,
+          0.75
+        ],
+        [
+          2.75,
+          70,
+          0.25
+        ],
+        [
+          3.5,
+          77,
+          0.5
+        ],
+        [
+          4.5,
+          69,
+          1
+        ],
+        [
+          6,
+          65,
+          0.5
+        ],
+        [
+          7.25,
+          70,
+          0.25
+        ]
+      ],
+      [
+        [
+          0,
+          67,
+          0.5
+        ],
+        [
+          0.75,
+          63,
+          0.5
+        ],
+        [
+          1.5,
+          70,
+          0.75
+        ],
+        [
+          2.75,
+          68,
+          0.25
+        ],
+        [
+          3.5,
+          75,
+          0.5
+        ],
+        [
+          4.5,
+          67,
+          1
+        ],
+        [
+          6,
+          63,
+          0.5
+        ],
+        [
+          7.25,
+          68,
+          0.25
+        ]
+      ]
+    ],
+    "response": [
+      [
+        [
+          0,
+          72,
+          1
+        ],
+        [
+          1,
+          67,
+          0.5
+        ],
+        [
+          1.5,
+          70,
+          0.5
+        ],
+        [
+          2.75,
+          79,
+          0.25
+        ],
+        [
+          4,
+          74,
+          1
+        ],
+        [
+          5.25,
+          70,
+          0.25
+        ],
+        [
+          5.5,
+          67,
+          0.5
+        ],
+        [
+          7,
+          72,
+          0.75
+        ]
+      ],
+      [
+        [
+          0,
+          68,
+          1
+        ],
+        [
+          1,
+          63,
+          0.5
+        ],
+        [
+          1.5,
+          67,
+          0.5
+        ],
+        [
+          2.75,
+          75,
+          0.25
+        ],
+        [
+          4,
+          70,
+          1
+        ],
+        [
+          5.25,
+          67,
+          0.25
+        ],
+        [
+          5.5,
+          63,
+          0.5
+        ],
+        [
+          7,
+          68,
+          0.75
+        ]
+      ],
+      [
+        [
+          0,
+          63,
+          1
+        ],
+        [
+          1,
+          70,
+          0.5
+        ],
+        [
+          1.5,
+          74,
+          0.5
+        ],
+        [
+          2.75,
+          82,
+          0.25
+        ],
+        [
+          4,
+          77,
+          1
+        ],
+        [
+          5.25,
+          74,
+          0.25
+        ],
+        [
+          5.5,
+          70,
+          0.5
+        ],
+        [
+          7,
+          63,
+          0.75
+        ]
+      ],
+      [
+        [
+          0,
+          70,
+          1
+        ],
+        [
+          1,
+          65,
+          0.5
+        ],
+        [
+          1.5,
+          69,
+          0.5
+        ],
+        [
+          2.75,
+          77,
+          0.25
+        ],
+        [
+          4,
+          72,
+          1
+        ],
+        [
+          5.25,
+          69,
+          0.25
+        ],
+        [
+          5.5,
+          65,
+          0.5
+        ],
+        [
+          7,
+          70,
+          0.75
+        ]
+      ]
+    ]
+  },
+  "sections": [
+    {
+      "name": "Opening",
+      "startBar": 0,
+      "bars": 4,
+      "progression": "main",
+      "melody": "main",
+      "density": "sparse",
+      "drums": 0.7,
+      "bass": 0.8,
+      "texture": 1,
+      "lead": 0.65,
+      "tone": 1540.0
+    },
+    {
+      "name": "Main theme",
+      "startBar": 4,
+      "bars": 12,
+      "progression": "main",
+      "melody": "main",
+      "density": "full",
+      "drums": 1,
+      "bass": 1,
+      "texture": 1,
+      "lead": 1,
+      "tone": 2200
+    },
+    {
+      "name": "Contrasting response",
+      "startBar": 16,
+      "bars": 12,
+      "progression": "contrast",
+      "melody": "contrast",
+      "density": "full",
+      "drums": 1,
+      "bass": 1,
+      "texture": 0.8,
+      "lead": 1,
+      "tone": 2200,
+      "leadSynth": "AlbumPiano"
+    },
+    {
+      "name": "Open space",
+      "startBar": 28,
+      "bars": 8,
+      "progression": "main",
+      "melody": "main",
+      "density": "break",
+      "drums": 0.7,
+      "bass": 0.8,
+      "texture": 1,
+      "lead": 0.65,
+      "tone": 1540.0
+    },
+    {
+      "name": "Theme variation",
+      "startBar": 36,
+      "bars": 12,
+      "progression": "main",
+      "melody": "response",
+      "density": "full",
+      "drums": 1,
+      "bass": 1,
+      "texture": 0.8,
+      "lead": 1,
+      "tone": 2200
+    },
+    {
+      "name": "Final lift",
+      "startBar": 48,
+      "bars": 12,
+      "progression": "contrast",
+      "melody": "contrast",
+      "density": "full",
+      "drums": 1,
+      "bass": 1,
+      "texture": 0.8,
+      "lead": 1,
+      "tone": 2200,
+      "lift": true
+    },
+    {
+      "name": "Outro",
+      "startBar": 60,
+      "bars": 4,
+      "progression": "main",
+      "melody": "main",
+      "density": "outro",
+      "drums": 0.7,
+      "bass": 0.8,
+      "texture": 1,
+      "lead": 0.65,
+      "tone": 1540.0
+    }
+  ],
+  "albumProfile": {
+    "leadSynth": "AlbumGlass",
+    "answerSynth": "AlbumPiano",
+    "leadGain": 0.095,
+    "tone": 2200,
+    "kickBeats": [
+      0,
+      1.5,
+      2.75
+    ],
+    "snareBeats": [
+      1,
+      3
+    ],
+    "backbeatSynth": "Clap",
+    "backbeatGain": 0.24,
+    "hatSynth": "Hat",
+    "hatGain": 0.038,
+    "hatBeats": [
+      0.0,
+      0.535,
+      1.0,
+      1.535,
+      2.0,
+      2.535,
+      3.0,
+      3.535
+    ],
+    "bassSynth": "AnalogBass",
+    "bassGain": 0.11,
+    "bassPattern": [
+      [
+        0,
+        0.8,
+        0
+      ],
+      [
+        2.65,
+        0.6,
+        0
+      ],
+      [
+        3.5,
+        0.3,
+        7
+      ]
+    ],
+    "padGain": 0.024,
+    "padColor": 0.25,
+    "kickGain": 0.75
+  },
+  "intent": "Aligned glass-key motif with brisk syncopated percussion, alternating longer bells and short piano answers."
+}

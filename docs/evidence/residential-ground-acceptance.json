@@ -1,0 +1,18 @@
+{
+  "issue": 125,
+  "scope": "Low-rise residential ground treatment",
+  "acceptedSource": "8b854509bcf7f3b731d9142e2c32a491ab019c7f",
+  "windowsCandidate": 225,
+  "gameRevision": "dev-a734b2209848f867c156",
+  "schema": 72,
+  "acceptedBy": "Shaun",
+  "acceptance": "The low-rise homes look good in game now. Go ahead and merge these changes, then continue with the medium/high residential buildings and construction states before moving on to commercial variations",
+  "reference": "https://git.shaun-husain.com/CitySimVR/citysim/issues/125#issuecomment-3144",
+  "recordedUtc": "2026-10-18T10:48:06.003070+00:00",
+  "nativeCheck": 222,
+  "deliveryEvidence": "https://git.shaun-husain.com/attachments/7786ef92-b7d0-43a1-873d-00f58e9acb55",
+  "packageSha256": "9ef23721ab88d6100ebc07e92d7aa161b39c90cea864b14cc4ce9aa4445b13f7",
+  "headset": "unconfirmed",
+  "upstreamIntegration": "6d86da13a9f48e4a76ea32c6ca9f1b01f0486753 includes accepted issue150 native/tool organization and documentation migration",
+  "remaining": "Medium/high and construction residential, then commercial/industrial/specialized; utilities deferred; issue125 remains open"
+}

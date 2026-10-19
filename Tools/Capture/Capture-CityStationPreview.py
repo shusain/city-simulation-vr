@@ -1,0 +1,106 @@
+"""Capture imported station stages in temporary PIE without saving the map."""
+from pathlib import Path
+import json
+import time
+import unreal
+import sys
+
+# Find Tools by its shared resolver, including direct execution from Unreal.
+tools = next(parent for parent in Path(__file__).resolve().parents if (parent / 'CityToolPaths.py').is_file())
+sys.path.insert(0, str(tools))
+from CityToolPaths import repository_root
+from Capture.CityCaptureSession import CaptureSession, capture_paths
+
+def main(output_directory=None):
+    root = repository_root(__file__)
+    outputs, report, error = capture_paths(root, 'Stations', output_directory)
+    manifest = json.loads((root / 'ArtSource/Manifests/city_starter_kit.json').read_text(encoding='utf-8'))
+    ids = ['building.police.a', 'building.police.medium.a', 'building.police.high.a',
+           'building.fire.a', 'building.fire.medium.a', 'building.fire.high.a']
+    normal = [next(e for e in manifest['assets'] if e['asset_id'] == name) for name in ids]
+    damaged = [e for e in manifest['assets'] if e.get('station_upgrade') and e.get('damaged')]
+    # Damaged entries use the shared pipeline's damage_variant flag.
+    if not damaged:
+        damaged = [e for e in manifest['assets'] if e.get('station_upgrade') and e['mesh_destination'].endswith('_Damaged')]
+    if len(damaged) != 4:
+        raise RuntimeError('Expected four expansion damage meshes')
+    session = CaptureSession(unreal, error, timeout_message='Station preview timed out')
+    level = session.level
+    editor = session.editor
+    actors = session.actors
+    gallery, samples = session.owned_actors, []
+    start = session.started
+    deadline = start + 5
+    phase = 0
+
+
+    def prepare():
+        floor = actors.spawn_actor_from_class(unreal.StaticMeshActor, unreal.Vector(0, 210, 75))
+        gallery.append(floor)
+        floor.set_actor_label('StationGalleryFloor')
+        floor.static_mesh_component.set_static_mesh(unreal.load_asset('/Engine/BasicShapes/Cube'))
+        floor.static_mesh_component.set_material(0, unreal.load_asset('/Game/CitySim/Art/Materials/MI_CityResidential'))
+        floor.set_actor_scale3d(unreal.Vector(9, 7, .05))
+        for i, entry in enumerate(normal + damaged):
+            location = unreal.Vector((i % 3 - 1) * 200, (i // 3) * 175, 77.5) if i < 6 else unreal.Vector((i - 7.5) * 180, 350, 77.5)
+            mesh = unreal.load_asset(entry['mesh_destination'])
+            if not mesh:
+                raise RuntimeError('Missing station mesh: ' + entry['mesh_destination'])
+            actor = actors.spawn_actor_from_class(unreal.StaticMeshActor, location)
+            gallery.append(actor)
+            actor.set_actor_label('StationGallery' + str(i))
+            actor.static_mesh_component.set_static_mesh(mesh)
+            actor.set_actor_scale3d(unreal.Vector(.05, .05, .05))
+            samples.append({'asset':entry['asset_id'], 'mesh':mesh.get_path_name(), 'position':[location.x,location.y,location.z]})
+
+
+    def camera(world, location):
+        pawn = unreal.GameplayStatics.get_player_pawn(world, 0)
+        controller = unreal.GameplayStatics.get_player_controller(world, 0)
+        pawn.set_actor_location(location - unreal.Vector(0,0,pawn.get_editor_property('base_eye_height')), False, True)
+        controller.set_control_rotation(unreal.MathLibrary.find_look_at_rotation(location, unreal.Vector(0,175,105)))
+
+
+    def tick(delta):
+        nonlocal phase, deadline
+        now = time.monotonic()
+        if now < deadline:
+            return
+        if phase == 0:
+            prepare()
+            level.editor_request_begin_play()
+            phase, deadline = 1, now + 8
+        elif phase == 1:
+            world = editor.get_game_world()
+            if not world or not level.is_in_play_in_editor():
+                return
+            for actor in unreal.GameplayStatics.get_all_actors_of_class(world, unreal.Actor):
+                if actor.get_class().get_name() == 'CityBoardActor':
+                    actor.set_lighting_preset(unreal.CityLightingPreset.DAY)
+                    actor.set_actor_tick_enabled(False)
+                if actor.get_class().get_name() == 'CityVRToolController':
+                    actor.set_actor_tick_enabled(False)
+                if not actor.get_actor_label().startswith('StationGallery'):
+                    for component in actor.get_components_by_class(unreal.PrimitiveComponent):
+                        component.set_visibility(False, False)
+            camera(world, unreal.Vector(0,-650,1000))
+            for command in ['FOV 60','DisableAllScreenMessages','t.IdleWhenNotForeground 0','r.EyeAdaptationQuality 0']:
+                unreal.SystemLibrary.execute_console_command(world, command)
+            phase, deadline = 2, now + 5
+        elif phase in (2,4):
+            output = outputs[0 if phase == 2 else 1]
+            unreal.SystemLibrary.execute_console_command(editor.get_game_world(), f'HighResShot 1600x1200 filename="{output.as_posix()}"')
+            phase, deadline = phase + 1, now + 3
+        elif phase == 3:
+            camera(editor.get_game_world(), unreal.Vector(0,1000,1000))
+            phase, deadline = 4, now + 3
+        elif all(p.exists() and p.stat().st_size > 0 for p in outputs):
+            report.write_text(json.dumps({'source':'ten imported normal/damaged station meshes in temporary desktop PIE','assets':samples,'saved_map':False},indent=2),encoding='utf-8')
+            session.finish()
+
+
+    session.start(tick)
+
+
+if __name__ == "__main__":
+    main()

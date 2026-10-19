@@ -1,0 +1,88 @@
+{
+  "anchors": [
+    {
+      "role": "pedestrian",
+      "target": "Personnel_door_leaf",
+      "xyz_m": [
+        -9.5,
+        -10.620000839233398,
+        0
+      ],
+      "outward": [
+        0,
+        -1,
+        0
+      ],
+      "width_m": 1.2,
+      "grade_m": 0,
+      "boundary_connector": {
+        "xyz_m": [
+          -9.5,
+          -16,
+          0
+        ],
+        "outward": [
+          0,
+          -1,
+          0
+        ],
+        "width_m": 1.8,
+        "grade_m": 0
+      },
+      "reserved_free_corridor": {
+        "min": [
+          -10.4,
+          -16,
+          0
+        ],
+        "max": [
+          -8.6,
+          -10.79500057220459,
+          2.4
+        ]
+      }
+    },
+    {
+      "role": "vehicle_service",
+      "target": "Service_vehicle_shutter",
+      "xyz_m": [
+        7.5,
+        -10.139999389648438,
+        0
+      ],
+      "outward": [
+        0,
+        -1,
+        0
+      ],
+      "width_m": 4,
+      "grade_m": 0,
+      "boundary_connector": {
+        "xyz_m": [
+          7.5,
+          -16,
+          0
+        ],
+        "outward": [
+          0,
+          -1,
+          0
+        ],
+        "width_m": 4,
+        "grade_m": 0
+      },
+      "reserved_free_corridor": {
+        "min": [
+          5.5,
+          -16,
+          0
+        ],
+        "max": [
+          9.5,
+          -10.197499771118164,
+          3.5
+        ]
+      }
+    }
+  ]
+}

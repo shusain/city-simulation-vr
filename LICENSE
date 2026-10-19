@@ -1,0 +1,88 @@
+City Sim VR Personal Use Source License 1.0
+Copyright (c) 2026 Shaun Husain and contributing copyright holders.
+
+1. Scope
+
+This license covers the original City Sim VR code, documentation and assets in
+this repository to the extent that their copyright holders may license them.
+It does not replace any separately identified third-party license or grant
+rights to Unreal Engine, Meta XR, fonts, icons, dependencies, trademarks or
+other third-party materials. Their own terms continue to apply. Previously
+granted rights under other licenses are not revoked by this license.
+
+2. Personal use permission
+
+Subject to these terms, you may download, copy, inspect, modify, compile and
+run the covered materials privately, without charge, for your own personal,
+noncommercial learning and gameplay. You may keep private backups and use
+private build tools or storage acting solely on your behalf, provided they do
+not make the materials available to others or obtain independent use rights.
+Keep this license and copyright notices with your copies.
+
+3. Redistribution and commercial restrictions
+
+Except for the source-fork and contribution permissions below or separate written permission
+from the applicable copyright holders, you may not distribute, publish,
+sublicense, sell, rent, host for others, or otherwise make the covered materials
+or their modified versions available to anyone else. This includes source
+mirrors outside the permission below, game executables, packages, extracted assets and mods
+containing covered materials, whether offered for free or for payment.
+
+You may not use the covered materials or create derivative works for a
+commercial purpose, including sale, licensing, paid services or incorporation
+into a commercial product. No commercial derivative-work rights are granted.
+
+These restrictions apply only to rights controlled by the licensors and do not
+limit rights that cannot lawfully be restricted or permissions independently
+granted by third-party licenses. Making this repository publicly readable is
+not permission for recipients to redistribute it.
+
+4. Source forks and contributions to the project
+
+You may create, modify and share noncommercial source forks of the project's
+publicly released source repository for learning, personal development,
+collaboration and contributions to this project. This permission includes the
+covered code, documentation, configuration and project/source assets supplied
+in that repository, including editable Unreal assets, subject to section 1.
+It also permits further source forks under these same terms and submitting
+patches or pull requests from forks to the project's designated review service.
+Keep this license and copyright/third-party notices in every fork, identify
+modified forks as unofficial and do not imply endorsement by the project.
+
+This exception does not permit distributing compiled game builds, cooked game
+packages, standalone asset packs or mods containing covered materials, or
+hosting the game for others. Build and release artifacts must remain private
+under section 2. Commercial use and commercial derivatives remain prohibited.
+Source forks do not receive rights to separately licensed dependencies beyond
+those dependencies' own terms.
+
+You may also send patches, modified source files and related original
+contributions directly to the maintainers. The designated review service may
+store and display submissions for project review.
+
+By intentionally submitting a contribution for inclusion, you confirm that you
+have the necessary rights and grant Shaun Husain a perpetual, worldwide,
+nonexclusive, royalty-free, irrevocable license to use, reproduce, modify,
+distribute, sublicense and commercially exploit your contribution as part of
+this project and its derivatives, under these or other terms. You retain
+ownership of your contribution. Identify any third-party material and its
+license when submitting it; do not submit material whose terms conflict with
+these permissions. Ordinary bug reports are not a transfer of ownership.
+
+5. Reserved rights and termination
+
+All rights not expressly granted are reserved. This license does not restrict
+copyright holders from distributing or commercially licensing their own work.
+Your permissions under this license terminate if you violate its terms; stop
+using the covered materials unless the applicable rights holders reinstate
+permission. Sections 1, 3, 4 (for prior submissions), 5 and 6 survive termination.
+
+6. No warranty; limitation of liability
+
+TO THE MAXIMUM EXTENT PERMITTED BY LAW, THE COVERED MATERIALS ARE PROVIDED
+"AS IS", WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, EXPRESS OR IMPLIED,
+INCLUDING MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE AND
+NONINFRINGEMENT. NO COPYRIGHT HOLDER OR CONTRIBUTOR IS LIABLE FOR ANY CLAIM,
+DAMAGES OR OTHER LIABILITY ARISING FROM THE MATERIALS OR THEIR USE, WHETHER
+IN CONTRACT, TORT OR OTHERWISE. THIS DOES NOT EXCLUDE LIABILITY THAT CANNOT
+LAWFULLY BE EXCLUDED.

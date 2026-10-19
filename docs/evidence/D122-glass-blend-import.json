@@ -1,0 +1,51 @@
+{
+  "task": "D122",
+  "importBuild": 90,
+  "submittedCommit": "7b4d07b4acfe78f369ec1bdc13a9e6aafeb848f4",
+  "testedCommit": "7b4d07b4acfe78f369ec1bdc13a9e6aafeb848f4",
+  "file": "CitySimVR/Content/CitySim/Art/Materials/M_D122ShopWindows.uasset",
+  "sha256": "fdc39fbfbf0735ddc0c9936c02ccf1c95299468a3ee69d82441f7624f1a2d0f1",
+  "baselineSha256": "dd3a69b23776c71600bd685fea718ad19063dd4b7293d2f0f24700483aa8654d",
+  "bytes": 34240,
+  "protectedAssets": 745,
+  "nativeReceipt": {
+    "task": "D122",
+    "assets": [
+      "/Game/CitySim/Art/Materials/M_D122ShopWindows"
+    ],
+    "files": [
+      "CitySimVR/Content/CitySim/Art/Materials/M_D122ShopWindows.uasset"
+    ],
+    "meshes": [],
+    "material_only": true,
+    "glass_blend": 0.45,
+    "protected_assets_verified": 745,
+    "added_geometry": 0,
+    "entrance_upper_glass_preserved": true,
+    "pane_cm": [
+      220,
+      300
+    ],
+    "uniform_scale": 0.88,
+    "stock_nodes": true
+  },
+  "check": {
+    "task": "D122",
+    "build": 90,
+    "mode": "Check",
+    "status": "passed",
+    "submittedCommit": "7b4d07b4acfe78f369ec1bdc13a9e6aafeb848f4",
+    "testedCommit": "7b4d07b4acfe78f369ec1bdc13a9e6aafeb848f4",
+    "editorSeconds": 166.73,
+    "tests": [
+      "CitySim.Art.D122References",
+      "CitySim.Art.D122NewspaperRendering",
+      "CitySim.News.NewspaperEditorialFacts",
+      "CitySim.News.SharedNavigationAndBounds",
+      "CitySim.Art.StorefrontAssets"
+    ],
+    "output": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\CI\\Builds\\90-7b4d07b4acfe-Check-76c5dc16",
+    "url": "https://drone.shaun-husain.com/CitySimVR/citysim/90",
+    "verifiedUtc": "2026-10-17T15:57:59.541766+00:00"
+  }
+}

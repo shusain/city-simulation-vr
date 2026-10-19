@@ -1,0 +1,311 @@
+{
+  "issue": 146,
+  "pr": "https://git.shaun-husain.com/CitySimVR/citysim/pulls/171",
+  "status": "complete_merged_windows_playtest_confirmed",
+  "mainSynchronizedThrough": "8144a5b2c3f81d4ed4c5284edf3934d048de98c2",
+  "technique": "5x5 Gaussian height gradients for bank shading; full strength within28m of water-cell centers, fade to original upland normals by44m; exact shared edge attributes retained",
+  "previousEvidence": "shoreline-contours-232.json",
+  "diagnostic244": {
+    "source": "3d9859fc14121cb714439f859e9308f9b9b31a3f",
+    "editorSeconds": 135.89,
+    "editorTests": 19,
+    "offlineToolContracts": 36,
+    "nativeCaptures": 40,
+    "finding": "Initial20m shading envelope missed upper lake rim; not promoted"
+  },
+  "windows": {
+    "issue": 146,
+    "pr": "https://git.shaun-husain.com/CitySimVR/citysim/pulls/171",
+    "status": "passed",
+    "featureStatus": "complete_merged",
+    "visualReview": "passed",
+    "humanAcceptance": "accepted_windows249_playtest",
+    "build": 249,
+    "parent": 246,
+    "submittedCommit": "c848d9924b563affd94298df58e06b2884b5fa2e",
+    "testedCommit": "c848d9924b563affd94298df58e06b2884b5fa2e",
+    "gameRevision": "dev-9af05428089f0850b2e1",
+    "fixtureSchema": 72,
+    "fixtures": [
+      {
+        "id": "00000000000000000000000000000140",
+        "name": "Shoreline DiagonalLake",
+        "seed": 7429,
+        "gameRevision": "dev-9af05428089f0850b2e1",
+        "sha256": "df150b285183fa5f4f925442f0a0114b5016a5edd3a7794aa36f22f912858673"
+      },
+      {
+        "id": "00000000000000000000000000000141",
+        "name": "Shoreline ConcaveLake",
+        "seed": 1,
+        "gameRevision": "dev-9af05428089f0850b2e1",
+        "sha256": "de157a4b7140e384f1096ae95fc0ddd21c5f9cb7ff95eb3cf3890ff315cf7011"
+      },
+      {
+        "id": "00000000000000000000000000000142",
+        "name": "Shoreline NarrowRiver",
+        "seed": 5,
+        "gameRevision": "dev-9af05428089f0850b2e1",
+        "sha256": "33734f212f13fd14aea98133706e88963a8954383f72fc45ae8fec53d5057359"
+      },
+      {
+        "id": "00000000000000000000000000000143",
+        "name": "Shoreline SteepRiver",
+        "seed": 7429,
+        "gameRevision": "dev-9af05428089f0850b2e1",
+        "sha256": "2f18c090a38e999a49138a02cbee55f9e6ab62539b5e73bc96ee4be5f8fe316b"
+      }
+    ],
+    "profile": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\Issue146\\Play-Build249-IsolatedProfile",
+    "executable": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\Issue146\\Extracted-Build249\\CitySimVR\\Binaries\\Win64\\CitySimVR.exe",
+    "executableSha256": "d98eea110e43a933914c8c1d78c3bbc536619daeb92eec29d9ec8a90f16ff959",
+    "packageSha256": "f2f86b9b56a0de6748a3a05143daf77b92dddbcfcd3ba4f6a664d553b8884462",
+    "zipPath": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\CI\\Builds\\249-c848d9924b56-WindowsCandidate-68e99de4\\CitySimVR-Windows.zip",
+    "fileCount": 53,
+    "editorTests": [
+      "CitySim.Placement.Transactions",
+      "CitySim.Terrain.DeterminismAndFixtures",
+      "CitySim.Presentation.WaterFacetIntersection",
+      "CitySim.Presentation.WaterTerrainContours",
+      "CitySim.Terrain.PresentationContinuity",
+      "CitySim.Dimensions.BoardPresentation",
+      "CitySim.Presentation.BeachPlacement",
+      "CitySim.Presentation.BeachAssetsAndLifecycle",
+      "CitySim.Presentation.TerrainMeshInvalidation",
+      "CitySim.Presentation.BankRefinement",
+      "CitySim.Presentation.BankShadingContinuity",
+      "CitySim.Roads.SampledGroundPaving",
+      "CitySim.Terrain.CompactHomeWalk",
+      "CitySim.Assets.RuntimeOrganization",
+      "CitySim.Terrain.ResidentialGroundVariants",
+      "CitySim.Presentation.ResidentialGroundCooked",
+      "CitySim.Terrain.ResidentialFoundationFineSamplesAndEntrances",
+      "CitySim.Terrain.BuildingSupportMeasurements",
+      "CitySim.Presentation.LowDensityLifecycle"
+    ],
+    "editorBuildSeconds": 138.12,
+    "nativeViews": 40,
+    "packagedViews": 100,
+    "packagedCases": [
+      "CitySim.Desktop.ShorelineContours",
+      "CitySim.Desktop.BeachScenery",
+      "CitySim.Assets.RuntimeOrganization",
+      "CitySim.Presentation.ResidentialGroundCooked"
+    ],
+    "resolutions": [
+      "1280x800",
+      "1024x720"
+    ],
+    "startup": "CI menu/startup and both-size Client executions passed; extracted bytes match all files in executed-copy receipt; no extra local native replay",
+    "quest": "deferred PC-first; no device install",
+    "headsetAppearance": "unconfirmed (#49)",
+    "candidateUrl": "https://drone.shaun-husain.com/CitySimVR/citysim/249",
+    "finishedUtc": "2026-10-18T11:35:12.1949330Z",
+    "bankFollowUp": "bank lighting gradient smoothing; before matches232 geometry and original shading",
+    "acceptanceEvidence": "https://git.shaun-husain.com/CitySimVR/citysim/issues/146#issuecomment-3279",
+    "manualPackagedInput": "Windows249 shoreline appearance confirmed by Shaun; broader input/headset coverage not inferred",
+    "mergeCommit": "0876a6b6a279693b7cd7ada48c4f7bdb68be8292",
+    "issueState": "closed",
+    "mergedMainCheck": {
+      "build": 257,
+      "status": "passed",
+      "url": "https://drone.shaun-husain.com/CitySimVR/citysim/257",
+      "editorSeconds": 128.27,
+      "tests": 27,
+      "offlineToolContracts": 36,
+      "testedCommit": "0876a6b6a279693b7cd7ada48c4f7bdb68be8292"
+    },
+    "windowsPlaytest": {
+      "build": 249,
+      "submittedCommit": "c848d9924b563affd94298df58e06b2884b5fa2e",
+      "gameRevision": "dev-9af05428089f0850b2e1",
+      "schema": 72,
+      "date": "2026-10-18",
+      "observer": "Shaun",
+      "verdict": "Windows249 shoreline/bank appearance accepted in desktop playtest",
+      "quote": "The shoreline looks much better in Windows249 too.",
+      "evidence": "https://git.shaun-husain.com/CitySimVR/citysim/issues/146#issuecomment-3279",
+      "limits": "Broader input coverage and physical headset observations are not inferred"
+    }
+  },
+  "visualReview": {
+    "build": 249,
+    "source": "c848d9924b563affd94298df58e06b2884b5fa2e",
+    "status": "passed",
+    "nativeReviewed": 40,
+    "packagedReviewed": 100,
+    "resolutions": [
+      "1280x800",
+      "1024x720"
+    ],
+    "findings": [
+      "Lake upper-rim alternating shading substantially softens at medium/far/opposite/night views",
+      "Steep river ridges soften; continuous water contact and no new visible chunk seams",
+      "Concave lake and narrow river maintain continuous coverage",
+      "Ten beach prop/day/night/reload views per width remain grounded; four Client cases per width pass"
+    ],
+    "inventories": [
+      "Native246/CaptureInventory.json",
+      "Windows249-1280/AllCaptureInventory.json",
+      "Windows249-1024/AllCaptureInventory.json"
+    ],
+    "humanAcceptance": "preview accepted and merge authorized2026-10-18; no manual package/input claim",
+    "headsetAppearance": "unconfirmed; Quest deferred PC-first"
+  },
+  "humanAcceptance": "Windows249 shoreline/bank appearance accepted in desktop playtest",
+  "next": "Issue146 complete; related ongoing feature/headset issues remain separate",
+  "headsetAppearance": "unconfirmed; Quest coverage deferred PC-first",
+  "acceptanceEvidence": "https://git.shaun-husain.com/CitySimVR/citysim/issues/146#issuecomment-3279",
+  "compatibility": {
+    "source": "d6eb62918a654b7280aa7b216196fcc79c403a7d",
+    "residentialPR": 190,
+    "residentialHead": "5dd669d215ecb7f194b8bc1d88e685d04fa09041",
+    "mergeTree": "1b866052b34b19e8b83ff1a699bd2de76c230e12",
+    "textConflicts": 0,
+    "homeWalkCppTokens": "identical to acceptedc848d99; formatting-only reduction",
+    "ciLists": "main baseline preserved; shoreline checks appended; one-off native selector removed after40 reviewed captures",
+    "finalCheck": 253,
+    "handoff": "https://git.shaun-husain.com/CitySimVR/citysim/pulls/190#issuecomment-3216",
+    "finalAudit": {
+      "status": "passed",
+      "source": "d6eb62918a654b7280aa7b216196fcc79c403a7d",
+      "otherPR": 190,
+      "otherHead": "5dd669d215ecb7f194b8bc1d88e685d04fa09041",
+      "combinedTree": "1b866052b34b19e8b83ff1a699bd2de76c230e12",
+      "textConflicts": 0,
+      "retained": [
+        "refined ground query and private-walk facets",
+        "frontage flight logic",
+        "4cm road endpoint snap",
+        "both dedicated native visual selectors handled without add/add conflict",
+        "additive CI regressions preserving main baseline"
+      ],
+      "changeToAcceptedCode": "HomeWalk C++ token stream unchanged fromc848d99; tests/manifests changed only",
+      "limits": "Read-only combined-source review; unmerged PR190 runtime is its owner\u2019s validation scope",
+      "subsequentCleanTrialMerges": [
+        {
+          "pr": 190,
+          "head": "14f05635a2ed8005c64be21713ec9c1361757016",
+          "tree": "9c7a2dd344c5bdbe927600177a7f3e7404c4651f"
+        },
+        {
+          "pr": 193,
+          "head": "ad9f8df6a960e8aadbf72f8a8b4cd57833b5f673",
+          "tree": "23494eb8198dafc3f77bfeb407ebfca9398214cf"
+        },
+        {
+          "pr": 191,
+          "head": "ad127b974c532f0741b6cd333c943a8f0134641f",
+          "tree": "8cca679b2b6554b3295de130dee788a85f279f95"
+        }
+      ]
+    }
+  },
+  "submittedCommit": "d6eb62918a654b7280aa7b216196fcc79c403a7d",
+  "acceptedImplementation": "c848d9924b563affd94298df58e06b2884b5fa2e",
+  "finalEditor": {
+    "commit": "d6eb62918a654b7280aa7b216196fcc79c403a7d",
+    "submittedCommit": "d6eb62918a654b7280aa7b216196fcc79c403a7d",
+    "build": "253",
+    "mode": "Check",
+    "tests": [
+      "CitySim.Placement.Transactions",
+      "CitySim.Terrain.DeterminismAndFixtures",
+      "CitySim.Simulation.CitizenArrivalSchedules",
+      "CitySim.Art.ImportedKit",
+      "CitySim.Art.CivicLightEmission",
+      "CitySim.Art.StorefrontAssets",
+      "CitySim.Art.DamagedVariantsParticles",
+      "CitySim.Art.LowDensityVariants",
+      "CitySim.Presentation.LowDensityLifecycle",
+      "CitySim.Terrain.ResidentialGroundVariants",
+      "CitySim.Presentation.ResidentialGroundCooked",
+      "CitySim.Terrain.CompactHomeWalk",
+      "CitySim.Terrain.ResidentialFoundationFineSamplesAndEntrances",
+      "CitySim.Terrain.BuildingSupportMeasurements",
+      "CitySim.Presentation.SeasonalDecorationsHomePorchAndDoorWreaths",
+      "CitySim.Dimensions.BoardPresentation",
+      "CitySim.Roads.SampledGroundPaving",
+      "CitySim.Assets.RuntimeOrganization",
+      "CitySim.Citizens.NativeWalk",
+      "CitySim.Presentation.WaterFacetIntersection",
+      "CitySim.Presentation.WaterTerrainContours",
+      "CitySim.Terrain.PresentationContinuity",
+      "CitySim.Presentation.BeachPlacement",
+      "CitySim.Presentation.BeachAssetsAndLifecycle",
+      "CitySim.Presentation.TerrainMeshInvalidation",
+      "CitySim.Presentation.BankRefinement",
+      "CitySim.Presentation.BankShadingContinuity"
+    ],
+    "startedUtc": "2026-10-18T11:43:00.0499047Z",
+    "status": "passed",
+    "gameplayFixtures": [
+      {
+        "name": "shopping",
+        "path": "Artifacts/B003/D107Followup/ReportedCity.json",
+        "sha256": "72c2d4a0909a23135251a25953c8f1203eb297adadc39ac2126e46753481b64f"
+      },
+      {
+        "name": "health",
+        "path": "Artifacts/D127/ReportedCity.json",
+        "sha256": "276727c3a77e63654c7fc0e1fa67bed1e8214980e38ee37724049a45d1e77e27"
+      }
+    ],
+    "finishedUtc": "2026-10-18T11:46:34.4672949Z"
+  },
+  "deliveryEvidence": "https://git.shaun-husain.com/CitySimVR/citysim/issues/146#issuecomment-3219",
+  "sourceEquivalence": "All C++ tokens match accepted/packagec848d99; only HomeWalk formatting and CI manifests differ",
+  "windowsAttachments": [
+    {
+      "Name": "evidence-bank-shading-windows249-DiagonalLake-Comparison-892535a6e68f4bf2.jpg",
+      "Url": "https://git.shaun-husain.com/attachments/49fa0609-a334-461a-b441-aeda058665a5",
+      "Sha256": "892535a6e68f4bf28bdca38b7b66373bcb23715f3a313dcd93fa638102eb0b67"
+    },
+    {
+      "Name": "evidence-bank-shading-windows249-SteepRiver-Comparison-d6486da2b984abab.jpg",
+      "Url": "https://git.shaun-husain.com/attachments/037ff93e-2665-4a93-8ae2-29d7c165b8d3",
+      "Sha256": "d6486da2b984abab595deaa04f5a59096f791cf29070a9ceccea6a4b7a8af7a8"
+    },
+    {
+      "Name": "evidence-bank-shading-windows249-Beach-Regression-f67bfa7f45964110.jpg",
+      "Url": "https://git.shaun-husain.com/attachments/09811170-67bf-4d41-99c9-5ad77f3fd41c",
+      "Sha256": "f67bfa7f4596411051c7a15617185ab20b34228ffebaa61d6fd6218294b1d9f1"
+    },
+    {
+      "Name": "evidence-bank-shading-windows249-Delivery-da3c9ee58e4535a0.json",
+      "Url": "https://git.shaun-husain.com/attachments/6e080d72-de5f-4462-b028-7cc6f9f0e273",
+      "Sha256": "da3c9ee58e4535a0015d44b985b2397fc51cb5dbd76e6a8ea907dc07082bc42e"
+    },
+    {
+      "Name": "evidence-bank-shading-windows249-Issue146-Extraction-126d45e63f2fc6ad.json",
+      "Url": "https://git.shaun-husain.com/attachments/49fa1850-5959-4118-8c29-430c23dd8fd8",
+      "Sha256": "126d45e63f2fc6adc4c1ac7a2ebefda022b822a2f29f0a68f6c1b32dc9dccedb"
+    },
+    {
+      "Name": "evidence-bank-shading-windows249-FinalReview-93f98f27e7cd1a10.json",
+      "Url": "https://git.shaun-husain.com/attachments/ebc2cba4-fe83-41ad-8ea0-d5dfe41ab25c",
+      "Sha256": "93f98f27e7cd1a10a3c01af0e1ee912e40f5ab49bbc7f541b3dd4d6d110f47eb"
+    },
+    {
+      "Name": "evidence-bank-shading-windows249-Compatibility-0e62087f82a2f4a8.json",
+      "Url": "https://git.shaun-husain.com/attachments/25471ce6-597a-474c-b8cb-373439b9fefd",
+      "Sha256": "0e62087f82a2f4a890155d12aef166e8d85aad4e299f28eff865c3279667953e"
+    }
+  ],
+  "finalEditorSeconds": 134.52,
+  "finalOfflineToolContracts": 36,
+  "recordPhase": "Post-merge Windows249 playtest confirmation; cleanup receipt lives on issue146",
+  "windowsPlaytest": {
+    "build": 249,
+    "submittedCommit": "c848d9924b563affd94298df58e06b2884b5fa2e",
+    "gameRevision": "dev-9af05428089f0850b2e1",
+    "schema": 72,
+    "date": "2026-10-18",
+    "observer": "Shaun",
+    "verdict": "Windows249 shoreline/bank appearance accepted in desktop playtest",
+    "quote": "The shoreline looks much better in Windows249 too.",
+    "evidence": "https://git.shaun-husain.com/CitySimVR/citysim/issues/146#issuecomment-3279",
+    "limits": "Broader input coverage and physical headset observations are not inferred"
+  },
+  "previewAcceptanceEvidence": "https://git.shaun-husain.com/CitySimVR/citysim/issues/146#issuecomment-3215"
+}

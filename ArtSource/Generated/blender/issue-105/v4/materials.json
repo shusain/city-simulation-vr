@@ -1,0 +1,116 @@
+{
+  "regions": {
+    "OpaqueFacade": {
+      "source_material": "CivicBrick_Trim",
+      "original_maps": [
+        {
+          "image": "CityBrick_BaseColor.png",
+          "path": "//../repo/ArtSource/Textures/BuildingSurfaces/CityBrick_BaseColor.png",
+          "packed": true,
+          "sha256": "e4c1ad7446563e3209191ca862fc4c3e065c491debd989765bc843405a5fbbfe",
+          "outputs_to": [
+            "Color1"
+          ]
+        },
+        {
+          "image": "CityBrick_Normal.png",
+          "path": "//../repo/ArtSource/Textures/BuildingSurfaces/CityBrick_Normal.png",
+          "packed": true,
+          "sha256": "cf71dc7902b7c3a99d9fd1e966760af9a7b428de42b22ade5fb810965866d2cc",
+          "outputs_to": [
+            "Color"
+          ]
+        },
+        {
+          "image": "CityBrick_ORM.png",
+          "path": "//../repo/ArtSource/Textures/BuildingSurfaces/CityBrick_ORM.png",
+          "packed": true,
+          "sha256": "39f2f1df859b4052afe98dcb632054398957455d58b205b13702210467a0c6e8",
+          "outputs_to": [
+            "Color"
+          ]
+        }
+      ],
+      "reuse": "Original civic material nodes/images, packed where available; no baked maps",
+      "native_binding": "Approved civic brick binding matching source material",
+      "native_channels": "Native roughness/normal/ORM binding pending verification; Blender shader graph is not an FBX handoff"
+    },
+    "RoofService": {
+      "source_material": "CivicAsphaltRoof",
+      "original_maps": [
+        {
+          "image": "CivicAsphalt_BaseColor.png",
+          "path": "//../repo/ArtSource/Textures/CivicSurfaces/CivicAsphalt_BaseColor.png",
+          "packed": true,
+          "sha256": "85e2cfe619a74da7fe74ad0c6439141f4edb63e5085208c4cfd620c5e1d988fa",
+          "outputs_to": [
+            "Color1"
+          ]
+        },
+        {
+          "image": "CivicAsphalt_Normal.png",
+          "path": "//../repo/ArtSource/Textures/CivicSurfaces/CivicAsphalt_Normal.png",
+          "packed": true,
+          "sha256": "e6f9e8f0257ddbc33b012b72f9446a2c8a3679153488b4bbc67ca6e50be153fd",
+          "outputs_to": [
+            "Color"
+          ]
+        },
+        {
+          "image": "CivicAsphalt_ORM.png",
+          "path": "//../repo/ArtSource/Textures/CivicSurfaces/CivicAsphalt_ORM.png",
+          "packed": true,
+          "sha256": "6b06b777944f76046d0f51131cdec7cca658efac60560c95ab1e854c37189ab4",
+          "outputs_to": [
+            "Color"
+          ]
+        }
+      ],
+      "reuse": "Original civic material nodes/images, packed where available; no baked maps",
+      "native_binding": "MI_CivicAsphaltRoof",
+      "native_channels": "Native roughness/normal/ORM binding pending verification; Blender shader graph is not an FBX handoff"
+    },
+    "TechGlass": {
+      "source_material": "TechGlass",
+      "maps": [],
+      "basecolor": [
+        0.03500000014901161,
+        0.2800000011920929,
+        0.3199999928474426,
+        1.0
+      ],
+      "roughness": 0.2800000011920929,
+      "metallic": 0.0,
+      "native_binding": "Reusable opaque PBR semantic; native assignment pending"
+    },
+    "LightMetal": {
+      "source_material": "LightMetal",
+      "maps": [],
+      "basecolor": [
+        0.7699999809265137,
+        0.8399999737739563,
+        0.8500000238418579,
+        1.0
+      ],
+      "roughness": 0.3199999928474426,
+      "metallic": 0.550000011920929,
+      "native_binding": "Reusable opaque PBR semantic; native assignment pending"
+    },
+    "DoorAccent": {
+      "source_material": "DoorAccent",
+      "maps": [],
+      "basecolor": [
+        0.11999999731779099,
+        0.1899999976158142,
+        0.20999999344348907,
+        1.0
+      ],
+      "roughness": 0.7200000286102295,
+      "metallic": 0.0,
+      "native_binding": "Reusable opaque PBR semantic; native assignment pending"
+    }
+  },
+  "uv_density": "1 repeat/metre planar UV0",
+  "source_sha256": "00c628ceb16b773e3428c4774ec106a268b4d87517ba2b88755be8f5bba71a8f",
+  "previous_sha256": "4b453f0645d2bdb7ea64d78d43b4e9d043da577692fcec27caf68c9ff3a062f9"
+}

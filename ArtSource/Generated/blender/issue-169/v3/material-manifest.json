@@ -1,0 +1,48 @@
+{
+  "maps": [
+    {
+      "path": "textures/CityMechanical_BaseColor.png",
+      "sha256": "ea75f9ab4911ad7ecf6a5e0ff5688fdc2c07ed52c3cad007ac58e8d06fe4e5ae",
+      "dimensions": [
+        512,
+        512
+      ],
+      "colorspace": "sRGB"
+    },
+    {
+      "path": "textures/CityMechanical_Normal.png",
+      "sha256": "7a456d3f708d3ee42a7dfb830ac87f95ce27aeeea0e56ac444daca5da510231e",
+      "dimensions": [
+        512,
+        512
+      ],
+      "colorspace": "Non-Color"
+    },
+    {
+      "path": "textures/CityMechanical_ORM.png",
+      "sha256": "0e08a253e6c30a15e3675921cab4958c0cdcf088f23f05b5fcc1eb3f87dbec98",
+      "dimensions": [
+        512,
+        512
+      ],
+      "colorspace": "Non-Color"
+    }
+  ],
+  "regions": [
+    "Mechanical_shared_3maps",
+    "Neutral_cabinet_paint",
+    "Dark_mechanical",
+    "Deep_blue_PV_with_subtle_cells"
+  ],
+  "hardware_recipe": "Inherited maps: sRGB BaseColor; Non-Color Normal/ORM; normal .35, G roughness/B metal/R AO.",
+  "pv": {
+    "cell_grid": [
+      12,
+      8
+    ],
+    "uv": "Normalized per table",
+    "roughness": 0.48,
+    "metallic": 0.12
+  },
+  "native_reconstruction": "Static FBX; reconstruct shared four shaders and PV grid later."
+}

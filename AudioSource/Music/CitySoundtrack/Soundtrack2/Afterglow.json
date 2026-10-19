@@ -1,0 +1,689 @@
+{
+  "schema": 1,
+  "id": "Afterglow",
+  "title": "Afterglow",
+  "bpm": 112,
+  "bars": 76,
+  "seed": 83801,
+  "synthSource": "RevisionSynths.scd",
+  "synthDependencies": [
+    "../../../Tools/CitySoundtrackScore.py",
+    "../Soundtrack1/AlbumSynths.scd"
+  ],
+  "sample": {
+    "mode": "synthBed"
+  },
+  "targetLUFS": -24,
+  "truePeakCeilingDBTP": -6,
+  "progressions": {
+    "main": [
+      [
+        45,
+        52,
+        55,
+        59,
+        64
+      ],
+      [
+        41,
+        48,
+        52,
+        55,
+        60
+      ],
+      [
+        48,
+        55,
+        59,
+        62,
+        67
+      ],
+      [
+        43,
+        50,
+        54,
+        57,
+        62
+      ]
+    ],
+    "contrast": [
+      [
+        48,
+        55,
+        59,
+        62,
+        67
+      ],
+      [
+        45,
+        52,
+        55,
+        59,
+        64
+      ],
+      [
+        43,
+        50,
+        54,
+        57,
+        62
+      ],
+      [
+        41,
+        48,
+        52,
+        55,
+        60
+      ]
+    ]
+  },
+  "melodies": {
+    "main": [
+      [
+        [
+          0,
+          71,
+          0.75
+        ],
+        [
+          1,
+          67,
+          0.5
+        ],
+        [
+          2,
+          64,
+          1
+        ],
+        [
+          4,
+          62,
+          0.75
+        ],
+        [
+          5,
+          64,
+          0.5
+        ],
+        [
+          6,
+          67,
+          1
+        ]
+      ],
+      [
+        [
+          0,
+          69,
+          0.75
+        ],
+        [
+          1,
+          67,
+          0.5
+        ],
+        [
+          2,
+          64,
+          1
+        ],
+        [
+          4,
+          60,
+          0.75
+        ],
+        [
+          5,
+          62,
+          0.5
+        ],
+        [
+          6,
+          64,
+          1
+        ]
+      ],
+      [
+        [
+          0,
+          71,
+          0.75
+        ],
+        [
+          1,
+          74,
+          0.5
+        ],
+        [
+          2,
+          72,
+          1
+        ],
+        [
+          4,
+          67,
+          0.75
+        ],
+        [
+          5,
+          64,
+          0.5
+        ],
+        [
+          6,
+          67,
+          1
+        ]
+      ],
+      [
+        [
+          0,
+          69,
+          0.75
+        ],
+        [
+          1,
+          67,
+          0.5
+        ],
+        [
+          2,
+          66,
+          1
+        ],
+        [
+          4,
+          62,
+          0.75
+        ],
+        [
+          5,
+          64,
+          0.5
+        ],
+        [
+          6,
+          66,
+          1
+        ]
+      ]
+    ],
+    "contrast": [
+      [
+        [
+          0.0,
+          71,
+          0.5
+        ],
+        [
+          1.0,
+          67,
+          0.5
+        ],
+        [
+          1.5,
+          74,
+          0.75
+        ],
+        [
+          3.0,
+          72,
+          0.25
+        ],
+        [
+          3.5,
+          79,
+          0.5
+        ],
+        [
+          4.5,
+          71,
+          0.75
+        ],
+        [
+          6.0,
+          67,
+          0.5
+        ],
+        [
+          7.0,
+          72,
+          0.25
+        ]
+      ],
+      [
+        [
+          0.0,
+          67,
+          0.5
+        ],
+        [
+          1.0,
+          64,
+          0.5
+        ],
+        [
+          1.5,
+          71,
+          0.75
+        ],
+        [
+          3.0,
+          69,
+          0.25
+        ],
+        [
+          3.5,
+          76,
+          0.5
+        ],
+        [
+          4.5,
+          67,
+          0.75
+        ],
+        [
+          6.0,
+          64,
+          0.5
+        ],
+        [
+          7.0,
+          69,
+          0.25
+        ]
+      ],
+      [
+        [
+          0.0,
+          66,
+          0.5
+        ],
+        [
+          1.0,
+          62,
+          0.5
+        ],
+        [
+          1.5,
+          69,
+          0.75
+        ],
+        [
+          3.0,
+          67,
+          0.25
+        ],
+        [
+          3.5,
+          74,
+          0.5
+        ],
+        [
+          4.5,
+          66,
+          0.75
+        ],
+        [
+          6.0,
+          62,
+          0.5
+        ],
+        [
+          7.0,
+          67,
+          0.25
+        ]
+      ],
+      [
+        [
+          0.0,
+          64,
+          0.5
+        ],
+        [
+          1.0,
+          72,
+          0.5
+        ],
+        [
+          1.5,
+          67,
+          0.75
+        ],
+        [
+          3.0,
+          65,
+          0.25
+        ],
+        [
+          3.5,
+          72,
+          0.5
+        ],
+        [
+          4.5,
+          64,
+          0.75
+        ],
+        [
+          6.0,
+          72,
+          0.5
+        ],
+        [
+          7.0,
+          65,
+          0.25
+        ]
+      ]
+    ],
+    "response": [
+      [
+        [
+          0.0,
+          69,
+          0.75
+        ],
+        [
+          1.0,
+          64,
+          0.5
+        ],
+        [
+          1.5,
+          67,
+          0.5
+        ],
+        [
+          3.0,
+          76,
+          0.25
+        ],
+        [
+          4.0,
+          71,
+          0.75
+        ],
+        [
+          5.0,
+          67,
+          0.25
+        ],
+        [
+          5.5,
+          64,
+          0.5
+        ],
+        [
+          7.0,
+          69,
+          0.75
+        ]
+      ],
+      [
+        [
+          0.0,
+          65,
+          0.75
+        ],
+        [
+          1.0,
+          72,
+          0.5
+        ],
+        [
+          1.5,
+          64,
+          0.5
+        ],
+        [
+          3.0,
+          72,
+          0.25
+        ],
+        [
+          4.0,
+          67,
+          0.75
+        ],
+        [
+          5.0,
+          64,
+          0.25
+        ],
+        [
+          5.5,
+          72,
+          0.5
+        ],
+        [
+          7.0,
+          65,
+          0.75
+        ]
+      ],
+      [
+        [
+          0.0,
+          72,
+          0.75
+        ],
+        [
+          1.0,
+          67,
+          0.5
+        ],
+        [
+          1.5,
+          71,
+          0.5
+        ],
+        [
+          3.0,
+          79,
+          0.25
+        ],
+        [
+          4.0,
+          74,
+          0.75
+        ],
+        [
+          5.0,
+          71,
+          0.25
+        ],
+        [
+          5.5,
+          67,
+          0.5
+        ],
+        [
+          7.0,
+          72,
+          0.75
+        ]
+      ],
+      [
+        [
+          0.0,
+          67,
+          0.75
+        ],
+        [
+          1.0,
+          62,
+          0.5
+        ],
+        [
+          1.5,
+          66,
+          0.5
+        ],
+        [
+          3.0,
+          74,
+          0.25
+        ],
+        [
+          4.0,
+          69,
+          0.75
+        ],
+        [
+          5.0,
+          66,
+          0.25
+        ],
+        [
+          5.5,
+          62,
+          0.5
+        ],
+        [
+          7.0,
+          67,
+          0.75
+        ]
+      ]
+    ]
+  },
+  "sections": [
+    {
+      "name": "Immediate piano",
+      "startBar": 0,
+      "bars": 4,
+      "progression": "main",
+      "melody": "main",
+      "density": "sparse",
+      "drums": 0.8,
+      "bass": 0.85,
+      "texture": 0.9,
+      "lead": 0.85,
+      "tone": 2400
+    },
+    {
+      "name": "Driving theme",
+      "startBar": 4,
+      "bars": 16,
+      "progression": "main",
+      "melody": "main",
+      "density": "full",
+      "drums": 1,
+      "bass": 1,
+      "texture": 0.75,
+      "lead": 1,
+      "tone": 2400
+    },
+    {
+      "name": "Glass dialogue",
+      "startBar": 20,
+      "bars": 16,
+      "progression": "contrast",
+      "melody": "contrast",
+      "density": "full",
+      "drums": 1,
+      "bass": 1,
+      "texture": 0.75,
+      "lead": 1,
+      "tone": 2400,
+      "leadSynth": "AlbumGlass"
+    },
+    {
+      "name": "Four-bar breath",
+      "startBar": 36,
+      "bars": 4,
+      "progression": "main",
+      "melody": "main",
+      "density": "break",
+      "drums": 0.8,
+      "bass": 0.85,
+      "texture": 0.9,
+      "lead": 0.85,
+      "tone": 2400
+    },
+    {
+      "name": "Developed piano",
+      "startBar": 40,
+      "bars": 24,
+      "progression": "main",
+      "melody": "response",
+      "density": "full",
+      "drums": 1,
+      "bass": 1,
+      "texture": 0.75,
+      "lead": 1,
+      "tone": 2400,
+      "lift": true
+    },
+    {
+      "name": "Evening descent",
+      "startBar": 64,
+      "bars": 12,
+      "progression": "contrast",
+      "melody": "main",
+      "density": "outro",
+      "drums": 0.8,
+      "bass": 0.85,
+      "texture": 0.9,
+      "lead": 0.85,
+      "tone": 2400
+    }
+  ],
+  "albumProfile": {
+    "leadSynth": "ForwardPiano",
+    "answerSynth": "AlbumGlass",
+    "leadGain": 0.105,
+    "tone": 2400,
+    "kickBeats": [
+      0,
+      1.5,
+      2,
+      3.5
+    ],
+    "snareBeats": [
+      1,
+      3
+    ],
+    "backbeatSynth": "HybridSnare",
+    "backbeatGain": 0.16,
+    "hatSynth": "Shaker",
+    "hatGain": 0.07,
+    "hatBeats": [
+      0.0,
+      0.535,
+      1.0,
+      1.535,
+      2.0,
+      2.535,
+      3.0,
+      3.535
+    ],
+    "bassSynth": "Bass",
+    "bassGain": 0.12,
+    "bassPattern": [
+      [
+        0,
+        0.8,
+        0
+      ],
+      [
+        2,
+        0.7,
+        0
+      ],
+      [
+        3.5,
+        0.3,
+        7
+      ]
+    ],
+    "padGain": 0.019,
+    "padColor": 0.1,
+    "kickGain": 0.75
+  },
+  "intent": "Clear piano attacks locked to the beat, shorter replies and a more energetic112BPM groove; one short break and extended developing piano section.",
+  "feedbackSource": "Artifacts/D82/Soundtrack1/Feedback/a4322f0070025d67c0eca8920fceb8ad1c5abfc0158cd2a8702f0d9e3a046012/d1ebf0b8-0617-4989-806d-578d10c7337e.json",
+  "feedbackNotes": "It still sounds like there is a bit of \"indecisiveness\" or delay in the melody at times"
+}

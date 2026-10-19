@@ -1,0 +1,22 @@
+{
+  "task": "D123 / B003",
+  "date": "2026-10-15",
+  "revision": "dev-d7105a4eb7ba5a725b97",
+  "schema": 69,
+  "quote": "Okay I tested this with my current city and the shopping and supply warnings seem to be working better now. Please mark D123 complete and get these changes committed.",
+  "status": "User accepted current-city shopping/supply behavior; D123 complete, B003 closed.",
+  "source_matches_delivery": true,
+  "delivery": "docs/evidence/D123-household-supplies.json",
+  "followups": {
+    "D124": "Concise home inspection charts; separate user-requested presentation follow-up.",
+    "D125": "Non-emergency self-travel/outpatient treatment; separately queued health behavior/balance issue."
+  },
+  "physicalHeadsetObservations": "Remain unconfirmed under D114; not inferred from acceptance.",
+  "git": {
+    "request": "Local commits only; no push/PR/merge/public release.",
+    "prerequisiteCommit": "4ad3908dd617a5927a3d178d43903df0d81428e1",
+    "prerequisiteAuthorization": "User explicitly chose Include prerequisite gameplay commits (Recommended).",
+    "scope": "D123 exact accepted24-source-file snapshot; walk integration/assets and unrelated changes remain outside these commits.",
+    "status": "Accepted D123 implementation and closeout being committed separately from prerequisite gameplay; D124 remains an unaccepted follow-up."
+  }
+}

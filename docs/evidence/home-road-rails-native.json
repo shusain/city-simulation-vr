@@ -1,0 +1,251 @@
+{
+  "build": 199,
+  "head": "f0a4fbf76d1337a6e1801b16bedb0f5491906981",
+  "tested": "f0a4fbf76d1337a6e1801b16bedb0f5491906981",
+  "status": "passed",
+  "editorTests": [
+    "CitySim.Placement.Transactions",
+    "CitySim.Terrain.DeterminismAndFixtures",
+    "CitySim.Simulation.CitizenArrivalSchedules",
+    "CitySim.Art.ImportedKit",
+    "CitySim.Art.CivicLightEmission",
+    "CitySim.Art.StorefrontAssets",
+    "CitySim.Art.DamagedVariantsParticles",
+    "CitySim.Presentation.BeachPlacement",
+    "CitySim.Presentation.BeachAssetsAndLifecycle",
+    "CitySim.Presentation.AtmosphereSceneryAndLifecycle",
+    "CitySim.Presentation.TerrainScenerySuitability",
+    "CitySim.Dimensions.LegacySceneryDigest",
+    "CitySim.Dimensions.BoardPresentation",
+    "CitySim.Desktop.CameraBoundsAndReset",
+    "CitySim.Terrain.ResidentialFoundationFineSamplesAndEntrances",
+    "CitySim.Roads.SampledGroundPaving",
+    "CitySim.Technology.ApprovedBuildingAssets",
+    "CitySim.Terrain.BuildingSupportMeasurements",
+    "CitySim.Presentation.SeasonalDecorationsBoundedDeterministicReadOnly",
+    "CitySim.Presentation.SeasonalDecorationsHomePorchAndDoorWreaths",
+    "CitySim.Terrain.CompactHomeWalk",
+    "CitySim.Roads.RaisedBranches",
+    "CitySim.Traffic.VisiblePool",
+    "CitySim.Presentation.CitizenAssetsAndPlatform",
+    "CitySim.Citizens.StreetPool"
+  ],
+  "captures": 20,
+  "contacts": [
+    {
+      "case": "Pilot-Flat",
+      "mode": "HomeGroundPilot",
+      "tiles_x": "2",
+      "tiles_y": "2",
+      "rotation": "0",
+      "lot_relief_cm": "0",
+      "old_road_contact_error_cm": "0",
+      "contact_error_cm": "0.000",
+      "connector_lateral_offset_cm": "0"
+    },
+    {
+      "case": "Pilot-Uphill",
+      "mode": "HomeGroundPilot",
+      "tiles_x": "2",
+      "tiles_y": "2",
+      "rotation": "0",
+      "lot_relief_cm": "150",
+      "old_road_contact_error_cm": "0",
+      "contact_error_cm": "0.000",
+      "connector_lateral_offset_cm": "0"
+    },
+    {
+      "case": "Pilot-Downhill",
+      "mode": "HomeGroundPilot",
+      "tiles_x": "2",
+      "tiles_y": "2",
+      "rotation": "0",
+      "lot_relief_cm": "150",
+      "old_road_contact_error_cm": "0",
+      "contact_error_cm": "0.000",
+      "connector_lateral_offset_cm": "0"
+    },
+    {
+      "case": "Pilot-Crest",
+      "mode": "HomeGroundPilot",
+      "tiles_x": "2",
+      "tiles_y": "2",
+      "rotation": "0",
+      "lot_relief_cm": "199",
+      "old_road_contact_error_cm": "0",
+      "contact_error_cm": "0.000",
+      "connector_lateral_offset_cm": "0"
+    },
+    {
+      "case": "Pilot-Hollow",
+      "mode": "HomeGroundPilot",
+      "tiles_x": "2",
+      "tiles_y": "2",
+      "rotation": "0",
+      "lot_relief_cm": "199",
+      "old_road_contact_error_cm": "0",
+      "contact_error_cm": "0.000",
+      "connector_lateral_offset_cm": "0"
+    },
+    {
+      "case": "Pilot-WavesNorth",
+      "mode": "HomeGroundPilot",
+      "tiles_x": "2",
+      "tiles_y": "2",
+      "rotation": "0",
+      "lot_relief_cm": "233",
+      "old_road_contact_error_cm": "0",
+      "contact_error_cm": "0.000",
+      "connector_lateral_offset_cm": "0"
+    },
+    {
+      "case": "Pilot-WavesEast",
+      "mode": "HomeGroundPilot",
+      "tiles_x": "2",
+      "tiles_y": "2",
+      "rotation": "1",
+      "lot_relief_cm": "233",
+      "old_road_contact_error_cm": "0",
+      "contact_error_cm": "0.000",
+      "connector_lateral_offset_cm": "0"
+    },
+    {
+      "case": "Pilot-WavesSouth",
+      "mode": "HomeGroundPilot",
+      "tiles_x": "2",
+      "tiles_y": "2",
+      "rotation": "2",
+      "lot_relief_cm": "233",
+      "old_road_contact_error_cm": "0",
+      "contact_error_cm": "0.000",
+      "connector_lateral_offset_cm": "0"
+    },
+    {
+      "case": "Pilot-WavesWest",
+      "mode": "HomeGroundPilot",
+      "tiles_x": "2",
+      "tiles_y": "2",
+      "rotation": "3",
+      "lot_relief_cm": "233",
+      "old_road_contact_error_cm": "0",
+      "contact_error_cm": "0.000",
+      "connector_lateral_offset_cm": "0"
+    },
+    {
+      "case": "Pilot-RollingSeed",
+      "mode": "HomeGroundPilot",
+      "tiles_x": "2",
+      "tiles_y": "2",
+      "rotation": "0",
+      "lot_relief_cm": "50",
+      "old_road_contact_error_cm": "0",
+      "contact_error_cm": "0.000",
+      "connector_lateral_offset_cm": "0"
+    }
+  ],
+  "rails": [
+    {
+      "case": "Pilot-Flat",
+      "actual_risers": "2",
+      "rail_vertices": "0",
+      "road_terrain_error_cm": "0.0000"
+    },
+    {
+      "case": "Pilot-Uphill",
+      "actual_risers": "11",
+      "rail_vertices": "528",
+      "road_terrain_error_cm": "0.0000"
+    },
+    {
+      "case": "Pilot-Downhill",
+      "actual_risers": "3",
+      "rail_vertices": "0",
+      "road_terrain_error_cm": "0.0000"
+    },
+    {
+      "case": "Pilot-Crest",
+      "actual_risers": "4",
+      "rail_vertices": "0",
+      "road_terrain_error_cm": "0.0000"
+    },
+    {
+      "case": "Pilot-Hollow",
+      "actual_risers": "14",
+      "rail_vertices": "624",
+      "road_terrain_error_cm": "0.0000"
+    },
+    {
+      "case": "Pilot-WavesNorth",
+      "actual_risers": "6",
+      "rail_vertices": "368",
+      "road_terrain_error_cm": "0.0000"
+    },
+    {
+      "case": "Pilot-WavesEast",
+      "actual_risers": "6",
+      "rail_vertices": "368",
+      "road_terrain_error_cm": "0.0000"
+    },
+    {
+      "case": "Pilot-WavesSouth",
+      "actual_risers": "7",
+      "rail_vertices": "432",
+      "road_terrain_error_cm": "0.0000"
+    },
+    {
+      "case": "Pilot-WavesWest",
+      "actual_risers": "15",
+      "rail_vertices": "656",
+      "road_terrain_error_cm": "0.0000"
+    },
+    {
+      "case": "Pilot-RollingSeed",
+      "actual_risers": "5",
+      "rail_vertices": "304",
+      "road_terrain_error_cm": "0.0000"
+    }
+  ],
+  "comparisonCases": [
+    "Pilot-Flat",
+    "Pilot-WavesWest"
+  ],
+  "source": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\CI\\Builds\\199-f0a4fbf76d13-Check-fdd934b2",
+  "gameRevision": "dev-cc0c8ac35d4bcbfe3a11",
+  "attachments": [
+    {
+      "Issue": 125,
+      "Name": "evidence-issue125-road-rails-Before-After-5a389c945d713271.jpg",
+      "LocalPath": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\D129\\RoadRail\\Before-After.jpg",
+      "Bytes": 189426,
+      "Sha256": "5a389c945d71327161ae83082f64cff299707fec5f2078352633eba9479c8203",
+      "Url": "https://git.shaun-husain.com/attachments/0a07e3cf-1afb-49db-be0a-c861d0204c35",
+      "AttachmentId": "0a07e3cf-1afb-49db-be0a-c861d0204c35",
+      "Reused": false
+    },
+    {
+      "Issue": 125,
+      "Name": "evidence-issue125-road-rails-All-Contacts-9d1f6ec5995d08cc.jpg",
+      "LocalPath": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\D129\\RoadRail\\All-Contacts.jpg",
+      "Bytes": 453932,
+      "Sha256": "9d1f6ec5995d08cc4c32c5292e5e34b13c6945a8673e69ed540ba85a607ac1a2",
+      "Url": "https://git.shaun-husain.com/attachments/0fbd69b2-5ddd-4c84-8064-225666435f80",
+      "AttachmentId": "0fbd69b2-5ddd-4c84-8064-225666435f80",
+      "Reused": false
+    },
+    {
+      "Issue": 125,
+      "Name": "evidence-issue125-road-rails-NativeReview-3dc7056198e4e076.json",
+      "LocalPath": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\D129\\RoadRail\\NativeReview.json",
+      "Bytes": 6135,
+      "Sha256": "3dc7056198e4e0766214d12511490264ecfd49dab3621c2db2d0b614c5fa3d6f",
+      "Url": "https://git.shaun-husain.com/attachments/3ca7dbba-f7be-4bb4-9654-763d04c76dab",
+      "AttachmentId": "3ca7dbba-f7be-4bb4-9654-763d04c76dab",
+      "Reused": false
+    }
+  ],
+  "candidateBuild": 201,
+  "candidateStatus": "pending",
+  "userAcceptance": "pending",
+  "quest": "deferred-PC-first",
+  "preservedPreviousCandidate": 191
+}
