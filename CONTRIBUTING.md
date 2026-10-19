@@ -23,6 +23,8 @@ unrelated build failure.
 
 1. Install Git LFS (`git lfs install`) before cloning the maintainer's source
    repository. Run `git lfs pull` and `git lfs fsck` after cloning.
+   On GitHub select/clone `github-main`; default `main` contains playtest docs.
+   Include `github-main` in your fork and target source PRs at that branch.
 2. Restore the separately licensed dependencies above and open
    `CitySimVR/CitySimVR.uproject`. Keep the original VR-template map intact.
 3. Read [AGENTS.md](AGENTS.md), [the issue queue](docs/DEVELOPMENT_TASKS.md),

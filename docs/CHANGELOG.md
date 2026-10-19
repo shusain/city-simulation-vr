@@ -1,5 +1,15 @@
 # Development changelog
 
+## 2026-10-19 — #289 GitHub source publication
+
+Configured remote `github` for `shusain/city-simulation-vr`, with an explicit
+`github-main:github-main` source push mapping. Source publication uses an
+additional branch rather than replacing the unrelated default `main`, existing
+release history/tags or playable release assets. Updated contributor/readme/sync
+instructions for source clones, forks and PRs targeting `github-main`. Exact
+published tip, LFS transfer, fresh-clone and preservation verification are
+recorded on Gitea #289. No Gitea history rewrite, new game release or device change.
+
 ## 2026-10-19 — #287 local public-source branch and synchronization
 
 Created `github-main` from clean snapshot root `ed1726a` in a separate local

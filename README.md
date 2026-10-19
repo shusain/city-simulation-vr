@@ -7,6 +7,11 @@ The original VR-template scene remains a regression fixture.
 
 ## Source access and license
 
+Public source lives on the
+[`github-main` branch](https://github.com/shusain/city-simulation-vr/tree/github-main).
+Clone/select that branch and target source PRs there. The default `main` branch
+retains the existing playtest documentation and release history.
+
 This project is **source available for personal, noncommercial use** under the
 [City Sim VR Personal Use Source License](LICENSE). You may inspect, modify,
 build and play it privately, share noncommercial source forks, and submit

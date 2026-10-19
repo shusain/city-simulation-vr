@@ -11,8 +11,14 @@ Gitea #287. The two histories intentionally have different roots.
   Its existing local changes/commits are not a publication baseline.
 - Public checkout: `C:/Users/shaun/Development/city-sim-builder-github` on
   `github-main`, using Git worktree in the same local repository.
-- `origin` is Gitea. No GitHub source destination has been selected/configured.
-  Existing GitHub playtest releases remain untouched.
+- `origin` is Gitea. `github` is
+  `https://github.com/shusain/city-simulation-vr.git`. Its source branch is
+  `github-main`; existing GitHub `main`, the default branch, release tags and
+  release assets remain the playtest record. Never overwrite or merge that
+  unrelated release history into the source branch.
+- The `github` remote's default push refspec maps only local `github-main` to
+  remote `github-main`; tag auto-fetching is disabled. Still use explicit pushes
+  from the guarded public worktree. No private branches or tags are published.
 - Worktrees share Git/LFS objects and remote-tracking refs, but have separate
   checkouts and indexes. Private objects existing locally is expected. Only
   ancestry reachable from the explicitly pushed public ref may reach GitHub.
@@ -54,7 +60,7 @@ private commits as parents.
 
 ## Public contributions back to Gitea
 
-1. Once a GitHub source remote is authorized/configured, fetch `github` and review
+1. Fetch `github` and review changes on `github/github-main`, including
    the accepted public commits, rights and dependencies. GitHub PRs between
    branches descended from the clean root may merge normally publicly.
 2. Create a fresh `codex/` integration branch/worktree from current `origin/main`.
@@ -90,12 +96,12 @@ does not detect newly introduced secrets; both ancestry and content checks are
 necessary. Local hooks complement server protections/review and can be bypassed;
 never disable them to publish a rejected candidate.
 
-When an approved GitHub source destination is supplied, add a remote named
-`github` with that exact URL. Inspect `git remote get-url github` and fetch before
-updating any existing branch. Only after publication authorization:
+The existing playtest repository is the approved destination (Gitea #289).
+Inspect `git remote get-url github`, fetch, and compare `github/github-main`
+before updating the source branch. After publication authorization:
 
 ```powershell
-git push github github-main:main
+git push -u github github-main:github-main
 ```
 
 The installed hook checks every actual pushed tip against the clean root,
@@ -111,10 +117,22 @@ Git push above; never run an all-refs LFS upload from this shared repository.
 If a separate LFS upload is needed, explicitly select only the verified public
 ref, for example `git lfs push github github-main`, after the same preflight.
 
-If GitHub already has release history or unrelated commits, stop and decide how
-to preserve them; a separate empty source repository may be appropriate. Do not
-force-push over an existing destination. No GitHub destination or publication is
-implied by local setup.
+The existing GitHub `main` has unrelated release-documentation history. The
+source was deliberately published as an additional `github-main` branch. Do not
+replace `main`, move release tags, change the default branch or replace release
+assets as part of source sync. A future unexpected destination/ref conflict is a
+reason to stop and review, never to force-push.
+
+Contributors should clone or select `github-main` for source work. When forking,
+include this branch; a fork containing only default `main` has playtest docs,
+not the game source. For example:
+
+```powershell
+git clone --branch github-main --single-branch https://github.com/shusain/city-simulation-vr.git
+```
+
+Run `git lfs pull` and `git lfs fsck` in that clone. Target source pull requests
+at `github-main`, not the playtest documentation branch.
 
 Never push private `main`, merge private `main`/`origin/main` into a public branch,
 allow unrelated-history merges, or push all branches/private tags/a mirror.
