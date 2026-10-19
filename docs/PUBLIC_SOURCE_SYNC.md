@@ -103,6 +103,13 @@ restricts this worktree's pushes to remote `github` on github.com, and invokes
 Git LFS upload. Verify a fresh published clone with `git lfs pull`, `git lfs fsck`
 and the root check. LFS pointer files alone are not a complete source transfer.
 New maintainers must install equivalent guards in their own environments.
+Inspect this worktree's local setup with `git config --show-origin --get
+core.hooksPath` and `git config --show-origin --get push.default`. The custom
+hook lives in this worktree's Git metadata; it does not replace Gitea's hooks.
+Direct Git LFS CLI uploads do not run Git's pre-push guard. Prefer the guarded
+Git push above; never run an all-refs LFS upload from this shared repository.
+If a separate LFS upload is needed, explicitly select only the verified public
+ref, for example `git lfs push github github-main`, after the same preflight.
 
 If GitHub already has release history or unrelated commits, stop and decide how
 to preserve them; a separate empty source repository may be appropriate. Do not
