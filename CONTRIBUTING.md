@@ -76,6 +76,10 @@ their interpreters with this virtual environment.
 
 ## Secrets, history and third-party files
 
+Maintainers: follow [public/private source sync](docs/PUBLIC_SOURCE_SYNC.md) for
+the isolated public branch and reviewed transfers in both directions. Never
+merge the original Gitea history into a public branch.
+
 See [security guidance](SECURITY.md). Do not commit credentials, local config,
 signing keys, player files or generated build output. Use `git diff --cached`
 and a redacted secret scan before pushing. Never paste a suspected secret into
