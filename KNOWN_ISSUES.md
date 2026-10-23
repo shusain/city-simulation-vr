@@ -4,8 +4,8 @@
 - This release uses city format 72. Older city formats are unsupported; start a new city. Existing city/backup files remain intact and unsupported cities retain Archive/Restore. Keep copies and the matching older build if needed; migrations are deferred.
 - Specialized civic/education/waste plots are larger; cities saved with previous plot dimensions may fail validation even when the format matches. Start a new city and preserve older files/builds.
 - Reports start collecting after the first daily settlement. Hourly observations are recorded as the city runs; older cities have no backfilled hourly history. Financial settlement remains daily.
-- Very steep vehicle driveways may have excessive grades; a separate grade review is deferred.
-- No new Quest APK is included in playtest-2026.10.21.1; current PCVR/headset behavior remains unconfirmed.
+- Vehicle orientation on road grades and steep bridge transitions remains under review. Very steep driveway site grading remains deferred.
+- A Quest APK is included in playtest-2026.10.23.1. Static package/signature/cook validation does not establish physical headset behavior; current PCVR/Quest observations remain unconfirmed.
 - The latest Desktop building appearance and condition indicators are user-accepted. Physical PCVR/Quest observations of current icons, art, music mix, text readability and specific logistics cases remain unconfirmed. Package validation is not a headset test.
 - D3D11 is the supported Windows launch profile. Exclusive fullscreen, multi-monitor/DPI behavior and other hardware remain incompletely covered.
 - Large cities can have CPU spikes; animated shadows can jitter. Formal frame/thermal/capacity measurements are deferred until needed. Desktop observations do not establish headset performance.

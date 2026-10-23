@@ -55,7 +55,7 @@ Desktop and PCVR have separate profiles. Keep copies of important saves when try
 
 ## Early-development saves
 
-The current playtest uses city format 72 and revision dev-9553954bf7e67bf990a5. Older formats, including cities from the previous public playtest, are unsupported: start a new city. Existing original/backup files are preserved; unsupported cities retain Archive/Restore and recorded revisions. Keep copies and the matching older build/profile to revisit them. Fresh cities record their creating revision, which remains on resave. Specialized civic/education/waste plot dimensions have also changed, so older cities may fail validation even with a matching format. No backwards migration is included. The game does not automatically upload your cities.
+The current playtest uses city format 72; the exact source revision is recorded in the release notes. Older formats, including cities from the previous public playtest, are unsupported: start a new city. Existing original/backup files are preserved; unsupported cities retain Archive/Restore and recorded revisions. Keep copies and the matching older build/profile to revisit them. Fresh cities record their creating revision, which remains on resave. Specialized civic/education/waste plot dimensions have also changed, so older cities may fail validation even with a matching format. No backwards migration is included. The game does not automatically upload your cities.
 
 ## Feedback
 

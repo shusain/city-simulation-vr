@@ -1,6 +1,6 @@
 # City Sim VR playtests
 
-Download the [Windows playtest](https://github.com/shusain/city-simulation-vr/releases/tag/playtest-2026.10.21.1). Choose the Windows ZIP under **Assets**, extract it completely to a short writable path, and open `Play-Desktop.cmd` or `Play-PCVR.cmd`. The automatic GitHub "Source code" downloads contain only these distribution documents and helpers, not the game.
+Download the [Windows and Quest playtest](https://github.com/shusain/city-simulation-vr/releases/tag/playtest-2026.10.23.1). Choose the Windows ZIP under **Assets**, extract it completely to a short writable path, and open `Play-Desktop.cmd` or `Play-PCVR.cmd`. The automatic GitHub "Source code" downloads contain only these distribution documents and helpers, not the game.
 
 This repository hosts tester instructions, release notes and feedback. Game source and editable assets are maintained separately. The downloadable game includes the cooked content required to play.
 
