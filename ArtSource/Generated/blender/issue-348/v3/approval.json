@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "kind": "blender",
+  "repository": "CitySimVR/citysim",
+  "issue": 348,
+  "version": 3,
+  "by": "shaun",
+  "comment_id": 6743,
+  "request_url": "https://git.shaun-husain.com/CitySimVR/citysim/issues/348#issuecomment-6743",
+  "approved_at": "2026-10-23T05:34:52.396Z",
+  "job_id": "85aec90af4548798dd378018c152455b",
+  "source_sha": "ec692fe0109b0d5836df3fe9c2b0e41a8685cf55",
+  "script_sha256": "6b1005afaf10884671047c03aaf541ae45a8d4d1769be0c5a2b579d33459f211",
+  "helper_sha256": "ced3353712fe3651dd35a4243af4ffbddcb52fd73c6f234f96f2caa9f843c2b9",
+  "artifacts": [
+    {
+      "name": "asset.blend",
+      "bytes": 305348,
+      "sha256": "ca66e70e8cf559756764fbf9a110bbdf316e1381b9c746077cf6e1af5a550d01"
+    },
+    {
+      "name": "asset.fbx",
+      "bytes": 258220,
+      "sha256": "dd2dded17f5e7f834721fa88aab00c575b7221cbc152734e5f5d092bebead0b7"
+    },
+    {
+      "name": "front.png",
+      "bytes": 270389,
+      "sha256": "e42e8a360a6db5f885840bd2b790a22b60183c340ceb50f3c0fa07b2e2acb156"
+    },
+    {
+      "name": "preview.png",
+      "bytes": 278450,
+      "sha256": "69e1440c12978a974272b0a70f6f2fd1fddf2e0c28ee592080dd86fb2cbebb96"
+    },
+    {
+      "name": "rear.png",
+      "bytes": 270862,
+      "sha256": "8e13b4aaa57dcbb65ac1fe66f22b7afb011d55f50d424b462b060f70f15fc684"
+    },
+    {
+      "name": "rear_isometric.png",
+      "bytes": 296192,
+      "sha256": "e6f7da0784a96b4833abfc7438c4a6d5b84d03dbbb4940035f22e5537c0a2e67"
+    },
+    {
+      "name": "side.png",
+      "bytes": 262130,
+      "sha256": "9d89e4936baa7ee47b57195c241a61b4a4edec8a90dc7c6ffa0e4519a697bca8"
+    },
+    {
+      "name": "validation.json",
+      "bytes": 1945,
+      "sha256": "daf6e67200e19e8efbfcaa86a5bc02589a933c994b7e11b6bdb52ab59f848820"
+    }
+  ],
+  "archive": {
+    "url": "https://git.shaun-husain.com/attachments/d49d13a2-6f8a-4686-8e86-537743045861",
+    "sha256": "3fa5f462edffe35b627dce70c61c6c11c5f6c1494f8253218d2326bb3cb29f94"
+  },
+  "review_url": "https://git.shaun-husain.com/CitySimVR/citysim/issues/348#issuecomment-6730"
+}

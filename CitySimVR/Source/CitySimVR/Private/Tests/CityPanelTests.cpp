@@ -5,6 +5,7 @@
 #include "Simulation/CitySimulationSubsystem.h"
 #include "Simulation/CityBuildingDefinition.h"
 #include "Presentation/CityNeedsPresentation.h"
+#include "Presentation/CityDesktopModelPreview.h"
 #include "Camera/CameraComponent.h"
 #include "Components/StaticMeshComponent.h"
 #include "Components/TextRenderComponent.h"
@@ -456,13 +457,25 @@ bool FCityPanelsTest::RunTest(const FString& Parameters)
 	TestTrue(TEXT("summary exposes savings"),
 	         Controller->InspectorText->Text.ToString().Contains(TEXT("Shared savings $12")));
 	TestEqual(TEXT("three bounded metric rows"), Controller->InspectorMetricRails.Num(), 3);
-	TestTrue(TEXT("purchase bar exposes exact values"),
-	         Controller->InspectorMetricLabels[1]->Text.ToString().Contains(TEXT("2 / 4")));
-	TestTrue(TEXT("purchase fill visible"), Controller->InspectorMetricFills[1]->IsVisible());
-	TestTrue(TEXT("half purchases fill half rail"),
-	         FMath::IsNearlyEqual(Controller->InspectorMetricFills[1]->GetRelativeScale3D().Y * 2,
-	                              Controller->InspectorMetricRails[1]->GetRelativeScale3D().Y));
-	TestFalse(TEXT("zero-capacity occupancy hides fill"), Controller->InspectorMetricFills[0]->IsVisible());
+	// Utilities precede work/finance metrics; locate the semantic row instead of
+	// assuming that purchase/staff metrics always occupy a fixed rail index.
+	const auto GaugeIndex = [&](const TCHAR* Label) {
+		return Controller->SharedInspectionGauges.IndexOfByPredicate(
+		    [&](const auto& Gauge) { return Gauge.Label.ToString() == Label; });
+	};
+	const int32 PurchaseIndex = GaugeIndex(TEXT("Purchases last day"));
+	TestTrue(TEXT("purchase gauge exposes exact values"), PurchaseIndex != INDEX_NONE &&
+	         Controller->SharedInspectionGauges[PurchaseIndex].Value.ToString() == TEXT("2 / 4"));
+	if (TestTrue(TEXT("purchase metric has a rendered rail"), Controller->InspectorMetricRails.IsValidIndex(PurchaseIndex)))
+	{
+		TestTrue(TEXT("purchase fill visible"), Controller->InspectorMetricFills[PurchaseIndex]->IsVisible());
+		TestTrue(TEXT("half purchases fill half rail"),
+		         FMath::IsNearlyEqual(Controller->InspectorMetricFills[PurchaseIndex]->GetRelativeScale3D().Y * 2,
+		                              Controller->InspectorMetricRails[PurchaseIndex]->GetRelativeScale3D().Y));
+	}
+	const int32 AtHomeIndex = GaugeIndex(TEXT("At home now"));
+	if (TestTrue(TEXT("occupancy metric has a rendered rail"), Controller->InspectorMetricRails.IsValidIndex(AtHomeIndex)))
+		TestFalse(TEXT("zero-capacity occupancy hides fill"), Controller->InspectorMetricFills[AtHomeIndex]->IsVisible());
 	FCityPopulationSnapshot FactoryFixture = Fixture;
 	FCityBusinessLedgerRecord Business;
 	Business.EntityId = Placed.EntityId;
@@ -484,12 +497,13 @@ bool FCityPanelsTest::RunTest(const FString& Parameters)
 	TestTrue(TEXT("factory metric fixture restores"),
 	         Simulation->Population.RestoreState(FactoryFixture, RestoreError));
 	Controller->UpdateInspectionTooltip();
-	TestTrue(TEXT("staff count uses assigned citizens"),
-	         Controller->InspectorMetricLabels[0]->Text.ToString().Contains(TEXT("2 / 5")));
-	TestTrue(TEXT("output uses authoritative staffing formula"),
-	         Controller->InspectorMetricLabels[1]->Text.ToString().Contains(TEXT("2 / 7")));
-	TestTrue(TEXT("payroll ratio uses settled ledger"),
-	         Controller->InspectorMetricLabels[2]->Text.ToString().Contains(TEXT("5 / 10")));
+	const auto CheckGauge = [&](const TCHAR* Label, const TCHAR* Expected) {
+		const int32 Index = GaugeIndex(Label);
+		TestTrue(Label, Index != INDEX_NONE && Controller->SharedInspectionGauges[Index].Value.ToString() == Expected);
+	};
+	CheckGauge(TEXT("Staff assigned"), TEXT("2 / 5"));
+	CheckGauge(TEXT("Output next day"), TEXT("2 / 7"));
+	CheckGauge(TEXT("Payroll last day $"), TEXT("5 / 10"));
 	TestTrue(TEXT("home fixture restores"), Simulation->Population.RestoreState(Fixture, RestoreError));
 	Controller->UpdateInspectionTooltip();
 	const FVector FirstPosition = Controller->InspectorStatusRoot->GetComponentLocation();
@@ -503,7 +517,7 @@ bool FCityPanelsTest::RunTest(const FString& Parameters)
 	         FVector::DotProduct(TowardHead, Controller->InspectorStatusRoot->GetForwardVector()) > 0.999);
 	Board->GetInspectionBuilding(Placed.EntityId, Roof, Detail);
 	Controller->ToggleInspection(Roof + FVector(0, 0, 50), -FVector::UpVector);
-	TestEqual(TEXT("Second trigger on same entity dismisses"), Controller->InspectedEntityId, uint64(0));
+	TestEqual(TEXT("Inspecting same entity preserves selection"), Controller->InspectedEntityId, Placed.EntityId);
 	Controller->ToggleInspection(Roof + FVector(0, 0, 50), -FVector::UpVector);
 	Controller->SetPaletteOpen(true);
 	Controller->UpdateInspectionTooltip();
@@ -512,21 +526,66 @@ bool FCityPanelsTest::RunTest(const FString& Parameters)
 	Controller->SetPaletteOpen(false);
 	Controller->UpdateInspectionTooltip();
 	TestTrue(TEXT("Selection survives drawer close"), Controller->InspectorText->IsVisible());
+	Controller->SetCitySummaryVisible(true);
+	++Simulation->PresentationGeneration;
+	Board->PrepareCityView();
+	Controller->UpdateInspectionTooltip();
+	TestEqual(TEXT("City refresh preserves inspected entity"), Controller->InspectedEntityId, Placed.EntityId);
+	Controller->bDesktopUi = true;
+	FCityDesktopModelSource PreviewSource;
+	TestTrue(TEXT("City refresh retains actual inspector mesh source"),
+	         Controller->GetDesktopModelSource(PreviewSource) && PreviewSource.EntityId == Placed.EntityId && PreviewSource.Mesh);
+	Controller->bDesktopUi = false;
+	TestTrue(TEXT("Inspection suppresses summary without changing preference"),
+	         Controller->bNeedsOpen && !Controller->SummaryText->IsVisible());
+	Controller->ClearInspection();
+	TestTrue(TEXT("Explicit dismissal restores enabled summary"), Controller->SummaryText->IsVisible());
+	Controller->SetCitySummaryVisible(false);
+	Controller->InspectBuilding(Placed.EntityId);
+	Controller->ClearInspection();
+	TestFalse(TEXT("Dismissal preserves disabled summary preference"), Controller->SummaryText->IsVisible());
+	Controller->InspectBuilding(Placed.EntityId);
 	Model.DemolishEntity(Placed.EntityId);
 	Controller->UpdateInspectionTooltip();
 	TestEqual(TEXT("Demolition clears selected identity"), Controller->InspectedEntityId, uint64(0));
 	TestFalse(TEXT("Demolition hides tooltip"), Controller->InspectorText->IsVisible());
 	// A load/reset can reuse the same entity ID; generation must invalidate it.
 	Controller->InspectedEntityId = Placed.EntityId;
-	Controller->InspectionGeneration = Simulation->GetPresentationGeneration() + 1;
+	Controller->InspectionGeneration = Simulation->GetCitySessionGeneration() + 1;
+	Controller->bDesktopUi = true;
+	TestFalse(TEXT("City replacement rejects stale model preview identity"), Controller->GetDesktopModelSource(PreviewSource));
+	Controller->bDesktopUi = false;
 	Controller->UpdateInspectionTooltip();
 	TestEqual(TEXT("City replacement invalidates selection"), Controller->InspectedEntityId, uint64(0));
+	Board->SetToolMode(ECityToolMode::Road);
+	const FCityCellCoord Start = Model.GetEntranceCell();
+	const FCityCellCoord End(Start.X + 2, Start.Y);
+	Board->UpdateRoadTool(nullptr, Start, true, true, false);
+	TestTrue(TEXT("Road start becomes active"), Board->RoadPreview.bActive);
+	++Simulation->PresentationGeneration;
+	Board->PrepareCityView();
+	// An unrelated authoritative edit also changes the optimistic command revision.
+	auto Unrelated = Model.BeginPreview(*Definition, {24, 24});
+	TestTrue(TEXT("Unrelated building changes model"), Model.CommitPlacement(Unrelated, *Definition).IsSuccess());
+	Board->UpdateRoadTool(nullptr, End, true, false, false);
+	TestTrue(TEXT("Refresh retains start and rebuilds preview"),
+	         Board->RoadPreview.bActive && Board->RoadPreview.Start == Start &&
+	         Board->RoadPreviewInstances->GetInstanceCount() > 0);
+	TestEqual(TEXT("Preview revalidates current model revision"),
+	          Board->RoadPreview.ExpectedRevision, Model.GetRevision());
+	Board->UpdateRoadTool(nullptr, End, true, true, false);
+	TestTrue(TEXT("Road completes after city refresh"), Model.IsRoad(End));
+	Board->UpdateRoadTool(nullptr, Start, true, true, false);
+	++Simulation->CitySessionGeneration;
+	++Simulation->PresentationGeneration;
+	Board->PrepareCityView();
+	TestFalse(TEXT("City replacement clears old road start"), Board->RoadPreview.bActive);
 	TestTrue(TEXT("Primary hover cost includes full public payroll"),
-	         Board->DescribeConstructionCost(TEXT("PrimarySchool")).Contains(TEXT("Build $600 | Monthly $40")));
+	         Board->DescribeConstructionCost(TEXT("PrimarySchool")).Contains(TEXT("Build $600 | Daily $40")));
 	TestTrue(TEXT("Wind hover cost includes full public payroll"),
-	         Board->DescribeConstructionCost(TEXT("WindPower")).Contains(TEXT("Build $600 | Monthly $25")));
+	         Board->DescribeConstructionCost(TEXT("WindPower")).Contains(TEXT("Build $600 | Daily $25")));
 	TestTrue(TEXT("Road costs use tile units"),
-	         Board->DescribeConstructionCost(TEXT("LocalRoad")).Contains(TEXT("Build $10/tile | Monthly $1/tile")));
+	         Board->DescribeConstructionCost(TEXT("LocalRoad")).Contains(TEXT("Build $10/tile | Daily $1/tile")));
 	for (int32 AnchorMode : {0, 2})
 	{
 		Controller->PaletteAnchorMode = AnchorMode;
@@ -542,9 +601,9 @@ bool FCityPanelsTest::RunTest(const FString& Parameters)
 					continue;
 				Controller->HoveredPaletteIndex = I;
 				Controller->RefreshPaletteText();
-				TestTrue(TEXT("Constructible hover shows build and monthly costs"),
+				TestTrue(TEXT("Constructible hover shows build and daily costs"),
 				         Controller->PaletteHelp->Text.ToString().Contains(TEXT("Build $")) &&
-				             Controller->PaletteHelp->Text.ToString().Contains(TEXT("Monthly $")));
+				             Controller->PaletteHelp->Text.ToString().Contains(TEXT("Daily $")));
 				const auto HelpBounds =
 				    Controller->PaletteHelp->CalcBounds(Controller->PaletteHelp->GetRelativeTransform()).GetBox();
 				const auto BackBounds =

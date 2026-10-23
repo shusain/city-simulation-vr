@@ -1,8 +1,11 @@
-# Public-source cleanup: current saves, self-contained behavior and art output paths.
-# Captured-city integration cases remain failing/pending separately under #285.
-CitySim.Persistence.CurrentFormatAndPantryUpgrade
-CitySim.Persistence.LiveCreationRevisionAndRejection
-CitySim.Shopping.LocksQuotaRoutesAndArrival
-CitySim.Outpatients.BlockedReturnAndDispensedMedicine
-CitySim.Art.NewspaperRendering
-CitySim.Assets.RuntimeOrganization
+# Six approved vehicle replacements, native material/beacon and pool behavior.
+CitySim.Art.RefinedVehicles345
+CitySim.Art.CivicLightEmission
+CitySim.Traffic.VisiblePool
+CitySim.Traffic.LiveTripLifecycle
+CitySim.Traffic.EmergencyYieldAndResume
+CitySim.Health.CapacityArrivalRecoveryAndSave
+CitySim.Waste.PlannedRoutesRatesConservationAndOrdinaryTraffic
+CitySim.Presentation.ApprovedCivicBatchCooked
+CitySim.Safety.EmergencyRoadArrivalDamageResume
+CitySim.Presentation.SprayWaitsForVisibleEngineArrival

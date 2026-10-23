@@ -1,0 +1,16 @@
+{
+  "issue": "D108 Resident reclining beach lounger",
+  "status": "review-only; no production approval",
+  "units": "meters",
+  "up": "Z",
+  "origin": "ground contact centered below seat",
+  "asset": "asset.blend",
+  "export": "asset.fbx",
+  "validation": "validation.json",
+  "views": [
+    "preview.png",
+    "side_1m_scale.png",
+    "top.png"
+  ],
+  "construction": "Warm wood frame, cream taut sling, fixed raised back, visible hinge pins and adjustment stops; no rig"
+}

@@ -92,8 +92,8 @@ bool FCityNewsFactsTest::RunTest(const FString& Parameters)
 	H = NewsHistory();
 	H.Months[24].Values[static_cast<int32>(ECityReportMetric::HappinessTotal)] = 900;
 	H.Months[24].Values[static_cast<int32>(ECityReportMetric::Population)] = 30;
-	TestEqual(TEXT("Mood weighted by resident observations, not rounded month means"),
-	          FCityQuarterlyNews::Editions(H)[0].AverageHappiness(), int64(42));
+	TestEqual(TEXT("Mood weighted by resident observations, not rounded daily means"),
+	          FCityQuarterlyNews::Editions(H)[0].AverageHappiness(), int64(58));
 	H = NewsHistory();
 	for (auto& M : H.Months)
 		M.MonthId += 300;
@@ -132,6 +132,7 @@ bool FCityNewsCaptureTest::RunTest(const FString& Parameters)
 	FCitySaveDocument D;
 	D.Placement.Zones.Init(ECityZoneType::None, FCityGrid::CellCount);
 	D.Economy.LastBilledMonthId = D.Economy.MonthId = D.Population.LastSettledMonthId = 1;
+	D.Economy.FixedStepId = D.Disasters.LastFixedStepId = FCityCalendar::DefaultStepsPerDay;
 	D.Reports = H;
 	FString Json, Error;
 	TestTrue(TEXT("Current schema serializes"), FCityPersistence::Serialize(D, Json, Error));

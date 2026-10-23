@@ -3,7 +3,7 @@ Set-StrictMode -Version Latest
 function Test-CityRuntimePath([string]$RelativePath) {
     $taskPath = $RelativePath.Replace('\','/')
     if ($taskPath -match '(^/|:|(^|/)\.\.(/|$)|(^|/)(Saved|Intermediate|DerivedDataCache|\.git)(/|$))') { return $false }
-    if ($taskPath -eq 'CitySimVR.exe') { return $true }
+    if ($taskPath -in @('CitySimVR.exe', 'CitySimVR/AudioCredits.txt')) { return $true }
     if ($taskPath -notmatch '^(CitySimVR/(Binaries|Content/Paks|Plugins)/|Engine/(Binaries|Plugins|Config|Content)/|Engine/Extras/Redist/en-us/)') { return $false }
     # Meta runtime DLLs are staged under Plugins/MetaXR/Source/ThirdParty; their
     # runtime extension is allowed, but actual source/assets/symbols are not.
@@ -45,7 +45,7 @@ function Test-CityQuestPayload([string]$ApkPath) {
             foreach ($taskEntry in $taskObb.Entries) {
                 $taskName = $taskEntry.FullName
                 if ($taskName -match '(^/|:|\\|(^|/)\.\.(/|$)|(^|/)(Source|Saved|Intermediate|\.git)(/|$))' -or $taskNames.ContainsKey($taskName)) { throw 'Unsafe/source/data entry in Quest game payload.' }
-                if ($taskName -notmatch '^(Engine/(Binaries/ThirdParty/Vulkan/Android/16kb_page_support\.patch|Config/[^/]+\.ini|Content/.*\.(bin|tps|ttf)|Extras/GPUDumpViewer/[^/]+\.(html|bat|sh))|CitySimVR/Content/Paks/[^/]+\.(pak|utoc|ucas))$') { throw "Unexpected Quest game payload: $taskName" }
+                if ($taskName -notmatch '^(Engine/(Binaries/ThirdParty/Vulkan/Android/16kb_page_support\.patch|Config/[^/]+\.ini|Content/.*\.(bin|tps|ttf)|Extras/GPUDumpViewer/[^/]+\.(html|bat|sh))|CitySimVR/(AudioCredits\.txt|Content/Paks/[^/]+\.(pak|utoc|ucas)))$') { throw "Unexpected Quest game payload: $taskName" }
                 $taskNames[$taskName] = $true
             }
             foreach ($taskRequired in @('CitySimVR-Android_ASTC.pak','CitySimVR-Android_ASTC.utoc','CitySimVR-Android_ASTC.ucas')) {

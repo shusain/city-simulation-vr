@@ -9,21 +9,32 @@ namespace CitySoundscape
 	inline constexpr int32 VehicleLimit = 6, SirenLimit = 16, BedLimit = 8, ShotLimit = 3;
 	inline constexpr int32 TrafficLimit = 2, TrafficSlots = 3;
 	inline constexpr int32 PoolSize = SirenLimit + BedLimit + 2 + TrafficSlots + ShotLimit;
-	inline bool IsRegularTraffic(const FCityTrafficVehicleState& Vehicle)
+	inline bool HasEngineAudio(const FCityTrafficVehicleState& Vehicle)
 	{
 		return !Vehicle.bCompleted && (Vehicle.VehicleType == ECityTripVehicleType::Car ||
 		                               Vehicle.VehicleType == ECityTripVehicleType::FreightTruck ||
-		                               Vehicle.VehicleType == ECityTripVehicleType::GarbageTruck);
+		                               Vehicle.VehicleType == ECityTripVehicleType::GarbageTruck ||
+		                               Vehicle.VehicleType == ECityTripVehicleType::PoliceCar ||
+		                               Vehicle.VehicleType == ECityTripVehicleType::FireEngine ||
+		                               Vehicle.VehicleType == ECityTripVehicleType::Ambulance);
 	}
 	inline ECityAudioCue TrafficLoop(const FCityTrafficVehicleState& Vehicle)
 	{
-		const bool Truck = Vehicle.VehicleType != ECityTripVehicleType::Car;
-		return Vehicle.SpeedUnitsPerStep > 0 ? (Truck ? ECityAudioCue::TruckDriving : ECityAudioCue::CarDriving)
-		                                     : (Truck ? ECityAudioCue::TruckIdle : ECityAudioCue::CarIdle);
+		const bool Truck = Vehicle.VehicleType != ECityTripVehicleType::Car &&
+		                   Vehicle.VehicleType != ECityTripVehicleType::PoliceCar;
+		if (Vehicle.SpeedUnitsPerStep <= 0)
+			return Truck ? ECityAudioCue::TruckIdle : ECityAudioCue::CarIdle;
+		if (Truck)
+			return ECityAudioCue::TruckDriving;
+		return (Vehicle.Id & 1) ? ECityAudioCue::CarDrivingAlternate : ECityAudioCue::CarDriving;
 	}
 	inline bool IsTrafficLoop(ECityAudioCue Cue)
 	{
-		return Cue >= ECityAudioCue::CarIdle && Cue <= ECityAudioCue::TruckDriving;
+		return Cue >= ECityAudioCue::CarIdle && Cue <= ECityAudioCue::CarDrivingAlternate;
+	}
+	inline float EngineGain(ECityAudioCue Cue)
+	{
+		return Cue == ECityAudioCue::TruckIdle || Cue == ECityAudioCue::TruckDriving ? .45f : .6f;
 	}
 	inline int64 TownAlarmEndStep(const FCityDisasterEvent& Event)
 	{

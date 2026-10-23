@@ -149,6 +149,9 @@ def ensure_material(path, parent):
 import_entries = [entry for entry in manifest["assets"] if not ARCHITECTURE_ONLY or
                   (entry.get("progression_family") in ("residential", "commercial", "industrial") and
                    entry.get("progression_stage") in ("low", "medium", "high"))]
+# Reviewed vehicle replacements have their own exact geometry/material importer.
+if not DRY_RUN:
+    import_entries = [entry for entry in import_entries if not entry.get("vehicle_refinement345")]
 if ROADS_ONLY:
     import_entries = [entry for entry in import_entries if entry["asset_id"].startswith("road.")]
 if CONSTRUCTION_ONLY:

@@ -1,0 +1,52 @@
+{
+  "task": 51,
+  "startIssue": 217,
+  "build": 466,
+  "status": "accepted; implementation merged",
+  "submittedCommit": "a690e35853d01a27bb43ff0d750101cc7342a887",
+  "testedCommit": "a690e35853d01a27bb43ff0d750101cc7342a887",
+  "url": "https://drone.shaun-husain.com/CitySimVR/citysim/466",
+  "editorTests": [
+    "CitySim.Presentation.BeachPlacement",
+    "CitySim.Presentation.BeachShorelineCoverage",
+    "CitySim.Presentation.BeachAssetsAndLifecycle",
+    "CitySim.Presentation.SeasonalSceneryFrozenTransformsAndLifecycle"
+  ],
+  "clientTests": [
+    "CitySim.Desktop.BeachScenery"
+  ],
+  "output": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\CI\\Builds\\466-a690e35853d0-WindowsCandidate-cf9f20d9",
+  "executable": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\BeachIntegration51\\Extracted-Build466\\CitySimVR\\Binaries\\Win64\\CitySimVR.exe",
+  "profile": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\BeachIntegration51\\Play-Build466-IsolatedProfile",
+  "fixture": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\BeachIntegration51\\Play-Build466-IsolatedProfile\\Saved\\SaveGames\\Cities\\00000000000000000000000000000108.json",
+  "fixtureSha256": "6cbb20c9b1c58dcafdc5cd6067dfb742d1582fe7728320827abf797f8f8cd665",
+  "package": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\CI\\Builds\\466-a690e35853d0-WindowsCandidate-cf9f20d9\\CitySimVR-Windows.zip",
+  "packageSha256": "6972f7784e76f6425eccd9bb1f55427920e5319ba387b407f70cec0018f40262",
+  "runtimeFiles": 54,
+  "humanAcceptance": "Shaun confirmed Windows466 mix and requested merge/closeout in chat2026-10-22",
+  "headset": "unconfirmed; Windows-only candidate",
+  "gameRevision": "dev-82b1cdb0a3c177484661",
+  "schema": 72,
+  "instanceCount": 942,
+  "naturalCount": 936,
+  "driftwoodCount": 50,
+  "smallScatterCount": 639,
+  "visualReview": "40 captures inspected; final human mix acceptance pending",
+  "containerProof": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\BeachIntegration51\\CookedPackage466.json",
+  "acceptanceUrl": "https://git.shaun-husain.com/CitySimVR/citysim/issues/51#issuecomment-6234",
+  "implementationMerge": "a21004ae8263739324d198589405cdf36e1a3ead",
+  "implementationPr": 320,
+  "closedNativeIssues": [
+    217,
+    298,
+    300,
+    302,
+    304,
+    306,
+    308,
+    310,
+    312,
+    314
+  ],
+  "remaining": "Separate headset49 unconfirmed; foliage206/water215 deferred; no maintained/device deployment"
+}

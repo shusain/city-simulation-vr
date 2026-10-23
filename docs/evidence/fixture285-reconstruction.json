@@ -1,0 +1,124 @@
+{
+  "issue": 285,
+  "source_sha256": "72c2d4a0909a23135251a25953c8f1203eb297adadc39ac2126e46753481b64f",
+  "output_sha256": "cb6c956491ca01982883eac5dd1d69eca5edca593a4c5fcd2b0e748f3040dc0e",
+  "catalog_sha256": "93aad6556c3747f7560678e05dfa51b43373d2823bfbbeb63d329f76f51dc5b6",
+  "manifests": {
+    "city_utility_integration.json": "ee3b1272d3266199480262c05e45c6d0b07173174521b407c56ba808cc0c77df",
+    "city_civic_batch.json": "e811a16f1a19bd27f9ea50cf92a064b8bded21abce44e1e3a36f76c8bdb321c2"
+  },
+  "changes": [
+    {
+      "before": {
+        "entityId": "1",
+        "definitionId": "Power",
+        "x": 0,
+        "y": 20,
+        "quarterTurns": 0,
+        "width": 2,
+        "height": 2,
+        "recordedCost": "500"
+      },
+      "after": {
+        "entityId": "1",
+        "definitionId": "Power",
+        "x": 0,
+        "y": 20,
+        "quarterTurns": 0,
+        "width": 4,
+        "height": 4,
+        "recordedCost": "500"
+      }
+    },
+    {
+      "before": {
+        "entityId": "2",
+        "definitionId": "Service",
+        "x": 3,
+        "y": 20,
+        "quarterTurns": 0,
+        "width": 2,
+        "height": 2,
+        "recordedCost": "400"
+      },
+      "after": {
+        "entityId": "2",
+        "definitionId": "Service",
+        "x": 4,
+        "y": 20,
+        "quarterTurns": 0,
+        "width": 6,
+        "height": 4,
+        "recordedCost": "400"
+      }
+    },
+    {
+      "before": {
+        "entityId": "23",
+        "definitionId": "Police",
+        "x": 11,
+        "y": 3,
+        "quarterTurns": 2,
+        "width": 3,
+        "height": 2,
+        "recordedCost": "800"
+      },
+      "after": {
+        "entityId": "23",
+        "definitionId": "Police",
+        "x": 11,
+        "y": 1,
+        "quarterTurns": 2,
+        "width": 5,
+        "height": 4,
+        "recordedCost": "800"
+      }
+    },
+    {
+      "before": {
+        "entityId": "25",
+        "definitionId": "Service",
+        "x": 9,
+        "y": 3,
+        "quarterTurns": 2,
+        "width": 2,
+        "height": 2,
+        "recordedCost": "400"
+      },
+      "after": {
+        "entityId": "25",
+        "definitionId": "Service",
+        "x": 5,
+        "y": 1,
+        "quarterTurns": 2,
+        "width": 6,
+        "height": 4,
+        "recordedCost": "400"
+      }
+    },
+    {
+      "before": {
+        "entityId": "27",
+        "definitionId": "PrimarySchool",
+        "x": 13,
+        "y": 20,
+        "quarterTurns": 0,
+        "width": 2,
+        "height": 2,
+        "recordedCost": "600"
+      },
+      "after": {
+        "entityId": "27",
+        "definitionId": "PrimarySchool",
+        "x": 13,
+        "y": 20,
+        "quarterTurns": 0,
+        "width": 4,
+        "height": 4,
+        "recordedCost": "600"
+      }
+    }
+  ],
+  "preserved": "All other JSON values, entity IDs, roads, residents, shopping and simulation state",
+  "native_validation": "Required separately; this reconstruction is not a native pass"
+}

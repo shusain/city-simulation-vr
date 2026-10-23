@@ -1,4 +1,5 @@
 #include "Interaction/CityVRToolController.h"
+#include "Presentation/CityTutorialSettings.h"
 
 #include "Engine/Engine.h"
 #include "Engine/GameViewportClient.h"
@@ -140,6 +141,9 @@ FCityUiActionView ACityVRToolController::MakeActionView(const FCityPaletteEntry&
 {
 	FCityUiActionView View;
 	View.Index = Index;
+	View.bStartNewRow = PalettePage == ECityPalettePage::Reports &&
+	    (Entry.Action == ECityPaletteAction::ReportPeople || Entry.Action == ECityPaletteAction::ReportMetricPrevious ||
+	     Entry.Action == ECityPaletteAction::Back);
 	View.ActionId = static_cast<int32>(Entry.Action);
 	View.Label = FText::FromString(GetPaletteEntryLabel(Entry));
 	if (bDesktopUi && Entry.Action == ECityPaletteAction::OpenZone)
@@ -147,6 +151,7 @@ FCityUiActionView ACityVRToolController::MakeActionView(const FCityPaletteEntry&
 	View.Help = FText::FromString(GetPaletteEntryHelp(Entry));
 	View.bEnabled = !IsPaletteActionDisabled(Entry.Action);
 	View.bSelected = IsPaletteActionSelected(Entry.Action);
+	View.bTutorialAttention = View.bEnabled && IsTutorialTarget(Entry.Action);
 	return View;
 }
 FCityUiActionView ACityVRToolController::GetPaletteEntryView(const int32 Index) const
@@ -188,7 +193,7 @@ FCityUiSnapshot ACityVRToolController::GetUiSnapshot() const
 			Data.TaxRates.Add(Rate);
 		}
 	}
-	Data.bCityInfoOpen = bNeedsOpen;
+	Data.bCityInfoOpen = bNeedsOpen && InspectedEntityId == FCityGrid::EmptyEntityId;
 	Data.bObjectivesOpen = bObjectivesOpen;
 	Data.bDetailedMenu =
 	    (bEntrySceneActive && PalettePage != ECityPalettePage::MainMenu) ||
@@ -240,6 +245,7 @@ FCityUiSnapshot ACityVRToolController::GetUiSnapshot() const
 		if (!bDesktopUi || bEntrySceneActive || !bToolbarAction)
 			Data.MenuEntries.Add(GetPaletteEntryView(Index));
 	}
+	if (bDesktopUi) PopulateDesktopMenu(Data);
 	if (Board)
 	{
 		Data.bRoadTool = Board->GetToolMode() == ECityToolMode::Road;
@@ -324,7 +330,13 @@ FCityUiSnapshot ACityVRToolController::GetUiSnapshot() const
 		Data.Objectives = FText::FromString(CityUiContent::Objective(GetObjectiveCard()));
 		const auto Objective = GetObjectiveCard();
 		Data.ObjectiveTitle = FText::FromString(Objective.Title);
-		Data.ObjectiveProgress = FText::FromString(Objective.Progress);
+		Data.bTutorialGuidance = GetDefault<UCityTutorialSettings>()->bEnabled && !bObjectiveReview &&
+		    (CityTutorialAttention::IsOpeningStep(Objective.Id) || Objective.Id == TEXT("tutorial_complete"));
+		Data.ObjectiveProgress = FText::FromString(Objective.Progress +
+		    (Data.bTutorialGuidance ? TEXT("\n\n") + Objective.Hint : TEXT("")));
+		Data.bObjectiveHistoryAvailable = !Sim->GetGuidedProgress().CompletedIds.IsEmpty();
+		Data.bObjectiveReview = bObjectiveReview && Data.bObjectiveHistoryAvailable;
+		Data.bObjectiveNextAvailable = Data.bObjectiveReview && Sim->GetGuidedProgress().CompletedIds.Num() > 1;
 		Data.Funds =
 		    FText::FromString(TEXT("$") + FText::AsNumber(Sim->GetPlacementModel().GetFunds()).ToString());
 		Data.Population = FText::AsNumber(Sim->GetEconomySnapshot().Residents);
@@ -352,6 +364,13 @@ FCityUiSnapshot ACityVRToolController::GetUiSnapshot() const
 	}
 	Data.Upgrade = SharedUpgradeLabel;
 	Data.bUpgradeAvailable = bInspectorUpgradeAvailable;
+	if (!bEntrySceneActive)
+	{
+		const auto Candidates = FCityPaletteModel::SurfaceEntries(PalettePage, false);
+		for (const auto& Entry : Candidates)
+			if (IsTutorialTarget(Entry.Action)) { Data.TutorialActionId = static_cast<int32>(Entry.Action); break; }
+	}
+	if (IsTutorialTarget(ECityPaletteAction::Pause)) Data.TutorialActionId = -20;
 	return Data;
 }
 
@@ -361,7 +380,7 @@ bool ACityVRToolController::GetDesktopModelSource(FCityDesktopModelSource& Out) 
 	const auto* Sim = GetWorld() ? GetWorld()->GetSubsystem<UCitySimulationSubsystem>() : nullptr;
 	return bDesktopUi && Board && !bEntrySceneActive && !bPaletteOpen &&
 	       Board->GetToolMode() == ECityToolMode::Inspect && Sim &&
-	       InspectionGeneration == Sim->GetPresentationGeneration() &&
+	       InspectionGeneration == Sim->GetCitySessionGeneration() &&
 	       Board->GetDesktopModelSource(InspectedEntityId, Out);
 }
 void ACityVRToolController::InitializeDesktopInput(UEnhancedInputComponent* Input,

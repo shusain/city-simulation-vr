@@ -1,0 +1,44 @@
+{
+  "sourceIssue": 201,
+  "version": 2,
+  "integrationIssue": 328,
+  "sourceHead": "26a78103f399518451fa83a56d5c921c367612a9",
+  "sourceMerge": "8bccec27c1247dbe530ab69fa2d967060e742c0c",
+  "approvalSha256": "c0664c5d2b9a791ed87104575465f1ec65dae6cc802b1bea56c0d56f207f5954",
+  "consumedArtifactSha256": "bf669abc5e43c367c81b2ec1c51e214cb772d31d253e69aaf2afe9dc71900c6f",
+  "nativeImportBuild": 489,
+  "nativeImportStatus": "passed; overall489 failed empty optional EditorVisualTests selector after all3 beach tests passed",
+  "settings": {
+    "factory": "FbxFactory",
+    "uniformScale": 1,
+    "normals": "imported",
+    "collision": false,
+    "nanite": false,
+    "uv0": true,
+    "dimensions_cm": [
+      70.0,
+      35.0,
+      10.0
+    ],
+    "triangles": 124,
+    "materialColor": [
+      0.19,
+      0.175,
+      0.065,
+      1
+    ],
+    "roughness": 0.78
+  },
+  "files": [
+    {
+      "file": "CitySimVR/Content/CitySim/Art/Beach/Materials/MI_BeachCurledKelp_Kelp.uasset",
+      "bytes": 4437,
+      "sha256": "6c0cde3dce86755066d4428d41545193acaccb1397e25395ef7805d03d3a1939"
+    },
+    {
+      "file": "CitySimVR/Content/CitySim/Art/Beach/Meshes/SM_Scenery_CurledKelp_A.uasset",
+      "bytes": 16248,
+      "sha256": "e3d34d5e6641f78fc71bf5d3b45f6f68b4359aa0854fb7e46f029dc8de372888"
+    }
+  ]
+}

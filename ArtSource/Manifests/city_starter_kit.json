@@ -1784,12 +1784,12 @@
     },
     {
       "asset_id": "traffic.car.a",
-      "source": "ArtSource/Blender/CityStarterKit.blend",
-      "export": "ArtSource/Exports/SM_Traffic_Car_A.fbx",
+      "source": "ArtSource/Blender/Vehicle345/SM_Traffic_Car_A.blend",
+      "export": "ArtSource/Exports/Vehicle345/SM_Traffic_Car_A.fbx",
       "dimensions_m": [
-        3.4,
-        1.9,
-        1.6
+        4.257499933242798,
+        2.0299999713897705,
+        1.4297428131103516
       ],
       "footprint_cells": [
         0,
@@ -1797,21 +1797,29 @@
       ],
       "mesh_destination": "/Game/CitySim/Art/Meshes/SM_Traffic_Car_A",
       "material_slots": {
-        "Traffic": "/Game/CitySim/Art/Materials/MI_CityTraffic",
-        "Roof": "/Game/CitySim/Art/Materials/MI_CityRoof"
+        "BodyPaint": "/Game/CitySim/Art/Vehicle345/Materials/MI_Car_BodyPaint",
+        "arch_toolMaterial": "/Game/CitySim/Art/Vehicle345/Materials/MI_Car_arch_toolMaterial",
+        "Glass": "/Game/CitySim/Art/Vehicle345/Materials/MI_Car_Glass",
+        "Rubber": "/Game/CitySim/Art/Vehicle345/Materials/MI_Car_Rubber",
+        "MetalTrim": "/Game/CitySim/Art/Vehicle345/Materials/MI_Car_MetalTrim",
+        "Headlight": "/Game/CitySim/Art/Vehicle345/Materials/MI_Car_Headlight",
+        "Taillight": "/Game/CitySim/Art/Vehicle345/Materials/MI_Car_Taillight"
       },
-      "lod_policy": "single shared low-poly traffic mesh",
+      "lod_policy": "Reviewed fleet replacement; focused Import-CityVehicles345.py owns geometry/materials and emergency mask",
       "collision_policy": "none",
-      "provenance": "Original Blender procedural primitives authored by project script"
+      "provenance": "Approved Blender #346 v3; immutable inputs and derivative facts in city_vehicle_native345.json",
+      "triangles": 13084,
+      "sections": 7,
+      "vehicle_refinement345": true
     },
     {
       "asset_id": "traffic.truck.a",
-      "source": "ArtSource/Blender/CityStarterKit.blend",
-      "export": "ArtSource/Exports/SM_Traffic_Truck_A.fbx",
+      "source": "ArtSource/Blender/Vehicle345/SM_Traffic_Truck_A.blend",
+      "export": "ArtSource/Exports/Vehicle345/SM_Traffic_Truck_A.fbx",
       "dimensions_m": [
-        5.0,
-        2.1,
-        1.8
+        6.420000076293945,
+        2.809000015258789,
+        3.0
       ],
       "footprint_cells": [
         0,
@@ -1819,12 +1827,21 @@
       ],
       "mesh_destination": "/Game/CitySim/Art/Meshes/SM_Traffic_Truck_A",
       "material_slots": {
-        "Traffic": "/Game/CitySim/Art/Materials/MI_CityTraffic",
-        "Roof": "/Game/CitySim/Art/Materials/MI_CityRoof"
+        "Rubber": "/Game/CitySim/Art/Vehicle345/Materials/MI_Truck_Rubber",
+        "CargoWhite": "/Game/CitySim/Art/Vehicle345/Materials/MI_Truck_CargoWhite",
+        "MetalTrim": "/Game/CitySim/Art/Vehicle345/Materials/MI_Truck_MetalTrim",
+        "BodyPaint": "/Game/CitySim/Art/Vehicle345/Materials/MI_Truck_BodyPaint",
+        "Glass": "/Game/CitySim/Art/Vehicle345/Materials/MI_Truck_Glass",
+        "Headlight": "/Game/CitySim/Art/Vehicle345/Materials/MI_Truck_Headlight",
+        "AmberLens": "/Game/CitySim/Art/Vehicle345/Materials/MI_Truck_AmberLens",
+        "Taillight": "/Game/CitySim/Art/Vehicle345/Materials/MI_Truck_Taillight"
       },
-      "lod_policy": "single shared low-poly traffic mesh",
+      "lod_policy": "Reviewed fleet replacement; focused Import-CityVehicles345.py owns geometry/materials and emergency mask",
       "collision_policy": "none",
-      "provenance": "Original Blender procedural primitives authored by project script"
+      "provenance": "Approved Blender #347 v2; immutable inputs and derivative facts in city_vehicle_native345.json",
+      "triangles": 7926,
+      "sections": 8,
+      "vehicle_refinement345": true
     },
     {
       "asset_id": "citizen.a",
@@ -2032,12 +2049,12 @@
     {
       "asset_id": "traffic.police.a",
       "civic_service": "police",
-      "source": "ArtSource/Blender/CityCivicKit.blend",
-      "export": "ArtSource/Exports/SM_Traffic_PoliceCar_A.fbx",
+      "source": "ArtSource/Blender/Vehicle345/SM_Traffic_PoliceCar_A.blend",
+      "export": "ArtSource/Exports/Vehicle345/SM_Traffic_PoliceCar_A.fbx",
       "dimensions_m": [
-        3.8,
-        2.1,
-        1.87
+        5.288000106811523,
+        2.1399998664855957,
+        1.7324999570846558
       ],
       "footprint_cells": [
         0,
@@ -2045,24 +2062,36 @@
       ],
       "mesh_destination": "/Game/CitySim/Art/Meshes/SM_Traffic_PoliceCar_A",
       "material_slots": {
-        "Police": "/Game/CitySim/Art/Materials/MI_CityPolice",
+        "BodyPaint_Navy": "/Game/CitySim/Art/Vehicle345/Materials/MI_PoliceCar_BodyPaint_Navy",
+        "Glass_OpaqueBlueGray": "/Game/CitySim/Art/Vehicle345/Materials/MI_PoliceCar_Glass_OpaqueBlueGray",
+        "BodyPaint_White": "/Game/CitySim/Art/Vehicle345/Materials/MI_PoliceCar_BodyPaint_White",
+        "MetalTrim": "/Game/CitySim/Art/Vehicle345/Materials/MI_PoliceCar_MetalTrim",
+        "Badge": "/Game/CitySim/Art/Vehicle345/Materials/MI_PoliceCar_Badge",
+        "Rubber": "/Game/CitySim/Art/Vehicle345/Materials/MI_PoliceCar_Rubber",
+        "Grille": "/Game/CitySim/Art/Vehicle345/Materials/MI_PoliceCar_Grille",
+        "Headlight": "/Game/CitySim/Art/Vehicle345/Materials/MI_PoliceCar_Headlight",
+        "Taillight": "/Game/CitySim/Art/Vehicle345/Materials/MI_PoliceCar_Taillight",
+        "ProtectiveBar_DarkSteel": "/Game/CitySim/Art/Vehicle345/Materials/MI_PoliceCar_ProtectiveBar_DarkSteel",
         "Roof": "/Game/CitySim/Art/Materials/MI_CityPoliceDetail"
       },
-      "lod_policy": "single shared civic mesh; below 500 triangles",
+      "lod_policy": "Reviewed fleet replacement; focused Import-CityVehicles345.py owns geometry/materials and emergency mask",
       "collision_policy": "none; logical footprints remain authoritative",
       "pivot_policy": "ground center",
-      "provenance": "Original project Blender procedural primitives; Create-CityCivicArt.py",
-      "roof_light_policy": "Static red/blue roof caps; vertex RGB and alpha=0 emit through shared detail slot; no flashing or service authority."
+      "provenance": "Approved Blender #348 v3; immutable inputs and derivative facts in city_vehicle_native345.json",
+      "roof_light_policy": "Static red/blue roof caps; vertex RGB and alpha=0 emit through shared detail slot; no flashing or service authority.",
+      "triangles": 11164,
+      "sections": 11,
+      "vehicle_refinement345": true
     },
     {
       "asset_id": "traffic.fire.a",
       "civic_service": "fire",
-      "source": "ArtSource/Blender/CityCivicKit.blend",
-      "export": "ArtSource/Exports/SM_Traffic_FireEngine_A.fbx",
+      "source": "ArtSource/Blender/Vehicle345/SM_Traffic_FireEngine_A.blend",
+      "export": "ArtSource/Exports/Vehicle345/SM_Traffic_FireEngine_A.fbx",
       "dimensions_m": [
-        6.2,
-        2.1,
-        2.78
+        7.609999895095825,
+        3.0336809158325195,
+        3.829284191131592
       ],
       "footprint_cells": [
         0,
@@ -2070,13 +2099,26 @@
       ],
       "mesh_destination": "/Game/CitySim/Art/Meshes/SM_Traffic_FireEngine_A",
       "material_slots": {
-        "Fire": "/Game/CitySim/Art/Materials/MI_CityFire",
+        "PumpPanel": "/Game/CitySim/Art/Vehicle345/Materials/MI_FireEngine_PumpPanel",
+        "BodyPaint": "/Game/CitySim/Art/Vehicle345/Materials/MI_FireEngine_BodyPaint",
+        "WarmWhite": "/Game/CitySim/Art/Vehicle345/Materials/MI_FireEngine_WarmWhite",
+        "Glass": "/Game/CitySim/Art/Vehicle345/Materials/MI_FireEngine_Glass",
+        "MetalTrim": "/Game/CitySim/Art/Vehicle345/Materials/MI_FireEngine_MetalTrim",
+        "Rubber": "/Game/CitySim/Art/Vehicle345/Materials/MI_FireEngine_Rubber",
+        "LockerMetal": "/Game/CitySim/Art/Vehicle345/Materials/MI_FireEngine_LockerMetal",
+        "Taillight": "/Game/CitySim/Art/Vehicle345/Materials/MI_FireEngine_Taillight",
+        "Headlight": "/Game/CitySim/Art/Vehicle345/Materials/MI_FireEngine_Headlight",
+        "CouplingBrass": "/Game/CitySim/Art/Vehicle345/Materials/MI_FireEngine_CouplingBrass",
+        "HoseJacket": "/Game/CitySim/Art/Vehicle345/Materials/MI_FireEngine_HoseJacket",
         "Roof": "/Game/CitySim/Art/Materials/MI_CityFireDetail"
       },
-      "lod_policy": "single shared civic mesh; below 500 triangles",
+      "lod_policy": "Reviewed fleet replacement; focused Import-CityVehicles345.py owns geometry/materials and emergency mask",
       "collision_policy": "none; logical footprints remain authoritative",
       "pivot_policy": "ground center",
-      "provenance": "Original project Blender procedural primitives; Create-CityCivicArt.py"
+      "provenance": "Approved Blender #349 v2; immutable inputs and derivative facts in city_vehicle_native345.json",
+      "triangles": 18592,
+      "sections": 12,
+      "vehicle_refinement345": true
     },
     {
       "asset_id": "building.residential.a.damaged",
@@ -6249,12 +6291,12 @@
       "hospital_asset": true,
       "civic_service": "hospital",
       "damaged_variant": false,
-      "source": "ArtSource/Blender/CityHospitalKit.blend",
-      "export": "ArtSource/Exports/SM_Traffic_Ambulance_A.fbx",
+      "source": "ArtSource/Blender/Vehicle345/SM_Traffic_Ambulance_A.blend",
+      "export": "ArtSource/Exports/Vehicle345/SM_Traffic_Ambulance_A.fbx",
       "dimensions_m": [
-        6.365,
-        2.36,
-        2.35
+        6.595000267028809,
+        2.570000171661377,
+        2.8500001430511475
       ],
       "footprint_cells": [
         1,
@@ -6262,18 +6304,26 @@
       ],
       "mesh_destination": "/Game/CitySim/Art/Meshes/SM_Traffic_Ambulance_A",
       "material_slots": {
-        "Hospital": "/Game/CitySim/Art/Materials/MI_CityTraffic",
-        "Roof": "/Game/CitySim/Art/Materials/MI_CityPoliceDetail",
-        "MedicalRed": "/Game/CitySim/Art/Materials/MI_CityFire"
+        "BodyPaint": "/Game/CitySim/Art/Vehicle345/Materials/MI_Ambulance_BodyPaint",
+        "MetalTrim": "/Game/CitySim/Art/Vehicle345/Materials/MI_Ambulance_MetalTrim",
+        "MedicalRed": "/Game/CitySim/Art/Vehicle345/Materials/MI_Ambulance_MedicalRed",
+        "Rubber": "/Game/CitySim/Art/Vehicle345/Materials/MI_Ambulance_Rubber",
+        "Headlight": "/Game/CitySim/Art/Vehicle345/Materials/MI_Ambulance_Headlight",
+        "Glass": "/Game/CitySim/Art/Vehicle345/Materials/MI_Ambulance_Glass",
+        "Taillight": "/Game/CitySim/Art/Vehicle345/Materials/MI_Ambulance_Taillight",
+        "Roof": "/Game/CitySim/Art/Materials/MI_CityPoliceDetail"
       },
-      "lod_policy": "one mesh; below800 building/500 vehicle triangles",
+      "lod_policy": "Reviewed fleet replacement; focused Import-CityVehicles345.py owns geometry/materials and emergency mask",
       "collision_policy": "none; logical footprint is authoritative",
       "pivot_policy": "ground center",
-      "provenance": "Original Blender primitives; Create-CityHospitalArt.py",
+      "provenance": "Approved Blender #350 v2; immutable inputs and derivative facts in city_vehicle_native345.json",
       "entrance_sides_local": [
         "-Y"
       ],
-      "presentation_yaw_offset_quarter_turns": 2
+      "presentation_yaw_offset_quarter_turns": 2,
+      "triangles": 9614,
+      "sections": 8,
+      "vehicle_refinement345": true
     },
     {
       "asset_id": "building.wastedepot.a",
@@ -6680,12 +6730,12 @@
       "waste_asset": true,
       "civic_service": "waste",
       "damaged_variant": false,
-      "source": "ArtSource/Blender/CityWasteKit.blend",
-      "export": "ArtSource/Exports/SM_Traffic_GarbageTruck_A.fbx",
+      "source": "ArtSource/Blender/Vehicle345/SM_Traffic_GarbageTruck_A.blend",
+      "export": "ArtSource/Exports/Vehicle345/SM_Traffic_GarbageTruck_A.fbx",
       "dimensions_m": [
-        7.41,
-        2.48,
-        3.05
+        7.93999981880188,
+        2.8610000610351562,
+        3.315000057220459
       ],
       "footprint_cells": [
         1,
@@ -6693,17 +6743,27 @@
       ],
       "mesh_destination": "/Game/CitySim/Art/Meshes/SM_Traffic_GarbageTruck_A",
       "material_slots": {
-        "Roof": "/Game/CitySim/Art/Materials/MI_CityRoof",
-        "Service": "/Game/CitySim/Art/Materials/MI_CityService"
+        "Chassis": "/Game/CitySim/Art/Vehicle345/Materials/MI_GarbageTruck_Chassis",
+        "Rubber": "/Game/CitySim/Art/Vehicle345/Materials/MI_GarbageTruck_Rubber",
+        "MetalTrim": "/Game/CitySim/Art/Vehicle345/Materials/MI_GarbageTruck_MetalTrim",
+        "CompactorPaint": "/Game/CitySim/Art/Vehicle345/Materials/MI_GarbageTruck_CompactorPaint",
+        "Service": "/Game/CitySim/Art/Vehicle345/Materials/MI_GarbageTruck_Service",
+        "Glass": "/Game/CitySim/Art/Vehicle345/Materials/MI_GarbageTruck_Glass",
+        "Headlight": "/Game/CitySim/Art/Vehicle345/Materials/MI_GarbageTruck_Headlight",
+        "Taillight": "/Game/CitySim/Art/Vehicle345/Materials/MI_GarbageTruck_Taillight",
+        "AmberLens": "/Game/CitySim/Art/Vehicle345/Materials/MI_GarbageTruck_AmberLens"
       },
-      "lod_policy": "one mesh; below800 building/500 vehicle triangles",
+      "lod_policy": "Reviewed fleet replacement; focused Import-CityVehicles345.py owns geometry/materials and emergency mask",
       "collision_policy": "none; logical footprint is authoritative",
       "pivot_policy": "ground center",
-      "provenance": "Original Blender primitives; Create-CityWasteArt.py",
+      "provenance": "Approved Blender #351 v1; immutable inputs and derivative facts in city_vehicle_native345.json",
       "entrance_sides_local": [
         "-Y"
       ],
-      "presentation_yaw_offset_quarter_turns": 2
+      "presentation_yaw_offset_quarter_turns": 2,
+      "triangles": 5732,
+      "sections": 9,
+      "vehicle_refinement345": true
     },
     {
       "asset_id": "building.shop.a.store.market",

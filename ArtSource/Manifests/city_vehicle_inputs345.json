@@ -1,0 +1,71 @@
+{
+  "issue": 345,
+  "assets": [
+    {
+      "issue": 346,
+      "version": 3,
+      "approval_sha256": "40f1493ec6d9d69eb55401705c4b7916c6e52a34715f56531e963207e8f8ea92",
+      "source": "ArtSource/Generated/blender/issue-346/v3",
+      "key": "Car",
+      "native": "/Game/CitySim/Art/Meshes/SM_Traffic_Car_A",
+      "source_export_commit": "05d4a6c286bdda052067a06211bb0680eff04823",
+      "source_pr": 352,
+      "integration_issue": 353
+    },
+    {
+      "issue": 347,
+      "version": 2,
+      "approval_sha256": "1143bad387236157ad64a0482099d0c76f48d651f6354faddaa4074b31a493e5",
+      "source": "ArtSource/Generated/blender/issue-347/v2",
+      "key": "Truck",
+      "native": "/Game/CitySim/Art/Meshes/SM_Traffic_Truck_A",
+      "source_export_commit": "bb1407eb3e88d56547a1b2f0a075d1496ff80597",
+      "source_pr": 354,
+      "integration_issue": 355
+    },
+    {
+      "issue": 348,
+      "version": 3,
+      "approval_sha256": "fbaa3af4e6957276213e128fddc2d856bd47298a796b8fd85bd784313abaec7f",
+      "source": "ArtSource/Generated/blender/issue-348/v3",
+      "key": "PoliceCar",
+      "native": "/Game/CitySim/Art/Meshes/SM_Traffic_PoliceCar_A",
+      "source_export_commit": "49f5488834065e5d8f5b7cbf1e9f4fd7fe8c4a14",
+      "source_pr": 356,
+      "integration_issue": 357
+    },
+    {
+      "issue": 349,
+      "version": 2,
+      "approval_sha256": "39e388abf563ce79ce226fc6b87154a64da67cdb748af732071399913974548f",
+      "source": "ArtSource/Generated/blender/issue-349/v2",
+      "key": "FireEngine",
+      "native": "/Game/CitySim/Art/Meshes/SM_Traffic_FireEngine_A",
+      "source_export_commit": "4478ac0293ae7f772f08fb849f1a027a7b0706d3",
+      "source_pr": 358,
+      "integration_issue": 359
+    },
+    {
+      "issue": 350,
+      "version": 2,
+      "approval_sha256": "522c41791281a76e67ebfde0949c724ce1ef5b500836e71ab43c1486648dd856",
+      "source": "ArtSource/Generated/blender/issue-350/v2",
+      "key": "Ambulance",
+      "native": "/Game/CitySim/Art/Meshes/SM_Traffic_Ambulance_A",
+      "source_export_commit": "a61dec0eab6b504642ff61c3d895ff5ab9500ee3",
+      "source_pr": 360,
+      "integration_issue": 361
+    },
+    {
+      "issue": 351,
+      "version": 1,
+      "approval_sha256": "20fb52f7041fb4afc99fc9e4f6c34322a996b005f8c831d79736a333cc2da683",
+      "source": "ArtSource/Generated/blender/issue-351/v1",
+      "key": "GarbageTruck",
+      "native": "/Game/CitySim/Art/Meshes/SM_Traffic_GarbageTruck_A",
+      "source_export_commit": "09e53934d9a79407b7eb92ed7196825041fc563e",
+      "source_pr": 362,
+      "integration_issue": 363
+    }
+  ]
+}

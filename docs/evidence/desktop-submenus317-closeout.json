@@ -1,0 +1,35 @@
+{
+  "filesVerified": 54,
+  "date": "2026-10-22",
+  "implementation": "7b93af0af26f848f086873285f94ef8c0642add3",
+  "status": "promoted",
+  "target": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\PCVRSandbox\\Windows",
+  "previousFilesPreserved": 53,
+  "protectedFilesVerified": 271,
+  "authorization": "Shaun confirmed objectives/settings and requested merge plus normal Windows build update in chat.",
+  "backup": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\DesktopPlaytest317\\Promotion\\PreviousWindows399",
+  "mergeCommit": "eaec83d7e490c76a37e1e25cd115df215d36c270",
+  "validation": "Accepted Windows477; candidate/startup inventory byte identity. No duplicate native build or smoke.",
+  "source": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\DesktopPlaytest317\\Followup\\Build477",
+  "candidate": 477,
+  "testedCiRevision": "9ee63a09ddd7f51aab121458cf066192496060fc",
+  "citysimTree": "d7a8204101371b4ce72147e8864a28a69204ba12",
+  "profilesAndLaunchersUnchanged": true,
+  "issue": 317,
+  "acceptanceComment": "https://git.shaun-husain.com/CitySimVR/citysim/issues/317#issuecomment-6298",
+  "deliveryComment": "https://git.shaun-husain.com/CitySimVR/citysim/issues/317#issuecomment-6297",
+  "promotionEvidence": "https://git.shaun-husain.com/attachments/2083551a-6885-4423-8b9c-ac7325636482",
+  "postMergeCheck": {
+    "commit": "eaec83d7e490c76a37e1e25cd115df215d36c270",
+    "status": "passed",
+    "build": 478,
+    "editorSeconds": 166.42,
+    "focusedCases": 4,
+    "settingsCaptures": 34
+  },
+  "remaining": {
+    "desktopAcceptance": "confirmed by Shaun",
+    "physicalHeadset": "unconfirmed under49",
+    "publicRelease": "not requested"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "mesh_geometry_sha256": "c48d4080b161d5e55cd1f3a126d65c2721a7add77ac343016d3c47b694ebf652",
+  "dimensions_m": [
+    0.23999999463558197,
+    0.18000000715255737,
+    0.10000000149011612
+  ],
+  "triangles": 58,
+  "material_slots": [
+    "Pebble"
+  ],
+  "roundtrip_pass": true,
+  "blender_version": "5.1.1",
+  "render_engine": "CYCLES",
+  "render_device": "CPU",
+  "reference_sha256": {},
+  "presentation_revision": {
+    "geometry_uv_face_assignments_unchanged": true,
+    "transform_unchanged": true,
+    "dimensions_m": [
+      0.23999999463558197,
+      0.18000000715255737,
+      0.10000000149011612
+    ],
+    "triangles": 58,
+    "closed_manifold": true,
+    "volume_m3": 0.001772820295210264,
+    "slots": [
+      "Pebble"
+    ],
+    "checked_fbx_readback": true,
+    "contact_vertices": 10,
+    "exposure": -0.65,
+    "human_visual_review": "pending",
+    "production_modified": false
+  }
+}

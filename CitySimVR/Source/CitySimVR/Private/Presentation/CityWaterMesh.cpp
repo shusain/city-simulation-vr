@@ -11,6 +11,7 @@ void FCityWaterMesh::AddFacet(const FVector& A, const FVector& B, const FVector&
 	const FVector Input[] = {A, B, C};
 	FVector Polygon[4];
 	int32 Count = 0;
+	TArray<FVector> Crossings;
 	for (int32 I = 0; I < 3; ++I)
 	{
 		const FVector& Start = Input[I];
@@ -26,8 +27,11 @@ void FCityWaterMesh::AddFacet(const FVector& A, const FVector& B, const FVector&
 			const FVector& High = Start.Z < End.Z ? End : Start;
 			Polygon[Count++] = FMath::Lerp(Low, High, (Plane - Low.Z) / (High.Z - Low.Z));
 			Polygon[Count - 1].Z = Plane;
+			Crossings.Add(Polygon[Count - 1]);
 		}
 	}
+	if (Crossings.Num() == 2 && FVector::DistSquared2D(Crossings[0], Crossings[1]) > 1.e-8)
+		ShoreSegments.Emplace(Crossings[0], Crossings[1]);
 	// A vertex exactly on the plane can appear twice. Discard zero-area fans
 	// rather than removing a small positive shoreline and opening a crack.
 	for (int32 I = 1; I + 1 < Count; ++I)
@@ -41,6 +45,7 @@ void FCityWaterMesh::AddFacet(const FVector& A, const FVector& B, const FVector&
 		for (const FVector& Ground : Fan)
 		{
 			Vertices.Add(FVector(Ground.X, Ground.Y, Plane));
+			DepthUVs.Add(FVector2D(FMath::Max(0.0, WaterLevelCm - Ground.Z) / 800.0, 0));
 			UVs.Add(FVector2D(Ground.X, Ground.Y) / CityBoardPicking::LogicalCellSizeCm);
 			const double DeepAlpha = FMath::SmoothStep(50.0, 250.0, WaterLevelCm - Ground.Z);
 			Colors.Add(
@@ -51,7 +56,8 @@ void FCityWaterMesh::AddFacet(const FVector& A, const FVector& B, const FVector&
 	}
 }
 
-FCityWaterMesh FCityWaterMesh::Build(const FCityTerrainHeightfield& Terrain, const bool bRefineBanks)
+FCityWaterMesh FCityWaterMesh::Build(const FCityTerrainHeightfield& Terrain, const bool bRefineBanks,
+                                     const bool bWaveDetail)
 {
 	FCityWaterMesh Mesh;
 	constexpr int32 Segments = FCityTerrainHeightfield::SamplesPerCell;
@@ -65,8 +71,32 @@ FCityWaterMesh FCityWaterMesh::Build(const FCityTerrainHeightfield& Terrain, con
 			const double Level =
 			    Terrain.IsWaterCell(Cell) ? Terrain.GetWaterSurfaceHeightCm(Cell) : Terrain.GetSeaLevelCm();
 			FCityTerrainSurface::Facets(
-			    Terrain, X, Y, [&](const FVector& A, const FVector& B, const FVector& C)
-			    { Mesh.AddFacet(A, B, C, Level); }, bRefineBanks);
+			    Terrain, X, Y,
+			    [&](const FVector& A, const FVector& B, const FVector& C)
+			    {
+				    if (!bWaveDetail)
+				    {
+					    Mesh.AddFacet(A, B, C, Level);
+					    return;
+				    }
+				    // Subdivide the ground BEFORE clipping. Shared 100cm grid edges
+				    // then have identical wave vertices even where the bank cuts them.
+				    const double Span =
+				        FMath::Max3(FMath::Abs(A.X - B.X), FMath::Abs(A.X - C.X), FMath::Abs(B.X - C.X));
+				    const double SpanY =
+				        FMath::Max3(FMath::Abs(A.Y - B.Y), FMath::Abs(A.Y - C.Y), FMath::Abs(B.Y - C.Y));
+				    const int32 N = FMath::Max(1, FMath::CeilToInt((FMath::Max(Span, SpanY) - 1.e-6) / 100.0));
+				    auto Point = [&](int32 U, int32 V)
+				    { return A + (B - A) * (double(U) / N) + (C - A) * (double(V) / N); };
+				    for (int32 V = 0; V < N; ++V)
+					    for (int32 U = 0; U < N - V; ++U)
+					    {
+						    Mesh.AddFacet(Point(U, V), Point(U + 1, V), Point(U, V + 1), Level);
+						    if (U + V + 1 < N)
+							    Mesh.AddFacet(Point(U + 1, V), Point(U + 1, V + 1), Point(U, V + 1), Level);
+					    }
+			    },
+			    bRefineBanks);
 		}
 	return Mesh;
 }

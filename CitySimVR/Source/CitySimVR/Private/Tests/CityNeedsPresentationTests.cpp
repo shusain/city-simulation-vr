@@ -82,14 +82,14 @@ bool FCityNeedsPresentationTest::RunTest(const FString& Parameters)
 	const FString RecoveryPanel = FCityNeedsPresentation::BuildPanel(Needs, Economy, 0, 0, &Budget);
 	TestTrue(TEXT("Upkeep blocker identifies unpaid bills and exact amount"),
 	         RecoveryPanel.Contains(TEXT("HOME:UNPAID BILLS")) &&
-	             RecoveryPanel.Contains(TEXT("Unpaid last month $258")));
+	             RecoveryPanel.Contains(TEXT("Unpaid last day $258")));
 	TestTrue(TEXT("Recovery names controllable costs"), RecoveryPanel.Contains(TEXT("roads $240 | utilities $160")) &&
 	                                                        RecoveryPanel.Contains(TEXT("public wages $40")));
 	TestTrue(TEXT("Recovery gives actual policy navigation and billing timing"),
 	         RecoveryPanel.Contains(TEXT("City > TAXES")) && RecoveryPanel.Contains(TEXT("then Apply")) &&
-	             RecoveryPanel.Contains(TEXT("month is fully paid")));
+	             RecoveryPanel.Contains(TEXT("day is fully paid")));
 	TestTrue(TEXT("Current forecast is visibly separate from last month"),
-	         RecoveryPanel.Contains(TEXT("Forecast -$258/mo")) && RecoveryPanel.Contains(TEXT("LAST MONTH")));
+	         RecoveryPanel.Contains(TEXT("Forecast -$258/day")) && RecoveryPanel.Contains(TEXT("LAST DAY")));
 
 	TestEqual(TEXT("service blocker selects service overlay"),
 	          FCityDiagnosticOverlayEvaluator::OverlayForOperationFailure(ECityOperationFailure::ServiceCapacity),

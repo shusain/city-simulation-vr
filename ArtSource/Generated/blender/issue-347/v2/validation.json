@@ -1,0 +1,43 @@
+{
+  "mesh_geometry_sha256": "3e8d4bf5acb802ac3bdb02f6516837b9e74bece2071408d8ae451dbdc3b581cb",
+  "dimensions_m": [
+    6.420000076293945,
+    2.809000015258789,
+    3.0
+  ],
+  "triangles": 7998,
+  "material_slots": [
+    "Rubber",
+    "CargoWhite",
+    "MetalTrim",
+    "BodyPaint",
+    "Glass",
+    "Headlight",
+    "AmberLens",
+    "Taillight"
+  ],
+  "roundtrip_pass": true,
+  "blender_version": "5.1.1",
+  "render_engine": "CYCLES",
+  "render_device": "CPU",
+  "reference_sha256": {
+    "ArtSource/Blender/CityStarterKit.blend": "46f7bb21ab1e6a3b22e38c674ae3be88e8df211880a87b1ef45a5ca09dab3fb6"
+  },
+  "review_lighting": {
+    "mode": "extent-squared-area-light",
+    "asset_extent_m": 6.420000076293945,
+    "area_light_energy_watts": 1159.2113037109375,
+    "area_light_size_m": 6.420000076293945,
+    "reference_extent_m": 8.0,
+    "reference_energy_watts": 1800.0,
+    "world_strength": 0.6,
+    "view_transform": "AgX",
+    "exposure": 0.0
+  },
+  "review_scope": "Fresh freight source preview only; no production changes or approval. Glass is opaque blue-gray glossy; headlights, red tail and amber indicator lenses are separate semantic materials; no emergency lights.",
+  "additional_views": [
+    "side.png",
+    "front.png",
+    "rear.png"
+  ]
+}

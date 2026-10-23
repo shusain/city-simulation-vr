@@ -10,6 +10,10 @@
 #include "Sandbox/CityDesktopCamera.h"
 #include "Simulation/CitySimulationSubsystem.h"
 #include "UObject/UnrealType.h"
+#include "Persistence/CityPersistence.h"
+#include "HAL/FileManager.h"
+#include "Misc/FileHelper.h"
+#include "Misc/Paths.h"
 
 IMPLEMENT_SIMPLE_AUTOMATION_TEST(FCityUiParityTest, "CitySim.Desktop.SharedContentAndActions",
                                  EAutomationTestFlags::EditorContext | EAutomationTestFlags::EngineFilter)
@@ -73,7 +77,11 @@ bool FCityUiParityTest::RunTest(const FString& Parameters)
 		TestEqual(TEXT("City card values parity"), UI->CityInfoValues[Index]->Text.ToString(),
 		          Hud.CityCards[Index].Values.ToString());
 	}
-	UI->bDesktopUi = true;
+	UI->SetPalettePage(ECityPalettePage::Settings);
+    TestTrue(TEXT("VR retains Menu position"), UI->VisiblePaletteEntries.ContainsByPredicate([](const auto& E) { return E.Action == ECityPaletteAction::CycleAnchor; }));
+    UI->bDesktopUi = true;
+    UI->SetPalettePage(ECityPalettePage::Settings);
+    TestFalse(TEXT("Desktop omits VR-only Menu position"), UI->GetUiSnapshot().MenuEntries.ContainsByPredicate([](const auto& E) { return E.ActionId == static_cast<int32>(ECityPaletteAction::CycleAnchor); }));
 	const auto CheckIdleInspect = [&]()
 	{
 		const auto Data = UI->GetUiSnapshot();
@@ -294,6 +302,22 @@ bool FCityUiParityTest::RunTest(const FString& Parameters)
 	TestTrue(TEXT("Cancel exits the Build workspace with Inspect as default"),
 	         !UI->bPaletteOpen && UI->Board->GetToolMode() == ECityToolMode::Inspect);
 	TestEqual(TEXT("Aborted tool actions never spend city funds"), Sim->GetPlacementModel().GetFunds(), Funds);
+	UI->ExecuteDesktopUiAction(static_cast<int32>(ECityPaletteAction::OpenCity));
+	UI->ExecuteDesktopUiAction(static_cast<int32>(ECityPaletteAction::OpenReports));
+	UI->ExecuteDesktopUiAction(static_cast<int32>(ECityPaletteAction::ReportWaste));
+	TestEqual(TEXT("Relocated Waste shortcut opens Reports"), UI->PalettePage, ECityPalettePage::Reports);
+	TestTrue(TEXT("Waste report highlights only its own shortcut"),
+	    UI->IsPaletteActionSelected(ECityPaletteAction::ReportWaste) &&
+	    !UI->IsPaletteActionSelected(ECityPaletteAction::ReportUtilities));
+	UI->ExecuteDesktopUiAction(static_cast<int32>(ECityPaletteAction::ReportUtilities));
+	TestTrue(TEXT("Utilities shortcut restores only its own highlight"),
+	    UI->IsPaletteActionSelected(ECityPaletteAction::ReportUtilities) &&
+	    !UI->IsPaletteActionSelected(ECityPaletteAction::ReportWaste));
+	UI->ExecuteDesktopUiAction(static_cast<int32>(ECityPaletteAction::OpenOverlays));
+	UI->ExecuteDesktopUiAction(static_cast<int32>(ECityPaletteAction::OverlayWaste));
+	TestEqual(TEXT("Relocated Waste view uses the existing diagnostic overlay"),
+	    UI->Board->GetDiagnosticOverlay(), ECityDiagnosticOverlay::Waste);
+	UI->ExecuteDesktopUiAction(static_cast<int32>(ECityPaletteAction::SelectInspect));
 	for (const int32 Speed : {1, 3, 5})
 	{
 		UI->ExecuteDesktopUiAction(Speed == 1 ? -21 : Speed == 3 ? -22 : -23);
@@ -306,6 +330,80 @@ bool FCityUiParityTest::RunTest(const FString& Parameters)
 	const ECityToolMode ToolBeforeFocusLoss = UI->Board->GetToolMode();
 	UI->ExecuteDesktopUiAction(static_cast<int32>(ECityPaletteAction::SelectDemolish));
 	TestEqual(TEXT("Unfocused desktop cannot change tools"), UI->Board->GetToolMode(), ToolBeforeFocusLoss);
+    // Desktop ordering is a presentation projection: actual action IDs keep their routing.
+    UI->bDesktopUi = true;
+    UI->SetPaletteOpen(true);
+    UI->SetPalettePage(ECityPalettePage::City);
+    const auto CityMenu = UI->GetUiSnapshot().MenuEntries;
+    TestEqual(TEXT("Taxes are first"), CityMenu[0].ActionId, static_cast<int32>(ECityPaletteAction::OpenTaxes));
+    TestEqual(TEXT("Loans follow taxes"), CityMenu[1].ActionId, static_cast<int32>(ECityPaletteAction::OpenLoans));
+    TestEqual(TEXT("Technology is last"), CityMenu.Last().ActionId, static_cast<int32>(ECityPaletteAction::OpenTechnology));
+    UI->SetPalettePage(ECityPalettePage::Reports);
+    const auto ReportMenu = UI->GetUiSnapshot().MenuEntries;
+    TestEqual(TEXT("Utilities lead categories"), ReportMenu[4].ActionId, static_cast<int32>(ECityPaletteAction::ReportUtilities));
+    TestEqual(TEXT("Waste follows health"), ReportMenu[10].ActionId, static_cast<int32>(ECityPaletteAction::ReportWaste));
+	// Reproduce Continue on a dormant city: its existing entrance road must
+	// populate history without resetting the map, funds, pause or simulation clock.
+	UI->bDesktopFocused = true;
+	Sim->GetPlacementModel().SetTerrain(nullptr);
+	auto Road = Sim->GetPlacementModel().BeginRoadPreview(FCityPlacementModel::EntranceCell);
+	Sim->GetPlacementModel().UpdateRoadPreviewEnd(Road, {5, 8});
+	TestTrue(TEXT("Dormant-city entrance fixture commits"), Sim->GetPlacementModel().CommitRoad(Road).IsSuccess());
+	const int64 RetainedFunds = Sim->GetPlacementModel().GetFunds();
+	const int64 RetainedStep = Sim->GetEconomySnapshot().FixedStepId;
+	FString DormantJson, DormantError;
+	const FString DormantPath = FPaths::Combine(FPaths::ProjectSavedDir(), TEXT("Automation/DesktopDormantCity.json"));
+	IFileManager::Get().MakeDirectory(*FPaths::GetPath(DormantPath), true);
+	TestTrue(TEXT("Existing city saves through public API"), Sim->SaveCityToPath(DormantPath, DormantError));
+	FFileHelper::LoadFileToString(DormantJson, *DormantPath);
+	FCitySaveDocument Dormant;
+	TestTrue(TEXT("Saved fixture deserializes"), FCityPersistence::Deserialize(DormantJson, Dormant, DormantError));
+	Dormant.Scenario = FCityScenarioSaveState();
+	Dormant.Guidance = FCityGuidedProgress();
+	TestTrue(TEXT("Dormant saved-city fixture serializes"), FCityPersistence::Serialize(Dormant, DormantJson, DormantError));
+	TestTrue(TEXT("Dormant fixture writes to isolated automation profile"), FFileHelper::SaveStringToFile(DormantJson, *DormantPath));
+	UI->ShowMainMenu();
+	UI->ReviewCityLoad();
+	UI->ConfirmCityLoad(DormantPath);
+	TestTrue(TEXT("Continue activates desktop guide"), Sim->GetScenarioSnapshot().Phase != ECityScenarioPhase::NotStarted);
+	TestTrue(TEXT("Continue retains pause"), Sim->IsSimulationPaused());
+	TestEqual(TEXT("Continue retains funds"), Sim->GetPlacementModel().GetFunds(), RetainedFunds);
+	TestEqual(TEXT("Continue retains clock"), Sim->GetEconomySnapshot().FixedStepId, RetainedStep);
+	TestTrue(TEXT("Existing entrance appears in history"), Sim->GetGuidedProgress().CompletedIds.Contains(TEXT("entrance_road")));
+	TestTrue(TEXT("History becomes available"), UI->GetUiSnapshot().bObjectiveHistoryAvailable);
+	UI->ExecuteDesktopUiAction(-9);
+	TestTrue(TEXT("Desktop History opens completed objective"), UI->GetUiSnapshot().bObjectiveReview);
+	TestEqual(TEXT("History shows existing entrance completion"), UI->GetObjectiveCard().Id, FName(TEXT("entrance_road")));
+	UI->ExecuteDesktopUiAction(-9);
+	TestFalse(TEXT("Live returns to current guidance"), UI->GetUiSnapshot().bObjectiveReview);
+	TestTrue(TEXT("Live advances past entrance"), UI->GetObjectiveCard().Id != FName(TEXT("entrance_road")));
+	FString RetainedJson;
+	FFileHelper::LoadFileToString(RetainedJson, *DormantPath);
+	TestEqual(TEXT("Loading dormant city never rewrites its save"), RetainedJson, DormantJson);
+	IFileManager::Get().Delete(*DormantPath);
+	IFileManager::Get().Delete(*(DormantPath + TEXT(".bak")));
+	UI->SetPaletteOpen(true);
+    const int64 BeforePreview = Sim->GetPlacementModel().GetFunds();
+    UI->PendingLoanAmount = 5000;
+    UI->bLoanPayoffReview = false;
+    UI->SetPalettePage(ECityPalettePage::LoanReview);
+    const auto Terms = UI->GetUiSnapshot();
+    TestEqual(TEXT("Borrowing preview has two headline amounts"), Terms.MenuMetrics.Num(), 2);
+    TestTrue(TEXT("First daily payment includes interest"), Terms.MenuMetrics[1].Value.ToString().Contains(TEXT("234")));
+    TestEqual(TEXT("Preview cannot transfer money"), Sim->GetPlacementModel().GetFunds(), BeforePreview);
+    TestTrue(TEXT("Payment caveats remain visible"), Terms.MenuSections.ContainsByPredicate([](const FCityUiMenuSection& S) { return S.bWarning && !S.bCollapsible; }));
+    UI->PendingPolicy = ECityPolicy::ReserveAssistance;
+    UI->bPendingPolicyEnable = true;
+    UI->SetPalettePage(ECityPalettePage::PolicyReview);
+    const auto Policy = UI->GetUiSnapshot();
+    TestTrue(TEXT("Policy quote labels the daily cadence"), Policy.MenuMetrics[0].Label.ToString().Contains(TEXT("day")));
+    TestTrue(TEXT("Policy confirmation names its action"), Policy.MenuEntries.ContainsByPredicate([](const FCityUiActionView& V) { return V.Label.ToString().StartsWith(TEXT("Enable Reserve")); }));
+    TestEqual(TEXT("Policy preview transfers no money"), Sim->GetPlacementModel().GetFunds(), BeforePreview);
+    for (const auto Page : {ECityPalettePage::Taxes, ECityPalettePage::QuarterlyNews, ECityPalettePage::Reports})
+    {
+        UI->SetPalettePage(Page);
+        TestTrue(TEXT("Retained panels keep their existing presenters"), UI->GetUiSnapshot().MenuSections.IsEmpty());
+    }
 	World->DestroyWorld(false);
 	return true;
 }

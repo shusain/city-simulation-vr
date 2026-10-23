@@ -1,8 +1,8 @@
 [
   {
     "name": "shopping",
-    "path": "Artifacts/B003/D107Followup/ReportedCity.json",
-    "sha256": "72c2d4a0909a23135251a25953c8f1203eb297adadc39ac2126e46753481b64f"
+    "path": "Artifacts/Fixture285/Input/CurrentCity.json",
+    "sha256": "cb6c956491ca01982883eac5dd1d69eca5edca593a4c5fcd2b0e748f3040dc0e"
   },
   {
     "name": "health",

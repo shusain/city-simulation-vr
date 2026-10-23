@@ -1,0 +1,18 @@
+Recorded vehicle engine credits (#54/#55)
+
+Car Engine Ignition Running and Turn Off — qubodup
+https://freesound.org/people/qubodup/sounds/147243/
+CC BY 4.0: https://creativecommons.org/licenses/by/4.0/
+Used for two car-running variants. Modified by CitySimVR: excerpt selection, mono/resampling, high/low-pass EQ, loop phase alignment/crossfade and static gain. No endorsement implied.
+
+Truck engine running front.wav — abuurman
+https://freesound.org/people/abuurman/sounds/130016/
+CC BY 4.0: https://creativecommons.org/licenses/by/4.0/
+Modified by CitySimVR: excerpt selection, mono/resampling, high/low-pass EQ, loop phase alignment/crossfade and static gain. No endorsement implied.
+
+Car Engine Idling.wav — jpkweli
+https://freesound.org/people/jpkweli/sounds/154758/
+Diesel Truck Idling Front.wav — ibirdfilm
+https://freesound.org/people/ibirdfilm/sounds/128160/
+Both CC0: https://creativecommons.org/publicdomain/zero/1.0/
+Modified by CitySimVR: mono/resampling, high/low-pass EQ, excerpt/loop crossfade and static gain.

@@ -246,7 +246,13 @@ enum class ECityPaletteAction : uint8
     OpenCommercialAi,
     EnableCommercialAi,
     DisableCommercialAi,
-    OverlayCommercialAi
+    OverlayCommercialAi,
+    ReportDaily,
+    ReportWeekly,
+    ReportMonthly,
+    ReportHourly,
+    ToggleTutorial,
+    ResetTutorial
 };
 
 struct CITYSIMVR_API FCityPaletteEntry

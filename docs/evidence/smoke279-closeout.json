@@ -1,0 +1,30 @@
+{
+  "issue": 279,
+  "pr": 294,
+  "date": "2026-10-21",
+  "merge": "4c48f77290cd35a16256b213d9f3ee471f06d13a",
+  "tested_head": "e77acfd884f038783e94edd7b9b7c93dc61258cb",
+  "merged_tree_matches_tested": true,
+  "native": 393,
+  "windows": 394,
+  "merged_main_build": 395,
+  "merged_main_status": "passed",
+  "required_captures": 58,
+  "verified_package_files": 53,
+  "zip_sha256": "39d6a453114a8f4970ca3997fa703fce5b3ab38a08d58e7903723588b45f6204",
+  "prior392": "overall failed during evidence retention; corrected394 passed",
+  "approval": "User explicitly authorized PR294 merge, #279 closure and documentation updates on 2026-10-21",
+  "maintained_pc": "Windows389 unchanged",
+  "player_profiles": "unchanged",
+  "evidence_comment": "https://git.shaun-husain.com/CitySimVR/citysim/issues/279#issuecomment-5506",
+  "remaining": [
+    "#285 fixture refresh separate",
+    "#49 physical/headset observations unconfirmed"
+  ],
+  "merged_main_editor_seconds": 178.74,
+  "merged_main_tests": [
+    "CitySim.Desktop.SmokeReportFixture",
+    "CitySim.Reports.Panel"
+  ],
+  "native_window": "released; both locks available; no owned native processes; worker enabled"
+}

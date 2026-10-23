@@ -88,6 +88,11 @@ UCLASS()
 class CITYSIMVR_API ACityBoardActor : public AActor
 {
 	GENERATED_BODY()
+    friend class FCityDesktopContinuityCommand;
+	friend class FCityPlacementPreviewStudyCommand;
+	friend class FCityPlacementFeedbackTest;
+	friend class FCityTutorialLifecycleTest;
+	friend class FCityTutorialWalkthroughCommand;
 	friend class FCityQuarterlyNewsFixture;
 	friend class FCityLowDensityLifecycleTest;
 	friend class FCityDesktopLowDensityCommand;
@@ -241,6 +246,7 @@ public:
 	}
 
 private:
+	friend class FCityWaterCaptureCommand;
 	friend class FCityDesktopServiceGuidanceCommand;
 	friend class FCitySchoolReachPresentationTest;
 	friend class FCityTechnologyLiveTest;
@@ -450,6 +456,14 @@ private:
 
 	UPROPERTY(VisibleAnywhere, Category = "City Board")
 	TObjectPtr<UProceduralMeshComponent> WaterSurface;
+	UPROPERTY()
+	TObjectPtr<UProceduralMeshComponent> ShoreFoamSurface;
+	UPROPERTY()
+	TObjectPtr<UProceduralMeshComponent> ShoreSplashSurface;
+	UPROPERTY()
+	TArray<TObjectPtr<UMaterialInstanceDynamic>> WaterEffectsMaterials;
+	uint64 WaterEffectsRevision = MAX_uint64;
+	void UpdateWaterEffects();
 
 	UPROPERTY(VisibleAnywhere, Category = "City Board")
 	TObjectPtr<UInstancedStaticMeshComponent> FoundationInstances;
@@ -460,7 +474,7 @@ private:
 	UPROPERTY()
 	TObjectPtr<UStaticMesh> GroundPilotResidentialMesh;
 
-    UPROPERTY()
+	UPROPERTY()
     TMap<FName, TObjectPtr<UStaticMesh>> BuildingGroundMeshes;
 	UPROPERTY(Transient)
 	TObjectPtr<UMaterialInstanceDynamic> ConcreteMaterial;
@@ -488,6 +502,7 @@ private:
 
 	UPROPERTY(VisibleAnywhere, Category = "City Board")
 	TObjectPtr<UStaticMeshComponent> EntranceMarker;
+	void UpdateEntranceGuidance();
 
 	// Read-only weather instrument. Pointing the active board ray at it reveals
 	// the current downwind arrows without making weather presentation authoritative.
@@ -526,6 +541,12 @@ private:
 
 	UPROPERTY(VisibleAnywhere, Category = "City Board")
 	TObjectPtr<UStaticMeshComponent> PlacementGhost;
+
+    UPROPERTY(VisibleAnywhere)
+    TObjectPtr<UInstancedStaticMeshComponent> PlacementFootprintInstances;
+
+    UPROPERTY(Transient)
+    TObjectPtr<UMaterialInstanceDynamic> PlacementFootprintMaterial;
 
 	// Temporary BuildingPresentation proof of the authored construction/low/medium/high visual
 	// pipeline. It is presentation-only and does not imply density simulation.
@@ -721,12 +742,19 @@ private:
 	void UpdateZoneTool(const FCityCellCoord& HoveredCell, bool bHasHoveredCell, bool bConfirm, bool bCancel,
 	                    bool bRotate);
 	void HandleDemolition(const FCityCellCoord& HoveredCell);
+	void UpdatePlacementFootprint(const FCityBuildingDefinition& Definition, bool bValid);
 	void UpdateGhost(const FCityBuildingDefinition& Definition, const FCityPlacementResult& Validation);
 	void UpdatePlacementStatus(const FCityBuildingDefinition& Definition, const FCityPlacementResult& Validation);
 	void RenderPlacement(uint64 EntityId, const FCityPlacedEntity& Entity, const FCityBuildingDefinition& Definition);
 	void RebuildRoadInstances();
 	void RebuildBenchmarkVehicles();
 	void UpdatePopulationTraffic();
+	void RebuildCrosswalkPaint();
+	FVector PedestrianPointToLocal(const FIntVector& P) const;
+	double PedestrianSurfaceHeight(const FVector& P, int32 Level) const;
+	bool SampleEntranceAwareWalker(const struct FCityTrafficVehicleState& Vehicle,
+	    const struct FCityTrafficVehicleState* Previous, double Alpha, FVector& Location, FVector& Direction) const;
+	TMap<uint64, TArray<FVector>> CitizenEntrancePaths;
 	void RebuildZoneInstances();
 	void UpdateZoneVisibility();
 	void UpdateAreaPreview(UInstancedStaticMeshComponent* Instances, const TArray<FCityCellCoord>& Cells, bool bValid,
@@ -812,7 +840,10 @@ private:
 	TArray<uint64> AnimatedConstructionEntityIds;
 	FCityInstanceIndex InstanceIndex;
 	uint64 ObservedPresentationGeneration = 0;
+	uint64 InteractionSessionGeneration = 0;
 	friend class FCityTerrainPresentationCacheTest;
+	friend class FCityCrosswalkGeometryTest;
+	friend class FCityCrosswalkCaptureCommand;
 	TOptional<FCityTerrainGenerationParameters> RenderedTerrainParameters;
 	uint64 RenderedTerrainSession = MAX_uint64;
 	void RefreshTerrainPresentation();

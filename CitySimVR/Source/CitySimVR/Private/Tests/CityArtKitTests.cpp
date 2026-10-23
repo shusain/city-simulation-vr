@@ -34,6 +34,12 @@ namespace
 		int32 ExpectedTriangles = 0;
 		double ExpectedMinimumZCm = 0;
 	};
+	TArray<FExpectedCityMesh> ExpectedVehicles345()
+	{
+		return {
+#include "CityVehicle345Expectations.inl"
+		};
+	}
 } // namespace
 
 IMPLEMENT_SIMPLE_AUTOMATION_TEST(FCityArtKitImportTest, "CitySim.Art.ImportedKit",
@@ -41,7 +47,7 @@ IMPLEMENT_SIMPLE_AUTOMATION_TEST(FCityArtKitImportTest, "CitySim.Art.ImportedKit
 
 bool FCityArtKitImportTest::RunTest(const FString& Parameters)
 {
-	const TArray<FExpectedCityMesh> Expected = {
+	TArray<FExpectedCityMesh> Expected = {
 	    {TEXT("/Game/CitySim/Art/Meshes/SM_Building_Police_A.SM_Building_Police_A"),
 	     FVector(2400.0000, 1840.0000, 900.0000),
 	     {TEXT("Police"), TEXT("Roof"), TEXT("BuildingWindowOpaque"), TEXT("CivicBrick_Police"), TEXT("CivicAsphaltRoof")},
@@ -50,12 +56,6 @@ bool FCityArtKitImportTest::RunTest(const FString& Parameters)
 	     FVector(2400.0000, 1840.0000, 940.0000),
 	     {TEXT("Fire"), TEXT("Roof"), TEXT("BuildingWindowOpaque"), TEXT("CivicBrick_Fire"), TEXT("CivicAsphaltRoof")},
 	     true, 772, 0.0000},
-	    {TEXT("/Game/CitySim/Art/Meshes/SM_Traffic_PoliceCar_A.SM_Traffic_PoliceCar_A"),
-	     FVector(380, 210, 187),
-	     {TEXT("Police"), TEXT("Roof")}},
-	    {TEXT("/Game/CitySim/Art/Meshes/SM_Traffic_FireEngine_A.SM_Traffic_FireEngine_A"),
-	     FVector(620, 210, 278),
-	     {TEXT("Fire"), TEXT("Roof")}},
 	    {TEXT("/Game/CitySim/Art/Meshes/SM_Calibration_1m.SM_Calibration_1m"),
 	     FVector(100.0, 100.0, 100.0),
 	     {TEXT("Trim")}},
@@ -125,6 +125,7 @@ bool FCityArtKitImportTest::RunTest(const FString& Parameters)
 	    {TEXT("/Game/CitySim/Art/Meshes/SM_Road_Cross.SM_Road_Cross"), FVector(840.0, 840.0, 18.0), {TEXT("Road")}},
 	};
 
+	Expected.Append(ExpectedVehicles345());
 	for (const FExpectedCityMesh& Item : Expected)
 	{
 		UStaticMesh* Mesh = LoadObject<UStaticMesh>(nullptr, Item.Path);
@@ -143,7 +144,7 @@ bool FCityArtKitImportTest::RunTest(const FString& Parameters)
 		const FString AssetPath(Item.Path);
 		if (AssetPath.Contains(TEXT("Police")) || AssetPath.Contains(TEXT("Fire")))
 		{
-			const int32 Budget = AssetPath.Contains(TEXT("Building_")) ? 800 : 500;
+			const int32 Budget = AssetPath.Contains(TEXT("Building_")) ? 800 : Item.ExpectedTriangles;
 			TestTrue(TEXT("Civic meshes stay within station/vehicle budgets"),
 			         Mesh->GetNumTriangles(0) > 0 && Mesh->GetNumTriangles(0) <= Budget);
 			TestEqual(TEXT("Civic mesh retains reviewed sections"), Mesh->GetNumSections(0), Item.Slots.Num());
@@ -239,7 +240,8 @@ bool FCityArtKitImportTest::RunTest(const FString& Parameters)
 				        ? MaterialPath ==
 				              FString::Printf(TEXT("/Game/CitySim/Art/Materials/MI_Environment%s.MI_Environment%s"),
 				                              *Slot.ToString(), *Slot.ToString())
-				        : MaterialPath.StartsWith(TEXT("/Game/CitySim/Art/Materials/")));
+				        : (MaterialPath.StartsWith(TEXT("/Game/CitySim/Art/Materials/")) ||
+				           (AssetPath.Contains(TEXT("SM_Traffic_")) && MaterialPath.StartsWith(TEXT("/Game/CitySim/Art/Vehicle345/Materials/")))));
 			}
 		}
 	}
@@ -457,6 +459,45 @@ bool FCityArtKitImportTest::RunTest(const FString& Parameters)
 	return true;
 }
 
+
+IMPLEMENT_SIMPLE_AUTOMATION_TEST(FCityRefinedVehicles345Test, "CitySim.Art.RefinedVehicles345",
+    EAutomationTestFlags::EditorContext | EAutomationTestFlags::EngineFilter)
+bool FCityRefinedVehicles345Test::RunTest(const FString&)
+{
+    for (const FExpectedCityMesh& Item : ExpectedVehicles345())
+    {
+        UStaticMesh* Mesh = LoadObject<UStaticMesh>(nullptr, Item.Path);
+        if (!TestNotNull(Item.Path, Mesh)) continue;
+        TestEqual(TEXT("Approved derived triangle count"), Mesh->GetNumTriangles(0), Item.ExpectedTriangles);
+        TestTrue(TEXT("Metric size and ground pivot preserved"), Mesh->GetBoundingBox().GetSize().Equals(Item.DimensionsCm, .2) && FMath::Abs(Mesh->GetBoundingBox().Min.Z) < .3);
+        TestEqual(TEXT("Semantic slots survive import"), Mesh->GetStaticMaterials().Num(), Item.Slots.Num());
+        for (const FName Slot : Item.Slots)
+        {
+            const int32 Index = Mesh->GetMaterialIndex(Slot);
+            if (!TestTrue(TEXT("Expected semantic section"), Index != INDEX_NONE)) continue;
+            TestNotNull(TEXT("Native material assigned"), Mesh->GetMaterial(Index));
+        }
+        bool bGlass = false, bRubber = false;
+        for (const auto& Slot : Mesh->GetStaticMaterials())
+        {
+            bGlass |= Slot.ImportedMaterialSlotName.ToString().StartsWith(TEXT("Glass"));
+            bRubber |= Slot.ImportedMaterialSlotName == TEXT("Rubber");
+        }
+        TestTrue(TEXT("Fleet has separate opaque glazing and rubber"), bGlass && bRubber);
+        if (FString(Item.Path).Contains(TEXT("FireEngine")))
+            TestNotNull(TEXT("Authored water nozzle attachment survives native save/load"), Mesh->FindSocket(TEXT("WaterNozzle")));
+    }
+    auto* Board = GetMutableDefault<ACityBoardActor>();
+    for (const TCHAR* Name : {TEXT("TrafficVehicleInstances"), TEXT("TrafficTruckInstances"), TEXT("PoliceResponseInstances"), TEXT("FireResponseInstances"), TEXT("AmbulanceResponseInstances"), TEXT("GarbageTruckInstances"), TEXT("RecyclingTruckInstances")})
+    {
+        auto* Pool = Cast<UInstancedStaticMeshComponent>(Board->GetDefaultSubobjectByName(Name));
+        if (!TestNotNull(Name, Pool)) continue;
+        TestNotNull(TEXT("Existing pool retains its mesh"), Pool->GetStaticMesh().Get());
+        TestEqual(TEXT("Visuals remain noncolliding"), Pool->GetCollisionEnabled(), ECollisionEnabled::NoCollision);
+    }
+    return true;
+}
+
 #if WITH_EDITOR
 IMPLEMENT_SIMPLE_AUTOMATION_TEST(FCityCivicLightMaterialTest, "CitySim.Art.CivicLightEmission",
                                  EAutomationTestFlags::EditorContext | EAutomationTestFlags::EngineFilter)
@@ -550,10 +591,11 @@ bool FCityCivicLightMaterialTest::RunTest(const FString& Parameters)
 		             FMath::Max(RedBrightness, OtherBrightness) >= 1.9999f);
 	}
 	auto* Board = GetMutableDefault<ACityBoardActor>();
-	for (const TCHAR* Service : {TEXT("Fire"), TEXT("Police")})
+	for (const TCHAR* Service : {TEXT("Fire"), TEXT("Police"), TEXT("Ambulance")})
 	{
 		const FString ResponsePath = FString::Printf(
-		    TEXT("/Game/CitySim/Art/Materials/MI_City%sResponseDetail.MI_City%sResponseDetail"), Service, Service);
+		    TEXT("/Game/CitySim/Art/Materials/MI_City%sResponseDetail.MI_City%sResponseDetail"), FCString::Strcmp(Service, TEXT("Ambulance")) == 0 ? TEXT("Police") : Service,
+		    FCString::Strcmp(Service, TEXT("Ambulance")) == 0 ? TEXT("Police") : Service);
 		UMaterialInterface* Response = LoadObject<UMaterialInterface>(nullptr, *ResponsePath);
 		if (!TestNotNull(TEXT("Moving response material loads"), Response))
 			continue;
@@ -579,6 +621,9 @@ bool FCityCivicLightMaterialTest::RunTest(const FString& Parameters)
 		                                                               ParkedPulse) &&
 		             ParkedPulse == 0);
 		const auto& Lod = Mesh->GetRenderData()->LODResources[0];
+		if (!TestTrue(TEXT("Imported beacon vertex-color buffer exists"),
+		              Lod.VertexBuffers.ColorVertexBuffer.GetNumVertices() > 0))
+			continue;
 		int32 ColoredLights = 0, RedLights = 0, OtherLights = 0;
 		for (const auto& Section : Lod.Sections)
 			if (Section.MaterialIndex == RoofIndex)

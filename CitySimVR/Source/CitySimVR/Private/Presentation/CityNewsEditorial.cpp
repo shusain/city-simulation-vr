@@ -8,7 +8,7 @@ FCityNewspaperEdition CityNewspaperEdition(const FCityReportHistory& History, in
 	{
 		Paper.Dateline = TEXT("INAUGURAL EDITION  |  AWAITING THE FIRST SETTLEMENT");
 		Paper.Headline = TEXT("A city begins its story");
-		Paper.Lead = TEXT("The Chronicle's first city report will appear after the next monthly settlement. "
+		Paper.Lead = TEXT("The Chronicle's first city report will appear after the next daily settlement. "
 		                  "Each edition follows three city months, with partial quarters clearly marked.");
 		Paper.Footer = TEXT("Local affairs, citizen wellbeing and the public purse.");
 		return Paper;
@@ -18,10 +18,10 @@ FCityNewspaperEdition CityNewspaperEdition(const FCityReportHistory& History, in
 	const auto& E = Editions[Index];
 	const auto& L = E.Latest;
 	const int64 People = L.Get(ECityReportMetric::Population);
-	Paper.Dateline = FString::Printf(TEXT("YEAR %lld  |  QUARTER %lld  |  %s  |  %d OF 3 MONTHS OBSERVED"),
+	Paper.Dateline = FString::Printf(TEXT("YEAR %lld  |  QUARTER %lld  |  %s  |  %d OF 3 MONTHS OBSERVED | %d/%d DAYS"),
 	                                 (E.QuarterId - 1) / 4 + 1, (E.QuarterId - 1) % 4 + 1,
 	                                 E.IsComplete() ? TEXT("COMPLETE EDITION") : TEXT("PARTIAL EDITION"),
-	                                 E.ObservedMonths);
+	                                 E.ObservedMonths, E.ObservedDays, 3 * FCityCalendar::DaysPerMonth);
 	if (E.bHasMovement && E.Departed > 0)
 		Paper.Headline = FString::Printf(TEXT("%lld residents leave the city"), E.Departed);
 	else if (!E.bHasSentiment)
@@ -33,15 +33,15 @@ FCityNewspaperEdition CityNewspaperEdition(const FCityReportHistory& History, in
 	else
 		Paper.Headline = TEXT("The quarter in city life");
 	if (!E.bHasSentiment)
-		Paper.Lead = TEXT("Some observed months have no recorded citizen sentiment. This edition reports the "
+		Paper.Lead = TEXT("Some observed days have no recorded citizen sentiment. This edition reports the "
 		                  "available facts without filling in the missing mood history.");
 	else if (!E.ResidentObservations)
-		Paper.Lead = TEXT("No residents were present in the observed monthly snapshots. The housing and "
+		Paper.Lead = TEXT("No residents were present in the observed daily snapshots. The housing and "
 		                  "treasury reports below describe what the city recorded.");
 	else
 	{
 		Paper.Lead = FString::Printf(
-		    TEXT("Recorded mood averaged %lld/100 across the observed months. At month %lld's close, %lld of "
+		    TEXT("Recorded mood averaged %lld/100 across the observed daily resident samples. At month %lld's close, %lld of "
 		         "%lld residents were discontented and %lld were searching for another home."),
 		    E.AverageHappiness(), E.LastMonth, L.Get(ECityReportMetric::Discontented), People,
 		    L.Get(ECityReportMetric::SearchingResidents));

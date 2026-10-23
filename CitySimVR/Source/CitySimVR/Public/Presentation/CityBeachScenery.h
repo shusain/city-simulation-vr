@@ -3,6 +3,7 @@
 #include "Simulation/CityTerrain.h"
 
 class FCityPlacementModel;
+struct FCitySceneryCandidate;
 
 enum class ECityBeachKind : uint8
 {
@@ -10,7 +11,18 @@ enum class ECityBeachKind : uint8
 	SpiralShell,
 	Starfish,
 	Driftwood,
-	DuneGrass
+	DuneGrass,
+	Seaweed,
+	PebbleSmall,
+	PebbleMedium,
+	PebbleLarge,
+	Umbrella,
+	Lounger,
+	Chair,
+	Mat,
+	Cooler,
+	Tote,
+	CurledKelp
 };
 
 struct CITYSIMVR_API FCityBeachCandidate
@@ -27,11 +39,23 @@ struct CITYSIMVR_API FCityBeachCandidate
 class CITYSIMVR_API FCityBeachScenery
 {
 public:
-	static constexpr int32 KindCount = 5;
-	static constexpr int32 MaxClusters = 32;
-	static constexpr int32 MaxProps = MaxClusters * KindCount;
+	static constexpr int32 KindCount = 16;
+	static constexpr bool IsRecreation(ECityBeachKind Kind)
+	{
+		return Kind >= ECityBeachKind::Umbrella && Kind <= ECityBeachKind::Tote;
+	}
+	static constexpr bool IsSeaweed(ECityBeachKind Kind)
+	{
+		return Kind == ECityBeachKind::Seaweed || Kind == ECityBeachKind::CurledKelp;
+	}
+	static constexpr bool IsPebble(ECityBeachKind Kind)
+	{
+		return Kind >= ECityBeachKind::PebbleSmall && Kind <= ECityBeachKind::PebbleLarge;
+	}
+	static double ClearanceRadiusCm(ECityBeachKind Kind);
 	// Match the rendered A-C-B / B-C-D terrain facets, including their diagonal.
 	static double SampleGround(const FCityTerrainHeightfield& Terrain, double X, double Y, FVector& Normal);
-	static TArray<FCityBeachCandidate> SelectCandidates(const FCityTerrainHeightfield& Terrain);
+	static TArray<FCityBeachCandidate> SelectCandidates(const FCityTerrainHeightfield& Terrain,
+	                                                    TConstArrayView<FCitySceneryCandidate> Scenery = {});
 	static bool IsClear(const FCityPlacementModel& City, const FCityCellCoord& Cell);
 };

@@ -56,22 +56,22 @@ TArray<FCityPaletteEntry> FCityPaletteModel::Entries(const ECityPalettePage Page
 	case ECityPalettePage::Build:
 		return {
 		    {ECityPaletteAction::OpenRoads, TEXT("ROADS"), TEXT("Build or upgrade a road class")},
-		    {ECityPaletteAction::SelectPolice, TEXT("POLICE"), TEXT("Place police: road, power and water required")},
-		    {ECityPaletteAction::SelectFire, TEXT("FIRE"), TEXT("Place fire station: road, power and water required")},
-		    {ECityPaletteAction::SelectHospital, TEXT("HOSPITAL"),
-		     TEXT("Treatment facility: Secondary staff, roads, power and water")},
-		    {ECityPaletteAction::OpenWasteFacilities, TEXT("WASTE"),
-		     TEXT("Choose waste collection or advanced recycling")},
-		    {ECityPaletteAction::OpenEducationFacilities, TEXT("EDUCATION"),
-		     TEXT("Choose Primary, Secondary or Higher education")},
-		    {ECityPaletteAction::OpenTechnologyFacilities, TEXT("TECHNOLOGY"),
-		     TEXT("Choose a digital exchange, computing center or research campus")},
-		    {ECityPaletteAction::OpenParks, TEXT("PARKS"),
-		     TEXT("Choose pocket, neighborhood or city park and view appeal coverage")},
 		    {ECityPaletteAction::OpenPowerFacilities, TEXT("POWER"),
 		     TEXT("Choose basic, coal, oil, wind, solar or nuclear generation")},
 		    {ECityPaletteAction::OpenWaterFacilities, TEXT("WATER"),
 		     TEXT("Choose a cheap tower or expandable treatment facility")},
+		    {ECityPaletteAction::SelectPolice, TEXT("POLICE"), TEXT("Place police: road, power and water required")},
+		    {ECityPaletteAction::SelectFire, TEXT("FIRE"), TEXT("Place fire station: road, power and water required")},
+		    {ECityPaletteAction::OpenParks, TEXT("PARKS"),
+		     TEXT("Choose pocket, neighborhood or city park and view appeal coverage")},
+		    {ECityPaletteAction::OpenEducationFacilities, TEXT("EDUCATION"),
+		     TEXT("Choose Primary, Secondary or Higher education")},
+		    {ECityPaletteAction::SelectHospital, TEXT("HOSPITAL"),
+		     TEXT("Treatment facility: Secondary staff, roads, power and water")},
+		    {ECityPaletteAction::OpenWasteFacilities, TEXT("WASTE"),
+		     TEXT("Choose waste collection or advanced recycling")},
+		    {ECityPaletteAction::OpenTechnologyFacilities, TEXT("TECHNOLOGY"),
+		     TEXT("Choose a digital exchange, computing center or research campus")},
 		    {ECityPaletteAction::Back, TEXT("<"), TEXT("Back to main tools"), true}};
 	case ECityPalettePage::TechnologyFacilities:
 		return {{ECityPaletteAction::SelectDigitalExchange, TEXT("CONNECTIVITY"),
@@ -102,12 +102,8 @@ TArray<FCityPaletteEntry> FCityPaletteModel::Entries(const ECityPalettePage Page
 	case ECityPalettePage::WasteFacilities:
 		return {{ECityPaletteAction::SelectWasteDepot, TEXT("WASTE DEPOT"),
 		         TEXT("Collection trucks and disposal; Basic staff, roads, power and water")},
-		        {ECityPaletteAction::ReportWaste, TEXT("WASTE REPORTS"),
-		         TEXT("Waste stocks and cumulative processing/diversion")},
 		        {ECityPaletteAction::SelectRecycling, TEXT("RECYCLING"),
 		         TEXT("Secondary staff; collect and divert60% of processed waste")},
-		        {ECityPaletteAction::OverlayWaste, TEXT("WASTE VIEW"),
-		         TEXT("Lot accumulation/caps; inspect for planned collection")},
 		        {ECityPaletteAction::Back, TEXT("<"), TEXT("Back to Build"), true}};
 	case ECityPalettePage::EducationFacilities:
 		return {
@@ -174,7 +170,7 @@ TArray<FCityPaletteEntry> FCityPaletteModel::Entries(const ECityPalettePage Page
             {ECityPaletteAction::OpenQuarterlyNews, TEXT("CITY NEWS"), TEXT("Quarterly citizen sentiment, concerns, housing and finances")},
 		    {ECityPaletteAction::OverlayHappiness, TEXT("HAPPINESS"),
 		     TEXT("Recorded citizen mood by home; point for concerns and search status")},
-		    {ECityPaletteAction::OpenHousingHistory, TEXT("HOUSING EVENTS"),
+		    {ECityPaletteAction::OpenHousingHistory, TEXT("HOUSING"),
 		     TEXT("Current search warnings and recent household moves/departures")},
 		    {ECityPaletteAction::OverlayCrime, TEXT("CRIME VIEW"),
 		     TEXT("Crime pressure, job gaps, homelessness and police protection")},
@@ -187,13 +183,14 @@ TArray<FCityPaletteEntry> FCityPaletteModel::Entries(const ECityPalettePage Page
 		     TEXT("School access, capacity and education progress")},
 		    {ECityPaletteAction::OverlayParks, TEXT("PARK VIEW"),
 		     TEXT("Operating park appeal; strongest overlapping benefit wins")},
-		    {ECityPaletteAction::OpenReports, TEXT("REPORTS"), TEXT("Settled city history; monthly and annual charts")},
+		    {ECityPaletteAction::OpenReports, TEXT("REPORTS"), TEXT("Settled history: hourly, daily, five-day weekly and monthly charts")},
 		    {ECityPaletteAction::OpenTaxes, TEXT("TAXES"), TEXT("Adjust residential, commercial and industrial taxes")},
 		    {ECityPaletteAction::Back, TEXT("<"), TEXT("Back to main tools"), true}};
 	case ECityPalettePage::Reports:
-		return {
-		    {ECityPaletteAction::OpenHousingHistory, TEXT("HOUSING EVENTS"),
-		     TEXT("Saved household search, recovery, move and departure records")},
+		return {{ECityPaletteAction::ReportHourly, TEXT("HOURLY"), TEXT("Real hourly observations; financial bills still settle daily")},
+		        {ECityPaletteAction::ReportDaily, TEXT("DAILY"), TEXT("Each settled day; no partial-day estimates")},
+		        {ECityPaletteAction::ReportWeekly, TEXT("WEEKLY"), TEXT("Five-day weeks; observed totals and closing snapshots")},
+		        {ECityPaletteAction::ReportMonthly, TEXT("MONTHLY"), TEXT("25-day months; default view")},
 		    {ECityPaletteAction::ReportPeople, TEXT("PEOPLE"),
 		     TEXT("Population, housing, jobs and resident education")},
 		    {ECityPaletteAction::ReportStaff, TEXT("STAFF"),
@@ -202,14 +199,14 @@ TArray<FCityPaletteEntry> FCityPaletteModel::Entries(const ECityPalettePage Page
 		    {ECityPaletteAction::ReportGoods, TEXT("GOODS"), TEXT("Production, completed purchases/exports and stock")},
 		    {ECityPaletteAction::ReportHealth, TEXT("HEALTH"),
 		     TEXT("Illness, treatment and hospital capacity history")},
+		    {ECityPaletteAction::ReportWaste, TEXT("WASTE"),
+		     TEXT("Waste stocks and cumulative processing/diversion")},
 		    {ECityPaletteAction::ReportUtilities, TEXT("UTILITIES"),
-		     TEXT("End-of-month demand, capacity and pollution")},
-		    {ECityPaletteAction::ReportAnnual, TEXT("MONTHLY"),
-		     TEXT("Switch monthly/annual; partial years show observed months")},
+		     TEXT("Latest daily closing demand, capacity and pollution")},
 		    {ECityPaletteAction::ReportMetricPrevious, TEXT("< METRIC"), TEXT("Previous metric in this category")},
 		    {ECityPaletteAction::ReportMetricNext, TEXT("METRIC >"), TEXT("Next metric in this category")},
-		    {ECityPaletteAction::ReportPeriodPrevious, TEXT("< PERIOD"), TEXT("Previous month or year")},
-		    {ECityPaletteAction::ReportPeriodNext, TEXT("PERIOD >"), TEXT("Next month or year")},
+		    {ECityPaletteAction::ReportPeriodPrevious, TEXT("< PERIOD"), TEXT("Previous observed period")},
+		    {ECityPaletteAction::ReportPeriodNext, TEXT("PERIOD >"), TEXT("Next observed period")},
 		    {ECityPaletteAction::Back, TEXT("BACK"), TEXT("Return to city tools; release grip to dismiss")}};
 	case ECityPalettePage::Taxes:
 		return {{ECityPaletteAction::TaxResidentialDown, TEXT("R -"), TEXT("Reduce residential tax by 1%")},
@@ -249,7 +246,7 @@ TArray<FCityPaletteEntry> FCityPaletteModel::Entries(const ECityPalettePage Page
         return {{ECityPaletteAction::NewsOlder, TEXT("< OLDER"), TEXT("Previous recorded quarter")},
                 {ECityPaletteAction::NewsNewer, TEXT("NEWER >"), TEXT("Next recorded quarter")},
                 {ECityPaletteAction::OverlayHappiness, TEXT("HAPPINESS"), TEXT("Inspect current home mood and concerns")},
-                {ECityPaletteAction::OpenHousingHistory, TEXT("HOUSING EVENTS"), TEXT("Who moved or left, and why")},
+                {ECityPaletteAction::OpenHousingHistory, TEXT("HOUSING"), TEXT("Who moved or left, and why")},
                 {ECityPaletteAction::NewsMoney, TEXT("FINANCES"), TEXT("Inspect recorded money flows")},
                 {ECityPaletteAction::OpenTaxes, TEXT("TAXES"), TEXT("Review pending rates before applying")},
                 {ECityPaletteAction::OpenBuild, TEXT("SERVICES"), TEXT("Build utilities, schools, health, safety and waste services")},
@@ -309,6 +306,8 @@ TArray<FCityPaletteEntry> FCityPaletteModel::Entries(const ECityPalettePage Page
 		        {ECityPaletteAction::Back, TEXT("BACK"), TEXT("Discard edits and return to settings")}};
 	case ECityPalettePage::Settings:
 		return {
+            {ECityPaletteAction::ToggleTutorial, TEXT("TUTORIAL ON/OFF"), TEXT("Disable or resume contextual tutorial attention")},
+            {ECityPaletteAction::ResetTutorial, TEXT("RESET TUTORIAL"), TEXT("Resume opening guidance; city and objective history are preserved")},
 		    {ECityPaletteAction::OpenAudio, TEXT("AUDIO"),
 		     TEXT("Effects, ambience and music volume and mute")},
 		    {ECityPaletteAction::OpenDisasters, TEXT("DISASTERS"),
@@ -379,6 +378,8 @@ TArray<FCityPaletteEntry> FCityPaletteModel::Entries(const ECityPalettePage Page
 		         TEXT("Show motor-lane congestion; point for exact load")},
 		        {ECityPaletteAction::OverlayPollution, TEXT("POLLUTION"),
 		         TEXT("Show pollution spread and residential pressure")},
+		        {ECityPaletteAction::OverlayWaste, TEXT("WASTE"),
+		         TEXT("Lot accumulation/caps; inspect for planned collection")},
 		        {ECityPaletteAction::OverlayClear, TEXT("CLEAR"), TEXT("Clear diagnostic overlay")},
 		        {ECityPaletteAction::Back, TEXT("<"), TEXT("Back to main tools"), true}};
 	case ECityPalettePage::Root:
@@ -532,10 +533,17 @@ FCityPaletteRect FCityPaletteModel::ButtonRect(const ECityPalettePage Page, cons
 	      (Page == ECityPalettePage::CommercialAi || Page == ECityPalettePage::TechnologyReview || Page == ECityPalettePage::PolicyReview))) &&
 	    Index >= BarEntryCount)
 	{
-		// Reports has thirteen drawer actions. Keep Back beside the final row,
-		// above Repair, so a fifth row cannot overlap the persistent toolbar.
-		if (Page == ECityPalettePage::Reports && Action == ECityPaletteAction::Back)
-			return {FVector(1, 42, 5.5), FVector2D(5.6, 2.2)};
+		// Range choices and navigation each occupy their own row above the toolbar.
+		if (Page == ECityPalettePage::Reports)
+		{
+			int32 N = Index - BarEntryCount;
+			if (Action == ECityPaletteAction::Back) N = 11;
+			else if (Action == ECityPaletteAction::ReportMetricPrevious) N = 12;
+			else if (Action == ECityPaletteAction::ReportMetricNext) N = 13;
+			else if (Action == ECityPaletteAction::ReportPeriodPrevious) N = 14;
+			else if (Action == ECityPaletteAction::ReportPeriodNext) N = 15;
+			return {FVector(1, 27.0 - (N % 4) * 18.0, 22.0 - (N / 4) * 5.5), FVector2D(8.2, 2.2)};
+		}
 		const int32 N = Index - BarEntryCount;
 		return {FVector(1, 24.0 - (N % 3) * 24.0, 22.0 - (N / 3) * 5.5), FVector2D(10.8, 2.2)};
 	}
@@ -628,7 +636,9 @@ FCityPaletteRect FCityPaletteModel::ButtonRect(const ECityPalettePage Page, cons
 		return {FVector(1.0, Action == ECityPaletteAction::Back ? 0.0 : 24.0 - (DrawerIndex / 5) * 24.0,
 		                Action == ECityPaletteAction::Back ? -5.5 : 28.0 - (DrawerIndex % 5) * 5.5),
 		        FVector2D(10.8, 2.2)};
-	return {FVector(1.0, 24.0 - (DrawerIndex % 3) * 24.0, 22.0 - (DrawerIndex / 3) * 5.5), FVector2D(10.8, 2.2)};
+	// City and Settings need five rows; keep the last row above the persistent toolbar.
+	const double DrawerTop = Page == ECityPalettePage::City || Page == ECityPalettePage::Settings ? 27.5 : 22.0;
+	return {FVector(1.0, 24.0 - (DrawerIndex % 3) * 24.0, DrawerTop - (DrawerIndex / 3) * 5.5), FVector2D(10.8, 2.2)};
 }
 
 FCityPaletteRect FCityPaletteModel::SurfaceRect(const ECityPalettePage Page, const bool bHandPalette)
@@ -647,6 +657,12 @@ FCityPaletteRect FCityPaletteModel::SurfaceRect(const ECityPalettePage Page, con
 		return Page == ECityPalettePage::MainMenu
 		           ? FCityPaletteRect{FVector(0, 0, 11), FVector2D(bHandPalette ? 25.0 : 34.0, 22.0)}
 		           : FCityPaletteRect{FVector(0, 0, 8), FVector2D(34.0, 34.0)};
+	if (bHandPalette && (Page == ECityPalettePage::City || Page == ECityPalettePage::Settings))
+	{
+		const int32 Rows = FMath::Max(5, FMath::DivideAndRoundUp(Entries(Page).Num(), 2));
+		const double Bottom = FMath::Min(-21.0, 11.0 - (Rows - 1) * 5.0 - 2.0);
+		return {FVector(0, 0, (18.0 + Bottom) / 2.0), FVector2D(17, (18.0 - Bottom) / 2.0)};
+	}
 	if (bHandPalette)
 		return {FVector(0.0, 0.0, -1.5),
 		        FVector2D(Page == ECityPalettePage::Taxes || Page == ECityPalettePage::Audio ? 27.0 : 17.0, 19.5)};

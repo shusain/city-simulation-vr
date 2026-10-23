@@ -1,3 +1,1 @@
-# Presentation output directory; packaged menu smoke separately checks its profile guard.
-# Captured-city-dependent visual tests await fixture refresh (#285).
-CitySim.Desktop.StorefrontRooms
+# Vehicle milestone: ordinary packaged startup smoke; visual checks supplied separately.

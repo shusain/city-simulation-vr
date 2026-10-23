@@ -97,3 +97,24 @@ ArtSource/Manifests/city_approved_utility_native.json -text
 
 # Exact #157 native preparation receipt and measured input hashes.
 ArtSource/Manifests/city_civic_batch*.json -text
+
+# Exact approved beach source export bytes (#51).
+ArtSource/Generated/blender/issue-203/v2/** -text
+ArtSource/Generated/blender/issue-204/v3/** -text
+ArtSource/Generated/blender/issue-207/v2/** -text
+ArtSource/Generated/blender/issue-208/v1/** -text
+ArtSource/Generated/blender/issue-209/v1/** -text
+ArtSource/Generated/blender/issue-210/v1/** -text
+ArtSource/Generated/blender/issue-211/v2/** -text
+ArtSource/Generated/blender/issue-212/v2/** -text
+ArtSource/Generated/blender/issue-213/v2/** -text
+ArtSource/Generated/blender/issue-214/v2/** -text
+
+# Exact beach integration source/native input receipts.
+ArtSource/Manifests/city_beach_refinement51*.json -text
+ArtSource/Generated/blender/issue-201/v2/** -text
+
+# Preserve exact approved fleet manifests and generated integration receipts.
+ArtSource/Generated/blender/issue-34[6-9]/** -text
+ArtSource/Generated/blender/issue-35[01]/** -text
+ArtSource/Manifests/city_vehicle*345.json -text

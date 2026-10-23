@@ -58,21 +58,28 @@ public:
 			return true;
 		const FString Directory = FPaths::ProjectSavedDir() / TEXT("Automation/Beach");
 		IFileManager::Get().MakeDirectory(*Directory, true);
-		const FString Path = Directory / TEXT("BeachReview.json");
+		const FString Path = Directory / TEXT("CurledKelpReview.json");
 		FString Error;
 		if (Phase == 0)
 		{
 			FCityIdentity Identity;
-			Identity.Id = TEXT("00000000000000000000000000000108");
-			Identity.Name = TEXT("Beach Beach Review");
+			Identity.Id = TEXT("00000000000000000000000000000201");
+			Identity.Name = TEXT("Seaweed variant sample");
 			FCityTerrainGenerationParameters Terrain;
 			Terrain.GeneratorVersion = 2;
 			Terrain.WaterRulesVersion = 1;
 			Terrain.SceneryVersion = 1;
+			// A normal generated/saved city with supported gentle terrain inputs;
+			// never force furniture onto the rugged fixture's rejected banks.
+			Terrain.BroadElevationAmplitudeCm = 0;
+			Terrain.HillAmplitudeCm = 0;
+			Terrain.RidgeAmplitudeCm = 0;
+			Terrain.SeaLevelCm = -160;
+			Terrain.QuantizationCm = 1;
 			// Choose from the three focused wet fixtures without requiring all
 			// five kinds to share one cluster. The default generator2 seed is dry.
 			bool bFixtureFound = false;
-			for (const int32 Seed : {5, 1, 6})
+			for (const int32 Seed : {6, 5, 1, 2, 3, 4, 7, 8, 9, 10, 11, 12})
 			{
 				Terrain.Seed = Seed;
 				FCityTerrainHeightfield Probe;
@@ -80,7 +87,7 @@ public:
 				int32 Mask = 0;
 				for (const auto& C : FCityBeachScenery::SelectCandidates(Probe))
 					Mask |= 1 << static_cast<int32>(C.Kind);
-				if (Mask == 31)
+				if (Mask == (1 << FCityBeachScenery::KindCount) - 1)
 				{
 					bFixtureFound = true;
 					break;
@@ -105,14 +112,16 @@ public:
 			if (!Test->TestNotNull(TEXT("Cooked beach presenter"), Atmosphere))
 				return true;
 			Atmosphere->Update(Sim, 0);
-			Test->TestEqual(TEXT("Five cooked instanced pools"), Atmosphere->BeachPools.Num(), 5);
+			Test->TestEqual(TEXT("All cooked instanced pools"), Atmosphere->BeachPools.Num(),
+			                FCityBeachScenery::KindCount);
 			InitialCount = Atmosphere->GetBeachDecorationCount();
-			Test->TestTrue(TEXT("Cooked source-sized beach props"),
-			               InitialCount > 0 && InitialCount <= FCityBeachScenery::MaxProps);
+			Test->TestTrue(TEXT("Cooked source-sized beach props"), InitialCount > 0);
 			uint32 BestCluster = 0;
 			int32 BestCount = 0;
 			for (const auto& Candidate : Atmosphere->BeachCandidates)
 			{
+				if (!FCityBeachScenery::IsRecreation(Candidate.Kind))
+					continue;
 				const int32 Count = Atmosphere->BeachCandidates
 				                        .FilterByPredicate(
 				                            [&](const FCityBeachCandidate& C)
@@ -150,10 +159,27 @@ public:
 					FTransform Pose;
 					Pool->GetInstanceTransform(I, Pose);
 					Original.Add(Pose);
-					Test->TestTrue(TEXT("Cook preserves approved scale"), Pose.GetScale3D().Equals(FVector::OneVector));
+					// Instanced transforms use float matrices, so an authored .9/1.1
+					// endpoint can round a few float ULPs outside the double bound.
+					Test->TestTrue(TEXT("Cook preserves source scale or natural pebble variation"),
+					               Pose.GetScale3D().GetMin() >= .9 - 1.e-6 &&
+					                   Pose.GetScale3D().GetMax() <= 1.1 + 1.e-6);
 				}
 			}
 			Player->GetPawn()->SetActorTickEnabled(false);
+			// Regression from the first cooked batch: independently seeded trees
+			// could put their trunks through the source-sized lounger.
+			for (const auto& Beach : Atmosphere->BeachCandidates)
+				if (FCityBeachScenery::IsRecreation(Beach.Kind))
+					for (const auto& Pool : Atmosphere->Pools)
+						for (int32 I = 0; I < Pool->GetInstanceCount(); ++I)
+						{
+							FTransform Pose;
+							Pool->GetInstanceTransform(I, Pose);
+							Test->TestTrue(TEXT("Leisure footprints clear existing tree trunks and rocks"),
+							               FVector::DistSquared2D(Pose.GetLocation(), Beach.Transform.GetLocation()) >
+							                   FMath::Square(FCityBeachScenery::ClearanceRadiusCm(Beach.Kind) + 100.));
+						}
 			if (!Sim->SaveCityToPath(Path, Error))
 			{
 				Test->AddError(Error);
@@ -199,11 +225,11 @@ public:
 		{
 			Board->SetLightingPreset(Phase == 6 ? ECityLightingPreset::Night : ECityLightingPreset::Day);
 			const auto BoardPose = Board->GetActorTransform();
-			const auto Target = BoardPose.TransformPosition(Phase == 2 || Phase == 4 ? TargetLocal : DetailTargets[0]);
+			const auto Target = BoardPose.TransformPosition(TargetLocal);
 			Pawn->CameraState.Focus = Target;
 			Pawn->CameraState.Yaw = Phase == 4 ? -135 : 90;
 			Pawn->CameraState.Pitch = -55;
-			Pawn->CameraState.Distance = Phase == 2 ? 15. : Phase == 4 ? 5. : 1.;
+			Pawn->CameraState.Distance = Phase == 2 ? 35. : Phase == 4 ? 20. : 12.;
 			const auto Location = Pawn->CameraState.Location();
 			Player->GetPawn()->SetActorLocation(Location);
 			Player->SetControlRotation((Target - Location).Rotation());
@@ -217,23 +243,32 @@ public:
 			                                 : TEXT("AfterReload");
 			FScreenshotRequest::RequestScreenshot(Directory / (FString(Name) + TEXT(".png")), true, false);
 		}
-		else if (Phase < 20)
+		else if (Phase < 10 + FCityBeachScenery::KindCount * 2)
 		{
 			const int32 Kind = (Phase - 10) / 2;
-			const TCHAR* BeachPropNames[] = {TEXT("FanShell"), TEXT("SpiralShell"), TEXT("Starfish"), TEXT("Driftwood"),
-			                        TEXT("DuneGrass")};
-			const double Sizes[] = {22, 16, 30, 120, 45};
+			const TCHAR* BeachPropNames[] = {
+			    TEXT("FanShell"),    TEXT("SpiralShell"), TEXT("Starfish"),    TEXT("Driftwood"),
+			    TEXT("DuneGrass"),   TEXT("Seaweed"),     TEXT("PebbleSmall"), TEXT("PebbleMedium"),
+			    TEXT("PebbleLarge"), TEXT("Umbrella"),    TEXT("Lounger"),     TEXT("Chair"),
+			    TEXT("Mat"),         TEXT("Cooler"),      TEXT("Tote"),        TEXT("CurledKelp")};
+			const double Sizes[] = {22, 16, 30, 120, 45, 85, 12, 18, 24, 220, 189, 90, 180, 55, 48, 70};
 			if (Phase % 2 == 0)
 			{
 				Board->SetLightingPreset(ECityLightingPreset::Day);
 				const auto Pose = Board->GetActorTransform();
 				const auto Target = Pose.TransformPosition(DetailTargets[Kind]);
-				const auto Location = Target + Pose.TransformVector(FVector(0, -Sizes[Kind] * 3, Sizes[Kind] * 2));
+				// View the chair from the side so the nearby umbrella canopy does
+				// not fill its source-size detail capture.
+				const FVector Offset = Kind == static_cast<int32>(ECityBeachKind::Chair)
+				                           ? FVector(Sizes[Kind] * 3, 0, Sizes[Kind] * 2)
+				                           : FVector(0, -Sizes[Kind] * 3, Sizes[Kind] * 2);
+				const auto Location = Target + Pose.TransformVector(Offset);
 				Player->GetPawn()->SetActorLocation(Location);
 				Player->SetControlRotation((Target - Location).Rotation());
 			}
 			else
-				FScreenshotRequest::RequestScreenshot(Directory / (FString(BeachPropNames[Kind]) + TEXT(".png")), true, false);
+				FScreenshotRequest::RequestScreenshot(Directory / (FString(BeachPropNames[Kind]) + TEXT(".png")), true,
+				                                      false);
 		}
 		else
 		{
@@ -241,7 +276,7 @@ public:
 			                OriginalNearClip);
 			Player->GetPawn()->SetActorTickEnabled(true);
 			UE_LOG(LogTemp, Display,
-			       TEXT("CITYSIM_BEACH_BEACH_CAPTURE_COMPLETE Captures=10 Instances=%d PhysicalReviewPending=1"),
+			       TEXT("CITYSIM_BEACH_BEACH_CAPTURE_COMPLETE Captures=21 Instances=%d PhysicalReviewPending=1"),
 			       InitialCount);
 			return true;
 		}

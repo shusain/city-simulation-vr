@@ -1,0 +1,14 @@
+{
+  "issue": 55,
+  "reviewedBuild": 452,
+  "reviewedCommit": "c9ae98751daaaa6bf3f2ed26a4cdff3e36a2c514",
+  "userDirective": "Sounds better I think for trucks we could bring it to about 75% of the current volume and be good, the cars sound good as is. Go ahead and make that change and then get this change merged (remove the old sounds assuming no longer in use).",
+  "acceptedFinalGain": {
+    "car": 0.6,
+    "truck": 0.45,
+    "truckRatioVsReviewed": 0.75
+  },
+  "cleanup": "Two unused pass-by WAVs and four native packages removed; replaced synthetic steady waves no longer exist at their reused paths",
+  "validation": "Final Editor/focused checks required before merge; prior Windows452 smoke/listening evidence retained",
+  "headsetListening": "Unobserved/deferred"
+}

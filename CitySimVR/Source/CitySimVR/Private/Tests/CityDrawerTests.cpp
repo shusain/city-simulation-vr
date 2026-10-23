@@ -9,6 +9,7 @@
 #include "Components/SceneComponent.h"
 #include "Engine/World.h"
 #include "Misc/AutomationTest.h"
+#include "Presentation/CityDesktopIcon.h"
 #include "UObject/UnrealType.h"
 
 IMPLEMENT_SIMPLE_AUTOMATION_TEST(FCityDrawerLayoutTest, "CitySim.Input.DrawerLayout",
@@ -53,16 +54,19 @@ bool FCityDrawerLayoutTest::RunTest(const FString& Parameters)
 				TestTrue(TEXT("Target center hits"), Rect.Contains(Rect.Center));
 				TestFalse(TEXT("Outside target misses"),
 				          Rect.Contains(Rect.Center + FVector(0, Rect.HalfSize.X + 0.01, 0)));
-				TestTrue(TEXT("Full target is inside background"),
+				TestTrue(FString::Printf(TEXT("Full target is inside background: page=%d hand=%d index=%d"),
+				                         static_cast<int32>(Page), bHand, Index),
 				         Surface.Contains(Rect.Center + FVector(0, Rect.HalfSize.X, Rect.HalfSize.Y)) &&
 				             Surface.Contains(Rect.Center - FVector(0, Rect.HalfSize.X, Rect.HalfSize.Y)));
 				for (int32 Other = 0; Other < Index; ++Other)
 				{
 					const auto Prior = FCityPaletteModel::ButtonRect(Page, Other, Entries[Other].Action, bHand);
-					TestTrue(FString::Printf(TEXT("Independent actions have disjoint hit targets: page=%d hand=%d index=%d other=%d"),
-					                         static_cast<int32>(Page), bHand, Index, Other),
-					         FMath::Abs(Rect.Center.Y - Prior.Center.Y) > Rect.HalfSize.X + Prior.HalfSize.X ||
-					             FMath::Abs(Rect.Center.Z - Prior.Center.Z) > Rect.HalfSize.Y + Prior.HalfSize.Y);
+					TestTrue(
+					    FString::Printf(
+					        TEXT("Independent actions have disjoint hit targets: page=%d hand=%d index=%d other=%d"),
+					        static_cast<int32>(Page), bHand, Index, Other),
+					    FMath::Abs(Rect.Center.Y - Prior.Center.Y) > Rect.HalfSize.X + Prior.HalfSize.X ||
+					        FMath::Abs(Rect.Center.Z - Prior.Center.Z) > Rect.HalfSize.Y + Prior.HalfSize.Y);
 				}
 				if (!bHand && !FCityPaletteModel::IsEntryPage(Page) && Index < FCityPaletteModel::BarEntryCount)
 				{
@@ -259,4 +263,73 @@ bool FCityDrawerInteractionTest::RunTest(const FString& Parameters)
 	return true;
 }
 
+IMPLEMENT_SIMPLE_AUTOMATION_TEST(FCityBuildMenuOrganizationTest, "CitySim.Desktop.BuildMenuOrganization",
+                                 EAutomationTestFlags::EditorContext | EAutomationTestFlags::EngineFilter)
+bool FCityBuildMenuOrganizationTest::RunTest(const FString& Parameters)
+{
+	const auto Build = FCityPaletteModel::Entries(ECityPalettePage::Build);
+	const TArray<ECityPaletteAction> Order = {ECityPaletteAction::OpenRoads,
+	    ECityPaletteAction::OpenPowerFacilities, ECityPaletteAction::OpenWaterFacilities,
+	    ECityPaletteAction::SelectPolice, ECityPaletteAction::SelectFire, ECityPaletteAction::OpenParks,
+	    ECityPaletteAction::OpenEducationFacilities, ECityPaletteAction::SelectHospital,
+	    ECityPaletteAction::OpenWasteFacilities, ECityPaletteAction::OpenTechnologyFacilities,
+	    ECityPaletteAction::Back};
+	TestEqual(TEXT("Build contains the objective sequence and Back"), Build.Num(), Order.Num());
+	for (int32 I = 0; I < FMath::Min(Build.Num(), Order.Num()); ++I)
+		TestEqual(TEXT("Build follows the player objective sequence"), Build[I].Action, Order[I]);
+	const auto Waste = FCityPaletteModel::Entries(ECityPalettePage::WasteFacilities);
+	TestEqual(TEXT("Waste construction has two facilities and Back"), Waste.Num(), 3);
+	for (const auto& Entry : Waste)
+		TestTrue(TEXT("Waste construction has no diagnostic actions"),
+		    Entry.Action == ECityPaletteAction::SelectWasteDepot || Entry.Action == ECityPaletteAction::SelectRecycling ||
+		    Entry.Action == ECityPaletteAction::Back);
+	TestTrue(TEXT("Waste overlay remains discoverable in Overlays"),
+	    FCityPaletteModel::Entries(ECityPalettePage::Overlays).ContainsByPredicate(
+	        [](const auto& E) { return E.Action == ECityPaletteAction::OverlayWaste; }));
+	TestTrue(TEXT("Waste history remains discoverable in Reports"),
+	    FCityPaletteModel::Entries(ECityPalettePage::Reports).ContainsByPredicate(
+	        [](const auto& E) { return E.Action == ECityPaletteAction::ReportWaste; }));
+	// Check the affected surfaces without making unrelated City/Settings layout a gate for this slice.
+	for (const bool bHand : {false, true})
+		for (const auto Page : {ECityPalettePage::Build, ECityPalettePage::Roads, ECityPalettePage::PowerFacilities,
+		    ECityPalettePage::WaterFacilities, ECityPalettePage::EducationFacilities, ECityPalettePage::Parks,
+		    ECityPalettePage::WasteFacilities, ECityPalettePage::TechnologyFacilities,
+		    ECityPalettePage::Overlays, ECityPalettePage::Reports})
+		{
+			const auto Entries = FCityPaletteModel::SurfaceEntries(Page, bHand);
+			const auto Surface = FCityPaletteModel::SurfaceRect(Page, bHand);
+			TestTrue(TEXT("Affected menu fits component pool"), Entries.Num() <= FCityPaletteModel::MaximumEntryCount);
+			for (int32 I = 0; I < Entries.Num(); ++I)
+			{
+				const auto Rect = FCityPaletteModel::ButtonRect(Page, I, Entries[I].Action, bHand);
+				TestTrue(TEXT("Affected targets fit their surface"),
+				    Surface.Contains(Rect.Center + FVector(0, Rect.HalfSize.X, Rect.HalfSize.Y)) &&
+				    Surface.Contains(Rect.Center - FVector(0, Rect.HalfSize.X, Rect.HalfSize.Y)));
+				for (int32 J = 0; J < I; ++J)
+				{
+					const auto Other = FCityPaletteModel::ButtonRect(Page, J, Entries[J].Action, bHand);
+					TestTrue(TEXT("Affected targets do not overlap"),
+					    FMath::Abs(Rect.Center.Y - Other.Center.Y) > Rect.HalfSize.X + Other.HalfSize.X ||
+					    FMath::Abs(Rect.Center.Z - Other.Center.Z) > Rect.HalfSize.Y + Other.HalfSize.Y);
+				}
+			}
+		}
+	for (const auto Page : {ECityPalettePage::Build, ECityPalettePage::Roads, ECityPalettePage::PowerFacilities,
+	    ECityPalettePage::WaterFacilities, ECityPalettePage::EducationFacilities, ECityPalettePage::Parks,
+	    ECityPalettePage::WasteFacilities, ECityPalettePage::TechnologyFacilities})
+	{
+		TSet<FName> Symbols;
+		for (const auto& Entry : FCityPaletteModel::Entries(Page))
+		{
+			if (FCityPaletteModel::ConstructionDefinition(Entry.Action).IsNone() && Page != ECityPalettePage::Roads)
+				continue;
+			if (Entry.Action == ECityPaletteAction::Back) continue;
+			const FName Symbol = UCityDesktopIcon::ForAction(static_cast<int32>(Entry.Action));
+			TestFalse(TEXT("Construction choices have pictograms"), Symbol.IsNone());
+			TestFalse(TEXT("Choices within a construction menu have distinct pictograms"), Symbols.Contains(Symbol));
+			Symbols.Add(Symbol);
+		}
+	}
+	return true;
+}
 #endif

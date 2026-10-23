@@ -250,6 +250,9 @@ bool FCityVisibleTrafficTest::RunTest(const FString& Parameters)
 	          (8.9 - CityRoadPresentation::SidewalkWidth(TEXT("LocalRoad")) * .25) * CityBoardPicking::LogicalCellSizeCm);
 	FTransform Initial;
 	Board->TrafficVehicleInstances->GetInstanceTransform(0, Initial);
+	TestTrue(TEXT("Refined ground-pivot tires meet the sampled road surface"),
+	    FMath::IsNearlyEqual(Initial.GetLocation().Z,
+	        Board->GetRoadProfileHeight(Initial.GetLocation().X / 800., Initial.GetLocation().Y / 800.) + 4., .1));
 	Simulation->PreviousTraffic = Simulation->Traffic.GetSnapshot();
 	Simulation->Traffic.AdvanceOneStep(Simulation->RoadNetworkSnapshot, 1);
 	Simulation->PreviousTraffic = Simulation->Traffic.GetSnapshot();

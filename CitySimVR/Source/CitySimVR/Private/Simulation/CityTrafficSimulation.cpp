@@ -1,4 +1,5 @@
 #include "Simulation/CityTrafficSimulation.h"
+#include "Simulation/CityPedestrianPaths.h"
 
 namespace
 {
@@ -119,6 +120,7 @@ bool FCityTrafficSimulation::RestoreState(const FCityTrafficSnapshot& State,
 		FCityTrafficSimulation Empty;
 		if (Departure.SourceId == 0 || Departure.bCompleted || Departure.bYielding ||
 		    Departure.RouteLegIndex != 0 || Departure.DistanceUnits != Departure.StartDistanceUnits ||
+		    Departure.WalkDistanceUnits != 0 ||
 		    Departure.SpeedUnitsPerStep != 0 || Departure.CompletedStep != 0 ||
 		    Departure.DepartureRequestedStep < 0 || Departure.DepartureRequestedStep > State.FixedStepId ||
 		    WaitingIds.Contains(Departure.Id) ||
@@ -293,9 +295,41 @@ bool FCityTrafficSimulation::AddVehicle(const FCityTrafficVehicleState& Vehicle,
 			*OutError = TEXT("Traffic speed or completed-route position is invalid");
 		return false;
 	}
+	if (!Vehicle.WalkPath.IsEmpty())
+	{
+		if (Vehicle.WalkPath.Num() > 32768) { if (OutError) *OutError = TEXT("Pedestrian path too long"); return false; }
+		for (const auto& P : Vehicle.WalkPath)
+			if (P.X < 0 || P.Y < 0 || P.X > 1000000 || P.Y > 1000000 || P.Z < 0 || P.Z > 1)
+			{ if (OutError) *OutError = TEXT("Invalid pedestrian path coordinate"); return false; }
+		TSet<FCityCellCoord> Walkable;
+		for (const auto& E : Network.Edges) if (EnumHasAnyFlags(E.Access, ECityRoadAccess::Pedestrian))
+			for (const auto& C : E.Cells) Walkable.Add(C);
+		for (int32 I = 1; I < Vehicle.WalkPath.Num(); ++I)
+		{
+			const auto A = Vehicle.WalkPath[I-1], B = Vehicle.WalkPath[I];
+			bool LevelJoin = A.Z == B.Z;
+			if (!LevelJoin)
+			{
+				const FCityCellCoord CA(A.X/1000,A.Y/1000,A.Z), CB(B.X/1000,B.Y/1000,B.Z);
+				for (const auto& E : Network.Edges) if (EnumHasAnyFlags(E.Access, ECityRoadAccess::Pedestrian))
+					for (int32 J=1; J<E.Cells.Num(); ++J)
+						LevelJoin |= (E.Cells[J-1]==CA && E.Cells[J]==CB)||(E.Cells[J-1]==CB && E.Cells[J]==CA);
+			}
+			if (FMath::Abs(A.X-B.X) > 2000 || FMath::Abs(A.Y-B.Y) > 2000 || !LevelJoin ||
+			    (I < Vehicle.WalkPath.Num()-1 && !Walkable.Contains(FCityCellCoord(B.X/1000,B.Y/1000,B.Z))))
+			{ if (OutError) *OutError = TEXT("Pedestrian path leaves its walkable road level"); return false; }
+		}
+		const int32 Total = CityPedestrianPaths::Length(Vehicle.WalkPath);
+		if (Vehicle.VehicleType != ECityTripVehicleType::Walk || Vehicle.WalkPath.Num() < 2 ||
+		    Vehicle.WalkDistanceUnits < 0 || Vehicle.WalkDistanceUnits > Total ||
+		    Vehicle.bCompleted != (Vehicle.WalkDistanceUnits == Total))
+		{ if (OutError) *OutError = TEXT("Invalid pedestrian path progress"); return false; }
+		if (!Vehicle.bCompleted && !CityPedestrianPaths::HasRoom(Vehicle, Vehicle.WalkDistanceUnits, Snapshot.Vehicles))
+		{ if (OutError) *OutError = TEXT("Pedestrian departure is occupied"); return false; }
+	}
 	for (const FCityTrafficVehicleState& Existing : Snapshot.Vehicles)
 	{
-		if (Vehicle.bCompleted || Existing.bCompleted ||
+		if (!Vehicle.WalkPath.IsEmpty() || !Existing.WalkPath.IsEmpty() || Vehicle.bCompleted || Existing.bCompleted ||
 		    (Vehicle.VehicleType == ECityTripVehicleType::Walk && Vehicle.PedestrianTrack != Existing.PedestrianTrack) ||
 		    (Vehicle.VehicleType == ECityTripVehicleType::Walk) !=
 		        (Existing.VehicleType == ECityTripVehicleType::Walk))
@@ -359,7 +393,7 @@ void FCityTrafficSimulation::AdvanceOneStep(const FCityRoadNetworkSnapshot& Netw
 	};
 	for (auto& V : Snapshot.Vehicles)
 	{
-		if (V.bCompleted || V.Route.IsEmpty()) continue;
+		if (V.bCompleted || V.Route.IsEmpty() || !V.WalkPath.IsEmpty()) continue;
 		auto& Leg = V.Route[V.RouteLegIndex];
 		if (V.VehicleType == ECityTripVehicleType::Walk)
 		{
@@ -504,6 +538,27 @@ void FCityTrafficSimulation::AdvanceOneStep(const FCityRoadNetworkSnapshot& Netw
 	{
 		if (Vehicle.bCompleted || !Vehicle.Route.IsValidIndex(Vehicle.RouteLegIndex))
 			continue;
+		if (!Vehicle.WalkPath.IsEmpty())
+		{
+			const int32 Total = CityPedestrianPaths::Length(Vehicle.WalkPath);
+			int32 Move = FMath::Min(500, Total - Vehicle.WalkDistanceUnits);
+			// Small swept steps preserve same-track following even at a merging sidewalk.
+			int32 Accepted = 0;
+			for (int32 D = FMath::Min(50, Move); D <= Move && D > 0; D = FMath::Min(D + 50, Move))
+			{
+				if (!CityPedestrianPaths::HasRoom(Vehicle, Vehicle.WalkDistanceUnits + D, Snapshot.Vehicles)) break;
+				Accepted = D; if (D == Move) break;
+			}
+			Vehicle.WalkDistanceUnits += Accepted; Vehicle.SpeedUnitsPerStep = Accepted;
+			CityPedestrianPaths::UpdateRoadPosition(Vehicle, Network);
+			if (Vehicle.WalkDistanceUnits == Total)
+			{
+				Vehicle.RouteLegIndex = Vehicle.Route.Num() - 1;
+				Vehicle.DistanceUnits = Vehicle.EndDistanceUnits;
+				Vehicle.bCompleted = true; Vehicle.CompletedStep = FixedStepId;
+			}
+			continue;
+		}
 		const FCityTrafficRouteLeg& Leg = Vehicle.Route[Vehicle.RouteLegIndex];
 		if (!ValidateLeg(Leg, Network))
 		{
@@ -728,7 +783,7 @@ void FCityTrafficSimulation::AdmitDepartures(const FCityRoadNetworkSnapshot& Net
 				const auto& Other = Snapshot.WaitingDepartures[Older];
 				const auto& A = Trial.Route[0]; const auto& B = Other.Route[0];
 				const int32 D = Other.DistanceUnits - Trial.DistanceUnits;
-				if (A.EdgeId == B.EdgeId && A.bReverse == B.bReverse && A.LaneIndex == B.LaneIndex &&
+				if (Trial.WalkPath.IsEmpty() && Other.WalkPath.IsEmpty() && A.EdgeId == B.EdgeId && A.bReverse == B.bReverse && A.LaneIndex == B.LaneIndex &&
 				    (Trial.VehicleType == ECityTripVehicleType::Walk) == (Other.VehicleType == ECityTripVehicleType::Walk) &&
 				    (Trial.VehicleType != ECityTripVehicleType::Walk || Trial.PedestrianTrack == Other.PedestrianTrack) &&
 				    FMath::Abs(D) < (D >= 0 ? Other.LengthUnits : Trial.LengthUnits) + FollowingGap(Trial)) OlderSlot = true;

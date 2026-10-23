@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "kind": "blender",
+  "repository": "CitySimVR/citysim",
+  "asset_issue": 214,
+  "approved_version": 2,
+  "approval_manifest": "approval.json",
+  "approval_sha256": "341d4509f502c406030d4cd3cfc7e991c55973fe1497813abaebdb347c59267f",
+  "source_context_sha": "322ad23f7d717783f6073245c579cc986721e9c7",
+  "artifacts": [
+    {
+      "name": "asset.blend",
+      "bytes": 98654,
+      "sha256": "8f223c66203ca0d775b357cf3156a4eb174a2094cfcfef27b00857d393a90bbc"
+    },
+    {
+      "name": "asset.fbx",
+      "bytes": 20044,
+      "sha256": "fa1e36500ef103c0d630e83d1d2581de12b6e1208fb43bbea6df5fada49d3190"
+    },
+    {
+      "name": "manifest.json",
+      "bytes": 811,
+      "sha256": "a5ba9aaf6a71975267174e2a44782764b3d3bf5651ca767ec3d2033abd8830cb"
+    },
+    {
+      "name": "preview.png",
+      "bytes": 264846,
+      "sha256": "48f18f70d103e84051db8399755ad2177506bcada905bf6be627496cccbe5912"
+    },
+    {
+      "name": "scale_1m.png",
+      "bytes": 283011,
+      "sha256": "292d692e9413d25adf7e5394ee3fce43dffc10721d8c26dca5d4563f3249ef7a"
+    },
+    {
+      "name": "side.png",
+      "bytes": 251685,
+      "sha256": "8e0876c1ceec52ce2d9a0819dcf24d1daf071de3376fab1e85072ce86ac01c47"
+    },
+    {
+      "name": "top.png",
+      "bytes": 285475,
+      "sha256": "e2805761d5ef4040f987811c964b4f0c1a59ccc6c56497c508ec194956de9582"
+    },
+    {
+      "name": "validation.json",
+      "bytes": 1260,
+      "sha256": "3179b45a212b4d8a917b6945f6475238693cc343216f2b56989c939375edc69a"
+    },
+    {
+      "name": "source-bundle.zip",
+      "bytes": 2231686,
+      "sha256": "d18dfafb661774e2579d1a9b988a45545a8d88a6d2d992008dc0193c0f83dc5d"
+    },
+    {
+      "name": "approval.json",
+      "bytes": 2053,
+      "sha256": "341d4509f502c406030d4cd3cfc7e991c55973fe1497813abaebdb347c59267f"
+    }
+  ],
+  "unreal": {
+    "status": "not_imported",
+    "destination": "choose in the separate integration issue",
+    "role": "Blender source and exports; validate importer contract"
+  }
+}

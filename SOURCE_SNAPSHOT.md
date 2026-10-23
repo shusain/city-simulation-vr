@@ -29,3 +29,20 @@ This snapshot does not retire old installed APKs or revoke the historical Androi
 File Server token. Current tracked source disables AFS and contains no token.
 No public source upload, game release or device deployment is implied by preparing
 this snapshot. Review/check receipts are retained separately with issue #286.
+
+## October 23, 2026 synchronization
+
+Updated from the original private baseline `c54e01c7fccba711271f3b68c025c7ba4f00a804`
+to reviewed Gitea main `3308b25efd7a3f0c8ee02d7157a984de3f07ae89` under issue #370.
+The range is transferred as a reviewed squash patch, without adding private
+commits as public ancestors. Game source, runtime assets, authoring sources and
+tools match that target. Public README/contributor/security/sync/history-guard
+documents and the public changelog entries are retained. This target is the
+private baseline for the next outgoing synchronization.
+
+The separate GitHub `main` playtest branch and release tags/assets are preserved.
+This source sync does not create a game package, alter player files or deploy to
+a headset. Existing target validation includes Drone558 warnings-as-errors
+Editor, ten exact functional cases and two native UI cases; release368 retains
+Windows555 and Quest557 package evidence. Public commit mapping, scans, LFS and
+fresh-clone checks are recorded on Gitea #370.

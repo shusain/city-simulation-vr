@@ -1,0 +1,39 @@
+{
+  "mesh_geometry_sha256": "63d6c35f71f37886ca9965c7d89d8bb1550ccd2ab936ff51711db29578d7cd45",
+  "dimensions_m": [
+    0.699999988079071,
+    0.3499999940395355,
+    0.10000000149011612
+  ],
+  "triangles": 124,
+  "material_slots": [
+    "Kelp"
+  ],
+  "roundtrip_pass": true,
+  "blender_version": "5.1.1",
+  "render_engine": "CYCLES",
+  "render_device": "CPU",
+  "reference_sha256": {},
+  "revision_checks": {
+    "geometry_and_uv_unchanged": true,
+    "closed": true,
+    "triangles": 124,
+    "dimensions_m": [
+      0.699999988079071,
+      0.3499999940395355,
+      0.10000000149011612
+    ],
+    "pivot": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "material_slots": [
+      "Kelp"
+    ],
+    "presentation_ground_exported": false,
+    "orthographic_view_width_m": 1.0,
+    "exposure": -0.6,
+    "human_review": "pending"
+  }
+}

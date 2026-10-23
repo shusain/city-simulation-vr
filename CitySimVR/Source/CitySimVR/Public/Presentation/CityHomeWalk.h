@@ -6,6 +6,7 @@ class FCityTerrainHeightfield;
 struct CITYSIMVR_API FCityHomeWalk
 {
 	TArray<FVector> Vertices, Normals;
+	TArray<FVector> Centerline; // Door-to-public walking trajectory from this same geometry.
 	TArray<int32> Triangles;
 	TArray<FVector2D> UVs;
 	int32 StepCount = 0;

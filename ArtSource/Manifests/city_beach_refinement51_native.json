@@ -1,0 +1,332 @@
+{
+  "issue": 51,
+  "start_issue": 217,
+  "preparation_build": 418,
+  "submitted": "8aa5317ae9bd1dac4eadcafb0be1a10b47e2af74",
+  "import_receipt_sha256": "dbfc83c5a669496365c1a59021e63c76a1cbbea6f160166e61ce98d9b26fdd4e",
+  "native_import": {
+    "result": "passed",
+    "assets": [
+      {
+        "issue": 214,
+        "mesh": "/Game/CitySim/Art/Beach/Meshes/SM_Scenery_Seaweed_A",
+        "triangles": 216,
+        "slots": [
+          "Kelp"
+        ],
+        "dimensions_cm": [
+          85.0,
+          44.99999809265137,
+          12.0
+        ],
+        "ground_min_cm": 0.0,
+        "uv_channels": 1,
+        "import_sha256": "fa1e36500ef103c0d630e83d1d2581de12b6e1208fb43bbea6df5fada49d3190"
+      },
+      {
+        "issue": 203,
+        "mesh": "/Game/CitySim/Art/Beach/Meshes/SM_Scenery_PebbleSmall_A",
+        "triangles": 46,
+        "slots": [
+          "Pebble"
+        ],
+        "dimensions_cm": [
+          12.0,
+          9.0,
+          3.5
+        ],
+        "ground_min_cm": 0.0,
+        "uv_channels": 1,
+        "import_sha256": "7ae93678906c45d169923d5e4d8ff29a5b4e90a4b645ce8557cf3ee9ee1c1333"
+      },
+      {
+        "issue": 204,
+        "mesh": "/Game/CitySim/Art/Beach/Meshes/SM_Scenery_PebbleMedium_A",
+        "triangles": 60,
+        "slots": [
+          "Pebble"
+        ],
+        "dimensions_cm": [
+          18.0,
+          12.999999523162842,
+          7.0
+        ],
+        "ground_min_cm": 0.0,
+        "uv_channels": 1,
+        "import_sha256": "dd48534c5ec9ebd9041fec3baecd46bf7ef7cd74655544f98db7ab091b454428"
+      },
+      {
+        "issue": 213,
+        "mesh": "/Game/CitySim/Art/Beach/Meshes/SM_Scenery_PebbleLarge_A",
+        "triangles": 58,
+        "slots": [
+          "Pebble"
+        ],
+        "dimensions_cm": [
+          24.0,
+          18.000000953674316,
+          10.0
+        ],
+        "ground_min_cm": 0.0,
+        "uv_channels": 1,
+        "import_sha256": "c2406c5b802f8f2332d04971489e3c4f7ac0f2549804eaaac4a06dd90ef56bcd"
+      },
+      {
+        "issue": 207,
+        "mesh": "/Game/CitySim/Art/Beach/Meshes/SM_Scenery_Umbrella_A",
+        "triangles": 468,
+        "slots": [
+          "Fabric",
+          "Frame"
+        ],
+        "dimensions_cm": [
+          220.0,
+          220.0,
+          220.0
+        ],
+        "ground_min_cm": 0.0,
+        "uv_channels": 1,
+        "import_sha256": "1c3123ceccd5328b8bebd58ef68b30981ff22543c34262f2e958b6f617aa9a40"
+      },
+      {
+        "issue": 208,
+        "mesh": "/Game/CitySim/Art/Beach/Meshes/SM_Scenery_Lounger_A",
+        "triangles": 332,
+        "slots": [
+          "Frame",
+          "Fabric"
+        ],
+        "dimensions_cm": [
+          67.40000534057617,
+          188.90453338623047,
+          83.52731323242188
+        ],
+        "ground_min_cm": 0.0,
+        "uv_channels": 1,
+        "import_sha256": "2bf1d749eaeaaf6e08dff408e14915be822e8205348eb3733cf18e5c4a62a55e"
+      },
+      {
+        "issue": 209,
+        "mesh": "/Game/CitySim/Art/Beach/Meshes/SM_Scenery_Chair_A",
+        "triangles": 208,
+        "slots": [
+          "Frame",
+          "Fabric"
+        ],
+        "dimensions_cm": [
+          70.00000762939453,
+          62.037519454956055,
+          88.70148468017578
+        ],
+        "ground_min_cm": 0.0,
+        "uv_channels": 1,
+        "import_sha256": "d4d22fa01cbbdc2ce5563e1b458398890f77777327250d39c4d5e23b25867d46"
+      },
+      {
+        "issue": 210,
+        "mesh": "/Game/CitySim/Art/Beach/Meshes/SM_Scenery_Mat_A",
+        "triangles": 164,
+        "slots": [
+          "Fabric"
+        ],
+        "dimensions_cm": [
+          75.00001525878906,
+          179.96713256835938,
+          11.985384941101074
+        ],
+        "ground_min_cm": 0.0,
+        "uv_channels": 1,
+        "import_sha256": "8b72d485309fc2ceea1f4a71fdf9f88982fe43970815c8cebe467169eb2e8bbf"
+      },
+      {
+        "issue": 211,
+        "mesh": "/Game/CitySim/Art/Beach/Meshes/SM_Scenery_Cooler_A",
+        "triangles": 236,
+        "slots": [
+          "Body",
+          "Trim"
+        ],
+        "dimensions_cm": [
+          55.000003814697266,
+          38.20000457763672,
+          42.0
+        ],
+        "ground_min_cm": 0.0,
+        "uv_channels": 1,
+        "import_sha256": "2298db20343e4b3d45f93ca476fe40ebb555acb41560ef225b6563a5e5d414d3"
+      },
+      {
+        "issue": 212,
+        "mesh": "/Game/CitySim/Art/Beach/Meshes/SM_Scenery_Tote_A",
+        "triangles": 244,
+        "slots": [
+          "Fabric"
+        ],
+        "dimensions_cm": [
+          45.0,
+          22.0000057220459,
+          47.78059387207031
+        ],
+        "ground_min_cm": 0.0,
+        "uv_channels": 1,
+        "import_sha256": "7c30507be24fd636ec11a4bb87358e781e7539129132fa560dd88cdd2e2b7f10"
+      }
+    ],
+    "files": [
+      "CitySimVR/Content/CitySim/Art/Beach/Materials/M_BeachPanelColor.uasset",
+      "CitySimVR/Content/CitySim/Art/Beach/Materials/MI_BeachSeaweed_Kelp.uasset",
+      "CitySimVR/Content/CitySim/Art/Beach/Meshes/SM_Scenery_Seaweed_A.uasset",
+      "CitySimVR/Content/CitySim/Art/Beach/Materials/MI_BeachPebbleSmall_Pebble.uasset",
+      "CitySimVR/Content/CitySim/Art/Beach/Meshes/SM_Scenery_PebbleSmall_A.uasset",
+      "CitySimVR/Content/CitySim/Art/Beach/Materials/MI_BeachPebbleMedium_Pebble.uasset",
+      "CitySimVR/Content/CitySim/Art/Beach/Meshes/SM_Scenery_PebbleMedium_A.uasset",
+      "CitySimVR/Content/CitySim/Art/Beach/Materials/MI_BeachPebbleLarge_Pebble.uasset",
+      "CitySimVR/Content/CitySim/Art/Beach/Meshes/SM_Scenery_PebbleLarge_A.uasset",
+      "CitySimVR/Content/CitySim/Art/Beach/Materials/MI_BeachUmbrella_Fabric.uasset",
+      "CitySimVR/Content/CitySim/Art/Beach/Materials/MI_BeachUmbrella_Frame.uasset",
+      "CitySimVR/Content/CitySim/Art/Beach/Meshes/SM_Scenery_Umbrella_A.uasset",
+      "CitySimVR/Content/CitySim/Art/Beach/Materials/MI_BeachLounger_Frame.uasset",
+      "CitySimVR/Content/CitySim/Art/Beach/Materials/MI_BeachLounger_Fabric.uasset",
+      "CitySimVR/Content/CitySim/Art/Beach/Meshes/SM_Scenery_Lounger_A.uasset",
+      "CitySimVR/Content/CitySim/Art/Beach/Materials/MI_BeachChair_Frame.uasset",
+      "CitySimVR/Content/CitySim/Art/Beach/Materials/MI_BeachChair_Fabric.uasset",
+      "CitySimVR/Content/CitySim/Art/Beach/Meshes/SM_Scenery_Chair_A.uasset",
+      "CitySimVR/Content/CitySim/Art/Beach/Materials/MI_BeachMat_Fabric.uasset",
+      "CitySimVR/Content/CitySim/Art/Beach/Meshes/SM_Scenery_Mat_A.uasset",
+      "CitySimVR/Content/CitySim/Art/Beach/Materials/MI_BeachCooler_Body.uasset",
+      "CitySimVR/Content/CitySim/Art/Beach/Materials/MI_BeachCooler_Trim.uasset",
+      "CitySimVR/Content/CitySim/Art/Beach/Meshes/SM_Scenery_Cooler_A.uasset",
+      "CitySimVR/Content/CitySim/Art/Beach/Materials/MI_BeachTote_Fabric.uasset",
+      "CitySimVR/Content/CitySim/Art/Beach/Meshes/SM_Scenery_Tote_A.uasset"
+    ],
+    "input_manifest_sha256": "dd9faca5cf0bcf45c0f45ceb9f3cc3830c94616921b5d566a9aa68849a3923dd"
+  },
+  "files": [
+    {
+      "file": "CitySimVR/Content/CitySim/Art/Beach/Materials/MI_BeachChair_Fabric.uasset",
+      "bytes": 4422,
+      "sha256": "284beb85405a06db3b86c998fd4ddd8b9fd250597a9189f3ef9ab6d84f56ca7a"
+    },
+    {
+      "file": "CitySimVR/Content/CitySim/Art/Beach/Materials/MI_BeachChair_Frame.uasset",
+      "bytes": 4417,
+      "sha256": "f054d641826488eb3ea434bfa79fbe6a457d80f3defe0c3427d50079891c9b1e"
+    },
+    {
+      "file": "CitySimVR/Content/CitySim/Art/Beach/Materials/MI_BeachCooler_Body.uasset",
+      "bytes": 4417,
+      "sha256": "e45eb4d99f85f4d5a2aa80d12e9452575173df14afe16f4b3382c4917eeb391f"
+    },
+    {
+      "file": "CitySimVR/Content/CitySim/Art/Beach/Materials/MI_BeachCooler_Trim.uasset",
+      "bytes": 4417,
+      "sha256": "350b1653d49a9f455545db6f3d598212571cbde0bae6f502dea5f5ba8f305932"
+    },
+    {
+      "file": "CitySimVR/Content/CitySim/Art/Beach/Materials/MI_BeachLounger_Fabric.uasset",
+      "bytes": 4432,
+      "sha256": "f2c3288e309d5ecda691243204e58051bacb367e473a2518fc6686d6ff0144aa"
+    },
+    {
+      "file": "CitySimVR/Content/CitySim/Art/Beach/Materials/MI_BeachLounger_Frame.uasset",
+      "bytes": 4427,
+      "sha256": "7c2eec0ce0211212b3bddd16f9c9dea273526713cd5da90ffadc9eda060228ce"
+    },
+    {
+      "file": "CitySimVR/Content/CitySim/Art/Beach/Materials/MI_BeachMat_Fabric.uasset",
+      "bytes": 4412,
+      "sha256": "ed5e8fc06930ad16639404509b4fda2c3c8611f9ddc2cc739557a3efdb56b834"
+    },
+    {
+      "file": "CitySimVR/Content/CitySim/Art/Beach/Materials/MI_BeachPebbleLarge_Pebble.uasset",
+      "bytes": 4452,
+      "sha256": "003a126dc7c03003095da01575377f5a20ea663c0498c97eef3ffe599b9a9d76"
+    },
+    {
+      "file": "CitySimVR/Content/CitySim/Art/Beach/Materials/MI_BeachPebbleMedium_Pebble.uasset",
+      "bytes": 4457,
+      "sha256": "dae8e06fe2bbec52ec27bb4df69c592d5123623cbb2a0c143e15bfcaa6fa308e"
+    },
+    {
+      "file": "CitySimVR/Content/CitySim/Art/Beach/Materials/MI_BeachPebbleSmall_Pebble.uasset",
+      "bytes": 4452,
+      "sha256": "410ee350578bd06f3b8a5bc0a62729fb5c2c425544e73de01ea182303577a01e"
+    },
+    {
+      "file": "CitySimVR/Content/CitySim/Art/Beach/Materials/MI_BeachSeaweed_Kelp.uasset",
+      "bytes": 4422,
+      "sha256": "b0587704c047e588a5614091745c1af026c39f8eb99855aa812fd8b5b151f825"
+    },
+    {
+      "file": "CitySimVR/Content/CitySim/Art/Beach/Materials/MI_BeachTote_Fabric.uasset",
+      "bytes": 4417,
+      "sha256": "1b950519148e1a31de3ec291e8ad4a19061d7d667192cdffb573aeeafe5c9b5b"
+    },
+    {
+      "file": "CitySimVR/Content/CitySim/Art/Beach/Materials/MI_BeachUmbrella_Fabric.uasset",
+      "bytes": 3520,
+      "sha256": "e955763e4b6b7b1d0959e21dd895e889d55a89900fd2a996914b19e0adca8e23"
+    },
+    {
+      "file": "CitySimVR/Content/CitySim/Art/Beach/Materials/MI_BeachUmbrella_Frame.uasset",
+      "bytes": 4432,
+      "sha256": "9680f11a4ff1d6b39853d327542ba315e7c332a309211bf4b87caf7132f57643"
+    },
+    {
+      "file": "CitySimVR/Content/CitySim/Art/Beach/Materials/M_BeachPanelColor.uasset",
+      "bytes": 6650,
+      "sha256": "82d28e5b1d395f10a4e328d43df014ec91851fa2d99b67c0731a751bf5bfeb04"
+    },
+    {
+      "file": "CitySimVR/Content/CitySim/Art/Beach/Meshes/SM_Scenery_Chair_A.uasset",
+      "bytes": 18046,
+      "sha256": "3fcf67fe3e0ed19be8a76f7ed0467bda39d7ac791f2fa3287ef806be50906fc3"
+    },
+    {
+      "file": "CitySimVR/Content/CitySim/Art/Beach/Meshes/SM_Scenery_Cooler_A.uasset",
+      "bytes": 17267,
+      "sha256": "e7776d6709171fb1b6ee09d37b6c134bca47442befd633b6ab381f192cd1c97b"
+    },
+    {
+      "file": "CitySimVR/Content/CitySim/Art/Beach/Meshes/SM_Scenery_Lounger_A.uasset",
+      "bytes": 19855,
+      "sha256": "c23a9d142026932861265975aa82ef20517d922b34fbbd4c997eaaee5843b78f"
+    },
+    {
+      "file": "CitySimVR/Content/CitySim/Art/Beach/Meshes/SM_Scenery_Mat_A.uasset",
+      "bytes": 15980,
+      "sha256": "a591e63bbb7b14749522440e891ae0a22464459eb70f616ab14f8e7ad16d2565"
+    },
+    {
+      "file": "CitySimVR/Content/CitySim/Art/Beach/Meshes/SM_Scenery_PebbleLarge_A.uasset",
+      "bytes": 14134,
+      "sha256": "96f770e2ccf0318168fd1435fbfdb1d8a0075f8dd38c5264c59420dec1e63ea0"
+    },
+    {
+      "file": "CitySimVR/Content/CitySim/Art/Beach/Meshes/SM_Scenery_PebbleMedium_A.uasset",
+      "bytes": 14157,
+      "sha256": "ab05d3787b07aebb4dadde690d65fb879fdee9893cbb1150ad95f3f2e33201c2"
+    },
+    {
+      "file": "CitySimVR/Content/CitySim/Art/Beach/Meshes/SM_Scenery_PebbleSmall_A.uasset",
+      "bytes": 13648,
+      "sha256": "912baf72248e119f8c6a0b4f0ac11df35e41570644d3baf8e8a92110f282eec2"
+    },
+    {
+      "file": "CitySimVR/Content/CitySim/Art/Beach/Meshes/SM_Scenery_Seaweed_A.uasset",
+      "bytes": 17714,
+      "sha256": "19c0806bbf71b27264d26ae0b962b0cd4f045c9185fc5a29505d4728c3f868c4"
+    },
+    {
+      "file": "CitySimVR/Content/CitySim/Art/Beach/Meshes/SM_Scenery_Tote_A.uasset",
+      "bytes": 18341,
+      "sha256": "0968db82fe40d6f46ee9375c8a69ffd92fefee7b4e5593637fb12135eb9c247a"
+    },
+    {
+      "file": "CitySimVR/Content/CitySim/Art/Beach/Meshes/SM_Scenery_Umbrella_A.uasset",
+      "bytes": 24586,
+      "sha256": "89e87700f40eeb8b538188d9136d33230f78d3532e582c2d8cdc536a8ecd77af"
+    }
+  ],
+  "validation": "Native import preparation only; final runtime/candidate evidence is recorded on #51 and PR320."
+}

@@ -140,9 +140,9 @@ const TCHAR* Units[] = {TEXT("people"),          TEXT("people"),          TEXT("
                         TEXT("people"),          TEXT("people"),          TEXT("people"),
                         TEXT("people"),          TEXT("people"),          TEXT("people"),
                         TEXT("people"),          TEXT("people"),          TEXT("people"),
-                        TEXT("dollars"),         TEXT("dollars/month"),   TEXT("dollars/month"),
-                        TEXT("dollars/month"),   TEXT("dollars/month"),   TEXT("units/month"),
-                        TEXT("units/month"),     TEXT("units/month"),     TEXT("units"),
+                        TEXT("dollars"),         TEXT("dollars"),   TEXT("dollars"),
+                        TEXT("dollars"),   TEXT("dollars"),   TEXT("units"),
+                        TEXT("units"),     TEXT("units"),     TEXT("units"),
                         TEXT("power units"),     TEXT("power units"),     TEXT("water units"),
                         TEXT("water units"),     TEXT("pollution units"), TEXT("people"),
                         TEXT("people"),          TEXT("incidents"),       TEXT("arrests"),
@@ -156,7 +156,7 @@ const TCHAR* Units[] = {TEXT("people"),          TEXT("people"),          TEXT("
                         TEXT("people"),          TEXT("people"),          TEXT("people"),
                         TEXT("people"),          TEXT("people"),          TEXT("people"),
                         TEXT("people"),          TEXT("people"),          TEXT("people"),
-                        TEXT("people"),          TEXT("people"),          TEXT("people"),TEXT("dollars"),TEXT("dollars"),TEXT("dollars/month"),TEXT("dollars/month"),TEXT("dollars/month"),TEXT("dollars/month"),TEXT("dollars/month"),TEXT("dollars/month"),TEXT("dollars/month"),TEXT("dollars/month"),TEXT("payments/month"),TEXT("programs/month")};
+                        TEXT("people"),          TEXT("people"),          TEXT("people"),TEXT("dollars"),TEXT("dollars"),TEXT("dollars"),TEXT("dollars"),TEXT("dollars"),TEXT("dollars"),TEXT("dollars"),TEXT("dollars"),TEXT("dollars"),TEXT("dollars"),TEXT("payments"),TEXT("program-days")};
 const bool Flows[] = {false, false, false, false, false, false, false, false, false, false, false,
                       false, false, true,  true,  true,  true,  true,  true,  true,  false, false,
                       false, false, false, false, false, false, false, false, false, false, false,
@@ -192,6 +192,16 @@ bool FCityReportHistory::Capture(const FCityEconomySnapshot& E, const FCityPopul
 	if (E.LastBilledMonthId <= 0 || E.LastBilledMonthId != P.LastSettledMonthId ||
 	    (!Months.IsEmpty() && E.LastBilledMonthId <= Months.Last().MonthId))
 		return false;
+	FCityReportSample Sample = Observe(E, P, S, Environment, Treasury, Crime, Health, Waste);
+	Months.Add(Sample);
+	if (Months.Num() > MaximumMonths)
+		Months.RemoveAt(0, Months.Num() - MaximumMonths);
+	return true;
+}
+FCityReportSample FCityReportHistory::Observe(const FCityEconomySnapshot& E, const FCityPopulationSnapshot& P,
+    const FCityServiceSnapshot& S, const FCityEnvironmentSnapshot& Environment, int64 Treasury,
+    const FCityCrimeSnapshot* Crime, const FCityHealthSnapshot* Health, const FCityWasteSnapshot* Waste)
+{
 	FCityReportSample Sample;
 	Sample.MonthId = E.LastBilledMonthId;
 	const auto Set = [&Sample](ECityReportMetric M, int64 V) { Sample.Values[static_cast<int32>(M)] = V; };
@@ -310,11 +320,65 @@ bool FCityReportHistory::Capture(const FCityEconomySnapshot& E, const FCityPopul
 		Set(ECityReportMetric::WasteRecycled, Waste->Recycled);
 		Set(ECityReportMetric::WasteOverflow, Waste->Overflow);
 	}
-	Months.Add(Sample);
-	if (Months.Num() > MaximumMonths)
-		Months.RemoveAt(0, Months.Num() - MaximumMonths);
-	return true;
+	return Sample;
 }
+bool FCityReportHistory::ObserveHourly(const FCityEconomySnapshot& E, const FCityPopulationSnapshot& P,
+    const FCityServiceSnapshot& S, const FCityEnvironmentSnapshot& Environment, const int64 Treasury,
+    const int32 StepsPerDay, const FCityCrimeSnapshot* Crime, const FCityHealthSnapshot* Health,
+    const FCityWasteSnapshot* Waste)
+{
+    const int64 Hour = FCityCalendar::HourIndex(E.FixedStepId, StepsPerDay);
+    const auto Prime = [&]() {
+        bHourlyPrimed = true; HourlyLastStep = E.FixedStepId; HourlyLastHour = Hour;
+        HourlyLastDay = E.LastBilledMonthId; HourlyLastPurchases = P.TotalArrivalPurchases;
+        HourlyLastExports = P.ExportsThisMonth;
+    };
+    if (!bHourlyPrimed) { Prime(); return false; }
+    if (E.FixedStepId <= HourlyLastStep || Hour <= HourlyLastHour) return false;
+    // Never manufacture missed hours after a clock discontinuity or late observation start.
+    if (Hour != HourlyLastHour + 1 || E.FixedStepId != FCityCalendar::HourEndStep(Hour, StepsPerDay))
+    { Prime(); return false; }
+    auto Sample = Observe(E, P, S, Environment, Treasury, Crime, Health, Waste);
+    Sample.MonthId = Hour; Sample.ObservedDays = 0;
+    Sample.HourStartStep = HourlyLastStep; Sample.HourEndStep = E.FixedStepId;
+    const bool Settled = E.LastBilledMonthId > HourlyLastDay;
+    for (int32 I = 0; I < static_cast<int32>(ECityReportMetric::Count); ++I)
+        if (Flows[I] && !Settled) Sample.Values[I] = 0;
+    Sample.Values[static_cast<int32>(ECityReportMetric::GoodsPurchased)] =
+        FMath::Max<int64>(0, P.TotalArrivalPurchases - HourlyLastPurchases);
+    Sample.Values[static_cast<int32>(ECityReportMetric::GoodsExported)] = FMath::Max<int64>(0,
+        (Settled ? P.LastMonthExports : 0) + P.ExportsThisMonth - HourlyLastExports);
+    Hours.Add(Sample);
+    if (Hours.Num() > MaximumHours) Hours.RemoveAt(0, Hours.Num() - MaximumHours);
+    Prime();
+    return true;
+}
+
+bool FCityReportHistory::ValidateHourly(const int64 MaximumStep, const int32 StepsPerDay, FString& Error) const
+{
+    if (MaximumStep < 0 || MaximumStep > MAX_int64 / 48 || StepsPerDay < 24 ||
+        Hours.Num() > MaximumHours || HourlyLastStep < 0 || HourlyLastStep > MaximumStep ||
+        HourlyLastHour != FCityCalendar::HourIndex(HourlyLastStep, StepsPerDay) ||
+        HourlyLastDay != FCityCalendar::DayIndex(HourlyLastStep, StepsPerDay) ||
+        HourlyLastPurchases < 0 || HourlyLastExports < 0 ||
+        (!bHourlyPrimed && (!Hours.IsEmpty() || HourlyLastStep || HourlyLastPurchases || HourlyLastExports)))
+    { Error = TEXT("Invalid hourly report observation baseline"); return false; }
+    int64 Previous = 0;
+    for (const auto& H : Hours)
+    {
+        if (H.MonthId <= Previous || H.MonthId > HourlyLastHour || H.HourStartStep < FCityCalendar::HourEndStep(H.MonthId - 1, StepsPerDay) ||
+            H.HourEndStep != FCityCalendar::HourEndStep(H.MonthId, StepsPerDay) ||
+            H.HourStartStep >= H.HourEndStep || H.HourEndStep > HourlyLastStep)
+        { Error = TEXT("Invalid hourly report window"); return false; }
+        for (int32 I = 0; I < static_cast<int32>(ECityReportMetric::Count); ++I)
+            if ((I != static_cast<int32>(ECityReportMetric::Treasury) && H.Values[I] < 0) ||
+                H.Values[I] > MAX_int64 / (MaximumMonths + 1))
+            { Error = TEXT("Invalid hourly report metric"); return false; }
+        Previous = H.MonthId;
+    }
+    return true;
+}
+
 bool FCityReportHistory::Validate(int64 SettledMonth, FString& Error) const
 {
 	if (Months.Num() > MaximumMonths)
@@ -378,12 +442,53 @@ bool FCityReportHistory::Validate(int64 SettledMonth, FString& Error) const
 	}
 	return true;
 }
+const TCHAR* FCityReportHistory::PeriodName(const ECityReportPeriod Period)
+{
+    switch (Period)
+    {
+    case ECityReportPeriod::Hourly: return TEXT("Hour");
+    case ECityReportPeriod::Daily: return TEXT("Day");
+    case ECityReportPeriod::Weekly: return TEXT("Week");
+    case ECityReportPeriod::Annual: return TEXT("Year");
+    default: return TEXT("Month");
+    }
+}
+int32 FCityReportHistory::PeriodDays(const ECityReportPeriod Period)
+{
+    switch (Period)
+    {
+    case ECityReportPeriod::Hourly: return 0;
+    case ECityReportPeriod::Daily: return 1;
+    case ECityReportPeriod::Weekly: return FCityCalendar::DaysPerWeek;
+    case ECityReportPeriod::Annual: return FCityCalendar::DaysPerMonth * FCityCalendar::MonthsPerYear;
+    default: return FCityCalendar::DaysPerMonth;
+    }
+}
+TArray<FCityReportSample> FCityReportHistory::Samples(const ECityReportPeriod Period) const
+{
+    switch (Period)
+    {
+    case ECityReportPeriod::Hourly: return Hours;
+    case ECityReportPeriod::Daily: return Months;
+    case ECityReportPeriod::Weekly: return Weekly();
+    case ECityReportPeriod::Annual: return Annual();
+    default: return Monthly();
+    }
+}
+TArray<FCityReportSample> FCityReportHistory::Weekly() const
+{
+    return RollupDays(FCityCalendar::DaysPerWeek);
+}
 TArray<FCityReportSample> FCityReportHistory::Monthly() const
+{
+    return RollupDays(FCityCalendar::DaysPerMonth);
+}
+TArray<FCityReportSample> FCityReportHistory::RollupDays(const int32 Days) const
 {
     TArray<FCityReportSample> Result;
     for (const auto& Day : Months)
     {
-        const int64 Month = (Day.MonthId - 1) / FCityCalendar::DaysPerMonth + 1;
+        const int64 Month = (Day.MonthId - 1) / Days + 1;
         const bool First = Result.IsEmpty() || Result.Last().MonthId != Month;
         if (First)
         {
@@ -424,7 +529,7 @@ TArray<FCityReportSample> FCityReportHistory::Annual() const
 		S.bHasMigration = M.bHasMigration;
 		S.bHasPolicies = S.ObservedMonths==1 ? M.bHasPolicies : S.bHasPolicies && M.bHasPolicies;
 		S.bHasLoans = S.ObservedMonths == 1 ? M.bHasLoans : S.bHasLoans && M.bHasLoans;
-		S.bHasSentiment = M.bHasSentiment;
+		S.bHasSentiment = S.ObservedMonths == 1 ? M.bHasSentiment : S.bHasSentiment && M.bHasSentiment;
 		for (int32 I = 0; I < static_cast<int32>(ECityReportMetric::Count); ++I)
 			if (Flows[I])
 				S.Values[I] += M.Values[I];

@@ -64,7 +64,7 @@ FCityEconomyTuning FCityIdentity::Apply(const ECityDifficulty Preset,
 }
 int64 FCityIdentity::StartingFunds(const ECityDifficulty Preset)
 {
-	return Preset == ECityDifficulty::Relaxed ? 15000 : Preset == ECityDifficulty::Challenging ? 7500 : 10000;
+	return Preset == ECityDifficulty::Relaxed ? 20000 : Preset == ECityDifficulty::Challenging ? 7500 : 15000;
 }
 const TCHAR* FCityIdentity::DifficultyName(const ECityDifficulty Preset)
 {

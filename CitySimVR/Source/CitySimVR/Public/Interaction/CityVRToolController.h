@@ -43,18 +43,24 @@ UCLASS()
 class CITYSIMVR_API ACityVRToolController : public AActor
 {
 	GENERATED_BODY()
+	friend class FCityDesktopContinuityCommand;
 	friend class FCityPolicyUiTest;
+	friend class FCityTutorialLifecycleTest;
+	friend class FCityTutorialWalkthroughCommand;
 	friend class FCityCreationRevisionTest;
 	friend class FCityDesktopSaveRevisionCommand;
 	friend class FCityDesktopPoliciesCommand;
 	friend class FCityDesktopTechnologyCommand;
 	friend class FCityZoneVisibilityCaptureCommand;
 	friend class FCityBeachCaptureCommand;
+	friend class FCityCrosswalkCaptureCommand;
+	friend class FCityWaterCaptureCommand;
 	friend class FCityShorelineCaptureCommand;
 	friend class FCityDesktopLowDensityCommand;
 	friend class FCityTechnologyLiveTest;
     friend class FCityAiLiveTest;
     friend class FCityDesktopAiCommand;
+	friend class FCityReportRowsCommand;
 	friend class FCityLoanUiTest;
 	friend class FCityDesktopLoansCommand;
 	friend class FCityDesktopConditionsCommand;
@@ -84,7 +90,7 @@ class CITYSIMVR_API ACityVRToolController : public AActor
 	UFUNCTION(BlueprintCallable, Category = "City Presentation")
 	void SetObjectivesVisible(bool bVisible);
 	UFUNCTION(BlueprintCallable, Category = "City Reports")
-	void ShowReports(bool bAnnual = false);
+	void ShowReports(ECityReportPeriod Period = ECityReportPeriod::Monthly);
 	UFUNCTION(BlueprintCallable, Category = "City Menu")
 	void ShowNewCitySetup();
 	UFUNCTION(BlueprintCallable, Category = "City Menu")
@@ -107,6 +113,9 @@ class CITYSIMVR_API ACityVRToolController : public AActor
 
 	UFUNCTION(BlueprintPure, Category = "City UI")
 	FCityUiSnapshot GetUiSnapshot() const;
+    void PopulateDesktopMenu(FCityUiSnapshot& Data) const;
+    void PopulateDesktopSettings(FCityUiSnapshot& Data) const;
+    void PopulateDesktopEntry(FCityUiSnapshot& Data) const;
 	bool GetDesktopModelSource(FCityDesktopModelSource& Out) const;
 	const FCityTerrainGenerationParameters* GetDesktopTerrainPreview() const;
 	UFUNCTION(BlueprintCallable, Category = "City UI")
@@ -282,7 +291,7 @@ class CITYSIMVR_API ACityVRToolController : public AActor
 	UPROPERTY() TObjectPtr<UFont> NewspaperTypeface;
 	int32 ReportCategory = 0;
 	int32 ReportPeriodIndex = INDEX_NONE;
-	bool bAnnualReports = false;
+	ECityReportPeriod ReportPeriod = ECityReportPeriod::Monthly;
 	UPROPERTY()
 	TObjectPtr<UTextRenderComponent> ReportText;
 	UPROPERTY()
@@ -298,6 +307,9 @@ class CITYSIMVR_API ACityVRToolController : public AActor
 	bool IsNeedsToggleHit(const FVector& Origin, const FVector& Direction) const;
 	bool IsNeedsPanelHit(const FVector& Origin, const FVector& Direction) const;
 	void RefreshNeedsVisibility();
+	bool IsTutorialTarget(ECityPaletteAction Action) const;
+	void SetTutorialEnabled(bool bEnabled, bool bReset = false);
+	bool bTutorialResetSummary = false;
 	void UpdateObjectiveCard();
 	int32 FindObjectiveFooter(const FVector& Origin, const FVector& Direction) const;
 	void ExecuteObjectiveFooter(int32 Index);

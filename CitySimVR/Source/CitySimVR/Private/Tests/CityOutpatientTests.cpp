@@ -75,6 +75,12 @@ bool FCityOutpatientIntegrationTest::RunTest(const FString&)
  auto Cleanup=[&](){WA->DestroyWorld(false);WB->DestroyWorld(false);};
  if(!TestTrue(TEXT("current city imports: ")+Error,A->LoadCityFromPath(Path,Error,false))){Cleanup();return false;}
  auto& City=A->GetPlacementModel();City.ApplyMonthlyEconomy(100000,0);
+ // The approved hospital now reserves 5x5. Keep the captured neighborhood
+ // intact and extend its north street in this isolated medical copy so the
+ // real catalog building has a clear site with connected road frontage.
+ auto ClinicRoad=City.BeginRoadPreview({14,5});City.UpdateRoadPreviewEnd(ClinicRoad,{24,5});
+ if(!TestTrue(TEXT("hospital street extension in isolated copy"),City.CommitRoad(ClinicRoad).IsSuccess())){Cleanup();return false;}
+ A->RefreshDerivedSnapshots();
  const auto* Definition=Catalog->FindDefinition(TEXT("Hospital"));uint64 Hospital=0;
  for(int32 Y=0;Y<32 && !Hospital;++Y)for(int32 X=0;X<32 && !Hospital;++X)
  {

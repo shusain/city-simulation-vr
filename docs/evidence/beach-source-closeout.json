@@ -1,0 +1,204 @@
+{
+  "date": "2026-10-21",
+  "parent": 51,
+  "source": {
+    "batch_pr": 315,
+    "merge": "6e882bb92ee1700373309ad5ee2d445e9ed9fea2",
+    "ci": 411,
+    "assets": [
+      {
+        "head": "aaa7df9e33650cd6a9033f56eaad905d5f1b0c53",
+        "pr": 297,
+        "branch": "codex/asset-blender-203-v2",
+        "integration": 298,
+        "version": 2,
+        "approval_sha256": "4748b5872d7b549306f7b5c91ba99cf250a11a94e0945395674aedc527c81334",
+        "issue": 203,
+        "source_state": "closed",
+        "source_pr_state": "closed",
+        "integration_state": "open",
+        "closeout": "https://git.shaun-husain.com/CitySimVR/citysim/issues/203#issuecomment-5759"
+      },
+      {
+        "head": "de89440de15152ca3e64f6278675b775c7c2298f",
+        "pr": 299,
+        "branch": "codex/asset-blender-204-v3",
+        "integration": 300,
+        "version": 3,
+        "approval_sha256": "cd980f6fefa9fb67e3a76a8356b200b9817717217c54bce634c1c3abbe65f80f",
+        "issue": 204,
+        "source_state": "closed",
+        "source_pr_state": "closed",
+        "integration_state": "open",
+        "closeout": "https://git.shaun-husain.com/CitySimVR/citysim/issues/204#issuecomment-5774"
+      },
+      {
+        "head": "4268326ba5eb336784292cfbc1c531e61c3defa5",
+        "pr": 301,
+        "branch": "codex/asset-blender-207-v2",
+        "integration": 302,
+        "version": 2,
+        "approval_sha256": "7d09c512b4f13a2f64da6fcbfb488ebb70f596215955fab3eff7ddfab7429286",
+        "issue": 207,
+        "source_state": "closed",
+        "source_pr_state": "closed",
+        "integration_state": "open",
+        "closeout": "https://git.shaun-husain.com/CitySimVR/citysim/issues/207#issuecomment-5789"
+      },
+      {
+        "head": "d7604d29cc4a9eccb5e4ed2cacf320f92548ef18",
+        "pr": 303,
+        "branch": "codex/asset-blender-208-v1",
+        "integration": 304,
+        "version": 1,
+        "approval_sha256": "17dab2f5be9c90b27ecda070b01c2fb38d30e70a67e9723f3f4fe297219ea7f8",
+        "issue": 208,
+        "source_state": "closed",
+        "source_pr_state": "closed",
+        "integration_state": "open",
+        "closeout": "https://git.shaun-husain.com/CitySimVR/citysim/issues/208#issuecomment-5804"
+      },
+      {
+        "head": "e005066820edbaabc2c0ea6fdfd69af2a56ba69d",
+        "pr": 305,
+        "branch": "codex/asset-blender-209-v1",
+        "integration": 306,
+        "version": 1,
+        "approval_sha256": "0e43f6d1249c85da43843f0e4b74f604c34bb11dad006e6852ce0094f1857fe1",
+        "issue": 209,
+        "source_state": "closed",
+        "source_pr_state": "closed",
+        "integration_state": "open",
+        "closeout": "https://git.shaun-husain.com/CitySimVR/citysim/issues/209#issuecomment-5819"
+      },
+      {
+        "head": "61fa3685a79ea2bde3b133f1283fa6ef46c9814b",
+        "pr": 307,
+        "branch": "codex/asset-blender-210-v1",
+        "integration": 308,
+        "version": 1,
+        "approval_sha256": "f0de0aee4698a1198ebe81223479d5a4e6913a25b920334c190bd17e60757762",
+        "issue": 210,
+        "source_state": "closed",
+        "source_pr_state": "closed",
+        "integration_state": "open",
+        "closeout": "https://git.shaun-husain.com/CitySimVR/citysim/issues/210#issuecomment-5834"
+      },
+      {
+        "head": "4cd6b2480de5c331a09559cd48bf413609b59e20",
+        "pr": 309,
+        "branch": "codex/asset-blender-211-v2",
+        "integration": 310,
+        "version": 2,
+        "approval_sha256": "62e89ac625ba73d11b954a946c0a01cf064830bf764f78a4b538ac9e24350275",
+        "issue": 211,
+        "source_state": "closed",
+        "source_pr_state": "closed",
+        "integration_state": "open",
+        "closeout": "https://git.shaun-husain.com/CitySimVR/citysim/issues/211#issuecomment-5849"
+      },
+      {
+        "head": "55734e0ff561c2c0b5cdb2ca8885686a0d69aa9d",
+        "pr": 311,
+        "branch": "codex/asset-blender-212-v2",
+        "integration": 312,
+        "version": 2,
+        "approval_sha256": "c26dbf26f9e7940af1b780fa003a41eb856af6742dad5fc40ddecec93a2452e8",
+        "issue": 212,
+        "source_state": "closed",
+        "source_pr_state": "closed",
+        "integration_state": "open",
+        "closeout": "https://git.shaun-husain.com/CitySimVR/citysim/issues/212#issuecomment-5864"
+      },
+      {
+        "head": "74602835878be895e61d4b6b694b86be9ace961b",
+        "pr": 313,
+        "branch": "codex/asset-blender-213-v2",
+        "integration": 314,
+        "version": 2,
+        "approval_sha256": "b86250d47e2889699eaedfd1ff5030cd39cafdf2cc525efa6b699aae34179eb9",
+        "issue": 213,
+        "source_state": "closed",
+        "source_pr_state": "closed",
+        "integration_state": "open",
+        "closeout": "https://git.shaun-husain.com/CitySimVR/citysim/issues/213#issuecomment-5879"
+      },
+      {
+        "head": "185fea752259a70a78944b2b0349a6395f7fa8c0",
+        "pr": 216,
+        "branch": "codex/asset-blender-214-v2",
+        "integration": 217,
+        "version": 2,
+        "approval_sha256": "341d4509f502c406030d4cd3cfc7e991c55973fe1497813abaebdb347c59267f",
+        "issue": 214,
+        "source_state": "closed",
+        "source_pr_state": "closed",
+        "integration_state": "open",
+        "closeout": "https://git.shaun-husain.com/CitySimVR/citysim/issues/214#issuecomment-5894"
+      }
+    ],
+    "native_imported": false
+  },
+  "ci": {
+    "commit": "d46d8487e5a7089a7d120ca8b4641d7e741bf11b",
+    "submittedCommit": "03925e3818337c625060bd161e65d0969b3477ae",
+    "build": "411",
+    "mode": "Check",
+    "tests": [
+      "CitySim.Shopping.MiddaySubsystemAndReportedCity",
+      "CitySim.Outpatients.CurrentCityTravelHomeAndReload"
+    ],
+    "startedUtc": "2026-10-21T22:38:12.2184954Z",
+    "status": "passed",
+    "gameplayFixtures": [
+      {
+        "name": "shopping",
+        "path": "Artifacts/Fixture285/Input/CurrentCity.json",
+        "sha256": "cb6c956491ca01982883eac5dd1d69eca5edca593a4c5fcd2b0e748f3040dc0e"
+      },
+      {
+        "name": "health",
+        "path": "Artifacts/D127/ReportedCity.json",
+        "sha256": "276727c3a77e63654c7fc0e1fa67bed1e8214980e38ee37724049a45d1e77e27"
+      }
+    ],
+    "editorVisualTests": [
+      "CitySim.Desktop.HomeInspectionCharts",
+      "CitySim.Desktop.OutpatientHealthVisual"
+    ],
+    "finishedUtc": "2026-10-21T22:43:15.7825862Z"
+  },
+  "tested_tree": "637de8fdd41fe1b3523a1e402f001758fba32386",
+  "merged_tree": "637de8fdd41fe1b3523a1e402f001758fba32386",
+  "checks": {
+    "artifact_sizes_hashes": 94,
+    "source_versions": 10,
+    "offline_tooling": 47,
+    "editor_seconds": 173.78,
+    "simulation_cases": 2,
+    "native_ui_cases": 2
+  },
+  "canceled_jobs": [
+    400,
+    401,
+    402,
+    403,
+    404,
+    405,
+    406,
+    407,
+    408,
+    412
+  ],
+  "failed_preflight_jobs": [
+    409,
+    410
+  ],
+  "technical_intake": "https://git.shaun-husain.com/attachments/c630b54a-5728-4afa-be55-30e3df0f4083",
+  "checked_derivative_handoff": "https://git.shaun-husain.com/attachments/d777aca3-e02f-4b7c-9ce4-dc82e24ed645",
+  "source_receipt": "https://git.shaun-husain.com/attachments/48182bcf-0e56-484e-917c-19d1b9a3fa68",
+  "native_imported": false,
+  "windows_packaged": false,
+  "headset_observation": "unconfirmed; #49",
+  "next": "Coordinated native beach integration under #51; late-game progression deferred by user priority"
+}

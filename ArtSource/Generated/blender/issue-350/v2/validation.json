@@ -1,0 +1,38 @@
+{
+  "mesh_geometry_sha256": "58ca4ddb850425f6d3e9c21345613b30a88855a2de9d4a63b1ea29e9667fe5a2",
+  "dimensions_m": [
+    6.595000267028809,
+    2.570000171661377,
+    2.8500001430511475
+  ],
+  "triangles": 10222,
+  "material_slots": [
+    "BodyPaint",
+    "MetalTrim",
+    "MedicalRed",
+    "Rubber",
+    "RedLens",
+    "Headlight",
+    "BlueLens",
+    "Glass",
+    "Taillight"
+  ],
+  "roundtrip_pass": true,
+  "blender_version": "5.1.1",
+  "render_engine": "CYCLES",
+  "render_device": "CPU",
+  "reference_sha256": {
+    "ArtSource/Blender/CityHospitalKit.blend": "8c2b2e6ce08c02391e16030a4c3038aa68ada351e923907347c9580c434efeac"
+  },
+  "review_lighting": {
+    "mode": "extent-squared-area-light",
+    "asset_extent_m": 6.595000267028809,
+    "area_light_energy_watts": 1223.26953125,
+    "area_light_size_m": 6.595000267028809,
+    "reference_extent_m": 8.0,
+    "reference_energy_watts": 1800.0,
+    "world_strength": 0.6,
+    "view_transform": "AgX",
+    "exposure": 0.0
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "issue": "D108 Resident rolled-edge beach mat",
+  "status": "review-only; not approved for production export or integration",
+  "dimensions_m": [
+    0.75,
+    1.7996712923049927,
+    0.11985384672880173
+  ],
+  "triangles": 164,
+  "material_slots": [
+    "Fabric"
+  ],
+  "non_manifold_edges": 0,
+  "origin": "ground contact center, Z-up",
+  "units": "meters",
+  "views": [
+    "preview.png",
+    "top.png",
+    "scale_1m.png"
+  ],
+  "design": "single coral fabric solid; flat rectangular mat with one faceted curled short edge; no sand base, logos, simulation, or transparency",
+  "source": "asset.blend",
+  "review_fbx": "asset.fbx"
+}

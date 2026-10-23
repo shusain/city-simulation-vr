@@ -1,0 +1,41 @@
+{
+  "mesh_geometry_sha256": "085ee09c9e11b1340b350416c60cdec557e6c977b4c45c73cda71e7c222c5a49",
+  "dimensions_m": [
+    0.18000000715255737,
+    0.12999999523162842,
+    0.07000000029802322
+  ],
+  "triangles": 60,
+  "material_slots": [
+    "Pebble"
+  ],
+  "roundtrip_pass": true,
+  "blender_version": "5.1.1",
+  "render_engine": "CYCLES",
+  "render_device": "CPU",
+  "reference_sha256": {},
+  "isolated_pebble_checks": {
+    "triangles": 60,
+    "vertices": 32,
+    "connected_components": 1,
+    "nonmanifold_edges": 0,
+    "positive_volume_m3": 0.000773317425670273,
+    "bounds_m": [
+      0.18000000715255737,
+      0.12999999523162842,
+      0.07000000029802322
+    ],
+    "uv0": "UV0",
+    "uv_corners": 112,
+    "material_slots": [
+      "Pebble"
+    ],
+    "opaque": true,
+    "transforms_applied": true,
+    "pivot": "ground center",
+    "contact_vertices": 8,
+    "crown": "broad planar eight-sided cap with rounded shoulder; no polar apex",
+    "human_visual_review": "pending",
+    "scale_view_width_m": 1.0
+  }
+}

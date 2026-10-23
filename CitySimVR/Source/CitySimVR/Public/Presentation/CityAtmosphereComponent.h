@@ -39,6 +39,7 @@ public:
 	virtual void EndPlay(const EEndPlayReason::Type Reason) override;
 
 private:
+	friend class FCityWaterCaptureCommand;
 	friend class FCityAtmospherePresentationTest;
 	friend class FCitySeasonalSceneryPresentationTest;
 	friend class FCityBeachPresentationTest;

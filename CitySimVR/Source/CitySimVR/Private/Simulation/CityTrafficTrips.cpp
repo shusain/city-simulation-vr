@@ -1,4 +1,5 @@
 #include "Simulation/CityTrafficSimulation.h"
+#include "Simulation/CityPedestrianPaths.h"
 
 #include "Commands/CityPlacementModel.h"
 #include "Simulation/CityBuildingDefinition.h"
@@ -34,26 +35,120 @@ bool FCityTrafficSimulation::FindPortal(const FCityPlacementModel& City, const U
 				Candidates.Add(Cell);
 		}
 	}
-	Candidates.Sort([](const FCityCellCoord& A, const FCityCellCoord& B)
-	                { return A.Y == B.Y ? A.X < B.X : A.Y < B.Y; });
 	if (Candidates.IsEmpty())
 		return false;
 	OutCell = Candidates[0];
 	return true;
 }
 
-void FCityTrafficSimulation::ReconcileNetwork(const FCityRoadNetworkSnapshot& Network)
+void FCityTrafficSimulation::ReconcileSnapshot(FCityTrafficSnapshot& State,
+    const FCityRoadNetworkSnapshot& PreviousNetwork, const FCityRoadNetworkSnapshot& Network)
 {
-	if ((!Snapshot.Vehicles.IsEmpty() || !Snapshot.WaitingDepartures.IsEmpty()) &&
-	    Snapshot.NetworkFingerprint != GetNetworkFingerprint(Network))
-	{
-		// Cancel obsolete paths without reporting arrivals. Sources retry from
-		// their portals on the next step; no stale edge ID reaches the renderer.
-		Snapshot.Vehicles.Reset();
-		Snapshot.WaitingDepartures.Reset();
-		Snapshot.LaneLoads.Reset();
-		Snapshot.NetworkFingerprint = 0;
-	}
+    const uint64 Fingerprint = GetNetworkFingerprint(Network);
+    if (State.NetworkFingerprint == Fingerprint) return;
+    const uint64 PreviousFingerprint = GetNetworkFingerprint(PreviousNetwork);
+    struct FWalkGeometry { FName Definition; TSet<FCityCellCoord> Neighbors; };
+    auto WalkingGeometry = [](const FCityRoadNetworkSnapshot& Graph)
+    {
+        TMap<FCityCellCoord, FWalkGeometry> Result;
+        for (const auto& Edge : Graph.Edges)
+            for (int32 I=0; I<Edge.Cells.Num(); ++I)
+            {
+                auto& Cell=Result.FindOrAdd(Edge.Cells[I]); Cell.Definition=Edge.DefinitionId;
+                if (I>0) Cell.Neighbors.Add(Edge.Cells[I-1]);
+                if (I+1<Edge.Cells.Num()) Cell.Neighbors.Add(Edge.Cells[I+1]);
+            }
+        return Result;
+    };
+    const auto OldWalking=WalkingGeometry(PreviousNetwork), NewWalking=WalkingGeometry(Network);
+    auto Remap = [&](FCityTrafficVehicleState& Vehicle)
+    {
+        if (State.NetworkFingerprint != PreviousFingerprint ||
+            !Vehicle.Route.IsValidIndex(Vehicle.RouteLegIndex)) return false;
+        // A changed junction/width can invalidate a sidewalk or crossing even
+        // when the centre-road route remains connected. Retire only walkers
+        // whose own path touches that geometry; their source retries safely.
+        for (int32 I=1; I+1<Vehicle.WalkPath.Num(); ++I)
+        {
+            const auto& P=Vehicle.WalkPath[I]; const FCityCellCoord Cell(P.X/1000,P.Y/1000,P.Z);
+            const auto* Old=OldWalking.Find(Cell); const auto* New=NewWalking.Find(Cell);
+            if (!Old || !New || Old->Definition!=New->Definition || Old->Neighbors.Num()!=New->Neighbors.Num()) return false;
+            for (const auto& Neighbor:Old->Neighbors) if (!New->Neighbors.Contains(Neighbor)) return false;
+        }
+        const ECityRoadAccess Access = Vehicle.VehicleType == ECityTripVehicleType::Walk ? ECityRoadAccess::Pedestrian
+            : (Vehicle.VehicleType == ECityTripVehicleType::FreightTruck || Vehicle.VehicleType == ECityTripVehicleType::GarbageTruck)
+                ? ECityRoadAccess::Freight : ECityRoadAccess::Car;
+        TArray<FCityTrafficRouteLeg> Route;
+        int32 CurrentLeg = INDEX_NONE, CurrentDistance = 0, StartDistance = 0, EndDistance = 0;
+        for (int32 L = 0; L < Vehicle.Route.Num(); ++L)
+        {
+            const auto& OldLeg = Vehicle.Route[L];
+            if (!ValidateLeg(OldLeg, PreviousNetwork)) return false;
+            const auto& OldEdge = PreviousNetwork.Edges[OldLeg.EdgeId];
+            const int32 LegStart = L == 0 ? Vehicle.StartDistanceUnits : 0;
+            const int32 LegEnd = L == Vehicle.Route.Num()-1 && Vehicle.EndDistanceUnits >= 0
+                ? Vehicle.EndDistanceUnits : GetEdgeLengthUnits(OldEdge);
+            for (int32 I = 0; I + 1 < OldEdge.Cells.Num(); ++I)
+            {
+                const bool PointRoute = LegStart == LegEnd;
+                if (PointRoute ? !(I*TrafficUnitsPerCell <= LegStart &&
+                    (LegStart < (I+1)*TrafficUnitsPerCell || I+2 == OldEdge.Cells.Num()))
+                    : ((I+1)*TrafficUnitsPerCell <= LegStart || I*TrafficUnitsPerCell >= LegEnd)) continue;
+                const auto& A = OldEdge.Cells[OldLeg.bReverse ? OldEdge.Cells.Num()-1-I : I];
+                const auto& B = OldEdge.Cells[OldLeg.bReverse ? OldEdge.Cells.Num()-2-I : I+1];
+                int32 CellIndex = 0; bool Reverse = false;
+                const auto* Edge = Network.FindRouteSegment(A, B, Access, CellIndex, Reverse);
+                if (!Edge) return false;
+                const int32 Lanes = Reverse ? Edge->ReverseLanes : Edge->ForwardLanes;
+                FCityTrafficRouteLeg Leg{Edge->Id, Reverse, FMath::Min(OldLeg.LaneIndex, Lanes-1)};
+                if (Route.IsEmpty() || Route.Last().EdgeId != Leg.EdgeId || Route.Last().bReverse != Leg.bReverse)
+                {
+                    if (!Route.IsEmpty() && !FindConnector(Route.Last(), Leg, Network)) return false;
+                    Route.Add(Leg);
+                }
+                auto MapDistance = [&](int32 Distance) { return CellIndex * TrafficUnitsPerCell + Distance - I * TrafficUnitsPerCell; };
+                const int32 Lower = I * TrafficUnitsPerCell, Upper = (I+1) * TrafficUnitsPerCell;
+                // Inclusive at the terminal point; a following segment wins at internal boundaries.
+                if (L == Vehicle.RouteLegIndex && Vehicle.DistanceUnits >= Lower && Vehicle.DistanceUnits <= Upper)
+                { CurrentLeg = Route.Num()-1; CurrentDistance = MapDistance(Vehicle.DistanceUnits); }
+                if (L == 0 && Vehicle.StartDistanceUnits >= Lower && Vehicle.StartDistanceUnits <= Upper)
+                    StartDistance = MapDistance(Vehicle.StartDistanceUnits);
+                const int32 OldEnd = Vehicle.EndDistanceUnits < 0 ? GetEdgeLengthUnits(OldEdge) : Vehicle.EndDistanceUnits;
+                if (L == Vehicle.Route.Num()-1 && OldEnd >= Lower && OldEnd <= Upper)
+                    EndDistance = MapDistance(OldEnd);
+            }
+        }
+        if (CurrentLeg == INDEX_NONE) return false;
+        Vehicle.Route = MoveTemp(Route); Vehicle.RouteLegIndex = CurrentLeg;
+        Vehicle.DistanceUnits = CurrentDistance; Vehicle.StartDistanceUnits = StartDistance;
+        Vehicle.EndDistanceUnits = EndDistance;
+        Vehicle.SpeedUnitsPerStep = FMath::Min(Vehicle.SpeedUnitsPerStep,
+            Vehicle.VehicleType == ECityTripVehicleType::Walk ? 500 : GetSpeedLimitUnitsPerStep(Network.Edges[Vehicle.Route[CurrentLeg].EdgeId]));
+        return true;
+    };
+    FCityTrafficSimulation Validated;
+    State.Vehicles.RemoveAll([&](auto& Vehicle) { return !Remap(Vehicle) || !Validated.AddVehicle(Vehicle, Network); });
+    State.WaitingDepartures.RemoveAll([&](auto& Vehicle)
+    {
+        FCityTrafficSimulation Probe;
+        return !Remap(Vehicle) || !Probe.AddVehicle(Vehicle, Network);
+    });
+    State.LaneLoads.Reset();
+    State.NetworkFingerprint = Fingerprint;
+}
+
+void FCityTrafficSimulation::ReconcileNetwork(const FCityRoadNetworkSnapshot& Network,
+    const FCityRoadNetworkSnapshot* PreviousNetwork)
+{
+    if (Snapshot.NetworkFingerprint == GetNetworkFingerprint(Network)) return;
+    if (PreviousNetwork) ReconcileSnapshot(Snapshot, *PreviousNetwork, Network);
+    else
+    {
+        // Callers without prior geometry cannot safely interpret obsolete edge IDs.
+        Snapshot.Vehicles.Reset(); Snapshot.WaitingDepartures.Reset(); Snapshot.LaneLoads.Reset();
+        Snapshot.NetworkFingerprint = GetNetworkFingerprint(Network);
+    }
+    RebuildLaneLoads(Network);
 }
 
 bool FCityTrafficSimulation::BuildRoute(const FCityRoadNetworkSnapshot& Network, const FCityCellCoord& Start,
@@ -105,6 +200,7 @@ void FCityTrafficSimulation::UpdateTrips(const FCityPlacementModel& City, const 
                                          const FCityRoadNetworkSnapshot& Network, const int64 Step)
 {
 	ReconcileNetwork(Network);
+	TOptional<TArray<FCityCrosswalk>> Crosswalks;
 	FCityFrameTimingScope UpdateScope(Network.RoutingTiming ? &Network.RoutingTiming->TrafficUpdate : nullptr);
 	TMap<uint64, const FCityCitizenRecord*> Citizens;
 	TMap<uint64, const FCityTransitTripRecord*> Deliveries;
@@ -195,6 +291,13 @@ void FCityTrafficSimulation::UpdateTrips(const FCityPlacementModel& City, const 
 		}
 		else if (!BuildRoute(Network, Start, End, Vehicle))
 			return;
+		if (Type == ECityTripVehicleType::Walk)
+		{
+			if (!Crosswalks.IsSet()) Crosswalks = CityPedestrianPaths::Crossings(City, Catalog);
+			if (!CityPedestrianPaths::Build(City, Catalog, Network, Crosswalks.GetValue(),
+			    Vehicle.bReturning ? Destination : Origin, Vehicle.bReturning ? Origin : Destination, Vehicle)) return;
+			Vehicle.bCompleted = false; Vehicle.CompletedStep = 0;
+		}
 		if (ExistingIndex != INDEX_NONE)
 			Snapshot.Vehicles.RemoveAt(ExistingIndex);
 		if (Vehicle.bCompleted)
@@ -238,6 +341,15 @@ bool FCityTrafficSimulation::SamplePosition(const FCityTrafficVehicleState& Vehi
                                             const FCityRoadNetworkSnapshot& Network, const double Alpha,
                                             FVector& OutGridPosition, FVector& OutDirection)
 {
+	if (!Vehicle.WalkPath.IsEmpty())
+	{
+		double Distance = Vehicle.WalkDistanceUnits;
+		if (Previous && Previous->WalkPath == Vehicle.WalkPath && Previous->bReturning == Vehicle.bReturning)
+			Distance = FMath::Lerp(double(Previous->WalkDistanceUnits), Distance, FMath::Clamp(Alpha, 0., 1.));
+		if (!CityPedestrianPaths::Sample(Vehicle.WalkPath, Distance, OutGridPosition, OutDirection)) return false;
+		OutGridPosition.X -= .5; OutGridPosition.Y -= .5;
+		return true;
+	}
 	if (!Vehicle.Route.IsValidIndex(Vehicle.RouteLegIndex))
 		return false;
 	for (const FCityTrafficRouteLeg& Leg : Vehicle.Route)

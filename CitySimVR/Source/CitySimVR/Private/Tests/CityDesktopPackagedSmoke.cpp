@@ -3,6 +3,7 @@
 #include "Misc/ConfigCacheIni.h"
 #if WITH_DEV_AUTOMATION_TESTS
 #include "Blueprint/WidgetTree.h"
+#include "CitySmokeReportFixture.h"
 #include "Components/ScrollBox.h"
 #include "Components/TextBlock.h"
 #include "Engine/Engine.h"
@@ -15,6 +16,8 @@
 #include "Misc/Parse.h"
 #include "Misc/Paths.h"
 #include "Presentation/CityDesktopHud.h"
+#include "Presentation/CityDesktopMenuContent.h"
+#include "Simulation/CityHousingHistory.h"
 #include "Presentation/CityDesktopChart.h"
 #include "Presentation/CityDesktopModelPreview.h"
 #include "Presentation/CityDesktopIcon.h"
@@ -34,7 +37,8 @@
 class FCityDesktopPackagedSmokeCommand : public IAutomationLatentCommand
 {
 public:
-	explicit FCityDesktopPackagedSmokeCommand(FAutomationTestBase* InTest) : Test(InTest) {}
+	explicit FCityDesktopPackagedSmokeCommand(FAutomationTestBase* InTest, bool bInBuildMenuGallery = false, bool bInCityFinanceGallery = false, bool bInSettingsGallery = false, bool bInEntryLibraryGallery = false)
+	    : Test(InTest), bBuildMenuGallery(bInBuildMenuGallery), bCityFinanceGallery(bInCityFinanceGallery), bSettingsGallery(bInSettingsGallery), bEntryLibraryGallery(bInEntryLibraryGallery) {}
 	virtual bool Update() override
 	{
 		if (FPlatformTime::Seconds() < Next)
@@ -172,7 +176,7 @@ public:
 				                   TextEnd.X <= End.X + 1 && TextEnd.Y <= End.Y + 1);
 			}
 		};
-		auto CheckMenuLabels = [this, UI]()
+		auto CheckMenuLabels = [this, UI](bool bVisibleOnly = false)
 		{
 			for (int32 Index = 0; Index < UI->GetUiSnapshot().MenuEntries.Num(); ++Index)
 			{
@@ -188,7 +192,26 @@ public:
 				const auto& Text = Label->GetCachedGeometry();
 				const FVector2D End = Box.LocalToAbsolute(Box.GetLocalSize());
 				const FVector2D TextEnd = Text.LocalToAbsolute(Text.GetLocalSize());
-				Test->TestTrue(TEXT("Menu labels fit their own clickable rectangles"),
+				// Slate culls descendants outside a scroll viewport; their cached text
+                // geometry may be from a previous page. Check rendered rows here,
+                // then repeat after scrolling to cover the remaining actions.
+                if (bVisibleOnly)
+                {
+                    if (Box.GetLocalSize().X<1 || Box.GetLocalSize().Y<1 || Text.GetLocalSize().X<1 || Text.GetLocalSize().Y<1) continue;
+                    const auto* Body=UI->DesktopHud->WidgetTree->FindWidget(TEXT("MenuBody"));
+                    const auto* Parent=Body ? Body->GetParent() : nullptr;
+                    const auto* Clip=Parent ? Parent->GetParent() : nullptr;
+                    if (Clip)
+                    {
+                        const auto& G=Clip->GetCachedGeometry();
+                        const auto ClipEnd=G.LocalToAbsolute(G.GetLocalSize());
+                        if (End.Y<=G.GetAbsolutePosition().Y || Box.GetAbsolutePosition().Y>=ClipEnd.Y) continue;
+                    }
+                    EntryGalleryRenderedActions.Add(UI->GetUiSnapshot().MenuEntries[Index].ActionId);
+                }
+                Test->TestTrue(FString::Printf(TEXT("%s %s label fits button: text %.1f,%.1f..%.1f,%.1f / button %.1f,%.1f..%.1f,%.1f"),
+                    *UI->GetUiSnapshot().MenuTitle.ToString(), *Name, Text.GetAbsolutePosition().X,Text.GetAbsolutePosition().Y,TextEnd.X,TextEnd.Y,
+                    Box.GetAbsolutePosition().X,Box.GetAbsolutePosition().Y,End.X,End.Y),
 				               Text.GetAbsolutePosition().X >= Box.GetAbsolutePosition().X - 1 &&
 				                   Text.GetAbsolutePosition().Y >= Box.GetAbsolutePosition().Y - 1 &&
 				                   TextEnd.X <= End.X + 1 && TextEnd.Y <= End.Y + 1);
@@ -271,9 +294,466 @@ public:
 				}
 			}
 		};
+
+
+        if (bEntryLibraryGallery && Phase >= 800)
+        {
+            // Library metadata fixtures exercise presentation edge states only. Real file
+            // recovery/archive/restore and load semantics are covered by the focused Editor cases.
+            const TCHAR* Names[] = {TEXT("01-Entry"),TEXT("02-NewCity"),TEXT("03-CreateReview"),TEXT("18-Overlays"),
+                TEXT("38-Library"),TEXT("38-CurrentCity"),TEXT("38A-Archived"),TEXT("38E-EmptyActive"),
+                TEXT("38E-EmptyArchived"),TEXT("38U-Unsupported"),TEXT("39-ArchiveReview"),TEXT("38-SaveDetails"),
+                TEXT("04-OverviewUnchanged"),TEXT("16-ZoningUnchanged")};
+            const int32 Index=(Phase-800)/5, Step=(Phase-800)%5;
+            if (Index >= UE_ARRAY_COUNT(Names))
+            {
+                if (!bSmallEntryGallery)
+                {
+                    bSmallEntryGallery=true;
+                    auto* Settings=GEngine->GetGameUserSettings();
+                    Settings->SetScreenResolution(FIntPoint(1024,720)); Settings->SetFullscreenMode(EWindowMode::Windowed);
+                    Settings->ApplyResolutionSettings(false);
+                    Phase=800; Next=FPlatformTime::Seconds()+1; return false;
+                }
+                UI->bDesktopFocused=bObservedDesktopFocus;
+                UE_LOG(LogTemp,Display,TEXT("CITYSIM_ENTRY_LIBRARY_GALLERY_COMPLETE Cases=14 Sizes=2 MetadataFixtures=1 PhysicalInputPending=1"));
+                return true;
+            }
+            auto Open=[&](ECityPalettePage Page) { UI->SetPaletteOpen(true); UI->SetPalettePage(Page); };
+            auto* Body=UI->DesktopHud->WidgetTree->FindWidget(TEXT("MenuBody"));
+            auto* Container=Body ? Body->GetParent() : nullptr;
+            auto* Scroll=Container ? Cast<UScrollBox>(Container->GetParent()) : nullptr;
+            const int32 Width=bSmallEntryGallery ? 1024 : 1280;
+            if (Step==0)
+            {
+                EntryGalleryRenderedActions.Reset();
+                if (Index==0) UI->ShowMainMenu();
+                if (Index==1)
+                {
+                    UI->ShowNewCitySetup();
+                    UI->NewCityIdentity.Name=TEXT("Cedar Crossing"); UI->NewCityTerrain.Seed=317;
+                    UI->RefreshPaletteText();
+                }
+                if (Index==2) UI->ReviewCityCreation();
+                if (Index==3)
+                {
+                    UI->ReturnToCity(); Open(ECityPalettePage::Overlays);
+                    UI->ExecuteDesktopUiAction(static_cast<int32>(ECityPaletteAction::OverlayService));
+                    Open(ECityPalettePage::Overlays);
+                }
+                if (Index>=4 && Index<=11)
+                {
+                    UI->ShowMainMenu(); UI->EntryMenuStatus.Reset(); UI->ReviewedCityIndex=0;
+                    UI->bReviewArchivedCities=Index==6 || Index==8;
+                    FCitySaveSlot Slot; Slot.Identity.Name=TEXT("Cedar Crossing"); Slot.Identity.Id=TEXT("entry-gallery-metadata-only");
+                    Slot.Identity.CreatedGameRevision=TEXT("desktop-gallery-fixture"); Slot.LastSavedGameRevision=TEXT("desktop-gallery-fixture");
+                    Slot.LastSaved=FDateTime(2026,10,22,10,30); Slot.Terrain.Seed=317;
+                    Slot.Dimensions=Slot.Terrain.Dimensions; Slot.Funds=8450; Slot.Residents=124; Slot.MonthId=4; Slot.ReportMonths=3;
+                    Slot.bArchived=UI->bReviewArchivedCities;
+                    if (Index==5) { Slot.Identity=Sim->GetCityIdentity(); Slot.Identity.Name=TEXT("Current city fixture"); }
+                    if (Index==9) { Slot.bSupported=false; Slot.UnsupportedReason=TEXT("Unsupported save schema version 999"); Slot.SchemaVersion=999; }
+                    UI->ReviewedCitySlots={Slot};
+                    if (Index==4 || Index==11) { Slot.Identity.Name=TEXT("Harbor Heights"); Slot.Identity.Id=TEXT("second-entry-gallery-fixture"); UI->ReviewedCitySlots.Add(Slot); }
+                    if (Index==7 || Index==8) UI->ReviewedCitySlots.Reset();
+                    if (Index==10) { UI->ArchiveReviewSlot=Slot; Open(ECityPalettePage::ArchiveReview); }
+                    else Open(ECityPalettePage::LoadReview);
+                }
+                if (Index==12) { UI->ReturnToCity(); UI->SetCitySummaryVisible(false); UI->SetObjectivesVisible(false); Open(ECityPalettePage::Root); }
+                if (Index==13) { UI->SetCitySummaryVisible(false); Open(ECityPalettePage::Zone); }
+                if (Scroll) Scroll->ScrollToStart();
+            }
+            else if (Step==1)
+            {
+                if (auto* Content=Cast<UCityDesktopMenuContent>(UI->DesktopHud->WidgetTree->FindWidget(TEXT("StructuredMenu")))) Content->SetDetailsExpanded(Index==11);
+            }
+            else if (Step==2)
+            {
+                const auto Data=UI->GetUiSnapshot();
+                Test->TestEqual(TEXT("Entry gallery uses its named viewport size"),GEngine->GameViewport->Viewport->GetSizeXY(),FIntPoint(Width,bSmallEntryGallery ? 720 : 900));
+                const ECityPalettePage Pages[]={ECityPalettePage::MainMenu,ECityPalettePage::NewCitySetup,ECityPalettePage::NewCityReview,ECityPalettePage::Overlays,
+                    ECityPalettePage::LoadReview,ECityPalettePage::LoadReview,ECityPalettePage::LoadReview,ECityPalettePage::LoadReview,
+                    ECityPalettePage::LoadReview,ECityPalettePage::LoadReview,ECityPalettePage::ArchiveReview,ECityPalettePage::LoadReview,ECityPalettePage::Root,ECityPalettePage::Zone};
+                Test->TestEqual(TEXT("Entry capture has the intended page"),UI->PalettePage,Pages[Index]);
+                if (Index==2 || (Index>=4 && Index<=11))
+                    Test->TestFalse(TEXT("Review-only screens do not offer to save the live city"),Data.MenuEntries.ContainsByPredicate([](const auto& E) { return E.ActionId==static_cast<int32>(ECityPaletteAction::SaveAndBack); }));
+                if (Index==2) Test->TestEqual(TEXT("Create review offers only Create city and Back to setup"),Data.MenuEntries.Num(),2);
+                for (int32 I=0;I<Data.MenuEntries.Num();++I)
+                    if (const auto* Button=Cast<UCityDesktopActionButton>(UI->DesktopHud->WidgetTree->FindWidget(FName(*FString::Printf(TEXT("Menu%d"),I)))))
+                        Test->TestEqual(TEXT("Primary action emphasis never changes selected semantics"),Button->IsSelected(),Data.MenuEntries[I].bSelected);
+                if (Index!=12) { Test->TestTrue(TEXT("Entry gallery menu is rendered"),Data.bMenuOpen && PanelVisible(TEXT("MenuPanel"))); CheckMenuLabels(true); }
+                if (Index==3)
+                {
+                    Test->TestEqual(TEXT("Overlay projection keeps its existing ten actions plus header Close"),Data.MenuEntries.Num(),10);
+                    Test->TestEqual(TEXT("Utilities start with power"),Data.MenuEntries[0].ActionId,static_cast<int32>(ECityPaletteAction::OverlayPower));
+                    Test->TestEqual(TEXT("Water selection uses the real command"),UI->Board->GetDiagnosticOverlay(),ECityDiagnosticOverlay::Service);
+                }
+                if (Index==5 || Index==9)
+                    for (const auto& E : Data.MenuEntries)
+                        if (E.ActionId==static_cast<int32>(Index==5 ? ECityPaletteAction::ReviewArchive : ECityPaletteAction::ConfirmLoad))
+                            Test->TestFalse(TEXT("Current city archive and unsupported load stay disabled"),E.bEnabled);
+                if (Index==6 || Index==8)
+                    Test->TestFalse(TEXT("Archived library never offers Load"),Data.MenuEntries.ContainsByPredicate([](const auto& E) { return E.ActionId==static_cast<int32>(ECityPaletteAction::ConfirmLoad); }));
+                if (Index==7 || Index==8)
+                    Test->TestFalse(TEXT("Empty library omits file actions"),Data.MenuEntries.ContainsByPredicate([](const auto& E) { return E.ActionId==static_cast<int32>(ECityPaletteAction::PreviousCity) || E.ActionId==static_cast<int32>(ECityPaletteAction::ReviewArchive); }));
+                if (Index==12 || Index==13) for (const auto& E:Data.MenuEntries) Test->TestTrue(TEXT("Overview and zoning keep their original layout metadata"),E.Columns==0 && !E.bPrimary && E.Group.IsEmpty());
+                Capture(*FString::Printf(TEXT("EntryLibrary-%d-%s.png"),Width,Names[Index]));
+            }
+            else if (Step==3)
+            {
+                if (Scroll) Scroll->ScrollToEnd();
+            }
+            else if (Index!=12)
+            {
+                CheckMenuLabels(true);
+                const auto Data=UI->GetUiSnapshot();
+                for (const auto& E:Data.MenuEntries)
+                    Test->TestTrue(FString::Printf(TEXT("Every entry action has rendered label geometry across scroll views: %s"),*E.Label.ToString()),EntryGalleryRenderedActions.Contains(E.ActionId));
+                const auto* Last=UI->DesktopHud->WidgetTree->FindWidget(FName(*FString::Printf(TEXT("Menu%d"),Data.MenuEntries.Num()-1)));
+                const auto* Panel=UI->DesktopHud->WidgetTree->FindWidget(TEXT("MenuPanel"));
+                if (Last) Test->TestTrue(TEXT("Last entry action has nonzero rendered geometry"),Last->GetCachedGeometry().GetLocalSize().X>1 && Last->GetCachedGeometry().GetLocalSize().Y>1);
+                if (Test->TestNotNull(TEXT("Last entry action exists"),Last) && Panel)
+                    Test->TestTrue(TEXT("Scrolling reaches the last entry action"),Last->GetCachedGeometry().LocalToAbsolute(Last->GetCachedGeometry().GetLocalSize()).Y<=Panel->GetCachedGeometry().LocalToAbsolute(Panel->GetCachedGeometry().GetLocalSize()).Y+1);
+                if (Scroll && Scroll->GetScrollOffsetOfEnd()>1) Capture(*FString::Printf(TEXT("EntryLibrary-%d-%s-actions.png"),Width,Names[Index]));
+                if (Index==2) { Click(ECityPaletteAction::Back); Test->TestEqual(TEXT("Back to setup keeps the draft"),UI->PalettePage,ECityPalettePage::NewCitySetup); }
+                if (Index==3) { Click(ECityPaletteAction::OverlayClear); Test->TestEqual(TEXT("Clear overlay uses the real command"),UI->Board->GetDiagnosticOverlay(),ECityDiagnosticOverlay::None); }
+            }
+            ++Phase; Next=FPlatformTime::Seconds()+.6; return false;
+        }
+
+        if (bSettingsGallery && Phase >= 700)
+        {
+            const TCHAR* Names[] = {TEXT("30-Settings"), TEXT("31-Audio"), TEXT("31-MusicMuted"), TEXT("32-Disasters"),
+                TEXT("32-DisastersOff"), TEXT("33-HistoryEmpty"), TEXT("33-HistoryFixture"), TEXT("34-Dusk"),
+                TEXT("34-Automatic"), TEXT("35-Graphics"), TEXT("35-Preview"), TEXT("35-Kept"),
+                TEXT("35-RevertPreview"), TEXT("35-Reverted"), TEXT("36-DebugSettings"), TEXT("37-DebugTools"), TEXT("35-BorderlessEdit")};
+            const int32 Index = (Phase-700)/4, Step = (Phase-700)%4;
+            if (Index >= UE_ARRAY_COUNT(Names))
+            {
+                if (!bSmallSettingsGallery)
+                {
+                    UI->SetPalettePage(ECityPalettePage::Settings);
+                    bSmallSettingsGallery = true;
+                    auto* Settings = GEngine->GetGameUserSettings();
+                    Settings->SetScreenResolution(FIntPoint(1024,720)); Settings->SetFullscreenMode(EWindowMode::Windowed);
+                    Settings->ApplyResolutionSettings(false);
+                    Phase = 700; Next = FPlatformTime::Seconds()+1; return false;
+                }
+                UI->bDesktopFocused = bObservedDesktopFocus;
+                UE_LOG(LogTemp, Display, TEXT("CITYSIM_SETTINGS_GALLERY_COMPLETE Cases=17 Sizes=2 PhysicalInputPending=1"));
+                return true;
+            }
+            auto Open = [&](ECityPalettePage Page) { UI->SetPaletteOpen(true); UI->SetPalettePage(Page); };
+            auto Action = [&](ECityPaletteAction Id) { UI->ExecuteDesktopUiAction(static_cast<int32>(Id)); };
+            auto* Body = UI->DesktopHud->WidgetTree->FindWidget(TEXT("MenuBody"));
+            auto* Container = Body ? Body->GetParent() : nullptr;
+            auto* Scroll = Container ? Cast<UScrollBox>(Container->GetParent()) : nullptr;
+            const int32 Width = bSmallSettingsGallery ? 1024 : 1280;
+            if (Step == 0)
+            {
+                switch (Index)
+                {
+                case 0:
+                    if (!Sim->IsResetConfirmationPending()) Sim->RequestResetScenario();
+                    Sim->RequestResetScenario(); Sim->StartScenario(); Sim->SetSimulationPaused(true);
+                    UI->SetDebugModeEnabled(false); UI->ShowMainMenu(); UI->ShowGameSettings(); break;
+                case 1:
+                    GetMutableDefault<UCityAudioSettings>()->SetAlarmVolume(.75f);
+                    GetMutableDefault<UCityAudioSettings>()->SetAmbienceVolume(.5f);
+                    GetMutableDefault<UCityAudioSettings>()->SetMusicVolume(.25f);
+                    Click(ECityPaletteAction::OpenAudio); break;
+                case 2: Click(ECityPaletteAction::MusicMute); Open(ECityPalettePage::Audio); break;
+                case 3: Open(ECityPalettePage::Disasters); Action(ECityPaletteAction::DisastersMedium); Open(ECityPalettePage::Disasters); break;
+                case 4: Click(ECityPaletteAction::DisastersOff); Open(ECityPalettePage::Disasters); break;
+                case 5: Open(ECityPalettePage::DisasterHistory); break;
+                case 6:
+                {
+                    // Saved fields rendered by a presentation fixture, not a measured disaster outcome.
+                    auto& State = const_cast<FCityDisasterSnapshot&>(Sim->GetDisasterSnapshot());
+                    FCityDisasterEvent E; E.StartStep=5; E.EndStep=11; E.Profile=2; E.SeverityPercent=35; E.Affected={1,2,3};
+                    State.Events.Add(E); State.LastFixedStepId=12;
+                    Open(ECityPalettePage::DisasterHistory); break;
+                }
+                case 7: Open(ECityPalettePage::Lighting); Action(ECityPaletteAction::LightingDusk); Open(ECityPalettePage::Lighting); break;
+                case 8: Click(ECityPaletteAction::LightingAutomatic); Open(ECityPalettePage::Lighting); break;
+                case 9: Open(ECityPalettePage::Settings); Action(ECityPaletteAction::OpenGraphics); break;
+                case 10: Click(ECityPaletteAction::GraphicsApply); break;
+                case 11: Action(ECityPaletteAction::OpenGraphics); break; // Reopen after Keep returns to Settings.
+                case 12: Click(ECityPaletteAction::GraphicsApply); break;
+                case 13: break; // Reverted using the real widget delegate after the preceding capture.
+                case 14: UI->SetDebugModeEnabled(true); Open(ECityPalettePage::Settings); break;
+                case 15: Click(ECityPaletteAction::OpenSafetyTests); break;
+                case 16: Open(ECityPalettePage::Settings); Action(ECityPaletteAction::OpenGraphics); Action(ECityPaletteAction::GraphicsMode); Action(ECityPaletteAction::GraphicsMode); break;
+                }
+                if (Scroll) Scroll->ScrollToStart();
+            }
+            else if (Step == 1)
+            {
+                CheckMenuLabels();
+                const auto Data = UI->GetUiSnapshot();
+                Test->TestTrue(TEXT("Settings panel is open for every review capture"), Data.bMenuOpen && PanelVisible(TEXT("MenuPanel")));
+				Test->TestTrue(TEXT("Settings gallery exercises main-menu entry context"), Data.bEntryScene);
+				Test->TestFalse(TEXT("Entry settings omit redundant header Back"), PanelVisible(TEXT("MenuClose")));
+                const ECityPalettePage Pages[] = {ECityPalettePage::Settings, ECityPalettePage::Audio, ECityPalettePage::Audio,
+                    ECityPalettePage::Disasters, ECityPalettePage::Disasters, ECityPalettePage::DisasterHistory,
+                    ECityPalettePage::DisasterHistory, ECityPalettePage::Lighting, ECityPalettePage::Lighting,
+                    ECityPalettePage::Graphics, ECityPalettePage::Graphics, ECityPalettePage::Graphics,
+                    ECityPalettePage::Graphics, ECityPalettePage::Graphics, ECityPalettePage::Settings,
+                    ECityPalettePage::SafetyTests, ECityPalettePage::Graphics};
+                Test->TestEqual(TEXT("Review capture has the intended settings page"), UI->PalettePage, Pages[Index]);
+                Test->TestEqual(TEXT("Settings capture uses its named viewport size"), GEngine->GameViewport->Viewport->GetSizeXY(), FIntPoint(Width, bSmallSettingsGallery ? 720 : 900));
+                Test->TestFalse(TEXT("Desktop settings hide the VR-only Menu position action"), Data.MenuEntries.ContainsByPredicate(
+                    [](const auto& E) { return E.ActionId == static_cast<int32>(ECityPaletteAction::CycleAnchor); }));
+                if (Index == 5 || Index == 6)
+                    for (const auto& E : Data.MenuEntries)
+                        if (E.ActionId == static_cast<int32>(ECityPaletteAction::ReportPeriodPrevious) || E.ActionId == static_cast<int32>(ECityPaletteAction::ReportPeriodNext))
+                            Test->TestFalse(TEXT("Empty or single-record history has no enabled browse action"), E.bEnabled);
+                if (Index == 16) Test->TestTrue(TEXT("Borderless retains a visible desktop resolution without edit arrows"), Data.MenuEntries[0].GroupHelp.ToString().Contains(TEXT("Desktop resolution:")));
+                if (Index == 2) Test->TestTrue(TEXT("Music mute keeps selected semantic state"), UI->IsPaletteActionSelected(ECityPaletteAction::MusicMute));
+                if (Index == 4) Test->TestEqual(TEXT("Disaster off button changes frequency"), Sim->GetCityIdentity().DisasterFrequency, ECityDisasterFrequency::Off);
+                if (Index == 8) Test->TestTrue(TEXT("Lighting automatic widget dispatch works"), UI->IsPaletteActionSelected(ECityPaletteAction::LightingAutomatic));
+                if (Index == 10 || Index == 12)
+                {
+                    Test->TestTrue(TEXT("Apply starts the real timed graphics confirmation"), UI->DesktopVideo.IsConfirming());
+                    Test->TestEqual(TEXT("Preview offers only Keep and Revert"), Data.MenuEntries.Num(), 2);
+                }
+                if (Index == 11 || Index == 13) Test->TestFalse(TEXT("Keep and Revert both leave preview mode"), UI->DesktopVideo.IsConfirming());
+                for (int32 I=0; I<Data.MenuEntries.Num(); ++I)
+                {
+                    const auto* B = UI->DesktopHud->WidgetTree->FindWidget(FName(*FString::Printf(TEXT("Menu%d"),I)));
+                    const auto* V = UI->DesktopHud->WidgetTree->FindWidget(FName(*FString::Printf(TEXT("Menu%dValue"),I)));
+                    if (B && V && V->IsVisible())
+                    {
+                        const auto& G=B->GetCachedGeometry(); const auto& VG=V->GetCachedGeometry();
+                        const auto End=G.LocalToAbsolute(G.GetLocalSize()); const auto VE=VG.LocalToAbsolute(VG.GetLocalSize());
+                        Test->TestTrue(TEXT("Settings current values fit the clickable row"), VE.X <= End.X+1 && VE.Y <= End.Y+1);
+                    }
+                }
+                Capture(*FString::Printf(TEXT("Settings-%d-%s.png"),Width,Names[Index]));
+            }
+            else if (Step == 2) { if (Scroll) Scroll->ScrollToEnd(); }
+            else
+            {
+                const auto Data = UI->GetUiSnapshot();
+                const auto* Last = UI->DesktopHud->WidgetTree->FindWidget(FName(*FString::Printf(TEXT("Menu%d"),Data.MenuEntries.Num()-1)));
+                const auto* Panel = UI->DesktopHud->WidgetTree->FindWidget(TEXT("MenuPanel"));
+                if (Test->TestNotNull(TEXT("Last settings action exists"),Last) && Panel)
+                    Test->TestTrue(TEXT("Scrolling reaches the last settings action"), Last->GetCachedGeometry().LocalToAbsolute(Last->GetCachedGeometry().GetLocalSize()).Y <= Panel->GetCachedGeometry().LocalToAbsolute(Panel->GetCachedGeometry().GetLocalSize()).Y+1);
+                if (Scroll && Scroll->GetScrollOffsetOfEnd()>1) Capture(*FString::Printf(TEXT("Settings-%d-%s-actions.png"),Width,Names[Index]));
+                if (Index == 9 || Index == 11) Click(ECityPaletteAction::GraphicsVSync);
+                if (Index == 10) Click(ECityPaletteAction::GraphicsKeep);
+                if (Index == 12) Click(ECityPaletteAction::GraphicsRevert);
+            }
+            ++Phase; Next=FPlatformTime::Seconds()+.6; return false;
+        }
+        if (bCityFinanceGallery && Phase >= 600)
+        {
+            const TCHAR* Names[] = {TEXT("19-City"), TEXT("29-Reports"), TEXT("24-Loans"), TEXT("25-Terms"),
+                TEXT("24-ActiveLoan"), TEXT("25-Payoff"), TEXT("22-Policies"), TEXT("23-EnableAid"),
+                TEXT("22-AidEnabled"), TEXT("23-DisableAid"), TEXT("23-Bursaries"), TEXT("20-Technology"),
+                TEXT("20-ComputingLocked"), TEXT("21-AiOff"), TEXT("21-AiOn"), TEXT("27-HousingEmpty"),
+                TEXT("27-HousingEvents"), TEXT("22-Unfunded"), TEXT("24-Arrears"), TEXT("25-UnfundedPayoff"), TEXT("28-Taxes"), TEXT("26-News"), TEXT("24-LoanDetails"), TEXT("27-HousingDetails")};
+            const int32 Index = (Phase - 600) / 4, Step = (Phase - 600) % 4;
+            if (Index >= UE_ARRAY_COUNT(Names))
+            {
+                if (!bSmallFinanceGallery)
+                {
+                    bSmallFinanceGallery = true;
+                    auto* Settings = GEngine->GetGameUserSettings();
+                    Settings->SetScreenResolution(FIntPoint(1024, 720));
+                    Settings->SetFullscreenMode(EWindowMode::Windowed);
+                    Settings->ApplyResolutionSettings(false);
+                    Phase = 600; Next = FPlatformTime::Seconds() + 1.0; return false;
+                }
+                UI->bDesktopFocused = bObservedDesktopFocus;
+                UE_LOG(LogTemp, Display, TEXT("CITYSIM_CITY_FINANCE_GALLERY_COMPLETE Cases=24 Sizes=2 PhysicalInputPending=1"));
+                return true;
+            }
+            const int32 Width = bSmallFinanceGallery ? 1024 : 1280;
+            auto Open = [&](ECityPalettePage Page) { UI->SetPaletteOpen(true); UI->SetPalettePage(Page); };
+            auto Action = [&](ECityPaletteAction Id) { UI->ExecuteDesktopUiAction(static_cast<int32>(Id)); };
+            auto* LegacyBody = UI->DesktopHud->WidgetTree->FindWidget(TEXT("MenuBody"));
+            auto* Container = LegacyBody ? LegacyBody->GetParent() : nullptr;
+            auto* Scroll = Container ? Cast<UScrollBox>(Container->GetParent()) : nullptr;
+            if (Step == 0)
+            {
+                switch (Index)
+                {
+                case 0: if (!Sim->IsResetConfirmationPending()) Sim->RequestResetScenario(); Sim->RequestResetScenario(); Sim->StartScenario(); Sim->SetSimulationPaused(true); Open(ECityPalettePage::City); break;
+                case 1: Open(ECityPalettePage::Reports); break;
+                case 2: Open(ECityPalettePage::Loans); break;
+                case 3: Action(ECityPaletteAction::ReviewLoanSmall); break;
+                case 4: Click(ECityPaletteAction::ConfirmLoan); break;
+                case 5: Click(ECityPaletteAction::ReviewLoanPayoff); break;
+                case 6: Open(ECityPalettePage::Policies); break;
+                case 7: Click(ECityPaletteAction::ReviewReservePolicy); break;
+                case 8: Click(ECityPaletteAction::ConfirmPolicy); break;
+                case 9: Click(ECityPaletteAction::ReviewReservePolicy); break;
+                case 10: Open(ECityPalettePage::Policies); Action(ECityPaletteAction::ReviewBursaryPolicy); break;
+                case 11: UI->TechnologyReviewDefinition = TEXT("DigitalExchange"); Open(ECityPalettePage::TechnologyReview); break;
+                case 12: UI->TechnologyReviewDefinition = TEXT("ComputingCenter"); Open(ECityPalettePage::TechnologyReview); break;
+                case 13: Open(ECityPalettePage::CommercialAi); break;
+                case 14: Click(ECityPaletteAction::EnableCommercialAi); break;
+                case 15: Open(ECityPalettePage::HousingHistory); break;
+                case 16:
+                {
+                    // Isolated presentation fixture, not a player city or a simulation acceptance claim.
+                    auto& P = const_cast<FCityPopulationSnapshot&>(Sim->GetPopulationSnapshot());
+                    FCityHousingEvent H; H.Kind = ECityHousingEventKind::Waiting; H.Month = 8; H.Residents = 3;
+                    H.SourceHome = 9; H.SourceCell = FCityCellCoord(5,6); H.HousingStatus = static_cast<uint8>(ECityHousingStatus::CannotAfford);
+                    H.Happiness = 30; H.Outlook = 35; H.CitizenIds = {1,2,3};
+                    FCityHousingHistory::Record(P, H); Open(ECityPalettePage::HousingHistory); break;
+                }
+                case 17:
+                {
+                    auto& E = const_cast<FCityEconomySnapshot&>(Sim->GetEconomySnapshot());
+                    E.Policies.LastSettledMonth = 1; auto& R = E.Policies.Programs[0];
+                    R.bEnabled = R.bLastEnabled = true; R.Eligible = 3; R.GrantsDue = 15;
+                    Open(ECityPalettePage::Policies); break;
+                }
+                case 18:
+                {
+                    auto& E = const_cast<FCityEconomySnapshot&>(Sim->GetEconomySnapshot());
+                    E.Loan.InterestDue = 25; E.Loan.MonthsRemaining = 23;
+                    Sim->GetPlacementModel().TrySpendFunds(Sim->GetPlacementModel().GetFunds());
+                    Open(ECityPalettePage::Loans); break;
+                }
+                case 19: UI->bLoanPayoffReview = true; Open(ECityPalettePage::LoanReview); break;
+                case 20: Open(ECityPalettePage::Taxes); break;
+                case 21: Open(ECityPalettePage::QuarterlyNews); break;
+                case 22: Open(ECityPalettePage::Loans); break;
+                case 23:
+                {
+                    auto& P = const_cast<FCityPopulationSnapshot&>(Sim->GetPopulationSnapshot());
+                    if (!P.HousingEvents.IsEmpty()) FCityHousingHistory::Record(P, P.HousingEvents.Last());
+                    Open(ECityPalettePage::HousingHistory); break;
+                }
+                }
+                if (Scroll) Scroll->ScrollToStart();
+            }
+            else if (Step == 1)
+            {
+                const auto Data = UI->GetUiSnapshot();
+                if (Index >= 22)
+                {
+                    auto* Content = Cast<UCityDesktopMenuContent>(UI->DesktopHud->WidgetTree->FindWidget(TEXT("StructuredMenu")));
+                    if (Test->TestNotNull(TEXT("Expandable desktop content exists"), Content))
+                        Test->TestEqual(TEXT("Every disclosure can expand independently"), Content->SetDetailsExpanded(true), Index == 22 ? 1 : 2);
+                    UI->DesktopHud->ForceLayoutPrepass();
+                }
+                if (!Data.bNewspaper) CheckMenuLabels();
+                if (Index == 0)
+                {
+                    const auto* First = UI->DesktopHud->WidgetTree->FindWidget(TEXT("Menu0"));
+                    const auto* Second = UI->DesktopHud->WidgetTree->FindWidget(TEXT("Menu1"));
+                    const auto* Third = UI->DesktopHud->WidgetTree->FindWidget(TEXT("Menu2"));
+                    const auto* NextGroup = UI->DesktopHud->WidgetTree->FindWidget(TEXT("Menu3"));
+                    if (First && Second && Third && NextGroup)
+                    {
+                        const auto& G = First->GetCachedGeometry();
+                        const auto& G2 = Second->GetCachedGeometry();
+                        Test->TestTrue(TEXT("City uses two equal columns on one row"),
+                            FMath::IsNearlyEqual(G.GetLocalSize().X, G2.GetLocalSize().X, .5) &&
+                            FMath::IsNearlyEqual(G.GetAbsolutePosition().Y, G2.GetAbsolutePosition().Y, .5));
+                        Test->TestTrue(TEXT("City starts subsequent rows and sections in the same left column"),
+                            FMath::IsNearlyEqual(G.GetAbsolutePosition().X, Third->GetCachedGeometry().GetAbsolutePosition().X, .5) &&
+                            FMath::IsNearlyEqual(G.GetAbsolutePosition().X, NextGroup->GetCachedGeometry().GetAbsolutePosition().X, .5));
+                        for (int32 I = 0; I < Data.MenuEntries.Num(); ++I)
+                        {
+                            const auto* B = UI->DesktopHud->WidgetTree->FindWidget(FName(FString::Printf(TEXT("Menu%d"), I)));
+                            Test->TestTrue(TEXT("All City buttons have identical dimensions"), B && B->GetCachedGeometry().GetLocalSize().Equals(G.GetLocalSize(), .5));
+                            const auto* L = UI->DesktopHud->WidgetTree->FindWidget(FName(FString::Printf(TEXT("Menu%dLabel"), I)));
+                            if (B && L)
+                            {
+                                const auto Offset = B->GetCachedGeometry().AbsoluteToLocal(L->GetCachedGeometry().GetAbsolutePosition());
+                                Test->TestTrue(TEXT("City label starts at the left content inset"), Offset.X >= 0 && Offset.X <= 14);
+                            }
+                        }
+                    }
+                    else Test->AddError(TEXT("City grid controls missing"));
+                }
+                if (Index > 1 && Index < 20)
+                    Test->TestTrue(TEXT("Selected dense page has typed sections"), Data.MenuSections.Num() > 0);
+                const auto* Panel = UI->DesktopHud->WidgetTree->FindWidget(TEXT("MenuPanel"));
+                const auto View = UI->DesktopHud->GetCachedGeometry().GetLocalSize();
+                Test->TestTrue(TEXT("Menu stays within laptop/desktop viewport"), Panel && Panel->GetCachedGeometry().GetLocalSize().Y <= View.Y - 200);
+                Capture(*FString::Printf(TEXT("CityFinance-%d-%s.png"), Width, Names[Index]));
+            }
+            else if (Step == 2)
+            {
+                if (Scroll) Scroll->ScrollToEnd();
+            }
+            else
+            {
+                const auto Data = UI->GetUiSnapshot();
+                if (Data.MenuEntries.Num() && !Data.bNewspaper)
+                {
+                    const auto* Last = UI->DesktopHud->WidgetTree->FindWidget(FName(FString::Printf(TEXT("Menu%d"), Data.MenuEntries.Num()-1)));
+                    const auto* Panel = UI->DesktopHud->WidgetTree->FindWidget(TEXT("MenuPanel"));
+                    if (Test->TestNotNull(TEXT("Last action exists after page changes"), Last) && Panel)
+                    {
+                        const auto& G = Last->GetCachedGeometry(); const auto& PG = Panel->GetCachedGeometry();
+                        Test->TestTrue(TEXT("Scrolling reaches the last menu action"), G.LocalToAbsolute(G.GetLocalSize()).Y <= PG.LocalToAbsolute(PG.GetLocalSize()).Y + 1);
+                    }
+                }
+                if (Scroll && Scroll->GetScrollOffsetOfEnd() > 1)
+                    Capture(*FString::Printf(TEXT("CityFinance-%d-%s-actions.png"), Width, Names[Index]));
+            }
+            ++Phase; Next = FPlatformTime::Seconds() + .6; return false;
+        }
+        if (bBuildMenuGallery && Phase >= 500)
+		{
+			const ECityPalettePage Pages[] = {ECityPalettePage::Build, ECityPalettePage::Roads,
+			    ECityPalettePage::PowerFacilities, ECityPalettePage::WaterFacilities, ECityPalettePage::Parks,
+			    ECityPalettePage::EducationFacilities, ECityPalettePage::WasteFacilities,
+			    ECityPalettePage::TechnologyFacilities, ECityPalettePage::Overlays, ECityPalettePage::Reports};
+			const TCHAR* Names[] = {TEXT("Build"), TEXT("Roads"), TEXT("Power"), TEXT("Water"), TEXT("Parks"),
+			    TEXT("Education"), TEXT("Waste"), TEXT("Technology"), TEXT("Overlays"), TEXT("Reports")};
+			const int32 Index = (Phase - 500) / 2;
+			if (Index >= UE_ARRAY_COUNT(Pages))
+			{
+				UI->bDesktopFocused = bObservedDesktopFocus;
+				UE_LOG(LogTemp, Display, TEXT("CITYSIM_BUILD_MENU_GALLERY_COMPLETE Captures=10 PhysicalInputPending=1"));
+				return true;
+			}
+			if (Phase % 2 == 0)
+			{
+				UI->SetPaletteOpen(true);
+				UI->SetPalettePage(Pages[Index]);
+			}
+			else
+			{
+				CheckMenuLabels();
+				const auto DesktopMenu = UI->GetUiSnapshot().MenuEntries;
+				for (int32 I = 0; I < DesktopMenu.Num(); ++I)
+				{
+					const FName Symbol = UCityDesktopIcon::ForAction(DesktopMenu[I].ActionId);
+					if (Symbol.IsNone()) continue;
+					const auto* Icon = Cast<UCityDesktopIcon>(UI->DesktopHud->WidgetTree->FindWidget(
+					    FName(FString::Printf(TEXT("Menu%dIcon"), I))));
+					if (Test->TestNotNull(TEXT("Construction pictogram widget exists"), Icon))
+					{
+						Test->TestEqual(TEXT("Rendered pictogram matches selected action"), Icon->Symbol, Symbol);
+						Test->TestTrue(TEXT("Pictogram has visible geometry"), Icon->IsVisible() &&
+						    Icon->GetCachedGeometry().GetLocalSize().X > 1 && Icon->GetCachedGeometry().GetLocalSize().Y > 1);
+					}
+				}
+				Capture(*FString::Printf(TEXT("BuildMenus-%02d-%s.png"), Index, Names[Index]));
+			}
+			++Phase;
+			UI->bDesktopFocused = bObservedDesktopFocus;
+			Next = FPlatformTime::Seconds() + 1.0;
+			return false;
+		}
 		switch (Phase++)
 		{
 		case -3:
+            if (bBuildMenuGallery || bCityFinanceGallery || bSettingsGallery || bEntryLibraryGallery)
+            {
+                auto* Settings = GEngine->GetGameUserSettings();
+                Settings->SetScreenResolution(FIntPoint(1280,900));
+                Settings->SetFullscreenMode(EWindowMode::Windowed);
+                Settings->ApplyResolutionSettings(false);
+            }
 			// Offscreen automation has no real window activation; establish the
 			// entry state before exercising a synthetic loss/return below.
 			UI->ShowMainMenu();
@@ -350,6 +830,10 @@ public:
 			UI->SetObjectivesVisible(false);
 			CheckToolLayout();
 			Capture(TEXT("Overview.png"));
+			if (bEntryLibraryGallery) { Phase = 800; break; }
+            if (bSettingsGallery) { Phase = 700; break; }
+            if (bCityFinanceGallery) { Phase = 600; break; }
+			if (bBuildMenuGallery) { Phase = 500; break; }
 			// Preview-only follow-ups do not repeat unrelated menu/graphics/report validation.
 			if (FParse::Param(FCommandLine::Get(), TEXT("CityDesktopInspectorOnly")))
 				Phase = 78;
@@ -754,15 +1238,18 @@ public:
 		{
 			UI->SetCitySummaryVisible(false);
 			FString CityPath, Error;
-			if (FParse::Value(FCommandLine::Get(), TEXT("CityUiCity="), CityPath))
-				Test->TestTrue(TEXT("Chart QA loads a copied city without writing to it"),
-				               Sim->LoadCityFromPath(CityPath, Error, false));
-			Sim->SetSimulationPaused(false);
-			Sim->SetSimulationSpeed(5);
-			while (Sim->GetEconomySnapshot().FixedStepId < 80)
-				Sim->Tick(.12f);
+			if (FParse::Value(FCommandLine::Get(), TEXT("CityUiCity="), CityPath) && !Sim->LoadCityFromPath(CityPath, Error, false))
+			{ Test->AddError(TEXT("Chart QA copied-city prerequisite failed: ") + Error);
+			  UI->bDesktopFocused = bObservedDesktopFocus; return true; }
+			if (!CitySmokeReports::Seed(*Sim, Error))
+			{
+				Test->AddError(Error); UI->bDesktopFocused = bObservedDesktopFocus; return true;
+			}
 			Sim->SetSimulationPaused(true);
-			UI->ShowReports(false);
+			Test->AddInfo(FString::Printf(TEXT("SMOKE279 Steps=%lld Daily=%d Monthly=%d Hourly=%d"),
+			    Sim->GetEconomySnapshot().FixedStepId, Sim->GetReportHistory().Months.Num(),
+			    Sim->GetReportHistory().Monthly().Num(), Sim->GetReportHistory().Hours.Num()));
+			UI->ShowReports();
 			break;
 		}
 		case 69:
@@ -770,13 +1257,15 @@ public:
 			const auto* Chart = Cast<UCityDesktopChart>(UI->DesktopHud->WidgetTree->FindWidget(TEXT("ReportChart")));
 			Test->TestTrue(TEXT("Settled monthly observations render a real chart"),
 			               Chart && Chart->IsVisible() && Chart->GetReport().Bars.Num() >= 3);
-			if (Chart)
+			if (!Chart) { UI->bDesktopFocused = bObservedDesktopFocus; return true; }
 			{
 				Test->TestEqual(TEXT("Cooked desktop and VR expose the identical selected report"),
 				                Chart->GetReport().Selected, UI->SharedReportChart.Selected);
 				Test->TestTrue(TEXT("Cooked chart uses actual settled values"),
 				               Chart->GetReport().Values == UI->SharedReportChart.Values);
-				BeforeReportPeriod = Chart->GetReport().Periods[Chart->GetReport().Selected];
+				if (!CitySmokeReports::SelectedPeriod(Chart->GetReport(), BeforeReportPeriod))
+				{ Test->AddError(TEXT("Monthly smoke fixture has no valid selected observation"));
+				  UI->bDesktopFocused = bObservedDesktopFocus; return true; }
 			}
 			CheckMenuLabels();
 			Capture(TEXT("ReportsMonthly.png"));
@@ -787,17 +1276,21 @@ public:
 			Click(ECityPaletteAction::ReportPeriodPrevious);
 			break;
 		case 71:
-			Test->TestEqual(TEXT("Previous period moves the shared selected observation"),
-			                UI->SharedReportChart.Periods[UI->SharedReportChart.Selected], BeforeReportPeriod - 1);
-			Capture(TEXT("ReportsSelected.png"));
-			break;
+		{
+			int64 Selected = 0;
+			if (!CitySmokeReports::SelectedPeriod(UI->SharedReportChart, Selected))
+			{ Test->AddError(TEXT("Period navigation has no valid selected observation"));
+			  UI->bDesktopFocused = bObservedDesktopFocus; return true; }
+			Test->TestEqual(TEXT("Previous period moves the shared selected observation"), Selected, BeforeReportPeriod - 1);
+			Capture(TEXT("ReportsSelected.png")); break;
+		}
 		case 72:
-			Click(ECityPaletteAction::ReportAnnual);
+			Click(ECityPaletteAction::ReportHourly);
 			break;
 		case 73:
-			Test->TestTrue(TEXT("Annual observations render with year labels"),
-			               UI->SharedReportChart.FirstPeriod.ToString().StartsWith(TEXT("Years")));
-			Capture(TEXT("ReportsAnnual.png"));
+			Test->TestTrue(TEXT("Hourly observations render with hour labels"),
+			               UI->SharedReportChart.FirstPeriod.ToString().StartsWith(TEXT("Hours")));
+			Capture(TEXT("ReportsHourly.png"));
 			break;
 		case 74:
 			Control(TEXT("MenuClose"));
@@ -1446,6 +1939,12 @@ private:
 	FAutomationTestBase* Test;
 	int32 Phase = -3, Attempts = 0;
 	bool BeforeVSync = false;
+	bool bBuildMenuGallery = false;
+    bool bCityFinanceGallery = false;
+    bool bSettingsGallery = false, bSmallSettingsGallery = false;
+    bool bEntryLibraryGallery = false, bSmallEntryGallery = false;
+    TSet<int32> EntryGalleryRenderedActions;
+    bool bSmallFinanceGallery = false;
 	TArray<FVector2D> ToolPositions, ToolSizes;
 	TArray<FLinearColor> BeforeTerrainCells;
 	int32 BeforeTax = 0;
@@ -1472,4 +1971,58 @@ bool FCityDesktopPackagedSmokeTest::RunTest(const FString& Parameters)
 	ADD_LATENT_AUTOMATION_COMMAND(FCityDesktopPackagedSmokeCommand(this));
 	return true;
 }
+IMPLEMENT_SIMPLE_AUTOMATION_TEST(FCityDesktopBuildMenuGalleryTest, "CitySim.Desktop.BuildMenuGallery",
+                                 EAutomationTestFlags::ClientContext | EAutomationTestFlags::EngineFilter)
+bool FCityDesktopBuildMenuGalleryTest::RunTest(const FString& Parameters)
+{
+	FString UserDirectory;
+	if (!FParse::Param(FCommandLine::Get(), TEXT("CityDesktop")) ||
+	    !FParse::Value(FCommandLine::Get(), TEXT("UserDir="), UserDirectory) ||
+	    (!UserDirectory.Contains(TEXT("Client-")) && !UserDirectory.Contains(TEXT("BuildMenus317")) &&
+	     !UserDirectory.Contains(TEXT("EditorVisualTests"))))
+	{
+		AddError(TEXT("Build menu gallery requires -CityDesktop and an isolated Client-/BuildMenus317/EditorVisualTests profile"));
+		return false;
+	}
+	ADD_LATENT_AUTOMATION_COMMAND(FCityDesktopPackagedSmokeCommand(this, true));
+	return true;
+}
+IMPLEMENT_SIMPLE_AUTOMATION_TEST(FCityDesktopCityFinanceGalleryTest, "CitySim.Desktop.CityFinanceGallery",
+    EAutomationTestFlags::ClientContext | EAutomationTestFlags::EngineFilter)
+bool FCityDesktopCityFinanceGalleryTest::RunTest(const FString& Parameters)
+{
+    FString UserDirectory;
+    if (!FParse::Param(FCommandLine::Get(), TEXT("CityDesktop")) ||
+        !FParse::Value(FCommandLine::Get(), TEXT("UserDir="), UserDirectory) ||
+        (!UserDirectory.Contains(TEXT("Client-")) && !UserDirectory.Contains(TEXT("EditorVisualTests"))))
+    { AddError(TEXT("City finance gallery requires an isolated Client-/EditorVisualTests desktop profile")); return false; }
+    ADD_LATENT_AUTOMATION_COMMAND(FCityDesktopPackagedSmokeCommand(this, false, true));
+    return true;
+}
+IMPLEMENT_SIMPLE_AUTOMATION_TEST(FCityDesktopSettingsGalleryTest, "CitySim.Desktop.SettingsGallery",
+    EAutomationTestFlags::ClientContext | EAutomationTestFlags::EngineFilter)
+bool FCityDesktopSettingsGalleryTest::RunTest(const FString& Parameters)
+{
+    FString UserDirectory;
+    if (!FParse::Param(FCommandLine::Get(), TEXT("CityDesktop")) ||
+        !FParse::Value(FCommandLine::Get(), TEXT("UserDir="), UserDirectory) ||
+        (!UserDirectory.Contains(TEXT("Client-")) && !UserDirectory.Contains(TEXT("EditorVisualTests"))))
+    { AddError(TEXT("Settings gallery requires an isolated Client-/EditorVisualTests desktop profile")); return false; }
+    ADD_LATENT_AUTOMATION_COMMAND(FCityDesktopPackagedSmokeCommand(this, false, false, true));
+    return true;
+}
+
+IMPLEMENT_SIMPLE_AUTOMATION_TEST(FCityDesktopEntryLibraryGalleryTest, "CitySim.Desktop.EntryLibraryGallery",
+    EAutomationTestFlags::ClientContext | EAutomationTestFlags::EngineFilter)
+bool FCityDesktopEntryLibraryGalleryTest::RunTest(const FString& Parameters)
+{
+    FString UserDirectory;
+    if (!FParse::Param(FCommandLine::Get(), TEXT("CityDesktop")) ||
+        !FParse::Value(FCommandLine::Get(), TEXT("UserDir="), UserDirectory) ||
+        (!UserDirectory.Contains(TEXT("Client-")) && !UserDirectory.Contains(TEXT("EditorVisualTests"))))
+    { AddError(TEXT("Entry/library gallery requires an isolated Client-/EditorVisualTests desktop profile")); return false; }
+    ADD_LATENT_AUTOMATION_COMMAND(FCityDesktopPackagedSmokeCommand(this, false, false, false, true));
+    return true;
+}
+
 #endif

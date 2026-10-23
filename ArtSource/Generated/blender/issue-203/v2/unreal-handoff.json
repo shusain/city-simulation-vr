@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "kind": "blender",
+  "repository": "CitySimVR/citysim",
+  "asset_issue": 203,
+  "approved_version": 2,
+  "approval_manifest": "approval.json",
+  "approval_sha256": "4748b5872d7b549306f7b5c91ba99cf250a11a94e0945395674aedc527c81334",
+  "source_context_sha": "322ad23f7d717783f6073245c579cc986721e9c7",
+  "artifacts": [
+    {
+      "name": "asset.blend",
+      "bytes": 95692,
+      "sha256": "3c93dd1de310f709919d4b2e048cd9f528ab7b254e76e47620358bf57fe68ceb"
+    },
+    {
+      "name": "asset.fbx",
+      "bytes": 16780,
+      "sha256": "7ae93678906c45d169923d5e4d8ff29a5b4e90a4b645ce8557cf3ee9ee1c1333"
+    },
+    {
+      "name": "manifest.json",
+      "bytes": 804,
+      "sha256": "29aa63c76a93260d47ca34ba90965993f4fa1781e5eb51a79bb7f65999164b88"
+    },
+    {
+      "name": "preview.png",
+      "bytes": 218637,
+      "sha256": "3d41662977e3d2a04a88e59ad0e3e9eedc9996f01488491cc93fc030e5a29fff"
+    },
+    {
+      "name": "scale_1m.png",
+      "bytes": 207223,
+      "sha256": "7ad035b57c062f6cda0acbec05cfb47e1cff8e40f357ac354fe1990af4b80fc0"
+    },
+    {
+      "name": "side.png",
+      "bytes": 217960,
+      "sha256": "c9b0507acba8e095835ebd58e842c59044fa94bba50611da222925cd2c97e685"
+    },
+    {
+      "name": "top.png",
+      "bytes": 232880,
+      "sha256": "1c1e5bb2d16ed043cba7b24c50f2be58b74e7ffd76c849d13ae89a83f8fb5b23"
+    },
+    {
+      "name": "validation.json",
+      "bytes": 785,
+      "sha256": "7747cf9400dc4f7e76e5e17bdcffdf4daecb08178404eb233c7c8f33c1e55e3f"
+    },
+    {
+      "name": "source-bundle.zip",
+      "bytes": 1836427,
+      "sha256": "49ba6b217ea1392468d1c3d9613d34c37b88cd83b8f13ea9a89b3fffda41f1db"
+    },
+    {
+      "name": "approval.json",
+      "bytes": 2052,
+      "sha256": "4748b5872d7b549306f7b5c91ba99cf250a11a94e0945395674aedc527c81334"
+    }
+  ],
+  "unreal": {
+    "status": "not_imported",
+    "destination": "choose in the separate integration issue",
+    "role": "Blender source and exports; validate importer contract"
+  }
+}

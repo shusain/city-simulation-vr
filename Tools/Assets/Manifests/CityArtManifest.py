@@ -51,7 +51,7 @@ def load_starter_manifest(root):
         surface=has_capability(entry, 'building_surfaces')
         park_refined=has_capability(entry, 'paired_park_lods')
         adopted=has_capability(entry, 'reviewed_building')
-        section_limit=entry['sections'] if surface or park_refined or adopted else 4 if entry.get('hospital_asset') else 2
+        section_limit=entry['sections'] if surface or park_refined or adopted or entry.get('vehicle_refinement345') else 4 if entry.get('hospital_asset') else 2
         if adopted and (not 0<entry.get('triangles',0)<=(4248 if park_refined else 3854) or not 0<section_limit<=7):
             errors.append(f"{asset_id}: invalid reviewed geometry contract")
         if park_refined and (not 0<entry.get('triangles',0)<=4248 or not os.path.isfile(os.path.join(ROOT,entry.get('native_lod_export','')))):

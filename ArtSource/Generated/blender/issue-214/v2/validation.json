@@ -1,0 +1,39 @@
+{
+  "mesh_geometry_sha256": "e74ca951d02bac1f34ad8a6d72516ead80392af47a45b7053228c97766a4812a",
+  "dimensions_m": [
+    0.8500000238418579,
+    0.44999998807907104,
+    0.11999999731779099
+  ],
+  "triangles": 216,
+  "material_slots": [
+    "Kelp"
+  ],
+  "roundtrip_pass": true,
+  "blender_version": "5.1.1",
+  "render_engine": "CYCLES",
+  "render_device": "CPU",
+  "reference_sha256": {},
+  "review_lighting": {
+    "mode": "extent-squared-area-light",
+    "asset_extent_m": 0.8500000238418579,
+    "area_light_energy_watts": 20.320314407348633,
+    "area_light_size_m": 0.8500000238418579,
+    "reference_extent_m": 8.0,
+    "reference_energy_watts": 1800.0,
+    "world_strength": 0.6,
+    "view_transform": "AgX",
+    "exposure": 0.0
+  },
+  "render_only_revision": {
+    "source": "/previous/asset.blend",
+    "source_sha256": "c733c1f531b6c0ea61fa83ef9491512fdfb4060e4b21e997c2b8431248df76ad",
+    "unchanged_geometry_uv_material_transform_signature": "af09a628c5935890699c4b8d418797b2b34947720ca64f6da3379ce196ea56b9",
+    "preservation_pass": true,
+    "lighting": "Shared CityRunnerPreview scale-normalized setup used unchanged for all views",
+    "samples": 12,
+    "device": "CPU",
+    "scale_view_vertical_span_m": 1.0,
+    "no_mesh_added": true
+  }
+}

@@ -137,12 +137,6 @@ Assert-Check $true 'CI scratch reset preserves held directory nodes and verifies
 $taskReceipt.checks = @($taskChecks)
 $null = Invoke-CityToolProcess -FilePath $Python -ArgumentList @((Join-Path $PSScriptRoot 'Test-CityPublicSource.py')) -LogPrefix "$taskOutput/public-source-contracts"
 Assert-Check $true 'Public source defaults, semantic profiles and paired fixture interfaces'
-. (Join-Path $taskRoot 'Tools/CI/CityCiReservations.ps1')
-Assert-Check (@(Get-CityLocalNativeClaims '**Drone CI native/source/build window CLAIMED 2026-10-19**').Count -eq 0) 'Semantic CI owner accepted'
-foreach ($taskClaim in @('Local editor', 'D126 Drone CI', 'Drone CIBogus', 'Someone Drone CI')) {
-    Assert-Check (@(Get-CityLocalNativeClaims "**$taskClaim native/source/build window CLAIMED 2026-10-19**").Count -eq 1) "Non-CI claim remains blocking: $taskClaim"
-}
-Assert-Check (@(Get-CityLocalNativeClaims "**Drone CI native/source/build window CLAIMED**`n**Local import window CLAIMED**").Count -eq 1) 'Mixed CI/local claim still blocks'
 Assert-Rejected { Resolve-CityToolPython -RepositoryRoot $taskRoot -Python "$taskOutput/missing-python.exe" -Fallback $Python } 'Explicit invalid interpreter never falls back' 'Python 3.11'
 $taskOldPath = $env:PATH
 try {

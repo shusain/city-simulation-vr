@@ -1,0 +1,11 @@
+{
+  "scope": "Actual-city physical mouse use: accordions, hover details, scrolling, Repair",
+  "exact_human_build_identifier": "not supplied",
+  "prior_automated_evidence": "Existing issue body and DataInspector/Delivery.json; not rerun",
+  "date": "2026-10-21",
+  "state": "closed",
+  "issue": 48,
+  "headset_observations": "unconfirmed under #49",
+  "confirmation": "Yes, those controls work well",
+  "closeout": "https://git.shaun-husain.com/CitySimVR/citysim/issues/48#issuecomment-5747"
+}

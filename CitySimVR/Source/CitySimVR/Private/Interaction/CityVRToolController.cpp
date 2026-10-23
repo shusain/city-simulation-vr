@@ -1,4 +1,5 @@
 #include "Interaction/CityVRToolController.h"
+#include "Presentation/CityTutorialSettings.h"
 #include "Simulation/CityTechnology.h"
 #include "Simulation/CityCommercialAi.h"
 #include "Interaction/CityHudLayout.h"
@@ -842,16 +843,17 @@ bool ACityVRToolController::IsNeedsToggleHit(const FVector& Origin, const FVecto
 
 bool ACityVRToolController::IsNeedsPanelHit(const FVector& Origin, const FVector& Direction) const
 {
-	return bNeedsOpen && !bPaletteOpen && !bEntrySceneActive &&
+	return bNeedsOpen && InspectedEntityId == FCityGrid::EmptyEntityId && !bPaletteOpen && !bEntrySceneActive &&
 	       HitsPanelRect(NeedsBackground, Origin, Direction, 50.0, 50.0);
 }
 
 void ACityVRToolController::RefreshNeedsVisibility()
 {
-	const bool bVisible = bNeedsOpen && !bPaletteOpen && !bEntrySceneActive;
-	SummaryText->SetVisibility(bNeedsOpen && !bPaletteOpen && !bEntrySceneActive);
-	NeedsText->SetVisibility(bNeedsOpen && !bPaletteOpen && !bEntrySceneActive);
-	NeedsBackground->SetVisibility(bNeedsOpen && !bPaletteOpen && !bEntrySceneActive);
+	const bool bVisible = bNeedsOpen && InspectedEntityId == FCityGrid::EmptyEntityId &&
+	                      !bPaletteOpen && !bEntrySceneActive;
+	SummaryText->SetVisibility(bVisible);
+	NeedsText->SetVisibility(bVisible);
+	NeedsBackground->SetVisibility(bVisible);
 	GrowthNeedsTitle->SetVisibility(bVisible);
 	GrowthNeedsBackground->SetVisibility(bVisible);
 	for (int32 Index = 0; Index < CityInfoTitles.Num(); ++Index)
@@ -921,6 +923,8 @@ void ACityVRToolController::ClearInspection()
 	InspectorLeader->SetVisibility(false);
 	if (Board)
 		Board->SetInspectionEntity(FCityGrid::EmptyEntityId);
+	RefreshNeedsVisibility();
+	UpdateNeedsStatusBars();
 }
 
 void ACityVRToolController::ToggleInspection(const FVector& Origin, const FVector& Direction)
@@ -940,7 +944,7 @@ void ACityVRToolController::ToggleInspection(const FVector& Origin, const FVecto
 		FString Ignored;
 		Board->GetInspectionBuilding(EntityId, Hit, Ignored);
 	}
-	if (EntityId == FCityGrid::EmptyEntityId || EntityId == InspectedEntityId)
+	if (EntityId == FCityGrid::EmptyEntityId)
 	{
 		ClearInspection();
 		return;
@@ -967,8 +971,10 @@ void ACityVRToolController::InspectBuilding(const int64 EntityId)
 	StationUpgradePreviewEntity = 0;
 	InspectedEntityId = static_cast<uint64>(EntityId);
 	InspectionLocalHit = Board->GetActorTransform().InverseTransformPosition(Roof);
-	InspectionGeneration = GetWorld()->GetSubsystem<UCitySimulationSubsystem>()->GetPresentationGeneration();
+	InspectionGeneration = GetWorld()->GetSubsystem<UCitySimulationSubsystem>()->GetCitySessionGeneration();
 	Board->SetInspectionEntity(InspectedEntityId);
+	RefreshNeedsVisibility();
+	UpdateNeedsStatusBars();
 	UpdateInspectionTooltip();
 }
 
@@ -981,7 +987,7 @@ void ACityVRToolController::UpdateInspectionTooltip()
 	FString Detail;
 	TArray<FCityInspectionMetric> Metrics;
 	if (Board->GetToolMode() != ECityToolMode::Inspect || !Simulation ||
-	    InspectionGeneration != Simulation->GetPresentationGeneration() ||
+	    InspectionGeneration != Simulation->GetCitySessionGeneration() ||
 	    !Board->GetInspectionBuilding(InspectedEntityId, Roof, Detail, &Metrics,
 	                                  bDesktopUi ? &SharedInspectionSections : nullptr))
 	{
@@ -1268,9 +1274,9 @@ void ACityVRToolController::SetPaletteOpen(const bool bOpen)
 	PaletteHelp->SetVisibility(bOpen);
 	InspectorStatusRoot->SetVisibility(false, true);
 	InspectorLeader->SetVisibility(false);
-	SummaryText->SetVisibility(bNeedsOpen && !bPaletteOpen && !bEntrySceneActive);
-	NeedsText->SetVisibility(bNeedsOpen && !bPaletteOpen && !bEntrySceneActive);
-	NeedsBackground->SetVisibility(bNeedsOpen && !bPaletteOpen && !bEntrySceneActive);
+	SummaryText->SetVisibility(bNeedsOpen && InspectedEntityId == FCityGrid::EmptyEntityId && !bPaletteOpen && !bEntrySceneActive);
+	NeedsText->SetVisibility(bNeedsOpen && InspectedEntityId == FCityGrid::EmptyEntityId && !bPaletteOpen && !bEntrySceneActive);
+	NeedsBackground->SetVisibility(bNeedsOpen && InspectedEntityId == FCityGrid::EmptyEntityId && !bPaletteOpen && !bEntrySceneActive);
 	for (UStaticMeshComponent* Rail : NeedsCapacityRails)
 		Rail->SetVisibility(false);
 	for (UStaticMeshComponent* Fill : NeedsCapacityFills)
@@ -1428,7 +1434,8 @@ void ACityVRToolController::RefreshPaletteText()
 		if (PaletteButtonMaterials[Index])
 			PaletteButtonMaterials[Index]->SetVectorParameterValue(
 			    TEXT("BarColor"),
-			    bDisabled   ? FLinearColor(.02f, .025f, .03f)
+			    View.bTutorialAttention ? FLinearColor(.12f + .12f * CityTutorialAttention::Pulse(FPlatformTime::Seconds()), .18f, .035f)
+		    : bDisabled   ? FLinearColor(.02f, .025f, .03f)
 			    : bSelected ? (bDestructive ? FLinearColor(.7f, .12f, .025f) : FLinearColor(.025f, .3f, .65f))
 			    : bHovered  ? FLinearColor(.12f, .2f, .3f)
 			                : FLinearColor(.025f, .035f, .05f));
@@ -1504,7 +1511,7 @@ void ACityVRToolController::RefreshPaletteText()
 void ACityVRToolController::UpdateNeedsStatusBars()
 {
 	const UCitySimulationSubsystem* Simulation = GetWorld()->GetSubsystem<UCitySimulationSubsystem>();
-	const bool bShow = bNeedsOpen && !bPaletteOpen && !bEntrySceneActive && Simulation != nullptr;
+	const bool bShow = bNeedsOpen && InspectedEntityId == FCityGrid::EmptyEntityId && !bPaletteOpen && !bEntrySceneActive && Simulation != nullptr;
 	for (int32 Index = 0; Index < NeedsCapacityRails.Num(); ++Index)
 	{
 		const bool bActiveCategory = bShow && Index < 5;
@@ -1840,7 +1847,7 @@ void ACityVRToolController::ExecuteSharedPaletteAction(const ECityPaletteAction 
 		SetPalettePage(ECityPalettePage::City);
 		break;
 	case ECityPaletteAction::OpenReports:
-		ShowReports(bAnnualReports);
+		ShowReports(ReportPeriod);
 		break;
 	case ECityPaletteAction::OpenPolicies:
 		PolicyMessage.Reset();
@@ -1913,7 +1920,7 @@ void ACityVRToolController::ExecuteSharedPaletteAction(const ECityPaletteAction 
 	case ECityPaletteAction::NewsMoney:
 		ReportCategory = 2;
 		ReportMetricIndex = 0;
-		ShowReports(false);
+		ShowReports();
 		break;
 	case ECityPaletteAction::OpenHousingHistory:
 		HousingHistoryPage = 0;
@@ -1945,7 +1952,7 @@ void ACityVRToolController::ExecuteSharedPaletteAction(const ECityPaletteAction 
 	case ECityPaletteAction::ReportWaste:
 		ReportCategory = 4;
 		ReportMetricIndex = 5;
-		ShowReports(false);
+		ShowReports();
 		RefreshReports();
 		break;
 	case ECityPaletteAction::ReportHealth:
@@ -1970,8 +1977,15 @@ void ACityVRToolController::ExecuteSharedPaletteAction(const ECityPaletteAction 
 	case ECityPaletteAction::ReportPeriodNext:
 		++ReportPeriodIndex;
 		break;
+	case ECityPaletteAction::ReportHourly:
+	case ECityPaletteAction::ReportDaily:
+	case ECityPaletteAction::ReportWeekly:
+	case ECityPaletteAction::ReportMonthly:
 	case ECityPaletteAction::ReportAnnual:
-		bAnnualReports = !bAnnualReports;
+		ReportPeriod = Action == ECityPaletteAction::ReportHourly ? ECityReportPeriod::Hourly
+		    : Action == ECityPaletteAction::ReportDaily ? ECityReportPeriod::Daily
+		    : Action == ECityPaletteAction::ReportWeekly ? ECityReportPeriod::Weekly
+		    : Action == ECityPaletteAction::ReportAnnual ? ECityReportPeriod::Annual : ECityReportPeriod::Monthly;
 		ReportPeriodIndex = INDEX_NONE;
 		break;
 	case ECityPaletteAction::OpenTaxes:
@@ -2210,6 +2224,12 @@ void ACityVRToolController::ExecuteSharedPaletteAction(const ECityPaletteAction 
 	case ECityPaletteAction::Start:
 		StartScenario();
 		break;
+	case ECityPaletteAction::ToggleTutorial:
+		SetTutorialEnabled(!GetDefault<UCityTutorialSettings>()->bEnabled);
+		break;
+	case ECityPaletteAction::ResetTutorial:
+		SetTutorialEnabled(true, true);
+		break;
 	case ECityPaletteAction::Reset:
 		ResetScenario();
 		break;
@@ -2420,10 +2440,10 @@ FString ACityVRToolController::GetPaletteEntryLabel(const FCityPaletteEntry& Ent
 	};
 	switch (Entry.Action)
 	{
+	case ECityPaletteAction::ToggleTutorial:
+		return GetDefault<UCityTutorialSettings>()->bEnabled ? TEXT("TUTORIAL: ON") : TEXT("TUTORIAL: OFF");
 	case ECityPaletteAction::ToggleArchivedCities:
 		return bReviewArchivedCities ? TEXT("ACTIVE CITIES") : TEXT("ARCHIVED CITIES");
-	case ECityPaletteAction::ReportAnnual:
-		return bAnnualReports ? TEXT("ANNUAL") : TEXT("MONTHLY");
 	case ECityPaletteAction::ToggleDebugInfo:
 		return bDebugInfoVisible ? TEXT("DEBUG MODE: ON") : TEXT("DEBUG MODE: OFF");
 	case ECityPaletteAction::ToggleConditionIndicators:
@@ -2505,6 +2525,7 @@ void ACityVRToolController::SetPalettePage(const ECityPalettePage NewPage)
 	VisiblePaletteEntries.RemoveAll([this](const FCityPaletteEntry& Entry) {
 		return (!bDebugInfoVisible && Entry.Action == ECityPaletteAction::OpenSafetyTests) ||
 		       (!bDesktopUi && Entry.Action == ECityPaletteAction::CycleMapSize) ||
+               (bDesktopUi && Entry.Action == ECityPaletteAction::CycleAnchor) ||
 		       (UE_BUILD_SHIPPING && Entry.Action == ECityPaletteAction::ToggleDebugInfo);
 	});
 	HoveredPaletteIndex = INDEX_NONE;
@@ -2534,6 +2555,11 @@ bool ACityVRToolController::IsPaletteActionSelected(const ECityPaletteAction Act
         return DisasterSimulation && !DisasterSimulation->GetPopulationSnapshot().bCommercialAiPilot;
     case ECityPaletteAction::ReviewResearchCampus:
 		return TechnologyReviewDefinition == TEXT("ResearchCampus");
+	case ECityPaletteAction::ReportHourly: return ReportPeriod == ECityReportPeriod::Hourly;
+	case ECityPaletteAction::ReportDaily: return ReportPeriod == ECityReportPeriod::Daily;
+	case ECityPaletteAction::ReportWeekly: return ReportPeriod == ECityReportPeriod::Weekly;
+	case ECityPaletteAction::ReportMonthly: return ReportPeriod == ECityReportPeriod::Monthly;
+	case ECityPaletteAction::ReportAnnual: return ReportPeriod == ECityReportPeriod::Annual;
 	case ECityPaletteAction::ReportPeople:
 		return ReportCategory == 0;
 	case ECityPaletteAction::OverlayHappiness:
@@ -2549,7 +2575,7 @@ bool ACityVRToolController::IsPaletteActionSelected(const ECityPaletteAction Act
 	case ECityPaletteAction::ReportHealth:
 		return ReportCategory == 5;
 	case ECityPaletteAction::ReportUtilities:
-		return ReportCategory == 4;
+		return ReportCategory == 4 && ReportMetricIndex < 5;
 	case ECityPaletteAction::DisastersOff:
 		return DisasterSimulation->GetCityIdentity().DisasterFrequency == ECityDisasterFrequency::Off;
 	case ECityPaletteAction::DisastersLow:
@@ -3728,7 +3754,7 @@ void ACityVRToolController::RefreshReports()
 		return;
 	}
 	const auto& History = Simulation->GetReportHistory();
-	auto Samples = bAnnualReports ? History.Annual() : History.Monthly();
+	auto Samples = History.Samples(ReportPeriod);
 	// Category lists preserve the stable metric save order while grouping filled jobs with staff.
 	static const TArray<ECityReportMetric> Categories[] = {
 	    {ECityReportMetric::Population, ECityReportMetric::FilledJobs, ECityReportMetric::Homeless,
@@ -3776,7 +3802,9 @@ void ACityVRToolController::RefreshReports()
 	{
 		ReportPeriodIndex = INDEX_NONE;
 		SetSharedReportText(FText::FromString(
-		    TEXT("No settled months yet\nHistory begins with the next dayly settlement")));
+		    ReportPeriod == ECityReportPeriod::Hourly
+		        ? TEXT("No hourly observations yet\nHourly charts appear after the next completed game hour.")
+		        : TEXT("No settled days yet\nCharts appear after the first daily settlement\nat midnight.")));
 		SetSharedReportRange(FText::FromString(TEXT("Existing cities have no backdated history")));
 		return;
 	}
@@ -3784,17 +3812,19 @@ void ACityVRToolController::RefreshReports()
 	                        ? Samples.Num() - 1
 	                        : FMath::Clamp(ReportPeriodIndex, 0, Samples.Num() - 1);
 	const auto& Selected = Samples[ReportPeriodIndex];
-	FString Unit = FCityReportHistory::Unit(Metric);
-	if (bAnnualReports && FCityReportHistory::IsFlow(Metric))
-		Unit = Unit.Replace(TEXT("/day"), TEXT(" / observed year"));
-	const FString Period = bAnnualReports ? FString::Printf(TEXT("Year %lld (%d/12 months observed)"),
-	                                                        Selected.MonthId, Selected.ObservedMonths)
-	                                      : FString::Printf(TEXT("Month %lld (%d/25 days observed)"), Selected.MonthId, Selected.ObservedDays);
+	const FString Unit = FCityReportHistory::Unit(Metric);
+	const FString Period = ReportPeriod == ECityReportPeriod::Hourly
+	    ? FString::Printf(TEXT("Hour %lld (%s observation)"), Selected.MonthId,
+	        Selected.HourStartStep == FCityCalendar::HourEndStep(Selected.MonthId - 1, Simulation->GetEconomyTuning().FixedStepsPerMonth)
+	            ? TEXT("complete") : TEXT("partial"))
+	    : FString::Printf(TEXT("%s %lld (%d/%d days observed)"),
+	    FCityReportHistory::PeriodName(ReportPeriod), Selected.MonthId, Selected.ObservedDays,
+	    FCityReportHistory::PeriodDays(ReportPeriod));
 	SetSharedReportText(FText::FromString(FString::Printf(
 	    TEXT("%s  |  %s\n%lld %s  -  %s"), *Period, FCityReportHistory::DisplayName(Metric),
 	    Selected.Get(Metric), *Unit,
-	    FCityReportHistory::IsFlow(Metric) ? TEXT("settled total") : TEXT("final month snapshot"))));
-	SharedReportChart = CityUiContent::ReportChart(Samples, Metric, ReportPeriodIndex, bAnnualReports);
+	    FCityReportHistory::IsFlow(Metric) ? TEXT("observed total") : ReportPeriod == ECityReportPeriod::Hourly ? TEXT("hourly observation") : TEXT("latest daily close"))));
+	SharedReportChart = CityUiContent::ReportChart(Samples, Metric, ReportPeriodIndex, ReportPeriod);
 	const double ZeroZ = 28 + SharedReportChart.Zero * 14;
 	ReportZeroLine->SetRelativeLocation(FVector(1.1, 0, ZeroZ));
 	ReportZeroLine->SetRelativeScale3D(FVector(.003, .60, .004));
@@ -3813,11 +3843,11 @@ void ACityVRToolController::RefreshReports()
 	SetSharedReportRange(SharedReportChart.Range);
 }
 
-void ACityVRToolController::ShowReports(const bool bAnnual)
+void ACityVRToolController::ShowReports(const ECityReportPeriod Period)
 {
 	if (bEntrySceneActive)
 		return;
-	bAnnualReports = bAnnual;
+	ReportPeriod = Period;
 	ReportPeriodIndex = INDEX_NONE;
 	SetPaletteOpen(true);
 	SetPalettePage(ECityPalettePage::Reports);
@@ -3869,7 +3899,7 @@ FString ACityVRToolController::GetPaletteHelp() const
 			                                                   CommercialTaxControl.GetPendingValue(),
 			                                                   IndustrialTaxControl.GetPendingValue());
 			Help = FString::Printf(
-			    TEXT("Forecast net %s$%lld/mo (current city)\n0-25%%; Apply. Higher tax slows demand"),
+			    TEXT("Forecast net %s$%lld/day (current city)\n0-25%%; Apply. Higher tax slows demand"),
 			    Budget.Net() >= 0 ? TEXT("+") : TEXT("-"), FMath::Abs(Budget.Net()));
 		}
 	}

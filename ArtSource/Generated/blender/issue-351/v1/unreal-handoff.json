@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "kind": "blender",
+  "repository": "CitySimVR/citysim",
+  "asset_issue": 351,
+  "approved_version": 1,
+  "approval_manifest": "approval.json",
+  "approval_sha256": "20fb52f7041fb4afc99fc9e4f6c34322a996b005f8c831d79736a333cc2da683",
+  "source_context_sha": "ec692fe0109b0d5836df3fe9c2b0e41a8685cf55",
+  "artifacts": [
+    {
+      "name": "asset.blend",
+      "bytes": 205447,
+      "sha256": "e470df147645bd6f6cea5da47c8083e861cad65e408194c06366305bd8a2733b"
+    },
+    {
+      "name": "asset.fbx",
+      "bytes": 133612,
+      "sha256": "907b8dd2479c80334ecfe7782ed2647cb363f78702ef6ecec21ff210673c033f"
+    },
+    {
+      "name": "front.png",
+      "bytes": 265329,
+      "sha256": "783b887aa30f2888901bd889a9df3579a963641d78e9f935fcbbd6efdf9704be"
+    },
+    {
+      "name": "preview.png",
+      "bytes": 286664,
+      "sha256": "63b8c05e26d3d4db2043b7d30d00ce3f3a7108665f9b0dae256b1ed4c3324335"
+    },
+    {
+      "name": "rear.png",
+      "bytes": 260998,
+      "sha256": "5758c02a79b9d06c4b94574041901d46dfa8e32035511a3c739c38c589f40e8d"
+    },
+    {
+      "name": "review_notes.json",
+      "bytes": 525,
+      "sha256": "d44f500ba50ac7d8f389d8bacb9de7fc2bed1e4ca60b59ae7fc0f65c1f56eac4"
+    },
+    {
+      "name": "side.png",
+      "bytes": 273202,
+      "sha256": "61241d1a902964e63f4cf05ecdd79e74c347b3ab0e6fd55472748f15edd7f6e6"
+    },
+    {
+      "name": "validation.json",
+      "bytes": 985,
+      "sha256": "73c4eeb8ae76c5efb95488e6cc0537b1f14d16f0f3f35f5cc51f86f4a74dcf87"
+    },
+    {
+      "name": "source-bundle.zip",
+      "bytes": 1415721,
+      "sha256": "88107e6252f02446d7a109906542d7bb292a4e84086d4ca2e0d8610c5db83ae6"
+    },
+    {
+      "name": "approval.json",
+      "bytes": 2056,
+      "sha256": "20fb52f7041fb4afc99fc9e4f6c34322a996b005f8c831d79736a333cc2da683"
+    }
+  ],
+  "unreal": {
+    "status": "not_imported",
+    "destination": "choose in the separate integration issue",
+    "role": "Blender source and exports; validate importer contract"
+  }
+}

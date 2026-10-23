@@ -50,7 +50,7 @@ bool FCityStartingBudgetTest::RunTest(const FString& Parameters)
 			continue;
 		}
 		auto& City = Sim->GetPlacementModel();
-		TestEqual(TEXT("Normal starting treasury"), City.GetFunds(), int64(10000));
+		TestEqual(TEXT("Normal starting treasury"), City.GetFunds(), int64(15000));
 		auto Road = City.BeginRoadPreview(FCityPlacementModel::EntranceCell);
 		Road.End = {10, 8};
 		TestTrue(TEXT("Short starter road is affordable and valid"), City.CommitRoad(Road).IsSuccess());

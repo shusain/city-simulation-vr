@@ -1,0 +1,26 @@
+{
+  "issue": "D108 Resident portable beach cooler",
+  "revision": "v2 presentation-only",
+  "source": "/previous/asset.blend",
+  "asset": "asset.blend",
+  "export": "asset.fbx",
+  "views": [
+    "preview.png",
+    "front_1m.png",
+    "top.png"
+  ],
+  "units": "meters",
+  "up_axis": "Z",
+  "triangles": 236,
+  "dimensions_m": [
+    0.550000011920929,
+    0.38199999928474426,
+    0.42000001668930054
+  ],
+  "materials": [
+    "Body",
+    "Trim"
+  ],
+  "geometry_preserved": true,
+  "status": "Review only; no export approval or Unreal integration implied"
+}

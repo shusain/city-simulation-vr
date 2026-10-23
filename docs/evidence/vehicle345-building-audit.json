@@ -1,0 +1,48 @@
+{
+  "active_building_meshes": [
+    {
+      "definition": "Police",
+      "paths": [
+        "/Game/CitySim/Art/ApprovedCivicBatch/Meshes/SM_Approved_police_base_v1",
+        "/Game/CitySim/Art/ApprovedCivicBatch/Meshes/SM_Approved_police_base_v1",
+        "/Game/CitySim/Art/ApprovedCivicBatch/Meshes/SM_Approved_police_medium_v2",
+        "/Game/CitySim/Art/ApprovedCivicBatch/Meshes/SM_Approved_police_high_v4"
+      ]
+    },
+    {
+      "definition": "Fire",
+      "paths": [
+        "/Game/CitySim/Art/ApprovedCivicBatch/Meshes/SM_Approved_fire_base_v1",
+        "/Game/CitySim/Art/ApprovedCivicBatch/Meshes/SM_Approved_fire_base_v1",
+        "/Game/CitySim/Art/ApprovedCivicBatch/Meshes/SM_Approved_fire_medium_v1",
+        "/Game/CitySim/Art/ApprovedCivicBatch/Meshes/SM_Approved_fire_high_v1"
+      ]
+    },
+    {
+      "definition": "Hospital",
+      "paths": [
+        "/Game/CitySim/Art/ApprovedCivicBatch/Meshes/SM_Approved_hospital_base_v1",
+        "/Game/CitySim/Art/ApprovedCivicBatch/Meshes/SM_Approved_hospital_base_v1",
+        "/Game/CitySim/Art/ApprovedCivicBatch/Meshes/SM_Approved_hospital_medium_v1"
+      ]
+    },
+    {
+      "definition": "WasteDepot",
+      "paths": [
+        "/Game/CitySim/Art/ApprovedCivicBatch/Meshes/SM_Approved_wastedepot_base_v4",
+        "/Game/CitySim/Art/ApprovedCivicBatch/Meshes/SM_Approved_wastedepot_base_v4",
+        "/Game/CitySim/Art/ApprovedCivicBatch/Meshes/SM_Approved_wastedepot_medium_v3"
+      ]
+    },
+    {
+      "definition": "Recycling",
+      "paths": [
+        "/Game/CitySim/Art/ApprovedCivicBatch/Meshes/SM_Approved_recycling_base_v4",
+        "/Game/CitySim/Art/ApprovedCivicBatch/Meshes/SM_Approved_recycling_base_v4",
+        "/Game/CitySim/Art/ApprovedCivicBatch/Meshes/SM_Approved_recycling_medium_v7"
+      ]
+    }
+  ],
+  "baked_vehicle_geometry": false,
+  "proof": "Serialized legacy catalog names resolve through existing CityCivicEntrances and ApplyPrivateGroundPresentation to exact ApprovedCivicBatch meshes; no baked vehicle components in those source manifests"
+}

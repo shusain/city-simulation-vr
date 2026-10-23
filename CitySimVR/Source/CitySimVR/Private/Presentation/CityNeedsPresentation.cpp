@@ -134,7 +134,7 @@ FString FCityNeedsPresentation::BuildPanel(const FCityNeedsSnapshot& Needs, cons
 
 	FString Panel = FString::Printf(
 	    TEXT("CITY NEEDS\n") TEXT("GROW HOME:%s SHOP:%s IND:%s\n") TEXT("PRIVATE DEVELOPMENT  SHORT %s\n")
-	        TEXT("LAST MONTH: income $%lld / bills $%lld\nNET %s$%lld"),
+	        TEXT("LAST DAY: income $%lld / bills $%lld\nNET %s$%lld"),
 	    *ConstraintLabel(Needs.ResidentialConstraint, Needs.ResidentialGrowthCost),
 	    *ConstraintLabel(Needs.CommercialConstraint, Needs.CommercialGrowthCost),
 	    *ConstraintLabel(Needs.IndustrialConstraint, Needs.IndustrialGrowthCost), *Shortages, Economy.LastIncome,
@@ -142,20 +142,20 @@ FString FCityNeedsPresentation::BuildPanel(const FCityNeedsSnapshot& Needs, cons
 	if (Budget)
 	{
 		const int64 ForecastNet = Budget->Net();
-		Panel += FString::Printf(TEXT(" | Forecast %s$%lld/mo"), ForecastNet >= 0 ? TEXT("+") : TEXT("-"),
+		Panel += FString::Printf(TEXT(" | Forecast %s$%lld/day"), ForecastNet >= 0 ? TEXT("+") : TEXT("-"),
 		                         FMath::Abs(ForecastNet));
 		Panel += FString::Printf(TEXT("\nTax forecast: R $%lld | C $%lld | I $%lld"), Budget->ResidentialTax,
 		                         Budget->CommercialTax, Budget->IndustrialTax);
 	}
 	if (Economy.bGrowthBlockedByShortfall)
 	{
-		Panel += FString::Printf(TEXT("\nUnpaid last month $%lld: growth paused"), Economy.UpkeepShortfall);
+		Panel += FString::Printf(TEXT("\nUnpaid last day $%lld: growth paused"), Economy.UpkeepShortfall);
 		if (Budget)
 			Panel += FString::Printf(
-			    TEXT("\nCosts/mo: roads $%lld | utilities $%lld\nBuildings $%lld | public wages $%lld"),
+			    TEXT("\nCosts/day: roads $%lld | utilities $%lld\nBuildings $%lld | public wages $%lld"),
 			    Budget->RoadUpkeep, Budget->UtilityUpkeep, Budget->BuildingUpkeep, Budget->PublicPayroll);
 		Panel += TEXT(
-		    "\nCity > TAXES: raise income, then Apply\nOr remove unused roads/utilities\nRun time until a month is fully paid");
+		    "\nCity > TAXES: raise income, then Apply\nOr remove unused roads/utilities\nRun time until a day is fully paid");
 	}
 	else if (Needs.ResidentialConstraint == ECityDemandConstraint::InsufficientFunds ||
 	         Needs.CommercialConstraint == ECityDemandConstraint::InsufficientFunds ||

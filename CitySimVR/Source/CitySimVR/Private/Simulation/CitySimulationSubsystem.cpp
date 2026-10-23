@@ -104,6 +104,11 @@ void UCitySimulationSubsystem::Tick(const float DeltaTime)
 		if (!Development.AdvanceStationsToHalfDay(HalfDay, ServiceSnapshot).ChangedEntityIds.IsEmpty())
 			++PresentationGeneration;
 	};
+	// Prime from the current state before any fixed step; existing cities get no backfilled hours.
+	if (!Reports.bHourlyPrimed)
+		Reports.ObserveHourly(Economy.GetSnapshot(), Population.GetSnapshot(), ServiceSnapshot,
+		    Environment.GetSnapshot(), PlacementModel->GetFunds(), EconomyTuning.FixedStepsPerMonth,
+		    &Crime.GetSnapshot(), &Health.GetSnapshot(), &Waste.GetSnapshot());
 	const bool bReuseServices = UseInitialServiceReuse();
 	FCityServiceSnapshot StepServices;
 	Economy.Advance(
@@ -390,6 +395,9 @@ void UCitySimulationSubsystem::AdvanceSimulationStep(FCityServiceSnapshot* StepS
 		       Snapshot.LastIndustrialTaxRevenue, Snapshot.LastUpkeep, Snapshot.UpkeepShortfall,
 		       PlacementModel->GetFunds());
 	}
+	Reports.ObserveHourly(Snapshot, Population.GetSnapshot(), ServiceSnapshot, Environment.GetSnapshot(),
+	    PlacementModel->GetFunds(), EconomyTuning.FixedStepsPerMonth,
+	    &Crime.GetSnapshot(), &Health.GetSnapshot(), &Waste.GetSnapshot());
 	if (BenchmarkTiming)
 		BenchmarkTiming->FixedSteps.Add((FPlatformTime::Seconds() - ProfileFixedStart) * 1000);
 	Economy.UpdateResidentCensus(Population.GetSnapshot());
@@ -497,8 +505,10 @@ void UCitySimulationSubsystem::RefreshRoadNetwork()
 	if (RoadNetworkOwner != PlacementModel.Get() ||
 	    RoadNetworkSnapshot.SourceRevision != PlacementModel->GetRevision())
 	{
+		const FCityRoadNetworkSnapshot PreviousNetwork = MoveTemp(RoadNetworkSnapshot);
 		FCityRoadNetworkBuilder::Build(*PlacementModel, FCityRoadDefinition::Local(), RoadNetworkSnapshot);
-		Traffic.ReconcileNetwork(RoadNetworkSnapshot);
+		Traffic.ReconcileNetwork(RoadNetworkSnapshot, &PreviousNetwork);
+		FCityTrafficSimulation::ReconcileSnapshot(PreviousTraffic, PreviousNetwork, RoadNetworkSnapshot);
 		RoadNetworkOwner = PlacementModel.Get();
 	}
 	RoadNetworkSnapshot.RoutingTiming = BenchmarkTiming ? &BenchmarkTiming->Routing : nullptr;
@@ -1044,6 +1054,9 @@ bool UCitySimulationSubsystem::ValidateSaveDocument(
 	    !Document.Reports.Validate(Document.Economy.LastBilledMonthId, OutError))
 		return false;
 	const auto CandidateTuning = SavedTuning(EconomyTuning, Document);
+    if (!Document.Reports.ValidateHourly(Document.Economy.FixedStepId, CandidateTuning.FixedStepsPerMonth, OutError) ||
+        (Document.Reports.bHourlyPrimed && Document.Reports.HourlyLastPurchases > Document.Population.TotalArrivalPurchases))
+        { if (OutError.IsEmpty()) OutError = TEXT("Hourly purchase baseline exceeds actual purchases"); return false; }
 	if (!BuildingCatalog)
 	{
 		OutError = TEXT("Building catalog is unavailable");

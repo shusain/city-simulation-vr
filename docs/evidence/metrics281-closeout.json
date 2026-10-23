@@ -1,0 +1,33 @@
+{
+  "issue": 281,
+  "pr": 293,
+  "build": 389,
+  "accepted_head": "487b14585b1cb5f65babf48eb775f6b6dd1b7b51",
+  "merged_commit": "373bc5bfda8b43cacaabb2d54ee2360b8b26d2cf",
+  "game_revision": "dev-dd37284516c33db50634",
+  "archive_sha256": "a1d56c2e59fdbf344f105e7ef413634610489c4e1bff83a4ce5e5faf477899bc",
+  "source": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\Metrics281\\ReportRows\\Extracted-Windows389",
+  "target": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\PCVRSandbox\\Windows",
+  "backup": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\Metrics281\\Closeout\\PreviousWindows",
+  "status": "promoted and verified",
+  "files_verified": 53,
+  "previous_files_preserved": 53,
+  "profiles_and_launchers_unchanged": true,
+  "native_rebuild": "not required: byte-identical accepted Windows389; merge tree equals accepted head",
+  "user_acceptance": "Shaun confirmed Reports layout looks good in game and authorized PR293 merge/local PC promotion2026-10-20.",
+  "headset": "unconfirmed; #49 remains separate",
+  "date": "2026-10-20",
+  "native_build": 388,
+  "editor_tests": [
+    "CitySim.Reports.Panel",
+    "CitySim.Desktop.SharedContentAndActions"
+  ],
+  "windows_checks": "startup/menu smoke; ReportRows/Reports.Panel/HourlyObservations at1280x800 and1024x720; four captures reviewed",
+  "merged_tree_equals_accepted_head": true,
+  "main_check": 390,
+  "main_check_status": "passed",
+  "delivery": "https://git.shaun-husain.com/CitySimVR/citysim/issues/281#issuecomment-5481",
+  "main_editor_seconds": 172.23,
+  "promotion_evidence": "https://git.shaun-husain.com/attachments/ad6c4604-8cf3-4127-b304-fde364566d66",
+  "native_window": "released; both locks available; worker enabled"
+}

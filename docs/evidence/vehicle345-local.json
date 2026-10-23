@@ -1,0 +1,34 @@
+{
+  "gitea_pr": 365,
+  "issue": 345,
+  "native_building_audit": "vehicle345-building-audit.json",
+  "drone": {
+    "544": "failed offline dry-run count contract before Editor; corrected filter keeps complete dry-run listing",
+    "545": "Warnings-as-errors Editor passed; eight fleet/native/traffic/emergency cases passed; broad HospitalNative construction/save fixture failed staffing and hourly-baseline assertions and WasteNative fixture failed overlapping facility placement. These unmodified legacy scenarios are retained as failed evidence; batch selects care-arrival/recovery/save and refuse route/rate/conservation/traffic authority cases alongside existing native fleet/pulse/arrival checks."
+  },
+  "local_editor_build": "LocalBuild6.log: warnings-as-errors passed",
+  "source_approvals": [
+    "346v3",
+    "347v2",
+    "348v3",
+    "349v2",
+    "350v2",
+    "351v1"
+  ],
+  "beacon_capture": "Artifacts/VehicleIntegration345/Beacons-R4/Fleet345-Beacon-Preview.json",
+  "production_profile_changes": false,
+  "local_tests": [
+    "CitySim.Art.RefinedVehicles345",
+    "CitySim.Art.CivicLightEmission",
+    "CitySim.Traffic.VisiblePool",
+    "CitySim.Presentation.SprayWaitsForVisibleEngineArrival"
+  ],
+  "quest": "deferred; no device observations claimed",
+  "game_source_revision": "1f2f8d08359288d28d403ee0d6329a3f0fce235d",
+  "beacon_review": "Red, other-color, both crossovers and parked-off captures reviewed; actual response pools, original shared pulse graph",
+  "remaining": [
+    "Final Drone ten exact cases on submitted revision",
+    "Windows candidate verification and human vehicle/beacon review"
+  ],
+  "test_result": "passed across final focused native runs"
+}

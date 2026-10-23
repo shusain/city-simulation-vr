@@ -25,7 +25,9 @@ public:
 
 private:
 	friend class FCityDesktopConditionsCommand;
+	friend class FCityTutorialWalkthroughCommand;
 	friend class FCityBeachCaptureCommand;
+	friend class FCityWaterCaptureCommand;
 	friend class FCityShorelineCaptureCommand;
 	UPROPERTY()
 	TObjectPtr<class UCameraComponent> DesktopCamera;

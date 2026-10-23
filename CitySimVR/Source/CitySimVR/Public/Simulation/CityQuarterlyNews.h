@@ -2,7 +2,7 @@
 #include "CoreMinimal.h"
 #include "Simulation/CityReportHistory.h"
 
-// Read-only editions derived from the existing saved monthly settlements.
+// Read-only editions derived from the existing saved daily settlements.
 // No generated story, second calendar, speculative forecast or duplicate ledger.
 struct CITYSIMVR_API FCityQuarterlyEdition
 {
@@ -19,7 +19,7 @@ struct CITYSIMVR_API FCityQuarterlyEdition
 	FCityReportSample Latest;
 	bool IsComplete() const
 	{
-		return ObservedMonths == 3 && ObservedDays == 75;
+		return ObservedMonths == 3 && ObservedDays == 3 * FCityCalendar::DaysPerMonth;
 	}
 	int64 AverageHappiness() const
 	{

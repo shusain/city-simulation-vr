@@ -5,8 +5,13 @@
 struct CITYSIMVR_API FCityCalendar
 {
     static constexpr int32 DefaultStepsPerDay = 150;
+    static constexpr int32 DaysPerWeek = 5;
     static constexpr int32 DaysPerMonth = 25;
     static constexpr int32 MonthsPerYear = 12;
+    static int64 HourIndex(int64 Step, int32 StepsPerDay = DefaultStepsPerDay)
+    { return FMath::Max<int64>(0, Step) * 24 / FMath::Max(1, StepsPerDay); }
+    static int64 HourEndStep(int64 Hour, int32 StepsPerDay = DefaultStepsPerDay)
+    { return (Hour * FMath::Max(1, StepsPerDay) + 23) / 24; }
     static int64 DayIndex(int64 Step, int32 StepsPerDay = DefaultStepsPerDay)
     { return FMath::Max<int64>(0, Step) / FMath::Max(1, StepsPerDay); }
     static int64 MonthIndex(int64 Step, int32 StepsPerDay = DefaultStepsPerDay)

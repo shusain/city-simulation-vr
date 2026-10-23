@@ -72,7 +72,7 @@ def tick(delta):
             pawn = unreal.GameplayStatics.get_player_pawn(world, 0)
             pawn.set_actor_location(unreal.Vector(0, 0, 100), False, True)
             unreal.GameplayStatics.get_player_controller(world, 0).set_control_rotation(unreal.Rotator(0, 0, 0))
-            ui.show_reports(False)
+            ui.show_reports(unreal.CityReportPeriod.MONTHLY)
             for command in ("FOV 90", "DisableAllScreenMessages", "t.IdleWhenNotForeground 0", "r.EyeAdaptationQuality 0"):
                 unreal.SystemLibrary.execute_console_command(world, command)
             phase = 2
@@ -86,7 +86,7 @@ def tick(delta):
             world = editor.get_game_world()
             board = next(a for a in unreal.GameplayStatics.get_all_actors_of_class(world, unreal.Actor) if a.get_class().get_name() == "CityBoardActor")
             ui = next(a for a in unreal.GameplayStatics.get_all_actors_of_class(world, unreal.Actor) if a.get_class().get_name() == "CityVRToolController")
-            ui.show_reports(True)
+            ui.show_reports(unreal.CityReportPeriod.ANNUAL)
             phase = 4
             deadline = now + 3
         elif phase == 4:

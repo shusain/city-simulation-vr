@@ -9,6 +9,7 @@
 class ACityVRToolController;
 class UBorder;
 class UTextBlock;
+class USizeBox;
 
 UCLASS()
 class CITYSIMVR_API UCityDesktopActionButton : public UButton
@@ -17,7 +18,7 @@ class CITYSIMVR_API UCityDesktopActionButton : public UButton
 public:
 	UCityDesktopActionButton();
 	void Configure(ACityVRToolController* InSession, int32 InAction);
-	void SetPresentation(FLinearColor Accent, bool bSelected);
+	void SetPresentation(FLinearColor Accent, bool bSelected, bool bPrimary = false);
 	void SetSelected(bool bSelected)
 	{
 		bIsSelected = bSelected;
@@ -32,6 +33,7 @@ private:
 	int32 Action = INDEX_NONE;
 	bool bIsSelected = false;
 	bool bPresentationSet = false;
+    bool bIsPrimary = false;
 	FLinearColor PresentationAccent = FLinearColor::Transparent;
 	uint64 PressedCondition = 0;
 	uint64 PressedConditionSession = MAX_uint64;
@@ -81,6 +83,10 @@ public:
 
 private:
 	TOptional<FLinearColor> OriginalMenuColor;
+    FString MenuGroupsKey;
+    FString ScrollMenuKey;
+    UPROPERTY(Transient) TArray<TObjectPtr<USizeBox>> MenuGroupHeadings;
+    UPROPERTY(Transient) TArray<TObjectPtr<USizeBox>> MenuControlSizes;
 	TWeakObjectPtr<ACityVRToolController> Session;
 	void Present();
 	double PresentationSeconds = 0;

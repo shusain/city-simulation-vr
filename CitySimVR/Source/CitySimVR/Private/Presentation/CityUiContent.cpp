@@ -131,7 +131,7 @@ void CityUiContent::NeedsGauges(const FCityNeedsSnapshot& Needs, FCityUiSnapshot
 }
 
 FCityUiReportChart CityUiContent::ReportChart(const TArray<FCityReportSample>& Samples, const ECityReportMetric Metric,
-                                              const int32 Selected, const bool bAnnual)
+                                              const int32 Selected, const ECityReportPeriod Period)
 {
 	FCityUiReportChart Chart;
 	if (!Samples.IsValidIndex(Selected))
@@ -153,11 +153,11 @@ FCityUiReportChart CityUiContent::ReportChart(const TArray<FCityReportSample>& S
 		Chart.Periods.Add(Samples[Index].MonthId);
 		Chart.Bars.Add((static_cast<double>(Samples[Index].Get(Metric)) - Minimum) / Range);
 	}
-	const TCHAR* Period = bAnnual ? TEXT("Years") : TEXT("Months");
-	Chart.FirstPeriod = FText::FromString(FString::Printf(TEXT("%s %lld"), Period, Samples[Start].MonthId));
+	const FString PeriodLabel = FString(FCityReportHistory::PeriodName(Period)) + TEXT("s");
+	Chart.FirstPeriod = FText::FromString(FString::Printf(TEXT("%s %lld"), *PeriodLabel, Samples[Start].MonthId));
 	Chart.LastPeriod = FText::AsNumber(Samples[End - 1].MonthId);
 	Chart.Range =
-	    FText::FromString(FString::Printf(TEXT("%s %lld-%lld  |  scale %lld to %lld  |  gold = selected"), Period,
+	    FText::FromString(FString::Printf(TEXT("%s %lld-%lld  |  scale %lld to %lld  |  gold = selected"), *PeriodLabel,
 	                                      Samples[Start].MonthId, Samples[End - 1].MonthId, Minimum, Maximum));
 	return Chart;
 }

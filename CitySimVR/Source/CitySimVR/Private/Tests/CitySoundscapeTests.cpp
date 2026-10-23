@@ -11,6 +11,7 @@
 #include "Sound/SoundCue.h"
 #include "Sound/SoundNodeDoppler.h"
 #include "Sound/SoundNodeWavePlayer.h"
+#include "AssetRegistry/AssetRegistryModule.h"
 #include "Simulation/CitySimulationSubsystem.h"
 #include "AudioDevice.h"
 #include "AudioDeviceManager.h"
@@ -73,6 +74,18 @@ IMPLEMENT_SIMPLE_AUTOMATION_TEST(FCitySoundscapeBankTest, "CitySim.Audio.NativeB
                                  EAutomationTestFlags::EditorContext | EAutomationTestFlags::EngineFilter)
 bool FCitySoundscapeBankTest::RunTest(const FString& Parameters)
 {
+	auto& Registry = FModuleManager::LoadModuleChecked<FAssetRegistryModule>(TEXT("AssetRegistry")).Get();
+	Registry.ScanPathsSynchronous({TEXT("/Game")}, true);
+	for (const TCHAR* Retired : {
+	         TEXT("/Game/CitySim/Audio/Soundscape/Ambience/City/SW_Car_Pass"),
+	         TEXT("/Game/CitySim/Audio/Soundscape/Ambience/City/SW_Truck_Pass"),
+	         TEXT("/Game/CitySim/Audio/Soundscape/Graphs/MS_Car_Pass"),
+	         TEXT("/Game/CitySim/Audio/Soundscape/Graphs/MS_Truck_Pass")})
+	{
+		TArray<FName> Referencers;
+		Registry.GetReferencers(FName(Retired), Referencers);
+		TestEqual(FString::Printf(TEXT("Retired audio has no project referencers: %s"), Retired), Referencers.Num(), 0);
+	}
 	int32 Loops = 0;
 	for (const auto& Entry : CityAudioAssets)
 	{
@@ -95,7 +108,7 @@ bool FCitySoundscapeBankTest::RunTest(const FString& Parameters)
 				TestTrue(TEXT("Steady traffic loops explicitly"), Player->bLooping);
 				TestEqual(TEXT("Exact steady source survives serialization"), Player->GetSoundWave(), Wave);
 			}
-			TestEqual(TEXT("Traffic source retains twenty-second duration"), Wave->Duration, 20.f);
+			TestTrue(TEXT("Approved source duration survives import"), FMath::IsNearlyEqual(Wave->Duration, Entry.Seconds, .001f));
 			TestEqual(TEXT("Native source volume stays unchanged"), Wave->Volume, 1.f);
 			++Loops;
 			continue;
@@ -140,7 +153,7 @@ bool FCitySoundscapeBankTest::RunTest(const FString& Parameters)
 		         WaveValue && WaveValue->TryGet(Reference) && Reference == Wave);
 		Loops += Entry.bLoop;
 	}
-	TestEqual(TEXT("Bank has21 preserved plus four new steady loops"), Loops, 25);
+	TestEqual(TEXT("Bank has21 preserved plus five recorded traffic loops"), Loops, 26);
 	return true;
 }
 IMPLEMENT_SIMPLE_AUTOMATION_TEST(FCitySoundscapeRoutingTest, "CitySim.Audio.BoundedPoolAndCookReferences",
@@ -152,7 +165,7 @@ bool FCitySoundscapeRoutingTest::RunTest(const FString& Parameters)
 	auto* Audio = Board->FindComponentByClass<UCitySoundscapeComponent>();
 	if (TestNotNull(TEXT("Board owns one soundscape component"), Audio))
 	{
-		TestTrue(TEXT("All54 graphs are hard referenced by the runtime component"), Audio->IsReady());
+		TestTrue(TEXT("All53 graphs are hard referenced by the runtime component"), Audio->IsReady());
 		TestFalse(TEXT("No independent component tick"), Audio->PrimaryComponentTick.bCanEverTick);
 		Audio->EnsurePool();
 		const int32 Count = Audio->Players.Num();
@@ -250,6 +263,45 @@ bool FCitySoundscapeRoutingTest::RunTest(const FString& Parameters)
 			         Audio->Players[Moving]->GetComponentLocation().Equals(
 			             Audio->Listener + (Expected - FocusWorld) * .05, .001));
 		}
+		// Exercise engine and siren coexistence through the real allocator, not only policy helpers.
+		auto ResetAudioFixture = [&]()
+		{
+			Audio->StopAll();
+			// This synchronous test does not advance the mixer through a retiring fade.
+			for (const auto& Player : Audio->Players)
+				Player->Stop();
+			Simulation->Traffic.Reset();
+		};
+		for (const auto Type : {ECityTripVehicleType::PoliceCar, ECityTripVehicleType::FireEngine,
+		                        ECityTripVehicleType::Ambulance})
+		{
+			ResetAudioFixture();
+			FCityTrafficVehicleState Responder;
+			Responder.Id = 200 + static_cast<uint64>(Type);
+			Responder.VehicleType = Type;
+			Responder.bEmergencyResponding = true;
+			TestTrue(TEXT("Responder audio route builds"),
+			         FCityTrafficSimulation::BuildRoute(Simulation->RoadNetworkSnapshot,
+			                                            FCityCellCoord(2, 8), FCityCellCoord(20, 8), Responder));
+			TestTrue(TEXT("Responder audio fixture adds"),
+			         Simulation->Traffic.AddVehicle(Responder, Simulation->RoadNetworkSnapshot));
+			Simulation->PreviousTraffic = Simulation->GetTrafficSnapshot();
+			Audio->Update(*Board, *Simulation, .1f, false);
+			TestTrue(TEXT("Responding vehicle has an independent base engine"),
+			         Audio->FindVoice({ECityAudioChannel::Traffic, Responder.Id}) != INDEX_NONE);
+			TestTrue(TEXT("Responding vehicle keeps its siren alongside its engine"),
+			         Audio->FindVoice({ECityAudioChannel::Vehicle, Responder.Id}) != INDEX_NONE);
+			ResetAudioFixture();
+			Responder.bReturning = true;
+			TestTrue(TEXT("Returning responder fixture adds"),
+			         Simulation->Traffic.AddVehicle(Responder, Simulation->RoadNetworkSnapshot));
+			Simulation->PreviousTraffic = Simulation->GetTrafficSnapshot();
+			Audio->Update(*Board, *Simulation, .1f, false);
+			TestTrue(TEXT("Returning crew retains its engine"),
+			         Audio->FindVoice({ECityAudioChannel::Traffic, Responder.Id}) != INDEX_NONE);
+			TestEqual(TEXT("Returning crew has no responding siren"),
+			          Audio->FindVoice({ECityAudioChannel::Vehicle, Responder.Id}), INDEX_NONE);
+		}
 		// A new fire counter cannot generate IncidentNotice; all other counters are unchanged.
 		Audio->NextNotification = 0;
 		auto Fires = Simulation->GetFireSnapshot();
@@ -329,15 +381,23 @@ bool FCityTrafficAudioPolicyTest::RunTest(const FString& Parameters)
 {
 	FCityTrafficVehicleState Vehicle;
 	for (const auto Type :
-	     {ECityTripVehicleType::Car, ECityTripVehicleType::FreightTruck, ECityTripVehicleType::GarbageTruck})
+	     {ECityTripVehicleType::Car, ECityTripVehicleType::FreightTruck, ECityTripVehicleType::GarbageTruck,
+	      ECityTripVehicleType::PoliceCar, ECityTripVehicleType::FireEngine, ECityTripVehicleType::Ambulance})
 	{
 		Vehicle.VehicleType = Type;
 		Vehicle.bCompleted = false;
 		Vehicle.SpeedUnitsPerStep = 0;
-		TestTrue(TEXT("Active ordinary vehicles can emit engines"), CitySoundscape::IsRegularTraffic(Vehicle));
+		TestTrue(TEXT("Every active motor vehicle can emit an engine"), CitySoundscape::HasEngineAudio(Vehicle));
 		const auto Idle = CitySoundscape::TrafficLoop(Vehicle);
+		const bool CarFamily = Type == ECityTripVehicleType::Car || Type == ECityTripVehicleType::PoliceCar;
+		TestEqual(TEXT("Every vehicle maps to its approved engine family"), Idle,
+		          CarFamily ? ECityAudioCue::CarIdle : ECityAudioCue::TruckIdle);
+		TestEqual(TEXT("Accepted car level is retained; truck idle is75% of the previous0.6 gain"),
+		          CitySoundscape::EngineGain(Idle), CarFamily ? .6f : .45f);
 		Vehicle.SpeedUnitsPerStep = 1;
 		const auto Driving = CitySoundscape::TrafficLoop(Vehicle);
+		TestEqual(TEXT("Driving uses the same accepted family gain"),
+		          CitySoundscape::EngineGain(Driving), CarFamily ? .6f : .45f);
 		TestTrue(TEXT("Moving and queued traffic have distinct stems"), Idle != Driving);
 		Vehicle.SpeedUnitsPerStep = 7000;
 		TestEqual(TEXT("Faster traffic keeps a steady driving stem without a baked pass envelope"),
@@ -345,16 +405,18 @@ bool FCityTrafficAudioPolicyTest::RunTest(const FString& Parameters)
 		Vehicle.SpeedUnitsPerStep = 0;
 		TestEqual(TEXT("Stopping returns to its matching idle"), CitySoundscape::TrafficLoop(Vehicle), Idle);
 		Vehicle.bCompleted = true;
-		TestFalse(TEXT("Completed traffic loses its emitter"), CitySoundscape::IsRegularTraffic(Vehicle));
+		TestFalse(TEXT("Completed traffic loses its emitter"), CitySoundscape::HasEngineAudio(Vehicle));
 	}
 	Vehicle.bCompleted = false;
-	for (const auto Type : {ECityTripVehicleType::Walk, ECityTripVehicleType::PoliceCar,
-	                        ECityTripVehicleType::FireEngine, ECityTripVehicleType::Ambulance})
-	{
-		Vehicle.VehicleType = Type;
-		TestFalse(TEXT("People and emergency crews do not take regular traffic voices"),
-		          CitySoundscape::IsRegularTraffic(Vehicle));
-	}
+	Vehicle.VehicleType = ECityTripVehicleType::Walk;
+	TestFalse(TEXT("Pedestrians never emit engines"), CitySoundscape::HasEngineAudio(Vehicle));
+	Vehicle.VehicleType = ECityTripVehicleType::Car;
+	Vehicle.SpeedUnitsPerStep = 10;
+	Vehicle.Id = 100;
+	TestEqual(TEXT("Even car uses approved A"), CitySoundscape::TrafficLoop(Vehicle), ECityAudioCue::CarDriving);
+	Vehicle.Id = 101;
+	TestEqual(TEXT("Odd car uses approved B"), CitySoundscape::TrafficLoop(Vehicle), ECityAudioCue::CarDrivingAlternate);
+	TestTrue(TEXT("Alternate retains traffic spatial treatment"), CitySoundscape::IsTrafficLoop(ECityAudioCue::CarDrivingAlternate));
 	FCityDisasterEvent Event;
 	Event.WarningStep = 100;
 	Event.StartStep = 101;

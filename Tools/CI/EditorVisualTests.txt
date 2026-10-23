@@ -1,0 +1,3 @@
+# Review settled Slate layouts and entrance framing before Windows packaging.
+CitySim.Desktop.InteractionContinuity
+CitySim.Desktop.TutorialWalkthrough

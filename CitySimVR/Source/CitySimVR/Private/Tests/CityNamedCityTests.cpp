@@ -35,7 +35,7 @@ bool FCityNamedCityTest::RunTest(const FString& Parameters)
 	Terrain.Seed = 19041;
 	TestTrue(TEXT("Create independent relaxed city"), Sim->CreateCity(First, Terrain, Directory, Error));
 	TestEqual(TEXT("Starting funds from authoritative preset"), Sim->GetPlacementModel().GetFunds(),
-	          int64(15000));
+	          int64(20000));
 	TestEqual(TEXT("New city starts paused"), Sim->IsSimulationPaused(), true);
 	TestEqual(TEXT("Fresh clock"), Sim->GetEconomySnapshot().FixedStepId, int64(0));
 	TestEqual(TEXT("Fresh population"), Sim->GetPopulationSnapshot().Citizens.Num(), 0);
@@ -61,7 +61,7 @@ bool FCityNamedCityTest::RunTest(const FString& Parameters)
 	         Sim->CreateCity(Second, Terrain, Directory, Error));
 	TestEqual(TEXT("Normal does not inherit relaxed incident timing"),
 	          Sim->GetEconomyTuning().FireGraceMonths, FCityEconomyTuning().FireGraceMonths);
-	TestEqual(TEXT("Normal starting funds"), Sim->GetPlacementModel().GetFunds(), int64(10000));
+	TestEqual(TEXT("Normal starting funds"), Sim->GetPlacementModel().GetFunds(), int64(15000));
 	TestEqual(TEXT("Creation clears clock from previous city"), Sim->GetEconomySnapshot().FixedStepId,
 	          int64(0));
 	FString Unchanged;
@@ -96,7 +96,7 @@ bool FCityNamedCityTest::RunTest(const FString& Parameters)
 	TestTrue(TEXT("Load restores first independent city"), Sim->LoadCityFromPath(FirstPath, Error));
 	TestEqual(TEXT("Saved difficulty restored with its city"), Sim->GetEconomyTuning().FireGraceMonths, 3);
 	TestEqual(TEXT("Saved terrain restored with its city"), Sim->GetTerrain().GetParameters().Seed, 19041);
-	TestEqual(TEXT("Saved original funds restored"), Sim->GetPlacementModel().GetFunds(), int64(15000));
+	TestEqual(TEXT("Saved original funds restored"), Sim->GetPlacementModel().GetFunds(), int64(20000));
 	// An interrupted replacement leaves the committed file readable and the temporary file undiscoverable.
 	TestFalse(TEXT("Interrupted save reports failure"), Sim->SaveCityToPath(FirstPath, Error, true));
 	TestEqual(TEXT("Temporary file cannot create another slot"), FCitySaveLibrary::List(Directory).Num(), 2);

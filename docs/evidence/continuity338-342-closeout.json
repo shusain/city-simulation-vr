@@ -1,0 +1,33 @@
+{
+  "issues": [
+    338,
+    339,
+    340,
+    341,
+    342,
+    364
+  ],
+  "status": "accepted, merged and closed",
+  "acceptedSource": "0ccf7145fb8940ab2791f1ac8e5bdf5161125cb5",
+  "mergeCommit": "ede03bfd87e94ece7a7cd8c3eb9c66c8a8cddc3b",
+  "pr": "https://git.shaun-husain.com/CitySimVR/citysim/pulls/344",
+  "acceptance": "https://git.shaun-husain.com/CitySimVR/citysim/pulls/344#issuecomment-6928",
+  "date": "2026-10-23",
+  "userStatement": "The building preview is back and the highlighted buttons look good now. Let's merge PR344 and close out the issues.",
+  "checks": [
+    "Drone542: warnings-as-errors Editor, two focused functional, two native viewport cases passed",
+    "Windows543: Editor, package/cook/startup, four Client cases at1280x800 and1024x720 passed",
+    "54 runtime files and54 ZIP entries independently verified;28 capture hashes/dimensions checked; four targeted final captures reviewed",
+    "Prior Drone533/Windows534 broader ten-case batch validation and28 feature captures retained"
+  ],
+  "packageSha256": "7a445aff58139c9a5983a28f96783ee996c514f8d0eab62043390c792709b2d7",
+  "delivery": "https://git.shaun-husain.com/attachments/d87e37fa-663d-40bd-8e18-389434be9aae",
+  "limitations": [
+    "PCVR/Quest observations unconfirmed/deferred",
+    "Edited sidewalk/junction paths may retry affected walkers locally",
+    "Optional welcome-sign art excluded"
+  ],
+  "next": "Vehicle appearance #345 / road-grade orientation #343; broader fresh-player coverage #60",
+  "maintainedPromotion": false,
+  "deviceDeployment": false
+}

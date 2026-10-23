@@ -1,0 +1,724 @@
+{
+  "issue": 345,
+  "plan_sha256": "1f0010b079bc69818452d9e1d4d6056054fc9f73d7e30caa742f7e671081f9d9",
+  "assets": [
+    {
+      "key": "Car",
+      "source_issue": 346,
+      "version": 3,
+      "native": "/Game/CitySim/Art/Meshes/SM_Traffic_Car_A",
+      "slots": [
+        "BodyPaint",
+        "arch_toolMaterial",
+        "Glass",
+        "Rubber",
+        "MetalTrim",
+        "Headlight",
+        "Taillight"
+      ],
+      "bindings": {
+        "BodyPaint": "/Game/CitySim/Art/Vehicle345/Materials/MI_Car_BodyPaint",
+        "arch_toolMaterial": "/Game/CitySim/Art/Vehicle345/Materials/MI_Car_arch_toolMaterial",
+        "Glass": "/Game/CitySim/Art/Vehicle345/Materials/MI_Car_Glass",
+        "Rubber": "/Game/CitySim/Art/Vehicle345/Materials/MI_Car_Rubber",
+        "MetalTrim": "/Game/CitySim/Art/Vehicle345/Materials/MI_Car_MetalTrim",
+        "Headlight": "/Game/CitySim/Art/Vehicle345/Materials/MI_Car_Headlight",
+        "Taillight": "/Game/CitySim/Art/Vehicle345/Materials/MI_Car_Taillight"
+      },
+      "triangles": 13084,
+      "native_bounds_cm": {
+        "min": [
+          -211.5,
+          -101.50000762939453,
+          0.0
+        ],
+        "max": [
+          214.25,
+          101.49999237060547,
+          142.97427368164062
+        ]
+      },
+      "sections": [
+        {
+          "material": "BodyPaint",
+          "triangles": 3648
+        },
+        {
+          "material": "arch_toolMaterial",
+          "triangles": 120
+        },
+        {
+          "material": "Glass",
+          "triangles": 12
+        },
+        {
+          "material": "Rubber",
+          "triangles": 3900
+        },
+        {
+          "material": "MetalTrim",
+          "triangles": 4972
+        },
+        {
+          "material": "Headlight",
+          "triangles": 216
+        },
+        {
+          "material": "Taillight",
+          "triangles": 216
+        }
+      ]
+    },
+    {
+      "key": "Truck",
+      "source_issue": 347,
+      "version": 2,
+      "native": "/Game/CitySim/Art/Meshes/SM_Traffic_Truck_A",
+      "slots": [
+        "Rubber",
+        "CargoWhite",
+        "MetalTrim",
+        "BodyPaint",
+        "Glass",
+        "Headlight",
+        "AmberLens",
+        "Taillight"
+      ],
+      "bindings": {
+        "Rubber": "/Game/CitySim/Art/Vehicle345/Materials/MI_Truck_Rubber",
+        "CargoWhite": "/Game/CitySim/Art/Vehicle345/Materials/MI_Truck_CargoWhite",
+        "MetalTrim": "/Game/CitySim/Art/Vehicle345/Materials/MI_Truck_MetalTrim",
+        "BodyPaint": "/Game/CitySim/Art/Vehicle345/Materials/MI_Truck_BodyPaint",
+        "Glass": "/Game/CitySim/Art/Vehicle345/Materials/MI_Truck_Glass",
+        "Headlight": "/Game/CitySim/Art/Vehicle345/Materials/MI_Truck_Headlight",
+        "AmberLens": "/Game/CitySim/Art/Vehicle345/Materials/MI_Truck_AmberLens",
+        "Taillight": "/Game/CitySim/Art/Vehicle345/Materials/MI_Truck_Taillight"
+      },
+      "triangles": 7926,
+      "native_bounds_cm": {
+        "min": [
+          -327.0,
+          -140.4500274658203,
+          0.0
+        ],
+        "max": [
+          315.0000305175781,
+          140.44998168945312,
+          300.0
+        ]
+      },
+      "sections": [
+        {
+          "material": "Rubber",
+          "triangles": 2792
+        },
+        {
+          "material": "CargoWhite",
+          "triangles": 324
+        },
+        {
+          "material": "MetalTrim",
+          "triangles": 3496
+        },
+        {
+          "material": "BodyPaint",
+          "triangles": 444
+        },
+        {
+          "material": "Glass",
+          "triangles": 6
+        },
+        {
+          "material": "Headlight",
+          "triangles": 216
+        },
+        {
+          "material": "AmberLens",
+          "triangles": 432
+        },
+        {
+          "material": "Taillight",
+          "triangles": 216
+        }
+      ]
+    },
+    {
+      "key": "PoliceCar",
+      "source_issue": 348,
+      "version": 3,
+      "native": "/Game/CitySim/Art/Meshes/SM_Traffic_PoliceCar_A",
+      "slots": [
+        "BodyPaint_Navy",
+        "Glass_OpaqueBlueGray",
+        "BodyPaint_White",
+        "MetalTrim",
+        "Badge",
+        "Rubber",
+        "Grille",
+        "Headlight",
+        "Taillight",
+        "ProtectiveBar_DarkSteel",
+        "Roof"
+      ],
+      "bindings": {
+        "BodyPaint_Navy": "/Game/CitySim/Art/Vehicle345/Materials/MI_PoliceCar_BodyPaint_Navy",
+        "Glass_OpaqueBlueGray": "/Game/CitySim/Art/Vehicle345/Materials/MI_PoliceCar_Glass_OpaqueBlueGray",
+        "BodyPaint_White": "/Game/CitySim/Art/Vehicle345/Materials/MI_PoliceCar_BodyPaint_White",
+        "MetalTrim": "/Game/CitySim/Art/Vehicle345/Materials/MI_PoliceCar_MetalTrim",
+        "Badge": "/Game/CitySim/Art/Vehicle345/Materials/MI_PoliceCar_Badge",
+        "Rubber": "/Game/CitySim/Art/Vehicle345/Materials/MI_PoliceCar_Rubber",
+        "Grille": "/Game/CitySim/Art/Vehicle345/Materials/MI_PoliceCar_Grille",
+        "Headlight": "/Game/CitySim/Art/Vehicle345/Materials/MI_PoliceCar_Headlight",
+        "Taillight": "/Game/CitySim/Art/Vehicle345/Materials/MI_PoliceCar_Taillight",
+        "ProtectiveBar_DarkSteel": "/Game/CitySim/Art/Vehicle345/Materials/MI_PoliceCar_ProtectiveBar_DarkSteel",
+        "Roof": "/Game/CitySim/Art/Materials/MI_CityPoliceDetail"
+      },
+      "triangles": 11164,
+      "native_bounds_cm": {
+        "min": [
+          -257.8999938964844,
+          -107.0,
+          0.0
+        ],
+        "max": [
+          270.9000244140625,
+          106.99998474121094,
+          173.25
+        ]
+      },
+      "sections": [
+        {
+          "material": "BodyPaint_Navy",
+          "triangles": 2318
+        },
+        {
+          "material": "Glass_OpaqueBlueGray",
+          "triangles": 12
+        },
+        {
+          "material": "BodyPaint_White",
+          "triangles": 336
+        },
+        {
+          "material": "MetalTrim",
+          "triangles": 1236
+        },
+        {
+          "material": "Badge",
+          "triangles": 6
+        },
+        {
+          "material": "Rubber",
+          "triangles": 1520
+        },
+        {
+          "material": "Grille",
+          "triangles": 3140
+        },
+        {
+          "material": "Headlight",
+          "triangles": 324
+        },
+        {
+          "material": "Taillight",
+          "triangles": 432
+        },
+        {
+          "material": "ProtectiveBar_DarkSteel",
+          "triangles": 1408
+        },
+        {
+          "material": "Roof",
+          "triangles": 432
+        }
+      ]
+    },
+    {
+      "key": "FireEngine",
+      "source_issue": 349,
+      "version": 2,
+      "native": "/Game/CitySim/Art/Meshes/SM_Traffic_FireEngine_A",
+      "slots": [
+        "PumpPanel",
+        "BodyPaint",
+        "WarmWhite",
+        "Glass",
+        "MetalTrim",
+        "Rubber",
+        "LockerMetal",
+        "Taillight",
+        "Headlight",
+        "CouplingBrass",
+        "HoseJacket",
+        "Roof"
+      ],
+      "bindings": {
+        "PumpPanel": "/Game/CitySim/Art/Vehicle345/Materials/MI_FireEngine_PumpPanel",
+        "BodyPaint": "/Game/CitySim/Art/Vehicle345/Materials/MI_FireEngine_BodyPaint",
+        "WarmWhite": "/Game/CitySim/Art/Vehicle345/Materials/MI_FireEngine_WarmWhite",
+        "Glass": "/Game/CitySim/Art/Vehicle345/Materials/MI_FireEngine_Glass",
+        "MetalTrim": "/Game/CitySim/Art/Vehicle345/Materials/MI_FireEngine_MetalTrim",
+        "Rubber": "/Game/CitySim/Art/Vehicle345/Materials/MI_FireEngine_Rubber",
+        "LockerMetal": "/Game/CitySim/Art/Vehicle345/Materials/MI_FireEngine_LockerMetal",
+        "Taillight": "/Game/CitySim/Art/Vehicle345/Materials/MI_FireEngine_Taillight",
+        "Headlight": "/Game/CitySim/Art/Vehicle345/Materials/MI_FireEngine_Headlight",
+        "CouplingBrass": "/Game/CitySim/Art/Vehicle345/Materials/MI_FireEngine_CouplingBrass",
+        "HoseJacket": "/Game/CitySim/Art/Vehicle345/Materials/MI_FireEngine_HoseJacket",
+        "Roof": "/Game/CitySim/Art/Materials/MI_CityFireDetail"
+      },
+      "triangles": 18592,
+      "native_bounds_cm": {
+        "min": [
+          -386.0,
+          -149.00001525878906,
+          0.0
+        ],
+        "max": [
+          375.0,
+          154.36810302734375,
+          382.92840576171875
+        ]
+      },
+      "sections": [
+        {
+          "material": "PumpPanel",
+          "triangles": 2152
+        },
+        {
+          "material": "BodyPaint",
+          "triangles": 2380
+        },
+        {
+          "material": "WarmWhite",
+          "triangles": 996
+        },
+        {
+          "material": "Glass",
+          "triangles": 504
+        },
+        {
+          "material": "MetalTrim",
+          "triangles": 7584
+        },
+        {
+          "material": "Rubber",
+          "triangles": 1144
+        },
+        {
+          "material": "LockerMetal",
+          "triangles": 908
+        },
+        {
+          "material": "Taillight",
+          "triangles": 864
+        },
+        {
+          "material": "Headlight",
+          "triangles": 432
+        },
+        {
+          "material": "CouplingBrass",
+          "triangles": 152
+        },
+        {
+          "material": "HoseJacket",
+          "triangles": 1152
+        },
+        {
+          "material": "Roof",
+          "triangles": 324
+        }
+      ]
+    },
+    {
+      "key": "Ambulance",
+      "source_issue": 350,
+      "version": 2,
+      "native": "/Game/CitySim/Art/Meshes/SM_Traffic_Ambulance_A",
+      "slots": [
+        "BodyPaint",
+        "MetalTrim",
+        "MedicalRed",
+        "Rubber",
+        "Headlight",
+        "Glass",
+        "Taillight",
+        "Roof"
+      ],
+      "bindings": {
+        "BodyPaint": "/Game/CitySim/Art/Vehicle345/Materials/MI_Ambulance_BodyPaint",
+        "MetalTrim": "/Game/CitySim/Art/Vehicle345/Materials/MI_Ambulance_MetalTrim",
+        "MedicalRed": "/Game/CitySim/Art/Vehicle345/Materials/MI_Ambulance_MedicalRed",
+        "Rubber": "/Game/CitySim/Art/Vehicle345/Materials/MI_Ambulance_Rubber",
+        "Headlight": "/Game/CitySim/Art/Vehicle345/Materials/MI_Ambulance_Headlight",
+        "Glass": "/Game/CitySim/Art/Vehicle345/Materials/MI_Ambulance_Glass",
+        "Taillight": "/Game/CitySim/Art/Vehicle345/Materials/MI_Ambulance_Taillight",
+        "Roof": "/Game/CitySim/Art/Materials/MI_CityPoliceDetail"
+      },
+      "triangles": 9614,
+      "native_bounds_cm": {
+        "min": [
+          -331.5,
+          -128.50003051757812,
+          0.0
+        ],
+        "max": [
+          328.0000305175781,
+          128.5,
+          285.0
+        ]
+      },
+      "sections": [
+        {
+          "material": "BodyPaint",
+          "triangles": 2208
+        },
+        {
+          "material": "MetalTrim",
+          "triangles": 3444
+        },
+        {
+          "material": "MedicalRed",
+          "triangles": 1080
+        },
+        {
+          "material": "Rubber",
+          "triangles": 1628
+        },
+        {
+          "material": "Headlight",
+          "triangles": 432
+        },
+        {
+          "material": "Glass",
+          "triangles": 174
+        },
+        {
+          "material": "Taillight",
+          "triangles": 216
+        },
+        {
+          "material": "Roof",
+          "triangles": 432
+        }
+      ]
+    },
+    {
+      "key": "GarbageTruck",
+      "source_issue": 351,
+      "version": 1,
+      "native": "/Game/CitySim/Art/Meshes/SM_Traffic_GarbageTruck_A",
+      "slots": [
+        "Chassis",
+        "Rubber",
+        "MetalTrim",
+        "CompactorPaint",
+        "Service",
+        "Glass",
+        "Headlight",
+        "Taillight",
+        "AmberLens"
+      ],
+      "bindings": {
+        "Chassis": "/Game/CitySim/Art/Vehicle345/Materials/MI_GarbageTruck_Chassis",
+        "Rubber": "/Game/CitySim/Art/Vehicle345/Materials/MI_GarbageTruck_Rubber",
+        "MetalTrim": "/Game/CitySim/Art/Vehicle345/Materials/MI_GarbageTruck_MetalTrim",
+        "CompactorPaint": "/Game/CitySim/Art/Vehicle345/Materials/MI_GarbageTruck_CompactorPaint",
+        "Service": "/Game/CitySim/Art/Vehicle345/Materials/MI_GarbageTruck_Service",
+        "Glass": "/Game/CitySim/Art/Vehicle345/Materials/MI_GarbageTruck_Glass",
+        "Headlight": "/Game/CitySim/Art/Vehicle345/Materials/MI_GarbageTruck_Headlight",
+        "Taillight": "/Game/CitySim/Art/Vehicle345/Materials/MI_GarbageTruck_Taillight",
+        "AmberLens": "/Game/CitySim/Art/Vehicle345/Materials/MI_GarbageTruck_AmberLens"
+      },
+      "triangles": 5732,
+      "native_bounds_cm": {
+        "min": [
+          -404.0,
+          -143.05003356933594,
+          0.0
+        ],
+        "max": [
+          390.0,
+          143.0499725341797,
+          331.5
+        ]
+      },
+      "sections": [
+        {
+          "material": "Chassis",
+          "triangles": 1672
+        },
+        {
+          "material": "Rubber",
+          "triangles": 552
+        },
+        {
+          "material": "MetalTrim",
+          "triangles": 1736
+        },
+        {
+          "material": "CompactorPaint",
+          "triangles": 152
+        },
+        {
+          "material": "Service",
+          "triangles": 756
+        },
+        {
+          "material": "Glass",
+          "triangles": 420
+        },
+        {
+          "material": "Headlight",
+          "triangles": 168
+        },
+        {
+          "material": "Taillight",
+          "triangles": 216
+        },
+        {
+          "material": "AmberLens",
+          "triangles": 60
+        }
+      ]
+    }
+  ],
+  "files": [
+    {
+      "file": "CitySimVR/Content/CitySim/Art/Vehicle345/Materials/M_FleetSurface.uasset",
+      "sha256": "730db662927b4b7cd6d83acc7e664ef9395941702c836f2d612ffbc5645944d6"
+    },
+    {
+      "file": "CitySimVR/Content/CitySim/Art/Vehicle345/Materials/MI_Car_BodyPaint.uasset",
+      "sha256": "d53eeb2cfc1e8b99567204b9923ab1b4750b250451de3dcd00c8d90f2751eef3"
+    },
+    {
+      "file": "CitySimVR/Content/CitySim/Art/Vehicle345/Materials/MI_Car_arch_toolMaterial.uasset",
+      "sha256": "ea145aa5d448caebe4be0146f8f43689439c91d2ed145dde848cda9d363bc906"
+    },
+    {
+      "file": "CitySimVR/Content/CitySim/Art/Vehicle345/Materials/MI_Car_Glass.uasset",
+      "sha256": "cfedeb9b304385222d5aa74740ac205927b3067c651d0f6a5b2bc0077a0502bb"
+    },
+    {
+      "file": "CitySimVR/Content/CitySim/Art/Vehicle345/Materials/MI_Car_Rubber.uasset",
+      "sha256": "559e791f341686ac7f13e41d139c3de5d032533f3007c92fe956df888ef7ff7e"
+    },
+    {
+      "file": "CitySimVR/Content/CitySim/Art/Vehicle345/Materials/MI_Car_MetalTrim.uasset",
+      "sha256": "0a023508d185c39ff209f4a25ed4b51c1fd1c22702d6df69f163273cdb15262e"
+    },
+    {
+      "file": "CitySimVR/Content/CitySim/Art/Vehicle345/Materials/MI_Car_Headlight.uasset",
+      "sha256": "e4a37b5ccc94a2b8729764e538292595d495009ff9aaa0cbebae25910e0d55a6"
+    },
+    {
+      "file": "CitySimVR/Content/CitySim/Art/Vehicle345/Materials/MI_Car_Taillight.uasset",
+      "sha256": "74b362744e9ff3e266e242f528c8b375b7a66b400aae75ce4515ef8df62cc81d"
+    },
+    {
+      "file": "CitySimVR/Content/CitySim/Art/Meshes/SM_Traffic_Car_A.uasset",
+      "sha256": "217243e38501469dac6beb042fcced4807f5f1e559fd927d8c208ccd2a2a20b4"
+    },
+    {
+      "file": "CitySimVR/Content/CitySim/Art/Vehicle345/Materials/MI_Truck_Rubber.uasset",
+      "sha256": "b7fe66ce16b57bdf096a339b0db6478b778977ffadd211dc41abc90be92c1dd7"
+    },
+    {
+      "file": "CitySimVR/Content/CitySim/Art/Vehicle345/Materials/MI_Truck_CargoWhite.uasset",
+      "sha256": "98a13ede91f1f3d9e6efe508745afd7de15bc6ad2e58264378d600aded5ceaaf"
+    },
+    {
+      "file": "CitySimVR/Content/CitySim/Art/Vehicle345/Materials/MI_Truck_MetalTrim.uasset",
+      "sha256": "18ca5c9d567c1110111dce45e0b0e11f53c0a14eaf596e30cb4bfa613c694d92"
+    },
+    {
+      "file": "CitySimVR/Content/CitySim/Art/Vehicle345/Materials/MI_Truck_BodyPaint.uasset",
+      "sha256": "479827cab382f8b144ebf73aadce0f51038be97e9281a2e767441aa6813eb331"
+    },
+    {
+      "file": "CitySimVR/Content/CitySim/Art/Vehicle345/Materials/MI_Truck_Glass.uasset",
+      "sha256": "528469d79c0a66ec38ffdbb0e43dae1d34476749886d0a8bf13b71912f2708a6"
+    },
+    {
+      "file": "CitySimVR/Content/CitySim/Art/Vehicle345/Materials/MI_Truck_Headlight.uasset",
+      "sha256": "0d367d40e796ab94a84b3d133e071adc1734c3ed56569c9364b6a2a514058b10"
+    },
+    {
+      "file": "CitySimVR/Content/CitySim/Art/Vehicle345/Materials/MI_Truck_AmberLens.uasset",
+      "sha256": "98d3f8cec167cd6644cb433aad40b3b86287b195b7a48c401725d39740fe7943"
+    },
+    {
+      "file": "CitySimVR/Content/CitySim/Art/Vehicle345/Materials/MI_Truck_Taillight.uasset",
+      "sha256": "1b9e74af5740d1ea5dd3a1fe59edfad70676bfb7946c855120267a357e91a351"
+    },
+    {
+      "file": "CitySimVR/Content/CitySim/Art/Meshes/SM_Traffic_Truck_A.uasset",
+      "sha256": "4f955fbb8b920343c85457b85be9f46a0e63767fe213a7e6c6492d05722223ab"
+    },
+    {
+      "file": "CitySimVR/Content/CitySim/Art/Vehicle345/Materials/MI_PoliceCar_BodyPaint_Navy.uasset",
+      "sha256": "b3cd508216e329a073a75739b831242712963d1b7b48e6240d462aead78498da"
+    },
+    {
+      "file": "CitySimVR/Content/CitySim/Art/Vehicle345/Materials/MI_PoliceCar_Glass_OpaqueBlueGray.uasset",
+      "sha256": "1e497447f2c80e466b067c2b501950092429fd462548d3bc442510d6ff2c2677"
+    },
+    {
+      "file": "CitySimVR/Content/CitySim/Art/Vehicle345/Materials/MI_PoliceCar_BodyPaint_White.uasset",
+      "sha256": "d9a2c61615952ecf5b3a789279af3b2d3d87d8d1fd11081aace7d804c2cd795b"
+    },
+    {
+      "file": "CitySimVR/Content/CitySim/Art/Vehicle345/Materials/MI_PoliceCar_MetalTrim.uasset",
+      "sha256": "4c3df02279ba318b9b94856cb26bd8c15e436ab07121b0acb425488d5a30c04d"
+    },
+    {
+      "file": "CitySimVR/Content/CitySim/Art/Vehicle345/Materials/MI_PoliceCar_Badge.uasset",
+      "sha256": "161f2192e2ef92f0ed76dc8c1ab4df9abe04ad83f2ca2a46534dfc6a3f8c321c"
+    },
+    {
+      "file": "CitySimVR/Content/CitySim/Art/Vehicle345/Materials/MI_PoliceCar_Rubber.uasset",
+      "sha256": "23f56818ff67c5fb68f2f1db6a67991967b50669a62e4903916d3f7486fb1f36"
+    },
+    {
+      "file": "CitySimVR/Content/CitySim/Art/Vehicle345/Materials/MI_PoliceCar_Grille.uasset",
+      "sha256": "b33dce9a92734d5213fae3a27e0074a743854a38dc61a7416fd6d713de8067b7"
+    },
+    {
+      "file": "CitySimVR/Content/CitySim/Art/Vehicle345/Materials/MI_PoliceCar_Headlight.uasset",
+      "sha256": "69512dc1d24897d1ed6c6fb7ce9c00b98ec42e463e03e9354f67ab8963be500d"
+    },
+    {
+      "file": "CitySimVR/Content/CitySim/Art/Vehicle345/Materials/MI_PoliceCar_Taillight.uasset",
+      "sha256": "b87976c24676de3837a26700c2a71a36d2e9de7b46556f07a289d059e55eb173"
+    },
+    {
+      "file": "CitySimVR/Content/CitySim/Art/Vehicle345/Materials/MI_PoliceCar_ProtectiveBar_DarkSteel.uasset",
+      "sha256": "86bf6d5032a3e9c5adc9208879f0cef908143c2a3a6ff42a3253219fe223ced9"
+    },
+    {
+      "file": "CitySimVR/Content/CitySim/Art/Meshes/SM_Traffic_PoliceCar_A.uasset",
+      "sha256": "b43bbdd92fcbc8863eb5abcaf02547c00661681c474451e141b4ceb6ea2d2992"
+    },
+    {
+      "file": "CitySimVR/Content/CitySim/Art/Vehicle345/Materials/MI_FireEngine_PumpPanel.uasset",
+      "sha256": "5b7c21f55523a8e17d821595fbaae4d8e889b0a410853c51c21c571e82f23d78"
+    },
+    {
+      "file": "CitySimVR/Content/CitySim/Art/Vehicle345/Materials/MI_FireEngine_BodyPaint.uasset",
+      "sha256": "8bc0a8a9d656d0e0a8e4050fe87d603335f3251ab8a3d3ad5e34c074f2c74ada"
+    },
+    {
+      "file": "CitySimVR/Content/CitySim/Art/Vehicle345/Materials/MI_FireEngine_WarmWhite.uasset",
+      "sha256": "a8a74931c241e9d1592dc7085804605e6edb907c391d45ab311d60207b3e96e6"
+    },
+    {
+      "file": "CitySimVR/Content/CitySim/Art/Vehicle345/Materials/MI_FireEngine_Glass.uasset",
+      "sha256": "f09a5544cfd3871e4b69b81ace54a2a0e2b347beedd96e84ea2b2d61277681fa"
+    },
+    {
+      "file": "CitySimVR/Content/CitySim/Art/Vehicle345/Materials/MI_FireEngine_MetalTrim.uasset",
+      "sha256": "61814445aee5807c86acd6d649bfdeecd9be12dcbbcde49eece0a9e8cff69459"
+    },
+    {
+      "file": "CitySimVR/Content/CitySim/Art/Vehicle345/Materials/MI_FireEngine_Rubber.uasset",
+      "sha256": "aeb19743ed23ae78a78601df638d3c5d0cea4c0232b8cbdf798a7c283811296c"
+    },
+    {
+      "file": "CitySimVR/Content/CitySim/Art/Vehicle345/Materials/MI_FireEngine_LockerMetal.uasset",
+      "sha256": "77d8f5dfb719c695210459cdd060f76c3c636f8d67c2a6414c1804d498414dff"
+    },
+    {
+      "file": "CitySimVR/Content/CitySim/Art/Vehicle345/Materials/MI_FireEngine_Taillight.uasset",
+      "sha256": "39b3f69f84339bb57d1b671b0286d4f27d6e2592aa96da49e187fdc6847f976d"
+    },
+    {
+      "file": "CitySimVR/Content/CitySim/Art/Vehicle345/Materials/MI_FireEngine_Headlight.uasset",
+      "sha256": "203404c13952b7d95224204d8a5938d685f7acba4295c0b3c51c46d68b1960af"
+    },
+    {
+      "file": "CitySimVR/Content/CitySim/Art/Vehicle345/Materials/MI_FireEngine_CouplingBrass.uasset",
+      "sha256": "c8c0ad6ab36f2c14e9c3fd8dde135c1805ca24ada826019da0af47ff84f24b43"
+    },
+    {
+      "file": "CitySimVR/Content/CitySim/Art/Vehicle345/Materials/MI_FireEngine_HoseJacket.uasset",
+      "sha256": "0dbc58a7408795444b879fce7d3ecbd48de6f678e6b4045ba28d944fe4461482"
+    },
+    {
+      "file": "CitySimVR/Content/CitySim/Art/Meshes/SM_Traffic_FireEngine_A.uasset",
+      "sha256": "d52d53a81a4a62b199f24bda56a9d226717ab076d4e7117968df3888eb752be9"
+    },
+    {
+      "file": "CitySimVR/Content/CitySim/Art/Vehicle345/Materials/MI_Ambulance_BodyPaint.uasset",
+      "sha256": "253ebf25e83646d2d81518c49e4906a42693f7a34503ca22225a81538f9b1af0"
+    },
+    {
+      "file": "CitySimVR/Content/CitySim/Art/Vehicle345/Materials/MI_Ambulance_MetalTrim.uasset",
+      "sha256": "ee1164ad4b8b2539e5e6cfdd7c308a1245e567b331394c484fa37e0ad4196223"
+    },
+    {
+      "file": "CitySimVR/Content/CitySim/Art/Vehicle345/Materials/MI_Ambulance_MedicalRed.uasset",
+      "sha256": "e0f508cfb70a7735a952d1e6bfd301553587491f85cfb203a1bff12a0bd560ad"
+    },
+    {
+      "file": "CitySimVR/Content/CitySim/Art/Vehicle345/Materials/MI_Ambulance_Rubber.uasset",
+      "sha256": "5e0104b746acd3d8a05d6a0c554c015beddafe16f532cb9000ae46b96d1816a5"
+    },
+    {
+      "file": "CitySimVR/Content/CitySim/Art/Vehicle345/Materials/MI_Ambulance_Headlight.uasset",
+      "sha256": "0d6e79b48333e67c55a638a040ea4ab4e592453a71e4aed14f672e1277b2e3ae"
+    },
+    {
+      "file": "CitySimVR/Content/CitySim/Art/Vehicle345/Materials/MI_Ambulance_Glass.uasset",
+      "sha256": "185cd05f71112b01e13925666b641a67e98b34564c241aa8455baf3440d4570c"
+    },
+    {
+      "file": "CitySimVR/Content/CitySim/Art/Vehicle345/Materials/MI_Ambulance_Taillight.uasset",
+      "sha256": "0cdf54374e25e2397cdb95e7b61d164f8f695ccb2a55f251947dfff573f977a0"
+    },
+    {
+      "file": "CitySimVR/Content/CitySim/Art/Meshes/SM_Traffic_Ambulance_A.uasset",
+      "sha256": "7453c24c8307e0bd677f68b8b582f9c0a4013422f28d5b206fda8285989a753a"
+    },
+    {
+      "file": "CitySimVR/Content/CitySim/Art/Vehicle345/Materials/MI_GarbageTruck_Chassis.uasset",
+      "sha256": "cfc7cfbebef5c7194533a717326130453f0dfcf2d19d756e2a223d05502b4490"
+    },
+    {
+      "file": "CitySimVR/Content/CitySim/Art/Vehicle345/Materials/MI_GarbageTruck_Rubber.uasset",
+      "sha256": "1cffbcb70b2fec7c7fb3b446dc02231d2e1c7b01f50424c351ea0927c61b9691"
+    },
+    {
+      "file": "CitySimVR/Content/CitySim/Art/Vehicle345/Materials/MI_GarbageTruck_MetalTrim.uasset",
+      "sha256": "979b47895c1b82c97d66095a1fe3ec0e02fdeaddb6ff673cc627f20c1076baf4"
+    },
+    {
+      "file": "CitySimVR/Content/CitySim/Art/Vehicle345/Materials/MI_GarbageTruck_CompactorPaint.uasset",
+      "sha256": "a10e7a8a8730312823108ba0cd2bad5b0f37cd23ceca82d6e210a9bb65be1b0f"
+    },
+    {
+      "file": "CitySimVR/Content/CitySim/Art/Vehicle345/Materials/MI_GarbageTruck_Service.uasset",
+      "sha256": "81bd9cc661cc212ca75ef07a3ba780bec070527f4510566a4a2df6e073037a80"
+    },
+    {
+      "file": "CitySimVR/Content/CitySim/Art/Vehicle345/Materials/MI_GarbageTruck_Glass.uasset",
+      "sha256": "438b78339329a6e0acacd7d105902acd5dc2c2fb8f19734d97bbe223a84d2920"
+    },
+    {
+      "file": "CitySimVR/Content/CitySim/Art/Vehicle345/Materials/MI_GarbageTruck_Headlight.uasset",
+      "sha256": "76715b964c6050788c7710c31731cb96076804e546ca144d9b06cb7de8b95f66"
+    },
+    {
+      "file": "CitySimVR/Content/CitySim/Art/Vehicle345/Materials/MI_GarbageTruck_Taillight.uasset",
+      "sha256": "2a645f6d9e51abf6f43bea28b81b6ae6816b333863a6434627f708d120d18ed6"
+    },
+    {
+      "file": "CitySimVR/Content/CitySim/Art/Vehicle345/Materials/MI_GarbageTruck_AmberLens.uasset",
+      "sha256": "7c62b38ddeba6a11a28f8fa7208bc2d42718e5d13463154795d65f9e4b231016"
+    },
+    {
+      "file": "CitySimVR/Content/CitySim/Art/Meshes/SM_Traffic_GarbageTruck_A.uasset",
+      "sha256": "ec87bd332051d3a434b0fc0ff652b949aedbc4f2fd69828b9d6111b95d5b0b26"
+    }
+  ]
+}

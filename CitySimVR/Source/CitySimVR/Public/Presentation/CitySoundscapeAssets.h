@@ -25,8 +25,6 @@ enum class ECityAudioCue : uint8
 	IndustryWorking,
 	CityDistant,
 	MarketMurmur,
-	CarPass,
-	TruckPass,
 	BirdChirpA,
 	BirdChirpB,
 	BirdChirpC,
@@ -58,6 +56,7 @@ enum class ECityAudioCue : uint8
 	CarDriving,
 	TruckIdle,
 	TruckDriving,
+	CarDrivingAlternate,
 	Count
 };
 struct FCityAudioAsset
@@ -103,9 +102,6 @@ inline constexpr FCityAudioAsset CityAudioAssets[] = {
      20.0f, true},
     {TEXT("Market-Murmur"), TEXT("/Game/CitySim/Audio/Soundscape/Ambience/City/SW_Market_Murmur"), TEXT("MS_Market_Murmur"),
      20.0f, true},
-    {TEXT("Car-Pass"), TEXT("/Game/CitySim/Audio/Soundscape/Ambience/City/SW_Car_Pass"), TEXT("MS_Car_Pass"), 3.0f, false},
-    {TEXT("Truck-Pass"), TEXT("/Game/CitySim/Audio/Soundscape/Ambience/City/SW_Truck_Pass"), TEXT("MS_Truck_Pass"), 4.0f,
-     false},
     {TEXT("Bird-Chirp-A"), TEXT("/Game/CitySim/Audio/Soundscape/Ambience/Wildlife/SW_Bird_Chirp_A"), TEXT("MS_Bird_Chirp_A"),
      1.2f, false},
     {TEXT("Bird-Chirp-B"), TEXT("/Game/CitySim/Audio/Soundscape/Ambience/Wildlife/SW_Bird_Chirp_B"), TEXT("MS_Bird_Chirp_B"),
@@ -159,13 +155,18 @@ inline constexpr FCityAudioAsset CityAudioAssets[] = {
      TEXT("MS_Industry_Clank"), 1.5f, false},
     {TEXT("Cricket-Chirp-Pair"), TEXT("/Game/CitySim/Audio/Soundscape/Ambience/Wildlife/SW_Cricket_Chirp_Pair"),
      TEXT("MS_Cricket_Chirp_Pair"), 0.8f, false},
-    {TEXT("Car-Idle"), TEXT("/Game/CitySim/Audio/Soundscape/Ambience/City/SW_Car_Idle"), TEXT("SC_Car_Idle"), 20.f, true},
-    {TEXT("Car-Driving"), TEXT("/Game/CitySim/Audio/Soundscape/Ambience/City/SW_Car_Driving"), TEXT("SC_Car_Driving"), 20.f,
+    {TEXT("Car-Idle"), TEXT("/Game/CitySim/Audio/Soundscape/Ambience/City/SW_Car_Idle"), TEXT("SC_Car_Idle"),
+     22.699833333f, true},
+    {TEXT("Car-Driving"), TEXT("/Game/CitySim/Audio/Soundscape/Ambience/City/SW_Car_Driving"), TEXT("SC_Car_Driving"),
+     8.893333333f,
      true},
-    {TEXT("Truck-Idle"), TEXT("/Game/CitySim/Audio/Soundscape/Ambience/City/SW_Truck_Idle"), TEXT("SC_Truck_Idle"), 20.f,
+    {TEXT("Truck-Idle"), TEXT("/Game/CitySim/Audio/Soundscape/Ambience/City/SW_Truck_Idle"), TEXT("SC_Truck_Idle"),
+     19.495333333f,
      true},
     {TEXT("Truck-Driving"), TEXT("/Game/CitySim/Audio/Soundscape/Ambience/City/SW_Truck_Driving"), TEXT("SC_Truck_Driving"),
-     20.f, true},
+     23.009833333f, true},
+    {TEXT("Car-Driving-Alternate"), TEXT("/Game/CitySim/Audio/Soundscape/Ambience/City/SW_Car_Driving_Alternate"),
+     TEXT("SC_Car_Driving_Alternate"), 8.694666667f, true},
 };
 static_assert(UE_ARRAY_COUNT(CityAudioAssets) == static_cast<uint8>(ECityAudioCue::Count));
 inline constexpr const TCHAR* CityAudioGraphFolder = TEXT("/Game/CitySim/Audio/Soundscape/Graphs");

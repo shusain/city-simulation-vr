@@ -1,0 +1,57 @@
+{
+  "issue": "D108 Resident open beach tote",
+  "revision": "v2 presentation/material only",
+  "status": "review-only; no export approval or integration",
+  "geometry_snapshot_unchanged": true,
+  "dimensions_m": [
+    0.44999998807907104,
+    0.2199999988079071,
+    0.4778059422969818
+  ],
+  "triangles": 244,
+  "materials": [
+    "Fabric"
+  ],
+  "nonmanifold_edges": 0,
+  "fbx_roundtrip_pass": true,
+  "origin_m": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "original_world_matrix": [
+    [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "units": "meters Z-up",
+  "views": {
+    "three_quarter": "preview.png",
+    "front_1m_vertical_field": "front_1m.png",
+    "side": "side.png"
+  },
+  "presentation_floor_excluded_from_fbx": true,
+  "production_inputs_modified": false,
+  "visual_acceptance": "pending human review"
+}

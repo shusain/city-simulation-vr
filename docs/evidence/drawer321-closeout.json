@@ -1,0 +1,54 @@
+{
+  "commit": "1cde4bc1e91c5b7c7ac87d2d00781911bf9cefc8",
+  "submittedCommit": "1cde4bc1e91c5b7c7ac87d2d00781911bf9cefc8",
+  "build": "474",
+  "mode": "WindowsCandidate",
+  "tests": [
+    "CitySim.Input.DrawerLayout",
+    "CitySim.Input.DrawerInteraction"
+  ],
+  "startedUtc": "2026-10-22T19:38:31.2421185Z",
+  "status": "accepted and merged; issue closed",
+  "gameplayFixtures": [
+    {
+      "name": "shopping",
+      "path": "Artifacts/Fixture285/Input/CurrentCity.json",
+      "sha256": "cb6c956491ca01982883eac5dd1d69eca5edca593a4c5fcd2b0e748f3040dc0e"
+    },
+    {
+      "name": "health",
+      "path": "Artifacts/D127/ReportedCity.json",
+      "sha256": "276727c3a77e63654c7fc0e1fa67bed1e8214980e38ee37724049a45d1e77e27"
+    }
+  ],
+  "smokeRuntime": {
+    "executable": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\CI\\WindowsSmoke\\Runtime\\CitySimVR\\Binaries\\Win64\\CitySimVR.exe",
+    "inventory": "SmokeRuntime.json",
+    "fileCount": 54,
+    "inbound": "Block"
+  },
+  "packageSha256": "ac0ab1f504062f85e439b6851fbd927eba3d29612914fc8d0f76dc1b6c096c9a",
+  "finishedUtc": "2026-10-22T19:44:10.6625423Z",
+  "runtimeFiles": 54,
+  "executable": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\Drawer321\\Build474\\CitySimVR\\Binaries\\Win64\\CitySimVR.exe",
+  "acceptance": "Shaun confirmed no overlap/selection issues across menu modes with either hand in Windows474; explicitly requested merge and close321",
+  "acceptanceUrl": "https://git.shaun-husain.com/CitySimVR/citysim/issues/321#issuecomment-6312",
+  "implementationHead": "6e2d41254f830dd22ffb233ea872584804e01fbf",
+  "combinedHead": "4df8c04bf3b5096008f77c6051c75f36dc0fd172",
+  "physicalPCVR": "accepted; exact headset/runtime not specified in report",
+  "quest": "unconfirmed; no Quest candidate requested",
+  "issue": 321,
+  "pr": 324,
+  "mergeCommit": "9ec31815dd2c12ef83e8ef4c19d1a5b625589516",
+  "combinedValidation": {
+    "build": 479,
+    "head": "4df8c04bf3b5096008f77c6051c75f36dc0fd172",
+    "status": "passed",
+    "editorSeconds": 173.58,
+    "tests": [
+      "CitySim.Input.DrawerLayout",
+      "CitySim.Input.DrawerInteraction"
+    ],
+    "retainedVisual": "CitySim.Desktop.SettingsGallery"
+  }
+}

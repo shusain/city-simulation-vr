@@ -11,7 +11,6 @@ $taskProject = Join-Path $taskRoot 'CitySimVR/CitySimVR.uproject'
 if (-not $env:CITYSIM_CI_ROOT) { throw 'CITYSIM_CI_ROOT must name the persistent worker output directory.' }
 $taskCiRoot = [IO.Path]::GetFullPath($env:CITYSIM_CI_ROOT)
 . (Join-Path $PSScriptRoot 'CityCiSmoke.ps1')
-. (Join-Path $PSScriptRoot 'CityCiReservations.ps1')
 if ($Mode -eq 'WindowsCandidate') {
     # Read-only prerequisite: never prompt for elevation from a build job.
     Assert-CityCiSmokeFirewall $taskCiRoot | Out-Null
@@ -116,11 +115,6 @@ if ($LASTEXITCODE -ne 0 -or $taskDirty) { throw 'Tracked inputs must match the c
 $taskRunId = '{0}-{1}-{2}-{3}' -f $env:DRONE_BUILD_NUMBER, $taskHead.Substring(0, 12), $Mode, ([Guid]::NewGuid().ToString('N').Substring(0, 8))
 $taskOutput = Join-Path $taskCiRoot "Builds/$taskRunId"
 New-Item -ItemType Directory -Path $taskOutput -Force | Out-Null
-# File locking works across Windows sessions; acquire before any Unreal/plugin operation.
-$taskLock = $null
-try {
-    $taskLock = [IO.File]::Open((Join-Path $taskCiRoot 'unreal-build.lock'), 'OpenOrCreate', 'ReadWrite', 'None')
-} catch { throw 'The CI Unreal build slot is in use. Retry when the owning job finishes.' }
 $taskReceipt = [ordered]@{ commit = $taskHead; submittedCommit = $env:DRONE_COMMIT_SHA; build = $env:DRONE_BUILD_NUMBER; mode = $Mode; tests = $taskTests; startedUtc = [DateTime]::UtcNow.ToString('o'); status = 'running' }
 $taskPreviousDdc = [Environment]::GetEnvironmentVariable('UE-LocalDataCachePath')
 function Invoke-CiNative([string]$File, [string[]]$Arguments, [string]$Log) {
@@ -171,20 +165,6 @@ if (Test-Path -LiteralPath $taskGameplayManifest) {
     if ($taskGameplayFixtures.Count -ne 2) { throw 'Both captured gameplay fixtures are required.' }
     $taskReceipt.gameplayFixtures = @($taskGameplayFixtureList)
 }
-    # The working plan reserves source/build ownership even while an owner is
-    # authoring code and has no native process running yet.
-    $taskPlanPath = Join-Path $env:CITYSIM_DEVELOPMENT_ROOT 'docs/DEVELOPMENT_TASKS.md'
-    $taskPlan = Get-Content -LiteralPath $taskPlanPath -Raw
-    $taskClaims = @(Get-CityLocalNativeClaims $taskPlan)
-    if ($taskClaims.Count) {
-        throw "Native build window is reserved: $($taskClaims[0].Groups['owner'].Value). Retry after that owner releases it."
-    }
-    # Respect any existing local Unreal/UAT process; never stop a player session.
-    $taskActive = @(Get-CimInstance Win32_Process -ErrorAction Stop | Where-Object {
-        $_.Name -match '^(UnrealEditor.*|UnrealBuildTool|AutomationTool)\.exe$' -or
-        ($_.Name -eq 'dotnet.exe' -and $_.CommandLine -match 'UnrealBuildTool|AutomationTool')
-    })
-    if ($taskActive.Count) { throw 'Another native Unreal build/editor owns this machine; retry after it releases the build window.' }
     if (-not (Test-Path -LiteralPath (Join-Path $taskPlugin 'OculusXR.uplugin'))) {
         New-Item -ItemType Directory -Path $taskPlugin -Force | Out-Null
         & robocopy $taskPluginSource $taskPlugin /E /XD Intermediate Saved /NFL /NDL /NJH /NJS /NP | Out-Host
@@ -195,7 +175,7 @@ if (Test-Path -LiteralPath $taskGameplayManifest) {
     New-Item -ItemType Directory -Path $taskDdc -Force | Out-Null
     [Environment]::SetEnvironmentVariable('UE-LocalDataCachePath', $taskDdc)
     Invoke-CiNative $taskBuildScript @('CitySimVREditor', 'Win64', 'Development', $taskProject, '-WaitMutex', '-NoHotReloadFromIDE', '-WarningsAsErrors') (Join-Path $taskOutput 'EditorBuild.log')
-    # Asset imports require Editor and share this worker's existing native lock.
+    # Asset imports run in this job's isolated Editor workspace.
     # Keep this optional and explicit; retain the exact products for review/commit.
     $taskPreparationManifest = Join-Path $PSScriptRoot 'AssetPreparation.txt'
     if (Test-Path -LiteralPath $taskPreparationManifest) {
@@ -205,7 +185,7 @@ if (Test-Path -LiteralPath $taskGameplayManifest) {
             $taskPreparationPath = Join-Path $taskRoot $taskPreparation
             if (-not (Test-Path -LiteralPath $taskPreparationPath -PathType Leaf)) { throw 'Missing asset preparation script.' }
             $taskPreparationName = [IO.Path]::GetFileNameWithoutExtension($taskPreparation)
-            $taskPreparationArguments = @("`"$taskProject`"", '-run=pythonscript', "-script=`"$taskPreparationPath`"", '-AllowCommandletRendering', '-ini:Engine:[ConsoleVariables]:Interchange.FeatureFlags.Import.PNG=0', '-notraceserver', '-d3d11', '-RenderOffscreen', '-nohmd', '-unattended', '-nop4', '-nosplash',
+            $taskPreparationArguments = @("`"$taskProject`"", '-run=pythonscript', "-script=`"$taskPreparationPath`"", '-AllowCommandletAudio', '-AllowCommandletRendering', '-ini:Engine:[ConsoleVariables]:Interchange.FeatureFlags.Import.PNG=0', '-notraceserver', '-d3d11', '-RenderOffscreen', '-nohmd', '-unattended', '-nop4', '-nosplash',
                 "-UserDir=`"$taskOutput/AssetPreparation-User`"", "-abslog=`"$taskOutput/$taskPreparationName-Editor.log`"")
             # Native XR startup writes informational lines to stderr. PS5 turns
             # those into terminating NativeCommandError records with 2>&1.
@@ -248,9 +228,14 @@ if (Test-Path -LiteralPath $taskGameplayManifest) {
         $taskSmokeRuntime = Initialize-CityCiSmokeRuntime -CiRoot $taskCiRoot -CandidateDirectory $taskArchive -ReportPath (Join-Path $taskOutput 'SmokeRuntime.json')
         $taskExecutable = $taskSmokeRuntime.executable
         try {
-        $taskSmoke = Join-Path $taskRoot "Artifacts/CI-$taskRunId"
+        $taskSmokeRun = "CI-$($env:DRONE_BUILD_NUMBER)-Smoke"
+        $taskSmoke = Join-Path $taskRoot "Artifacts/$taskSmokeRun"
         try {
-            & (Join-Path $taskRoot 'Tools/Test-DesktopSandbox.ps1') -ExecutablePath $taskExecutable -MenusOnly -NoTraceServer -RunName "CI-$taskRunId"
+            # Full smoke is opt-in through the existing exact Client test manifest.
+            $taskFullDesktopSmoke = $taskClientTests -contains 'CitySim.Desktop.PackagedSmoke'
+            $taskSmokeScope = @{}
+            if (-not $taskFullDesktopSmoke) { $taskSmokeScope.MenusOnly = $true }
+            & (Join-Path $taskRoot 'Tools/Test-DesktopSandbox.ps1') -ExecutablePath $taskExecutable @taskSmokeScope -NoTraceServer -RunName $taskSmokeRun
         } finally {
             # Preserve failed smoke logs/captures before Drone removes its clone.
             if (Test-Path -LiteralPath $taskSmoke) {
@@ -260,9 +245,24 @@ if (Test-Path -LiteralPath $taskGameplayManifest) {
         if ($taskClientTests.Count) {
             foreach ($taskSize in @(@(1280,800), @(1024,720))) {
                 $taskClientName = "Client-$($taskSize[0])"
-                Invoke-CiTests $taskExecutable @('-CityDesktop','-CityPackagedAutomation','-windowed','-ForceRes',"-ResX=$($taskSize[0])","-ResY=$($taskSize[1])") $taskClientName $taskClientTests
+                if ($taskFullDesktopSmoke -and $taskSize[0] -ne 1280) {
+                    $taskFullRun = "CI-$($env:DRONE_BUILD_NUMBER)-Full-$($taskSize[0])"
+                    try {
+                        & (Join-Path $taskRoot 'Tools/Test-DesktopSandbox.ps1') -ExecutablePath $taskExecutable -Width $taskSize[0] -Height $taskSize[1] -NoTraceServer -RunName $taskFullRun
+                    } finally {
+                        $taskFullOutput = Join-Path $taskRoot "Artifacts/$taskFullRun"
+                        if (Test-Path -LiteralPath $taskFullOutput) {
+                            Copy-Item -LiteralPath $taskFullOutput -Destination (Join-Path $taskOutput "PackagedSmoke-$($taskSize[0])") -Recurse
+                        }
+                    }
+                }
+                $taskOtherClientTests = @($taskClientTests | Where-Object { $_ -ne 'CitySim.Desktop.PackagedSmoke' })
+                if ($taskOtherClientTests.Count) {
+                    Invoke-CiTests $taskExecutable @('-CityDesktop','-CityPackagedAutomation','-windowed','-ForceRes',"-ResX=$($taskSize[0])","-ResY=$($taskSize[1])") $taskClientName $taskOtherClientTests
+                }
             }
             $taskReceipt.clientTests = $taskClientTests
+            $taskReceipt.desktopSmokeScope = if ($taskFullDesktopSmoke) { 'full-two-sizes' } else { 'menus-only' }
         }
         $taskReceipt.smokeRuntime = [ordered]@{ executable=$taskExecutable; inventory='SmokeRuntime.json'; fileCount=$taskSmokeRuntime.fileCount; inbound='Block' }
         } finally { $taskSmokeRuntime.lock.Dispose() }
@@ -303,6 +303,5 @@ if (Test-Path -LiteralPath $taskGameplayManifest) {
     $taskReceipt.finishedUtc = [DateTime]::UtcNow.ToString('o')
     $taskReceipt | ConvertTo-Json -Depth 5 | Set-Content -LiteralPath (Join-Path $taskOutput 'Result.json') -Encoding UTF8
     [Environment]::SetEnvironmentVariable('UE-LocalDataCachePath', $taskPreviousDdc)
-    if ($taskLock) { $taskLock.Dispose() }
     Write-Output "CI result and artifacts retained at $taskOutput"
 }

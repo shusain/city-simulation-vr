@@ -1,4 +1,10 @@
 #include "Presentation/CityDesktopHud.h"
+#include "Presentation/CityTutorialSettings.h"
+#include "Presentation/CityDesktopMenuContent.h"
+#include "Components/VerticalBox.h"
+#include "Components/HorizontalBox.h"
+#include "Components/HorizontalBoxSlot.h"
+#include "Components/VerticalBoxSlot.h"
 #include "Presentation/CityDesktopChart.h"
 #include "Presentation/CityDesktopNewspaper.h"
 #include "Presentation/CityDesktopIcon.h"
@@ -7,10 +13,12 @@
 
 #include "Blueprint/WidgetTree.h"
 #include "Components/Border.h"
+#include "Components/ButtonSlot.h"
 #include "Components/CanvasPanelSlot.h"
 #include "Components/SizeBox.h"
 #include "Components/TextBlock.h"
 #include "Components/WrapBox.h"
+#include "Components/WrapBoxSlot.h"
 #include "Components/ScrollBox.h"
 #include "Framework/Application/SlateApplication.h"
 #include "Interaction/CityVRToolController.h"
@@ -23,17 +31,18 @@ UCityDesktopActionButton::UCityDesktopActionButton()
 	InitIsFocusable(false);
 }
 
-void UCityDesktopActionButton::SetPresentation(const FLinearColor Accent, const bool bSelected)
+void UCityDesktopActionButton::SetPresentation(const FLinearColor Accent, const bool bSelected, const bool bPrimary)
 {
-	if (bPresentationSet && PresentationAccent == Accent && bIsSelected == bSelected)
+	if (bPresentationSet && PresentationAccent == Accent && bIsSelected == bSelected && bIsPrimary == bPrimary)
 		return;
 	bPresentationSet = true;
 	PresentationAccent = Accent;
 	bIsSelected = bSelected;
+    bIsPrimary = bPrimary;
 	const FLinearColor Base(.018f, .034f, .052f);
 	auto Style = GetStyle();
-	Style.Normal = FSlateRoundedBoxBrush(bSelected ? Base + Accent * .16f : Base, 8.f,
-	                                     bSelected ? Accent : FLinearColor(.06f, .09f, .13f), bSelected ? 2.f : 1.f);
+	Style.Normal = FSlateRoundedBoxBrush(bPrimary ? Base + Accent * .28f : bSelected ? Base + Accent * .16f : Base, 8.f,
+	                                     (bSelected || bPrimary) ? Accent : FLinearColor(.06f, .09f, .13f), (bSelected || bPrimary) ? 2.f : 1.f);
 	Style.Hovered = FSlateRoundedBoxBrush(Base + Accent * (bSelected ? .22f : .08f), 8.f,
 	                                      Accent * .85f + FLinearColor(.08f, .08f, .08f, 0), 2.f);
 	Style.Pressed = FSlateRoundedBoxBrush(Base + Accent * .28f, 8.f, Accent, 2.f);
@@ -169,16 +178,23 @@ void UCityDesktopHud::Present()
 			Widget->SetVisibility(bVisible ? ESlateVisibility::Visible : ESlateVisibility::Collapsed);
 	};
 	auto Button = [this, &Text, &Data](const FString& Name, const int32 Action, const FText& Label, const bool bEnabled,
-	                                   const FText& Help, const bool bSelected)
+	                                   const FText& Help, const bool bSelected, const bool bPrimary = false)
 	{
 		if (auto* Widget = Cast<UCityDesktopActionButton>(WidgetTree->FindWidget(FName(Name))))
 		{
 			Widget->Configure(Session.Get(), Action);
 			const FName Symbol = UCityDesktopIcon::ForAction(Action);
-			const FLinearColor Accent = Action == -20 || Action == -3  ? FLinearColor(1.f, .7f, .22f)
+			const auto PaletteAction = static_cast<ECityPaletteAction>(Action);
+			const bool bBack = PaletteAction == ECityPaletteAction::Back;
+			const bool bAccept = PaletteAction == ECityPaletteAction::GraphicsApply || PaletteAction == ECityPaletteAction::GraphicsKeep;
+			const FLinearColor Accent = bBack ? FLinearColor(.25f, .62f, 1.f)
+			                            : bAccept ? FLinearColor(.24f, .82f, .4f)
+			                            : Action == -20 || Action == -3  ? FLinearColor(1.f, .7f, .22f)
 			                            : Action == -4 || Action == -8 ? FLinearColor(.24f, .82f, .4f)
 			                                                           : UCityDesktopIcon::ColorForSymbol(Symbol);
-			Widget->SetPresentation(Accent, bSelected);
+			const bool Attention = Data.TutorialActionId == Action && !Data.bEntryScene;
+			const float Breath = CityTutorialAttention::Pulse(FPlatformTime::Seconds());
+			Widget->SetPresentation(Attention ? FLinearColor(1.f, .55f + .2f * Breath, .14f) : Accent, bSelected, bPrimary || bBack || bAccept || Attention);
 			Widget->SetIsEnabled(bEnabled);
 			if (!Widget->GetToolTipText().EqualTo(Help))
 				Widget->SetToolTipText(Help);
@@ -190,7 +206,8 @@ void UCityDesktopHud::Present()
 			Text(*(Name + TEXT("Label")), FText::FromString(ShortLabel));
 			if (auto* Icon = Cast<UCityDesktopIcon>(WidgetTree->FindWidget(FName(Name + TEXT("Icon")))))
 			{
-				const bool bGraphic = !Symbol.IsNone();
+				const bool bGraphic = !Symbol.IsNone() && !(Name.StartsWith(TEXT("Menu")) && (Session->PalettePage == ECityPalettePage::City ||
+                    (Data.MenuEntries.Num() && Data.MenuEntries[0].Columns > 0)));
 				Icon->SetIcon(Symbol, bSelected ? Accent * .8f + FLinearColor(.2f, .2f, .2f, 0) : Accent);
 				Icon->SetVisibility(bGraphic ? ESlateVisibility::HitTestInvisible : ESlateVisibility::Collapsed);
 			}
@@ -214,7 +231,46 @@ void UCityDesktopHud::Present()
 		                              ? FLinearColor(1, .8, .25)
 		                              : FLinearColor::White);
 	Text(TEXT("MenuTitle"), Data.MenuTitle);
-	Text(TEXT("MenuBody"), Data.MenuBody);
+    Text(TEXT("MenuBody"), Data.MenuBody);
+    auto* MenuContent = Cast<UCityDesktopMenuContent>(WidgetTree->FindWidget(TEXT("StructuredMenu")));
+    if (!MenuContent)
+    {
+        auto* Legacy = WidgetTree->FindWidget(TEXT("MenuBody"));
+        if (auto* Container = Legacy ? Cast<UVerticalBox>(Legacy->GetParent()) : nullptr)
+        {
+            // Rebuild the child sequence once: runtime InsertChildAt does not update a live Slate panel.
+            const auto Children = Container->GetAllChildren();
+            TArray<FMargin> ChildPadding;
+            for (auto* Child : Children)
+                ChildPadding.Add(Cast<UVerticalBoxSlot>(Child->Slot)->GetPadding());
+            Container->ClearChildren();
+            MenuContent = WidgetTree->ConstructWidget<UCityDesktopMenuContent>(UCityDesktopMenuContent::StaticClass(), TEXT("StructuredMenu"));
+            Container->AddChildToVerticalBox(MenuContent);
+            for (int32 I = 0; I < Children.Num(); ++I)
+                Container->AddChildToVerticalBox(Children[I])->SetPadding(ChildPadding[I]);
+        }
+    }
+    FString MenuIdentity = FString::FromInt(static_cast<int32>(Session->PalettePage));
+    if (Session->PalettePage == ECityPalettePage::TechnologyReview)
+        MenuIdentity += TEXT("|") + Session->TechnologyReviewDefinition.ToString();
+    else if (Session->PalettePage == ECityPalettePage::HousingHistory)
+        MenuIdentity += TEXT("|") + FString::FromInt(Session->HousingHistoryPage);
+    else if (Session->PalettePage == ECityPalettePage::LoanReview || Session->PalettePage == ECityPalettePage::PolicyReview)
+        MenuIdentity += TEXT("|") + Data.MenuStatus.ToString();
+    if (!Data.bMenuOpen) ScrollMenuKey.Empty();
+    if (Data.bMenuOpen && MenuIdentity != ScrollMenuKey)
+    {
+        ScrollMenuKey = MenuIdentity;
+        if (auto* Body = WidgetTree->FindWidget(TEXT("MenuBody")))
+            if (auto* Container = Body->GetParent())
+                if (auto* Scroll = Cast<UScrollBox>(Container->GetParent())) Scroll->ScrollToStart();
+    }
+    const bool Structured = Data.MenuSections.Num() > 0 || Data.MenuMetrics.Num() > 0 || !Data.MenuStatus.IsEmpty();
+    if (MenuContent)
+    {
+        MenuContent->SetVisibility(Structured ? ESlateVisibility::Visible : ESlateVisibility::Collapsed);
+        MenuContent->Present(Data);
+    }
 	SetVisible(TEXT("Newspaper"), Data.bNewspaper);
 	SetVisible(TEXT("NewsNavigation"), Data.bNewspaper);
 	SetVisible(TEXT("MenuButtons"), !Data.bNewspaper);
@@ -374,7 +430,7 @@ void UCityDesktopHud::Present()
 	SetVisible(TEXT("Growth"), Data.bCityInfoOpen && bCityDetails);
 	SetVisible(TEXT("DensityChart"), Data.bCityInfoOpen && bCityDetails);
 	Text(TEXT("InfoTitle"), FText::FromString(TEXT("City")));
-	SetVisible(TEXT("MenuBody"), !Data.bZoneMenu && !Data.bNewspaper);
+	SetVisible(TEXT("MenuBody"), !Data.bZoneMenu && !Data.bNewspaper && !Structured && !Data.MenuBody.IsEmpty());
 	// Bound panel widths/heights in Slate units, keeping a clear map area at
 	// both laptop and larger window sizes. Long content scrolls within its panel.
 	const FVector2D View = GetCachedGeometry().GetLocalSize();
@@ -411,7 +467,7 @@ void UCityDesktopHud::Present()
 		        : FMath::Min(AvailableHeight, 140.f + FMath::CeilToFloat(Data.MenuEntries.Num() / 2.f) * 48.f);
 		float ContentHeight = 44.f + (Data.bTaxMenu ? 24.f : 0.f);
 		for (const TCHAR* Name :
-		     {TEXT("MenuHeader"),TEXT("NewsNavigation"),TEXT("Newspaper"), TEXT("MenuBody"), TEXT("ReportChart"), TEXT("TaxRows"), TEXT("MenuButtons")})
+		     {TEXT("MenuHeader"),TEXT("NewsNavigation"),TEXT("Newspaper"), TEXT("MenuBody"), TEXT("StructuredMenu"), TEXT("ReportChart"), TEXT("TaxRows"), TEXT("MenuButtons")})
 			if (const auto* Widget = WidgetTree->FindWidget(FName(Name)); Widget && Widget->IsVisible())
 				ContentHeight += Widget->GetDesiredSize().Y;
 		if (ContentHeight > 64.f)
@@ -437,7 +493,7 @@ void UCityDesktopHud::Present()
 		                                                     : PanelTop,
 		                                  MenuWidth, Data.bZoneMenu ? 136.f : MenuHeight));
 		Bounds(TEXT("ObjectivesPanel"), FMargin(20, PanelTop, FMath::Min(320.f, static_cast<float>(View.X) * .29f),
-		                                        FMath::Min(168.f, AvailableHeight)));
+		                                        FMath::Min(Data.bTutorialGuidance ? 256.f : 168.f, AvailableHeight)));
 		const float InfoWidth = FMath::Min(360.f, static_cast<float>(View.X) * .32f);
 		float InspectorContentHeight = 90.f;
 		if (const auto* Detail = WidgetTree->FindWidget(TEXT("Inspection")))
@@ -455,7 +511,7 @@ void UCityDesktopHud::Present()
 			PreviewSize->SetHeightOverride(120.f);
 	}
 	SetVisible(TEXT("History"), Data.bObjectivesOpen);
-	SetVisible(TEXT("NextObjective"), Data.bObjectivesOpen);
+	SetVisible(TEXT("NextObjective"), Data.bObjectivesOpen && Data.bObjectiveNextAvailable);
 	for (int32 Index = 0; Index < 19; ++Index)
 	{
 		const FString Name = FString::Printf(TEXT("Menu%d"), Index);
@@ -464,9 +520,127 @@ void UCityDesktopHud::Present()
 		if (bAvailable)
 		{
 			const auto& Entry = Data.MenuEntries[Index];
-			Button(Name, Entry.ActionId, Entry.Label, Entry.bEnabled, Entry.Help, Entry.bSelected);
+			Button(Name, Entry.ActionId, Entry.Label, Entry.bEnabled, Entry.Help, Entry.bSelected, Entry.bPrimary);
+			if (auto* Widget = WidgetTree->FindWidget(FName(Name)))
+				if (auto* WrapSlot = Cast<UWrapBoxSlot>(Widget->Slot)) WrapSlot->SetNewLine(Entry.bStartNewRow);
 		}
 	}
+    if (auto* Choices = Cast<UWrapBox>(WidgetTree->FindWidget(TEXT("MenuButtons"))))
+    {
+        FString Groups;
+        for (int32 I = 0; I < Data.MenuEntries.Num(); ++I)
+            if (!Data.MenuEntries[I].Group.IsEmpty()) Groups += FString::FromInt(I) + Data.MenuEntries[I].Group.ToString() + Data.MenuEntries[I].GroupHelp.ToString();
+        if (Groups != MenuGroupsKey)
+        {
+            MenuGroupsKey = Groups;
+            TArray<UWidget*> Controls;
+            for (int32 I = 0; I < 19; ++I)
+                Controls.Add(WidgetTree->FindWidget(FName(FString::Printf(TEXT("Menu%d"), I))));
+            MenuGroupHeadings.SetNum(19);
+            MenuControlSizes.SetNum(19);
+            Choices->ClearChildren();
+            for (int32 I = 0; I < 19; ++I)
+            {
+                if (Data.MenuEntries.IsValidIndex(I) && !Data.MenuEntries[I].Group.IsEmpty())
+                {
+                    const FName HeadingName(*FString::Printf(TEXT("MenuHeading%d"), I));
+                    auto* Box = MenuGroupHeadings[I].Get();
+                    if (!Box)
+                    {
+                        Box = WidgetTree->ConstructWidget<USizeBox>(USizeBox::StaticClass(), HeadingName);
+                        MenuGroupHeadings[I] = Box;
+                        auto* Stack = WidgetTree->ConstructWidget<UVerticalBox>();
+                        auto* Heading = WidgetTree->ConstructWidget<UTextBlock>(UTextBlock::StaticClass(), FName(*FString::Printf(TEXT("MenuHeading%dTitle"), I)));
+                        auto Font = Heading->GetFont(); Font.Size = 11; Heading->SetFont(Font);
+                        Heading->SetColorAndOpacity(FLinearColor(.3f, .8f, .7f));
+                        Stack->AddChildToVerticalBox(Heading);
+                        auto* Help = WidgetTree->ConstructWidget<UTextBlock>(UTextBlock::StaticClass(), FName(*FString::Printf(TEXT("MenuHeading%dHelp"), I)));
+                        Font.Size = 12; Help->SetFont(Font); Help->SetAutoWrapText(true);
+                        Help->SetColorAndOpacity(FLinearColor(.53f, .66f, .74f));
+                        Stack->AddChildToVerticalBox(Help)->SetPadding(FMargin(0, 5, 0, 0));
+                        Box->AddChild(Stack);
+                    }
+                    auto* Stack = Cast<UVerticalBox>(Box->GetContent());
+                    Cast<UTextBlock>(Stack->GetChildAt(0))->SetText(Data.MenuEntries[I].Group);
+                    auto* Help = Cast<UTextBlock>(Stack->GetChildAt(1));
+                    Help->SetText(Data.MenuEntries[I].GroupHelp);
+                    Help->SetVisibility(Data.MenuEntries[I].GroupHelp.IsEmpty() ? ESlateVisibility::Collapsed : ESlateVisibility::Visible);
+                    auto* HeadingSlot = Choices->AddChildToWrapBox(Box);
+                    HeadingSlot->SetNewLine(true);
+                    HeadingSlot->SetPadding(FMargin(0, I == 0 ? 0.f : 18.f, 0, 6));
+                }
+                if (auto* Control = Controls[I])
+                {
+                    auto* Box = MenuControlSizes[I].Get();
+                    if (!Box)
+                    {
+                        Box = WidgetTree->ConstructWidget<USizeBox>();
+                        MenuControlSizes[I] = Box;
+                    }
+                    Box->AddChild(Control);
+                    Choices->AddChildToWrapBox(Box)->SetNewLine(Data.MenuEntries.IsValidIndex(I) && Data.MenuEntries[I].bStartNewRow);
+                }
+            }
+        }
+        const bool CityGrid = Session->PalettePage == ECityPalettePage::City;
+        const bool SettingsGrid = Data.MenuEntries.Num() && Data.MenuEntries[0].Columns > 0;
+        Choices->SetInnerSlotPadding(CityGrid || SettingsGrid ? FVector2D(10, 10) : FVector2D(6, 6));
+        int32 Column = 0, PreviousColumns = 0;
+        for (int32 I = 0; I < 19; ++I)
+        {
+            if (auto* Heading = Cast<USizeBox>(WidgetTree->FindWidget(FName(FString::Printf(TEXT("MenuHeading%d"), I)))))
+                Heading->SetWidthOverride(Choices->GetWrapSize());
+            if (!MenuControlSizes.IsValidIndex(I) || !MenuControlSizes[I]) continue;
+            auto* Box = MenuControlSizes[I].Get();
+            const bool Available = Data.MenuEntries.IsValidIndex(I);
+            Box->SetVisibility(Available ? ESlateVisibility::Visible : ESlateVisibility::Collapsed);
+            if (CityGrid || SettingsGrid)
+            {
+                const int32 Columns = SettingsGrid && Available ? FMath::Max(1, Data.MenuEntries[I].Columns) : 2;
+                if (PreviousColumns != Columns) Column = 0;
+                PreviousColumns = Columns;
+                Box->SetWidthOverride((Choices->GetWrapSize() - 10.f * (Columns - 1)) / Columns);
+                Box->SetHeightOverride(44);
+                if (Available && (!Data.MenuEntries[I].Group.IsEmpty() || Data.MenuEntries[I].bStartNewRow)) Column = 0;
+                Cast<UWrapBoxSlot>(Box->Slot)->SetNewLine(Column % Columns == 0);
+                ++Column;
+            }
+            else
+            {
+                Box->ClearWidthOverride(); Box->ClearHeightOverride();
+                Cast<UWrapBoxSlot>(Box->Slot)->SetNewLine(Available && Data.MenuEntries[I].bStartNewRow);
+            }
+            if (auto* Label = Cast<UTextBlock>(WidgetTree->FindWidget(FName(FString::Printf(TEXT("Menu%dLabel"), I)))))
+            {
+                const bool RowControl = SettingsGrid && Available && !Data.MenuEntries[I].ControlValue.IsEmpty();
+                const bool Left = CityGrid || (SettingsGrid && Available && (RowControl || Data.MenuEntries[I].Columns <= 2));
+                // Reuse the existing pooled button and label; add a value column without changing dispatch.
+                auto* Value = Cast<UTextBlock>(WidgetTree->FindWidget(FName(*FString::Printf(TEXT("Menu%dValue"), I))));
+                if (!Value)
+                {
+                    auto* Parent = Cast<UVerticalBox>(Label->GetParent());
+                    Parent->RemoveChild(Label);
+                    auto* Row = WidgetTree->ConstructWidget<UHorizontalBox>();
+                    Row->AddChildToHorizontalBox(Label)->SetSize(FSlateChildSize(ESlateSizeRule::Fill));
+                    Value = WidgetTree->ConstructWidget<UTextBlock>(UTextBlock::StaticClass(), FName(*FString::Printf(TEXT("Menu%dValue"), I)));
+                    auto ValueFont = Value->GetFont(); ValueFont.Size = 13; Value->SetFont(ValueFont);
+                    Value->SetColorAndOpacity(FLinearColor(.9f, .94f, 1));
+                    Row->AddChildToHorizontalBox(Value)->SetPadding(FMargin(10,0,0,0));
+                    Parent->AddChildToVerticalBox(Row)->SetHorizontalAlignment(HAlign_Fill);
+                }
+                Value->SetText(RowControl ? Data.MenuEntries[I].ControlValue : FText::GetEmpty());
+                Value->SetVisibility(RowControl ? ESlateVisibility::Visible : ESlateVisibility::Collapsed);
+                Label->SetJustification(Left ? ETextJustify::Left : ETextJustify::Center);
+                if (auto* Control = Cast<UButton>(WidgetTree->FindWidget(FName(*FString::Printf(TEXT("Menu%d"), I)))))
+                    if (auto* ContentSlot = Cast<UButtonSlot>(Control->GetContent()->Slot))
+                        ContentSlot->SetHorizontalAlignment(CityGrid || SettingsGrid ? HAlign_Fill : HAlign_Center);
+                auto Font = Label->GetFont(); Font.Size = CityGrid ? 15 : SettingsGrid && Available && Data.MenuEntries[I].Columns == 5 ? 11 : 13; Label->SetFont(Font);
+                if (SettingsGrid && Available && Data.MenuEntries[I].bSelected)
+                    Label->SetText(FText::FromString(TEXT("* ") + Label->GetText().ToString()));
+
+            }
+        }
+    }
 	for (int32 Index = 0; Index < Data.ToolbarEntries.Num(); ++Index)
 	{
 		const auto& Entry = Data.ToolbarEntries[Index];
@@ -546,15 +720,18 @@ void UCityDesktopHud::Present()
 		                       : Control.Action == -22 ? !Data.bPaused && Data.SpeedMultiplier == 3
 		                       : Control.Action == -23 ? !Data.bPaused && Data.SpeedMultiplier == 5
 		                                               : false;
-		const FString Label = Control.Action == -31   ? (OpenInspectionSections ? TEXT("Less detail") : TEXT("Details"))
+		const FString Label = Control.Action == -9 ? (Data.bObjectiveReview ? TEXT("LIVE") : TEXT("HISTORY"))
+		                      : Control.Action == -31   ? (OpenInspectionSections ? TEXT("Less detail") : TEXT("Details"))
 		                      : Control.Action == -32 ? (bCityDetails ? TEXT("Summary") : TEXT("Details"))
 		                                              : Control.Label;
 		Button(Control.Name, Control.Action, FText::FromString(Label),
-		       !Data.bEntryScene || Control.Action == -1 || Control.Action == -5,
+		       (!Data.bEntryScene || Control.Action == -1 || Control.Action == -5) &&
+		       (Control.Action != -9 || Data.bObjectiveHistoryAvailable),
 		       bSideToggle ? FText::FromString(TEXT("Show or hide this panel")) : FText::GetEmpty(), bSelected);
 	}
 	Button(TEXT("Upgrade"), -8, Data.Upgrade, Data.bUpgradeAvailable, FText::GetEmpty(), false);
 	SetVisible(TEXT("Upgrade"), !Data.Inspection.IsEmpty() && !Data.Upgrade.IsEmpty());
 	Text(TEXT("MenuCloseLabel"), FText::FromString(Data.bEntryScene ? TEXT("BACK") : TEXT("CLOSE")));
-	SetVisible(TEXT("MenuClose"), !Data.bEntryScene || Data.bDetailedMenu);
+	// Entry pages already provide their context-aware Back/Discard footer.
+	SetVisible(TEXT("MenuClose"), !Data.bEntryScene);
 }

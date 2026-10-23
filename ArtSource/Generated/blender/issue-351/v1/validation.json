@@ -1,0 +1,38 @@
+{
+  "mesh_geometry_sha256": "0bc0c114eea212691e4a1b076b4e3bf92b8d1b5974a28581e59dde1c51e397a6",
+  "dimensions_m": [
+    7.939999580383301,
+    2.8610000610351562,
+    3.315000057220459
+  ],
+  "triangles": 5924,
+  "material_slots": [
+    "Chassis",
+    "Rubber",
+    "MetalTrim",
+    "CompactorPaint",
+    "BodyPaint",
+    "Glass",
+    "Headlight",
+    "Taillight",
+    "AmberLens"
+  ],
+  "roundtrip_pass": true,
+  "blender_version": "5.1.1",
+  "render_engine": "CYCLES",
+  "render_device": "CPU",
+  "reference_sha256": {
+    "ArtSource/Blender/CityWasteKit.blend": "1ebf0a62f475e6454a3866191987b0a5f2299606f9015006f2c4f1ee9ce3ebc3"
+  },
+  "review_lighting": {
+    "mode": "extent-squared-area-light",
+    "asset_extent_m": 7.939999580383301,
+    "area_light_energy_watts": 1773.10107421875,
+    "area_light_size_m": 7.939999580383301,
+    "reference_extent_m": 8.0,
+    "reference_energy_watts": 1800.0,
+    "world_strength": 0.6,
+    "view_transform": "AgX",
+    "exposure": 0.0
+  }
+}

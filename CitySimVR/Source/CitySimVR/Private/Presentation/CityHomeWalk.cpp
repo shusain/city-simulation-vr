@@ -23,6 +23,10 @@ void FCityHomeWalk::BuildFrontage(const FVector& Door, const FVector& Sidewalk, 
         return GroundHeight(Terrain,P)+FMath::Lerp(6.,SidewalkHeight(Public)-GroundHeight(Terrain,Public),Blend);
     };
     Build(At(StartX,WidthCm*.5),At(EndX,WidthCm*.5),Terrain,ApronHeight,LandingCm,GroundReserveCm,WidthCm);
+    Centerline.Insert(Door, 0);
+    FVector Turn=At(EndX+WidthCm*.5,WidthCm*.5);Turn.Z=ApronHeight(Turn);Centerline.Add(Turn);
+    for(double Y=WidthCm*.5+25.;Y<EndY;Y+=25.) {FVector P=At(EndX+WidthCm*.5,Y);P.Z=ApronHeight(P);Centerline.Add(P);}
+    Centerline.Add(Sidewalk);
     auto Face = [&](TArray<FVector> P,const FVector& N) {
         for(int32 I=P.Num()-1;I>=0;--I)
             if(P.Num()>1 && P[I].Equals(P[(I+1)%P.Num()],.0001)) P.RemoveAt(I);
@@ -119,7 +123,7 @@ double FCityHomeWalk::GroundHeight(const FCityTerrainHeightfield& T, const FVect
 void FCityHomeWalk::Build(const FVector& Door, const FVector& Sidewalk, const FCityTerrainHeightfield& Terrain,
                           TFunctionRef<double(const FVector&)> SidewalkHeight, const double LandingCm, const double GroundReserveCm, const double WidthCm)
 {
-	Vertices.Reset(); Normals.Reset(); Triangles.Reset(); UVs.Reset(); StepCount = 0; ActualStepCount = 0;
+	Centerline.Reset(); Vertices.Reset(); Normals.Reset(); Triangles.Reset(); UVs.Reset(); StepCount = 0; ActualStepCount = 0;
 	RailVertices.Reset(); RailNormals.Reset(); RailTriangles.Reset(); RailUVs.Reset();
 	const FVector Forward = (Sidewalk - Door).GetSafeNormal2D();
 	const FVector Right = FVector::CrossProduct(FVector::UpVector, Forward);
@@ -244,6 +248,24 @@ void FCityHomeWalk::Build(const FVector& Door, const FVector& Sidewalk, const FC
             }
         }
     }
+	Centerline.Add(Door);
+	for (int32 I = 0; I <= StepCount; ++I)
+	{
+		const double A = I == 0 ? 0 : Landing + (I - 1) * Tread;
+		const double B = I == 0 ? Landing : Landing + I * Tread;
+		FVector P = Point(A, 0); P.Z = TreadHeights[I]; Centerline.Add(P);
+		P = Point(B, 0); P.Z = TreadHeights[I]; Centerline.Add(P);
+	}
+	for (double Along = Run; Along < Length; Along += 25.)
+	{
+		FVector P = Point(Along, 0);
+		const FVector End = Point(Length, 0);
+		const double Blend = FMath::Clamp((Along - FMath::Max(Run, Length - 100)) / FMath::Min(100., Length - Run), 0., 1.);
+		const double StairBlend = FMath::Clamp(1 - (Along - Run) / FMath::Min(50., Length - Run), 0., 1.);
+		P.Z = GroundHeight(Terrain, P) + FMath::Max(Lift, FMath::Max(StairBlend * (EndGround - GroundHeight(Terrain, P)), Blend * (SidewalkHeight(End) - GroundHeight(Terrain, End))));
+		Centerline.Add(P);
+	}
+	Centerline.Add(Sidewalk);
 	// Level door landing then treads; all elevations remain presentation only.
 	for (int32 Step = 0; Step <= StepCount; ++Step)
 	{

@@ -1,0 +1,33 @@
+{
+  "issue": "D108",
+  "review_only": true,
+  "replacement_of": "v1 joined scatter; replacement geometry explicitly requested",
+  "stones": 1,
+  "mesh_objects": 1,
+  "dimensions_m": [
+    0.11999999731779099,
+    0.09000000357627869,
+    0.03500000014901161
+  ],
+  "triangles": 46,
+  "closed_manifold": true,
+  "connected_components": 1,
+  "material_slots": [
+    "Pebble.001"
+  ],
+  "uv0": "UV0",
+  "uv_finite": true,
+  "applied_transforms": true,
+  "pivot": "ground-center",
+  "contact_vertices": 8,
+  "min_z": 0.0,
+  "fbx_roundtrip_pass": true,
+  "renders": {
+    "preview.png": "three-quarter",
+    "top.png": "top",
+    "side.png": "side",
+    "scale_1m.png": "exactly 1 m orthographic field width; no shared base"
+  },
+  "human_review": "pending",
+  "production_changes": false
+}

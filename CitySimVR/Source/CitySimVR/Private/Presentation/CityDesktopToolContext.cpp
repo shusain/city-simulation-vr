@@ -91,18 +91,18 @@ FString ACityBoardActor::DescribeDesktopToolContext() const
 				                        S.SchoolCapacities.FindRef(DisplayedServiceCoverageEntityId));
 			return Text + TEXT("\nStudy places: green full / yellow some / red none");
 		}
-		return FString::Printf(
+		return Cost + FString::Printf(
 		    TEXT("Study places %d/%d | Capacity %d\nBright = more access | Inspect homes for tier and places"),
 		    S.EducationServed, S.EducationDemand, S.EducationCapacity);
 	}
 	if (HeatMapResult.Overlay == ECityDiagnosticOverlay::Service)
-		return FString::Printf(
+		return Cost + FString::Printf(
 		    TEXT(
 		        "Blue = pipe pressure | Buildings: green full / yellow some / red none\nWater delivered %d/%d | Source output %d\nInspect shortages for pressure, capacity and remedies"),
 		    S.ServiceUsed, S.ServiceDemand, S.ServiceCapacity);
 	if (HeatMapResult.Overlay != ECityDiagnosticOverlay::None)
 	{
-		FString Text = HeatMapResult.Description + TEXT("\n") + FirstLine(HeatMapResult.Legend);
+		FString Text = Cost + HeatMapResult.Description + TEXT("\n") + FirstLine(HeatMapResult.Legend);
 		if (HeatMapPoint.IsSet())
 			Text += TEXT("\n") + FirstLine(HeatMapResult.DescribeCell(HeatMapPoint.GetValue()));
 		return Text;

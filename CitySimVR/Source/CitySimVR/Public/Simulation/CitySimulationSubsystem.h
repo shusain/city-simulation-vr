@@ -27,6 +27,8 @@ UCLASS()
 class CITYSIMVR_API UCitySimulationSubsystem : public UTickableWorldSubsystem
 {
 	GENERATED_BODY()
+    friend class FCityDesktopContinuityCommand;
+	friend class FCityPlacementPreviewStudyCommand;
 	friend class FCitySoundscapeRoutingTest;
 	friend class FCityPolicyFixture;
 	friend class FCityDesktopLoansCommand;
@@ -45,6 +47,8 @@ class CITYSIMVR_API UCitySimulationSubsystem : public UTickableWorldSubsystem
 	friend class FCityReportsPanelTest;
 	friend class FCitySeasonalDecorationPresentationTest;
 	friend class FCityVisibleTrafficTest;
+	friend class FCityCrosswalkGeometryTest;
+	friend class FCityCrosswalkCaptureCommand;
 	friend class FCityFlowVisualCommand;
 	friend class FCityGroundPlotStudyCommand;
     friend class FCityApprovedCivicStudyCommand;
@@ -336,6 +340,7 @@ class CITYSIMVR_API UCitySimulationSubsystem : public UTickableWorldSubsystem
 	bool LoadCityFromPath(const FString& SavePath, FString& OutError, bool bAllowBackup = true);
 
   private:
+	friend class FCityWaterCaptureCommand;
 	friend class FCityTerrainBaseTest;
 	friend class FCityAtmospherePresentationTest;
 	FCityReportHistory Reports;

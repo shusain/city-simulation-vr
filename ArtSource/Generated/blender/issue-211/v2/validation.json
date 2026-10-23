@@ -1,0 +1,43 @@
+{
+  "mesh_geometry_sha256": "2ebec435a587af83add3c65ed6c59aa311d9d096a4f13fc7f4944b3166b18381",
+  "dimensions_m": [
+    0.550000011920929,
+    0.38199999928474426,
+    0.42000001668930054
+  ],
+  "triangles": 236,
+  "material_slots": [
+    "Body",
+    "Trim"
+  ],
+  "roundtrip_pass": true,
+  "blender_version": "5.1.1",
+  "render_engine": "CYCLES",
+  "render_device": "CPU",
+  "reference_sha256": {},
+  "revision": {
+    "review_only": true,
+    "geometry_preserved": true,
+    "mesh_snapshot_equal": true,
+    "transforms_preserved": true,
+    "triangles": 236,
+    "dimensions_m": [
+      0.550000011920929,
+      0.38199999928474426,
+      0.42000001668930054
+    ],
+    "origin": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "material_slots": [
+      "Body",
+      "Trim"
+    ],
+    "fbx_roundtrip_pass": true,
+    "presentation": "Muted teal and cream, warm-gray surroundings, exposure -0.45",
+    "front_view_width_m": 1.0,
+    "integration_approved": false
+  }
+}

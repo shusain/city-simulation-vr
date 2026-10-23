@@ -1,0 +1,50 @@
+{
+  "mesh_geometry_sha256": "b87255ea3c849b770a9a494559d9a468f720600f850a51dd49c36e349818e318",
+  "dimensions_m": [
+    0.6740000247955322,
+    1.8890451192855835,
+    0.8352731466293335
+  ],
+  "triangles": 332,
+  "material_slots": [
+    "Fabric",
+    "Frame"
+  ],
+  "roundtrip_pass": true,
+  "blender_version": "5.1.1",
+  "render_engine": "CYCLES",
+  "render_device": "CPU",
+  "reference_sha256": {},
+  "lounger_review": {
+    "triangles": 332,
+    "target_triangles": [
+      220,
+      420
+    ],
+    "dimensions_m": [
+      0.6740000247955322,
+      1.889045238494873,
+      0.8352731466293335
+    ],
+    "origin_m": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "materials": [
+      "Frame",
+      "Fabric"
+    ],
+    "fbx_roundtrip_pass": true,
+    "static_only": true,
+    "ground_base": false,
+    "review_only": true,
+    "views": [
+      "preview.png",
+      "top.png",
+      "side_1m_scale.png"
+    ],
+    "scale_bar_length_m": 1.0,
+    "note": "Scale ruler is review-only and excluded from blend and FBX. No Unreal or device validation performed."
+  }
+}

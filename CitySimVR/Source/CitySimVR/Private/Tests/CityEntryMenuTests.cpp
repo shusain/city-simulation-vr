@@ -24,7 +24,9 @@ bool FCitySetupDraftTest::RunTest(const FString& Parameters)
 	const auto Normal = FCityNewCitySetup::Proposal(ECityDifficultyDraft::Normal, Baseline);
 	const auto Relaxed = FCityNewCitySetup::Proposal(ECityDifficultyDraft::Relaxed, Baseline);
 	const auto Hard = FCityNewCitySetup::Proposal(ECityDifficultyDraft::Challenging, Baseline);
-	TestEqual(TEXT("Normal starting funds keep baseline"), Normal.StartingFunds, int64(10000));
+	TestEqual(TEXT("Normal starting funds"), Normal.StartingFunds, int64(15000));
+	TestEqual(TEXT("Relaxed starting funds"), Relaxed.StartingFunds, int64(20000));
+	TestEqual(TEXT("Challenging starting funds unchanged"), Hard.StartingFunds, int64(7500));
 	TestTrue(TEXT("Normal retains existing incident/recovery rules"),
 	         Normal.Tuning.CrimePopulationThreshold == Baseline.CrimePopulationThreshold &&
 	             Normal.Tuning.FirePopulationThreshold == Baseline.FirePopulationThreshold &&

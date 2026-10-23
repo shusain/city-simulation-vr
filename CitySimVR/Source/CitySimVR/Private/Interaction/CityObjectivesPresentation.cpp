@@ -1,4 +1,5 @@
 #include "Interaction/CityVRToolController.h"
+#include "Presentation/CityTutorialSettings.h"
 #include "Camera/CameraComponent.h"
 #include "Components/StaticMeshComponent.h"
 #include "Components/TextRenderComponent.h"
@@ -96,8 +97,53 @@ FCityGuidedObjective ACityVRToolController::GetObjectiveCard() const
 	if (!Sim)
 		return FCityGuidedObjective();
 	const auto& Progress = Sim->GetGuidedProgress();
+	if (bTutorialResetSummary && !bObjectiveReview && CityTutorialAttention::HasCompletedOpening(Progress.CompletedIds))
+		return {TEXT("tutorial_complete"), TEXT("Opening tutorial complete"),
+		        TEXT("This city already has its opening milestones."),
+		        TEXT("History reviews these steps.\nStart a new city from Main Menu\nto practise the opening again."),
+		        TEXT("Your city and progress are preserved."), 1.f};
 	return bObjectiveReview && Progress.CompletedIds.IsValidIndex(ObjectiveReviewIndex)
 	           ? FCityFirstPlayableGuide::BuildCompletedObjective(Progress.CompletedIds[ObjectiveReviewIndex],
 	                                                              ObjectiveReviewIndex, Progress.CompletedIds.Num())
 	           : Sim->GetGuidedObjective();
+}
+
+void ACityVRToolController::SetTutorialEnabled(bool bEnabled, bool bReset)
+{
+    GetMutableDefault<UCityTutorialSettings>()->SetEnabled(bEnabled);
+    bTutorialResetSummary = bReset;
+    bObjectiveReview = false;
+    if (bEnabled) bObjectivesOpen = true;
+    UpdateObjectiveCard();
+    RefreshPaletteText();
+}
+
+bool ACityVRToolController::IsTutorialTarget(ECityPaletteAction Action) const
+{
+    if (!GetDefault<UCityTutorialSettings>()->bEnabled || bEntrySceneActive || bObjectiveReview) return false;
+    const auto* Sim = GetWorld()->GetSubsystem<UCitySimulationSubsystem>();
+    if (!Sim) return false;
+    if (bTutorialResetSummary && CityTutorialAttention::HasCompletedOpening(Sim->GetGuidedProgress().CompletedIds)) return false;
+    const auto Id = Sim->GetGuidedObjective().Id;
+    if (!CityTutorialAttention::IsOpeningStep(Id)) return false;
+    const auto State = Sim->GetGuideState();
+    using A = ECityPaletteAction;
+    A Target = A::SelectInspect;
+    const bool Wait = Id == TEXT("first_residents") || (Id == TEXT("first_jobs") && State.bHasCommercialZone);
+    if (Wait) Target = Sim->IsSimulationPaused() ? A::Pause : A::SelectInspect;
+    else if ((Id == TEXT("power") && State.BuiltPowerBuildings > 0) ||
+             (Id == TEXT("water") && State.BuiltServiceBuildings > 0)) Target = A::SelectInspect;
+    else if (Id == TEXT("homes_zone") || Id == TEXT("first_jobs"))
+        Target = PalettePage == ECityPalettePage::Zone ?
+            (Id == TEXT("homes_zone") ? A::SelectResidentialZone : A::SelectCommercialZone) : A::OpenZone;
+    else if (Id == TEXT("entrance_road"))
+        Target = PalettePage == ECityPalettePage::Roads ? A::SelectLocalRoad :
+            PalettePage == ECityPalettePage::Build ? A::OpenRoads : A::OpenBuild;
+    else if (Id == TEXT("power"))
+        Target = PalettePage == ECityPalettePage::PowerFacilities ? A::SelectPower :
+            PalettePage == ECityPalettePage::Build ? A::OpenPowerFacilities : A::OpenBuild;
+    else if (Id == TEXT("water"))
+        Target = PalettePage == ECityPalettePage::WaterFacilities ? A::SelectService :
+            PalettePage == ECityPalettePage::Build ? A::OpenWaterFacilities : A::OpenBuild;
+    return Action == Target;
 }

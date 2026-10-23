@@ -1,0 +1,45 @@
+{
+  "mesh_geometry_sha256": "36d6052e9faed6fa2cc6536f74e471e36b2314c8de61d7b718e09f273dad427a",
+  "dimensions_m": [
+    0.699999988079071,
+    0.6203750967979431,
+    0.8870148658752441
+  ],
+  "triangles": 208,
+  "material_slots": [
+    "Frame",
+    "Fabric"
+  ],
+  "roundtrip_pass": true,
+  "blender_version": "5.1.1",
+  "render_engine": "CYCLES",
+  "render_device": "CPU",
+  "reference_sha256": {},
+  "chair_review": {
+    "triangles": 208,
+    "triangle_target_pass": true,
+    "dimensions_m": [
+      0.699999988079071,
+      0.6203750967979431,
+      0.8870148658752441
+    ],
+    "materials": [
+      "Frame",
+      "Fabric"
+    ],
+    "fbx_roundtrip_pass": true,
+    "origin": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "front_view_vertical_span_m": 1.0,
+    "review_only": true,
+    "device_or_visual_acceptance_claimed": false
+  }
+}

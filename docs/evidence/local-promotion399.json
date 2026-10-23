@@ -1,0 +1,15 @@
+{
+  "issue": 296,
+  "date": "2026-10-21",
+  "candidate": 399,
+  "game_revision": "dev-32bac1e3b65eef95ba3d",
+  "source": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\CI\\Builds\\399-8f9dff212a87-WindowsCandidate-274f1b92\\WindowsCandidate",
+  "target": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\PCVRSandbox\\Windows",
+  "backup": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\Publication-20261021\\LocalPromotion\\PreviousWindows389",
+  "files_verified": 53,
+  "previous_files_preserved": 53,
+  "status": "promoted",
+  "profiles_and_launchers_unchanged": true,
+  "tests": "Existing Drone399 evidence; no separate ZIP/launcher QA or new native build",
+  "authorization": "User requested normal PC promotion of latest tester build"
+}

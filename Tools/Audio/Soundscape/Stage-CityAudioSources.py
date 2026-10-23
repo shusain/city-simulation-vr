@@ -69,7 +69,8 @@ def validate_stage(manifest_path=MANIFEST):
     manifest = read_json(manifest_path)
     entries = manifest["assets"]
     traffic = manifest.get("trafficRevision")
-    expected_count = 54 if traffic else 50
+    recorded = bool(manifest.get("recordedTrafficRevision"))
+    expected_count = 53 if recorded else (54 if traffic else 50)
     if manifest["schema"] != 1 or manifest["task"] != "D58" or len(entries) != expected_count:
         raise ValueError("Expected the accepted 14-siren plus 36-library source bank")
     identities, packages, paths = set(), set(), set()
@@ -100,9 +101,9 @@ def validate_stage(manifest_path=MANIFEST):
         total += entry["bytes"]
     if paths != set((STAGE / "Waves").rglob("*.wav")):
         raise ValueError("Unlisted WAV present in source staging")
-    if traffic and {e['id'] for e in entries if e['bank']=='Traffic'} != {'Car-Idle','Car-Driving','Truck-Idle','Truck-Driving'}:
+    if traffic and {e['id'] for e in entries if e['bank']=='Traffic'} != ({'Car-Idle','Car-Driving','Truck-Idle','Truck-Driving'} | ({'Car-Driving-Alternate'} if recorded else set())):
         raise ValueError("Unexpected steady traffic source identities")
-    if total != manifest["sourceWAVBytes"] or sum(e["loop"] for e in entries) != (25 if traffic else 21):
+    if total != manifest["sourceWAVBytes"] or sum(e["loop"] for e in entries) != (26 if recorded else (25 if traffic else 21)):
         raise ValueError("Incorrect source size or loop count")
     for relative, digest in manifest["acceptanceSnapshotSha256"].items():
         if sha(inside(STAGE, relative)) != digest:

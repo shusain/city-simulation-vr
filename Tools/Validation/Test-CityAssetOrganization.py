@@ -12,6 +12,12 @@ sys.path.insert(0, str(ROOT / 'Tools'))
 from Assets.Manifests.CityApprovedSources import verified_export
 from Assets.Manifests.CityEditorialArt import editorial_entries
 PLAN = json.loads((ROOT / 'Tools/Assets/Manifests/CityAssetOrganization.json').read_text())
+RETIRED_AUDIO = {
+    '/Game/CitySim/Audio/Soundscape/Ambience/City/SW_Car_Pass',
+    '/Game/CitySim/Audio/Soundscape/Ambience/City/SW_Truck_Pass',
+    '/Game/CitySim/Audio/Soundscape/Graphs/MS_Car_Pass',
+    '/Game/CitySim/Audio/Soundscape/Graphs/MS_Truck_Pass',
+}
 sha = lambda path: hashlib.sha256(path.read_bytes()).hexdigest()
 
 
@@ -49,17 +55,36 @@ class OrganizationTests(unittest.TestCase):
             self.assertNotRegex(row['new'], r'(?:/|_)D\d+(?:/|_|$)')
             old = ROOT / ('CitySimVR/Content/' + row['old'].removeprefix('/Game/') + '.uasset')
             new = ROOT / ('CitySimVR/Content/' + row['new'].removeprefix('/Game/') + '.uasset')
+            if row['new'] in RETIRED_AUDIO:
+                self.assertFalse(old.exists())
+                self.assertFalse(new.exists(), 'Unused legacy pass-by retired in #55')
+                continue
             self.assertNotEqual(old.exists(), new.exists(), row['new'])
             if old.exists():
                 self.assertEqual(sha(old), row['sha256'])
 
     def test_relocated_binary_and_editable_payloads(self):
+        recorded = verified_export(ROOT / 'AudioSource/Generated/recordings/issue-54/v1', 54, 1,
+                                   'fd6977b44e1b325a81d055147a7e1c9d203a9799609b739ad5e32742bdc86f24', kind='audio')
+        replacements = {e['runtimeFile']: e for e in recorded['assets']}
+        stage = ROOT / 'AudioSource/Soundscape/Unreal'
+        retired = {('AudioSource/Soundscape/Unreal/' + e['file']): e['sha256'] for e in
+                   json.loads((stage / 'Manifest.json').read_text())['legacyTrafficRemoval']['removedSources']}
         for row in PLAN['sources']:
             old, new = ROOT / row['old'], ROOT / row['new']
             self.assertFalse(old.exists(), row['old'])
+            if row['new'] in retired:
+                self.assertEqual(retired[row['new']], row['sha256'], 'Historical retired source identity retained')
+                self.assertFalse(new.exists(), row['new'])
+                continue
             self.assertTrue(new.is_file(), row['new'])
             if new.suffix.lower() in ('.wav', '.mp3', '.fbx', '.blend', '.png', '.scd') or new.name in ('ApprovedProvenance.json', 'IntegrationReceipt.json', 'Handoff.json') or 'Acceptance' in new.parts:
-                self.assertEqual(sha(new), row['sha256'], row['new'])
+                replacement = replacements.get(row['new'])
+                if replacement:
+                    self.assertEqual(replacement['oldSha256'], row['sha256'], 'Historical relocation identity retained')
+                    self.assertEqual(sha(new), replacement['sha256'], row['new'])
+                else:
+                    self.assertEqual(sha(new), row['sha256'], row['new'])
 
     def test_no_numbered_runtime_asset_literals(self):
         if (ROOT / "Tools/CI/AssetPreparation.txt").exists():
@@ -76,7 +101,7 @@ class OrganizationTests(unittest.TestCase):
         module = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(module)
         manifest = module.validate_stage()
-        self.assertEqual(len(manifest['assets']), 54)
+        self.assertEqual(len(manifest['assets']), 53)
         self.assertTrue(all(e['package'].startswith('/Game/CitySim/Audio/Soundscape/') for e in manifest['assets']))
 
     def test_texture_producers_import_without_writes_or_arguments(self):

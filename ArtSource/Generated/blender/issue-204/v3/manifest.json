@@ -1,0 +1,25 @@
+{
+  "issue": "D108 medium rounded beach pebble",
+  "review_only": true,
+  "source_previous": "/previous/asset.blend",
+  "change": "Explicit geometry replacement: joined mound replaced by exactly one isolated stone",
+  "dimensions_m": [
+    0.18,
+    0.13,
+    0.07
+  ],
+  "triangles": 60,
+  "semantic_slot": "Pebble",
+  "outputs": [
+    "asset.blend",
+    "asset.fbx",
+    "preview.png",
+    "top.png",
+    "side.png",
+    "scale_1m.png",
+    "validation.json"
+  ],
+  "scale_view": "Orthographic width exactly 1 meter; backdrop excluded from checked FBX",
+  "production_changes": false,
+  "approval": "Pending human review; no Unreal import or promotion"
+}

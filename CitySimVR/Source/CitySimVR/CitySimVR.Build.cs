@@ -9,6 +9,7 @@ public class CitySimVR : ModuleRules
 	public CitySimVR(ReadOnlyTargetRules Target) : base(Target)
 	{
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
+		RuntimeDependencies.Add("$(ProjectDir)/AudioCredits.txt", StagedFileType.NonUFS);
 
 		// Fingerprint native source and runtime assets, including uncommitted work.
 		// The same inputs identify Editor, Windows and Quest builds consistently.

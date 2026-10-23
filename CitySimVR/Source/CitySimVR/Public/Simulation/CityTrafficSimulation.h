@@ -42,6 +42,9 @@ struct CITYSIMVR_API FCityTrafficVehicleState
 	// Only used by waiting departures; movement/arrival records stay separate.
 	int64 DepartureRequestedStep = 0;
 	int32 PedestrianTrack = 0;
+	// Fixed-point sidewalk path; road level is stored in Z. Empty for legacy/motor routes.
+	TArray<FIntVector> WalkPath;
+	int32 WalkDistanceUnits = 0;
 };
 
 struct CITYSIMVR_API FCityTrafficLaneLoad
@@ -91,7 +94,10 @@ class CITYSIMVR_API FCityTrafficSimulation
 	bool RestoreState(const FCityTrafficSnapshot& State, const FCityRoadNetworkSnapshot& Network,
 	                  int64 MaximumFixedStepId, FString& OutError);
 	static uint64 GetNetworkFingerprint(const FCityRoadNetworkSnapshot& Network);
-	void ReconcileNetwork(const FCityRoadNetworkSnapshot& Network);
+	void ReconcileNetwork(const FCityRoadNetworkSnapshot& Network,
+	                      const FCityRoadNetworkSnapshot* PreviousNetwork = nullptr);
+	static void ReconcileSnapshot(FCityTrafficSnapshot& State, const FCityRoadNetworkSnapshot& PreviousNetwork,
+	                              const FCityRoadNetworkSnapshot& Network);
 	void UpdateTrips(const FCityPlacementModel& City, const UCityBuildingCatalog* Catalog,
 	                 const FCityPopulationSnapshot& Population, const FCityRoadNetworkSnapshot& Network,
 	                 int64 Step);

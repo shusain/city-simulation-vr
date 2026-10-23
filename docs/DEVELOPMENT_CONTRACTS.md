@@ -6,7 +6,9 @@ Cross-feature defaults moved from the task queue on 2026-10-18. Feature-specific
 
 - Logical `(X,Y)` cells remain authoritative for terrain/buildings. Road addresses also carry a ground/raised level; graph, traffic and presentation preserve that level. Rendered meshes never define occupancy or connectivity.
 
-- Citizens, households, businesses, trips, and vehicles are data records. Visible agents use bounded pooled proxies; no per-agent ticking Actors.
+- Citizens, households, businesses, trips, and vehicles are data records. Visible agents use pooled proxies; no per-agent ticking Actors. Rendering capacity must never truncate authoritative population, trips, shopping or emergency/service work.
+
+- User2026-10-21: avoid arbitrary citywide asset/model caps while no demonstrated performance blocker requires them. Let generated content follow suitable terrain and let simulation entities follow gameplay rules. If later necessary, limit presentation dynamically by zoom/distance/visibility or LOD, independently of complete model state. Local artistic densities are not global capacity limits. Foliage, World Partition, Nanite and other optimization investigations remain deferred; this directive does not start that work or a broad performance program.
 
 - Use coherent current definition IDs and current-version saves. Backwards compatibility/migrations are optional during early development; prefer simple current behavior and clearly document breaks instead of maintaining every historical format.
 
@@ -24,7 +26,7 @@ Cross-feature defaults moved from the task queue on 2026-10-18. Feature-specific
 
 ## Product and presentation defaults
 
-- Preserve the accepted tabletop loop, deterministic fixed-step authority, current saves, bounded pooled presentation and Quest controls.
+- Preserve the accepted tabletop loop, deterministic fixed-step authority, current saves, pooled presentation and Quest controls. Presentation budgets require an observed need and must not limit simulation capacity.
 - Build guided progression and civic services on existing roads, freight, occupancy and traffic. Prefer fixed glance panels, contextual inspection and optional continuous heat maps over permanent HUD prose.
 - Improve art in coherent batches after data contracts exist. Presentation never authors simulation identity, connectivity, weather, terrain or finance.
 - Extend the existing sandbox/pipeline; no engine/plugin/framework changes without a concrete task need. Preserve the VR-template regression scene.

@@ -1,0 +1,43 @@
+{
+  "issue": 296,
+  "status": "published",
+  "publication": {
+    "repository": "shusain/city-simulation-vr",
+    "buildId": "playtest-2026.10.21.1",
+    "commit": "61e5b05960fef6d73f82240dc49e607072fc23b0",
+    "releaseId": 420115274,
+    "url": "https://github.com/shusain/city-simulation-vr/releases/tag/playtest-2026.10.21.1",
+    "draft": false,
+    "anonymousDownloadsVerified": true,
+    "assets": [
+      {
+        "name": "CitySimVR-playtest-2026.10.21.1-Windows.zip",
+        "size": 509941976,
+        "digest": "sha256:5b78fea40acfb831f598a8a5a9985fb7b2ce4914d06fba28f7c66af11e674866",
+        "browser_download_url": "https://github.com/shusain/city-simulation-vr/releases/download/playtest-2026.10.21.1/CitySimVR-playtest-2026.10.21.1-Windows.zip"
+      },
+      {
+        "name": "release-manifest.json",
+        "size": 381,
+        "digest": "sha256:bdcbc3c6f0ec971b8f45d8fdddc51acc5a442f646e5d0347501f687669dfaecf",
+        "browser_download_url": "https://github.com/shusain/city-simulation-vr/releases/download/playtest-2026.10.21.1/release-manifest.json"
+      },
+      {
+        "name": "SHA256SUMS.txt",
+        "size": 111,
+        "digest": "sha256:12f045ea7203a1c84d78fcf904b0f8664f18ac51eec16830b541ace7fd5d3093",
+        "browser_download_url": "https://github.com/shusain/city-simulation-vr/releases/download/playtest-2026.10.21.1/SHA256SUMS.txt"
+      }
+    ]
+  },
+  "candidate": 399,
+  "source": "8f9dff212a879c734a1d60e8df666e2523fe9dd7",
+  "game_revision": "dev-32bac1e3b65eef95ba3d",
+  "schema": 72,
+  "ci": "Editor, captured shopping/outpatient tests, full packaged smoke and fixture Client at1280x800 and1024x720 passed",
+  "separate_zip_launcher_qa": "Skipped per user instruction; publication helper retained built-in artifact/hash checks",
+  "quest": "not included",
+  "normal_pc": "Windows389 unchanged",
+  "player_profiles": "untouched",
+  "next": "Tester feedback; #49 physical observations and #197 driveway grades remain separate"
+}

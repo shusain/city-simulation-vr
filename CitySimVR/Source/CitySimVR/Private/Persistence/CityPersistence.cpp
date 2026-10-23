@@ -520,6 +520,35 @@ bool FCityPersistence::Serialize(const FCitySaveDocument& Document, FString& Out
 			Samples.Add(MakeShared<FJsonValueObject>(Object));
 		}
 		Root->SetArrayField(TEXT("reports"), Samples);
+        const auto& H = Document.Reports;
+        if (!H.ValidateHourly(Document.Economy.FixedStepId, Document.DifficultyRules.FixedStepsPerMonth, OutError) ||
+            (H.bHourlyPrimed && H.HourlyLastPurchases > Document.Population.TotalArrivalPurchases))
+        { if (OutError.IsEmpty()) OutError = TEXT("Hourly purchase baseline exceeds actual purchases"); return false; }
+        auto Hourly = MakeShared<FJsonObject>();
+        Hourly->SetBoolField(TEXT("primed"), H.bHourlyPrimed);
+        Hourly->SetStringField(TEXT("lastStep"), Int64String(H.HourlyLastStep));
+        Hourly->SetStringField(TEXT("lastHour"), Int64String(H.HourlyLastHour));
+        Hourly->SetStringField(TEXT("lastDay"), Int64String(H.HourlyLastDay));
+        Hourly->SetStringField(TEXT("purchases"), Int64String(H.HourlyLastPurchases));
+        Hourly->SetStringField(TEXT("exports"), Int64String(H.HourlyLastExports));
+        TArray<TSharedPtr<FJsonValue>> HourSamples;
+        for (const auto& Hour : H.Hours)
+        {
+            auto O = MakeShared<FJsonObject>();
+            O->SetStringField(TEXT("hour"), Int64String(Hour.MonthId));
+            O->SetStringField(TEXT("startStep"), Int64String(Hour.HourStartStep));
+            O->SetStringField(TEXT("endStep"), Int64String(Hour.HourEndStep));
+            O->SetBoolField(TEXT("safety"), Hour.bHasSafety); O->SetBoolField(TEXT("health"), Hour.bHasHealth);
+            O->SetBoolField(TEXT("waste"), Hour.bHasWaste); O->SetBoolField(TEXT("migration"), Hour.bHasMigration);
+            O->SetBoolField(TEXT("policies"), Hour.bHasPolicies); O->SetBoolField(TEXT("loans"), Hour.bHasLoans);
+            O->SetBoolField(TEXT("sentiment"), Hour.bHasSentiment);
+            for (int32 I = 0; I < static_cast<int32>(ECityReportMetric::Count); ++I)
+                O->SetStringField(FCityReportHistory::Name(static_cast<ECityReportMetric>(I)), Int64String(Hour.Values[I]));
+            HourSamples.Add(MakeShared<FJsonValueObject>(O));
+        }
+        Hourly->SetArrayField(TEXT("samples"), HourSamples);
+        Root->SetObjectField(TEXT("hourlyReports"), Hourly);
+
 		Root->SetStringField(TEXT("exportsThisMonth"), Int64String(Document.Population.ExportsThisMonth));
 		Root->SetStringField(TEXT("lastMonthExports"), Int64String(Document.Population.LastMonthExports));
 	}
@@ -1028,6 +1057,11 @@ bool FCityPersistence::Serialize(const FCitySaveDocument& Document, FString& Out
 				Object->SetBoolField(TEXT("yielding"), Vehicle.bYielding);
 				Object->SetNumberField(TEXT("pedestrianTrack"), Vehicle.PedestrianTrack);
 			}
+			Object->SetNumberField(TEXT("walkDistance"), Vehicle.WalkDistanceUnits);
+			TArray<TSharedPtr<FJsonValue>> Walk;
+			for (const auto& P : Vehicle.WalkPath)
+				Walk.Add(MakeShared<FJsonValueObject>(WriteCell(FCityCellCoord(P.X, P.Y, P.Z), true)));
+			Object->SetArrayField(TEXT("walkPath"), Walk);
 			TArray<TSharedPtr<FJsonValue>> Legs;
 			for (const FCityTrafficRouteLeg& Leg : Vehicle.Route)
 			{
@@ -2151,6 +2185,19 @@ bool FCityPersistence::Deserialize(const FString& Json, FCitySaveDocument& OutDo
 				if (Object->HasField(TEXT("pedestrianTrack")) &&
 				    !ReadInt32(Object, TEXT("pedestrianTrack"), Vehicle.PedestrianTrack, OutError))
 					return false;
+				if (Object->HasField(TEXT("walkPath")))
+				{
+					const TArray<TSharedPtr<FJsonValue>>* Walk = nullptr;
+					if (!ReadInt32(Object, TEXT("walkDistance"), Vehicle.WalkDistanceUnits, OutError) ||
+					    !Object->TryGetArrayField(TEXT("walkPath"), Walk) || Walk->Num() > 32768) return false;
+					for (const auto& PointValue : *Walk)
+					{
+						const auto P = PointValue->Type == EJson::Object ? PointValue->AsObject() : nullptr;
+						FCityCellCoord Cell;
+						if (!ReadCell(P, Cell, OutError) || !ReadInt32(P, TEXT("level"), Cell.RoadLevel, OutError)) return false;
+						Vehicle.WalkPath.Add(FIntVector(Cell.X, Cell.Y, Cell.RoadLevel));
+					}
+				}
 				for (const TSharedPtr<FJsonValue>& LegValue : *Legs)
 				{
 					const TSharedPtr<FJsonObject> LegObject =
@@ -2225,6 +2272,48 @@ bool FCityPersistence::Deserialize(const FString& Json, FCitySaveDocument& OutDo
 		    Document.Population.ExportsThisMonth < 0 || Document.Population.LastMonthExports < 0)
 			return false;
 	}
+    // Optional on schema72: old cities retain daily history and start hourly recording on load.
+    if (Root->HasField(TEXT("hourlyReports")))
+    {
+        const TSharedPtr<FJsonObject>* HourlyPointer = nullptr;
+        if (!Root->TryGetObjectField(TEXT("hourlyReports"), HourlyPointer))
+        { OutError = TEXT("Invalid hourly report object"); return false; }
+        const auto H = *HourlyPointer;
+        auto& R = Document.Reports;
+        if (!ReadBool(H, TEXT("primed"), R.bHourlyPrimed, OutError) ||
+            !ReadInt64(H, TEXT("lastStep"), R.HourlyLastStep, OutError) ||
+            !ReadInt64(H, TEXT("lastHour"), R.HourlyLastHour, OutError) ||
+            !ReadInt64(H, TEXT("lastDay"), R.HourlyLastDay, OutError) ||
+            !ReadInt64(H, TEXT("purchases"), R.HourlyLastPurchases, OutError) ||
+            !ReadInt64(H, TEXT("exports"), R.HourlyLastExports, OutError)) return false;
+        const TArray<TSharedPtr<FJsonValue>>* Rows = nullptr;
+        if (!H->TryGetArrayField(TEXT("samples"), Rows) || Rows->Num() > FCityReportHistory::MaximumHours)
+        { OutError = TEXT("Invalid hourly report count"); return false; }
+        for (const auto& V : *Rows)
+        {
+            const TSharedPtr<FJsonObject>* O = nullptr;
+            if (!V.IsValid() || !V->TryGetObject(O))
+            { OutError = TEXT("Invalid hourly report sample"); return false; }
+            FCityReportSample Hour; Hour.ObservedDays = 0;
+            if (!ReadInt64(*O, TEXT("hour"), Hour.MonthId, OutError) ||
+                !ReadInt64(*O, TEXT("startStep"), Hour.HourStartStep, OutError) ||
+                !ReadInt64(*O, TEXT("endStep"), Hour.HourEndStep, OutError) ||
+                !ReadBool(*O, TEXT("safety"), Hour.bHasSafety, OutError) ||
+                !ReadBool(*O, TEXT("health"), Hour.bHasHealth, OutError) ||
+                !ReadBool(*O, TEXT("waste"), Hour.bHasWaste, OutError) ||
+                !ReadBool(*O, TEXT("migration"), Hour.bHasMigration, OutError) ||
+                !ReadBool(*O, TEXT("policies"), Hour.bHasPolicies, OutError) ||
+                !ReadBool(*O, TEXT("loans"), Hour.bHasLoans, OutError) ||
+                !ReadBool(*O, TEXT("sentiment"), Hour.bHasSentiment, OutError)) return false;
+            for (int32 I = 0; I < static_cast<int32>(ECityReportMetric::Count); ++I)
+                if (!ReadInt64(*O, FCityReportHistory::Name(static_cast<ECityReportMetric>(I)), Hour.Values[I], OutError)) return false;
+            R.Hours.Add(Hour);
+        }
+        if (!R.ValidateHourly(Document.Economy.FixedStepId, Document.DifficultyRules.FixedStepsPerMonth, OutError) ||
+            (R.bHourlyPrimed && R.HourlyLastPurchases > Document.Population.TotalArrivalPurchases))
+        { if (OutError.IsEmpty()) OutError = TEXT("Hourly purchase baseline exceeds actual purchases"); return false; }
+    }
+
 	{
 		const TSharedPtr<FJsonObject>* O = nullptr;
 		const TArray<TSharedPtr<FJsonValue>>* Events = nullptr;

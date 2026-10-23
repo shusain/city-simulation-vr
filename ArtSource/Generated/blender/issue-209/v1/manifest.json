@@ -1,0 +1,18 @@
+{
+  "issue": "D108 resident folding beach chair source review",
+  "status": "review-only; not approved for production",
+  "pose": "static open",
+  "units": "meters",
+  "up": "Z",
+  "front": "-Y",
+  "source": "asset.blend",
+  "export": "asset.fbx",
+  "views": [
+    "preview.png",
+    "front_1m_scale.png",
+    "side.png"
+  ],
+  "palette": "quiet coral canvas and warm wood",
+  "ground_base_in_asset": false,
+  "repository_inputs_modified": false
+}

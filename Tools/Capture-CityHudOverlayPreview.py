@@ -118,7 +118,7 @@ def tick(delta):
             elif view in ('OccludedSettings', 'OccludedSettingsReopened'):
                 ui.show_game_settings()
             elif view == 'OccludedReport':
-                ui.show_reports(False)
+                ui.show_reports(unreal.CityReportPeriod.MONTHLY)
             elif view == 'OccludedSetup':
                 ui.show_new_city_setup()
             phase, deadline = 3, now + 3

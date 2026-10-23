@@ -1,6 +1,7 @@
 #if WITH_DEV_AUTOMATION_TESTS
 #include "Misc/AutomationTest.h"
 #include "Misc/FileHelper.h"
+#include "HAL/FileManager.h"
 #include "Misc/Paths.h"
 #include "Interaction/CityVRToolController.h"
 #include "Simulation/CitySimulationSubsystem.h"
@@ -67,6 +68,7 @@ bool FCityReportHistoryTest::RunTest(const FString& Parameters)
 	FCitySaveDocument D;
 	D.Placement.Zones.Init(ECityZoneType::None, FCityGrid::CellCount);
 	D.Economy.LastBilledMonthId = D.Economy.MonthId = 2;
+	D.Economy.FixedStepId = D.Disasters.LastFixedStepId = 2 * FCityCalendar::DefaultStepsPerDay;
 	D.Population.LastSettledMonthId = 2;
 	D.Reports = History;
 	D.Population.ExportsThisMonth = 4;
@@ -123,7 +125,7 @@ bool FCityReportHistoryTest::RunTest(const FString& Parameters)
 	return true;
 }
 IMPLEMENT_SIMPLE_AUTOMATION_TEST(FCityReportsPanelTest, "CitySim.Reports.Panel",
-                                 EAutomationTestFlags::EditorContext | EAutomationTestFlags::EngineFilter)
+                                 EAutomationTestFlags::EditorContext | EAutomationTestFlags::ClientContext | EAutomationTestFlags::EngineFilter)
 bool FCityReportsPanelTest::RunTest(const FString& Parameters)
 {
 	const auto Values = UWorld::InitializationValues()
@@ -143,9 +145,24 @@ bool FCityReportsPanelTest::RunTest(const FString& Parameters)
 	UI->HeadsetCamera = Camera;
 	auto* Sim = World->GetSubsystem<UCitySimulationSubsystem>();
 	UI->ShowReports();
+	TestEqual(TEXT("Monthly is the default view"), UI->ReportPeriod, ECityReportPeriod::Monthly);
 	TestTrue(TEXT("Report drawer opens"), UI->ReportText->IsVisible());
 	TestTrue(TEXT("No fabricated chart in empty city"),
-	         UI->ReportText->Text.ToString().Contains(TEXT("No settled months")));
+	         UI->ReportText->Text.ToString().Contains(TEXT("No settled days")) &&
+	         UI->ReportText->Text.ToString().Contains(TEXT("Charts appear after the first daily settlement")) &&
+	         UI->ReportText->Text.ToString().Contains(TEXT("at midnight")));
+	UI->ShowReports(ECityReportPeriod::Hourly);
+	TestTrue(TEXT("Hourly empty state explains its own boundary"), UI->ReportText->Text.ToString().Contains(TEXT("next completed game hour")));
+	int32 VisiblePeriods = 0;
+	for (const auto& Entry : UI->VisiblePaletteEntries)
+	{
+		TestFalse(TEXT("Annual is absent from selector"), Entry.Action == ECityPaletteAction::ReportAnnual);
+		TestFalse(TEXT("Housing stays outside chart reports"), Entry.Action == ECityPaletteAction::OpenHousingHistory);
+		if (Entry.Action == ECityPaletteAction::ReportHourly || Entry.Action == ECityPaletteAction::ReportDaily ||
+		    Entry.Action == ECityPaletteAction::ReportWeekly || Entry.Action == ECityPaletteAction::ReportMonthly) ++VisiblePeriods;
+	}
+	TestEqual(TEXT("Four visible report period choices"), VisiblePeriods, 4);
+	UI->ShowReports();
 	FCityEconomySnapshot E;
 	FCityPopulationSnapshot P;
 	FCityServiceSnapshot S;
@@ -181,9 +198,44 @@ bool FCityReportsPanelTest::RunTest(const FString& Parameters)
 		TestEqual(TEXT("Report controls resolve independently"),
 		          UI->FindPaletteButton(Point + Normal * 40, -Normal), Index);
 	}
-	UI->ShowReports(true);
+	UI->ShowReports(ECityReportPeriod::Annual);
 	TestTrue(TEXT("Annual partial year count"),
-	         UI->ReportText->Text.ToString().Contains(TEXT("6/12 months observed")));
+	         UI->ReportText->Text.ToString().Contains(TEXT("150/300 days observed")));
+	TestTrue(TEXT("Annual coverage includes actual daily observations"), UI->ReportText->Text.ToString().Contains(TEXT("150/300 days")));
+	UI->ReportMetricIndex = 1; // Tax income: a sum, not a monthly rate.
+	UI->RefreshPaletteText();
+	TestTrue(TEXT("Annual flow displays observed total with correct units"),
+	         UI->ReportText->Text.ToString().Contains(TEXT("dollars")) &&
+	         UI->ReportText->Text.ToString().Contains(TEXT("observed total")) &&
+	         !UI->ReportText->Text.ToString().Contains(TEXT("/month")));
+
+	// Real quantized hour boundaries, using a separate synthetic presentation source.
+	FCityEconomySnapshot HourE; FCityPopulationSnapshot HourP;
+	Sim->Reports.ObserveHourly(HourE, HourP, S, Env, 100, 150);
+	for (int64 Step = 1; Step <= 19; ++Step)
+	{ HourE.FixedStepId = Step; Sim->Reports.ObserveHourly(HourE, HourP, S, Env, 100 + Step, 150); }
+	const auto InvokePeriod = [&](ECityPaletteAction Action) { UI->ExecuteSharedPaletteAction(Action); UI->RefreshPaletteText(); };
+	const ECityPaletteAction PeriodActions[] = {ECityPaletteAction::ReportHourly, ECityPaletteAction::ReportDaily,
+	    ECityPaletteAction::ReportWeekly, ECityPaletteAction::ReportMonthly};
+	const ECityReportPeriod Periods[] = {ECityReportPeriod::Hourly, ECityReportPeriod::Daily,
+	    ECityReportPeriod::Weekly, ECityReportPeriod::Monthly};
+	for (int32 I = 0; I < 4; ++I)
+	{
+		InvokePeriod(PeriodActions[I]);
+		TestEqual(TEXT("Direct selector chooses requested period"), UI->ReportPeriod, Periods[I]);
+		TestEqual(TEXT("Changing period retains metric"), UI->ReportMetricIndex, 1);
+		int32 SelectedCount = 0;
+		for (auto Action : PeriodActions) SelectedCount += UI->IsPaletteActionSelected(Action);
+		TestEqual(TEXT("Exactly one period option selected"), SelectedCount, 1);
+		const auto Samples = Sim->Reports.Samples(Periods[I]);
+		TestEqual(TEXT("Period switch selects latest observation"), UI->ReportPeriodIndex, Samples.Num() - 1);
+		TestTrue(TEXT("Report names the selected period"), UI->ReportText->Text.ToString().StartsWith(FCityReportHistory::PeriodName(Periods[I])));
+		InvokePeriod(ECityPaletteAction::ReportPeriodPrevious);
+		TestEqual(TEXT("Previous navigates selected period"), UI->ReportPeriodIndex, Samples.Num() - 2);
+		InvokePeriod(ECityPaletteAction::ReportPeriodNext);
+		InvokePeriod(ECityPaletteAction::ReportPeriodNext);
+		TestEqual(TEXT("Next clamps to latest recorded period"), UI->ReportPeriodIndex, Samples.Num() - 1);
+	}
 	// Exercise the actual subsystem settlement hook and generate an isolated PIE fixture.
 	Sim->Reports = FCityReportHistory();
 	Sim->Economy.SetPaused(false);
@@ -210,6 +262,7 @@ bool FCityReportsPanelTest::RunTest(const FString& Parameters)
 	         FCityPersistence::Serialize(Document, FixtureJson, FixtureError));
 	const FString FixturePath = FPaths::ConvertRelativePathToFull(
 	    FPaths::Combine(FPaths::ProjectDir(), TEXT("../Artifacts/Preview/ReportHistory-ReportsFixture.json")));
+	IFileManager::Get().MakeDirectory(*FPaths::GetPath(FixturePath), true);
 	TestTrue(TEXT("Isolated visual fixture saved"), FFileHelper::SaveStringToFile(FixtureJson, *FixturePath));
 	UI->SetPaletteOpen(false);
 	TestFalse(TEXT("Dismissed report text hidden"), UI->ReportText->IsVisible());

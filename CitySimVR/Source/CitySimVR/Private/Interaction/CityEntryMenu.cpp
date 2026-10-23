@@ -120,6 +120,16 @@ void ACityVRToolController::ConfirmCityLoad(const FString& SavePath)
 
 void ACityVRToolController::ReturnToCity()
 {
+	// Desktop has no world-space START-card hit target. Continuing/loading a
+	// dormant city must enable its guide while retaining the city and clock.
+	if (bDesktopUi)
+		if (auto* Sim = GetWorld()->GetSubsystem<UCitySimulationSubsystem>();
+		    Sim && Sim->GetScenarioSnapshot().Phase == ECityScenarioPhase::NotStarted)
+		{
+			const bool bPaused = Sim->IsSimulationPaused();
+			Sim->StartScenario();
+			Sim->SetSimulationPaused(bPaused);
+		}
 	if (Board)
 		Board->PrepareCityView();
 	SetEntrySceneActive(false);

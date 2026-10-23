@@ -1,0 +1,29 @@
+{
+  "issue": 54,
+  "reviewId": "aa8cd9dcacec246469c49cc42b1e2e1e6afe4d7175ab669526b4d61a1fddf457",
+  "submissionId": "7191134b-1e9b-4c17-b401-aff3886ca92a",
+  "submittedUTC": "2026-10-22T01:04:21.167781+00:00",
+  "feedbackPath": "Artifacts\\VehicleEngines54\\v4\\Feedback\\aa8cd9dcacec246469c49cc42b1e2e1e6afe4d7175ab669526b4d61a1fddf457\\7191134b-1e9b-4c17-b401-aff3886ca92a.json",
+  "feedbackSha256": "dadf3f3dc434c1ba1b93d36736772940968615636dd76b6e44072f22f45dc663",
+  "approvedSources": [
+    {
+      "id": "Car-Idle-Original",
+      "previewSha256": "3c6cfe4ac324cae858d2f3f6405dee69c491b55382f17cc10ed73efe32092d28",
+      "masterSha256": "c0519764b648b21dde2e64479d696921b275e1361e30d4315086f0f5f06e5652",
+      "master": "Masters/Car-Idle-Original.wav"
+    },
+    {
+      "id": "Truck-Idle-Original",
+      "previewSha256": "068d32fe70fa640828984fa3e318f0b2c766e37cc799c996cc22669d95c7e7ee",
+      "masterSha256": "7b1108230abbcc9d038a85016aa26d18c5b960c34ac76f7d4814bcc1fc0cdde3",
+      "master": "Masters/Truck-Idle-Original.wav"
+    },
+    {
+      "id": "Truck-Running-Original",
+      "previewSha256": "70512b6284abd76f537a9e9db02f047a0b57807c797010446867696a79d12ac1",
+      "masterSha256": "b8df71d7c7b0f0484546048b1eb5795a098b93701b21a6d61b89326818fd0624",
+      "master": "Masters/Truck-Running-Original.wav"
+    }
+  ],
+  "scope": "Source audition approval only; game integration/listening and changed car-running samples remain pending"
+}

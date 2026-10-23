@@ -9,6 +9,7 @@ struct FCityGuidedObjective;
 struct FCityNeedsSnapshot;
 struct FCityReportSample;
 enum class ECityReportMetric : uint8;
+enum class ECityReportPeriod : uint8;
 
 USTRUCT(BlueprintType)
 struct CITYSIMVR_API FCityUiNewsArticle
@@ -76,8 +77,16 @@ struct CITYSIMVR_API FCityUiActionView
 	GENERATED_BODY()
 	UPROPERTY(BlueprintReadOnly)
 	int32 Index = INDEX_NONE;
+    UPROPERTY(BlueprintReadOnly) bool bTutorialAttention = false;
 	UPROPERTY(BlueprintReadOnly)
 	int32 ActionId = INDEX_NONE;
+	UPROPERTY(BlueprintReadOnly)
+	bool bStartNewRow = false;
+    UPROPERTY(BlueprintReadOnly) FText Group;
+    UPROPERTY(BlueprintReadOnly) FText GroupHelp;
+    UPROPERTY(BlueprintReadOnly) FText ControlValue;
+    UPROPERTY(BlueprintReadOnly) int32 Columns = 0;
+    UPROPERTY(BlueprintReadOnly) bool bPrimary = false;
 	UPROPERTY(BlueprintReadOnly)
 	FText Label;
 	UPROPERTY(BlueprintReadOnly)
@@ -117,11 +126,25 @@ struct CITYSIMVR_API FCityUiInspectionSection
 };
 
 USTRUCT(BlueprintType)
+struct CITYSIMVR_API FCityUiMenuSection
+{
+    GENERATED_BODY()
+    UPROPERTY(BlueprintReadOnly) FString Id;
+    UPROPERTY(BlueprintReadOnly) FText Title;
+    UPROPERTY(BlueprintReadOnly) FText Body;
+    UPROPERTY(BlueprintReadOnly) TArray<FCityUiGauge> Rows;
+    UPROPERTY(BlueprintReadOnly) bool bCollapsible = false;
+    UPROPERTY(BlueprintReadOnly) bool bWarning = false;
+};
+
+USTRUCT(BlueprintType)
 struct CITYSIMVR_API FCityUiSnapshot
 {
 	GENERATED_BODY()
 	UPROPERTY(BlueprintReadOnly)
 	bool bEntryScene = false;
+    UPROPERTY(BlueprintReadOnly) int32 TutorialActionId = INDEX_NONE;
+    UPROPERTY(BlueprintReadOnly) bool bTutorialGuidance = false;
 	UPROPERTY(BlueprintReadOnly)
 	bool bMenuOpen = false;
 	UPROPERTY(BlueprintReadOnly)
@@ -165,6 +188,12 @@ struct CITYSIMVR_API FCityUiSnapshot
 	UPROPERTY(BlueprintReadOnly)
 	FText ObjectiveProgress;
 	UPROPERTY(BlueprintReadOnly)
+	bool bObjectiveHistoryAvailable = false;
+	UPROPERTY(BlueprintReadOnly)
+	bool bObjectiveReview = false;
+	UPROPERTY(BlueprintReadOnly)
+	bool bObjectiveNextAvailable = false;
+	UPROPERTY(BlueprintReadOnly)
 	FText InspectionTitle;
 	UPROPERTY(BlueprintReadOnly)
 	FText InspectionSummary;
@@ -182,6 +211,9 @@ struct CITYSIMVR_API FCityUiSnapshot
 	FText MenuTitle;
 	UPROPERTY(BlueprintReadOnly)
 	FText MenuBody;
+    UPROPERTY(BlueprintReadOnly) FText MenuStatus;
+    UPROPERTY(BlueprintReadOnly) TArray<FCityUiGauge> MenuMetrics;
+    UPROPERTY(BlueprintReadOnly) TArray<FCityUiMenuSection> MenuSections;
 	UPROPERTY(BlueprintReadOnly)
 	FText Calendar;
 	UPROPERTY(BlueprintReadOnly)
@@ -234,5 +266,5 @@ namespace CityUiContent
 	CITYSIMVR_API FString Trend(int32 Index, int64 Change, bool bKnown);
 	CITYSIMVR_API void NeedsGauges(const FCityNeedsSnapshot& Needs, FCityUiSnapshot& Out);
 	CITYSIMVR_API FCityUiReportChart ReportChart(const TArray<FCityReportSample>& Samples, ECityReportMetric Metric,
-	                                             int32 Selected, bool bAnnual);
+	                                             int32 Selected, ECityReportPeriod Period);
 } // namespace CityUiContent

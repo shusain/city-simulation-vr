@@ -1,0 +1,18 @@
+{
+  "issue": "D108 larger smooth beach pebble",
+  "revision": "v2 presentation only",
+  "source": "/previous/asset.blend",
+  "source_sha256": "d129070fb9bbab37b7a4dab6c89bbc9f8a3fc4845ea134cec94642c0f52cea76",
+  "preservation": "Original mesh, UV, smoothing, slot, pivot and dimensions retained. Existing Pebble material adjusted; lighting and ground are review-only.",
+  "outputs": [
+    "asset.blend",
+    "asset.fbx",
+    "preview.png",
+    "top.png",
+    "side.png",
+    "scale_1m.png",
+    "validation.json"
+  ],
+  "scale_view": "Orthographic square is exactly 1 m wide and high; only one stone, no scale geometry exported",
+  "scope": "Human review pending; no production promotion, Unreal import or build"
+}

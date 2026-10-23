@@ -1,0 +1,14 @@
+{
+  "issue": "D108 washed curled kelp",
+  "revision": "v2 presentation-only; v1 geometry and material preserved",
+  "source": "/previous/asset.blend",
+  "reference": "#199 v2 upper-left approved direction",
+  "scope": "Review only; no production promotion or runtime changes",
+  "files": {
+    "scale_1m.png": "9af70b8a413e11109d7e0046a88a68e50458453800000c03191d04fe772a96b2",
+    "asset.fbx": "bf669abc5e43c367c81b2ec1c51e214cb772d31d253e69aaf2afe9dc71900c6f",
+    "preview.png": "275a92d871e0f4ed39a3eaba47046b0661ccc8cbc5b86e6feed1eeb6d1e2ec59",
+    "asset.blend": "06e012e427850214459b5d3a32e79fe15fae13218a8ebc23d48edda842e2e1cb",
+    "top.png": "c1f77dd82800135495bbde4729d04374553fd763ca8fa9af3b3098c2d88fddb0"
+  }
+}

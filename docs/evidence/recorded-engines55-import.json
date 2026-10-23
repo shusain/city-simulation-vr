@@ -1,0 +1,44 @@
+{
+  "listening": "Pending packaged human review",
+  "products": [
+    {
+      "bytes": 1274758,
+      "path": "CitySimVR/Content/CitySim/Audio/Soundscape/Ambience/City/SW_Car_Idle.uasset",
+      "sha256": "7ed06d6f7e6aba46f53205411120afcbabc48ad1f9e0abe7cbac4ac9b5b72a2a"
+    },
+    {
+      "bytes": 1108901,
+      "path": "CitySimVR/Content/CitySim/Audio/Soundscape/Ambience/City/SW_Truck_Idle.uasset",
+      "sha256": "eb3a168089baaddbac04ee2be2edf0c86c7025a09975a9c3ec008f9ab5f8cddf"
+    },
+    {
+      "bytes": 1316373,
+      "path": "CitySimVR/Content/CitySim/Audio/Soundscape/Ambience/City/SW_Truck_Driving.uasset",
+      "sha256": "e78a25791c5519e4a95c68098f878c2f7cee0453db95178d4926ad6dcfd8a97d"
+    },
+    {
+      "bytes": 501838,
+      "path": "CitySimVR/Content/CitySim/Audio/Soundscape/Ambience/City/SW_Car_Driving.uasset",
+      "sha256": "5d7a6096fe8a6df8d59b572500d60d0b02e8922d9836d7366d689f9da92d8190"
+    },
+    {
+      "bytes": 482795,
+      "path": "CitySimVR/Content/CitySim/Audio/Soundscape/Ambience/City/SW_Car_Driving_Alternate.uasset",
+      "sha256": "86cc147a7d4f99d7869170d7d32b54c30d9220a7fd35c03de5b2a95e7c0df760"
+    },
+    {
+      "bytes": 5370,
+      "path": "CitySimVR/Content/CitySim/Audio/Soundscape/Graphs/SC_Car_Driving_Alternate.uasset",
+      "sha256": "182022918ddd086dbb1ea88905c8b6c1a83045c570bbb8dc1ceae1b29f82ecc9"
+    }
+  ],
+  "approvalSha256": "fd6977b44e1b325a81d055147a7e1c9d203a9799609b739ad5e32742bdc86f24",
+  "focusedAudioTests": 4,
+  "focusedAudioTestsStatus": "Pass",
+  "nativeImport": "Pass",
+  "submittedCommit": "b2c1f2fc21cc286b3b0acc691975d20a2f510a24",
+  "issue": 55,
+  "overallJob": "Failed after audio checks in inherited unrelated visual fixture checks; removed those capture selections from this audio PR",
+  "editorBuild": "Succeeded,139.51 seconds",
+  "importedBy": "https://drone.shaun-husain.com/CitySimVR/citysim/446"
+}

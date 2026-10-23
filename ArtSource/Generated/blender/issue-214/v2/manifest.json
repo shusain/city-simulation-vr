@@ -1,0 +1,19 @@
+{
+  "issue": "D108 curved washed-up seaweed strands lying in a loose pile",
+  "revision": "Render-only lighting review",
+  "status": "Unapproved external source review only; no production integration",
+  "source_sha256": "c733c1f531b6c0ea61fa83ef9491512fdfb4060e4b21e997c2b8431248df76ad",
+  "preserved": "v1 geometry, dimensions, topology, UVs, pivot, transforms and Kelp material values",
+  "lighting": "Shared scale-normalized CityRunnerPreview lighting",
+  "outputs": [
+    "asset.blend",
+    "asset.fbx",
+    "preview.png",
+    "top.png",
+    "side.png",
+    "scale_1m.png",
+    "validation.json"
+  ],
+  "scale_reference": "scale_1m is an orthographic view with precisely 1 m vertical span; no calibration geometry added",
+  "fbx_sha256": "fa1e36500ef103c0d630e83d1d2581de12b6e1208fb43bbea6df5fada49d3190"
+}

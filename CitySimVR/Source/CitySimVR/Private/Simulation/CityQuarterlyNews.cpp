@@ -15,7 +15,7 @@ TArray<FCityQuarterlyEdition> FCityQuarterlyNews::Editions(const FCityReportHist
 			// A retained preceding settlement is needed to subtract lifetime movement.
 			Edition.bHasMovement =
 			    Month.bHasMigration &&
-			    (Month.MonthId == 1 ||
+			    ((Month.MonthId == 1 && !History.Months.IsEmpty() && History.Months[0].MonthId == 1) ||
 			     (Previous && Previous->MonthId + 1 == Month.MonthId && Previous->bHasMigration));
 			if (Edition.bHasMovement && Previous)
 			{
@@ -31,8 +31,8 @@ TArray<FCityQuarterlyEdition> FCityQuarterlyNews::Editions(const FCityReportHist
 		Edition.Latest = Month;
 		Edition.bHasSentiment &= Month.bHasSentiment;
 		Edition.bHasMovement &= Month.bHasMigration;
-		Edition.ResidentObservations += Month.Get(ECityReportMetric::Population);
-		Edition.HappinessTotal += Month.Get(ECityReportMetric::HappinessTotal);
+		// Mood is accumulated below from every retained daily observation.
+		// Monthly closing snapshots remain the source of latest census/concerns.
 		Edition.TaxIncome += Month.Get(ECityReportMetric::Income);
 		Edition.Upkeep += Month.Get(ECityReportMetric::Upkeep);
 		Edition.bHasPolicies &= Month.bHasPolicies;
@@ -45,6 +45,15 @@ TArray<FCityQuarterlyEdition> FCityQuarterlyNews::Editions(const FCityReportHist
 		Edition.PrincipalPaid += Month.Get(ECityReportMetric::LoanPrincipalPaid);
 		Edition.InterestPaid += Month.Get(ECityReportMetric::LoanInterestPaid);
 		Previous = &Month;
+	}
+	for (const auto& Day : History.Months)
+	{
+		const int64 Quarter = (Day.MonthId - 1) / (3 * FCityCalendar::DaysPerMonth) + 1;
+		if (auto* Edition = Result.FindByPredicate([Quarter](const auto& E) { return E.QuarterId == Quarter; }))
+		{
+			Edition->ResidentObservations += Day.Get(ECityReportMetric::Population);
+			Edition->HappinessTotal += Day.Get(ECityReportMetric::HappinessTotal);
+		}
 	}
 	for (auto& Edition : Result)
 		if (Edition.bHasMovement)
@@ -64,11 +73,12 @@ FString FCityQuarterlyNews::Body(const FCityReportHistory& History, int32 Page)
 	const int32 Index = Editions.Num() - 1 - FMath::Clamp(Page, 0, Editions.Num() - 1);
 	const auto& E = Editions[Index];
 	const auto& L = E.Latest;
-	FString Text = FString::Printf(TEXT("Year %lld Q%lld | %s | %d/3 months observed\n"),
+	FString Text = FString::Printf(TEXT("Year %lld Q%lld | %s | %d/3 months observed | %d/%d days\n"),
 	                               (E.QuarterId - 1) / 4 + 1, (E.QuarterId - 1) % 4 + 1,
-	                               E.IsComplete() ? TEXT("COMPLETE") : TEXT("PARTIAL"), E.ObservedMonths);
+	                               E.IsComplete() ? TEXT("COMPLETE") : TEXT("PARTIAL"), E.ObservedMonths,
+	                               E.ObservedDays, 3 * FCityCalendar::DaysPerMonth);
 	if (!E.bHasSentiment)
-		Text += TEXT("Mood: not recorded for every observed month\n");
+		Text += TEXT("Mood: not recorded for every observed day\n");
 	else if (!E.ResidentObservations)
 		Text += TEXT("Mood: no residents observed\n");
 	else

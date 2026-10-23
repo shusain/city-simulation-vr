@@ -1,0 +1,33 @@
+{
+  "date": "2026-10-21",
+  "concepts": [
+    {
+      "closeout": "https://git.shaun-husain.com/CitySimVR/citysim/issues/199#issuecomment-5713",
+      "state": "closed",
+      "issue": 199,
+      "version": 2
+    },
+    {
+      "closeout": "https://git.shaun-husain.com/CitySimVR/citysim/issues/200#issuecomment-5716",
+      "state": "closed",
+      "issue": 200,
+      "version": 2
+    },
+    {
+      "closeout": "https://git.shaun-husain.com/CitySimVR/citysim/issues/205#issuecomment-5719",
+      "state": "closed",
+      "issue": 205,
+      "version": 1
+    }
+  ],
+  "nuclear": {
+    "issue": 153,
+    "state": "closed",
+    "source_pr": 191,
+    "native_issue": 192,
+    "native_state": "already accepted/closed",
+    "closeout": "https://git.shaun-husain.com/CitySimVR/citysim/issues/153#issuecomment-5571"
+  },
+  "new_generation": false,
+  "new_native_validation": false
+}

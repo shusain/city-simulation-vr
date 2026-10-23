@@ -9,11 +9,10 @@
 void ACityBoardActor::RenderStreetWalkers(const TArray<FCityStreetWalkerSample>& Samples,
     TArray<FTransform>& Casual, TArray<FTransform>& Office, TArray<FTransform>& Worker)
 {
-	const uint64 Generation=SimulationSubsystem ? SimulationSubsystem->GetPresentationGeneration() : 0;
-	const uint64 Network=SimulationSubsystem ? SimulationSubsystem->GetTrafficSnapshot().NetworkFingerprint : 0;
-	if (Generation!=StreetWalkGeneration || Network!=StreetWalkNetwork)
+	const uint64 Generation=SimulationSubsystem ? SimulationSubsystem->GetCitySessionGeneration() : 0;
+	if (Generation!=StreetWalkGeneration)
 	{
-		StreetWalkStates.Reset(); StreetWalkGeneration=Generation; StreetWalkNetwork=Network;
+		StreetWalkStates.Reset(); StreetWalkGeneration=Generation;
 		StreetPoseClock=-1;
 	}
 	const double Clock=SimulationSubsystem ? (SimulationSubsystem->GetTrafficSnapshot().FixedStepId+

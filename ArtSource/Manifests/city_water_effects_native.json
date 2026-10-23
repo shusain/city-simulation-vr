@@ -1,0 +1,56 @@
+{
+  "issue": 331,
+  "sourceStudy": 215,
+  "approvedPreview": "R4",
+  "approval": "Shaun: transition looks good; integrate gentle calm and stronger storms",
+  "sourceEvidence": "https://git.shaun-husain.com/CitySimVR/citysim/issues/215#issuecomment-6404",
+  "recipe": "Tools/Create-CityWaterEffects.py",
+  "authoringBuild": 501,
+  "sourceCommit": "dd66cbee0131cd6f581f84f84ff766496cc0af43",
+  "materials": [
+    {
+      "path": "CitySimVR/Content/CitySim/Art/Water/MI_Foam.uasset",
+      "bytes": 2559,
+      "sha256": "03d10afaa108cf2821fd57729452d523ae49e6846decff412132bd70ef31e1f8"
+    },
+    {
+      "path": "CitySimVR/Content/CitySim/Art/Water/MI_Splash.uasset",
+      "bytes": 2572,
+      "sha256": "87b962e385983dec1221f1464b4be538acd18acfae5d20168afb05f56ff08979"
+    },
+    {
+      "path": "CitySimVR/Content/CitySim/Art/Water/MI_Water.uasset",
+      "bytes": 2568,
+      "sha256": "2ad763a6d6ce04cdb1cc5eff01ef9ad8900274d11b36de6059194462e5b99679"
+    },
+    {
+      "path": "CitySimVR/Content/CitySim/Art/Water/M_Foam.uasset",
+      "bytes": 98291,
+      "sha256": "434a30e434bc96bc6c83401c70cb10270e773f529b55ce81926b7587e46ded51"
+    },
+    {
+      "path": "CitySimVR/Content/CitySim/Art/Water/M_Splash.uasset",
+      "bytes": 36252,
+      "sha256": "4d9276c1cfd8320b709ec3fced1d9e27ddfbc5d0b35c279390d9523807142812"
+    },
+    {
+      "path": "CitySimVR/Content/CitySim/Art/Water/M_Water.uasset",
+      "bytes": 109113,
+      "sha256": "947bd6d844d9344e16fbbb0953cc5386006e146150716fe778833b36b1d56be1"
+    }
+  ],
+  "geometry": "runtime terrain contours; no fixed study FBX imported",
+  "clock": "existing atmosphere cosmetic clock; phase continuous and paused with simulation",
+  "rendering": "stock unlit translucent water/foam and masked batched splash; board-space WPO axes",
+  "validation": "authoring succeeded; final Editor and Windows candidate pending",
+  "shallowBedCorrection": {
+    "reason": "Observed storm troughs exposed shallow bed in packaged509",
+    "bound": "max(reviewed wave height cm, -0.75 * actual depth cm)",
+    "authoring": "local isolated stock-node recipe; retained ShallowBedAuthoring.log",
+    "changed": [
+      "CitySimVR/Content/CitySim/Art/Water/M_Foam.uasset",
+      "CitySimVR/Content/CitySim/Art/Water/M_Water.uasset"
+    ],
+    "review": "refreshed packaged captures required; 509 superseded"
+  }
+}

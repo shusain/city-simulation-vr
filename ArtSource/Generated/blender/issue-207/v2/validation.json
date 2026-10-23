@@ -1,0 +1,45 @@
+{
+  "mesh_geometry_sha256": "fafd652377c94883408d2847eb2152140eee558251bda77fc76d7bcff6a477c1",
+  "dimensions_m": [
+    2.200000047683716,
+    2.200000047683716,
+    2.200000047683716
+  ],
+  "triangles": 468,
+  "material_slots": [
+    "Fabric",
+    "Frame"
+  ],
+  "roundtrip_pass": true,
+  "blender_version": "5.1.1",
+  "render_engine": "CYCLES",
+  "render_device": "CPU",
+  "reference_sha256": {},
+  "within_250_500": true,
+  "materials": [
+    "Fabric",
+    "Frame"
+  ],
+  "origin": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "fbx_roundtrip": {
+    "triangles": 468,
+    "dimensions_m": [
+      2.200000047683716,
+      2.200000047683716,
+      2.200000047683716
+    ],
+    "passed": true
+  },
+  "review_only": true,
+  "previous_source_available": false,
+  "exact_v1_preservation_verified": false,
+  "views": [
+    "preview.png",
+    "front_1m.png",
+    "top.png"
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "repository": "CitySimVR/citysim",
+  "kind": "audio",
+  "approval": "User submitted v4 feedback7191134b and explicitly approved both v5 car A/B in chat2026-10-21; source-only acceptance",
+  "artifacts": [
+    {
+      "bytes": 3268820,
+      "sha256": "c0519764b648b21dde2e64479d696921b275e1361e30d4315086f0f5f06e5652",
+      "name": "Masters/Car-Idle.wav"
+    },
+    {
+      "bytes": 2179228,
+      "sha256": "f45ebb0e0ac930ca52a542835a0d1805dd22431dcf55c98458d3f38d89849a09",
+      "name": "Runtime/SW_Car_Idle.wav"
+    },
+    {
+      "bytes": 2807372,
+      "sha256": "7b1108230abbcc9d038a85016aa26d18c5b960c34ac76f7d4814bcc1fc0cdde3",
+      "name": "Masters/Truck-Idle.wav"
+    },
+    {
+      "bytes": 1871596,
+      "sha256": "61a1a7f093f677203fddb1e97c700d9232e328c27ebc6caf5d1f1bf30ddd9732",
+      "name": "Runtime/SW_Truck_Idle.wav"
+    },
+    {
+      "bytes": 3313460,
+      "sha256": "b8df71d7c7b0f0484546048b1eb5795a098b93701b21a6d61b89326818fd0624",
+      "name": "Masters/Truck-Driving.wav"
+    },
+    {
+      "bytes": 2208988,
+      "sha256": "9308f373c7dc1fe35653b2ef3af2f46f88ce3f5b88619ff0bef1a1097662c209",
+      "name": "Runtime/SW_Truck_Driving.wav"
+    },
+    {
+      "bytes": 1280684,
+      "sha256": "148b1d5bbdcd28ad30e9cb23ab4455f5dfa6bf57cc41d603c62b68ba5c37a655",
+      "name": "Masters/Car-Driving.wav"
+    },
+    {
+      "bytes": 853804,
+      "sha256": "ebde08f1f56e578200d08e3806fb0c95db2d7cd47544de3db0063bd21e230e55",
+      "name": "Runtime/SW_Car_Driving.wav"
+    },
+    {
+      "bytes": 1252076,
+      "sha256": "b1b371734acccff775f405feb733068026e7f58463d12178f1569f45ea919e2f",
+      "name": "Masters/Car-Driving-Alternate.wav"
+    },
+    {
+      "bytes": 834732,
+      "sha256": "17daf755a776b420a6b540514a4fde2e694e7d08660e57a745fbe0beb1b264ac",
+      "name": "Runtime/SW_Car_Driving_Alternate.wav"
+    }
+  ],
+  "issue": 54,
+  "version": 1
+}

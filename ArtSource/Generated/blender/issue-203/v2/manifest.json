@@ -1,0 +1,15 @@
+{
+  "issue": "D108",
+  "version": 2,
+  "source_revision": "322ad23f7d717783f6073245c579cc986721e9c7",
+  "source_previous": "/previous/asset.blend loaded via load_previous; replaced per request; not modified",
+  "scope": "external review only; no integration or promotion",
+  "files": {
+    "scale_1m.png": "7ad035b57c062f6cda0acbec05cfb47e1cff8e40f357ac354fe1990af4b80fc0",
+    "side.png": "c9b0507acba8e095835ebd58e842c59044fa94bba50611da222925cd2c97e685",
+    "asset.fbx": "7ae93678906c45d169923d5e4d8ff29a5b4e90a4b645ce8557cf3ee9ee1c1333",
+    "preview.png": "3d41662977e3d2a04a88e59ad0e3e9eedc9996f01488491cc93fc030e5a29fff",
+    "asset.blend": "3c93dd1de310f709919d4b2e048cd9f528ab7b254e76e47620358bf57fe68ceb",
+    "top.png": "1c1e5bb2d16ed043cba7b24c50f2be58b74e7ffd76c849d13ae89a83f8fb5b23"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "status": "review only; not approval or production handoff",
+  "axes": "+X nose, +Z up; meters; ground z=0",
+  "materials": {
+    "Glass": "opaque dark blue-gray glossy; native opaque glass remapping later",
+    "AmberLens": "amber beacon, not an emergency response signal",
+    "Headlight": "pale opaque lens",
+    "Taillight": "red opaque lens"
+  },
+  "source_preservation": "No production generators executed; repository untouched",
+  "views": [
+    "preview.png",
+    "side.png",
+    "front.png",
+    "rear.png"
+  ]
+}

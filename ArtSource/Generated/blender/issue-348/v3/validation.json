@@ -1,0 +1,62 @@
+{
+  "mesh_geometry_sha256": "439c5df660aa727f206faeb4f7748e1359ff4dac9550089fea8a73990bbf91b6",
+  "dimensions_m": [
+    5.288000106811523,
+    2.1399998664855957,
+    1.7324999570846558
+  ],
+  "triangles": 11836,
+  "material_slots": [
+    "BodyPaint_Navy",
+    "Glass_OpaqueBlueGray",
+    "BodyPaint_White",
+    "MetalTrim",
+    "Badge",
+    "Rubber",
+    "Grille",
+    "Headlight",
+    "Taillight",
+    "EmergencyRed",
+    "EmergencyBlue",
+    "ProtectiveBar_DarkSteel"
+  ],
+  "roundtrip_pass": true,
+  "blender_version": "5.1.1",
+  "render_engine": "CYCLES",
+  "render_device": "CPU",
+  "reference_sha256": {
+    "ArtSource/Blender/CityCivicKit.blend": "bef41dbf48dc9d304621887e49802c6a339c2219c1098b0d6a3c0b7ca280b43d"
+  },
+  "review_lighting": {
+    "mode": "extent-squared-area-light",
+    "asset_extent_m": 5.288000106811523,
+    "area_light_energy_watts": 786.4578247070312,
+    "area_light_size_m": 5.288000106811523,
+    "reference_extent_m": 8.0,
+    "reference_energy_watts": 1800.0,
+    "world_strength": 0.6,
+    "view_transform": "AgX",
+    "exposure": 0.0
+  },
+  "revision": {
+    "source": "/previous/asset.blend",
+    "scope": "Review-only v3, additive front and rear protective bars; no production changes or approval handoff",
+    "preservation": "Loaded v2 unchanged; added guard geometry only, original materials and UVs retained",
+    "bars": "Dark steel tubular push guards, paired uprights, twin crossrails and bumper returns at each end",
+    "guard_tube_radius_m": [
+      0.032,
+      0.039,
+      0.046
+    ],
+    "glass": "Original opaque glossy blue-gray retained; native remapping pending",
+    "emergency_lenses": "Original red/blue semantic lenses retained; native remapping pending",
+    "views": [
+      "preview.png",
+      "side.png",
+      "front.png",
+      "rear.png",
+      "rear_isometric.png"
+    ],
+    "acceptance": "Human source review pending; no game rendering or headset acceptance claimed"
+  }
+}

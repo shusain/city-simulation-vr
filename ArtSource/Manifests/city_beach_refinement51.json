@@ -1,0 +1,488 @@
+{
+  "issue": 51,
+  "start_issue": 217,
+  "source_batch_pr": 315,
+  "source_batch_merge": "6e882bb92ee1700373309ad5ee2d445e9ed9fea2",
+  "solid_master": "/Game/CitySim/Art/Technology/Materials/M_TechnologySolid",
+  "vertex_master": "/Game/CitySim/Art/Beach/Materials/M_BeachPanelColor",
+  "assets": [
+    {
+      "issue": 214,
+      "version": 2,
+      "integration": 217,
+      "name": "Seaweed",
+      "source_directory": "ArtSource/Generated/blender/issue-214/v2",
+      "source_head": "185fea752259a70a78944b2b0349a6395f7fa8c0",
+      "approval_sha256": "341d4509f502c406030d4cd3cfc7e991c55973fe1497813abaebdb347c59267f",
+      "source_fbx_sha256": "fa1e36500ef103c0d630e83d1d2581de12b6e1208fb43bbea6df5fada49d3190",
+      "source_blend_sha256": "8f223c66203ca0d775b357cf3156a4eb174a2094cfcfef27b00857d393a90bbc",
+      "import_file": "ArtSource/Generated/blender/issue-214/v2/asset.fbx",
+      "import_sha256": "fa1e36500ef103c0d630e83d1d2581de12b6e1208fb43bbea6df5fada49d3190",
+      "mesh_destination": "/Game/CitySim/Art/Beach/Meshes/SM_Scenery_Seaweed_A",
+      "triangles": 216,
+      "dimensions_m": [
+        0.8500000834465027,
+        0.4500000476837158,
+        0.11999999731779099
+      ],
+      "materials": [
+        {
+          "slot": "Kelp",
+          "source_slot": "Kelp",
+          "aliases": [
+            "Kelp"
+          ],
+          "destination": "/Game/CitySim/Art/Beach/Materials/MI_BeachSeaweed_Kelp",
+          "color": [
+            0.20499999821186066,
+            0.22499999403953552,
+            0.11500000208616257,
+            1.0
+          ],
+          "roughness": 0.7900000214576721,
+          "vertex_color": false
+        }
+      ],
+      "collision": "none",
+      "lods": 1,
+      "nanite": false
+    },
+    {
+      "issue": 203,
+      "version": 2,
+      "integration": 298,
+      "name": "PebbleSmall",
+      "source_directory": "ArtSource/Generated/blender/issue-203/v2",
+      "source_head": "aaa7df9e33650cd6a9033f56eaad905d5f1b0c53",
+      "approval_sha256": "4748b5872d7b549306f7b5c91ba99cf250a11a94e0945395674aedc527c81334",
+      "source_fbx_sha256": "7ae93678906c45d169923d5e4d8ff29a5b4e90a4b645ce8557cf3ee9ee1c1333",
+      "source_blend_sha256": "3c93dd1de310f709919d4b2e048cd9f528ab7b254e76e47620358bf57fe68ceb",
+      "import_file": "ArtSource/Generated/blender/issue-203/v2/asset.fbx",
+      "import_sha256": "7ae93678906c45d169923d5e4d8ff29a5b4e90a4b645ce8557cf3ee9ee1c1333",
+      "mesh_destination": "/Game/CitySim/Art/Beach/Meshes/SM_Scenery_PebbleSmall_A",
+      "triangles": 46,
+      "dimensions_m": [
+        0.12000000476837158,
+        0.09000001102685928,
+        0.03500000014901161
+      ],
+      "materials": [
+        {
+          "slot": "Pebble",
+          "source_slot": "Pebble.001",
+          "aliases": [
+            "Pebble",
+            "Pebble.001",
+            "Pebble_001"
+          ],
+          "destination": "/Game/CitySim/Art/Beach/Materials/MI_BeachPebbleSmall_Pebble",
+          "color": [
+            0.24500000476837158,
+            0.23000000417232513,
+            0.20499999821186066,
+            1.0
+          ],
+          "roughness": 0.5699999928474426,
+          "vertex_color": false
+        }
+      ],
+      "collision": "none",
+      "lods": 1,
+      "nanite": false
+    },
+    {
+      "issue": 204,
+      "version": 3,
+      "integration": 300,
+      "name": "PebbleMedium",
+      "source_directory": "ArtSource/Generated/blender/issue-204/v3",
+      "source_head": "de89440de15152ca3e64f6278675b775c7c2298f",
+      "approval_sha256": "cd980f6fefa9fb67e3a76a8356b200b9817717217c54bce634c1c3abbe65f80f",
+      "source_fbx_sha256": "dd48534c5ec9ebd9041fec3baecd46bf7ef7cd74655544f98db7ab091b454428",
+      "source_blend_sha256": "75d327dfdd3ebbaa3a77f46ac15f68c64267419e523b1d9393a1f5c050b5f091",
+      "import_file": "ArtSource/Generated/blender/issue-204/v3/asset.fbx",
+      "import_sha256": "dd48534c5ec9ebd9041fec3baecd46bf7ef7cd74655544f98db7ab091b454428",
+      "mesh_destination": "/Game/CitySim/Art/Beach/Meshes/SM_Scenery_PebbleMedium_A",
+      "triangles": 60,
+      "dimensions_m": [
+        0.18000002205371857,
+        0.1300000101327896,
+        0.07000000029802322
+      ],
+      "materials": [
+        {
+          "slot": "Pebble",
+          "source_slot": "Pebble",
+          "aliases": [
+            "Pebble"
+          ],
+          "destination": "/Game/CitySim/Art/Beach/Materials/MI_BeachPebbleMedium_Pebble",
+          "color": [
+            0.23999999463558197,
+            0.2150000035762787,
+            0.1850000023841858,
+            1.0
+          ],
+          "roughness": 0.6700000166893005,
+          "vertex_color": false
+        }
+      ],
+      "collision": "none",
+      "lods": 1,
+      "nanite": false
+    },
+    {
+      "issue": 213,
+      "version": 2,
+      "integration": 314,
+      "name": "PebbleLarge",
+      "source_directory": "ArtSource/Generated/blender/issue-213/v2",
+      "source_head": "74602835878be895e61d4b6b694b86be9ace961b",
+      "approval_sha256": "b86250d47e2889699eaedfd1ff5030cd39cafdf2cc525efa6b699aae34179eb9",
+      "source_fbx_sha256": "c2406c5b802f8f2332d04971489e3c4f7ac0f2549804eaaac4a06dd90ef56bcd",
+      "source_blend_sha256": "a43d171cbad1aef1b798fab02975643a4f32a4b44d91a4f379e18f47d5bff137",
+      "import_file": "ArtSource/Generated/blender/issue-213/v2/asset.fbx",
+      "import_sha256": "c2406c5b802f8f2332d04971489e3c4f7ac0f2549804eaaac4a06dd90ef56bcd",
+      "mesh_destination": "/Game/CitySim/Art/Beach/Meshes/SM_Scenery_PebbleLarge_A",
+      "triangles": 58,
+      "dimensions_m": [
+        0.24000000953674316,
+        0.18000002205371857,
+        0.10000000149011612
+      ],
+      "materials": [
+        {
+          "slot": "Pebble",
+          "source_slot": "Pebble",
+          "aliases": [
+            "Pebble"
+          ],
+          "destination": "/Game/CitySim/Art/Beach/Materials/MI_BeachPebbleLarge_Pebble",
+          "color": [
+            0.1899999976158142,
+            0.16500000655651093,
+            0.13500000536441803,
+            1.0
+          ],
+          "roughness": 0.5299999713897705,
+          "vertex_color": false
+        }
+      ],
+      "collision": "none",
+      "lods": 1,
+      "nanite": false
+    },
+    {
+      "issue": 207,
+      "version": 2,
+      "integration": 302,
+      "name": "Umbrella",
+      "source_directory": "ArtSource/Generated/blender/issue-207/v2",
+      "source_head": "4268326ba5eb336784292cfbc1c531e61c3defa5",
+      "approval_sha256": "7d09c512b4f13a2f64da6fcbfb488ebb70f596215955fab3eff7ddfab7429286",
+      "source_fbx_sha256": "400b45575295195c460ee59621b4fff10e6ef9c691a14fe8531aa4b0386a7d83",
+      "source_blend_sha256": "8fde2dceb48b611ff65d2327060a455256d341c58e23e231f34734d348525f51",
+      "import_file": "ArtSource/Exports/BeachRefinement51/Beach-207-v2-Integration.fbx",
+      "import_sha256": "1c3123ceccd5328b8bebd58ef68b30981ff22543c34262f2e958b6f617aa9a40",
+      "mesh_destination": "/Game/CitySim/Art/Beach/Meshes/SM_Scenery_Umbrella_A",
+      "triangles": 468,
+      "dimensions_m": [
+        2.200000286102295,
+        2.200000286102295,
+        2.200000047683716
+      ],
+      "materials": [
+        {
+          "slot": "Fabric",
+          "source_slot": "Fabric",
+          "aliases": [
+            "Fabric"
+          ],
+          "destination": "/Game/CitySim/Art/Beach/Materials/MI_BeachUmbrella_Fabric",
+          "color": [
+            0.800000011920929,
+            0.800000011920929,
+            0.800000011920929,
+            1.0
+          ],
+          "roughness": 0.8799999952316284,
+          "vertex_color": true
+        },
+        {
+          "slot": "Frame",
+          "source_slot": "Frame",
+          "aliases": [
+            "Frame"
+          ],
+          "destination": "/Game/CitySim/Art/Beach/Materials/MI_BeachUmbrella_Frame",
+          "color": [
+            0.46000000834465027,
+            0.2800000011920929,
+            0.14000000059604645,
+            1.0
+          ],
+          "roughness": 0.6499999761581421,
+          "vertex_color": false
+        }
+      ],
+      "collision": "none",
+      "lods": 1,
+      "nanite": false
+    },
+    {
+      "issue": 208,
+      "version": 1,
+      "integration": 304,
+      "name": "Lounger",
+      "source_directory": "ArtSource/Generated/blender/issue-208/v1",
+      "source_head": "d7604d29cc4a9eccb5e4ed2cacf320f92548ef18",
+      "approval_sha256": "17dab2f5be9c90b27ecda070b01c2fb38d30e70a67e9723f3f4fe297219ea7f8",
+      "source_fbx_sha256": "36e039d093b3fe9d0438f455cfdb052fb389a69939787d1f68c792e576baccbe",
+      "source_blend_sha256": "bface696012c5518df8148106f639c26929d6ed6b4af7cbb8d0d4246002cafda",
+      "import_file": "ArtSource/Exports/BeachRefinement51/Beach-208-v1-Integration.fbx",
+      "import_sha256": "2bf1d749eaeaaf6e08dff408e14915be822e8205348eb3733cf18e5c4a62a55e",
+      "mesh_destination": "/Game/CitySim/Art/Beach/Meshes/SM_Scenery_Lounger_A",
+      "triangles": 332,
+      "dimensions_m": [
+        0.6740001738071442,
+        1.8890451788902283,
+        0.8352731466293335
+      ],
+      "materials": [
+        {
+          "slot": "Frame",
+          "source_slot": "Frame",
+          "aliases": [
+            "Frame"
+          ],
+          "destination": "/Game/CitySim/Art/Beach/Materials/MI_BeachLounger_Frame",
+          "color": [
+            0.3799999952316284,
+            0.20000000298023224,
+            0.0949999988079071,
+            1.0
+          ],
+          "roughness": 0.7799999713897705,
+          "vertex_color": false
+        },
+        {
+          "slot": "Fabric",
+          "source_slot": "Fabric",
+          "aliases": [
+            "Fabric"
+          ],
+          "destination": "/Game/CitySim/Art/Beach/Materials/MI_BeachLounger_Fabric",
+          "color": [
+            0.8799999952316284,
+            0.8100000023841858,
+            0.6499999761581421,
+            1.0
+          ],
+          "roughness": 0.7799999713897705,
+          "vertex_color": false
+        }
+      ],
+      "collision": "none",
+      "lods": 1,
+      "nanite": false
+    },
+    {
+      "issue": 209,
+      "version": 1,
+      "integration": 306,
+      "name": "Chair",
+      "source_directory": "ArtSource/Generated/blender/issue-209/v1",
+      "source_head": "e005066820edbaabc2c0ea6fdfd69af2a56ba69d",
+      "approval_sha256": "0e43f6d1249c85da43843f0e4b74f604c34bb11dad006e6852ce0094f1857fe1",
+      "source_fbx_sha256": "4d33f47b36ce3d9906704db43c8a432b29dcb9bbabe4e32fa2353305b4e0a9c8",
+      "source_blend_sha256": "ebe30606cf061a7d6d2b908f4513846403a82016a30d38644f3fa3179c4dd41b",
+      "import_file": "ArtSource/Exports/BeachRefinement51/Beach-209-v1-Integration.fbx",
+      "import_sha256": "d4d22fa01cbbdc2ce5563e1b458398890f77777327250d39c4d5e23b25867d46",
+      "mesh_destination": "/Game/CitySim/Art/Beach/Meshes/SM_Scenery_Chair_A",
+      "triangles": 208,
+      "dimensions_m": [
+        0.7000000476837158,
+        0.6203751564025879,
+        0.8870148658752441
+      ],
+      "materials": [
+        {
+          "slot": "Frame",
+          "source_slot": "Frame",
+          "aliases": [
+            "Frame"
+          ],
+          "destination": "/Game/CitySim/Art/Beach/Materials/MI_BeachChair_Frame",
+          "color": [
+            0.47999998927116394,
+            0.28999999165534973,
+            0.15000000596046448,
+            1.0
+          ],
+          "roughness": 0.6800000071525574,
+          "vertex_color": false
+        },
+        {
+          "slot": "Fabric",
+          "source_slot": "Fabric",
+          "aliases": [
+            "Fabric"
+          ],
+          "destination": "/Game/CitySim/Art/Beach/Materials/MI_BeachChair_Fabric",
+          "color": [
+            0.7200000286102295,
+            0.28999999165534973,
+            0.23000000417232513,
+            1.0
+          ],
+          "roughness": 0.8799999952316284,
+          "vertex_color": false
+        }
+      ],
+      "collision": "none",
+      "lods": 1,
+      "nanite": false
+    },
+    {
+      "issue": 210,
+      "version": 1,
+      "integration": 308,
+      "name": "Mat",
+      "source_directory": "ArtSource/Generated/blender/issue-210/v1",
+      "source_head": "61fa3685a79ea2bde3b133f1283fa6ef46c9814b",
+      "approval_sha256": "f0de0aee4698a1198ebe81223479d5a4e6913a25b920334c190bd17e60757762",
+      "source_fbx_sha256": "8b72d485309fc2ceea1f4a71fdf9f88982fe43970815c8cebe467169eb2e8bbf",
+      "source_blend_sha256": "db43f1d60c634ba647cf740cc0e3edb183a44100eb374915e4cfd576f59a0f62",
+      "import_file": "ArtSource/Generated/blender/issue-210/v1/asset.fbx",
+      "import_sha256": "8b72d485309fc2ceea1f4a71fdf9f88982fe43970815c8cebe467169eb2e8bbf",
+      "mesh_destination": "/Game/CitySim/Art/Beach/Meshes/SM_Scenery_Mat_A",
+      "triangles": 164,
+      "dimensions_m": [
+        0.7500001788139343,
+        1.7996714115142822,
+        0.11985384672880173
+      ],
+      "materials": [
+        {
+          "slot": "Fabric",
+          "source_slot": "Fabric",
+          "aliases": [
+            "Fabric"
+          ],
+          "destination": "/Game/CitySim/Art/Beach/Materials/MI_BeachMat_Fabric",
+          "color": [
+            0.5600000023841858,
+            0.24500000476837158,
+            0.18000000715255737,
+            1.0
+          ],
+          "roughness": 0.8799999952316284,
+          "vertex_color": false
+        }
+      ],
+      "collision": "none",
+      "lods": 1,
+      "nanite": false
+    },
+    {
+      "issue": 211,
+      "version": 2,
+      "integration": 310,
+      "name": "Cooler",
+      "source_directory": "ArtSource/Generated/blender/issue-211/v2",
+      "source_head": "4cd6b2480de5c331a09559cd48bf413609b59e20",
+      "approval_sha256": "62e89ac625ba73d11b954a946c0a01cf064830bf764f78a4b538ac9e24350275",
+      "source_fbx_sha256": "2298db20343e4b3d45f93ca476fe40ebb555acb41560ef225b6563a5e5d414d3",
+      "source_blend_sha256": "271447e103e686ba0a7b2d23e2a3bcf5dcb886e2a18d158feab01b2d7c735e0f",
+      "import_file": "ArtSource/Generated/blender/issue-211/v2/asset.fbx",
+      "import_sha256": "2298db20343e4b3d45f93ca476fe40ebb555acb41560ef225b6563a5e5d414d3",
+      "mesh_destination": "/Game/CitySim/Art/Beach/Meshes/SM_Scenery_Cooler_A",
+      "triangles": 236,
+      "dimensions_m": [
+        0.5500000715255737,
+        0.38200005888938904,
+        0.42000001668930054
+      ],
+      "materials": [
+        {
+          "slot": "Body",
+          "source_slot": "Body",
+          "aliases": [
+            "Body"
+          ],
+          "destination": "/Game/CitySim/Art/Beach/Materials/MI_BeachCooler_Body",
+          "color": [
+            0.04500000178813934,
+            0.23499999940395355,
+            0.2150000035762787,
+            1.0
+          ],
+          "roughness": 0.7799999713897705,
+          "vertex_color": false
+        },
+        {
+          "slot": "Trim",
+          "source_slot": "Trim",
+          "aliases": [
+            "Trim"
+          ],
+          "destination": "/Game/CitySim/Art/Beach/Materials/MI_BeachCooler_Trim",
+          "color": [
+            0.7200000286102295,
+            0.6499999761581421,
+            0.49000000953674316,
+            1.0
+          ],
+          "roughness": 0.7799999713897705,
+          "vertex_color": false
+        }
+      ],
+      "collision": "none",
+      "lods": 1,
+      "nanite": false
+    },
+    {
+      "issue": 212,
+      "version": 2,
+      "integration": 312,
+      "name": "Tote",
+      "source_directory": "ArtSource/Generated/blender/issue-212/v2",
+      "source_head": "55734e0ff561c2c0b5cdb2ca8885686a0d69aa9d",
+      "approval_sha256": "c26dbf26f9e7940af1b780fa003a41eb856af6742dad5fc40ddecec93a2452e8",
+      "source_fbx_sha256": "4bd4292e26e6ea5cbf6672385379ac1fb312e3b76afd26968f77bc974d196686",
+      "source_blend_sha256": "8e55d0b98f2436a25b89f6f7ebbd5be9417e8aba8d3c450b343e9edb3989f1df",
+      "import_file": "ArtSource/Exports/BeachRefinement51/Beach-212-v2-Integration.fbx",
+      "import_sha256": "7c30507be24fd636ec11a4bb87358e781e7539129132fa560dd88cdd2e2b7f10",
+      "mesh_destination": "/Game/CitySim/Art/Beach/Meshes/SM_Scenery_Tote_A",
+      "triangles": 244,
+      "dimensions_m": [
+        0.45000001788139343,
+        0.22000004351139069,
+        0.4778059422969818
+      ],
+      "materials": [
+        {
+          "slot": "Fabric",
+          "source_slot": "Fabric",
+          "aliases": [
+            "Fabric"
+          ],
+          "destination": "/Game/CitySim/Art/Beach/Materials/MI_BeachTote_Fabric",
+          "color": [
+            0.5,
+            0.4050000011920929,
+            0.2849999964237213,
+            1.0
+          ],
+          "roughness": 0.8799999952316284,
+          "vertex_color": false
+        }
+      ],
+      "collision": "none",
+      "lods": 1,
+      "nanite": false
+    }
+  ],
+  "placement": "Fifteen total ISM pools, unchanged160-prop cap; seeded natural scatter and up to six dry/flat static leisure arrangements. No simulation/save authority.",
+  "platforms": "Windows candidate; Quest/headset observations deferred pending a named risk or milestone"
+}

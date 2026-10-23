@@ -1,0 +1,22 @@
+{
+  "issue": 56,
+  "implementationPR": 330,
+  "acceptedSource": "6b1f8f113fc95c0a79c391cd558d453e8bbc9ce0",
+  "mergeCommit": "f009a9d59d4b89a5e5e7686e34666d50e93a174a",
+  "acceptance": {
+    "source": "Shaun in chat",
+    "quote": "Looks good go ahead and get this merged into main.",
+    "record": "https://git.shaun-husain.com/CitySimVR/citysim/issues/56#issuecomment-6524"
+  },
+  "editorBuild": 524,
+  "windowsCandidate": 525,
+  "runtime": "dev-28de9340eae95e51f994",
+  "validation": "warnings-as-errors Editor/eight cases; both packaged cases at both sizes; startup smoke; eight native captures; ZIP/54 file hashes verified",
+  "zipSha256": "d52123db2fa2bcc6c49598b59edea171af6cfa24d98bb457595e8b611eac791c",
+  "evidence": "https://git.shaun-husain.com/attachments/2be0b894-e92e-4b27-a1a0-f168ba5a3355",
+  "playerFiles": "32 current playtest profile files verified unchanged at delivery",
+  "maintainedPackagePromotion": false,
+  "deviceDeployment": false,
+  "quest": "deferred; no headset observation claimed",
+  "next": "separate road visuals/transport feature selection; signals and vehicle yielding outside delivered slice"
+}

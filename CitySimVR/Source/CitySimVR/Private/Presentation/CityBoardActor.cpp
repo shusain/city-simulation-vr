@@ -1,4 +1,7 @@
 #include "Presentation/CityBoardActor.h"
+#include "Engine/StaticMeshSocket.h"
+#include "Presentation/CityTutorialSettings.h"
+#include "Presentation/CityWaterEffects.h"
 #include "Simulation/CityCalendar.h"
 #include "Simulation/CityTechnology.h"
 #include "Simulation/CityCommercialAi.h"
@@ -30,6 +33,7 @@
 #include "Presentation/CityBuildingSupports.h"
 #include "Presentation/CityUtilityFoundations.h"
 #include "Presentation/CityHomeWalk.h"
+#include "Simulation/CityPedestrianPaths.h"
 #include "Presentation/CityIndustrialDriveway.h"
 #include "Presentation/CityPrivateEntrances.h"
 #include "Presentation/CityEmergencyPresentation.h"
@@ -102,7 +106,7 @@ ACityBoardActor::ACityBoardActor()
 	static ConstructorHelpers::FObjectFinder<UMaterialInterface> BoardMaterial(
 	    TEXT("/Game/CitySim/Art/Materials/MI_CityTerrain.MI_CityTerrain"));
 	static ConstructorHelpers::FObjectFinder<UMaterialInterface> WaterMaterial(
-	    TEXT("/Game/CitySim/Art/Materials/MI_CityWater.MI_CityWater"));
+	    TEXT("/Game/CitySim/Art/Water/MI_Water.MI_Water"));
 	static ConstructorHelpers::FObjectFinder<UMaterialInterface> HoverMaterial(
 	    TEXT("/Game/XRFramework/Materials/MI_Grid_Accent.MI_Grid_Accent"));
 	static ConstructorHelpers::FObjectFinder<UStaticMesh> CubeMesh(TEXT("/Engine/BasicShapes/Cube.Cube"));
@@ -234,6 +238,21 @@ ACityBoardActor::ACityBoardActor()
 	WaterSurface->SetMaterial(0, WaterMaterial.Object);
 	WaterSurface->SetCollisionEnabled(ECollisionEnabled::NoCollision);
 	WaterSurface->SetCastShadow(false);
+	ShoreFoamSurface = CreateDefaultSubobject<UProceduralMeshComponent>(TEXT("ShoreFoamSurface"));
+	ShoreSplashSurface = CreateDefaultSubobject<UProceduralMeshComponent>(TEXT("ShoreSplashSurface"));
+	static ConstructorHelpers::FObjectFinder<UMaterialInterface> FoamMaterial(TEXT("/Game/CitySim/Art/Water/MI_Foam"));
+	static ConstructorHelpers::FObjectFinder<UMaterialInterface> SplashMaterial(
+	    TEXT("/Game/CitySim/Art/Water/MI_Splash"));
+	ShoreFoamSurface->SetMaterial(0, FoamMaterial.Object);
+    ShoreFoamSurface->TranslucencySortPriority = 1;
+	ShoreSplashSurface->SetMaterial(0, SplashMaterial.Object);
+	for (auto* Surface : {ShoreFoamSurface.Get(), ShoreSplashSurface.Get()})
+	{
+		Surface->SetupAttachment(BoardRoot);
+		Surface->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+		Surface->SetCastShadow(false);
+		Surface->BoundsScale = 2.0f;
+	}
 
 	FoundationInstances = CreateDefaultSubobject<UInstancedStaticMeshComponent>(TEXT("FoundationInstances"));
 	FoundationInstances->SetupAttachment(BoardRoot);
@@ -243,7 +262,7 @@ ACityBoardActor::ACityBoardActor()
 	static ConstructorHelpers::FObjectFinder<UStaticMesh> GroundPilotHome(
 	    TEXT("/Game/CitySim/Art/HomeGroundPilot/SM_CompactHome_GroundPilot.SM_CompactHome_GroundPilot"));
 	GroundPilotResidentialMesh = GroundPilotHome.Object;
-    for (const auto& Entry : CityResidentialEntrances::All())
+	for (const auto& Entry : CityResidentialEntrances::All())
     {
         const FString GroundObjectPath = CityResidentialEntrances::ObjectPath(Entry);
         ConstructorHelpers::FObjectFinder<UStaticMesh> GroundMesh(*GroundObjectPath);
@@ -480,12 +499,19 @@ ACityBoardActor::ACityBoardActor()
 	WindOverlayInstances->SetCollisionEnabled(ECollisionEnabled::NoCollision);
 	WindOverlayInstances->SetCastShadow(false);
 
+    PlacementFootprintInstances = CreateDefaultSubobject<UInstancedStaticMeshComponent>(TEXT("PlacementFootprint"));
+    PlacementFootprintInstances->SetupAttachment(BoardRoot);
+    PlacementFootprintInstances->SetStaticMesh(PlaceholderBuildingMesh);
+    PlacementFootprintInstances->SetMaterial(0, SelectionMaterial.Object);
+    PlacementFootprintInstances->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+    PlacementFootprintInstances->SetCastShadow(false);
 	PlacementGhost = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("PlacementGhost"));
 	PlacementGhost->SetupAttachment(BoardRoot);
 	PlacementGhost->SetStaticMesh(PlaceholderBuildingMesh);
 	PlacementGhost->SetMaterial(0, ValidPreviewMaterial);
 	PlacementGhost->SetCollisionEnabled(ECollisionEnabled::NoCollision);
 	PlacementGhost->SetVisibility(false);
+	PlacementFootprintInstances->SetVisibility(false);
 
 	ProgressionConstructionSite = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("ProgressionConstructionSite"));
 	ProgressionCraneJib = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("ProgressionCraneJib"));
@@ -1106,6 +1132,7 @@ void ACityBoardActor::Tick(const float DeltaSeconds)
 	                            : Soundscape->GetMusicDuckGain();
 	Music->Update(bAlarmBackgrounded, MusicDuck);
 	Atmosphere->Update(SimulationSubsystem, DeltaSeconds);
+	UpdateWaterEffects();
 	if (TerrainMaterial)
 	{
 		TerrainMaterial->SetScalarParameterValue(TEXT("WeatherWet"), Atmosphere->GetMotion().Wetness);
@@ -1123,6 +1150,7 @@ void ACityBoardActor::Tick(const float DeltaSeconds)
 	{
 		PrepareCityView();
 	}
+	UpdateEntranceGuidance();
 	UpdateWindPresentation();
 	UpdateProgressionShowcase(DeltaSeconds);
 	UpdateLiveConstructionAnimations(DeltaSeconds);
@@ -1138,6 +1166,7 @@ void ACityBoardActor::Tick(const float DeltaSeconds)
 		ClearServiceCoverage();
 		ClearWaterPlacementOverlay();
 		PlacementGhost->SetVisibility(false);
+		PlacementFootprintInstances->SetVisibility(false);
 		bConfirmRequested = false;
 		bCancelRequested = false;
 		bRotateRequested = false;
@@ -1417,6 +1446,7 @@ void ACityBoardActor::SetManipulationActive(const bool bActive)
 		ZoneStartCell.Reset();
 		ClearGesturePreviews();
 		PlacementGhost->SetVisibility(false);
+		PlacementFootprintInstances->SetVisibility(false);
 		SetHoveredCell(FCityCellCoord(), false);
 		CanceledAtCell.Reset();
 	}
@@ -1445,6 +1475,7 @@ void ACityBoardActor::SetToolMode(const ECityToolMode NewToolMode)
 	ClearGesturePreviews();
 	ClearServiceCoverage();
 	PlacementGhost->SetVisibility(false);
+	PlacementFootprintInstances->SetVisibility(false);
 	CanceledAtCell.Reset();
 	ToolMode = NewToolMode;
 	UpdateZoneVisibility();
@@ -3150,6 +3181,7 @@ void ACityBoardActor::UpdatePlacementPreview(APlayerController* PlayerController
 	if (!PlayerController || !PlacementModel || !BuildingCatalog || BuildingCatalog->Definitions.IsEmpty())
 	{
 		PlacementGhost->SetVisibility(false);
+		PlacementFootprintInstances->SetVisibility(false);
 		return;
 	}
 
@@ -3175,6 +3207,7 @@ void ACityBoardActor::UpdatePlacementPreview(APlayerController* PlayerController
 	{
 		ClearWaterPlacementOverlay();
 		PlacementGhost->SetVisibility(false);
+		PlacementFootprintInstances->SetVisibility(false);
 		UpdateServiceCoverage(HoveredCell, bHasHoveredCell);
 		if (GEngine && bHasHoveredCell && !bCommandInputBound)
 		{
@@ -3194,6 +3227,7 @@ void ACityBoardActor::UpdatePlacementPreview(APlayerController* PlayerController
 	    ToolMode == ECityToolMode::TestWaste)
 	{
 		PlacementGhost->SetVisibility(false);
+		PlacementFootprintInstances->SetVisibility(false);
 		if (bConfirm && bHasHoveredCell && SimulationSubsystem)
 		{
 			uint64 Target = PlacementModel->GetGrid().GetOccupant(HoveredCell);
@@ -3218,6 +3252,7 @@ void ACityBoardActor::UpdatePlacementPreview(APlayerController* PlayerController
 	if (ToolMode == ECityToolMode::Demolish)
 	{
 		PlacementGhost->SetVisibility(false);
+		PlacementFootprintInstances->SetVisibility(false);
 		if (bConfirm && bHasHoveredCell)
 		{
 			HandleDemolition(HoveredCell);
@@ -3227,6 +3262,7 @@ void ACityBoardActor::UpdatePlacementPreview(APlayerController* PlayerController
 	if (ToolMode == ECityToolMode::Zone)
 	{
 		PlacementGhost->SetVisibility(false);
+		PlacementFootprintInstances->SetVisibility(false);
 		UpdateZoneTool(HoveredCell, bHasHoveredCell, bConfirm, bCancel, bRotate);
 		return;
 	}
@@ -3242,6 +3278,7 @@ void ACityBoardActor::UpdatePlacementPreview(APlayerController* PlayerController
 		PlacementModel->CancelPreview(PlacementPreview);
 		CanceledAtCell = bHasHoveredCell ? TOptional<FCityCellCoord>(HoveredCell) : TOptional<FCityCellCoord>();
 		PlacementGhost->SetVisibility(false);
+		PlacementFootprintInstances->SetVisibility(false);
 		if (GEngine)
 		{
 			GEngine->AddOnScreenDebugMessage(7001, 0.0f, FColor::Silver,
@@ -3254,6 +3291,7 @@ void ACityBoardActor::UpdatePlacementPreview(APlayerController* PlayerController
 	{
 		ClearServiceCoverage();
 		PlacementGhost->SetVisibility(false);
+		PlacementFootprintInstances->SetVisibility(false);
 		return;
 	}
 	if (!bCommandInputBound && PlayerController->WasInputKeyJustPressed(EKeys::Delete))
@@ -3270,6 +3308,7 @@ void ACityBoardActor::UpdatePlacementPreview(APlayerController* PlayerController
 	if (CanceledAtCell.IsSet())
 	{
 		PlacementGhost->SetVisibility(false);
+		PlacementFootprintInstances->SetVisibility(false);
 		return;
 	}
 
@@ -3277,6 +3316,7 @@ void ACityBoardActor::UpdatePlacementPreview(APlayerController* PlayerController
 	if (!Definition)
 	{
 		PlacementGhost->SetVisibility(false);
+		PlacementFootprintInstances->SetVisibility(false);
 		return;
 	}
 	UpdateWaterPlacementOverlay();
@@ -3323,6 +3363,7 @@ void ACityBoardActor::UpdatePlacementPreview(APlayerController* PlayerController
 		RebuildBuildingEntranceProfiles();
 	}
 	PlacementGhost->SetVisibility(false);
+	PlacementFootprintInstances->SetVisibility(false);
 	UE_LOG(LogTemp, Display,
 	       TEXT("CITYSIM_PLACEMENT_COMMITTED Entity=%llu Definition=%s Cell=(%d,%d) Cost=%lld Funds=%lld"),
 	       CommitResult.EntityId, *Definition->DefinitionId.ToString(), HoveredCell.X, HoveredCell.Y, Definition->Cost,
@@ -3521,6 +3562,7 @@ void ACityBoardActor::UpdateGhost(const FCityBuildingDefinition& Definition, con
 		PlacementGhost->SetMaterial(MaterialIndex, PreviewMaterial);
 	}
 	PlacementGhost->SetVisibility(true);
+    UpdatePlacementFootprint(Definition, Validation.IsSuccess());
 }
 
 void ACityBoardActor::UpdatePlacementStatus(const FCityBuildingDefinition& Definition,
@@ -3582,6 +3624,7 @@ void ACityBoardActor::UpdateRoadTool(APlayerController* PlayerController, const 
                                      const bool bHasHoveredCell, const bool bConfirm, const bool bCancel)
 {
 	PlacementGhost->SetVisibility(false);
+	PlacementFootprintInstances->SetVisibility(false);
 	ZonePreviewInstances->ClearInstances();
 	ZoneSkippedPreviewInstances->ClearInstances();
 	// Cancel must clear the gesture and its callout even when pointing away from the board.
@@ -3633,6 +3676,8 @@ void ACityBoardActor::UpdateRoadTool(APlayerController* PlayerController, const 
 		return;
 	}
 
+	// Refresh the optimistic command revision, then validate occupancy/cost against the live city.
+	RoadPreview.ExpectedRevision = PlacementModel->GetRevision();
 	PlacementModel->UpdateRoadPreviewEnd(RoadPreview, HoveredCell);
 	RefreshRoadDrawingProfile();
 
@@ -4264,6 +4309,8 @@ void ACityBoardActor::RebuildRoadInstances()
 		const bool bVertical = Mask == 1 || Mask == 4 || Mask == 5;
 		for (int32 Side = 0; Side < 4; ++Side)
 		{
+			const uint8 Approach = Side == 0 ? 4 : Side == 1 ? 1 : Side == 2 ? 8 : 2;
+			if ((Mask & Approach) != 0 && !bHorizontal && !bVertical) continue;
 			const bool bAlongX = Side < 2;
             // Close only the unconnected end of a one-neighbor street.
             // Its side strips otherwise leave pedestrian/vehicle approaches
@@ -4303,6 +4350,58 @@ void ACityBoardActor::RebuildRoadInstances()
                 WalkVertices.SetNum(Base); WalkNormals.SetNum(Base); WalkUVs.SetNum(Base);
                 WalkVertices.Append(Patch.Vertices); WalkNormals.Append(Patch.Normals); WalkUVs.Append(Patch.UVs);
                 for(const int32 I:Patch.Triangles) WalkTriangles.Add(Base+I);
+			}
+		}
+	}
+	// Retain sidewalk corner pads where both adjoining approaches are open.
+	// The former continuous bands across the carriageway are replaced by zebra paint.
+	for (const auto& Cell : Cells)
+	{
+		const auto Id=PlacementModel->GetRoadDefinitionId(Cell);
+		const double Width=CityRoadPresentation::SidewalkWidth(Id), K=CityRoadPresentation::SidewalkOffset(Id);
+		const auto Mask=PlacementModel->GetRoadNeighborMask(Cell);
+		if(Width<=0. || Mask==5 || Mask==10) continue;
+		for(int32 Corner=0;Corner<4;++Corner)
+		{
+			const int32 A=Corner,B=(Corner+1)%4;
+			constexpr uint8 SideBits[]={4,2,1,8};
+			if(!(Mask&SideBits[A]) || !(Mask&SideBits[B])) continue;
+			const double X=Cell.X+.5+((Corner==0 || Corner==1)?K:-K);
+			const double Y=Cell.Y+.5+((Corner==0 || Corner==3)?-K:K);
+			TArray<FVector2D> Polygon;
+			for(const auto& P:{FVector2D(-1,-1),FVector2D(1,-1),FVector2D(1,1),FVector2D(-1,1)})
+				Polygon.Add(FVector2D(X,Y)+P*(Width*.5));
+			FCityRoadRibbonMesh Patch;Patch.Terrain=&SimulationSubsystem->GetTerrain();
+			Patch.AppendPolygon(Polygon,[&](double U,double V){return GetRoadProfileHeight(U,V,Cell.RoadLevel);},FCityRoadRibbonMesh::SidewalkLiftCm);
+			const int32 Base=WalkVertices.Num();WalkVertices.Append(Patch.Vertices);WalkNormals.Append(Patch.Normals);WalkUVs.Append(Patch.UVs);
+			for(const int32 I:Patch.Triangles) WalkTriangles.Add(Base+I);
+		}
+	}
+	// Continue both sidewalk edges of every open junction approach to the tile
+	// boundary. A corner-sized square alone stops short of the adjacent strip.
+	for(const auto& Cell:Cells)
+	{
+		const auto Id=PlacementModel->GetRoadDefinitionId(Cell);
+		const auto Mask=PlacementModel->GetRoadNeighborMask(Cell);
+		if(CityRoadPresentation::SidewalkWidth(Id)<=0. || FMath::CountBits(static_cast<uint64>(Mask))<2 || Mask==5 || Mask==10) continue;
+		const double Half=CityRoadPresentation::SurfaceWidth(Id)*.5;
+		for(int32 Side=0;Side<4;++Side) if(Mask&(1<<Side))
+		{
+			const bool AlongX=Side==1 || Side==3;
+			const double Sign=Side<2?1.:-1.;
+			for(double Flank:{-1.,1.}) for(int32 Segment=0;Segment<4;++Segment)
+			{
+				TArray<FVector2D> Polygon;
+				for(const auto& Corner:{FVector2D(0,0),FVector2D(1,0),FVector2D(1,1),FVector2D(0,1)})
+				{
+					const double Along=.5+Sign*FMath::Lerp(Half,.5,(Segment+Corner.X)/4.);
+					const double Across=.5+Flank*(GetRoadWidthAt(Cell,AlongX,Along)*.5+Corner.Y*GetRoadWidthAt(Cell,AlongX,Along,true));
+					Polygon.Add(FVector2D(Cell.X+(AlongX?Along:Across),Cell.Y+(AlongX?Across:Along)));
+				}
+				FCityRoadRibbonMesh Patch;Patch.Terrain=&SimulationSubsystem->GetTerrain();
+				Patch.AppendPolygon(Polygon,[&](double U,double V){return GetRoadProfileHeight(U,V,Cell.RoadLevel);},FCityRoadRibbonMesh::SidewalkLiftCm);
+				const int32 Base=WalkVertices.Num();WalkVertices.Append(Patch.Vertices);WalkNormals.Append(Patch.Normals);WalkUVs.Append(Patch.UVs);
+				for(const int32 I:Patch.Triangles) WalkTriangles.Add(Base+I);
 			}
 		}
 	}
@@ -4391,6 +4490,7 @@ void ACityBoardActor::RebuildRoadInstances()
 	const double DashLength = CellSize * 0.18;
 	const double DashPeriod = CellSize * 0.48;
 	const double JunctionClearance = CellSize * 0.30;
+	const auto Crosswalks=CityPedestrianPaths::Crossings(*PlacementModel,BuildingCatalog);
 	for (const FCityRoadEdge& Edge : RoadNetwork.Edges)
 	{
 		if (Edge.RoadClass == ECityRoadClass::Dirt || Edge.Cells.Num() < 2)
@@ -4413,6 +4513,14 @@ void ACityBoardActor::RebuildRoadInstances()
 			        (Start.Y + Direction2D.Y * CenterDistance) / CellSize,
 			        Edge.Cells.ContainsByPredicate([](const auto& C) { return C.RoadLevel == 1; }) ? 1 : 0) +
 			        6.0);
+            bool InCrosswalk=false;
+            for(const auto& Crossing:Crosswalks)
+            {
+                const FVector A(Crossing.A.X*.8,Crossing.A.Y*.8,0),B(Crossing.B.X*.8,Crossing.B.Y*.8,0);
+                const int32 Level=Edge.Cells[0].RoadLevel;
+                if(Crossing.Cell.RoadLevel==Level && FMath::PointDistToSegment(FVector(Center.X,Center.Y,0),A,B)<DashLength*.5+40.) {InCrosswalk=true;break;}
+            }
+            if(InCrosswalk) continue;
             const FVector2D C(Center.X,Center.Y);
             TArray<FVector2D> Polygon;
             for(const auto& Corner:{FVector2D(-1,-1),FVector2D(1,-1),FVector2D(1,1),FVector2D(-1,1)})
@@ -4581,12 +4689,14 @@ void ACityBoardActor::UpdatePopulationTraffic()
 			    GetRoadProfileHeight(GridPosition.X + 0.5, GridPosition.Y + 0.5, GridPosition.Z > 0 ? 1 : 0) +
 			        (bWalk ? 30.0 : 50.0));
 			Location += FVector(-Direction.Y, Direction.X, 0.0) * LaneOffset;
-            if (!bWalk) Location.Z=GetRoadProfileHeight(Location.X/800.,Location.Y/800.,GridPosition.Z>0?1:0)+FCityRoadRibbonMesh::SurfaceLiftCm+46.;
+            if (!bWalk) Location.Z=GetRoadProfileHeight(Location.X/800.,Location.Y/800.,GridPosition.Z>0?1:0)+FCityRoadRibbonMesh::SurfaceLiftCm;
 			if (bWalk)
 				Location.Z =
 				    GetRoadProfileHeight(Location.X / CityBoardPicking::LogicalCellSizeCm,
 				                         Location.Y / CityBoardPicking::LogicalCellSizeCm, GridPosition.Z > 0 ? 1 : 0) +
 				    CityCitizenPresentation::StreetOriginOffsetCm;
+			if (bWalk && !Vehicle.WalkPath.IsEmpty() &&
+			    !SampleEntranceAwareWalker(Vehicle, Before, Alpha, Location, Direction)) continue;
 			if (!bWalk)
 				Direction = FCityTrafficSimulation::SampleMotorHeading(Vehicle, Before, Alpha,
 				    PlacementModel->GetRoadDefinitionId(NearCell), Direction,
@@ -4862,13 +4972,20 @@ void ACityBoardActor::RebuildAllPresentation()
 	RefreshTerrainPresentation();
 	EntranceMarker->SetRelativeLocation(GetCellSurfaceCenter(PlacementModel->GetEntranceCell(), 15.0));
 	PlacementPreview = FCityPlacementPreview();
-	RoadPreview = FCityRoadPreview();
-	RoadConstructionStatus.Empty();
-	ZoneStartCell.Reset();
+	// Presentation can rebuild during growth; only a different city invalidates user intent.
+	const uint64 Session = SimulationSubsystem ? SimulationSubsystem->GetCitySessionGeneration() : 0;
+	if (InteractionSessionGeneration != Session)
+	{
+		InteractionSessionGeneration = Session;
+		RoadPreview = FCityRoadPreview();
+		RoadConstructionStatus.Empty();
+		ZoneStartCell.Reset();
+	}
 	ClearGesturePreviews();
 	ClearServiceCoverage();
 	CanceledAtCell.Reset();
 	PlacementGhost->SetVisibility(false);
+	PlacementFootprintInstances->SetVisibility(false);
 	for (TPair<FName, TObjectPtr<UInstancedStaticMeshComponent>>& Pair : BuildingInstances)
 	{
 		if (Pair.Value)
@@ -5411,7 +5528,10 @@ void ACityBoardActor::RebuildBuildingEntranceProfiles()
 {
 	if (!BuildingEntranceProfiles || !SimulationSubsystem || !PlacementModel || !BuildingCatalog)
 	{
+	{
+		RebuildCrosswalkPaint();
 		return;
+	}
 	}
 	TArray<FVector> Vertices;
 	TArray<int32> Triangles;
@@ -5420,6 +5540,7 @@ void ACityBoardActor::RebuildBuildingEntranceProfiles()
 	TArray<FColor> Colors;
 	TArray<FProcMeshTangent> Tangents;
 	FCityHomeWalk HomeWalks;
+	CitizenEntrancePaths.Reset();
     auto AppendWalk=[&](const FCityHomeWalk& Walk) {
         const int32 Base=HomeWalks.Vertices.Num(),RailBase=HomeWalks.RailVertices.Num();
         HomeWalks.Vertices.Append(Walk.Vertices);HomeWalks.Normals.Append(Walk.Normals);HomeWalks.UVs.Append(Walk.UVs);
@@ -5487,13 +5608,16 @@ void ACityBoardActor::RebuildBuildingEntranceProfiles()
                             FCityIndustrialDriveway Cross;
                             Cross.Build(Center-Direction*(Entry->WidthCm*.5),Turn-Direction*(Entry->WidthCm*.5),Direction,Terrain,Ground,CrossingWidth,2000.,6.5,false);
                             AppendWalk(Cross);
+                            Walk.Centerline.Add(Center); Walk.Centerline.Add(Turn);
                             FVector Link=Turn-F*(CrossingWidth*.5);Link.Z=Ground(Link);
                             Cross.Build(Link,WalkEnd,F,Terrain,[&](const FVector& P){return SampleSidewalkSurface(P);},Entry->WidthCm,2000.,6.5,false);
                             AppendWalk(Cross);
+                            Walk.Centerline.Add(WalkEnd);
                         }
                     }
                     else Walk.Build(HomeDoor, WalkEnd, SimulationSubsystem->GetTerrain(), [&](const FVector& P) { return SampleSidewalkSurface(P); }, Entry->LandingCm, Entry->GroundReserveCm,Entry->WidthCm);
 
+                    if (!Walk.Centerline.IsEmpty()) CitizenEntrancePaths.Add(EntityId, Walk.Centerline);
                     AppendWalk(Walk);
 				}
                 for(const auto& Bay:CityPrivateEntrances::Bays(Presentation.PresentationMesh.GetAssetName()))
@@ -5579,6 +5703,7 @@ void ACityBoardActor::RebuildBuildingEntranceProfiles()
         BuildingEntranceProfiles->CreateMeshSection(2,HomeWalks.RailVertices,HomeWalks.RailTriangles,HomeWalks.RailNormals,HomeWalks.RailUVs,Colors,Tangents,false);
         BuildingEntranceProfiles->SetMaterial(2,RoadSupportInstances->GetMaterial(0));
     }
+	RebuildCrosswalkPaint();
 }
 
 void ACityBoardActor::RebuildTerrainSurface(const bool bRefineBanks, const bool bSmoothBankShading)
@@ -5714,15 +5839,65 @@ void ACityBoardActor::RebuildWaterSurface()
 {
 	if (!WaterSurface || !SimulationSubsystem)
 		return;
-	const FCityWaterMesh Mesh = FCityWaterMesh::Build(SimulationSubsystem->GetTerrain());
-	TArray<FVector> Normals;
-	Normals.Init(FVector::UpVector, Mesh.Vertices.Num());
-	TArray<FProcMeshTangent> Tangents;
-	WaterSurface->ClearAllMeshSections();
-	if (!Mesh.Vertices.IsEmpty())
-		WaterSurface->CreateMeshSection(0, Mesh.Vertices, Mesh.Triangles, Normals, Mesh.UVs, Mesh.Colors, Tangents, false);
+	FCityWaterMesh Mesh = FCityWaterMesh::Build(SimulationSubsystem->GetTerrain(),true,true);
+	const FCityWaterEffects Effects =
+	    FCityWaterEffects::Build(SimulationSubsystem->GetTerrain(), SimulationSubsystem->GetPlacementModel(), Mesh);
+	auto Apply = [](UProceduralMeshComponent* Surface, const FCityWaterMesh& Geometry)
+	{
+		TArray<FVector> Normals;
+		Normals.Init(FVector::UpVector, Geometry.Vertices.Num());
+		TArray<FProcMeshTangent> Tangents;
+		TArray<FVector2D> Empty;
+		Surface->ClearAllMeshSections();
+		if (!Geometry.Vertices.IsEmpty())
+			Surface->CreateMeshSection(0, Geometry.Vertices, Geometry.Triangles, Normals, Geometry.UVs,
+			                           Geometry.ShoreUVs, Geometry.DepthUVs, Empty, Geometry.Colors, Tangents, false);
+	};
+	Apply(WaterSurface, Mesh);
+	Apply(ShoreFoamSurface, Effects.Foam);
+	Apply(ShoreSplashSurface, Effects.Splashes);
+	WaterEffectsRevision = SimulationSubsystem->GetPlacementModel().GetRevision();
+
 	UE_LOG(LogTemp, Display, TEXT("CITYSIM_WATER_REBUILT Vertices=%d Triangles=%d River=%d"), Mesh.Vertices.Num(),
 	       Mesh.Triangles.Num() / 3, SimulationSubsystem->GetTerrain().GetRiverCells().Num());
+}
+
+void ACityBoardActor::UpdateWaterEffects()
+{
+	if (!SimulationSubsystem || !Atmosphere || SimulationSubsystem->IsEntryMenuSuspended())
+		return;
+	if (WaterEffectsRevision != SimulationSubsystem->GetPlacementModel().GetRevision())
+		RebuildWaterSurface();
+	if (WaterEffectsMaterials.IsEmpty())
+		for (auto* Surface : {WaterSurface.Get(), ShoreFoamSurface.Get(), ShoreSplashSurface.Get()})
+			WaterEffectsMaterials.Add(Surface->CreateDynamicMaterialInstance(0));
+	const auto& Motion = Atmosphere->GetMotion();
+	const double Strength = FCityWaterEffects::Strength(Motion);
+	const FTransform Transform = WaterSurface->GetComponentTransform();
+	const FVector Axes[] = {Transform.TransformVector(FVector::ForwardVector),
+	                        Transform.TransformVector(FVector::RightVector),
+	                        Transform.TransformVector(FVector::UpVector)};
+	const FName Names[] = {TEXT("EffectAxisX"), TEXT("EffectAxisY"), TEXT("EffectAxisZ")};
+	for (const auto& Material : WaterEffectsMaterials)
+	{
+		if (!Material)
+			continue;
+		Material->SetScalarParameterValue(TEXT("UseRealTime"), 0);
+		Material->SetScalarParameterValue(TEXT("PreviewTime"), Motion.PhaseSeconds);
+		for (int32 I = 0; I < 3; ++I)
+			Material->SetVectorParameterValue(Names[I], FLinearColor(Axes[I]));
+		const struct
+		{
+			const TCHAR* Name;
+			double Calm;
+			double Storm;
+		} Parameters[] = {{TEXT("WaveHeightCm"), 14, 34},   {TEXT("OpenWaveHeightCm"), 8, 22},
+		                  {TEXT("WashReachM"), 1.4, 2.5},   {TEXT("FoamWidthM"), .28, .48},
+		                  {TEXT("SplashHeightCm"), 45, 95}, {TEXT("SplashTravelCm"), 70, 140},
+		                  {TEXT("SplashDensity"), .45, 1},  {TEXT("CrestWhite"), .24, .46}};
+		for (const auto& Parameter : Parameters)
+			Material->SetScalarParameterValue(Parameter.Name, FMath::Lerp(Parameter.Calm, Parameter.Storm, Strength));
+	}
 }
 
 void ACityBoardActor::SetHeatMapLayers(const bool bActive)
@@ -5738,6 +5913,8 @@ void ACityBoardActor::SetHeatMapLayers(const bool bActive)
 	}
 	TArray<USceneComponent*> SuppressedComponents = {BoardSurface,
 	                                                 WaterSurface,
+	                                                 ShoreFoamSurface,
+	                                                 ShoreSplashSurface,
 	                                                 FoundationInstances,
 	                                                 ResidentialFoundationInstances,
 	                                                 BuildingEntranceProfiles,
@@ -6040,14 +6217,20 @@ void ACityBoardActor::UpdateFirePresentation()
 						        V, Before, SimulationSubsystem->GetRoadNetworkSnapshot(),
 						        SimulationSubsystem->GetSimulationStepProgress(), Pos, Direction))
 							break;
-						FVector Origin((Pos.X + .5) * 800, (Pos.Y + .5) * 800,
-						               GetRoadProfileHeight(Pos.X + .5, Pos.Y + .5, Pos.Z > 0 ? 1 : 0) + 165);
+						FVector Origin((Pos.X + .5) * 800, (Pos.Y + .5) * 800, 0);
 						Origin +=
 						    FVector(-Direction.Y, Direction.X, 0) *
 						    FCityTrafficSimulation::SampleMotorLaneOffsetCm(
 						        V, Before, SimulationSubsystem->GetSimulationStepProgress(),
 						        PlacementModel->GetRoadDefinitionId(FCityCellCoord(
 						            FMath::RoundToInt(Pos.X), FMath::RoundToInt(Pos.Y), FMath::RoundToInt(Pos.Z))));
+						Origin.Z = GetRoadProfileHeight(Origin.X / 800., Origin.Y / 800., Pos.Z > 0 ? 1 : 0) +
+						    FCityRoadRibbonMesh::SurfaceLiftCm;
+						// Match the displayed engine's scale and yaw; dispatch/arrival
+						// still gate the effect, independently of the authored socket.
+						if (const UStaticMesh* Mesh = FireResponseInstances->GetStaticMesh())
+							if (const UStaticMeshSocket* Nozzle = Mesh->FindSocket(TEXT("WaterNozzle")))
+								Origin += FRotator(0, Direction.Rotation().Yaw, 0).RotateVector(Nozzle->RelativeLocation * .76);
 						const FVector Jet = Center - Origin;
 						Water->SetRelativeLocation(Origin);
 						Water->SetRelativeRotation(Jet.Rotation());
@@ -6138,4 +6321,16 @@ void ACityBoardActor::UpdateWindRotors(const float DeltaSeconds)
 		WindRotorInstances->MarkRenderStateDirty();
 		WindNacelleInstances->MarkRenderStateDirty();
 	}
+}
+
+void ACityBoardActor::UpdateEntranceGuidance()
+{
+    if (!PlacementModel || !SimulationSubsystem) return;
+    const bool Retired = PlacementModel->IsRoadConnected(PlacementModel->GetEntranceCell()) ||
+        SimulationSubsystem->GetGuidedProgress().CompletedIds.Contains(TEXT("entrance_road"));
+    EntranceMarker->SetVisibility(!Retired && !SimulationSubsystem->IsEntryMenuSuspended());
+    const float Breath = GetDefault<UCityTutorialSettings>()->bEnabled ?
+        CityTutorialAttention::Pulse(FPlatformTime::Seconds()) : 0.f;
+    const double Scale = CityBoardPicking::LogicalCellSizeCm / PlaneMeshSizeCm * (.85 + .12 * Breath);
+    EntranceMarker->SetRelativeScale3D(FVector(Scale, Scale, .3 + .1 * Breath));
 }

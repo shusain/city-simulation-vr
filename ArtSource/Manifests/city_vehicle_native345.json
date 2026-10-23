@@ -1,0 +1,1148 @@
+{
+  "issue": 345,
+  "assets": [
+    {
+      "issue": 346,
+      "version": 3,
+      "approval_sha256": "40f1493ec6d9d69eb55401705c4b7916c6e52a34715f56531e963207e8f8ea92",
+      "source": "ArtSource/Generated/blender/issue-346/v3",
+      "key": "Car",
+      "native": "/Game/CitySim/Art/Meshes/SM_Traffic_Car_A",
+      "export": "ArtSource/Exports/Vehicle345/SM_Traffic_Car_A.fbx",
+      "export_sha256": "485a6c0a82cfe9830de80d0c535a075df27d8b481c66395179ec247218999d4a",
+      "blend": "ArtSource/Blender/Vehicle345/SM_Traffic_Car_A.blend",
+      "blend_sha256": "99e646c380c17fc507a38e2a1119dc798d789bd5e315b21ce0af6de349533035",
+      "slots": [
+        "BodyPaint",
+        "arch_toolMaterial",
+        "Glass",
+        "Rubber",
+        "MetalTrim",
+        "Headlight",
+        "Taillight"
+      ],
+      "materials": {
+        "BodyPaint": {
+          "slot": "BodyPaint",
+          "color": [
+            0.7799999713897705,
+            0.5899999737739563,
+            0.3199999928474426,
+            1.0
+          ],
+          "roughness": 0.3199999928474426,
+          "metallic": 0.11999999731779099
+        },
+        "arch_toolMaterial": {
+          "slot": "arch_toolMaterial",
+          "color": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "roughness": 0.699999988079071,
+          "metallic": 0.0
+        },
+        "Glass": {
+          "slot": "Glass",
+          "color": [
+            0.04500000178813934,
+            0.0949999988079071,
+            0.13500000536441803,
+            1.0
+          ],
+          "roughness": 0.2199999988079071,
+          "metallic": 0.11999999731779099
+        },
+        "Rubber": {
+          "slot": "Rubber",
+          "color": [
+            0.017999999225139618,
+            0.023000000044703484,
+            0.02800000086426735,
+            1.0
+          ],
+          "roughness": 0.7799999713897705,
+          "metallic": 0.0
+        },
+        "MetalTrim": {
+          "slot": "MetalTrim",
+          "color": [
+            0.41999998688697815,
+            0.47999998927116394,
+            0.5099999904632568,
+            1.0
+          ],
+          "roughness": 0.2800000011920929,
+          "metallic": 0.7200000286102295
+        },
+        "Headlight": {
+          "slot": "Headlight",
+          "color": [
+            0.8600000143051147,
+            0.9399999976158142,
+            1.0,
+            1.0
+          ],
+          "roughness": 0.2199999988079071,
+          "metallic": 0.0
+        },
+        "Taillight": {
+          "slot": "Taillight",
+          "color": [
+            0.6200000047683716,
+            0.014999999664723873,
+            0.023000000044703484,
+            1.0
+          ],
+          "roughness": 0.25999999046325684,
+          "metallic": 0.0
+        }
+      },
+      "bounds_m": {
+        "min": [
+          -2.115000009536743,
+          -1.0149999856948853,
+          0.0
+        ],
+        "max": [
+          2.1424999237060547,
+          1.0149999856948853,
+          1.4297428131103516
+        ]
+      },
+      "triangles": 13084,
+      "emergency_lamps": [],
+      "derivative_changes": [
+        {
+          "change": "Remove zero-area export triangles",
+          "count": 24
+        }
+      ],
+      "source_world_transform_baked": true
+    },
+    {
+      "issue": 347,
+      "version": 2,
+      "approval_sha256": "1143bad387236157ad64a0482099d0c76f48d651f6354faddaa4074b31a493e5",
+      "source": "ArtSource/Generated/blender/issue-347/v2",
+      "key": "Truck",
+      "native": "/Game/CitySim/Art/Meshes/SM_Traffic_Truck_A",
+      "export": "ArtSource/Exports/Vehicle345/SM_Traffic_Truck_A.fbx",
+      "export_sha256": "1a9d89d51871d1ec246466c482597297683795101478e80543dbafaba6e43354",
+      "blend": "ArtSource/Blender/Vehicle345/SM_Traffic_Truck_A.blend",
+      "blend_sha256": "ca06ed3ce81ef5298493b6c2d2f8c1cb9f8cbe9c11da93fcb43b0f70cb8a26ac",
+      "slots": [
+        "Rubber",
+        "CargoWhite",
+        "MetalTrim",
+        "BodyPaint",
+        "Glass",
+        "Headlight",
+        "AmberLens",
+        "Taillight"
+      ],
+      "materials": {
+        "Rubber": {
+          "slot": "Rubber",
+          "color": [
+            0.017999999225139618,
+            0.023000000044703484,
+            0.027000000700354576,
+            1.0
+          ],
+          "roughness": 0.800000011920929,
+          "metallic": 0.0
+        },
+        "CargoWhite": {
+          "slot": "CargoWhite",
+          "color": [
+            0.8199999928474426,
+            0.8399999737739563,
+            0.8199999928474426,
+            1.0
+          ],
+          "roughness": 0.5299999713897705,
+          "metallic": 0.0
+        },
+        "MetalTrim": {
+          "slot": "MetalTrim",
+          "color": [
+            0.33000001311302185,
+            0.38999998569488525,
+            0.4300000071525574,
+            1.0
+          ],
+          "roughness": 0.3199999928474426,
+          "metallic": 0.6499999761581421
+        },
+        "BodyPaint": {
+          "slot": "BodyPaint",
+          "color": [
+            0.11500000208616257,
+            0.27000001072883606,
+            0.4000000059604645,
+            1.0
+          ],
+          "roughness": 0.3400000035762787,
+          "metallic": 0.0
+        },
+        "Glass": {
+          "slot": "Glass",
+          "color": [
+            0.02500000037252903,
+            0.06499999761581421,
+            0.0949999988079071,
+            1.0
+          ],
+          "roughness": 0.1899999976158142,
+          "metallic": 0.0
+        },
+        "Headlight": {
+          "slot": "Headlight",
+          "color": [
+            0.9200000166893005,
+            0.9200000166893005,
+            0.7200000286102295,
+            1.0
+          ],
+          "roughness": 0.23000000417232513,
+          "metallic": 0.0
+        },
+        "AmberLens": {
+          "slot": "AmberLens",
+          "color": [
+            0.949999988079071,
+            0.28999999165534973,
+            0.02500000037252903,
+            1.0
+          ],
+          "roughness": 0.30000001192092896,
+          "metallic": 0.0
+        },
+        "Taillight": {
+          "slot": "Taillight",
+          "color": [
+            0.6200000047683716,
+            0.017999999225139618,
+            0.012000000104308128,
+            1.0
+          ],
+          "roughness": 0.25999999046325684,
+          "metallic": 0.0
+        }
+      },
+      "bounds_m": {
+        "min": [
+          -3.2699999809265137,
+          -1.4045000076293945,
+          0.0
+        ],
+        "max": [
+          3.1500000953674316,
+          1.4045000076293945,
+          3.0
+        ]
+      },
+      "triangles": 7926,
+      "emergency_lamps": [],
+      "derivative_changes": [
+        {
+          "change": "Remove zero-area export triangles",
+          "count": 72
+        }
+      ],
+      "source_world_transform_baked": true
+    },
+    {
+      "issue": 348,
+      "version": 3,
+      "approval_sha256": "fbaa3af4e6957276213e128fddc2d856bd47298a796b8fd85bd784313abaec7f",
+      "source": "ArtSource/Generated/blender/issue-348/v3",
+      "key": "PoliceCar",
+      "native": "/Game/CitySim/Art/Meshes/SM_Traffic_PoliceCar_A",
+      "export": "ArtSource/Exports/Vehicle345/SM_Traffic_PoliceCar_A.fbx",
+      "export_sha256": "dbffdb9da11a31004c18e9f5422464666d015901b42fa3f4ae9961ba5172a2fa",
+      "blend": "ArtSource/Blender/Vehicle345/SM_Traffic_PoliceCar_A.blend",
+      "blend_sha256": "12d075cc8f1b2a13cf015c3f9222d880a2eeae0762072f9196bc50b7b2f085fe",
+      "slots": [
+        "BodyPaint_Navy",
+        "Glass_OpaqueBlueGray",
+        "BodyPaint_White",
+        "MetalTrim",
+        "Badge",
+        "Rubber",
+        "Grille",
+        "Headlight",
+        "Taillight",
+        "ProtectiveBar_DarkSteel",
+        "Roof"
+      ],
+      "materials": {
+        "BodyPaint_Navy": {
+          "slot": "BodyPaint_Navy",
+          "color": [
+            0.017999999225139618,
+            0.03799999877810478,
+            0.08500000089406967,
+            1.0
+          ],
+          "roughness": 0.30000001192092896,
+          "metallic": 0.0
+        },
+        "Glass_OpaqueBlueGray": {
+          "slot": "Glass_OpaqueBlueGray",
+          "color": [
+            0.03500000014901161,
+            0.10000000149011612,
+            0.15000000596046448,
+            1.0
+          ],
+          "roughness": 0.18000000715255737,
+          "metallic": 0.0
+        },
+        "BodyPaint_White": {
+          "slot": "BodyPaint_White",
+          "color": [
+            0.8199999928474426,
+            0.8600000143051147,
+            0.8600000143051147,
+            1.0
+          ],
+          "roughness": 0.3400000035762787,
+          "metallic": 0.0
+        },
+        "MetalTrim": {
+          "slot": "MetalTrim",
+          "color": [
+            0.33000001311302185,
+            0.38999998569488525,
+            0.4300000071525574,
+            1.0
+          ],
+          "roughness": 0.2800000011920929,
+          "metallic": 0.7200000286102295
+        },
+        "Badge": {
+          "slot": "Badge",
+          "color": [
+            0.7099999785423279,
+            0.5299999713897705,
+            0.1599999964237213,
+            1.0
+          ],
+          "roughness": 0.3799999952316284,
+          "metallic": 0.44999998807907104
+        },
+        "Rubber": {
+          "slot": "Rubber",
+          "color": [
+            0.017999999225139618,
+            0.02199999988079071,
+            0.02800000086426735,
+            1.0
+          ],
+          "roughness": 0.7699999809265137,
+          "metallic": 0.0
+        },
+        "Grille": {
+          "slot": "Grille",
+          "color": [
+            0.012000000104308128,
+            0.01899999938905239,
+            0.02500000037252903,
+            1.0
+          ],
+          "roughness": 0.550000011920929,
+          "metallic": 0.0
+        },
+        "Headlight": {
+          "slot": "Headlight",
+          "color": [
+            0.8500000238418579,
+            0.9100000262260437,
+            0.7699999809265137,
+            1.0
+          ],
+          "roughness": 0.2199999988079071,
+          "metallic": 0.0
+        },
+        "Taillight": {
+          "slot": "Taillight",
+          "color": [
+            0.6499999761581421,
+            0.017999999225139618,
+            0.02500000037252903,
+            1.0
+          ],
+          "roughness": 0.25,
+          "metallic": 0.0
+        },
+        "ProtectiveBar_DarkSteel": {
+          "slot": "ProtectiveBar_DarkSteel",
+          "color": [
+            0.06499999761581421,
+            0.0820000022649765,
+            0.10000000149011612,
+            1.0
+          ],
+          "roughness": 0.33000001311302185,
+          "metallic": 0.6499999761581421
+        }
+      },
+      "bounds_m": {
+        "min": [
+          -2.5789999961853027,
+          -1.0699999332427979,
+          0.0
+        ],
+        "max": [
+          2.7090001106262207,
+          1.0699999332427979,
+          1.7324999570846558
+        ]
+      },
+      "triangles": 11164,
+      "emergency_lamps": [
+        {
+          "bounds_m": {
+            "min": [
+              -0.17499999701976776,
+              -0.5600000023841858,
+              1.6274999380111694
+            ],
+            "max": [
+              0.07500000298023224,
+              -0.36000001430511475,
+              1.7324999570846558
+            ]
+          },
+          "color": [
+            1,
+            0.015,
+            0.01,
+            0
+          ],
+          "triangles": 108
+        },
+        {
+          "bounds_m": {
+            "min": [
+              -0.17499999701976776,
+              -0.3400000035762787,
+              1.6274999380111694
+            ],
+            "max": [
+              0.07500000298023224,
+              -0.13999998569488525,
+              1.7324999570846558
+            ]
+          },
+          "color": [
+            1,
+            0.015,
+            0.01,
+            0
+          ],
+          "triangles": 108
+        },
+        {
+          "bounds_m": {
+            "min": [
+              -0.17499999701976776,
+              0.13999998569488525,
+              1.6274999380111694
+            ],
+            "max": [
+              0.07500000298023224,
+              0.3400000035762787,
+              1.7324999570846558
+            ]
+          },
+          "color": [
+            0.01,
+            0.12,
+            1,
+            0
+          ],
+          "triangles": 108
+        },
+        {
+          "bounds_m": {
+            "min": [
+              -0.17499999701976776,
+              0.36000001430511475,
+              1.6274999380111694
+            ],
+            "max": [
+              0.07500000298023224,
+              0.5600000023841858,
+              1.7324999570846558
+            ]
+          },
+          "color": [
+            0.01,
+            0.12,
+            1,
+            0
+          ],
+          "triangles": 108
+        }
+      ],
+      "derivative_changes": [
+        {
+          "change": "Remove zero-area export triangles",
+          "count": 672
+        }
+      ],
+      "source_world_transform_baked": true
+    },
+    {
+      "issue": 349,
+      "version": 2,
+      "approval_sha256": "39e388abf563ce79ce226fc6b87154a64da67cdb748af732071399913974548f",
+      "source": "ArtSource/Generated/blender/issue-349/v2",
+      "key": "FireEngine",
+      "native": "/Game/CitySim/Art/Meshes/SM_Traffic_FireEngine_A",
+      "export": "ArtSource/Exports/Vehicle345/SM_Traffic_FireEngine_A.fbx",
+      "export_sha256": "7aa21947d53cc839811aec178f5ec78a83ce5e0874be5b266970de815b72c434",
+      "blend": "ArtSource/Blender/Vehicle345/SM_Traffic_FireEngine_A.blend",
+      "blend_sha256": "abd0393613c03bf856363831793b0be5b9878deda7fa40b06bf656a11fd26f24",
+      "slots": [
+        "PumpPanel",
+        "BodyPaint",
+        "WarmWhite",
+        "Glass",
+        "MetalTrim",
+        "Rubber",
+        "LockerMetal",
+        "Taillight",
+        "Headlight",
+        "CouplingBrass",
+        "HoseJacket",
+        "Roof"
+      ],
+      "materials": {
+        "PumpPanel": {
+          "slot": "PumpPanel",
+          "color": [
+            0.06499999761581421,
+            0.08500000089406967,
+            0.0949999988079071,
+            1.0
+          ],
+          "roughness": 0.46000000834465027,
+          "metallic": 0.25
+        },
+        "BodyPaint": {
+          "slot": "BodyPaint",
+          "color": [
+            0.6499999761581421,
+            0.02500000037252903,
+            0.017999999225139618,
+            1.0
+          ],
+          "roughness": 0.3199999928474426,
+          "metallic": 0.0
+        },
+        "WarmWhite": {
+          "slot": "WarmWhite",
+          "color": [
+            0.8500000238418579,
+            0.8600000143051147,
+            0.7599999904632568,
+            1.0
+          ],
+          "roughness": 0.3499999940395355,
+          "metallic": 0.0
+        },
+        "Glass": {
+          "slot": "Glass",
+          "color": [
+            0.027000000700354576,
+            0.07500000298023224,
+            0.10499999672174454,
+            1.0
+          ],
+          "roughness": 0.18000000715255737,
+          "metallic": 0.15000000596046448
+        },
+        "MetalTrim": {
+          "slot": "MetalTrim",
+          "color": [
+            0.47999998927116394,
+            0.550000011920929,
+            0.5899999737739563,
+            1.0
+          ],
+          "roughness": 0.30000001192092896,
+          "metallic": 0.75
+        },
+        "Rubber": {
+          "slot": "Rubber",
+          "color": [
+            0.017999999225139618,
+            0.02199999988079071,
+            0.027000000700354576,
+            1.0
+          ],
+          "roughness": 0.7400000095367432,
+          "metallic": 0.0
+        },
+        "LockerMetal": {
+          "slot": "LockerMetal",
+          "color": [
+            0.30000001192092896,
+            0.36000001430511475,
+            0.38999998569488525,
+            1.0
+          ],
+          "roughness": 0.47999998927116394,
+          "metallic": 0.550000011920929
+        },
+        "Taillight": {
+          "slot": "Taillight",
+          "color": [
+            0.8500000238418579,
+            0.012000000104308128,
+            0.00800000037997961,
+            1.0
+          ],
+          "roughness": 0.23000000417232513,
+          "metallic": 0.10000000149011612
+        },
+        "Headlight": {
+          "slot": "Headlight",
+          "color": [
+            1.0,
+            0.8600000143051147,
+            0.5699999928474426,
+            1.0
+          ],
+          "roughness": 0.2199999988079071,
+          "metallic": 0.10000000149011612
+        },
+        "CouplingBrass": {
+          "slot": "CouplingBrass",
+          "color": [
+            0.47999998927116394,
+            0.30000001192092896,
+            0.0949999988079071,
+            1.0
+          ],
+          "roughness": 0.3199999928474426,
+          "metallic": 0.699999988079071
+        },
+        "HoseJacket": {
+          "slot": "HoseJacket",
+          "color": [
+            0.10499999672174454,
+            0.11999999731779099,
+            0.10499999672174454,
+            1.0
+          ],
+          "roughness": 0.7200000286102295,
+          "metallic": 0.0
+        }
+      },
+      "bounds_m": {
+        "min": [
+          -3.859999895095825,
+          -1.543681025505066,
+          0.0
+        ],
+        "max": [
+          3.75,
+          1.4899998903274536,
+          3.829284191131592
+        ]
+      },
+      "triangles": 18592,
+      "emergency_lamps": [
+        {
+          "bounds_m": {
+            "min": [
+              2.2049999237060547,
+              -0.8200000524520874,
+              3.0950000286102295
+            ],
+            "max": [
+              2.494999885559082,
+              -0.3800000250339508,
+              3.2850000858306885
+            ]
+          },
+          "color": [
+            1,
+            0.015,
+            0.01,
+            0
+          ],
+          "triangles": 108
+        },
+        {
+          "bounds_m": {
+            "min": [
+              2.2049999237060547,
+              -0.2199999988079071,
+              3.0950000286102295
+            ],
+            "max": [
+              2.494999885559082,
+              0.2199999988079071,
+              3.2850000858306885
+            ]
+          },
+          "color": [
+            1,
+            0.75,
+            0.55,
+            0
+          ],
+          "triangles": 108
+        },
+        {
+          "bounds_m": {
+            "min": [
+              2.2049999237060547,
+              0.3800000250339508,
+              3.0950000286102295
+            ],
+            "max": [
+              2.494999885559082,
+              0.8200000524520874,
+              3.2850000858306885
+            ]
+          },
+          "color": [
+            1,
+            0.015,
+            0.01,
+            0
+          ],
+          "triangles": 108
+        }
+      ],
+      "derivative_changes": [
+        {
+          "change": "Remove zero-area export triangles",
+          "count": 144
+        }
+      ],
+      "source_world_transform_baked": true
+    },
+    {
+      "issue": 350,
+      "version": 2,
+      "approval_sha256": "522c41791281a76e67ebfde0949c724ce1ef5b500836e71ab43c1486648dd856",
+      "source": "ArtSource/Generated/blender/issue-350/v2",
+      "key": "Ambulance",
+      "native": "/Game/CitySim/Art/Meshes/SM_Traffic_Ambulance_A",
+      "export": "ArtSource/Exports/Vehicle345/SM_Traffic_Ambulance_A.fbx",
+      "export_sha256": "f667a25cdbf97b52ce2e4d9f2ce43709f036fa6a6516a443530244a5ac2dc2e9",
+      "blend": "ArtSource/Blender/Vehicle345/SM_Traffic_Ambulance_A.blend",
+      "blend_sha256": "6f52113b551580a1ec6618e9ea836990e166962a676ba7e418ac45cd0f072db3",
+      "slots": [
+        "BodyPaint",
+        "MetalTrim",
+        "MedicalRed",
+        "Rubber",
+        "Headlight",
+        "Glass",
+        "Taillight",
+        "Roof"
+      ],
+      "materials": {
+        "BodyPaint": {
+          "slot": "BodyPaint",
+          "color": [
+            0.8799999952316284,
+            0.9100000262260437,
+            0.8899999856948853,
+            1.0
+          ],
+          "roughness": 0.3400000035762787,
+          "metallic": 0.0
+        },
+        "MetalTrim": {
+          "slot": "MetalTrim",
+          "color": [
+            0.2199999988079071,
+            0.27000001072883606,
+            0.30000001192092896,
+            1.0
+          ],
+          "roughness": 0.3199999928474426,
+          "metallic": 0.6499999761581421
+        },
+        "MedicalRed": {
+          "slot": "MedicalRed",
+          "color": [
+            0.7200000286102295,
+            0.017999999225139618,
+            0.02500000037252903,
+            1.0
+          ],
+          "roughness": 0.36000001430511475,
+          "metallic": 0.0
+        },
+        "Rubber": {
+          "slot": "Rubber",
+          "color": [
+            0.02199999988079071,
+            0.027000000700354576,
+            0.03200000151991844,
+            1.0
+          ],
+          "roughness": 0.7799999713897705,
+          "metallic": 0.0
+        },
+        "Headlight": {
+          "slot": "Headlight",
+          "color": [
+            0.9200000166893005,
+            0.9300000071525574,
+            0.6899999976158142,
+            1.0
+          ],
+          "roughness": 0.23000000417232513,
+          "metallic": 0.0
+        },
+        "Glass": {
+          "slot": "Glass",
+          "color": [
+            0.02500000037252903,
+            0.08500000089406967,
+            0.12999999523162842,
+            1.0
+          ],
+          "roughness": 0.1899999976158142,
+          "metallic": 0.0
+        },
+        "Taillight": {
+          "slot": "Taillight",
+          "color": [
+            0.550000011920929,
+            0.012000000104308128,
+            0.017999999225139618,
+            1.0
+          ],
+          "roughness": 0.23999999463558197,
+          "metallic": 0.0
+        }
+      },
+      "bounds_m": {
+        "min": [
+          -3.315000057220459,
+          -1.2850000858306885,
+          0.0
+        ],
+        "max": [
+          3.2800002098083496,
+          1.2850000858306885,
+          2.8500001430511475
+        ]
+      },
+      "triangles": 9614,
+      "emergency_lamps": [
+        {
+          "bounds_m": {
+            "min": [
+              -2.809999942779541,
+              -1.1825000047683716,
+              2.5850000381469727
+            ],
+            "max": [
+              -2.4900002479553223,
+              -1.1174999475479126,
+              2.7150001525878906
+            ]
+          },
+          "color": [
+            1,
+            0.015,
+            0.01,
+            0
+          ],
+          "triangles": 108
+        },
+        {
+          "bounds_m": {
+            "min": [
+              -2.809999942779541,
+              1.1174999475479126,
+              2.5850000381469727
+            ],
+            "max": [
+              -2.4900002479553223,
+              1.1825000047683716,
+              2.7150001525878906
+            ]
+          },
+          "color": [
+            1,
+            0.015,
+            0.01,
+            0
+          ],
+          "triangles": 108
+        },
+        {
+          "bounds_m": {
+            "min": [
+              0.9799997806549072,
+              -0.6749999523162842,
+              2.505000114440918
+            ],
+            "max": [
+              1.2999999523162842,
+              -0.08500000834465027,
+              2.6649999618530273
+            ]
+          },
+          "color": [
+            1,
+            0.015,
+            0.01,
+            0
+          ],
+          "triangles": 108
+        },
+        {
+          "bounds_m": {
+            "min": [
+              0.9799997806549072,
+              0.08500000834465027,
+              2.505000114440918
+            ],
+            "max": [
+              1.2999999523162842,
+              0.6749999523162842,
+              2.6649999618530273
+            ]
+          },
+          "color": [
+            0.01,
+            0.12,
+            1,
+            0
+          ],
+          "triangles": 108
+        }
+      ],
+      "derivative_changes": [
+        {
+          "change": "Remove zero-area export triangles",
+          "count": 608
+        }
+      ],
+      "source_world_transform_baked": true
+    },
+    {
+      "issue": 351,
+      "version": 1,
+      "approval_sha256": "20fb52f7041fb4afc99fc9e4f6c34322a996b005f8c831d79736a333cc2da683",
+      "source": "ArtSource/Generated/blender/issue-351/v1",
+      "key": "GarbageTruck",
+      "native": "/Game/CitySim/Art/Meshes/SM_Traffic_GarbageTruck_A",
+      "export": "ArtSource/Exports/Vehicle345/SM_Traffic_GarbageTruck_A.fbx",
+      "export_sha256": "42a656e4276966e76448f57c84f2fc50c7985f9ab0e6f0c565e072414c16832b",
+      "blend": "ArtSource/Blender/Vehicle345/SM_Traffic_GarbageTruck_A.blend",
+      "blend_sha256": "89ff1d2aa785ce3f6be859bc3f25fe139cfe7d52b7db9cd714325a9254a14a0e",
+      "slots": [
+        "Chassis",
+        "Rubber",
+        "MetalTrim",
+        "CompactorPaint",
+        "Service",
+        "Glass",
+        "Headlight",
+        "Taillight",
+        "AmberLens"
+      ],
+      "materials": {
+        "Chassis": {
+          "slot": "Chassis",
+          "color": [
+            0.06499999761581421,
+            0.08500000089406967,
+            0.0949999988079071,
+            1.0
+          ],
+          "roughness": 0.4399999976158142,
+          "metallic": 0.0
+        },
+        "Rubber": {
+          "slot": "Rubber",
+          "color": [
+            0.02199999988079071,
+            0.02800000086426735,
+            0.03200000151991844,
+            1.0
+          ],
+          "roughness": 0.4399999976158142,
+          "metallic": 0.0
+        },
+        "MetalTrim": {
+          "slot": "MetalTrim",
+          "color": [
+            0.2800000011920929,
+            0.3400000035762787,
+            0.3700000047683716,
+            1.0
+          ],
+          "roughness": 0.4399999976158142,
+          "metallic": 0.699999988079071
+        },
+        "CompactorPaint": {
+          "slot": "CompactorPaint",
+          "color": [
+            0.4399999976158142,
+            0.6000000238418579,
+            0.550000011920929,
+            1.0
+          ],
+          "roughness": 0.4399999976158142,
+          "metallic": 0.0
+        },
+        "Service": {
+          "slot": "Service",
+          "color": [
+            0.02500000037252903,
+            0.36000001430511475,
+            0.3400000035762787,
+            1.0
+          ],
+          "roughness": 0.4399999976158142,
+          "metallic": 0.0
+        },
+        "Glass": {
+          "slot": "Glass",
+          "color": [
+            0.02500000037252903,
+            0.07500000298023224,
+            0.10499999672174454,
+            1.0
+          ],
+          "roughness": 0.18000000715255737,
+          "metallic": 0.0
+        },
+        "Headlight": {
+          "slot": "Headlight",
+          "color": [
+            0.8799999952316284,
+            0.9399999976158142,
+            0.800000011920929,
+            1.0
+          ],
+          "roughness": 0.25,
+          "metallic": 0.0
+        },
+        "Taillight": {
+          "slot": "Taillight",
+          "color": [
+            0.6499999761581421,
+            0.017999999225139618,
+            0.02500000037252903,
+            1.0
+          ],
+          "roughness": 0.25,
+          "metallic": 0.0
+        },
+        "AmberLens": {
+          "slot": "AmberLens",
+          "color": [
+            1.0,
+            0.3400000035762787,
+            0.02500000037252903,
+            1.0
+          ],
+          "roughness": 0.25,
+          "metallic": 0.0
+        }
+      },
+      "bounds_m": {
+        "min": [
+          -4.039999961853027,
+          -1.4305000305175781,
+          0.0
+        ],
+        "max": [
+          3.8999998569488525,
+          1.4305000305175781,
+          3.315000057220459
+        ]
+      },
+      "triangles": 5732,
+      "emergency_lamps": [],
+      "derivative_changes": [
+        {
+          "change": "Move both cab steps rearward .30m for .15m tire clearance",
+          "steps": [
+            {
+              "before": {
+                "min": [
+                  1.5399999618530273,
+                  -1.2999999523162842,
+                  0.7699999809265137
+                ],
+                "max": [
+                  2.2200000286102295,
+                  -1.0,
+                  0.8899999856948853
+                ]
+              },
+              "after": {
+                "min": [
+                  1.2400000095367432,
+                  -1.2999999523162842,
+                  0.7699999809265137
+                ],
+                "max": [
+                  1.9200000762939453,
+                  -1.0,
+                  0.8899999856948853
+                ]
+              }
+            },
+            {
+              "before": {
+                "min": [
+                  1.5399999618530273,
+                  1.0,
+                  0.7699999809265137
+                ],
+                "max": [
+                  2.2200000286102295,
+                  1.2999999523162842,
+                  0.8899999856948853
+                ]
+              },
+              "after": {
+                "min": [
+                  1.2400000095367432,
+                  1.0,
+                  0.7699999809265137
+                ],
+                "max": [
+                  1.9200000762939453,
+                  1.2999999523162842,
+                  0.8899999856948853
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "change": "Remove zero-area export triangles",
+          "count": 192
+        }
+      ],
+      "source_world_transform_baked": true
+    }
+  ],
+  "source_unchanged": true,
+  "coordinates": "metres; +X forward, ground-center pivot; native FBX x,-y,z in cm",
+  "parked_policy": "Current approved civic replacements have no baked vehicles; fleet meshes remain reusable and defaults non-emissive"
+}

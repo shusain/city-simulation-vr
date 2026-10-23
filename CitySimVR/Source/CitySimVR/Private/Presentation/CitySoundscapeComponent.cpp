@@ -537,7 +537,7 @@ void UCitySoundscapeComponent::Update(ACityBoardActor& Board, UCitySimulationSub
 	    Traffic.NetworkFingerprint == FCityTrafficSimulation::GetNetworkFingerprint(Network))
 		for (const auto& Vehicle : Traffic.Vehicles)
 		{
-			if (!CitySoundscape::IsRegularTraffic(Vehicle))
+			if (!CitySoundscape::HasEngineAudio(Vehicle))
 				continue;
 			if (Vehicle.SourceId &&
 			    ((Vehicle.OriginEntityId &&
@@ -565,7 +565,7 @@ void UCitySoundscapeComponent::Update(ACityBoardActor& Board, UCitySimulationSub
 			Request.GridPosition.Z =
 			    Board.GetRoadProfileHeight(Position.X + .5, Position.Y + .5, Position.Z > 0 ? 1 : 0) + 5;
 			Request.bAmbience = true;
-			Request.Gain = .4f;
+			Request.Gain = CitySoundscape::EngineGain(Request.Cue);
 			if (VoiceDistanceGain(Request) <= .01f)
 				continue;
 			const double Rank =

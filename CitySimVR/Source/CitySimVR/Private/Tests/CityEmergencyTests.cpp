@@ -935,8 +935,8 @@ bool FCityEmergencySprayTest::RunTest(const FString& Parameters)
 	if (TestNotNull(TEXT("Recovered home has its normal instance pool"), RestoredPool))
 	{
 		TestEqual(TEXT("Normal pool contains restored home"), RestoredPool->GetInstanceCount(), 1);
-		TestTrue(TEXT("Original imported mesh returns"),
-		         RestoredPool->GetStaticMesh() == HomeDefinition.PresentationMesh.LoadSynchronous());
+		TestTrue(TEXT("Current resolved imported appearance returns"),
+		         RestoredPool->GetStaticMesh() == RestoredDefinition.PresentationMesh.LoadSynchronous());
 	}
 	TestFalse(TEXT("Completed response clears visible water"), Board->WaterParticlePools[0]->IsActive());
 	const auto RecoveredServices = FCityServiceEvaluator::BuildSnapshot(

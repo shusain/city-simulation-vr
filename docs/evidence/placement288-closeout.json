@@ -1,0 +1,30 @@
+{
+  "build": 377,
+  "accepted_head": "533be8477da1a4d3131ff520d68cee7ffb777832",
+  "game_revision": "dev-3a71347fabfcae8437ec",
+  "pr": 290,
+  "native_rebuild": "not required: byte-identical accepted Windows377",
+  "issue": 288,
+  "files_verified": 53,
+  "merged_commit": "3ce17360e43556e3c9f7b5da9fd26e33be9024fd",
+  "previous_files_preserved": 53,
+  "target": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\PCVRSandbox\\Windows",
+  "status": "promoted and verified",
+  "archive_sha256": "90d1002ece531308bf4d1eead6008b55495d153e7a7c37e4f8c0425251db4706",
+  "backup": "C:\\Users\\shaun\\Development\\city-sim-builder\\Artifacts\\PlacementFeedback\\LocalPromotion\\PreviousWindows",
+  "date": "2026-10-19",
+  "profiles_and_launchers_unchanged": true,
+  "user_acceptance": "Shaun confirmed outlines, auto-rotation and placement messages look good in game, authorized merge and maintained PC update,2026-10-19.",
+  "native_build": 376,
+  "editor_tests": [
+    "CitySim.Placement.FootprintFacingAndReason",
+    "CitySim.Placement.Transactions",
+    "CitySim.Roads.ConnectivityAndDemolition",
+    "CitySim.Civic.ApprovedEntranceFrontage"
+  ],
+  "native_views_reviewed": 8,
+  "windows_checks": "Packaged startup/menu smoke and focused Client test at1280x800 and1024x720 passed.",
+  "merged_tree_equals_accepted_head": true,
+  "headset": "unconfirmed; #49 remains separate",
+  "promotion_evidence": "https://git.shaun-husain.com/attachments/3d78b2ca-aea2-4a21-ba6d-c7cb972b3526"
+}

@@ -44,6 +44,23 @@ UCityAtmosphereComponent::UCityAtmosphereComponent()
 	static ConstructorHelpers::FObjectFinder<UStaticMesh> DuneGrass(
 	    TEXT("/Game/CitySim/Art/Beach/Meshes/SM_Scenery_DuneGrass_A.SM_Scenery_DuneGrass_A"));
 	BeachMeshes = {FanShell.Object, SpiralShell.Object, Starfish.Object, Driftwood.Object, DuneGrass.Object};
+	// Quiet during the explicit CI import pass; the following fresh test/cook
+	// process loads the retained packages and asserts every native binding.
+	const TCHAR* NewBeachMeshes[] = {
+	    TEXT("/Game/CitySim/Art/Beach/Meshes/SM_Scenery_Seaweed_A.SM_Scenery_Seaweed_A"),
+	    TEXT("/Game/CitySim/Art/Beach/Meshes/SM_Scenery_PebbleSmall_A.SM_Scenery_PebbleSmall_A"),
+	    TEXT("/Game/CitySim/Art/Beach/Meshes/SM_Scenery_PebbleMedium_A.SM_Scenery_PebbleMedium_A"),
+	    TEXT("/Game/CitySim/Art/Beach/Meshes/SM_Scenery_PebbleLarge_A.SM_Scenery_PebbleLarge_A"),
+	    TEXT("/Game/CitySim/Art/Beach/Meshes/SM_Scenery_Umbrella_A.SM_Scenery_Umbrella_A"),
+	    TEXT("/Game/CitySim/Art/Beach/Meshes/SM_Scenery_Lounger_A.SM_Scenery_Lounger_A"),
+	    TEXT("/Game/CitySim/Art/Beach/Meshes/SM_Scenery_Chair_A.SM_Scenery_Chair_A"),
+	    TEXT("/Game/CitySim/Art/Beach/Meshes/SM_Scenery_Mat_A.SM_Scenery_Mat_A"),
+	    TEXT("/Game/CitySim/Art/Beach/Meshes/SM_Scenery_Cooler_A.SM_Scenery_Cooler_A"),
+	    TEXT("/Game/CitySim/Art/Beach/Meshes/SM_Scenery_Tote_A.SM_Scenery_Tote_A"),
+	    TEXT("/Game/CitySim/Art/Beach/Meshes/SM_Scenery_CurledKelp_A.SM_Scenery_CurledKelp_A"),
+	};
+	for (const TCHAR* Path : NewBeachMeshes)
+		BeachMeshes.Add(LoadObject<UStaticMesh>(nullptr, Path, nullptr, LOAD_NoWarn | LOAD_Quiet));
 	// Keep the existing warm broadleaf pool assignment and frozen instances.
 	Meshes = {Broadleaf.Object, Conifer.Object, Rock.Object, Palm.Object, Broadleaf.Object};
 	ColorMaterial = Color.Object;
@@ -80,8 +97,8 @@ void UCityAtmosphereComponent::EnsurePools()
 	                                      FCitySeasonalScenery::BroadleafColor(ECitySeasonalTreeVariant::Leafy));
 	for (int32 Index = 0; Index < BeachMeshes.Num(); ++Index)
 	{
-		auto* Pool = NewObject<UInstancedStaticMeshComponent>(
-		    GetOwner(), *FString::Printf(TEXT("CityBeachPool%d"), Index));
+		auto* Pool =
+		    NewObject<UInstancedStaticMeshComponent>(GetOwner(), *FString::Printf(TEXT("CityBeachPool%d"), Index));
 		Pool->SetupAttachment(GetOwner()->GetRootComponent());
 		Pool->SetStaticMesh(BeachMeshes[Index]);
 		Pool->PrimaryComponentTick.bCanEverTick = false;
@@ -149,7 +166,8 @@ void UCityAtmosphereComponent::Update(UCitySimulationSubsystem* Simulation, cons
 	if (!Simulation)
 		return;
 	EnsurePools();
-	if (Pools.Num() != SceneryPoolCount || BeachPools.Num() != FCityBeachScenery::KindCount || WeatherSystems.Num() != 2)
+	if (Pools.Num() != SceneryPoolCount || BeachPools.Num() != FCityBeachScenery::KindCount ||
+	    WeatherSystems.Num() != 2)
 		return;
 	const auto& Weather = Simulation->GetEnvironmentSnapshot();
 	const auto& Parameters = Simulation->GetTerrain().GetParameters();
@@ -163,7 +181,7 @@ void UCityAtmosphereComponent::Update(UCitySimulationSubsystem* Simulation, cons
 		PlacementRevision = MAX_uint64;
 		SceneryCandidates = FCitySceneryField::SelectCandidates(
 		    Simulation->GetTerrain(), Simulation->GetPlacementModel().GetEntranceCell(), MaxTrees, MaxRocks);
-		BeachCandidates = FCityBeachScenery::SelectCandidates(Simulation->GetTerrain());
+		BeachCandidates = FCityBeachScenery::SelectCandidates(Simulation->GetTerrain(), SceneryCandidates);
 		FCitySceneryField Climate;
 		Climate.Build(Simulation->GetTerrain());
 		SceneryWarmth.Reset(SceneryCandidates.Num());
@@ -259,7 +277,12 @@ void UCityAtmosphereComponent::RebuildScenery(const UCitySimulationSubsystem& Si
 		const int32 X = Candidate.Cell.X, Y = Candidate.Cell.Y;
 		// Clear a full cell of margin around any road (including bridges), building,
 		// or zone. Scenery never participates in authority or placement rejection.
-		bool bClear = true;
+		// A leisure group reserves its existing tile for presentation. Keep the
+		// frozen scenery candidates/poses intact elsewhere; a trunk must not
+		// emerge through a lounger when independently seeded scenery overlaps.
+		bool bClear = !BeachCandidates.ContainsByPredicate(
+		    [&](const FCityBeachCandidate& Beach)
+		    { return FCityBeachScenery::IsRecreation(Beach.Kind) && Beach.Cell == Candidate.Cell; });
 		for (int32 Dy = -1; Dy <= 1; ++Dy)
 			for (int32 Dx = -1; Dx <= 1; ++Dx)
 			{

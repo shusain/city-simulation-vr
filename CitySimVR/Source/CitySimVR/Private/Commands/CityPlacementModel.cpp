@@ -114,6 +114,9 @@ void FCityPlacementModel::UpdateRoadFacingPreviewAnchor(FCityPlacementPreview& P
                                                         const FCityCellCoord& Anchor) const
 {
 	UpdatePreviewAnchor(Preview, Anchor);
+    // Hover is a new review of the current city, not an old unreviewed command.
+    if (Preview.bActive)
+        Preview.ExpectedRevision = Revision;
 	if (Preview.bActive && !Preview.bRotationOverridden)
 	{
 		Preview.QuarterTurnsClockwise = GetDefaultRoadFacingQuarterTurns(Definition, Anchor);
@@ -641,11 +644,16 @@ int32 FCityPlacementModel::GetDefaultRoadFacingQuarterTurns(const FCityBuildingD
 {
 	int32 BestQuarterTurns = 0;
 	int32 BestConnectedRoadCount = 0;
-	int32 BestRoadCount = 0;
+	int32 BestRoadCount = -1;
+	bool bBestClear = false;
+	bool bBestFullFrontage = false;
 	for (int32 QuarterTurns = 0; QuarterTurns < 4; ++QuarterTurns)
 	{
 		const FIntPoint Size = Definition.Footprint.GetRotatedSize(QuarterTurns);
-        if(RequiresFullRoadFrontage(Definition.DefinitionId) && !HasFullRoadFrontage(Anchor,Size,QuarterTurns)) continue;
+        const bool bClear = Grid.CanOccupy(Anchor, Definition.Footprint, QuarterTurns) &&
+            Grid.CanOccupy(FCityCellCoord(Anchor.X, Anchor.Y, 1), Definition.Footprint, QuarterTurns);
+        const bool bFullFrontage = !RequiresFullRoadFrontage(Definition.DefinitionId) ||
+            HasFullRoadFrontage(Anchor, Size, QuarterTurns);
 		int32 ConnectedRoadCount = 0;
 		int32 RoadCount = 0;
 		auto CountRoad = [this, &ConnectedRoadCount, &RoadCount](const FCityCellCoord& Cell)
@@ -685,10 +693,14 @@ int32 FCityPlacementModel::GetDefaultRoadFacingQuarterTurns(const FCityBuildingD
 			}
 		}
 
-		if (ConnectedRoadCount > BestConnectedRoadCount ||
-		    (ConnectedRoadCount == BestConnectedRoadCount && RoadCount > BestRoadCount))
+		if (BestRoadCount < 0 || (bClear && !bBestClear) ||
+            (bClear == bBestClear && ((bFullFrontage && !bBestFullFrontage) ||
+            (bFullFrontage == bBestFullFrontage && (ConnectedRoadCount > BestConnectedRoadCount ||
+            (ConnectedRoadCount == BestConnectedRoadCount && RoadCount > BestRoadCount))))))
 		{
 			BestQuarterTurns = QuarterTurns;
+            bBestClear = bClear;
+            bBestFullFrontage = bFullFrontage;
 			BestConnectedRoadCount = ConnectedRoadCount;
 			BestRoadCount = RoadCount;
 		}

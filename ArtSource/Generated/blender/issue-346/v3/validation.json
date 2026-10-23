@@ -1,0 +1,49 @@
+{
+  "mesh_geometry_sha256": "0726bf08e9458e78ba7e79022b9ba50d799d3ed6884d54be57db7f8b70e77cb5",
+  "dimensions_m": [
+    4.257499694824219,
+    2.0299999713897705,
+    1.4297428131103516
+  ],
+  "triangles": 13108,
+  "material_slots": [
+    "BodyPaint",
+    "arch_toolMaterial",
+    "Glass",
+    "Rubber",
+    "MetalTrim",
+    "Headlight",
+    "Taillight"
+  ],
+  "roundtrip_pass": true,
+  "blender_version": "5.1.1",
+  "render_engine": "CYCLES",
+  "render_device": "CPU",
+  "reference_sha256": {
+    "ArtSource/Blender/CityStarterKit.blend": "46f7bb21ab1e6a3b22e38c674ae3be88e8df211880a87b1ef45a5ca09dab3fb6"
+  },
+  "review_lighting": {
+    "mode": "extent-squared-area-light",
+    "asset_extent_m": 4.257499694824219,
+    "area_light_energy_watts": 509.8022766113281,
+    "area_light_size_m": 4.257499694824219,
+    "reference_extent_m": 8.0,
+    "reference_energy_watts": 1800.0,
+    "world_strength": 0.6,
+    "view_transform": "AgX",
+    "exposure": 0.0
+  },
+  "revision_scope": "Review-only v3 localized edits of loaded v2 source. Existing glass enlarged 2.5 percent in its plane and lifted 12mm off shell; existing wheel trim brought outward with maximum absolute y 0.970m. Body, tires, lights and arch geometry retained. No production edits.",
+  "revision_measurements": {
+    "glass_components": 6,
+    "glass_vertices": 24,
+    "wheel_trim_components": 28
+  },
+  "additional_views": [
+    "side.png",
+    "front.png",
+    "rear.png"
+  ],
+  "material_semantics": "Glass is opaque blue-gray glossy Principled material for later native remapping. BodyPaint, Rubber, MetalTrim, Headlight and Taillight retained. No emergency lens or branding.",
+  "acceptance": "Human review pending. Checked runner FBX is validation-only, not an approval handoff. No integration, game rendering or headset claims."
+}
